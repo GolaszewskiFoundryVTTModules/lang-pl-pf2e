@@ -1,11 +1,11 @@
 // Create Translator instance and register settings
 Hooks.once("init", () => {
-    game.langDePf2e = Translator.get();
+    game.langPlPf2e = Translator.get();
 
     // Register token setting
-    game.settings.register("lang-de-pf2e", "token", {
-        name: "Portraitbild als Token",
-        hint: "Soll beim Import eines übersetzten NSCs aus einem Kompendium das Portraitbild als Token genutzt werden statt des regulären Token-Bilds?",
+    game.settings.register("lang-pl-pf2e", "token", {
+        name: "Obrazek portretowy jako token",
+        hint: "Czy podczas importowania przetłumaczonego bohatera niezależnego z kompendium obraz portretu powinien być używany jako token zamiast zwykłego obrazu tokena?",
         scope: "world",
         type: Boolean,
         config: true,
@@ -27,14 +27,14 @@ class Translator {
         this.artworkExceptions = {};
         // Read config file
         const config = await Promise.all([
-            fetch("modules/lang-de-pf2e/src/translator/translator-config.json")
+            fetch("modules/lang-pl-pf2e/src/translator/translator-config.json")
                 .then((r) => r.json())
                 .catch((_e) => {
-                    console.error("lang-de-pf2e: Couldn't find translator config file.");
+                    console.error("lang-pl-pf2e: Couldn't find translator config file.");
                 }),
         ]);
 
-        // Create list of feats that are translated and have the same name in English and German
+        // Create list of feats that are translated and have the same name in English and Polish
         this.translatedSameNameFeats = config[0]?.translatedSameNameFeats ?? [];
 
         // Create list of artwork exceptions and initialize artwork lists
@@ -73,7 +73,7 @@ class Translator {
             ]);
             this.dictionary = dict[0];
         } else {
-            console.error("lang-de-pf2e: Dictionary not available");
+            console.error("lang-pl-pf2e: Dictionary not available");
         }
 
         // Create list of icons
@@ -83,7 +83,7 @@ class Translator {
         this.mappings = config[0]?.mappings ?? {};
 
         // Signalize translator is ready
-        Hooks.callAll("langDePf2e.ready");
+        Hooks.callAll("langPlPf2e.ready");
     }
 
     constructor() {
@@ -111,7 +111,7 @@ class Translator {
 
         if (!excluded) {
             ["portraits", "tokens"].forEach(async (imageType) => {
-                const imagePath = game.settings.get("lang-de-pf2e", "token")
+                const imagePath = game.settings.get("lang-pl-pf2e", "token")
                     ? path.concat(`/portraits/`)
                     : path.concat(`/${imageType}/`);
                 const images = {};
@@ -188,10 +188,6 @@ class Translator {
         }
     }
 
-    // Normalize name for correct display within Foundry
-    normalizeName(name) {
-        return name.replace("ß", "ss");
-    }
 
     registerCompendium(module, compendium, language, compendiumDirectory, imageDirectory = undefined) {
         // Register compendium, check if different modules excludes the compendium
@@ -203,7 +199,7 @@ class Translator {
                     dir: compendiumDirectory,
                 });
             } else {
-                console.error("lang-de-pf2e: Required module Babele not active");
+                console.error("lang-pl-pf2e: Required module Babele not active");
             }
         }
 
@@ -278,13 +274,16 @@ class Translator {
 
             // For compendium items, get the data from the compendium
             if (entry.flags?.core?.sourceId && entry.flags.core.sourceId.startsWith("Compendium")) {
+                // Get the actual compendium name
                 const itemCompendium = entry.flags.core.sourceId.slice(
                     entry.flags.core.sourceId.indexOf(".") + 1,
-                    entry.flags.core.sourceId.lastIndexOf(".")
+                    entry.flags.core.sourceId.lastIndexOf(".", entry.flags.core.sourceId.lastIndexOf(".") - 1)
                 );
+
                 const originalName = fromUuidSync(entry.flags.core.sourceId)?.flags?.babele?.originalName;
                 if (originalName) {
                     entry.name = originalName;
+
                     arr[index] = game.babele.packs.get(itemCompendium).translate(entry);
 
                     // Remove dual language translations
@@ -296,10 +295,10 @@ class Translator {
 
             // Merge the available translation
             if (itemTranslation) {
-                // Normalize item name
-                if (itemTranslation.name) {
-                    itemTranslation.name = this.normalizeName(itemTranslation.name);
-                }
+                // // Normalize item name
+                // if (itemTranslation.name) {
+                //     itemTranslation.name = this.normalizeName(itemTranslation.name);
+                // }
                 // For name and description fields, replace "<Compendium>" tag with text from compendium if translation is provided
                 ["description", "name"].forEach((dataElement) => {
                     if (itemTranslation[dataElement]) {
@@ -436,19 +435,19 @@ class Translator {
                         for (const feat of feats) {
                             if (hasTranslation && !isTranslated(feat)) {
                                 hasTranslation = false;
-                                result += "<h2>Talente ohne Übersetzung</h2>";
+                                result += "<h2>Atuty bez tłumaczenia</h2>";
                                 result +=
-                                    "<p><em>Die folgenden Talente sind bisher nicht in einer deutschen Veröffentlichung erschienen</em></p><hr>";
+                                    "<p><em>Następujące atuty nie posiadają Polskiego tłumaczenia</em></p><hr>";
                             }
                             result += `<${isTranslated(feat) ? "h2" : "h3"}>@UUID[Compendium.pf2e.feats-srd.${
                                 feat._id
-                            }]{${feat.name}} <span style="float: right">${isTranslated(feat) ? "TALENT" : "FEAT"} ${
+                            }]{${feat.name}} <span style="float: right">${isTranslated(feat) ? "ATUT" : "FEAT"} ${
                                 feat.system.level.value
                             }</span></${isTranslated(feat) ? "h2" : "h3"}>`;
                             // Some Dedications have no prerequisites, i.e., Demolitionist
                             if (feat.system.prerequisites && feat.system.prerequisites.value.length > 0) {
                                 result += `<p><strong>${
-                                    isTranslated(feat) ? "Voraussetzungen" : "Prerequisites"
+                                    isTranslated(feat) ? "Wymagania" : "Prerequisites"
                                 }</strong> ${feat.system.prerequisites.value
                                     .map((prerequisite) => {
                                         // If a prerequisite is a class feature, link it
@@ -467,7 +466,7 @@ class Translator {
                             }
                             // If it is an old entry, still containing prerequisites, remove them
                             result += feat.system.description.value.replaceAll(
-                                /<p><strong>(?:Voraussetzungen|Prerequisites)<\/strong>[^<]*<\/p>/g,
+                                /<p><strong>(?:Wymagania|Prerequisites)<\/strong>[^<]*<\/p>/g,
                                 ""
                             );
                         }
@@ -483,10 +482,10 @@ class Translator {
     translateDualLanguage(data, translation) {
         if (!translation || data === translation) {
             return data;
-        } else if (game.settings.get("lang-de-pf2e", "dual-language-names")) {
-            return this.normalizeName(translation) + "/" + data;
+        } else if (game.settings.get("lang-pl-pf2e", "dual-language-names")) {
+            return translation + "/" + data;
         } else {
-            return this.normalizeName(translation);
+            return translation;
         }
     }
 

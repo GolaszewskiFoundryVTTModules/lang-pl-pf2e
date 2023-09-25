@@ -1,9 +1,23 @@
 @font-face {
-    font-family: "Nodesto2";
-    src: url('./NodestoCapsCondensed2.otf');
+    font-family: "Almendra";
+    src: url('fonts/Almendra-Regular.woff2') format('woff2'),
+        url('fonts/Almendra-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
-.nodesto,
+@font-face {
+    font-family: "Kingthings";
+    src: url('fonts/Kingthings_Petrock.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Kirsty";
+    src: url('fonts/Kirsty.woff2') format('woff2');
+}
+
+
+/* .nodesto,
 .pf2e.actor .abilities .ability .ability-id,
 .pf2e.actor .abilities .ability .ability-mod,
 .pf2e.actor .abilities .ability-title,
@@ -31,24 +45,244 @@
 .pf2e.actor .spellbook .skill-score,
 .pf2e.actor .statuses .status h4,
 .pf2e.item form .sheet-sidebar .item-summary,
-.pf2e.sheet .sheet-header h1>input {
-    font-family: "Nodesto2", "Signika", "Palatino Linotype", serif !important;
+.pf2e.sheet .sheet-header h1>input,
+.pf2e.item.sheet .sheet-header .details input
+{
+    font-family: "Kirsty", "Signika", "Palatino Linotype", serif !important;
     font-size: 28px;
-}
+} */
 
-.npc .npc-sheet .top-sections .senses .perception label {
+/*Old*/
+.npc .npc-sheet .top-sections .senses .perception label
+{
     flex-basis: 6.5em;
 }
 
-div.compendium li.item h4 a {
+div.compendium li.item h4 a
+{
     font-size: 12px;
 }
 
-h4.entity-name a {
+h4.entity-name a
+{
     font-size: 12px;
 }
 
-.compendium-browser .spell-browser .spell-tags {
+.compendium-browser .spell-browser .spell-tags
+{
     font-size: smaller;
     font-weight: normal;
 }
+
+/*Core*/
+:root
+{
+    --serif-condensed: "Kingthings", "Signika", serif;
+}
+
+/*Ability score editor*/
+.app.window-app.attribute-builder
+{
+    width: 1030px;
+}
+
+.attribute-builder .window-content .row .row-heading
+{
+    width: 330px;
+}
+
+.attribute-builder .window-content .row .attributes
+{
+    grid-template-columns: repeat(6, 110px);
+}
+
+.attribute-builder .window-content .row-column button
+{
+    width: 8.5em;
+}
+
+.fa-solid.fa-lock,
+.attribute-builder .window-content .row-column button > i.key-attribute
+{
+    font-size: smaller;
+    position: absolute;
+    left: 4px;
+    bottom: 50%;
+    transform: translateY(45%);
+}
+
+.attribute-builder .window-content h3,
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation
+{
+    font-family: "Kirsty";
+}
+
+/* # Character Sheet */
+
+/* Sidebar */
+.actor.sheet .crb-style
+{
+    grid: "sidebar header" 75px "sidebar nav" minmax(min-content, max-content) "sidebar content" 1fr/306px 1fr;
+}
+
+.actor.sheet .crb-style aside
+{
+    background-position: center calc(100% - 69px), center bottom;
+    background-size: 299px 100%, 299px 69px;
+}
+
+.actor.sheet .crb-style aside .sidebar {
+    margin-bottom: 69px;
+}
+
+.app.window-app.default.sheet.actor.character {
+    min-width: 925px;
+}
+
+.actor.sheet .crb-style aside .logo {
+    width: auto;
+    height: auto;
+}
+
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details {
+    grid: "img alignment deity" 46px
+    "img details details" auto/120px 190px 1fr;
+}
+
+/* AC */
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details .pc_deity {
+    margin-left: 20px;
+}
+
+.actor.sheet .crb-style aside .sidebar .armor-class {
+    grid: "ac shield-hp shield-footer" auto "shield-data shield-data shield-data" auto;
+}
+
+.actor.sheet .crb-style aside .sidebar .armor-class .shield.hp {
+    background-size: contain;
+}
+
+.actor.sheet .crb-style aside .sidebar .armor-class .shield.ac {
+    background-size: contain;
+}
+
+.actor.sheet .crb-style aside .sidebar .armor-class .shield {
+    height: 96px;
+    padding: 22px 10px 0 10px;
+}
+
+/* HP */
+.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.temp-hp {
+    margin-right: 0px;
+}
+.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.max-hp {
+    margin-left: 0px;
+}
+.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+    width: auto;
+}
+
+ /* Text Boxes */
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
+    line-height: 1.5;
+    padding: 4px 4px 2px;
+}
+
+/* Context Menu */
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details .detail-item-control #context-menu {
+    left: -121px;
+    min-width: 141px;
+}
+
+/* Spells */
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-attribute-data button {
+    min-width: 170px;
+}
+
+/* Skills */
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .proficiencies-pane .skills-list .skill .button-group{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Item Sheet */
+.pf2e.item.sheet form article.sheet-content > section.sheet-sidebar {
+    flex: 0 0 270px;
+}
+
+.pf2e.item.sheet.weapon form .item-details .precious-material select {
+    width:auto;
+    min-width:0px;
+}
+
+.pf2e.item.sheet.weapon form .item-details label {
+    min-width: 11.5em;
+}
+
+.pf2e.item.sheet form article.sheet-content > section.sheet-sidebar .inventory-details label,
+.pf2e.item.sheet form article.sheet-content > section.sheet-sidebar .feat-details label {
+    max-width: 90%;
+    margin-right: 10px;
+}
+
+.pf2e.item.sheet .sheet-header .details input, .pf2e.item.sheet .sheet-header .details .level {
+    font-size: 2.0rem;
+}
+
+.pf2e.item.sheet form .sheet-navigation .sidebar-summary {
+    flex: 0 0 255px;
+}
+
+.pf2e.item.sheet form .form-group > label:not(.large) {
+    max-width: 90%;
+}
+
+/* Item Container */
+.actor.sheet .item-image {
+    min-width: 24px;
+}
+
+/* Inventory */
+.actor.sheet .inventory .item-weight {
+    flex: 0 0 50px;
+}
+
+/* Organized Play */
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.pfs > section.organized-play {
+    grid-template-columns: 8em 1em 3em;
+}
+
+/* Level Display */
+.actor.sheet.character .crb-style header.char-header .char-level .exp-data {
+    justify-content: center;
+}
+
+.actor.sheet .crb-style header.char-header .char-level .level {
+    height: 57px;
+    width: 54px;
+    background-size: contain;
+    background-position: center;
+    margin: 0 -5px 0 0;
+}
+
+/* Hazard Sheet */
+.sheet.hazard .sidebar {
+    width: 285px;
+}
+
+.sheet.hazard .sidebar .initiative .roll-init {
+    width: 230px;
+}
+
+.sheet.hazard .sidebar .valued-icon {
+    gap: 5px;
+}
+
+.sheet.hazard .sidebar .health.valued-icon {
+    gap: 0px;
+}
+
+/* Text Block ??? */
+/* .actor.sheet .crb-style .sheet-body .sheet-content .tab.biography .biography-content p, .actor.sheet .crb-style .sheet-body .sheet-content .tab.biography .biography-content p + p, .actor.sheet .crb-style .sheet-body .sheet-content .tab.biography .biography-content ul, .actor.sheet .crb-style .sheet-body .sheet-content .tab.biography .biography-content ol {
+    padding: 0 10px;
+} */

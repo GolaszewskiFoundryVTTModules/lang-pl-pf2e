@@ -1,75 +1,66 @@
 {
-    "id": "lang-de-pf2e",
-    "title": "German [Pathfinder 2e]",
-    "version": "4.12.9.0",
-    "compatibility": {
-        "minimum": "10",
-        "verified": "10.291",
-        "maximum": "10.999"
-    },
-    "authors": [
+  "id": "lang-pl-pf2e",
+  "title": "Polish [Pathfinder 2e]",
+  "version": "0.0.5",
+  "compatibility": {
+    "minimum": "11.308",
+    "verified": "11.309",
+    "maximum": "11.999"
+},
+  "authors": [
+    {
+      "name": "Michał Gołaszewski",
+      "flags": {}
+    }
+  ],
+  "description": "WIP Polish Translation for Pathfinder 2e",
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "path": "translation/pl/pl.json"
+  },
+  {
+      "lang": "pl",
+      "name": "Actions",
+      "path": "translation/pl/action-pl.json"
+  },
+  {
+      "lang": "pl",
+      "name": "Rules Elements",
+      "path": "translation/pl/re-pl.json"
+  },
+  {
+      "lang": "pl",
+      "name": "Kingmaker",
+      "path": "translation/pl/kingmaker-pl.json"
+  }
+  ],
+  "relationships": {
+    "systems": [
         {
-            "name": "MSAbaddon"
-        },
-        {
-            "name": "Manfred_7168"
-        },
-        {
-            "name": "raziel321"
-        },
-        {
-            "name": "TWolli"
+            "id": "pf2e",
+            "type": "system",
+            "compatibility": {
+                "minimum": "5.5.3",
+                "verified": "5.5.3"
+            }
         }
     ],
-    "description": "Offizielles Modul für die deutsche PF2E - unterstützt von Ulisses Spiele. Enthält außer den Systemübersetzungen noch deutsche Übersetzungen der Kompendien mit Abstammungen, Hintergründen, Klassen, Ausrüstung, Talenten, Zaubern, Aktionen, Zuständen, u.a.",
-    "languages": [
+    "requires": [
         {
-            "lang": "de",
-            "name": "German",
-            "path": "translation/de/de.json"
-        },
-        {
-            "lang": "de",
-            "name": "Actions",
-            "path": "translation/de/action-de.json"
-        },
-        {
-            "lang": "de",
-            "name": "Rules Elements",
-            "path": "translation/de/re-de.json"
+            "id": "babele",
+            "type": "module",
+            "compatibility": {
+                "minimum": "2.5.1",
+                "verified": "2.5.1"
+            }
         }
-    ],
-    "relationships": {
-        "systems": [
-            {
-                "id": "pf2e",
-                "type": "system",
-                "compatibility": {
-                    "minimum": "4.12.9",
-                    "verified": "4.12.9"
-                }
-            }
-        ],
-        "requires": [
-            {
-                "id": "babele",
-                "type": "module",
-                "compatibility": {
-                    "minimum": "2.4.0",
-                    "verified": "2.4.0"
-                }
-            }
-        ]
-    },
-    "esmodules": ["src/babele-register.js"],
-    "system": ["pf2e"],
-    "packs": [],
-    "scripts": ["src/translator/translator.js"],
-    "styles": ["style.css"],
-    "url": "https://github.com/Foundry-VTT-PF2-German/lang-de-pf2e",
-    "manifest": "https://github.com/Foundry-VTT-PF2-German/lang-de-pf2e/releases/latest/download/module.json",
-    "download": "https://github.com/Foundry-VTT-PF2-German/lang-de-pf2e/releases/latest/download/lang-de-pf2e.zip",
-    "bugs": "https://github.com/Foundry-VTT-PF2-German/lang-de-pf2e/issues",
-    "readme": "https://github.com/Foundry-VTT-PF2-German/lang-de-pf2e/blob/main/README.md",
-    "changelog": "https://github.com/Foundry-VTT-PF2-German/lang-de-pf2e/blob/main/CHANGELOG.md"
+    ]
+},
+"esmodules": ["src/babele-register.js"],
+"system": ["pf2e"],
+"packs": [],
+"scripts": ["src/translator/translator.js"],
+"styles": ["style.css"]
 }

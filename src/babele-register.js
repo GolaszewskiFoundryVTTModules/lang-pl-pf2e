@@ -27,9 +27,9 @@ function removeMismatchingTypes(fallback, other = {}) {
 
 Hooks.once("init", () => {
     if (typeof Babele !== "undefined") {
-        game.settings.register("lang-de-pf2e", "dual-language-names", {
-            name: "Namen in Deutsch und Englisch",
-            hint: "Zusätzlich zum deutschen Namen wird auch der englische Name verwendet.",
+        game.settings.register("lang-pl-pf2e", "dual-language-names", {
+            name: "Nazwy po Polsku i Angielsku",
+            hint: "Oprócz nazwy polskiej używa się również nazwy angielskiej.",
             scope: "world",
             type: Boolean,
             default: false,
@@ -40,20 +40,20 @@ Hooks.once("init", () => {
         });
 
         Babele.get().register({
-            module: "lang-de-pf2e",
-            lang: "de",
-            dir: "translation/de/compendium",
+            module: "lang-pl-pf2e",
+            lang: "pl",
+            dir: "translation/pl/compendium",
         });
 
         Babele.get().registerConverters({
-            normalizeName: (_data, translation) => {
-                return game.langDePf2e.normalizeName(translation);
-            },
+            // normalizeName: (_data, translation) => {
+            //     return game.langPlPf2e.normalizeName(translation);
+            // },
             translateActorDescription: (data, translation) => {
-                return game.langDePf2e.translateActorDescription(data, translation);
+                return game.langPlPf2e.translateActorDescription(data, translation);
             },
             translateActorItems: (data, translation, dataObject, translatedCompendium, translationObject) => {
-                return game.langDePf2e.translateActorItems(
+                return game.langPlPf2e.translateActorItems(
                     data,
                     translation,
                     dataObject,
@@ -62,70 +62,70 @@ Hooks.once("init", () => {
                 );
             },
             translateDualLanguage: (data, translation) => {
-                return game.langDePf2e.translateDualLanguage(data, translation);
+                return game.langPlPf2e.translateDualLanguage(data, translation);
             },
             translateDuration: (data) => {
-                return game.langDePf2e.translateValue("duration", data);
+                return game.langPlPf2e.translateValue("duration", data);
             },
             translateHeightening: (data, translation) => {
-                return game.langDePf2e.dynamicObjectListMerge(
+                return game.langPlPf2e.dynamicObjectListMerge(
                     data,
                     translation,
-                    game.langDePf2e.getMapping("heightening", true)
+                    game.langPlPf2e.getMapping("heightening", true)
                 );
             },
             translateJournal: (pages, translation) => {
-                return game.langDePf2e.translateJournal(pages, translation);
+                return game.langPlPf2e.translateJournal(pages, translation);
             },
             translateRange: (data) => {
-                return game.langDePf2e.translateValue("range", data);
-            },
+               return game.langPlPf2e.translateValue("range", data);
+           },
             translateRules: (data, translation) => {
-                return game.langDePf2e.translateRules(data, translation);
+                return game.langPlPf2e.translateRules(data, translation);
             },
-            translateSource: (data) => {
-                return game.langDePf2e.translateValue("source", data);
+           translateSource: (data) => {
+               return game.langPlPf2e.translateValue("source", data);
             },
             translateSpellVariant: (data, translation) => {
-                return game.langDePf2e.dynamicObjectListMerge(
+                return game.langPlPf2e.dynamicObjectListMerge(
                     data,
                     translation,
-                    game.langDePf2e.getMapping("item", true)
+                    game.langPlPf2e.getMapping("item", true)
                 );
             },
             translateTime: (data) => {
-                return game.langDePf2e.translateValue("time", data);
-            },
+               return game.langPlPf2e.translateValue("time", data);
+           },
             translateTokenName: (data, translation, _dataObject, _translatedCompendium, translationObject) => {
-                return game.langDePf2e.translateTokenName(data, translation, translationObject);
+                return game.langPlPf2e.translateTokenName(data, translation, translationObject);
             },
             updateActorImage: (data, _translations, dataObject, translatedCompendium) => {
-                return game.langDePf2e.updateImage("portrait", data, dataObject, translatedCompendium);
+                return game.langPlPf2e.updateImage("portrait", data, dataObject, translatedCompendium);
             },
             updateTokenImage: (data, _translations, dataObject, translatedCompendium) => {
-                return game.langDePf2e.updateImage("token", data, dataObject, translatedCompendium);
+                return game.langPlPf2e.updateImage("token", data, dataObject, translatedCompendium);
             },
         });
     }
 });
 
-Hooks.once("ready", () => {
-    const pack = game.packs.get("pf2e.feats-srd");
-    // Alle Felder die für das Filtern gebraucht werden
-    const fields = [
-        "system.prerequisites.value",
-        "system.source.value",
-        "system.level.value",
-        "system.description.value",
-        "name",
-        "originalName",
-    ];
-    // Erstellt einen neuen Index oder ruft einen bestehenden Index ab wenn alle Felder bereits indiziert sind
-    pack.getIndex({ fields });
-});
+// Hooks.once("ready", () => {
+//     const pack = game.packs.get("pf2e.feats-srd");
+//     // Alle Felder die für das Filtern gebraucht werden
+//     const fields = [
+//         "system.prerequisites.value",
+//         "system.source.value",
+//         "system.level.value",
+//         "system.description.value",
+//         "name",
+//         "originalName",
+//     ];
+//     // Erstellt einen neuen Index oder ruft einen bestehenden Index ab wenn alle Felder bereits indiziert sind
+//     pack.getIndex({ fields });
+// });
 
 Hooks.once("i18nInit", () => {
-    if (game.i18n.lang === "de") {
+    if (game.i18n.lang === "pl") {
         const fallback = game.i18n._fallback;
         removeMismatchingTypes(fallback, game.i18n.translations);
     }

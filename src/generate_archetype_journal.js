@@ -4,7 +4,7 @@ import { getConfigParameter, readJSONFile } from './config_helper.js';
 
 const startingPoint = process.argv[2];
 if (startingPoint === undefined) {
-    throw new Error('Bitte gebe den englischen Namen des Zugangs als ersten Parameter an, z.B. node generate_archetype_journal.js "Zombie Dedication" - Anführungsstriche sind bei Namen mit Leerzeichen erforderlich');
+    throw new Error('Podaj angielską nazwę dostępu jako pierwszy parametr, np. node generate_archetype_journal.js "Zombie Dedication" - cudzysłowy są wymagane w przypadku nazw ze spacjami.');
 }
 
 const featNameToOriginalDataMap = new Map();
@@ -38,7 +38,7 @@ const featNameToOriginalDataMap = new Map();
 }
 
 if (!featNameToOriginalDataMap.has(startingPoint)) {
-    throw new Error(`Der angegebene Zugang "${startingPoint}" wurde nicht gefunden. Bitte gebe den englischen Namen des Zugangs als ersten Parameter an, z.B. node generate_archetype_journal.js "Zombie Dedication" - Anführungsstriche sind bei Namen mit Leerzeichen erforderlich`);
+    throw new Error(`Określony dostęp"${startingPoint}" nie został znaleziony. Podaj angielską nazwę dostępu jako pierwszy parametr, np. node generate_archetype_journal.js "Zombie Dedication" - cudzysłowy są wymagane w przypadku nazw ze spacjami.`);
 }
 
 const includedFeatNames = [startingPoint];
@@ -62,7 +62,7 @@ while (foundNewFeats) {
     }
 }
 
-const featsTranslated = readJSONFile('./translation/de/compendium/pf2e.feats-srd.json');
+const featsTranslated = readJSONFile('./translation/pl/compendium/pf2e.feats-srd.json');
 
 const feats = [];
 for (const includedFeatName of includedFeatNames) {
@@ -72,7 +72,7 @@ for (const includedFeatName of includedFeatNames) {
     let featText = `<h2>@UUID[Compendium.pf2e.feats-srd.${originalData._id}]{${translatedData.name}} <span style="float: right">TALENT ${level}</span></h2>\n`;
     // Some Dedications have no prerequisites, i.e., Demolitionist
     if (translatedData.prerequisites) {
-        featText += `<p><strong>Voraussetzungen</strong> ${translatedData.prerequisites.map((prerequisite) => { return prerequisite.value }).join(', ')}</p>\n`;
+        featText += `<p><strong>Wymagania</strong> ${translatedData.prerequisites.map((prerequisite) => { return prerequisite.value }).join(', ')}</p>\n`;
         // If the description includes any parameters with <p><strong>, e.g., trigger, it includes its own horizontal line, otherwise add one below the prerequisites
         if (!translatedData.description.startsWith('<p><strong>')) {
             featText += '<hr>\n';
@@ -102,6 +102,6 @@ feats.sort((feat1, feat2) => {
     }
 });
 
-const archetypeText = '<p>Hier Beschreibungstext einfügen + ggfs. Weitere Talente + ggfs. zusätzliche Regelelemente</p>\n' + feats.map((feat) => { return feat.text; }).join('\n');
+const archetypeText = '<p>Wstaw tutaj tekst opisu + jeśli dotyczy, dalsze talenty + jeśli dotyczy, dodatkowe elementy reguły</p>\n' + feats.map((feat) => { return feat.text; }).join('\n');
 
 console.log(archetypeText);

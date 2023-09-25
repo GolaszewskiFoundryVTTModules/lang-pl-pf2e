@@ -9,9 +9,10 @@ const PATHS = [
     'src/babele-register.js',
     'src/translator',
     'static',
-    'translation/de',
+    'translation/pl',
     'LICENSE',
 ];
+
 
 let targetFolder = process.argv[2];
 if ((targetFolder === undefined) && (existsSync(CONFIG_FILE))) {
@@ -21,7 +22,7 @@ if ((targetFolder === undefined) && (existsSync(CONFIG_FILE))) {
 
 // Default value in case no folder was given and no preference was found in the config file
 if (targetFolder === undefined) {
-    targetFolder = './lang-de-pf2e';
+    targetFolder = './lang-pl-pf2e';
 }
 
 // Check if folder exists and eventually create it

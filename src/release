@@ -3,7 +3,7 @@
 set -o errexit
 echo -n 'version: '
 read VERSION
-BASE_URL='https://gitlab.com/manfred_7168/foundryvtt-pathfinder2e-lang-de'
+BASE_URL='https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie'
 MASTER_FILES_URL="$BASE_URL/-/raw/master"
 jq --slurp '.[0] * .[1]' module.json - > module-new.json <<EOF
 {

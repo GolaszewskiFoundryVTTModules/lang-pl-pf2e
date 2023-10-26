@@ -195,7 +195,7 @@
     },
     "Effect: Breach the Abyss - Negative": {
       "name": "Effect: Breach the Abyss - Negative",
-      "description": "<p>The creature deals an extra @Damage[2d6[negative]] damage with its weapon.</p>"
+      "description": "<p>The creature deals an extra @Damage[2d6[void]] damage with its weapon.</p>"
     },
     "Effect: Brutal Rally": {
       "name": "Effect: Brutal Rally",
@@ -403,6 +403,10 @@
       "name": "Effect: Distracting Frolic",
       "description": "<p>The target ally can roll the save twice and take the better result.</p>"
     },
+    "Effect: Distracting Giggle": {
+      "name": "Effect: Distracting Giggle",
+      "description": "<p>Creatures take a –1 status penalty to Will saves.</p>"
+    },
     "Effect: Disturbing Vision": {
       "name": "Effect: Disturbing Vision",
       "description": "<p>The visions last [[/br 1d4 #rounds]]{1d4 rounds}, and while they do, all evil creatures in the area gain a +1 status bonus to all checks.</p>"
@@ -421,7 +425,7 @@
     },
     "Effect: Drain Luck": {
       "name": "Effect: Drain Luck",
-      "description": "<p>The creature must succeed at a @Check[type:will|dc:48] save or gain a -1 status penalty to all checks; it is then temporarily immune to Drain Luck for 1 round. Further damage dealt by the Lantern King's searing rune Strikes increases the status penalty by 1 on a failed save to a maximum status penalty of -4. This status penalty is reduced by one every time the affected creature achieves a critical success on a die roll against a creature that is at least equal to them in level, but otherwise is permanent until removed.</p>"
+      "description": "<p>The creature gains a status penalty to all checks.</p>"
     },
     "Effect: Drink Emotions": {
       "name": "Effect: Drink Emotions",
@@ -617,6 +621,10 @@
       "name": "Effect: Haywire",
       "description": "<p>The creature takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}.</p>"
     },
+    "Effect: Howl of Vengeful Fury": {
+      "name": "Effect: Howl of Vengeful Fury",
+      "description": "<p>Thatchlings gain 5 temporary Hit Points and a +1 status bonus to their Strikes and saving throws.</p>"
+    },
     "Effect: Hunted Fear": {
       "name": "Effect: Hunted Fear",
       "description": "<p>The creature takes a -2 circumstance penalty to Survival checks to avoid getting lost.</p>"
@@ -785,7 +793,7 @@
     },
     "Effect: Necrotic Field": {
       "name": "Effect: Necrotic Field",
-      "description": "<p>Undead within the aura deal an additional @Damage[1d6[negative]] damage with their natural attacks.</p>"
+      "description": "<p>Undead within the aura deal an additional @Damage[1d6[void]] damage with their natural attacks.</p>"
     },
     "Effect: No Quarter!": {
       "name": "Effect: No Quarter!",
@@ -1316,7 +1324,7 @@
     },
     "source": {
       "converter": "translateSource",
-      "path": "system.source.value"
+      "path": "system.publication.title"
     }
   }
 }

@@ -25,7 +25,7 @@
                 "Title": "Udzielenie Pierwszej Pomocy",
                 "Warning": {
                     "TargetNotDying": "Obrana za cel istota nie umiera.",
-                    "UnknownVariant": "Użyto nieznanego wariantu Udzielania Pierwszej Pomocy {variant}, użyj jednego z wariantów {variants}."
+                    "UnknownVariant": "Użyto nieznanego wariantu Udzielania Pierwszej Pomocy {variant}, użyj jednego spośród {variants}."
                 }
             },
             "Aid": {
@@ -47,139 +47,139 @@
                 "Notes": {
                     "NoTarget": "<strong>Różnica Rozmiarów</strong> Odnosisz karę sytuacyjną -2 do testu jeśli cel jest większy od ciebie o rozmiar, lub -4 jeśli jest jeszcze większy. Otrzymujesz premię sytuacyjną +2 do testu jeśli cel jest mniejszy od ciebie o rozmiar, lub +4 jeśli jest mniejszy o więcej.",
                     "criticalFailure": "<strong>Krytyczna Porażka</strong> Istota uwalnia się i nie jest już przez ciebie @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{pochwycona} ani @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{spętana}.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You slam the foe down and the magical energy overwhelms it. The creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prone}, becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{dazzled} for 1 round, and takes damage equal to [[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2d6 plus your Strength modifier}. The foe is no longer @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{restrained} by you.",
-                    "failure": "<strong>Porażka</strong> You are unable to slam the creature, but your hold on the creature remains.",
-                    "success": "<strong>Sukces</strong> You slam the foe down. The creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prone} and takes damage equal to your [[/r @abilities.str.mod # Damage: Arcane Slam]]{Strength modifier}. The foe is no longer @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{restrained} by you."
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Zwalasz wroga z nóg przytłaczającą magiczną energią. Istota staje się @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{powalona} oraz @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{zamroczona} na 1 rundę i otrzymuje obrażenia w ilości [[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2k6 plus twój modyfikator Siły}. Wróg nie jest już przez ciebie @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{pochwycony} ani @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{spętany}.",
+                    "failure": "<strong>Porażka</strong> Nie jesteś w stanie powalić wroga ale nadal utrzymujesz na nim chwyt.",
+                    "success": "<strong>Sukces</strong> Zwalasz wroga z nóg. Istota staje się @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{powalona} i otrzymuje obrażenia równe twojemu [[/r @abilities.str.mod # Damage: Arcane Slam]]{modyfikatorowi Siły}. Wróg nie jest już przez ciebie @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{pochwycony} ani @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{spętany}."
                 },
-                "Title": "Arcane Slam"
+                "Title": "Arkaniczne Powalenie"
             },
             "AvoidNotice": {
-                "Description": "<p>You attempt a Stealth check to avoid notice while traveling at half speed. If you have the Swift Sneak feat, you can move at full Speed rather than half, but you still can't use another exploration activity while you do so. If you have the Legendary Sneak feat, you can move at full Speed and use a second exploration activity. If you're Avoiding Notice at the start of an encounter, you usually roll a Stealth check instead of a Perception check both to determine your initiative and to see if the enemies notice you (based on their Perception DCs, as normal for Sneak, regardless of their initiative check results).</p>",
+                "Description": "<p>Wykonujesz test Skradania Się aby unikać wykrycia i poruszasz się z połową prędkości. Jeśli masz atut Szybkiego Przekradania możesz poruszać się z pełną prędkością, ale nadal nie możesz wykonywać w tym samym czasie żadnej innej aktywności eksploracji. Jeśli masz atut Legendarnego Przekradania możesz poruszać się pełną prędkością oraz wykonywać w tym czasie inną aktywność eksploracji. Jeśli Unikasz Wykrycia w momencie rozpoczęcia starcia na ogół rzucasz test Skradania Się zamiast Percepcji zarówno na rzecz określenia swojej inicjatywy jak i tego czy zauważają cię wrogowie (niezależnie od wyniku ich inicjatywy, w oparciu o ich ST Percepcji jak zwykle przy Przekradaniu Się).</p>",
                 "Notes": {
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You're @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{undetected} by the creature during your movement and remain undetected by the creature at the end of it.<br/><br/>See the @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} action for details.",
-                    "success": "<strong>Sukces</strong> You're @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{undetected} by the creature during your movement and remain undetected by the creature at the end of it.<br/><br/>See the @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} action for details."
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Jesteś @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{niewykryty} przez istotę w trakcie swojego ruchu oraz pozostajesz niewykryty po jego zakończeniu.<br/><br/>Szczegóły znajdziesz w akcji @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradanie Się}.",
+                    "success": "<strong>Sukces</strong> Jesteś @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{niewykryty} przez istotę w trakcie swojego ruchu oraz pozostajesz niewykryty po jego zakończeniu.<br/><br/>Szczegóły znajdziesz w akcji @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradanie Się}."
                 },
-                "Title": "Avoid Notice"
+                "Title": "Unikanie Wykrycia"
             },
             "Balance": {
-                "Description": "<p>You move across a narrow surface or uneven ground, attempting an Acrobatics check against its Balance DC. You are flat-footed while on a narrow surface or uneven ground.</p><p><strong>Krytyczny Sukces</strong> You move up to your Speed.<br><strong>Sukces</strong> You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).<br><strong>Porażka</strong> You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.<br><strong>Krytyczna Porażka</strong> You fall and your turn ends.</p><section class=\"sample-tasks\"><h2>Sample Balance Tasks</h2><p><strong>Untrained</strong> tangled roots, uneven cobblestones</p><p><strong>Trained</strong> wooden beam</p><p><strong>Expert</strong> deep, loose gravel</p><p><strong>Master</strong> tightrope, smooth sheet of ice</p><p><strong>Legendary</strong> razor's edge, chunks of floor falling in midair</p></section>",
+                "Description": "<p>Przemieszczasz się po wąskiej powierzchni lub nierównym terenie, wykonując test akrobatyki przeciw ST Balansowania. Przebywając na wąskiej powierzchni lub nierównym terenie masz opuszczoną gardę.</p><p><strong>Krytyczny Sukces</strong> Poruszasz się na odległość do wartości swojej Prędkości.<br><strong>Sukces</strong> Poruszasz się na odległość do wartości swojej Prędkości traktując nierówność jako trudny teren (przemieszczenie się na pole kosztuje dodatkowe 5 stóp ruchu).<br><strong>Porażka</strong> Musisz pozostać w miejscu aby utrzymać równowagę (marnując akcję), lub upadasz. Jeśli upadniesz twoja tura się kończy.<br><strong>Krytyczna Porażka</strong> Upadasz a twoja tura się kończy.</p><section class=\"sample-tasks\"><h2>Przykładowe Wyzwania Balansowania</h2><p><strong>Niewytrenowanie</strong> splątane korzenie, nierówny bruk</p><p><strong>Wytrenowanie</strong> drewniana belka</p><p><strong>Eksperctwo</strong> głęboki i luźny żwir</p><p><strong>Mistrzostwo</strong> lina, gładka tafla lodu</p><p><strong>Legendarność</strong> ostrze brzytwy, kawałki podłogi spadające w powietrzu</p></section>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You fall and your turn ends.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You move up to your Speed.",
-                    "failure": "<strong>Porażka</strong> You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.",
-                    "success": "<strong>Sukces</strong> You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement)."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Upadasz a twoja tura się kończy.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Poruszasz się na odległość do wartości swojej Prędkości.",
+                    "failure": "<strong>Porażka</strong> Musisz pozostać w miejscu aby utrzymać równowagę (marnując akcję), lub upadasz. Jeśli upadniesz twoja tura się kończy.",
+                    "success": "<strong>Sukces</strong> Poruszasz się na odległość do wartości swojej Prędkości traktując nierówność jako trudny teren (przemieszczenie się na pole kosztuje dodatkowe 5 stóp ruchu)."
                 },
-                "Title": "Balance"
+                "Title": "Balansowanie"
             },
             "BonMot": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your quip is atrocious. You take the same penalty an enemy would take had you succeeded. This ends after 1 minute or if you issue another Bon Mot and succeed. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> The target is distracted and takes a -3 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @UUID[Compendium.pf2e.feat-effects.Item.CtrZFI3RV0yPNzTv]{Effect: Bon Mot (Critical Success)}",
-                    "success": "<strong>Sukces</strong> The target is distracted and takes a -2 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Effect: Bon Mot}"
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Twój dowcip jest doprawdy żenujący. Ponosisz taką samą karę, jaką odniósłby wróg po twoim sukcesie. Ten efekt kończy się po 1 minucie lub jeśli wykonasz Bon Mot i odniesiesz sukces. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Efekt: Bon Mot}",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Cel jest rozproszony i ponosi karę statusową -3 do Percepcji i rzutów obronnych Woli na 1 minutę. Cel może przedwcześnie zakończyć ten efekt odpowiadając ripostą na twój bon mot. Może być to pojedyncza akcja o cesze koncentracji lub adekwatny test umiejętności opisujący ripostę. MG określa jakie akcje umiejętności się kwalifikują, chociaż na ogół muszą zajmować one co najmniej 1 akcję. Typowo, riposta jest lingwistyczną akcję opartą na Charyzmie. @UUID[Compendium.pf2e.feat-effects.Item.CtrZFI3RV0yPNzTv]{Efekt: Bon Mot (Critical Success)}",
+                    "success": "<strong>Sukces</strong> Cel jest rozproszony i ponosi karę statusową -2 do Percepcji i rzutów obronnych Woli na 1 minutę. Cel może przedwcześnie zakończyć ten efekt odpowiadając ripostą na twój bon mot. Może być to pojedyncza akcja o cesze koncentracji lub adekwatny test umiejętności opisujący ripostę. MG określa jakie akcje umiejętności się kwalifikują, chociaż na ogół muszą zajmować one co najmniej 1 akcję. Typowo, riposta jest lingwistyczną akcję opartą na Charyzmie. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Efekt: Bon Mot}"
                 },
                 "Title": "Bon Mot"
             },
             "Climb": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You fall. If you began the climb on stable ground, you fall and land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You move up, across, or safely down the incline for 5 feet plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
-                    "success": "<strong>Sukces</strong> You move up, across, or safely down the incline for 5 feet per 20 feet of your land Speed (a total of 5 feet for most PCs, minimum 5 feet if your Speed is below 20 feet)."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Spadasz. Jeśli zacząłeś Wspinaczkę na stabilnym gruncie spadasz i lądujesz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{powalony}.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Bezpiecznie poruszasz się w górę, w poprzek lub w dół stromizny o 5 stóp plus dodatkowe 5 stóp za każde 20 stóp posiadanej Prędkości lądowej (dla większości BG 10 stóp).",
+                    "success": "<strong>Sukces</strong> Bezpiecznie poruszasz się w górę, w poprzek lub w dół stromizny o 5 stóp za każde 20 stóp posiadanej Prędkości lądowej (dla większości BG 5 stóp, minimum 5 stóp jeśli twoja Prędkość lądowa jest mniejsza od 20 stóp)."
                 },
-                "Title": "Climb"
+                "Title": "Wspinaczka"
             },
             "Coerce": {
-                "Description": "<p>With threats either veiled or overt, you attempt to bully a creature into doing what you want. You must spend at least 1 minute of conversation with a creature you can see and that can either see or sense you. At the end of the conversation, attempt an Intimidation check against the target's Will DC, modified by any circumstances the GM determines. The attitudes referenced in the effects below are summarized in the Changing Attitudes sidebar and described in full in the Conditions Appendix.</p><p><strong>Krytyczny Sukces</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate - at least in the short term.<br><strong>Sukces</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you — for example, by reporting you to the authorities or assisting your enemies.<br><strong>Porażka</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.<br><strong>Krytyczna Porażka</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.</p>",
+                "Description": "<p>Próbujesz przymusić istotę do zrobienia tego czego chcesz za pomocą bezpośrednich lub ukrytych gróźb. Musisz spędzić co najmniej minutę na konwersowaniu z istotą, która cię widzi lub w inny sposób wyczuwa twoją obecność. Na koniec interakcji wykonaj test Zastraszania przeciw ST Woli istoty, zmodyfikowany o wszelkie okoliczności wskazane przez MG. Opisane poniżej nastawienia istoty są streszczone w rubryczce Zmiana Nastawienia i wyjaśnione w pełni w definicjach Statusów.</p><p><strong>Krytyczny Sukces</strong> Cel przekazuje ci informacje, których poszukujesz lub zgadza się z tobą kooperować tak długo jak nie zagraża mu bezpośrednia krzywda. Cel jest ci uległy przez czas określony przez MG ale nieprzekraczający 1 dnia, a potem cel staje się nieprzyjazny (o ile jeszcze nie był ci nieprzyjazny lub wrogi). Cel jest jednak zbyt zastraszony aby wziąć na tobie odwet — przynajmniej w krótkiej perspektywie czasu.<br><strong>Sukces</strong> Jak krytyczny sukces, ale kiedy cel stanie się nieprzyjazny może zdecydować się działać przeciw tobie — na przykład zgłaszając cię władzom lub pomagając twoim wrogom.<br><strong>Porażka</strong> Cel nie spełnia twoich żądań i staje się nieprzyjazny, o ile jeszcze nie był ci nieprzyjazny lub wrogi.<br><strong>Krytyczna Porażka</strong> Cel nie spełnia twoich żądań i staje się nieprzyjazny, o ile jeszcze nie był ci nieprzyjazny lub wrogi, oraz nie poddaje się dalszym próbom twoich Wymuszeń przez co najmniej 1 tydzień.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate—at least in the short term.",
-                    "failure": "<strong>Porażka</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.",
-                    "success": "<strong>Sukces</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you—for example, by reporting you to the authorities or assisting your enemies."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Cel nie spełnia twoich żądań i staje się nieprzyjazny, o ile jeszcze nie był ci nieprzyjazny lub wrogi, oraz nie poddaje się dalszym próbom twoich Wymuszeń przez co najmniej 1 tydzień.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Cel przekazuje ci informacje, których poszukujesz lub zgadza się z tobą kooperować tak długo jak nie zagraża mu bezpośrednia krzywda. Cel jest ci uległy przez czas określony przez MG ale nieprzekraczający 1 dnia, a potem cel staje się nieprzyjazny (o ile jeszcze nie był ci nieprzyjazny lub wrogi). Cel jest jednak zbyt zastraszony aby wziąć na tobie odwet — przynajmniej w krótkiej perspektywie czasu.",
+                    "failure": "<strong>Porażka</strong> Cel nie spełnia twoich żądań i staje się nieprzyjazny, o ile jeszcze nie był ci nieprzyjazny lub wrogi.",
+                    "success": "<strong>Sukces</strong> Jak krytyczny sukces, ale kiedy cel stanie się nieprzyjazny może zdecydować się działać przeciw tobie — na przykład zgłaszając cię władzom lub pomagając twoim wrogom."
                 },
-                "Title": "Coerce"
+                "Title": "Wymuszenie"
             },
             "CommandAnAnimal": {
-                "Description": "<p>You issue an order to an animal. Attempt a Nature check against the animal's Will DC. The GM might adjust the DC if the animal has a good attitude toward you, you suggest a course of action it was predisposed toward, or you offer it a treat.</p><p>You automatically fail if the animal is hostile or unfriendly to you. If the animal is helpful to you, increase your degree of success by one step. You might be able to Command an Animal more easily with a feat like Ride.</p><p>Most animals know the Drop Prone, Leap, Seek, Stand, Stride, and Strike basic actions. If an animal knows an activity, such as a horse's Gallop, you can Command the Animal to perform the activity, but you must spend as many actions on Command an Animal as the activity's number of actions. You can also spend multiple actions to Command the Animal to perform that number of basic actions on its next turn; for instance, you could spend 3 actions to Command an Animal to Stride three times or to Stride twice and then Strike.</p><p><strong>Sukces</strong> The animal does as you command on its next turn.<br><strong>Porażka</strong> The animal is hesitant or resistant, and it does nothing.<br><strong>Krytyczna Porażka</strong> The animal misbehaves or misunderstands, and it takes some other action determined by the GM.</p>",
+                "Description": "<p>Wydajesz komendę zwierzęciu. Wykonaj test Przyrody przeciw ST Woli zwierzęcia. MG może dostosować ST jeśli zwierzę jest wobec ciebie pozytywnie nastawione, jeśli sugerujesz naturalny dla niego kierunek działań, lub jeśli oferujesz mu smakołyk.</p><p>Jeśli zwierzę jest wobec ciebie nieprzyjazne lub wrogie, automatycznie odnosisz porażkę. Jeśli zwierzę jest wobec ciebie pomocne zwiększ swój stopień sukcesu o 1. Możesz mieć możliwość łatwiejszego Panowania Nad Zwierzęciem z wykorzystaniem atutu takiego jak Jeździectwo.</p><p>Większość zwierząt zna podstawowe akcje Biegu, Ciosu, Padnięcia, Powstania, Przeskoku oraz Szukania. Jeśli zwierzę za aktywność, taką jak Galop konia, możesz kazać mu ją wykonać w ramach swojej komendy, ale musisz na to poświęcić tyle akcji, ile zajmuje zwierzęciu wykonanie aktywności. Możesz też wydać wiele akcji na rzecz Zapanowania Nad Zwierzęciem aby kazać mu wykonać tę samą ilość akcji w jego turze; przykładowo możesz wydać trzy akcje na Zapanowanie Nad Zwierzęciem aby kazać mu Biec trzy razy lub Biec dwa razy a potem zadać Cios.</p><p><strong>Sukces</strong> W następnej turze zwierzę zachowuje się zgodnie z twoimi poleceniami.<br><strong>Porażka</strong> Zwierzę wacha się lub sprzeciwia i nie robi nic.<br><strong>Krytyczna Porażka</strong> Zwierzę nie rozumie komendy lub jest niesforne i wykonuje inną akcję określoną przez MG.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> The animal misbehaves or misunderstands, and it takes some other action determined by the GM.",
-                    "failure": "<strong>Porażka</strong> The animal is hesitant or resistant, and it does nothing.",
-                    "success": "<strong>Sukces</strong> The animal does as you command on its next turn."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Zwierzę nie rozumie komendy lub jest niesforne i wykonuje inną akcję określoną przez MG.",
+                    "failure": "<strong>Porażka</strong> Zwierzę wacha się lub sprzeciwia i nie robi nic.",
+                    "success": "<strong>Sukces</strong> W następnej turze zwierzę zachowuje się zgodnie z twoimi poleceniami."
                 },
-                "Title": "Command an Animal"
+                "Title": "Zapanuj Nad Zwierzęciem"
             },
             "ConcealAnObject": {
-                "Description": "<p>You hide a small object on your person (such as a weapon of light Bulk). When you try to sneak a concealed object past someone who might notice it, the GM rolls your Stealth check and compares it to this passive observer's Perception DC. Once the GM rolls your check for a concealed object, that same result is used no matter how many passive observers you try to sneak it past. If a creature is specifically searching you for an item, it can attempt a Perception check against your Stealth DC (finding the object on success).</p><p>You can also conceal an object somewhere other than your person, such as among undergrowth or in a secret compartment within a piece of furniture. In this case, characters Seeking in an area compare their Perception check results to your Stealth DC to determine whether they find the object.</p><p><strong>Sukces</strong> The object remains undetected.<br><strong>Porażka</strong> The searcher finds the object.</p>",
+                "Description": "<p>Ukrywasz noszony przy sobie niewielkich rozmiarów (taki jak broń o lekkim Naręczu). Kiedy usiłujesz przemycić obiekt w obecności kogoś kto może to zauważyć, MG rzuca w sekrecie test twojego Skradania Się. Kiedy już MG rzuci twój test na ukrywanie danego przedmiotu używa uzyskanego wyniku niezależnie od tego jak wielu pasywnych obserwatorów będziesz próbował oszukać. Jeśli istota świadomie szuka obiektu może wykonać test Percepcji przeciw twojemu ST Skradania Się (znajdując obiekt przy sukcesie).</p><p>Możesz również ukrywać obiekt nie przy sobie a w innym miejscu, na przykład w poszyciu leśnym lub w sekretnej skrytce mebla. W takim wypadku istoty Szukające w danym obszarze porównują wynik swojego testu na Percepcję z twoim ST Skradania Się aby określić czy znajdują przedmiot.</p><p><strong>Sukces</strong> Obiekt pozostaje niewykryty.<br><strong>Porażka</strong> Szukający odnajduje obiekt.</p>",
                 "Notes": {
-                    "failure": "<strong>Porażka</strong> The searcher finds the object.",
-                    "success": "<strong>Sukces</strong> The object remains undetected."
+                    "failure": "<strong>Porażka</strong> Szukający odnajduje obiekt.",
+                    "success": "<strong>Sukces</strong> Obiekt pozostaje niewykryty."
                 },
-                "Title": "Conceal an Object"
+                "Title": "Ukryj Przedmiot"
             },
             "Craft": {
                 "Details": {
-                    "DaysForNoCost": "Days until no Additional Cost:",
-                    "Discount": "Discount Per Day:",
-                    "LostMaterials": "Lose {cost} of Materials",
-                    "PayFull": "Pay {cost} Full Costs and Craft",
-                    "PayMaterials": "Pay {cost} Material Costs and Craft",
-                    "ReceiveItem": "Receive Item"
+                    "DaysForNoCost": "Dni do braku Dodatkowych Kosztów:",
+                    "Discount": "Zniżka Na Dzień:",
+                    "LostMaterials": "Utrać {cost} w Materiałach",
+                    "PayFull": "Opłać Pełen Koszt {cost} i Wytwórz",
+                    "PayMaterials": "Opłać Koszt Materiałów {cost} i Wytwórz",
+                    "ReceiveItem": "Otrzymaj Przedmiot"
                 },
                 "Error": {
-                    "ItemReferenceMismatch": "Only accepts physical items for Craft from a compendium or the world's Item Directory."
+                    "ItemReferenceMismatch": "Na rzecz wytwarzania akceptowane są tylko fizyczne przedmioty z kompendium lub folderu przedmiotów świata gry."
                 },
                 "Information": {
-                    "LoseMaterials": "{actorName} loses {cost} of materials.",
-                    "PayAndReceive": "{actorName} pays {cost} crafting costs and receives {quantity}x {itemName}.",
-                    "ReceiveItem": "{actorName} receives {quantity}x {itemName}."
+                    "LoseMaterials": "{actorName} traci {cost} w materiałach.",
+                    "PayAndReceive": "{actorName} opłaca {cost} kosztów wytwarzania o otrzymuje {quantity}x {itemName}.",
+                    "ReceiveItem": "{actorName} otrzymuje {quantity}x {itemName}."
                 },
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.",
-                    "failure": "<strong>Porażka</strong> You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.",
-                    "success": "<strong>Sukces</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Nie udaje ci się ukończyć przedmiotu. Marnujesz 10% dostarczonych surowych materiałów, ale resztę udaje ci się odzyskać. Jeśli chcesz spróbować ponownie, musisz zacząć od początku.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Twoje wysiłki są owocne. Każdy dodatkowy dzień spędzony na Wytwarzaniu zmniejsza koszt materiałów niezbędnych do wytworzenia przedmiotu w oparciu o twój poziom + 1 i twoją biegłość w Rzemiośle.",
+                    "failure": "<strong>Porażka</strong> Nie udaje ci się ukończyć przedmiotu. Możesz odzyskać materiały bez strat w ich wartości. Jeśli chcesz spróbować ponownie, musisz zacząć od zera.",
+                    "success": "<strong>Sukces</strong> Twoje wysiłki są owocne. Każdy dodatkowy dzień spędzony na Wytwarzaniu zmniejsza koszt materiałów niezbędnych do wytworzenia przedmiotu w oparciu o twój poziom i twoją biegłość w Rzemiośle."
                 },
                 "SelectItemDialog": {
-                    "CancelButtonLabel": "Cancel",
-                    "CraftButtonLabel": "Craft",
-                    "DropItemZoneLabel": "Drag item here...",
-                    "Title": "Select item to Craft"
+                    "CancelButtonLabel": "Anuluj",
+                    "CraftButtonLabel": "Wytwórz",
+                    "DropItemZoneLabel": "Przeciągnij tu przedmiot...",
+                    "Title": "Wybierz przedmiot do Wytwarzania"
                 },
                 "SelectSpellDialog": {
-                    "CraftButtonLabel": "Craft",
-                    "Title": "Select Spell"
+                    "CraftButtonLabel": "Wytwórz",
+                    "Title": "Wybierz Zaklęcie"
                 },
-                "Title": "Craft",
+                "Title": "Wytwórz",
                 "Warning": {
-                    "CantAddItem": "Could not add items",
-                    "InsufficientCoins": "Insufficient coins",
-                    "MissingItem": "Unable to Craft unknown item with ID {uuid}.",
-                    "NotPhysicalItem": "Specified item {item} is not a physical item."
+                    "CantAddItem": "Nie udało się dodać przedmiotów",
+                    "InsufficientCoins": "Niewystarczająca ilość monet",
+                    "MissingItem": "Nie można wytworzyć nieznanego przedmiotu o ID {uuid}.",
+                    "NotPhysicalItem": "Określony przedmiot {item} nie jest fizycznym przedmiotem."
                 }
             },
             "Crawl": {
-                "Description": "<p>You move 5 feet by crawling and continue to stay prone.</p>",
-                "Title": "Crawl"
+                "Description": "<p>Przemieszczasz się o 5 stóp czołgając się i pozostajesz powalony.</p>",
+                "Title": "Czołganie"
             },
             "CreateADiversion": {
                 "DistractingWords": {
-                    "Title": "Create a Diversion - Distracting Words"
+                    "Title": "Stworzenie Dywersji - Rozpraszające Słowa"
                 },
                 "Gesture": {
-                    "Title": "Create a Diversion - Gesture"
+                    "Title": "Stworzenie Dywersji - Gest"
                 },
                 "Notes": {
-                    "failure": "<strong>Porażka</strong> You don't divert the attention of any creatures whose Perception DC exceeds your result, and those creatures are aware you were trying to trick them.",
-                    "success": "<strong>Sukces</strong> You become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to each creature whose Perception DC is less than or equal to your result. (The hidden condition allows you to @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} away.) This lasts until the end of your turn or until you do anything except Step or use the @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} or the @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} action of the Stealth skill. If you Strike a creature, the creature remains @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} against that attack, and you then become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. If you do anything else, you become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed} just before you act unless the GM determines otherwise."
+                    "failure": "<strong>Porażka</strong> Nie udaje ci się odwrócić uwagi istot, których ST Percepcji wykracza poza wynik twojego rzutu a istoty te stają się świadome, że próbowałeś je oszukać.",
+                    "success": "<strong>Sukces</strong> Stajesz się @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} względem każdej istoty, której ST Percepcji jest mniejszy lub równy wynikowi twojego rzutu. (Status Schowania pozwala ci się @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekraść} w bezpieczne miejsce.) Efekt utrzymuje się do końca tury, lub do momentu aż wykonasz akcję inną niż Krok, @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schowanie Się} lub @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradnięcie Się}. Jeśli zadasz Cios istocie, posiada ona względem niego @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} a ty stajesz się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany}. Jeśli zrobisz cokolwiek innego stajesz się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany} tuż przez rozpoczęciem swojego działania, chyba że MG zarządzi inaczej."
                 },
-                "Title": "Create a Diversion",
+                "Title": "Stworzenie Dywersji",
                 "Trick": {
-                    "Title": "Create a Diversion - Trick"
+                    "Title": "Stworzenie Dywersji - Trik"
                 },
                 "Warning": {
-                    "UnknownVariant": "Unknown variant {variant} used for Create a Diversion, use one of {variants}."
+                    "UnknownVariant": "Użyto nieznanego wariantu Stworzenia Dywersji {variant}, użyj jednego spośród {variants}."
                 }
             },
             "CreateForgery": {
-                "Description": "<p>You create a forged document, usually over the course of a day or a week. You must have the proper writing material to create a forgery. When you Create a Forgery, the GM rolls a secret DC 20 Society check. If you succeed, the forgery is of good enough quality that passive observers can't notice the fake. Only those who carefully examine the document and attempt a Perception or Society check against your Society DC can do so.</p><p>If the document's handwriting doesn't need to be specific to a person, you need only to have seen a similar document before, and you gain up to a +4 circumstance bonus to your check, as well as to your DC (the GM determines the bonus). To forge a specific person's handwriting, you need a sample of that person's handwriting.</p><p>If your check result was below 20, the forgery has some obvious signs of being a fake, so the GM compares your result to each passive observer's Perception DC or Society DC, whichever is higher, using the success or failure results below. Once the GM rolls your check for a document, that same result is used against all passive observers' DCs no matter how many creatures passively observe that document.</p><p>An observer who was fooled on a passive glance can still choose to closely scrutinize the documents on the lookout for a forgery, using different techniques and analysis methods beyond the surface elements you successfully forged with your original check. In that case, the observer can attempt a Perception or Society check against your Society DC (if they succeed, they know your document is a forgery).</p><p><strong>Sukces</strong> The observer does not detect the forgery.<br><strong>Porażka</strong> The observer knows your document is a forgery.</p>",
+                "Description": "<p>Tworzysz falsyfikat dokumentu, na ogół na przestrzeni dnia lub tygodnia. Aby sfałszować dokument musisz posiadać odpowiednie materiały do pisania. Kiedy Tworzysz Falsyfikat, MG rzuca sekretny test Społeczeństwa ST 20. Jeśli zdasz, falsyfikat jest na tyle dobry, że pasywni obserwatorzy nie zdają sobie sprawy z jego fałszywości. Mogą to zauważyć jedynie osoby, które dokładnie przyjrzą się dokumentowi i świadomie podejmą się testu Percepcji lub Społeczeństwa przeciwko twojemu ST Społeczeństwa.</p><p>Jeśli pismo odręczne widoczne na dokumencie nie musi należeć do określonej osoby, wystarczy że widziałeś wcześniej podobne dokumenty oraz zyskujesz premię sytuacyjną o wartości do +4, zarówno do swojego testu jak i do twojego ST (MG określa jej wysokość). To forge a specific person's handwriting, you need a sample of that person's handwriting.</p><p>If your check result was below 20, the forgery has some obvious signs of being a fake, so the GM compares your result to each passive observer's Perception DC or Society DC, whichever is higher, using the success or failure results below. Once the GM rolls your check for a document, that same result is used against all passive observers' DCs no matter how many creatures passively observe that document.</p><p>An observer who was fooled on a passive glance can still choose to closely scrutinize the documents on the lookout for a forgery, using different techniques and analysis methods beyond the surface elements you successfully forged with your original check. In that case, the observer can attempt a Perception or Society check against your Society DC (if they succeed, they know your document is a forgery).</p><p><strong>Sukces</strong> The observer does not detect the forgery.<br><strong>Porażka</strong> The observer knows your document is a forgery.</p>",
                 "ForgedDocument": {
                     "Description": "<p>An observer who was fooled on a passive glance can still choose to closely scrutinize the documents on the lookout for a forgery, using different techniques and analysis methods beyond the surface elements you successfully forged with your original check. In that case, the observer can attempt a @Check[type:perception|dc:{societyDC}] or @Check[type:society|dc:{societyDC}] check against your Society DC (if they succeed, they know your document is a forgery).</p>",
                     "FailureGmNote": "<p>The forgery has some obvious signs of being a fake, so the GM compares the result of {total} to each passive observer's Perception DC or Society DC, whichever is higher, using the success or failure results below. The same result is used against all passive observers' DCs no matter how many creatures passively observe that document.</p>\n<p>{success}</p>\n<p>{failure}</p>",
@@ -193,7 +193,7 @@
                     "failure": "<strong>Porażka</strong> The observer knows your document is a forgery.",
                     "success": "<strong>Sukces</strong> The observer does not detect the forgery."
                 },
-                "Title": "Create Forgery",
+                "Title": "Stwórz Falsyfikat",
                 "UnspecificHandwriting": "Unspecific Handwriting"
             },
             "DecipherWriting": {
@@ -236,7 +236,7 @@
                 "Notes": {
                     "criticalFailure": "<strong>Krytyczna Porażka</strong> You lose your balance and become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until the start of your next turn.",
                     "criticalSuccess": "<strong>Krytyczny Sukces</strong> You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.",
-                    "success": "<strong>Sukces</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. @UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Effect: Disarm (Success)}"
+                    "success": "<strong>Sukces</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. @UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Efekt: Disarm (Success)}"
                 },
                 "Title": "Disarm"
             },
@@ -620,7 +620,7 @@
                 "AfterExplorationPenalty": "After Exploration",
                 "Description": "<p>You try to provide food and shelter for yourself, and possibly others as well, with a standard of living depending on your degree of success. The GM determines the DC based on the nature of the place where you're trying to Subsist. You might need a minimum proficiency rank to Subsist in particularly strange environments. Unlike most downtime activities, you can Subsist after 8 hours or less of exploration, but if you do, you take a –5 penalty.</p><p><strong>Krytyczny Sukces</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.<br><strong>Sukces</strong> You find enough food and shelter with basic protection from the elements to provide you a subsistence living.<br><strong>Porażka</strong> You're exposed to the elements and don't get enough food, becoming fatigued until you attain sufficient food and shelter.<br><strong>Krytyczna Porażka</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing.</p><section class=\"sample-tasks\"><h2>Sample Subsist Tasks</h2><p><strong>Untrained</strong> lush forest with calm weather or large city with plentiful resources</p><p><strong>Trained</strong> typical hillside or village</p><p><strong>Expert</strong> typical mountains or insular hamlet</p><p><strong>Master</strong> typical desert or city under siege</p><p><strong>Legendary</strong> barren wasteland or city of undead</p></section>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing. @UUID[Compendium.pf2e.other-effects.Item.wHWWHkjDXmJl4Ia6]{Effect: Adverse Subsist Situation}",
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing. @UUID[Compendium.pf2e.other-effects.Item.wHWWHkjDXmJl4Ia6]{Efekt: Adverse Subsist Situation}",
                     "criticalSuccess": "<strong>Krytyczny Sukces</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.",
                     "failure": "<strong>Porażka</strong> You're exposed to the elements and don't get enough food, becoming fatigued until you attain sufficient food and shelter.",
                     "success": "<strong>Sukces</strong> You find enough food and shelter with basic protection from the elements to provide you a subsistence living."
@@ -645,8 +645,8 @@
             "Tamper": {
                 "Notes": {
                     "criticalFailure": "<strong>Krytyczna Porażka</strong> Your tampering backfires dramatically, creating a small explosion from your own tools or gear. You take [[/r (@actor.level)[fire] #Tamper Backfire]]{fire damage equal to your level}.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Your tampering is incredibly effective. If you tampered with a weapon, the enemy takes a -2 circumstance penalty to attack rolls and damage rolls with that weapon. If you tampered with armor, the armor hampers the enemy's movement, making the enemy flat-footed and inflicting a -10-foot penalty to its Speeds. The effect lasts until the enemy Interacts to remove it, regardless of which one you used. @UUID[Compendium.pf2e.feat-effects.Item.rzcpTJU9MvW1x1gz]{Effect: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.Item.o7qm13OmaYOMwgib]{Effect: Weapon Tampered With (Critical Success)}",
-                    "success": "<strong>Sukces</strong> Your tampering is temporarily effective. As critical success, but the effect ends at the start of your next turn, even if the enemy doesn't Interact to end it. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Effect: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Effect: Weapon Tampered With (Success)}"
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Your tampering is incredibly effective. If you tampered with a weapon, the enemy takes a -2 circumstance penalty to attack rolls and damage rolls with that weapon. If you tampered with armor, the armor hampers the enemy's movement, making the enemy flat-footed and inflicting a -10-foot penalty to its Speeds. The effect lasts until the enemy Interacts to remove it, regardless of which one you used. @UUID[Compendium.pf2e.feat-effects.Item.rzcpTJU9MvW1x1gz]{Efekt: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.Item.o7qm13OmaYOMwgib]{Efekt: Weapon Tampered With (Critical Success)}",
+                    "success": "<strong>Sukces</strong> Your tampering is temporarily effective. As critical success, but the effect ends at the start of your next turn, even if the enemy doesn't Interact to end it. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Efekt: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Efekt: Weapon Tampered With (Success)}"
                 },
                 "Title": "Tamper"
             },
@@ -662,18 +662,18 @@
             "TreatDisease": {
                 "Description": "<p>You spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease's DC. After you attempt to Treat a Disease for a creature, you can't try again until after that creature's next save against the disease.</p><p><strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br><strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br><strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the disease.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.5oYKYXAexr0vhx84]{Effect: Treat Disease (Critical Failure)}",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.id20P4pj7zDKeLmy]{Effect: Treat Disease (Critical Success)}",
-                    "success": "<strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.Ee2xfKX1yyqGIDZj]{Effect: Treat Disease (Success)}"
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.5oYKYXAexr0vhx84]{Efekt: Treat Disease (Critical Failure)}",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.id20P4pj7zDKeLmy]{Efekt: Treat Disease (Critical Success)}",
+                    "success": "<strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.Ee2xfKX1yyqGIDZj]{Efekt: Treat Disease (Success)}"
                 },
                 "Title": "Treat Disease"
             },
             "TreatPoison": {
                 "Description": "<p>You treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison's DC. After you attempt to Treat a Poison for a creature, you can't try again until after the next time that creature attempts a save against the poison.</p><p><strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br><strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br><strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the poison.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.ESuBosh3t1pXEcBj]{Effect: Treat Poison (Critical Failure)}",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XwCBalKJf3CiEiFa]{Effect: Treat Poison (Critical Success)}",
-                    "success": "<strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XWenziR7J3mwKV4W]{Effect: Treat Poison (Success)}"
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.ESuBosh3t1pXEcBj]{Efekt: Treat Poison (Critical Failure)}",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XwCBalKJf3CiEiFa]{Efekt: Treat Poison (Critical Success)}",
+                    "success": "<strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XWenziR7J3mwKV4W]{Efekt: Treat Poison (Success)}"
                 },
                 "Title": "Treat Poison"
             },
@@ -758,6 +758,14 @@
                 "Nonexisting": "Specified variant '{variant}' does not exist for action '{action}'"
             }
         },
-        "Action": {}
+        "Action": {
+            "ApplyEffect": "Zastosuj Efekt",
+            "ExpandDescription": "Rozwiń Opis",
+            "Range": {
+              "IncrementN": "Inkrement Zasięgu {n} stóp",
+              "MaxN": "Zasięg {n} stóp"
+            },
+            "Use": "Użyj"
+        }
     }
 }

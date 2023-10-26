@@ -196,6 +196,9 @@
         "spell->Summon Fiend (Augur Velstrac Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]\nSummon Fiend (Augur Velstrac Only)"
         },
+        "spell->Light": {
+          "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+        },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
         },
@@ -390,9 +393,6 @@
       "name": "Bloody Blade Mercenary",
       "blurb": "Human (half-orc) ranger 1",
       "items": {
-        "weapon->Longsword": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
-        },
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
@@ -492,7 +492,7 @@
           "description": "<p>Calmont draws his weapon and attacks with the same motion. He Interacts to draw a weapon, then Strikes with that weapon.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Calmont deals 1d6 extra damage to off-guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Calmont deals 1d6 extra damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Surprise Attack": {
           "name": "Surprise Attack",
@@ -627,9 +627,6 @@
         },
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
-        },
-        "weapon->Longsword": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
         },
         "strike-melee->Longsword": {
           "name": "Longsword"
@@ -965,9 +962,6 @@
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
         },
-        "weapon->Longsword": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
-        },
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
@@ -1077,7 +1071,7 @@
         },
         "action->Breath-Seared Sword": {
           "name": "Breath-Seared Sword",
-          "description": "<p>The dragonscarred dead's weapon is magically scorched by a dragon's breath. When wielded by the dragonscarred dead who carried it in life, the sword deals an extra @Damage[2d6[negative]] damage and @Damage[3d6[fire]] damage. In the hands of any other creature, it is merely a broken greatsword.</p>"
+          "description": "<p>The dragonscarred dead's weapon is magically scorched by a dragon's breath. When wielded by the dragonscarred dead who carried it in life, the sword deals an extra @Damage[2d6[void]] damage and @Damage[3d6[fire]] damage. In the hands of any other creature, it is merely a broken greatsword.</p>"
         },
         "action->Glare of Rage": {
           "name": "Glare of Rage",
@@ -1130,23 +1124,23 @@
         },
         "action->1-2 Acid Rain": {
           "name": "1-2 Acid Rain",
-          "description": "<p>A torrent of acid drenches creatures in a 20-foot burst. Creatures in the area take @Damage[6d10[acid]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail also take @Damage[5[persistent,acid]] damage.</p>"
+          "description": "<p>A torrent of acid drenches creatures in a @Template[type:burst|distance:20]. Creatures in the area take @Damage[6d10[acid]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail also take @Damage[5[persistent,acid]] damage.</p>"
         },
         "action->3-4 Freezing Wind": {
           "name": "3-4 Freezing Wind",
-          "description": "<p>A barrage of freezing wind and hail assaults all creatures in a 20-foot burst. Creatures in the area take @Damage[3d10[cold]] damage and @Damage[3d10[bludgeoning]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+          "description": "<p>A barrage of freezing wind and hail assaults all creatures in a @Template[type:burst|distance:20]. Creatures in the area take @Damage[3d10[cold],3d10[bludgeoning]]{3d10 cold damage and 3d10 bludgeoning damage} (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
         },
         "action->5-6 Bolts of Lightning": {
           "name": "5-6 Bolts of Lightning",
-          "description": "<p>Several bolts of lightning strike all creatures in a 20-foot burst. Creatures in the area take @Damage[6d10[electricity]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail their saves become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
+          "description": "<p>Several bolts of lightning strike all creatures in a @Template[type:burst|distance:20]. Creatures in the area take @Damage[6d10[electricity]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail their saves become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
         },
         "action->7-8 Flaming Vortex": {
           "name": "7-8 Flaming Vortex",
-          "description": "<p>Gouts of flame fall on all creatures in a 20-foot burst. Creatures in the area take @Damage[6d10[fire]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail their saves also take @Damage[5[persistent,fire]] damage.</p>"
+          "description": "<p>Gouts of flame fall on all creatures in a @Template[type:burst|distance:20]. Creatures in the area take @Damage[6d10[fire]] damage (@Check[type:reflex|dc:42|basic:true] save). Creatures that critically fail their saves also take @Damage[5[persistent,fire]] damage.</p>"
         },
         "action->9-10 Poison Miasma": {
           "name": "9-10 Poison Miasma",
-          "description": "<p>Poisonous mist rolls forth, covering a 20-foot burst for 1 round. Creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and creatures outside it become concealed to creatures within it. Creatures within the mist take @Damage[6d10[poison]] damage (@Check[type:fortitude|dc:42|basic:true] save). Creatures that critically fail their saves become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>"
+          "description": "<p>Poisonous mist rolls forth, covering a @Template[type:burst|distance:20] for 1 round. Creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and creatures outside it become concealed to creatures within it. Creatures within the mist take @Damage[6d10[poison]] damage (@Check[type:fortitude|dc:42|basic:true] save). Creatures that critically fail their saves become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>"
         }
       }
     },
@@ -1270,7 +1264,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
         },
         "consumable->Black Adder Venom": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
         },
         "strike-melee->Cold Iron Dagger": {
           "name": "Cold Iron Dagger"
@@ -1292,7 +1286,7 @@
           "description": "<p>The Ekujae guardian makes two Strikes against the same target, one with each of their daggers. The guardian combines the damage of any attacks that hit and applies precision damage, resistance, and weaknesses only once. Both attacks count toward the guardian's multiple attack penalty, but the penalty increases only after both attacks.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>1d6 precision</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The ekujae guardian deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Woodland Stride": {
           "name": "Woodland Stride",
@@ -1319,7 +1313,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aAbfKn8maGjJjk2W]\nMage Armor"
         },
         "equipment->Flawed Orb of Gold Dragonkind": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9Ptn7yy2QeM8taU8]\n<p>Each of the legendary <em>Orbs of Dragonkind</em> contains the essence and personality of a powerful dragon. The <em>Orb of Gold Dragonkind</em> was the most powerful of them all, until it was shattered by Mengkare's draconic breath. Reconstructed at great expense by enslaved spellcasters toiling under the Scarlet Triad's watch, the <em>Flawed Orb of Gold Dragonkind</em> is a shadow of its prior self, yet it remains a potent weapon against dragons of all types.</p>\n<p>While carried, the <em>Flawed Orb of Gold Dragonkind</em> grants its owner resistance 30 to the Breath Weapons of gold dragons. The owner also can sense if there are any dragons within 10f gold dragons. The owner also can sense if there are any dragons within 10 miles, or any gold dragons within 100 miles. When within 1 mile of a dragon, they can determine the direction to the dragon and the dragon's age category (such as young, ancient, or wyrm).</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> envision, Interact</p>\n<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> You attempt to overwhelm a dragon's mind-while you cannot control the dragon, you can render it immobile for a short time. Choose a dragon within 60 feet; the dragon can attempt to resist the orb with a @Check[type:will|dc:30] saving throw (or higher with <em>orb shards</em>). Gold dragons take a -4 circumstance penalty to this saving throw. Any stun from this activation ends if the dragon is attacked or otherwise subject to a hostile act other than that of the orb.</p>\n<hr />\n<p><strong>Critical Success</strong> The dragon is unaffected.</p>\n<p><strong>Success</strong> The dragon is stunned 3.</p>\n<p><strong>Failure</strong> The dragon is stunned for as long as the orb's wielder Sustains the Activation.</p>\n<p><strong>Critical Failure</strong> As failure, but hostile actions don't end the dragon's stun.</p>\n<p><strong>Destruction</strong> The <em>Flawed Orb of Gold Dragonkind</em> is resilient, but its imperfect nature leaves it vulnerable. It can be damaged or even destroyed by mundane attacks (Hardness 40, HP 200, BT 100). It has weakness 30 to the Breath Weapons and Strikes of gold dragons.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9Ptn7yy2QeM8taU8]\n<p>Each of the legendary <em>Orbs of Dragonkind</em> contains the essence and personality of a powerful dragon. The <em>Orb of Gold Dragonkind</em> was the most powerful of them all, until it was shattered by Mengkare's draconic breath. Reconstructed at great expense by enslaved spellcasters toiling under the Scarlet Triad's watch, the <em>Flawed Orb of Gold Dragonkind</em> is a shadow of its prior self, yet it remains a potent weapon against dragons of all types.</p>\n<p>While carried, the <em>Flawed Orb of Gold Dragonkind</em> grants its owner resistance 30 to the Breath Weapons of gold dragons. The owner also can sense if there are any dragons within 10f gold dragons. The owner also can sense if there are any dragons within 10 miles, or any gold dragons within 100 miles. When within 1 mile of a dragon, they can determine the direction to the dragon and the dragon's age category (such as young, ancient, or wyrm).</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> envision, Interact</p>\n<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> You attempt to overwhelm a dragon's mind-while you cannot control the dragon, you can render it immobile for a short time. Choose a dragon within 60 feet; the dragon can attempt to resist the orb with a @Check[type:will|dc:30] saving throw (or higher with <em>orb shards</em>). Gold dragons take a -4 circumstance penalty to this saving throw. Any stun from this activation ends if the dragon is attacked or otherwise subject to a hostile act other than that of the orb.</p>\n<hr />\n<p><strong>Critical Success</strong> The dragon is unaffected.</p>\n<p><strong>Success</strong> The dragon is stunned 3.</p>\n<p><strong>Failure</strong> The dragon is stunned for as long as the orb's wielder Sustains the Activation.</p>\n<p><strong>Critical Failure</strong> As failure, but hostile actions don't end the dragon's stun.</p>\n<p><strong>Destruction</strong> The <em>Flawed Orb of Gold Dragonkind</em> is resilient, but its imperfect nature leaves it vulnerable. It can be damaged or even destroyed by mundane attacks (Hardness 40, HP 200, BT 100). It has weakness 30 to the Breath Weapons and Strikes of gold dragons.</p>"
         },
         "strike-melee->Staff": {
           "name": "Staff"
@@ -1416,7 +1410,7 @@
         },
         "action->Ghast Fever": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.hA6HsM4i4yPfEsDH]\nGhast Fever",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.hA6HsM4i4yPfEsDH]\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:34]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.hA6HsM4i4yPfEsDH]\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:34]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\nParalysis",
@@ -1427,7 +1421,7 @@
           "description": "<p>When Falrok successfully @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against melee attacks he attempts against it until the end of his next turn. On a critical success, the target is off-guard against all melee attacks until the end of their next turn, not just Falrok's.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>4d6 precision</p>\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Falrok deal 4d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Swift Leap": {
           "name": "Swift Leap",
@@ -1481,7 +1475,7 @@
       "items": {
         "equipment->Shoddy Blunderbuss": {
           "name": "Shoddy Blunderbuss",
-          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span></p>\n<p>The blunderbuss fires an explosive shot that deals @Damage[4d6[bludgeoning],2d10[fire]]{4d6 bludgeoning damage plus 2d10 fire damage} to all creatures in a @Template[type:cone|distance:30] (@Check[type:reflex|dc:26|basic:true|name:Shoddy Blunderbuss Reflex Save|showDC:owner] save).</p>\n<p>When firing the blunderbuss, you must critically succeed at a @Check[type:crafting|dc:20|name:Shoddy Blunderbuss Crafting] or @Check[type:engineering|dc:20|name:Shoddy Blunderbuss Engineering Lore|showDC:owner]{Engineering Lore} check or the weapon explodes, damaging you for the same amount as the creatures in the cone and destroying itself. A successful @Check[type:crafting|dc:22|name:Shoddy Blunderbuss Reveal Unstable Nature|showDC:owner] check is enough to confirm the weapon's unstable nature if someone examines it beforehand.</p>\n<p>Reloading the blunderbuss takes 3 Interact actions: adding 1 dose of gunpowder, adding 1 grapeshot canister, and packing the contents.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span></p>\n<p>The blunderbuss fires an explosive shot that deals @Damage[4d6[bludgeoning],2d10[fire]]{4d6 bludgeoning damage plus 2d10 fire damage} to all creatures in a @Template[type:cone|distance:30] (@Check[type:reflex|dc:26|basic:true|name:Shoddy Blunderbuss Reflex Save|showDC:owner] save).</p>\n<p>When firing the blunderbuss, you must critically succeed at a @Check[type:crafting|dc:20|name:Shoddy Blunderbuss Crafting] or @Check[type:engineering|dc:20|name:Shoddy Blunderbuss Engineering Lore|showDC:owner]{Engineering Lore} check or the weapon explodes, damaging you for the same amount as the creatures in the cone and destroying itself. A successful @Check[type:crafting|dc:22|name:Shoddy Blunderbuss Reveal Unstable Nature|showDC:owner] check is enough to confirm the weapon's unstable nature if someone examines it beforehand.</p>\n<p>Reloading the blunderbuss takes 3 Interact actions: adding 1 dose of gunpowder, adding 1 grapeshot canister, and packing the contents.</p>"
         },
         "equipment->Monocle": {
           "name": "Monocle"
@@ -1555,7 +1549,7 @@
         },
         "action->Ghast Fever": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.hA6HsM4i4yPfEsDH]\nGhast Fever",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.hA6HsM4i4yPfEsDH]\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.hA6HsM4i4yPfEsDH]\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
         },
         "action->Mauler": {
           "name": "Mauler",
@@ -1791,7 +1785,7 @@
           "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Heuberk's next melee attack.</p>\n<hr />\n<p><strong>Effect</strong> Heuberk points out a lapse in the creature's defenses. The creature is off-guard against all melee attacks attempted by any of Heuberk's allies who hear and understand this instruction until the start of Heuberk's next turn.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>2d6 precision damage</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hueberk deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "lore->Mercantile Lore": {
           "name": "Mercantile Lore"
@@ -1805,7 +1799,7 @@
       "items": {
         "consumable->Wyvern Poison [Applied to 4 Bolts]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\nWyvern Poison [Applied to 4 Bolts]",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\n<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26|name:Wyvern Poison]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage (1 round)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\n<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26|name:Wyvern Poison]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage (1 round)</p>"
         },
         "consumable->Infused Reagents": {
           "name": "Infused Reagents"
@@ -1831,7 +1825,7 @@
           "description": "<p><strong>Cost</strong> 1 batch of infused reagents.</p>\n<p><strong>Requirements</strong> Hezle must be adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Effect</strong> Hezle throws a mix of special powders centered on a corner of her space, creating a plume of smoke filling a @Template[type:burst|distance:5] until the end of her turn that causes her to be @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}. She then immediately @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaks}, but must end her movement in a space that's not adjacent to any enemies.</p>\n<p>All creatures other than Hezle in the smoke cloud must attempt a @Check[type:fortitude|dc:26] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>2d6 precision damage</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hezle deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Staff Mastery": {
           "name": "Staff Mastery",
@@ -1992,9 +1986,6 @@
         "weapon->Frost Vial (Major) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\nFrost Vial (Major) [Infused]"
         },
-        "armor->+2 Greater Resilient Chain Shirt": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n+2 Greater Resilient Chain Shirt"
-        },
         "equipment->Alchemist's Tools": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]\n<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
         },
@@ -2054,9 +2045,6 @@
       "name": "Ingnovim's Assistant",
       "hpDetails": "fast healing 20",
       "items": {
-        "weapon->Longsword": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
-        },
         "armor->+2 Greater Resilient Full Plate": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]\n+2 Greater Resilient Full Plate"
         },
@@ -2068,7 +2056,7 @@
         },
         "action->Death Throes": {
           "name": "Death Throes",
-          "description": "<p>When one of Ingnovim's assistants dies, it bursts open in a foul-sounding and smelling explosion of toxic viscera and poisonous vapors. All creatures within a @Template[type:burst|distance:20] must attempt a @Check[type:fortitude|dc:38] save to resist this blast of poison.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[7d8[poison]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[14d8[poison]] damage and @Damage[2d8[persistent,poison]].</p>"
+          "description": "<p>When one of Ingnovim's assistants dies, it bursts open in a foul-sounding and smelling explosion of toxic viscera and poisonous vapors. All creatures within a @Template[type:burst|distance:20] must attempt a @Check[type:fortitude|dc:38] save to resist this blast of poison.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[7d8[poison]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[14d8[poison],2d8[persistent,poison]]{14d8 poison damage and 2d8 persistent poison damage}.</p>"
         }
       }
     },
@@ -2132,10 +2120,10 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.yV7Ouzaoe7DHLESI]\nVentriloquism (At Will)"
         },
         "consumable->Nightmare Salt": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dRi775Uhzqgn7aBs]\n<p>This potent poison consists of crystals whose flavor and appearance mimics edible salt but whose effects are deadly: victims experience periods of waking nightmares that overload the senses and eventually result in death through a combination of shock and exhaustion.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:43]</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Maximum Duration</strong> 5 days</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} once every [[/r 1d4]] hours, plus @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute once every [[/r 1d4]] hours, plus frightened 3 and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> frightened 3, plus confused for [[/r 1d4]] minutes, once every hour, plus fatigued (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dRi775Uhzqgn7aBs]\n<p>This potent poison consists of crystals whose flavor and appearance mimics edible salt but whose effects are deadly: victims experience periods of waking nightmares that overload the senses and eventually result in death through a combination of shock and exhaustion.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">T</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:43]</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Maximum Duration</strong> 5 days</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} once every [[/r 1d4]] hours, plus @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute once every [[/r 1d4]] hours, plus frightened 3 and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> frightened 3, plus confused for [[/r 1d4]] minutes, once every hour, plus fatigued (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
         },
         "consumable->Oblivion Essence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5hGJ6CZi0A9OjMd4]\n<p>Created from a daemon's powdered soul gems or refined from the waters of Abaddon's rivers, oblivion essence causes victims to rapidly age and decay.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:42]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[8d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[10d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[12d6[poison]] damage, enfeebled 3, slowed 1 (1 round)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5hGJ6CZi0A9OjMd4]\n<p>Created from a daemon's powdered soul gems or refined from the waters of Abaddon's rivers, oblivion essence causes victims to rapidly age and decay.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:42]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[8d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[10d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[12d6[poison]] damage, enfeebled 3, slowed 1 (1 round)</p>"
         },
         "strike-melee->Corrosive Dagger": {
           "name": "Corrosive Dagger"
@@ -2495,7 +2483,7 @@
         },
         "action->Superior Pack Attack": {
           "name": "Superior Pack Attack",
-          "description": "<p>Laslunn deals an extra [[/r {2d8}]]{2d8 damage} to any creature that's within reach of at least one of her allies.</p>"
+          "description": "<p>Laslunn deals an extra 2d8 damage to any creature that's within reach of at least one of her allies.</p>"
         },
         "action->Twin Shot": {
           "name": "Twin Shot",
@@ -2518,7 +2506,7 @@
         },
         "action->Necrotic Field": {
           "name": "Necrotic Field",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Positive energy effects within the golem's necrotic field deal only half their normal damage. Additionally, all undead within its aura deal an additional @Damage[1d6[negative]] damage with their natural attacks.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.kjP0J97hhoIhbF3M]{Effect: Necrotic Field}</p>"
+          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Positive energy effects within the golem's necrotic field deal only half their normal damage. Additionally, all undead within its aura deal an additional @Damage[1d6[void]] damage with their natural attacks.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.kjP0J97hhoIhbF3M]{Effect: Necrotic Field}</p>"
         },
         "action->Vulnerable to Stone to Flesh": {
           "name": "Vulnerable to Stone to Flesh",
@@ -2534,7 +2522,7 @@
         },
         "action->Necrotic Pulse": {
           "name": "Necrotic Pulse",
-          "description": "<p>Each creature in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:32|name:Necrotic Pulse] save or take @Damage[1d6[persistent,negative]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy.</p>\n<p data-visibility=\"owner\">The golem can't use Necrotic Pulse again for [[/br 1d4 #Recharge Necrotic Pulse]]{1d4 rounds}.</p>"
+          "description": "<p>Each creature in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:32|name:Necrotic Pulse] save or take @Damage[1d6[persistent,void]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy.</p>\n<p data-visibility=\"owner\">The golem can't use Necrotic Pulse again for [[/br 1d4 #Recharge Necrotic Pulse]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -2669,11 +2657,8 @@
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
         },
-        "armor->+1 Chain Shirt": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n+1 Chain Shirt"
-        },
         "equipment->Hunter's Arrowhead": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.JCGsj7iY88o9uTP5]\n<p>This arrowhead-shaped charm is not meant to be affixed to an arrow, but instead to be carried in a pocket or inside of a quiver. A <em>hunter's arrowhead</em> is etched with images sacred to the elven god Ketephys.</p>\n<p>If you carry one on your person, you are infused with great skill at hunting, and gain a +1 item bonus to Survival skill checks and attack rolls against any creature you've currently designated as your prey for the Hunt Prey ranger ability (note that the bonus to attack rolls is an item bonus, and therefore not cumulative with an item bonus from a magic weapon).</p>\n<p>A hunter's arrowhead is also a religious symbol of Ketephys.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">R</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would miss with an attack made with a bow.</p>\n<hr />\n<p><strong>Effect</strong> You get a +2 circumstance bonus to your attack roll. This can turn a miss into a hit.</p>",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.JCGsj7iY88o9uTP5]\n<p>This arrowhead-shaped charm is not meant to be affixed to an arrow, but instead to be carried in a pocket or inside of a quiver. A <em>hunter's arrowhead</em> is etched with images sacred to the elven god Ketephys.</p>\n<p>If you carry one on your person, you are infused with great skill at hunting, and gain a +1 item bonus to Survival skill checks and attack rolls against any creature you've currently designated as your prey for the Hunt Prey ranger ability (note that the bonus to attack rolls is an item bonus, and therefore not cumulative with an item bonus from a magic weapon).</p>\n<p>A hunter's arrowhead is also a religious symbol of Ketephys.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would miss with an attack made with a bow.</p>\n<hr />\n<p><strong>Effect</strong> You get a +2 circumstance bonus to your attack roll. This can turn a miss into a hit.</p>",
           "rules": {
             "0": {
               "label": "Hunter's Arrowhead (vs. hunted prey)"
@@ -2684,8 +2669,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\nReligious Symbol of Dahak (Gold)"
         },
         "strike-melee->Cinderclaw Gauntlet": {
-          "name": "Cinderclaw Gauntlet",
-          "description": "<p>@Damage[1d6[fire]] damage on a critical hit</p>"
+          "name": "Cinderclaw Gauntlet"
         },
         "strike-melee->Hatchet": {
           "name": "Hatchet"
@@ -2951,7 +2935,7 @@
           "description": "<p>Mialari can use telekinesis to perform manipulate actions that use the Thievery skill at a range of 30 feet, but she takes a -2 circumstance penalty to her check when doing so.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Mialari deals an extra 2d6 precision damage to off-guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Mialari deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Steady Spellcasting": {
           "name": "Steady Spellcasting",
@@ -3034,7 +3018,7 @@
           }
         },
         "consumable->Black Adder Venom": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
         },
         "strike-melee->Vine Lash": {
           "name": "Vine Lash"
@@ -3112,7 +3096,7 @@
           "description": "<p>Nolly doesn't trigger reactions with her movement or with any use of the Thievery skill.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nolly deals an extra 3d6 precision damage to off-guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nolly deals an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         }
       }
     },
@@ -3195,9 +3179,6 @@
     "Promise Guard": {
       "name": "Promise Guard",
       "items": {
-        "weapon->Longsword": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
-        },
         "armor->+2 Greater Resilient Full Plate": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]\n+2 Greater Resilient Full Plate"
         },
@@ -3361,6 +3342,9 @@
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
         },
+        "spell->Light": {
+          "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+        },
         "armor->+2 Greater Resilient Full Plate": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]\n+2 Greater Resilient Full Plate"
         },
@@ -3496,7 +3480,7 @@
           }
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>3d6 precision damage</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad agent deals an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Weapon Trick": {
           "name": "Weapon Trick",
@@ -3509,7 +3493,7 @@
       "items": {
         "consumable->Weeping Midnight (applied to one arrow)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mamIdMfPguGM8QV7]\nWeeping Midnight (applied to one arrow)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mamIdMfPguGM8QV7]\n<p>Alchemists have refined the devastatingly allergenic pollen of the widow orchid to create this venom, which swiftly causes the victim's eyes to leak mucus and swell shut.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36|name:Weeping Midnight]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage, dazzled, and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 round)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mamIdMfPguGM8QV7]\n<p>Alchemists have refined the devastatingly allergenic pollen of the widow orchid to create this venom, which swiftly causes the victim's eyes to leak mucus and swell shut.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">T</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36|name:Weeping Midnight]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage, dazzled, and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 round)</p>"
         },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -3526,7 +3510,7 @@
           "description": "<p>The Scarlet Triad boss <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">Feints</span> a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>4d6 additional precision damage</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad boss deals 4d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         }
       }
     },
@@ -3547,7 +3531,7 @@
         },
         "action->Batter the Fallen": {
           "name": "Batter the Fallen",
-          "description": "<p>The Scarlet Triad Bruiser's kick Strikes deal [[/r {2d6}]]{2d6 extra damage} to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+          "description": "<p>The Scarlet Triad Bruiser's kick Strikes deal 2d6 extra damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
         },
         "action->Brutal Cleave": {
           "name": "Brutal Cleave",
@@ -3587,7 +3571,7 @@
         },
         "action->Dual Abuse": {
           "name": "Dual Abuse",
-          "description": "<p>The enforcer uses the pain of one attack as an opening to deal a devastating second blow. The enforcer makes two attacks against the same target: a scimitar Strike and sap Strike (in any order) or two composite shortbow Strikes. If both attacks hit, the second attack deals an additional [[/r {3d6}]]{3d6 damage}, and the enforcer gives the target one of the following conditions until the end of the enforcer's next turn: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p>This counts as two attacks when calculating the enforcer's multiple attack penalty, but the penalty doesn't increase until after both attacks.</p>"
+          "description": "<p>The enforcer uses the pain of one attack as an opening to deal a devastating second blow. The enforcer makes two attacks against the same target: a scimitar Strike and sap Strike (in any order) or two composite shortbow Strikes. If both attacks hit, the second attack deals an additional 3d6 damage, and the enforcer gives the target one of the following conditions until the end of the enforcer's next turn: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p>This counts as two attacks when calculating the enforcer's multiple attack penalty, but the penalty doesn't increase until after both attacks.</p>"
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
@@ -3639,11 +3623,11 @@
           "name": "Key to Manacles"
         },
         "consumable->Addlebrain": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.d5aCuFS1dhKXhsZ0]\n<p>Certain Scarlet Triad poisoners use toxins like addlebrain to keep captured prisoners docile and compliant for short periods of time until they can be properly shackled and imprisoned. Addlebrain is distilled from a hallucinogenic lichen that can often be found growing in the sewers below particularly large cities like Katapesh.</p>\n<p>Once soaked in special reagents and then dried, a dose of addlebrain must be either lit with flame or tossed into a fire to activate, whereupon it unleashes a cloud of toxin as normal for an inhaled poison.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Inhaled)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (10 minutes)</p>\n<p><strong>Stage 2</strong> Enfeebled 2 and stupefied 2 (1 hour)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, enfeebled 4, and stupefied 4 (1 day)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.d5aCuFS1dhKXhsZ0]\n<p>Certain Scarlet Triad poisoners use toxins like addlebrain to keep captured prisoners docile and compliant for short periods of time until they can be properly shackled and imprisoned. Addlebrain is distilled from a hallucinogenic lichen that can often be found growing in the sewers below particularly large cities like Katapesh.</p>\n<p>Once soaked in special reagents and then dried, a dose of addlebrain must be either lit with flame or tossed into a fire to activate, whereupon it unleashes a cloud of toxin as normal for an inhaled poison.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Inhaled)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (10 minutes)</p>\n<p><strong>Stage 2</strong> Enfeebled 2 and stupefied 2 (1 hour)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, enfeebled 4, and stupefied 4 (1 day)</p>"
         },
         "consumable->Giant Scorpion Venom (Applied to Bolts)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\nGiant Scorpion Venom (Applied to Bolts)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22|name:Giant Scorpion Venom]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22|name:Giant Scorpion Venom]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
         },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -3674,7 +3658,7 @@
         },
         "consumable->Bloodseeker Beak (Affixed to Rapier)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.k6D64EAjcKMf8NZB]\nBloodseeker Beak (Affixed to Rapier)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.k6D64EAjcKMf8NZB]\n<p>This long, hollow proboscis is harvested from the notorious bloodseeker beast and drips a trickle of blood.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> Envision</p>\n<p><strong>Trigger</strong> You hit an off-guard creature with the affixed weapon</p>\n<p>When you activate the beak, you deal an extra 1d4 precision damage on your damage roll. If you deal sneak attack damage to the creature, you also deal @Damage[1d4[bleed]].</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.k6D64EAjcKMf8NZB]\n<p>This long, hollow proboscis is harvested from the notorious bloodseeker beast and drips a trickle of blood.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> Envision</p>\n<p><strong>Trigger</strong> You hit an off-guard creature with the affixed weapon</p>\n<p>When you activate the beak, you deal an extra 1d4 precision damage on your damage roll. If you deal sneak attack damage to the creature, you also deal @Damage[1d4[bleed]].</p>"
         },
         "strike-melee->Rapier": {
           "name": "Rapier"
@@ -3702,7 +3686,7 @@
           "description": "<p><strong>Requirements</strong> The sneak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The sneak attempts to bind the creature's wrists or ankles with the manacles. If the sneak succeeds at an attack roll with a [[/r 1d20+16 #Manacles]]{+16} modifier against the target's AC, they apply the manacles.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>2d6 precision damage</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sneak deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Surprise Attack": {
           "name": "Surprise Attack",
@@ -3736,7 +3720,7 @@
           "description": "<p>The sniper fires one arrow at each creature they choose within a @Template[type:burst|distance:15]. The center of the burst must be within 100 feet of the sniper, but can't be within 30 feet. The sniper makes each attack roll separately. All attacks count toward the sniper's multiple attack penalty, but the penalty increases only after all the attacks are made.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>2d6 precision damage</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sniper deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "action->Swiftness": {
           "name": "Swiftness",
@@ -3778,7 +3762,7 @@
         },
         "action->Pack Attack": {
           "name": "Pack Attack",
-          "description": "<p>The thug deals an extra [[/r {1d8}]]{1d8 damage} to any creature that's within reach of at least two of the thug's allies.</p>"
+          "description": "<p>The thug deals an extra 1d8 damage to any creature that's within reach of at least two of the thug's allies.</p>"
         }
       }
     },
@@ -3812,9 +3796,6 @@
       "hpDetails": "negative healing",
       "senses": "darkvision",
       "items": {
-        "weapon->Halberd": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dgWxsYm0DWHb27h6]\n<p>This polearm has a relatively short, 5-foot shaft. The business end is a long spike with an axe blade attached.</p>"
-        },
         "strike-melee->Halberd": {
           "name": "Halberd"
         },
@@ -4184,9 +4165,6 @@
       "name": "Uri Zandivar",
       "saveDetails": "Perfect Will",
       "items": {
-        "armor->+2 Greater Resilient Chain Mail": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Kf4eJEXnFPuAsseP]\n+2 Greater Resilient Chain Mail"
-        },
         "treasure->Wasp Trapped in Amber": {
           "name": "Wasp Trapped in Amber",
           "description": "<p>Portal Key</p>"
@@ -4410,6 +4388,9 @@
         },
         "spellcastingEntry->Wizard School Spells": {
           "name": "Wizard School Spells"
+        },
+        "spell->Light": {
+          "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
         },
         "spell->Mage Armor": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aAbfKn8maGjJjk2W]\nMage Armor"
@@ -4645,7 +4626,7 @@
         },
         "action->Firebleed": {
           "name": "Firebleed",
-          "description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[type:cone|distance:30], dealing @Damage[6d8[fire]] damage and @Damage[6d8[persistent,fire]] damage (@Check[type:reflex|dc:42|basic:true] save).</p>"
+          "description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[type:cone|distance:30], dealing @Damage[6d8[fire],6d8[persistent,fire]]{6d8 fire damage and 6d8 persistent fire damage} (@Check[type:reflex|dc:42|basic:true] save).</p>"
         },
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:300]{300 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
@@ -4664,7 +4645,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Xotani breathes a blast of flame that deals @Damage[18d6[fire]] damage plus @Damage[4d6[persistent,fire]] damage to all creatures in a @Template[type:cone|distance:70] (@Check[type:reflex|dc:42|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>Xotani breathes a blast of flame that deals @Damage[18d6[fire],4d6[persistent,fire]]{18d6 fire damage plus 4d6 persistent fire damage} to all creatures in a @Template[type:cone|distance:70] (@Check[type:reflex|dc:42|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(8d6+8)[bludgeoning],12d6[fire]], Rupture 35</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -4697,7 +4678,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The Xotanispawn sprays a @Template[type:cone|distance:60] of magma that deals @Damage[10d10[fire]] damage and @Damage[2d6[persistent,fire]] damage to all creatures in the area (@Check[type:reflex|dc:39|basic:true] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The Xotanispawn sprays a @Template[type:cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]]{10d10 fire damage and 2d6 persistent fire damage} to all creatures in the area (@Check[type:reflex|dc:39|basic:true] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Heat Surge": {
           "name": "Heat Surge",
@@ -4746,6 +4727,9 @@
         },
         "weapon->Thunderstone (Greater) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dsMkvuLgpOOGLWDy]\nThunderstone (Greater) [Infused]"
+        },
+        "weapon->Alchemist's Fire (Greater) [Infused]": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\nAlchemist's Fire (Greater) [Infused]"
         },
         "armor->+2 Resilient Leather Armor": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\n+2 Resilient Leather Armor"
@@ -4852,7 +4836,7 @@
     "senses": "system.traits.senses.value",
     "source": {
       "converter": "translateSource",
-      "path": "system.details.source.value"
+      "path": "system.details.publication.title"
     },
     "speed": "system.attributes.speed.details",
     "stealth": "system.attributes.stealth.details",

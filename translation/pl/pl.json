@@ -21,7 +21,7 @@
         "UnknownCombatant": "Nieznany Uczestnik"
     },
     "COMPENDIUM": {
-        "Migrate": "Migruj Kompendium"
+        "MigrationStatus": "Status Migracji"
     },
     "CONTROLS": {
         "AdjustSceneDarkness": "Dostosuj Poziom Ciemności Scen",
@@ -184,7 +184,25 @@
                 "Biography": {
                     "ToggleVisibility": "Przełącz widoczność dla innych graczy"
                 },
-                "Blurb": "{ancestry} {class} Poziomu {level}"
+                "Blurb": "{ancestry} {class} Poziomu {level}",
+                "Proficiency": {
+                    "Attack": {
+                        "Advanced": "Bronie Zaawansowane",
+                        "Martial": "Bronie Wojskowe",
+                        "Simple": "Bronie Proste",
+                        "Title": "Ataki",
+                        "Unarmed": "Ataki bez Broni"
+                    },
+                    "Defense": {
+                        "Heavy": "Pancerz Ciężki",
+                        "HeavyBarding": "Kropierz Ciężki",
+                        "Light": "Pancerz Lekki",
+                        "LightBarding": "Kropierz Lekki",
+                        "Medium": "Pancerz Średni",
+                        "Title": "Obrona",
+                        "Unarmored": "Obrona bez Pancerza"
+                    }
+                }
             },
             "Creature": {
                 "Alliance": {
@@ -232,7 +250,8 @@
                 "SpellPreparation": {
                     "Hint": "Aby przygotować zaklęcie przeciągnij je z tej listy do komórki na twojej karcie postaci.",
                     "HintFlexible": "Aby przygotować zaklęcie zaznacz je tutaj. Aby przygotować sztuczkę, przeciągnij ją z listy na kartę postaci.",
-                    "Title": "Przygotowanie Zaklęć: {actor}"
+                    "Title": "Przygotowanie Zaklęć: {actor}",
+                    "Search": "Wyszukaj Zaklęcia"
                 },
                 "Spellcasting": {
                     "Cantrips": "Sztuczki",
@@ -283,7 +302,9 @@
                         "ControlClick": "[Control-Kliknij] Zwiększ o 10"
                     }
                 },
-                "DistributeCoins": "Rozdaj Monety"
+                "DistributeCoins": "Rozdaj Monety",
+                "Encumbrance": "Obciążenie",
+                "TotalBulk": "Całkowite Naręcze: {bulk}"
             },
             "IWREditor": {
                 "DoubleVs": "Podwójna Przeciw",
@@ -321,7 +342,11 @@
                         "Tooltip": "\"Używanie adekwatnego Obeznania na ogół pozwala na użycie łatwego albo bardzo łatwego ST (przed poprawkami ze względu na rzadkość).\" – CRB str. 506"
                     }
                 },
-                "SimpleSheet": "Prosta Karta BN"
+                "SimpleSheet": "Prosta Karta BN",
+                "SkillsEditor": {
+                    "LorePlaceholder": "Obeznanie w Ciesielce",
+                    "Title": "Edytor Umiejętności ({actor})"
+                }
             },
             "Party": {
                 "InvalidCampaign": {
@@ -355,7 +380,6 @@
                 },
                 "Rest": "Odpoczynek",
                 "SlotAvailable": "Dostępne Miejsce",
-                "Bulk": "Całkowite Naręcze: {bulk}",
                 "ClownCar": {
                     "Deposit": "Umieść Żetony BG",
                     "Retrieve": "Wyciągnij Żetony BG"
@@ -375,6 +399,21 @@
                 "Visibility": {
                     "Restricted": "Ograniczona",
                     "Unrestricted": "Nieograniczona"
+                },
+                "CheckPrompt": {
+                    "AdjustDifficulty": "Dostosuj Trudność",
+                    "ChooseLores": "Wybierz Obeznania",
+                    "ChooseSaves": "Wybierz Rzuty Obronne",
+                    "ChooseSkills": "Wybierz Umiejętności/Percepcję",
+                    "LevelDC": "ST Oparty na Poziomie",
+                    "Post": "Wygeneruj Zapytanie",
+                    "PromptTitle": "Tytuł Zapytania",
+                    "SecretCheck": "Test Sekretny",
+                    "SetDC": "Ustaw ST",
+                    "SimpleDC": "Prosty ST",
+                    "SkillsPerception": "Umiejętności/Percepcja",
+                    "Title": "Wygeneruj Zapytanie o Test",
+                    "TitleShort": "Zapytanie o Test"
                 }
             },
             "Plural": "Aktorzy",
@@ -395,7 +434,6 @@
             "Message": "Wybierz grupę broń lub broń bazową",
             "Title": "Doda Biegłość Bojową"
         },
-        "AddLoreSkill": "Dodaj Umiejętność Obeznania",
         "AddModifierTitle": "Dodaj Modyfikator",
         "AddShortLabel": "Dodaj",
         "AddSpellTitle": "Dodaj Zaklęcie",
@@ -565,7 +603,6 @@
         "Bonus": "Premia",
         "BonusBulk": "Dodatkowe Maksymalne Naręcze",
         "BonusBulkTitle": "Zwiększ lub zmniejsz limit twojego naręcza",
-        "BonusEncumbranceBulkLabel": "Dodatkowe Naręcze Przeciążenia",
         "BonusHPLabel": "Dodatkowe PŻ",
         "BonusHPperLevel": "Dodatkowe PŻ co Poziom",
         "BonusHPperLevelTitle": "Dodawane co poziom (modyfikator KON aplikowany jest niezależnie)",
@@ -577,7 +614,6 @@
             "status": "Premia ze Statusu",
             "untyped": "Premia bez Typu"
         },
-        "BonusLimitBulkLabel": "Dodatkowe Maks. Naręcze",
         "BonusSPLabel": "Dodatkowe PW",
         "BonusSPperLevel": "Dodatkowe PW co Poziom",
         "BonusSPperLevelTitle": "Dodawane co poziom (modyfikator KON aplikowany jest niezależnie)",
@@ -905,12 +941,14 @@
             "Base": "Podstawowe",
             "Dialog": {
                 "Bonus": "Dodatkowo {dice}",
-                "BonusDice": "Dodatkowe Kości",
+                "BonusDice": "{dice} Kości",
                 "CriticalDamageRoll": "Rzut na Obrażenia Krytyczne",
                 "DamageRoll": "Rzut na Obrażenia",
                 "Label": "Znacznik",
                 "None": "Brak",
-                "Splash": "{damageType} Rozpryskowe"
+                "Splash": "{damageType} Rozpryskowe",
+                "BaseDamage": "Obrażenia Bazowe",
+                "DiceHeader": "Kości Obrażeń"
             },
             "IWR": {
                 "ActorIsImmune": "{actor} jest niewrażliwy na {effect}.",
@@ -1039,14 +1077,20 @@
                     "vorpal-adamantine": "worpalny adamantyt",
                     "vorpal-fear": "worpalny strach",
                     "vulnerable-to-sunlight": "wrażliwość na światło słoneczne",
-                    "warpglass": "szkłosnowa",
                     "water": "woda",
                     "weapons": "bronie",
                     "weapons-shedding-bright-light": "bronie roztaczające jasne światło",
                     "metal": "metal",
                     "off-guard": "opuszczona garda",
                     "spells": "zaklęcia",
-                    "wood": "drewno"
+                    "wood": "drewno",
+                    "abysium": "otchłanium",
+                    "djezet": "dżezet",
+                    "inubrix": "inubrix",
+                    "noqual": "noqual",
+                    "persistent-damage": "obrażenia trwałe",
+                    "siccatite": "sikkatyt",
+                    "wounded": "rany"
                 }
             },
             "Hardness": {
@@ -1073,17 +1117,17 @@
                 "lawful": "od praworządności",
                 "mental": "mentalne",
                 "metal": "metal",
-                "negative": "negatywne",
                 "persistent": "trwałe {damageType}",
                 "piercing": "kłute",
                 "poison": "od trucizny",
-                "positive": "pozytywne",
                 "precision": "precyzyjne",
                 "slashing": "cięte",
                 "sonic": "soniczne",
                 "splash": "rozpryskowe",
                 "untyped": "bez typu",
-                "spirit": "dusza"
+                "spirit": "dusza",
+                "vitality": "witalność",
+                "void": "pustka"
             },
             "Scatter": "Obrażenia Rozrzutu"
         },
@@ -1120,9 +1164,7 @@
         "DefensesLabel": "Defensywa",
         "Deity": "Bóstwo",
         "DeityTitle": "Twoje bóstwo",
-        "DeleteConditionQuestion": "Czy na pewno chcesz usunąć status {condition}?",
         "DeleteConditionTitle": "Usuń Status",
-        "DeleteItemQuestion": "Czy na pewno chcesz usunąć:",
         "DeleteItemTitle": "Usuń Przedmiot",
         "DeleteShortLabel": "Usuń",
         "DeleteSpellcastEntryQuestion": "Czy na pewno chcesz usunąć ten wpis o rzucaniu zaklęć?",
@@ -1284,7 +1326,7 @@
             "Master": "Pan",
             "MasterActor": "Aktor Pana",
             "MasterLevel": "Poziom Pana",
-            "MasterSpellcastingAbility": "Cecha Rzucania Zaklęć Pana",
+            "MasterSpellcastingAbility": "Cecha Pana",
             "Offenses": "Ofensywa",
             "Perception": "Percepcja",
             "SelectMaster": "Wybierz pana...",
@@ -1861,6 +1903,14 @@
                     "Zeal": {
                         "Description": "Twój wewnętrzny ogień zwiększa twoją sprawność bojową.",
                         "Label": "Gorliwość"
+                    },
+                    "Metal": {
+                        "Description": "Kontrolujesz ciągliwy i zmiennokształtny metal.",
+                        "Label": "Metal"
+                    },
+                    "Wood": {
+                        "Description": "Władasz nad nieustępliwą potęgą drewna.",
+                        "Label": "Drewno"
                     }
                 },
                 "Domains": {
@@ -1874,13 +1924,15 @@
                     "Hint": "Niemal wszystkie bóstwa posiadają pojedynczą broń, którą obdarzają łaskami, ale w wypadku niektórych bóstw obłaskawioną bronią jest zarówno pewien rodzaj oręża co ataki wręcz.",
                     "Label": "Obłaskawiona Broń"
                 },
-                "FollowerAlignments": "Charaktery Wyznawców"
+                "FollowerAlignments": "Charaktery Wyznawców",
+                "Spellcasting": "Rzucanie Zaklęć"
             },
             "Effect": {
                 "Expiry": {
                     "EndOfTurn": "Koniec Tury",
                     "ExpiresOn": "Czas Przedawnienia:",
-                    "StartOfTurn": "Początek Tury"
+                    "StartOfTurn": "Początek Tury",
+                    "EndOfRound": "Koniec Rundy"
                 },
                 "ShowTokenIcon": "Pokazać kolor żetonu?",
                 "Sustained": "Podtrzymanie",
@@ -1903,7 +1955,8 @@
                         "formula": "Formuła",
                         "value": "Stała Wartość"
                     },
-                    "Add": "Dodaj Odznaczenie"
+                    "Add": "Dodaj Odznaczenie",
+                    "Range": "Zasięg"
                 }
             },
             "Feat": {
@@ -1928,7 +1981,7 @@
                 "Warning": {
                     "InvalidCategory": "Nie można dodać atutu \"{item}\" do kategorii {category}: nieprawidłowy rodzaj atutu.",
                     "TakenAfterLevel1": "Atut {item} musi zostać wybrany na poziomie 1, a {actor} jest na poziomie {actorLevel}.",
-                    "TakenMoreThanMax": "Atut {item} może zostać wybrany maksymalnie {maxTaken} razy, a {actor} wybrał go {timesTaken} razy.",
+                    "TakenMoreThanMax": "{item} może zostać wybrany maksymalnie {maxTakable} razy, a {actor} wybrał go {timesTaken} razy.",
                     "TakenMoreThanOnce": "Atut {item} może zostać wybrany tylko raz, a {actor} wybrał go po raz kolejny."
                 }
             },
@@ -2051,7 +2104,8 @@
                 "New": "Nowy Element Zasad",
                 "RegenerateSlug": "(Re)generuj Slug",
                 "Tab": "Zasady",
-                "Remove": "Usuń Element Zasad"
+                "Remove": "Usuń Element Zasad",
+                "Edit": "Edytuj JSON"
             },
             "SidebarSummary": "Podsumowanie - {type}",
             "Spell": {
@@ -2079,7 +2133,8 @@
                 "MeasuredTemplate": {
                     "Clear": "Wyczyść Umieszczone Szablony",
                     "Place": "Umieść {shape} {size} {unit}"
-                }
+                },
+                "Rank": "Krąg"
             },
             "Weapon": {
                 "CriticalSpecialization": {
@@ -2108,7 +2163,6 @@
                 "HandsLabel": "Ręce",
                 "MandatoryMelee": "Ta bron posiada cechę, której można używać tylko dla broni białych.",
                 "MaterialAndRunes": {
-                    "Hint": "Drogocenne materiały i runy pozwalają na dogłębne dostosowywanie broni. Oprócz poprawy zdolności do ranienia wrogów, wpływają one również na poziom, rzadkość, cenę i nazwę broni. Aby nadpisać zmianę nazwy broni, nadaj jej dowolną niestandardową nazwę lub oznacz ją jako <i>określoną broń magiczną</i>.",
                     "MaterialOption": "{type} ({grade})",
                     "Title": "Kompozycja Materiałowa i Runy"
                 },
@@ -2148,6 +2202,10 @@
             "WorldItemWarning": "To Przedmiot Świata i nie zadziała zapisany w kompendium",
             "CampaignFeature": {
                 "CampaignLabel": "Kampania"
+            },
+            "OtherTags": {
+                "Label": "Inne Tagi",
+                "Hint": "Dodatkowe tagi poza cechami, które mogą pomóc zaklasyfikować przedmiot"
             }
         },
         "ItemBonus0": "0",
@@ -2341,21 +2399,13 @@
                 "Notification": "Zmieniono stan {toggle} na {state}.",
                 "Off": "wyłączony",
                 "On": "włączony"
-            }
+            },
+            "NoCompendiumItem": "Nie można wytworzyć makro z przedmiotu kompendium, który nie jest ani efektem ani statusem."
         },
         "MacroActionNoActionError": "Ta akcja już nie istnieje!",
         "MacroActionNoActorError": "Ten aktor już nie istnieje!",
         "MagicTraditionLabel": "Magiczna Tradycja",
         "MagicTraditionUseSpellLabel": "Używaj Tradycji Zaklęcia",
-        "MartialAdvanced": "Bronie Zaawansowane",
-        "MartialHeavy": "Pacnerz Ciężki",
-        "MartialLight": "Pancerz Lekki",
-        "MartialMartial": "Bronie Wojskowe",
-        "MartialMedium": "Pancerz Średni",
-        "MartialSimple": "Bronie Proste",
-        "MartialSkillsHeader": "Biegłości w Broni i Pancerzu",
-        "MartialUnarmed": "Wręcz",
-        "MartialUnarmored": "Bez Pancerza",
         "MasterAbility": {
             "cha": "Charyzma Pana",
             "con": "Kondycja Pana",
@@ -2419,7 +2469,7 @@
                     "AtWillSpells": "<p>Potwór może rzucać zaklęcia oznaczone jako \"do woli\" nieograniczoną ilość razy nie zużywając do tego komórek zaklęć.</p>",
                     "AttackOfOpportunity": "<p><strong>Aktywator</strong> Istota w zasięgu potwora używa akcji z cechą manipulacji lub ruchu, wykonuje atak dystansowy albo opuszcza pole w procesie wykonywanej przez siebie akcji ruchu.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór wymierza Cios w zwarciu prowokującej reakcję istocie. Jeśli atak trafi krytycznie a aktywatorem reakcji była akcja z cechą manipulacji, potwór rozprasza tę akcję. Ten Cios nie liczy się do obliczania kary za atak wielokrotny ani też podczas jego wykonywania nie należy uwzględniać kary za atak wielokrotny.</p>",
                     "Aura": "<p>Aura potwora automatycznie dotyczy wszystkiego w zasięgu określonej emanacji wokół potwora. Potwór nie musi wydawać akcji aby zarządzać aurą; zamiast tego efekty aury są aplikowane w konkretnych momentach czasu, na przykład kiedy istota skończy swoją turę w aurze lub kiedy istota pierwszy raz wkroczy w zasięg aury.</p>\n<p>Jeśli aura nie robi nic poza zadawaniem obrażeń, wpis o niej nie wymienia nic poza jej promieniem, obrażeniami i rzutem obronnym. Tego typu aury zadają obrażenia kiedy istota wkroczy w jej zasięg oraz kiedy istota rozpocznie turę w jej zasięgu. Istota może odnieść obrażenia od aury tylko raz na rundę.</p>\n<p>MG może uznać, że aura potwora nie ma wpływu na jego sojuszników. Przykładowo istota może być niewrażliwa na przerażającą obecność potwora, jeśli przebywały one razem dostatecznie długo.</p>",
-                    "Buck": "<hr />\n<p>Większość potworów służących jako wierzchowce jest w stanie wierzgać aby zrzucić z siebie uporczywego jeźdźca, ale większość z nich nie użyje tej akcji przeciw zaufanej istocie o ile nie zostanie przestraszona lub źle potraktowana.</p>\n<p><strong>Aktywator</strong> Istota @UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{Dosiada} potwora lub używa akcji @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Wydania Komendy Zwierzęciu} ujeżdżając potwora.</p>\n<hr />\n<p><strong>Efekt</strong> Aktywująca reakcję istota musi wykonać rzut obronny Refleksu o wymienionym ST lub spada z potwora i ląduje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalona}. Przy krytycznej porażce aktywująca efekt istota otrzymuje [[/roll 1d6[bludgeoning]]]{1k6 obrażeń obuchowych} w dodatku do standardowych obrażeń od upadku.</p>",
+                    "Buck": "<hr />\n<p>Większość potworów służących jako wierzchowce jest w stanie wierzgać aby zrzucić z siebie uporczywego jeźdźca, ale większość z nich nie użyje tej akcji przeciw zaufanej istocie o ile nie zostanie przestraszona lub źle potraktowana.</p>\n<p><strong>Aktywator</strong> Istota @UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{Dosiada} potwora lub używa akcji @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Zapanowania Nad Zwierzęciem} ujeżdżając potwora.</p>\n<hr />\n<p><strong>Efekt</strong> Aktywująca reakcję istota musi wykonać rzut obronny Refleksu o wymienionym ST lub spada z potwora i ląduje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalona}. Przy krytycznej porażce aktywująca efekt istota otrzymuje [[/roll 1d6[bludgeoning]]]{1k6 obrażeń obuchowych} w dodatku do standardowych obrażeń od upadku.</p>",
                     "CatchRock": "<p><strong>Wymagania</strong> Potwór musi mieć wolną rękę ale może @UUID[Compendium.pf2e.actionspf2e.Item.wQYmDStjdjn0I26t]{Puścić} cokolwiek trzyma w tej reakcji.</p>\n<p><strong>Aktywator</strong> Potwór jest celem dystansowego Ciosu za pomocą głazu, lub głaz spada na niego.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór zyskuje premię sytuacyjną +4 przeciwko atakowi prowokującemu reakcję lub przeciw wszelkiej obronie przed spadającym głazem. Jeśli atak spudłuje lub obrona przeciw spadającemu głazowi się powiedzie, potwór nie odnosi żadnych obrażeń i chwyta głaz, od tej pory go trzymając</p>",
                     "ChangeShape": "<p>Ten potwór może swobodnie zmieniać kształt na nieograniczoną ilość czasu. Może ponownie użyć tej akcji aby powrócić do swojego naturalnego kształtu lub przybrać nową formę. O ile nie wspomniano inaczej, potwór nie może wykorzystywać Zmiany Kształtu aby przybrać formę konkretnej istoty. Używanie Zmiany Kształtu liczy się jako przebranie na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Podszywania się} z użyciem Oszustwa. Transformacja potwora automatycznie przebija ST Percepcji na rzecz sprawdzania czy jest on przedstawicielem przodkowstwa lub rodzaju istot w który się przemienił, oraz zapewnia premię sytuacyjną +4 do ST Oszustwa na rzecz demaskowania jego przebrania. Zdolności Zmiany Kształtu precyzują jakie konkretnie formy może przybierać potwór. Potwór nie zyskuje żadnych specjalnych zdolności przybieranej przez siebie formy, jedynie jej wygląd. Przykładowo dla każdej przybieranej przez siebie formy potwór nadpisuje jej Prędkości, Ciosy oraz potencjalnie jej zmysły i rozmiar. Wszelkie zmiany wypisane są w bloku statystyk.</p>",
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
@@ -2523,12 +2573,6 @@
             "SendToChat": "Wyślij na czat",
             "SensesLabel": "Zmysły",
             "SkillRollFlavor": "Test Umiejętności {skillName} ({rank})",
-            "SkillsEditor": {
-                "BonusLabel": "Premia",
-                "NameLabel": "Nazwa Umiejętności",
-                "SpecialCaseLabel": "Specjalny przypadek",
-                "TitleLabel": "Edytor Umiejętności BN"
-            },
             "SpeedExtraInfoLabelPlaceholder": "Szczegóły prędkości...",
             "SpeedLabel": "Prędkość",
             "Spells": {
@@ -2998,17 +3042,9 @@
                 }
             },
             "Variant": {
-                "AbilityScore": {
-                    "GradualBoosts": {
-                        "Hint": "Rozkłada rozwoje cech równomiernie pomiędzy poszczególne poziomy. Gracze otrzymują rozwój cechy na wszystkich poziomach poza 6., 11., i 16.",
-                        "Name": "Stopniowy Rozwój Cech"
-                    },
-                    "Title": "Warianty Cech"
-                },
                 "AncestryParagon": {
                     "Hint": "Zapewnia dodatkowe miejsca na atuty związane z zasadą wariantową przykładnego przodkowstwa. Gamemastery Guide str. 194.",
-                    "Name": "Zasady Wariantowe Przykładnego Przodkowstwa",
-                    "Title": "Przykładne Przodkowstwo"
+                    "Name": "Przykładne Przodkowstwo"
                 },
                 "AutomaticBonus": {
                     "Choices": {
@@ -3017,60 +3053,32 @@
                         "noABP": "Nie używaj ARM"
                     },
                     "Hint": "Wsparcie dla zasad wariantowych Automatycznego Rozwoju Modyfikatorów, z wyłączeniem zdolności umiejętności/apeksu. Wymaga przeładowania.",
-                    "Name": "Zasady Wariantowe Automatycznego Rozwoju",
-                    "Title": "Automatyczny Rozwój Modyfikatorów"
+                    "Name": "Automatyczny Rozwój Modyfikatorów"
                 },
                 "DualClass": {
                     "Hint": "Zapewnia dodatkowe miejsca na atuty związane z zasadą wariantową podwójnej klasy. Gamemastery Guide str. 192. Ten wariant dodaje jedynie miejsca na odpowiednie atuty i zawsze dostarcza miejsce na atut 1. poziomu.",
-                    "Name": "Zasady Wariantowe Podwójnej Klasy",
-                    "Title": "Podwójna Klasa"
-                },
-                "ExpertModifier": {
-                    "Hint": "Dostosuj wedle uznania aby dopasować do zasad wariantowych biegłości bez poziomu. Wymaga rekalkulacji poprzez odświeżenie strony lub modyfikację wartości w aktorze.",
-                    "Name": "Modyfikator biegłości: Eksperctwo"
+                    "Name": "Podwójna Klasa"
                 },
                 "FreeArchetype": {
                     "Hint": "Zapewnia dodatkowe miejsca na atuty związane z zasadą wariantową darmowego archetypu. Gamemastery Guide str. 194",
-                    "Name": "Zasada Wariantowa Darmowego Archetypu",
-                    "Title": "Darmowy Archetyp"
+                    "Name": "Darmowy Archetyp"
                 },
                 "Hint": "Przełącz stan i dostosuj ustawienia reguł wariantowych takich jak Biegłość bez Poziomu czy system Wytrwałości.",
                 "Label": "Przełącz Zasady Wariantowe",
-                "LegendaryModifier": {
-                    "Hint": "Dostosuj wedle uznania aby dopasować do zasad wariantowych biegłości bez poziomu. Wymaga rekalkulacji poprzez odświeżenie strony lub modyfikację wartości w aktorze.",
-                    "Name": "Modyfikator biegłości: Legendarność"
-                },
-                "MasterModifier": {
-                    "Hint": "Dostosuj wedle uznania aby dopasować do zasad wariantowych biegłości bez poziomu. Wymaga rekalkulacji poprzez odświeżenie strony lub modyfikację wartości w aktorze.",
-                    "Name": "Modyfikator biegłości: Mistrzowstwo"
-                },
                 "Name": "Zasady Wariantowe",
                 "Proficiency": {
-                    "Choices": {
-                        "ProficiencyWithLevel": "Używaj zasad Domyślnych",
-                        "ProficiencyWithoutLevel": "Używaj zasad Wariantowych"
-                    },
                     "Hint": "Graz z uwzględnieniem wariantowej zasady biegłości bez poziomu, zawartej w Gamemastery Guide str. 198.",
-                    "Name": "Wariantowe Zasady Biegłości bez Poziomu",
-                    "Title": "Biegłość bez Poziomu"
+                    "Name": "Biegłość bez Poziomu",
+                    "ModifiersHint": "Ustaw wartość modyfikatora dla każdej rangi biegłości."
                 },
                 "Stamina": {
-                    "Choices": {
-                        "0": "Nie używaj Wytrwałości",
-                        "1": "Używaj Wytrwałości"
-                    },
                     "Hint": "Graz z uwzględnieniem wariantowej zasady wytrwałości, zawartej w Gamemastery Guide str. 200",
-                    "Name": "Wariantowe Zasady Wytrwałości",
-                    "Title": "Wytrwałość"
+                    "Name": "Wytrwałość"
                 },
-                "Title": "Ustawienia Zasad Wariantowych",
-                "TrainedModifier": {
-                    "Hint": "Dostosuj wedle uznania aby dopasować do zasad wariantowych biegłości bez poziomu. Wymaga rekalkulacji poprzez odświeżenie strony lub modyfikację wartości w aktorze.",
-                    "Name": "Modyfikator biegłości: Wytrenowanie"
-                },
-                "UntrainedModifier": {
-                    "Hint": "Dostosuj wedle uznania aby dopasować do zasad wariantowych biegłości bez poziomu. Dla zasad wariantowych zalecana jest wartość -2. Wymaga rekalkulacji poprzez odświeżenie strony lub modyfikację wartości w aktorze.",
-                    "Name": "Modyfikator biegłości: Niewyszkolenie"
+                "Title": "Wariantowe Zasady",
+                "GradualBoosts": {
+                    "Hint": "Rozkłada rozwoje cech równomiernie pomiędzy poszczególne poziomy. Gracze otrzymują rozwój cechy na wszystkich poziomach poza 6., 11., i 16.",
+                    "Name": "Stopniowy Rozwój Cech"
                 }
             },
             "WorldClock": {
@@ -3271,11 +3279,11 @@
         "SpellBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:d6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "SpellCantripLabel": "Sztuczka",
         "SpellCastingFormat": "{preparationType} Zaklęcia {traditionSpells}",
-        "SpellCategoryFocus": "Skupienia",
+        "SpellCategoryFocus": "Zakl. Skupienia",
         "SpellCategoryFocusCantrip": "Sztuczka Skupienia",
         "SpellCategoryLabel": "Kategoria Zaklęcia",
         "SpellCategoryRitual": "Rytuały",
-        "SpellCategorySpell": "Zaklęcia",
+        "SpellCategorySpell": "Zaklęcie",
         "SpellCollectionAdd": "Dodaj do Zbioru Zaklęć",
         "SpellCollectionRemove": "Usuń ze Zbioru Zaklęć",
         "SpellComponentF": "Fokus",
@@ -3373,7 +3381,7 @@
         "StaminaPointsShortLabel": "Wytrwałość",
         "StatusBonusShortLabel": "Status",
         "StatusBonusTitle": "Premie Statusowe",
-        "StatusEffects": "{name} - Efekty statusowe:",
+        "StatusEffects": "{name} - statusy:",
         "StealthLabel": "Ukrywanie się",
         "Strike": {
             "Combined": {
@@ -3453,6 +3461,11 @@
                     "Link": "Powiąż z Rozmiarem Aktora",
                     "Unlink": "Odwiąż od Rozmiaru Aktora"
                 }
+            },
+            "Flanking": "Flankowanie",
+            "SecretDisposition": {
+                "Label": "Sekretne Nastawienie",
+                "Hint": "Aktywuje nastawienie \"sekretne\", które pokazuje fioletową obwolutę dla właściciela i brak jakiejkolwiek ramki lub zmiany kursora dla wszystkich innych."
             }
         },
         "TotalCoinage": "Całkowita Waluta",
@@ -3827,7 +3840,7 @@
         "TraitDescriptionLitany": "Litanie to specjalne zaklęcia oddania, zwykle używane przez czempionów i wymagające pojedynczej akcji, które zwykle dają tymczasową niewrażliwość na kolejne litanie.",
         "TraitDescriptionLizardfolk": "Te gadzie humanoidy, znane również jako iruxi, są niezwykle elastyczne i cierpliwe.",
         "TraitDescriptionLozenge": "Alchemiczną pastylkę aktywujesz, wkładając ją do ust. Pozostaje tam, powoli rozpuszczając się i z czasem uwalniając swoje składniki. Możesz rozgryźć pastylkę dla dodatkowego efektu. Akcja, której to wymaga wymieniona jest w przedmiocie. Gdy tylko ten efekt dodatkowy minie, pastylka zużywa się, a korzyści z niej płynące kończą się. Możesz pić eliksiry, mikstury i napoje z pastylką w ustach, ale nie możesz jednocześnie korzystać z więcej niż jednej pastylki. Jeśli masz w ustach więcej niż jedną pastylkę, wszystkie tracą swoje właściwości . Możesz także użyć pojedynczej akcji aby wypluć, która kończy swoje działanie i traci swoje właściwości. Pastylka rozpuszcza się dzięki swojej alchemicznej kompozycji, więc zazwyczaj działa, nawet jeśli nie masz śliny.",
-        "TraitDescriptionMagical": "Element z cechą magia jest nasycony magiczną energią niezwiązaną z określoną tradycją magiczną. Magiczny przedmiot roztacza aurę nasyconą dominującą w nim szkołą magii. Niektóre przedmioty lub efekty są ściśle związane z określoną tradycją magii. W takich przypadkach przedmiot ma cechę magii tajemnej, boskiej, okultystycznej lub pierwotnej zamiast cechy magia. Każda z tych cech wskazuje, że przedmiot jest magiczny.",
+        "TraitDescriptionMagical": "Element z cechą magiczność jest nasycony magiczną energią niezwiązaną z określoną tradycją magiczną. Magiczny przedmiot roztacza aurę nasyconą dominującą w nim szkołą magii. Niektóre przedmioty lub efekty są ściśle związane z określoną tradycją magii. W takich przypadkach przedmiot ma cechę magii tajemnej, boskiej, okultystycznej lub pierwotnej zamiast cechy magia. Każda z tych cech wskazuje, że przedmiot jest magiczny.",
         "TraitDescriptionMagus": "Oznacza zdolności z klasy Magusa.",
         "TraitDescriptionManipulate": "Aby użyć akcji z tą cechą musisz fizycznie manipulować przedmiotem lub wykonywać gesty. Stworzenia bez odpowiedniej do tego kończyny nie mogą wykonywać akcji z tą cechą. Akcje z cechą manipulacji często prowokują reakcje.",
         "TraitDescriptionMechanical": "Zagrożenie z tą cechą jest fizycznym obiektem o mechanicznej konstrukcji.",
@@ -3836,7 +3849,7 @@
         "TraitDescriptionMetamagic": "Akcje z cechą metamagii, zwykle pochodzące z atutów metamagicznych, modyfikują właściwości twoich zaklęć. Akcji metamagicznej musisz użyć bezpośrednio przed Rzuceniem Zaklęcia, które chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji niż Rzucanie Zaklęcia (w tym darmowych akcji i reakcji), tracisz korzyści z akcji metamagicznej. Wszelkie dodatkowe efekty dodane przez akcję metamagiczną liczą się jako część efektu zaklęcia, a nie samej akcji metamagicznej.",
         "TraitDescriptionMindless": "Bezmyślne stworzenie albo posiadają szczątkowe zdolności umysłowe albo są zaprogramowanymi automatami. Większość, jeśli nie wszystkie, ich modyfikatory cech umysłowych to -5. Są odporne na wszelkie efekty mentalne.",
         "TraitDescriptionMindshift": "Akcja z tą cechą zawsze może zostać zmodyfikowana, aby wykorzystywać czystą moc twojego umysłu. Kiedy wykonujesz tę akcję, możesz zdecydować się na zamianę dowolnych zadawanych przez nią obrażeń na obrażenia mentalne, nadać jej cechę mentalności i zastąpić dowolny powodowany przez nią rzut obronny na rzut obronny Woli. Akcja traci wszystkie cechy związane z rodzajami obrażeń, których już nie zadaje.",
-        "TraitDescriptionMinion": "Sługusy to stworzenia, które bezpośrednio służą innemu stworzeniu. Stworzenie z tą cechą może wykonać tylko 2 akcje na turę, nie ma reakcji i nie może działać poza twoją turą. W walce, twój sługus działa w twojej turze, raz na turę, kiedy wydajesz akcję, aby wydać mu polecenie. W wypadku zwierzęcego towarzysza, Wydajesz Zwierzęciu Komendę; w przypadku sługusa będącego efektem zaklęcia lub magicznego przedmiotu, takiego jak przywołany sługus, Podtrzymujesz Zaklęcie lub Podtrzymujesz Aktywację; jeśli nie określono inaczej, wydajesz polecenie słowne jako pojedynczą akcję z cechami słuchowości i koncentracji. Jeśli nie wydano żadnych poleceń, sługusy nie wykonują żadnych akcji poza samoobroną lub ucieczką przed oczywistą krzywdą. Pozostawione bez opieki na wystarczająco długo, zazwyczaj 1 minutę, bezmyślne sługusy na ogół nie robią nic, zwierzęta kierują się instynktem, a rozumne sługusy zachowują się tak, jak im się podoba. Sługus nie może kontrolować innych stworzeń.",
+        "TraitDescriptionMinion": "Sługusy to stworzenia, które bezpośrednio służą innemu stworzeniu. Stworzenie z tą cechą może wykonać tylko 2 akcje na turę, nie ma reakcji i nie może działać poza twoją turą. W walce, twój sługus działa w twojej turze, raz na turę, kiedy wydajesz akcję, aby wydać mu polecenie. W wypadku zwierzęcego towarzysza, Panujesz Nad Zwierzęciem; w przypadku sługusa będącego efektem zaklęcia lub magicznego przedmiotu, takiego jak przywołany sługus, Podtrzymujesz Zaklęcie lub Podtrzymujesz Aktywację; jeśli nie określono inaczej, wydajesz polecenie słowne jako pojedynczą akcję z cechami słuchowości i koncentracji. Jeśli nie wydano żadnych poleceń, sługusy nie wykonują żadnych akcji poza samoobroną lub ucieczką przed oczywistą krzywdą. Pozostawione bez opieki na wystarczająco długo, zazwyczaj 1 minutę, bezmyślne sługusy na ogół nie robią nic, zwierzęta kierują się instynktem, a rozumne sługusy zachowują się tak, jak im się podoba. Sługus nie może kontrolować innych stworzeń.",
         "TraitDescriptionMisfortune": "Efekt nieszczęścia zmienia sposób rzucania kośćmi na twoją niekorzyść. Nigdy nie możesz odnosić korzyści z więcej niż jednego efektu nieszczęścia na pojedynczym rzucie. Jeśli miałoby zastosowanie kilka efektów nieszczęścia, MG decyduje, który z nich jest najgorszy i stosuje go. Jeśli efekt szczęścia i efekt nieszczęścia dotyczyłyby samego rzutu, oba znoszą się nawzajem i rzucasz normalnie.",
         "TraitDescriptionMissive": "Pismo to kawałek magicznej papeterii, który musi zostać stworzony i skomponowany, zanim będzie można go aktywować. Wszystkie pisma mają cechy pismo i zużywanie. Pisma są często wykonane z papieru, pergaminu lub welinu, ale każdy inny cienki, przenośny materiał, na którym można coś napisać lub wytłoczyć, można przekształcić w pismo. Po stworzeniu pismo jest pustym arkuszem, dopóki nie zostanie na nim ułożona treść, która dopełnia jego magii.",
         "TraitDescriptionModification": "Atut z tą cechą zmienia konstrukcję twojej innowacji. Jeśli masz atrybut klasowy rekonfiguracja, możesz łatwiej przeszkolić taki atut.",
@@ -3850,7 +3863,6 @@
         "TraitDescriptionMutagen": "Eliksir z cechą mutagenu tymczasowo transmogryfikuje ciało podmiotu i wpływa na jego umysł. Mutagen zawsze przynosi jeden lub więcej korzystnych efektów w połączeniu z jednym lub kilkoma szkodliwymi efektami. Mutageny są efektami polimorficznymi, co oznacza, że możesz odnosić korzyści tylko z jednego na raz.",
         "TraitDescriptionNagaji": "Tradycjonalne przodkowstwa o gadzich cechach i wężowych głowach.",
         "TraitDescriptionNecromancy": "Efekty i magiczne przedmioty z tą cechą są związane ze szkołą magii nekromacji, na ogół odwołując się do sił życia i śmierci.",
-        "TraitDescriptionNegative": "Efekty oznaczone tą cechą leczą nieumarłe istoty energią negatywną, zadają obrażenia od energii negatywnej istotom żyjącym albo manipulują negatywną energią.",
         "TraitDescriptionNoisy": "Ten pancerz jest głośny i ma spore szanse na zawiadomienie innych o twojej obecności, gdy korzystasz z aktywności eksploracji Unikaj Wykrycia. Kara pancerza do testów wlicza się do twoich testów Skradania się, nawet jeśli posiadasz wymaganą przez pancerz Siłę.",
         "TraitDescriptionNone": "Ta cecha nie posiada opisu.",
         "TraitDescriptionNonlethal": "Ataki tą bronią nie są śmiertelne w skutkach i wykorzystywane są aby ogłuszać istoty. Możesz wykorzystać broń niezabójczą aby wykonać atak zabójczy ponosząc przy tym karę sytuacyjną -2 do rzutu na atak.",
@@ -3870,7 +3882,6 @@
         "TraitDescriptionPonderous": "Pancerz ten ma ruchome części lub inne komplikacje, które wydłużają początkowy czas reakcji użytkownika. Nosząc go otrzymujesz karę -1 do testów inicjatywy. Jeśli twoja siła nie spełnia wymaganej przez pancerz wartości, kara ta wzrasta wartości kary do testów nakładanej przez pancerz, o ile jest ona gorsza.",
         "TraitDescriptionPoppet": "Istota z tą cechą jest przedstawicielem przodkowstwa poppetów.",
         "TraitDescriptionPortable": "Przenośne bronie oblężnicze, takie jak tarany, mogą być łatwiej zabierane z miejsca na miejsce co pozwala im mieć rolę zarówno w działaniach wojennych, mniejszych konfliktach jak i eksploracji.",
-        "TraitDescriptionPositive": "Efekty oznaczone tą cechą leczą żyjące istoty energią pozytywną, zadają obrażenia od energii pozytywnej nieumarłym albo manipulują pozytywną energią.",
         "TraitDescriptionPossession": "Efekty z tą cechą pozwalają istocie przenosić swój umysł lub duszę na cel. Istota niewrażliwa na efekty mentalne nie może używać efektów opętania. W trakcie opętania celu, prawdziwe ciało opętującego jest nieprzytomne (i nie może zostać przebudzone w standardowy sposób), chyba że efekt opętujący pozwala istocie na fizyczne wejście w cel opętania. Za każdym razem kiedy cel opętania odnosi obrażenia, opętujący również odnosi obrażenia w liczbie połowy oryginalnej wartości jako obrażenia mentalne. Opętujący traci wszelkie korzyści wynikające z jego powłoki fizycznej, takich jak trwające zaklęcia czy zdolności, zyskuje natomiast wszelkie korzyści wynikające z trwających zaklęć czy zdolności przejętej powłoki fizycznej celu. Opętujący może wykorzystywać jedynie zdolności czysto fizyczne przejętego ciała, spośród własnych zdolności może zaś wykorzystywać jedynie zaklęcia i zdolności czysto mentalne. MG decyduje czy zdolność liczy się jako czysto fizyczna lub czysto mentalna. Opętujący wykorzystuje statystyki celu na rzecz modyfikatorów ataku, KP, rzutów obronnych Krzepy oraz Refleksu i fizycznych umiejętności, oraz swoje własne na rzecz rzutów obronnych Woli, umiejętności mentalnych, rzutów na atak zaklęciem oraz ST zaklęć; korzyści wynikające zaangażowania w przedmiotów aplikują się w sposób odpowiadający (przedmioty opętującego dla statystyk opętującego, przedmioty celu dla statystyk celu). Opętujący nie odnosi żadnych korzyści z rzucania zaklęć, które wpływają na osobę rzucającą, jako że nie znajduje się w swoim ciele. Opętujący wykorzystuje swoje własne akcje aby działać osobą opętaną. Jeśli opętujący spadnie do 0 Punktów Żywtoności, czy to w wyniku obrażeń mentalnych odnoszonych poprzez opętanie, czy w wyniku ataku na jego prawdziwe ciało, jest on w normalny pozbawiany przytomności a opętanie się kończy. Jeśli to cel opętania pierwszy osiągnie 0 Punktów Żywotności, opętujący może podjąć decyzję czy paść nieprzytomnym razem z celem i kontynuować opętanie, czy wrócić do własnego ciała w ramach darmowej akcji. Jeśli cel opętania umiera, opętanie natychmiastowo się kończy a opętujący staje się ogłuszony na 1 minutę.",
         "TraitDescriptionPotion": "Mikstura to magiczny płyn aktywowany w momencie jego wypicia.",
         "TraitDescriptionPrecious": "Wartościowe materiały obdarzone wyjątkowymi właściwościami posiadają cechę drogocenność. Można ich wykorzystać zamiast materiałów podstawowych podczas Wytwarzania przedmiotów.",
@@ -4167,7 +4178,6 @@
         "TraitMutant": "Mutant",
         "TraitNagaji": "Nagaji",
         "TraitNecromancy": "Nekromancja",
-        "TraitNegative": "Energia Negatywna",
         "TraitNoisy": "Hałas",
         "TraitNonlethal": "Niezabójczość",
         "TraitNymph": "Nimfa",
@@ -4194,7 +4204,6 @@
         "TraitPonderous": "Ociężałość",
         "TraitPoppet": "Poppet",
         "TraitPortable": "Przenośność",
-        "TraitPositive": "Energia Pozytywna",
         "TraitPossession": "Opętanie",
         "TraitPotion": "Mikstura",
         "TraitPrecious": "Drogocenność",
@@ -4212,78 +4221,78 @@
         "TraitRage": "Szał",
         "TraitRakshasa": "Rakszasa",
         "TraitRange": "Zasięg",
-        "TraitRange10": "Zasięg 10 ft",
-        "TraitRange100": "Zasięg 100 ft",
-        "TraitRange110": "Zasięg 110 ft",
-        "TraitRange120": "Zasięg 120 ft",
-        "TraitRange130": "Zasięg 130 ft",
-        "TraitRange140": "Zasięg 140 ft",
-        "TraitRange15": "Zasięg 15 ft",
-        "TraitRange150": "Zasięg 150 ft",
-        "TraitRange160": "Zasięg 160 ft",
-        "TraitRange170": "Zasięg 170 ft",
-        "TraitRange180": "Zasięg 180 ft",
-        "TraitRange190": "Zasięg 190 ft",
-        "TraitRange20": "Zasięg 20 ft",
-        "TraitRange200": "Zasięg 200 ft",
-        "TraitRange210": "Zasięg 210 ft",
-        "TraitRange220": "Zasięg 220 ft",
-        "TraitRange230": "Zasięg 230 ft",
-        "TraitRange240": "Zasięg 240 ft",
-        "TraitRange25": "Zasięg 25 ft",
-        "TraitRange250": "Zasięg 250 ft",
-        "TraitRange260": "Zasięg 260 ft",
-        "TraitRange270": "Zasięg 270 ft",
-        "TraitRange280": "Zasięg 280 ft",
-        "TraitRange290": "Zasięg 290 ft",
-        "TraitRange30": "Zasięg 30 ft",
-        "TraitRange300": "Zasięg 300 ft",
-        "TraitRange310": "Zasięg 310 ft",
-        "TraitRange320": "Zasięg 320 ft",
-        "TraitRange40": "Zasięg 40 ft",
-        "TraitRange5": "Zasięg 5 ft",
-        "TraitRange50": "Zasięg 50 ft",
-        "TraitRange500": "Zasięg 500 ft",
-        "TraitRange60": "Zasięg 60 ft",
-        "TraitRange70": "Zasięg 70 ft",
-        "TraitRange80": "Zasięg 80 ft",
-        "TraitRange90": "Zasięg 90 ft",
-        "TraitRangeIncrement10": "Inkrement Zasięgu 10 ft",
-        "TraitRangeIncrement100": "Inkrement Zasięgu 100 ft",
-        "TraitRangeIncrement110": "Inkrement Zasięgu 110 ft",
-        "TraitRangeIncrement120": "Inkrement Zasięgu 120 ft",
-        "TraitRangeIncrement130": "Inkrement Zasięgu 130 ft",
-        "TraitRangeIncrement140": "Inkrement Zasięgu 140 ft",
-        "TraitRangeIncrement15": "Inkrement Zasięgu 15 ft",
-        "TraitRangeIncrement150": "Inkrement Zasięgu 150 ft",
-        "TraitRangeIncrement160": "Inkrement Zasięgu 160 ft",
-        "TraitRangeIncrement170": "Inkrement Zasięgu 170 ft",
-        "TraitRangeIncrement180": "Inkrement Zasięgu 180 ft",
-        "TraitRangeIncrement190": "Inkrement Zasięgu 190 ft",
-        "TraitRangeIncrement20": "Inkrement Zasięgu 20 ft",
-        "TraitRangeIncrement200": "Inkrement Zasięgu 200 ft",
-        "TraitRangeIncrement210": "Inkrement Zasięgu 210 ft",
-        "TraitRangeIncrement220": "Inkrement Zasięgu 220 ft",
-        "TraitRangeIncrement230": "Inkrement Zasięgu 230 ft",
-        "TraitRangeIncrement240": "Inkrement Zasięgu 240 ft",
-        "TraitRangeIncrement25": "Inkrement Zasięgu 25 ft",
-        "TraitRangeIncrement250": "Inkrement Zasięgu 250 ft",
-        "TraitRangeIncrement260": "Inkrement Zasięgu 260 ft",
-        "TraitRangeIncrement270": "Inkrement Zasięgu 270 ft",
-        "TraitRangeIncrement280": "Inkrement Zasięgu 280 ft",
-        "TraitRangeIncrement290": "Inkrement Zasięgu 290 ft",
-        "TraitRangeIncrement30": "Inkrement Zasięgu 30 ft",
-        "TraitRangeIncrement300": "Inkrement Zasięgu 300 ft",
-        "TraitRangeIncrement310": "Inkrement Zasięgu 310 ft",
-        "TraitRangeIncrement320": "Inkrement Zasięgu 320 ft",
-        "TraitRangeIncrement40": "Inkrement Zasięgu 40 ft",
-        "TraitRangeIncrement5": "Inkrement Zasięgu 5 ft",
-        "TraitRangeIncrement50": "Inkrement Zasięgu 50 ft",
-        "TraitRangeIncrement60": "Inkrement Zasięgu 60 ft",
-        "TraitRangeIncrement70": "Inkrement Zasięgu 70 ft",
-        "TraitRangeIncrement75": "Inkrement Zasięgu 75 ft",
-        "TraitRangeIncrement80": "Inkrement Zasięgu 80 ft",
-        "TraitRangeIncrement90": "Inkrement Zasięgu 90 ft",
+        "TraitRange10": "Zasięg 10 stóp",
+        "TraitRange100": "Zasięg 100 stóp",
+        "TraitRange110": "Zasięg 110 stóp",
+        "TraitRange120": "Zasięg 120 stóp",
+        "TraitRange130": "Zasięg 130 stóp",
+        "TraitRange140": "Zasięg 140 stóp",
+        "TraitRange15": "Zasięg 15 stóp",
+        "TraitRange150": "Zasięg 150 stóp",
+        "TraitRange160": "Zasięg 160 stóp",
+        "TraitRange170": "Zasięg 170 stóp",
+        "TraitRange180": "Zasięg 180 stóp",
+        "TraitRange190": "Zasięg 190 stóp",
+        "TraitRange20": "Zasięg 20 stóp",
+        "TraitRange200": "Zasięg 200 stóp",
+        "TraitRange210": "Zasięg 210 stóp",
+        "TraitRange220": "Zasięg 220 stóp",
+        "TraitRange230": "Zasięg 230 stóp",
+        "TraitRange240": "Zasięg 240 stóp",
+        "TraitRange25": "Zasięg 25 stóp",
+        "TraitRange250": "Zasięg 250 stóp",
+        "TraitRange260": "Zasięg 260 stóp",
+        "TraitRange270": "Zasięg 270 stóp",
+        "TraitRange280": "Zasięg 280 stóp",
+        "TraitRange290": "Zasięg 290 stóp",
+        "TraitRange30": "Zasięg 30 stóp",
+        "TraitRange300": "Zasięg 300 stóp",
+        "TraitRange310": "Zasięg 310 stóp",
+        "TraitRange320": "Zasięg 320 stóp",
+        "TraitRange40": "Zasięg 40 stóp",
+        "TraitRange5": "Zasięg 5 stóp",
+        "TraitRange50": "Zasięg 50 stóp",
+        "TraitRange500": "Zasięg 500 stóp",
+        "TraitRange60": "Zasięg 60 stóp",
+        "TraitRange70": "Zasięg 70 stóp",
+        "TraitRange80": "Zasięg 80 stóp",
+        "TraitRange90": "Zasięg 90 stóp",
+        "TraitRangeIncrement10": "Inkrement Zasięgu 10 stóp",
+        "TraitRangeIncrement100": "Inkrement Zasięgu 100 stóp",
+        "TraitRangeIncrement110": "Inkrement Zasięgu 110 stóp",
+        "TraitRangeIncrement120": "Inkrement Zasięgu 120 stóp",
+        "TraitRangeIncrement130": "Inkrement Zasięgu 130 stóp",
+        "TraitRangeIncrement140": "Inkrement Zasięgu 140 stóp",
+        "TraitRangeIncrement15": "Inkrement Zasięgu 15 stóp",
+        "TraitRangeIncrement150": "Inkrement Zasięgu 150 stóp",
+        "TraitRangeIncrement160": "Inkrement Zasięgu 160 stóp",
+        "TraitRangeIncrement170": "Inkrement Zasięgu 170 stóp",
+        "TraitRangeIncrement180": "Inkrement Zasięgu 180 stóp",
+        "TraitRangeIncrement190": "Inkrement Zasięgu 190 stóp",
+        "TraitRangeIncrement20": "Inkrement Zasięgu 20 stóp",
+        "TraitRangeIncrement200": "Inkrement Zasięgu 200 stóp",
+        "TraitRangeIncrement210": "Inkrement Zasięgu 210 stóp",
+        "TraitRangeIncrement220": "Inkrement Zasięgu 220 stóp",
+        "TraitRangeIncrement230": "Inkrement Zasięgu 230 stóp",
+        "TraitRangeIncrement240": "Inkrement Zasięgu 240 stóp",
+        "TraitRangeIncrement25": "Inkrement Zasięgu 25 stóp",
+        "TraitRangeIncrement250": "Inkrement Zasięgu 250 stóp",
+        "TraitRangeIncrement260": "Inkrement Zasięgu 260 stóp",
+        "TraitRangeIncrement270": "Inkrement Zasięgu 270 stóp",
+        "TraitRangeIncrement280": "Inkrement Zasięgu 280 stóp",
+        "TraitRangeIncrement290": "Inkrement Zasięgu 290 stóp",
+        "TraitRangeIncrement30": "Inkrement Zasięgu 30 stóp",
+        "TraitRangeIncrement300": "Inkrement Zasięgu 300 stóp",
+        "TraitRangeIncrement310": "Inkrement Zasięgu 310 stóp",
+        "TraitRangeIncrement320": "Inkrement Zasięgu 320 stóp",
+        "TraitRangeIncrement40": "Inkrement Zasięgu 40 stóp",
+        "TraitRangeIncrement5": "Inkrement Zasięgu 5 stóp",
+        "TraitRangeIncrement50": "Inkrement Zasięgu 50 stóp",
+        "TraitRangeIncrement60": "Inkrement Zasięgu 60 stóp",
+        "TraitRangeIncrement70": "Inkrement Zasięgu 70 stóp",
+        "TraitRangeIncrement75": "Inkrement Zasięgu 75 stóp",
+        "TraitRangeIncrement80": "Inkrement Zasięgu 80 stóp",
+        "TraitRangeIncrement90": "Inkrement Zasięgu 90 stóp",
         "TraitRangedTrip": "Dystansowe Podcięcie",
         "TraitRanger": "Łowca",
         "TraitRare": "Rzadkość",
@@ -4291,17 +4300,17 @@
         "TraitRatfolk": "Szczuroludź",
         "TraitRazing": "Burzenie",
         "TraitReach": "Wysięg",
-        "TraitReach0": "Wysięg 0 ft",
-        "TraitReach10": "Wysięg 10 ft",
-        "TraitReach100": "Wysięg 100 ft",
-        "TraitReach1000": "Wysięg 1,000 ft",
-        "TraitReach15": "Wysięg 15 ft",
-        "TraitReach20": "Wysięg 20 ft",
-        "TraitReach25": "Wysięg 25 ft",
-        "TraitReach30": "Wysięg 30 ft",
-        "TraitReach40": "Wysięg 40 ft",
-        "TraitReach50": "Wysięg 50 ft",
-        "TraitReach60": "Wysięg 60 ft",
+        "TraitReach0": "Wysięg 0 stóp",
+        "TraitReach10": "Wysięg 10 stóp",
+        "TraitReach100": "Wysięg 100 stóp",
+        "TraitReach1000": "Wysięg 1,000 stóp",
+        "TraitReach15": "Wysięg 15 stóp",
+        "TraitReach20": "Wysięg 20 stóp",
+        "TraitReach25": "Wysięg 25 stóp",
+        "TraitReach30": "Wysięg 30 stóp",
+        "TraitReach40": "Wysięg 40 stóp",
+        "TraitReach50": "Wysięg 50 stóp",
+        "TraitReach60": "Wysięg 60 stóp",
         "TraitReckless": "Ryzykowność",
         "TraitRecovery": "Powracanie",
         "TraitReflection": "Odbicie",
@@ -4436,9 +4445,7 @@
         "TraitVersatileGood": "Wszechstronność: Dobre",
         "TraitVersatileHeritage": "Uniwersalne Dziedzictwo",
         "TraitVersatileLawful": "Wszechstronność: Praworządne",
-        "TraitVersatileNegative": "Wszechstronność: Negatywne",
         "TraitVersatileP": "Wszechstronność: K",
-        "TraitVersatilePositive": "Wszechstronność: Pozytywne",
         "TraitVersatileS": "Wszechstronność: C",
         "TraitVersatileSonic": "Wszechstronność: Soniczne",
         "TraitVigilante": "Bojownik",
@@ -4850,7 +4857,8 @@
                 "wooden-taws": "Drewniane Tau",
                 "wrecker": "Wyburzyciel",
                 "wrist-launcher": "Wyrzutnia na nadgarstek",
-                "zulfikar": "Zulfikar"
+                "zulfikar": "Zulfikar",
+                "arbalest": "Arbaleta"
             }
         },
         "WeaponAbilityLabel": "Zdolności Broni",
@@ -5004,8 +5012,8 @@
             "greaterBrilliant": {
                 "Name": "Większa Światłości",
                 "Note": {
-                    "criticalSuccess": "Obrażenia zadawane przez tę broń ignorują odporności na ogień, dobro czy obrażenia pozytywne celu. Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:41|name:Większa Runa Światłości] lub zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę.",
-                    "success": "Obrażenia zadawane przez tę broń ignorują odporności na ogień, dobro czy obrażenia pozytywne celu."
+                    "criticalSuccess": "Obrażenia zadawane przez tę broń ignorują odporności na ogień, dobro czy witalność celu. Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:41|name:Większa Runa Światłości] lub zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę.",
+                    "success": "Obrażenia zadawane przez tę broń ignorują odporności na ogień, witalność czy obrażenia pozytywne celu."
                 }
             },
             "greaterCorrosive": {
@@ -5101,7 +5109,7 @@
             "holy": {
                 "Name": "Święta",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> komenda; raz na dzień)<br /><strong>Aktywator</strong> Odnosisz krytyczny sukces w rzucie na atak tą bronią przeciw złej istocie<br /><strong>Efekt</strong> Odzyskujesz PŻ w liczbie równej podwojonemu poziomowi złej istoty. Jest to dobry, pozytywny efekt leczący."
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> komenda; raz na dzień)<br /><strong>Aktywator</strong> Odnosisz krytyczny sukces w rzucie na atak tą bronią przeciw złej istocie<br /><strong>Efekt</strong> Odzyskujesz PŻ w liczbie równej podwojonemu poziomowi złej istoty. Jest to efekt leczący o cechach dobra i witalności."
                 }
             },
             "hopeful": {
@@ -5277,7 +5285,6 @@
         "WeaponRange70": "70 ft.",
         "WeaponRange80": "80 ft.",
         "WeaponRange90": "90 ft.",
-        "WeaponRangeLabel": "Zasięg Broni",
         "WeaponRangeMelee": "Wręcz",
         "WeaponRangeN": "{range} ft.",
         "WeaponRangeReach": "Wysięg",
@@ -5631,14 +5638,14 @@
             "GiveSubtitle": "Daj przedmiot",
             "HiddenWhenEmpty": {
                 "Hint": "Ukryj żeton(y) tego aktora kiedy jego ekwipunek będzie pusty",
-                "Label": "Ukryty kiedy pusty"
+                "Label": "Ukryty Kiedy Pusty"
             },
             "InsufficientCurrencyError": "{buyer} nie ma dość waluty na zakupy",
             "InsufficientFundsMessage": "{buyer} sięga do sakiewki, ale nie ma dość grosiwa!",
             "LootDescription": "Pozwala na rozdzielenie monet pomiędzy graczy",
             "LootLabel": "Łup",
             "LootMessage": "{looter} łupi z {corpse} {quantity} × {item}.",
-            "LootNPCsLabel": "Złup wybrane żetony",
+            "LootNPCsLabel": "Złup Wybrane Żetony",
             "LootNPCsPopupHeader": "Wybierz żeton do złupienia",
             "LootNamePlaceholder": "Łup",
             "LootSubtitle": "Złup przedmiot",
@@ -5700,7 +5707,7 @@
             "collisionDamageLabel": "Obrażenia od Kolizji"
         },
         "TraitRelic": "Relikwia",
-        "TraitReach200": "Wysięg 200 ft",
+        "TraitReach200": "Wysięg 200 stóp",
         "TraitLilu": "Lilu",
         "TraitHarrowCourt": "Dwór Wyroków",
         "TraitEtchedOntoAPiercingOrSlashingWeapon": "Grawer na Tnącej/Kłującej Broni",
@@ -5780,13 +5787,32 @@
         "TraitInfusion": "Infuzja",
         "TraitKineticist": "Kinetyk",
         "TraitOverflow": "Przesycenie",
-        "TraitReach120": "Wysięg 120 ft",
+        "TraitReach120": "Wysięg 120 stóp",
         "TraitSporeborn": "Grzyboród",
         "TraitTalos": "Talos",
-        "TraitVersatilePoison": "Wszechstronność Trucizna",
+        "TraitVersatilePoison": "Wszechstronność: Trucizna",
         "TraitVitality": "Witalność",
         "TraitVoid": "Pustka",
-        "TraitWood": "Drewno"
+        "TraitWood": "Drewno",
+        "CompendiumMigrationStatus": {
+            "Document": "Dokument",
+            "Foundry": "Foundry",
+            "FoundryOld": "0.7 lub starsze",
+            "Invalid": "Niewłaściwe",
+            "LockedTooltip": "Nie udało się zmigrować - kompendium jest zablokowane",
+            "MigrateCompendium": "Zmigruj Kompendium",
+            "Schema": "Schemat",
+            "Size": "Rozmiar",
+            "Title": "Status Migracji",
+            "UpToDate": "Aktualne"
+        },
+        "ConditionTypeMalevolence": "Wrogość",
+        "DeleteQuestion": "Czy na pewno chcesz usunąć {name}?",
+        "InlineDamage": {
+            "Base": "Baza: {formula}"
+        },
+        "TraitVersatileVitality": "Wszechstronność: Witalność",
+        "TraitVersatileVoid": "Wszechstronność: Pustka"
     },
     "SIDEBAR": {
         "TabCombat": "Panel Starcia"

@@ -252,7 +252,7 @@
                 "ContentMain": "Wybierz docelowy ST. Pamiętaj, że nie możesz leczyć powyżej posiadanej przez siebie biegłości. Taka próba zostanie automatycznie zastąpiona najwyższym możliwym ST i leczeniem, którego jesteś się w stanie podjąć.",
                 "ContentOption1": "ST Wytrenowania 15",
                 "ContentOption2": "ST Eksperctwa 20, +5 Wytrwałości",
-                "ContentOption3": "ST Mistrzowstwa 30, +15 Wytrwałości",
+                "ContentOption3": "ST Mistrzostwa 30, +15 Wytrwałości",
                 "ContentOption4": "ST Legendarności 40, +25 Wytrwałości",
                 "CritFailure": "Krytyczna Porażka",
                 "CritSuccess": "Krytyczny Sukces",
@@ -307,7 +307,7 @@
                 "Title": "Pochwycenie"
             },
             "Hide": {
-                "Description": "<p>Wciskasz się głębiej za zasłonę lub większą zasłonę, lub do innej kryjówki aby stać się schowanym a nie obserwowanym. MG rzuca dla ciebie sekretny test Skradania Się i porównuje wyniki ze ST Percepcji każdej z istot przez które jesteś obserwowany, ale względem których masz osłonę, większą osłonę lub przysłonięcie innego rodzaju. Zyskujesz do tego testu premię sytuacyjną z osłony lub większej osłony.</p><p><strong>Sukces</strong> Jeśli istota cię widziała to stajesz się teraz względem niej schowany a nie obserwowany. Jeśli byłeś dla tej istoty schowany lub niewykryty podtrzymujesz ten stan.</p><p>Jeśli udało ci się schować przed istotą, a następnie tracisz zasłonę, większą zasłonę lub przysłonięcie względem niej, stajesz się ponownie obserwowany. Przestajesz być schowany jeśli dokonasz jakiejkolwiek akcji innej niż Schowanie Się, Przekradanie Się, lub Krok. Jeśli spróbujesz wymierzyć istocie Cios ma ona przed nim opuszczoną gardę, a następnie stajesz się przez nią obserwowany. Jeśli dokonujesz jakiejkolwiek innej akcji stajesz się obserwowany zaraz przed jej podjęciem chyba, że MG zdecyduje inaczej. MG może zezwolić ci na wykonanie jakiejś wyjątkowo dyskretnej akcji bez stawania się natychmiastowo obserwowanym - potencjalnie wymagając kolejnego testu Skradania Się.</p><p>Jeśli istota wykorzysta akcję Szukania aby uczynić cię przez nią obserwowanym musisz ponownie Schować Się aby stać się przed nią schowanym.</p>",
+                "Description": "<p>Wciskasz się głębiej za osłonę lub większą osłonę, lub do innej kryjówki aby stać się schowanym a nie obserwowanym. MG rzuca dla ciebie sekretny test Skradania Się i porównuje wyniki ze ST Percepcji każdej z istot przez które jesteś obserwowany, ale względem których masz osłonę, większą osłonę lub przysłonięcie innego rodzaju. Zyskujesz do tego testu premię sytuacyjną z osłony lub większej osłony.</p><p><strong>Sukces</strong> Jeśli istota cię widziała to stajesz się teraz względem niej schowany a nie obserwowany. Jeśli byłeś dla tej istoty schowany lub niewykryty podtrzymujesz ten stan.</p><p>Jeśli udało ci się schować przed istotą, a następnie tracisz osłonę , większą osłonę lub przysłonięcie względem niej, stajesz się ponownie obserwowany. Przestajesz być schowany jeśli dokonasz jakiejkolwiek akcji innej niż Schowanie Się, Przekradanie Się, lub Krok. Jeśli spróbujesz wymierzyć istocie Cios ma ona przed nim opuszczoną gardę, a następnie stajesz się przez nią obserwowany. Jeśli dokonujesz jakiejkolwiek innej akcji stajesz się obserwowany zaraz przed jej podjęciem chyba, że MG zdecyduje inaczej. MG może zezwolić ci na wykonanie jakiejś wyjątkowo dyskretnej akcji bez stawania się natychmiastowo obserwowanym - potencjalnie wymagając kolejnego testu Skradania Się.</p><p>Jeśli istota wykorzysta akcję Szukania aby uczynić cię przez nią obserwowanym musisz ponownie Schować Się aby stać się przed nią schowanym.</p>",
                 "Notes": {
                     "success": "<strong>Sukces</strong> Jeśli istota cię widziała to stajesz się teraz względem niej @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} a nie obserwowany. Jeśli byłeś dla tej istoty @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} lub @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty} podtrzymujesz ten stan."
                 },
@@ -570,192 +570,192 @@
                 "Title": "Odepchnięcie"
             },
             "Sneak": {
-                "Description": "<p>You can attempt to move to another place while becoming or staying undetected. Stride up to half your Speed. (You can use Sneak while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type; you must move at half that Speed.)</p><p>If you're undetected by a creature and it's impossible for that creature to observe you (for a typical creature, this includes when you're invisible, the observer is blinded, or you're in darkness and the creature can't see in darkness), for any critical failure you roll on a check to Sneak, you get a failure instead. You also continue to be undetected if you lose cover or greater cover against or are no longer concealed from such a creature.</p><p>At the end of your movement, the GM rolls your Stealth check in secret and compares the result to the Perception DC of each creature you were hidden from or undetected by at the start of your movement. If you have cover or greater cover from the creature throughout your Stride, you gain the +2 circumstance bonus from cover (or +4 from greater cover) to your Stealth check. Because you're moving, the bonus increase from Taking Cover doesn't apply. You don't get to roll against a creature if, at the end of your movement, you neither are concealed from it nor have cover or greater cover against it. You automatically become observed by such a creature.</p><p><strong>Sukces</strong> You're undetected by the creature during your movement and remain undetected by the creature at the end of it. You become observed as soon as you do anything other than Hide, Sneak, or Step. If you attempt to Strike a creature, the creature remains flat-footed against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise. The GM might allow you to perform a particularly unobtrusive action without being noticed, possibly requiring another Stealth check. If you speak or make a deliberate loud noise, you become hidden instead of undetected. If a creature uses Seek and you become hidden to it as a result, you must Sneak if you want to become undetected by that creature again.<br><strong>Porażka</strong> A telltale sound or other sign gives your position away, though you still remain unseen. You’re hidden from the creature throughout your movement and remain so.<br><strong>Krytyczna Porażka</strong> You're spotted! You're observed by the creature throughout your movement and remain so. If you're invisible and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so.</p>",
+                "Description": "<p>Możesz przemieścić się w inne miejsce stając się lub pozostając niewykrytym. Biegnij na odległość do połowy swojej Prędkości. (Możesz się skradać Ryjąc, Wspinając Się, Latając lub Pływając zamiast Biegania jeśli posiadasz odpowiedni typ ruchu; poruszasz się z połową tej Prędkości.)</p><p>Jeśli jesteś niewykryty przez istotę oraz niemożliwe jest dla ciebie stanie się obserwowanym przez tą istotę (dla typowej istoty typowe sytuacje to kiedy jesteś niewidzialny, kiedy obserwator jest oślepiony, kiedy jesteś w ciemności a istota nie może widzieć w ciemności), każdy wynik krytycznej porażki na przekradaniu się traktujesz jako zwykłą porażkę. Wobec takiej istoty pozostajesz również niewykryty nawet jeśli stracisz osłonę, większą osłonę lub przestaniesz być przysłonięty.</p><p>Na koniec twojego ruchu MG rzuca w sekrecie twój test Skradania Się i porównuje wynik z ST Percepcji każdej istoty, względem której byłeś schowany lub niewykryty na początku twojego ruchu. Jeśli przez całą długość Biegu miałeś względem istoty osłonę lub większą osłonę zyskujesz premię sytuacyjną +2 do swojego testu Skradania Się (+4 w wypadku większej osłony). W związku z tym, że się ruszasz nie otrzymujesz standardowej premii z Krycia się za Osłoną. Nie możesz rzucać Skradania Się przeciw istocie, względem której na koniec twojego ruchu nie masz osłony, większej osłony ani przysłonięcia. Dla takiej istoty automatycznie stajesz się obserwowany.</p><p><strong>Sukces</strong> Jesteś niewykryty przez istotę przez całą długość swojego ruchu oraz pozostajesz niewykryty po jego zakończeniu. Przestajesz być schowany jeśli dokonasz jakiejkolwiek akcji innej niż Schowanie Się, Przekradanie Się, lub Krok. Jeśli spróbujesz wymierzyć istocie Cios ma ona przed nim opuszczoną gardę, a następnie stajesz się przez nią obserwowany. Jeśli dokonujesz jakiejkolwiek innej akcji stajesz się obserwowany zaraz przed jej podjęciem chyba, że MG zdecyduje inaczej. MG może zezwolić ci na wykonanie jakiejś wyjątkowo dyskretnej akcji bez stawania się natychmiastowo obserwowanym - potencjalnie wymagając kolejnego testu Skradania Się. Jeśli się odezwiesz lub wydasz jakiś inny głośny odgłos stajesz się schowany zamiast być niewykrytym. Jeśli istota użyje akcji Szukania i staniesz się w wyniku niej schowany dla tej istoty musisz ponownie użyć akcji Przekradania Się aby stać się niewykrytym.<br><strong>Porażka</strong> Niechciany odgłos lub inny znak zdradza twoją pozycję, chociaż nadal pozostajesz niewidoczny. Jesteś schowany względem istoty przez całą długość swojego ruchu oraz po jego zakończeniu.<br><strong>Krytyczna Porażka</strong> Zauważono cię! Jesteś obserwowany przez istotę przez całą długość twojego ruchu i pozostajesz obserwowany. Jeśli jesteś niewidzialny i byłeś schowany przed istotą, zamiast być obserwowanym jesteś schowany przez całą długość twojego ruchu oraz po jego zakończeniu.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You're spotted! You're observed by the creature throughout your movement and remain so. If you're invisible and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so.",
-                    "failure": "<strong>Porażka</strong> A telltale sound or other sign gives your position away, though you still remain unseen. You're hidden from the creature throughout your movement and remain so",
-                    "success": "<strong>Sukces</strong> You're undetected by the creature during your movement and remain undetected by the creature at the end of it."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Zauważono cię! Jesteś obserwowany przez istotę przez całą długość twojego ruchu i pozostajesz obserwowany. Jeśli jesteś niewidzialny i byłeś schowany przed istotą, zamiast być obserwowanym jesteś schowany przez całą długość twojego ruchu oraz po jego zakończeniu.",
+                    "failure": "<strong>Porażka</strong> Niechciany odgłos lub inny znak zdradza twoją pozycję, chociaż nadal pozostajesz niewidoczny. Jesteś schowany względem istoty przez całą długość swojego ruchu oraz po jego zakończeniu.",
+                    "success": "<strong>Sukces</strong> Jesteś niewykryty przez istotę przez całą długość swojego ruchu oraz pozostajesz niewykryty po jego zakończeniu."
                 },
                 "Title": "Przekradanie Się"
             },
             "Squeeze": {
-                "Description": "<p>You contort yourself to squeeze through a space so small you can barely fit through. This action is for exceptionally small spaces; many tight spaces are difficult terrain that you can move through more quickly and without a check.</p><p><strong>Krytyczny Sukces</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.<br><strong>Sukces</strong> You squeeze through in 1 minute per 5 feet.<br><strong>Krytyczna Porażka</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck.</p><section class=\"sample-tasks\"><h2>Sample Squeeze Tasks</h2><p><strong>Wytrenowanie</strong> space barely fitting your shoulders</p><p><strong>Mistrzostwo</strong> space barely fitting your head</p></section>",
+                "Description": "<p>Wyprężasz swoje ciało próbując przecisnąć się przez przestrzeń tak małą, że ledwo się w niej mieścisz. Ta akcja zarezerwowana jest dla wyjątkowo ciasnych przestrzeni; wiele ciasnych przestrzeni to trudny teren, przez który można przejść szybciej i bez konieczności wykonywania testu.</p><p><strong>Krytyczny Sukces</strong> Przeciskasz się przez ciasną przestrzeń w tempie 10 stóp na 1 minutę przeciskania się.<br><strong>Sukces</strong> Przeciskasz się przez ciasną przestrzeń w tempie 5 stóp na 1 minutę.<br><strong>Krytyczna Porażka</strong> Utykasz w ciasnej przestrzeni. Będąc uwięzionym możesz spędzić 1 minutę aby wykonać kolejny test Akrobatyki o tym samym ST. Każdy wynik poza krytyczną porażką pozwala ci uwolnić się z potrzasku.</p><section class=\"sample-tasks\"><h2>Przykładowe Wyzwania Przeciskania Się</h2><p><strong>Wytrenowanie</strong> przestrzeń ledwo mieszcząca twoje ramiona</p><p><strong>Mistrzostwo</strong> przestrzeń ledwo mieszcząca twoją głowę</p></section>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.",
-                    "success": "<strong>Sukces</strong> You squeeze through in 1 minute per 5 feet."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Utykasz w ciasnej przestrzeni. Będąc uwięzionym możesz spędzić 1 minutę aby wykonać kolejny test Akrobatyki o tym samym ST. Każdy wynik poza krytyczną porażką pozwala ci uwolnić się z potrzasku.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Przeciskasz się przez ciasną przestrzeń w tempie 10 stóp na 1 minutę przeciskania się.",
+                    "success": "<strong>Sukces</strong> Przeciskasz się przez ciasną przestrzeń w tempie 5 stóp na 1 minutę."
                 },
-                "Title": "Squeeze"
+                "Title": "Przeciskanie Się"
             },
             "Stand": {
-                "Description": "<p>You stand up from prone.</p>",
-                "Title": "Stand"
+                "Description": "<p>Wstajesz z powalenia.</p>",
+                "Title": "Powstanie"
             },
             "Steal": {
-                "Description": "<p>You try to take a small object from another creature without being noticed. Typically, you can Steal only an object of negligible Bulk, and you automatically fail if the creature who has the object is in combat or on guard.</p><p>Attempt a Thievery check to determine if you successfully Steal the object. The DC to Steal is usually the Perception DC of the creature wearing the object. This assumes the object is worn but not closely guarded (like a loosely carried pouch filled with coins, or an object within such a pouch). If the object is in a pocket or similarly protected, you take a –5 penalty to your Thievery check. The GM might increase the DC of your check if the nature of the object makes it harder to steal (such as a very small item in a large pack, or a sheet of parchment mixed in with other documents).</p><p>You might also need to compare your Thievery check result against the Perception DCs of observers other than the person wearing the object. The GM may increase the Perception DCs of these observers if they're distracted.</p><p><strong>Sukces</strong> You steal the item without the bearer noticing, or an observer doesn't see you take or attempt to take the item.<br><strong>Porażka</strong> The item's bearer notices your attempt before you can take the object, or an observer sees you take or attempt to take the item. The GM determines the response of any creature that notices your theft.</p>",
+                "Description": "<p>Niepostrzeżenie zabierasz innej istocie mały obiekt. Na ogół możesz ukraść tylko obiekt o znikomym Naręczu oraz automatycznie odnosisz porażkę jeśli istota będąca jego posiadaczem jest w walce lub pozostaje w inny sposób czujna.</p><p>Aby określić czy udaje ci się Ukraść obiekt wykonaj test Złodziejstwa. ST Kradzieży to na ogół ST Percepcji noszącej obiekt istoty. Zakłada to, że przedmiot jest noszony, ale nie jest aktywnie chroniony (jak trzymany luźno przy pasie mieszek z pieniędzmi lub obiekt wewnątrz takiego mieszka). Jeśli przedmiot jest wewnątrz kieszeni lub chroniony w podobny sposób otrzymujesz karę -5 do twojego testu Złodziejstwa. MG może zwiększyć ST twojego testu jeśli natura obiektu utrudnia jego kradzież (na przykład mały przedmiot w dużym pojemniku lub konkretny pergamin zmieszany z innymi dokumentami).</p><p>Możliwe też, że będziesz musiał porównać wynik swojego testu Złodziejstwa ze ST obserwatorów innych niż okradana osoba. MG może zmniejszyć ST Percepcji pasywnych obserwatorów jeśli ich uwaga nie jest na tobie skupiona.</p><p><strong>Sukces</strong> Kradniesz przedmiot bez zwracania uwagi właściciela, lub unikasz spojrzenia pasywnego obserwatora.<br><strong>Porażka</strong> Właściciel przedmiotu zauważa twoją kradzież zanim uda ci się zabrać mu przedmiot, lub pasywny obserwator zauważa twoją kradzież/jej próbę. MG określa rekcję istot, które zauważą kradzież.</p>",
                 "Notes": {
-                    "failure": "<strong>Porażka</strong> The item's bearer notices your attempt before you can take the object, or an observer sees you take or attempt to take the item. The GM determines the response of any creature that notices your theft.",
-                    "success": "<strong>Sukces</strong> You steal the item without the bearer noticing, or an observer doesn't see you take or attempt to take the item."
+                    "failure": "<strong>Porażka</strong> Właściciel przedmiotu zauważa twoją kradzież zanim uda ci się zabrać mu przedmiot, lub pasywny obserwator zauważa twoją kradzież/jej próbę. MG określa rekcję istot, które zauważą kradzież.",
+                    "success": "<strong>Sukces</strong> Kradniesz przedmiot bez zwracania uwagi właściciela, lub unikasz spojrzenia pasywnego obserwatora."
                 },
-                "Pocketed": "Object pocketed or protected",
-                "Title": "Steal"
+                "Pocketed": "Chroniony lub noszony przedmiot",
+                "Title": "Kradzież"
             },
             "SteelYourResolve": {
-                "BadArgs": "This action must be performed with exactly one character or NPC.",
-                "Content": "Spend a resolve point and regain stamina?",
-                "NoStamina": "{name} is tired and needs to go to bed! No resolve points remaining.",
-                "RecoverStamina": "{name} has {ratio} SP and spends a resolve point, recovering half their maximum Stamina.",
-                "StaminaNotEnabled": "The Stamina variant is not enabled.",
-                "Title": "Steel Your Resolve"
+                "BadArgs": "Ta akcja musi być wykonana przez dokładnie jedną postać lub BN.",
+                "Content": "Wydać punkt determinacji i odzyskać wytrwałość?",
+                "NoStamina": "{name} odczuwa zmęczenie i musi udać się na spoczynek! Nie posiada więcej punktów determinacji.",
+                "RecoverStamina": "{name} posiada {ratio} PW i wydaje punkt determinacji, odzyskując połowę maksymalnej Wytrwałości.",
+                "StaminaNotEnabled": "Wariantowa zasada Wytrwałości nie jest włączona.",
+                "Title": "Umocnienie Postanowienia"
             },
             "Step": {
-                "Description": "<p>You carefully move 5 feet. Unlike most types of movement, Stepping doesn't trigger reactions, such as Attacks of Opportunity, that can be triggered by move actions or upon leaving or entering a square.</p><p>You can't Step into difficult terrain, and you can't Step using a Speed other than your land Speed.</p>",
-                "Title": "Step"
+                "Description": "<p>Ostrożnie przemieszczasz się o 5 stóp. W przeciwieństwie do większości innych typów ruchu Krok nie prowokuje reakcji, które mogą być wywołane przez akcje ruchu lub poprzez opuszczanie pola lub wchodzenie do niego, takich jak Atak Okazyjny.</p><p>Nie możesz wykonać Kroku w trudny teren ani wykonać Kroku używając do tego innej Prędkości niż twoja Prędkość lądowa.</p>",
+                "Title": "Krok"
             },
             "Stride": {
-                "Description": "<p>You move up to your Speed.</p>",
-                "Title": "Stride"
+                "Description": "<p>Poruszasz się na odległość nie większą od twojej Prędkości.</p>",
+                "Title": "Bieg"
             },
             "Subsist": {
-                "AfterExplorationPenalty": "After Exploration",
-                "Description": "<p>You try to provide food and shelter for yourself, and possibly others as well, with a standard of living depending on your degree of success. The GM determines the DC based on the nature of the place where you're trying to Subsist. You might need a minimum proficiency rank to Subsist in particularly strange environments. Unlike most downtime activities, you can Subsist after 8 hours or less of exploration, but if you do, you take a –5 penalty.</p><p><strong>Krytyczny Sukces</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.<br><strong>Sukces</strong> You find enough food and shelter with basic protection from the elements to provide you a subsistence living.<br><strong>Porażka</strong> You're exposed to the elements and don't get enough food, becoming fatigued until you attain sufficient food and shelter.<br><strong>Krytyczna Porażka</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing.</p><section class=\"sample-tasks\"><h2>Sample Subsist Tasks</h2><p><strong>Niewytrenowanie</strong> lush forest with calm weather or large city with plentiful resources</p><p><strong>Wytrenowanie</strong> typical hillside or village</p><p><strong>Eksperctwo</strong> typical mountains or insular hamlet</p><p><strong>Mistrzostwo</strong> typical desert or city under siege</p><p><strong>Legendarność</strong> barren wasteland or city of undead</p></section>",
+                "AfterExplorationPenalty": "Po Eksploracji",
+                "Description": "<p>Próbujesz zapewnić jedzenie oraz schronienie sobie i potencjalnie innym, standard życia który zapewniasz zależy od stopnia twojego sukcesu. MG określa ST testu na podstawie natury miejsca, w którym usiłujesz przetrwać. Do Przetrwania w szczególnie nietypowych środowiskach może być wymagana minimalna ranga biegłości w Sztuce Przetrwania. W przeciwieństwie do innych aktywności przestoju możesz podjąć się próby Przetrwania po 8 godzinach eksploracji, ale w takim wypadku ponosisz karę -5 do testu.</p><p><strong>Krytyczny Sukces</strong> Zapewniasz godziwe warunki przetrwania sobie oraz innej dodatkowej istocie, lub poprawiasz swoje własne warunki jedzenia i schronienia zapewniając sobie komfortowe warunki.<br><strong>Sukces</strong> Znajdujesz adekwatne schronienie przed żywiołami oraz dostateczną ilość jedzenia aby zapewnić sobie przetrwanie w obecnych warunkach.<br><strong>Porażka</strong> Jesteś wystawiony na działanie żywiołów oraz nie znajdujesz wystarczającej ilości jedzenia, co sprawia że w stajesz się wyczerpany do momentu znalezienia schronienia i pożywienia.<br><strong>Krytyczna Porażka</strong> Przyciągasz kłopoty, jesz coś czego nie powinieneś albo w inny sposób pogorszasz swoją sytuację. Zyskujesz karę sytuacyjną -2 do testów na Przetrwanie na okres 1 tygodnia. Nie znajdujesz też żadnego jedzenia; jeśli nie posiadasz zapasów ryzykujesz głodowanie lub śmierć z odwodnienia jeśli nadal będziesz odnosić porażki.</p><section class=\"sample-tasks\"><h2>Przykładowe Wyzwania Przetrwania</h2><p><strong>Niewytrenowanie</strong> bujny las z łagodną pogodą lub wielkie miast o obfitych zasobach</p><p><strong>Wytrenowanie</strong> typowy płaskowyż lub wioska</p><p><strong>Eksperctwo</strong> typowe góry lub odizolowana osada</p><p><strong>Mistrzostwo</strong> typowa pustynia lub miasto w stanie oblężenia</p><p><strong>Legendarność</strong> jałowe pustkowia lub miasto nieumarłych</p></section>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing. @UUID[Compendium.pf2e.other-effects.Item.wHWWHkjDXmJl4Ia6]{Efekt: Adverse Subsist Situation}",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.",
-                    "failure": "<strong>Porażka</strong> You're exposed to the elements and don't get enough food, becoming fatigued until you attain sufficient food and shelter.",
-                    "success": "<strong>Sukces</strong> You find enough food and shelter with basic protection from the elements to provide you a subsistence living."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Przyciągasz kłopoty, jesz coś czego nie powinieneś albo w inny sposób pogorszasz swoją sytuację. Zyskujesz karę sytuacyjną -2 do testów na Przetrwanie na okres 1 tygodnia. Nie znajdujesz też żadnego jedzenia; jeśli nie posiadasz zapasów ryzykujesz głodowanie lub śmierć z odwodnienia jeśli nadal będziesz odnosić porażki. @UUID[Compendium.pf2e.other-effects.Item.wHWWHkjDXmJl4Ia6]{Efekt: Nieprzyjazne Warunki Przetrwania}",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Zapewniasz godziwe warunki przetrwania sobie oraz innej dodatkowej istocie, lub poprawiasz swoje własne warunki jedzenia i schronienia zapewniając sobie komfortowe warunki.",
+                    "failure": "<strong>Porażka</strong> Jesteś wystawiony na działanie żywiołów oraz nie znajdujesz wystarczającej ilości jedzenia, co sprawia że w stajesz się wyczerpany do momentu znalezienia schronienia i pożywienia.",
+                    "success": "<strong>Sukces</strong> Znajdujesz adekwatne schronienie przed żywiołami oraz dostateczną ilość jedzenia aby zapewnić sobie przetrwanie w obecnych warunkach."
                 },
-                "Title": "Subsist",
+                "Title": "Przetrwanie",
                 "Warning": {
-                    "NoSkill": "The Subsist action can be used with different skills, and no skill was specified. This typically uses Society if you're in a settlement or Survival if you're in the wild."
+                    "NoSkill": "Akcja Przetrwania może być używana z różnymi umiejętnościami i żadna nie została określona jako domyślna. Na ogół używasz Społeczeństwa jeśli jesteś w mieście lub Sztuki Przetrwania jeśli jesteś w dziczy."
                 }
             },
             "Swim": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You make no progress, and if you're holding your breath, you lose 1 round of air.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You move through the water 10 feet, plus 5 feet per 20 feet of your land Speed (a total of 15 feet for most PCs).",
-                    "success": "<strong>Sukces</strong> You move through the water 5 feet, plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs)."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Nie czynisz żadnych postępów a jeśli wstrzymujesz oddech tracisz zapas powietrza wart 1 rundę.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Przemieszczasz się w wodzie 10 stóp, plus dodatkowe 5 stóp za każde 20 stóp twojej Prędkości lądowej (w sumie 15 stóp dla większości BG).",
+                    "success": "<strong>Sukces</strong> Przemieszczasz się w wodzie 5 stóp, plus dodatkowe 5 stóp za każde 20 stóp twojej Prędkości lądowej (w sumie 10 stóp dla większości BG)."
                 },
-                "Title": "Swim"
+                "Title": "Pływanie"
             },
             "TakeCover": {
-                "Description": "<p>You press yourself against a wall or duck behind an obstacle to take better advantage of cover. If you would have standard cover, you instead gain greater cover, which provides a +4 circumstance bonus to AC; to Reflex saves against area effects; and to Stealth checks to Hide, Sneak, or otherwise avoid detection. Otherwise, you gain the benefits of standard cover (a +2 circumstance bonus instead). This lasts until you move from your current space, use an attack action, become unconscious, or end this effect as a free action.</p>",
-                "Title": "Take Cover"
+                "Description": "<p>Przybliżasz się do ściany lub kucasz za przeszkodą aby jak najlepiej wykorzystać zapewnianą osłonę. Jeśli masz standardową osłonę zyskujesz zamiast tego większą osłonę, która zapewnia premię sytuacyjną +4 do KP, do rzutów na Refleks przeciw efektom obszarowym oraz do testów Skradania Się na Schowanie Się, Przekradanie Się lub inne próby unikania wykrycia. W przeciwnym wypadku zyskujesz korzyści standardowej osłony (premia sytuacyjna zmienia się na +2). Premia ta utrzymuje się do momentu aż opuścisz swoje obecne pole, użyjesz akcji ataku, staniesz się nieprzytomny lub zakończysz działanie osłony w ramach darmowej akcji.</p>",
+                "Title": "Krycie się za Osłoną"
             },
             "Tamper": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your tampering backfires dramatically, creating a small explosion from your own tools or gear. You take [[/r (@actor.level)[fire] #Tamper Backfire]]{fire damage equal to your level}.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Your tampering is incredibly effective. If you tampered with a weapon, the enemy takes a -2 circumstance penalty to attack rolls and damage rolls with that weapon. If you tampered with armor, the armor hampers the enemy's movement, making the enemy flat-footed and inflicting a -10-foot penalty to its Speeds. The effect lasts until the enemy Interacts to remove it, regardless of which one you used. @UUID[Compendium.pf2e.feat-effects.Item.rzcpTJU9MvW1x1gz]{Efekt: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.Item.o7qm13OmaYOMwgib]{Efekt: Weapon Tampered With (Critical Success)}",
-                    "success": "<strong>Sukces</strong> Your tampering is temporarily effective. As critical success, but the effect ends at the start of your next turn, even if the enemy doesn't Interact to end it. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Efekt: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Efekt: Weapon Tampered With (Success)}"
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Twoje majstrowanie przynosi odwrotny skutek, sprawiając, że twoje własne narzędzia lub sprzęt eksplodują. Odnosisz [[/r (@actor.level)[fire] #Tamper Backfire]]{obrażenia od ognia równe twojemu poziomowi}.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Twoje majstrowanie okazuje się wyjątkowo skuteczne. Jeśli majstrowałeś przy broni wroga, odnosi on karę sytuacyjną -2 do rzutów na atak i rzutów na obrażenia tą bronią. Jeśli majstrowałeś przy zbroi, zaczyna ona krępować ruchy wroga i sprawia że ma on Opuszczoną Gardę oraz nakłada karę -10 stóp do jego Prędkości. Niezależnie od tego, którego z tych efektów użyłeś, trwa on dopóki nie użyje on akcji aby go usunąć. @UUID[Compendium.pf2e.feat-effects.Item.rzcpTJU9MvW1x1gz]{Efekt: Majstrowano Przy Pancerzu (Krytyczny Sukces)} @UUID[Compendium.pf2e.feat-effects.Item.o7qm13OmaYOMwgib]{Efekt: Majstrowano Przy Broni (Krytyczny Sukces)}",
+                    "success": "<strong>Sukces</strong> Twoje majstrowanie jest tymczasowo efektywne. Efekt jak w wypadku sukcesu krytycznego ale trwa on do początku twojej następnej tury, nawet jeśli wróg nie użyje Interakcji aby go zakończyć. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Efekt: Majstrowano Przy Pancerzu (Sukces)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Efekt: Majstrowano Przy Broni (Sukces)}"
                 },
-                "Title": "Tamper"
+                "Title": "Majstrowanie"
             },
             "Track": {
-                "Description": "<p>You follow tracks, moving at up to half your travel Speed. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour. In some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the exploration trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.</p><p>You attempt your Survival check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.</p><p><strong>Sukces</strong> You find the trail or continue to follow the one you're already following.<br><strong>Porażka</strong> You lose the trail but can try again after a 1-hour delay.<br><strong>Krytyczna Porażka</strong> You lose the trail and can't try again for 24 hours.</p><section class=\"sample-tasks\"><h2>Sample Track Tasks</h2><p><strong>Niewytrenowanie</strong> the path of a large army following a road</p><p><strong>Wytrenowanie</strong> relatively fresh tracks of a rampaging bear through the plains</p><p><strong>Eksperctwo</strong> a nimble panther's tracks through a jungle, tracks obscured by rainfall</p><p><strong>Mistrzostwo</strong> tracks obscured by winter snow, tracks of a mouse or smaller creature, tracks left on surfaces that can't hold prints like bare rock</p><p><strong>Legendarność</strong> old tracks through a windy desert's sands, tracks obscured by a major blizzard or hurricane</p></section>",
+                "Description": "<p>Podążasz za śladami poruszając się z połową swojej Prędkości podróżnej. Po udanym teście Tropienia możesz podążać za śladami z połową swojej Prędkości bez konieczności podejmowania dodatkowych testów przez okres do 1 godziny. W niektórych wypadkach możesz podejmować się Tropienia w trakcie starcia. W takim wypadku Tropienie zajmuje jedną akcję i nie ma cechy eksploracja, ale może wymagać częstszych rzutów ze względu na napiętą sytuację. MG określa jak często musisz podejmować się tego testu.</p><p>Podejmujesz się testu Sztuki Przetrwania kiedy rozpoczynasz Tropienie, po każdej godzinie kontynuowanego Tropienia, oraz za każdym razem kiedy tropy zmienią się w istotny sposób. MG określa ST tych testów na podstawie świeżości śladów, pogody oraz rodzaju podłoża.</p><p><strong>Sukces</strong> Odnajdujesz trop lub podążasz za tym który obecnie tropisz.<br><strong>Porażka</strong> Tracisz trop ale możesz spróbować ponownie po 1 godzinie.<br><strong>Krytyczna Porażka</strong> Tracisz trop i nie możesz próbować ponownie przez 24 godziny.</p><section class=\"sample-tasks\"><h2>Przykładowe Wyzwania Tropienia</h2><p><strong>Niewytrenowanie</strong> podążanie za liczną armią podróżującą drogą</p><p><strong>Wytrenowanie</strong> względnie świeże ślady niedźwiedzia hasającego po równinach</p><p><strong>Eksperctwo</strong> trop zwinnej pantery przemierzającej dżunglę, ślady zatarte przez deszcz</p><p><strong>Mistrzostwo</strong> ślady myszy lub mniejszej istoty, ślady skryte pod zimowym śniegiem, ślady zostawione na powierzchni nie utrzymującej odcisków takiej jak jałowa skała</p><p><strong>Legendarność</strong> stare ślady zostawione na piaskach wietrznej pustyni, ślady zatarte poważną śnieżycą lub huraganem</p></section>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You lose the trail and can't try again for 24 hours.",
-                    "failure": "<strong>Porażka</strong> You lose the trail but can try again after a 1-hour delay.",
-                    "success": "<strong>Sukces</strong> You find the trail or continue to follow the one you're already following."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Tracisz trop i nie możesz próbować ponownie przez 24 godziny.",
+                    "failure": "<strong>Porażka</strong> Tracisz trop ale możesz spróbować ponownie po 1 godzinie.",
+                    "success": "<strong>Sukces</strong> Odnajdujesz trop lub podążasz za tym który obecnie tropisz."
                 },
-                "Title": "Track"
+                "Title": "Tropienie"
             },
             "TreatDisease": {
-                "Description": "<p>You spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease's DC. After you attempt to Treat a Disease for a creature, you can't try again until after that creature's next save against the disease.</p><p><strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br><strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br><strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the disease.</p>",
+                "Description": "<p>Spędzasz co najmniej 8 godzin opiekując się schorowaną istotą. Wykonaj test Medycyny przeciw ST choroby. Po tym jak spróbujesz Leczyć Chorobę, nie możesz próbować ponownie aż do momentu kiedy ta istota podejmie się swojego następnego rzutu obronnego przeciw niej.</p><p><strong>Krytyczny Sukces</strong> Zapewniasz istocie premię sytuacyjną +4 do jej następnego rzutu obronnego przeciw chorobie.<br><strong>Sukces</strong> Zapewniasz istocie premię sytuacyjną +2 do jej następnego rzutu obronnego przeciw chorobie.<br><strong>Krytyczna Porażka</strong> Twoje działania sprawiają, że istota odnosi karę sytuacyjną -2 do jej następnego rzutu obronnego przeciw chorobie.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.5oYKYXAexr0vhx84]{Efekt: Treat Disease (Critical Failure)}",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.id20P4pj7zDKeLmy]{Efekt: Treat Disease (Critical Success)}",
-                    "success": "<strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.Ee2xfKX1yyqGIDZj]{Efekt: Treat Disease (Success)}"
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Twoje działania sprawiają, że istota odnosi karę sytuacyjną -2 do jej następnego rzutu obronnego przeciw chorobie.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.5oYKYXAexr0vhx84]{Efekt: Leczeni Choroby (Krytyczna Porażka)}",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Zapewniasz istocie premię sytuacyjną +4 do jej następnego rzutu obronnego przeciw chorobie.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.id20P4pj7zDKeLmy]{Efekt: Leczenie Choroby (Krytyczny Sukces)}",
+                    "success": "<strong>Sukces</strong> Zapewniasz istocie premię sytuacyjną +2 do jej następnego rzutu obronnego przeciw chorobie.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.Ee2xfKX1yyqGIDZj]{Efekt: Leczenie Choroby (Sukces)}"
                 },
-                "Title": "Treat Disease"
+                "Title": "Leczenie Choroby"
             },
             "TreatPoison": {
-                "Description": "<p>You treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison's DC. After you attempt to Treat a Poison for a creature, you can't try again until after the next time that creature attempts a save against the poison.</p><p><strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br><strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br><strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the poison.</p>",
+                "Description": "<p>Zajmujesz się pacjentem aby zapobiec rozprzestrzenianiu trucizny. Wykonaj test Medycyny przeciw ST trucizny. Po tym jak spróbujesz Leczyć Zatrucie, nie możesz próbować ponownie aż do momentu kiedy ta istota podejmie się swojego następnego rzutu obronnego przeciw truciźnie.</p><p><strong>Krytyczny Sukces</strong> Zapewniasz istocie premię sytuacyjną +4 do jej następnego rzutu obronnego przeciw truciźnie.<br><strong>Sukces</strong> Zapewniasz istocie premię sytuacyjną +2 do jej następnego rzutu obronnego przeciw truciźnie.<br><strong>Krytyczna Porażka</strong> Zapewniasz istocie premię sytuacyjną +2 do jej następnego rzutu obronnego przeciw truciźnie.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.ESuBosh3t1pXEcBj]{Efekt: Treat Poison (Critical Failure)}",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XwCBalKJf3CiEiFa]{Efekt: Treat Poison (Critical Success)}",
-                    "success": "<strong>Sukces</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XWenziR7J3mwKV4W]{Efekt: Treat Poison (Success)}"
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Twoje działania sprawiają, że istota odnosi karę sytuacyjną -2 do jej następnego rzutu obronnego przeciw truciźnie.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.ESuBosh3t1pXEcBj]{Efekt: Treat Poison (Critical Failure)}",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Zapewniasz istocie premię sytuacyjną +4 do jej następnego rzutu obronnego przeciw truciźnie.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XwCBalKJf3CiEiFa]{Efekt: Treat Poison (Critical Success)}",
+                    "success": "<strong>Sukces</strong> Zapewniasz istocie premię sytuacyjną +2 do jej następnego rzutu obronnego przeciw truciźnie.<br/>@UUID[Compendium.pf2e.equipment-effects.Item.XWenziR7J3mwKV4W]{Efekt: Treat Poison (Success)}"
                 },
-                "Title": "Treat Poison"
+                "Title": "Leczenie Zatrucia"
             },
             "TreatWounds": {
-                "Content": "Select a target DC. Remember that you can't attempt a heal above your proficiency. Attempting to do so will downgrade the DC and amount healed to the highest you're capable of.",
+                "Content": "Wybierz docelowy ST. Pamiętaj, że nie możesz leczyć powyżej posiadanej przez siebie biegłości. Taka próba zostanie automatycznie zastąpiona najwyższym możliwym ST i leczeniem, którego jesteś się w stanie podjąć.",
                 "DC": {
-                    "Expert": "Expert DC 20, +10 Healing",
-                    "Legendary": "Legendary DC 40, +50 Healing",
-                    "Master": "Master DC 30, +30 Healing",
-                    "Mod": "DC Modifier",
-                    "Trained": "Trained DC 15"
+                    "Expert": "ST Eksperctwa 20, +10 Leczenia",
+                    "Legendary": "ST Legendarności 40, +50 Leczenia",
+                    "Master": "ST Mistrzostwa 30, +30 Leczenia",
+                    "Mod": "Modyfikator ST",
+                    "Trained": "ST Wytrenowania 15"
                 },
-                "Error": "Token {name} does not have the medicine skill",
+                "Error": "Żeton {name} nie posiada umiejętności Medycyna.",
                 "Feats": {
-                    "MortalHealing": "Mortal Healing",
-                    "RiskySurgery": "Risky Surgery"
+                    "MortalHealing": "Śmiertelnicze Leczenie",
+                    "RiskySurgery": "Ryzykowna Operacja"
                 },
-                "Label": "Treat Wounds",
+                "Label": "Opatrywanie Ran",
                 "Rolls": {
-                    "RiskySurgery": "Damage Roll: Risky Surgery",
-                    "TreatWounds": "Healing Roll: Treat Wounds",
-                    "TreatWoundsCriticalFailure": "Damage Roll: Treat Wounds"
+                    "RiskySurgery": "Rzut Obrażeń: Ryzykowna Operacja",
+                    "TreatWounds": "Rzut Leczenia: Opatrywanie Ran",
+                    "TreatWoundsCriticalFailure": "Rzut Obrażeń: Opatrywanie Ran"
                 },
-                "SkillSelect": "Treat Wounds Skill"
+                "SkillSelect": "Umiejętność Opatrywania Ran"
             },
             "Trip": {
-                "Description": "<p>You try to knock a creature to the ground. Attempt an Athletics check against the target's Reflex DC.</p><p><strong>Krytyczny Sukces</strong> The target falls and lands prone and takes 1d6 bludgeoning damage.<br><strong>Sukces</strong> The target falls and lands prone.<br><strong>Krytyczna Porażka</strong> You lose your balance and fall and land prone.</p>",
+                "Description": "<p>Próbujesz powalić istotę na ziemię. Wykonaj test Atletyki przeciwko ST Refleksu celu.</p><p><strong>Krytyczny Sukces</strong> Cel zostaje powalony na ziemię i odnosi 1k6 obrażeń obuchowych.<br><strong>Sukces</strong> Cel zostaje powalony na ziemię.<br><strong>Krytyczna Porażka</strong> Tracisz równowagę i padasz powalony na ziemię.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You lose your balance and fall and land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> The target falls and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes [[/r 1d6[bludgeoning] # Bludgeoning damage]]{1d6} bludgeoning damage.",
-                    "success": "<strong>Sukces</strong> The target falls and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Tracisz równowagę i padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} na ziemię.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} na ziemię i odnosi [[/r 1d6[bludgeoning] # Bludgeoning damage]]{1k6} obrażeń obuchowych.",
+                    "success": "<strong>Sukces</strong> Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} na ziemię."
                 },
-                "Title": "Trip"
+                "Title": "Podcięcie"
             },
             "TumbleThrough": {
-                "Description": "<p>You Stride up to your Speed. During this movement, you can try to move through the space of one enemy. Attempt an Acrobatics check against the enemy's Reflex DC as soon as you try to enter its space. You can Tumble Through using Climb, Fly, Swim, or another action instead of Stride in the appropriate environment.</p><p><strong>Sukces</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure.<br><strong>Porażka</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in.</p>",
+                "Description": "<p>Biegniesz na odległość nie większą od swojej Prędkości. Podczas tego ruchu możesz przemieścić się przez pole jednego wroga. Kiedy tylko wkroczysz w jego pole wykonaj test Akrobatyki przeciw jego ST Refleksu. W odpowiednim środowisku możesz użyć akcji Przeturlania Się używając Wspinaczki, Pływania, Latania lub innej akcji.</p><p><strong>Sukces</strong> Przemieszczasz się przez pole wroga traktując jego pola jako trudny teren (ruch w każdym polu kosztuje dodatkowe 5 stóp). Jeśli brakuje ci Prędkości aby przemieścić się przez całą przestrzeń wroga uzyskujesz efekt jak w wypadku porażki.<br><strong>Porażka</strong> Twój ruch się kończy i prowokujesz reakcje tak jak gdybyś opuścił pole w którym zacząłeś turlać się przez przestrzeń wroga.</p>",
                 "Notes": {
-                    "failure": "<strong>Porażka</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in.",
-                    "success": "<strong>Sukces</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure."
+                    "failure": "<strong>Porażka</strong> Twój ruch się kończy i prowokujesz reakcje tak jak gdybyś opuścił pole w którym zacząłeś turlać się przez przestrzeń wroga.",
+                    "success": "<strong>Sukces</strong> Przemieszczasz się przez pole wroga traktując jego pola jako trudny teren (ruch w każdym polu kosztuje dodatkowe 5 stóp). Jeśli brakuje ci Prędkości aby przemieścić się przez całą przestrzeń wroga uzyskujesz efekt jak w wypadku porażki."
                 },
-                "Title": "Tumble Through"
+                "Title": "Przeturlanie Się"
             },
             "WhirlingThrow": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> You don't throw the creature, and it's no longer @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by you.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> You throw the creature the desired distance and it lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
-                    "failure": "<strong>Porażka</strong> You don't throw the creature.",
-                    "success": "<strong>Sukces</strong> You throw the creature the desired distance."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Nie rzucasz istoty i nie jest już ona @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona} ani @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętana} przez ciebie.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Rzucasz istotę na wybrany dystans i ląduje ona @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalona}.",
+                    "failure": "<strong>Porażka</strong> Nie rzucasz istotą.",
+                    "success": "<strong>Sukces</strong> Rzucasz istotę na wybrany dystans."
                 },
-                "Title": "Whirling Throw"
+                "Title": "Wirujący Rzut"
             }
         },
         "ActionsCheck": {
-            "acrobatics": "Acrobatics Check",
-            "arcana": "Arcana Check",
-            "athletics": "Athletics Check",
-            "crafting": "Crafting Check",
-            "deception": "Deception Check",
-            "diplomacy": "Diplomacy Check",
-            "intimidation": "Intimidation Check",
-            "medicine": "Medicine Check",
-            "nature": "Nature Check",
-            "occultism": "Occultism Check",
-            "perception": "Perception Check",
-            "performance": "Performance Check",
-            "religion": "Religion Check",
-            "society": "Society Check",
-            "stealth": "Stealth Check",
-            "survival": "Survival Check",
-            "thievery": "Thievery Check",
-            "unarmed": "Unarmed Attack Roll",
+            "acrobatics": "Test Akrobatyki",
+            "arcana": "Test Wiedzy Tajemnej",
+            "athletics": "Test Atletyki",
+            "crafting": "Test Rzemiosła",
+            "deception": "Test Oszukiwania",
+            "diplomacy": "Test Dyplomacji",
+            "intimidation": "Test Zastraszania",
+            "medicine": "Test Medycyny",
+            "nature": "Test Przyrody",
+            "occultism": "Test Okultyzmu",
+            "perception": "Test Percepcji",
+            "performance": "Test Występów",
+            "religion": "Test Religii",
+            "society": "Test Społeczeństwa",
+            "stealth": "Test Skradania Się",
+            "survival": "Test Sztuki Przetrwania",
+            "thievery": "Test Złodziejstwa",
+            "unarmed": "Rzut na Atak bez Broni",
             "spell": "Atak Zaklęciem {type}",
             "x": "Test {type}",
             "x-attack-roll": "Rzut Ataku {type}"
         },
         "ActionsWarning": {
-            "NoActor": "Select at least one token before rolling, or assign a default character.",
-            "NoStatistic": "Actor {name} ({id}) does not have a statistic for {statistic}.",
+            "NoActor": "Przed rzutem wybierz przynajmniej jeden żeton lub przypisz domyślna postać.",
+            "NoStatistic": "Aktor {name} ({id}) nie posiada statystyki {statistic}.",
             "Variants": {
-                "None": "Action '{action}' has no variants, but variant '{variant}' was requested.",
-                "Multiple": "Action '{action}' has multiple variants, but no variant was requested.",
-                "Nonexisting": "Specified variant '{variant}' does not exist for action '{action}'"
+                "None": "Akcja '{action}' nie posiada wariantów, a zażądano wariantu '{variant}'.",
+                "Multiple": "Akcja '{action}' posiada wiele wariantów, a nie wybrano żadnego wariantu.",
+                "Nonexisting": "Określny wariant '{variant}' nie istnieje dla akcji '{action}'"
             }
         },
         "Action": {

@@ -127,7 +127,13 @@
                 "ShieldDamagedForNDestroyed": "Tarcza również odnosi {shieldDamage} obrażeń i niszczy się.",
                 "ShieldNotRaised": "{actor} nie ma wzniesionej tarczy.",
                 "TakesNoDamage": "<actor>{actor}</actor> nie odnosi obrażeń.",
-                "TheTarget": "Cel"
+                "TheTarget": "Cel",
+                "InstantDeath": {
+                    "DeathEffect": "Efekt śmierci natychmiast zabija cel.",
+                    "Destroyed": "Cel zostaje zniszczony.",
+                    "FinePowder": "Cel zmienia się w proch, ale jego ekwipunek pozostaje.",
+                    "MassiveDamage": "Masywne obrażenia zabijają cel na miejscu."
+                }
             },
             "Character": {
                 "ClassDC": {
@@ -202,6 +208,19 @@
                         "Title": "Obrona",
                         "Unarmored": "Obrona bez Pancerza"
                     }
+                },
+                "HandsOccupied": "Zajęte Ręce",
+                "Shield": {
+                    "ACBonus": "Premia Tarczy do KP (Gdy Wzniesiona)",
+                    "BrokenThreshold": "PU Tarczy",
+                    "Hardness": {
+                        "Hint": "Twardość Tarczy",
+                        "Label": "T"
+                    },
+                    "HitPoints": {
+                        "Value": "PŻ Tarczy",
+                        "Max": "Maks. PŻ Tarczy"
+                    }
                 }
             },
             "Creature": {
@@ -249,7 +268,7 @@
                 },
                 "SpellPreparation": {
                     "Hint": "Aby przygotować zaklęcie przeciągnij je z tej listy do komórki na twojej karcie postaci.",
-                    "HintFlexible": "Aby przygotować zaklęcie zaznacz je tutaj. Aby przygotować sztuczkę, przeciągnij ją z listy na kartę postaci.",
+                    "HintFlexible": "Aby przygotować zaklęcie, zaznacz je tutaj. Aby przygotować sztuczkę, przeciągnij ją z tej listy na komórkę na kartę postaci.",
                     "Title": "Przygotowanie Zaklęć: {actor}",
                     "Search": "Wyszukaj Zaklęcia"
                 },
@@ -441,7 +460,6 @@
         "AdditionalLanguagePlusInt": "(plus Inteligencja)",
         "AdditionalSkills": "Dodatkowe Umiejętności",
         "Age": "Wiek",
-        "AgeTitle": "Wiek twojej postaci",
         "Alignment": "Charakter",
         "AlignmentCE": "Chaotycznie Zły",
         "AlignmentCG": "Chaotycznie Dobry",
@@ -452,12 +470,10 @@
         "AlignmentN": "Neutralny",
         "AlignmentNE": "Neutralnie Zły",
         "AlignmentNG": "Neutralnie Dobry",
-        "AlignmentTitle": "Twój charakter",
         "AllSavesLabel": "Wszystkie Rzuty Obronne",
         "AncestryFeatLevels": "Poziomy Atutów Przodkowstwa",
         "AncestryFeatures": "Atrybuty Przodkowstwa",
         "AncestryHP": "PŻ z Przodkowstwa",
-        "AncestryTitle": "Przodkowstwo twojej postaci",
         "AreaLabel": "Obszar",
         "AreaSize10": "10 Stóp",
         "AreaSize100": "100 Stóp",
@@ -581,7 +597,6 @@
         },
         "Background": "Pochodzenie",
         "BackgroundSkillFeats": "Atuty Umiejętności",
-        "BackgroundTitle": "Pochodzenie twojej postaci",
         "BaseModifier": "Modyfikatory Bazowe",
         "BaseWeapons": "Bronie Bazowe",
         "BestiaryBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:d6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
@@ -601,11 +616,6 @@
         "BiographyOrganizations": "Organizacje",
         "BiographyPersonalityHeader": "Osobowość",
         "Bonus": "Premia",
-        "BonusBulk": "Dodatkowe Maksymalne Naręcze",
-        "BonusBulkTitle": "Zwiększ lub zmniejsz limit twojego naręcza",
-        "BonusHPLabel": "Dodatkowe PŻ",
-        "BonusHPperLevel": "Dodatkowe PŻ co Poziom",
-        "BonusHPperLevelTitle": "Dodawane co poziom (modyfikator KON aplikowany jest niezależnie)",
         "BonusLabel": {
             "ability": "Premia z Cechy",
             "circumstance": "Premia Sytuacyjna",
@@ -616,7 +626,6 @@
         },
         "BonusSPLabel": "Dodatkowe PW",
         "BonusSPperLevel": "Dodatkowe PW co Poziom",
-        "BonusSPperLevelTitle": "Dodawane co poziom (modyfikator KON aplikowany jest niezależnie)",
         "BrowseLabel": "Przeglądaj",
         "BrowserClearFilter": "Wyczyść Filtr",
         "BrowserClearFilters": "Wyczyść Wszystkie Filtry",
@@ -746,7 +755,6 @@
         "ClassFeatLevels": "Poziomy Atutów Klasowych",
         "ClassFeatures": "Atrybuty Klasowe",
         "ClassHP": "PŻ Klasy",
-        "ClassTitle": "Klasa twojej postaci",
         "ClickToSetInitiative": "Kliknij aby ustawić inicjatywę wybranych żetonów.",
         "ClickToSetInitiativeContext": "Ustaw jako Inicjatywę",
         "ClipboardNotification": "Skopiowano \"{clipText}\" do schowka.",
@@ -923,10 +931,8 @@
         "CurrencyGP": "Złoto",
         "CurrencyPP": "Platyna",
         "CurrencySP": "Srebro",
-        "CurrentHPTitle": "Obecna liczba twoich punktów żywotności",
         "CurrentHitPointsShortLabel": "Obecne PŻ",
         "CurrentStaminaPointsShortLabel": "Obecne PW",
-        "CurrentStaminaTitle": "Obecna liczba twoich punktów wytrwałości",
         "DCAdjustmentEasy": "łatwy",
         "DCAdjustmentHard": "trudny",
         "DCAdjustmentIncrediblyEasy": "niezmiernie łatwy",
@@ -939,17 +945,6 @@
         "DCWithValueAndVisibility": "{text} <span data-visibility=\"{role}\">ST {dc}</span>",
         "Damage": {
             "Base": "Podstawowe",
-            "Dialog": {
-                "Bonus": "Dodatkowo {dice}",
-                "BonusDice": "{dice} Kości",
-                "CriticalDamageRoll": "Rzut na Obrażenia Krytyczne",
-                "DamageRoll": "Rzut na Obrażenia",
-                "Label": "Znacznik",
-                "None": "Brak",
-                "Splash": "{damageType} Rozpryskowe",
-                "BaseDamage": "Obrażenia Bazowe",
-                "DiceHeader": "Kości Obrażeń"
-            },
             "IWR": {
                 "ActorIsImmune": "{actor} jest niewrażliwy na {effect}.",
                 "ActorIsUnaffected": "{effect} nie ma wpływu na {actor}.",
@@ -1129,7 +1124,30 @@
                 "vitality": "witalność",
                 "void": "pustka"
             },
-            "Scatter": "Obrażenia Rozrzutu"
+            "Scatter": "Obrażenia Rozrzutu",
+            "Kind": {
+                "Both": {
+                    "Roll": {
+                        "Noun": "Rzut Obrażeń/Leczenia",
+                        "Verb": "Rzuć Obrażenia/Leczenie"
+                    }
+                },
+                "Damage": {
+                    "Roll": {
+                        "Noun": "Rzut Obrażeń",
+                        "Verb": "Rzuć Obrażenia"
+                    }
+                },
+                "Healing": {
+                    "Apply": {
+                        "Label": "Zastosuj Leczenie"
+                    },
+                    "Roll": {
+                        "Noun": "Rzut Leczenia",
+                        "Verb": "Rzuć Leczenie"
+                    }
+                }
+            }
         },
         "DamageButton": {
             "Adjust": "[Shift-Kliknij] Dostosuj wartość przed zastosowaniem.",
@@ -1163,7 +1181,6 @@
         "DecrementEffectTitle": "Zmniejsz Poziom Efektu",
         "DefensesLabel": "Defensywa",
         "Deity": "Bóstwo",
-        "DeityTitle": "Twoje bóstwo",
         "DeleteConditionTitle": "Usuń Status",
         "DeleteItemTitle": "Usuń Przedmiot",
         "DeleteShortLabel": "Usuń",
@@ -1362,12 +1379,6 @@
         "FeaturesAncestryHeader": "Atrybuty Przodkowstwa",
         "FeaturesClassHeader": "Atrybuty Klasowe",
         "Feet": "stopy",
-        "FlatBonusHP": "Płaska Premia PŻ",
-        "FlatBonusHPTitle": "Dodaje stałą liczbę do twoich PŻ",
-        "FlatBonusHPperLevel": "Dodatkowe PŻ/Poziom",
-        "FlatBonusSP": "Płaska Premia PW",
-        "FlatBonusSPTitle": "Dodaje stałą liczbę do twoich PW",
-        "FlatBonusSPperLevel": "Dodatkowe PW/Poziom",
         "FlatCheck": "Test Płaski",
         "Focus": {
             "NotEnoughFocusPointsError": "Nie masz wystarczająco dużo punktów skupienia aby rzucić to zaklęcie.",
@@ -1376,9 +1387,7 @@
             "Previous": "Poprzednio",
             "Spells": "Zaklęcia Skupienia",
             "label": "Punkty Skupienia",
-            "pointLabel": "Punkty",
-            "pointTitle": "Pozostałe Punkty Skupienia",
-            "poolTitle": "Rozmiar twojej Puli Skupienia"
+            "pointLabel": "Punkty"
         },
         "Foot": "Stóp",
         "FormulaKnownTitle": "Znane Receptury",
@@ -1396,24 +1405,16 @@
             "per": "na"
         },
         "GenderPronoun": "Płeć/Zaimki",
-        "GenderPronounTitle": "Twoja płeć/zaimki",
         "GeneralFeatLevels": "Poziomy Atutów Generalnych",
         "GreaterWeaponSpecialization": "Większa Specjalizacja w Broni",
         "HardnessLabel": "Twardość",
         "HazardDescriptionLabel": "Opis",
-        "HazardDescriptionTitle": "Opisuje wygląd zagrożenia i może zawierać specjalne runy",
         "HazardDisableLabel": "Rozbrojenie",
-        "HazardHardnessLabel": "Twardość",
-        "HazardHardnessTitle": "Obrażenia odnoszone przez zagrożenie są redukowane o tę wartość twardości",
         "HazardResetLabel": "Reset",
-        "HazardResetTitle": "Jeśli zagrożenie może zostać zresetowane, informacje o tym znajdują się tutaj",
         "HazardRoutineLabel": "Rutyna",
-        "HazardRoutineTitle": "Ta sekcja opisuje, co robi kompleksowe zagrożenie podczas starcia w każdej swojej turze; liczba w nawiasie po słowie „Rutyna” wskazuje, ile akcji może wykonać zagrożenie w każdej turze. Proste zagrożenia nie mają tego wpisu",
         "HealingTypeTemporaryHealing": "Leczenie (Tymczasowe)",
         "Height": "Wzrost",
-        "HeightTitle": "Twój wzrost",
         "Heritage": "Dziedzictwo",
-        "HeritageTitle": "Dziedzictwo twojej postaci",
         "HeroPointRatio": {
             "Many": "Punkty Bohaterstwa: {value}/{max}",
             "One": "Punkty Bohaterstwa: 1/{max}"
@@ -2089,6 +2090,10 @@
                     "ThreePropertiesMaterial": "{base} {property1} {property2} {property3} ({material})",
                     "TwoProperties": "{base} {property1} {property2}",
                     "TwoPropertiesMaterial": "{base} {property1} {property2} ({material})"
+                },
+                "BrokenThreshold": {
+                    "Label": "Próg Uszkodzenia",
+                    "ShortLabel": "PU"
                 }
             },
             "Plural": "Przedmioty",
@@ -2424,7 +2429,6 @@
         "MaxHitPointsBaseLabel": "Podstawowe Maksimum PŻ {base}",
         "MaxHitPointsShortLabel": "Maks. PŻ",
         "MaxStaminaPointsShortLabel": "Maks. PW",
-        "MaxStaminaTitle": "Maksymalna liczba twoich punktów wytrwałości",
         "Migrations": {
             "Finished": "Migracja systemu PF2E do wersji {version} zakończona pomyślnie!",
             "OnlyGMCanUse": "Tylko mistrz gry może używać tego narzędzia.",
@@ -2470,7 +2474,7 @@
                     "AttackOfOpportunity": "<p><strong>Aktywator</strong> Istota w zasięgu potwora używa akcji z cechą manipulacji lub ruchu, wykonuje atak dystansowy albo opuszcza pole w procesie wykonywanej przez siebie akcji ruchu.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór wymierza Cios w zwarciu prowokującej reakcję istocie. Jeśli atak trafi krytycznie a aktywatorem reakcji była akcja z cechą manipulacji, potwór rozprasza tę akcję. Ten Cios nie liczy się do obliczania kary za atak wielokrotny ani też podczas jego wykonywania nie należy uwzględniać kary za atak wielokrotny.</p>",
                     "Aura": "<p>Aura potwora automatycznie dotyczy wszystkiego w zasięgu określonej emanacji wokół potwora. Potwór nie musi wydawać akcji aby zarządzać aurą; zamiast tego efekty aury są aplikowane w konkretnych momentach czasu, na przykład kiedy istota skończy swoją turę w aurze lub kiedy istota pierwszy raz wkroczy w zasięg aury.</p>\n<p>Jeśli aura nie robi nic poza zadawaniem obrażeń, wpis o niej nie wymienia nic poza jej promieniem, obrażeniami i rzutem obronnym. Tego typu aury zadają obrażenia kiedy istota wkroczy w jej zasięg oraz kiedy istota rozpocznie turę w jej zasięgu. Istota może odnieść obrażenia od aury tylko raz na rundę.</p>\n<p>MG może uznać, że aura potwora nie ma wpływu na jego sojuszników. Przykładowo istota może być niewrażliwa na przerażającą obecność potwora, jeśli przebywały one razem dostatecznie długo.</p>",
                     "Buck": "<hr />\n<p>Większość potworów służących jako wierzchowce jest w stanie wierzgać aby zrzucić z siebie uporczywego jeźdźca, ale większość z nich nie użyje tej akcji przeciw zaufanej istocie o ile nie zostanie przestraszona lub źle potraktowana.</p>\n<p><strong>Aktywator</strong> Istota @UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{Dosiada} potwora lub używa akcji @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Zapanowania Nad Zwierzęciem} ujeżdżając potwora.</p>\n<hr />\n<p><strong>Efekt</strong> Aktywująca reakcję istota musi wykonać rzut obronny Refleksu o wymienionym ST lub spada z potwora i ląduje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalona}. Przy krytycznej porażce aktywująca efekt istota otrzymuje [[/roll 1d6[bludgeoning]]]{1k6 obrażeń obuchowych} w dodatku do standardowych obrażeń od upadku.</p>",
-                    "CatchRock": "<p><strong>Wymagania</strong> Potwór musi mieć wolną rękę ale może @UUID[Compendium.pf2e.actionspf2e.Item.wQYmDStjdjn0I26t]{Puścić} cokolwiek trzyma w tej reakcji.</p>\n<p><strong>Aktywator</strong> Potwór jest celem dystansowego Ciosu za pomocą głazu, lub głaz spada na niego.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór zyskuje premię sytuacyjną +4 przeciwko atakowi prowokującemu reakcję lub przeciw wszelkiej obronie przed spadającym głazem. Jeśli atak spudłuje lub obrona przeciw spadającemu głazowi się powiedzie, potwór nie odnosi żadnych obrażeń i chwyta głaz, od tej pory go trzymając</p>",
+                    "CatchRock": "<p><strong>Wymagania</strong> Potwór musi mieć wolną rękę ale może @UUID[Compendium.pf2e.actionspf2e.Item.wQYmDStjdjn0I26t]{Puścić} cokolwiek trzyma w ramach tej reakcji.</p>\n<p><strong>Aktywator</strong> Potwór jest celem Ciosu ciskającego w niego głazem lub głaz spada na niego.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór zyskuje premię sytuacyjną +4 przeciwko atakowi prowokującemu reakcję lub przeciw wszelkiej obronie przed spadającym głazem. Jeśli atak spudłuje lub obrona przeciw spadającemu głazowi się powiedzie, potwór nie odnosi żadnych obrażeń i chwyta głaz, od tej pory go trzymając.</p>",
                     "ChangeShape": "<p>Ten potwór może swobodnie zmieniać kształt na nieograniczoną ilość czasu. Może ponownie użyć tej akcji aby powrócić do swojego naturalnego kształtu lub przybrać nową formę. O ile nie wspomniano inaczej, potwór nie może wykorzystywać Zmiany Kształtu aby przybrać formę konkretnej istoty. Używanie Zmiany Kształtu liczy się jako przebranie na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Podszywania się} z użyciem Oszustwa. Transformacja potwora automatycznie przebija ST Percepcji na rzecz sprawdzania czy jest on przedstawicielem przodkowstwa lub rodzaju istot w który się przemienił, oraz zapewnia premię sytuacyjną +4 do ST Oszustwa na rzecz demaskowania jego przebrania. Zdolności Zmiany Kształtu precyzują jakie konkretnie formy może przybierać potwór. Potwór nie zyskuje żadnych specjalnych zdolności przybieranej przez siebie formy, jedynie jej wygląd. Przykładowo dla każdej przybieranej przez siebie formy potwór nadpisuje jej Prędkości, Ciosy oraz potencjalnie jej zmysły i rozmiar. Wszelkie zmiany wypisane są w bloku statystyk.</p>",
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
                     "Constrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST.</p>",
@@ -2788,12 +2792,11 @@
         "ResistancesExceptionPlaceholder": "np. z wyjątkiem srebra",
         "ResistancesLabel": "Odporności",
         "ResolvePointsShortLabel": "Determinacja",
-        "ResolveTitle": "Liczba posiadanych punktów determinacji",
         "RestoreSpellTitle": "Przywróć Zaklęcie",
         "RevertDamage": {
             "ButtonTooltip": "Cofnij",
-            "DamageMessage": "Cofnięto obrażenia aktora {actor}",
-            "HealingMessage": "Cofnięto leczenie aktora {actor}"
+            "DamageMessage": "Cofnięto obrażenia aktora {actor}.",
+            "HealingMessage": "Cofnięto leczenie aktora {actor}."
         },
         "Roll": {
             "Add": "Dodaj",
@@ -2809,7 +2812,28 @@
             "Normal": "Normalny",
             "Roll": "Rzut",
             "Type": "Typ",
-            "UntypedPenalty": "Bez typu (kara)"
+            "UntypedPenalty": "Bez typu (kara)",
+            "Dialog": {
+                "Check": {
+                    "Substitution": "Podmiana",
+                    "Utilize": "Zastosować?"
+                },
+                "Damage": {
+                    "BaseDamage": "Obrażenia Bazowe",
+                    "Dice": "{dice} Kości",
+                    "DiceHeader": "Kości",
+                    "DieSizeUpgrade": "Zwiększ Rozmiar Kości",
+                    "ExtraDice": "Dodatkowe {dice}",
+                    "Label": "Etykieta",
+                    "None": "Brak",
+                    "Override": "Nadpisz {value}",
+                    "Splash": "{damageType} Rozprysk",
+                    "TitleCritical": "Rzut Obrażeń Krytycznych",
+                    "Title": "Rzut Obrażeń"
+                },
+                "ShowDefault": "Zawsze Pokazuj Okno Dialogowe",
+                "ShowDefaultHint": "Po włączeniu, to okno zawsze będzie pokazywane, chyba że przytrzymasz Shift. Po wyłączeniu możesz otworzyć to okno przyciskając Shift."
+            }
         },
         "RollBonusPlaceholder": "np. +3 or +1d4",
         "RollModeLabel": "Tryb Rzucania",
@@ -2819,12 +2843,11 @@
         "SETTINGS": {
             "Automation": {
                 "ActorsDeadAtZero": {
-                    "Both": "BN oraz BG",
-                    "Hint": "Po osiągnięciu 0 Punktów Żywotności, BN są oznaczani jako martwi.",
-                    "NPCsOnly": "Tak",
-                    "Name": "BN Martwi przy 0 PŻ",
-                    "Neither": "Nikt",
-                    "PCsOnly": "Tylko BG"
+                    "Both": "Tak",
+                    "Hint": "Po osiągnięciu 0 Punktów Żywotności aktorzy są oznaczani jako martwi. BG dotyczy to tylko wtedy, kiedy obrażenia natychmiast by ich zabiły.",
+                    "NPCsOnly": "Tylko BN",
+                    "Name": "Aktorzy Martwi przy 0 PŻ",
+                    "Neither": "Nikt"
                 },
                 "EffectExpiration": {
                     "Hint": "Efekty automatycznie deaktywują powiązane elementy zasad kiedy minie ich czas działania.",
@@ -3008,11 +3031,6 @@
                 "Hint": "Używaj lepszych domyślnych ikon dla żetonów",
                 "Name": "Nath Mode"
             },
-            "Player": {
-                "QuickRolls": {
-                    "DialogHint": "Zawsze pokazuj to okno przed dokonaniem testu."
-                }
-            },
             "ResetChanges": "Resetuj Zmiany",
             "Settings": "Ustawienia",
             "Sidebar": {
@@ -3181,32 +3199,10 @@
         "SellItemConfirmHeader": "Potwierdzenie Sprzedaży",
         "SellItemQuestion": "Czy na pewno chcesz sprzedać {item}?",
         "Senses": "Zmysły",
-        "SettingsColorBlue": "Niebiesko-szary",
-        "SettingsColorFoundry-UI": "Work in Progress",
-        "SettingsColorLabel": "Motyw UI",
-        "SettingsColorNotes": "Motywy UI są najbardziej widoczne na panelach bocznych i kartach czatu.",
-        "SettingsColorOriginal": "Oryginalny",
-        "SettingsColorRed": "Ciemna Czerwień",
-        "SettingsDataUriHighlightLabel": "Wyróżniaj grafiki używające URI jako źródła",
-        "SettingsDataUriHighlightNotes": "Grafiki wykorzystujące URI jako źródło danych są zapisywane na karcie postaci. Ma to negatywny wpływ na wydajność karty. Po włączeniu tej opcji takie grafiki będą otaczane czerwoną ramką aby łatwo można było je znaleźć i poprawić.<br>To ustawienie jest aktywne tylko dla obecnej sesji.",
         "SettingsQuickRollsLabel": "Podgląd rzutów k20",
         "SettingsQuickRollsNotes": "Po wyłączeniu okna dialogowe rozpisujące rzut pojawią się tylko przy kliknięciu przycisku z shiftem.",
         "SheetLabel": "Karta: {type}",
-        "SheetLabelDataEntry": "Karta: {type} (wpis danych)",
-        "SheetLabelNew": "Karta: {type} (poglądowa)",
-        "SheetLabelOld": "Karta: {type} (stara)",
-        "ShieldACBonusTitle": "Premia do KP wynikająca z tarczy (kiedy użyjesz akcji wznieś tarczę)",
-        "ShieldBTShortLabel": "PU",
-        "ShieldBTTitle": "Próg Uszkodzenia twojej tarczy",
-        "ShieldBrokenThresholdLabel": "Próg Uszkodzenia",
-        "ShieldCurrentLabel": "PŻ Tarczy",
-        "ShieldCurrentTitle": "Obecne PŻ twojej tarczy",
-        "ShieldHardnessLabel": "Twardość",
-        "ShieldHardnessShortLabel": "TW",
-        "ShieldHardnessTitle": "Obrażenia odnoszone przez tarczę są zmniejszane o tę wartość twardości",
         "ShieldLabel": "Tarcza",
-        "ShieldMaxLabel": "Maks.",
-        "ShieldMaxTitle": "Maksymalne PŻ twojej tarczy",
         "SidebarAppearanceLabel": "Aparycja",
         "Size": "Rozmiar",
         "SizeLabel": "Rozmiar",
@@ -3262,14 +3258,12 @@
         "SpeedBaseLabel": "Bazowa Prędkość ({type})",
         "SpeedFeet": "Prędkość (stopy)",
         "SpeedLabel": "Prędkość ({type})",
-        "SpeedTitle": "Prędkość postaci",
         "SpeedTypes": "Typy Prędkości",
         "SpeedTypesBurrow": "Rycie",
         "SpeedTypesClimb": "Wspinaczka",
         "SpeedTypesFly": "Latanie",
         "SpeedTypesLand": "Lądowa",
         "SpeedTypesSwim": "Pływanie",
-        "SpeedTypesTitle": "Alternatywne typy prędkości",
         "SpellAbilityLabel": "Cecha Kluczowa",
         "SpellAbilityModLabel": "+ Mod.",
         "SpellArea": "Obszar: {areaType} {areaSize} {areaUnit}",
@@ -3428,7 +3422,6 @@
         "TabPathfinderSociety": "Stowarzyszenie Poszukiwaczy",
         "TabSkillsLabel": "Biegłości",
         "TabSpellbookLabel": "Rzucanie Zaklęć",
-        "TempHPTitle": "Liczba posiadanych tymczasowych punktów żywotności",
         "TempHitPointsShortLabel": "Tymczasowe PŻ",
         "TemplateLabel": "{shape} {size} {unit}",
         "TemporaryItemToolTip": "Ten przedmiot jest tymczasowy i wygaśnie po pewnym czasie lub podczas codziennych przygotowań. Nie ma żadnej wartości i nie można go sprzedać.",
@@ -4567,8 +4560,8 @@
             },
             "errorTargetToken": "Wybierz co najmniej jeden właściwy żeton.",
             "noDamageInfoForOutcome": "Brak informacji o obrażeniach dla wyniku {outcome}.",
-            "shiftModifyDamageLabel": "Edytuj Obrażenia/Leczenie",
-            "shiftModifyDamageTitle": "Edytuj wyrzucone obrażenia/leczenie"
+            "shiftModifyDamageLabel": "Liczba",
+            "shiftModifyDamageTitle": "Dostosuj Obrażenia/Leczenie"
         },
         "UUID": {
             "Label": "UUID",
@@ -5125,8 +5118,7 @@
                 }
             },
             "keen": {
-                "Name": "Wyważenia",
-                "Note": "Ataki wykonane tą bronią stają się krytycznym sukcesem przy wyrzuceniu 19, o ile wynik trafia. Jeśli po wyrzuceniu 19 osiągasz porażkę, runa nie ma żadnego efektu."
+                "Name": "Wyważenia"
             },
             "kinWarding": {
                 "Name": "Obrony Bliźnich"
@@ -5299,7 +5291,6 @@
         "WeaponTypeSpecial": "Inne Bronie",
         "WeaponTypeUnarmed": "Atak Wręcz",
         "Weight": "Waga",
-        "WeightTitle": "Twoja waga",
         "WorldClock": {
             "AD": {
                 "Era": "NE"
@@ -5674,7 +5665,7 @@
         },
         "ui": {
             "armorEquipped": "Przełącz noszenie ekwipunku",
-            "equipmentInvested": "Przełącz zaangażowanie w przedmiot",
+            "equipmentInvested": "Przełącz Zaangażowanie",
             "sell": "Sprzedaj",
             "weaponEquipped": "Przełącz trzymanie broni"
         },
@@ -5812,7 +5803,22 @@
             "Base": "Baza: {formula}"
         },
         "TraitVersatileVitality": "Wszechstronność: Witalność",
-        "TraitVersatileVoid": "Wszechstronność: Pustka"
+        "TraitVersatileVoid": "Wszechstronność: Pustka",
+        "Publication": {
+            "Authors": "Autorzy",
+            "Label": "Publikacja",
+            "License": {
+                "Label": "Licencja",
+                "OGL": "OGL",
+                "ORC": "ORC"
+            },
+            "Remaster": "Remaster?",
+            "Title": "Tytuł"
+        },
+        "TraitDescriptionNindoru": "Nindoru to chaotyczne złe czarty, które powstają w wyniku spaczenia cyklu reinkarnacji dusz i żyją na Planie Materialnym. Chociaż często mają w swoim wyglądzie elementy, które sprawiają, że wyglądają na nieumarłych, w rzeczywistości są żywymi istotami. Większość nindoru widzi w ciemności, jest odporna na efekty śmierci, ma podatność na srebro i posiada moc manifestowania obiektów lub stworzeń ze swoich myśli.",
+        "TraitDescriptionTea": "<p>Magiczna herbata jest rodzajem mikstury. Aktywuje się, oraz zużywa, przy jej wypiciu. Magiczna herbata posiada cechy mikstura i herbata. Kiedy wytwarzasz porcję magicznej herbaty, surowe materiały, których dostarczasz przyjmują postać niezwykłych i kosztownych liści herbaty. Proces tworzenia magicznej herbaty składa się z nasycania liści magicznymi reagentami, oczyszczania wody i parzenia liści herbaty, w wyniku czego otrzymuje się wyjątkowo smaczną miksturę. Możesz aktywować herbatę używając akcji Interakcji aby ją wypić lub napoić nią inną istotę, traktując ją jak zwyczajną miksturę. Możesz też aktywować herbatę poprzez 10-minutową aktywność wymagającą zestawu herbacianego (te narzędzia rzemieślnicze mogą być współdzielone przez maksymalnie cztery istoty podejmujące wspólnie tę aktywność) aby przygotować i spożyć ją lub zaoferować ją komuś w ramach ceremonii picia herbaty, po której zakończeniu herbata zaczyna działać; aktywacja magicznej herbaty w ten sposób wzmacnia jej działanie, co opisano w sekcji Ceremonia Picia Herbaty.</p><p>Po wypiciu porcji magicznej herbaty stajesz się niewrażliwy na działanie tego konkretnego rodzaju magicznej herbaty przez następne 24 godziny.</p>",
+        "TraitNindoru": "Nidoru",
+        "TraitTea": "Herbata"
     },
     "SIDEBAR": {
         "TabCombat": "Panel Starcia"

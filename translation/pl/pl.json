@@ -209,19 +209,7 @@
                         "Unarmored": "Obrona bez Pancerza"
                     }
                 },
-                "HandsOccupied": "Zajęte Ręce",
-                "Shield": {
-                    "ACBonus": "Premia Tarczy do KP (Gdy Wzniesiona)",
-                    "BrokenThreshold": "PU Tarczy",
-                    "Hardness": {
-                        "Hint": "Twardość Tarczy",
-                        "Label": "T"
-                    },
-                    "HitPoints": {
-                        "Value": "PŻ Tarczy",
-                        "Max": "Maks. PŻ Tarczy"
-                    }
-                }
+                "HandsOccupied": "Zajęte Ręce"
             },
             "Creature": {
                 "Alliance": {
@@ -283,7 +271,19 @@
                         "Scroll": "Tylko Zwoje"
                     }
                 },
-                "AttributeModifiers": "Modyfikatory Cech"
+                "AttributeModifiers": "Modyfikatory Cech",
+                "Shield": {
+                    "ACBonus": "Premia do KP z Tarczy (Gdy Wzniesiona)",
+                    "BrokenThreshold": "Próg Uszkodzenia Tarczy",
+                    "Hardness": {
+                        "Hint": "Twardość Tarczy",
+                        "Label": "T"
+                    },
+                    "HitPoints": {
+                        "Value": "PŻ Tarczy",
+                        "Max": "Maks. PŻ Tarczy"
+                    }
+                }
             },
             "Dead": "Martwy",
             "Familiar": {
@@ -768,7 +768,6 @@
             "FailedToBuyItemWithCharacter": "Nie udało się kupić przedmiotu {item} postacią {character}.",
             "FailedToBuyItemWithSomeCharacters": "Nie udało się kupić przedmiotu {item} częścią wybranych postaci.",
             "Hint": "Wybierz zakładek na górze aby wybrać kompendium",
-            "ProgressBar": {},
             "RollTable": {
                 "AddLabel": "Dodaj do Tabeli Rzutów",
                 "CreateDialogText": "Utworzyć Tabelę rzutów o liczbie rezultatów: {count}?",
@@ -2114,6 +2113,10 @@
             },
             "SidebarSummary": "Podsumowanie - {type}",
             "Spell": {
+                "Rank": {
+                    "Label": "Rank",
+                    "Ordinal": "{rank} Rank"
+                },
                 "LevelN": "Zaklęcie Kręgu {level}",
                 "Variants": {
                     "DeleteDialogText": "Czy na pewno chcesz usunąć '{variantName}'?",
@@ -2137,9 +2140,9 @@
                 },
                 "MeasuredTemplate": {
                     "Clear": "Wyczyść Umieszczone Szablony",
-                    "Place": "Umieść {shape} {size} {unit}"
+                    "Place": "Umieść {area}"
                 },
-                "Rank": "Krąg"
+                "Area": "{shape} {size} {unit}"
             },
             "Weapon": {
                 "CriticalSpecialization": {
@@ -2479,7 +2482,7 @@
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
                     "Constrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST.</p>",
                     "Coven": "<p>Ten potwór może stworzyć sabat wraz z dwoma lub więcej istotami, które również posiadają cechę sabatu. Wiąże się to z przeprowadzeniem 8-godzinnej ceremonii ze wszystkimi potencjalnymi członkami sabatu. Kiedy sabat zostanie utworzony, wszyscy jego członkowie stają się elitarnymi istotami, co wiąż się z odpowiednimi zmianami w ich poziomie i statystykach jak wskazują zasady istot elitarnych. Członkowie sabatu mogą wyczuć lokalizację oraz statusy innych członków sabatu wykonując pojedynczą akcję, posiadającą cechę koncentracji, oraz mogą wyczuwać zmysłami to co odczuwa inny członek sabatu wykonując dwu-akcyjną aktywność, która również posiada cechę koncentracji.</p>\n<p>Sabat zapewnia również jego członkom dostęp do zaklęć i rytuałów, ale te mogą zostać rzucone tylko poprzez współpracę trzech członków sabatu. Członek sabatu może przyczynić się do rzucania zaklęcia sabatu poprzez wykonanie jedno-akcyjnej aktywności rzucania zaklęcia o komponencie werbalnym. Jeśli dwóch członków sabatu użyło tych akcji w ostatniej rundzie, trzeci członek sabatu może rzucić w swojej turze zaklęcie wykonując aktywność rzucania zaklęcia w normalny sposób. Sabat może rzucać dostępne dla niego zaklęcia nieograniczoną ilość razy, ale może użyć tylko jednego zaklęcia w danej rundzie. Każdy sabat dostarcza <em>@UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Złowrogą Polimorfię}</em> jako zaklęcie 8. kręgu oraz następujące zaklęcia, które sabat może rzucać na dowolnym kręgu do 5. włącznie: <em>@UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Wróżba}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Zauroczenie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Jasnosłyszenie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Jasnowidzenie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Wiadomość we Śnie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Iluzoryczna Scena}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Wścibskie Oko}</em> oraz <em>@UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Mówiące Zwłoki}</em>. Poszczególne istoty wchodzące z cechą sabatu również dodają zaklęcia do dyspozycji sabatu, do którego dołączą. Sabat może również przeprowadzać rytuał <em>@UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Kontroli nad Pogodą}</em> ze ST 23 zamiast standardowego ST.</p>\n<p>Jeśli opuszczenie sabatu przez istotę lub śmierć jednego z jego członków zmniejszyły by liczebność sabatu poniżej trzech członków, pozostałe istoty utrzymują swój status elitarności przez następne 24 godziny, ale pozbawione niezbędnej ilości członków do przeprowadzenia rytuałów nie mogą rzucać zaklęć sabatu.</p>",
-                    "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie 4. kręgu <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemność}</em>, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
+                    "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu</em>, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
                     "Disease": "<p>Kiedy istota zostanie wystawiona na kontakt z chorobą potwora, wykonuje rzut obronny Krzepy lub poddaje się chorobie. Poziom choroby jest równy poziomowi potwora wywołującego ją. Choroba podąża za zasadami dotyczącymi przypadłości.</p>",
                     "Engulf": "<p>Potwór Biegnie na odległość wynoszącą maks. podwojoną wartość jego Prędkości i może w ramach tego ruchu przemieszczać się przez istoty na jego drodze. Każda istota rozmiaru mniejszego lub równego rozmiarowi potwora, przez której pole się przemieścił, może wykonać rzut obronny Refleksu aby uniknąć Pochłonięcia. Istota niezdolna do działania automatycznie odnosi krytyczną porażkę na tym rzucie. Istota, która zda rzut obronny może wybrać pomiędzy byciem odepchniętą na bok (z drogi potwora) albo byciem przepchniętą przed potwora w miejsce gdzie zakończy on ruch. Potwór może próbować Pochłonąć daną istotę tylko raz w ramach pojedynczego użycia Pochłonięcia. Potwór może zawierać w sobie tyle istot, ile zmieści się w jego przestrzeni.</p>\n<p>Istota, która nie zda rzutu obronnego, jest wciągana do wnętrza ciała potwora. Jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Pochłonięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po pochłonięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje pochłonięta. Pochłonięta istota może się uwolnić poprzez @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczkę} o wymienionym ST. Pochłonięta istota może zaatakować potwora, który ją pochłonął, ale tylko atakami bez broni lub bronią o lekkim lub mniejszym Naręczu. Pochłaniające stworzenie ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, pochłonięta istota wycina sobie drogą na zewnątrz i uwalnia się. Stworzenie, które uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń pochłaniającego je potwora.</p>\n<p>Jeśli potwór umrze, wszystkie pochłonięte przez niego istoty są natychmiast uwalniane podczas gdy jego ciało traci formę.</p>",
                     "FastHealing": "<p>Potwór z tą zdolnością odzyskuje w każdej rundzie, na początku swojej tury, wymienioną liczbę Punktów Żywtoności.</p>",
@@ -2488,7 +2491,7 @@
                     "FrightfulPresence": "<p>Istota wkraczająca po raz pierwszy w zasięg efektu musi wykonać rzut obronny Woli.</p>\n<p>Niezależnie od wyniku testu, istota staje się tymczasowo niewrażliwa na Przerażającą Obecność tego potwora na 1 minutę.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Obecność nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażona 1}.</p>\n<p><strong>Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażona 2}.</p>\n<p><strong>Krytyczna Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażona 4}.</p>",
                     "Grab": "<p><strong>Wymagania</strong> Ostatnią akcją potwora był udany Cios, który wymienia w swoich statystykach Chwyt, lub potwór pochwycił już istotę tą akcją.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór automatycznie Chwyta cel do końca swojej następnej tury. Istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona} przez tę część potwora, która została wykorzystana do ataku, a ta część ciała nie może być wykorzystywana do zadawania Ciosów aż do zakończenia chwytu. Użycie Chwytu przedłuża czas działania Chwytu do końca kolejnej tury potwora, dla wszystkich Pochwyconych przez niego obecnie istot. Pochwycona istota może użyć akcji @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczki} aby wydostać się z uścisku, a ponadto Chwyt kończy się automatycznie dla pochwyconych istot jeśli potwór oddali się od nich.</p>",
                     "GreaterConstrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST. Istota, która odniesie na tym teście porażkę staje się @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomna}, a istota, która zda test staje się na 1 minutę niewrażliwa na efekt Większego Przyduszenia.</p>",
-                    "GreaterDarkvision": "<p>Istota z większym widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie 4. kręgu <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemność}</em>, blokują normalne @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Widzenie w Ciemności}. Istota z większym widzeniem w ciemności widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
+                    "GreaterDarkvision": "<p>Istota z większym widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu.</em>, blokują normalne @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Widzenie w Ciemności}. Istota z większym widzeniem w ciemności widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
                     "ImprovedGrab": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Chwycenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem. Potwór z Lepszym Chwytem nadal musi wydać akcję aby przedłużyć jego czas działania na istotach, które są już przez niego @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycone}.</p>",
                     "ImprovedKnockdown": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Przewrócenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem.</p>",
                     "ImprovedPush": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Odepchnięcia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem.</p>",
@@ -3090,7 +3093,7 @@
                     "ModifiersHint": "Ustaw wartość modyfikatora dla każdej rangi biegłości."
                 },
                 "Stamina": {
-                    "Hint": "Graz z uwzględnieniem wariantowej zasady wytrwałości, zawartej w Gamemastery Guide str. 200",
+                    "Hint": "Graz z uwzględnieniem wariantowej zasady wytrwałości, zawartej w Gamemastery Guide str. 200.",
                     "Name": "Wytrwałość"
                 },
                 "Title": "Wariantowe Zasady",
@@ -3199,8 +3202,6 @@
         "SellItemConfirmHeader": "Potwierdzenie Sprzedaży",
         "SellItemQuestion": "Czy na pewno chcesz sprzedać {item}?",
         "Senses": "Zmysły",
-        "SettingsQuickRollsLabel": "Podgląd rzutów k20",
-        "SettingsQuickRollsNotes": "Po wyłączeniu okna dialogowe rozpisujące rzut pojawią się tylko przy kliknięciu przycisku z shiftem.",
         "SheetLabel": "Karta: {type}",
         "ShieldLabel": "Tarcza",
         "SidebarAppearanceLabel": "Aparycja",
@@ -3246,12 +3247,6 @@
         "SkillThievery": "Złodziejstwo",
         "SkillsLabel": "Umiejętności",
         "Slug": "Slug",
-        "Source": {
-            "AuthorLabel": "Autor",
-            "AuthorPlaceholder": "Autor",
-            "Label": "Źródło",
-            "SourcePlaceholder": "Książka"
-        },
         "SpecialLabel": "Specjalne",
         "SpecialSensesLabel": "Specjalne Zmysły",
         "Speed": "Prędkość",
@@ -3266,12 +3261,11 @@
         "SpeedTypesSwim": "Pływanie",
         "SpellAbilityLabel": "Cecha Kluczowa",
         "SpellAbilityModLabel": "+ Mod.",
-        "SpellArea": "Obszar: {areaType} {areaSize} {areaUnit}",
+        "SpellArea": "Obszar: {area}",
         "SpellAttackLabel": "Atak Zaklęciem",
         "SpellAttackWithTradition": "Atak Zaklęciem {tradition}",
         "SpellBasicSaveOption": "Podstawowy",
         "SpellBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:d6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
-        "SpellCantripLabel": "Sztuczka",
         "SpellCastingFormat": "{preparationType} Zaklęcia {traditionSpells}",
         "SpellCategoryFocus": "Zakl. Skupienia",
         "SpellCategoryFocusCantrip": "Sztuczka Skupienia",
@@ -3299,21 +3293,9 @@
         "SpellFocusLabel": "Skupienia",
         "SpellLabel": "Zaklęcie",
         "SpellLabelPlural": "Zaklęcia",
-        "SpellLevel": "Krąg {level}",
-        "SpellLevel1": "1. Krąg",
-        "SpellLevel10": "10. Krąg",
-        "SpellLevel2": "2. Krąg",
-        "SpellLevel3": "3. Krąg",
-        "SpellLevel4": "4. Krąg",
-        "SpellLevel5": "5. Krąg",
-        "SpellLevel6": "6. Krąg",
-        "SpellLevel7": "7. Krąg",
-        "SpellLevel8": "8. Krąg",
-        "SpellLevel9": "9. Krąg",
         "SpellLevelBase": "Bazowy Krąg: {level}",
         "SpellLevelHeightened": "Wywyższenie: +{heightened}",
         "SpellLevelLabel": "Krąg Zaklęcia",
-        "SpellNonCantripLabel": "Nie-Sztuczka",
         "SpellPreparedLabel": "Przygotowane",
         "SpellPrimaryCheckLabel": "Główny Test",
         "SpellRangeLabel": "Zasięg",
@@ -3440,7 +3422,7 @@
         },
         "ToggleEffectUnidentified": "Przełącz stan identyfikacji efektu",
         "ToggleSignatureSpellTitle": "Przełącz Zaklęcie Popisowe",
-        "ToggleSlotlessSpellLevelsTitle": "Przełącz widoczność zaklęć pozbawionych komórek",
+        "ToggleSlotlessSpellLevelsTitle": "Przełącz widoczność kręgów zaklęć, dla których nie ma komórek",
         "ToggleSpellVisibilityTitle": "Przygotowanie Zaklęć",
         "ToggleUnreadyStrikes": "Przełącz niewyekwipowane bronie",
         "ToggleWithName": "Przełącz: {property}",
@@ -3930,7 +3912,7 @@
         "TraitDescriptionStructure": "Przedmiot z cechą struktura tworzy magiczną budowlę albo innego rodzaju strukturę przy swojej aktywacji. Przedmiot musi zostać aktywowany na połaci ziemi wolnej od innych struktur. Struktura adaptuje się do otaczającego terenu, przybierając cechy konstrukcyjne niezbędne do jej powstania w tym miejscu. Struktura dostosowuje się do małych przestrzeni takich jak sadzawki czy występy skalne, nie może jednak zostać postawiona w całości na wodzie czy innej płynnej powierzchni. W wypadku aktywacji na śniegu, wydmach piaskowych, albo innej miękkiej powierzchni z twardą warstwą ukrytą głębiej, fundamenty struktury (jeśli je posiada) dosięgają stabilnej warstwy. Jeśli przedmiot z tą cechą zostanie aktywowany na solidnej ale niestabilnej powierzchni, takiej jak bagniska lub obszary nękane przez wstrząsy tektoniczne, rzucaj każdego dnia @Check[type:flat|dc:3]; przy porażce struktura zaczyna się zapadać lub burzyć. Struktura nie krzywdzi okolicznych istot w procesie swojego powstawania i nie może zostać stworzona w tłumie czy gęsto zaludnionym obszarze. Każda istota złapana przypadkowo w procesie powstawania struktury ląduje bezpiecznie w jej wnętrzu i zawsze posiada drogę do wyjścia. Istota przebywająca wewnątrz struktury w momencie kiedy jej aktywacja się kończy nie jest krzywdzona i upada bezpiecznie na ziemię jeśli była na wyższych piętrach.",
         "TraitDescriptionSubjectiveGravity": "Na planach o tej cesze, wszystkie ciała mają możliwość bycia centrum grawitacji z tą samą siłą, jednak wymaga to określenia przez wolę nie-bezmyślnej istoty.",
         "TraitDescriptionSuli": "Suli to planarne przodkowstwo wywodzące się od jannów.",
-        "TraitDescriptionSummoned": "Istota przyzwana za pomocą zaklęcia lub efektu zyskuje cechę przywołanej. Przywołana istota nie może przywoływać innych istot, tworzyć cennych przedmiotów, ani rzucać zaklęć, które posiadają koszt. Posiada cechę sługusa. Jeśli spróbuje rzucić zaklęcie kręgu wyższego niż zaklęcie w wyniku którego została przywołana, zaburza magię przywołującą, powodując porażkę własnego zaklęcia oraz zakończenie zaklęcia przywołania. Poza tymi ograniczeniami, istota używa akcji standardowych dla jej rodzaju. Na ogół atakuje twoich wrogów na tyle na ile tylko potrafi. Jeśli możesz się z nią komunikować, możesz spróbować wydać jej polecenie, ale to MG określa w jakim stopniu istota go wysłucha. Natychmiast po zakończeniu Rzucania Zaklęcia istota wykorzystuje swoje dwie akcje przypadające na tę turę. Pomiot albo jakakolwiek inna istota wytworzona przez przyzwaną wraca do swojego pierwotnego stanu po zniknięciu przyzwanej istoty (w wypadku pomiotu są to w większości zwłoki). Jeśli nie jest jasne jaki jest to stan, określa MG. Istoty przyzwane mogą zostać wygnane za pomocą różnych zaklęć i efektów. Zostają automatycznie odegnane jeśli osiągną 0 Punktów Żywtoności lub jeśli przywołujący je efekt się zakończy.",
+        "TraitDescriptionSummoned": "Istota przyzwana za pomocą zaklęcia lub efektu zyskuje cechę przywołanej. Przywołana istota nie może przywoływać innych istot, tworzyć cennych przedmiotów, ani rzucać zaklęć, które posiadają koszt. Posiada cechę sługusa. Jeśli spróbuje rzucić zaklęcie kręgu wyższego niż zaklęcie w wyniku którego została przywołana, zaburza magię przywołującą, powodując porażkę własnego zaklęcia oraz zakończenie zaklęcia przywołania. Poza tymi ograniczeniami, istota używa akcji standardowych dla jej rodzaju. Na ogół atakuje twoich wrogów na tyle na ile tylko potrafi. Jeśli możesz się z nią komunikować, możesz spróbować wydać jej polecenie, ale to MG określa w jakim stopniu istota go wysłucha. Natychmiast po zakończeniu Rzucania Zaklęcia istota wykorzystuje swoje dwie akcje przypadające na tę turę. Pomiot albo jakakolwiek inna istota wytworzona przez przyzwaną wraca do swojego pierwotnego stanu po zniknięciu przyzwanej istoty (w wypadku pomiotu są to w większości zwłoki). Jeśli nie jest jasne jaki jest to stan, określa MG. Istoty przyzwane mogą zostać wygnane za pomocą różnych zaklęć i efektów. Zostają automatycznie odegnane jeśli osiągną 0 Punktów Żywotności lub jeśli przywołujący je efekt się zakończy.",
         "TraitDescriptionSummoner": "Oznacza zdolności z klasy Przywoływacza.",
         "TraitDescriptionSwashbuckler": "Oznacza zdolności z klasy Szermierza.",
         "TraitDescriptionSweep": "Ta broń dokonuje zamaszystych lub wirujących ataków, co ułatwia trafianie wielu celów. Kiedy atakujesz tą bronią otrzymujesz premię sytuacyjną +1 do rzutu na atak o ile atakowałeś już w tej turze inną istotę.",
@@ -5628,7 +5610,7 @@
             "GiveMessage": "{giver} daje {recipient} {quantity} × {item}.",
             "GiveSubtitle": "Daj przedmiot",
             "HiddenWhenEmpty": {
-                "Hint": "Ukryj żeton(y) tego aktora kiedy jego ekwipunek będzie pusty",
+                "Hint": "Ukryj żeton(y) tego aktora kiedy jego ekwipunek będzie pusty.",
                 "Label": "Ukryty Kiedy Pusty"
             },
             "InsufficientCurrencyError": "{buyer} nie ma dość waluty na zakupy",
@@ -5818,7 +5800,19 @@
         "TraitDescriptionNindoru": "Nindoru to chaotyczne złe czarty, które powstają w wyniku spaczenia cyklu reinkarnacji dusz i żyją na Planie Materialnym. Chociaż często mają w swoim wyglądzie elementy, które sprawiają, że wyglądają na nieumarłych, w rzeczywistości są żywymi istotami. Większość nindoru widzi w ciemności, jest odporna na efekty śmierci, ma podatność na srebro i posiada moc manifestowania obiektów lub stworzeń ze swoich myśli.",
         "TraitDescriptionTea": "<p>Magiczna herbata jest rodzajem mikstury. Aktywuje się, oraz zużywa, przy jej wypiciu. Magiczna herbata posiada cechy mikstura i herbata. Kiedy wytwarzasz porcję magicznej herbaty, surowe materiały, których dostarczasz przyjmują postać niezwykłych i kosztownych liści herbaty. Proces tworzenia magicznej herbaty składa się z nasycania liści magicznymi reagentami, oczyszczania wody i parzenia liści herbaty, w wyniku czego otrzymuje się wyjątkowo smaczną miksturę. Możesz aktywować herbatę używając akcji Interakcji aby ją wypić lub napoić nią inną istotę, traktując ją jak zwyczajną miksturę. Możesz też aktywować herbatę poprzez 10-minutową aktywność wymagającą zestawu herbacianego (te narzędzia rzemieślnicze mogą być współdzielone przez maksymalnie cztery istoty podejmujące wspólnie tę aktywność) aby przygotować i spożyć ją lub zaoferować ją komuś w ramach ceremonii picia herbaty, po której zakończeniu herbata zaczyna działać; aktywacja magicznej herbaty w ten sposób wzmacnia jej działanie, co opisano w sekcji Ceremonia Picia Herbaty.</p><p>Po wypiciu porcji magicznej herbaty stajesz się niewrażliwy na działanie tego konkretnego rodzaju magicznej herbaty przez następne 24 godziny.</p>",
         "TraitNindoru": "Nidoru",
-        "TraitTea": "Herbata"
+        "TraitTea": "Herbata",
+        "LastStopMessage": {
+            "Paragraph1": "",
+            "Paragraph2": "",
+            "Paragraph3": "",
+            "Paragraph4": "",
+            "Paragraph5": "",
+            "Paragraph6": ""
+        },
+        "SettingsQuickChecksLabel": "Podgląd Rzutów K20",
+        "SettingsQuickChecksNotes": "Po wyłączeniu okna dialogowe do podglądu rzutów K20 będą pojawiać się tylko po Shift-kliknięciu przycisku.",
+        "SettingsQuickDamageLabel": "Podkląd Rzutów Obrażeń",
+        "SettingsQuickDamageNotes": "Po wyłączeniu ogna dialogowe do podglądu rzutów Obrażeń będą się pojawiać tylko po Shift-kliknięciu przycisku."
     },
     "SIDEBAR": {
         "TabCombat": "Panel Starcia"

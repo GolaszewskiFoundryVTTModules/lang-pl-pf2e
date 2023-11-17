@@ -52,6 +52,11 @@
     font-size: 28px;
 } */
 
+/* Temp Fix for attributes being stretched */
+.actor.sheet.character .crb-style .sheet-body .sheet-content > .tab.active {
+    display: block;
+}
+
 /*Old*/
 .npc .npc-sheet .top-sections .senses .perception label
 {
@@ -142,11 +147,6 @@ h4.entity-name a
 .actor.sheet .crb-style aside .logo {
     width: auto;
     height: auto;
-}
-
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details {
-    grid: "img alignment deity" 46px
-    "img details details" auto/120px 190px 1fr;
 }
 
 /* AC */

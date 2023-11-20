@@ -137,7 +137,7 @@
         },
         "action->Roll the Bones": {
           "name": "Roll the Bones",
-          "description": "<p>The bone croupier designates an adjacent living creature to roll the bones. The chosen creature finds a pair of dice in its hand and is compelled by fate to roll them; it can and must roll the dice even if its hands are full or it is unable to act. The creature rolls [[/r 2d6 #Roll the Bones]], adding them together to determine the effect.</p>\n<ul>\n<li><strong>7 or 11</strong> (healing, positive) The target regains [[/r 15[healing]]]{15 HP}.</li>\n<li><strong>2, 3, or 12</strong> (negative) The target takes @Damage[30[void]] damage. If the target is @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}, this damage increases its dying condition by 2 instead of 1.</li>\n<li><strong>Any Other Roll</strong> (negative) The target takes @Damage[15[void]] damage.</li>\n</ul>"
+          "description": "<p>The bone croupier designates an adjacent living creature to roll the bones. The chosen creature finds a pair of dice in its hand and is compelled by fate to roll them; it can and must roll the dice even if its hands are full or it is unable to act. The creature rolls [[/r 2d6 #Roll the Bones]], adding them together to determine the effect.</p>\n<ul>\n<li><strong>7 or 11</strong> (healing, vitality) The target regains [[/r 15[vitality,healing]]]{15 HP}.</li>\n<li><strong>2, 3, or 12</strong> (void) The target takes @Damage[30[void]] damage. If the target is @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}, this damage increases its dying condition by 2 instead of 1.</li>\n<li><strong>Any Other Roll</strong> (void) The target takes @Damage[15[void]] damage.</li>\n</ul>"
         },
         "lore->Games Lore": {
           "name": "Games Lore"
@@ -167,7 +167,7 @@
         },
         "action->Shadow Rapier": {
           "name": "Shadow Rapier",
-          "description": "<p>The rake shrouds their sword in void energy, changing the damage type to negative. This shadow-shrouded rapier has a reach of 30 feet. The effect lasts until the end of the rake's turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TSdrv1FmLHJnk9AD]{Effect: Shadow Rapier}</p>"
+          "description": "<p>The rake shrouds their sword in void energy, changing the damage type to void. This shadow-shrouded rapier has a reach of 30 feet. The effect lasts until the end of the rake's turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TSdrv1FmLHJnk9AD]{Effect: Shadow Rapier}</p>"
         },
         "action->The Upper Hand": {
           "name": "The Upper Hand",
@@ -418,7 +418,7 @@
         },
         "action->Field of Undeath": {
           "name": "Field of Undeath",
-          "description": "<p>20 feet. Allies within the aura who have void healing gain fast healing 2. When a creature within the aura would receive positive healing, it must succeed at a @Check[type:flat|dc:5] or receive no healing from the effect.</p>"
+          "description": "<p>20 feet. Allies within the aura who have void healing gain fast healing 2. When a creature within the aura would receive vitality healing, it must succeed at a @Check[type:flat|dc:5] or receive no healing from the effect.</p>"
         }
       }
     },
@@ -457,7 +457,7 @@
         },
         "action->Field of Undeath": {
           "name": "Field of Undeath",
-          "description": "<p>40 feet. Allies within the aura who have void healing gain fast healing 4. When a creature within the aura would receive positive healing, it must succeed at a @Check[type:flat|dc:5] or receive no healing from the effect.</p>"
+          "description": "<p>40 feet. Allies within the aura who have void healing gain fast healing 4. When a creature within the aura would receive vitality healing, it must succeed at a @Check[type:flat|dc:5] or receive no healing from the effect.</p>"
         }
       }
     },
@@ -1326,7 +1326,7 @@
       "name": "Horde Lich",
       "hpDetails": "void healing, rejuvenation",
       "publicNotes": "<p>At first glance, a horde lich looks like a skeleton packed with too many bones. In combat, the true purpose of these extra parts becomes clear as limbs peel off, expanding and reassembling into another nimble skeletal form. Regardless of the number, the single lich mind controls them all, and if any of them survive an encounter, they can rebuild the whole given enough time and raw materials.</p>\n<hr />\n<p>A desire to live eternally motivates a spellcaster to become a lich, and necromantic knowledge makes the desire real. The typical lich takes the most direct path, keeping their undead form fairly close to their appearance in life. But undeath can also bring greater freedom for those with a less conventional view of what they can become. The horde lich and runecarved lich reshape themselves entirely.</p>",
-      "saveDetails": "+1 status to all saves vs. positive",
+      "saveDetails": "+1 status to all saves vs. vitality",
       "senses": "darkvision",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -2432,7 +2432,7 @@
         },
         "action->Ghostly Swoop": {
           "name": "Ghostly Swoop",
-          "description": "<p>The queen sluagh becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or positive); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the queen sluagh can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
+          "description": "<p>The queen sluagh becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or vitality); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the queen sluagh can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
         },
         "action->Soul Theft": {
           "name": "Soul Theft",
@@ -2527,7 +2527,7 @@
       "name": "Runecarved Lich",
       "hpDetails": "void healing, rejuvenation (as horde lich)",
       "publicNotes": "<p>In their relentless pursuit of more magical might, some liches use their rotting forms to hold magical secrets, hiding precious tomes in their ribcage, inscribing formulas on their withered flesh, even replacing some bones with powerful magical items. The process is painstaking, as the <em>soul cage</em> tries to repair any damage caused by such alterations.</p>\n<hr />\n<p>A desire to live eternally motivates a spellcaster to become a lich, and necromantic knowledge makes the desire real. The typical lich takes the most direct path, keeping their undead form fairly close to their appearance in life. But undeath can also bring greater freedom for those with a less conventional view of what they can become. The horde lich and runecarved lich reshape themselves entirely.</p>",
-      "saveDetails": "+1 to all saves vs. positive",
+      "saveDetails": "+1 to all saves vs. vitality",
       "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
@@ -2970,7 +2970,7 @@
         },
         "action->Ghostly Swoop": {
           "name": "Ghostly Swoop",
-          "description": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or positive); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
+          "description": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or vitality); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The sluagh reaper deals an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"

@@ -6,8 +6,8 @@ from collections import Counter
 import datetime
 
 # Current date and time for the log filename
-current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-log_filename = f"LocalizationUpdate{current_time}.log"
+current_time = datetime.datetime.now().strftime("%Y.%m.%d_%H-%M-%S")
+log_filename = f"LocalizationUpdate_{current_time}.log"
 
 logging.basicConfig(level=logging.INFO, 
                     filename=log_filename, 

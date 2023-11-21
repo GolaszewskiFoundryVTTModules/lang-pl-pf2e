@@ -41,7 +41,7 @@
     },
     "(Blackfrost Dead) Blackfrost": {
       "name": "(Blackfrost Dead) Blackfrost",
-      "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with <em>@UUID[Compendium.pf2e.spells-srd.Item.OyFCwQuw8XRazsNr]{Remove Curse}</em> or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract level of 10.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
+      "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with <em>@UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction}</em> or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract level of 10.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
     },
     "(Blackfrost Dead) Blackfrost Breath": {
       "name": "(Blackfrost Dead) Blackfrost Breath",
@@ -105,7 +105,7 @@
     },
     "(Cryptid, Experimental) Energy Wave": {
       "name": "(Cryptid, Experimental) Energy Wave",
-      "description": "<p>The experimental cryptid unleashes a @Template[type:line|distance:30] of energy of a type specific to the experimental cryptid (typically electricity or fire). Creatures in the area take @Damage[1d6[damagetype]]{1d6 damage per level of the cryptid} with a @Check[type:reflex|dc:|basic:true] save. The experimental cryptid can use this ability once every [[/r 1d4 #Recharge Energy Wave]]{1d4 rounds}. This action has the damage type's trait. If the experiments that reshaped the creature were magical, this action also has the evocation trait and the trait matching the magical tradition of the experiments (arcane, divine, occult, or primal).</p>"
+      "description": "<p>The experimental cryptid unleashes a @Template[type:line|distance:30] of energy of a type specific to the experimental cryptid (typically electricity or fire). Creatures in the area take @Damage[1d6[damagetype]]{1d6 damage per level of the cryptid} with a @Check[type:reflex|dc:|basic:true] save. The experimental cryptid can use this ability once every [[/br 1d4 #Recharge Energy Wave]]{1d4 rounds}. This action has the damage type's trait. If the experiments that reshaped the creature were magical, this action also has the evocation trait and the trait matching the magical tradition of the experiments (arcane, divine, occult, or primal).</p>"
     },
     "(Cryptid, Experimental) Operational Flaw": {
       "name": "(Cryptid, Experimental) Operational Flaw",
@@ -181,7 +181,7 @@
     },
     "(Divine Warden) Divine Destruction": {
       "name": "(Divine Warden) Divine Destruction",
-      "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[type:emanation|distance:30], dealing @Damage[1d6[damage]] damage per level. This damage is either positive or negative, determined by the patron deity's divine font (chosen at the divine warden's creation if the deity offers a choice), and this ability gains the corresponding trait. Each creature in the area must attempt a @Check[type:will|dc:|traits:damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+      "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[type:emanation|distance:30], dealing @Damage[1d6[damageType]] damage per level. This damage is either vitality or void, determined by the patron deity's divine font (chosen at the divine warden's creation if the deity offers a choice), and this ability gains the corresponding trait. Each creature in the area must attempt a @Check[type:will|dc:|traits:damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
     },
     "(Divine Warden) Divine Domain Spells": {
       "name": "(Divine Warden) Divine Domain Spells",
@@ -213,7 +213,7 @@
     },
     "(Ghast) Ghast Fever": {
       "name": "(Ghast) Ghast Fever",
-      "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
+      "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
     },
     "(Ghast) Paralysis": {
       "name": "(Ghast) Paralysis",
@@ -237,7 +237,7 @@
     },
     "(Ghost) Corrupting Gaze": {
       "name": "(Ghost) Corrupting Gaze",
-      "description": "<p>The ghost stares at a creature it can see within 30 feet. The target takes @Damage[1d6[negative]] damage + 1d6 per 2 levels with a @Check[type:will|dc:]{basic Will} save.</p>\n<p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
+      "description": "<p>The ghost stares at a creature it can see within 30 feet. The target takes @Damage[1d6[void]] damage + 1d6 per 2 levels with a @Check[type:will|dc:]{basic Will} save.</p>\n<p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
     },
     "(Ghost) Draining Touch": {
       "name": "(Ghost) Draining Touch",
@@ -313,7 +313,7 @@
     },
     "(Ghoul) Ghoul Fever": {
       "name": "(Ghoul) Ghoul Fever",
-      "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+      "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
     },
     "(Ghoul) Paralysis": {
       "name": "(Ghoul) Paralysis",
@@ -349,7 +349,7 @@
     },
     "(Graveknight) Dark Deliverance": {
       "name": "(Graveknight) Dark Deliverance",
-      "description": "<p>The graveknight has positive resistance equal to its level.</p>"
+      "description": "<p>The graveknight has vitality resistance equal to its level.</p>"
     },
     "(Graveknight) Devastating Blast": {
       "name": "(Graveknight) Devastating Blast",
@@ -373,7 +373,7 @@
     },
     "(Graveknight) Phantom Mount": {
       "name": "(Graveknight) Phantom Mount",
-      "description": "<p>HP __; AC __, Fort +__, Ref +__, Will +__</p>\n<hr />\n<p>The graveknight summons a supernatural mount as per <em>@UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Phantom Steed}</em>, heightened to a level equal to half the graveknight's level.</p>\n<p>Unlike <em>phantom steed</em>, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).</p>\n<p>If the steed is destroyed, the graveknight must wait 1 hour before using this ability again.</p>"
+      "description": "<p>HP __; AC __, Fort +__, Ref +__, Will +__</p>\n<hr />\n<p>The graveknight summons a supernatural mount as per <em>@UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}</em>, heightened to a level equal to half the graveknight's level.</p>\n<p>Unlike <em>phantom steed</em>, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).</p>\n<p>If the steed is destroyed, the graveknight must wait 1 hour before using this ability again.</p>"
     },
     "(Graveknight) Portentous Glare": {
       "name": "(Graveknight) Portentous Glare",
@@ -381,15 +381,15 @@
     },
     "(Graveknight) Rejuvenation": {
       "name": "(Graveknight) Rejuvenation",
-      "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with <em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}</em>), transporting it to the Positive Energy Plane, or throwing it into the heart of a volcano.</p>"
+      "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with <em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}</em>), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
     },
     "(Graveknight) Ruinous Weapons": {
       "name": "(Graveknight) Ruinous Weapons",
-      "description": "<p>At the time of its creation, a graveknight chooses one of the following energy types that was relevant to its life or death: acid, cold, electricity, or fire.</p>\n<p>Any weapon the graveknight wields gains the effects of the caustic, frost, shock, or flaming weapon rune, respectively, in addition to a +1 striking weapon rune.</p>\n<p>If the graveknight is 14th level or higher, its weapons instead gain the effects of the greater versions of both of these runes.</p>"
+      "description": "<p>At the time of its creation, a graveknight chooses one of the following energy types that was relevant to its life or death: acid, cold, electricity, or fire.</p>\n<p>Any weapon the graveknight wields gains the effects of the <em>caustic</em>, <em>frost</em>, <em>shock</em>, or <em>flaming</em> weapon rune, respectively, in addition to a <em>+1 striking weapon</em> rune.</p>\n<p>If the graveknight is 14th level or higher, its weapons instead gain the effects of the greater versions of both of these runes.</p>"
     },
     "(Graveknight) Sacrilegious Aura": {
       "name": "(Graveknight) Sacrilegious Aura",
-      "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>When a creature in the aura uses a positive spell or ability, the graveknight automatically attempts to counteract it, with a counteract modifier of [[/r 1d20+0 #Counteract]]{+x}.</p>"
+      "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>When a creature in the aura uses a vitality spell or ability, the graveknight automatically attempts to counteract it, with a counteract modifier of [[/r 1d20+0 #Counteract]]{+x}.</p>"
     },
     "(Graveknight) Weapon Master": {
       "name": "(Graveknight) Weapon Master",
@@ -489,7 +489,7 @@
     },
     "(Lich) Dark Deliverance": {
       "name": "(Lich) Dark Deliverance",
-      "description": "<p>The lich has resistance to positive equal to its level.</p>"
+      "description": "<p>The lich has resistance to vitality equal to its level.</p>"
     },
     "(Lich) Drain Soul Cage": {
       "name": "(Lich) Drain Soul Cage",
@@ -529,7 +529,7 @@
     },
     "(Lich) Unholy Touch": {
       "name": "(Lich) Unholy Touch",
-      "description": "<p>The lich's touch is suffused with evil, dealing evil damage instead of negative. On a critical hit, the target also takes persistent evil damage equal to half the lich's level.</p>"
+      "description": "<p>The lich's touch is suffused with evil, dealing spirit damage instead of negative. On a critical hit, the target also takes persistent spirit damage equal to half the lich's level.</p>"
     },
     "(Lich) Void Shroud": {
       "name": "(Lich) Void Shroud",
@@ -549,7 +549,7 @@
     },
     "(Mana Wastes Mutant) Energy Blast": {
       "name": "(Mana Wastes Mutant) Energy Blast",
-      "description": "<p>Choose an energy type; this ability gains that energy type as a trait. The mutant gains some sort of physical alteration to their shape that suggests how they trigger their energy blast, be it numerous pustules on their body, an extra limb, or an additional opening in their throat to exhale the blast as a breath weapon. Choose whether the mutant creates a @Template[type:line|distance:60] of energy or a @Template[type:cone|distance:30] of energy when they activate this ability. The energy deals [[/r ((@actor.level)d6)[energy]]]{1d6 damage per level} with a @Check[type:reflex|dc:|basic:true] save. The mutant can't use Energy Blast again for [[/r 1d4 #Recharge Energy Blast]]{1d4 rounds}.</p>"
+      "description": "<p>Choose an energy type; this ability gains that energy type as a trait. The mutant gains some sort of physical alteration to their shape that suggests how they trigger their energy blast, be it numerous pustules on their body, an extra limb, or an additional opening in their throat to exhale the blast as a breath weapon. Choose whether the mutant creates a @Template[type:line|distance:60] of energy or a @Template[type:cone|distance:30] of energy when they activate this ability. The energy deals [[/r ((@actor.level)d6)[energy]]]{1d6 damage per level} with a @Check[type:reflex|dc:|basic:true] save. The mutant can't use Energy Blast again for [[/br 1d4 #Recharge Energy Blast]]{1d4 rounds}.</p>"
     },
     "(Mana Wastes Mutant) Energy Resistance": {
       "name": "(Mana Wastes Mutant) Energy Resistance",
@@ -781,7 +781,7 @@
     },
     "(Skeleton) Frozen": {
       "name": "(Skeleton) Frozen",
-      "description": "<p>The skeleton's bones are covered in a thin layer of ice. The skeleton gains immunity to cold and weakness 5 to fire and loses resistance to fire. The skeleton is surrounded by an aura of cold that deals [[/r @actor.level/2[cold]]]{cold damage equal to half the skeleton's level} to all adjacent creatures at the start of the skeleton's turn (@Check[type:reflex|dc:|basic:true] save with a standard DC for its level).</p>"
+      "description": "<p>The skeleton's bones are covered in a thin layer of ice. The skeleton gains immunity to cold and weakness 5 to fire and loses resistance to fire. The skeleton is surrounded by an aura of cold that deals [[/r (max(1,floor(@actor.level/2)))[cold]]]{cold damage equal to half the skeleton's level} to all adjacent creatures at the start of the skeleton's turn (@Check[type:reflex|dc:|basic:true] save with a standard DC for its level).</p>"
     },
     "(Skeleton) Grave Eruption": {
       "name": "(Skeleton) Grave Eruption",
@@ -810,7 +810,7 @@
     },
     "(Skeleton) Skeleton of Roses": {
       "name": "(Skeleton) Skeleton of Roses",
-      "description": "<p>Thick briars have grown through the skeleton's bones, covering it in red roses with inch-long thorns.</p>\n<p>The skeleton's unarmed melee Strikes deal additional piercing damage equal to 1/3 the skeleton's level (minimum 1 damage).</p>\n<p>At the end of each of its turns, if the skeleton has caused piercing damage with its thorns, it regains HP equal to its level (minimum 1). Each time the skeleton regains HP in this way, another rose blossoms.</p>"
+      "description": "<p>Thick briars have grown through the skeleton's bones, covering it in red roses with inch-long thorns.</p>\n<p>The skeleton's unarmed melee Strikes deal additional piercing damage equal to 1/3 the skeleton's level (minimum 1 damage).</p>\n<p>At the end of each of its turns, if the skeleton has caused piercing damage with its thorns, it regains [[/r (max(1,@actor.level))[healing]]]{HP equal to its level} (minimum 1). Each time the skeleton regains HP in this way, another rose blossoms.</p>"
     },
     "(Sporeborn) Consume Biomatter": {
       "name": "(Sporeborn) Consume Biomatter",
@@ -1003,7 +1003,7 @@
     },
     "(Vampire, Strigoi) Domain of Dusk": {
       "name": "(Vampire, Strigoi) Domain of Dusk",
-      "description": "<p>With a wave of its hand, the strigoi calls fourth vile ruination from the surrounding shadows, causing coils of darkness and shadowy bats, rats, and wolves to lash out at living targets in a @Template[type:emanation|distance:30]. Living creatures in this area take @Damage[1d6[negative]] damage +1d6 per 2 levels possessed by the strigoi (@Check[type:fortitude|dc:|basic:true] save against the DC of the strigoi's level). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and then dazzled for 1 round)</p>"
+      "description": "<p>With a wave of its hand, the strigoi calls fourth vile ruination from the surrounding shadows, causing coils of darkness and shadowy bats, rats, and wolves to lash out at living targets in a @Template[type:emanation|distance:30]. Living creatures in this area take @Damage[1d6[void]] damage +1d6 per 2 levels possessed by the strigoi (@Check[type:fortitude|dc:|basic:true] save against the DC of the strigoi's level). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and then dazzled for 1 round)</p>"
     },
     "(Vampire, Strigoi) Drink Essence": {
       "name": "(Vampire, Strigoi) Drink Essence",
@@ -1019,7 +1019,7 @@
     },
     "(Vampire, Strigoi) Strigoi Weaknesses": {
       "name": "(Vampire, Strigoi) Strigoi Weaknesses",
-      "description": "<p>All strigoi possess the following weaknesses:</p>\n<ul>\n<li><strong>Revulsion</strong> Strigoi are uncomfortable near mirrors or sources of bright light. Only a strigoi's shadow reflects in a mirror, and this often compels them to cover or destroy mirrors in their presence rather than risk their true nature being displayed. A strigoi can't voluntarily come within 10 feet of a brandished mirror or source of bright light. To brandish a mirror or light source, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the strigoi involuntarily comes within 10 feet of a brandished mirror or light source, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the brandished object until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a strigoi can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/r 1d6 #Overcome Revulsions Duration]]{1d6 rounds} (or 1 hour on a critical success). A strigoi can move normally around mirrors or bright light sources that are not brandished, although doing so causes them discomfort that can be noticed with a successful Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}.</li>\n<li><strong>Sunlight</strong> When exposed to direct sunlight, a strigoi immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and falls to the ground. It appears to be dead: it doesn't breathe, its body temperature matches its surroundings, and it doesn't react to pain or other stimuli. A successful @Check[type:perception|dc:resolve(10+@actor.system.saves.reflex.value)] check against the strigoi's Reflex DC is enough to note one anomaly: the shadow cast by its \"dead\" body shifts and moves slightly, its edges twisting and active. Spells like <em>@UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Evil}</em>, senses like lifesense, and the \"corpse\" taking damage from positive energy still function normally, and could reveal the truth without needing a successful Perception check. Viewing the \"corpse\" in a mirror's reflection can also reveal the truth, for only the body's shadow reflects. While in sunlight and unconscious, the strigoi loses its resistance to physical damage. If the strigoi takes enough damage that it would be reduced to 0 Hit Points, its body quickly decomposes, and the strigoi is destroyed.</li>\n<li><strong>Water Revulsion</strong> A strigoi cannot cross a significant source of running water (such as a creek, river, or waves on a seashore). A strigoi capable of flight can cross running water provided it approaches no closer than 10 feet to the liquid's surface. If forced into running water against its will, the strigoi becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and gains the fleeing condition as long as it remains in the water. At the end of any turn in which the strigoi remains in running water, it must succeed at a @Check[type:flat|dc:5] or be destroyed.</li>\n</ul>"
+      "description": "<p>All strigoi possess the following weaknesses:</p>\n<ul>\n<li><strong>Revulsion</strong> Strigoi are uncomfortable near mirrors or sources of bright light. Only a strigoi's shadow reflects in a mirror, and this often compels them to cover or destroy mirrors in their presence rather than risk their true nature being displayed. A strigoi can't voluntarily come within 10 feet of a brandished mirror or source of bright light. To brandish a mirror or light source, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the strigoi involuntarily comes within 10 feet of a brandished mirror or light source, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the brandished object until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a strigoi can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/r 1d6 #Overcome Revulsions Duration]]{1d6 rounds} (or 1 hour on a critical success). A strigoi can move normally around mirrors or bright light sources that are not brandished, although doing so causes them discomfort that can be noticed with a successful Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}.</li>\n<li><strong>Sunlight</strong> When exposed to direct sunlight, a strigoi immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and falls to the ground. It appears to be dead: it doesn't breathe, its body temperature matches its surroundings, and it doesn't react to pain or other stimuli. A successful @Check[type:perception|dc:resolve(10+@actor.system.saves.reflex.value)] check against the strigoi's Reflex DC is enough to note one anomaly: the shadow cast by its \"dead\" body shifts and moves slightly, its edges twisting and active. Spells like <em>@UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment}</em>, senses like lifesense, and the \"corpse\" taking damage from vitality energy still function normally, and could reveal the truth without needing a successful Perception check. Viewing the \"corpse\" in a mirror's reflection can also reveal the truth, for only the body's shadow reflects. While in sunlight and unconscious, the strigoi loses its resistance to physical damage. If the strigoi takes enough damage that it would be reduced to 0 Hit Points, its body quickly decomposes, and the strigoi is destroyed.</li>\n<li><strong>Water Revulsion</strong> A strigoi cannot cross a significant source of running water (such as a creek, river, or waves on a seashore). A strigoi capable of flight can cross running water provided it approaches no closer than 10 feet to the liquid's surface. If forced into running water against its will, the strigoi becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and gains the fleeing condition as long as it remains in the water. At the end of any turn in which the strigoi remains in running water, it must succeed at a @Check[type:flat|dc:5] or be destroyed.</li>\n</ul>"
     },
     "(Vampire, True) Change Shape": {
       "name": "(Vampire, True) Change Shape",
@@ -1071,7 +1071,7 @@
     },
     "(Vampire, Vetalarana, Manipulator) Drain Thoughts": {
       "name": "(Vampire, Vetalarana, Manipulator) Drain Thoughts",
-      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vetalarana's reach</p>\n<hr />\n<p><strong>Effect</strong> The vetalarana seizes a creature and consumes its memories. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical success), and the vetalarana regains HP equal to 10% of the vetalarana's maximum HP, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to the vetalarana but increases the victim's stupefied value by 1. Additionally, the vetalarana views one of the victim's memories. The vetalarana manipulator can choose to alter, enhance, or erase the memory they view as a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]{Modify Memory}</em> spell.</p>\n<p>A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes stupefied 5 in this way is rendered comatose, becoming permanently @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. As long as the vetalarana lives, a comatose victim can't regain consciousness, and its stupefied condition doesn't decrease.</p>"
+      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vetalarana's reach</p>\n<hr />\n<p><strong>Effect</strong> The vetalarana seizes a creature and consumes its memories. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical success), and the vetalarana regains HP equal to 10% of the vetalarana's maximum HP, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to the vetalarana but increases the victim's stupefied value by 1. Additionally, the vetalarana views one of the victim's memories. The vetalarana manipulator can choose to alter, enhance, or erase the memory they view as a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]{Rewrite Memory}</em> spell.</p>\n<p>A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes stupefied 5 in this way is rendered comatose, becoming permanently @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. As long as the vetalarana lives, a comatose victim can't regain consciousness, and its stupefied condition doesn't decrease.</p>"
     },
     "(Vampire, Vetalarana, Manipulator) Paralyzing Claws": {
       "name": "(Vampire, Vetalarana, Manipulator) Paralyzing Claws",
@@ -1112,7 +1112,7 @@
     },
     "(Vampire, Vrykolakas) Feral Possession": {
       "name": "(Vampire, Vrykolakas) Feral Possession",
-      "description": "<p><strong>Trigger</strong> The vrykolakas is reduced to 0 Hit Points, and an animal is within 100 feet</p>\n<hr />\n<p><strong>Effect</strong> Unlike most other undead, a vrykolakas isn't destroyed when it reaches 0 HP. Instead, it attempts to cast its spirit into an animal within 100 feet, which must attempt a @Check[type:will|dc:|name:Feral Possession] save (use a high DC for the vrykolakas's level).</p>\n<p>On a failure, the animal is possessed. This has the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession}</em> spell, but it lasts a number of days equal to the vrykolakas's level. This possession can't be counteracted with magic (though <em>@UUID[Compendium.pf2e.spells-srd.Item.OyFCwQuw8XRazsNr]{Remove Curse}</em> works against it normally).</p>\n<p>If the animal succeeds at its save, the vrykolakas can attempt to possess a different animal within 100 feet. If at any point an animal critically succeeds at its save or no animal is within 100 feet, the vrykolakas fails to possess anything and is destroyed.</p>\n<p>A vrykolakas possessing an animal seeks out its burial site immediately, burying itself there. While the vrykolakas is in this state of recovery, its animal host is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, and beheading it destroys the vrykolakas and kills its host. Removing the curse destroys the vrykolakas and returns the animal to normal.</p>\n<p>After [[/br 1d4 #days]]{1d4 days}, if the vrykolakas hasn't been destroyed, the animal dies and the vrykolakas rises in a new body that's identical to its previous one, formed from the animal's remains.</p>"
+      "description": "<p><strong>Trigger</strong> The vrykolakas is reduced to 0 Hit Points, and an animal is within 100 feet</p>\n<hr />\n<p><strong>Effect</strong> Unlike most other undead, a vrykolakas isn't destroyed when it reaches 0 HP. Instead, it attempts to cast its spirit into an animal within 100 feet, which must attempt a @Check[type:will|dc:|name:Feral Possession] save (use a high DC for the vrykolakas's level).</p>\n<p>On a failure, the animal is possessed. This has the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession}</em> spell, but it lasts a number of days equal to the vrykolakas's level. This possession can't be counteracted with magic (though <em>@UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction}</em> works against it normally).</p>\n<p>If the animal succeeds at its save, the vrykolakas can attempt to possess a different animal within 100 feet. If at any point an animal critically succeeds at its save or no animal is within 100 feet, the vrykolakas fails to possess anything and is destroyed.</p>\n<p>A vrykolakas possessing an animal seeks out its burial site immediately, burying itself there. While the vrykolakas is in this state of recovery, its animal host is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, and beheading it destroys the vrykolakas and kills its host. Removing the curse destroys the vrykolakas and returns the animal to normal.</p>\n<p>After [[/br 1d4 #days]]{1d4 days}, if the vrykolakas hasn't been destroyed, the animal dies and the vrykolakas rises in a new body that's identical to its previous one, formed from the animal's remains.</p>"
     },
     "(Vampire, Vrykolakas) Swift Tracker": {
       "name": "(Vampire, Vrykolakas) Swift Tracker",
@@ -1136,7 +1136,7 @@
     },
     "(Visitant) Visitant Spells": {
       "name": "(Visitant) Visitant Spells",
-      "description": "<p>Some visitants can cast the following innate occult spells. If you give a visitant the following spells, consider removing one of its other special abilities.</p>\n<p><strong>Occult Innate Spells</strong></p>\n<p><strong>DC</strong> varies</p>\n<p><strong>Spell Attack</strong> varies</p>\n<p><strong>1st</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Ray of Enfeeblement}</em></p>\n<p><strong>Constant (1st)</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment (evil only)}</em></p>"
+      "description": "<p>Some visitants can cast the following innate occult spells. If you give a visitant the following spells, consider removing one of its other special abilities.</p>\n<p><strong>Occult Innate Spells</strong></p>\n<p><strong>DC</strong> varies</p>\n<p><strong>Spell Attack</strong> varies</p>\n<p><strong>1st</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</em></p>\n<p><strong>Constant (1st)</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment}</em></p>"
     },
     "(Visitant) Wrestle": {
       "name": "(Visitant) Wrestle",
@@ -1192,7 +1192,7 @@
     },
     "(Zombie) Plague-Ridden": {
       "name": "(Zombie) Plague-Ridden",
-      "description": "<p>The zombie carries a plague that can create more of its own kind.</p>\n<p>This functions as the @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.KxN9aGFGPxl6oLGF]{Plague Zombie's} zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.</p>\n<hr />\n<p><strong>Zombie Rot</strong></p>\n<p>An infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:|name:Zombie Rot]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[negative]] damage (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d6[negative]] damage (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[1d6[negative]] damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as another of the zombie's type immediately</p>"
+      "description": "<p>The zombie carries a plague that can create more of its own kind.</p>\n<p>This functions as the @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.KxN9aGFGPxl6oLGF]{Plague Zombie's} zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.</p>\n<hr />\n<p><strong>Zombie Rot</strong></p>\n<p>An infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:|name:Zombie Rot]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[void]] damage (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d6[void]] damage (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[1d6[void]] damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as another of the zombie's type immediately</p>"
     },
     "(Zombie) Putrid Stench": {
       "name": "(Zombie) Putrid Stench",
@@ -1228,7 +1228,7 @@
     },
     "(Zombie, Shock) Electromechanical Phasing": {
       "name": "(Zombie, Shock) Electromechanical Phasing",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The shock zombie activates its electromechanical components and begins phasing in and out of reality. The shock zombie casts <em>@UUID[Compendium.pf2e.spells-srd.Item.zR67Rt3UMHKC5evy]{Blink}</em> as a 4th-level divine innate spell.</p>"
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The shock zombie activates its electromechanical components and begins phasing in and out of reality. The shock zombie casts <em>@UUID[Compendium.pf2e.spells-srd.Item.zR67Rt3UMHKC5evy]{Flicker}</em> as a 4th-level divine innate spell.</p>"
     },
     "(Zombie, Shock) Lightning Rod": {
       "name": "(Zombie, Shock) Lightning Rod",
@@ -1247,7 +1247,7 @@
     },
     "source": {
       "converter": "translateSource",
-      "path": "system.source.value"
+      "path": "system.publication.title"
     }
   }
 }

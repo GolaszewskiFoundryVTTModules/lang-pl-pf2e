@@ -79,7 +79,7 @@
     },
     "Effect: Aura of Vitality": {
       "name": "Effect: Aura of Vitality",
-      "description": "<p>Allies in the movanic deva's aura gain a +1 status bonus to all saving throws, resistance 10 to positive and negative damage, and are unharmed by the effects of a plane's positive and negative traits. Animals in the aura of 12th level or lower don't attack the movanic deva or the deva's allies unless they are controlled or otherwise forced to attack.</p>"
+      "description": "<p>Allies in the movanic deva's aura gain a +1 status bonus to all saving throws, resistance 10 to vitality and void damage, and are unharmed by the effects of a plane's positive and negative traits. Animals in the aura of 12th level or lower don't attack the movanic deva or the deva's allies unless they are controlled or otherwise forced to attack.</p>"
     },
     "Effect: Barbed Net": {
       "name": "Effect: Barbed Net",
@@ -151,7 +151,7 @@
     },
     "Effect: Bloom Regeneration": {
       "name": "Effect: Bloom Regeneration",
-      "description": "<p>For the next 4 rounds, the creature gains regeneration 10; this regeneration can be deactivated by cold iron or good damage.</p>"
+      "description": "<p>For the next 4 rounds, the creature gains regeneration 10; this regeneration can be deactivated by cold iron or spirit damage.</p>"
     },
     "Effect: Bodyguard's Defense": {
       "name": "Effect: Bodyguard's Defense",
@@ -175,7 +175,11 @@
     },
     "Effect: Brand of the Impenitent": {
       "name": "Effect: Brand of the Impenitent",
-      "description": "<p>The creature takes a -1 status penalty to AC and saves, reduces its resistances by 2, and gains weakness 2 to good damage.</p>"
+      "description": "<p>The creature takes a -1 status penalty to AC and saves, reduces its resistances by 2, and gains weakness 2 to holy.</p>"
+    },
+    "Effect: Breach the Abyss": {
+      "name": "Effect: Breach the Abyss",
+      "description": "<p>the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 void</li>\n</ul>"
     },
     "Effect: Breach the Abyss - Acid": {
       "name": "Effect: Breach the Abyss - Acid",
@@ -195,7 +199,7 @@
     },
     "Effect: Breach the Abyss - Negative": {
       "name": "Effect: Breach the Abyss - Negative",
-      "description": "<p>The creature deals an extra @Damage[2d6[negative]] damage with its weapon.</p>"
+      "description": "<p>The creature deals an extra @Damage[2d6[void]] damage with its weapon.</p>"
     },
     "Effect: Brutal Rally": {
       "name": "Effect: Brutal Rally",
@@ -203,7 +207,7 @@
     },
     "Effect: Bully the Departed": {
       "name": "Effect: Bully the Departed",
-      "description": "<p>The creature gains regeneration 15 (deactivated by force or good), and deals an extra @Damage[1d8[evil]] damage on its Strikes.</p>"
+      "description": "<p>The creature gains regeneration 15 (deactivated by force or good), and deals an extra @Damage[1d8[spirit]] damage on its Strikes.</p>"
     },
     "Effect: Bully's Rage": {
       "name": "Effect: Bully's Rage",
@@ -367,6 +371,10 @@
       "name": "Effect: Defensive Slice",
       "description": "<p>Baron Drelev assumes a defensive position with his weapons out, then attempts a melee Strike. He takes a -2 status penalty on all Strikes (including this one) and gains a +2 status bonus to his AC until the start of his next turn.</p>"
     },
+    "Effect: Demon-Touched Weapon": {
+      "name": "Effect: Demon-Touched Weapon",
+      "description": "<p>Shenga deals an additional 1d6 bleed damage with her melee Strikes.</p>"
+    },
     "Effect: Despair": {
       "name": "Effect: Despair",
       "description": "<p>Living creatures are frightened 1 while in a despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area.</p>"
@@ -403,6 +411,10 @@
       "name": "Effect: Distracting Frolic",
       "description": "<p>The target ally can roll the save twice and take the better result.</p>"
     },
+    "Effect: Distracting Giggle": {
+      "name": "Effect: Distracting Giggle",
+      "description": "<p>Creatures take a –1 status penalty to Will saves.</p>"
+    },
     "Effect: Disturbing Vision": {
       "name": "Effect: Disturbing Vision",
       "description": "<p>The visions last [[/br 1d4 #rounds]]{1d4 rounds}, and while they do, all evil creatures in the area gain a +1 status bonus to all checks.</p>"
@@ -421,7 +433,7 @@
     },
     "Effect: Drain Luck": {
       "name": "Effect: Drain Luck",
-      "description": "<p>The creature must succeed at a @Check[type:will|dc:48] save or gain a -1 status penalty to all checks; it is then temporarily immune to Drain Luck for 1 round. Further damage dealt by the Lantern King's searing rune Strikes increases the status penalty by 1 on a failed save to a maximum status penalty of -4. This status penalty is reduced by one every time the affected creature achieves a critical success on a die roll against a creature that is at least equal to them in level, but otherwise is permanent until removed.</p>"
+      "description": "<p>The creature gains a status penalty to all checks.</p>"
     },
     "Effect: Drink Emotions": {
       "name": "Effect: Drink Emotions",
@@ -489,7 +501,7 @@
     },
     "Effect: Field of Undeath": {
       "name": "Effect: Field of Undeath",
-      "description": "<p>Allies within the aura who have negative healing gain fast healing.</p>"
+      "description": "<p>Allies within the aura who have void healing gain fast healing.</p>"
     },
     "Effect: Fiery Form": {
       "name": "Effect: Fiery Form",
@@ -498,6 +510,10 @@
     "Effect: Filth Wave": {
       "name": "Effect: Filth Wave",
       "description": "<p>The creature takes a -10-foot penalty to its Speeds.</p>"
+    },
+    "Effect: Flammable": {
+      "name": "Effect: Flammable",
+      "description": "<p>While burning, a bakeneko's Strikes inflict an additional 1d6 fire damage.</p>"
     },
     "Effect: Focused Assault": {
       "name": "Effect: Focused Assault",
@@ -617,6 +633,10 @@
       "name": "Effect: Haywire",
       "description": "<p>The creature takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}.</p>"
     },
+    "Effect: Howl of Vengeful Fury": {
+      "name": "Effect: Howl of Vengeful Fury",
+      "description": "<p>Thatchlings gain 5 temporary Hit Points and a +1 status bonus to their Strikes and saving throws.</p>"
+    },
     "Effect: Hunted Fear": {
       "name": "Effect: Hunted Fear",
       "description": "<p>The creature takes a -2 circumstance penalty to Survival checks to avoid getting lost.</p>"
@@ -711,7 +731,7 @@
     },
     "Effect: Lantern of Hope": {
       "name": "Effect: Lantern of Hope",
-      "description": "<p>The creature gains a +1 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Crushing Despair}</em>.</p>",
+      "description": "<p>The creature gains a +1 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em>.</p>",
       "rules": {
         "1": {
           "label": "Lantern of Hope (vs Crushing Despair)"
@@ -720,7 +740,7 @@
     },
     "Effect: Lantern of Hope (Gestalt)": {
       "name": "Effect: Lantern of Hope (Gestalt)",
-      "description": "<p>The creature gains a +3 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Crushing Despair}</em>.</p>",
+      "description": "<p>The creature gains a +3 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em>.</p>",
       "rules": {
         "1": {
           "label": "Lantern of Hope (vs Crushing Despair)"
@@ -785,7 +805,7 @@
     },
     "Effect: Necrotic Field": {
       "name": "Effect: Necrotic Field",
-      "description": "<p>Undead within the aura deal an additional @Damage[1d6[negative]] damage with their natural attacks.</p>"
+      "description": "<p>Undead within the aura deal an additional @Damage[1d6[void]] damage with their natural attacks.</p>"
     },
     "Effect: No Quarter!": {
       "name": "Effect: No Quarter!",
@@ -802,6 +822,10 @@
     "Effect: Oceanic Armor": {
       "name": "Effect: Oceanic Armor",
       "description": "<p>The creature gains a +2 circumstance bonus to AC.</p>"
+    },
+    "Effect: Overdrive Engine": {
+      "name": "Effect: Overdrive Engine",
+      "description": "<p>Reginald gains 200 temporary Hit Points, a +15-foot status bonus to Speed, and a +2 status bonus to melee attack rolls.</p>"
     },
     "Effect: Overtake Soul": {
       "name": "Effect: Overtake Soul"
@@ -845,6 +869,10 @@
     },
     "Effect: Pollution Infusion": {
       "name": "Effect: Pollution Infusion"
+    },
+    "Effect: Powder Burst": {
+      "name": "Effect: Powder Burst",
+      "description": "<p>-2 status penalty to Perception checks and saves against mental effects.</p>"
     },
     "Effect: Praise Adachros": {
       "name": "Effect: Praise Adachros",
@@ -1026,7 +1054,7 @@
     },
     "Effect: Shadow Rapier": {
       "name": "Effect: Shadow Rapier",
-      "description": "<p>The rake shrouds their sword in negative energy, changing the damage type to negative.</p>"
+      "description": "<p>The rake shrouds their sword in void energy, changing the damage type to void.</p>"
     },
     "Effect: Share Defenses": {
       "name": "Effect: Share Defenses",
@@ -1316,7 +1344,7 @@
     },
     "source": {
       "converter": "translateSource",
-      "path": "system.source.value"
+      "path": "system.publication.title"
     }
   }
 }

@@ -29,7 +29,7 @@
                 }
             },
             "Aid": {
-                "Description": "<p>Próbujesz wspomóc towarzysza w zadaniu. Aby użyć tej reakcji musisz najpierw przygotować się do pomocy, na ogół używając pojedynczej akcji w swojej turze. Musisz wyjaśnić MG w jaki dokładnie sposób masz zamiar pomóc swojemu towarzyszowi, a on określi czy możesz go Wesprzeć.</p><p>Kiedy używasz akcji Wsparcia wykonujesz test umiejętności lub rzut ataku wskazany przez MG. Typowy ST to 20, ale MG może go dostosować w zależności od trudności zadania. MG może swobodnie nadać odpowiednie Cechy twojej akcji przygotowania lub wynikającej z niej reakcji Wsparcia, a nawet zezwolić na Wsparcie w sposób inny niż testem umiejętności lub atakiem.</p><p><strong>Krytyczny Sukces</strong> Zapewniasz swojemu sojusznikowi sytuacyjną premię +2 do wspieranego testu. Jeśli jesteś Mistrzem w teście, który wspierasz, premia zwiększa się do +3, a jeśli jesteś Legendą do +4.<br><strong>Sukces</strong> Zapewniasz sojusznikowi premię sytuacyjną +1 do wspieranego testu.<br><strong>Krytyczna Porażka</strong> Twój sojusznik ponosi karę sytuacyjną -1 do wspieranego testu.</p>",
+                "Description": "<p>Próbujesz wspomóc towarzysza w zadaniu. Aby użyć tej reakcji musisz najpierw przygotować się do pomocy, na ogół używając pojedynczej akcji w swojej turze. Musisz wyjaśnić MG w jaki dokładnie sposób masz zamiar pomóc swojemu towarzyszowi, a on określi czy możesz go Wesprzeć.</p><p>Kiedy używasz akcji Wsparcia wykonujesz test umiejętności lub rzut ataku wskazany przez MG. Typowy ST to 15, ale MG może go dostosować w zależności od trudności zadania. MG może swobodnie nadać odpowiednie Cechy twojej akcji przygotowania lub wynikającej z niej reakcji Wsparcia, a nawet zezwolić na Wsparcie w sposób inny niż testem umiejętności lub atakiem.</p><p><strong>Krytyczny Sukces</strong> Zapewniasz swojemu sojusznikowi sytuacyjną premię +2 do wspieranego testu. Jeśli jesteś Mistrzem w teście, który wspierasz, premia zwiększa się do +3, a jeśli jesteś Legendą do +4.<br><strong>Sukces</strong> Zapewniasz sojusznikowi premię sytuacyjną +1 do wspieranego testu.<br><strong>Krytyczna Porażka</strong> Twój sojusznik ponosi karę sytuacyjną -1 do wspieranego testu.</p>",
                 "Notes": {
                     "criticalFailure": "Twój sojusznik ponosi karę sytuacyjną -1 do wspieranego testu.",
                     "criticalSuccess": "Zapewniasz swojemu sojusznikowi sytuacyjną premię +2 do wspieranego testu. Jeśli jesteś Mistrzem w teście, który wspierasz, premia zwiększa się do +3, a jeśli jesteś Legendą do +4.",
@@ -232,11 +232,10 @@
                 "Title": "Rozbrojenie Urządzenia"
             },
             "Disarm": {
-                "EffectLabel": "Używa broni z luźnym chwytem",
                 "Notes": {
                     "criticalFailure": "<strong>Krytyczna Porażka</strong> Tracisz równowagę i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} aż do początku twojej następnej tury.",
                     "criticalSuccess": "<strong>Krytyczny Sukces</strong> Wytrącasz przedmiot z uchwytu wroga. Upada on na ziemi w przestrzeni istoty.",
-                    "success": "<strong>Sukces</strong> Osłabiasz chwyt wroga na przedmiocie. Aż do początku następnej tury wroga próby Rozbrojenia go z tego przedmiotu otrzymują premię sytuacyjną +2, a cel otrzymuje karę sytuacyjną -2 do ataków i innych testów wymagających mocnego chwytu danego przedmiotu. @UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Efekt: Rozbrojenie (Sukces)}"
+                    "success": "<strong>Sukces</strong> Osłabiasz chwyt wroga na przedmiocie. Kolejne próby Rozbrojenia go z tego przedmiotu otrzymują premię sytuacyjną +2, a cel otrzymuje karę sytuacyjną -2 do ataków i innych testów wymagających mocnego chwytu danego przedmiotu. Istota może zakończyć efekt poprzez Interakcję poprawiając swój chwyt na przedmiocie; w przeciwnym wypadku efekt trwa tak długo jak istota trzyma przedmiot.<br>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Efekt: Rozbrojenie (Sukces)}"
                 },
                 "Title": "Rozbrojenie"
             },
@@ -315,10 +314,10 @@
             },
             "HighJump": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Nie @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskakujesz} wcale, zamiast tego padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} w swoim polu.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Zwiększ maksymalny zasięg skoku w pionie o 8 stóp, lub zwiększ maksymalny zasięg skoku w pionie o 5 stóp i maksymalny zasięg skoku w poziomie o 10 stóp.",
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} w swoim polu.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskakujesz} do 8 stóp w pionie i 10 stóp w poziomie.",
                     "failure": "<strong>Porażka</strong> Wykonujesz zwyczajny @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskok}.",
-                    "success": "<strong>Sukces</strong> Zwiększ maksymalny zasięg skoku w pionie o 5 stóp."
+                    "success": "<strong>Sukces</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskakujesz} do 5 stóp w pionie i 5 stóp w poziomie."
                 },
                 "Title": "Skok Wzwyż"
             },
@@ -372,7 +371,7 @@
                 "Title": "Interakcja"
             },
             "Leap": {
-                "Description": "<p>Wykonujesz ostrożny, krótki skok. Możesz przeskoczyć do 10 stóp w poziomie jeśli twoja Prędkość wynosi co najmniej 15 stóp albo do 15 stóp w poziomie jeśli twoja prędkość wynosi co najmniej 30 stóp. Lądujesz na polu na którym kończy się twój Przeskok (co oznacza, że na ogół możesz przebyć wyrwę o szerokości 5 stóp, lub wyrwę o szerokości 10 stóp o ile twoja Prędkość wynosi 30 stóp lub więcej).</p><p>Jeśli Przeskakujesz w pionie jesteś w stanie przemieścić się 3 stopy w pionie i 5 stóp w poziomie na wzniesioną powierzchnię.</p><p>Przeskakiwanie na większe dystanse wymaga wykorzystania umiejętności Atletyki.</p>",
+                "Description": "<p>Wykonujesz krótki poziomy lub pionowy skok. Skakanie na większe odległości wymaga testu Atletyki w ramach @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{Skoku Wzwyż} lub @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Skoku w Dal}.</p><ul><li><strong>W Poziomie</strong> Możesz przeskoczyć do 10 stóp w poziomie jeśli twoja Prędkość wynosi co najmniej 15 stóp albo do 15 stóp w poziomie jeśli twoja prędkość wynosi co najmniej 30 stóp. Lądujesz na polu na którym kończy się twój Przeskok (co oznacza, że na ogół możesz przebyć wyrwę o szerokości 5 stóp, lub wyrwę o szerokości 10 stóp o ile twoja Prędkość wynosi 30 stóp lub więcej). Nie możesz wykonać przeskoku w poziomie jeśli twoja prędkość jest mniejsza niż 15 stóp.</li><li><strong>W Pionie</strong> Wskocz 3 stopy w pionie i 5 stóp w poziomie na wzniesioną powierzchnię.</li></ul>",
                 "Title": "Przeskok"
             },
             "Lie": {
@@ -384,9 +383,9 @@
             },
             "LongJump": {
                 "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Wykonujesz normalny @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskok} ale po wylądowaniu padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
-                    "failure": "<strong>Porażka</strong> Wykonujesz normalny @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskok}.",
-                    "success": "<strong>Sukces</strong> Zwiększ maksymalny zasięg @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskoku} w poziomie do pożądanej wartości."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Wykonujesz normalny @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskok} w poziomie ale po wylądowaniu padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
+                    "failure": "<strong>Porażka</strong> Wykonujesz normalny @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskok} w poziomie.",
+                    "success": "<strong>Sukces</strong> Wykonujesz @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Przeskok} w poziomie na odległość równą wynikowi twojego testu zaokrąglonemu w dół do 5 stóp. Nie możesz skoczyć dalej niż wynosi twoja Prędkość lądowa."
                 },
                 "Title": "Skok w Dal"
             },
@@ -724,6 +723,15 @@
                     "success": "<strong>Sukces</strong> Rzucasz istotę na wybrany dystans."
                 },
                 "Title": "Wirujący Rzut"
+            },
+            "Reposition": {
+                "Description": "<p>Przesuwasz istotę lub obiekt na siłę. Podejmujesz się testu Atletyki przeciw ST Krzepy celu.</p><p><strong>Krytyczny Sukces</strong> Przemieszczasz istotę do 10 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.<br><strong>Sukces</strong> Przemieszczasz istotę do 5 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.<br><strong>Krytyczna Porażka</strong> Istota może cię przesunąć o 5 stóp tak jakby to ona ciebie z powodzeniem Przemieściła.</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Istota może cię przesunąć o 5 stóp tak jakby to ona ciebie z powodzeniem Przemieściła.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Przemieszczasz istotę do 10 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.",
+                    "success": "<strong>Sukces</strong> Przemieszczasz istotę do 5 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie."
+                },
+                "Title": "Przemieszczenie"
             }
         },
         "ActionsCheck": {

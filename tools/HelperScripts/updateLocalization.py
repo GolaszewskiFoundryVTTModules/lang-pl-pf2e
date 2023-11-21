@@ -5,10 +5,15 @@ from tqdm import tqdm
 from collections import Counter
 import datetime
 
-# Current date and time for the log filename
-current_time = datetime.datetime.now().strftime("%Y.%m.%d_%H-%M-%S")
-log_filename = f"LocalizationUpdate_{current_time}.log"
+# Create "Logs" directory if it doesn't exist
+log_directory = "Logs"
+os.makedirs(log_directory, exist_ok=True)
 
+# Current date and time for the log filename
+current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+log_filename = os.path.join(log_directory, f"LocalizationUpdate_{current_time}.log")
+
+# Setup logging configuration
 logging.basicConfig(level=logging.INFO, 
                     filename=log_filename, 
                     filemode='w', 

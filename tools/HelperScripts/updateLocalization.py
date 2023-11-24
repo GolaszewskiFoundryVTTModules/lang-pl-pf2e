@@ -60,13 +60,17 @@ class LocalizationUpdater:
         
         if result_dict is None:
             result_dict = {}
-
+        
         if isinstance(obj, dict):
             for key, value in obj.items():
                 new_path = f'{current_path}.{key}' if current_path else key
                 self.extract_localization_dict(value, new_path, result_dict)
+        elif isinstance(obj, list):
+            for index, item in enumerate(obj):
+                new_path = f"{current_path}[{index}]"
+                self.extract_localization_dict(item, new_path, result_dict)
         else:
-            result_dict[current_path] = str(obj)
+            result_dict[current_path] = obj  # Store the value directly, no conversion to string
 
         return result_dict
 
@@ -74,15 +78,36 @@ class LocalizationUpdater:
         nested_json = {}
 
         for compound_key, value in flat_dict.items():
-            keys = compound_key.split('.')
+            keys = compound_key.strip().split('.')
             current_level = nested_json
 
-            for key in keys[:-1]:
-                if key not in current_level:
-                    current_level[key] = {}
-                current_level = current_level[key]
-
-            current_level[keys[-1]] = value
+            for i, key in enumerate(keys):
+                if '[' in key and ']' in key:
+                    # Split the key on the brackets to get the list name and index
+                    list_name, list_index = key.replace(']', '').split('[')
+                    list_index = int(list_index)
+                    
+                    # Ensure the list exists and has enough space for the index
+                    if list_name not in current_level:
+                        current_level[list_name] = []
+                    while len(current_level[list_name]) <= list_index:
+                        current_level[list_name].append(None)
+                    
+                    # If it's the last key, set the value
+                    if i == len(keys) - 1:
+                        current_level[list_name][list_index] = value
+                    else:
+                        # Prepare for the next level of nesting
+                        if current_level[list_name][list_index] is None:
+                            current_level[list_name][list_index] = {}
+                        current_level = current_level[list_name][list_index]
+                else:
+                    if i == len(keys) - 1:
+                        current_level[key] = value
+                    else:
+                        if key not in current_level:
+                            current_level[key] = {}
+                        current_level = current_level[key]
 
         return nested_json
 
@@ -98,12 +123,9 @@ class LocalizationUpdater:
         # Reverse mapping for unique values only
         old_value_to_key = {value: key for key, value in self.en_old_extracted.items() if value in unique_old_values}
         new_value_to_key = {value: key for key, value in self.en_extracted.items() if value in unique_new_values}
-
+        
         if self.en_old_extracted != self.pl_extracted:
             self.is_file_translated = True
-            print(f"{os.path.basename(self.pl_path)} is translated")
-        else:
-            print(f"{os.path.basename(self.pl_path)} is not translated")
 
         for new_key, new_value in tqdm(self.en_extracted.items(), desc=f"Processing new keys in {os.path.basename(self.pl_path)}"):
 
@@ -162,6 +184,9 @@ class LocalizationUpdater:
         return errors
 
     def process(self):
+        # Log the processed file name
+        logging.info(f"{os.path.basename(self.pl_path)}:")
+
         self.en_old_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_old_path))
         self.en_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_path))
         self.pl_extracted = self.extract_localization_dict(self.get_file_from_directory(self.pl_path))
@@ -170,10 +195,11 @@ class LocalizationUpdater:
             logging.error("Unable to proceed due to missing data.")
             return
 
-        self.update_localization()
+        if self.pl_extracted == self.en_extracted:
+            logging.info("Not translated and already up to date. Skipping!")
+            return
 
-        # Log the results
-        logging.info(f"{os.path.basename(self.pl_path)}:")
+        self.update_localization()
 
         logging.info(f"  Number of new keys added: {len(self.new_keys)}")
         for key in self.new_keys:

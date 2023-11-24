@@ -1,8 +1,10 @@
 import os
 import json
 import logging
-from tqdm import tqdm
+
+import re
 from collections import Counter
+from tqdm import tqdm
 import datetime
 import shutil
 import subprocess
@@ -63,22 +65,29 @@ class LocalizationUpdater:
         
         if isinstance(obj, dict):
             for key, value in obj.items():
-                new_path = f'{current_path}.{key}' if current_path else key
+                # Check if current path ends with a period followed by a non-space, non-period character
+                if current_path and not re.search(r'\.(?![\s.])$', current_path):
+                    new_path = f'{current_path}.{key}'
+                else:
+                    new_path = f'{current_path}{key}' if current_path else key
                 self.extract_localization_dict(value, new_path, result_dict)
         elif isinstance(obj, list):
             for index, item in enumerate(obj):
                 new_path = f"{current_path}[{index}]"
                 self.extract_localization_dict(item, new_path, result_dict)
         else:
-            result_dict[current_path] = obj  # Store the value directly, no conversion to string
+            result_dict[current_path] = obj
 
         return result_dict
+
+
 
     def rebuild_nested_json(self, flat_dict):
         nested_json = {}
 
         for compound_key, value in flat_dict.items():
-            keys = compound_key.strip().split('.')
+            # Split the key intelligently based on '.' not followed by whitespace
+            keys = [k for k in re.split(r'\.(?![\s.])', compound_key) if k]
             current_level = nested_json
 
             for i, key in enumerate(keys):
@@ -128,12 +137,20 @@ class LocalizationUpdater:
             self.is_file_translated = True
 
         for new_key, new_value in tqdm(self.en_extracted.items(), desc=f"Processing new keys in {os.path.basename(self.pl_path)}"):
+            
+            # Key is already up to date
+            if new_key in self.pl_extracted and self.pl_extracted.get(new_key) == new_value:
+                continue
 
             # rename key if both before and after the value is unique
             old_key = old_value_to_key.get(new_value, None)
             if old_key and old_key != new_key and new_value in unique_new_values:
-                self.pl_extracted[new_key] = self.pl_extracted.pop(old_key, None)
-                self.renamed_keys.append((old_key, new_key))
+                # double-check for translated entry existence
+                if old_key not in self.pl_extracted:
+                    print(f"Did not find old key {old_key} in polish {os.path.basename(self.pl_path)}. It may have been updated already")
+                else:
+                    self.pl_extracted[new_key] = self.pl_extracted.pop(old_key, None)
+                    self.renamed_keys.append((old_key, new_key))
             # if the key exists in translation, and the value changed
             elif new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
                 # if value was kept in english, update it outright
@@ -195,9 +212,9 @@ class LocalizationUpdater:
             logging.error("Unable to proceed due to missing data.")
             return
 
-        if self.pl_extracted == self.en_extracted:
-            logging.info("Not translated and already up to date. Skipping!")
-            return
+        # if self.pl_extracted == self.en_extracted:
+        #     logging.info("Not translated and already up to date. Skipping!")
+        #     return
 
         self.update_localization()
 

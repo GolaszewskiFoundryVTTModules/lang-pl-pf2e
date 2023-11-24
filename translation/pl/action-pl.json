@@ -1,5 +1,14 @@
 {
     "PF2E": {
+        "Action": {
+            "ApplyEffect": "Zastosuj Efekt",
+            "ExpandDescription": "Rozwiń Opis",
+            "Range": {
+                "IncrementN": "Inkrement Zasięgu {n} stóp",
+                "MaxN": "Zasięg {n} stóp"
+            },
+            "Use": "Użyj"
+        },
         "Actions": {
             "AdministerFirstAid": {
                 "Description": "<p>Udzielasz pierwszej pomocy przyległej istocie, która krwawi lub jest umierająca. Jeśli istota jest zarówno umierająca co krwawi, wybierz który z tych statusów leczysz przed rzutem. Możesz ponownie Udzielić Pierwszej Pomocy aby zająć się drugim efektem.</p><ol><li><strong>Stabilizacja</strong> Wykonaj test medycyny na istocie, która ma 0 Punktów Żywotności i jest umierająca. ST to 5 + stopień trudności rzutu tej istoty na ozdrowienie (na ogół 15 + wartość umierania).</li><li><strong>Tamowanie Krwawienia</strong> Wykonaj test medycyny na istocie, która odnosi trwałe obrażenia od krwawienia, dając jej szansę na podjęcie się kolejnego testu płaskiego celem usunięcia ich. ST to na ogół ST efektu, który spowodował krwawienie.</li></ol><p><strong>Sukces</strong> Jeśli celem była stabilizacja, istota traci status umierającej (ale nadal jest nieprzytomna). Jeśli celem było zatamowanie krwawienia, istota podejmuje się testu płaskiego na zakończenie krwawienia.<br><strong>Krytyczna Porażka</strong> Jeśli celem była stabilizacja, wartość umierania danej istoty zwiększa się o 1. Jeśli celem było zatamowanie krwawienia, istota natychmiast ponosi kolejną porcję trwałych obrażeń od krwawienia.</p>",
@@ -519,6 +528,15 @@
                     "NotPhysicalItem": "Określony przedmiot {item} nie jest fizycznym obiektem."
                 }
             },
+            "Reposition": {
+                "Description": "<p>Przesuwasz istotę lub obiekt na siłę. Podejmujesz się testu Atletyki przeciw ST Krzepy celu.</p><p><strong>Krytyczny Sukces</strong> Przemieszczasz istotę do 10 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.<br><strong>Sukces</strong> Przemieszczasz istotę do 5 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.<br><strong>Krytyczna Porażka</strong> Istota może cię przesunąć o 5 stóp tak jakby to ona ciebie z powodzeniem Przemieściła.</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Istota może cię przesunąć o 5 stóp tak jakby to ona ciebie z powodzeniem Przemieściła.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Przemieszczasz istotę do 10 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.",
+                    "success": "<strong>Sukces</strong> Przemieszczasz istotę do 5 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie."
+                },
+                "Title": "Przemieszczenie"
+            },
             "Request": {
                 "Notes": {
                     "criticalFailure": "<strong>Krytyczna Porażka</strong> Cel nie tylko odmawia spełnienia twojej prośby, ale ponadto jego nastawienie do ciebie spada o jeden stopień w związku z bezczelnością prośby.",
@@ -723,15 +741,6 @@
                     "success": "<strong>Sukces</strong> Rzucasz istotę na wybrany dystans."
                 },
                 "Title": "Wirujący Rzut"
-            },
-            "Reposition": {
-                "Description": "<p>Przesuwasz istotę lub obiekt na siłę. Podejmujesz się testu Atletyki przeciw ST Krzepy celu.</p><p><strong>Krytyczny Sukces</strong> Przemieszczasz istotę do 10 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.<br><strong>Sukces</strong> Przemieszczasz istotę do 5 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.<br><strong>Krytyczna Porażka</strong> Istota może cię przesunąć o 5 stóp tak jakby to ona ciebie z powodzeniem Przemieściła.</p>",
-                "Notes": {
-                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Istota może cię przesunąć o 5 stóp tak jakby to ona ciebie z powodzeniem Przemieściła.",
-                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Przemieszczasz istotę do 10 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie.",
-                    "success": "<strong>Sukces</strong> Przemieszczasz istotę do 5 stóp. Musi w przebiegu tego ruchu pozostawać w twoim wysięgu oraz nie możesz jej przemieszczać w przeszkody lub przez nie."
-                },
-                "Title": "Przemieszczenie"
             }
         },
         "ActionsCheck": {
@@ -749,11 +758,11 @@
             "performance": "Test Występów",
             "religion": "Test Religii",
             "society": "Test Społeczeństwa",
+            "spell": "Atak Zaklęciem {type}",
             "stealth": "Test Skradania Się",
             "survival": "Test Sztuki Przetrwania",
             "thievery": "Test Złodziejstwa",
             "unarmed": "Rzut na Atak bez Broni",
-            "spell": "Atak Zaklęciem {type}",
             "x": "Test {type}",
             "x-attack-roll": "Rzut Ataku {type}"
         },
@@ -765,15 +774,6 @@
                 "Multiple": "Akcja '{action}' posiada wiele wariantów, a nie wybrano żadnego wariantu.",
                 "Nonexisting": "Określony wariant '{variant}' nie istnieje dla akcji '{action}'"
             }
-        },
-        "Action": {
-            "ApplyEffect": "Zastosuj Efekt",
-            "ExpandDescription": "Rozwiń Opis",
-            "Range": {
-                "IncrementN": "Inkrement Zasięgu {n} stóp",
-                "MaxN": "Zasięg {n} stóp"
-            },
-            "Use": "Użyj"
         }
     }
 }

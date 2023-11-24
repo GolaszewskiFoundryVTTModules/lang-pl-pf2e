@@ -246,6 +246,15 @@ class LocalizationUpdater:
             logging.error("Validation failed, the keys in English and Polish files do not match.")
         else:
             logging.info("Validation successful, all keys match.")
+        
+        # sort the dictionary
+        ordered_pl = {}
+
+        # Iterate over keys in the template dictionary
+        for key in self.en_extracted.keys():
+            ordered_pl[key] = self.pl_extracted[key]
+        
+        self.pl_extracted = ordered_pl
 
         logging.info("\n")
 

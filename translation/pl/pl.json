@@ -121,39 +121,22 @@
                 "DamagedForN": "<actor>{actor}</actor> odnosi {hpDamage} punktów obrażeń.",
                 "DamagedForNShield": "Tarcza blokuje {absorbedDamage} punktów obrażeń, ale <actor>{actor}</actor> odnosi pozostałe {hpDamage} punktów obrażeń.",
                 "HealedForN": "<actor>{actor}</actor> otrzymuje {hpDamage} punktów żywotności w wyniku leczenia.",
+                "InstantDeath": {
+                    "DeathEffect": "Efekt śmierci natychmiast zabija cel.",
+                    "Destroyed": "Cel zostaje zniszczony.",
+                    "FinePowder": "Cel zmienia się w proch, ale jego ekwipunek pozostaje.",
+                    "MassiveDamage": "Masywne obrażenia zabijają cel na miejscu."
+                },
                 "ShieldAbsorbsAll": "Tarcza w całości blokuje {absorbedDamage} obrażeń a <actor>{actor}</actor> wychodzi z opresji bez szwanku.",
                 "ShieldDamagedForN": "Tarcza również odnosi {shieldDamage} obrażeń.",
                 "ShieldDamagedForNBroken": "Tarcza również odnosi {shieldDamage} obrażeń i ulega uszkodzeniu.",
                 "ShieldDamagedForNDestroyed": "Tarcza również odnosi {shieldDamage} obrażeń i niszczy się.",
                 "ShieldNotRaised": "{actor} nie ma wzniesionej tarczy.",
                 "TakesNoDamage": "<actor>{actor}</actor> nie odnosi obrażeń.",
-                "TheTarget": "Cel",
-                "InstantDeath": {
-                    "DeathEffect": "Efekt śmierci natychmiast zabija cel.",
-                    "Destroyed": "Cel zostaje zniszczony.",
-                    "FinePowder": "Cel zmienia się w proch, ale jego ekwipunek pozostaje.",
-                    "MassiveDamage": "Masywne obrażenia zabijają cel na miejscu."
-                }
+                "TheTarget": "Cel"
             },
+            "Attacks": "Ataki",
             "Character": {
-                "ClassDC": {
-                    "Label": "Klasowy ST",
-                    "LabelSpecific": "Klasowy ST ({class})",
-                    "Plural": "Klasowe ST"
-                },
-                "Configure": {
-                    "ShowBasicUnarmed": {
-                        "Hint": "BN zawsze dysponuje nieokreślonym atakiem bez broni wykorzystującym dowolną część jego ciała. Jeśli gracz i tak nie ma zamiaru go używać można go ukryć.",
-                        "Label": "Pokaż Podstawowy Atak Bez Broni"
-                    },
-                    "Title": "Konfiguruj Postać"
-                },
-                "Rest": {
-                    "Label": "Udaj się na Spoczynek"
-                },
-                "Active": "Aktywne",
-                "ActiveHeader": "Aktywne Aktywności",
-                "Clear": "Wyczyść",
                 "Attribute": {
                     "Apex": "Cecha Apeksu",
                     "Boosts": "Rozwoje Cech",
@@ -164,11 +147,6 @@
                         "Description": "Przełączanie metody wprowadzania resetuje rozkład modyfikatorów cech.",
                         "Manual": "Ręczne Wpisywanie",
                         "Title": "Sposób Wprowadzania"
-                    },
-                    "VoluntaryFlaw": {
-                        "Description": "Możesz dobrać jedną lub więcej kar, aby odgrywać postać ze znaczącymi słabościami.",
-                        "LegacyDescription": "Stare zasady dobrowolnych Wad, które istniały aż do 4. wydania CRB. Są w tym miejscu zachowane, na potrzeby starych postaci oraz ze względu na okazjonalne użycie w zorganizowanych grach Pathfinder Society.",
-                        "Title": "Dobrowolne Wady"
                     },
                     "AncestryMissingHelp": "Wybierz przodkowstwo aby określić rozwój cech.",
                     "AlternateBoostsLabel": "Alternatywne Rozwoje",
@@ -185,12 +163,36 @@
                     "LegacyFlaws": "Stare Zasady Wad",
                     "Partial": "Częściowy",
                     "NotSelected": "Nie Wybrano",
-                    "Title": "Rozlokuj swoje rozwoje cech"
+                    "Title": "Rozlokuj swoje rozwoje cech",
+                    "VoluntaryFlaw": {
+                        "Description": "Możesz dobrać jedną lub więcej kar, aby odgrywać postać ze znaczącymi słabościami.",
+                        "LegacyDescription": "Stare zasady dobrowolnych Wad, które istniały aż do 4. wydania CRB. Są w tym miejscu zachowane, na potrzeby starych postaci oraz ze względu na okazjonalne użycie w zorganizowanych grach Pathfinder Society.",
+                        "Title": "Dobrowolne Wady"
+                    }
                 },
+                "Active": "Aktywne",
+                "ActiveHeader": "Aktywne Aktywności",
                 "Biography": {
                     "ToggleVisibility": "Przełącz widoczność dla innych graczy"
                 },
                 "Blurb": "{ancestry} {class} Poziomu {level}",
+                "ClassDC": {
+                    "Label": "Klasowy ST",
+                    "LabelSpecific": "Klasowy ST ({class})",
+                    "Plural": "Klasowe ST"
+                },
+                "Clear": "Wyczyść",
+                "Configure": {
+                    "ShowBasicUnarmed": {
+                        "Hint": "BN zawsze dysponuje nieokreślonym atakiem bez broni wykorzystującym dowolną część jego ciała. Jeśli gracz i tak nie ma zamiaru go używać można go ukryć.",
+                        "Label": "Pokaż Podstawowy Atak Bez Broni"
+                    },
+                    "Title": "Konfiguruj Postać"
+                },
+                "Crafting": {
+                    "Cost": "Koszt"
+                },
+                "HandsOccupied": "Zajęte Ręce",
                 "Proficiency": {
                     "Attack": {
                         "Advanced": "Bronie Zaawansowane",
@@ -209,9 +211,8 @@
                         "Unarmored": "Obrona bez Pancerza"
                     }
                 },
-                "HandsOccupied": "Zajęte Ręce",
-                "Crafting": {
-                    "Cost": "Koszt"
+                "Rest": {
+                    "Label": "Udaj się na Spoczynek"
                 }
             },
             "Creature": {
@@ -221,6 +222,7 @@
                     "Opposition": "Opozycja",
                     "Party": "Drużyna"
                 },
+                "AttributeModifiers": "Modyfikatory Cech",
                 "Configure": {
                     "Alliance": {
                         "Hint": "Istota może być w opozycji do drużyny, sprzymierzona z nią lub neutralna. Wpływa to na niektóre mechaniki podczas starcia, takie jak flankowanie.",
@@ -228,67 +230,6 @@
                     }
                 },
                 "CriticalSpecialization": "Krytyczna Specjalizacja",
-                "Sense": {
-                    "Acuity": {
-                        "Imprecise": "Nieprecyzyjny",
-                        "Label": "Czułość",
-                        "Precise": "Precyzyjny",
-                        "Vague": "Niejasny"
-                    },
-                    "Label": "Zmysły",
-                    "NoRangeLimit": "Nieograniczony",
-                    "RangeLabel": "Zasięg",
-                    "Type": {
-                        "Darkvision": "Widzenie w Ciemności",
-                        "Echolocation": "Echolokacja",
-                        "GreaterDarkvision": "Większe Widzenie w Ciemności",
-                        "Hearing": "Słuch",
-                        "Lifesense": "Wyczucie Życia",
-                        "LowLightVision": "Widzenie w Słabym Świetle",
-                        "Motionsense": "Wyczucie Ruchu",
-                        "Scent": "Węch",
-                        "SeeInvisibility": "Widzenie Niewidzialności",
-                        "Spiritsense": "Wyczucie Dusz",
-                        "Thoughtsense": "Wyczycie Myśli",
-                        "Tremorsense": "Wyczucie Drgań",
-                        "Wavesense": "Wyczucie Fal",
-                        "Heatsight": "Wizja Termiczna"
-                    },
-                    "WithAcuity": "{sense} ({acuity})",
-                    "WithAcuityAndRange": "{sense} ({acuity} {range} ft.)"
-                },
-                "SpellPreparation": {
-                    "Hint": "Aby przygotować zaklęcie przeciągnij je z tej listy do komórki na twojej karcie postaci.",
-                    "HintFlexible": "Aby przygotować zaklęcie, zaznacz je tutaj. Aby przygotować sztuczkę, przeciągnij ją z tej listy na komórkę na kartę postaci.",
-                    "Title": "Przygotowanie Zaklęć: {actor}",
-                    "Search": "Wyszukaj Zaklęcia"
-                },
-                "Spellcasting": {
-                    "Cantrips": "Sztuczki",
-                    "InvalidProficiency": "Niewłaściwa",
-                    "MagicItemTypesLabel": "Typy Magicznych Przedmiotów",
-                    "Rituals": "Rytuały",
-                    "TraditionSpellcasting": "Rzucanie Zaklęć: {tradition}",
-                    "ValidItemTypes": {
-                        "All": "Wszystkie Magiczne Przedmioty",
-                        "Scroll": "Tylko Zwoje"
-                    },
-                    "DC": "ST Zaklęć",
-                    "Label": "Rzucanie Zaklęć"
-                },
-                "AttributeModifiers": "Modyfikatory Cech",
-                "Shield": {
-                    "ACBonus": "Premia do KP z Tarczy (Gdy Wzniesiona)",
-                    "BrokenThreshold": "Próg Uszkodzenia Tarczy",
-                    "Hardness": {
-                        "Hint": "Twardość Tarczy",
-                        "Label": "T"
-                    },
-                    "HitPoints": {
-                        "Value": "PŻ Tarczy",
-                        "Max": "Maks. PŻ Tarczy"
-                    }
-                },
                 "Language": {
                     "adlet": "Adlecki",
                     "akitonian": "Akitoniański",
@@ -404,15 +345,75 @@
                     "xanmba": "Xanmba",
                     "yithian": "Yithiański",
                     "ysoki": "Ysoki"
+                },
+                "Sense": {
+                    "Acuity": {
+                        "Imprecise": "Nieprecyzyjny",
+                        "Label": "Czułość",
+                        "Precise": "Precyzyjny",
+                        "Vague": "Niejasny"
+                    },
+                    "Label": "Zmysły",
+                    "NoRangeLimit": "Nieograniczony",
+                    "RangeLabel": "Zasięg",
+                    "Type": {
+                        "Darkvision": "Widzenie w Ciemności",
+                        "Echolocation": "Echolokacja",
+                        "GreaterDarkvision": "Większe Widzenie w Ciemności",
+                        "Hearing": "Słuch",
+                        "Heatsight": "Wizja Termiczna",
+                        "Lifesense": "Wyczucie Życia",
+                        "LowLightVision": "Widzenie w Słabym Świetle",
+                        "Motionsense": "Wyczucie Ruchu",
+                        "Scent": "Węch",
+                        "SeeInvisibility": "Widzenie Niewidzialności",
+                        "Spiritsense": "Wyczucie Dusz",
+                        "Thoughtsense": "Wyczycie Myśli",
+                        "Tremorsense": "Wyczucie Drgań",
+                        "Wavesense": "Wyczucie Fal"
+                    },
+                    "WithAcuity": "{sense} ({acuity})",
+                    "WithAcuityAndRange": "{sense} ({acuity} {range} ft.)"
+                },
+                "Shield": {
+                    "ACBonus": "Premia do KP z Tarczy (Gdy Wzniesiona)",
+                    "BrokenThreshold": "Próg Uszkodzenia Tarczy",
+                    "Hardness": {
+                        "Hint": "Twardość Tarczy",
+                        "Label": "T"
+                    },
+                    "HitPoints": {
+                        "Value": "PŻ Tarczy",
+                        "Max": "Maks. PŻ Tarczy"
+                    }
+                },
+                "SpellPreparation": {
+                    "Hint": "Aby przygotować zaklęcie przeciągnij je z tej listy do komórki na twojej karcie postaci.",
+                    "HintFlexible": "Aby przygotować zaklęcie, zaznacz je tutaj. Aby przygotować sztuczkę, przeciągnij ją z tej listy na komórkę na kartę postaci.",
+                    "Search": "Wyszukaj Zaklęcia",
+                    "Title": "Przygotowanie Zaklęć: {actor}"
+                },
+                "Spellcasting": {
+                    "Cantrips": "Sztuczki",
+                    "DC": "ST Zaklęć",
+                    "InvalidProficiency": "Niewłaściwa",
+                    "Label": "Rzucanie Zaklęć",
+                    "MagicItemTypesLabel": "Typy Magicznych Przedmiotów",
+                    "Rituals": "Rytuały",
+                    "TraditionSpellcasting": "Rzucanie Zaklęć: {tradition}",
+                    "ValidItemTypes": {
+                        "All": "Wszystkie Magiczne Przedmioty",
+                        "Scroll": "Tylko Zwoje"
+                    }
                 }
             },
             "Dead": "Martwy",
             "Familiar": {
+                "Blurb": "Chowaniec ({master})",
                 "Master": {
-                    "Perception": "Percepcja Pana",
-                    "ArmorClass": "Klasa Pancerza Pana"
-                },
-                "Blurb": "Chowaniec ({master})"
+                    "ArmorClass": "Klasa Pancerza Pana",
+                    "Perception": "Percepcja Pana"
+                }
             },
             "Hardness": {
                 "ShortLabel": "TWAR"
@@ -429,7 +430,12 @@
                 "Simple": "Proste",
                 "TitleEdit": "{name} (Tryb Edycji)"
             },
+            "HitPoints": {
+                "Unrecoverable": "{value} punktów żywotności jest obecnie nie do odzyskania."
+            },
             "Inventory": {
+                "DistributeCoins": "Rozdaj Monety",
+                "Encumbrance": "Obciążenie",
                 "ItemQuantity": {
                     "Decrease": {
                         "Click": "[Kliknij] Zmniejsz o 1",
@@ -442,8 +448,6 @@
                         "ControlClick": "[Control-Kliknij] Zwiększ o 10"
                     }
                 },
-                "DistributeCoins": "Rozdaj Monety",
-                "Encumbrance": "Obciążenie",
                 "TotalBulk": "Całkowite Naręcze: {bulk}"
             },
             "IWREditor": {
@@ -489,57 +493,7 @@
                 }
             },
             "Party": {
-                "InvalidCampaign": {
-                    "Hint": "Dane kampanii są niewłaściwe",
-                    "Title": "Niewłaściwa Kampania ({party})",
-                    "Message": {
-                        "mismatch": "Ta drużyna ma dane kampanii typu {current}, a skonfigurowany typ to {campaignType}. Czy chcesz usunąć obecne dane kampanii?",
-                        "error": "Dane kampanii tej drużyny ({current}) są uszkodzone i nie przeszły etapu przygotowania informacji. Czy chcesz usunąć obecne dane kampanii?"
-                    }
-                },
                 "BlankSlate": "Ta drużyna nie posiada członków. Przeciągnij istotę na to pole aby ją zawiązać.",
-                "Coin": "Monety",
-                "Languages": "Języki Drużyny",
-                "MembersLabel": "Członkowie: ",
-                "NoSpecialSenses": "Brak Specjalnych Zmysłów",
-                "Tabs": {
-                    "Overview": "Podumowanie",
-                    "Orphaned": "Osierocone Przedmioty",
-                    "Exploration": "Eksploracja",
-                    "Stash": "Schowek"
-                },
-                "Total": "Suma Drużyny",
-                "Wealth": "Majątek",
-                "ClearActivities": {
-                    "Complete": "Aktywności eksploracyjne drużyny zostały wyczyszczone",
-                    "Label": "Wyczyść"
-                },
-                "RemoveMember": {
-                    "Content": "Usunąć człona drużyny?",
-                    "Title": "Usuń Członka"
-                },
-                "Rest": "Odpoczynek",
-                "SlotAvailable": "Dostępne Miejsce",
-                "ClownCar": {
-                    "Deposit": "Umieść Żetony BG",
-                    "Retrieve": "Wyciągnij Żetony BG"
-                },
-                "DefaultName": "Drużyna",
-                "NoMembers": "Brak Członków",
-                "Sidebar": {
-                    "ActivateParty": "Aktywna Drużyna",
-                    "CreateMember": "Dodaj Nowego Członka",
-                    "CreateParty": "Stwórz Nową Drużynę",
-                    "RemoveMember": "Usuń Członka",
-                    "OpenSheet": "Otwórz Kartę",
-                    "OtherParties": "Inne Drużyny"
-                },
-                "Skills": "Umiejętności Drużyny",
-                "TravelHeader": "Podróż Drużyny i Heksploracja",
-                "Visibility": {
-                    "Restricted": "Ograniczona",
-                    "Unrestricted": "Nieograniczona"
-                },
                 "CheckPrompt": {
                     "AdjustDifficulty": "Dostosuj Trudność",
                     "ChooseLores": "Wybierz Obeznania",
@@ -554,13 +508,59 @@
                     "SkillsPerception": "Umiejętności/Percepcja",
                     "Title": "Wygeneruj Zapytanie o Test",
                     "TitleShort": "Zapytanie o Test"
-                }
+                },
+                "Coin": "Monety",
+                "ClearActivities": {
+                    "Label": "Wyczyść",
+                    "Complete": "Aktywności eksploracyjne drużyny zostały wyczyszczone"
+                },
+                "ClownCar": {
+                    "Deposit": "Umieść Żetony BG",
+                    "Retrieve": "Wyciągnij Żetony BG"
+                },
+                "DefaultName": "Drużyna",
+                "InvalidCampaign": {
+                    "Hint": "Dane kampanii są niewłaściwe",
+                    "Title": "Niewłaściwa Kampania ({party})",
+                    "Message": {
+                        "mismatch": "Ta drużyna ma dane kampanii typu {current}, a skonfigurowany typ to {campaignType}. Czy chcesz usunąć obecne dane kampanii?",
+                        "error": "Dane kampanii tej drużyny ({current}) są uszkodzone i nie przeszły etapu przygotowania informacji. Czy chcesz usunąć obecne dane kampanii?"
+                    }
+                },
+                "Languages": "Języki Drużyny",
+                "MembersLabel": "Członkowie: ",
+                "NoMembers": "Brak Członków",
+                "NoSpecialSenses": "Brak Specjalnych Zmysłów",
+                "RemoveMember": {
+                    "Title": "Usuń Członka",
+                    "Content": "Usunąć człona drużyny?"
+                },
+                "Rest": "Odpoczynek",
+                "Sidebar": {
+                    "ActivateParty": "Aktywna Drużyna",
+                    "CreateMember": "Dodaj Nowego Członka",
+                    "CreateParty": "Stwórz Nową Drużynę",
+                    "RemoveMember": "Usuń Członka",
+                    "OpenSheet": "Otwórz Kartę",
+                    "OtherParties": "Inne Drużyny"
+                },
+                "Skills": "Umiejętności Drużyny",
+                "SlotAvailable": "Dostępne Miejsce",
+                "Tabs": {
+                    "Overview": "Podumowanie",
+                    "Exploration": "Eksploracja",
+                    "Orphaned": "Osierocone Przedmioty",
+                    "Stash": "Schowek"
+                },
+                "Total": "Suma Drużyny",
+                "TravelHeader": "Podróż Drużyny i Heksploracja",
+                "Visibility": {
+                    "Restricted": "Ograniczona",
+                    "Unrestricted": "Nieograniczona"
+                },
+                "Wealth": "Majątek"
             },
-            "Plural": "Aktorzy",
-            "Attacks": "Ataki",
-            "HitPoints": {
-                "Unrecoverable": "{value} punktów żywotności jest obecnie nie do odzyskania."
-            }
+            "Plural": "Aktorzy"
         },
         "ActorSizeGargantuan": "Ogromny",
         "ActorSizeHuge": "Wielki",
@@ -637,33 +637,50 @@
         "ArmorPotencyRune3": "Potencji Pancerza (+3)",
         "ArmorPotencyRune4": "Potencji Pancerza (+4)",
         "ArmorPropertyRuneAcidResistant": "Odporności na Kwas",
+        "ArmorPropertyRuneAdvancing": "Natarcia",
+        "ArmorPropertyRuneAimAiding": "Ułatwionego Celowania",
         "ArmorPropertyRuneAntimagic": "Antymagii",
+        "ArmorPropertyRuneAssisting": "Wspomagania",
         "ArmorPropertyRuneBitter": "Goryczy",
         "ArmorPropertyRuneColdResistant": "Odporności na Zimno",
         "ArmorPropertyRuneDeathless": "Odpędzenia Śmierci",
         "ArmorPropertyRuneElectricityResistant": "Odporności na Elektryczność",
+        "ArmorPropertyRuneEnergyAdaptive": "Adaptacji do Energii",
         "ArmorPropertyRuneEthereal": "Eteryczności",
         "ArmorPropertyRuneFireResistant": "Odporności na Ogień",
         "ArmorPropertyRuneFortification": "Fortyfikacji",
         "ArmorPropertyRuneGlamered": "Iluzoryczna",
+        "ArmorPropertyRuneGliding": "Szybowania",
         "ArmorPropertyRuneGreaterAcidResistant": "Większa Odporności na Kwas",
+        "ArmorPropertyRuneGreaterAdvancing": "Większa Natarcia",
         "ArmorPropertyRuneGreaterColdResistant": "Większa Odporności na Zimno",
         "ArmorPropertyRuneGreaterDread": "Większa Grozy",
         "ArmorPropertyRuneGreaterElectricityResistant": "Większa Odporności na Elektryczność",
         "ArmorPropertyRuneGreaterFireResistant": "Większa Odporności na Ogień",
         "ArmorPropertyRuneGreaterFortification": "Większa Fortyfikacji",
         "ArmorPropertyRuneGreaterInvisibility": "Większa Niewidzialności",
+        "ArmorPropertyRuneGreaterQuenching": "Większa Wystudzania",
         "ArmorPropertyRuneGreaterReady": "Więcza Gotowości",
         "ArmorPropertyRuneGreaterShadow": "Większa Cieni",
         "ArmorPropertyRuneGreaterSlick": "Większa Śliskości",
         "ArmorPropertyRuneGreaterStanching": "Większa Krzepnięcia",
+        "ArmorPropertyRuneGreaterSwallowSpike": "Większa Karcących Kolców",
         "ArmorPropertyRuneGreaterWinged": "Większa Uskrzydlenia",
+        "ArmorPropertyRuneImmovable": "Unieruchamiania",
         "ArmorPropertyRuneImplacable": "Nieuchwytności",
         "ArmorPropertyRuneInvisibility": "Niewidzialności",
+        "ArmorPropertyRuneLesserDread": "Mniejsza Grozy",
+        "ArmorPropertyRuneMagnetizing": "Magnetyzująca",
+        "ArmorPropertyRuneMajorQuenching": "Główna Wystudzania",
         "ArmorPropertyRuneMajorShadow": "Główna Cieni",
         "ArmorPropertyRuneMajorSlick": "Główna Śliskości",
         "ArmorPropertyRuneMajorStanching": "Główna Krzepnięcia",
+        "ArmorPropertyRuneMajorSwallowSpike": "Główna Karcących Kolców",
+        "ArmorPropertyRuneMalleable": "Plastyczności",
+        "ArmorPropertyRuneMisleading": "Zwodniczości",
         "ArmorPropertyRuneModerateDread": "Umiarkowanej Grozy",
+        "ArmorPropertyRunePortable": "Przenośności",
+        "ArmorPropertyRuneQuenching": "Wystudzania",
         "ArmorPropertyRuneReady": "Gotowości",
         "ArmorPropertyRuneRockBraced": "Impregnacji Skałą",
         "ArmorPropertyRuneShadow": "Cieni",
@@ -671,6 +688,8 @@
         "ArmorPropertyRuneSlick": "Śliskości",
         "ArmorPropertyRuneSoaring": "Podniebna",
         "ArmorPropertyRuneStanching": "Tamowania",
+        "ArmorPropertyRuneSwallowSpike": "Karcących Kolców",
+        "ArmorPropertyRuneTrueQuenching": "Prawdziwa Wystudzania",
         "ArmorPropertyRuneTrueStanching": "Prawdziwego Krzepnięcia",
         "ArmorPropertyRuneWinged": "Uskrzydlenia",
         "ArmorResilientRune": "Odporności",
@@ -802,11 +821,11 @@
         "CharacterTraits": "Cechy Postaci",
         "CharacterTraitsHeader": "Cechy i Inne Szczegóły",
         "ChatRollDetails": {
+            "FlatCheckNoModifiers": "Testy płaskie nigdy nie obejmują żadnego modyfikatora, premii ani kar.",
+            "ModifiersAndDice": "Modyfikatory i Kości",
             "RollOptions": "Opcje Rzutu",
             "Select": "Zbadaj Rzut",
-            "Title": "Szczegóły Rzutu",
-            "FlatCheckNoModifiers": "Testy płaskie nigdy nie obejmują żadnego modyfikatora, premii ani kar.",
-            "ModifiersAndDice": "Modyfikatory i Kości"
+            "Title": "Szczegóły Rzutu"
         },
         "Check": {
             "DC": {
@@ -848,12 +867,12 @@
                 "Label": "Wynik: <unadjusted>{unadjusted}</unadjusted> <offset>o {offset}</offset>"
             },
             "Specific": {
+                "Counteract": "Test Przeciwdziałania",
                 "Perception": {
                     "Label": "Test Percepcji",
                     "Secret": "Test Percpecji (Sekretny)"
                 },
-                "Recovery": "Test Ozdrowienia",
-                "Counteract": "Test Przeciwdziałania"
+                "Recovery": "Test Ozdrowienia"
             }
         },
         "CircumstanceBonusShortLabel": "Sytuacyjna",
@@ -876,11 +895,11 @@
             "FailedToBuyItemWithSomeCharacters": "Nie udało się kupić przedmiotu {item} częścią wybranych postaci.",
             "Hint": "Wybierz zakładek na górze aby wybrać kompendium",
             "RollTable": {
+                "AddDialogText": "Dodać {count} wynik(ów) do Tabeli Rzutów?",
                 "AddLabel": "Dodaj do Tabeli Rzutów",
                 "CreateDialogText": "Utworzyć Tabelę rzutów o liczbie rezultatów: {count}?",
                 "CreateLabel": "Utwórz Tabelę Rzutów",
                 "SelectTableTitle": "Wybierz Tabelę Rzutów",
-                "AddDialogText": "Dodać {count} wynik(ów) do Tabeli Rzutów?",
                 "WeightLabel": "Waga"
             },
             "Settings": {
@@ -889,14 +908,26 @@
             },
             "TabAction": "Akcje",
             "TabBestiary": "Bestiariusz",
+            "TabCampaign": "Kampania",
             "TabEquipment": "Przedmioty",
             "TabFeat": "Atuty/Atrybuty",
             "TabHazard": "Zagrożenia",
             "TabSettings": "Ustawienia",
             "TabSpell": "Zaklęcia",
             "TakeLabel": "Weź Przedmiot",
-            "Title": "Przeglądarka Kompendium",
-            "TabCampaign": "Kampania"
+            "Title": "Przeglądarka Kompendium"
+        },
+        "CompendiumMigrationStatus": {
+            "Document": "Dokument",
+            "Foundry": "Foundry",
+            "FoundryOld": "0.7 lub starsze",
+            "Invalid": "Niewłaściwe",
+            "LockedTooltip": "Nie udało się zmigrować - kompendium jest zablokowane",
+            "MigrateCompendium": "Zmigruj Kompendium",
+            "Schema": "Schemat",
+            "Size": "Rozmiar",
+            "Title": "Status Migracji",
+            "UpToDate": "Aktualne"
         },
         "Condition": {
             "ActiveLabel": "Aktywny",
@@ -935,7 +966,9 @@
         "ConditionTypeImmobilized": "Unieruchomiony",
         "ConditionTypeIndifferent": "Obojętny",
         "ConditionTypeInvisible": "Niewidzialny",
+        "ConditionTypeMalevolence": "Niegodziwość",
         "ConditionTypeObserved": "Postrzegany",
+        "ConditionTypeOffGuard": "Opuszczona Garda",
         "ConditionTypeParalyzed": "Sparaliżowany",
         "ConditionTypePersistent": "Obrażenia Trwałe",
         "ConditionTypePersistentShort": "Trwałe",
@@ -1090,6 +1123,7 @@
                     "Exceptions4DoubleVs4": "{type} {value} (za wyjątkiem {exception1}, {exception2}, {exception3} oraz {exception4}; podwójna odporność przeciw {doubleVs1}, {doubleVs2}, {doubleVs3} oraz {doubleVs4})"
                 },
                 "Type": {
+                    "abysium": "otchłanium",
                     "adamantine": "adamantyt",
                     "all-damage": "wszystkie obrażenia",
                     "area-damage": "obrażenia obszarowe",
@@ -1110,6 +1144,7 @@
                     "deafened": "ogłuchły",
                     "death-effects": "efekty śmierci",
                     "disease": "choroba",
+                    "djezet": "dżezet",
                     "doomed": "zgubiony",
                     "drained": "wyniszczony",
                     "emotion": "emocje",
@@ -1125,21 +1160,27 @@
                     "grabbed": "pochwycony",
                     "healing": "leczenie",
                     "hidden": "schowany",
+                    "holy": "święte",
                     "illusion": "iluzja",
                     "immobilized": "unieruchomiony",
                     "inhaled": "wdychanie",
+                    "inubrix": "inubrix",
                     "light": "światło",
                     "magic": "magia",
                     "magical": "magiczność",
+                    "metal": "metal",
                     "misfortune-effects": "efekty nieszczęścia",
                     "mithral": "mithral",
                     "non-magical": "niemagiczność",
                     "nonlethal": "niezabójczość",
                     "nonlethal-attacks": "ataki niezabójcze",
+                    "noqual": "noqual",
                     "object-immunities": "niewrażliwości obiektów",
+                    "off-guard": "opuszczona garda",
                     "olfactory": "węchowość",
                     "orichalcum": "orichalcum",
                     "paralyzed": "sparaliżowany",
+                    "persistent-damage": "obrażenia trwałe",
                     "petrified": "spetryfikowany",
                     "physical": "fizyczne",
                     "plant": "roślina",
@@ -1152,11 +1193,13 @@
                     "salt": "sól",
                     "salt-water": "słona woda",
                     "scrying": "wróżbiarstwo",
+                    "siccatite": "sikkatyt",
                     "sickened": "zemdlony",
                     "silver": "srebro",
                     "sleep": "sen",
                     "slowed": "spowolniony",
                     "spell-deflection": "odbijanie zaklęć",
+                    "spells": "zaklęcia",
                     "splash-damage": "obrażenia rozpryskowe",
                     "stunned": "ogłuszony",
                     "stupefied": "ogłupiony",
@@ -1165,6 +1208,7 @@
                     "trip": "podcinanie",
                     "unarmed-attacks": "ataki bez broni",
                     "unconscious": "nieprzytomny",
+                    "unholy": "wyklęte",
                     "vampire-weaknesses": "słabość wampirów",
                     "visual": "wizualność",
                     "vorpal": "worpalność",
@@ -1174,19 +1218,8 @@
                     "water": "woda",
                     "weapons": "bronie",
                     "weapons-shedding-bright-light": "bronie roztaczające jasne światło",
-                    "metal": "metal",
-                    "off-guard": "opuszczona garda",
-                    "spells": "zaklęcia",
                     "wood": "drewno",
-                    "abysium": "otchłanium",
-                    "djezet": "dżezet",
-                    "inubrix": "inubrix",
-                    "noqual": "noqual",
-                    "persistent-damage": "obrażenia trwałe",
-                    "siccatite": "sikkatyt",
-                    "wounded": "rany",
-                    "holy": "święte",
-                    "unholy": "wyklęte"
+                    "wounded": "rany"
                 }
             },
             "Hardness": {
@@ -1194,34 +1227,6 @@
                 "Half": "połowa twardości"
             },
             "IncreasedFrom": "Zwiększono z {original} do minimum 1",
-            "NoDamageFormulaLabel": "Brak Obrażeń",
-            "PersistentTooltip": "Trwałe {damageType}",
-            "Precision": "Precyzyjne",
-            "RollFlavor": {
-                "acid": "od kwasu",
-                "air": "od powietrza",
-                "bleed": "od krwawienia",
-                "bludgeoning": "obuchowe",
-                "cold": "od zimna",
-                "earth": "od ziemi",
-                "electricity": "od elektryczności",
-                "fire": "od ognia",
-                "force": "od mocy",
-                "mental": "mentalne",
-                "metal": "metal",
-                "persistent": "trwałe {damageType}",
-                "piercing": "kłute",
-                "poison": "od trucizny",
-                "precision": "precyzyjne",
-                "slashing": "cięte",
-                "sonic": "soniczne",
-                "splash": "rozpryskowe",
-                "untyped": "bez typu",
-                "spirit": "dusza",
-                "vitality": "witalność",
-                "void": "pustka"
-            },
-            "Scatter": "Obrażenia Rozrzutu",
             "Kind": {
                 "Both": {
                     "Roll": {
@@ -1244,7 +1249,35 @@
                         "Verb": "Rzuć Leczenie"
                     }
                 }
-            }
+            },
+            "NoDamageFormulaLabel": "Brak Obrażeń",
+            "PersistentTooltip": "Trwałe {damageType}",
+            "Precision": "Precyzyjne",
+            "RollFlavor": {
+                "acid": "od kwasu",
+                "air": "od powietrza",
+                "bleed": "od krwawienia",
+                "bludgeoning": "obuchowe",
+                "cold": "od zimna",
+                "earth": "od ziemi",
+                "electricity": "od elektryczności",
+                "fire": "od ognia",
+                "force": "od mocy",
+                "mental": "mentalne",
+                "metal": "metal",
+                "persistent": "trwałe {damageType}",
+                "piercing": "kłute",
+                "poison": "od trucizny",
+                "precision": "precyzyjne",
+                "slashing": "cięte",
+                "sonic": "soniczne",
+                "spirit": "dusza",
+                "splash": "rozpryskowe",
+                "vitality": "witalność",
+                "void": "pustka",
+                "untyped": "bez typu"
+            },
+            "Scatter": "Obrażenia Rozrzutu"
         },
         "DamageButton": {
             "Adjust": "[Shift-Kliknij] Dostosuj wartość przed zastosowaniem.",
@@ -1278,6 +1311,7 @@
         "DecrementEffectTitle": "Zmniejsz Poziom Efektu",
         "DefensesLabel": "Defensywa",
         "Deity": "Bóstwo",
+        "DeleteQuestion": "Czy na pewno chcesz usunąć {name}?",
         "DeleteConditionTitle": "Usuń Status",
         "DeleteItemTitle": "Usuń Przedmiot",
         "DeleteShortLabel": "Usuń",
@@ -1333,6 +1367,7 @@
         "EffectsLabel": "Efekty",
         "EmptySlot": "Puste Miejsce",
         "Encounter": {
+            "AlreadyRolled": "{actor} już rzucił(a) na inicjatywę.",
             "Broadcast": {
                 "FastHealing": {
                     "DeactivatedBy": "Deaktywowane przez obrażenia {types}",
@@ -1387,22 +1422,21 @@
             "HasNoInitiativeScore": "{actor} nie ma wartości inicjatywy.",
             "HideName": "Ukryj Nazwę",
             "InitiativeSet": "Ustawiono inicjatywę aktora {actor} na {initiative}.",
-            "NoActiveEncounter": "Nie ma aktywnego starcia.",
-            "NoTokenInScene": "{actor} nie ma żetonów na tej scenie.",
-            "RevealName": "Odkryj Nazwę",
-            "AlreadyRolled": "{actor} już rzucił(a) na inicjatywę.",
             "Metrics": {
                 "Award": {
+                    "Label": "Nagroda: {xp} PD",
                     "Tooltip": {
                         "Four": "4 Członków Drużyny",
                         "Plural": "{xpPerFour} × 4 / {recipients} Członków Drużyny",
                         "Singular": "1 Członek Drużyny"
-                    },
-                    "Label": "Nagroda: {xp} PD"
+                    }
                 },
                 "Budget": "Budżet: {spent}/{max} PD (Poziom Drużyny {partyLevel})",
                 "Threat": "Zagrożenie: <threat>{threat}</threat>"
             },
+            "NoActiveEncounter": "Nie ma aktywnego starcia.",
+            "NoTokenInScene": "{actor} nie ma żetonów na tej scenie.",
+            "RevealName": "Odkryj Nazwę",
             "XP": "PD"
         },
         "EquipmentEquippedLabel": "Wyekwipowano",
@@ -1413,6 +1447,7 @@
             "CantImportTooHighVersion": "Nie udało się zaimportować {sourceName}: wersja schematu ({sourceSchemaVersion}) jest wyższa niż wersja schematu świata ({worldSchemaVersion}).",
             "CantMoveItemDestination": "Nie masz uprawnień na dodawanie przedmiotów do tej postaci.",
             "CantMoveItemSource": "Nie masz uprawnień na usuwanie przedmiotów z tej postaci.",
+            "ItemNotFoundByUUID": "Nie odnaleziono przedmiotu o UUID \"{uuid}\".",
             "MinimumProfLevelSetByFeatures": "Wybrana biegłość jest niższa od biegłości nadawanej przez atuty/atrybuty.",
             "NoCreatureTokenSelected": "Wybierz przynajmniej jeden żeton przypisany do istoty.",
             "NoPCTokenSelected": "Wybierz przynajmniej jeden żeton przypisany do BG.",
@@ -1423,8 +1458,7 @@
             "RuleElementSyntax": "Błąd składni w definicji elementu zasad: {message}",
             "SubV9Module": "Moduł {module} nie jest utrzymywany i może spowodować problemy ze stabilnością gry.",
             "WeaponNoDamage": "Ta broń nie zadaje obrażeń.",
-            "WeaponQuantityZero": "Nie masz już więcej broni tego rodzaju.",
-            "ItemNotFoundByUUID": "Nie odnaleziono przedmiotu o UUID \"{uuid}\"."
+            "WeaponQuantityZero": "Nie masz już więcej broni tego rodzaju."
         },
         "Ethnicity": "Etniczność",
         "ExpendSpellTitle": "Wydaj Zaklęcie",
@@ -1523,20 +1557,24 @@
         "ImageLabel": "Obraz",
         "ImmunitiesLabel": "Niewrażliwości",
         "IncrementEffectTitle": "Zwiększ Poziom Efektu",
+        "InitiativeIsNow": "{name} ma teraz Inicjatywę {value}!",
         "InitiativeHeader": "Premia do Inicjatywy",
         "InitiativeLabel": "Inicjatywa",
         "InitiativeWithSkill": "Inicjatywa: {skillName}",
         "InlineCheck": {
             "BasicWithSave": "Podst. Rzut Obronny: {save}",
             "DCWithName": "ST {name}",
+            "Invalid": "Nieprawidłowe wyrażenie @Check: {message}",
             "Errors": {
-                "TypeMissing": "parametr typu jest wymagany",
                 "AdjustmentLengthMismatch": "ilość parametrów typu jest niezgodna z ilością parametrów modyfikatorów",
-                "NonIntegerAdjustment": "modyfikatory muszą być integerami",
                 "DCAndDefense": "nie może posiadać zarówno argumentu st co defensywy",
+                "NonIntegerAdjustment": "modyfikatory muszą być integerami",
+                "TypeMissing": "parametr typu jest wymagany",
                 "InvalidDomains": "{type} domains must be sluggified and end with -damage"
-            },
-            "Invalid": "Nieprawidłowe wyrażenie @Check: {message}"
+            }
+        },
+        "InlineDamage": {
+            "Base": "Baza: {formula}"
         },
         "InlineTemplateErrors": {
             "DistanceMissing": "Błąd w szablonie @Template: parametr dystansu jest wymagany",
@@ -1566,18 +1604,18 @@
                     "Offensive": "Ofensywna",
                     "Familiar": "Zdolność Chowańca"
                 },
-                "Type": {
-                    "Activity": "Aktywność",
-                    "Free": "Darmowa Akcja",
-                    "Single": "Pojedyncza Akcja",
-                    "Reaction": "Reakcja"
-                },
                 "SelfAppliedEffect": {
                     "Applied": "Zaaplikowano {effect}.",
                     "Delete": "Usuń Referencję",
                     "Drop": "Zakończ Efekt",
                     "Label": "Efekty Nakładane na Siebie",
                     "Hint": "Pojedynczy przedmiot typu efekt, nakładany na aktora po użyciu tej akcji."
+                },
+                "Type": {
+                    "Activity": "Aktywność",
+                    "Free": "Darmowa Akcja",
+                    "Single": "Pojedyncza Akcja",
+                    "Reaction": "Reakcja"
                 }
             },
             "Activation": {
@@ -1638,15 +1676,15 @@
                     "niyahaat": "Niyaháat",
                     "o-yoroi": "O-Yoroi",
                     "padded-armor": "Przeszywanica",
+                    "power-suit": "Kombinezon Bojowy",
                     "quilted-armor": "Pikowana Zbroja",
                     "sankeit": "Sankeit",
                     "scale-mail": "Zbroja Łuskowa",
                     "scroll-robes": "Szaty Zwojowe",
                     "splint-mail": "Zbroja Płytkowa",
                     "studded-leather-armor": "Ćwiekowana Skóra",
-                    "wooden-breastplate": "Drewniany Napierśnik",
-                    "power-suit": "Kombinezon Bojowy",
-                    "subterfuge-suit": "Kombinezon Wywiadowczy"
+                    "subterfuge-suit": "Kombinezon Wywiadowczy",
+                    "wooden-breastplate": "Drewniany Napierśnik"
                 },
                 "Category": {
                     "heavy-barding": "Kropierz Ciężki",
@@ -1659,6 +1697,9 @@
             },
             "Backpack": {
                 "StowingLabel": "Jest Noszonym Pojemnikiem?"
+            },
+            "CampaignFeature": {
+                "CampaignLabel": "Kampania"
             },
             "CannotAddType": "Przedmioty typu {type} nie mogą zostać dodane do tego aktora.",
             "Condition": {
@@ -1701,6 +1742,10 @@
                     "DropError": "Lista zaklęć bóstwa dostępnych dla kleryków nie może zawierać sztuczek, zaklęć skupienia ani rytuałów.",
                     "Hint": "Aby dodać zaklęcie, przeciągnij je na tę kartę.",
                     "Label": "Zaklęcie Kleryków"
+                },
+                "DivineAttribute": {
+                    "Hint": "Przy wyborze pochodzenia Wychowany w Wierze, jego opcje rozwoju cech pochodzą od bóstwa.",
+                    "Label": "Boska Cecha"
                 },
                 "DivineFont": {
                     "Harm": "Krzywda",
@@ -1861,6 +1906,10 @@
                         "Description": "Dokonujesz rzeczy nieoczekiwanych i niewytłumaczalnych.",
                         "Label": "Magia"
                     },
+                    "Metal": {
+                        "Description": "Kontrolujesz ciągliwy i zmiennokształtny metal.",
+                        "Label": "Metal"
+                    },
                     "Might": {
                         "Description": "Twoja siła fizyczna jest wzmocniona boską siłą.",
                         "Label": "Potęga"
@@ -1989,6 +2038,10 @@
                         "Description": "Masz władzę nad bogactwem, handlem i skarbami.",
                         "Label": "Bogactwo"
                     },
+                    "Wood": {
+                        "Description": "Władasz nad nieustępliwą potęgą drewna.",
+                        "Label": "Drewno"
+                    },
                     "Wyrmkin": {
                         "Description": "Czerpiesz z mocy smoków, linnormów i innych potężnych gadzich stworzeń.",
                         "Label": "Smoczy Lud"
@@ -1996,14 +2049,6 @@
                     "Zeal": {
                         "Description": "Twój wewnętrzny ogień zwiększa twoją sprawność bojową.",
                         "Label": "Gorliwość"
-                    },
-                    "Metal": {
-                        "Description": "Kontrolujesz ciągliwy i zmiennokształtny metal.",
-                        "Label": "Metal"
-                    },
-                    "Wood": {
-                        "Description": "Władasz nad nieustępliwą potęgą drewna.",
-                        "Label": "Drewno"
                     }
                 },
                 "Domains": {
@@ -2017,11 +2062,6 @@
                     "Hint": "Niemal wszystkie bóstwa posiadają pojedynczą broń, którą obdarzają łaskami, ale w wypadku niektórych bóstw obłaskawioną bronią jest zarówno pewien rodzaj oręża co ataki bez broni.",
                     "Label": "Obłaskawiona Broń"
                 },
-                "Spellcasting": "Rzucanie Zaklęć",
-                "DivineAttribute": {
-                    "Hint": "Przy wyborze pochodzenia Wychowany w Wierze, jego opcje rozwoju cech pochodzą od bóstwa.",
-                    "Label": "Boska Cecha"
-                },
                 "Sanctification": {
                     "Can": {
                         "Holy": "możliwy wybór święteości",
@@ -2034,25 +2074,25 @@
                         "Unholy": "konieczny wybór wyklętości"
                     },
                     "None": "brak"
-                }
+                },
+                "Spellcasting": "Rzucanie Zaklęć"
             },
             "Effect": {
                 "Expiry": {
+                    "EndOfRound": "Koniec Rundy",
                     "EndOfTurn": "Koniec Tury",
                     "ExpiresOn": "Czas Przedawnienia:",
-                    "StartOfTurn": "Początek Tury",
-                    "EndOfRound": "Koniec Rundy"
+                    "StartOfTurn": "Początek Tury"
                 },
-                "ShowTokenIcon": "Pokazać kolor żetonu?",
-                "Sustained": "Podtrzymanie",
-                "Unidentified": "Niezidentyfikowany?",
                 "Badge": {
+                    "Add": "Dodaj Odznaczenie",
                     "Labels": {
                         "Add": "Dodaj Etykietę",
                         "Label": "Etykiety",
                         "Hint": "Wartości odznaczenia mogą posiadać etykiety z opisem. Powinny być wystarczająco krótkie, aby zmieścić się w panelu efektów. Etykiety służą też za naturalne określenie maksymalnej wartości odznaczenia.",
                         "Placeholder": "Nowa Etykieta"
                     },
+                    "Range": "Zasięg",
                     "ReevaluateFormula": {
                         "Label": "Reewaluacja?",
                         "Never": "Nigdy",
@@ -2063,10 +2103,11 @@
                         "counter": "Licznik",
                         "formula": "Formuła",
                         "value": "Stała Wartość"
-                    },
-                    "Add": "Dodaj Odznaczenie",
-                    "Range": "Zasięg"
-                }
+                    }
+                },
+                "ShowTokenIcon": "Pokazać kolor żetonu?",
+                "Sustained": "Podtrzymanie",
+                "Unidentified": "Niezidentyfikowany?"
             },
             "Feat": {
                 "Info": {
@@ -2105,14 +2146,66 @@
                 "RemoveAncestry": "Usuń wymaganie przodkowstwa"
             },
             "IconLabel": "Ikona",
+            "MaterialEffects": {
+                "Hint": "Obrażenia od drogocennych materiałów pozwalają na obejście niewrażliwości, odporności lub podatności niektórych istot (dotyczy osadzonych rzutów na obrażenia)",
+                "Label": "Efektty Obrażeń od Materiałów"
+            },
             "NameLabel": "Nazwa",
+            "OtherTags": {
+                "Label": "Inne Tagi",
+                "Hint": "Dodatkowe tagi poza cechami, które mogą pomóc zaklasyfikować przedmiot"
+            },
             "Physical": {
                 "Broken": "Uszkodzono",
+                "BrokenThreshold": {
+                    "Label": "Próg Uszkodzenia",
+                    "ShortLabel": "PU"
+                },
+                "Bulk": {
+                    "Light": "L",
+                    "Negligible": "—",
+                    "NLight": "L{light}",
+                    "WithLight": "{bulk}, L{light}"
+                },
                 "Destroyed": "Zniszczono",
                 "FromSpell": {
                     "CantripDeck5": "Talia ze Sztuczką {name} (Pięciopak)",
                     "Scroll": "Zwój z Zaklęciem {name} (Krąg {level})",
                     "Wand": "Różdżka z Zaklęciem {name} (Krąg {level})"
+                },
+                "GeneratedName": {
+                    "FourProperties": "{base} {property1} {property2} {property3} {property4}",
+                    "FourPropertiesMaterial": "{base} {property1} {property2} {property3} {property4} ({material})",
+                    "Hint": "To nazwa broni bazowej. Dla większości broni ta nazwa jest wykorzystywana d generowania pełniejszej nazwy broni uwzględniającej kompozycję materiałową lub/i runy . Nadanie broni własnej nazwy lub oznaczenie jej jako \"określonej broni\" sprawi, że nazwa ta nie będzie się pojawiać.",
+                    "Material": "{base} ({material})",
+                    "OneProperty": "{base} {property1}",
+                    "OnePropertyMaterial": "{base} {property1} ({material})",
+                    "Potency": "{base} +{potency}",
+                    "PotencyFourProperties": "{base} {property1} {property2} {property3} {property4} +{potency}",
+                    "PotencyFourPropertiesMaterial": "{base} {property1} {property2} {property3} {property4} +{potency} ({material})",
+                    "PotencyMaterial": "{base} +{potency} ({material})",
+                    "PotencyOneProperty": "{base} {property1} +{potency}",
+                    "PotencyOnePropertyMaterial": "{base} {property1} +{potency} ({material})",
+                    "PotencyFundamental2": "{base} {fundamental2} +{potency}",
+                    "PotencyFundamental2FourProperties": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency}",
+                    "PotencyFundamental2FourPropertiesMaterial": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency} ({material})",
+                    "PotencyFundamental2Material": "{base} {fundamental2} +{potency} ({material})",
+                    "PotencyFundamental2OneProperty": "{base} {fundamental2} {property1} +{potency}",
+                    "PotencyFundamental2OnePropertyMaterial": "{base} {fundamental2} {property1} +{potency} ({material})",
+                    "PotencyFundamental2ThreeProperties": "{base} {fundamental2} {property1} {property2} {property3} +{potency}",
+                    "PotencyFundamental2ThreePropertiesMaterial": "{base} {fundamental2} {property1} {property2} {property3} +{potency} ({material})",
+                    "PotencyFundamental2TwoProperties": "{base} {fundamental2} {property1} {property2} +{potency}",
+                    "PotencyFundamental2TwoPropertiesMaterial": "{base} {fundamental2} {property1} {property2} +{potency} ({material})",
+                    "PotencyThreeProperties": "{base} {property1} {property2} {property3} +{potency}",
+                    "PotencyThreePropertiesMaterial": "{base} {property1} {property2} {property3} +{potency} ({material})",
+                    "PotencyTwoProperties": "{base} {property1} {property2} +{potency}",
+                    "PotencyTwoPropertiesMaterial": "{base} {property1} {property2} +{potency} ({material})",
+                    "Fundamental2": "{base} {fundamental2}",
+                    "Fundamental2Material": "{base} {fundamental2} ({material})",
+                    "ThreeProperties": "{base} {property1} {property2} {property3}",
+                    "ThreePropertiesMaterial": "{base} {property1} {property2} {property3} ({material})",
+                    "TwoProperties": "{base} {property1} {property2}",
+                    "TwoPropertiesMaterial": "{base} {property1} {property2} ({material})"
                 },
                 "LevelLabel": "Przedmiot {level}",
                 "OtherTag": {
@@ -2158,57 +2251,21 @@
                         "shoes": "Buty",
                         "wrist": "Na Nadgarstkach"
                     }
-                },
-                "Bulk": {
-                    "Light": "L",
-                    "NLight": "L{light}",
-                    "Negligible": "—",
-                    "WithLight": "{bulk}, L{light}"
-                },
-                "GeneratedName": {
-                    "FourProperties": "{base} {property1} {property2} {property3} {property4}",
-                    "FourPropertiesMaterial": "{base} {property1} {property2} {property3} {property4} ({material})",
-                    "Hint": "To nazwa broni bazowej. Dla większości broni ta nazwa jest wykorzystywana d generowania pełniejszej nazwy broni uwzględniającej kompozycję materiałową lub/i runy . Nadanie broni własnej nazwy lub oznaczenie jej jako \"określonej broni\" sprawi, że nazwa ta nie będzie się pojawiać.",
-                    "Material": "{base} ({material})",
-                    "OneProperty": "{base} {property1}",
-                    "OnePropertyMaterial": "{base} {property1} ({material})",
-                    "Potency": "{base} +{potency}",
-                    "PotencyFourProperties": "{base} {property1} {property2} {property3} {property4} +{potency}",
-                    "PotencyFourPropertiesMaterial": "{base} {property1} {property2} {property3} {property4} +{potency} ({material})",
-                    "PotencyMaterial": "{base} +{potency} ({material})",
-                    "PotencyOneProperty": "{base} {property1} +{potency}",
-                    "PotencyOnePropertyMaterial": "{base} {property1} +{potency} ({material})",
-                    "PotencyFundamental2": "{base} {fundamental2} +{potency}",
-                    "PotencyFundamental2FourProperties": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency}",
-                    "PotencyFundamental2FourPropertiesMaterial": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency} ({material})",
-                    "PotencyFundamental2Material": "{base} {fundamental2} +{potency} ({material})",
-                    "PotencyFundamental2OneProperty": "{base} {fundamental2} {property1} +{potency}",
-                    "PotencyFundamental2OnePropertyMaterial": "{base} {fundamental2} {property1} +{potency} ({material})",
-                    "PotencyFundamental2ThreeProperties": "{base} {fundamental2} {property1} {property2} {property3} +{potency}",
-                    "PotencyFundamental2ThreePropertiesMaterial": "{base} {fundamental2} {property1} {property2} {property3} +{potency} ({material})",
-                    "PotencyFundamental2TwoProperties": "{base} {fundamental2} {property1} {property2} +{potency}",
-                    "PotencyFundamental2TwoPropertiesMaterial": "{base} {fundamental2} {property1} {property2} +{potency} ({material})",
-                    "PotencyThreeProperties": "{base} {property1} {property2} {property3} +{potency}",
-                    "PotencyThreePropertiesMaterial": "{base} {property1} {property2} {property3} +{potency} ({material})",
-                    "PotencyTwoProperties": "{base} {property1} {property2} +{potency}",
-                    "PotencyTwoPropertiesMaterial": "{base} {property1} {property2} +{potency} ({material})",
-                    "Fundamental2": "{base} {fundamental2}",
-                    "Fundamental2Material": "{base} {fundamental2} ({material})",
-                    "ThreeProperties": "{base} {property1} {property2} {property3}",
-                    "ThreePropertiesMaterial": "{base} {property1} {property2} {property3} ({material})",
-                    "TwoProperties": "{base} {property1} {property2}",
-                    "TwoPropertiesMaterial": "{base} {property1} {property2} ({material})"
-                },
-                "BrokenThreshold": {
-                    "Label": "Próg Uszkodzenia",
-                    "ShortLabel": "PU"
                 }
             },
             "Plural": "Przedmioty",
+            "RefreshFromCompendium": {
+                "Label": "Odśwież (OUTDATED!)",
+                "Tooltip": {
+                    "Disabled": "Przedmiot nie może zostać odświeżony: zawiera dane zapisane w momencie dodawania go do aktora. (OUTDATED!)",
+                    "Enabled": "Odśwież dane tego przedmiotu wykorzystując najnowsze zawarte w jego kompendium źródłowym. (OUTDATED!)"
+                }
+            },
             "RemovalPrevented": "Usunięcie {item} jes uniemożliwiane przez {preventer}.",
             "Rules": {
                 "Apply": "Zastosuj",
                 "Close": "Zamknij",
+                "Edit": "Edytuj JSON",
                 "Hint": {
                     "Slug": "A stable, human-readable identifier: if set, it will remain in place even if the item is renamed.",
                     "SourceId": "UUID oryginalnego przedmiotu w kompendium",
@@ -2216,18 +2273,42 @@
                 },
                 "New": "Nowy Element Zasad",
                 "RegenerateSlug": "(Re)generuj Slug",
-                "Tab": "Zasady",
                 "Remove": "Usuń Element Zasad",
-                "Edit": "Edytuj JSON"
+                "Tab": "Zasady"
             },
             "SidebarSummary": "Podsumowanie - {type}",
             "Spell": {
+                "Area": "{shape} {size} {unit}",
+                "Cast": "Rzucanie",
+                "Cost": "Koszt",
+                "Counteract": {
+                    "Hint": "Jeśli przeciwdziałasz przypadłości, ST znajduje się w bloku statystyk danej przypadłości. Jeśli jest to zaklęcie, użyj ST użytkownika magii. MG może również obliczyć ST na podstawie poziomu efektu.",
+                    "Label": "Przeciwdziałanie",
+                    "criticalFailure": "Nie udaje ci się przeciwdziałać celowi.",
+                    "criticalSuccess": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynosi {rank} lub mniej.",
+                    "failure": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynois poniżej {rank}.",
+                    "success": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynosi {rank} lub mniej."
+                },
+                "Defense": {
+                    "BasicSave": "Podstawowy",
+                    "Label": "Defesnsywa"
+                },
+                "LevelN": "Zaklęcie Kręgu {level}",
+                "MeasuredTemplate": {
+                    "Clear": "Wyczyść Umieszczone Szablony",
+                    "Place": "Umieść {area}"
+                },
                 "Rank": {
                     "Label": "Rank",
                     "Ordinal": "{rank} Rank",
                     "Plural": "Kręgi"
                 },
-                "LevelN": "Zaklęcie Kręgu {level}",
+                "Ritual": {
+                    "Label": "Rytuał",
+                    "PrimaryCheck": "Główny Test",
+                    "SecondaryChecks": "Asystujące Testy",
+                    "SecondaryCasters": "Asystujący Użytkownicy Magii"
+                },
                 "Variants": {
                     "DeleteDialogText": "Czy na pewno chcesz usunąć '{variantName}'?",
                     "DeleteDialogTitle": "Usuń Wariant Zaklęcia",
@@ -2239,34 +2320,13 @@
                 "Warning": {
                     "InvalidLevel": "Podjęto próbę dodania zaklęcia {name} na kręgu {targetLevel}, ale zaklęcie ma krąg {baseLevel}.",
                     "WrongSpellType": "Nie można dodać zaklęcia typu {spellType} do tego rodzaju rzucania zaklęć."
-                },
-                "Counteract": {
-                    "Hint": "Jeśli przeciwdziałasz przypadłości, ST znajduje się w bloku statystyk danej przypadłości. Jeśli jest to zaklęcie, użyj ST użytkownika magii. MG może również obliczyć ST na podstawie poziomu efektu.",
-                    "Label": "Przeciwdziałanie",
-                    "criticalFailure": "Nie udaje ci się przeciwdziałać celowi.",
-                    "criticalSuccess": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynosi {rank} lub mniej.",
-                    "failure": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynois poniżej {rank}.",
-                    "success": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynosi {rank} lub mniej."
-                },
-                "MeasuredTemplate": {
-                    "Clear": "Wyczyść Umieszczone Szablony",
-                    "Place": "Umieść {area}"
-                },
-                "Area": "{shape} {size} {unit}",
-                "Cast": "Rzucanie",
-                "Cost": "Koszt",
-                "Defense": {
-                    "BasicSave": "Podstawowy",
-                    "Label": "Defesnsywa"
-                },
-                "Ritual": {
-                    "Label": "Rytuał",
-                    "PrimaryCheck": "Główny Test",
-                    "SecondaryChecks": "Asystujące Testy",
-                    "SecondaryCasters": "Asystujący Użytkownicy Magii"
                 }
             },
             "Weapon": {
+                "CanBeAmmo": {
+                    "Label": "Może Służyć za Amunicję",
+                    "Hint": "Oznacza, że broń ta może być załadowana do innej broni jako jej amunicja."
+                },
                 "CriticalSpecialization": {
                     "axe": "Wybierz jedną istota w twoim wysięgu, znajdującą się obo pierwotnego celu trafienia. Jeśli jej KP jest niższa od twojego rzutu na trafienie krytyczne zadajesz jej wyrzucone obrażenia kości broni (wliczając w to dodatkowe kości z runy potencji jeśli taką posiadasz). Te obrażenia nie są podwajane ani nie dodają się do nich żadne inne premie czy dodatkowe kości.",
                     "bomb": "Zwiększa promień obrażeń rozpryskowych bomby (jeśli takie posiada) do 10 stóp.",
@@ -2306,45 +2366,23 @@
                     "LabelN": "Przeładowanie {value}",
                     "OneMinute": "1 min"
                 },
+                "Rune": {
+                    "Potency": "Potencji Broni",
+                    "Striking": {
+                        "Greater": "Większa Ciosów",
+                        "Major": "Główna Ciosów",
+                        "Striking": "Ciosów"
+                    }
+                },
                 "SpecificMagicWeapon": {
                     "Hint": "Oznaczanie tej broni jako <i>określonej broni magicznej</i> oznacza, że robi ona więcej niż wskazują na to same jej runy i kompozycja materiałowa. Nazwa, poziom, rzadkość i cena nie będą już nadpisywane na podstawie drogocennych materiałów i run użytych w procesie jej tworzenia. Te materiały i runy będą jednakowoż użyte jako podstawa do późniejszego obliczania korekt poziomu, rzadkości i ceny przy dalszych ulepszeniach.",
                     "Label": "Określona Broń Magiczna"
                 },
                 "ThrownUsage": {
                     "Label": "Zastosowanie Miotane"
-                },
-                "CanBeAmmo": {
-                    "Label": "Może Służyć za Amunicję",
-                    "Hint": "Oznacza, że broń ta może być załadowana do innej broni jako jej amunicja."
-                },
-                "Rune": {
-                    "Striking": {
-                        "Greater": "Większa Ciosów",
-                        "Major": "Główna Ciosów",
-                        "Striking": "Ciosów"
-                    },
-                    "Potency": "Potencji Broni"
                 }
             },
-            "WorldItemWarning": "To Przedmiot Świata i nie zadziała zapisany w kompendium",
-            "CampaignFeature": {
-                "CampaignLabel": "Kampania"
-            },
-            "OtherTags": {
-                "Label": "Inne Tagi",
-                "Hint": "Dodatkowe tagi poza cechami, które mogą pomóc zaklasyfikować przedmiot"
-            },
-            "MaterialEffects": {
-                "Hint": "Obrażenia od drogocennych materiałów pozwalają na obejście niewrażliwości, odporności lub podatności niektórych istot (dotyczy osadzonych rzutów na obrażenia)",
-                "Label": "Efektty Obrażeń od Materiałów"
-            },
-            "RefreshFromCompendium": {
-                "Label": "Odśwież",
-                "Tooltip": {
-                    "Disabled": "Przedmiot nie może zostać odświeżony: zawiera dane zapisane w momencie dodawania go do aktora.",
-                    "Enabled": "Odśwież dane tego przedmiotu wykorzystując najnowsze zawarte w jego kompendium źródłowym."
-                }
-            }
+            "WorldItemWarning": "To Przedmiot Świata i nie zadziała zapisany w kompendium"
         },
         "ItemBonus0": "0",
         "ItemBonus1": "Potencja Broni +1",
@@ -2427,13 +2465,14 @@
         "LoreProficiencyDisclaimer": "Tylko poglądowe. Nie zmieni modyfikatora umiejętności.",
         "LoreSkillsHeader": "Umiejętności Obeznania",
         "MAPAbbreviationLabel": "KAW {penalty}",
+        "MAPAbbreviationValueLabel": "{value} (KAW {penalty})",
         "Macro": {
-            "Plural": "Makra",
             "OptionToggle": {
                 "Notification": "Zmieniono stan {toggle} na {state}.",
                 "Off": "wyłączony",
                 "On": "włączony"
             },
+            "Plural": "Makra",
             "NoCompendiumItem": "Nie można wytworzyć makro z przedmiotu kompendium, który nie jest ani efektem ani statusem."
         },
         "MacroActionNoActionError": "Ta akcja już nie istnieje!",
@@ -2462,6 +2501,7 @@
             "Finished": "Migracja systemu PF2E do wersji {version} zakończona pomyślnie!",
             "OnlyGMCanUse": "Tylko mistrz gry może używać tego narzędzia.",
             "OutsideSchemaRange": "The specified range is outside the system's schema version range (between {minimum} and {maximum}).",
+            "Running": "Przeprowadzanie migracji systemu...",
             "Starting": "Przeprowadzanie migracji systemu PF2E do wersji {version}. Proszę zachować cierpliwość i nie zamykać gry ani serwera.",
             "Summary": {
                 "Documents": "Dokumenty",
@@ -2476,8 +2516,7 @@
                 }
             },
             "Troubleshooting": "Rozwiązywanie Problemów",
-            "WorldNotReady": "Świat gry nie jest gotowy: spróbuj ponownie za parę sekund.",
-            "Running": "Przeprowadzanie migracji systemu..."
+            "WorldNotReady": "Świat gry nie jest gotowy: spróbuj ponownie za parę sekund."
         },
         "ModifierNamePlaceholder": "Nazwa",
         "ModifierTitle": "Modyfikator",
@@ -2557,6 +2596,7 @@
             "AddConsumable": "Przedmioty Zużywalne",
             "AddEquipment": "Wyposażenie",
             "AddItem": "Dodaj Przedmiot",
+            "AddPassive": "Dodaj Zdolność Pasywną",
             "AddSkill": "Dodaj Umiejętność",
             "AddTrait": "Dodaj Cechę",
             "AddTreasure": "Skarb",
@@ -2614,8 +2654,7 @@
                 "PreparedLabel": "Przygotowane",
                 "PreparedShortLabel": "Przyg."
             },
-            "SpellsTab": "Zaklęcia",
-            "AddPassive": "Dodaj Zdolność Pasywną"
+            "SpellsTab": "Zaklęcia"
         },
         "NPCAttackMelee": "W Zwarciu",
         "NPCAttackRanged": "Dystansowy",
@@ -2667,6 +2706,7 @@
         },
         "OrphanedSpellsHeader": "Osierocone Zaklęcia (przenieś do wpisu o rzucaniu zaklęć powyżej)",
         "OverridesTitle": "Nadpisuje",
+        "Pathfinder": "Pathfinder",
         "PFS": {
             "CharacterNumber": "Postać #",
             "CurrentFaction": "Obecna Frakcja",
@@ -2720,6 +2760,8 @@
         "PreciousMaterialInubrixDescription": "Niezwykła struktura molekularna tego bladego, ciągliwego metalu pozwala mu częściowo przechodzić przez żelazo i stal bez ich dotykania. Chociaż ta właściwość jest przydatna do tworzenia broni, które przenikają metalowy pancerz, inubrix jest niewiele mocniejszy niż ołów. Nawet w stanie stopu, ten niebometal jest tak delikatny, że trudno go używać do tworzenia godnych zaufania tarcz i nie jest szczególnie przydatny do wytwarzania pancerza.",
         "PreciousMaterialLabel": "Drogocenny Materiał",
         "PreciousMaterialLowGrade": "Niskiej Jakości",
+        "PreciousMaterialKeepStone": "Twierdzokamień",
+        "PreciousMaterialKeepStoneDescription": "Ukoronowaniem tysiącleci rozwoju metalurgii i inżynierii Highhelm jest piękny stop zwany kwierdzokamieniem. Pomimo swojej nazwy do produkcji twierdzokamienia nie używa się kamienia. Dzięki zastosowaniu ściśle strzeżonego procesu stapiania adamantytu i ołowiu, najwięksi rzemieślnicy z Highhelm byli w stanie stworzyć materiał, który wyglądem bardziej przypomina marmur niż metal. Twierdzokamień jest tylko nieznacznie słabszy od samego adamantytu, ale ma niesamowitą zdolność zakłócania magii. Każde zaklęcie lub magiczny efekt wycelowany w surowy twierdzokamień musi zdać test płaski ST 5, w przeciwnym razie jego efekt przemija.",
         "PreciousMaterialMithral": "Mithral",
         "PreciousMaterialMithralDescription": "Mithral słynie ze swojej lekkości, trwałości i skuteczności przeciwko wielu stworom, w tym czartom i lykantropom. Ma taki sam połysk jak srebro, ale nieco jaśniejszy odcień. Mithralowe bronie i pancerze są traktowane tak, jakby były srebrne na rzecz zadawania obrażeń stworzeniom podatnym na srebro. Metalowy przedmiot wykonany z mithralu jest lżejszy niż ten wykonany z żelaza lub stali: Naręcze przedmiotu jest zmniejszane o 1 (zmniejszane do lekkiego Naręcza, jeśli jego normalne Naręcze wynosi 1, bez zmian w wypadku przedmiotu, który normalnie ma lekkie Naręcze). Cena przedmiotu wykonanego z tego materiału jest oparta na normalnym Naręczu przedmiotu, a nie jego zmniejszonym Naręczu wynikającym z wykonania z mithralu, ale należy ją zmniejszyć przed dokonaniem dalszych korekt Naręcza wynikających ze zmian rozmiaru przedmiotu.",
         "PreciousMaterialNoqual": "Noqual",
@@ -2732,6 +2774,7 @@
         "PreciousMaterialSiccatiteDescription": "W stanie surowym ta srebrzysta ruda jest albo piekielnie gorąca albo lodowato zimna. Metalurdzy nie są zgodni co do tego, czy sikkatyt to dwie pokrewne substancje, czy jedna substancja, która określa jego temperaturę wyjściową w jakimś nieznanym procesie. Bez względu jednak na przyczynę, ekstremalna temperatura materiału oznacza, że należy obchodzić się z nim ostrożnie. Gorący sikkatyt może łatwo wzniecić ogień jeśli w pobliżu znajdują się materiały łatwopalne, takie jak papier i suchy pędzel, a zimny sikkatyt pozostawiony w wilgotnych miejscach szybko otacza się grubą warstwą lodu. Istota, która wejdzie w fizyczny kontakt ze znaczną ilością sikkatytu, otrzymuje 1 Obrażenie od energii za każdą rundę pozostawania w ciągłym kontakcie (obrażenia od Ognia lub obrażenia od Zimna, odpowiednio dla gorącego i zimnego sikkatytu).",
         "PreciousMaterialSilver": "Srebro",
         "PreciousMaterialSilverDescription": "Srebrna broń jest zmorą wielu stworzeń, od diabłów po wilkołaki. Przedmioty ze srebra są mniej trwałe niż przedmioty ze stali, a niskiej jakości przedmioty ze srebra są zwykle jedynie posrebrzane.",
+        "PreciousMaterialSisterstone": "Siostrzany Kamień",
         "PreciousMaterialSisterstoneDescription": "Siostrzany kamień to termin używany do określania dwóch blisko spokrewnionych ze sobą rud, nasyconych duchową aurą z Pola Dziewic, zmierzchowego siostrzanego kamienia i szkarłatnego siostrzanego kamienia. Mają te same właściwości fizyczne, z wyjątkiem koloru - zmierzchowy siostrzany kamień jest bladopomarańczowy, podczas gdy szkarłatny siostrzany kamień jest pomarańczowo-czerwony. Kiedy dwa różne rodzaje siostrzanego kamienia znajdą się przy sobie, zaczynają wydzielać energię duchową, która odstrasza nieumarłych.",
         "PreciousMaterialSisterstoneDusk": "Siostrzany Kamień (Zmierzchowy)",
         "PreciousMaterialSisterstoneScarlet": "Siostrzany Kamień (Szkarłatny)",
@@ -2757,10 +2800,25 @@
         "ProficiencyLevel3": "Mistrzowstwo",
         "ProficiencyLevel4": "Legendarność",
         "ProficiencyRankLabel": "Bieg.",
+        "ProgressBar": {
+            "LoadingComplete": "Wczytano pomyślnie",
+            "LoadingPack": "Wczytywanie {pack}"
+        },
         "PropertyRuneLabel1": "Runa Właściwości (1.)",
         "PropertyRuneLabel2": "Runa Właściwości (2.)",
         "PropertyRuneLabel3": "Runa Właściwości (3.)",
         "PropertyRuneLabel4": "Runa Właściwości (4.)",
+        "Publication": {
+            "Authors": "Autorzy",
+            "Label": "Publikacja",
+            "License": {
+                "Label": "Licencja",
+                "OGL": "OGL",
+                "ORC": "ORC"
+            },
+            "Remaster": "Remaster?",
+            "Title": "Tytuł"
+        },
         "QuantityLabel": "Liczba",
         "QuantityShortLabel": "L.",
         "RangePenalty": "Kara za Zasięg",
@@ -2802,16 +2860,16 @@
             "ErrorCantDelete": "Nie możesz usunąć oryginalnego rzutu.",
             "ErrorNoActor": "Ten rzut nie ma skojarzonego aktora",
             "HeroPoint": "Przerzuć za pomocą Punktu Bohaterstwa",
+            "KeepHigher": "Przerzuć i zachowaj wyższy wynik",
             "KeepNew": "Przerzuć i zachowaj nowy wynik",
+            "KeepLower": "Przerzuć i zachowaj niższy wynik",
             "MessageHeroPoint": "Przerzucono za pomocą Punkty Bohaterstwa",
             "MessageKeep": {
-                "new": "Przerzucono i zachowano nowy wynik",
                 "higher": "Przerzucono i zachowano wyższy wynik",
+                "new": "Przerzucono i zachowano nowy wynik",
                 "lower": "Przerzucono i zachowano niższy wynik"
             },
-            "WarnNoHeroPoint": "{name} nie ma więcej Punktów Bohaterstwa",
-            "KeepHigher": "Przerzuć i zachowaj wyższy wynik",
-            "KeepLower": "Przerzuć i zachowaj niższy wynik"
+            "WarnNoHeroPoint": "{name} nie ma więcej Punktów Bohaterstwa"
         },
         "ResiliencyRuneLabel": "Runa Odporności",
         "ResistancesExceptionLabel": "Wyjątki:",
@@ -2827,18 +2885,6 @@
         "Roll": {
             "Add": "Dodaj",
             "CriticalHit": "Trafienie Krytyczne",
-            "Fortune": "Szczęście",
-            "FortuneTitle": "Szczęście: {title}",
-            "KeepHigher": "Zachowaj Wyższy",
-            "KeepLower": "Zachowaj Niższy",
-            "Misfortune": "Nieszczęście",
-            "MisfortuneTitle": "Nieszczęście: {title}",
-            "Modifier": "Modyfikator",
-            "None": "Brak",
-            "Normal": "Normalny",
-            "Roll": "Rzut",
-            "Type": "Typ",
-            "UntypedPenalty": "Bez typu (kara)",
             "Dialog": {
                 "Check": {
                     "Substitution": "Podmiana",
@@ -2859,7 +2905,19 @@
                 },
                 "ShowDefault": "Zawsze Pokazuj Okno Dialogowe",
                 "ShowDefaultHint": "Po włączeniu, to okno zawsze będzie pokazywane, chyba że przytrzymasz Shift. Po wyłączeniu możesz otworzyć to okno przyciskając Shift."
-            }
+            },
+            "Fortune": "Szczęście",
+            "FortuneTitle": "Szczęście: {title}",
+            "KeepHigher": "Zachowaj Wyższy",
+            "KeepLower": "Zachowaj Niższy",
+            "Misfortune": "Nieszczęście",
+            "MisfortuneTitle": "Nieszczęście: {title}",
+            "Modifier": "Modyfikator",
+            "None": "Brak",
+            "Normal": "Normalny",
+            "Roll": "Rzut",
+            "Type": "Typ",
+            "UntypedPenalty": "Bez typu (kara)"
         },
         "RollBonusPlaceholder": "np. +3 or +1d4",
         "RollModeLabel": "Tryb Rzucania",
@@ -2874,6 +2932,10 @@
                     "NPCsOnly": "Tylko BN",
                     "Name": "Aktorzy Martwi przy 0 PŻ",
                     "Neither": "Nikt"
+                },
+                "Encumbrance": {
+                    "Hint": "Automatycznie nakładaj status Przeciążony na istoty, które noszą więcej niż wskazuje ich limit.",
+                    "Name": "Przeciążenie"
                 },
                 "EffectExpiration": {
                     "Hint": "Efekty automatycznie deaktywują powiązane elementy zasad kiedy minie ich czas działania.",
@@ -2903,10 +2965,6 @@
                     "ManagedBy": "Zarządzane przez <rbv>wizję opartą na zasadach</rbv>.",
                     "Name": "Wizja Oparta na Zasadach",
                     "ViewWorldSetting": "Pokaż Ustawienia Świata"
-                },
-                "Encumbrance": {
-                    "Hint": "Automatycznie nakładaj status Przeciążony na istoty, które noszą więcej niż wskazuje ich limit.",
-                    "Name": "Przeciążenie"
                 }
             },
             "CampaignFeats": {
@@ -2948,6 +3006,11 @@
                 "Hint": "Ustaw ikonę śmierci oznaczającą martwych aktorów.",
                 "Name": "Ikona Śmierci"
             },
+            "EnabledDisabled": {
+                "Enabled": "Włączono",
+                "Default": "Domyślne dla Świata ({worldDefault})",
+                "Disabled": "Wyłączono"
+            },
             "EnabledRulesUI": {
                 "Hint": "Po włączeniu, gracze mogą widzieć zakładkę Elementów Zasad na kartach przedmiotów i mieć do nich dostęp.",
                 "Name": "Dostęp do Elementów Zasad"
@@ -2966,8 +3029,8 @@
                     "Name": "Cechy Istot"
                 },
                 "DamageTypes": {
-                    "Hint": "Dodatkowe typy obrażeń rozpoznawane przez system",
                     "Add": "Dodaj Typ Obrażeń",
+                    "Hint": "Dodatkowe typy obrażeń rozpoznawane przez system",
                     "Icon": "Ikona (Font Awesome)",
                     "Name": "Niestandardowe Typy Obrażeń",
                     "Label": "Etykieta"
@@ -2988,6 +3051,7 @@
                     "Name": "Języki"
                 },
                 "Name": "Elementy Domorobne",
+                "ReservedTerm": "\"{term}\" to zastrzeżone określenie.",
                 "SpellTraits": {
                     "Hint": "Cech mające zastosowanie dla zaklęć (np. Klątwięź, Leczenie)",
                     "Name": "Cechy Zaklęć"
@@ -3007,8 +3071,7 @@
                 "WeaponTraits": {
                     "Hint": "Cech mające zastosowanie dla ataków BN lub broni",
                     "Name": "Cechy Broni"
-                },
-                "ReservedTerm": "\"{term}\" to zastrzeżone określenie."
+                }
             },
             "IdentifyMagicNotMatchingTraditionModifier": {
                 "Choices": {
@@ -3044,13 +3107,13 @@
                     "Hint": "Po włączeniu gracze będą widzieli stopień sukcesu rzutów wykonywanych przeciw BN oraz innym zewnętrznym źródłom.",
                     "Name": "Pokaż Rezultaty Ataków i Rzutów Obronnych"
                 },
-                "TokenSetsNameVisibility": {
-                    "Hint": "Po włączeniu, jeśli nazwa żetonu BN jest ukryta przed graczami, będzie ona ukryta również w oknie starcia i wiadomościach czatu.",
-                    "Name": "Żetony Określają Widoczność Imion BN"
-                },
                 "ShowPartyStats": {
                     "Hint": "Po włączeniu gracze będą widzieli statystyki swoich kompanów na karcie drużyny",
                     "Name": "Pokaż Statystyki Członków Drużyny"
+                },
+                "TokenSetsNameVisibility": {
+                    "Hint": "Po włączeniu, jeśli nazwa żetonu BN jest ukryta przed graczami, będzie ona ukryta również w oknie starcia i wiadomościach czatu.",
+                    "Name": "Żetony Określają Widoczność Imion BN"
                 }
             },
             "NathMode": {
@@ -3062,8 +3125,8 @@
             "Sidebar": {
                 "Changelog": "Dziennik Zmian",
                 "Discord": "Discord",
-                "Wiki": "Wiki",
-                "Remaster": "Zmiany w Remasterze"
+                "Remaster": "Zmiany w Remasterze",
+                "Wiki": "Wiki"
             },
             "TOTMToggles": {
                 "Hint": "Dodaj dodatkowe opcje na kartę aktora, ułatwiające grę w Teatrze Umysłu. Te interfejsy pozwolą na uruchamianie pewnych zdolności na Foundry bez konieczności zaznaczania żetonów.",
@@ -3086,6 +3149,10 @@
                 }
             },
             "Variant": {
+                "GradualBoosts": {
+                    "Hint": "Rozkłada rozwoje cech równomiernie pomiędzy poszczególne poziomy. Gracze otrzymują rozwój cechy na wszystkich poziomach poza 6., 11., i 16.",
+                    "Name": "Stopniowy Rozwój Cech"
+                },
                 "AutomaticBonus": {
                     "Choices": {
                         "ABPFundamentalPotency": "ARM: Z Runami Właściwości",
@@ -3104,18 +3171,14 @@
                 "Name": "Zasady Wariantowe",
                 "Proficiency": {
                     "Hint": "Graz z uwzględnieniem wariantowej zasady biegłości bez poziomu, zawartej w Gamemastery Guide str. 198.",
-                    "Name": "Biegłość bez Poziomu",
-                    "ModifiersHint": "Ustaw wartość modyfikatora dla każdej rangi biegłości."
+                    "ModifiersHint": "Ustaw wartość modyfikatora dla każdej rangi biegłości.",
+                    "Name": "Biegłość bez Poziomu"
                 },
                 "Stamina": {
                     "Hint": "Graz z uwzględnieniem wariantowej zasady wytrwałości, zawartej w Gamemastery Guide str. 200.",
                     "Name": "Wytrwałość"
                 },
-                "Title": "Wariantowe Zasady",
-                "GradualBoosts": {
-                    "Hint": "Rozkłada rozwoje cech równomiernie pomiędzy poszczególne poziomy. Gracze otrzymują rozwój cechy na wszystkich poziomach poza 6., 11., i 16.",
-                    "Name": "Stopniowy Rozwój Cech"
-                }
+                "Title": "Wariantowe Zasady"
             },
             "WorldClock": {
                 "DateTheme": {
@@ -3185,11 +3248,6 @@
                 "hint": "Określa, który zestaw ikonek jest używany dla statusów żetonów.",
                 "legacy": "Legacy",
                 "name": "Zestaw Ikonek Statusów"
-            },
-            "EnabledDisabled": {
-                "Enabled": "Włączono",
-                "Default": "Domyślne dla Świata ({worldDefault})",
-                "Disabled": "Wyłączono"
             }
         },
         "SaveDCLabel": "Rzut Obronny: {type} <dc>ST {dc}</dc>",
@@ -3201,6 +3259,7 @@
         "SavesReflexShort": "Refleks",
         "SavesWill": "Wola",
         "SavesWillShort": "Wola",
+        "SavingThrow": "Rzut Obronny",
         "SavingThrowWithName": "Rzut Obronny: {saveName}",
         "Scene": {
             "HearingRange": {
@@ -3217,6 +3276,10 @@
         "SellItemConfirmHeader": "Potwierdzenie Sprzedaży",
         "SellItemQuestion": "Czy na pewno chcesz sprzedać {item}?",
         "Senses": "Zmysły",
+        "SettingsQuickChecksLabel": "Podgląd Rzutów K20",
+        "SettingsQuickChecksNotes": "Po wyłączeniu okna dialogowe do podglądu rzutów K20 będą pojawiać się tylko po Shift-kliknięciu przycisku.",
+        "SettingsQuickDamageLabel": "Podkląd Rzutów Obrażeń",
+        "SettingsQuickDamageNotes": "Po wyłączeniu ogna dialogowe do podglądu rzutów Obrażeń będą się pojawiać tylko po Shift-kliknięciu przycisku.",
         "SheetLabel": "Karta: {type}",
         "ShieldLabel": "Tarcza",
         "SidebarAppearanceLabel": "Aparycja",
@@ -3407,6 +3470,11 @@
         "TogglesLabel": "Przełączniki",
         "Token": {
             "Appearance": "Wygląd",
+            "Flanking": "Flankowanie",
+            "SecretDisposition": {
+                "Label": "Sekretne Nastawienie",
+                "Hint": "Aktywuje nastawienie \"sekretne\", które pokazuje fioletową obwolutę dla właściciela i brak jakiejkolwiek ramki lub zmiany kursora dla wszystkich innych."
+            },
             "Size": {
                 "Dimensions": "Wymiary",
                 "Label": "Rozmiar",
@@ -3414,11 +3482,6 @@
                     "Link": "Powiąż z Rozmiarem Aktora",
                     "Unlink": "Odwiąż od Rozmiaru Aktora"
                 }
-            },
-            "Flanking": "Flankowanie",
-            "SecretDisposition": {
-                "Label": "Sekretne Nastawienie",
-                "Hint": "Aktywuje nastawienie \"sekretne\", które pokazuje fioletową obwolutę dla właściciela i brak jakiejkolwiek ramki lub zmiany kursora dla wszystkich innych."
             }
         },
         "TotalCoinage": "Całkowita Waluta",
@@ -3435,8 +3498,10 @@
         "TraitAdjustment": "Regulacja",
         "TraitAeon": "Eon",
         "TraitAesir": "As",
+        "TraitAffixedToAMetalWeapon": "Mocowanie do Broni Metalowej",
         "TraitAffixedToARangedWeapon": "Mocowanie do Broni Dystansowej",
         "TraitAffixedToAShield": "Mocowanie do Tarczy",
+        "TraitAffixedToAShieldOrWeapon": "Mocowanie do Broni lub Tarczy",
         "TraitAffixedToATwoHandedFirearmOrCrossbow": "Mocowanie do Dwuręcznej Broni Palnej lub Kuszy",
         "TraitAffixedToArmor": "Mocowanie do Pancerza",
         "TraitAffixedToArmorOrAWeapon": "Mocowanie do Broni lub Pancerza",
@@ -3456,6 +3521,9 @@
         "TraitAffixedToLoadBearingWallOrPillar": "Mocowanie do Nośnego Filaru lub Ściany",
         "TraitAffixedToMagicalStaff": "Mocowanie do Magicznego Kostura",
         "TraitAffixedToMediumHeavyArmor": "Mocowanie do Pancerza Średniego lub Ciężkiego",
+        "TraitAffixedToMediumHeavyMetalArmor": "Mocowanie do Metalowego Pancerza Średniego lub Ciężkiego",
+        "TraitAffixedToMeleeWeapon": "Mocowanie do Broni Białej",
+        "TraitAffixedToMetalWeapon": "Mocowanie do Broni Metalowej",
         "TraitAffixedToObjectOrStructure": "Mocowanie do Obiektu lub Struktury",
         "TraitAffixedToStructureObjectOrCreature": "Mocowanie do Istoty, Obiektu lub Struktury",
         "TraitAffixedToThrownWeapon": "Mocowanie do Broni Miotanej",
@@ -3465,6 +3533,7 @@
         "TraitAgathion": "Agation",
         "TraitAgile": "Chyżość",
         "TraitAir": "Powietrze",
+        "TraitAiuvarin": "Aiuvarin",
         "TraitAlchemical": "Alchemiczność",
         "TraitAlchemist": "Alchemik",
         "TraitAmp": "Amp",
@@ -3496,6 +3565,7 @@
         "TraitArcane": "Magia Tajemna",
         "TraitArchetype": "Archetyp",
         "TraitArchon": "Archont",
+        "TraitArdande": "Ardande",
         "TraitAreaDamage": "Obrażenia Obszarowe",
         "TraitArtifact": "Artefakt",
         "TraitAstral": "Atralność",
@@ -3509,6 +3579,7 @@
         "TraitAttachedToFirearmFiringMechanism": "Mocowanie do Broni Palnej (Mechanizm Spustowy)",
         "TraitAttachedToFirearmScope": "Mocowanie do Broni Palnej (Celownik)",
         "TraitAttachedToShield": "Mocowanie do Tarczy",
+        "TraitAttachedToShipsBow": "Mocowanie do Dziobu Łodzi",
         "TraitAttack": "Atak",
         "TraitAuditory": "Słuchowość",
         "TraitAura": "Aura",
@@ -3527,6 +3598,7 @@
         "TraitBoggard": "Boggart",
         "TraitBomb": "Bomba",
         "TraitBonded": "Więź",
+        "TraitBottledBreath": "Zabutelkowany Oddech",
         "TraitBrace": "Gotowość",
         "TraitBrutal": "Brutalność",
         "TraitBulwark": "Bulwark",
@@ -3557,6 +3629,7 @@
         "TraitCommon": "Powszechność",
         "TraitCompanion": "Towarzysz",
         "TraitComplex": "Kompleksowość",
+        "TraitComposite": "Kompozytowość",
         "TraitComposition": "Kompozycja",
         "TraitConcealable": "Niepozorność",
         "TraitConcentrate": "Koncentracja",
@@ -3610,6 +3683,7 @@
         "TraitDescriptionAgathion": "Ta rodzina niebian o zwierzęcych rysach pochodzi z planu Nirwany. Większość agationów jest neutralnie dobra, ma widzenie w ciemności i podatność na obrażenia od zła.",
         "TraitDescriptionAgile": "Kara za wielokrotny atak, którą otrzymujesz używając tej broni przy drugim ataku w swojej turze, wynosi -4 zamiast -5 a przy trzecim i kolejnych atakach w turze -8 zamiast -10 .",
         "TraitDescriptionAir": "Efekty z cechą powietrze zadają manipulują powietrzem lub je wyczarowują. Te, które manipulują powietrzem, nie odnoszą efektu na obszarze próżni lub w inny sposób pozbawionym powietrza. Istoty z tą cechą składają się głównie z powietrza lub mają magiczną więź z tym żywiołem.",
+        "TraitDescriptionAiuvarin": "Istota z tą cechą posiada uniwersalne dziedzictwo aiuvarin. Aiuvarinowie mają mieszane przodkowstwo, którego częścią są elfy lub inni aiuvarinowie. Zdolność z tą cechą może być wybrana jedynie przez aiuvarinów.",
         "TraitDescriptionAlchemical": "Przedmioty alchemiczne są zasilane reakcjami odczynników alchemicznych. Przedmioty alchemiczne nie są magiczne i nie emanują magiczną aurą.",
         "TraitDescriptionAlchemist": "Oznacza zdolności z klasy Alchemika.",
         "TraitDescriptionAmp": "Amp to specjalny myślokształt, który modyfikuje właściwości twoich sztuczek psionicznych. Każda sztuczka psioniczna ma swój własny amp, a atuty z cechą amp zapewniają dodatkowe ampy, które można zastosować do sztuczek psionicznych zamiast ich normalnych ampów.",
@@ -3620,6 +3694,7 @@
         "TraitDescriptionAphorite": "Rodzaj planarnej istoty pochodzącej od istot z Osi, Planu Praworządności.",
         "TraitDescriptionAquadynamic": "Ten pancerz jest przeznaczony do użytku pod wodą, dzięki opływowej konstrukcji i wypornym materiałom zastosowanym w strategicznych miejscach. Będąc w wodzie lub podobnych płynach nie stosujesz kary od pancerza do testów Akrobatyki lub Atletyki.",
         "TraitDescriptionArcane": "Ten magiczny przedmiot jest związany z tradycją magii tajemnej, zbudowaną na fundamentach logiki i racjonalności. Wszystko co opisane tą cechą, jest magiczne.",
+        "TraitDescriptionArdande": "Ardande to potomkowie planarnych istot powiązanych z Planem Drewna takich jak kizidharowie.",
         "TraitDescriptionArchetype": "Ten atut przynależy do archetypu.",
         "TraitDescriptionArtifact": "Przedmioty z tą cechą są artefaktami. Tych magicznych przedmiotów nie można wytworzyć w konwencjonalny sposób i nie można ich też w konwencjonalny sposób uszkodzić. Artefakty są zawsze rzadkie lub unikalne.",
         "TraitDescriptionAttached": "Broń mocowana musi być połączona z innym elementem wyposażenia. Cecha określa typ przedmiotu, do którego musi być zamocowana broń. Musisz dzierżyć lub nosić przedmiot, do którego jest przymocowana broń, aby móc nią atakować. Na przykład kolce na tarczę są mocowane do tarczy, co pozwala ci atakować kolcami zamiast grzmotnięcia tarczą, ale tylko wtedy, gdy dzierżysz tę tarczę. Mocowana broń jest zwykle przykręcona lub wbudowywana w przedmiot, do którego jest przymocowana, i zazwyczaj przedmiot może mieć zamocowaną na sobie tylko jedną broń. Mocowaną broń można dołączyć do przedmiotu w ramach 10 minutach pracy i udanego testu @Check[type:crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia broni z poprzedniego przedmiotu, jeśli to konieczne. Jeśli przedmiot zostanie zniszczony, przymocowaną do niego broń można zwykle odratować.",
@@ -3635,6 +3710,7 @@
         "TraitDescriptionBarding": "Możesz kupić specjalny pancerz dla zwierząt, zwany kropierzem. Wszystkie zwierzęta mają w kropierzu biegłość na poziomie wytrenowanie, a zwierzęta szkolone do walki są wytrenowane w kropierzach ciężkich. Kropierz używa tych samych zasad, co pancerz, z następującymi wyjątkami. Cena i Naręcze kropierza zależą od wielkości zwierzęcia. Na kropierz nie można nanosić magicznych run, chociaż może być dostępny specjalny, magiczny, kropierz.",
         "TraitDescriptionBeastkin": "Humanoidy, które mogą się częściowo lub całkowicie przemienić w zwierzęce formy.",
         "TraitDescriptionBomb": "Bomba alchemiczna łączy niezwykle reaktywne składniki alchemiczne, które eksplodują, gdy tylko bomba uderzy w istotę lub obiekt. Większość bomb alchemicznych zadaje obrażenia, choć niektóre wywołują inne efekty.",
+        "TraitDescriptionBottledBreath": "Zabutelkowane Oddechy to zaklęte butelki chmur i mgieł, początkowo wytrwarzane przez mieszkańców Planu Powietrza. Przedmiot z cechą zabutelkowanego oddechu możesz Aktywować wdychając jego zawartość lub sprawiając, ze odetchnie nią inna istota.",
         "TraitDescriptionBrace": "Broń z cechą gotowości jest szczególnie skuteczna w ciosach przeciw poruszającym się celom. Kiedy Przygotujesz Cios w przeciwnika, który poruszy się w twoim zasięgu, wszystkie Ciosy bronią z cechą gotowości aż do początku twojej następnej tury zadają dodatkowe 2 punkty obrażeń precyzyjnych za każdą kość obrażeń od broni.",
         "TraitDescriptionBrutal": "Atak dystansowy z tą cechą wykorzystuje przy rzucie ataku modyfikator Siły zamiast Zręczności.",
         "TraitDescriptionBulwark": "Pancerz zakrywa cię tak zupełnie, że zapewnia korzyści w przypadku niektórych destruktywnych efektów. Przy rzutach obronnych na Refleks przeciw efektom zadającym obrażenia, takim jak kula ognia, zamiast modyfikatora ze Zręczności dodajesz modyfikator +3.",
@@ -3642,6 +3718,7 @@
         "TraitDescriptionCapacity": "Broń z cechą ładowności zazwyczaj ma wiele luf lub komór, każda zdolna pomieścić bełt lub sztukę amunicji. Cecha ładowności zawsze opisana jest liczbą luf lub komór. Po wystrzeleniu z o określonej ładowności możesz wybrać następną załadowaną lufę lub komorę w ramach akcji Interakcji, która nie wymaga wolnej ręki. Aby zmienić używaną lufę lub komorę możesz też zamiast tego użyć zdolności, które pozwalają na przeładowanie lub wykorzystać podczas wymiany zdolności, które wymagają Interakcji w celu przeładowania. Każdą lufę lub komorę można indywidualnie naładować po wystrzale w ramach pojedynczej akcji Interakcji.",
         "TraitDescriptionCatalyst": "Przedmioty z cechą katalizator to zużywalne komponenty zaklęć, które modyfikują lub wzmacniają określone zaklęcia. Aktywacja katalizatora jest częścią Rzucania Zaklęcia. Katalizator może zwiększyć liczbę akcji wymaganych do rzucenia zaklęcia, jak wskazano w jego wpisie Aktywacja. Dodatkowo zaklęcie zyskuje komponenty materialne, jeśli jeszcze ich nie posiadało lub dodaje katalizator do swoich istniejących komponentów. Ponieważ katalizator staje się częścią komponentów materialnych, możesz go dobyć w ramach procesu Rzucania Zaklęcia.",
         "TraitDescriptionCatfolk": "Istota z tą cechą jest przedstawicielem przodkowstwa kotoludzi.",
+        "TraitDescriptionCenser": "Kadzielnice to ozdobne pojemniki, często metalowe lub ceramiczne, w których spala się kadzidło. Przedmiot z cechą kadzielnicy musi zostać wypełniony kadzidłem aby go Aktywować - co powoduje zapalenie kadzidła i sprawia, że kadzielnica wydziela chmurę dymu.",
         "TraitDescriptionChampion": "Oznacza zdolności z klasy Czempiona.",
         "TraitDescriptionChangeling": "Istota z tą cechą jest przedstawicielem przodkowstwa zmieńców.",
         "TraitDescriptionClass": "Archetypy z cechą klasy zasadniczo odbiegają od specjalności twojej klasy, ale nadal mieszczą się w jej tematyce. Możesz wybrać archetyp klasy tylko wtedy, gdy twoja klasa spełnia kryteria wymienione w wymaganiach archetypu. Archetypy klasowe zawsze albo zmieniają albo zastępują określone statyczne atrybuty klasowe w dodatku do wszelkich nowych atutów, które oferują. Może być możliwe przyjęcie archetypu klasy na poziomie 1, jeśli zmienia on lub zastępuje niektóre z początkowych atrybutów klasowych. Zdolność 1. poziomowa jest przedstawiona podobnie jak atrybut klasowy i zawiera wymagania archetypu klasowego oraz zasady dotyczące tego, jak zmienia ona twoją klasę. Jeśli wybierzesz tę umiejętność, musisz wziąć atut dedykacji temu archetypowi na 2. poziomie, a dalej możesz postępować normalnie. Nigdy nie możesz mieć więcej niż jednego archetypu klasowego.",
@@ -3656,6 +3733,7 @@
         "TraitDescriptionCommon": "Wszystko, co nie zawiera innej cechy rzadkości (nietypowość, rzadkość lub unikalność), automatycznie ma cechę powszechność. Ta rzadkość wskazuje, że zdolność, przedmiot lub zaklęcie są dostępne dla wszystkich graczy, którzy spełniają ich wymagania. Istota o tej rzadkości jest powszechnie znana i można ją przywołać za pomocą odpowiedniego zaklęcia przywołania.",
         "TraitDescriptionCompanion": "Przedmiot z tą cechą może nosić zwierzęcy towarzysz lub podobne stworzenie. Towarzysz może zaangażować się w maksymalnie dwa przedmioty.",
         "TraitDescriptionComplex": "Zagrożenie z tą cechą posiada własne tury podczas starć.",
+        "TraitDescriptionComposite": "Impuls kompozytowy łączy wiele żywiołów. Możesz zyskać impuls z cechą kompozytowości jedynie jeśli twoje żywioły kinetyka zawierają w sobie wszystkie żywioły wymienione w cechach impulsu.",
         "TraitDescriptionComposition": "Aby rzucić sztuczkę kompozycji lub zaklęcie skupienia, zwykle używasz pewnego rodzaju Występu. Jeśli zaklęcie zawiera komponent werbalny, musisz użyć występu z cechą słuchowości, a jeśli zawiera komponent somatyczny, musisz użyć występu z cechą wizualności. Zaklęcie zyskuje wszystkie cechy użytego przez ciebie występu. W każdej turze możesz rzucić tylko jedno zaklęcie kompozycji i tylko jedna twoja kompozycja może być aktywna w danym momencie. Jeśli rzucisz nowe zaklęcie kompozycji, wszystkie trwające efekty poprzedniego zaklęcia kompozycji natychmiast się skończą.",
         "TraitDescriptionConcealable": "Tę bron zaprojektowano tak, aby była niepozorna lub łatwa do ukrycia. Otrzymujesz premię sytuacyjną +2 do testów i ST Ukrywania się, aby ukryć lub przemycić broń z tą cechą.",
         "TraitDescriptionConcentrate": "Akcja z tą cechą wymaga pewnej ilości skupienia i dyscypliny.",
@@ -3685,6 +3763,7 @@
         "TraitDescriptionDivine": "Ten magiczny przedmiot jest związany z tradycją magii boskiej, czerpiącą moc od bóstw lub tym podobnych źródeł. Wszystko co opisane tą cechą, jest magiczne.",
         "TraitDescriptionDoubleBarrel": "Ta broń ma dwie lufy, z których każda jest ładowana osobno. Możesz wystrzelić z obu luf broni dwulufowej w ramach jednego Ciosu, aby zwiększyć obrażenia broni o jeden stopień. Jeśli broń ma cechę zgubności, zwiększa to również rozmiar kości używany przez zgubność.",
         "TraitDescriptionDowntime": "Aktywność z tą cechą trwa dzień lub dłużej i może być używana tylko w czasie przestojów.",
+        "TraitDescriptionDromaar": "Istota z tą cechą posiada uniwersalne dziedzictwo dromaar. Dromaarowie mają mieszane przodkowstwo, którego częścią są orkowie lub inni dromaarowie. Zdolność z tą cechą może być wybrana jedynie przez dromaarów.",
         "TraitDescriptionDrug": "Przedmiot z tą cechą jest narkotykiem - trucizną, która przynosi krótkotrwałe korzyści kosztem szkodliwych skutków ubocznych i długoterminowych konsekwencji. Za każdym razem, gdy istota używa danego narkotyku, musi również wykonać rzut obronny przeciwko uzależnieniu od tego narkotyku.",
         "TraitDescriptionDruid": "Oznacza zdolności z klasy Druida.",
         "TraitDescriptionDuskwalker": "Istota z tą cechą ma uniwersalne dziedzictwo Zmrokroczącego. Zmrokroczący to lud planarnego pochodzenia nasycony nadprzyrodzoną energią psychopompów. Zdolność z tą cechą może być używana lub wybierana tylko przez Zmrokroczących.",
@@ -3708,6 +3787,7 @@
         "TraitDescriptionFetchling": "Istoty z tą cechą są przedstawicielami przodkowstwa Cieniotworów. Cieniotwory były kiedyś ludźmi, ale pokolenia życia w Zaświatach zmieniły ich.",
         "TraitDescriptionFey": "Istoty z Pierwszego Świata zwane są feyami.",
         "TraitDescriptionFighter": "Oznacza zdolności z klasy Wojownika.",
+        "TraitDescriptionFigurehead": "Chociaż wiele statków zdobią ozdobne rzeźby, odważne załogi czasami zdobywają dla swoich statków magiczne galeony.",
         "TraitDescriptionFinesse": "Przy testach ataku tą bronią białą możesz użyć modyfikatora Zręczności zamiast modyfikatora Siły. Podczas obliczania obrażeń nadal używasz modyfikatora Siły.",
         "TraitDescriptionFinisher": "Ciosy wieńczące to spektakularne ruchy wykonywane na końcu ataku. Możesz użyć ciosu wieńczącego tylko wtedy, gdy masz polot, a natychmiast po wykonaniu ciosu wieńczącego tracisz go. Po użyciu ciosu wieńczącego, aż do końca twojej tury nie możesz używać akcji, które mają cechę atak. Niektóre ciosy wieńczące zapewniają również efekt w przypadku porażki. Efekty dodawane w wypadku porażki nie działają przy porażce krytycznej. Jeśli twój cios wieńczący odniesie sukces, możesz dobrowolnie zdecydować, że wolisz rozpatrzyć efekt porażki. (Przykładowo, możesz zrobić to jeśli atak nie zadałby obrażeń w wyniku odporności celu.)",
         "TraitDescriptionFinite": "Plany z tą cechą składają się z ograniczonej przestrzeni.",
@@ -3715,6 +3795,7 @@
         "TraitDescriptionFleshwarp": "Humanoid tak dogłębnie przekształcony przez siły zewnętrzne, że stanowi teraz wyjątkowe przedkowstwo.",
         "TraitDescriptionFlexible": "Ten pancerz jest na tyle elastyczny, że nie przeszkadza w większości działań. Nie stosujesz jej kary do testów do testów Akrobatyki i Atletyki.",
         "TraitDescriptionFlourish": "Akcje emfazy to akcje, które wymagają zbyt dużego wysiłku, aby wykonać dużą ich liczbę z rzędu. Możesz użyć tylko 1 akcji z cechą Emfaza na turę.",
+        "TraitDescriptionFocus": "Zaklęcia skupienia to specjalny rodzaj zaklęć, uzyskiwanych bezpośrednio w wyniku określonego rodzaju nauk, od bóstwa lub z innego specyficznego źródła. Zaklęć skupienia możesz się nauczyć jedynie przez specjalne atrybuty i atuty klasowe, w przeciwieństwie do wybierania ich z listy. Ponadto zaklęcia skupienia rzucasz za pomocą specjalnej puli Punktów Skupienia - nie możesz przygotować ich w komórce zaklęć ani używać komórek zaklęć do ich rzucania; podobnie, nie możesz wydawać swoich Punktów Skupienia aby rzucić zaklęcia, które zaklęciami skupienia nie są.",
         "TraitDescriptionFocused": "Przedmiot z tą cechą może dać ci dodatkowy Punkt Skupienia. Ten punkt skupienia jest oddzielony od twojej puli skupienia i nie wlicza się do limitu twojej puli skupienia. Możesz uzyskać tę korzyść tylko wtedy, gdy masz pulę skupienia a ponadto sposób w jaki można użyć tego punktu skupienia może być ograniczony. Nie możesz zdobyć więcej niż 1 Punkt Skupienia dziennie z przedmiotów skupiających.",
         "TraitDescriptionFoldaway": "<p>Ta tarcza może zostać złożona w mniejszą formę przymocowaną do rękawicy, aby zapewnić stabilność i ułatwić podróż. Możesz użyć akcji Interakcji, aby rozłożyć lub złożyć tarczę. Gdy jest rozłożona, możesz Wznieść Tarczę, o ile ręka na której ją nosisz jest pusta lub trzyma przedmiot lekkiego Naręcza inny niż broń. Tarcza utrudnia korzystanie z ręki, gdy jest rozłożona. Chociaż nadal możesz trzymać w tej ręce przedmioty, nie możesz w niej dzierżyć broni, obsługiwać niczego, co wymaga dwóch rąk, ani atakować karwaszem.</p><p>Składana tarcza musi być przymocowana do karwasza, aby zapewnić jej stabilność. Można ją przymocować do przedmiotu w ramach 10 minut pracy oraz udanego testu @Check[type:crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia tarczy z poprzedniego karwasza, jeśli to konieczne. Jeśli karwasz zostanie zniszczony, składaną tarczę można zwykle odratować. Składany charakter tarczy uniemożliwia przymocowanie do niej broni mocowanej.</p>",
         "TraitDescriptionForce": "Efekty z tą cechą zadają obrażenia od mocy lub tworzą obiekty wykonane z czystej mocy magicznej.",
@@ -3746,14 +3827,17 @@
         "TraitDescriptionHex": "Urok to rodzaj zaklęcie skupienia, który może rzucać wiedźma.",
         "TraitDescriptionHindering": "Ten pancerz jest tak ciężki i nieporęczny, że spowalnia cię bez względu na wszystko. Otrzymujesz karę -5 do wszystkich swoich Prędkości (do minimum 5 stóp). Jest to efekt osobny od kary do Prędkości od pancerza, wpływa na ciebie, nawet jeśli twoja Siła lub jakaś zdolność pozwalają ci zmniejszyć lub zignorować karę do Prędkości od pancerza.",
         "TraitDescriptionHobgolin": "Hobgobliny to krzepki, sprytny lud ze skłonnością do wojskowego porządku.",
+        "TraitDescriptionHoly": "Efekty z cecha świętości są związane z potężnymi magicznymi siłami miłosierdzia i cnoty. Często mają silniejsze działanie wobec istot wyklętych. Istoty z tą cechą są silnie oddane świętym pobudkom i często posiadają podatność na efekty wyklęte. Jeśli istota ze podatnością na efekty święte użyje przedmiotu lub efektu z cechą świętości, odnosi obrażenia w związku z jej podatnością.",
         "TraitDescriptionHuman": "Istota z tą cechą jest przedstawicielem przodkowstwa ludzi. Ludzie to zróżnicowana grupa znana ze swojej zdolności do adaptacji. Zdolności z tą cechą mogą być używane lub wybierane tylko przez ludzi.",
         "TraitDescriptionHumanoid": "Humanoidalne stworzenia rozumują i zachowują się podobnie jak ludzie. Zwykle stoją pionowo i mają dwie ręce i dwie nogi.",
         "TraitDescriptionIfrit": "Rodzaj dżinnoludźi wywodzących się od istot z Planu Ognia.",
         "TraitDescriptionIllusion": "Efekty i magiczne przedmioty z tą cechą są związane są z fałszywymi bodźcami zmysłowymi.",
+        "TraitDescriptionImpulse": "Podstawowe akcje magiczne, których używają kinetycy, nazywane są impulsami. Możesz użyć impulsu tylko wtedy, gdy twoja aura kinetyczna jest aktywna i kształtuje ten żywioł, i tylko jeśli masz wolną rękę, aby ukierunkować przepływ żywiołów. Cecha impulsu oznacza, że akcja ma cechę koncentracji, chyba że inna zdolność to zmieni. Jeśli impuls pozwala ci wybrać element, możesz wybrać dowolny element, który obecnie kształtujesz, a impuls zyskuje cechę tego elementu.",
         "TraitDescriptionIncapacitation": "Zdolność z tą cechą może całkowicie wykluczyć postać z walki lub nawet ją zabić, a jej użycie jest tym trudniejsze im potężniejsza jest postać. Jeśli zaklęcie ma cechę obezwładnienia, każda istota o poziomie dwukrotnie wyższym niż krąg zaklęcia traktuje wynik swojego testu na uniknięcie obezwładnienia przez to zaklęcie jako jeden stopień sukcesu wyżej, lub wynik jakiegokolwiek testu wykonanego przez rzucającego zaklęcie w celu obezwładnienia jej jako jeden stopień sukcesu niżej. Jeśli jakiś inny efekt ma cechę obezwładnienia, istota poziomu wyższego niż przedmiot, istota lub zagrożenie generujące efekt, uzyskuje te same korzyści.",
         "TraitDescriptionIncarnate": "Zaklęcie z cechą wcielenia jest tematycznie podobne do zaklęć przywołujących istoty, ale nie przywołuje sługusa z cechą przywołania. Zamiast tego, kiedy skończysz Rzucać Zaklęcie, pojawiające się wcielenie wykonuje swoją akcję Przybycia. Na koniec twojej następnej tury wcielenie może wykonać Krok, Bieg lub wykonać akcję wynikającą z innego typu ruchu, który posiada (takiego jak Wspinaczka lub Rycie), a następnie wykonuje swoją akcję Odejścia. W tym momencie zaklęcie się kończy. Nazwy określonych akcji Przybycia i Odejścia są odpowiednio wymienione kursywą po słowach „Przybycie” lub „Odejście”, wraz z wszelkimi ich cechami. Przywołane wcielenie działa w twoim interesie, kieruje efekty swoich działań jak najkorzystniej dla ciebie i twoich sojuszników oraz może słuchać twoich próśb, ale ostatecznie podejmuje własne decyzje. Jeśli zaklęcie wskazuje, że wcielenie podejmuje decyzję, MG określa jego zachowanie. Wcielenie może nawet stać się bardziej skłonne do robienia dokładnie tego, czego sobie życzysz, na przestrzeni wielu przywołań. Wcielenie nie jest w pełni istotą. Nie może wykonywać żadnych innych akcji, ani nie może być celem Ciosów, zaklęć ani innych efektów, chyba że byłyby w stanie obrać za cel lub zakończyć efekt zaklęcia (jak rozproszenie magii). Ma rozmiar na rzecz określania rozmieszczenia jego oraz jego efektów, ale nie blokuje ruchu. Jeśli jest to potrzebne, jego efekty wykorzystują twój ST zaklęć i twój modyfikator rzutu na atak zaklęciem.",
         "TraitDescriptionIncorporeal": "Istota lub przedmiot z cechą niematerialności nie ma fizycznej formy. Może przechodzić przez litą materię, w tym ściany. Będąc wewnątrz obiektu, niematerialna istota nie może postrzegać, atakować ani wchodzić w interakcje z niczym co na zewnątrz obiektu, a jeśli rozpocznie swoją turę w obiekcie, zostaje spowolniona 1. Materialne istoty mogą przejść przez niematerialną istotę, ale nie mogą zakończyć swojego ruchu w jej przestrzeni. Istota niematerialna nie może wykonywać testów opartych na Sile przeciwko materialnym istotom lub obiektom – tylko przeciwko niematerialnym – chyba że obiekty te posiadają runę właściwości duchowego dotyku. Podobnie istota materialna nie może wykonywać testów opartych na Sile przeciwko istotom lub przedmiotom niematerialnym. Istoty niematerialne zwykle są odporne na efekty lub statusy wymagające ciała fizycznego, takie jak choroby, trucizny i obrażenia precyzyjne. Zwykle mają odporność na wszystkie obrażenia (z wyjątkiem obrażeń od mocy i obrażeń od Ciosów zadanych z użyciem runy właściwości duchowego dotyku), a ich odporność na obrażenia niemagiczne jest podwojona.",
         "TraitDescriptionInfused": "Stworzyłeś przedmiot alchemiczny z cechą nasycenia przy użyciu nasyconych odczynników i ma on ograniczony czas przydatności do użycia zanim straci swoje właściwości. Wszelkie nietrwałe efekty nasyconych przedmiotów alchemicznych, z wyjątkiem powodowanych przez nie przypadłości, takich jak wolno działające trucizny, przestają działać, gdy ponownie wykonasz codzienne przygotowania.",
+        "TraitDescriptionInfusion": "Akcje z cechą Infuzja dostosowują twoje impulsy kinetyczne. Akcji infuzji musisz użyć dokładnie przed akcją impulsu, którą chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji (włączając w to akcje darmowe i reakcje) innej niż akcja impulsu, tracisz wszystkie benefity wynikające z akcji infuzji. Wszelkie dodawane przez infuzję efekty stają się częścią akcji impulsu, nie akcji infuzji.",
         "TraitDescriptionIngested": "Ta trucizna jest aplikowana poprzez zjedzenie lub wypicie.",
         "TraitDescriptionInhaled": "Ta trucizna aplikowana jest poprzez wdychanie jej.",
         "TraitDescriptionInjection": "Ta broń może być wypełniona trucizną aplikowaną przez rany. Po udanym ataku bronią możesz natychmiast wstrzyknąć celowi załadowaną truciznę pojedynczą akcją Interakcji. Wypełnienie broni nową substancją wymaga trzech akcji interakcji i użycia obu rąk.",
@@ -3767,6 +3851,7 @@
         "TraitDescriptionJousting": "Ta broń jest przystosowana do walki konnej z użyciem uprzęży na broń lub podobnych środków. Gdy dosiadasz wierzchowca, jeśli w trakcie akcji poprzedzającej twój atak poruszyłeś się o co najmniej 10 stóp, dodaj do obrażeń ataku premię sytuacyjną równą liczbie kości obrażeń tej broni. Dodatkowo, kiedy dosiadasz wierzchowca, możesz dzierżyć broń w jednej ręce, zmieniając jej kość obrażeń na wymienioną w cesze wartość.",
         "TraitDescriptionKashrishi": "Tęgie przodkowstwo posiadające charakterystyczne kryształowe rogi i wrodzone zdolności psychiczne.",
         "TraitDescriptionKickback": "Broń z tą cechą jest wyjątkowo potężna lecz i trudna w użyciu ze względu na duży odrzut. Wszystkie ataki bronią z odrzutem zadają 1 dodatkowy punkt obrażeń. Strzelanie z broni odbijającej nakłada karę sytuacyjną -2 do rzutu na atak, ale postacie z Siłą 14 lub wyższą ignorują tę karę. Dołączenie broni z odrzutem do rozstawionego dwójnogu, statywu lub innego stabilizatora może obniżyć lub zniwelować tę karę.",
+        "TraitDescriptionKineticist": "Oznacza zdolności z klasy Kinetyka.",
         "TraitDescriptionKitsune": "Zmiennokształtne humanoidy, które w prawdziwej postaci przypominają lisy.",
         "TraitDescriptionKobold": "Istota z tą cechą jest członkiem przodkowstwa koboldów.",
         "TraitDescriptionLaminar": "Ten pancerz podzielono na zachodzące na siebie segmenty, więc kiedy ulega uszkodzeniu, nie jest to tak dużym problemem. Kiedy ten pancerz jest uszkodzony kara statusowa do KP wynosi odpowiednio -1 za uszkodzony średni pancerz, -2 za uszkodzony ciężki pancerz lub brak kary w wypadku lekkiego pancerza.",
@@ -3798,6 +3883,8 @@
         "TraitDescriptionMulticlass": "Archetypy z cechą wieloklasowości reprezentują dywersyfikację twojego treningu w kierunku specjalności charakterystycznych dla innej klasy. Nie możesz wybrać atutu dedykacji archetypowi wieloklasowemu, jeśli jesteś członkiem klasy o tej samej nazwie.",
         "TraitDescriptionMutagen": "Eliksir z cechą mutagenu tymczasowo transmogryfikuje ciało podmiotu i wpływa na jego umysł. Mutagen zawsze przynosi jeden lub więcej korzystnych efektów w połączeniu z jednym lub kilkoma szkodliwymi efektami. Mutageny są efektami polimorficznymi, co oznacza, że możesz odnosić korzyści tylko z jednego na raz.",
         "TraitDescriptionNagaji": "Tradycjonalne przodkowstwa o gadzich cechach i wężowych głowach.",
+        "TraitDescriptionNephilim": "Istota z tą cechą posiada uniwersalne dziedzictwo nefilim. Nefilimowie to potomkowie nieśmiertelnych istot wywodzących się z innych planów. Zdolność z tą cechą może być wybrana jedynie przez nefilimów.",
+        "TraitDescriptionNindoru": "Nindoru to chaotyczne złe czarty, które powstają w wyniku spaczenia cyklu reinkarnacji dusz i żyją w Świecie Centralnym. Chociaż często mają w swoim wyglądzie elementy, które sprawiają, że wyglądają na nieumarłych, w rzeczywistości są żywymi istotami. Większość nindoru widzi w ciemności, jest odporna na efekty śmierci, ma podatność na srebro i posiada moc manifestowania obiektów lub stworzeń ze swoich myśli.",
         "TraitDescriptionNoisy": "Ten pancerz jest głośny i ma spore szanse na zawiadomienie innych o twojej obecności, gdy korzystasz z aktywności eksploracji Unikaj Wykrycia. Kara pancerza do testów wlicza się do twoich testów Skradania się, nawet jeśli posiadasz wymaganą przez pancerz Siłę.",
         "TraitDescriptionNone": "Ta cecha nie posiada opisu.",
         "TraitDescriptionNonlethal": "Ataki tą bronią nie są śmiertelne w skutkach i wykorzystywane są aby ogłuszać istoty. Możesz wykorzystać broń niezabójczą aby wykonać atak zabójczy ponosząc przy tym karę sytuacyjną -2 do rzutu na atak.",
@@ -3809,6 +3896,7 @@
         "TraitDescriptionOracle": "Oznacza zdolności z klasy Wyroczni.",
         "TraitDescriptionOrc": "Istota z tą cechą jest przedstawicielem przodkowstwa orków. Broń z tą cechą jest tworzona i używana przez orków.",
         "TraitDescriptionOread": "Rodzaj dżinnoludźi wywodzących się od istot z Planu Ziemi.",
+        "TraitDescriptionOverflow": "Potężny impulsy tymczasowo przeciążają energię twojej kinetycznej bramy. Kiedy użyjesz impulsu posiadającego cechę przesycenia, twoja kinetyczna aura deaktywuje się dopóki jej nie zrewitalizujesz (na ogół z pomocą Kształtowania Żywiołów). Wygaszanie twojego żywiołu jest niezwykle wyczerpujące, co sprawia, że możesz użyć tylko jednego przesycającego impulsu w rundzie, nawet jeśli reaktywujesz swoją kinetyczną bramę.",
         "TraitDescriptionParry": "Ta broń może zostać wykorzystana defensywnie, w celu blokowania ataków. Jeśli poziom twojej biegłości w posługiwaniu się nią wynosi wytrenowanie lub wyżej, dzierżąc ją możesz wykorzystać jedną akcję na przybranie defensywnej postawy, zyskując premię sytuacyjną +1 do twojej KP aż do początku twojej następnej tury.",
         "TraitDescriptionPeachwood": "Bronie wykonane z brzoskwiniodrzewu oglądane pod promieniami słońca mienią się charakterystycznym kasztanowym refleksem. Brzoskwiniodrzew jest traktowany jak mrokodrzew na rzecz wszelkich odporności i podatności posiadanych przez nieumarłe istoty (pozwalając na przykład na ominięcie odporności jiang-shi). Ponadto, broń z brzoskwiniodrzewu pomija małą część odporności każdej nieumarłej istoty. Ciosy brzoskwiniodrzewiową bronią traktują odporności nieumarłych na obrażenia fizyczne jakby było 2 niższe w wypadku broni o standardowej jakości brzoskwiniodrzewu, lub o 4 w wypadku wysokiej jakości brzoskwiniodrzewu.",
         "TraitDescriptionPlant": "Stworzenia będące powiązane z florą mają cechę roślinność. Są jednak odmienne od zwykłych roślin. Magiczne efekty z tą cechą wyczarowują roślinność lub materię roślinną, albo manipulują nią w jakiś sposób. Te, które manipulują roślinnością nie odnoszą efektu w obszarach pozbawionych roślinności.",
@@ -3827,6 +3915,7 @@
         "TraitDescriptionPropulsive": "Do rzutów na obrażenia dystansowe broni z cechą impulsowość, dodajesz połowę modyfikatora Siły (jeśli jest pozytywny). Jeśli twój modyfikator siły jest negatywny, dodajesz pełną jego wartość.",
         "TraitDescriptionPsyche": "Twoja psyche musi być uwolniona, aby używać zdolności, które mają cechę psyche. Kończą się też one automatycznie, gdy twoja uwolnienie psyche ustąpi.",
         "TraitDescriptionPsychic": "Oznacza zdolności z klasy Psychika.",
+        "TraitDescriptionRadiation": "Groźna, zwykle trująca, emisja na ogół pochodząca z radioaktywnych minerałów.",
         "TraitDescriptionRage": "Musisz być w szale aby używać zdolności z cechą szał. Kończą się też one automatycznie wraz z twoim szałem.",
         "TraitDescriptionRange": "Ataki wymieniają albo określony zasięg lub inkrement zasięgu, który zachowuje się zgodnie ze standardowymi regułami dotyczącymi inkrementów zakresu.",
         "TraitDescriptionRangedTrip": "Ta broń może zostać użyta do Podcinania wrogów z użyciem testu Atletyki, tak długo jak atakowany cel znajduje się w zasięgu pierwszego inkrementu zasięgu broni. Test umiejętności otrzymuje karę sytuacyjną -2. Możesz dodać premię przedmiotu do rzutów na atak do testu na Podcięcie. Tak jak w wypadku używania broni białej, nie zadajesz żadnych obrażeń jeśli wykorzystujesz broń do Podcinania.",
@@ -3838,12 +3927,14 @@
         "TraitDescriptionReckless": "Akcje z cechą ryzykanctwa wiążą się z szansą utraty przez prowadzącego kontroli nad pojazdem. Przy podejmowaniu akcji ryzykanckiej, prowadząca pojazd osoba musi najpierw zdać adekwatny test pilotażu aby utrzymać kontrolę nad pojazdem.",
         "TraitDescriptionRecovery": "Bronie powracające to rodzaj broni miotanych opracowanych z myślą o tym aby wracały do użytkownika jeśli chybią celu. Kiedy wykonasz nieudany Cios dystansowy tą bronią, wraca do twojej ręki po zakończeniu Ciosu, umożliwiając ci kolejną próbę. Jeśli w chwili powrotu broni masz zajęte ręce, upada ona na ziemi w twoim polu.",
         "TraitDescriptionReflection": "Istota z tą cechą posiada uniwersalne dziedzictwo odbicie. Odbicia to istoty będące kopiami żyjących ludzi, czy to w wyniku klonowania, czy planarnego powielenia, czy innego zjawiska. Zdolności z tą cechą może być wybierana i używana tylko przez odbicia.",
+        "TraitDescriptionRelic": "Przedmiot z cechą relikwii rośnie w siłę razem ze swoim użytkownikiem.",
         "TraitDescriptionReload": "Podczas gdy wszystkie bronie wymagają chwili czasu na dobycie do ataku, wiele broni dystansowych wymaga również ładowania amunicją i przeładowywania. Ten wpis określa jak wiele akcji Interakcji trzeba aby przeładować taką broń. Wartość ta może wynosić 0 jeśli dobycie amunicji i strzał z broni odbywają się w ramach tej samej akcji. Jeśli przedmiot wymaga 2 lub więcej akcji na przeładowanie MG określa czy muszą być one dokonywane w jednym ciągu jako aktywność, lub czy możesz wydać część z tych akcji w jednej turze a resztę w następnej.",
         "TraitDescriptionRepeating": "Broń samopowtarzalna to na ogół rodzaj kuszy o krótszym czasie przeładowania. Tego typu bronie nie mogą być ładowane pojedynczymi bełtami jak inne kusze; zamiast tego wymagają magazynków wyspecjalizowanej amunicji ładowanych do odpowiedniego gniazda. Kiedy magazynek jest na miejscu, amunicja jest automatycznie ładowana za każdym razem, kiedy broń jest napinana do strzału, redukując jej wartość przeładowania tak jak to podano w bloku statystyk (najczęściej 0). Gdy skończy się amunicja, konieczne jest załadowanie kolejnego magazynka, co wymaga wolnej ręki oraz trzech akcji Interakcji (usunięcie starego magazynka, wyciągnięcie nowego magazynka, umieszczenie magazynka na miejscu). Akcje te nie muszą być natomiast podjęte w jednym ciągu.",
         "TraitDescriptionResonant": "Ta broń może przewodzić obrażenia od energii. Dzierżąc broń rezonującą zdobywasz dostęp do darmowej akcji Przewodzenie Energii.",
         "TraitDescriptionRevelation": "Efekty obdarzone tą cechą przedstawiają rzeczy takimi, jakie są na prawdę.",
         "TraitDescriptionRogue": "Oznacza zdolności z klasy Łotra.",
         "TraitDescriptionSaggorak": "Pradawni krasnoludzcy kowale w Saggoraku opracowali serię run o spektakularnej mocy. Tylko ktoś o legendarnej biegłości w Rzemiośle, albo dobrze wyszkolony krasnoludzki rzemieślnik z miasta Kolvar, może nanosić, przenosić, czy usuwać runy z cechą Saggorak. Z powodu swojej znacznej mocy wszystkie runy z Saggoraku zajmują dwa gniazda na runę właściwości, a co za tym idzie mogą być nanoszone jedynie na broń i pancerz obdarzone runą potencji co najmniej +2.",
+        "TraitDescriptionSanctified": "Jesteś święty lub wyklęty, a twoje namaszczone akcje zyskują tę samą cechę.",
         "TraitDescriptionScatter": "Ta broń wystrzeliwuje grupę pocisków w szerokiej wiązce. Rozrzut zawsze wymienia odległość, określającą obszar rozrzutu. Przy trafieniu, główny cel ciosu odnosi obrażenia ciosu, a dodatkowo cel oraz wszystkie istoty w wymienionym obszarze wokół niego otrzymują po 1 punkcie obrażeń za każdą kość obrażeń broni.",
         "TraitDescriptionScroll": "Zwój zawiera pojedyncze zaklęcie, którego możesz użyć bez wydawania komórki zaklęć.",
         "TraitDescriptionScrying": "Efekt wróżbiarski pozwala ci widzieć, słyszeć lub w inny sposób odbierać bodźce zmysłowe na odległość, wykorzystując odpowiedni przyrząd zamiast twoich własnych oczu czy uszu.",
@@ -3862,8 +3953,10 @@
         "TraitDescriptionSorcerer": "Oznacza zdolności z klasy Zaklinacza.",
         "TraitDescriptionSpellgun": "Czarostrzał to cecha charakteryzująca przedmioty, które potrafią generować magiczne efekty i miotać nimi jak pociskami. Możesz wykonać wtedy zarówno rzut na atak czarem co rzut na atak dystansowy wykorzystując swoją biegłość w prostych broniach palnych. Czarostrzały posiadają inkrement zasięgu, który liczy się niezależnie od tego jakiego rodzaju rzut został wykonany. Mimo, że możesz wykorzystywać swój modyfikator dla prostej broni palnej, czarostrzał nie jest tak na prawdę bronią palną. Nie otrzymujesz obrażeń wynikających z Ciosu bronią palną, ani żadnych charakterystycznych dla broni korzyści takich jak krytyczna specjalizacja. Podobnie, nie możesz przeładować czarostrzału, przymocować do niego talizmanu, wykonywać ataku czarostrzałem w ramach akcji która zezwala ci na zadanie Ciosu z użyciem broni palnej i tak dalej.",
         "TraitDescriptionSpellheart": "Czarordzenie to permanentne przedmioty o działaniu podobnym do talizmanów. Mocujesz czarordzeń do ekwipunku za pomocą akcji Przymocuj Czarordzeń, która poza nazwą funkcjonuje identycznie co Przymocuj Talizman. Ograniczenie jednego przedmiotu mocowanego na przedmiot nadal obowiązuje - przedmiot może posiadać albo talizman albo czarordzeń, nigdy oba na raz. Rzucając sztuczkę za pomocą czarordzenia możesz użyć własnego modyfikatora ataku czarem lub ST czarów, jeśli są one większe. Wytwarzanie czarordzenia wymaga zaklęć, które dany czarordzeń ma rzucać. Przykładowo, większy pięćpiórowy wieniec wymaga powietrznego spaceru, podmuchu wichru i ściany wiatru.",
+        "TraitDescriptionSpellshape": "Akcje z cechą czarokształtowania modyfikują właściwości twoich zaklęć. Akcji czarokształtowania musisz użyć bezpośrednio przed Rzuceniem Zaklęcia, które chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji niż Rzucanie Zaklęcia (w tym darmowych akcji i reakcji), tracisz korzyści z akcji czarokształtowania. Wszelkie dodatkowe efekty dodane przez akcję czarokształtowania liczą się jako część efektu zaklęcia, a nie samej akcji czarokształtowania.",
         "TraitDescriptionSplash": "Kiedy użyjesz broni miotanej z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Jeśli atak z cechą rozpryskowości spudłuje, trafi lub trafi krytycznie, wszystkie istoty w zasięgu 5 stóp od celu (włącznie z celem) odnoszą wymienione obrażenia rozpryskowe. Przy porażce (ale nie przy krytycznej porażce), główny cel ataku nadal odnosi obrażenia rozpryskowe. Obliczając obrażenia dla głównego celu zsumuj obrażenia rozpryskowe z głównymi obrażeniami ciosu zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie są zwielokrotniane przy trafieniu krytycznym.",
         "TraitDescriptionSplash10": "Kiedy użyjesz broni miotanej z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Jeśli atak z cechą rozpryskowości spudłuje, trafi lub trafi krytycznie, wszystkie istoty w zasięgu 10 stóp od celu (włącznie z celem) odnoszą wymienione obrażenia rozpryskowe. Przy porażce (ale nie przy krytycznej porażce), główny cel ataku nadal odnosi obrażenia rozpryskowe. Obliczając obrażenia dla głównego celu zsumuj obrażenia rozpryskowe z głównymi obrażeniami ciosu zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie są zwielokrotniane przy trafieniu krytycznym.",
+        "TraitDescriptionSpirit": "Efekty z tą cechą mogą wpływać na stworzenia posiadające duchową esencję i mogą zadawać obrażenia duchowe. Istotę posiadającą tę cechę definiuje jej duchowa esencja. Stworzenia duchowe często nie posiadają formy materialnej.",
         "TraitDescriptionSprite": "Rodzina maleńkich skrzydlatych feyów o silnej więzi z magią pierwotną.",
         "TraitDescriptionStaff": "Tego typu magiczny przedmiot przechowuje zaklęcia określonego rodzaju i pozwala użytkownikom magii na rzucanie tych dodatkowych zaklęć poprzez przygotowanie kostura.",
         "TraitDescriptionStance": "Postawa to ogólna strategia walki, którą przybierasz, używając akcji z cechą postawy i w której pozostajesz przez pewien czas. Pozostajesz w postawie dopóki nie zostaniesz pozbawiony przytomności, dopóki jej wymogi (jeśli posiada) nie zostaną naruszone, dopóki nie zakończy się starcie, lub dopóki nie wejdziesz w nową postawę, którekolwiek nastąpi pierwsze. Kiedy użyjesz akcji z cechą postawy, nie możesz używać kolejnej do końca bieżącej rundy. Możesz przybierać postawy tylko podczas starć.",
@@ -3871,14 +3964,19 @@
         "TraitDescriptionStrix": "Skzydlate humanoidy, w większości żyjące w okolicach Cheliaxu.",
         "TraitDescriptionStructure": "Przedmiot z cechą struktura tworzy magiczną budowlę albo innego rodzaju strukturę przy swojej aktywacji. Przedmiot musi zostać aktywowany na połaci ziemi wolnej od innych struktur. Struktura adaptuje się do otaczającego terenu, przybierając cechy konstrukcyjne niezbędne do jej powstania w tym miejscu. Struktura dostosowuje się do małych przestrzeni takich jak sadzawki czy występy skalne, nie może jednak zostać postawiona w całości na wodzie czy innej płynnej powierzchni. W wypadku aktywacji na śniegu, wydmach piaskowych, albo innej miękkiej powierzchni z twardą warstwą ukrytą głębiej, fundamenty struktury (jeśli je posiada) dosięgają stabilnej warstwy. Jeśli przedmiot z tą cechą zostanie aktywowany na solidnej ale niestabilnej powierzchni, takiej jak bagniska lub obszary nękane przez wstrząsy tektoniczne, rzucaj każdego dnia @Check[type:flat|dc:3]; przy porażce struktura zaczyna się zapadać lub burzyć. Struktura nie krzywdzi okolicznych istot w procesie swojego powstawania i nie może zostać stworzona w tłumie czy gęsto zaludnionym obszarze. Każda istota złapana przypadkowo w procesie powstawania struktury ląduje bezpiecznie w jej wnętrzu i zawsze posiada drogę do wyjścia. Istota przebywająca wewnątrz struktury w momencie kiedy jej aktywacja się kończy nie jest krzywdzona i upada bezpiecznie na ziemię jeśli była na wyższych piętrach.",
         "TraitDescriptionSubjectiveGravity": "Na planach o tej cesze, wszystkie ciała mają możliwość bycia centrum grawitacji z tą samą siłą, jednak wymaga to określenia przez wolę nie-bezmyślnej istoty.",
+        "TraitDescriptionSubtle": "Zaklęcie z cechą subtelności może być rzucane bez inkantacji i nie posiada oczywistych przejawów.",
         "TraitDescriptionSuli": "Suli to planarne przodkowstwo wywodzące się od jannów.",
+        "TraitDescriptionSummon": "Zaklęcia z cechą przywołania mogą przyzywać istoty, na ogół posiadające pewną cechę. Takie istoty można znaleźć w Monster Core i podobnych książkach. O ile nie zaznaczono inaczej, istota musi być powszechna, zyskuje cechę przywołanej oraz musi się pojawić niezajętym polu w zasięgu zaklęcia, wystarczająco dużym aby ją pomieścić. Najwyższy poziom istoty możliwej do przywołania przez zaklęcie zależy od kręgu zaklęcia, tak jak rozpisano poniżej. Zaklęcie może nadal przywołać istotę poziomu niższego, jeśli tego chcesz. Te zasady dotyczą tylko zaklęć posiadających cechę przyzwania; inne zaklęcia, które przyzywają przedmiot lub istoty ale nie mają tej cechy, takie jak przyzwanie instrumentu, działają tak jak wyjaśniono w ich opisie.",
         "TraitDescriptionSummoned": "Istota przyzwana za pomocą zaklęcia lub efektu zyskuje cechę przywołanej. Przywołana istota nie może przywoływać innych istot, tworzyć cennych przedmiotów, ani rzucać zaklęć, które posiadają koszt. Posiada cechę sługusa. Jeśli spróbuje rzucić zaklęcie kręgu wyższego niż zaklęcie w wyniku którego została przywołana, zaburza magię przywołującą, powodując porażkę własnego zaklęcia oraz zakończenie zaklęcia przywołania. Poza tymi ograniczeniami, istota używa akcji standardowych dla jej rodzaju. Na ogół atakuje twoich wrogów na tyle na ile tylko potrafi. Jeśli możesz się z nią komunikować, możesz spróbować wydać jej polecenie, ale to MG określa w jakim stopniu istota go wysłucha. Natychmiast po zakończeniu Rzucania Zaklęcia istota wykorzystuje swoje dwie akcje przypadające na tę turę. Pomiot albo jakakolwiek inna istota wytworzona przez przyzwaną wraca do swojego pierwotnego stanu po zniknięciu przyzwanej istoty (w wypadku pomiotu są to w większości zwłoki). Jeśli nie jest jasne jaki jest to stan, określa MG. Istoty przyzwane mogą zostać wygnane za pomocą różnych zaklęć i efektów. Zostają automatycznie odegnane jeśli osiągną 0 Punktów Żywotności lub jeśli przywołujący je efekt się zakończy.",
         "TraitDescriptionSummoner": "Oznacza zdolności z klasy Przywoływacza.",
         "TraitDescriptionSwashbuckler": "Oznacza zdolności z klasy Szermierza.",
         "TraitDescriptionSweep": "Ta broń dokonuje zamaszystych lub wirujących ataków, co ułatwia trafianie wielu celów. Kiedy atakujesz tą bronią otrzymujesz premię sytuacyjną +1 do rzutu na atak o ile atakowałeś już w tej turze inną istotę.",
         "TraitDescriptionSylph": "Rodzaj dżinnoludźi wywodzących się od istot z Planu Powietrza.",
         "TraitDescriptionTalisman": "Talizman to mały obiekt mocowany do pancerza, tarczy lub broni (co nazywamy też obiektem przymocowanym). Musisz nosić lub aktywnie używać przedmiotu aby móc aktywować przymocowany do niego talizman. Po aktywacji talizman wypala się permanentnie tracąc moc.",
+        "TraitDescriptionTalos": "Talosowie to potomkowie istot z Planu Metalu, zuhr.",
+        "TraitDescriptionTandem": "Akcje z tą cechą wymagają abyście ty i twój eidolon pracowali w zespole. Nie możesz użyć akcji tandemowych jeśli ty lub twój eidolon nie możecie działać, jeśli nie Zmanifestowałeś \n Eidolona, lub jeśli Zmanifestowałeś Eidolona w sposób, który sprawia, że nie jesteście osobnymi istotami (tak jak w wypadku atutu Wtopienie w Eidolona). Akcje tandemowe często pozwalają tobie i twojemu eidolonowi na podejmowanie osobnych akcji ale muszą być to akcje możliwe do dokonania w pojedynkę przez ciebie lub eidolona; nie możesz w ramach akcji tandemowej podjąć kolejnej akcji tandemowej.",
         "TraitDescriptionTattoo": "Tatuaż to przedmiot, który jest wyrysowywany bądź wycinany na skórze istoty i na ogół przyjmuje formę obrazów lub symboli.",
+        "TraitDescriptionTea": "<p>Magiczna herbata jest rodzajem mikstury. Aktywuje się, oraz zużywa, przy jej wypiciu. Magiczna herbata posiada cechy mikstura i herbata. Kiedy wytwarzasz porcję magicznej herbaty, surowe materiały, których dostarczasz przyjmują postać niezwykłych i kosztownych liści herbaty. Proces tworzenia magicznej herbaty składa się z nasycania liści magicznymi reagentami, oczyszczania wody i parzenia liści herbaty, w wyniku czego otrzymuje się wyjątkowo smaczną miksturę. Możesz aktywować herbatę używając akcji Interakcji aby ją wypić lub napoić nią inną istotę, traktując ją jak zwyczajną miksturę. Możesz też aktywować herbatę poprzez 10-minutową aktywność wymagającą zestawu herbacianego (te narzędzia rzemieślnicze mogą być współdzielone przez maksymalnie cztery istoty podejmujące wspólnie tę aktywność) aby przygotować i spożyć ją lub zaoferować ją komuś w ramach ceremonii picia herbaty, po której zakończeniu herbata zaczyna działać; aktywacja magicznej herbaty w ten sposób wzmacnia jej działanie, co opisano w sekcji Ceremonia Picia Herbaty.</p><p>Po wypiciu porcji magicznej herbaty stajesz się niewrażliwy na działanie tego konkretnego rodzaju magicznej herbaty przez następne 24 godziny.</p>",
         "TraitDescriptionTech": "Przedmioty z tą cechą kojarzone są z technologią Numerii.",
         "TraitDescriptionTelepathy": "Istota z telepatią może porozumiewać się mentalnie z innymi. Nie daje to żadnego niezwykłego wglądu w jej myśli, przekaz informacyjny jest identyczny co w wypadku mowy.",
         "TraitDescriptionTeleportation": "Efekty teleportacji pozwalają ci natychmiastowo przenosić się z jednego punktu w przestrzeni do innego. Teleportacja na ogół nie prowokuje reakcji związanych z ruchem.",
@@ -3894,7 +3992,9 @@
         "TraitDescriptionTwoHand": "Broni tej można używać obiema rękami. Zrobienie tego zmienia rodzaj kości zadawanych przez nią obrażeń na podany w cesze. Zmiana dotyczy wszystkich generowanych przez broń kości obrażeń, takich jak dodatkowe kości z Runy Ciosu.",
         "TraitDescriptionUnarmed": "Atak bez broni wykorzystuje twoje własne ciało zamiast wytworzonej broni. Atak bez broni nie jest bronią, chociaż kategoryzowany jest razem z broniami na rzecz grup broni, oraz może mieć cechy broni. W związku z tym, że używasz do niego swojego ciała nie można cię Rozbroić z ataku bez broni. Nie zajmuje też twoich rąk, chociaż pięść albo inna kończyna chwytna przestrzega tych samych zasad co broń zapewniająca wolną rękę.",
         "TraitDescriptionUncommon": "Coś o nietypowej rzadkości wymaga specjalnego treningu lub wywodzi się z określonej kultury lub części świata. Niektóre elementy postaci zapewniają dostęp do nietypowych opcji, a MG może zdecydować o udostępnieniu ich wszystkim. O istotach nietypowych wiadomo mniej niż o powszechnych. Na ogół nie mogą zostać przywołane. ST testów Pozyskania Wiedzy dotyczących takich istot zwiększony jest o 2.",
+        "TraitDescriptionUndead": "Te niegdyś żywe istoty, zostały po śmierci natchnięte energia pustki oraz wypaczającą dusze wyklętą magią. Przy zredukowaniu jej Punktów Żywotności do 0 nieumarła istota ulega zniszczeniu. Nieumarłe istoty odnoszą obrażenia od energii witalności oraz są leczone energią pustki i nie odnoszą korzyści z leczących efektów witalności.",
         "TraitDescriptionUndine": "Rodzaj dżinnoludźi wywodzących się od istot z Planu Wody.",
+        "TraitDescriptionUnholy": "Efekty z cecha wyklętości są związane z potężnymi magicznymi siłami okrucieństwa i grzechu. Często mają silniejsze działanie wobec istot świętych. Istoty z tą cechą są silnie oddane wyklętym pobudkom i często posiadają podatność na efekty święte. Jeśli istota ze podatnością na efekty wyklęte użyje przedmiotu lub efektu z cechą wyklętości, odnosi obrażenia w związku z jej podatnością.",
         "TraitDescriptionUnique": "Element zasad obdarzony tą cechą jest jedyny w swoim rodzaju. ST testów Pozyskiwania Wiedzy na temat istot z tą cechą jest zwiększony o 10.",
         "TraitDescriptionUnstable": "Akcje niestabilne polegają na eksperymentalnych funkcjach twoich innowacji, których efektów nawet ty nie jesteś w stanie w pełni przewidzieć, i które mogą być niebezpieczne dla twojej kreacji (i potencjalnie dla ciebie samego).",
         "TraitDescriptionVanara": "Dociekliwe przodkowstwo obdarzone rysami naczelnych ssaków i chwytnymi ogonami.",
@@ -3903,12 +4003,16 @@
         "TraitDescriptionVirulent": "Zjadliwe przypadłości są trudniejsze do usunięcia. Musisz zdać dwa rzuty obronne pod rząd, aby cofnąć stadium przypadłości o 1. Krytyczny sukces cofa stadium rozwoju zjadliwej przypadłości o 1, zamiast o 2.",
         "TraitDescriptionVishkanya": "Przodkowstwo charakteryzowane przez wężowe rysy i potężny jad.",
         "TraitDescriptionVisual": "Efekt wzrokowy wpływa tylko na istoty, które mogą go zobaczyć. Dotyczy to tylko widocznych części efektu, określonych przez MG.",
+        "TraitDescriptionVitality": "Efekty z tą cechą leczą żywe istoty energią z Kuźni Stworzenia, zadają obrażenia od energii witalnej nieumarłym lub manipulują energią witalną.",
+        "TraitDescriptionVoid": "Efekty z tą cechą leczą nieumarłych energią z pustki, zadają obrażenia od pustki istotom żywym lub manipulują energią pustki.",
         "TraitDescriptionVolley": "Ta broń dystansowa jest mniej efektywna na krótkich odległościach. Ataki kierowane w cele znajdujące się wewnątrz wymienionego zasięgu wykonywane są z karą -2.",
         "TraitDescriptionWand": "Różdżka przechowuje pojedyncze zaklęcie, które możesz rzucić raz na dzień.",
         "TraitDescriptionWater": "Efekty z cechą woda manipulują wodą lub wyczarowują ją. Te które nią manipulują, nie odnoszą żadnego efektu, w obszarach pozbawionych wody. Istoty o tej cesze składają się głównie z wody lub mają magiczną więź z tym żywiołem.",
         "TraitDescriptionWildHunt": "Istoty o cesze Dzikiego Gonu nigdy nie są poniżej 14. poziomu. Posiadają większe widzenie w ciemności, zieleniowzrok, planarną aklimatyzację, dziki wzrok, instynktowną kooperację, podatność na zimne żelazo, zdolność do komunikacji z roślinami i zwierzętami, i swoją unikalną więź gonu.",
         "TraitDescriptionWitch": "Oznacza zdolności z klasy Wiedźmy.",
         "TraitDescriptionWizard": "Oznacza zdolności z klasy Czarodzieja.",
+        "TraitDescriptionWood": "Efekty z cechą drewna wyczarowują drewno lub nim manipulują. Te, które manipulują drewnem nie odnoszą efektu w obszarach pozbawionych drewna. Istoty z tą cechą są zbudowane w większości z drewna lub mają magiczną więź z tym żywiołem.",
+        "TraitCenser": "Kadzielnica",
         "TraitDetection": "Wykrywanie",
         "TraitDeviant": "Dewiacja",
         "TraitDevil": "Czart",
@@ -3922,6 +4026,7 @@
         "TraitDowntime": "Przestój",
         "TraitDragon": "Smok",
         "TraitDream": "Sen",
+        "TraitDromaar": "Dromaar",
         "TraitDrow": "Drow",
         "TraitDrug": "Narkotyk",
         "TraitDruid": "Druid",
@@ -3941,10 +4046,13 @@
         "TraitEntrenchRanged": "Obwarowania na Dystans",
         "TraitEnvironmental": "Otoczenie",
         "TraitEsoterica": "Ezoteria",
+        "TraitEtchedOntoABludgeoningWeapon": "Grawer na Broni Obuchowej",
         "TraitEtchedOntoAClanDagger": "Grawer na Sztylecie Klanowym",
         "TraitEtchedOntoAMeleeWeapon": "Grawer na Broni Białej",
         "TraitEtchedOntoAMeleeWeaponMonk": "Grawer na Broni Białej z Cechą Mnich",
         "TraitEtchedOntoAPiercingOrSlashingMeleeWeapon": "Grawer na Tnącej/Kłującej Broni Białej",
+        "TraitEtchedOntoAPiercingOrSlashingWeapon": "Grawer na Tnącej/Kłującej Broni",
+        "TraitEtchedOntoAShield": "Grawer na Tarczy",
         "TraitEtchedOntoASlashingMeleeWeapon": "Grawer na Tnącej Broni Białej",
         "TraitEtchedOntoAThrownWeapon": "Grawer na Broni Miotanej",
         "TraitEtchedOntoAWeapon": "Grawer na Broni",
@@ -3957,6 +4065,7 @@
         "TraitEtchedOntoLightArmor": "Grawer na Lekkim Pancerzu",
         "TraitEtchedOntoLightMedNMArmor": "Grawer na Lekkim lub Średnim Pancerzu Niemetalowym",
         "TraitEtchedOntoMedHeavyArmor": "Grawer na Średnim lub Ciężkim Pancerzu",
+        "TraitEtchedOntoMediumHeavyMetalArmor": "Grawer na Metalowym Pancerzu Średnim lub Ciężkim",
         "TraitEtchedOntoMetalArmor": "Grawer na Metalowym Pancerzu",
         "TraitEthereal": "Eteryczność",
         "TraitEvolution": "Ewolucja",
@@ -3975,6 +4084,7 @@
         "TraitFey": "Fey",
         "TraitFiend": "Diabeł",
         "TraitFighter": "Wojownik",
+        "TraitFigurehead": "Galeon",
         "TraitFinesse": "Finezja",
         "TraitFinisher": "Cios Wieńczący",
         "TraitFinite": "Skończoność",
@@ -3982,6 +4092,7 @@
         "TraitFleshwarp": "Mięsoskręt",
         "TraitFlexible": "Elastyczność",
         "TraitFlourish": "Emfaza",
+        "TraitFocus": "Skupienie",
         "TraitFocused": "Skupianie",
         "TraitFoldaway": "Składanie",
         "TraitForce": "Moc",
@@ -4018,6 +4129,7 @@
         "TraitHampering": "Zawadzanie",
         "TraitHantu": "Hantu",
         "TraitHarnessed": "Mocowanie",
+        "TraitHarrowCourt": "Dwór Marnota",
         "TraitHaunt": "Straszydło",
         "TraitHealing": "Leczenie",
         "TraitHefty14": "Masywność 14",
@@ -4029,16 +4141,20 @@
         "TraitHex": "Urok",
         "TraitHindering": "Krępowanie Ruchu",
         "TraitHobgoblin": "Hobgoblin",
+        "TraitHoly": "Świętość",
+        "TraitHryngar": "Hryngar",
         "TraitHuman": "Człowiek",
         "TraitHumanoid": "Humanoid",
         "TraitIfrit": "Ifryt",
         "TraitIkeshti": "Ikeshti",
         "TraitIllusion": "Iluzja",
+        "TraitImpulse": "Impuls",
         "TraitIncapacitation": "Obezwładnienie",
         "TraitIncarnate": "Wcielenie",
         "TraitIncorporeal": "Niematerialność",
         "TraitInevitable": "Nieunikniony",
         "TraitInfused": "Nasycenie",
+        "TraitInfusion": "Infuzja",
         "TraitIngested": "Spożycie",
         "TraitInhaled": "Wdychanie",
         "TraitInjection": "Wstrzyk",
@@ -4059,6 +4175,8 @@
         "TraitKami": "Kami",
         "TraitKashrishi": "Kaszriszi",
         "TraitKickback": "Odrzut",
+        "TraitKineticist": "Kinetyk",
+        "TraitKingdom": "Królestwo",
         "TraitKitsune": "Kitsune",
         "TraitKobold": "Kobold",
         "TraitKovintus": "Kovintus",
@@ -4066,6 +4184,7 @@
         "TraitLaunching": "Wyrzutnia",
         "TraitLeshy": "Leszy",
         "TraitLight": "Światło",
+        "TraitLilu": "Lilu",
         "TraitLineage": "Rodowód",
         "TraitLinguistic": "Lingwistyka",
         "TraitLitany": "Litania",
@@ -4100,7 +4219,10 @@
         "TraitMunavri": "Munavri",
         "TraitMutagen": "Mutagen",
         "TraitMutant": "Mutant",
+        "TraitNaari": "Naari",
         "TraitNagaji": "Nagaji",
+        "TraitNephilim": "Nefilim",
+        "TraitNindoru": "Nidoru",
         "TraitNoisy": "Hałas",
         "TraitNonlethal": "Niezabójczość",
         "TraitNymph": "Nimfa",
@@ -4114,6 +4236,7 @@
         "TraitOracle": "Wyrocznia",
         "TraitOrc": "Ork",
         "TraitOread": "Oread",
+        "TraitOverflow": "Przesycenie",
         "TraitPaaridar": "Paaridar",
         "TraitParry": "Parowanie",
         "TraitPervasiveMagic": "Wszechobecna Magia",
@@ -4226,9 +4349,11 @@
         "TraitReach0": "Wysięg 0 stóp",
         "TraitReach10": "Wysięg 10 stóp",
         "TraitReach100": "Wysięg 100 stóp",
+        "TraitReach120": "Wysięg 120 stóp",
         "TraitReach1000": "Wysięg 1,000 stóp",
         "TraitReach15": "Wysięg 15 stóp",
         "TraitReach20": "Wysięg 20 stóp",
+        "TraitReach200": "Wysięg 200 stóp",
         "TraitReach25": "Wysięg 25 stóp",
         "TraitReach30": "Wysięg 30 stóp",
         "TraitReach40": "Wysięg 40 stóp",
@@ -4237,6 +4362,7 @@
         "TraitReckless": "Ryzykanctwo",
         "TraitRecovery": "Powracanie",
         "TraitReflection": "Odbicie",
+        "TraitRelic": "Relikwia",
         "TraitReload": "Przeładowanie",
         "TraitReload0": "Przeładowanie 0",
         "TraitReload1": "Przeładowanie 1",
@@ -4249,9 +4375,11 @@
         "TraitSaggorak": "Saggorak",
         "TraitSahkil": "Sahkil",
         "TraitSamsaran": "Samsaranin",
+        "TraitSanctified": "Namaszczenie",
         "TraitScatter": "Rozrzut",
         "TraitScatter10": "Rozrzut 10",
         "TraitScatter15": "Rozrzut 15",
+        "TraitScatter20": "Rozrzut 20",
         "TraitScatter5": "Rozrzut 5",
         "TraitScroll": "Zwój",
         "TraitScrying": "Wróżbiarstwo",
@@ -4283,10 +4411,12 @@
         "TraitSpellDeflection": "Odbicie Zaklęcia",
         "TraitSpellgun": "Czaromiot",
         "TraitSpellheart": "Czarordzeń",
+        "TraitSpellshape": "Czarokształtowanie",
         "TraitSpellshot": "Czarostrzelec",
         "TraitSpirit": "Dusza",
         "TraitSplash": "Rozprysk",
         "TraitSplash10": "Rozprysk 10 ft",
+        "TraitSporeborn": "Grzyboród",
         "TraitSpriggan": "Spriggan",
         "TraitSprite": "Skrzat",
         "TraitStaff": "Kostur",
@@ -4296,6 +4426,8 @@
         "TraitStheno": "Steno",
         "TraitStrix": "Strix",
         "TraitStructure": "Struktura",
+        "TraitSubjectiveGravity": "Subietywna Grawitacja",
+        "TraitSubtle": "Subtelność",
         "TraitSuli": "Suli",
         "TraitSummon": "Przywołaniec",
         "TraitSummoned": "Przywołano",
@@ -4305,11 +4437,13 @@
         "TraitSweep": "Zamaszystość",
         "TraitSylph": "Sylf",
         "TraitTalisman": "Talizman",
+        "TraitTalos": "Talos",
         "TraitTandem": "Tandem",
         "TraitTane": "Tane",
         "TraitTanggal": "Tanggal",
         "TraitTattoo": "Tatuaż",
         "TraitTattooedOnTheBody": "Wytatuowanie na Ciele",
+        "TraitTea": "Herbata",
         "TraitTech": "Technologia",
         "TraitTechnological": "Teologiczność",
         "TraitTelepathy": "Telepatia",
@@ -4346,6 +4480,7 @@
         "TraitUncommon": "Nietypowość",
         "TraitUndead": "Nieumarły",
         "TraitUndine": "Undine",
+        "TraitUnholy": "Wyklętość",
         "TraitUnique": "Unikalność",
         "TraitUnstable": "Niestabilność",
         "TraitUntyped": "Nieokreślony Typ",
@@ -4362,12 +4497,19 @@
         "TraitVersatileFire": "Wszechstronność: od Ognia",
         "TraitVersatileForce": "Wszechstronność: od Mocy",
         "TraitVersatileP": "Wszechstronność: K",
+        "TraitVersatilePoison": "Wszechstronność: Trucizna",
         "TraitVersatileS": "Wszechstronność: C",
         "TraitVersatileSonic": "Wszechstronność: Soniczne",
+        "TraitVersatileSpirit": "Wszechstronność: Duchowe",
+        "TraitVersatileVitality": "Wszechstronność: Witalność",
+        "TraitVersatileVoid": "Wszechstronność: Pustka",
+        "TraitVersatileX": "Wszechstronność: {x}",
         "TraitVigilante": "Bojownik",
         "TraitVirulent": "Zjadliwość",
         "TraitVishkanya": "Vishkanya",
         "TraitVisual": "Wzrokowość",
+        "TraitVitality": "Witalność",
+        "TraitVoid": "Pustka",
         "TraitVolley": "Salwa",
         "TraitVolley20": "Salwa 20 ft.",
         "TraitVolley30": "Salwa 30 ft.",
@@ -4382,6 +4524,7 @@
         "TraitWildHunt": "Dziki Gon",
         "TraitWitch": "Wiedźma",
         "TraitWizard": "Czarodziej",
+        "TraitWood": "Drewno",
         "TraitWorn": "Noszony",
         "TraitWornAmulet": "Noszony Amulet",
         "TraitWornAndAttachedToTwoWeapons": "Noszony i Mocowany do Dwóch Broni",
@@ -4451,10 +4594,12 @@
             "Feet": "Stopy",
             "FeetAcronym": "ft",
             "GreaterDifficultTerrain": "Prędkość w Bardzo Trudnym Terenie",
+            "HexplorationActivities": "Aktywności Heksploracji",
             "Hours": "Godziny",
             "HoursPerDay": "Godzin Dziennie w Podróży",
             "HustleMinutes": "Minut Dziennie Spędzonych w Pośpiechu",
             "Journey": "Podróż",
+            "Label": "Prędkość Podróży",
             "Miles": "Mile",
             "Name": "Nazwa",
             "None": "Pełna Prędkość",
@@ -4464,9 +4609,7 @@
             "TerrainSlowdown": "Prędkość w Terenie",
             "Title": "Kalkulator Czasu Podróży (Alpha)",
             "TravelDuration": "Czas Podróży",
-            "Weeks": "Tygodnie",
-            "HexplorationActivities": "Aktywności Heksploracji",
-            "Label": "Prędkość Podróży"
+            "Weeks": "Tygodnie"
         },
         "TrickMagicItemPopup": {
             "InvalidActor": "Tylko postać lub BN może Zwodzić Magiczny Przedmiot.",
@@ -4515,6 +4658,7 @@
                 "alchemical-bomb": "Alchemiczna Bomba",
                 "alchemical-crossbow": "Alchemiczna Kusza",
                 "aldori-dueling-sword": "Miecz Pojedynkowy Aldorich",
+                "arbalest": "Arbaleta",
                 "arquebus": "Arkebuz",
                 "asp-coil": "Żmijowy Splot",
                 "atlatl": "Atlatl",
@@ -4773,8 +4917,7 @@
                 "wooden-taws": "Drewniane Tau",
                 "wrecker": "Wyburzyciel",
                 "wrist-launcher": "Wyrzutnia na nadgarstek",
-                "zulfikar": "Zulfikar",
-                "arbalest": "Arbaleta"
+                "zulfikar": "Zulfikar"
             }
         },
         "WeaponAbilityLabel": "Zdolności Broni",
@@ -4790,6 +4933,7 @@
         "WeaponGroupBow": "Łuk",
         "WeaponGroupBrawling": "Ręczna",
         "WeaponGroupClub": "Pałka",
+        "WeaponGroupCrossbow": "Kusza",
         "WeaponGroupDart": "Rzutka",
         "WeaponGroupFirearm": "Broń Palna",
         "WeaponGroupFlail": "Kiścień",
@@ -4824,6 +4968,15 @@
                     "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową}</em> (@Check[type:will|dc:27|name:Anchoring Rune], modyfikator przeciwdziałania [[/r 1d20+17 #Test przeciwdziałania Runie Kotwiczenia]]{+17})"
                 }
             },
+            "ashen": {
+                "Name": "Popielna",
+                "Note": {
+                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:25]."
+                }
+            },
+            "authorized": {
+                "Name": "Autoryzacji"
+            },
             "bane": {
                 "Name": "Zmory"
             },
@@ -4841,6 +4994,12 @@
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:29|name:Runa Światłości] albo zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę."
                 }
+            },
+            "called": {
+                "Name": "Przywołania"
+            },
+            "coating": {
+                "Name": "Powlekania"
             },
             "conducting": {
                 "Name": "Przewodzenia"
@@ -4863,6 +5022,9 @@
             "dancing": {
                 "Name": "Tańca"
             },
+            "deathdrinking": {
+                "Name": "Śmierciospijania"
+            },
             "demolishing": {
                 "Name": "Dewastacji"
             },
@@ -4871,6 +5033,9 @@
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest też @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona1} do końca twojej następnej tury."
                 }
+            },
+            "earthbinding": {
+                "Name": "Uziemienia"
             },
             "energizing": {
                 "Name": "Energetyzacji"
@@ -4893,6 +5058,9 @@
                     "criticalSuccess": "Przy trafieniu krytycznym zadajesz dodatkowo [[/r 1d10[persistent,fire] #Runa Płomieni]]{1k10 trwałych obrażeń od ognia}."
                 }
             },
+            "flurrying": {
+                "Name": "Gradobicia"
+            },
             "frost": {
                 "Name": "Mrozu",
                 "Note": {
@@ -4903,11 +5071,23 @@
                 "Name": "Duchowego Dotyku",
                 "Note": "Broń może ranić istoty pozbawione fizycznej formy. Broń duchowego dotyku jest szczególnie efektywna w starciu z niematerialnymi istotami, które niemal zawsze mają dedykowaną podatność na bronie duchowego dotyku. Niematerialne istoty mogą dotykać, trzymać czy nawet używać broni duchowego dotyku (w przeciwieństwie do większości innych obiektów)."
             },
+            "giantKilling": {
+                "Name": "Zabójcy Gigantów",
+                "Note": {
+                    "criticalSuccess": "Przy krytycznym trafieniu tą bronią, gigant zostaje też @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} do końca twojej następnej tury."
+                }
+            },
             "greaterAnchoring": {
                 "Name": "Większa Kotwiczenia",
                 "Note": {
                     "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową}</em> na 8. kręgu (@Check[type:will|dc:38|name:Większa Runa Kotwicząca], modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28}), z tym, że jeśli istota krytycznie zda rzut obronny, <em>kotwica wymiarowa</em> działa 1 rundę zamiast nie zadziałać wcale.",
                     "success": "Kiedy trafisz ciel lecz nie jest to trafienie krytyczne, cel zostaje objęty zaklęciem <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Wymiarowej Kotwicy}</em> 4. kręgu na jedną rundę z pominięciem rzutu obronnego (modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28})."
+                }
+            },
+            "greaterAshen": {
+                "Name": "Większa Popielna",
+                "Note": {
+                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:35]. Przy krytycznej porażce efekt dezorientacji trwa 1 minutę."
                 }
             },
             "greaterBloodbane": {
@@ -4965,6 +5145,13 @@
                     "success": "Obrażenia od zimna zadawane przez tą broń ignorują odporność na zimno celu."
                 }
             },
+            "greaterGiantKilling": {
+                "Name": "Większa Zabójcy Gigantów",
+                "Note": {
+                    "success": "Mentalne obrażenia zadawane przez tę broń ignorują odporność celu.",
+                    "criticalSuccess": "Przy krytycznym trafieniu tą bronią, gigant musi wykonać @Check[type:fortitude|dc:34] o poniższym efekcie.<br /><strong>Krytyczny Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} do końca twojej następnej tury.<br /><strong>Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} do końca twojej następnej tury i odnosi @Damage[1d10[mental]].<br /><strong>Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} na następną minutę i odnosi @Damage[2d10[mental]].<br/><strong>Krytyczna Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 4} na następną minutę i odnosi @Damage[4d10[mental]]."
+                }
+            },
             "greaterHauling": {
                 "Name": "Większa Przeciągnięcia"
             },
@@ -4972,6 +5159,12 @@
                 "Name": "Większa Impetu",
                 "Note": {
                     "criticalSuccess": "Przy krytycznym sukcesie możesz wymusić na celu rzut obronny @Check[type:fortitude|dc:37|name:Większa Runa Impetu], w wypadku porażki jest on odpychany10 stóp od ciebie."
+                }
+            },
+            "greaterRooting": {
+                "Name": "Większa Zakorzeniania",
+                "Note": {
+                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 28</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
                 }
             },
             "greaterShock": {
@@ -5022,17 +5215,35 @@
                     "criticalSuccess": "Przy krytycznym sukcesie w rzucie na atak tą bronią, inspirujesz swoich towarzyszy, motywując ich do dalszej walki w imię waszych wartości. Sojusznicy w zasięgu 30 stóp od ciebie, którzy dzielą z tobą przynajmniej jedną ze składowych charakteru, otrzymują premię statusową +1 do rzutów ataku do końca twojej następnej tury."
                 }
             },
+            "hooked": {
+                "Name": "Hakowatości",
+                "Note": {
+                    "criticalSuccess": "Jeśli broń z runą hakowatości ma zwykle cechę podcinania, możesz spróbować Podciąć wroga w ramach reakcji przy trafieniu krytycznym bronią hakowatą."
+                }
+            },
             "impactful": {
                 "Name": "Impetu",
                 "Note": {
                     "criticalSuccess": "Przy krytycznym sukcesie możesz wymusić na celu rzut obronny @Check[type:fortitude|dc:27|name:Runa Impetu], w wypadku porażki jest on odpychany 5 stóp od ciebie."
                 }
             },
+            "impossible": {
+                "Name": "Niemożliwości"
+            },
             "keen": {
                 "Name": "Wyważenia"
             },
             "kinWarding": {
                 "Name": "Obrony Bliźnich"
+            },
+            "majorRooting": {
+                "Name": "Główna Zakorzeniania",
+                "Note": {
+                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 34</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
+                }
+            },
+            "merciful": {
+                "Name": "Litości"
             },
             "majorFanged": {
                 "Name": "Główna Kłów"
@@ -5043,6 +5254,12 @@
             "returning": {
                 "Name": "Powrotu",
                 "Note": "Kiedy zadasz Cios miotany tą bronią, wraca ona do twojej dłoni po zakończeniu Ciosu. Jeśli twoje ręce są zajęte kiedy broń do ciebie wraca, upada ona na ziemię w twoim polu."
+            },
+            "rooting": {
+                "Name": "Zakorzeniania",
+                "Note": {
+                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 23</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
+                }
             },
             "serrating": {
                 "Name": "Rozdzierania"
@@ -5062,11 +5279,23 @@
             "spellStoring": {
                 "Name": "Przechowywania Czarów"
             },
+            "swarming": {
+                "Name": "Roju"
+            },
             "thundering": {
                 "Name": "Grzmotu",
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:24|name:Runa Grzmotu] albo zostaje @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} na 1 minutę (lub 1 godzinę przy krytycznej porażce)."
                 }
+            },
+            "trueRooting": {
+                "Name": "Prawdziwa Zakorzeniania",
+                "Note": {
+                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 41</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
+                }
+            },
+            "underwater": {
+                "Name": "Podwodna"
             },
             "unholy": {
                 "Name": "Wyklęta",
@@ -5082,91 +5311,6 @@
             },
             "wounding": {
                 "Name": "Ran"
-            },
-            "earthbinding": {
-                "Name": "Uziemienia"
-            },
-            "authorized": {
-                "Name": "Autoryzacji"
-            },
-            "ashen": {
-                "Name": "Popielna",
-                "Note": {
-                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:25]."
-                }
-            },
-            "called": {
-                "Name": "Przywołania"
-            },
-            "coating": {
-                "Name": "Powlekania"
-            },
-            "deathdrinking": {
-                "Name": "Śmierciospijania"
-            },
-            "flurrying": {
-                "Name": "Gradobicia"
-            },
-            "greaterAshen": {
-                "Name": "Większa Popielna",
-                "Note": {
-                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:35]. Przy krytycznej porażce efekt dezorientacji trwa 1 minutę."
-                }
-            },
-            "impossible": {
-                "Name": "Niemożliwości"
-            },
-            "merciful": {
-                "Name": "Litości"
-            },
-            "swarming": {
-                "Name": "Roju"
-            },
-            "giantKilling": {
-                "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu tą bronią, gigant zostaje też @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} do końca twojej następnej tury."
-                },
-                "Name": "Zabójcy Gigantów"
-            },
-            "greaterGiantKilling": {
-                "Note": {
-                    "success": "Mentalne obrażenia zadawane przez tę broń ignorują odporność celu.",
-                    "criticalSuccess": "Przy krytycznym trafieniu tą bronią, gigant musi wykonać @Check[type:fortitude|dc:34] o poniższym efekcie.<br /><strong>Krytyczny Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} do końca twojej następnej tury.<br /><strong>Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} do końca twojej następnej tury i odnosi @Damage[1d10[mental]].<br /><strong>Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} na następną minutę i odnosi @Damage[2d10[mental]].<br/><strong>Krytyczna Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 4} na następną minutę i odnosi @Damage[4d10[mental]]."
-                },
-                "Name": "Większa Zabójcy Gigantów"
-            },
-            "greaterRooting": {
-                "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 28</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
-                },
-                "Name": "Większa Zakorzeniania"
-            },
-            "hooked": {
-                "Note": {
-                    "criticalSuccess": "Jeśli broń z runą hakowatości ma zwykle cechę podcinania, możesz spróbować Podciąć wroga w ramach reakcji przy trafieniu krytycznym bronią hakowatą."
-                },
-                "Name": "Hakowatości"
-            },
-            "majorRooting": {
-                "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 34</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
-                },
-                "Name": "Główna Zakorzeniania"
-            },
-            "rooting": {
-                "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 23</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
-                },
-                "Name": "Zakorzeniania"
-            },
-            "trueRooting": {
-                "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu celu tą bronią, wyrastają z niego korzenie. Jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{unieruchomiony} na 1 rundę (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Ucieczka ST 41</span>) oraz @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} tak długo jak trwa unieruchomienie."
-                },
-                "Name": "Prawdziwa Zakorzeniania"
-            },
-            "underwater": {
-                "Name": "Podwodna"
             }
         },
         "WeaponPropertyStrikeDamageLabel": "Obrażenia Ciosu",
@@ -5342,6 +5486,11 @@
                 "rules": "<p>Jesteś zmęczony i nie możesz wykrzesać z siebie wiele energii. Otrzymujesz karę statusową -1 do twojego KP i rzutów obronnych. Podczas eksploracji nie możesz wybrać wykonywanej aktywności.</p>\n<p>Przestajesz być wyczerpany po całonocnym odpoczynku.</p>",
                 "summary": "Zmęczenie nie pozwala ci się skupić ani na obronie, ani na eksploracji."
             },
+            "off-guard": {
+                "name": "Opuszczona Garda",
+                "rules": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz sytuacyjną karę -2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności efekty statusowe - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \\\"Cel ma opuszczoną gardę.\\\"</p>",
+                "summary": "Nie jesteś w stanie bronić się na miarę swoich możliwości."
+            },
             "fleeing": {
                 "name": "Uciekający",
                 "rules": "<p>Jesteś zmuszony do ucieczki przez strach lub innego rodzaju natrętną potrzebę. W swojej turze musisz wydać wszystkie swoje akcje, aby uciekać od źródła efektu tak prędko, jak to tylko możliwe (na przykład używając swoich akcji by się oddalać lub otwierać drzwi barykadujące twoją drogę ucieczki). Źródłem strachu jest na ogół efekt lub użytkownik magii, który wywołał status, chociaż niektóre efekty mogą precyzować inne źródło. Nie możesz Opóźniać tury ani Przygotowywać się kiedy odczuwasz potrzebę ucieczki.</p>",
@@ -5477,11 +5626,6 @@
                 "name": "Ranny",
                 "rules": "<p>Zostałeś poważnie ranny. Jeśli stracisz status umierający i nie masz jeszcze statusu ranny, stajesz się ranny 1. Jeśli masz już status ranny kiedy tracisz status umierający, zwiększasz wartość statusu ranny o 1. Jeśli zyskujesz status umierający kiedy jesteś ranny, zwiększ wartość statusu umierający o wartość statusu ranny.</p>\n<p>Status ranny kończy się kiedy ktoś pomyślnie przywróci ci Punkty Żywotności za pomocą Opatrywania Ran, lub jeśli zostaniesz przywrócony do pełni Punktów Żywotności i odpoczniesz przez 10 minut.</p>",
                 "summary": "Zostałeś przywrócony do życia znad progu śmierci, i nie odzyskałeś nadal pełni sił."
-            },
-            "off-guard": {
-                "name": "Opuszczona Garda",
-                "rules": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz sytuacyjną karę -2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności efekty statusowe - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \\\"Cel ma opuszczoną gardę.\\\"</p>",
-                "summary": "Nie jesteś w stanie bronić się na miarę swoich możliwości."
             }
         },
         "identification": {
@@ -5556,6 +5700,7 @@
             "MoveLoot": "Przemieść Przedmioty",
             "MoveLootMessage": "Jak wiele przedmiotów chcesz przemieścić?",
             "MoveLootPopupTitle": "Liczba Przedmiotów",
+            "PartyStash": "schowek drużyny",
             "PermissionError": "MG musi być online aby móc łupić albo odkładać przedmioty.",
             "PlantMessage": "{planter} umieszcza w {corpse} {quantity} × {item}.",
             "PlantSubtitle": "Umieść przedmiot",
@@ -5571,8 +5716,7 @@
             "TakeMessage": "{taker} bierze z {container} {quantity} × {item}.",
             "TakeSubtitle": "Weź przedmiot",
             "TransferMessage": "{transferrer} przenosi {quantity} × {item} z {fromContainer} do {toContainer}.",
-            "TransferSubtitle": "Przenieś przedmiot",
-            "PartyStash": "schowek drużyny"
+            "TransferSubtitle": "Przenieś przedmiot"
         },
         "ui": {
             "armorEquipped": "Przełącz noszenie ekwipunku",
@@ -5607,191 +5751,47 @@
             "VehicleString": "Pojazd",
             "collisionDCLabel": "ST Kolizji",
             "collisionDamageLabel": "Obrażenia od Kolizji"
-        },
-        "TraitRelic": "Relikwia",
-        "TraitReach200": "Wysięg 200 stóp",
-        "TraitLilu": "Lilu",
-        "TraitHarrowCourt": "Dwór Marnota",
-        "TraitEtchedOntoAPiercingOrSlashingWeapon": "Grawer na Tnącej/Kłującej Broni",
-        "TraitEtchedOntoABludgeoningWeapon": "Grawer na Broni Obuchowej",
-        "TraitDescriptionTandem": "Akcje z tą cechą wymagają abyście ty i twój eidolon pracowali w zespole. Nie możesz użyć akcji tandemowych jeśli ty lub twój eidolon nie możecie działać, jeśli nie Zmanifestowałeś \n Eidolona, lub jeśli Zmanifestowałeś Eidolona w sposób, który sprawia, że nie jesteście osobnymi istotami (tak jak w wypadku atutu Wtopienie w Eidolona). Akcje tandemowe często pozwalają tobie i twojemu eidolonowi na podejmowanie osobnych akcji ale muszą być to akcje możliwe do dokonania w pojedynkę przez ciebie lub eidolona; nie możesz w ramach akcji tandemowej podjąć kolejnej akcji tandemowej.",
-        "PreciousMaterialKeepStone": "Twierdzokamień",
-        "PreciousMaterialKeepStoneDescription": "Ukoronowaniem tysiącleci rozwoju metalurgii i inżynierii Highhelm jest piękny stop zwany kwierdzokamieniem. Pomimo swojej nazwy do produkcji twierdzokamienia nie używa się kamienia. Dzięki zastosowaniu ściśle strzeżonego procesu stapiania adamantytu i ołowiu, najwięksi rzemieślnicy z Highhelm byli w stanie stworzyć materiał, który wyglądem bardziej przypomina marmur niż metal. Twierdzokamień jest tylko nieznacznie słabszy od samego adamantytu, ale ma niesamowitą zdolność zakłócania magii. Każde zaklęcie lub magiczny efekt wycelowany w surowy twierdzokamień musi zdać test płaski ST 5, w przeciwnym razie jego efekt przemija.",
-        "ProgressBar": {
-            "LoadingPack": "Wczytywanie {pack}",
-            "LoadingComplete": "Wczytano pomyślnie"
-        },
-        "TraitKingdom": "Królestwo",
-        "TraitScatter20": "Rozrzut 20",
-        "TraitSubjectiveGravity": "Subietywna Grawitacja",
-        "ArmorPropertyRuneAdvancing": "Natarcia",
-        "ArmorPropertyRuneAimAiding": "Ułatwionego Celowania",
-        "ArmorPropertyRuneAssisting": "Wspomagania",
-        "ArmorPropertyRuneEnergyAdaptive": "Adaptacji do Energii",
-        "ArmorPropertyRuneGliding": "Szybowania",
-        "ArmorPropertyRuneGreaterAdvancing": "Większa Natarcia",
-        "ArmorPropertyRuneGreaterQuenching": "Większa Wystudzania",
-        "ArmorPropertyRuneGreaterSwallowSpike": "Większa Karcących Kolców",
-        "ArmorPropertyRuneImmovable": "Unieruchamiania",
-        "ArmorPropertyRuneLesserDread": "Mniejsza Grozy",
-        "ArmorPropertyRuneMagnetizing": "Magnetyzująca",
-        "ArmorPropertyRuneMajorQuenching": "Główna Wystudzania",
-        "ArmorPropertyRuneMajorSwallowSpike": "Główna Karcących Kolców",
-        "ArmorPropertyRuneMalleable": "Plastyczności",
-        "ArmorPropertyRuneMisleading": "Zwodniczości",
-        "ArmorPropertyRunePortable": "Przenośności",
-        "ArmorPropertyRuneQuenching": "Wystudzania",
-        "ArmorPropertyRuneSwallowSpike": "Karcących Kolców",
-        "ArmorPropertyRuneTrueQuenching": "Prawdziwa Wystudzania",
-        "ConditionTypeOffGuard": "Opuszczona Garda",
-        "InitiativeIsNow": "{name} ma teraz Inicjatywę {value}!",
-        "MAPAbbreviationValueLabel": "{value} (KAW {penalty})",
-        "Pathfinder": "Pathfinder",
-        "PreciousMaterialSisterstone": "Siostrzany Kamień",
-        "TraitAffixedToMediumHeavyMetalArmor": "Mocowanie do Metalowego Pancerza Średniego lub Ciężkiego",
-        "TraitAffixedToMeleeWeapon": "Mocowanie do Broni Białej",
-        "TraitArdande": "Ardande",
-        "TraitAttachedToShipsBow": "Mocowanie do Dziobu Łodzi",
-        "TraitBottledBreath": "Zabutelkowany Oddech",
-        "TraitComposite": "Kompozytowość",
-        "TraitDescriptionArdande": "Ardande to potomkowie planarnych istot powiązanych z Planem Drewna takich jak kizidharowie.",
-        "TraitDescriptionBottledBreath": "Zabutelkowane Oddechy to zaklęte butelki chmur i mgieł, początkowo wytrwarzane przez mieszkańców Planu Powietrza. Przedmiot z cechą zabutelkowanego oddechu możesz Aktywować wdychając jego zawartość lub sprawiając, ze odetchnie nią inna istota.",
-        "TraitDescriptionCenser": "Kadzielnice to ozdobne pojemniki, często metalowe lub ceramiczne, w których spala się kadzidło. Przedmiot z cechą kadzielnicy musi zostać wypełniony kadzidłem aby go Aktywować - co powoduje zapalenie kadzidła i sprawia, że kadzielnica wydziela chmurę dymu.",
-        "TraitDescriptionComposite": "Impuls kompozytowy łączy wiele żywiołów. Możesz zyskać impuls z cechą kompozytowości jedynie jeśli twoje żywioły kinetyka zawierają w sobie wszystkie żywioły wymienione w cechach impulsu.",
-        "TraitDescriptionFigurehead": "Chociaż wiele statków zdobią ozdobne rzeźby, odważne załogi czasami zdobywają dla swoich statków magiczne galeony.",
-        "TraitDescriptionImpulse": "Podstawowe akcje magiczne, których używają kinetycy, nazywane są impulsami. Możesz użyć impulsu tylko wtedy, gdy twoja aura kinetyczna jest aktywna i kształtuje ten żywioł, i tylko jeśli masz wolną rękę, aby ukierunkować przepływ żywiołów. Cecha impulsu oznacza, że akcja ma cechę koncentracji, chyba że inna zdolność to zmieni. Jeśli impuls pozwala ci wybrać element, możesz wybrać dowolny element, który obecnie kształtujesz, a impuls zyskuje cechę tego elementu.",
-        "TraitDescriptionInfusion": "Akcje z cechą Infuzja dostosowują twoje impulsy kinetyczne. Akcji infuzji musisz użyć dokładnie przed akcją impulsu, którą chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji (włączając w to akcje darmowe i reakcje) innej niż akcja impulsu, tracisz wszystkie benefity wynikające z akcji infuzji. Wszelkie dodawane przez infuzję efekty stają się częścią akcji impulsu, nie akcji infuzji.",
-        "TraitDescriptionKineticist": "Oznacza zdolności z klasy Kinetyka.",
-        "TraitDescriptionOverflow": "Potężny impulsy tymczasowo przeciążają energię twojej kinetycznej bramy. Kiedy użyjesz impulsu posiadającego cechę przesycenia, twoja kinetyczna aura deaktywuje się dopóki jej nie zrewitalizujesz (na ogół z pomocą Kształtowania Żywiołów). Wygaszanie twojego żywiołu jest niezwykle wyczerpujące, co sprawia, że możesz użyć tylko jednego przesycającego impulsu w rundzie, nawet jeśli reaktywujesz swoją kinetyczną bramę.",
-        "TraitDescriptionRadiation": "Groźna, zwykle trująca, emisja na ogół pochodząca z radioaktywnych minerałów.",
-        "TraitDescriptionRelic": "Przedmiot z cechą relikwii rośnie w siłę razem ze swoim użytkownikiem.",
-        "TraitDescriptionSpirit": "Efekty z tą cechą mogą wpływać na stworzenia posiadające duchową esencję i mogą zadawać obrażenia duchowe. Istotę posiadającą tę cechę definiuje jej duchowa esencja. Stworzenia duchowe często nie posiadają formy materialnej.",
-        "TraitDescriptionTalos": "Talosowie to potomkowie istot z Planu Metalu, zuhr.",
-        "TraitDescriptionVitality": "Efekty z tą cechą leczą żywe istoty energią z Kuźni Stworzenia, zadają obrażenia od energii witalnej nieumarłym lub manipulują energią witalną.",
-        "TraitDescriptionVoid": "Efekty z tą cechą leczą nieumarłych energią z pustki, zadają obrażenia od pustki istotom żywym lub manipulują energią pustki.",
-        "TraitDescriptionWood": "Efekty z cechą drewna wyczarowują drewno lub nim manipulują. Te, które manipulują drewnem nie odnoszą efektu w obszarach pozbawionych drewna. Istoty z tą cechą są zbudowane w większości z drewna lub mają magiczną więź z tym żywiołem.",
-        "TraitCenser": "Kadzielnica",
-        "TraitEtchedOntoMediumHeavyMetalArmor": "Grawer na Metalowym Pancerzu Średnim lub Ciężkim",
-        "TraitFigurehead": "Galeon",
-        "TraitHryngar": "Hryngar",
-        "TraitImpulse": "Impuls",
-        "TraitInfusion": "Infuzja",
-        "TraitKineticist": "Kinetyk",
-        "TraitOverflow": "Przesycenie",
-        "TraitReach120": "Wysięg 120 stóp",
-        "TraitSporeborn": "Grzyboród",
-        "TraitTalos": "Talos",
-        "TraitVersatilePoison": "Wszechstronność: Trucizna",
-        "TraitVitality": "Witalność",
-        "TraitVoid": "Pustka",
-        "TraitWood": "Drewno",
-        "CompendiumMigrationStatus": {
-            "Document": "Dokument",
-            "Foundry": "Foundry",
-            "FoundryOld": "0.7 lub starsze",
-            "Invalid": "Niewłaściwe",
-            "LockedTooltip": "Nie udało się zmigrować - kompendium jest zablokowane",
-            "MigrateCompendium": "Zmigruj Kompendium",
-            "Schema": "Schemat",
-            "Size": "Rozmiar",
-            "Title": "Status Migracji",
-            "UpToDate": "Aktualne"
-        },
-        "ConditionTypeMalevolence": "Niegodziwość",
-        "DeleteQuestion": "Czy na pewno chcesz usunąć {name}?",
-        "InlineDamage": {
-            "Base": "Baza: {formula}"
-        },
-        "TraitVersatileVitality": "Wszechstronność: Witalność",
-        "TraitVersatileVoid": "Wszechstronność: Pustka",
-        "Publication": {
-            "Authors": "Autorzy",
-            "Label": "Publikacja",
-            "License": {
-                "Label": "Licencja",
-                "OGL": "OGL",
-                "ORC": "ORC"
-            },
-            "Remaster": "Remaster?",
-            "Title": "Tytuł"
-        },
-        "TraitDescriptionNindoru": "Nindoru to chaotyczne złe czarty, które powstają w wyniku spaczenia cyklu reinkarnacji dusz i żyją w Świecie Centralnym. Chociaż często mają w swoim wyglądzie elementy, które sprawiają, że wyglądają na nieumarłych, w rzeczywistości są żywymi istotami. Większość nindoru widzi w ciemności, jest odporna na efekty śmierci, ma podatność na srebro i posiada moc manifestowania obiektów lub stworzeń ze swoich myśli.",
-        "TraitDescriptionTea": "<p>Magiczna herbata jest rodzajem mikstury. Aktywuje się, oraz zużywa, przy jej wypiciu. Magiczna herbata posiada cechy mikstura i herbata. Kiedy wytwarzasz porcję magicznej herbaty, surowe materiały, których dostarczasz przyjmują postać niezwykłych i kosztownych liści herbaty. Proces tworzenia magicznej herbaty składa się z nasycania liści magicznymi reagentami, oczyszczania wody i parzenia liści herbaty, w wyniku czego otrzymuje się wyjątkowo smaczną miksturę. Możesz aktywować herbatę używając akcji Interakcji aby ją wypić lub napoić nią inną istotę, traktując ją jak zwyczajną miksturę. Możesz też aktywować herbatę poprzez 10-minutową aktywność wymagającą zestawu herbacianego (te narzędzia rzemieślnicze mogą być współdzielone przez maksymalnie cztery istoty podejmujące wspólnie tę aktywność) aby przygotować i spożyć ją lub zaoferować ją komuś w ramach ceremonii picia herbaty, po której zakończeniu herbata zaczyna działać; aktywacja magicznej herbaty w ten sposób wzmacnia jej działanie, co opisano w sekcji Ceremonia Picia Herbaty.</p><p>Po wypiciu porcji magicznej herbaty stajesz się niewrażliwy na działanie tego konkretnego rodzaju magicznej herbaty przez następne 24 godziny.</p>",
-        "TraitNindoru": "Nidoru",
-        "TraitTea": "Herbata",
-        "SettingsQuickChecksLabel": "Podgląd Rzutów K20",
-        "SettingsQuickChecksNotes": "Po wyłączeniu okna dialogowe do podglądu rzutów K20 będą pojawiać się tylko po Shift-kliknięciu przycisku.",
-        "SettingsQuickDamageLabel": "Podkląd Rzutów Obrażeń",
-        "SettingsQuickDamageNotes": "Po wyłączeniu ogna dialogowe do podglądu rzutów Obrażeń będą się pojawiać tylko po Shift-kliknięciu przycisku.",
-        "SavingThrow": "Rzut Obronny",
-        "TraitAffixedToAMetalWeapon": "Mocowanie do Broni Metalowej",
-        "TraitAffixedToAShieldOrWeapon": "Mocowanie do Broni lub Tarczy",
-        "TraitAffixedToMetalWeapon": "Mocowanie do Broni Metalowej",
-        "TraitAiuvarin": "Aiuvarin",
-        "TraitDescriptionAiuvarin": "Istota z tą cechą posiada uniwersalne dziedzictwo aiuvarin. Aiuvarinowie mają mieszane przodkowstwo, którego częścią są elfy lub inni aiuvarinowie. Zdolność z tą cechą może być wybrana jedynie przez aiuvarinów.",
-        "TraitDescriptionDromaar": "Istota z tą cechą posiada uniwersalne dziedzictwo dromaar. Dromaarowie mają mieszane przodkowstwo, którego częścią są orkowie lub inni dromaarowie. Zdolność z tą cechą może być wybrana jedynie przez dromaarów.",
-        "TraitDescriptionFocus": "Zaklęcia skupienia to specjalny rodzaj zaklęć, uzyskiwanych bezpośrednio w wyniku określonego rodzaju nauk, od bóstwa lub z innego specyficznego źródła. Zaklęć skupienia możesz się nauczyć jedynie przez specjalne atrybuty i atuty klasowe, w przeciwieństwie do wybierania ich z listy. Ponadto zaklęcia skupienia rzucasz za pomocą specjalnej puli Punktów Skupienia - nie możesz przygotować ich w komórce zaklęć ani używać komórek zaklęć do ich rzucania; podobnie, nie możesz wydawać swoich Punktów Skupienia aby rzucić zaklęcia, które zaklęciami skupienia nie są.",
-        "TraitDescriptionHoly": "Efekty z cecha świętości są związane z potężnymi magicznymi siłami miłosierdzia i cnoty. Często mają silniejsze działanie wobec istot wyklętych. Istoty z tą cechą są silnie oddane świętym pobudkom i często posiadają podatność na efekty wyklęte. Jeśli istota ze podatnością na efekty święte użyje przedmiotu lub efektu z cechą świętości, odnosi obrażenia w związku z jej podatnością.",
-        "TraitDescriptionNephilim": "Istota z tą cechą posiada uniwersalne dziedzictwo nefilim. Nefilimowie to potomkowie nieśmiertelnych istot wywodzących się z innych planów. Zdolność z tą cechą może być wybrana jedynie przez nefilimów.",
-        "TraitDescriptionSanctified": "Jesteś święty lub wyklęty, a twoje namaszczone akcje zyskują tę samą cechę.",
-        "TraitDescriptionSpellshape": "Akcje z cechą czarokształtowania modyfikują właściwości twoich zaklęć. Akcji czarokształtowania musisz użyć bezpośrednio przed Rzuceniem Zaklęcia, które chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji niż Rzucanie Zaklęcia (w tym darmowych akcji i reakcji), tracisz korzyści z akcji czarokształtowania. Wszelkie dodatkowe efekty dodane przez akcję czarokształtowania liczą się jako część efektu zaklęcia, a nie samej akcji czarokształtowania.",
-        "TraitDescriptionSubtle": "Zaklęcie z cechą subtelności może być rzucane bez inkantacji i nie posiada oczywistych przejawów.",
-        "TraitDescriptionSummon": "Zaklęcia z cechą przywołania mogą przyzywać istoty, na ogół posiadające pewną cechę. Takie istoty można znaleźć w Monster Core i podobnych książkach. O ile nie zaznaczono inaczej, istota musi być powszechna, zyskuje cechę przywołanej oraz musi się pojawić niezajętym polu w zasięgu zaklęcia, wystarczająco dużym aby ją pomieścić. Najwyższy poziom istoty możliwej do przywołania przez zaklęcie zależy od kręgu zaklęcia, tak jak rozpisano poniżej. Zaklęcie może nadal przywołać istotę poziomu niższego, jeśli tego chcesz. Te zasady dotyczą tylko zaklęć posiadających cechę przyzwania; inne zaklęcia, które przyzywają przedmiot lub istoty ale nie mają tej cechy, takie jak przyzwanie instrumentu, działają tak jak wyjaśniono w ich opisie.",
-        "TraitDescriptionUndead": "Te niegdyś żywe istoty, zostały po śmierci natchnięte energia pustki oraz wypaczającą dusze wyklętą magią. Przy zredukowaniu jej Punktów Żywotności do 0 nieumarła istota ulega zniszczeniu. Nieumarłe istoty odnoszą obrażenia od energii witalności oraz są leczone energią pustki i nie odnoszą korzyści z leczących efektów witalności.",
-        "TraitDescriptionUnholy": "Efekty z cecha wyklętości są związane z potężnymi magicznymi siłami okrucieństwa i grzechu. Często mają silniejsze działanie wobec istot świętych. Istoty z tą cechą są silnie oddane wyklętym pobudkom i często posiadają podatność na efekty święte. Jeśli istota ze podatnością na efekty wyklęte użyje przedmiotu lub efektu z cechą wyklętości, odnosi obrażenia w związku z jej podatnością.",
-        "TraitDromaar": "Dromaar",
-        "TraitEtchedOntoAShield": "Grawer na Tarczy",
-        "TraitFocus": "Skupienie",
-        "TraitHoly": "Świętość",
-        "TraitNaari": "Naari",
-        "TraitNephilim": "Nefilim",
-        "TraitSanctified": "Namaszczenie",
-        "TraitSpellshape": "Czarokształtowanie",
-        "TraitSubtle": "Subtelność",
-        "TraitUnholy": "Wyklętość",
-        "TraitVersatileSpirit": "Wszechstronność: Duchowe",
-        "TraitVersatileX": "Wszechstronność: {x}",
-        "WeaponGroupCrossbow": "Kusza"
+        }
     },
     "SIDEBAR": {
         "TabCombat": "Panel Starcia"
     },
     "TYPES": {
-        "Item": {
-            "weapon": "Broń",
-            "treasure": "Skarb",
-            "spellcastingEntry": "Wpis o Rzucaniu Zaklęć",
-            "spell": "Zaklęcie",
-            "melee": "Atak BN",
-            "lore": "Umiejętność Obeznania",
-            "kit": "Zestaw",
-            "heritage": "Dziedzictwo",
-            "feat": "Atut/Atrybut",
-            "equipment": "Wyposażenie",
-            "effect": "Efekt",
-            "deity": "Bóstwo",
-            "consumable": "Przedmiot Zużywalny",
-            "condition": "Status",
-            "class": "Klasa",
-            "book": "Księga",
-            "backpack": "Pojemnik",
-            "background": "Pochodzenie",
-            "armor": "Pancerz",
-            "ancestry": "Przodkowstwo",
-            "affliction": "Przypadłość",
-            "action": "Zdolność",
-            "campaignFeature": "Atrybut Kampanii"
-        },
         "Actor": {
-            "vehicle": "Pojazd",
-            "party": "Drużyna",
-            "npc": "BN",
-            "loot": "Łup",
-            "hazard": "Zagrożenie",
-            "familiar": "Chowaniec",
-            "eidolon": "Eidolon",
+            "army": "Armia",
             "character": "Postać Gracza",
-            "army": "Armia"
+            "eidolon": "Eidolon",
+            "familiar": "Chowaniec",
+            "hazard": "Zagrożenie",
+            "loot": "Łup",
+            "npc": "BN",
+            "party": "Drużyna",
+            "vehicle": "Pojazd"
+        },
+        "Item": {
+            "action": "Zdolność",
+            "affliction": "Przypadłość",
+            "ancestry": "Przodkowstwo",
+            "armor": "Pancerz",
+            "background": "Pochodzenie",
+            "backpack": "Pojemnik",
+            "book": "Księga",
+            "campaignFeature": "Atrybut Kampanii",
+            "class": "Klasa",
+            "condition": "Status",
+            "consumable": "Przedmiot Zużywalny",
+            "deity": "Bóstwo",
+            "effect": "Efekt",
+            "equipment": "Wyposażenie",
+            "feat": "Atut/Atrybut",
+            "heritage": "Dziedzictwo",
+            "kit": "Zestaw",
+            "lore": "Umiejętność Obeznania",
+            "melee": "Atak BN",
+            "spell": "Zaklęcie",
+            "spellcastingEntry": "Wpis o Rzucaniu Zaklęć",
+            "treasure": "Skarb",
+            "weapon": "Broń"
         }
     }
 }

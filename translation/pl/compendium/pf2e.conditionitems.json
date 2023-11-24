@@ -1,188 +1,188 @@
 {
-  "label": "stany",
-  "entries": {
-    "Blinded": {
-      "name": "Oślepienie",
-      "description": "<p>Nic nie widzisz. Każdy zwykły teren jest dla ciebie trudnym terenem. Nie możesz niczego wykrywać z wykorzystaniem wzroku. Automatycznie odnosisz krytyczną porażkę na testach Percepcji, które polegają na wzroku, a jeśli wzrok jest twoim jedynym zmysłem precyzyjnym odnosisz statusową karę -4 do wszystkich pozostałych testów Percepcji. Jesteś niewrażliwy na wszystkie efekty wzrokowe. Oślepienie nadpisuje @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczenie}.</p>"
+    "label": "stany",
+    "entries": {
+        "Blinded": {
+            "name": "Oślepienie",
+            "description": "<p>Nic nie widzisz. Każdy zwykły teren jest dla ciebie trudnym terenem. Nie możesz niczego wykrywać z wykorzystaniem wzroku. Automatycznie odnosisz krytyczną porażkę na testach Percepcji, które polegają na wzroku, a jeśli wzrok jest twoim jedynym zmysłem precyzyjnym odnosisz statusową karę -4 do wszystkich pozostałych testów Percepcji. Jesteś niewrażliwy na wszystkie efekty wzrokowe. Oślepienie nadpisuje @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczenie}.</p>"
+        },
+        "Broken": {
+            "name": "Uszkodzony",
+            "description": "<p>Uszkodzenie jest statusem dotyczącym obiektów. Przedmiot jest uszkadzany kiedy obrażenia zmniejszą jego Punkty Żywotności do wartości mniejszej lub równej jego Progowi Uszkodzenia. Uszkodzony obiekt nie może być wykorzystywany zgodni ze swoim przeznaczeniem i nie zapewnia żadnych premii, z wyjątkiem pancerza. Uszkodzony pancerz nadal zapewnia premię przedmiotu do wartości KP, ale dodaje też karę statusową do wartości KP zależną od jego kategorii: -1 dla uszkodzonego pancerza lekkiego, -2 dla uszkodzonego pancerza średniego lub -3 dla uszkodzonego pancerza ciężkiego.</p>\n<p>Uszkodzony przedmiot nadal dodaje wszelkie kary i ograniczenia wynikające z jego używania, trzymania lub noszenia. Przykładowo zniszczony pancerz nadal posiada maksymalne ograniczenie Zręczności dodawanej do KP, karę testów i tym podobne.</p>\n<p>Jeśli jakiś efekt natychmiast uszkadza przedmiot, a przedmiot ten ma więcej Punktów Żywotności niż wynosi jego Próg Uszkodzenia, liczba jego Punktów Żywotności jest redukowana do liczby równej jego Progowi Uszkodzenia.</p>"
+        },
+        "Clumsy": {
+            "name": "Niezdarny",
+            "description": "<p>Twoje ruchy stają się niezdarne i niedokładne. Niezdarność zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości do wszystkich swoich testów i ST opartych na Zręczności, wliczając w to KP, rzuty obronne Refleksu, ataki dystansowe, czy test umiejętności Akrobatyki, Skradania się i Złodziejstwa.</p>"
+        },
+        "Concealed": {
+            "name": "Przysłonięty",
+            "description": "<p>Kiedy jesteś przysłonięty dla danej istoty, na przykład przez gęstą mgłę, jest jej trudno cię dostrzec. Nadal jesteś przez nią @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany}, ale jesteś cięższym celem. Istota, wobec której jesteś przysłonięty, musi zdać @Check[type:flat|dc:5] jeśli próbuje wziąć cię za cel ataku, zaklęcia lub innego efektu.</p>\n<p>Jeśli test się nie powiedzie, atak, zaklęcie lub efekt nie imają się ciebie. Efekty obszarowe nie podlegają pod ten płaski test. </p>"
+        },
+        "Confused": {
+            "name": "Zdezorientowany",
+            "description": "<p>Nie jesteś w pełni sobą i atakujesz wszystko wokół. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} i nie traktujesz nikogo jako swojego sojusznika (chociaż inni nadal mogą traktować cię jako swojego), oraz nie możesz Opóźniać tury, Przygotowywać akcji ani używać reakcji.</p>\n<p>Zużywasz wszystkie swoje akcje aby wymierzać Ciosy lub rzucać ofensywne sztuczki, chociaż MG może zadecydować, że podejmujesz też inne akcje niezbędne do skutecznej ofensywy takie jak wyciągnięcie broni, czy przemieszczenie się do swojego celu. Twoje cele są określane losowo przez MG. Jeśli nie posiadasz żadnych innych możliwych celów, atakujesz siebie automatycznie trafiając chociaż nigdy krytycznie. Jeśli nie posiadasz możliwości ataku ani rzucania zaklęć, bełkoczesz niezrozumiale i marnujesz wszystkie swoje akcje.</p>\n<p>Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia wykonujesz @Check[type:flat|dc:11], jeśli go zdasz twoje zdezorientowanie mija i tracisz ten status.</p>"
+        },
+        "Controlled": {
+            "name": "Kontrolowany",
+            "description": "<p>Ktoś inny podejmuje za ciebie decyzje, zwykle wynika to z faktu, że jesteś magicznie przymuszony do wykonania komendy lub zdominowany. Kontrolująca istota decyduje w jaki sposób się zachowasz i może wykorzystywać wszystkie twoje akcje wliczając w to ataki, reakcje czy nawet @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Opóźnianie tury}. W większości wypadków kontrolująca istota nie musi wydawać żądnych akcji aby cię kontrolować.</p>"
+        },
+        "Dazzled": {
+            "name": "Zamroczony",
+            "description": "<p>Twoje oczy są przeładowane bodźcami. Jeśli wzrok jest twoim jedynym zmysłem precyzyjnym, wszystkie istoty i obiekty są dla ciebie @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięte}.</p>"
+        },
+        "Deafened": {
+            "name": "Ogłuchły",
+            "description": "<p>Nic nie słyszysz. Automatycznie odnosisz krytyczną porażkę na testach Percepcji wymagających użycia słuchu. Otrzymujesz karę statusową -2 do testów Percepcji na inicjatywę oraz testów, które zawierają słuch jako jeden ze swoich elementów ale polegają też na innych zmysłach. Jeśli dokonujesz akcji z cechą słuchowości musisz zdać @Check[type:flat|dc:5] lub tracisz tę akcję; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty. Jesteś niewrażliwy na efekty dźwiękowe.</p>"
+        },
+        "Doomed": {
+            "name": "Zgubiony",
+            "description": "<p>Twoje życie umyka z ciebie, przybliżając cię ku śmierci. Zgubę mogą nałożyć na ciebie potężne zaklęcia i złe istoty. Zguba zawsze posiada wartość. Wartość statusu @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierania} na której osiągasz ostateczną śmierć zmniejsza się o wartość twojej zguby. Przykładowo jeśli jesteś zgubiony 1 umierasz jeśli staniesz się umierający 3, nie umierający 4. Jeśli maksymalna dostępna dla ciebie wartość umierania osiągnie kiedykolwiek 0, umierasz na miejscu. Kiedy umrzesz nie jesteś już zgubiony.</p>\n<p>Wartość twojej zguby zmniejsza się o 1 za po każdej przespanej nocy.</p>"
+        },
+        "Drained": {
+            "name": "Wyniszczony",
+            "description": "<p>Kiedy istota pomyślnie wyssie z ciebie krew lub siły witalne stajesz się mniej żywotny. Wyniszczenie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości do wszystkich testów opartych o Kondycję, takich jak rzuty obronne Krzepy. Tracisz też Punkty Żywotności w liczbie równej twojemu poziomowi (minimum 1) pomnożonemu przez wartość wyniszczenia, a twoje maksymalne Punkty Żywotności również zmniejszają się o tę liczbę. Przykładowo, jeśli zostaniesz objęty efektem nakładającym wyniszczenie 3 i grasz postacią 3. poziomu, tracisz 9 Punktów Żywotności i zmniejszasz swoje maksymalne Punkty Żywotności o 9. Utrata tych Punktów Żywotności nie liczy się jako obrażenia.</p>\n<p>Po każdej przespanej nocy zmniejszasz swoją wartość wyniszczenia o 1. Zwiększa to twoją maksymalną liczbę Punktów Żywotności ale nie zapewnia ich natychmiastowego odzyskania.</p>"
+        },
+        "Dying": {
+            "name": "Umierający",
+            "description": "<p>Wykrwawiasz się lub w inny sposób znajdujesz na progu śmierci. Kiedy masz ten status, jesteś @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}. Umierający zawsze posiada wartość, i jeśli osiągnie ona 4 umierasz. Kiedy jesteś umierający, musisz na początku swojej tury wykonać test ozdrowienia, aby określić czy twój stan się poprawia czy pogarsza. Jeśli odniesiesz obrażenia będąc umierający twoja wartość umierania zwiększa się o 1 lub, jeśli obrażenia są wynikiem trafienia krytycznego lub krytycznej porażki na twoim rzucie obronnym, o 2.</p>\n<p>Jeśli utracisz status umierający w wyniku swoich testów ozdrowienia, ale nadal masz 0 Punktów Żywotności, pozostajesz nieprzytomny, ale możesz wybudzić się tak jak opisano to w zasadach nieprzytomności. Jeśli twoje Punkty Żywotności osiągną wartość 1 lub więcej, automatycznie tracisz status umierający i budzisz się. Za każdym razem kiedy tracisz status umierający otrzymujesz status @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny 1}, lub, jeśli już jesteś ranny, zwiększasz wartość tego statusu o 1.</p>"
+        },
+        "Encumbered": {
+            "name": "Przeciążony",
+            "description": "<p>Nosisz przy sobie więcej niż jesteś w stanie. Kiedy jesteś przeciążony jesteś @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1}oraz otrzymujesz karę 10 stóp do wszystkich swoich Prędkości. Tak jak w wypadku wszystkich kar do Prędkości, nie może jej to zredukować poniżej 5 stóp.</p>"
+        },
+        "Enfeebled": {
+            "name": "Osłabiony",
+            "description": "<p>Jesteś fizycznie osłabiony. Osłabienie zawsze posiada wartość. Kiedy jesteś osłabiony otrzymujesz karę statusową równą tej wartości do swoich testów i ST opartych o Siłę, wliczając w to oparte o Siłę testy ataku i Atletyki.</p>"
+        },
+        "Fascinated": {
+            "name": "Zafascynowany",
+            "description": "<p>Odczuwasz przemożną potrzebę poświęcania czemuś uwagi i odwracania jej od wszystkiego innego wokół ciebie. Otrzymujesz statusową karę -2 do testów Percepcji oraz testów umiejętności i nie możesz używać akcji z cechą koncentracja chyba, że ich konsekwencje są związane z celem twojej fascynacji (określa MG). Przykładowo możesz być w stanie @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukać} celu lub @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Pozyskiwać Wiedzę} na jego temat, ale nie możesz rzucić zaklęcia kierowanego w inną istotę. Status ten kończy się jeśli obiekt twojej fascynacji dokona działania wrogiego wobec ciebie lub twoich towarzyszy.</p>"
+        },
+        "Fatigued": {
+            "name": "Wyczerpany",
+            "description": "<p>Jesteś zmęczony i nie możesz wykrzesać z siebie wiele energii. Otrzymujesz karę statusową -1 do twojego KP i rzutów obronnych. Podczas eksploracji nie możesz wybrać wykonywanej aktywności.</p>\n<p>Przestajesz być wyczerpany po całonocnym odpoczynku.</p>"
+        },
+        "Fleeing": {
+            "name": "Uciekający",
+            "description": "<p>Jesteś zmuszony do ucieczki przez strach lub innego rodzaju natrętną potrzebę. W swojej turze musisz wydać wszystkie swoje akcje, aby uciekać od źródła efektu tak prędko, jak to tylko możliwe (na przykład używając swoich akcji by się oddalać lub otwierać drzwi barykadujące twoją drogę ucieczki). Źródłem strachu jest na ogół efekt lub użytkownik magii, który wywołał status, chociaż niektóre efekty mogą precyzować inne źródło. Nie możesz @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Opóźniać tury} ani @UUID[Compendium.pf2e.actionspf2e.Item.dLgAMt3TbkmLkUqE]{Przygotowywać się} kiedy odczuwasz potrzebę ucieczki.</p>"
+        },
+        "Friendly": {
+            "name": "Przyjazny",
+            "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota przyjazna danej postaci darzy ją sympatią. Postać może wystosować @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośbę} wobec przyjaznej istoty, a istota ma sporą szansę się zgodzić tak długo jak prośba jest prosta a jej spełnienie zbyt wiele jej nie kosztuje. Jeśli postać lub jeden z jej kompanów użyje wrogiej akcji wobec przyjaznej istoty, jej nastawienia spada o liczbę poziomów zależną od powagi czynu, wedle oceny MG.</p>"
+        },
+        "Frightened": {
+            "name": "Przerażony",
+            "description": "<p>Jesteś ogarnięty strachem i z trudem kontrolujesz nerwy. Przerażenie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości do wszystkich swoich testów i ST. O ile nie sprecyzowano inaczej wartość twojego przerażenia spada o 1 na koniec każdej twojej tury.</p>"
+        },
+        "Grabbed": {
+            "name": "Pochwycony",
+            "description": "<p>Jesteś utrzymywany w miejscu przez inną istotę - jesteś @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[type:flat|dc:5] lub ją utracić; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty.</p>"
+        },
+        "Helpful": {
+            "name": "Pomocny",
+            "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota pomocna wobec danej postaci, chce aktywnie jej pomagać. Zaakceptuje @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośby} od danej postaci, tak długo jak są one rozsądnej skali i nie wpływają negatywnie na osobiste cele i dobrobyt pomocnej istoty. Jeśli postać lub jeden z jej kompanów użyje wrogiej akcji wobec przyjaznej istoty, jej nastawienia spada o liczbę poziomów zależną od powagi czynu, wedle oceny MG.</p>"
+        },
+        "Hidden": {
+            "name": "Schowany",
+            "description": "<p>Kiedy jesteś schowany przed daną istotą, wie ona na jakim polu się znajdujesz, ale nie potrafi określić gdzie dokładnie jesteś. Na ogół stajesz się schowany w wyniku używania Skradania się podczas akcji @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schowania się}. Kiedy @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukasz} istoty za pomocą zmysłów nieprecyzyjnych pozostaje ona schowana zamiast stać się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzeganą}. Istota, przed którą udało ci się schować, ma wobec ciebie @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz musi zdać @Check[type:flat|dc:11] jeśli chce obrać cię za cel ataku, zaklęcia lub innego efektu. Efekty obszarowe nie wymagają testu płaskiego.</p>\n<p>Istota może być w stanie użyć akcji Szukania aby zacząć cię na nowo postrzegać.</p>"
+        },
+        "Hostile": {
+            "name": "Wrogi",
+            "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota wroga wobec danej postaci, aktywnie działa na jej szkodę i chce ją skrzywdzić. Nie zawsze jest to równoważne z atakiem, ale na pewno nie spełni @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośby} danej postaci.</p>"
+        },
+        "Immobilized": {
+            "name": "Unieruchomiony",
+            "description": "<p>Nie możesz używać żadnej akcji posiadającej cechę ruch. Jeśli jesteś unieruchomiony a jakaś zewnętrzna siła usiłuje przemieścić cię w inne miejsce, musi ona zdać test przeciw ST efektu trzymającego cię w miejscu lub odpowiedniej statystyce trzymającego cię potwora (na ogół ST Krzepy).</p>"
+        },
+        "Indifferent": {
+            "name": "Obojętny",
+            "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota obojętna wobec postaci, nie przejmuje się szczególnie jej losem. Przyjmij, że istota jest wobec danej postaci obojętna, chyba że sprecyzowano inaczej.</p>"
+        },
+        "Invisible": {
+            "name": "Niewidzialny",
+            "description": "<p>Kiedy jesteś niewidzialny nie można cię zobaczyć. Jesteś @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty} wobec wszystkich. Istoty mogą @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukać} cię aby cię wykryć; jeśli istota zda test Percepcji przeciw twojemu ST Skradania się, stajesz się wobec tej istoty jedynie @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, do momentu aż nie użyjesz @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradania się} aby ponownie stać się niewykrytym. Jeśli staniesz się niewidzialnym w momencie, kiedy ktoś cię widzi zaczynasz jako schowany wobec tego obserwatora (zamiast niewykrycia) aż do momentu aż pomyślnie użyjesz Przekradania się. Nie możesz stać się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzeganym} podczas bycia niewidzialnym, za wyjątkiem użycia specjalnych umiejętności lub magii.</p>"
+        },
+        "Observed": {
+            "name": "Postrzegany",
+            "description": "<p>Cokolwiek co znajduje się na widoku jest przez ciebie postrzegane. Jeśli istota podejmie działania mające na celu uniknięcie wykrycia, takie jak użycie Skradania się aby się @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schować}, może stać się @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowana} lub @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryta}. Jeśli posiadasz inny zmysł precyzyjny zamiast wzroku lub poza nim, możesz postrzegać istoty lub obiekty za pomocą tego zmysłu. Istoty można postrzegać jedynie za pomocą zmysłów precyzyjnych. Kiedy @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukasz} istoty za pomocą zmysłu niedokładnego zamiast precyzyjnego, pozostaje ona schowana zamiast stać się postrzegana.</p>"
+        },
+        "Off-Guard": {
+            "name": "Opuszczona Garda",
+            "description": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz sytuacyjną karę -2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności stany - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \"Cel ma opuszczoną gardę.\"</p>"
+        },
+        "Paralyzed": {
+            "name": "Sparaliżowany",
+            "description": "<p>Twoje ciało zastygło w miejscu. Posiadasz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz nie możesz dokonywać akcji innych niż Pozyskanie Wiedzy lub innych akcji wymagających udziału jedynie twojego umysłu (co określa MG). Twoje zmysły nadal funkcjonują ale jedynie w obszarach, których postrzeganie nie wymaga od ciebie ruchu ciałem, a więc nie możesz @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukać} pod wpływem paraliżu.</p>"
+        },
+        "Persistent Damage": {
+            "name": "Obrażenia Trwałe",
+            "description": "<p>Obrażenia trwałe biorą się od efektów takich jak kwas, podpalenie i wielu innych. Opisywane są jako \"X trwałych obrażeń [typu]\" gdzie \"X\" to liczba zadawanych obrażeń a \"[typ]\" to typ odnoszonych obrażeń. Obrażeń trwałych nie odnosisz natychmiast, ponosisz je na koniec swojej tury tak długo jak jesteś pod wpływem wywołującego je statusu, za każdym razem rzucając kości obrażeń na nowo. Po otrzymaniu obrażeń trwałych rzuć @Check[type:flat|dc:15] aby określić czy udaje ci się zakończyć ich działanie. W wypadku sukcesu wywołujący je status kończy się.</p>"
+        },
+        "Petrified": {
+            "name": "Spetryfikowany",
+            "description": "<p>Zostałeś zamieniony w kamień. Nie możesz działać ani nic czuć. Stajesz się obiektem o Naręczu dwukrotnie większym od twojego normalnego Naręcza (typowo 12 dla Średnich spetryfikowanych istot i 6 dla Małych spetryfikowanych istot), KP 9, Twardości 8, i taką samą liczbą obecnych Punktów Żywotności jaką miałeś za życia. Nie posiadasz Progu Uszkodzenia. Kiedy zostaniesz przywrócony do cielesnej postaci posiadasz tyle samo Punktów Żywotności ile miała statua. Jeśli statua zostanie zniszczona, natychmiast umierasz. Podczas petryfikacji twój umysł i cało znajdują się w stazie, a więc nie starzejesz się ani nie rejestrujesz upływu czasu.</p>"
+        },
+        "Prone": {
+            "name": "Powalony",
+            "description": "<p>Leżysz na ziemi. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz ponosisz sytuacyjną karę -2 do rzutów na atak. Jedyne akcje ruchu, których możesz dokonywać będąc powalonym to @UUID[Compendium.pf2e.actionspf2e.Item.Tj055UcNm6UEgtCg]{Czołganie się} lub @UUID[Compendium.pf2e.actionspf2e.Item.OdIUybJ3ddfL7wzj]{Powstanie}. Powstanie kończy twoje powalenie. Będąc powalonym możesz @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Kryć się za Osłoną} nawet jeśli nie masz przed sobą żadnego obiektu, aby skulić się i zyskać osłonę przed atakami dystansowymi, zyskując sytuacyjną premię +4 do KP przeciw atakom dystansowym (nadal masz jednak opuszczoną gardę).</p>\n<p>Jeśli zostaniesz powalony podczas kiedy @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Latasz} lub @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinasz się}, zaczynasz spadać. Nie możesz zostać powalony kiedy @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Pływasz}.</p>"
+        },
+        "Quickened": {
+            "name": "Przyspieszony",
+            "description": "<p>W każdej rundzie otrzymujesz na początku swojej tury dodatkową akcję. Wiele efektów zapewniających przyspieszenie określa jakich konkretnie akcji możesz dokonać za jej pomocą. Jeśli więcej niż jeden efekt zapewnia ci przyspieszenie możesz wykorzystać tę dodatkową akcję na dowolny z rodzajów akcji wymienianych przez którekolwiek ze źródeł twojego przyspieszenia. Jako, że przyspieszenie działa na początku twojej tury, nie uzyskujesz natychmiastowo dostępu do dodatkowej akcji jeśli zostajesz przyspieszony w trakcie trwania twojej tury.</p>"
+        },
+        "Restrained": {
+            "name": "Spętany",
+            "description": "<p>Jesteś spętany lub przygwożdżony przez istotę. Jesteś @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} oraz masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}, a ponadto nie możesz wykonywać żadnych akcji o cechach atak ani manipulacja za wyjątkiem prób @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczki} czy @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Siłowego Otwarcia} swoich więzów. Spętanie nadpisuje @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycenie}.</p>"
+        },
+        "Sickened": {
+            "name": "Zemdlony",
+            "description": "<p>Czujesz się schorowany. Zemdlenie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości, na wszystkich swoich testach i ST. Kiedy jesteś zemdlony nie możesz dobrowolnie pobierać pokarmu, wliczając w to mikstury i eliksiry.</p>\n<p>Możesz poświęcić jedną akcję na poddanie się odruchowi wymiotnemu i próbę pozbycia się mdłości, co pozwala ci na natychmiastowe podjęcie testu Krzepy przeciw ST efektu który wywołał w tobie zemdlenie. W wypadku sukcesu redukujesz wartość zemdlenia o 1 (przy sukcesie krytycznym o 2).</p>"
+        },
+        "Slowed": {
+            "name": "Spowolniony",
+            "description": "<p>Masz mniej akcji do dyspozycji. Spowolnienie zawsze posiada wartość. Za każdym razem kiedy odzyskujesz akcje na początku swojej tury, zmniejsz liczbę odzyskiwanych akcji o wartość spowolnienia. Jako, że spowolnienie działa na początku twojej tury, nie tracisz akcji natychmiast, jeśli zostałeś objęty tym statusem w swojej turze.</p>"
+        },
+        "Stunned": {
+            "name": "Ogłuszony",
+            "description": "<p>Zostałeś pozbawiony zmysłów. Nie możesz działać będąc ogłuszonym. Ogłuszenie na ogół posiada wartość, określającą jak wiele akcji w sumie tracisz, potencjalnie przez wiele tur, w związku z ogłuszeniem. Za każdym razem kiedy odzyskujesz akcje (tak jak na początku swojej tury), zmniejsz liczbę odzyskiwanych akcji o wartość ogłuszenia, a następnie zmniejsz wartość ogłuszenia o liczbę utraconych akcji. Przykładowo, jeśli byłbyś ogłuszony 4 tracisz na początku swojej tury wszystkie swoje 3 akcje, zmniejszając swoje ogłuszenie do 1; w swojej następnej turze tracisz jeszcze jedną akcję a pozostałych dwóch możesz użyć normalnie. Ogłuszenie może zamiast tego być opisane czasowo, na przykład \"ogłuszony na 1 minutę\". W takim wypadku tracisz wszystkie swoje akcje aż do końca określonego czasu trwania.</p>\n<p>Ogłuszenie nadpisuje @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolnienie}. Jeśli czas trwania twojego ogłuszenia dobiegnie końca kiedy jesteś spowolniony, odliczasz akcje utracone w wyniku ogłuszenia od liczby akcji traconych przez spowolnienie. Tak więc jeśli byłbyś na początku swojej tury ogłuszony 1 i spowolniony 2, tracisz jedną akcję ze względu na ogłuszenie, a następnie tracisz kolejną 1 akcję za naddatek spowolnienia, pozostając z jedną możliwą do wykorzystania w tej turze akcją.</p>"
+        },
+        "Stupefied": {
+            "name": "Ogłupiony",
+            "description": "<p>Twoje myśli i instynkty są zamglone. Ogłupienie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości, do wszystkich swoich testów i ST opartych o Inteligencję, Mądrość i Charyzmę, wliczając w to rzut obronny Woli, rzuty na atak zaklęciem, ST zaklęć oraz testy umiejętności oparte o te cechy. Za każdym razem kiedy usiłujesz @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Rzucić Zaklęcie} będąc ogłupionym, musisz wykonać płaski test o ST równym 5 + wartość ogłupienia - przy porażce zaklęcie jest rozpraszane.</p>"
+        },
+        "Unconscious": {
+            "name": "Nieprzytomny",
+            "description": "<p>Śpisz lub zostałeś ogłuszony. Nie możesz podejmować działań. Odnosisz karę statusową -4 do KP, Percepcji, rzutów obronnych na Refleks, masz też statusy @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepienia} i @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczonej Gardy}. Kiedy zyskujesz ten stan, padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} oraz upuszczasz przedmioty trzymane w rękach, chyba, że efekt nakładający status mówi inaczej lub MG uznaje, że jesteś w pozycji, w której by to nie nastąpiło.</p>\n<p>Jeśli powodem twojej nieprzytomności jest status @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający}, nie możesz się ocknąć póki masz 0 Punktów Żywotności. Jeśli zostaniesz przywrócony do 1 Punktu Żywotności lub więcej, tracisz statusy nieprzytomny i umierający i możesz normalnie działać w swojej następnej turze.</p>\n<p>Jeśli jesteś nieprzytomny z 0 Punktami Żywotności, ale nie jesteś umierający, naturalnie powracasz do 1 Punktu Żywotności i odzyskujesz przytomność, po upływie adekwatnego czasu. Długość twojej nieprzytomności określa MG, od 10 minut do kilku godzin. Jeśli otrzymasz w tym okresie leczenie tracisz status nieprzytomności i możesz normalnie działać w swojej następnej turze.</p>\n<p>Jeśli jesteś nieprzytomny i posiadasz co najmniej 1 Punk Żywotności (na ogół ze względu na sen lub zewnętrzny efekt), budzisz się w jeden z poniższych sposobów. Każdy z nich powoduje utratę statusu nieprzytomny.</p>\n<ul>\n<li>Odnosisz obrażenia, o ile nie zredukowały cię do 0 Punktów Żywotności. Jeśli obrażenia zredukują cię do 0 Punktów Żywotności, pozostajesz nieprzytomny i otrzymujesz status umierający w normalny sposób.</li>\n<li>Otrzymujesz leczenie inne, niż naturalne leczenie wynikające z odpoczynku.</li>\n<li>Ktoś ocuca cię z użyciem akcji @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interakcja}.</li>\n<li>Wokół ciebie następuje hałas - chociaż nie jest to automatyczne. Na początku twojej tury automatycznie dokonujesz testu Percepcji przeciw ST hałasu (lub najmniejszemu ST, jeśli nastąpiło wiele hałasów), budząc się przy sukcesie. Jeśli istoty wokół ciebie starają się pozostać niezauważone, ten test Percepcji odbywa się wobec ich ST Skradania się. Niektóre magiczne efekty mogą wywołać w tobie tak głęboki sen, że nie pozwolą na te testy Percepcji.</li>\n<li>Jeśli po prostu śpisz, GM decyduje o twoim przebudzeniu się ze względu na koniec odpoczynku lub jakiś wybudzający cię incydent.</li>\n</ul>"
+        },
+        "Undetected": {
+            "name": "Niewykryty",
+            "description": "<p>Kiedy jesteś niewykryty przez daną istotę, istota ta w ogóle cię nie postrzega i nie ma pojęcia jakie pole zajmujesz. Nie może ona brać cię na cel, chociaż nadal podlegasz pod efekty, które biorą na cel obszar. Kiedy jesteś niewykryty przez daną istotę, ma ona wobec ciebie @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}.</p>\n<p>Istota, dla której jesteś niewykryty, może próbować zgadywać w jakim polu się znajdujesz aby spróbować wziąć cię na cel. Musi wybrać pole i podjąć próbę ataku. Działa to jak celowanie w ukrytą istotę (wymaga @Check[type:flat|dc:11]), ale zarówno test płaski jak rzut na atak wykonywane są w sekrecie przez MG, który w wypadku pudła nie zdradza czy wynikało ono z niepowodzenia któregokolwiek z rzutów, czy z obrania za cel niewłaściwego pola.</p>\n<p>Istota może podjąć się akcji @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukania} aby cię odnaleźć.</p>"
+        },
+        "Unfriendly": {
+            "name": "Nieprzyjazny",
+            "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota, która jest nieprzyjazna wobec danej postaci, nie przepada za nią oraz nie darzy jej zaufaniem. Nieprzyjazna istota nie akceptuje @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Próśb} od danej postaci.</p>"
+        },
+        "Unnoticed": {
+            "name": "Niezauważony",
+            "description": "<p>Jeśli jesteś niezauważony przez istotę, oznacza to, że nie ma ona zupełnie pojęcia o twojej obecności. Kiedy jesteś niezauważony jesteś też przez tę istotę @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty}. Ten status jest istotny dla umiejętności, które mogą być użyte jedynie na celach nieświadomych twojej obecności.</p>"
+        },
+        "Wounded": {
+            "name": "Ranny",
+            "description": "<p>Zostałeś poważnie ranny. Jeśli stracisz status @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający} i nie masz jeszcze statusu ranny, stajesz się ranny 1. Jeśli masz już status ranny kiedy tracisz status umierający, zwiększasz wartość statusu ranny o 1. Jeśli zyskujesz status umierający kiedy jesteś ranny, zwiększ wartość statusu umierający o wartość statusu ranny.</p>\n<p>Status ranny kończy się kiedy ktoś pomyślnie przywróci ci Punkty Żywotności za pomocą @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Opatrywania Ran}, lub jeśli zostaniesz przywrócony do pełni Punktów Żywotności i odpoczniesz przez 10 minut.</p>"
+        }
     },
-    "Broken": {
-      "name": "Uszkodzony",
-      "description": "<p>Uszkodzenie jest statusem dotyczącym obiektów. Przedmiot jest uszkadzany kiedy obrażenia zmniejszą jego Punkty Żywotności do wartości mniejszej lub równej jego Progowi Uszkodzenia. Uszkodzony obiekt nie może być wykorzystywany zgodni ze swoim przeznaczeniem i nie zapewnia żadnych premii, z wyjątkiem pancerza. Uszkodzony pancerz nadal zapewnia premię przedmiotu do wartości KP, ale dodaje też karę statusową do wartości KP zależną od jego kategorii: -1 dla uszkodzonego pancerza lekkiego, -2 dla uszkodzonego pancerza średniego lub -3 dla uszkodzonego pancerza ciężkiego.</p>\n<p>Uszkodzony przedmiot nadal dodaje wszelkie kary i ograniczenia wynikające z jego używania, trzymania lub noszenia. Przykładowo zniszczony pancerz nadal posiada maksymalne ograniczenie Zręczności dodawanej do KP, karę testów i tym podobne.</p>\n<p>Jeśli jakiś efekt natychmiast uszkadza przedmiot, a przedmiot ten ma więcej Punktów Żywotności niż wynosi jego Próg Uszkodzenia, liczba jego Punktów Żywotności jest redukowana do liczby równej jego Progowi Uszkodzenia.</p>"
-    },
-    "Clumsy": {
-      "name": "Niezdarny",
-      "description": "<p>Twoje ruchy stają się niezdarne i niedokładne. Niezdarność zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości do wszystkich swoich testów i ST opartych na Zręczności, wliczając w to KP, rzuty obronne Refleksu, ataki dystansowe, czy test umiejętności Akrobatyki, Skradania się i Złodziejstwa.</p>"
-    },
-    "Concealed": {
-      "name": "Przysłonięty",
-      "description": "<p>Kiedy jesteś przysłonięty dla danej istoty, na przykład przez gęstą mgłę, jest jej trudno cię dostrzec. Nadal jesteś przez nią @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany}, ale jesteś cięższym celem. Istota, wobec której jesteś przysłonięty, musi zdać @Check[type:flat|dc:5] jeśli próbuje wziąć cię za cel ataku, zaklęcia lub innego efektu.</p>\n<p>Jeśli test się nie powiedzie, atak, zaklęcie lub efekt nie imają się ciebie. Efekty obszarowe nie podlegają pod ten płaski test. </p>"
-    },
-    "Confused": {
-      "name": "Zdezorientowany",
-      "description": "<p>Nie jesteś w pełni sobą i atakujesz wszystko wokół. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} i nie traktujesz nikogo jako swojego sojusznika (chociaż inni nadal mogą traktować cię jako swojego), oraz nie możesz Opóźniać tury, Przygotowywać akcji ani używać reakcji.</p>\n<p>Zużywasz wszystkie swoje akcje aby wymierzać Ciosy lub rzucać ofensywne sztuczki, chociaż MG może zadecydować, że podejmujesz też inne akcje niezbędne do skutecznej ofensywy takie jak wyciągnięcie broni, czy przemieszczenie się do swojego celu. Twoje cele są określane losowo przez MG. Jeśli nie posiadasz żadnych innych możliwych celów, atakujesz siebie automatycznie trafiając chociaż nigdy krytycznie. Jeśli nie posiadasz możliwości ataku ani rzucania zaklęć, bełkoczesz niezrozumiale i marnujesz wszystkie swoje akcje.</p>\n<p>Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia wykonujesz @Check[type:flat|dc:11], jeśli go zdasz twoje zdezorientowanie mija i tracisz ten status.</p>"
-    },
-    "Controlled": {
-      "name": "Kontrolowany",
-      "description": "<p>Ktoś inny podejmuje za ciebie decyzje, zwykle wynika to z faktu, że jesteś magicznie przymuszony do wykonania komendy lub zdominowany. Kontrolująca istota decyduje w jaki sposób się zachowasz i może wykorzystywać wszystkie twoje akcje wliczając w to ataki, reakcje czy nawet @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Opóźnianie tury}. W większości wypadków kontrolująca istota nie musi wydawać żądnych akcji aby cię kontrolować.</p>"
-    },
-    "Dazzled": {
-      "name": "Zamroczony",
-      "description": "<p>Twoje oczy są przeładowane bodźcami. Jeśli wzrok jest twoim jedynym zmysłem precyzyjnym, wszystkie istoty i obiekty są dla ciebie @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięte}.</p>"
-    },
-    "Deafened": {
-      "name": "Ogłuchły",
-      "description": "<p>Nic nie słyszysz. Automatycznie odnosisz krytyczną porażkę na testach Percepcji wymagających użycia słuchu. Otrzymujesz karę statusową -2 do testów Percepcji na inicjatywę oraz testów, które zawierają słuch jako jeden ze swoich elementów ale polegają też na innych zmysłach. Jeśli dokonujesz akcji z cechą słuchowości musisz zdać @Check[type:flat|dc:5] lub tracisz tę akcję; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty. Jesteś niewrażliwy na efekty dźwiękowe.</p>"
-    },
-    "Doomed": {
-      "name": "Zgubiony",
-      "description": "<p>Twoje życie umyka z ciebie, przybliżając cię ku śmierci. Zgubę mogą nałożyć na ciebie potężne zaklęcia i złe istoty. Zguba zawsze posiada wartość. Wartość statusu @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierania} na której osiągasz ostateczną śmierć zmniejsza się o wartość twojej zguby. Przykładowo jeśli jesteś zgubiony 1 umierasz jeśli staniesz się umierający 3, nie umierający 4. Jeśli maksymalna dostępna dla ciebie wartość umierania osiągnie kiedykolwiek 0, umierasz na miejscu. Kiedy umrzesz nie jesteś już zgubiony.</p>\n<p>Wartość twojej zguby zmniejsza się o 1 za po każdej przespanej nocy.</p>"
-    },
-    "Drained": {
-      "name": "Wyniszczony",
-      "description": "<p>Kiedy istota pomyślnie wyssie z ciebie krew lub siły witalne stajesz się mniej żywotny. Wyniszczenie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości do wszystkich testów opartych o Kondycję, takich jak rzuty obronne Krzepy. Tracisz też Punkty Żywotności w liczbie równej twojemu poziomowi (minimum 1) pomnożonemu przez wartość wyniszczenia, a twoje maksymalne Punkty Żywotności również zmniejszają się o tę liczbę. Przykładowo, jeśli zostaniesz objęty efektem nakładającym wyniszczenie 3 i grasz postacią 3. poziomu, tracisz 9 Punktów Żywotności i zmniejszasz swoje maksymalne Punkty Żywotności o 9. Utrata tych Punktów Żywotności nie liczy się jako obrażenia.</p>\n<p>Po każdej przespanej nocy zmniejszasz swoją wartość wyniszczenia o 1. Zwiększa to twoją maksymalną liczbę Punktów Żywotności ale nie zapewnia ich natychmiastowego odzyskania.</p>"
-    },
-    "Dying": {
-      "name": "Umierający",
-      "description": "<p>Wykrwawiasz się lub w inny sposób znajdujesz na progu śmierci. Kiedy masz ten status, jesteś @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}. Umierający zawsze posiada wartość, i jeśli osiągnie ona 4 umierasz. Kiedy jesteś umierający, musisz na początku swojej tury wykonać test ozdrowienia, aby określić czy twój stan się poprawia czy pogarsza. Jeśli odniesiesz obrażenia będąc umierający twoja wartość umierania zwiększa się o 1 lub, jeśli obrażenia są wynikiem trafienia krytycznego lub krytycznej porażki na twoim rzucie obronnym, o 2.</p>\n<p>Jeśli utracisz status umierający w wyniku swoich testów ozdrowienia, ale nadal masz 0 Punktów Żywotności, pozostajesz nieprzytomny, ale możesz wybudzić się tak jak opisano to w zasadach nieprzytomności. Jeśli twoje Punkty Żywotności osiągną wartość 1 lub więcej, automatycznie tracisz status umierający i budzisz się. Za każdym razem kiedy tracisz status umierający otrzymujesz status @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny 1}, lub, jeśli już jesteś ranny, zwiększasz wartość tego statusu o 1.</p>"
-    },
-    "Encumbered": {
-      "name": "Przeciążony",
-      "description": "<p>Nosisz przy sobie więcej niż jesteś w stanie. Kiedy jesteś przeciążony jesteś @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1}oraz otrzymujesz karę 10 stóp do wszystkich swoich Prędkości. Tak jak w wypadku wszystkich kar do Prędkości, nie może jej to zredukować poniżej 5 stóp.</p>"
-    },
-    "Enfeebled": {
-      "name": "Osłabiony",
-      "description": "<p>Jesteś fizycznie osłabiony. Osłabienie zawsze posiada wartość. Kiedy jesteś osłabiony otrzymujesz karę statusową równą tej wartości do swoich testów i ST opartych o Siłę, wliczając w to oparte o Siłę testy ataku i Atletyki.</p>"
-    },
-    "Fascinated": {
-      "name": "Zafascynowany",
-      "description": "<p>Odczuwasz przemożną potrzebę poświęcania czemuś uwagi i odwracania jej od wszystkiego innego wokół ciebie. Otrzymujesz statusową karę -2 do testów Percepcji oraz testów umiejętności i nie możesz używać akcji z cechą koncentracja chyba, że ich konsekwencje są związane z celem twojej fascynacji (określa MG). Przykładowo możesz być w stanie @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukać} celu lub @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Pozyskiwać Wiedzę} na jego temat, ale nie możesz rzucić zaklęcia kierowanego w inną istotę. Status ten kończy się jeśli obiekt twojej fascynacji dokona działania wrogiego wobec ciebie lub twoich towarzyszy.</p>"
-    },
-    "Fatigued": {
-      "name": "Wyczerpany",
-      "description": "<p>Jesteś zmęczony i nie możesz wykrzesać z siebie wiele energii. Otrzymujesz karę statusową -1 do twojego KP i rzutów obronnych. Podczas eksploracji nie możesz wybrać wykonywanej aktywności.</p>\n<p>Przestajesz być wyczerpany po całonocnym odpoczynku.</p>"
-    },
-    "Fleeing": {
-      "name": "Uciekający",
-      "description": "<p>Jesteś zmuszony do ucieczki przez strach lub innego rodzaju natrętną potrzebę. W swojej turze musisz wydać wszystkie swoje akcje, aby uciekać od źródła efektu tak prędko, jak to tylko możliwe (na przykład używając swoich akcji by się oddalać lub otwierać drzwi barykadujące twoją drogę ucieczki). Źródłem strachu jest na ogół efekt lub użytkownik magii, który wywołał status, chociaż niektóre efekty mogą precyzować inne źródło. Nie możesz @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Opóźniać tury} ani @UUID[Compendium.pf2e.actionspf2e.Item.dLgAMt3TbkmLkUqE]{Przygotowywać się} kiedy odczuwasz potrzebę ucieczki.</p>"
-    },
-    "Friendly": {
-      "name": "Przyjazny",
-      "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota przyjazna danej postaci darzy ją sympatią. Postać może wystosować @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośbę} wobec przyjaznej istoty, a istota ma sporą szansę się zgodzić tak długo jak prośba jest prosta a jej spełnienie zbyt wiele jej nie kosztuje. Jeśli postać lub jeden z jej kompanów użyje wrogiej akcji wobec przyjaznej istoty, jej nastawienia spada o liczbę poziomów zależną od powagi czynu, wedle oceny MG.</p>"
-    },
-    "Frightened": {
-      "name": "Przerażony",
-      "description": "<p>Jesteś ogarnięty strachem i z trudem kontrolujesz nerwy. Przerażenie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości do wszystkich swoich testów i ST. O ile nie sprecyzowano inaczej wartość twojego przerażenia spada o 1 na koniec każdej twojej tury.</p>"
-    },
-    "Grabbed": {
-      "name": "Pochwycony",
-      "description": "<p>Jesteś utrzymywany w miejscu przez inną istotę - jesteś @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[type:flat|dc:5] lub ją utracić; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty.</p>"
-    },
-    "Helpful": {
-      "name": "Pomocny",
-      "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota pomocna wobec danej postaci, chce aktywnie jej pomagać. Zaakceptuje @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośby} od danej postaci, tak długo jak są one rozsądnej skali i nie wpływają negatywnie na osobiste cele i dobrobyt pomocnej istoty. Jeśli postać lub jeden z jej kompanów użyje wrogiej akcji wobec przyjaznej istoty, jej nastawienia spada o liczbę poziomów zależną od powagi czynu, wedle oceny MG.</p>"
-    },
-    "Hidden": {
-      "name": "Schowany",
-      "description": "<p>Kiedy jesteś schowany przed daną istotą, wie ona na jakim polu się znajdujesz, ale nie potrafi określić gdzie dokładnie jesteś. Na ogół stajesz się schowany w wyniku używania Skradania się podczas akcji @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schowania się}. Kiedy @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukasz} istoty za pomocą zmysłów nieprecyzyjnych pozostaje ona schowana zamiast stać się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzeganą}. Istota, przed którą udało ci się schować, ma wobec ciebie @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz musi zdać @Check[type:flat|dc:11] jeśli chce obrać cię za cel ataku, zaklęcia lub innego efektu. Efekty obszarowe nie wymagają testu płaskiego.</p>\n<p>Istota może być w stanie użyć akcji Szukania aby zacząć cię na nowo postrzegać.</p>"
-    },
-    "Hostile": {
-      "name": "Wrogi",
-      "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota wroga wobec danej postaci, aktywnie działa na jej szkodę i chce ją skrzywdzić. Nie zawsze jest to równoważne z atakiem, ale na pewno nie spełni @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośby} danej postaci.</p>"
-    },
-    "Immobilized": {
-      "name": "Unieruchomiony",
-      "description": "<p>Nie możesz używać żadnej akcji posiadającej cechę ruch. Jeśli jesteś unieruchomiony a jakaś zewnętrzna siła usiłuje przemieścić cię w inne miejsce, musi ona zdać test przeciw ST efektu trzymającego cię w miejscu lub odpowiedniej statystyce trzymającego cię potwora (na ogół ST Krzepy).</p>"
-    },
-    "Indifferent": {
-      "name": "Obojętny",
-      "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota obojętna wobec postaci, nie przejmuje się szczególnie jej losem. Przyjmij, że istota jest wobec danej postaci obojętna, chyba że sprecyzowano inaczej.</p>"
-    },
-    "Invisible": {
-      "name": "Niewidzialny",
-      "description": "<p>Kiedy jesteś niewidzialny nie można cię zobaczyć. Jesteś @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty} wobec wszystkich. Istoty mogą @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukać} cię aby cię wykryć; jeśli istota zda test Percepcji przeciw twojemu ST Skradania się, stajesz się wobec tej istoty jedynie @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, do momentu aż nie użyjesz @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradania się} aby ponownie stać się niewykrytym. Jeśli staniesz się niewidzialnym w momencie, kiedy ktoś cię widzi zaczynasz jako schowany wobec tego obserwatora (zamiast niewykrycia) aż do momentu aż pomyślnie użyjesz Przekradania się. Nie możesz stać się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzeganym} podczas bycia niewidzialnym, za wyjątkiem użycia specjalnych umiejętności lub magii.</p>"
-    },
-    "Observed": {
-      "name": "Postrzegany",
-      "description": "<p>Cokolwiek co znajduje się na widoku jest przez ciebie postrzegane. Jeśli istota podejmie działania mające na celu uniknięcie wykrycia, takie jak użycie Skradania się aby się @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schować}, może stać się @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowana} lub @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryta}. Jeśli posiadasz inny zmysł precyzyjny zamiast wzroku lub poza nim, możesz postrzegać istoty lub obiekty za pomocą tego zmysłu. Istoty można postrzegać jedynie za pomocą zmysłów precyzyjnych. Kiedy @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukasz} istoty za pomocą zmysłu niedokładnego zamiast precyzyjnego, pozostaje ona schowana zamiast stać się postrzegana.</p>"
-    },
-    "Off-Guard": {
-      "name": "Opuszczona Garda",
-      "description": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz sytuacyjną karę -2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności stany - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \"Cel ma opuszczoną gardę.\"</p>"
-    },
-    "Paralyzed": {
-      "name": "Sparaliżowany",
-      "description": "<p>Twoje ciało zastygło w miejscu. Posiadasz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz nie możesz dokonywać akcji innych niż Pozyskanie Wiedzy lub innych akcji wymagających udziału jedynie twojego umysłu (co określa MG). Twoje zmysły nadal funkcjonują ale jedynie w obszarach, których postrzeganie nie wymaga od ciebie ruchu ciałem, a więc nie możesz @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukać} pod wpływem paraliżu.</p>"
-    },
-    "Persistent Damage": {
-      "name": "Obrażenia Trwałe",
-      "description": "<p>Obrażenia trwałe biorą się od efektów takich jak kwas, podpalenie i wielu innych. Opisywane są jako \"X trwałych obrażeń [typu]\" gdzie \"X\" to liczba zadawanych obrażeń a \"[typ]\" to typ odnoszonych obrażeń. Obrażeń trwałych nie odnosisz natychmiast, ponosisz je na koniec swojej tury tak długo jak jesteś pod wpływem wywołującego je statusu, za każdym razem rzucając kości obrażeń na nowo. Po otrzymaniu obrażeń trwałych rzuć @Check[type:flat|dc:15] aby określić czy udaje ci się zakończyć ich działanie. W wypadku sukcesu wywołujący je status kończy się.</p>"
-    },
-    "Petrified": {
-      "name": "Spetryfikowany",
-      "description": "<p>Zostałeś zamieniony w kamień. Nie możesz działać ani nic czuć. Stajesz się obiektem o Naręczu dwukrotnie większym od twojego normalnego Naręcza (typowo 12 dla Średnich spetryfikowanych istot i 6 dla Małych spetryfikowanych istot), KP 9, Twardości 8, i taką samą liczbą obecnych Punktów Żywotności jaką miałeś za życia. Nie posiadasz Progu Uszkodzenia. Kiedy zostaniesz przywrócony do cielesnej postaci posiadasz tyle samo Punktów Żywotności ile miała statua. Jeśli statua zostanie zniszczona, natychmiast umierasz. Podczas petryfikacji twój umysł i cało znajdują się w stazie, a więc nie starzejesz się ani nie rejestrujesz upływu czasu.</p>"
-    },
-    "Prone": {
-      "name": "Powalony",
-      "description": "<p>Leżysz na ziemi. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz ponosisz sytuacyjną karę -2 do rzutów na atak. Jedyne akcje ruchu, których możesz dokonywać będąc powalonym to @UUID[Compendium.pf2e.actionspf2e.Item.Tj055UcNm6UEgtCg]{Czołganie się} lub @UUID[Compendium.pf2e.actionspf2e.Item.OdIUybJ3ddfL7wzj]{Powstanie}. Powstanie kończy twoje powalenie. Będąc powalonym możesz @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Kryć się za Osłoną} nawet jeśli nie masz przed sobą żadnego obiektu, aby skulić się i zyskać osłonę przed atakami dystansowymi, zyskując sytuacyjną premię +4 do KP przeciw atakom dystansowym (nadal masz jednak opuszczoną gardę).</p>\n<p>Jeśli zostaniesz powalony podczas kiedy @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Latasz} lub @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinasz się}, zaczynasz spadać. Nie możesz zostać powalony kiedy @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Pływasz}.</p>"
-    },
-    "Quickened": {
-      "name": "Przyspieszony",
-      "description": "<p>W każdej rundzie otrzymujesz na początku swojej tury dodatkową akcję. Wiele efektów zapewniających przyspieszenie określa jakich konkretnie akcji możesz dokonać za jej pomocą. Jeśli więcej niż jeden efekt zapewnia ci przyspieszenie możesz wykorzystać tę dodatkową akcję na dowolny z rodzajów akcji wymienianych przez którekolwiek ze źródeł twojego przyspieszenia. Jako, że przyspieszenie działa na początku twojej tury, nie uzyskujesz natychmiastowo dostępu do dodatkowej akcji jeśli zostajesz przyspieszony w trakcie trwania twojej tury.</p>"
-    },
-    "Restrained": {
-      "name": "Spętany",
-      "description": "<p>Jesteś spętany lub przygwożdżony przez istotę. Jesteś @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} oraz masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}, a ponadto nie możesz wykonywać żadnych akcji o cechach atak ani manipulacja za wyjątkiem prób @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczki} czy @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Siłowego Otwarcia} swoich więzów. Spętanie nadpisuje @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycenie}.</p>"
-    },
-    "Sickened": {
-      "name": "Zemdlony",
-      "description": "<p>Czujesz się schorowany. Zemdlenie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości, na wszystkich swoich testach i ST. Kiedy jesteś zemdlony nie możesz dobrowolnie pobierać pokarmu, wliczając w to mikstury i eliksiry.</p>\n<p>Możesz poświęcić jedną akcję na poddanie się odruchowi wymiotnemu i próbę pozbycia się mdłości, co pozwala ci na natychmiastowe podjęcie testu Krzepy przeciw ST efektu który wywołał w tobie zemdlenie. W wypadku sukcesu redukujesz wartość zemdlenia o 1 (przy sukcesie krytycznym o 2).</p>"
-    },
-    "Slowed": {
-      "name": "Spowolniony",
-      "description": "<p>Masz mniej akcji do dyspozycji. Spowolnienie zawsze posiada wartość. Za każdym razem kiedy odzyskujesz akcje na początku swojej tury, zmniejsz liczbę odzyskiwanych akcji o wartość spowolnienia. Jako, że spowolnienie działa na początku twojej tury, nie tracisz akcji natychmiast, jeśli zostałeś objęty tym statusem w swojej turze.</p>"
-    },
-    "Stunned": {
-      "name": "Ogłuszony",
-      "description": "<p>Zostałeś pozbawiony zmysłów. Nie możesz działać będąc ogłuszonym. Ogłuszenie na ogół posiada wartość, określającą jak wiele akcji w sumie tracisz, potencjalnie przez wiele tur, w związku z ogłuszeniem. Za każdym razem kiedy odzyskujesz akcje (tak jak na początku swojej tury), zmniejsz liczbę odzyskiwanych akcji o wartość ogłuszenia, a następnie zmniejsz wartość ogłuszenia o liczbę utraconych akcji. Przykładowo, jeśli byłbyś ogłuszony 4 tracisz na początku swojej tury wszystkie swoje 3 akcje, zmniejszając swoje ogłuszenie do 1; w swojej następnej turze tracisz jeszcze jedną akcję a pozostałych dwóch możesz użyć normalnie. Ogłuszenie może zamiast tego być opisane czasowo, na przykład \"ogłuszony na 1 minutę\". W takim wypadku tracisz wszystkie swoje akcje aż do końca określonego czasu trwania.</p>\n<p>Ogłuszenie nadpisuje @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolnienie}. Jeśli czas trwania twojego ogłuszenia dobiegnie końca kiedy jesteś spowolniony, odliczasz akcje utracone w wyniku ogłuszenia od liczby akcji traconych przez spowolnienie. Tak więc jeśli byłbyś na początku swojej tury ogłuszony 1 i spowolniony 2, tracisz jedną akcję ze względu na ogłuszenie, a następnie tracisz kolejną 1 akcję za naddatek spowolnienia, pozostając z jedną możliwą do wykorzystania w tej turze akcją.</p>"
-    },
-    "Stupefied": {
-      "name": "Ogłupiony",
-      "description": "<p>Twoje myśli i instynkty są zamglone. Ogłupienie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości, do wszystkich swoich testów i ST opartych o Inteligencję, Mądrość i Charyzmę, wliczając w to rzut obronny Woli, rzuty na atak zaklęciem, ST zaklęć oraz testy umiejętności oparte o te cechy. Za każdym razem kiedy usiłujesz @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Rzucić Zaklęcie} będąc ogłupionym, musisz wykonać płaski test o ST równym 5 + wartość ogłupienia - przy porażce zaklęcie jest rozpraszane.</p>"
-    },
-    "Unconscious": {
-      "name": "Nieprzytomny",
-      "description": "<p>Śpisz lub zostałeś ogłuszony. Nie możesz podejmować działań. Odnosisz karę statusową -4 do KP, Percepcji, rzutów obronnych na Refleks, masz też statusy @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepienia} i @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczonej Gardy}. Kiedy zyskujesz ten stan, padasz @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} oraz upuszczasz przedmioty trzymane w rękach, chyba, że efekt nakładający status mówi inaczej lub MG uznaje, że jesteś w pozycji, w której by to nie nastąpiło.</p>\n<p>Jeśli powodem twojej nieprzytomności jest status @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający}, nie możesz się ocknąć póki masz 0 Punktów Żywotności. Jeśli zostaniesz przywrócony do 1 Punktu Żywotności lub więcej, tracisz statusy nieprzytomny i umierający i możesz normalnie działać w swojej następnej turze.</p>\n<p>Jeśli jesteś nieprzytomny z 0 Punktami Żywotności, ale nie jesteś umierający, naturalnie powracasz do 1 Punktu Żywotności i odzyskujesz przytomność, po upływie adekwatnego czasu. Długość twojej nieprzytomności określa MG, od 10 minut do kilku godzin. Jeśli otrzymasz w tym okresie leczenie tracisz status nieprzytomności i możesz normalnie działać w swojej następnej turze.</p>\n<p>Jeśli jesteś nieprzytomny i posiadasz co najmniej 1 Punk Żywotności (na ogół ze względu na sen lub zewnętrzny efekt), budzisz się w jeden z poniższych sposobów. Każdy z nich powoduje utratę statusu nieprzytomny.</p>\n<ul>\n<li>Odnosisz obrażenia, o ile nie zredukowały cię do 0 Punktów Żywotności. Jeśli obrażenia zredukują cię do 0 Punktów Żywotności, pozostajesz nieprzytomny i otrzymujesz status umierający w normalny sposób.</li>\n<li>Otrzymujesz leczenie inne, niż naturalne leczenie wynikające z odpoczynku.</li>\n<li>Ktoś ocuca cię z użyciem akcji @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interakcja}.</li>\n<li>Wokół ciebie następuje hałas - chociaż nie jest to automatyczne. Na początku twojej tury automatycznie dokonujesz testu Percepcji przeciw ST hałasu (lub najmniejszemu ST, jeśli nastąpiło wiele hałasów), budząc się przy sukcesie. Jeśli istoty wokół ciebie starają się pozostać niezauważone, ten test Percepcji odbywa się wobec ich ST Skradania się. Niektóre magiczne efekty mogą wywołać w tobie tak głęboki sen, że nie pozwolą na te testy Percepcji.</li>\n<li>Jeśli po prostu śpisz, GM decyduje o twoim przebudzeniu się ze względu na koniec odpoczynku lub jakiś wybudzający cię incydent.</li>\n</ul>"
-    },
-    "Undetected": {
-      "name": "Niewykryty",
-      "description": "<p>Kiedy jesteś niewykryty przez daną istotę, istota ta w ogóle cię nie postrzega i nie ma pojęcia jakie pole zajmujesz. Nie może ona brać cię na cel, chociaż nadal podlegasz pod efekty, które biorą na cel obszar. Kiedy jesteś niewykryty przez daną istotę, ma ona wobec ciebie @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}.</p>\n<p>Istota, dla której jesteś niewykryty, może próbować zgadywać w jakim polu się znajdujesz aby spróbować wziąć cię na cel. Musi wybrać pole i podjąć próbę ataku. Działa to jak celowanie w ukrytą istotę (wymaga @Check[type:flat|dc:11]), ale zarówno test płaski jak rzut na atak wykonywane są w sekrecie przez MG, który w wypadku pudła nie zdradza czy wynikało ono z niepowodzenia któregokolwiek z rzutów, czy z obrania za cel niewłaściwego pola.</p>\n<p>Istota może podjąć się akcji @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukania} aby cię odnaleźć.</p>"
-    },
-    "Unfriendly": {
-      "name": "Nieprzyjazny",
-      "description": "<p>Ten status odzwierciedla nastawienie istoty wobec konkretnej postaci i tylko nadnaturalny efekt (taki jak zaklęcie) może wywrzeć tego rodzaju status na postaciach samych graczy. Istota, która jest nieprzyjazna wobec danej postaci, nie przepada za nią oraz nie darzy jej zaufaniem. Nieprzyjazna istota nie akceptuje @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Próśb} od danej postaci.</p>"
-    },
-    "Unnoticed": {
-      "name": "Niezauważony",
-      "description": "<p>Jeśli jesteś niezauważony przez istotę, oznacza to, że nie ma ona zupełnie pojęcia o twojej obecności. Kiedy jesteś niezauważony jesteś też przez tę istotę @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty}. Ten status jest istotny dla umiejętności, które mogą być użyte jedynie na celach nieświadomych twojej obecności.</p>"
-    },
-    "Wounded": {
-      "name": "Ranny",
-      "description": "<p>Zostałeś poważnie ranny. Jeśli stracisz status @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający} i nie masz jeszcze statusu ranny, stajesz się ranny 1. Jeśli masz już status ranny kiedy tracisz status umierający, zwiększasz wartość statusu ranny o 1. Jeśli zyskujesz status umierający kiedy jesteś ranny, zwiększ wartość statusu umierający o wartość statusu ranny.</p>\n<p>Status ranny kończy się kiedy ktoś pomyślnie przywróci ci Punkty Żywotności za pomocą @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Opatrywania Ran}, lub jeśli zostaniesz przywrócony do pełni Punktów Żywotności i odpoczniesz przez 10 minut.</p>"
+    "mapping": {
+        "description": "system.description.value",
+        "name": {
+            "converter": "translateDualLanguage",
+            "path": "name"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
+        "source": {
+            "converter": "translateSource",
+            "path": "system.publication.title"
+        }
     }
-  },
-  "mapping": {
-    "description": "system.description.value",
-    "name": {
-      "converter": "translateDualLanguage",
-      "path": "name"
-    },
-    "rules": {
-      "converter": "translateRules",
-      "path": "system.rules"
-    },
-    "source": {
-      "converter": "translateSource",
-      "path": "system.publication.title"
-    }
-  }
 }

@@ -5,213 +5,261 @@ from tqdm import tqdm
 from collections import Counter
 import datetime
 
-# Create "Logs" directory if it doesn't exist
-log_directory = "Logs"
-os.makedirs(log_directory, exist_ok=True)
-
-# Current date and time for the log filename
-current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-log_filename = os.path.join(log_directory, f"LocalizationUpdate_{current_time}.log")
-
-# Setup logging configuration
-logging.basicConfig(level=logging.INFO, 
-                    filename=log_filename, 
-                    filemode='w', 
-                    format='%(levelname)s: %(message)s')
-
-# Setup logging configuration
-logging.basicConfig(level=logging.INFO)
-
-# Global counters
-changed_keys_count = 0
-new_keys_count = 0
-removed_keys_count = 0
-outdated_records_count = 0
-
-# Additional global variables to track keys
-renamed_keys = []
-outdated_keys = []
-new_keys = []
-removed_keys = []
-
-# Global container declarations
-en_old_extracted = {}
-en_extracted = {}
-pl_extracted = {}
-
-def get_file_from_directory(directory):
-    try:
-        os.makedirs(directory, exist_ok=True)
-        files = [f for f in os.listdir(directory) if f.endswith('.json')]
-        
-        if len(files) == 0:
-            logging.error(f"No JSON file found in {directory} directory.")
-            return None
-        elif len(files) > 1:
-            logging.warning(f"Multiple JSON files found in {directory} directory. Choosing the first one: {files[0]}")
-        
-        filepath = os.path.join(directory, files[0])
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        logging.error(f"An error occurred while loading the JSON file from {directory} directory: {str(e)}")
-        return None
-
-def extract_localization_dict(obj, current_path='', result_dict=None):
-    if obj is None:
-        return None
+class LocalizationUpdater:
     
-    if result_dict is None:
-        result_dict = {}
+    # filepaths
+    en_old_path = ""
+    en_path = ""
+    pl_path = ""
 
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            # Construct the new path by concatenating the current key
-            new_path = f'{current_path}.{key}' if current_path else key
-            extract_localization_dict(value, new_path, result_dict)
-    else:
-        # Store the string at the current path
-        result_dict[current_path] = str(obj)
+    # data containers
+    en_old_extracted = {}
+    en_extracted = {}
+    pl_extracted = {}
 
-    return result_dict
+    # key operation logs
+    new_keys = []
+    removed_keys = []
+    renamed_keys = []
+    outdated_keys = []
+    updated_eng_keys = []
+    
+    def __init__(self, en_old_path, en_path, pl_path):
+        # filepaths
+        self.en_old_path = en_old_path
+        self.en_path = en_path
+        self.pl_path = pl_path
 
-def update_localization():
-    global en_old_extracted, en_extracted, pl_extracted
-    global changed_keys_count, new_keys_count, removed_keys_count, outdated_records_count
-    global renamed_keys, outdated_keys, new_keys, removed_keys
+    def get_file_from_directory(self, filepath):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            logging.error(f"An error occurred while loading the JSON file: {filepath}: {str(e)}")
+            return None
 
-    # Create reverse lookup dictionaries for old and new values
-    old_value_to_key = {v: k for k, v in en_old_extracted.items()}
-    new_value_to_key = {v: k for k, v in en_extracted.items()}
+    def save_file_to_directory(self, filepath, data):
+        try:
+            # Ensure the directory of the file exists
+            os.makedirs(os.path.dirname(filepath), exist_ok=True)
+            
+            # Save the data to the specified filepath
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
+        except Exception as e:
+            logging.error(f"An error occurred while saving the JSON file to {filepath}: {str(e)}")
 
-    # Count occurrences of each value
-    old_value_counts = Counter(en_old_extracted.values())
-    new_value_counts = Counter(en_extracted.values())
+    def extract_localization_dict(self, obj, current_path='', result_dict=None):
+        if obj is None:
+            return None
+        
+        if result_dict is None:
+            result_dict = {}
 
-    for new_key, new_value in tqdm(en_extracted.items(), desc="Processing new keys"):
-        old_key = old_value_to_key.get(new_value)
-
-        # value's key got renamed
-        if old_key and old_key != new_key and old_value_counts[new_value] == 1 and new_value_counts[new_value] == 1:
-            changed_keys_count += 1
-            pl_extracted[new_key] = pl_extracted.pop(old_key, None)
-            renamed_keys.append((old_key, new_key))
-
-        # key's value changed
-        elif new_value != en_old_extracted.get(new_key, None) and new_key in pl_extracted:
-            outdated_records_count += 1
-            pl_extracted[new_key] += " (OUTDATED!)"
-            outdated_keys.append(new_key)
-
-        # new key
-        elif new_key not in pl_extracted:
-            new_keys_count += 1
-            pl_extracted[new_key] = ""
-            new_keys.append(new_key)
-
-    # Delete old keys
-    for old_key in tqdm(list(en_old_extracted.keys()), desc="Deleting obsolete keys", leave=False):
-        if old_key not in en_extracted:
-            removed_keys_count += 1
-            pl_extracted.pop(old_key, None)
-            removed_keys.append(old_key)
-
-
-def validate_keys_match(path=''):
-    errors = []
-
-    # Check all keys in the reference dictionary to see if they exist in the target
-    for key in en_extracted.keys():
-        current_path = f"{path}.{key}" if path else key
-        if key not in pl_extracted:
-            errors.append(f"Missing key in target: {current_path}")
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                new_path = f'{current_path}.{key}' if current_path else key
+                self.extract_localization_dict(value, new_path, result_dict)
         else:
-            if isinstance(en_extracted[key], dict) and isinstance(pl_extracted[key], dict):
-                errors.extend(validate_keys_match(en_extracted[key], pl_extracted[key], current_path))
-            elif isinstance(en_extracted[key], dict) and not isinstance(target_dict[key], dict):
-                errors.append(f"Mismatched types at {current_path}, expected a dict in target but found a non-dict.")
-            elif not isinstance(en_extracted[key], dict) and isinstance(pl_extracted[key], dict):
-                errors.append(f"Mismatched types at {current_path}, expected a non-dict in target but found a dict.")
+            result_dict[current_path] = str(obj)
 
-    # Check all keys in the target dictionary to see if they have become obsolete
-    for key in pl_extracted.keys():
-        current_path = f"{path}.{key}" if path else key
-        if key not in en_extracted:
-            errors.append(f"Obsolete key in target: {current_path}")
+        return result_dict
 
-    return errors
+    def rebuild_nested_json(self, flat_dict):
+        nested_json = {}
 
-def rebuild_nested_json(flat_dict):
-    nested_json = {}
+        for compound_key, value in flat_dict.items():
+            keys = compound_key.split('.')
+            current_level = nested_json
 
-    for compound_key, value in flat_dict.items():
-        keys = compound_key.split('.')
-        current_level = nested_json
+            for key in keys[:-1]:
+                if key not in current_level:
+                    current_level[key] = {}
+                current_level = current_level[key]
 
-        for key in keys[:-1]:
-            # Create a new dictionary at the current level if the key doesn't exist
-            if key not in current_level:
-                current_level[key] = {}
-            current_level = current_level[key]
+            current_level[keys[-1]] = value
 
-        # Set the value at the final key
-        current_level[keys[-1]] = value
+        return nested_json
 
-    return nested_json
+    def update_localization(self):
+        # Count occurrences of each value in both dictionaries
+        old_value_counts = Counter(self.en_old_extracted.values())
+        new_value_counts = Counter(self.en_extracted.values())
 
-def save_file_to_directory(directory, data):
-    try:
-        os.makedirs(directory, exist_ok=True)
-        files = [f for f in os.listdir(directory) if f.endswith('.json')]
-        filename = files[0] if files else 'data.json'
-        filepath = os.path.join(directory, filename)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-    except Exception as e:
-        logging.error(f"An error occurred while saving the JSON file to {directory} directory: {str(e)}")
+        # Identify unique values in both dictionaries
+        unique_old_values = {value for value, count in old_value_counts.items() if count == 1}
+        unique_new_values = {value for value, count in new_value_counts.items() if count == 1}
+
+        # Reverse mapping for unique values only
+        old_value_to_key = {value: key for key, value in self.en_old_extracted.items() if value in unique_old_values}
+        new_value_to_key = {value: key for key, value in self.en_extracted.items() if value in unique_new_values}
+
+        for new_key, new_value in tqdm(self.en_extracted.items(), desc=f"Processing new keys in {os.path.basename(self.pl_path)}"):
+
+            # rename key if both before and after the value is unique
+            old_key = old_value_to_key.get(new_value, None)
+            if old_key and old_key != new_key and new_value in unique_new_values:
+                self.pl_extracted[new_key] = self.pl_extracted.pop(old_key, None)
+                self.renamed_keys.append((old_key, new_key))
+            # if the key exists in translation, and the value changed
+            elif new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
+                # if value was kept in english, update it outright
+                if self.pl_extracted.get(new_key) == self.en_old_extracted.get(new_key):
+                    self.pl_extracted[new_key] = new_value
+                    self.updated_eng_keys.append(new_key)
+                # else mark it as outdated that needs manual correction
+                else:
+                    self.pl_extracted[new_key] += " (OUTDATED!)"
+                    self.outdated_keys.append(new_key)
+            # if value does not exist in translation, add new empty field for it
+            elif new_key not in self.pl_extracted:
+                self.pl_extracted[new_key] = ""
+                self.new_keys.append(new_key)
+
+        # remove obsolete keys
+        for old_key in tqdm(list(self.en_old_extracted.keys()), desc=f"Deleting obsolete keys in {os.path.basename(self.pl_path)}", leave=False):
+            if old_key not in self.en_extracted:
+                self.pl_extracted.pop(old_key, None)
+                self.removed_keys.append(old_key)
+
+    def validate_keys_match(self, path=''):
+        errors = []
+
+        for key in self.en_extracted.keys():
+            current_path = f"{path}.{key}" if path else key
+            if key not in self.pl_extracted:
+                errors.append(f"Missing key in target: {current_path}")
+            else:
+                if isinstance(self.en_extracted[key], dict) and isinstance(self.pl_extracted[key], dict):
+                    errors.extend(self.validate_keys_match(self.en_extracted[key], self.pl_extracted[key], current_path))
+                elif isinstance(self.en_extracted[key], dict) and not isinstance(self.pl_extracted[key], dict):
+                    errors.append(f"Mismatched types at {current_path}, expected a dict in target but found a non-dict.")
+                elif not isinstance(self.en_extracted[key], dict) and isinstance(self.pl_extracted[key], dict):
+                    errors.append(f"Mismatched types at {current_path}, expected a non-dict in target but found a dict.")
+
+        for key in self.pl_extracted.keys():
+            current_path = f"{path}.{key}" if path else key
+            if key not in self.en_extracted:
+                errors.append(f"Obsolete key in target: {current_path}")
+
+        return errors
+
+    def process(self):
+        self.en_old_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_old_path))
+        self.en_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_path))
+        self.pl_extracted = self.extract_localization_dict(self.get_file_from_directory(self.pl_path))
+
+        if self.en_old_extracted is None or self.en_extracted is None or self.pl_extracted is None:
+            logging.error("Unable to proceed due to missing data.")
+            return
+
+        self.update_localization()
+
+        # Log the results
+        logging.info(f"{os.path.basename(self.pl_path)}:")
+
+        logging.info(f"  Number of new keys added: {len(self.new_keys)}")
+        for key in self.new_keys:
+            logging.info(f"    {key}")
+
+        logging.info(f"  Number of obsolete keys deleted: {len(self.removed_keys)}")
+        for key in self.removed_keys:
+            logging.info(f"    {key}")
+
+        logging.info(f"  Number of renamed keys (transfered): {len(self.renamed_keys)}")
+        for old_key, new_key in self.renamed_keys:
+            logging.info(f"    {old_key} -> {new_key}")
+
+        logging.info(f"  Number of english keys updated: {len(self.updated_eng_keys)}")
+        for key in self.updated_eng_keys:
+            logging.info(f"    {key}")
+
+        logging.info(f"  Number of outdated records: {len(self.outdated_keys)}")
+        for key in self.outdated_keys:
+            logging.info(f"    {key}")
+
+
+        validation_errors = self.validate_keys_match()
+        if validation_errors:
+            for error in validation_errors:
+                logging.error(error)
+            logging.error("Validation failed, the keys in English and Polish files do not match.")
+        else:
+            logging.info("Validation successful, all keys match.")
+
+        logging.info("\n")
+
+        self.save_file_to_directory(self.pl_path, self.rebuild_nested_json(self.pl_extracted))
 
 def main():
-    global en_old_extracted, en_extracted, pl_extracted
-    global changed_keys_count, new_keys_count, removed_keys_count, outdated_records_count
+    # Setup logging configuration
+    log_directory = "tools/HelperScripts/Logs"
+    os.makedirs(log_directory, exist_ok=True)
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    log_filename = os.path.join(log_directory, f"LocalizationUpdate_{current_time}.log")
+    logging.basicConfig(level=logging.INFO, filename=log_filename, filemode='w', format='%(message)s')
 
-    en_old_extracted = extract_localization_dict(get_file_from_directory('en-old'))
-    en_extracted = extract_localization_dict(get_file_from_directory('en'))
-    pl_extracted = extract_localization_dict(get_file_from_directory('pl'))
+    # Define sets of file paths
+    file_sets = []
+    
+    core_en_old_directory = "tools/HelperScripts/OldLocale/"
+    core_en_directory = "translation/en/"
+    core_pl_directory = "translation/pl/"
+    
+    en_to_pl_file_pairs =  [
+        ("en", "pl"),
+        ("action-en", "action-pl"),
+        ("re-en", "re-pl"),
+        ("dictionary", "dictionary"),
+        ("kingmaker-en", "kingmaker-pl"),
+        ("compendium/action-macros", "compendium/pf2e.action-macros"),
+        ("compendium/actions","compendium/pf2e.actionspf2e"),
+        ("compendium/adventure-specific-actions","compendium/pf2e.adventure-specific-actions"),
+        ("compendium/ancestries","compendium/pf2e.ancestries"),
+        ("compendium/ancestryfeatures","compendium/pf2e.ancestryfeatures"),
+        ("compendium/backgrounds","compendium/pf2e.backgrounds"),
+        ("compendium/bestiary-ability-glossary-srd","compendium/pf2e.bestiary-ability-glossary-srd"),
+        ("compendium/bestiary-effects","compendium/pf2e.bestiary-effects"),
+        ("compendium/bestiary-family-ability-glossary","compendium/pf2e.bestiary-family-ability-glossary"),
+        ("compendium/boons-and-curses","compendium/pf2e.boons-and-curses"),
+        ("compendium/campaign-effects","compendium/pf2e.campaign-effects"),
+        ("compendium/classes","compendium/pf2e.classes"),
+        ("compendium/classfeatures","compendium/pf2e.classfeatures"),
+        ("compendium/conditions","compendium/pf2e.conditionitems"),
+        ("compendium/criticaldeck","compendium/pf2e.criticaldeck"),
+        ("compendium/deities","compendium/pf2e.deities"),
+        ("compendium/equipment-effects","compendium/pf2e.equipment-effects"),
+        ("compendium/equipment","compendium/pf2e.equipment-srd"),
+        ("compendium/familiar-abilities","compendium/pf2e.familiar-abilities"),
+        ("compendium/feat-effects","compendium/pf2e.feat-effects"),
+        ("compendium/feats","compendium/pf2e.feats-srd"),
+        ("compendium/hazards","compendium/pf2e.hazards"),
+        ("compendium/heritages","compendium/pf2e.heritages"),
+        ("compendium/iconics","compendium/pf2e.iconics"),
+        ("compendium/journals","compendium/pf2e.journals"),
+        ("compendium/kingmaker-features","compendium/pf2e.kingmaker-features"),
+        ("compendium/other-effects","compendium/pf2e.other-effects"),
+        ("compendium/paizo-pregens","compendium/pf2e.paizo-pregens"),
+        ("compendium/macros","compendium/pf2e.pf2e-macros"),
+        ("compendium/rollable-tables","compendium/pf2e.rollable-tables"),
+        ("compendium/spell-effects","compendium/pf2e.spell-effects"),
+        ("compendium/spells","compendium/pf2e.spells-srd"),
+        ("compendium/vehicles","compendium/pf2e.vehicles")
+    ]
 
-    if en_old_extracted is None or en_extracted is None or pl_extracted is None:
-        logging.error("Unable to proceed due to missing data.")
-        return
+    for en_name, pl_name in en_to_pl_file_pairs:
+        file_sets.append(
+            (
+                core_en_old_directory + en_name + ".json",
+                core_en_directory + en_name + ".json",
+                core_pl_directory + pl_name + ".json"
+            )
+        )
 
-    update_localization()    
 
-    # Log the results
-    logging.info("Update Complete")
-    logging.info(f"Number of renamed keys (transfered): {changed_keys_count}")
-    for old_key, new_key in renamed_keys:
-        logging.info(f"  {old_key} -> {new_key}")
-
-    logging.info(f"Number of outdated records: {outdated_records_count}")
-    for key in outdated_keys:
-        logging.info(f"  {key}")
-
-    logging.info(f"Number of new keys added: {new_keys_count}")
-    for key in new_keys:
-        logging.info(f"  {key}")
-
-    logging.info(f"Number of obsolete keys deleted: {removed_keys_count}")
-    for key in removed_keys:
-        logging.info(f"  {key}")
-        
-    # Validate that PL data has all and only the keys present in EN data
-    validation_errors = validate_keys_match()
-    if validation_errors:
-        for error in validation_errors:
-            logging.error(error)
-        logging.error("Validation failed, the keys in English and Polish files do not match.")
-    else:
-        logging.info("Validation successful, all keys match.")
-
-    save_file_to_directory('pl', rebuild_nested_json(pl_extracted))
+    for en_old, en, pl in file_sets:
+        updater = LocalizationUpdater(en_old, en, pl)
+        updater.process()
 
 if __name__ == "__main__":
     main()

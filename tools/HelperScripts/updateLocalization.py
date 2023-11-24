@@ -215,7 +215,7 @@ class LocalizationUpdater:
         for key in self.removed_keys:
             logging.info(f"    {key}")
 
-        logging.info(f"  Number of renamed keys (transfered): {len(self.renamed_keys)}")
+        logging.info(f"  Number of renamed keys (transferred): {len(self.renamed_keys)}")
         for old_key, new_key in self.renamed_keys:
             logging.info(f"    {old_key} -> {new_key}")
 

@@ -17,8 +17,6 @@ class LocalizationUpdater:
     en_path = ""
     pl_path = ""
 
-    is_file_translated = False
-
     # data containers
     en_old_extracted = {}
     en_extracted = {}
@@ -132,9 +130,6 @@ class LocalizationUpdater:
         # Reverse mapping for unique values only
         old_value_to_key = {value: key for key, value in self.en_old_extracted.items() if value in unique_old_values}
         new_value_to_key = {value: key for key, value in self.en_extracted.items() if value in unique_new_values}
-        
-        if self.en_old_extracted != self.pl_extracted:
-            self.is_file_translated = True
 
         for new_key, new_value in tqdm(self.en_extracted.items(), desc=f"Processing new keys in {os.path.basename(self.pl_path)}"):
             
@@ -163,14 +158,8 @@ class LocalizationUpdater:
                     self.outdated_keys.append(new_key)
             # if value does not exist in translation, add it
             elif new_key not in self.pl_extracted:
-                # if file translation has started, add en empty record for clarity
-                if self.is_file_translated:
-                    self.pl_extracted[new_key] = ""
-                    self.new_keys.append(new_key)
-                # else update the non-translated localization
-                else:
-                    self.pl_extracted[new_key] = new_value
-                    self.new_keys.append(new_key)
+                self.pl_extracted[new_key] = new_value
+                self.new_keys.append(new_key)
 
         # remove obsolete keys
         for old_key in tqdm(list(self.en_old_extracted.keys()), desc=f"Deleting obsolete keys in {os.path.basename(self.pl_path)}", leave=False):

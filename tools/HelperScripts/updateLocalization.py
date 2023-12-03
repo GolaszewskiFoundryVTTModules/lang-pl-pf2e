@@ -154,7 +154,7 @@ class LocalizationUpdater:
                     self.updated_eng_keys.append(new_key)
                 # else mark it as outdated that needs manual correction
                 else:
-                    self.pl_extracted[new_key] += " (OUTDATED!)"
+                    #self.pl_extracted[new_key] += " (OUTDATED!)"
                     self.outdated_keys.append(new_key)
             # if value does not exist in translation, add it
             elif new_key not in self.pl_extracted:

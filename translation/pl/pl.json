@@ -397,7 +397,7 @@
                     "Cantrips": "Sztuczki",
                     "DC": "ST Zaklęć",
                     "InvalidProficiency": "Niewłaściwa",
-                    "Label": "Rzucanie Zaklęć",
+                    "Label": "Modyfikatory Ataku i ST Zaklęć",
                     "MagicItemTypesLabel": "Typy Magicznych Przedmiotów",
                     "Rituals": "Rytuały",
                     "TraditionSpellcasting": "Rzucanie Zaklęć: {tradition}",
@@ -427,6 +427,7 @@
                     "True": "Zawsze"
                 },
                 "Level": "Zagrożenie {level}",
+                "Plural": "Zagrożenia",
                 "Simple": "Proste",
                 "TitleEdit": "{name} (Tryb Edycji)"
             },
@@ -447,6 +448,9 @@
                         "ShiftClick": "[Shift-Kliknij] Zwiększ o 5",
                         "ControlClick": "[Control-Kliknij] Zwiększ o 10"
                     }
+                },
+                "Section": {
+                    "WeaponsAndShields": "Bronie i Tarcze"
                 },
                 "TotalBulk": "Całkowite Naręcze: {bulk}"
             },
@@ -614,8 +618,6 @@
         "AreaTypeLine": "Linia",
         "AreaTypeSquare": "Kwadrat",
         "ArmorArmorLabel": "Premia KP",
-        "ArmorArmorTypeLabel": "Kategoria",
-        "ArmorBaseLabel": "Baza",
         "ArmorCheckLabel": "Kara do Testów",
         "ArmorCheckPenalty": "Kara Pancerza do Testów",
         "ArmorClassBase": "Podstawowa Klasa Pancerza 10",
@@ -698,7 +700,6 @@
         "ArmorTypeHeavy": "Pancerz Ciężki",
         "ArmorTypeLight": "Pancerz Lekki",
         "ArmorTypeMedium": "Pancerz Średni",
-        "ArmorTypeShield": "Tarcza",
         "ArmorTypeUnarmored": "Bez Pancerza",
         "AttackEffectConstrict": "Przyduszenie",
         "AttackEffectGrab": "Chwycenie",
@@ -770,7 +771,6 @@
             "AndLabel": "Wszystkie z powyższych",
             "OrLabel": "Dowolne z powyższych"
         },
-        "BrowserFilterConsumable": "Rodzaj Przedmiotu Zużywalnego",
         "BrowserFilterInventoryTypes": "Rodzaje Wyposażenia",
         "BrowserFilterLevels": "Pozimy",
         "BrowserFilterProficiencyRequirements": "Wymagania Biegłości",
@@ -787,12 +787,7 @@
         "BrowserSettingsSaved": "Zapisano ustawienia",
         "BrowserSortyByLabel": "Sortuj po",
         "BrowserWarnPackNotLoaded": "Nie udało się załadować kompendium \"{pack}\".",
-        "BulkCapacityLabel": "Pojemność w Naręczach",
-        "BulkLabel": "Naręcze Noszone",
         "BulkMaxLabel": "Maksymalne Naręcze",
-        "BulkReductionLabel": "Zmniejsz Naręcze o",
-        "BulkShortLabel": "Naręcze",
-        "BulkTypeLight": "Lekkie",
         "CapacityBarLabel": "Pojemność",
         "CarryType": {
             "dropped": "Upuszczono",
@@ -877,7 +872,6 @@
         },
         "CircumstanceBonusShortLabel": "Sytuacyjna",
         "CircumstanceBonusTitle": "Premia Sytuacyjna",
-        "Class": "Klasa",
         "ClassFeatLevels": "Poziomy Atutów Klasowych",
         "ClassFeatures": "Atrybuty Klasowe",
         "ClassHP": "PŻ Klasy",
@@ -909,11 +903,7 @@
             "TabAction": "Akcje",
             "TabBestiary": "Bestiariusz",
             "TabCampaign": "Kampania",
-            "TabEquipment": "Przedmioty",
             "TabFeat": "Atuty/Atrybuty",
-            "TabHazard": "Zagrożenia",
-            "TabSettings": "Ustawienia",
-            "TabSpell": "Zaklęcia",
             "TakeLabel": "Weź Przedmiot",
             "Title": "Przeglądarka Kompendium"
         },
@@ -986,23 +976,14 @@
         "ConditionTypeUnnoticed": "Niezauważony",
         "ConditionTypeWounded": "Ranny",
         "ConditionsLabel": "Efekty Statusowe",
-        "ConsumableAutoDestroyLabel": "Zniszcz Automatycznie",
-        "ConsumableAutoUseLabel": "Użyj Automatycznie",
-        "ConsumableChargesLabel": "Ładunki",
-        "ConsumableCompatibleLabel": "Kompatybilny",
-        "ConsumableConsumeLabel": "Przy Użyciu",
-        "ConsumableHeading": "Przedmiot Zużywalny",
-        "ConsumableIncompatibleLabel": "Niekompatybilny",
         "ConsumableMessage": {
             "UseExhausted": "Wyczerpano {name}",
             "UseMulti": "Używa {name}, pozostało {current}",
             "UseSingle": "Używa {name}"
         },
-        "ConsumableNoChargesLabel": "Brak Ładunków",
         "ConsumableTypeAmmo": "Amunicja",
         "ConsumableTypeDrug": "Używka",
         "ConsumableTypeElixir": "Eliksir",
-        "ConsumableTypeLabel": "Rodzaj Przedmiotu Zużywalnego",
         "ConsumableTypeMutagen": "Mutagen",
         "ConsumableTypeOil": "Olej",
         "ConsumableTypeOther": "Inny",
@@ -1013,7 +994,6 @@
         "ConsumableTypeTalisman": "Talizman",
         "ConsumableTypeTool": "Narzędzie",
         "ConsumableTypeWand": "Różdżka",
-        "ConsumableUseLabel": "Użyj",
         "CoreSkillsHeader": "Umiejętności Główne",
         "Counteractable": "Dostępne Przeciwdziałanie",
         "CraftDCTitle": "ST",
@@ -1139,7 +1119,7 @@
                     "critical-hits": "trafienia krytyczne",
                     "curse": "klątwa",
                     "damage-from-spells": "obrażenia od zaklęć",
-                    "darkwood": "mrokodrzew",
+                    "dawnsilver": "srebroświt",
                     "dazzled": "zamroczony",
                     "deafened": "ogłuchły",
                     "death-effects": "efekty śmierci",
@@ -1147,6 +1127,7 @@
                     "djezet": "dżezet",
                     "doomed": "zgubiony",
                     "drained": "wyniszczony",
+                    "duskwood": "zmrokodrzew",
                     "emotion": "emocje",
                     "energy": "energia",
                     "enfeebled": "osłabiony",
@@ -1170,7 +1151,6 @@
                     "magical": "magiczność",
                     "metal": "metal",
                     "misfortune-effects": "efekty nieszczęścia",
-                    "mithral": "mithral",
                     "non-magical": "niemagiczność",
                     "nonlethal": "niezabójczość",
                     "nonlethal-attacks": "ataki niezabójcze",
@@ -1439,9 +1419,6 @@
             "RevealName": "Odkryj Nazwę",
             "XP": "PD"
         },
-        "EquipmentEquippedLabel": "Wyekwipowano",
-        "EquippedBulkLabel": "Naręcze Wyekwipowane",
-        "EquippedSameBulkValue": "Jak Noszone",
         "ErrorMessage": {
             "CantCreateEffectMacro": "Efekt makro przełączania musi pochodzić z kompendium lub przedmiotu świata.",
             "CantImportTooHighVersion": "Nie udało się zaimportować {sourceName}: wersja schematu ({sourceSchemaVersion}) jest wyższa niż wersja schematu świata ({worldSchemaVersion}).",
@@ -1522,7 +1499,7 @@
         "Foot": "Stóp",
         "FormulaKnownTitle": "Znane Receptury",
         "FormulaListEmpty": "Pusta (przeciągnij tu przedmiot/recepturę)",
-        "FormulaPlaceholder": "Receptura",
+        "Formula": "Receptura",
         "FormulaSheet": {
             "DescriptionUnknown": "Ta receptura jest całkowicie wypełniona rysunkami małych ludków, plamami z nieznanego płynu, bezsensownymi rymami pisanymi dziecięcym pismem i innymi pozornie przypadkowymi oznaczeniami. Musiała zostać sporządzona przez gobliny i nie ma dla ciebie sensu.<hr><strong>Uwaga</strong> Ta receptura odnosi się do brakującego lub nieprawidłowego przedmiotu.",
             "NameEmpty": "Pusta Receptura",
@@ -1583,12 +1560,6 @@
             "TypeUnsupported": "Błąd w szablonie @Template: typ {type} nie jest dozwolony",
             "WidthNoNumber": "Błąd w szablonie @Template: szerokość {width} nie jest liczbą"
         },
-        "InventoryArmorHeader": "Pancerz",
-        "InventoryBackpackHeader": "Pojemniki",
-        "InventoryConsumablesHeader": "Przedmioty Zużywalne",
-        "InventoryEquipmentHeader": "Wyposażenie",
-        "InventoryTreasureHeader": "Skarby",
-        "InventoryWeaponsHeader": "Bronie",
         "InventroyBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:d6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "InvestedLabel": "Zaangażowano",
         "Item": {
@@ -1596,7 +1567,6 @@
                 "InvalidDrop": "W tym miejscu nie może zostać upuszczony obiekt typu {badType} (musi być to obiekt typu {goodType})"
             },
             "Action": {
-                "CategoryLabel": "Kategoria",
                 "Category": {
                     "None": "Brak",
                     "Defensive": "Defensywna",
@@ -1604,6 +1574,7 @@
                     "Offensive": "Ofensywna",
                     "Familiar": "Zdolność Chowańca"
                 },
+                "Plural": "Zdolności",
                 "SelfAppliedEffect": {
                     "Applied": "Zaaplikowano {effect}.",
                     "Delete": "Usuń Referencję",
@@ -1637,6 +1608,7 @@
                     "Title": "Po ustawieniu, zapobiega usunięciu statusu tak długo jak trwa przypadłość"
                 },
                 "OnsetLabel": "Rozwój",
+                "OnsetActive": "Rozwój Aktywny",
                 "SaveLabel": "ST Rzutu Obronnego",
                 "Stage": "{stage} Stadium",
                 "StageLabel": "Stadium"
@@ -1691,12 +1663,9 @@
                     "light-barding": "Kropierz Lekki"
                 },
                 "Specific": {
-                    "Hint": "Oznaczenie tego pancerza jako <i>określonego pancerza magicznego</i> oznacza, że robi on więcej niż wskazują na to same jej runy i kompozycja materiałowa. Nazwa, poziom, rzadkość i cena nie będą już nadpisywane na podstawie drogocennych materiałów i run użytych w procesie jej tworzenia. Te materiały i runy będą jednakowoż użyte jako podstawa do późniejszego obliczania korekt poziomu, rzadkości i ceny przy dalszych ulepszeniach.",
+                    "Hint": "Oznaczenie tego pancerza jako <i>określonego pancerza magicznego</i> oznacza, że robi on więcej niż wskazują na to same jego runy i kompozycja materiałowa. Nazwa, poziom, rzadkość i cena nie będą już nadpisywane na podstawie drogocennych materiałów i run użytych w procesie jego tworzenia. Te materiały i runy będą jednakowoż użyte jako podstawa do późniejszego obliczania korekt poziomu, rzadkości i ceny przy dalszych ulepszeniach.",
                     "Label": "Określony Pancerz Magiczny"
                 }
-            },
-            "Backpack": {
-                "StowingLabel": "Jest Noszonym Pojemnikiem?"
             },
             "CampaignFeature": {
                 "CampaignLabel": "Kampania"
@@ -1723,6 +1692,23 @@
                     "RollDamage": "Rzut Obrażeń"
                 }
             },
+            "Consumable": {
+                "Plural": "Przedmioty Zużywalne",
+                "Uses": {
+                    "AutoDestroy": "Auto-niszczenie",
+                    "Label": "Użycia",
+                    "None": "Brak Dostępnych Użyć",
+                    "Use": "Użyj"
+                }
+            },
+            "Container": {
+                "Bulk": {
+                    "Capacity": "Pojemność Naręcza",
+                    "Ignored": "Ignorowane Naręcze"
+                },
+                "Plural": "Pojemniki",
+                "Stowing": "Jest Pojemnikiem Przechowawczym?"
+            },
             "CreationDialog": {
                 "Categories": {
                     "Character": "Tworzenie Postaci",
@@ -1734,7 +1720,6 @@
                 "Alignment": "Charakter",
                 "Category": {
                     "Hint": "Zamiast określonego bóstwa można podążać za panteonami bóstw oraz filozofiami i spirytualizmem niezwiązanymi z żadnym bóstwem. Klerycy i Czempioni muszą podążać za konkretnym bóstwem lub panteonem.",
-                    "Label": "Kategoria",
                     "Pantheon": "Panteon",
                     "Philosophy": "Filozofia"
                 },
@@ -2120,6 +2105,7 @@
                 "LevelLabel": "Atut",
                 "LevelN": "Atut {level}",
                 "OnlyLevel1": "Musi zostać wybrany na poziomie 1",
+                "Plural": "Atuty",
                 "TakeMultiple": {
                     "Five": "Do 5 razy",
                     "Four": "Do 4 razy",
@@ -2156,14 +2142,23 @@
                 "Hint": "Dodatkowe tagi poza cechami, które mogą pomóc zaklasyfikować przedmiot"
             },
             "Physical": {
+                "Base": "Baza",
                 "Broken": "Uszkodzono",
                 "BrokenThreshold": {
                     "Label": "Próg Uszkodzenia",
                     "ShortLabel": "PU"
                 },
                 "Bulk": {
-                    "Light": "L",
-                    "Negligible": "—",
+                    "HeldOrStowed": "Naręcze (Trzymane/Przechowywane)",
+                    "Label": "Naręcze",
+                    "Light": {
+                        "Label": "Lekkie",
+                        "ShortLabel": "L"
+                    },
+                    "Negligible": {
+                        "Label": "Znikome",
+                        "ShortLabel": "—"
+                    },
                     "NLight": "L{light}",
                     "WithLight": "{bulk}, L{light}"
                 },
@@ -2176,6 +2171,8 @@
                 "GeneratedName": {
                     "FourProperties": "{base} {property1} {property2} {property3} {property4}",
                     "FourPropertiesMaterial": "{base} {property1} {property2} {property3} {property4} ({material})",
+                    "Fundamental2": "{base} {fundamental2}",
+                    "Fundamental2Material": "{base} {fundamental2} ({material})",
                     "Hint": "To nazwa broni bazowej. Dla większości broni ta nazwa jest wykorzystywana d generowania pełniejszej nazwy broni uwzględniającej kompozycję materiałową lub/i runy . Nadanie broni własnej nazwy lub oznaczenie jej jako \"określonej broni\" sprawi, że nazwa ta nie będzie się pojawiać.",
                     "Material": "{base} ({material})",
                     "OneProperty": "{base} {property1}",
@@ -2183,9 +2180,6 @@
                     "Potency": "{base} +{potency}",
                     "PotencyFourProperties": "{base} {property1} {property2} {property3} {property4} +{potency}",
                     "PotencyFourPropertiesMaterial": "{base} {property1} {property2} {property3} {property4} +{potency} ({material})",
-                    "PotencyMaterial": "{base} +{potency} ({material})",
-                    "PotencyOneProperty": "{base} {property1} +{potency}",
-                    "PotencyOnePropertyMaterial": "{base} {property1} +{potency} ({material})",
                     "PotencyFundamental2": "{base} {fundamental2} +{potency}",
                     "PotencyFundamental2FourProperties": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency}",
                     "PotencyFundamental2FourPropertiesMaterial": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency} ({material})",
@@ -2196,12 +2190,15 @@
                     "PotencyFundamental2ThreePropertiesMaterial": "{base} {fundamental2} {property1} {property2} {property3} +{potency} ({material})",
                     "PotencyFundamental2TwoProperties": "{base} {fundamental2} {property1} {property2} +{potency}",
                     "PotencyFundamental2TwoPropertiesMaterial": "{base} {fundamental2} {property1} {property2} +{potency} ({material})",
+                    "PotencyMaterial": "{base} +{potency} ({material})",
+                    "PotencyOneProperty": "{base} {property1} +{potency}",
+                    "PotencyOnePropertyMaterial": "{base} {property1} +{potency} ({material})",
                     "PotencyThreeProperties": "{base} {property1} {property2} {property3} +{potency}",
                     "PotencyThreePropertiesMaterial": "{base} {property1} {property2} {property3} +{potency} ({material})",
                     "PotencyTwoProperties": "{base} {property1} {property2} +{potency}",
                     "PotencyTwoPropertiesMaterial": "{base} {property1} {property2} +{potency} ({material})",
-                    "Fundamental2": "{base} {fundamental2}",
-                    "Fundamental2Material": "{base} {fundamental2} ({material})",
+                    "Reinforcing": "{base} {reinforcing}",
+                    "ReinforcingMaterial": "{base} {reinforcing} ({material})",
                     "ThreeProperties": "{base} {property1} {property2} {property3}",
                     "ThreePropertiesMaterial": "{base} {property1} {property2} {property3} ({material})",
                     "TwoProperties": "{base} {property1} {property2}",
@@ -2216,6 +2213,9 @@
                 "OtherTags": {
                     "Hint": "Te tagi oznaczają klasyfikację zasad PF2E której brak dokładnej definicji lub statusu ale nadal są uwzględniane w zasadach. Niektóre mogą zostać dodane automatycznie poprzez obecność innych właściwości.",
                     "Label": "Inne Tagi"
+                },
+                "MaterialRunes": {
+                    "Label": "Drogocenne Materiały i Runy"
                 },
                 "PriceLabel": "Cena: {price}",
                 "Usage": {
@@ -2256,6 +2256,7 @@
             "Plural": "Przedmioty",
             "RefreshFromCompendium": {
                 "Label": "Odśwież",
+                "SourceNotFound": "W kompendium nie odnaleziono źródła dla \"{item}\" (ID źródłowe: {sourceId}).",
                 "Tooltip": {
                     "Disabled": "Przedmiot nie może zostać odświeżony: zawiera dane zapisane w momencie dodawania go do aktora.",
                     "Enabled": "Odśwież dane tego przedmiotu wykorzystując najnowsze zawarte w jego kompendium źródłowym."
@@ -2275,6 +2276,41 @@
                 "RegenerateSlug": "(Re)generuj Slug",
                 "Remove": "Usuń Element Zasad",
                 "Tab": "Zasady"
+            },
+            "Shield": {
+                "Base": {
+                    "buckler": "Puklerz",
+                    "casters-targe": "Tarża Maga",
+                    "dart-shield": "Tarcza Strzałkowa",
+                    "fortress-shield": "Tarcza Fortecy",
+                    "gauntlet-buckler": "Puklerz Karwaszowy",
+                    "harnessed-shield": "Tarcza z Mocowaniem",
+                    "heavy-rondache": "Ciężki Rondasz",
+                    "hide-shield": "Tarcza Skórzana",
+                    "klar": "Klar",
+                    "meteor-shield": "Tarcza Meteoru",
+                    "razor-disc": "Brzytewny Dysk",
+                    "salvo-shield": "Tarcza Salwowa",
+                    "steel-shield": "Tarcza Stalowa",
+                    "swordstealer-shield": "Tarcza Mieczokrada",
+                    "tower-shield": "Pawęż",
+                    "wooden-shield": "Tarcza Drewniana"
+                },
+                "Rune": {
+                    "Reinforcing": {
+                        "Greater": "Większa Wzmocnienia",
+                        "Label": "Runa Wzmocnienia",
+                        "Lesser": "Mniejsza Wzmocnienia",
+                        "Major": "Główna Wzmocnienia",
+                        "Minor": "Drobna Wzmocnienia",
+                        "Moderate": "Umiarkowana Wzmocnienia",
+                        "Supreme": "Wyjątkowa Wzmocnienia"
+                    }
+                },
+                "Specific": {
+                    "Hint": "Oznaczanie tej tarczy jako <i>określonej tarczy magicznej</i> oznacza, że robi ona więcej niż wskazują na to same jej runy i kompozycja materiałowa. Nazwa, poziom, rzadkość i cena nie będą już nadpisywane na podstawie drogocennych materiałów i run użytych w procesie jej tworzenia. Te materiały i runy będą jednakowoż użyte jako podstawa do późniejszego obliczania korekt poziomu, rzadkości i ceny przy dalszych ulepszeniach.",
+                    "Label": "Określona Tarcza Magiczna"
+                }
             },
             "SidebarSummary": "Podsumowanie - {type}",
             "Spell": {
@@ -2298,6 +2334,7 @@
                     "Clear": "Wyczyść Umieszczone Szablony",
                     "Place": "Umieść {area}"
                 },
+                "Plural": "Zaklęcia",
                 "Rank": {
                     "Label": "Rank",
                     "Ordinal": "{rank} Rank",
@@ -2665,7 +2702,6 @@
         "NPCWeaponAttackLabel": "Modyfikator Ataku",
         "NPCWeaponDamageLabel": "Formuła Obrażeń",
         "Nationality": "Narodowość",
-        "NegligibleOption": "Znikome",
         "NewLabel": "Nowe",
         "NewLoreSkill": "Nowa Umiejętność",
         "NewPlaceholders": {
@@ -2746,12 +2782,14 @@
         "PreciousMaterialAdamantineDescription": "Wydobywany ze skał, które spadły z nieba, adamantyt jest jednym z najtwardszych znanych metali. Ma błyszczący, czarny wygląd i jest ceniony za niesamowitą odporność i zdolność do utrzymania niewiarygodnie ostrych krawędzi.",
         "PreciousMaterialColdIron": "Zimne Żelazo",
         "PreciousMaterialColdIronDescription": "Broń wykonana z zimnego żelaza jest zabójcza zarówno dla diabłów, jak i feyów. Zimne żelazo wygląda jak zwykłe żelazo, ale jest wydobywane ze szczególnie czystych żył i kształtowane z niewielką ilością ciepła lub wręcz na zimno. Ten proces jest niezwykle trudny, zwłaszcza w przypadku wysokiej jakości przedmiotów z zimnego żelaza.",
-        "PreciousMaterialDarkwood": "Mrokodrzew",
-        "PreciousMaterialDarkwoodDescription": "Mrokodrzew to bardzo lekkie drewno występujące głównie w starych lasach w południowo-środkowym Avistanie; jest ciemny jak heban, ale ma lekko fioletowy odcień. Naręcze przedmiotu wykonanego z mrokodrzewu jest zmniejszane o 1 (zmniejszane do lekkiego Naręcza, jeśli jego normalne Naręcze wynosi 1, bez zmian w wypadku przedmiotu, który normalnie ma lekkie Naręcze). Cena przedmiotu wykonanego z tego materiału jest oparta na normalnym Naręczu przedmiotu, a nie jego zmniejszonym Naręczu wynikającym z wykonania z mrokodrzewu, ale należy ją zmniejszyć przed dokonaniem dalszych korekt Naręcza wynikających ze zmian rozmiaru przedmiotu.",
+        "PreciousMaterialDawnsilver": "Srebroświt",
+        "PreciousMaterialDawnsilverDescription": "Srebroświt słynie ze swojej lekkości, trwałości i skuteczności przeciwko wielu stworom, w tym czartom i lykantropom. Ma taki sam połysk jak srebro, ale nieco jaśniejszy odcień. Srebroświtowe bronie i pancerze są traktowane tak, jakby były srebrne na rzecz zadawania obrażeń stworzeniom podatnym na srebro. Metalowy przedmiot wykonany ze srebroświtu jest lżejszy niż ten wykonany z żelaza lub stali: Naręcze przedmiotu jest zmniejszane o 1 (do lekkiego Naręcza, jeśli jego normalne Naręcze wynosi 1, bez zmian w wypadku przedmiotu, który normalnie ma lekkie Naręcze). Cena przedmiotu wykonanego z tego materiału jest oparta na normalnym Naręczu przedmiotu, a nie jego zmniejszonym Naręczu wynikającym z wykonania ze srebroświtu, ale należy ją zmniejszyć przed dokonaniem dalszych korekt Naręcza wynikających ze zmian rozmiaru przedmiotu.",
         "PreciousMaterialDjezet": "Dżezet",
         "PreciousMaterialDjezetDescription": "Ten rdzawoczerwony metal jest płynny w temperaturze pokojowej, co sprawia, że jego obróbka jest wyzwaniem nawet dla najbardziej wykwalifikowanych metalurgów, oraz przysparza mu w niektórych miejscach miano „chyżego żelaza”. Dżezet jest również niezwykle wrażliwy na magię, nawet w swojej stałej formie stopu, nadającej się do obróbki. Świeci, gdy jest celem magii, a przedmioty wykonane ze stopów dżezetu błyszczą szkarłatnymi prążkami, przez co niektórzy kowale nazywają go „żelazem tygrysim”. Przedmioty wykonane ze stopów dżezetu, które staną się obiektem działania zaklęć, wykazują świecące czerwone znaki, które utrzymują się przez 1 rundę lub czas trwania zaklęcia, w zależności od tego, który z tych okresów jest dłuższy. Jedna masa dżezetu wystarcza do destylacji 2 dawek dżezetu.",
         "PreciousMaterialDragonhide": "Smocza Skóra",
         "PreciousMaterialDragonhideDescription": "Skóra i łuski smoka mogą być użyte do wytworzenia dowolnego przedmiotu, zwykle wykonywanego ze zwykłej skóry lub futra. Smocza skóra występuje w różnych odcieniach, od niebieskiego do połyskliwie złotego, w zależności od smoka, z którego pochodzi. Ze względu na wytrzymałość łusek, może być również używana do tworzenia pancerzy zwykle wykonanych z metalowych płyt (takich jak napierśnik, zbroja półpłytowa i zbroja płytowa), umożliwiając wykonanie takiej zbroi bez metalu. Przedmioty ze smoczej skóry są niewrażliwe na jeden rodzaj obrażeń, w zależności od rodzaju smoka.",
+        "PreciousMaterialDuskwood": "Zmrokodrzew",
+        "PreciousMaterialDuskwoodDescription": "Zmrokodrzew to bardzo lekkie drewno występujące głównie w starych lasach w południowo-środkowym Avistanie; jest ciemny jak heban, ale ma lekko fioletowy odcień. Naręcze przedmiotu wykonanego ze zmrokodrzewu jest zmniejszane o 1 (do lekkiego Naręcza, jeśli jego normalne Naręcze wynosi 1, bez zmian w wypadku przedmiotu, który normalnie ma lekkie Naręcze). Cena przedmiotu wykonanego z tego materiału jest oparta na normalnym Naręczu przedmiotu, a nie jego zmniejszonym Naręczu wynikającym z wykonania ze zmrokodrzewu, ale należy ją zmniejszyć przed dokonaniem dalszych korekt Naręcza wynikających ze zmian rozmiaru przedmiotu.",
         "PreciousMaterialGradeLabel": "Jakość Drogocennego Materiału",
         "PreciousMaterialGrisantianPelt": "Futro Grizantyjskie",
         "PreciousMaterialGrisantianPeltDescription": "Ta nadnaturalnie wytrzymała zwierzęca skóra jest złota i błyszczy w promieniach słońca. Można jej użyć do wytworzenia dowolnego przedmiotu, zwykle wykonywanego z tkaniny, skóry lub futra. Materiał ten jest niewrażliwy na ogień, a jego Twardość jest podwojona przeciw obrażeniom kłutym i ciętym. Z jednego stworzenia można pozyskać do 4 Naręczy futra grizantyjskiego (zwykle wystarcza to na 4 pancerze standardowej jakości lub 2 pancerze wysokiej jakości).",
@@ -2762,8 +2800,6 @@
         "PreciousMaterialLowGrade": "Niskiej Jakości",
         "PreciousMaterialKeepStone": "Twierdzokamień",
         "PreciousMaterialKeepStoneDescription": "Ukoronowaniem tysiącleci rozwoju metalurgii i inżynierii Highhelm jest piękny stop zwany kwierdzokamieniem. Pomimo swojej nazwy do produkcji twierdzokamienia nie używa się kamienia. Dzięki zastosowaniu ściśle strzeżonego procesu stapiania adamantytu i ołowiu, najwięksi rzemieślnicy z Highhelm byli w stanie stworzyć materiał, który wyglądem bardziej przypomina marmur niż metal. Twierdzokamień jest tylko nieznacznie słabszy od samego adamantytu, ale ma niesamowitą zdolność zakłócania magii. Każde zaklęcie lub magiczny efekt wycelowany w surowy twierdzokamień musi zdać test płaski ST 5, w przeciwnym razie jego efekt przemija.",
-        "PreciousMaterialMithral": "Mithral",
-        "PreciousMaterialMithralDescription": "Mithral słynie ze swojej lekkości, trwałości i skuteczności przeciwko wielu stworom, w tym czartom i lykantropom. Ma taki sam połysk jak srebro, ale nieco jaśniejszy odcień. Mithralowe bronie i pancerze są traktowane tak, jakby były srebrne na rzecz zadawania obrażeń stworzeniom podatnym na srebro. Metalowy przedmiot wykonany z mithralu jest lżejszy niż ten wykonany z żelaza lub stali: Naręcze przedmiotu jest zmniejszane o 1 (zmniejszane do lekkiego Naręcza, jeśli jego normalne Naręcze wynosi 1, bez zmian w wypadku przedmiotu, który normalnie ma lekkie Naręcze). Cena przedmiotu wykonanego z tego materiału jest oparta na normalnym Naręczu przedmiotu, a nie jego zmniejszonym Naręczu wynikającym z wykonania z mithralu, ale należy ją zmniejszyć przed dokonaniem dalszych korekt Naręcza wynikających ze zmian rozmiaru przedmiotu.",
         "PreciousMaterialNoqual": "Noqual",
         "PreciousMaterialNoqualDescription": "Lekki i wytrzymały, noqual wykazuje również potężną odporność na magię. Efektem ubocznym tej odporności jest to, że wytwarzanie magicznej broni z noqualu wymaga skomplikowanych i kosztownych zabiegów alchemicznych. Kevoth-Kul, Czarny Suweren Numerii, opracował stop noqualu z zimnym żelazem znany jako suwerenna stal, aby złagodzić tę właściwość. Krystaliczny wygląd metalu może na pozór sugerować, że jest kruchy, ale ten bladozielony materiał można obrabiać podobnie jak żelazo. Przedmioty wykonane z noqualu posiadają premię sytuacyjną +4 do rzutów obronnych przed magią wykonywanych przez sam przedmiot i zapewniają tę samą premię do rzutów obronnych wykonywanych przez właściciela w celu ochrony tego przedmiotu przed magią (na przykład przed zaklęciem Rdzewnego Uścisku).",
         "PreciousMaterialOrichalcum": "Orichalcum",
@@ -3349,7 +3385,6 @@
         "SpellFlexibleAvailable": "Elastyczne: {value} / {max}",
         "SpellFlexibleLabel": "Elastyczne",
         "SpellFocusLabel": "Skupienia",
-        "SpellLabelPlural": "Zaklęcia",
         "SpellLevelBase": "Bazowy Krąg: {level}",
         "SpellLevelHeightened": "Wywyższenie: +{heightened}",
         "SpellLevelLabel": "Krąg Zaklęcia",
@@ -3439,7 +3474,6 @@
         "TabDescriptionLabel": "Opis",
         "TabDetailsLabel": "Szczegóły",
         "TabEffectsLabel": "Efekty",
-        "TabFeatsLabel": "Atuty",
         "TabInventoryLabel": "Ekwipunek",
         "TabManageTabsLabel": "Zarządzaj Kartami",
         "TabPathfinderSociety": "Stowarzyszenie Poszukiwaczy",
@@ -3835,7 +3869,7 @@
         "TraitDescriptionImpulse": "Podstawowe akcje magiczne, których używają kinetycy, nazywane są impulsami. Możesz użyć impulsu tylko wtedy, gdy twoja aura kinetyczna jest aktywna i kształtuje ten żywioł, i tylko jeśli masz wolną rękę, aby ukierunkować przepływ żywiołów. Cecha impulsu oznacza, że akcja ma cechę koncentracji, chyba że inna zdolność to zmieni. Jeśli impuls pozwala ci wybrać element, możesz wybrać dowolny element, który obecnie kształtujesz, a impuls zyskuje cechę tego elementu.",
         "TraitDescriptionIncapacitation": "Zdolność z tą cechą może całkowicie wykluczyć postać z walki lub nawet ją zabić, a jej użycie jest tym trudniejsze im potężniejsza jest postać. Jeśli zaklęcie ma cechę obezwładnienia, każda istota o poziomie dwukrotnie wyższym niż krąg zaklęcia traktuje wynik swojego testu na uniknięcie obezwładnienia przez to zaklęcie jako jeden stopień sukcesu wyżej, lub wynik jakiegokolwiek testu wykonanego przez rzucającego zaklęcie w celu obezwładnienia jej jako jeden stopień sukcesu niżej. Jeśli jakiś inny efekt ma cechę obezwładnienia, istota poziomu wyższego niż przedmiot, istota lub zagrożenie generujące efekt, uzyskuje te same korzyści.",
         "TraitDescriptionIncarnate": "Zaklęcie z cechą wcielenia jest tematycznie podobne do zaklęć przywołujących istoty, ale nie przywołuje sługusa z cechą przywołania. Zamiast tego, kiedy skończysz Rzucać Zaklęcie, pojawiające się wcielenie wykonuje swoją akcję Przybycia. Na koniec twojej następnej tury wcielenie może wykonać Krok, Bieg lub wykonać akcję wynikającą z innego typu ruchu, który posiada (takiego jak Wspinaczka lub Rycie), a następnie wykonuje swoją akcję Odejścia. W tym momencie zaklęcie się kończy. Nazwy określonych akcji Przybycia i Odejścia są odpowiednio wymienione kursywą po słowach „Przybycie” lub „Odejście”, wraz z wszelkimi ich cechami. Przywołane wcielenie działa w twoim interesie, kieruje efekty swoich działań jak najkorzystniej dla ciebie i twoich sojuszników oraz może słuchać twoich próśb, ale ostatecznie podejmuje własne decyzje. Jeśli zaklęcie wskazuje, że wcielenie podejmuje decyzję, MG określa jego zachowanie. Wcielenie może nawet stać się bardziej skłonne do robienia dokładnie tego, czego sobie życzysz, na przestrzeni wielu przywołań. Wcielenie nie jest w pełni istotą. Nie może wykonywać żadnych innych akcji, ani nie może być celem Ciosów, zaklęć ani innych efektów, chyba że byłyby w stanie obrać za cel lub zakończyć efekt zaklęcia (jak rozproszenie magii). Ma rozmiar na rzecz określania rozmieszczenia jego oraz jego efektów, ale nie blokuje ruchu. Jeśli jest to potrzebne, jego efekty wykorzystują twój ST zaklęć i twój modyfikator rzutu na atak zaklęciem.",
-        "TraitDescriptionIncorporeal": "Istota lub przedmiot z cechą niematerialności nie ma fizycznej formy. Może przechodzić przez litą materię, w tym ściany. Będąc wewnątrz obiektu, niematerialna istota nie może postrzegać, atakować ani wchodzić w interakcje z niczym co na zewnątrz obiektu, a jeśli rozpocznie swoją turę w obiekcie, zostaje spowolniona 1. Materialne istoty mogą przejść przez niematerialną istotę, ale nie mogą zakończyć swojego ruchu w jej przestrzeni. Istota niematerialna nie może wykonywać testów opartych na Sile przeciwko materialnym istotom lub obiektom – tylko przeciwko niematerialnym – chyba że obiekty te posiadają runę właściwości duchowego dotyku. Podobnie istota materialna nie może wykonywać testów opartych na Sile przeciwko istotom lub przedmiotom niematerialnym. Istoty niematerialne zwykle są odporne na efekty lub statusy wymagające ciała fizycznego, takie jak choroby, trucizny i obrażenia precyzyjne. Zwykle mają odporność na wszystkie obrażenia (z wyjątkiem obrażeń od mocy i obrażeń od Ciosów zadanych z użyciem runy właściwości duchowego dotyku), a ich odporność na obrażenia niemagiczne jest podwojona.",
+        "TraitDescriptionIncorporeal": "Istota lub przedmiot z cechą niematerialności nie ma fizycznej formy. Może przechodzić przez litą materię, w tym ściany. Będąc wewnątrz obiektu, niematerialna istota nie może postrzegać, atakować ani wchodzić w interakcje z niczym co na zewnątrz obiektu, a jeśli rozpocznie swoją turę w obiekcie, zostaje spowolniona 1. Materialne istoty mogą przejść przez niematerialną istotę, ale nie mogą zakończyć swojego ruchu w jej przestrzeni. Istota niematerialna nie może wykonywać testów opartych na Sile przeciwko materialnym istotom lub obiektom - tylko przeciwko niematerialnym - chyba że obiekty te posiadają runę właściwości duchowego dotyku. Podobnie istota materialna nie może wykonywać testów opartych na Sile przeciwko istotom lub przedmiotom niematerialnym. Istoty niematerialne zwykle są odporne na efekty lub statusy wymagające ciała fizycznego, takie jak choroby, trucizny i obrażenia precyzyjne. Zwykle mają odporność na wszystkie obrażenia (z wyjątkiem obrażeń od mocy i obrażeń od Ciosów zadanych z użyciem runy właściwości duchowego dotyku), a ich odporność na obrażenia niemagiczne jest podwojona.",
         "TraitDescriptionInfused": "Stworzyłeś przedmiot alchemiczny z cechą nasycenia przy użyciu nasyconych odczynników i ma on ograniczony czas przydatności do użycia zanim straci swoje właściwości. Wszelkie nietrwałe efekty nasyconych przedmiotów alchemicznych, z wyjątkiem powodowanych przez nie przypadłości, takich jak wolno działające trucizny, przestają działać, gdy ponownie wykonasz codzienne przygotowania.",
         "TraitDescriptionInfusion": "Akcje z cechą Infuzja dostosowują twoje impulsy kinetyczne. Akcji infuzji musisz użyć dokładnie przed akcją impulsu, którą chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji (włączając w to akcje darmowe i reakcje) innej niż akcja impulsu, tracisz wszystkie benefity wynikające z akcji infuzji. Wszelkie dodawane przez infuzję efekty stają się częścią akcji impulsu, nie akcji infuzji.",
         "TraitDescriptionIngested": "Ta trucizna jest aplikowana poprzez zjedzenie lub wypicie.",
@@ -3898,7 +3932,7 @@
         "TraitDescriptionOread": "Rodzaj dżinnoludźi wywodzących się od istot z Planu Ziemi.",
         "TraitDescriptionOverflow": "Potężny impulsy tymczasowo przeciążają energię twojej kinetycznej bramy. Kiedy użyjesz impulsu posiadającego cechę przesycenia, twoja kinetyczna aura deaktywuje się dopóki jej nie zrewitalizujesz (na ogół z pomocą Kształtowania Żywiołów). Wygaszanie twojego żywiołu jest niezwykle wyczerpujące, co sprawia, że możesz użyć tylko jednego przesycającego impulsu w rundzie, nawet jeśli reaktywujesz swoją kinetyczną bramę.",
         "TraitDescriptionParry": "Ta broń może zostać wykorzystana defensywnie, w celu blokowania ataków. Jeśli poziom twojej biegłości w posługiwaniu się nią wynosi wytrenowanie lub wyżej, dzierżąc ją możesz wykorzystać jedną akcję na przybranie defensywnej postawy, zyskując premię sytuacyjną +1 do twojej KP aż do początku twojej następnej tury.",
-        "TraitDescriptionPeachwood": "Bronie wykonane z brzoskwiniodrzewu oglądane pod promieniami słońca mienią się charakterystycznym kasztanowym refleksem. Brzoskwiniodrzew jest traktowany jak mrokodrzew na rzecz wszelkich odporności i podatności posiadanych przez nieumarłe istoty (pozwalając na przykład na ominięcie odporności jiang-shi). Ponadto, broń z brzoskwiniodrzewu pomija małą część odporności każdej nieumarłej istoty. Ciosy brzoskwiniodrzewiową bronią traktują odporności nieumarłych na obrażenia fizyczne jakby było 2 niższe w wypadku broni o standardowej jakości brzoskwiniodrzewu, lub o 4 w wypadku wysokiej jakości brzoskwiniodrzewu.",
+        "TraitDescriptionPeachwood": "Bronie wykonane z brzoskwiniodrzewu oglądane pod promieniami słońca mienią się charakterystycznym kasztanowym refleksem. Brzoskwiniodrzew jest traktowany jak zmrokodrzew na rzecz wszelkich odporności i podatności powiązanych ze zmrokodrzewem (pozwalając brzoskwiniodrzewowi na przykład na ominięcie odporności jiang-shi). Ponadto, broń z brzoskwiniodrzewu pomija małą część odporności każdej nieumarłej istoty. Ciosy brzoskwiniodrzewiową bronią traktują odporności nieumarłych na obrażenia fizyczne jakby było 2 niższe w wypadku broni o standardowej jakości brzoskwiniodrzewu, lub o 4 w wypadku wysokiej jakości brzoskwiniodrzewu.",
         "TraitDescriptionPlant": "Stworzenia będące powiązane z florą mają cechę roślinność. Są jednak odmienne od zwykłych roślin. Magiczne efekty z tą cechą wyczarowują roślinność lub materię roślinną, albo manipulują nią w jakiś sposób. Te, które manipulują roślinnością nie odnoszą efektu w obszarach pozbawionych roślinności.",
         "TraitDescriptionPoison": "Efekt z tą cechą aplikuje truciznę lub zadaje obrażenia od trucizny. Przedmiot z tą cechą jest trujący lub może powodować pewną przypadłość.",
         "TraitDescriptionPolymorph": "Efekty tego typu przekształcają cel do zupełnie nowej postaci. Cel nie może być pod wpływem więcej niż jednego efektu polimorfii jednocześnie. Jeśli wpadnie pod wpływ drugiego efektu polimorfii, efekt ten podejmuje próbę przeciwdziałania pierwszemu. Jeśli mu się powiedzie wchodzi on w życie, jeśli nie, zaklęcie nie wpływa na ten cel. Wszelkie Ciosy zapewniane przez efekt polimorfii są z natury magiczne. O ile nie wspomniano inaczej, efekty polimorfii nie pozwalają przybierać wyglądu konkretnej istoty, a jedynie wygląd bliżej nieokreślonego przedstawiciela danego przodkowstwa. Jeśli efekt polimorfii przeobrazi cię w postać bojową, wymienione dla tej postaci statystyki mogą być zmodyfikowane tylko przez premie sytuacyjne, premie statusu oraz wszelkie kary. O ile nie wspomniano inaczej, postać bojowa zapobiega rzucaniu zaklęć, mówieniu oraz używaniu większości akcji manipulacyjnych wymagających rąk. (Jeśli pojawią się wątpliwości czy daną akcję można wykorzystać w postaci bojowej, decyduje MG.) Twój ekwipunek jest wchłaniany przez twoją nową formę; zapewniane przez niego umiejętności stałe nadal funkcjonują, ale nie możesz aktywować żadnych przedmiotów.",
@@ -3951,7 +3985,7 @@
         "TraitDescriptionSocial": "Akcje i zdolności z cechą socjalną mogą być wykonane tylko, kiedy bojownik znajduje się w swojej tożsamości publicznej.",
         "TraitDescriptionSonic": "Efekt z cechą soniczność działa tylko wtedy, gdy jest w stanie wytworzyć dźwięk, co oznacza, że nie funkcjonuje na obszarze objętym zaklęciem ciszy czy w próżni. Jest to kategoria odrębna od Słuchowości, która określa, że efekt funkcjonuje tylko wtedy, kiedy cel może go usłyszeć. Efekt dźwiękowy może zadawać obrażenia dźwiękowe.",
         "TraitDescriptionSorcerer": "Oznacza zdolności z klasy Zaklinacza.",
-        "TraitDescriptionSpellgun": "Czarostrzał to cecha charakteryzująca przedmioty, które potrafią generować magiczne efekty i miotać nimi jak pociskami. Możesz wykonać wtedy zarówno rzut na atak czarem co rzut na atak dystansowy wykorzystując swoją biegłość w prostych broniach palnych. Czarostrzały posiadają inkrement zasięgu, który liczy się niezależnie od tego jakiego rodzaju rzut został wykonany. Mimo, że możesz wykorzystywać swój modyfikator dla prostej broni palnej, czarostrzał nie jest tak na prawdę bronią palną. Nie otrzymujesz obrażeń wynikających z Ciosu bronią palną, ani żadnych charakterystycznych dla broni korzyści takich jak krytyczna specjalizacja. Podobnie, nie możesz przeładować czarostrzału, przymocować do niego talizmanu, wykonywać ataku czarostrzałem w ramach akcji która zezwala ci na zadanie Ciosu z użyciem broni palnej i tak dalej.",
+        "TraitDescriptionSpellgun": "Czarostrzał to cecha charakteryzująca przedmioty, które potrafią generować magiczne efekty i miotać nimi jak pociskami. Możesz wykonać wtedy zarówno rzut na atak zaklęciem co rzut na atak dystansowy wykorzystując swoją biegłość w prostych broniach palnych. Czarostrzały posiadają inkrement zasięgu, który liczy się niezależnie od tego jakiego rodzaju rzut został wykonany. Mimo, że możesz wykorzystywać swój modyfikator dla prostej broni palnej, czarostrzał nie jest tak na prawdę bronią palną. Nie otrzymujesz obrażeń wynikających z Ciosu bronią palną, ani żadnych charakterystycznych dla broni korzyści takich jak krytyczna specjalizacja. Podobnie, nie możesz przeładować czarostrzału, przymocować do niego talizmanu, wykonywać ataku czarostrzałem w ramach akcji która zezwala ci na zadanie Ciosu z użyciem broni palnej i tak dalej.",
         "TraitDescriptionSpellheart": "Czarordzenie to permanentne przedmioty o działaniu podobnym do talizmanów. Mocujesz czarordzeń do ekwipunku za pomocą akcji Przymocuj Czarordzeń, która poza nazwą funkcjonuje identycznie co Przymocuj Talizman. Ograniczenie jednego przedmiotu mocowanego na przedmiot nadal obowiązuje - przedmiot może posiadać albo talizman albo czarordzeń, nigdy oba na raz. Rzucając sztuczkę za pomocą czarordzenia możesz użyć własnego modyfikatora ataku czarem lub ST czarów, jeśli są one większe. Wytwarzanie czarordzenia wymaga zaklęć, które dany czarordzeń ma rzucać. Przykładowo, większy pięćpiórowy wieniec wymaga powietrznego spaceru, podmuchu wichru i ściany wiatru.",
         "TraitDescriptionSpellshape": "Akcje z cechą czarokształtowania modyfikują właściwości twoich zaklęć. Akcji czarokształtowania musisz użyć bezpośrednio przed Rzuceniem Zaklęcia, które chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji niż Rzucanie Zaklęcia (w tym darmowych akcji i reakcji), tracisz korzyści z akcji czarokształtowania. Wszelkie dodatkowe efekty dodane przez akcję czarokształtowania liczą się jako część efektu zaklęcia, a nie samej akcji czarokształtowania.",
         "TraitDescriptionSplash": "Kiedy użyjesz broni miotanej z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Jeśli atak z cechą rozpryskowości spudłuje, trafi lub trafi krytycznie, wszystkie istoty w zasięgu 5 stóp od celu (włącznie z celem) odnoszą wymienione obrażenia rozpryskowe. Przy porażce (ale nie przy krytycznej porażce), główny cel ataku nadal odnosi obrażenia rozpryskowe. Obliczając obrażenia dla głównego celu zsumuj obrażenia rozpryskowe z głównymi obrażeniami ciosu zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie są zwielokrotniane przy trafieniu krytycznym.",
@@ -4132,9 +4166,10 @@
         "TraitHarrowCourt": "Dwór Marnota",
         "TraitHaunt": "Straszydło",
         "TraitHealing": "Leczenie",
-        "TraitHefty14": "Masywność 14",
+        "TraitHefty2": "Masywność 2",
         "TraitHeldOneHand": "Trzymanie jednorącz",
         "TraitHeldOneHandFreeStanding": "Trzymanie jednorącz lub rozmieszczenie",
+        "TraitHeldOneTwoHands": "Trzymanie Jednorącz lub Oburącz",
         "TraitHeldTwoHands": "Trzymanie Oburącz",
         "TraitHerald": "Herold",
         "TraitHeritage": "Dziedzictwo",
@@ -4395,7 +4430,7 @@
         "TraitShisk": "Shisk",
         "TraitShobhad": "Shobhad",
         "TraitShoony": "Shoony",
-        "TraitShove": "Popchnięcie",
+        "TraitShove": "Odepchnięcie",
         "TraitSiktempora": "Siktempora",
         "TraitSkeleton": "Szkielet",
         "TraitSkelm": "Skelm",
@@ -4624,14 +4659,14 @@
                 "shieldActive": "oraz tarcza {shield} otrzymują ",
                 "shieldInActive": "otrzymuje"
             },
-            "errorTargetToken": "Wybierz co najmniej jeden właściwy żeton.",
             "noDamageInfoForOutcome": "Brak informacji o obrażeniach dla wyniku {outcome}.",
             "shiftModifyDamageLabel": "Liczba",
-            "shiftModifyDamageTitle": "Dostosuj Obrażenia/Leczenie"
+            "shiftModifyDamageTitle": "Dostosuj Obrażenia",
+            "shiftModifyHealingTitle": "Dostosuj Leczenie"
         },
         "UUID": {
             "Label": "UUID",
-            "SourceId": "ID Źródła"
+            "SourceId": "Źródłowe ID"
         },
         "UnitPriceLabel": "Cena jednostkowa",
         "UnitedPaizoWorkers": {
@@ -4974,6 +5009,13 @@
                     "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:25]."
                 }
             },
+            "astral": {
+                "Name": "Astralna",
+                "Note": {
+                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[type:will|dc:26] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
+                    "Note": "Broń może krzywdzić istoty pozbawione fizycznej postaci. Broń astralna jest szczególnie skuteczna przeciw istotom niematerialnym, które niemal zawsze mają dedykowaną podatność na bronie astralne. Niematerialne istoty mogą dotykać, trzymać czy nawet dzierżyć bronie astralne (w przeciwieństwie do większości fizycznych obiektów)."
+                }
+            },
             "authorized": {
                 "Name": "Autoryzacji"
             },
@@ -5029,7 +5071,7 @@
                 "Name": "Dewastacji"
             },
             "disrupting": {
-                "Name": "Rozproszenia",
+                "Name": "Witalizująca",
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest też @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona1} do końca twojej następnej tury."
                 }
@@ -5069,7 +5111,7 @@
             },
             "ghostTouch": {
                 "Name": "Duchowego Dotyku",
-                "Note": "Broń może ranić istoty pozbawione fizycznej formy. Broń duchowego dotyku jest szczególnie efektywna w starciu z niematerialnymi istotami, które niemal zawsze mają dedykowaną podatność na bronie duchowego dotyku. Niematerialne istoty mogą dotykać, trzymać czy nawet używać broni duchowego dotyku (w przeciwieństwie do większości innych obiektów)."
+                "Note": "Broń może krzywdzić istoty pozbawione fizycznej formy. Broń duchowego dotyku jest szczególnie efektywna w starciu z niematerialnymi istotami, które niemal zawsze mają dedykowaną podatność na bronie duchowego dotyku. Niematerialne istoty mogą dotykać, trzymać czy nawet dzierżyć bronie duchowego dotyku (w przeciwieństwie do większości obiektów fizycznych)."
             },
             "giantKilling": {
                 "Name": "Zabójcy Gigantów",
@@ -5088,6 +5130,13 @@
                 "Name": "Większa Popielna",
                 "Note": {
                     "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:35]. Przy krytycznej porażce efekt dezorientacji trwa 1 minutę."
+                }
+            },
+            "greaterAstral": {
+                "Name": "Większa Astralna",
+                "Note": {
+                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[type:will|dc:36] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
+                    "Note": "Broń może krzywdzić istoty pozbawione fizycznej postaci. Broń astralna jest szczególnie skuteczna przeciw istotom niematerialnym, które niemal zawsze mają dedykowaną podatność na bronie astralne. Niematerialne istoty mogą dotykać, trzymać czy nawet dzierżyć bronie astralne (w przeciwieństwie do większości fizycznych obiektów)."
                 }
             },
             "greaterBloodbane": {
@@ -5114,9 +5163,9 @@
                 }
             },
             "greaterDisrupting": {
-                "Name": "Większa Rozproszenia",
+                "Name": "Większa Witalizująca",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota musi wykonać rzut obronny @Check[type:fortitude|dc:34|traits:incapacitation|name:Większa Runa Rozproszenia] z poniższym efektem. Jest to efekt obezwładniający.<br /><strong>Krytyczny Sukces</strong> Zostaje @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} do końca twojej następnej tury.<br /><strong>Sukces</strong> Zostaje @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 2} do końca twojej następnej tury.<br /><strong>Porażka</strong> Zostaje @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 3} do końca twojej następnej tury.<br /><strong>Krytyczna Porażka</strong> Zostaje zniszczona."
+                    "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} i @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiona 1} tak długo jak odnosi obrażenia trwałe od tej runy."
                 }
             },
             "greaterExtending": {
@@ -5277,7 +5326,7 @@
                 "Name": "Chyżości"
             },
             "spellStoring": {
-                "Name": "Przechowywania Czarów"
+                "Name": "Przechowywania Zaklęć"
             },
             "swarming": {
                 "Name": "Roju"
@@ -5340,7 +5389,6 @@
         "WeaponSplashDamageLabel": "Obrażenia Rozpryskowe",
         "WeaponStrikeLabel": "Cios",
         "WeaponTypeAdvanced": "Broń Zaawansowana",
-        "WeaponTypeLabel": "Kategoria",
         "WeaponTypeMartial": "Broń Wojskowa",
         "WeaponTypeSimple": "Broń Prosta",
         "WeaponTypeSpecial": "Inne Bronie",
@@ -5788,6 +5836,7 @@
             "kit": "Zestaw",
             "lore": "Umiejętność Obeznania",
             "melee": "Atak BN",
+            "shield": "Tarcza",
             "spell": "Zaklęcie",
             "spellcastingEntry": "Wpis o Rzucaniu Zaklęć",
             "treasure": "Skarb",

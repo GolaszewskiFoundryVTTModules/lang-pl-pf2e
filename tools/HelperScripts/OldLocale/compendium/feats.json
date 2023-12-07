@@ -4567,12 +4567,7 @@
     },
     "Channel Smite": {
       "name": "Channel Smite",
-      "description": "<p><strong>Cost</strong> Expend a <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell.</p>\n<hr />\n<p>You siphon the energies of life and death through a melee attack and into your foe. Make a melee Strike. On a hit, you cast the 1-action version of the expended spell to damage the target, in addition to the normal damage from your Strike. The target automatically gets a failure on its save (or a critical failure if your Strike was a critical hit). The spell doesn't have the manipulate trait when cast this way.</p>\n<p>The spell is expended with no effect if your Strike fails or hits a creature that isn't damaged by that energy type (such as if you hit a non-undead creature with a heal spell).</p>",
-      "prerequisites": [
-        {
-          "value": "harmful font or healing font"
-        }
-      ]
+      "description": "<p><strong>Cost</strong> Expend a <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell.</p>\n<hr />\n<p>You siphon the energies of life and death through a melee attack and into your foe. Make a melee Strike. On a hit, you cast the 1-action version of the expended spell to damage the target, in addition to the normal damage from your Strike. The target automatically gets a failure on its save (or a critical failure if your Strike was a critical hit). The spell doesn't have the manipulate trait when cast this way.</p>\n<p>The spell is expended with no effect if your Strike fails or hits a creature that isn't damaged by that energy type (such as if you hit a non-undead creature with a heal spell).</p>"
     },
     "Channel The Godmind": {
       "name": "Channel The Godmind",
@@ -7429,15 +7424,7 @@
         {
           "value": "tenets of good"
         }
-      ],
-      "rules": {
-        "0": {
-          "label": "Divine Heath (vs. diseases)"
-        },
-        "1": {
-          "text": "If you roll a success on a save against a disease, you get a critical success instead."
-        }
-      }
+      ]
     },
     "Divine Infusion": {
       "name": "Divine Infusion",
@@ -11332,12 +11319,7 @@
         {
           "value": "trained in Survival"
         }
-      ],
-      "rules": {
-        "0": {
-          "text": "While using Survival to Subsist, if you roll any result worse than a success, you get a success. You can also provide subsistence living for multiple creatures."
-        }
-      }
+      ]
     },
     "Force Fang": {
       "name": "Force Fang",
@@ -13536,7 +13518,7 @@
     },
     "Heart of the Kaiju": {
       "name": "Heart of the Kaiju",
-      "description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using @UUID[Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz]{Monstrosity Shape}, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-level spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (reach 20 feet), <strong>Damage</strong> @Damage[(3d12+20)[piercing]] damage;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claws (agile, reach 20 feet), <strong>Damage</strong> @Damage[(3d8+20)[slashing]] damage</p>\n<p><strong>Breath Weapon</strong> <span class=\"action-glyph\">2</span> (evocation, primal) Each creature in a @Template[type:cone|distance:60] takes [[/r {15d6}]]{15d6 damage} (of your chosen damage type), with a basic @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true] save against your spell DC. Once activated, your breath weapon can't be used again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
+      "description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using @UUID[Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz]{Monstrosity Shape}, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-level spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (reach 20 feet), <strong>Damage</strong> 3d12+20 piercing;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claws (agile, reach 20 feet), <strong>Damage</strong> 3d8+20 slashing;</p>\n<p><strong>Breath Weapon</strong> <span class=\"action-glyph\">2</span> (evocation, primal) Each creature in a @Template[type:cone|distance:60] takes @Damage[15d6[@item.flags.pf2e.rulesSelections.damageType]] damage (of your chosen damage type), with a basic @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true] save against your spell DC. Once activated, your breath weapon can't be used again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
       "prerequisites": [
         {
           "value": "Monstrosity Shape"
@@ -20905,12 +20887,12 @@
       "name": "Preemptive Reconfiguration",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would take bludgeoning, piercing, or slashing damage.</p>\n<hr />\n<p>Your body anticipates the blow. The impact area briefly reorganizes into a strengthened tissue lattice that blunts the attack. You gain resistance equal to your level to the triggering damage type, which applies against the triggering damage.</p>\n<p>If you have the @UUID[Compendium.pf2e.feats-srd.Item.Ewk7h9aQpKvy1RJo]{Crystalline Dust} feat, you can use Preemptive Reconfiguration without expending a usage of the reaction for the purpose of the feat's Frequency limit. Instead, the usage counts toward your number of Crystalline Dust uses per day, as if you had used that feat instead.</p>"
     },
-    "Premonition Of Avoidance": {
-      "name": "Premonition Of Avoidance",
+    "Premonition of Avoidance": {
+      "name": "Premonition of Avoidance",
       "description": "<p><strong>Trigger</strong> You are about to roll a saving throw against a hazard.</p>\n<hr />\n<p>Your deity grants you a moment's foresight. You gain a +2 circumstance bonus to the triggering saving throw.</p>"
     },
-    "Premonition Of Clarity": {
-      "name": "Premonition Of Clarity",
+    "Premonition of Clarity": {
+      "name": "Premonition of Clarity",
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You fail a saving throw against a mental effect.</p>\n<hr />\n<p>Your deity sends you a vision of faith to steel you against mental attacks. Reroll the triggering saving throw with a +2 circumstance bonus. You must use the second result, even if it's worse.</p>"
     },
     "Preparation": {
@@ -21607,7 +21589,7 @@
     },
     "Radiant Blade Master": {
       "name": "Radiant Blade Master",
-      "description": "<p>Your divine ally turns your chosen weapon into a paragon of its type.</p>\n<p>When you choose the weapon for your blade divine ally during your preparations, add the following property runes to the list of effects you can choose from: @UUID[Compendium.pf2e.equipment-srd.Item.DCPsilr8wbPXxTUv]{Dancing}, @UUID[Compendium.pf2e.equipment-srd.Item.oVrVzML63VFvVfKk]{Disrupting (Greater)}, and @UUID[Compendium.pf2e.equipment-srd.Item.hg3IogR8ue2IWwgS]{Keen}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.sCxi8lOH8tWQjLh0]{Effect: Blade Ally}</p>",
+      "description": "<p>Your divine ally turns your chosen weapon into a paragon of its type.</p>\n<p>When you choose the weapon for your blade divine ally during your preparations, add the following property runes to the list of effects you can choose from: @UUID[Compendium.pf2e.equipment-srd.Item.DCPsilr8wbPXxTUv]{Dancing}, @UUID[Compendium.pf2e.equipment-srd.Item.oVrVzML63VFvVfKk]{Vitalizing (Greater)}, and @UUID[Compendium.pf2e.equipment-srd.Item.hg3IogR8ue2IWwgS]{Keen}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.sCxi8lOH8tWQjLh0]{Effect: Blade Ally}</p>",
       "prerequisites": [
         {
           "value": "divine ally (blade)"
@@ -24400,7 +24382,7 @@
     },
     "Shared Avoidance": {
       "name": "Shared Avoidance",
-      "description": "<p>You can project your premonitions of danger to your allies. When you use @UUID[Compendium.pf2e.feats-srd.Item.KYl1rWFOHe0e6VqJ]{Premonition Of Avoidance}, allies within 20 feet of you who are rolling the same saving throw against the same hazard also gain a +2 circumstance bonus to their saving throws.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.svVczVV174KfJRDf]{Effect: Shared Avoidance}</p>",
+      "description": "<p>You can project your premonitions of danger to your allies. When you use @UUID[Compendium.pf2e.feats-srd.Item.KYl1rWFOHe0e6VqJ]{Premonition of Avoidance}, allies within 20 feet of you who are rolling the same saving throw against the same hazard also gain a +2 circumstance bonus to their saving throws.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.svVczVV174KfJRDf]{Effect: Shared Avoidance}</p>",
       "prerequisites": [
         {
           "value": "Premonition of Avoidance"
@@ -24409,7 +24391,7 @@
     },
     "Shared Clarity": {
       "name": "Shared Clarity",
-      "description": "<p>You can project your premonitions of clarity to your allies. When you use Premonition of Clarity, allies within 15 feet of you who failed the same saving throw against the same mental effect can also spend their reactions to reroll the failed saving throw with a +2 circumstance bonus.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.CUtvkuGSxq1raBIB]{Effect: Shared Clarity}</p>",
+      "description": "<p>You can project your premonitions of clarity to your allies. When you use @UUID[Compendium.pf2e.feats-srd.Item.2h8a6pKhXTXwpJjP]{Premonition of Clarity}, allies within 15 feet of you who failed the same saving throw against the same mental effect can also spend their reactions to reroll the failed saving throw with a +2 circumstance bonus.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.CUtvkuGSxq1raBIB]{Effect: Shared Clarity}</p>",
       "prerequisites": [
         {
           "value": "Premonition of Clarity"
@@ -25271,7 +25253,7 @@
     },
     "Slayer's Blessing": {
       "name": "Slayer's Blessing",
-      "description": "<p>You carry scraps of materials dangerous to undead and can apply them to your weapon. When you use Slayer's Strike, before making the Strike, you can choose either the <em>@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch}</em> property rune or a precious material: cold iron, darkwood, or silver. Any Strike that gets extra vitality damage from this use of Slayer's Strike also gets the benefits of the rune or counts as that material.</p>\n<p>At 14th level, add adamantine and mithral to the list of materials you can choose from.</p>",
+      "description": "<p>You carry scraps of materials dangerous to undead and can apply them to your weapon. When you use Slayer's Strike, before making the Strike, you can choose either the <em>@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch}</em> property rune or a precious material: cold iron, duskwood, or silver. Any Strike that gets extra vitality damage from this use of Slayer's Strike also gets the benefits of the rune or counts as that material.</p>\n<p>At 14th level, add adamantine and dawnsilver to the list of materials you can choose from.</p>",
       "prerequisites": [
         {
           "value": "Slayer's Strike"
@@ -26209,7 +26191,7 @@
     },
     "Spirit Guide Form": {
       "name": "Spirit Guide Form",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You fuse with your spirit guide, becoming a hybrid being with enhanced physical and spiritual power. This effect lasts 1 minute; you can end it early as a free action. During this time, you can't use any other actions granted by this archetype. You gain the following statistics and abilities, regardless of your type of spirit guide.</p>\n<ul>\n<li>You become incorporeal.</li>\n<li>You gain resistance 10 to all damage (except force, ghost touch, or positive; double resistance vs. non-magical).</li>\n<li>Darkvision.</li>\n<li>An unarmed melee attack of the same type as your spirit guide (either claws or jaws), which is the only attack you can Strike with. You're trained with this attack. Your attack modifier is +29 or your normal unarmed attack modifier, whichever is higher. You use the listed statistics for the unarmed attack type:</li>\n<li><strong>Claws</strong> (agile, backstabber, finesse) ?, Damage 3d6+5 slashing plus 1d6 force;</li>\n<li><strong>Jaws</strong> (forceful) ? Damage 3d10+5 piercing plus 1d6 force.</li>\n</ul>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You fuse with your spirit guide, becoming a hybrid being with enhanced physical and spiritual power. This effect lasts 1 minute; you can end it early as a free action. During this time, you can't use any other actions granted by this archetype. You gain the following statistics and abilities, regardless of your type of spirit guide.</p>\n<ul>\n<li>You become incorporeal.</li>\n<li>You gain resistance 10 to all damage (except force, ghost touch, or vitality; double resistance vs. non-magical).</li>\n<li>Darkvision.</li>\n<li>An unarmed melee attack of the same type as your spirit guide (either claws or jaws), which is the only attack you can Strike with. You're trained with this attack. Your attack modifier is +29 or your normal unarmed attack modifier, whichever is higher. You use the listed statistics for the unarmed attack type:\n<ul>\n<li><strong>Claws</strong> (agile, backstabber, finesse) <span class=\"action-glyph\">1</span>, <strong>Damage</strong> 3d6+5 slashing plus 1d6 force;</li>\n<li><strong>Jaws</strong> (forceful) <span class=\"action-glyph\">1</span>, <strong>Damage</strong> 3d10+5 piercing plus 1d6 force.</li>\n</ul>\n</li>\n</ul>",
       "prerequisites": [
         {
           "value": "Scion of Domora Dedication"
@@ -27678,7 +27660,7 @@
     },
     "Sustaining Steel": {
       "name": "Sustaining Steel",
-      "description": "<p><strong>Trigger</strong> You Cast a Spell using a spell slot.</p>\n<p><strong>Requirements</strong> You're in Arcane Cascade stance.</p>\n<hr />\n<p>You pull magic into your weapon, using its substance to transform the magic into restorative energy. You regain Hit Points equal to double the spell's level and roll to end any @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Void Damage} you have.</p>\n<p>If the spell was of the necromancy school, any persistent void damage you have ends automatically, and you can change the damage type from Arcane Cascade to vitality if you wish. (Vitality damage typically damages only undead or other creatures with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x]{Negative Healing}.)</p>",
+      "description": "<p><strong>Trigger</strong> You Cast a Spell using a spell slot.</p>\n<p><strong>Requirements</strong> You're in Arcane Cascade stance.</p>\n<hr />\n<p>You pull magic into your weapon, using its substance to transform the magic into restorative energy. You regain Hit Points equal to double the spell's level and roll to end any @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Void Damage} you have.</p>\n<p>If the spell was of the necromancy school, any persistent void damage you have ends automatically, and you can change the damage type from Arcane Cascade to vitality if you wish. (Vitality damage typically damages only undead or other creatures with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x]{Void Healing}.)</p>",
       "prerequisites": [
         {
           "value": "Arcane Cascade"
@@ -31787,7 +31769,7 @@
     },
     "Worm Form": {
       "name": "Worm Form",
-      "description": "<p>You take on the form of a purple worm or transform into a humanoid-worm hybrid, retaining your own head but with a worm's body, transforming into a Huge battle form. You must have enough space to expand into or the ability is lost. While in this form, you gain the animal trait. You can Dismiss the form.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>40 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +25, and you use the listed damage. Melee attacks are Strength based (for the purpose of the enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead.</li>\n<li>Athletics modifier of +30, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of monster you choose:</p>\n<p><strong>Purple Worm</strong> Speed 40 feet, burrow 30 feet, swim 20 feet</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (deadly 2d10, reach 15 feet), <strong>Damage</strong> 3d10+15 piercing</p>\n<p><strong>Melee</strong><span class=\"action-glyph\">1</span> stinger (agile, poison, reach 15 feet), <strong>Damage</strong> 2d12+15 piercing plus 2d6 persistent poison</p>\n<p><strong>Melee</strong><span class=\"action-glyph\">1</span> body (reach 15 feet) <strong>Damage</strong> 1d10+13 bludgeoning</p>\n<p><strong>Hybrid</strong> Speed 40 feet</p>\n<p><strong>Melee</strong><span class=\"action-glyph\">1 </span>stinger (agile, poison, reach 10 feet), <strong>Damage</strong> 2d12+15 piercing plus 1d6 persistent poison</p>\n<p><strong>Melee</strong><span class=\"action-glyph\">1</span> body (reach 10 feet), <strong>Damage</strong> 1d10+13 bludgeoning</p>\n<p><strong>Hybrid Caster</strong> You retain the ability to speak, and can cast spells as long as they don't have somatic or material components.</p>",
+      "description": "<p>You take on the form of a purple worm or transform into a humanoid-worm hybrid, retaining your own head but with a worm's body, transforming into a Huge battle form. You must have enough space to expand into or the ability is lost. While in this form, you gain the animal trait. You can Dismiss the form.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>40 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +25, and you use the listed damage. Melee attacks are Strength based (for the purpose of the enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead.</li>\n<li>Athletics modifier of +30, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of monster you choose:</p>\n<ul>\n<li><strong>Purple Worm</strong> Speed 40 feet, burrow 30 feet, swim 20 feet\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (deadly 2d10, reach 15 feet), <strong>Damage</strong> 3d10+15 piercing</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> stinger (agile, poison, reach 15 feet), <strong>Damage</strong> 2d12+15 piercing plus 2d6 persistent poison</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> body (reach 15 feet) <strong>Damage</strong> 1d10+13 bludgeoning</li>\n</ul>\n</li>\n<li><strong>Hybrid</strong> Speed 40 feet\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> stinger (agile, poison, reach 10 feet), <strong>Damage</strong> 2d12+15 piercing plus 1d6 persistent poison</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> body (reach 10 feet), <strong>Damage</strong> 1d10+13 bludgeoning</li>\n<li><strong>Hybrid Caster</strong> You retain the ability to speak, and can cast spells as long as they don't have somatic or material components.</li>\n</ul>\n</li>\n</ul>",
       "prerequisites": [
         {
           "value": "Worm Caller Dedication"

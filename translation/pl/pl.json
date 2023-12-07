@@ -333,7 +333,6 @@
                     "thalassic": "Thalasski",
                     "thassilonian": "Thassilonian",
                     "tien": "Tien",
-                    "undercommon": "Podwspólny",
                     "utopian": "Utopiański",
                     "vanara": "Vanara",
                     "varisian": "Varisiański",
@@ -683,6 +682,7 @@
         "ArmorPropertyRuneModerateDread": "Umiarkowanej Grozy",
         "ArmorPropertyRunePortable": "Przenośności",
         "ArmorPropertyRuneQuenching": "Wystudzania",
+        "ArmorPropertyRuneRaiment": "Odzienia",
         "ArmorPropertyRuneReady": "Gotowości",
         "ArmorPropertyRuneRockBraced": "Impregnacji Skałą",
         "ArmorPropertyRuneShadow": "Cieni",
@@ -734,6 +734,7 @@
         "Biography": "Biografia",
         "BiographyAllies": "Sojusznicy",
         "BiographyAppearance": "Wygląd",
+        "BiographyAnathema": "Anatemy",
         "BiographyAttitude": "Zachowanie",
         "BiographyBackStory": "Historia",
         "BiographyBeliefs": "Wartości",
@@ -742,6 +743,7 @@
         "BiographyCampaignNotesHeader": "Kampania",
         "BiographyCatchphrases": "Powiedzonka",
         "BiographyDislikes": "Awersje",
+        "BiographyEdicts": "Edykty",
         "BiographyEnemies": "Wrogowie",
         "BiographyLikes": "Upodobania",
         "BiographyOrganizations": "Organizacje",
@@ -1665,7 +1667,8 @@
                 "Specific": {
                     "Hint": "Oznaczenie tego pancerza jako <i>określonego pancerza magicznego</i> oznacza, że robi on więcej niż wskazują na to same jego runy i kompozycja materiałowa. Nazwa, poziom, rzadkość i cena nie będą już nadpisywane na podstawie drogocennych materiałów i run użytych w procesie jego tworzenia. Te materiały i runy będą jednakowoż użyte jako podstawa do późniejszego obliczania korekt poziomu, rzadkości i ceny przy dalszych ulepszeniach.",
                     "Label": "Określony Pancerz Magiczny"
-                }
+                },
+                "UnequippedHint": "Ten pancerz jest bardziej nieporęczny przez to, że nie jest wyposażony."
             },
             "CampaignFeature": {
                 "CampaignLabel": "Kampania"
@@ -1681,6 +1684,7 @@
                     },
                     "Dialog": {
                         "Add": "Dodaj Obrażenia Trwałe",
+                        "Invalid": "Formuła jest niewłaściwa.",
                         "Remove": "Usuń Obrażenia Trwałe",
                         "Title": "Obrażenia Trwałe ({actor})"
                     },
@@ -2090,6 +2094,7 @@
                         "value": "Stała Wartość"
                     }
                 },
+                "Plural": "Efekty",
                 "ShowTokenIcon": "Pokazać kolor żetonu?",
                 "Sustained": "Podtrzymanie",
                 "Unidentified": "Niezidentyfikowany?"
@@ -2149,7 +2154,7 @@
                     "ShortLabel": "PU"
                 },
                 "Bulk": {
-                    "HeldOrStowed": "Naręcze (Trzymane/Przechowywane)",
+                    "HeldOrStowed": "Naręcze (trzymane/przechowywane)",
                     "Label": "Naręcze",
                     "Light": {
                         "Label": "Lekkie",
@@ -2724,7 +2729,6 @@
             "Weapon": "Nowa Broń"
         },
         "NoAmmoLabel": "Brak Amunicji",
-        "NoStackGroup": "Nie grupuj",
         "NoneOption": "Brak",
         "OK": "OK",
         "OpenActionBrowserTitle": "Otwórz Przeglądarkę Akcji",
@@ -3421,7 +3425,7 @@
         "StackGroupBolts": "Bełty",
         "StackGroupCoins": "Monety",
         "StackGroupGems": "Klejnoty",
-        "StackGroupLabel": "Grupuj z",
+        "StackGroupLabel": "Grupuj",
         "StackGroupRations": "Racje",
         "StackGroupRounds10": "Pociski (10)",
         "StackGroupRounds5": "Pociski (5)",
@@ -3473,7 +3477,6 @@
         "TabCraftingLabel": "Rzemiosło",
         "TabDescriptionLabel": "Opis",
         "TabDetailsLabel": "Szczegóły",
-        "TabEffectsLabel": "Efekty",
         "TabInventoryLabel": "Ekwipunek",
         "TabManageTabsLabel": "Zarządzaj Kartami",
         "TabPathfinderSociety": "Stowarzyszenie Poszukiwaczy",
@@ -3499,7 +3502,7 @@
         "ToggleSignatureSpellTitle": "Przełącz Zaklęcie Popisowe",
         "ToggleSlotlessSpellLevelsTitle": "Przełącz widoczność kręgów zaklęć, dla których nie ma komórek",
         "ToggleSpellVisibilityTitle": "Przygotowanie Zaklęć",
-        "ToggleUnreadyStrikes": "Przełącz niewyekwipowaną broń",
+        "ToggleUnreadyStrikes": "Przełącz niewyposażoną broń",
         "ToggleWithName": "Przełącz: {property}",
         "TogglesLabel": "Przełączniki",
         "Token": {
@@ -5064,6 +5067,9 @@
             "dancing": {
                 "Name": "Tańca"
             },
+            "decaying": {
+                "Name": "Rozkładu"
+            },
             "deathdrinking": {
                 "Name": "Śmierciospijania"
             },
@@ -5161,6 +5167,9 @@
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym cel staje się @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 2} oraz @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} do końca twojej następnej tury. @UUID[Compendium.pf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]{Efekt: Runa Miażdżenia (Większa)}"
                 }
+            },
+            "greaterDecaying": {
+                "Name": "Większa Rozkładu"
             },
             "greaterDisrupting": {
                 "Name": "Większa Witalizująca",

@@ -310,7 +310,7 @@ def main():
     # Define sets of file paths
     file_sets = []
     
-    core_en_old_directory = "tools/HelperScripts/OldLocale/"
+    temp_en_old_directory = "tools/HelperScripts/OldLocale/"
     core_en_directory = "translation/en/"
     core_pl_directory = "translation/pl/"
     
@@ -358,7 +358,7 @@ def main():
     for en_name, pl_name in en_to_pl_file_pairs:
         file_sets.append(
             (
-                core_en_old_directory + en_name + ".json",
+                temp_en_old_directory + en_name + ".json",
                 core_en_directory + en_name + ".json",
                 core_pl_directory + pl_name + ".json"
             )
@@ -366,7 +366,7 @@ def main():
 
     if(update_source_data):
         # back up the old localization source
-        copy_files_and_directories(core_en_directory, core_en_old_directory)
+        copy_files_and_directories(core_en_directory, temp_en_old_directory)
 
         # update the source files
         print("Running the pack extractor...")
@@ -375,6 +375,9 @@ def main():
     for en_old, en, pl in file_sets:
         updater = LocalizationUpdater(en_old, en, pl)
         updater.process()
+    
+    # clean the OldLocale folder
+    shutil.rmtree(temp_en_old_directory)
 
 if __name__ == "__main__":
     main()

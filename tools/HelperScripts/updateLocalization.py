@@ -186,42 +186,52 @@ class LocalizationUpdater:
         return errors
 
     def process(self):
-        # Log the processed file name
-        logging.info(f"{os.path.basename(self.pl_path)}:")
 
         self.en_old_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_old_path))
         self.en_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_path))
         self.pl_extracted = self.extract_localization_dict(self.get_file_from_directory(self.pl_path))
 
         if self.en_old_extracted is None or self.en_extracted is None or self.pl_extracted is None:
+            logging.info(f"{os.path.basename(self.pl_path)}:")
             logging.error("Unable to proceed due to missing data.")
             return
 
+        
         # if self.pl_extracted == self.en_extracted:
         #     logging.info("Not translated and already up to date. Skipping!")
         #     return
 
         self.update_localization()
+        
+        # Check if any of the arrays is non-empty
+        if any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys]):
+            # Log the processed file name
+            logging.info(f"{os.path.basename(self.pl_path)}:")
 
-        logging.info(f"  Number of new keys added: {len(self.new_keys)}")
-        for key in self.new_keys:
-            logging.info(f"    {key}")
+            if self.new_keys:
+                logging.info(f"  Number of new keys added: {len(self.new_keys)}")
+                for key in self.new_keys:
+                    logging.info(f"    {key}")
 
-        logging.info(f"  Number of obsolete keys deleted: {len(self.removed_keys)}")
-        for key in self.removed_keys:
-            logging.info(f"    {key}")
+            if self.removed_keys:
+                logging.info(f"  Number of obsolete keys deleted: {len(self.removed_keys)}")
+                for key in self.removed_keys:
+                    logging.info(f"    {key}")
 
-        logging.info(f"  Number of renamed keys (transferred): {len(self.renamed_keys)}")
-        for old_key, new_key in self.renamed_keys:
-            logging.info(f"    {old_key} -> {new_key}")
+            if self.renamed_keys:
+                logging.info(f"  Number of renamed keys (transferred): {len(self.renamed_keys)}")
+                for old_key, new_key in self.renamed_keys:
+                    logging.info(f"    {old_key} -> {new_key}")
 
-        logging.info(f"  Number of english keys updated: {len(self.updated_eng_keys)}")
-        for key in self.updated_eng_keys:
-            logging.info(f"    {key}")
+            if self.updated_eng_keys:
+                logging.info(f"  Number of english keys updated: {len(self.updated_eng_keys)}")
+                for key in self.updated_eng_keys:
+                    logging.info(f"    {key}")
 
-        logging.info(f"  Number of outdated records: {len(self.outdated_keys)}")
-        for key in self.outdated_keys:
-            logging.info(f"    {key}")
+            if self.outdated_keys:
+                logging.info(f"  Number of outdated records: {len(self.outdated_keys)}")
+                for key in self.outdated_keys:
+                    logging.info(f"    {key}")
 
 
         validation_errors = self.validate_keys_match()

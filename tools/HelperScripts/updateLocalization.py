@@ -12,28 +12,24 @@ import argparse
 
 class LocalizationUpdater:
     
-    # filepaths
-    en_old_path = ""
-    en_path = ""
-    pl_path = ""
-
-    # data containers
-    en_old_extracted = {}
-    en_extracted = {}
-    pl_extracted = {}
-
-    # key operation logs
-    new_keys = []
-    removed_keys = []
-    renamed_keys = []
-    outdated_keys = []
-    updated_eng_keys = []
-
     def __init__(self, en_old_path, en_path, pl_path):
         # filepaths
         self.en_old_path = en_old_path
         self.en_path = en_path
         self.pl_path = pl_path
+
+        # data containers
+        self.en_old_extracted = {}
+        self.en_extracted = {}
+        self.pl_extracted = {}
+
+        # key operation logs
+        self.new_keys = []
+        self.removed_keys = []
+        self.renamed_keys = []
+        self.outdated_keys = []
+        self.updated_eng_keys = []
+
 
     def get_file_from_directory(self, filepath):
         try:

@@ -532,30 +532,15 @@
     },
     "Effect: Darkvision Elixir (Greater)": {
       "name": "Effect: Darkvision Elixir (Greater)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.bz8Y8bVUe7QfBk9g]{Darkvision Elixir (Greater)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>Gain Darkvision</li>\n</ul>",
-      "rules": {
-        "0": {
-          "label": "Darkvision"
-        }
-      }
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.bz8Y8bVUe7QfBk9g]{Darkvision Elixir (Greater)}</p>\n<p>You gain Darkvision</p>"
     },
     "Effect: Darkvision Elixir (Lesser)": {
       "name": "Effect: Darkvision Elixir (Lesser)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.88pGCHV0uKMskTVO]{Darkvision Elixir (Lesser)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>Gain Darkvision</li>\n</ul>",
-      "rules": {
-        "0": {
-          "label": "Darkvision"
-        }
-      }
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.88pGCHV0uKMskTVO]{Darkvision Elixir (Lesser)}</p>\n<p>You gain Darkvision.</p>"
     },
     "Effect: Darkvision Elixir (Moderate)": {
       "name": "Effect: Darkvision Elixir (Moderate)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]{Darkvision Elixir (Moderate)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>Gain Darkvision</li>\n</ul>",
-      "rules": {
-        "0": {
-          "label": "Darkvision"
-        }
-      }
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]{Darkvision Elixir (Moderate)}</p>\n<p>You gain Darkvision</p>"
     },
     "Effect: Deadweight Mutagen (Greater)": {
       "name": "Effect: Deadweight Mutagen (Greater)",
@@ -919,6 +904,14 @@
       "name": "Effect: Forge Warden",
       "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.NoTUhKkiTY5BQU5T]{Forge Warden}</p>\n<p>You and any adjacent allies have fire resistance 5 while you have the shield raised.</p>"
     },
+    "Effect: Forgefather's Seal": {
+      "name": "Effect: Forgefather's Seal",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.jpQcKMmP1I5674P7]{Forgefather's Seal}</p>\n<p>While wearing armor etched with a <em>Forgefather's seal</em>, you gain fire resistance 40. You ignore the armor's check penalty and Speed penalty (if any); if the armor is light or medium, increase its item bonus to AC by 1.</p>"
+    },
+    "Effect: Forgefather's Seal (Stalwart Sacrifice)": {
+      "name": "Effect: Forgefather's Seal (Stalwart Sacrifice)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.jpQcKMmP1I5674P7]{Forgefather's Seal}</p>\n<p>The chosen creatures also gain a +4 status bonus to AC and saving throws, and fast healing 15.</p>"
+    },
     "Effect: Frost Breath": {
       "name": "Effect: Frost Breath",
       "description": "<p>You gain resistance 5 to cold.</p>"
@@ -938,6 +931,54 @@
     "Effect: Frost Vial (Moderate)": {
       "name": "Effect: Frost Vial (Moderate)",
       "description": "<p>The creature takes a -10-foot status penalty to its Speeds until the end of its next turn.</p>"
+    },
+    "Effect: Fury Cocktail (Greater)": {
+      "name": "Effect: Fury Cocktail (Greater)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.MUL0ABe8h7Ugc1Jt]{Fury Cocktail (Greater)}</p>\n<p>Implemented Effects:</p>\n<ul>\n<li>+4 item bonus to melee attack rolls</li>\n<li>-1 penalty to AC</li>\n<li>-2 penalty to Reflex saves</li>\n<li>Animalistic: choice of Jaw or Claw strike</li>\n<li>Double: resistance 5 to physical damage</li>\n<li>Mournful: resistance 10 to void or vitality depending on negative healing</li>\n<li>Skeptical: +3 item bonus to saves against magic</li>\n<li>Titanic: size change to Large, Clumsy 1, and change of reach (+5 for Medium and Small, +10 for Tiny)</li>\n<li>Wyrmhide: resistance 10 to acid, cold, electricity, fire, and poison.</li>\n</ul>",
+      "rules": {
+        "10": {
+          "choices": {
+            "0": {
+              "label": "Tiny"
+            },
+            "1": {
+              "label": "Small / Medium"
+            }
+          }
+        }
+      }
+    },
+    "Effect: Fury Cocktail (Lesser)": {
+      "name": "Effect: Fury Cocktail (Lesser)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.BeX3ForBrKTQD4T5]{Fury Cocktail (Lesser)}</p>\n<p>Implemented Effects:</p>\n<ul>\n<li>+2 item bonus to melee attack rolls</li>\n<li>-1 penalty to AC</li>\n<li>-2 penalty to Reflex saves</li>\n<li>Animalistic: choice of Jaw or Claw strike</li>\n<li>Double: resistance 1 to physical damage</li>\n<li>Mournful: resistance 1 to void or vitality depending on negative healing</li>\n<li>Skeptical: +1 item bonus to saves against magic</li>\n<li>Titanic: size change to Large, Clumsy 1, and change of reach (+5 for Medium and Small, +10 for Tiny)</li>\n<li>Wyrmhide: resistance 1 to acid, cold, electricity, fire, and poison.</li>\n</ul>",
+      "rules": {
+        "10": {
+          "choices": {
+            "0": {
+              "label": "Tiny"
+            },
+            "1": {
+              "label": "Small / Medium"
+            }
+          }
+        }
+      }
+    },
+    "Effect: Fury Cocktail (Moderate)": {
+      "name": "Effect: Fury Cocktail (Moderate)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.JmxKmYQPQmUlauO4]{Fury Cocktail (Moderate)}</p>\n<p>Implemented Effects:</p>\n<ul>\n<li>+3 item bonus to melee attack rolls</li>\n<li>-1 penalty to AC</li>\n<li>-2 penalty to Reflex saves</li>\n<li>Animalistic: choice of Jaw or Claw strike</li>\n<li>Double: resistance 2 to physical damage</li>\n<li>Mournful: resistance 5 to void or vitality depending on negative healing</li>\n<li>Skeptical: +2 item bonus to saves against magic</li>\n<li>Titanic: size change to Large, Clumsy 1, and change of reach (+5 for Medium and Small, +10 for Tiny)</li>\n<li>Wyrmhide: resistance 5 to acid, cold, electricity, fire, and poison.</li>\n</ul>",
+      "rules": {
+        "10": {
+          "choices": {
+            "0": {
+              "label": "Tiny"
+            },
+            "1": {
+              "label": "Small / Medium"
+            }
+          }
+        }
+      }
     },
     "Effect: Galvanic Chew": {
       "name": "Effect: Galvanic Chew",
@@ -1932,6 +1973,10 @@
     "Effect: Shielding Salve": {
       "name": "Effect: Shielding Salve",
       "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.EWujUs3YmlBu2jhm]{Shielding Salve}</p>\n<hr />\n<p>Auomatically applied effects:</p>\n<ul>\n<li>gain a +1 circumstance bonus to AC</li>\n</ul>"
+    },
+    "Effect: Shimmering Dust": {
+      "name": "Effect: Shimmering Dust",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.ZiD7kDxU4KEkO6XH]{Shimmering Dust}</p>\n<p>The creature sheds dim light in a 20-foot radius and takes a –2 circumstance penalty to Stealth.</p>"
     },
     "Effect: Shining Ammunition": {
       "name": "Effect: Shining Ammunition",

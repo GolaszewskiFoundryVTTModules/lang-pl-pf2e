@@ -54,6 +54,9 @@
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
         },
+        "spell->Abyssal Pact": {
+          "primarycheck": "Religion (expert; you must be a demon)"
+        },
         "strike-melee->Claw": {
           "name": "Claw"
         },
@@ -294,7 +297,9 @@
         "spell->Commune with Nature": {
           "name": "Commune with Nature",
           "cost": "rare incense worth a total value of 60 gp",
-          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>"
+          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Nature"
         },
         "spell->Cloudkill": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60]\nCloudkill"
@@ -307,6 +312,10 @@
         },
         "spell->Hallucinatory Terrain": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]\nHallucinatory Terrain"
+        },
+        "spell->Plant Growth": {
+          "primarycheck": "Nature (expert)",
+          "secondarycheck": "Farming Lore or Survival"
         },
         "spell->Entangle": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangle"
@@ -386,7 +395,9 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Control Weather (No Secondary Caster Required)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
         },
         "spell->Endure Elements (Self Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5esP2GVzvxWsMgaX]\nEndure Elements (Self Only)",
@@ -466,12 +477,16 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Control Weather (No Secondary Caster Required)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
         },
         "spell->Commune with Nature": {
           "name": "Commune with Nature",
           "cost": "rare incense worth a total value of 60 gp",
-          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>"
+          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Nature"
         },
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
@@ -629,6 +644,10 @@
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
         },
+        "spell->Atone": {
+          "primarycheck": "Nature or Religion (expert)",
+          "secondarycheck": "Nature or Religion (whichever is used for the primary check)"
+        },
         "spell->Gaseous Form": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]\nGaseous Form"
         },
@@ -636,7 +655,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]\nComprehend Language"
         },
         "spell->Consecrate": {
-          "cost": "rare incense and offerings worth a total value of 20 gp × the spell level"
+          "cost": "rare incense and offerings worth a total value of 20 gp × the spell level",
+          "primarycheck": "Religion",
+          "secondarycheck": "Crafting, Performance"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
@@ -998,6 +1019,9 @@
         "spell->Touch of Idiocy (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy (At Will)"
         },
+        "spell->Div Pact": {
+          "primarycheck": "Religion (expert; you must be a div)"
+        },
         "spell->Illusory Object (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]\nIllusory Object (At Will)"
         },
@@ -1228,7 +1252,9 @@
         "spell->Commune with Nature": {
           "name": "Commune with Nature",
           "cost": "rare incense worth a total value of 60 gp",
-          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>"
+          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Nature"
         },
         "spell->Cloudkill": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60]\nCloudkill"
@@ -1241,6 +1267,10 @@
         },
         "spell->Hallucinatory Terrain": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]\nHallucinatory Terrain"
+        },
+        "spell->Plant Growth": {
+          "primarycheck": "Nature (expert)",
+          "secondarycheck": "Farming Lore or Survival"
         },
         "spell->Speak with Plants (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (At Will)"
@@ -1327,7 +1357,9 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Control Weather (No Secondary Caster Required)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
         },
         "spell->Endure Elements (Self Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5esP2GVzvxWsMgaX]\nEndure Elements (Self Only)",
@@ -1411,7 +1443,9 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Control Weather (No Secondary Caster Required)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (No Secondary Caster Required)",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
         },
         "spell->Discern Location": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
@@ -1422,7 +1456,9 @@
         "spell->Commune with Nature": {
           "name": "Commune with Nature",
           "cost": "rare incense worth a total value of 60 gp",
-          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>"
+          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Nature"
         },
         "spell->True Seeing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
@@ -1586,7 +1622,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
         },
         "spell->Legend Lore": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore",
+          "primarycheck": "Occultism (master)",
+          "secondarycheck": "Performance, Society"
         },
         "spell->True Seeing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
@@ -1597,6 +1635,10 @@
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
         },
+        "spell->Atone": {
+          "primarycheck": "Nature or Religion (expert)",
+          "secondarycheck": "Nature or Religion (whichever is used for the primary check)"
+        },
         "spell->Gaseous Form": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]\nGaseous Form"
         },
@@ -1604,7 +1646,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]\nComprehend Language"
         },
         "spell->Consecrate": {
-          "cost": "rare incense and offerings worth a total value of 20 gp × the spell level"
+          "cost": "rare incense and offerings worth a total value of 20 gp × the spell level",
+          "primarycheck": "Religion",
+          "secondarycheck": "Crafting, Performance"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
@@ -2524,6 +2568,10 @@
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
         },
+        "spell->Control Weather": {
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
+        },
         "spell->Baleful Polymorph": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
         },
@@ -2714,6 +2762,9 @@
         "spell->Dimension Door": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
         },
+        "spell->Abyssal Pact": {
+          "primarycheck": "Religion (expert; you must be a demon)"
+        },
         "strike-melee->Flaming Sword": {
           "name": "Flaming Sword"
         },
@@ -2820,6 +2871,9 @@
         "spell->Shadow Walk": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.rxvS7EMJ7qmexAyA]\nShadow Walk",
           "target": "you and up to 9 willing creatures touched"
+        },
+        "spell->Owb Pact": {
+          "primarycheck": "Occultism (expert)"
         },
         "spell->Darkness (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]\nDarkness (At Will)"
@@ -3474,6 +3528,8 @@
         },
         "spell->Geas (Doesn't Require Secondary Casters And Can Target a Willing Creature of Any Level)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Q690d3mw3TUrKX7E]\nGeas (Doesn't Require Secondary Casters And Can Target a Willing Creature of Any Level)",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Society or Legal Lore",
           "target": "1 creature of a level no greater than double the geas ritual's level"
         },
         "spell->Obscuring Mist (At Will)": {
@@ -3547,11 +3603,13 @@
           "name": "Divine Innate Spells"
         },
         "spell->Control Weather (Doesn't Require Secondary Casters)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (Doesn't Require Secondary Casters)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]\nControl Weather (Doesn't Require Secondary Casters)",
+          "primarycheck": "Nature (master)"
         },
         "spell->Planar Binding (Doesn't Require Secondary Casters)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding (Doesn't Require Secondary Casters)",
-          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Arcana (master) or Occultism (master)"
         },
         "spell->True Seeing (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing (Constant)"
@@ -3561,7 +3619,8 @@
         },
         "spell->Resurrect (Doesn't Require Secondary Casters)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]\nResurrect (Doesn't Require Secondary Casters)",
-          "cost": "diamonds worth a total value of 75 gp × the target's level"
+          "cost": "diamonds worth a total value of 75 gp × the target's level",
+          "primarycheck": "Religion (expert)"
         },
         "spell->Air Walk (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0]\nAir Walk (Constant)"
@@ -3571,6 +3630,9 @@
         },
         "spell->Water Walk (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]\nWater Walk (Constant)"
+        },
+        "condition->Quickened": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]\n<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
         },
         "strike-melee->Greatclub": {
           "name": "Greatclub"
@@ -3641,6 +3703,9 @@
         },
         "spell->Touch of Idiocy (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy (At Will)"
+        },
+        "spell->Infernal Pact": {
+          "primarycheck": "Religion (expert; you must be a devil)"
         },
         "strike-melee->Claw": {
           "name": "Claw"
@@ -4169,6 +4234,9 @@
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
         },
+        "spell->Abyssal Pact": {
+          "primarycheck": "Religion (expert; you must be a demon)"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -4403,7 +4471,13 @@
           "name": "Occult Innate Spells"
         },
         "spell->Legend Lore": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore",
+          "primarycheck": "Occultism (master)",
+          "secondarycheck": "Performance, Society"
+        },
+        "spell->Commune": {
+          "primarycheck": "Occultism (master) or Religion (master)",
+          "secondarycheck": "Occultism or Religion (whichever is used for the primary check)"
         },
         "spell->True Seeing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
@@ -4479,7 +4553,13 @@
           "name": "Divine Innate Spells"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
+        },
+        "spell->Imprisonment": {
+          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
+          "secondarycheck": "Crafting, Society"
         },
         "spell->Finger of Death": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]\nFinger of Death",
@@ -4561,6 +4641,10 @@
         },
         "spell->Meteor Swarm": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl]\nMeteor Swarm"
+        },
+        "spell->Freedom": {
+          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
+          "secondarycheck": "Society"
         },
         "spell->Plane Shift (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (At Will)",
@@ -5830,17 +5914,27 @@
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
         },
+        "spell->Control Weather": {
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
+        },
         "spell->Awaken Animal": {
           "cost": "herbs, 1/5 the value on Table 7-1",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Lore (any), Society, Survival",
           "target": "1 animal up to the level on Table 7-1"
         },
         "spell->Commune with Nature": {
           "name": "Commune with Nature",
           "cost": "rare incense worth a total value of 60 gp",
-          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>"
+          "description": "<p>As <em>@UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}</em>, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Nature"
         },
         "spell->Primal Call": {
-          "cost": "faerie circle ingredients worth a total value of 1 gp × the spell level × the target's level"
+          "cost": "faerie circle ingredients worth a total value of 1 gp × the spell level × the target's level",
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Crafting, Diplomacy, Survival"
         },
         "spell->True Seeing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
@@ -5850,6 +5944,10 @@
         },
         "spell->Freedom of Movement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
+        },
+        "spell->Plant Growth": {
+          "primarycheck": "Nature (expert)",
+          "secondarycheck": "Farming Lore or Survival"
         },
         "strike-melee->Vine": {
           "name": "Vine"
@@ -7857,6 +7955,9 @@
       "saveDetails": "+1 status to all saves vs. magic",
       "senses": "greater darkvision",
       "items": {
+        "spell->Infernal Pact": {
+          "primarycheck": "Religion (expert; you must be a devil)"
+        },
         "strike-melee->Trident": {
           "name": "Trident"
         },
@@ -8355,7 +8456,8 @@
         },
         "spell->Create Undead (Doesn't Require Secondary Casters)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Doesn't Require Secondary Casters)",
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)"
         },
         "spell->Illusory Creature (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]\nIllusory Creature (At Will)"
@@ -8852,6 +8954,9 @@
       "publicNotes": "<p>Mithral golems are gorgeously crafted, silvery humanoids made from colossal amounts of the purest dawnsilver. While massive in construction, they possess amazing speed and grace through literal fluidity. Unpredictable and flexible, they can melt into liquid form and reform into a solid shape in mere seconds, allowing them to shape their limbs into sharp spikes or heavy fists as needed.</p>\n<hr />\n<p>Powerful constructs that blend magic and raw material, golems make ideal guardians and bodyguards, with forms and functions as varied as the needs of those who employ them. As their crafters experiment with more exotic components and create new formulas, golems with surprising abilities emerge.</p>",
       "senses": "darkvision",
       "items": {
+        "condition->Quickened": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]\n<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
+        },
         "strike-melee->Fist": {
           "name": "Fist"
         },
@@ -8947,6 +9052,10 @@
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
+        },
+        "spell->Plant Growth": {
+          "primarycheck": "Nature (expert)",
+          "secondarycheck": "Farming Lore or Survival"
         },
         "spell->Entangle": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangle"
@@ -9052,7 +9161,7 @@
         },
         "action->Ransack": {
           "name": "Ransack",
-          "description": "<p>The swarm rummages through the possessions of a single creature within its space, attempting a @Check[type:thievery] check against the creature's Reflex DC.</p>\n<p>On a success, the monkeys take one random item of negligible Bulk that the creature is wearing but not closely guarding, such as an object in a loosely carried pouch.</p>"
+          "description": "<p>The swarm rummages through the possessions of a single creature within its space, attempting a @Check[type:thievery|defense:reflex] check against the creature's Reflex DC.</p>\n<p>On a success, the monkeys take one random item of negligible Bulk that the creature is wearing but not closely guarding, such as an object in a loosely carried pouch.</p>"
         },
         "action->Swarming Bites": {
           "name": "Swarming Bites",
@@ -9070,6 +9179,10 @@
         },
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
+        },
+        "spell->Control Weather": {
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
         },
         "spell->Plane Shift": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift",
@@ -9199,6 +9312,9 @@
         },
         "spell->Dimension Door (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
+        },
+        "spell->Infernal Pact": {
+          "primarycheck": "Religion (expert; you must be a devil)"
         },
         "weapon->Greataxe": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>"
@@ -9844,6 +9960,9 @@
         "spell->Dimension Door (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
         },
+        "spell->Abyssal Pact": {
+          "primarycheck": "Religion (expert; you must be a demon)"
+        },
         "spell->Create Water (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.WzLKjSw6hsBhuklC]\nCreate Water (At Will)"
         },
@@ -10130,6 +10249,9 @@
         "spell->Charm (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]\nCharm (At Will)"
         },
+        "spell->Div Pact": {
+          "primarycheck": "Religion (expert; you must be a div)"
+        },
         "strike-melee->Claw": {
           "name": "Claw"
         },
@@ -10223,6 +10345,9 @@
         },
         "spell->Private Sanctum": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.onjZCEHs3JJJRTD0]\nPrivate Sanctum"
+        },
+        "spell->Inveigle": {
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)"
         },
         "spell->Paranoia (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Mkbq9xlAUxHUHyR2]\nParanoia (At Will)"
@@ -10765,7 +10890,8 @@
           "name": "Divine Spontaneous Spells"
         },
         "spell->Blight (Doesn't Require Secondary Casters)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.7yWXx3qC4eFNHhxD]\nBlight (Doesn't Require Secondary Casters)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.7yWXx3qC4eFNHhxD]\nBlight (Doesn't Require Secondary Casters)",
+          "primarycheck": "Nature (expert)"
         },
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
@@ -11255,7 +11381,9 @@
         },
         "spell->Create Undead (No Secondary Caster Required)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (No Secondary Caster Required)",
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
         },
         "spell->Darkness (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]\nDarkness (At Will)"
@@ -11264,6 +11392,9 @@
           "name": "Misdirection (At Will) (Self Only)",
           "description": "<p>You reshape the magic aura of one creature or object to resemble that of another. You designate one target as the primary target and the other as the secondary target. Effects that would detect auras on the primary target instead detect the same types of auras from the secondary target. A creature reading the aura can attempt to disbelieve the illusion. You can Dismiss the spell from up to a mile away.</p>",
           "target": "self"
+        },
+        "spell->Div Pact": {
+          "primarycheck": "Religion (expert; you must be a div)"
         },
         "strike-melee->Falchion": {
           "name": "Falchion"
@@ -11414,6 +11545,9 @@
       "senses": "darkvision",
       "speed": "troop movement",
       "items": {
+        "condition->Slowed": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]\n<p>You have fewer actions. Slowed always includes a value. When you regain your actions at the start of your turn, reduce the number of actions you regain by your slowed value. Because slowed has its effect at the start of your turn, you don't immediately lose actions if you become slowed during your turn.</p>"
+        },
         "action->Slow": {
           "name": "Slow",
           "description": "<p>A shambler troop is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
@@ -12169,6 +12303,10 @@
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
         },
+        "spell->Control Weather": {
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
+        },
         "spell->Baleful Polymorph": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
         },
@@ -12317,6 +12455,9 @@
       "publicNotes": "<p>Glowing with a dull amber light, these odious creatures spawn from a combination of necromancy and fire. These destructive creations sow chaos and demolish fortifications, making them the bane of besieged cities.</p>\n<hr />\n<p>Necromancers most often create these mindless undead as obedient, expendable servitors. Left to its own devices, a zombie seeks only to consume the living, stopping only when its rotting body can no longer hold together.</p>",
       "senses": "darkvision",
       "items": {
+        "condition->Slowed": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]\n<p>You have fewer actions. Slowed always includes a value. When you regain your actions at the start of your turn, reduce the number of actions you regain by your slowed value. Because slowed has its effect at the start of your turn, you don't immediately lose actions if you become slowed during your turn.</p>"
+        },
         "strike-melee->Fist": {
           "name": "Fist"
         },
@@ -12559,10 +12700,14 @@
         },
         "spell->Planar Ally": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vgy00hnqxN9VoeoF]\nPlanar Ally",
-          "cost": "rare incense and offerings worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "rare incense and offerings worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Religion (expert)",
+          "secondarycheck": "Diplomacy"
         },
         "spell->Resurrect": {
-          "cost": "diamonds worth a total value of 75 gp × the target's level"
+          "cost": "diamonds worth a total value of 75 gp × the target's level",
+          "primarycheck": "Religion (expert)",
+          "secondarycheck": "Medicine, Society"
         },
         "spell->Air Walk (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0]\nAir Walk (Constant)"
@@ -12838,7 +12983,9 @@
           "name": "Divine Innate Spells"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
         },
         "treasure->Black Onyx Gems": {
           "name": "Black Onyx Gems"
@@ -13172,7 +13319,13 @@
           "name": "Occult Innate Spells"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
+        },
+        "spell->Imprisonment": {
+          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
+          "secondarycheck": "Crafting, Society"
         },
         "spell->Wail of the Banshee": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.FEsuyf203wTNE2et]\nWail of the Banshee"
@@ -13760,6 +13913,10 @@
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
         },
+        "spell->Control Weather": {
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
+        },
         "spell->Baleful Polymorph": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
         },
@@ -14051,7 +14208,9 @@
           "name": "Divine Innate Spells"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
         },
         "spell->Finger of Death": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]\nFinger of Death",
@@ -14123,7 +14282,7 @@
       "senses": "darkvision",
       "items": {
         "shield->Buckler": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1k3AsSW7lpU0kEpY]\n<p>This very small shield is a favorite of duelists and quick, lightly armored warriors. It's typically made of steel and strapped to your forearm. You can Raise a Shield with your buckler as long as you have that hand free or are holding a light object that's not a weapon in that hand.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>6</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1k3AsSW7lpU0kEpY]\n<p>This very small shield is a favorite of duelists and quick, lightly armored warriors. It's typically made of steel and strapped to your forearm. You can Raise a Shield with your buckler as long as you have that hand free or are holding a light object that's not a weapon in that hand.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>6</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>"
         },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -14215,6 +14374,10 @@
         },
         "spell->Crushing Despair": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]\nCrushing Despair"
+        },
+        "spell->Atone": {
+          "primarycheck": "Nature or Religion (expert)",
+          "secondarycheck": "Nature or Religion (whichever is used for the primary check)"
         },
         "spell->Mind Reading (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
@@ -14392,6 +14555,10 @@
         },
         "spell->Hallucinatory Terrain": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]\nHallucinatory Terrain"
+        },
+        "spell->Plant Growth": {
+          "primarycheck": "Nature (expert)",
+          "secondarycheck": "Farming Lore or Survival"
         },
         "spell->Entangle": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangle"
@@ -14662,7 +14829,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]\nComprehend Language"
         },
         "spell->Consecrate": {
-          "cost": "rare incense and offerings worth a total value of 20 gp × the spell level"
+          "cost": "rare incense and offerings worth a total value of 20 gp × the spell level",
+          "primarycheck": "Religion",
+          "secondarycheck": "Crafting, Performance"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
@@ -15019,6 +15188,9 @@
       "publicNotes": "<p>The rotted husk of a once great dragon, this abomination has lost all its former splendor, but none of the ferocity. Its patchy, rotted wings don't generate enough lift to keep it aloft, but the foul necromantic energies animating it still allow it to fly, albeit slowly.</p>\n<hr />\n<p>Necromancers most often create these mindless undead as obedient, expendable servitors. Left to its own devices, a zombie seeks only to consume the living, stopping only when its rotting body can no longer hold together.</p>",
       "senses": "darkvision",
       "items": {
+        "condition->Slowed": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]\n<p>You have fewer actions. Slowed always includes a value. When you regain your actions at the start of your turn, reduce the number of actions you regain by your slowed value. Because slowed has its effect at the start of your turn, you don't immediately lose actions if you become slowed during your turn.</p>"
+        },
         "strike-melee->Upper Jaw": {
           "name": "Upper Jaw"
         },

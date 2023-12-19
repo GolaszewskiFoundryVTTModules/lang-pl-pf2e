@@ -4,11 +4,11 @@
     "Accursed Forge-Spurned": {
       "name": "Accursed Forge-Spurned",
       "hpDetails": "eternal damnation, void healing",
+      "publicNotes": "<p>This undead dwarf has gorged on suffering over the centuries, and in that time has grown immense himself, so that he is proportioned more like a giant than a dwarf.</p>",
       "senses": "darkvision",
       "items": {
         "weapon->Soul Chain": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO]\nSoul Chain",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO]\n<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>\n<p>A forge-spurned wields a soul chain: a cursed +1 striking flaming spiked chain. Any other creature that has a soul chain must succeed at a @Check[type:will|dc:22|name:Soul Chain Transformation] save each day at sundown or transform into a forge-spurned permanently. A forge-spurned stops at nothing to retrieve its soul chain if it's lost.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.uVcePmysXUFhOebP]\n<p>An accursed forge-spurned's @UUID[Compendium.pf2e.equipment-srd.Item.uVcePmysXUFhOebP]{Soul Chain} is a <em>+2 greater striking flaming adamantine @UUID[Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO]{Spiked Chain}</em>.</p>"
         },
         "strike-melee->Soul Chain": {
           "name": "Soul Chain"
@@ -189,7 +189,9 @@
         },
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
-          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Arcana (master) or Occultism (master)",
+          "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
         },
         "spell->Dimension Door": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
@@ -278,7 +280,9 @@
         },
         "spell->Planar Ally": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vgy00hnqxN9VoeoF]\nPlanar Ally",
-          "cost": "rare incense and offerings worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "rare incense and offerings worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Religion (expert)",
+          "secondarycheck": "Diplomacy"
         },
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
@@ -1357,15 +1361,23 @@
         "spell->Time Stop": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.1dsahW4g1ggXtypx]\nTime Stop"
         },
+        "spell->Freedom": {
+          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
+          "secondarycheck": "Society"
+        },
         "spell->Horrid Wilting": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.M0jQlpQYUr0pp2Sv]\nHorrid Wilting"
         },
         "spell->Legend Lore": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore",
+          "primarycheck": "Occultism (master)",
+          "secondarycheck": "Performance, Society"
         },
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
-          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Arcana (master) or Occultism (master)",
+          "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
         },
         "spell->True Seeing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
@@ -1970,6 +1982,10 @@
         "spell->Meteor Swarm": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl]\nMeteor Swarm"
         },
+        "spell->Imprisonment": {
+          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
+          "secondarycheck": "Crafting, Society"
+        },
         "spell->Maze": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]\nMaze"
         },
@@ -1978,6 +1994,9 @@
         },
         "spell->Dimension Door": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
+        },
+        "spell->Inveigle": {
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)"
         },
         "spell->Obscuring Mist": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]\nObscuring Mist"
@@ -2458,6 +2477,9 @@
         },
         "spell->Dimension Door (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
+        },
+        "spell->Abyssal Pact": {
+          "primarycheck": "Religion (expert; you must be a demon)"
         },
         "spell->Command (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]\nCommand (At Will)"
@@ -3668,7 +3690,9 @@
       "items": {
         "spell->Planar Ally": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vgy00hnqxN9VoeoF]\nPlanar Ally",
-          "cost": "rare incense and offerings worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "rare incense and offerings worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Religion (expert)",
+          "secondarycheck": "Diplomacy"
         },
         "strike-melee->Claw": {
           "name": "Claw"
@@ -3905,7 +3929,9 @@
         },
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
-          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level"
+          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level",
+          "primarycheck": "Arcana (master) or Occultism (master)",
+          "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
         },
         "spell->Magic Missile": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
@@ -4580,7 +4606,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
         },
         "spell->Hideous Laughter": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
@@ -4767,7 +4795,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1"
+          "cost": "black onyx, see Table 7-1",
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "secondarycheck": "Religion"
         },
         "spell->False Life": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]\nFalse Life"
@@ -4893,6 +4923,10 @@
         },
         "spellcastingEntry->Primal Rituals": {
           "name": "Primal Rituals"
+        },
+        "spell->Control Weather": {
+          "primarycheck": "Nature (master)",
+          "secondarycheck": "Survival"
         },
         "spell->Wind Walk": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]\nWind Walk",

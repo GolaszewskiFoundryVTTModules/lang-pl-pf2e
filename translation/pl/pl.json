@@ -173,7 +173,15 @@
                 "Active": "Aktywne",
                 "ActiveHeader": "Aktywne Aktywności",
                 "Biography": {
-                    "ToggleVisibility": "Przełącz widoczność dla innych graczy"
+                    "Anathema": {
+                        "Add": "Dodaj Anatemę",
+                        "Delete": "Usuń Anatemę"
+                    },
+                    "ToggleVisibility": "Przełącz widoczność dla innych graczy",
+                    "Edicts": {
+                        "Add": "Dodaj Edykt",
+                        "Delete": "Usuń Edykt"
+                    }
                 },
                 "Blurb": "{ancestry} {class} Poziomu {level}",
                 "ClassDC": {
@@ -209,7 +217,8 @@
                         "Medium": "Pancerz Średni",
                         "Title": "Obrona",
                         "Unarmored": "Obrona bez Pancerza"
-                    }
+                    },
+                    "HigherUpgrade": "{ability} zwiększa rangę tej biegłości do {rank}."
                 },
                 "Rest": {
                     "Label": "Udaj się na Spoczynek"
@@ -863,6 +872,7 @@
                 },
                 "Label": "Wynik: <unadjusted>{unadjusted}</unadjusted> <offset>o {offset}</offset>"
             },
+            "SetAsInitiative": "Ustaw jako inicjatywę aktora {actor}",
             "Specific": {
                 "Counteract": "Test Przeciwdziałania",
                 "Perception": {
@@ -877,8 +887,6 @@
         "ClassFeatLevels": "Poziomy Atutów Klasowych",
         "ClassFeatures": "Atrybuty Klasowe",
         "ClassHP": "PŻ Klasy",
-        "ClickToSetInitiative": "Kliknij aby ustawić inicjatywę wybranych żetonów.",
-        "ClickToSetInitiativeContext": "Ustaw jako Inicjatywę",
         "ClipboardNotification": "Skopiowano \"{clipText}\" do schowka.",
         "CompendiumBrowser": {
             "AddedItem": "Dodani {item} do wybranych postaci.",
@@ -983,19 +991,6 @@
             "UseMulti": "Używa {name}, pozostało {current}",
             "UseSingle": "Używa {name}"
         },
-        "ConsumableTypeAmmo": "Amunicja",
-        "ConsumableTypeDrug": "Używka",
-        "ConsumableTypeElixir": "Eliksir",
-        "ConsumableTypeMutagen": "Mutagen",
-        "ConsumableTypeOil": "Olej",
-        "ConsumableTypeOther": "Inny",
-        "ConsumableTypePoison": "Trucizna",
-        "ConsumableTypePotion": "Mikstura",
-        "ConsumableTypeScroll": "Zwój",
-        "ConsumableTypeSnare": "Sidła",
-        "ConsumableTypeTalisman": "Talizman",
-        "ConsumableTypeTool": "Narzędzie",
-        "ConsumableTypeWand": "Różdżka",
         "CoreSkillsHeader": "Umiejętności Główne",
         "Counteractable": "Dostępne Przeciwdziałanie",
         "CraftDCTitle": "ST",
@@ -1211,6 +1206,7 @@
             "IncreasedFrom": "Zwiększono z {original} do minimum 1",
             "Kind": {
                 "Both": {
+                    "Label": "Oba",
                     "Roll": {
                         "Noun": "Rzut Obrażeń/Leczenia",
                         "Verb": "Rzuć Obrażenia/Leczenie"
@@ -1664,6 +1660,11 @@
                     "heavy-barding": "Kropierz Ciężki",
                     "light-barding": "Kropierz Lekki"
                 },
+                "Rune": {
+                    "Resilient": {
+                        "Label": "Runa Odporności"
+                    }
+                },
                 "Specific": {
                     "Hint": "Oznaczenie tego pancerza jako <i>określonego pancerza magicznego</i> oznacza, że robi on więcej niż wskazują na to same jego runy i kompozycja materiałowa. Nazwa, poziom, rzadkość i cena nie będą już nadpisywane na podstawie drogocennych materiałów i run użytych w procesie jego tworzenia. Te materiały i runy będą jednakowoż użyte jako podstawa do późniejszego obliczania korekt poziomu, rzadkości i ceny przy dalszych ulepszeniach.",
                     "Label": "Określony Pancerz Magiczny"
@@ -1697,11 +1698,34 @@
                 }
             },
             "Consumable": {
+                "Damage": {
+                    "Add": "Dodaj Obrażenia/Leczenie",
+                    "Label": "Obrażenia/Leczenie",
+                    "Remove": "Usuń Obrażenia/Leczenie"
+                },
+                "Category": {
+                    "ammo": "Amunicja",
+                    "catalyst": "Katalizator",
+                    "drug": "Narkotyk",
+                    "elixir": "Eliksir",
+                    "fulu": "Fulu",
+                    "gadget": "Gadżet",
+                    "mutagen": "Mutagen",
+                    "oil": "Olej",
+                    "other": "Inny",
+                    "poison": "Trucizna",
+                    "potion": "Mikstura",
+                    "scroll": "Zwój",
+                    "snare": "Sidła",
+                    "talisman": "Talizman",
+                    "toolkit": "Zestaw",
+                    "wand": "Różdżka"
+                },
                 "Plural": "Przedmioty Zużywalne",
                 "Uses": {
-                    "AutoDestroy": "Auto-niszczenie",
+                    "AutoDestroy": "Zniszcz przy Użyciu",
                     "Label": "Użycia",
-                    "None": "Brak Dostępnych Użyć",
+                    "None": "Nie Pozostało Użyć",
                     "Use": "Użyj"
                 }
             },
@@ -2093,6 +2117,10 @@
                         "formula": "Formuła",
                         "value": "Stała Wartość"
                     }
+                },
+                "Disintegrated": {
+                    "Description": "Może da się coś poradzić na ten status.",
+                    "Name": "Dezintegracja"
                 },
                 "Plural": "Efekty",
                 "ShowTokenIcon": "Pokazać kolor żetonu?",
@@ -2911,9 +2939,6 @@
             },
             "WarnNoHeroPoint": "{name} nie ma więcej Punktów Bohaterstwa"
         },
-        "ResiliencyRuneLabel": "Runa Odporności",
-        "ResistancesExceptionLabel": "Wyjątki:",
-        "ResistancesExceptionPlaceholder": "np. z wyjątkiem srebra",
         "ResistancesLabel": "Odporności",
         "ResolvePointsShortLabel": "Determinacja",
         "RestoreSpellTitle": "Przywróć Zaklęcie",
@@ -3199,7 +3224,7 @@
                         "ABPRulesAsWritten": "ARM: Bez Run Właściwości",
                         "noABP": "Nie używaj ARM"
                     },
-                    "Hint": "Wsparcie dla zasad wariantowych Automatycznego Rozwoju Modyfikatorów, z wyłączeniem zdolności umiejętności/apeksu. Wymaga przeładowania.",
+                    "Hint": "Włącz wariantową zasadę Automatycznego Rozwoju Modyfikatorów. Potencją umiejętności trzeba obecnie zarządzać manualnie.",
                     "Name": "Automatyczny Rozwój Modyfikatorów"
                 },
                 "FreeArchetype": {
@@ -3426,10 +3451,8 @@
         "StackGroupCoins": "Monety",
         "StackGroupGems": "Klejnoty",
         "StackGroupLabel": "Grupuj",
-        "StackGroupRations": "Racje",
         "StackGroupRounds10": "Pociski (10)",
         "StackGroupRounds5": "Pociski (5)",
-        "StackGroupSacks": "Worki",
         "StackGroupSlingBullets": "Pociski do Procy",
         "StackGroupSprayPellets": "Pociski Rozpryskowe",
         "StackGroupWoodenTaws": "Drewniane Tau",
@@ -5686,6 +5709,7 @@
             }
         },
         "identification": {
+            "DisplayDetails": "Widoczne Szczegóły",
             "Identified": "Zidentyfikowano",
             "Identify": "Identyfikuj Przedmiot",
             "IdentifyAlchemyDCs": "ST Identyfikacji Alchemii",
@@ -5701,7 +5725,7 @@
             "TraitGMNote": "Uwaga: ta cecha jest niewidoczna dla graczy.",
             "Unidentified": "Niezidentyfikowany",
             "UnidentifiedDescription": "Bliższa natura tego przedmiotu pozostaje nieznana.",
-            "UnidentifiedHint": "Zmień podstawowe informacje wyświetlane podczas gdy ten przedmiot pozostaje niezidentyfikowany.",
+            "UnidentifiedHint": "Zmień podstawowe informacje widoczne dla graczy gdy ten przedmiot jest niezidentyfikowany.",
             "UnidentifiedItem": "Niezwykły Przedmiot ({item})",
             "UnidentifiedType": {
                 "Amulet": "Amulet",

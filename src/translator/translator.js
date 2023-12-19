@@ -34,9 +34,6 @@ class Translator {
                 }),
         ]);
 
-        // Create list of feats that are translated and have the same name in English and Polish
-        this.translatedSameNameFeats = config[0]?.translatedSameNameFeats ?? [];
-
         // Create list of artwork exceptions and initialize artwork lists
         this.artworkLists = {};
         const artworkExceptions = config[0]?.artworkExceptions ?? {};
@@ -262,19 +259,23 @@ class Translator {
         return data;
     }
 
-    translateActorItems(data, translation) {
+    translateActorItems(data, translation, mergeFromCompendium = true) {
         data.forEach((entry, index, arr) => {
             // Get the available translation for the item and the sluggified item name
             const itemKey =
                 entry.type != "melee"
                     ? `${entry.type}->${entry.name}`
                     : `strike-${entry.system.weaponType.value}->${entry.name}`;
-            const itemTranslation = translation ? translation[itemKey] ?? undefined : undefined;
+            let itemTranslation = translation ? translation[itemKey] ?? undefined : undefined;
             const itemNameSlug = this.sluggify(entry.name);
 
             // For compendium items, get the data from the compendium
-            if (entry.flags?.core?.sourceId && entry.flags.core.sourceId.startsWith("Compendium")) {
-                // Get the actual compendium name
+            if (
+                entry.flags?.core?.sourceId &&
+                entry.flags.core.sourceId.startsWith("Compendium") &&
+                !entry.flags.core.sourceId.includes(".Actor.")
+            ) {
+                                // Get the actual compendium name
                 const itemCompendium = entry.flags.core.sourceId.slice(
                     entry.flags.core.sourceId.indexOf(".") + 1,
                     entry.flags.core.sourceId.lastIndexOf(".", entry.flags.core.sourceId.lastIndexOf(".") - 1)
@@ -284,21 +285,31 @@ class Translator {
                 if (originalName) {
                     entry.name = originalName;
 
-                    arr[index] = game.babele.packs.get(itemCompendium).translate(entry);
+                    // Get the item from the compendium
+                    const itemData = game.babele.packs.get(itemCompendium).translate(entry);
 
+                    if (mergeFromCompendium) {
+                        arr[index] = itemData;
+                    } else {
+                        arr[index].system.description.value = itemData.system.description.value;
+                        arr[index].name = itemData.name;
+                    }
+                    
                     // Remove dual language translations
                     if (arr[index].name.search("/") != -1) {
                         arr[index].name = arr[index].name.substring(0, arr[index].name.search("/"));
                     }
                 }
             }
+            
+            // Check if the item translation is an array (in case of duplicate items such as a magical and a regular shortsword)
+            // Take the itemTranslation that matches the current item's id
+            if (Array.isArray(itemTranslation)) {
+                itemTranslation = itemTranslation.find((itm) => itm.id === entry._id) ?? false;
+            }
 
             // Merge the available translation
             if (itemTranslation) {
-                // // Normalize item name
-                // if (itemTranslation.name) {
-                //     itemTranslation.name = this.normalizeName(itemTranslation.name);
-                // }
                 // For name and description fields, replace "<Compendium>" tag with text from compendium if translation is provided
                 ["description", "name"].forEach((dataElement) => {
                     if (itemTranslation[dataElement]) {
@@ -333,149 +344,30 @@ class Translator {
         return data;
     }
 
-    translateJournal(pages, translation) {
-        const resultPages = game.babele.converters.pages(pages, translation);
-
-        const featIndex = game.packs.get("pf2e.feats-srd").index;
-        const featureIndex = game.packs.get("pf2e.classfeatures").index;
-
-        const isTranslated = (feat) => {
-            return this.translatedSameNameFeats.includes(feat.name) || feat.name !== feat.originalName;
-        };
-
-        return resultPages.map((page) => {
-            // If page.text.content is not defined, just return the page, probably for non-text-pages
-            if (!page?.text?.content) {
-                return page;
-            }
-            return mergeObject(page, {
-                text: {
-                    content: page.text.content.replaceAll(/<([^<>]*)>/g, (match, featsString) => {
-                        const startingPoints = featsString.split(";");
-                        const feats = [];
-                        for (const feat of featIndex) {
-                            if (startingPoints.includes(feat.originalName)) {
-                                feats.push(feat);
-                            }
-                        }
-
-                        // If some required feats were not found, something is wrong, possibly a false positive. Just return the original match
-                        if (feats.length !== startingPoints.length) {
-                            return match;
-                        }
-
-                        let foundNewFeats = true;
-                        while (foundNewFeats) {
-                            foundNewFeats = false;
-                            for (const feat of featIndex) {
-                                // No need to check for already added feats
-                                if (feats.includes(feat)) {
-                                    continue;
-                                }
-
-                                // Do not consider nested Dedications, e.g., Hellknight Armiger -> Hellknight
-                                if (feat.originalName.toLowerCase().includes("dedication")) {
-                                    continue;
-                                }
-
-                                // Found a feat with a previously detected feat as prerequisite -> Probably part of the archetype
-                                // Sometimes there are additional spaces in the prerequites, due to bad handling within the english localization. We handle these by trimming
-                                if (
-                                    feat.system.prerequisites &&
-                                    feat.system.prerequisites.value.find((prerequisite) => {
-                                        return feats.find((checkedFeat) => {
-                                            // As we can (as far as I know) only get the translated prerequisites for translated feats, we need to check depending on the translation status
-                                            return (
-                                                (isTranslated(feat)
-                                                    ? checkedFeat.name.trim()
-                                                    : checkedFeat.originalName.trim()) === prerequisite.value.trim()
-                                            );
-                                        });
-                                    })
-                                ) {
-                                    feats.push(feat);
-                                    foundNewFeats = true;
-                                }
-                            }
-                        }
-
-                        feats.sort((feat1, feat2) => {
-                            // The original dedication should always remain first
-                            if (feat1 === feats[0]) {
-                                return -1;
-                            }
-
-                            if (feat2 === feats[0]) {
-                                return 1;
-                            }
-
-                            // Translated first
-                            if (isTranslated(feat1) !== isTranslated(feat2)) {
-                                return isTranslated(feat1) ? -1 : 1;
-                            }
-
-                            // Next, sort by level
-                            if (feat1.system.level.value !== feat2.system.level.value) {
-                                return feat1.system.level.value - feat2.system.level.value;
-                            }
-
-                            // Next, sort by name
-                            if (feat1.name.toLowerCase() < feat2.name.toLowerCase()) {
-                                return -1;
-                            } else if (feat1.name.toLowerCase() > feat2.name.toLowerCase()) {
-                                return 1;
-                            } else {
-                                return 0;
-                            }
-                        });
-
-                        let result = "";
-                        let hasTranslation = true;
-
-                        for (const feat of feats) {
-                            if (hasTranslation && !isTranslated(feat)) {
-                                hasTranslation = false;
-                                result += "<h2>Atuty bez tłumaczenia</h2>";
-                                result +=
-                                    "<p><em>Następujące atuty nie posiadają Polskiego tłumaczenia</em></p><hr>";
-                            }
-                            result += `<${isTranslated(feat) ? "h2" : "h3"}>@UUID[Compendium.pf2e.feats-srd.${
-                                feat._id
-                            }]{${feat.name}} <span style="float: right">${isTranslated(feat) ? "ATUT" : "FEAT"} ${
-                                feat.system.level.value
-                            }</span></${isTranslated(feat) ? "h2" : "h3"}>`;
-                            // Some Dedications have no prerequisites, i.e., Demolitionist
-                            if (feat.system.prerequisites && feat.system.prerequisites.value.length > 0) {
-                                result += `<p><strong>${
-                                    isTranslated(feat) ? "Wymagania" : "Prerequisites"
-                                }</strong> ${feat.system.prerequisites.value
-                                    .map((prerequisite) => {
-                                        // If a prerequisite is a class feature, link it
-                                        const classFeature = featureIndex.getName(prerequisite.value);
-                                        if (classFeature) {
-                                            return `@UUID[Compendium.pf2e.classfeatures.${classFeature._id}]{${classFeature.name}}`;
-                                        } else {
-                                            return prerequisite.value;
-                                        }
-                                    })
-                                    .join(", ")}</p>`;
-                                // If the description includes any parameters with <p><strong>, e.g., trigger, it includes its own horizontal line, otherwise add one below the prerequisites
-                                if (!feat.system.description.value.startsWith("<p><strong>")) {
-                                    result += "<hr>\n";
-                                }
-                            }
-                            // If it is an old entry, still containing prerequisites, remove them
-                            result += feat.system.description.value.replaceAll(
-                                /<p><strong>(?:Wymagania|Prerequisites)<\/strong>[^<]*<\/p>/g,
-                                ""
-                            );
-                        }
-
-                        return result;
-                    }),
-                },
-            });
+    // Translate adventure journals. This is primarily used in order to access a custom converter for pages translation
+    translateAdventureJournals(data, translation) {
+        data.forEach((entry, index, arr) => {
+            let journalTranslation = translation ? translation[entry.name] ?? undefined : undefined;
+            this.dynamicMerge(arr[index], journalTranslation, this.getMapping("adventureJournal", true));
         });
+        return data;
+    }
+
+    // Translate adventure journal pages. This supports duplicate page names within the same journal
+    translateAdventureJournalPages(data, translation) {
+        data.forEach((entry, index, arr) => {
+            let pageTranslation = translation ? translation[entry.name] ?? undefined : undefined;
+
+            // Check if the page translation is an array (in case of duplicate page names)
+            // Take the pageTranslation that matches the current pages' id
+            if (Array.isArray(pageTranslation)) {
+                pageTranslation = pageTranslation.find((page) => page.id === entry._id) ?? false;
+            }
+            if (pageTranslation) {
+                this.dynamicMerge(arr[index], pageTranslation, this.getMapping("adventureJournalPage", true));
+            }
+        });
+        return data;
     }
 
     // Return either localized or both localized and english text, based on module setting
@@ -483,9 +375,9 @@ class Translator {
         if (!translation || data === translation) {
             return data;
         } else if (game.settings.get("lang-pl-pf2e", "dual-language-names")) {
-            return translation + "/" + data;
+            return this.normalizeName(translation) + "/" + data;
         } else {
-            return translation;
+            return this.normalizeName(translation);
         }
     }
 

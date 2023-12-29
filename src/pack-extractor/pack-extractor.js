@@ -17,7 +17,7 @@ replaceProperties(CONFIG.packs, ["savePath"], CONFIG.filePaths.packs);
 // Fetch assets from current pf2 release and get zip contents
 const packs = await getZipContentFromURL(CONFIG.filePaths.zipURL);
 
-// Build item database in order to compare actor items with their comdendium entries
+// Build item database in order to compare actor items with their compendium entries
 const itemDatabase = buildItemDatabase(packs, CONFIG.itemDatabase);
 
 // Extract data for all configured packs

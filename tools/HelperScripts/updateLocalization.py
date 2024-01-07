@@ -67,14 +67,12 @@ class LocalizationUpdater:
                 self.extract_localization_dict(value, new_path, result_dict)
         elif isinstance(obj, list):
             for index, item in enumerate(obj):
-                new_path = f"{current_path}[{index}]"
+                new_path = f"{current_path}{{{index}}}"
                 self.extract_localization_dict(item, new_path, result_dict)
         else:
             result_dict[current_path] = obj
 
         return result_dict
-
-
 
     def rebuild_nested_json(self, flat_dict):
         nested_json = {}
@@ -85,9 +83,9 @@ class LocalizationUpdater:
             current_level = nested_json
 
             for i, key in enumerate(keys):
-                if '[' in key and ']' in key:
+                if '{' in key and '}' in key:
                     # Split the key on the brackets to get the list name and index
-                    list_name, list_index = key.replace(']', '').split('[')
+                    list_name, list_index = key.replace('}', '').split('{')
                     list_index = int(list_index)
                     
                     # Ensure the list exists and has enough space for the index

@@ -4,7 +4,6 @@
     "Albino Giant Bat": {
       "name": "Albino Giant Bat",
       "blurb": "Variant giant bat",
-      "senses": "echolocation (precise) 40 feet, low-light vision",
       "items": {
         "strike-melee->Fangs": {
           "name": "Fangs"
@@ -26,7 +25,6 @@
       "name": "Ashen Guardian",
       "blurb": "Variant Shadow",
       "publicNotes": "<p>The mysterious undead known as shadows lurk in dark places and feed on those who stray too far from the light. Those who parley with shadows, typically by keeping them at bay with a glowing weapon, may learn great secrets, for they are ideal spies.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Shadow Hand": {
           "name": "Shadow Hand"
@@ -82,31 +80,28 @@
       "name": "Cilios",
       "blurb": "Variant male mummy guardian",
       "hpDetails": "void healing",
-      "languages": "Any One Ancient Language",
       "publicNotes": "<p>The majority of mummies were created by cruel and selfish masters to serve as guardians to protect their tombs from intruders. The traditional method of creating a mummy guardian is a laborious and sadistic process that begins well before the poor soul to be transformed is dead, during which the victim is ritualistically starved of nourishing food and instead fed strange spices, preservative agents, and toxins intended to quicken the desiccation of the flesh. The victim remains immobile but painfully aware during the final stages, where its now-useless entrails are extracted before it's shrouded in funerary wrappings and entombed within a necromantically ensorcelled sarcophagus to await intrusions in the potentially distant future. While it's certainly possible to use other methods to create a mummy guardian from an already-deceased body, those who seek to create these foul undead as their guardians in the afterlife often feel that such methods result in inferior undead-the pain and agony of death by mummification being an essential step in the process.</p>\n<p>Regardless of the method of their creation, mummy guardians are more than just physical shells of flesh and bone-they retain fragmented, distorted versions of their minds, with only enough memories of their living personality remaining to fuel their undead anger and jealousy of those who yet live. This burning rage only intensifies over the centuries of waiting within a crypt for the chance to actually act, and thus when most mummy guardians are awoken by tomb robbers or adventurers, they stop at nothing in pursuit of glorious slaughter.</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Fist": {
           "name": "Fist"
         },
         "action->Despair": {
           "name": "Despair",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:22] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Effect: Despair}</p>"
+          "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:22] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Effect: Despair}</p>"
         },
         "action->Blinding Rot": {
           "name": "Blinding Rot",
-          "description": "<p>Cilios's fist Strikes expose those they damage to blinding rot. This disease and any damage from it can't be healed until this curse is removed. A creature killed by blinding rot turns to dust and can't be resurrected except by a 7th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute);</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 day);</p>\n<p><strong>Stage 3</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 day)</p>"
+          "description": "<p>Cilios's fist Strikes expose those they damage to blinding rot. This disease and any damage from it can't be healed until this curse is removed. A creature killed by blinding rot turns to dust and can't be resurrected except by a 7th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute);</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 day);</p>\n<p><strong>Stage 3</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 day)</p>"
         },
         "action->Mummy Rot": {
           "name": "Mummy Rot",
-          "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>"
+          "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>"
         }
       }
     },
     "Dark Talon Kobold": {
       "name": "Dark Talon Kobold",
       "blurb": "Kobold rogue",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Flying Talon": {
           "name": "Flying Talon"
@@ -133,7 +128,6 @@
     "Darkmantle": {
       "name": "Darkmantle",
       "publicNotes": "<p>These dark blue or black mollusk-like creatures have a similar appearance to an octopus, save that they have only six tentacles, all of which are connected by a thick leathery shroud. While darkmantle aren't a particularly good climber, they excel at clinging and can clutch onto a cave roof for days, patiently waiting to ambush any prey that walks below them with a disorienting blob of darkness. When clinging to a cave roof, and with their bulbous red eyes closed down to squints, darkmantles in ambush look similar to stalactites. Their preferred hunting method works best on creatures without darkvision, so they frequent ruins aboveground or shallow caves not far from the outside world. When darkmantles sense prey, they shed darkness down onto their prey before dropping away from the ceiling to flap quickly down to their victim, whereupon these beasts clutch and squeeze with their thick, muscular tentacles. Despite the shape of darkmantles, their bodies's texture is more like thick leather or even rubber-they can't cause damage with their spike-shaped bodies by dropping down onto other creatures.</p>\n<p>Darkmantles have a swift life cycle-their young grow to maturity in a matter of months, and most of these creatures die of old age after living for only a few years. As a result, generations of darkmantles quickly accrue, and over the years, they've developed a similarly rapid propensity to adapt to new locations. Aquatic caverns, for example, might be infested with darkmantles that can swim instead of fly; on the other hand, icy caverns would've led to darkmantles that developed white or pale blue colorations, and these specimens might produce blasts of obscuring fog instead of darkness. The deepest, darkest reaches of the Darklands are rumored to host darkmantles of incredible size, capable of smothering multiple human-sized victims simultaneously. These deep-dwelling darkmantles have the capacity to shed more powerful darkness that can plunge even creatures with darkvision into inky blackness- darkness in which these deep-dwelling creatures can, of course, still see well within.</p>",
-      "senses": "darkvision, tremorsense (precise) 60 feet",
       "items": {
         "strike-melee->Tentacles": {
           "name": "Tentacles"
@@ -146,7 +140,7 @@
         },
         "action->Shed Darkness": {
           "name": "Shed Darkness",
-          "description": "<p>The darkmantle sheds an inky blob of black fluid from the folds of its body. It can shed this blob horizontally to a distance of up to 30 feet, or simply let it fall up to 120 feet below itself (shed darkness that falls more than 120 feet before striking a surface evaporates without effect). When the blob of darkness lands, it explodes into a @Template[type:burst|distance:10] of darkness that prevents light from penetrating or emanating within the area. Light doesn't enter this area, and any non-magical light sources, such as a torch or lantern, don't emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of 1st level or lower but has no effect on magical light from 2nd-level or higher spells. From the outside, it appears as a globe of pure darkness. The darkmantle can't shed darkness again for 24 hours.</p>"
+          "description": "<p>The darkmantle sheds an inky blob of black fluid from the folds of its body. It can shed this blob horizontally to a distance of up to 30 feet, or simply let it fall up to 120 feet below itself (shed darkness that falls more than 120 feet before striking a surface evaporates without effect). When the blob of darkness lands, it explodes into a @Template[type:burst|distance:10] of darkness that prevents light from penetrating or emanating within the area. Light doesn't enter this area, and any non-magical light sources, such as a torch or lantern, don't emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of 1st level or lower but has no effect on magical light from 2nd-rank or higher spells. From the outside, it appears as a globe of pure darkness. The darkmantle can't shed darkness again for 24 hours.</p>"
         }
       }
     },
@@ -154,7 +148,6 @@
       "name": "Dismemberment Table",
       "acDetails": "18 when broken",
       "blurb": "Variant animated object",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Blade": {
           "name": "Blade"
@@ -180,7 +173,6 @@
       "name": "Drazmorg The Damned",
       "blurb": "Male variant wight necromancer",
       "hpDetails": "void healing",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
@@ -321,9 +313,7 @@
     },
     "Grick": {
       "name": "Grick",
-      "languages": "Can't speak any language",
       "publicNotes": "<p>The wormlike gricks terrorize the caverns and tunnels in which it dwells, lying in wait near heavily traveled underground passages or subterranean cities for the chance to reach forth from the darkness and take its prey. Those laid low by a grick are rarely consumed on the spot. Instead, gricks haul back fresh food back to their lair in a tight burrow or high on a cavern ledge, where they consume their spoils in small bites at the gricks' leisure.</p>\n<p>The origin of gricks is unknown. Even though these creatures have a rudimentary intelligence, they don't have any social structure to speak of. Most gricks are encountered alone. Even on those occasions when unfortunate travelers meet multiple gricks in small groups, those gricks don't appear to communicate or work together; each instead attacks an individual target and retreats with its prize as soon as it manages to bring down an opponent. Capable predators, gricks also have a strangely weapon-resistant hide that makes them especially dangerous to the unprepared. Many novice adventurers have fallen to grick attacks merely because they couldn't damage these creatures with their non-magical weapons. Those familiar with gricks (especially dwarves, morlocks, and xulgaths) know the best strategy for dealing with them when one lacks access to magic weapons is to fall back and wait for more powerful or magical reinforcements.</p>\n<p>Gricks rely on their dark coloration and ability to climb walls to keep them out of sight until they're ready to spring an ambush. On occasions, when food becomes scarce in a particular area, gricks have been known to travel to the surface and roam the wilderness in search of prey, but they make these sojourns almost always out of necessity, lasting only as long as it takes them to find entrances to new subterranean lairs. These creatures prefer darkness and the comfort of a ceiling overhead; they avoid the open sky and go to great lengths to keep the cover of trees, low clouds, or buildings between them and the empty gulf overhead.</p>\n<p>Some Darklands societies have tried to recruit gricks as guardians or even beasts of burden, but their intelligence-while middling at best-is more than enough for them to stubbornly resist and even resent attempts at \"training.\" The best most societies can manage is to keep a grick guardian happy by making sure it remains well-fed and comfortable.</p>",
-      "senses": "darkvision, scent (imprecise) 30 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -348,7 +338,6 @@
       "name": "Grimbal",
       "blurb": "Male dwarf ghost",
       "hpDetails": "void healing, rejuvenation",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Ghostly Hand": {
           "name": "Ghostly Hand"
@@ -369,7 +358,6 @@
     "Gurtlekep": {
       "name": "Gurtlekep",
       "blurb": "Male kobold lookout",
-      "senses": "darkvision",
       "items": {
         "equipment->Thieves' Tools": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]\nThieves' Tools",
@@ -404,7 +392,6 @@
       "name": "Hymmir Urath",
       "blurb": "Male human barbarian ghoul",
       "hpDetails": "void healing",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -439,9 +426,7 @@
     },
     "Id Ooze": {
       "name": "Id Ooze",
-      "languages": "(Can't Speak Any Language); Telepathy 60 ft",
       "publicNotes": "<p>Not all oozes are mindless predators capable of little more than ambushing and consuming prey. The id ooze is a thinking, calculating creature with the capacity to carry out complex plots and plans-not always to secure a meal. Left to its own devices, an id ooze is just as content to spend decades or even centuries in introspective philosophical pursuits as it is to crawl through the underground rivers and moist caverns it prefers to call home.</p>\n<p>An id ooze can derive sustenance from the consumption of organic material, but without easy access to plants or animals to eat, they can subsist in a state of semi-hibernation for centuries while slowly absorbing residual psychic energies in locations that have been host to powerful emotions, such as long-standing temples that once hosted generations of worshippers, settlements that endured horrific wars or devastating disasters, or even just the home of a powerful occult spellcaster whose thoughts left marks upon the walls long after they moved on.</p>\n<p>An id ooze prefers water but is equally at home on land. The slimy creature appears as a patch of water until it attacks, when its gelatinous body piles up on itself to form a single pseudopod that strikes like an angry snake.</p>",
-      "senses": "motion sense 60 ft, no vision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -486,7 +471,6 @@
     "Jekkajak": {
       "name": "Jekkajak",
       "blurb": "Female kobold sorcerer",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Spontaneous Spells": {
           "name": "Divine Spontaneous Spells"
@@ -502,21 +486,20 @@
         },
         "equipment->Hat of Disguise (Greater)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\nHat of Disguise (Greater)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-level <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
         },
         "strike-melee->Heartripper Blade": {
           "name": "Heartripper Blade"
         },
         "action->Smoky Retreat": {
           "name": "Smoky Retreat",
-          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> Jekkajak is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> Jekkajak squeals in fright as she exhales a noxious cloud of stinking smoke. This smoke fills a @Template[type:emanation|distance:10] around her and grants concealment to all creatures within the smoke. In addition, any non-kobold starting their turn in the smoke must succeed at a @Check[type:fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the foul smoke (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). Once created, the cloud of smoke is immobile and persists for 3 rounds. Jekkajak can move up to her Speed, but she must end her movement in a space that isn't adjacent to any enemies. This is a 2nd-level spell that requires a somatic component.</p>"
+          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> Jekkajak is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> Jekkajak squeals in fright as she exhales a noxious cloud of stinking smoke. This smoke fills a @Template[type:emanation|distance:10] around her and grants concealment to all creatures within the smoke. In addition, any non-kobold starting their turn in the smoke must succeed at a @Check[type:fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the foul smoke (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). Once created, the cloud of smoke is immobile and persists for 3 rounds. Jekkajak can move up to her Speed, but she must end her movement in a space that isn't adjacent to any enemies. This is a 2nd-rank spell that requires a somatic component.</p>"
         }
       }
     },
     "Kapmek": {
       "name": "Kapmek",
       "blurb": "Male kobold slurk-trainer",
-      "senses": "darkvision",
       "items": {
         "consumable->Black Adder Venom": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
@@ -546,7 +529,6 @@
     "Kerrdremak": {
       "name": "Kerrdremak",
       "blurb": "Male kobold witch",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
@@ -570,7 +552,6 @@
       "name": "Kieragan Skross",
       "blurb": "Greater herexen",
       "hpDetails": "void healing",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
@@ -590,7 +571,7 @@
         },
         "action->Final Blasphemy": {
           "name": "Final Blasphemy",
-          "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 3-action 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em> spell (@Check[type:fortitude|dc:26|basic:true]).</p>\n<p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>"
+          "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 3-action 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em> spell (@Check[type:fortitude|dc:26|basic:true]).</p>\n<p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>"
         },
         "action->Heretic's Smite": {
           "name": "Heretic's Smite",
@@ -601,7 +582,6 @@
     "King Merlokrep": {
       "name": "King Merlokrep",
       "blurb": "Male kobold king",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Arcane Spontaneous Spells": {
           "name": "Arcane Spontaneous Spells"
@@ -677,7 +657,6 @@
     "Lekmek": {
       "name": "Lekmek",
       "blurb": "Male kobold bully",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Greatpick": {
           "name": "Greatpick"
@@ -731,7 +710,6 @@
     "Narlynark": {
       "name": "Narlynark",
       "blurb": "Male kobold druid",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Primal Prepared Spells": {
           "name": "Primal Prepared Spells"
@@ -826,7 +804,6 @@
     "Tallow Guardian": {
       "name": "Tallow Guardian",
       "publicNotes": "<p>A tallow guardian typically appears as a vaguely humanoid-shaped mass of tallow or wax, its surface constantly melting, running down its body, and then hardening only to be reabsorbed into the central mass. The tallow guardian's face seems constantly on the verge of melting into a shapeless blob, yet the unsettling construct can still sense the world around it with ease.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Fist": {
           "name": "Fist"
@@ -853,9 +830,7 @@
       "name": "The Disciples",
       "blurb": "Variant unrisen",
       "hpDetails": "void healing",
-      "languages": "(Can't Speak Any Language)",
       "publicNotes": "<p>An unrisen is a mangled conglomeration of splintered bones, decaying organs, and rotting flesh, created when a ritual such as resurrect goes catastrophically wrong. Immense care must be taken, for if the ritual is a critical failure, an unrisen can be the result—as many a ritualist has learned to their horror.</p>\n<p>Unrisen are barely intelligent, aware only of the agony constantly inflicted by their flawed creation and their resentment for the living. They tend to attack the casters involved in the botched ritual first before lashing out at everyone else around them. Though an unrisen's twisted form is unrecognizable as the intended target of the resurrection, its wordless howls are often disturbingly similar to the deceased's voice. If an unrisen is destroyed before it can rise again, it's reduced to a handful of metallic blue-green salts referred to as essential salts.</p>",
-      "senses": "darkvision, lifesense 30 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -901,9 +876,7 @@
     },
     "Thoqqua": {
       "name": "Thoqqua",
-      "languages": "(Can't Speak Any Language)",
       "publicNotes": "<p>Thoqquas are cantankerous creatures of fire and slag. Their bodies generate incredible heat that allows them to burrow or melt through most surfaces, even solid rock. Thoqquas are native to the vast ash deserts and lava fields of the Plane of Fire. There, they consume ore and minerals, which their furnace-like bodies then smelt into armor plates that grant the creatures their armored forms.</p>\n<p>These creatures' foremost body segment tapers into a straight, hornlike beak that glows with a blistering heat. Steam and smoke constantly hiss from their joints, and from a distance, thoqquas can be mistaken for strange metallic constructs. Adult thoqquas are 5 feet long and weigh 200 pounds.</p>\n<p>Thoqquas are dangerous to approach-they attack without thinking when startled or frustrated. If they don't immediately chase away intruders within their territory, then they might gradually come to view that area as property and even guard it. Mephits seem to understand this curious thoqqua thought process, occasionally brokering deals with the magma worms. The mephits claim that the mountain- sized ancestors of modern thoqquas were servants of the elemental lords and dug the first volcanoes in the young worlds of the Material Plane. These \"progenitor worms\" then retired to the worlds' cores, where their heat warms the planets even today. Thoqquas on the Material Plane do congregate around volcanoes-though whether this tendency is to protect a mineral-rich food site or sacred place, or simply out of comfort, depends on the thoqqua in question.</p>",
-      "senses": "darkvision, tremorsense (imprecise) 60 ft",
       "items": {
         "strike-melee->Beak": {
           "name": "Beak"
@@ -968,7 +941,6 @@
       "name": "Ulizmila's Cauldron",
       "acDetails": "(13 when broken); construct armor",
       "publicNotes": "<p>While Ulizmila is long gone, her animated cauldron remains a dangerous guardian of the hut. The mindless construct lurches to life and attacks anyone who dares to enter, pursuing intruders all the way to the clearing's edge before returning to its place inside the hut. When the cauldron attacks, it \"bites\" at enemies by snapping at them with its hinged lid while its inner surfaces swiftly heat up to cook anything Small it can \"gulp\" down.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Lid": {
           "name": "Lid"
@@ -996,7 +968,6 @@
     "Vargouille": {
       "name": "Vargouille",
       "publicNotes": "<p>Vargouilles are scavengers from the swamps of Abaddon, where they flop and flap through strange and haunted skies in constant search of fresh souls to torment. In this daemonic nightmare realm, vargouilles play a role similar to that of a raven or vulture, although they augment these roles with a malevolent delight in causing pain and anguish that no scavenger bird could ever hope to match. A vargouille is larger than a human head, typically between 12 and 20 inches high with a 15- to 35-inch wingspan. While vargouilles aren't natives of the Material Plane, they can be found there nevertheless, occupying graveyards, ancient battlefields, or anywhere one can find remnants of death and decay.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Bite": {
           "name": "Bite"
@@ -1007,7 +978,7 @@
         },
         "action->Vargouille's Kiss": {
           "name": "Vargouille's Kiss",
-          "description": "<p><strong>Requirements</strong> The vargouille is adjacent to a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing humanoid creature</p>\n<p><strong>Effect</strong> The vargouille nuzzles up against a helpless or willing humanoid creature in a parody of a lover's kiss-the creature must then attempt a saving throw or begin an unsettling transformation into a vargouille. The sickened, stupefied, and unconscious conditions from Vargouille's Kiss don't improve on their own until the disease is cured. This disease can't progress in stage as long as the victim is in sunlight or in the area of a 3rd-level or higher light effect.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> no ill effect (2 hours)</p>\n<p><strong>Stage 2</strong> victim's hair falls out, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 hours)</p>\n<p><strong>Stage 3</strong> victim's ears elongate into winglike shapes and their teeth grow tangled and sharp, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (2 hours)</p>\n<p><strong>Stage 4</strong> as Stage 3, but the victim falls unconscious (2 hours)</p>\n<p><strong>Stage 5</strong> death, and the victim's head transforms into a new vargouille that detaches from the body and flies off to spread evil on its own.</p>"
+          "description": "<p><strong>Requirements</strong> The vargouille is adjacent to a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing humanoid creature</p>\n<p><strong>Effect</strong> The vargouille nuzzles up against a helpless or willing humanoid creature in a parody of a lover's kiss-the creature must then attempt a saving throw or begin an unsettling transformation into a vargouille. The sickened, stupefied, and unconscious conditions from Vargouille's Kiss don't improve on their own until the disease is cured. This disease can't progress in stage as long as the victim is in sunlight or in the area of a 3rd-rank or higher light effect.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> no ill effect (2 hours)</p>\n<p><strong>Stage 2</strong> victim's hair falls out, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 hours)</p>\n<p><strong>Stage 3</strong> victim's ears elongate into winglike shapes and their teeth grow tangled and sharp, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (2 hours)</p>\n<p><strong>Stage 4</strong> as Stage 3, but the victim falls unconscious (2 hours)</p>\n<p><strong>Stage 5</strong> death, and the victim's head transforms into a new vargouille that detaches from the body and flies off to spread evil on its own.</p>"
         },
         "action->Vargouille's Shriek": {
           "name": "Vargouille's Shriek",
@@ -1018,7 +989,6 @@
     "Ygrik": {
       "name": "Ygrik",
       "blurb": "Male kobold jailer",
-      "senses": "darkvision",
       "items": {
         "equipment->Keys": {
           "name": "Keys",
@@ -1060,7 +1030,6 @@
       "converter": "translateActorItems",
       "path": "items"
     },
-    "languages": "system.traits.languages.custom",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -1075,7 +1044,6 @@
     },
     "reset": "system.details.reset",
     "routine": "system.details.routine",
-    "senses": "system.traits.senses.value",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

@@ -5,7 +5,6 @@
       "name": "Algea",
       "publicNotes": "<p>Algeas protect (and sometimes retrieve) souls at risk of being claimed by other entities, particularly spellcasters who dabbled with otherworldly forces but never officially pledged their souls.</p>",
       "saveDetails": "+1 status bonus to all saves vs. magic",
-      "senses": "darkvision, lifesense 60 feet, see magic",
       "items": {
         "spellcastingEntry->Innate Divine Spells": {
           "name": "Innate Divine Spells"
@@ -30,7 +29,7 @@
         },
         "action->Grieving Aura": {
           "name": "Grieving Aura",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that begins its turn in the aura must attempt a @Check[type:will|dc:27] save. Undead take a -2 circumstance penalty to this saving throw. The creature is then temporarily immune to the grieving aura for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For 1 round, the creature can't use reactions and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Critical Failure</strong> As failure, but the effects lasts while the creature remains in the aura plus 1 minute.</p>"
+          "description": "<p>30 feet. A creature that begins its turn in the aura must attempt a @Check[type:will|dc:27] save. Undead take a -2 circumstance penalty to this saving throw. The creature is then temporarily immune to the grieving aura for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For 1 round, the creature can't use reactions and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Critical Failure</strong> As failure, but the effects lasts while the creature remains in the aura plus 1 minute.</p>"
         },
         "action->Drain Magic": {
           "name": "Drain Magic",
@@ -51,7 +50,6 @@
     },
     "Anitoli Nostraema": {
       "name": "Anitoli Nostraema",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -65,7 +63,7 @@
         },
         "action->Aura of Sobs": {
           "name": "Aura of Sobs",
-          "description": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Anitoli Nostreaema enshrouds itself in a tapestry of stolen voices. Each living creature that enters or starts their turn in the aura must succeed at a @Check[type:will|dc:21] save or the unnerving, bitter sobs render them distraught and they become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as they remain within the aura. A creature that succeeds is temporarily immune for 1 hour.</p>\n<p>Anitoli Nostreaema can activate or deactivate the aura with a single free action, which has the concentrate trait.</p>"
+          "description": "<p>10 feet. Anitoli Nostreaema enshrouds itself in a tapestry of stolen voices. Each living creature that enters or starts their turn in the aura must succeed at a @Check[type:will|dc:21] save or the unnerving, bitter sobs render them distraught and they become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as they remain within the aura. A creature that succeeds is temporarily immune for 1 hour.</p>\n<p>Anitoli Nostreaema can activate or deactivate the aura with a single free action, which has the concentrate trait.</p>"
         },
         "action->Steal Breath": {
           "name": "Steal Breath",
@@ -116,7 +114,6 @@
     "Corrupted Nosoi": {
       "name": "Corrupted Nosoi",
       "hpDetails": "void healing",
-      "senses": "darkvision, lifesense 60 feet",
       "items": {
         "strike-melee->Beak": {
           "name": "Beak"
@@ -136,7 +133,6 @@
     },
     "Esobok Ghoul": {
       "name": "Esobok Ghoul",
-      "senses": "darkvision, lifesense 60 feet, scent (imprecise) 60 feet",
       "items": {
         "spellcastingEntry->Innate Divine Spells": {
           "name": "Innate Divine Spells"
@@ -181,8 +177,6 @@
     },
     "Haunted Nosoi": {
       "name": "Haunted Nosoi",
-      "languages": "Truespeech",
-      "senses": "darkvision, lifesense 60 feet",
       "items": {
         "strike-melee->Beak": {
           "name": "Beak"
@@ -203,7 +197,6 @@
     "Ioseff Xarwin": {
       "name": "Ioseff Xarwin",
       "hpDetails": "void healing, rejuvination",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Innate Occult Spells": {
           "name": "Innate Occult Spells"
@@ -216,7 +209,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]\nGentle Repose"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)"
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -268,7 +262,6 @@
     },
     "Ixirizmid": {
       "name": "Ixirizmid",
-      "senses": "low-light vision, tremorsense (precise) 30 feet",
       "items": {
         "spell->Extract Brain": {
           "primarycheck": "Occultism (expert)",
@@ -333,7 +326,6 @@
     "Nils Kelveken": {
       "name": "Nils Kelveken",
       "hpDetails": "void healing",
-      "senses": "darkvision",
       "items": {
         "armor->Leather Carpenter's Apron": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nLeather Carpenter's Apron",
@@ -362,7 +354,6 @@
       "name": "Tanglebones",
       "hpDetails": "void healing",
       "publicNotes": "<p>Sometimes, when murderer buries a large number of victims in a mass grave, the vengeful spirits of the slain can become similarly tangled together. When these spirits can't untangle, they instead return to their physical remains, fusing into one horrific mass of bones and black, tar-like sludge-a tanglebones.</p>\n<p>One awful tale speaks of a bitter old dowager who learned that, through a legal loophole, ownership of her estate would revert to her estranged daughter. She murdered her 13 servants, buried their bodies in the house's basement, and then played the gracious mother in handing over the manor keys at the appointed time. One night, the tanglebones that arose from the dowager's atrocity murdered the daughter and her family. By the time the authorities learned of what happened, the dowager had fled the nation, changed her identity, and (the story goes) wasted no time rebuilding her fortunes-this time becoming a queen.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Claw": {
           "name": "Claw"
@@ -396,9 +387,7 @@
     "Undead Brain Collector": {
       "name": "Undead Brain Collector",
       "hpDetails": "void healing",
-      "languages": "Telepathy 100 feet",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -481,7 +470,6 @@
     "Xarwin's Manifestation": {
       "name": "Xarwin's Manifestation",
       "saveDetails": "+1 status to all saves vs. vitality",
-      "senses": "darkvision, lifesense 60 feet",
       "items": {
         "strike-melee->Spectral Hand": {
           "name": "Spectral Hand",
@@ -517,9 +505,7 @@
     },
     "Yianyin": {
       "name": "Yianyin",
-      "languages": "Telepathy 120 feet, Tongues",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, lifesense 60 feet",
       "items": {
         "spellcastingEntry->Innate Occult Spells": {
           "name": "Innate Occult Spells"
@@ -546,7 +532,7 @@
         },
         "action->Unnerving Presence": {
           "name": "Unnerving Presence",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that begins its turn within the aura must attempt a @Check[type:will|dc:22|basic:true] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to unnerving presence for 24 hours.</p>\n<p><strong>Success</strong> The creature's attack rolls take a -1 status penalty for 1 round.</p>\n<p><strong>Failure</strong> The creature feels Yianyin's eyeless gaze upon them but knows that something far more dangerous and monstrous watches them through those empty sockets. The overwhelming presence of this alien intelligence causes the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as they shake and tremble with fear.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is instead @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and knows the name of what watches from those empty eyes: Tchekuth.</p>"
+          "description": "<p>30 feet. A creature that begins its turn within the aura must attempt a @Check[type:will|dc:22|basic:true] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to unnerving presence for 24 hours.</p>\n<p><strong>Success</strong> The creature's attack rolls take a -1 status penalty for 1 round.</p>\n<p><strong>Failure</strong> The creature feels Yianyin's eyeless gaze upon them but knows that something far more dangerous and monstrous watches them through those empty sockets. The overwhelming presence of this alien intelligence causes the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as they shake and tremble with fear.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is instead @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and knows the name of what watches from those empty eyes: Tchekuth.</p>"
         },
         "action->Compel Condemned": {
           "name": "Compel Condemned",
@@ -577,7 +563,6 @@
       "converter": "translateActorItems",
       "path": "items"
     },
-    "languages": "system.traits.languages.custom",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -593,7 +578,6 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
-    "senses": "system.traits.senses.value",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

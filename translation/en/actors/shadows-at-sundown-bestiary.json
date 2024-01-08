@@ -94,7 +94,6 @@
       "name": "Aliriel",
       "blurb": "Female human strigoi necromancer",
       "hpDetails": "coffin restoration, fast healing 15, void healing",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Wizard Spells Prepared": {
           "name": "Wizard Spells Prepared"
@@ -113,7 +112,7 @@
         },
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
-          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level",
+          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
           "primarycheck": "Arcana (master) or Occultism (master)",
           "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
         },
@@ -209,7 +208,6 @@
       "name": "Bishop Keppira D'Bear",
       "blurb": "Female strigoi",
       "hpDetails": "coffin restoration, fast healing 10, void healing",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -258,7 +256,6 @@
     "Ibrique": {
       "name": "Ibrique",
       "blurb": "Female variant dero ghoul",
-      "senses": "darkvsion",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -314,8 +311,6 @@
     "Ileosa's Shell": {
       "name": "Ileosa's Shell",
       "hpDetails": "void healing",
-      "languages": "(Can't Speak Any Languages)",
-      "senses": "greater darkvision",
       "items": {
         "strike-melee->Fangs": {
           "name": "Fangs"
@@ -359,9 +354,7 @@
     },
     "Loreavor": {
       "name": "Loreavor",
-      "languages": "Tongues",
       "publicNotes": "<p>Rarely, when an ioton leeches a particularly secretive thought, it can choke to death on the secret, only to be born from its previous body into that of a loreavor: an ennosite whose existence is shaped around the consumption of secrets and artistry.</p>\n<p>Loreavors sip at secrets throughout their lives and are instinctively drawn to obscure information. Their hunger places them firmly at odds with scholars and historians alike. Living victims lose memories; written texts become blank books. Loreavors' favorite sites are ruins and ancient libraries, but they can also survive on banal secrets of everyday life as well. While the creatures are secretive, typically staying out of sight and fleeing danger, they become aggressive when their favored food sources are threatened.</p>\n<p>A loreavor appears as a 3-foot-long, pale, wormlike creature with dozens of half-formed faces growing from its segmented body. Trapped in an area without secrets to eat, a loreavor won't starve and can live for years.</p>",
-      "senses": "thoughtsense (imprecise) 60 feet",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -386,7 +379,7 @@
         },
         "action->Reconstruct Spell": {
           "name": "Reconstruct Spell",
-          "description": "<p><strong>Trigger</strong> A creature within 30 feet attempts and fails to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} while stupefied</p>\n<hr />\n<p><strong>Effect</strong> The loreavor gains use of the failed spell as an occult innate spell. It can cast that spell once; if the spell is of a higher level than half the loreavor's level (5th level or higher for most loreavors), the loreavor must succeed at a flat check with a DC equal to 5 + the level of the spell it is attempting to cast; on a failure, the spell fails, and the loreavor becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute. If the spell isn't cast within 24 hours, or if the loreavor uses Reconstruct Spell again before casting the spell, the spell is lost. No more than one loreavor can reconstruct a given spell this way.</p>"
+          "description": "<p><strong>Trigger</strong> A creature within 30 feet attempts and fails to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} while stupefied</p>\n<hr />\n<p><strong>Effect</strong> The loreavor gains use of the failed spell as an occult innate spell. It can cast that spell once; if the spell is of a higher level than half the loreavor's level (5th level or higher for most loreavors), the loreavor must succeed at a flat check with a DC equal to 5 + the rank of the spell it is attempting to cast; on a failure, the spell fails, and the loreavor becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute. If the spell isn't cast within 24 hours, or if the loreavor uses Reconstruct Spell again before casting the spell, the spell is lost. No more than one loreavor can reconstruct a given spell this way.</p>"
         },
         "action->Redact": {
           "name": "Redact",
@@ -400,8 +393,6 @@
     },
     "Lorthact": {
       "name": "Lorthact",
-      "languages": "Telepathy 300 feet, Tongues",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
@@ -456,7 +447,7 @@
         },
         "action->Arcane Absorption": {
           "name": "Arcane Absorption",
-          "description": "<p><strong>Requirements</strong> Any creature adjacent to Lorthact is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}, capable of casting prepared arcane spells, and is either @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing</p>\n<hr />\n<p><strong>Effect</strong> Lorthact attempts to drain a 1st- through 8th-level prepared spell from the target, who can resist with a successful @Check[type:will|dc:37] saving throw. On a failure or against a willing target, the prepared arcane spell is transferred from that creature as if it were cast, and Lorthact immediately prepares that spell in the same level slot. If he already had a spell prepared in that slot, the previously prepared spell is lost. That creature is then immune to Arcane Absorption for 24 hours.</p>"
+          "description": "<p><strong>Requirements</strong> Any creature adjacent to Lorthact is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}, capable of casting prepared arcane spells, and is either @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing</p>\n<hr />\n<p><strong>Effect</strong> Lorthact attempts to drain a 1st- through 8th-rank prepared spell from the target, who can resist with a successful @Check[type:will|dc:37] saving throw. On a failure or against a willing target, the prepared arcane spell is transferred from that creature as if it were cast, and Lorthact immediately prepares that spell in the same rank slot. If he already had a spell prepared in that slot, the previously prepared spell is lost. That creature is then immune to Arcane Absorption for 24 hours.</p>"
         },
         "action->Arcane Spellcaster": {
           "name": "Arcane Spellcaster",
@@ -499,7 +490,6 @@
       "name": "Profane Ghoul",
       "blurb": "Variant ghoul",
       "hpDetails": "void healing",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -527,9 +517,7 @@
     },
     "Scarlet Walker": {
       "name": "Scarlet Walker",
-      "languages": "Telepathy 300 feet",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "bloodsense 60 feet, darkvision",
       "speed": "air walk",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -559,7 +547,7 @@
         },
         "action->Blood-Draining Gaze": {
           "name": "Blood-Draining Gaze",
-          "description": "<p>@Template[type:emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>When a living, non-scarlet walker creature ends its turn in the aura, it must attempt a @Check[type:fortitude|dc:29] save to prevent thin streams of blood from streaming from its eyes and into the eyeless pits in the scarlet walker's face. On a failed save, the victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the pain.</p>"
+          "description": "<p>20 feet. When a living, non-scarlet walker creature ends its turn in the aura, it must attempt a @Check[type:fortitude|dc:29] save to prevent thin streams of blood from streaming from its eyes and into the eyeless pits in the scarlet walker's face. On a failed save, the victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the pain.</p>"
         },
         "action->No Breath": {
           "name": "No Breath",
@@ -582,7 +570,6 @@
       "name": "Strigoi Progenitor",
       "hpDetails": "coffin restoration, fast healing 10, void healing",
       "publicNotes": "<p>The most powerful strigoi are those intentionally summoned into the bodies of willing hosts in times long past. As the rites to do so are lost to time, very few strigoi progenitors exist today. Those who do trace their lives back well over ten thousand years ago to Thassilon, Azlant, or similar ancient empires. A strigoi progenitor may appear to possess the vitality of the living, yet closer inspection reveals sharp fangs, the faintest smell of decay, and the strange and unsettling shifting of their shadow. In life, this example strigoi progenitor was a powerful oracle and advisor in Runelord Sorshen's nation of Eurythnia.</p>\n<hr />\n<p>The oldest of all vampires are the strigoi. They predate ancient nosferatus and view moroi as infantile children, yet their own origins are so far lost to the ravages of time that few today have heard of them and fewer still know their true nature. Many of the oldest tales about vampires trace back to the strigoi, and nearly every other vampire carries traits that ultimately have their roots in these powerful, ancient creatures.</p>\n<p>Strigoi, in their true form, are bodiless creatures native to the Shadow Plane that are incapable of interacting with the physical world, existing only as pure forces of malevolence. When this malevolence is invited into a physical body by method of ancient rituals, though, a strigoi becomes much more dangerous. This requirement-that a living creature perform a rite of their own free will to draw the strigoi into their soul-may well be the source of a moroi's compulsion not to enter a home without first being invited.</p>\n<p>Some myths point to Urgathoa as the source of the ritual that allowed spellcasters to become strigoi, while others suggest the method was spread by the cult of Zura. Whatever the source, this long-lost ritual was no gateway to power, but instead a trap that allowed the strigoi to inhabit the shadows and souls of once-living hosts. In so doing, they found a way to exist in the world of flesh and blood. The presence of a strigoi within the shadow of a living host causes sickness and swift death, after which the strigoi bonds with the host's soul and becomes one with the body. Thus did the first of their kind invade the world of the living, and thus did the first vampires walk the night.</p>",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Divine Spontaneous Spells": {
           "name": "Divine Spontaneous Spells"
@@ -596,7 +583,7 @@
         },
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
-          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell level × the target's level",
+          "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
           "primarycheck": "Arcana (master) or Occultism (master)",
           "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
         },
@@ -627,6 +614,11 @@
         },
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
+        },
+        "spell->Undetectable Alignment": {
+          "name": "Undetectable Alignment",
+          "description": "<p>You shroud a creature or object in wards that hide its alignment. The target appears to be neutral to all effects that would detect its alignment.</p>",
+          "target": "1 creature or object"
         },
         "spell->Ray of Enfeeblement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -680,7 +672,6 @@
       "name": "Strigoi Servant",
       "hpDetails": "coffin restoration, fast healing 10, void healing",
       "publicNotes": "<p>The oldest of all vampires are the strigoi. They predate ancient nosferatus and view moroi as infantile children, yet their own origins are so far lost to the ravages of time that few today have heard of them and fewer still know their true nature. Many of the oldest tales about vampires trace back to the strigoi, and nearly every other vampire carries traits that ultimately have their roots in these powerful, ancient creatures.</p>\n<p>Strigoi, in their true form, are bodiless creatures native to the Shadow Plane that are incapable of interacting with the physical world, existing only as pure forces of malevolence. When this malevolence is invited into a physical body by method of ancient rituals, though, a strigoi becomes much more dangerous. This requirement-that a living creature perform a rite of their own free will to draw the strigoi into their soul-may well be the source of a moroi's compulsion not to enter a home without first being invited.</p>\n<p>Some myths point to Urgathoa as the source of the ritual that allowed spellcasters to become strigoi, while others suggest the method was spread by the cult of Zura. Whatever the source, this long-lost ritual was no gateway to power, but instead a trap that allowed the strigoi to inhabit the shadows and souls of once-living hosts. In so doing, they found a way to exist in the world of flesh and blood. The presence of a strigoi within the shadow of a living host causes sickness and swift death, after which the strigoi bonds with the host's soul and becomes one with the body. Thus did the first of their kind invade the world of the living, and thus did the first vampires walk the night.</p>",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -752,7 +743,6 @@
       "converter": "translateActorItems",
       "path": "items"
     },
-    "languages": "system.traits.languages.custom",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -768,7 +758,6 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
-    "senses": "system.traits.senses.value",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

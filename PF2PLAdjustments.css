@@ -120,60 +120,87 @@ h4.entity-name a
 /* # Character Sheet */
 
 /* Sidebar */
-.actor.sheet .crb-style
+.actor.sheet.character .crb-style
 {
     grid: "sidebar header" 75px "sidebar nav" minmax(min-content, max-content) "sidebar content" 1fr/306px 1fr;
 }
 
-.actor.sheet .crb-style aside
+/* ref */
+/* .actor.sheet.character .crb-style aside {
+    grid-area: sidebar;
+    color: var(--sidebar-label);
+    font-family: var(--serif);
+    font-size: var(--font-size-10);
+    font-weight: 600;
+    margin-left: 10px;
+    background-image: url("../assets/sheet/red_sidebar_top.webp"), url("../assets/sheet/red_sidebar_bottom.webp");
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 52px), center bottom;
+    background-size: 224px 100%, 224px 100%px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.actor.sheet.character .crb-style aside
 {
     background-position: center calc(100% - 69px), center bottom;
     background-size: 299px 100%, 299px 69px;
 }
 
-.actor.sheet .crb-style aside .sidebar {
+.actor.sheet.character .crb-style aside .sidebar {
     margin-bottom: 69px;
 }
 
 .app.window-app.default.sheet.actor.character {
-    min-width: 925px;
+    min-width: 960px;
 }
 
-.actor.sheet .crb-style aside .logo {
+.actor.sheet.character .crb-style aside .logo {
     width: auto;
     height: auto;
 }
 
-/* AC */
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details .pc_deity {
-    margin-left: 20px;
+/* AC Section */
+.actor.sheet.character .crb-style aside .sidebar .armor-class {
+    display: grid; /* Ensure that the element is a grid container */
+    grid-template-areas:
+        "ac shield-hp shield-footer"
+        "shield-data shield-data shield-data";
+    grid-template-columns: auto; /* 1fr 1fr 1fr; /* Three columns with equal width */
+    grid-template-rows: auto auto; /* Two rows with automatic height */
 }
 
-.actor.sheet .crb-style aside .sidebar .armor-class {
-    grid: "ac shield-hp shield-footer" auto "shield-data shield-data shield-data" auto;
-}
-
-.actor.sheet .crb-style aside .sidebar .armor-class .shield.hp {
+.actor.sheet.character .crb-style aside .sidebar .armor-class .shield.hp {
     background-size: contain;
 }
 
-.actor.sheet .crb-style aside .sidebar .armor-class .shield.ac {
+.actor.sheet.character .crb-style aside .sidebar .armor-class .ac {
     background-size: contain;
 }
 
-.actor.sheet .crb-style aside .sidebar .armor-class .shield {
+.actor.sheet.character .crb-style aside .sidebar .armor-class .ac,
+.actor.sheet.character .crb-style aside .sidebar .armor-class .shield {
+    height: 100%;
+    padding: 1.25rem 0.625rem 0 0.625rem;
+}
+
+.actor.sheet.character .crb-style aside .sidebar .data-value h2 {
+    font-size: var(--font-size-30);
+}
+
+.actor.sheet.character .crb-style aside .sidebar .armor-class .shield {
     height: 96px;
     padding: 22px 10px 0 10px;
 }
 
 /* HP */
-.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.temp-hp {
+.actor.sheet.character .crb-style aside .sidebar .hitpoints .hp-big .container.temp-hp {
     margin-right: 0px;
 }
-.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.max-hp {
+.actor.sheet.character .crb-style aside .sidebar .hitpoints .hp-big .container.max-hp {
     margin-left: 0px;
 }
-.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+.actor.sheet.character .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
     width: auto;
 }
 
@@ -199,6 +226,10 @@ h4.entity-name a
     min-width: 170px;
 }
 
+.actor.sheet .crb-style .sheet-body .sheet-content ol.spell-list > li {
+    grid-template-columns: 55% auto 4rem 3rem;
+}
+
 /* .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .proficiencies-pane .skills-list .skill .button-group{
     flex-direction: column;
     align-items: stretch;
@@ -206,6 +237,10 @@ h4.entity-name a
 
 /* Skills */
 .actor.sheet.character .crb-style .pf-rank {
+    width: 100%;
+}
+
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
     width: 100%;
 }
 

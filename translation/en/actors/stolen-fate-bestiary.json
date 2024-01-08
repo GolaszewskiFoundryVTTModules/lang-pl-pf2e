@@ -5,7 +5,6 @@
       "name": "All-Seeing Hajeck",
       "blurb": "Variant lamia matriarch",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -49,7 +48,6 @@
       "name": "Aquatic Viper Vine",
       "blurb": "Variant viper vine",
       "publicNotes": "<p>A voracious, flesh-eating carnivore, the viper vine has a single enormous blossom arising from a thick, leafy tangle of snake-like vines. When the plant senses the approach of suitable prey through its sensitive, shallowly buried root system, it rises up like an agitated snake and unfurls its brightly colored bloom, an act that releases a cloud of mind-numbing pollen. Persistent stories claim the viper vine can lure prey into its clutches by swaying with a hypnotic motion, but this effect is in fact created by this invisible, odorless pollen cloud.</p>\n<p>Since a viper vine gains nourishment by consuming creatures rather than through ingesting moisture and soil, it has developed rudimentary locomotion and can drag itself along the ground with its tentacle-like roots. It even has a form of rudimentary sentience, allowing it to not only discern differences in prey and make limited tactical decisions, but also to avoid creatures that are particularly large or dangerous-looking.</p>\n<p>The area around viper vine hunting grounds is often strewn with the partially devoured remains of victims. It's not unusual to find the rotting corpses of wild animals, ill-fated adventurers, and even giants in the plant's immediate vicinity, along with a scattering of incidental treasure left behind on the corpses. A viper vine rarely returns to the carcass of a creature it killed earlier, preferring to hunt fresh meat.</p>",
-      "senses": "low-light vision, tremorsense (imprecise) 60 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -85,6 +83,9 @@
           "primarycheck": "Occultism (master)",
           "secondarycheck": "Performance, Society"
         },
+        "spell->Disintegrate": {
+          "target": "1 creature or unattended object"
+        },
         "spell->Blink": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.zR67Rt3UMHKC5evy]\nBlink"
         },
@@ -92,8 +93,12 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
           "target": "1 living or undead creature"
         },
+        "equipment->Material Component Pouch": {
+          "name": "Material Component Pouch",
+          "description": "<p>This pouch contains material components for those spells that require them. Though the components are used up over time, you can refill spent components during your daily preparations.</p>"
+        },
         "equipment->Pendant of the Occult (Greater)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1bvH8zFQvDYky9tr]\n<p>This amulet is hollow and shaped in the form of an unblinking eye. Its cavity typically holds some fragment of occult text. While wearing the pendant, you gain a +2 item bonus to Occultism checks, and you can cast the <em>@UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Guidance}</em> cantrip as an occult innate spell.</p>\n<p>The pendant can be activated.</p>\n<p><strong>Activate</strong> 10 minutes (Cast a Spell)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message}</em> spell.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1bvH8zFQvDYky9tr]\n<p>This amulet is hollow and shaped in the form of an unblinking eye. Its cavity typically holds some fragment of occult text. While wearing the pendant, you gain a +2 item bonus to Occultism checks, and you can cast the <em>@UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Guidance}</em> cantrip as an occult innate spell.</p>\n<p>The pendant can be activated.</p>\n<p><strong>Activate</strong> 10 minutes (Cast a Spell)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast a 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message}</em> spell.</p>"
         },
         "equipment->Spellbook": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook",
@@ -133,7 +138,6 @@
       "acDetails": "all-around vision",
       "blurb": "Variant xorn",
       "publicNotes": "<p>These squat, rotund elementals have three legs, three arms, three eyes, and one massive maw, which they fill with the gems and metals they find so delicious.</p>\n<hr />\n<p>Earth elementals make excellent bodyguards for adventuresome spelunkers and are ideal protectors of important subterranean locations such as vaults and treasuries.</p>",
-      "senses": "darkvision, tremorsense (imprecise) 60 feet",
       "speed": "earth glide",
       "items": {
         "strike-melee->Jaw": {
@@ -172,9 +176,7 @@
     "Bhanyada Behemoth": {
       "name": "Bhanyada Behemoth",
       "acDetails": "all-around vision",
-      "languages": "Can't Speak Any Language",
       "publicNotes": "<p>The largest bhanyadas are made up of tens of thousands of component parts, all mashed together into a roughly humanoid shape that walks on stumpy legs. Bhanyada behemoths usually have at least four thick arms ending in meaty fists, although some behemoths have a profusion of hands sprouting from their torsos. A bhanyada behemoth's head is studded with tiny eyes all over its surface that observe the surrounding terrain and give information so the entire amalgamation can move in unison.</p>\n<hr />\n<p>Gobbets of flesh left behind from an untidy meal or a surgical procedure typically rot away if left where they lie, but when steeped in areas of powerful lingering magic or eldritch radiation, these bits of loose tissue might achieve some measure of animation, perhaps sprouting thick limbs to move about or tiny, multifaceted eyes to see. Near the magic-suffused Ghantibhu Pits in the caverns located beneath southern Vudra, where ripples of magic are powerful enough to rend the air and transform stone, these tiny, rotting castoffs form into even larger amalgamations called bhanyadas.</p>\n<h3>Tied to Open Bridge</h3>\n<p>Bhanyadas are almost never encountered outside the Open Bridge region in southern Vudra, as the magic of the Ghantibhu Pits beneath that region create them. Bhanyadas taken away from Open Bridge quickly decay into a repulsive slurry, although though it isn't clear whether their demise is due to being too far from the magical energies that animated them or too far from the masses of other bhanyadas that give them cunning and vigor.</p>\n<h3>Bhanyada Familiars</h3>\n<p>A component of a bhanyada swarm makes a useful, if gruesome, familiar. A character who can take a familiar and who has encountered a bhanyada can choose a bhanyada familiar, which must have the burrower and darkvision abilities. The owner would be wise to anoint the familiar with perfumes or find other solutions to mask the unpleasant smell.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Fist": {
           "name": "Fist"
@@ -188,7 +190,7 @@
         },
         "action->Odor of Rot": {
           "name": "Odor of Rot",
-          "description": "<p>@Template[type:emanation|distance:10] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Creatures other than aberrations that enter or start their turn in the bhanyada's aura must succeed at a @Check[type:fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+          "description": "<p>10 feet. Creatures other than aberrations that enter or start their turn in the bhanyada's aura must succeed at a @Check[type:fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
         },
         "action->Lumbering Swings": {
           "name": "Lumbering Swings",
@@ -198,9 +200,7 @@
     },
     "Bhanyada Scavenger": {
       "name": "Bhanyada Scavenger",
-      "languages": "Can't Speak Any Language",
       "publicNotes": "<p>Not much larger than dogs, the typical bhanyada scavenger is a warty, misshapen tangle of flesh that walks on stumpy legs, sometimes on two and sometimes on four. Plainly amalgamations of meat and gristle, few of which appear in the same color or texture, bhanyada scavengers have a horrifying mottled appearance. Their bulbous heads split into a maw with blunt teeth that shift about within their mouths to grind food. Bhanyada scavengers prefer living prey and usually hunt in numbers, often following in the wake of bhanyada behemoths to snatch up any scraps left behind.</p>\n<hr />\n<p>Gobbets of flesh left behind from an untidy meal or a surgical procedure typically rot away if left where they lie, but when steeped in areas of powerful lingering magic or eldritch radiation, these bits of loose tissue might achieve some measure of animation, perhaps sprouting thick limbs to move about or tiny, multifaceted eyes to see. Near the magic-suffused Ghantibhu Pits in the caverns located beneath southern Vudra, where ripples of magic are powerful enough to rend the air and transform stone, these tiny, rotting castoffs form into even larger amalgamations called bhanyadas.</p>\n<h3>Tied to Open Bridge</h3>\n<p>Bhanyadas are almost never encountered outside the Open Bridge region in southern Vudra, as the magic of the Ghantibhu Pits beneath that region create them. Bhanyadas taken away from Open Bridge quickly decay into a repulsive slurry, although though it isn't clear whether their demise is due to being too far from the magical energies that animated them or too far from the masses of other bhanyadas that give them cunning and vigor.</p>\n<h3>Bhanyada Familiars</h3>\n<p>A component of a bhanyada swarm makes a useful, if gruesome, familiar. A character who can take a familiar and who has encountered a bhanyada can choose a bhanyada familiar, which must have the burrower and darkvision abilities. The owner would be wise to anoint the familiar with perfumes or find other solutions to mask the unpleasant smell.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -211,7 +211,7 @@
         },
         "action->Odor of Rot": {
           "name": "Odor of Rot",
-          "description": "<p>@Template[type:emanation|distance:10] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Creatures other than aberrations that enter or start their turn in the bhanyada's aura must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+          "description": "<p>10 feet. Creatures other than aberrations that enter or start their turn in the bhanyada's aura must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
         },
         "action->Change Posture": {
           "name": "Change Posture",
@@ -230,9 +230,7 @@
     "Bhanyada Swarm": {
       "name": "Bhanyada Swarm",
       "acDetails": "all-around vision",
-      "languages": "Can't Speak Any Language",
       "publicNotes": "<p>Bhanyadas without much cohesion between their fleshy components roil around one another in a ghastly swarm of malodorous gobs of flesh.</p>\n<hr />\n<p>Gobbets of flesh left behind from an untidy meal or a surgical procedure typically rot away if left where they lie, but when steeped in areas of powerful lingering magic or eldritch radiation, these bits of loose tissue might achieve some measure of animation, perhaps sprouting thick limbs to move about or tiny, multifaceted eyes to see. Near the magic-suffused Ghantibhu Pits in the caverns located beneath southern Vudra, where ripples of magic are powerful enough to rend the air and transform stone, these tiny, rotting castoffs form into even larger amalgamations called bhanyadas.</p>\n<h3>Tied to Open Bridge</h3>\n<p>Bhanyadas are almost never encountered outside the Open Bridge region in southern Vudra, as the magic of the Ghantibhu Pits beneath that region create them. Bhanyadas taken away from Open Bridge quickly decay into a repulsive slurry, although though it isn't clear whether their demise is due to being too far from the magical energies that animated them or too far from the masses of other bhanyadas that give them cunning and vigor.</p>\n<h3>Bhanyada Familiars</h3>\n<p>A component of a bhanyada swarm makes a useful, if gruesome, familiar. A character who can take a familiar and who has encountered a bhanyada can choose a bhanyada familiar, which must have the burrower and darkvision abilities. The owner would be wise to anoint the familiar with perfumes or find other solutions to mask the unpleasant smell.</p>",
-      "senses": "darkvision",
       "items": {
         "action->Extraneous Flesh": {
           "name": "Extraneous Flesh",
@@ -240,7 +238,7 @@
         },
         "action->Odor of Rot": {
           "name": "Odor of Rot",
-          "description": "<p>@Template[type:emanation|distance:10] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Creatures other than aberrations that enter or start their turn in the bhanyada's aura must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+          "description": "<p>10 feet. Creatures other than aberrations that enter or start their turn in the bhanyada's aura must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
         },
         "action->Swarming Bites": {
           "name": "Swarming Bites",
@@ -331,9 +329,7 @@
       "name": "Blood-Pear Tree",
       "blurb": "Variant corpseroot",
       "hpDetails": "void healing",
-      "languages": "(Can't Speak Any Language)",
       "publicNotes": "<p>Corpseroots are rotten, undead trees that grow bright-red poisonous fruit and spread blight to surrounding plants, transforming healthy trees into new corpseroots. These cunning killers drain the life from creatures through their root systems, posing as dead trees until their victims come within reach.</p>\n<p>Corpseroots most commonly form from rotten husks of trees that died from supernatural blights, making them common threats in the Fangwood and Fierani forests. The most powerful are ancient trees used as shrines and sacrificial altars, their roots absorbing the blood, flesh, and terror of those condemned under their boughs. Some of these ancient corpseroots still command the respect and devotion of the cults that inadvertently created them.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Branch": {
           "name": "Branch"
@@ -363,7 +359,6 @@
       "blurb": "Variant male draugr",
       "hpDetails": "void healing",
       "publicNotes": "<p>Risen corpses of sailors who died at sea, draugr reek of the rot and decay of the briny deep. Their eyes glow with ghastly green light, and rotting seaweed, barnacles, and dead sea creatures cling to their bodies. Draugr can't speak, but expresses their malicious emotions with gurgles, as though they were eternally drowning with lungs full of water. They desire little more than to attack living creatures, especially those who sail the sea. Even when they go upon land, draugrs often drag the corpses of those they strike down back to the water, populating the depths with even more dead.</p>\n<p>Draugr rise in the haunted places of the sea, where restless spirits, swells of void energy, or supernatural storms deliver death. A corpse might rest at the bottom of the sea for some time before awakening as a draugr. Collecting detritus and organisms, a corpse becomes increasingly disgusting before it finally rises. Proximity to intelligent life can expedite this process, and an underwater explorer who happens upon a shipwreck might cause a body to snap to unlife as a draugr suddenly. The creatures don't take intrusions lightly, especially upon their place of death.</p>\n<p>Though steeped in evil, draugr are susceptible to reminders of their lives as mariners. In particular, a well-performed sea shanty or call-and-response work song might cause a draugr to become lost in reverie for a moment. The creatures have even been witnessed moaning along, unable to sing the words but providing haunting accompaniment. The lull rarely lasts long, though, as the beauty of the song quickly becomes a reminder of the tragedy that befell the draugr, reaffirming their desire for blood and death.</p>\n<p>More powerful draugr with burning red eyes are called draugr captains. They're 3rd-level creatures with elite adjustments that can cast obscuring mist as an innate divine spell three times per day.</p>",
-      "senses": "darkvision",
       "items": {
         "weapon->Icefang": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\nIcefang"
@@ -413,7 +408,6 @@
       "name": "Crystal Sentinel",
       "blurb": "Variant glass golem",
       "publicNotes": "<p>Crafted of hardened glass and held together by magically treated lead, glass golems are both deadly guardians and works of exquisite art. Glass golems most often protect grand cathedrals or opulent palaces-testaments to the wealth and power of those they serve, or once served. Once spurred into action by the commands of their creators, glass golems are quicker and more agile than most other golems. Their sharp, blade-like limbs can easily sever veins and arteries, creating wounds that bleed profusely.</p>\n<p>Of all the various types of golems, the glass golem is the one most akin to a work of art. Just as powerful aristocrats might use an ice golem for temperature regulation or a wood golem as an ego-boosting statue, a glass golem's colorful glass construction can elevate the beauty of any chamber by its mere presence.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Bladed Limb": {
           "name": "Bladed Limb"
@@ -440,7 +434,6 @@
       "name": "Crystalline Sentinel",
       "blurb": "Variant xorn",
       "publicNotes": "<p>These squat, rotund elementals have three legs, three arms, three eyes, and one massive maw, which they fill with the gems and metals they find so delicious.</p>\n<hr />\n<p>Earth elementals make excellent bodyguards for adventuresome spelunkers and are ideal protectors of important subterranean locations such as vaults and treasuries.</p>",
-      "senses": "darkvision, tremorsense (imprecise) 60 feet",
       "speed": "earth glide",
       "items": {
         "strike-melee->Jaw": {
@@ -477,7 +470,6 @@
       "name": "Demongate Colossus",
       "blurb": "Variant radiant warden",
       "publicNotes": "<p>The enigmatic and strange radiant wardens were constructed thousands of years ago to protect observatories and scholars against the incursion of alien aggressors from the Dominion of the Black. Over time, their roles as guardians expanded to include watching over any region where the laws of time and space have worn thin, particularly near portals and permanent gates between planets, planes, or dimensions.</p>\n<p>Named for both the radial nature of the concentric rings that make up their bodies as well as the glowing radiance of their attacks, radiant wardens carry on their orders, defending sites from invasion with single-minded purpose.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -500,7 +492,7 @@
         },
         "action->Gatewarper Aura": {
           "name": "Gatewarper Aura",
-          "description": "<p>@Template[type:emanation|distance:60] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A creature that uses a teleportation ability within the aura's emanation or enters the emanation via a teleportation ability must succeed at a @Check[type:fortitude|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) as its body warps and distorts painfully, and have its destination changed to a point of the radiant warden's choosing within the emanation.</p>"
+          "description": "<p>60 feet. A creature that uses a teleportation ability within the aura's emanation or enters the emanation via a teleportation ability must succeed at a @Check[type:fortitude|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) as its body warps and distorts painfully, and have its destination changed to a point of the radiant warden's choosing within the emanation.</p>"
         },
         "action->Link Collapse": {
           "name": "Link Collapse",
@@ -529,13 +521,11 @@
     "Demonic Rabble": {
       "name": "Demonic Rabble",
       "hpDetails": "16 squares; Thresholds 173 (12 squares), 87 (8 squares)",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>The typical demon throng consists of a chaotic mix of less powerful demons—typically abrikandilus, dretches, and quasits, with a few brimoraks, babaus or other, more powerful demons swept up in the mayhem. This tangled mess of different creatures makes coordinated tactics untenable but, while individual demons in the throng might not be able to fully utilize their abilities, the throng itself makes up for these deficiencies with dangerous options of its own.</p>\n<hr />\n<p>Demons are legion. Countless examples crowd the Abyss, many of which have yet to be categorized by mortal scholars. In the Abyss, might very much makes right, and so despite their chaotic nature, weaker demons often gather together to enjoy safety in numbers.</p>\n<h2>Throng Abilities</h2>\n<p>Demon throngs are troops, as defined in Pathfinder Bestiary 3. They have the Troop Defenses, Troop Movement, and Form-Up abilities. They also have the demonic tide ability, which allows them to occupy the same space as other creatures, which is unusual for troops, and Serenity Vulnerability—a result of the troop's demonic nature.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision",
       "items": {
         "action->Frightful Presence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>30 feet. @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Claws, Fangs, and Horns": {
           "name": "Claws, Fangs, and Horns",
@@ -562,7 +552,6 @@
     "Derhii": {
       "name": "Derhii",
       "publicNotes": "<p>Legend suggests that Shory mages might have created derhiis as soldiers. Although folklore can be in error, little doubt exists that these flying apes make excellent warriors. History is also clear that derhiis fought countless battles for the Shory Empire, honing their tactical skills and martial traditions. Regardless of whether Shory magic was responsible for the birth of the first derhiis, lore passed down from those times shows the Shory Empire honored their soldiers and treated them as valued allies rather than mere servants.</p>\n<p>Derhiis are scarce even in the Mwangi Expanse, where the last of the Shory flying cities, such as Kho and Ulduvai, fell. Still, some dwell among the spires that tower above Shory ruins; these derhii are often quite a bit more powerful than the one detailed below. Other derhiis have spread from the remains of the fallen Shory empire to populate remote highlands and old-growth forests.</p>\n<p>Derhiis form small filial groups called troops, centered on one elder derhii and their relations. Several troops might gather into a larger society with a council of troop leaders under one dominant elder. Derhiis are omnivores who favor meat, unlike the terrestrial and largely herbivorous gorillas they resemble. It's possible that this habit developed due to a derhii need for substantial amounts of food coupled with their soldierly ways.</p>\n<h2>Derhii Artistry</h2>\n<p>Derhiis have little use for money, but they're talented crafters. Their goods are practical, beautiful and, when needed, deadly. Shory influences can still be seen in derhii art, including crystalline designs, beadwork, and geometric patterns that hint at the arcane. Derhii leatherwork and metalwork is also top notch, owing to their desire for functional, durable armaments.</p>",
-      "senses": "darkvision, scent (imprecise) 30 feet",
       "items": {
         "strike-melee->Falchion": {
           "name": "Falchion"
@@ -645,10 +634,8 @@
       "name": "Diskrasia The Sharp",
       "blurb": "Female norn",
       "hpDetails": "regeneration 20 (deactivated by cold iron)",
-      "languages": "Tongues",
       "publicNotes": "<p>Ancient beyond imagining, norns are powerful fey women who hold in their hands the physical manifestation of fate and destiny in the form of golden thread. They watch over all life, intervening with reluctance when called upon-or with a vengeance when the strands of fate are twisted and abused by lesser beings.</p>\n<p>Norns' relationship with the Eldest of the First World is complex. Many among norns serve Magdh the Three, the triune Eldest who some norns believe to be the first norn triumvirate bound together into one entity, as Magdh has three bodies: a Maiden, a Mother, and a Matriarch. Magdh claims to be watching the threads of fate for some ominous prophesied cataclysm, and in addition to assisting in her divinations, Magdh expects the norns who serve her to follow her cryptic commands to help nudge the future away from the brink. However, norns are powerful beings in their own right, themselves capable of granting divine power, and many balk at serving the enigmatic demigod. These norns find the other Eldest even more alien and challenging to interact with, for they believe that while the Eldest wield great power, even these powerful beings should not be granted leave to meddle with fate as much as they desire.</p>\n<p>While even the weakest of the Eldest could destroy an unaffiliated norn with ease, they tend to obey the proclamations and judgments of norns when they are spoken. These norns, for their part, use their perceived neutrality judiciously. They know better than to issue too many demands to the Eldest, lest the capricious demigods grow frustrated and tired of norns' interference. And so the balance of power remains tenuous between unaffiliated norns and the Eldest, as it has for eons. However, norns know that it's merely a matter of time before the Eldest lose their respect for this tradition and start acting entirely as they please, despite norns' best efforts to rein in their most disruptive actions.</p>\n<p>A norn stands 14 feet tall and weighs 800 pounds.</p>\n<p>Worshipping Norns On the Material Plane, some mortals worship norns as deities, while others, especially witches and bards, admire them as patrons or muses. Those who uphold norns as deities are known as Followers of Fate. Norns do little to discourage this veneration, but neither do they go out of their way to support such worship. Clerics who venerate norns might worship a specific norn or norn triumvirate, or all norns as a whole, but they gain the same benefits regardless of their choice. The religious symbol of Followers of Fate is a pair of shears cutting a golden thread, and their areas of concern are destiny, fate, and the aging process.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "detect magic, greater darkvision, lifesense 120 feet, true seeing",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -757,6 +744,9 @@
         "spellcastingEntry->Divine Focus Spells": {
           "name": "Divine Focus Spells"
         },
+        "spell->Litany of Depravity": {
+          "target": "1 good creature"
+        },
         "weapon->Bastard Sword": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6KWYmeRMxsQfWhhJ]\n<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>"
         },
@@ -773,7 +763,7 @@
           "gmNote": "<p><strong>Epitome</strong> When you epitomize <em>The Mountain Man</em>, assign it to a point of interest in the Harrow Court's mountains. This marks the location of a remote cabin that serves as the home of a self-sufficient but very intimidating simulacrum who appears as a towering giant of a man. This hearty specimen welcomes visitors who bring stories of their accomplishments fighting monsters, as long as they're backed up by physical trophies. A character who visits the mountain man and presents to him a trophy harvested from a monster they fought and defeated can seek a reward. The trophy need not be much more than a horn or a claw, but should be something significant and identifiable from the defeated monster, and the PC presenting the trophy must have been involved in that monster's defeat. If the trophy is from a monster whose level is equal to or greater than the PC's level, the mountain man is impressed and rewards that PC with two consumable magic items, each of a level equal to or lower than the PC's level (the PC can request specific items, but the GM has final say in what items are offered). If the trophy is from a monster whose level is lower than the PC's level, the mountain man mocks the PC for being \"proud of defeating a weakling\" and offers no reward. Once a reward is given, the mountain man warns the PC, \"Now don't you be going off to sell that thing for gold, and don't even think of coming back for more rewards until you've used these all up!\" The mountain man has an eerie ability to know if a PC hasn't used a current reward, or if they sold it for a profit&mdash;PCs who fit either category cannot receive new rewards from the mountain man on subsequent visits.</p>"
         },
         "equipment->The Fiend": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.IfOwz6UoG7pnfbur]\n<p><strong>Suit</strong> Hammer (Str)</p>\n<p><strong>Alignment</strong> lawful evil</p>\n<hr />\n<p><em>The Fiend</em> represents the inevitability of great calamities and pervasive dangers. As long as you have <em>The Fiend</em> invested, when you repeat a non-Strike action you previously took in the same round, you gain a +2 item bonus to checks to perform that action. This increases to a +3 item bonus if you are at least 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You wave the card to create a vision of destruction around you; you cast <em>@UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</em>, except the area is a @Template[type:emanation|distance:20]. The level of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC. You are immune to the effects of your own phantasmal calamity.</p>",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.IfOwz6UoG7pnfbur]\n<p><strong>Suit</strong> Hammer (Str)</p>\n<p><strong>Alignment</strong> lawful evil</p>\n<hr />\n<p><em>The Fiend</em> represents the inevitability of great calamities and pervasive dangers. As long as you have <em>The Fiend</em> invested, when you repeat a non-Strike action you previously took in the same round, you gain a +2 item bonus to checks to perform that action. This increases to a +3 item bonus if you are at least 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You wave the card to create a vision of destruction around you; you cast <em>@UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</em>, except the area is a @Template[type:emanation|distance:20]. The rank of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC. You are immune to the effects of your own phantasmal calamity.</p>",
           "gmNote": "<p><strong>Epitome</strong> A new room manifests in Harrowheart&mdash;a conjuration chamber. Books and tomes stored in this room contain all the information needed to learn the rituals of <em>@UUID[Compendium.pf2e.spells-srd.Item.vgy00hnqxN9VoeoF]{Planar Servitor}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]{Binding Circle}</em>, and inscriptions carved into the floor of the conjuration chamber grant a +2 item bonus to skill checks made to perform either of these rituals. This increases to a +3 item bonus if the creature being conjured is a fiend.</p>"
         },
         "consumable->Potion of Flying (Standard)": {
@@ -809,7 +799,6 @@
     "Endlo Kiver": {
       "name": "Endlo Kiver",
       "blurb": "Male dwarf zealot of Gorum",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Spontaneous Spells": {
           "name": "Divine Spontaneous Spells"
@@ -870,7 +859,6 @@
       "name": "Ephialtes",
       "publicNotes": "<p>Ephialtes velstracs are consummate and fearless hunters of the doomed and the damned.</p>\n<h2>Ephialtes Prey</h2>\n<p>When they catch enough quarry, an ephialtes velstrac returns to the Shadow Plane, bringing victims for other velstracs to use for training or raw material. Velstracs respect ephialtes for their \"generosity\" in guiding and providing for others of their kind, yet are always wary about making assumptions about the limits of this generosity.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "greater darkvision, painsight, true seeing",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -907,7 +895,7 @@
         },
         "action->Nowhere to Run": {
           "name": "Nowhere to Run",
-          "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>When a creature ends its turn in the aura, it feels a powerful sensation of hopelessness. The creature must succeed at a @Check[type:will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it feels a powerful sensation of hopelessness. The creature must succeed at a @Check[type:will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round.</p>"
         },
         "action->Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d4+13)[slashing]], @Check[type:fortitude|dc:37|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -928,7 +916,6 @@
     "Fabled Harrowkin": {
       "name": "Fabled Harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -961,10 +948,8 @@
       "name": "Fabrina The Spinster",
       "blurb": "Female norn",
       "hpDetails": "regeneration 20 (deactivated by cold iron)",
-      "languages": "Tongues",
       "publicNotes": "<p>Ancient beyond imagining, norns are powerful fey women who hold in their hands the physical manifestation of fate and destiny in the form of golden thread. They watch over all life, intervening with reluctance when called upon-or with a vengeance when the strands of fate are twisted and abused by lesser beings.</p>\n<p>Norns' relationship with the Eldest of the First World is complex. Many among norns serve Magdh the Three, the triune Eldest who some norns believe to be the first norn triumvirate bound together into one entity, as Magdh has three bodies: a Maiden, a Mother, and a Matriarch. Magdh claims to be watching the threads of fate for some ominous prophesied cataclysm, and in addition to assisting in her divinations, Magdh expects the norns who serve her to follow her cryptic commands to help nudge the future away from the brink. However, norns are powerful beings in their own right, themselves capable of granting divine power, and many balk at serving the enigmatic demigod. These norns find the other Eldest even more alien and challenging to interact with, for they believe that while the Eldest wield great power, even these powerful beings should not be granted leave to meddle with fate as much as they desire.</p>\n<p>While even the weakest of the Eldest could destroy an unaffiliated norn with ease, they tend to obey the proclamations and judgments of norns when they are spoken. These norns, for their part, use their perceived neutrality judiciously. They know better than to issue too many demands to the Eldest, lest the capricious demigods grow frustrated and tired of norns' interference. And so the balance of power remains tenuous between unaffiliated norns and the Eldest, as it has for eons. However, norns know that it's merely a matter of time before the Eldest lose their respect for this tradition and start acting entirely as they please, despite norns' best efforts to rein in their most disruptive actions.</p>\n<p>A norn stands 14 feet tall and weighs 800 pounds.</p>\n<p>Worshipping Norns On the Material Plane, some mortals worship norns as deities, while others, especially witches and bards, admire them as patrons or muses. Those who uphold norns as deities are known as Followers of Fate. Norns do little to discourage this veneration, but neither do they go out of their way to support such worship. Clerics who venerate norns might worship a specific norn or norn triumvirate, or all norns as a whole, but they gain the same benefits regardless of their choice. The religious symbol of Followers of Fate is a pair of shears cutting a golden thread, and their areas of concern are destiny, fate, and the aging process.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "detect magic, greater darkvision, lifesense 120 feet, true seeing",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -1083,10 +1068,8 @@
     "Fate’s Prophet": {
       "name": "Fate’s Prophet",
       "blurb": "Female succubus",
-      "languages": "Telepathy 100 feet, Tongues",
       "publicNotes": "<p>Succubi are manifestations of the sin of destructive lust, and they are the most attractive of all demons-as befits their role in seducing mortals to fall to sin. The concept of gender is fluid to a succubus, as they can adopt countless humanoid forms of any gender to aid in their goals. Most succubi have a feminine true form (incubi, which usually have a masculine true form, are a different kind of demon), but regardless of gender, a lust demon is supernaturally beautiful or handsome, but with curving horns, bat wings, sharp claws, and a sinuous tail.</p>\n<p>When disguised as a mortal humanoid on the Material Plane, a succubus whispers into the ears of mortals, urging them to pursue their darkest and most destructive desires and pushing them into depravity, using magic only if persuasion fails. While mortals often fixate on succubi's application of sexual lust, these demons are can easily exploit lust for power, knowledge, fame, or any other desire as easily as more carnal appetites. Their ability to infiltrate societies makes them excellent spies, assassins, and political saboteurs as well. Ultimately, the succubus enjoys all means of upending mortal culture.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Abyss, it can become a deadly fiend-a demon. Demons are living incarnations of sin-be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold-the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Abyss.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, true seeing",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -1146,7 +1129,7 @@
         },
         "action->Seductive Presence": {
           "name": "Seductive Presence",
-          "description": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Any creature in the aura that could be sexually attracted to a succubus takes a -2 circumstance penalty to checks and DCs to oppose the succubus's mental spells, Deception, and Diplomacy.</p>"
+          "description": "<p>10 feet. Any creature in the aura that could be sexually attracted to a succubus takes a -2 circumstance penalty to checks and DCs to oppose the succubus's mental spells, Deception, and Diplomacy.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The succubus can take on the appearance of any Small or Medium humanoid. This doesn't change their Speed or their attack and damage modifiers with their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -1180,9 +1163,7 @@
     },
     "Ferrugon": {
       "name": "Ferrugon",
-      "languages": "Telepathy 100 feet",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -1234,9 +1215,7 @@
       "name": "Gegnir",
       "blurb": "Variant jotund troll",
       "hpDetails": "regeneration 40 (deactivated by acid or fire)",
-      "languages": "Tongues",
       "publicNotes": "<p>Jotund trolls are gigantic, nine-headed horrors who prowl frigid moors, marshes, and wastelands, always alone and always enraged. While each of the jotund troll's nine heads possess their own brains and senses, they work much more in tandem than the dual-minded nature of the two-headed troll. Despite this, the heads often argue and bicker, particularly over which head gets to eat. The fact that all nine maws lead to the same shared stomach makes little difference in such culinary disagreements.</p>\n<p>Prevailing wisdom holds that the jotund troll represents a primordial, if not original, shape and design for the first trolls to plague the world, arising from a mythical realm in the Great Beyond known as Jotungard. This sprawling domain, said to be nestled in a remote reach of Elysium, is the legendary home of the deities of giant-kind. Whether the jotund troll was created in Jotungard to plague the Material Plane as punishment or challenge, or if it's merely an evocative legend told by scholars, is unknown. In any case, the jotund trolls themselves likely care little.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -1303,10 +1282,8 @@
     },
     "Ghalzarokh": {
       "name": "Ghalzarokh",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Ghalzarokh demons, also known as tyranny demons, form from the souls of cruel autocrats. These demons subjugate weaker fiends. After amassing an army, a ghalzarokh begins a chaotic spree of bloody conquest.</p>\n<h2>Demon Thralls</h2>\n<p>Ghalzarokhs are bullies who prefer numerous thralls to allies. These demons loathe owing any other being a favor and serve stronger creatures only with the expectation of rich reward. A ghalzarokh can rarely be found without a fiendish entourage or army (such as a demon throng). They prefer \"pacts\" with \"lesser\" demons, usually offering only a feeble guarantee to allow the weaker fiend's continued existence.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, scent (imprecise) 60 feet, see invisibility",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -1353,7 +1330,6 @@
       "name": "Guardian Aluum",
       "blurb": "Variant aluum",
       "publicNotes": "<p>The most common aluum is powered by the bound soul of a loyal city servant, but its creation is among the Pactmasters' most guarded secrets. There are dozens of dormant aluums spread throughout Katapesh, and only someone wearing an aluum charm can activate and command one of these 14-foot-tall soldiers. The Pactmasters entrust few beyond the Zephyr Guard to carry these charms, and stealing such a charm is one of the most severe crimes in the city.</p>\n<hr />\n<p>Aluums are powerful metal and stone constructs originally created by the Pactmasters to maintain order in Katapesh. The construction of each aluum includes the creation of an <em>@UUID[Compendium.pf2e.equipment-srd.Item.bU731I8njNmSAQhQ]{Aluum Charm}</em>, a brass pendant set with a blue crystal designed to control that particular construct. The charm constructed at the same time as an aluum is called its linked charm.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Fist": {
           "name": "Fist"
@@ -1387,9 +1363,7 @@
     "Hadi Mob": {
       "name": "Hadi Mob",
       "hpDetails": "(16 squares); Thresholds 180 (12 squares), 90 (8 squares)",
-      "languages": "Ratspeak",
       "publicNotes": "<p>aemons, including leukodaemons, once ruled over part of the fallen city of Kho. While they did, they created the first hadis.</p>\n<p>Hadis look more fiendish and sinister than typical ratfolk. In hadi society, those who foster and cultivate blights and sickness are alchemists known as \"tafens\". Others, known as \"rajwans,\" focus their training on brutal combat and barbarian rages.</p>\n<p>Individually, most hadis are no match for a high level group, but when confronted in their lair, they can gather together into a dangerous mob.</p>\n<h2>Hadi Evil</h2>\n<p>Although the original hadis created by daemons in ages past were ascended from rats infused with fiendish qualities that tempered their sapience with an engineered evil, over the generations the hadi people have formed their own society. They cling to evil ways largely out of tradition or fear, but there are an increasing number of hadis who admire Kho's derhiis and seek their own paths. Others, particularly those who have traveled far from Kho, have come to understand the plight of their folk under the weight of a fiendish past. Non-evil hadi thus exist, but they are viewed by those in positions of power in Kho as dangers to the social order. These hadi do not carry the pestilence their more sinister kin do and many actively work to suppress the spread of illnesses.</p>",
-      "senses": "darkvision",
       "items": {
         "action->Ratspeak": {
           "name": "Ratspeak",
@@ -1420,10 +1394,8 @@
       "name": "Hala The Rod",
       "blurb": "Female norn",
       "hpDetails": "regeneration 20 (deactivated by cold iron)",
-      "languages": "Tongues",
       "publicNotes": "<p>Ancient beyond imagining, norns are powerful fey women who hold in their hands the physical manifestation of fate and destiny in the form of golden thread. They watch over all life, intervening with reluctance when called upon-or with a vengeance when the strands of fate are twisted and abused by lesser beings.</p>\n<p>Norns' relationship with the Eldest of the First World is complex. Many among norns serve Magdh the Three, the triune Eldest who some norns believe to be the first norn triumvirate bound together into one entity, as Magdh has three bodies: a Maiden, a Mother, and a Matriarch. Magdh claims to be watching the threads of fate for some ominous prophesied cataclysm, and in addition to assisting in her divinations, Magdh expects the norns who serve her to follow her cryptic commands to help nudge the future away from the brink. However, norns are powerful beings in their own right, themselves capable of granting divine power, and many balk at serving the enigmatic demigod. These norns find the other Eldest even more alien and challenging to interact with, for they believe that while the Eldest wield great power, even these powerful beings should not be granted leave to meddle with fate as much as they desire.</p>\n<p>While even the weakest of the Eldest could destroy an unaffiliated norn with ease, they tend to obey the proclamations and judgments of norns when they are spoken. These norns, for their part, use their perceived neutrality judiciously. They know better than to issue too many demands to the Eldest, lest the capricious demigods grow frustrated and tired of norns' interference. And so the balance of power remains tenuous between unaffiliated norns and the Eldest, as it has for eons. However, norns know that it's merely a matter of time before the Eldest lose their respect for this tradition and start acting entirely as they please, despite norns' best efforts to rein in their most disruptive actions.</p>\n<p>A norn stands 14 feet tall and weighs 800 pounds.</p>\n<p>Worshipping Norns On the Material Plane, some mortals worship norns as deities, while others, especially witches and bards, admire them as patrons or muses. Those who uphold norns as deities are known as Followers of Fate. Norns do little to discourage this veneration, but neither do they go out of their way to support such worship. Clerics who venerate norns might worship a specific norn or norn triumvirate, or all norns as a whole, but they gain the same benefits regardless of their choice. The religious symbol of Followers of Fate is a pair of shears cutting a golden thread, and their areas of concern are destiny, fate, and the aging process.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "detect magic, greater darkvision, lifesense 120 feet, true seeing",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -1527,7 +1499,6 @@
       "name": "Harpy Warbird",
       "blurb": "Variant harpy",
       "publicNotes": "<p>Harpies are filthy amalgamations of human and bird, resembling feral humans with wings, talons, and mouths full of sharp teeth. They use captivating songs to lure creatures in, then murder them while they stand transfixed. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey-humans and elves are their favorite. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies. Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Harpies live in family groups or larger clans. They are lightweight despite their size, standing 5 feet tall and weighing only around 90 pounds. While most use relatively simple weapons, some harpies take pride in learning and mastering the use of more complex tools of war such as swords and slings. Those who master the use of the bow, in particular, are often regarded as heroes among their kind and terrors among their victims.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Halberd": {
           "name": "Halberd"
@@ -1550,9 +1521,7 @@
     },
     "Hurlilu": {
       "name": "Hurlilu",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Pazuzu's Abyssal realm of High M'Vania is perched on the edge of an impossibly tall cliff. The demon lord and his minions claim the air around the cliff, guarding it against enemies and usurpers alike. Hurlilus, resembling horned, humanoid hawks with blood-red taloned feet and wings in place of arms, patrol these skies at their lord's command. Yet, hurlilus are surly and rebellious by nature, preferring to lead rather than follow orders. They'd prefer to spend their time bullying smaller creatures in High M'Vania's vast cliffside cities, but they're unwelcome there and driven out when discovered by occupants with greater authority (or by those who want to earn greater authority).</p>\n<p>Hurlilus make good guardians, particularly when they have leave to travel over great distances on patrol routes and can engage in spontaneous cruelty if the opportunity arises. However, they chafe in Pazuzu's service. Some forsake High M'Vania entirely and migrate to other parts of the Abyss, where they lead gangs of lesser fiends they've bullied into submission. A few hurlilus have made their way to Golarion, where they roost in aeries with subservient harpies, manticores, or other foul flying creatures. A dozen or so hurlilus serve high positions in the Mivanians, the brutal enforcers of the Halana Theocracy.</p>\n<hr />\n<p>The hurlilu is the weakest and smallest of the avian fiends collectively known as lilus. All lilus are chaotic evil fiends who can fly, are immune to disease, have mixed avian and humanoid appearances, possess darkvision and lifesense, and resist physical damage (except from cold iron). Most have a selection of primal innate spells (often including a primal version of <em>dimension door</em>).</p>",
-      "senses": "darkvision, lifesense (imprecise) 120 feet",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -1595,9 +1564,7 @@
     "Ildamir": {
       "name": "Ildamir",
       "hpDetails": "all-around vision",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>While the Material Plane and the Dimension of Time remain distinct realities, the two share a powerful connection. Suvardens are living embodiments of this connection.</p>\n<h2>A Matter Of Time</h2>\n<p>Suvardens have a connection to the Dimension of Time, but exist more as natives of the Material Plane. As a result, they do not possess the Time trait. Suvardens refuse to elaborate on their place within existence and time. A suvarden first tries to maintain the order of cause and effect with its guidance, but when that fails, more powerful or cruel creatures increasingly get involved. Most agree that meeting a suvarden is preferable to encountering a hound of Tindalos or siktempora, although there certainly exist powerful suvardens as well.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -1642,7 +1609,6 @@
       "blurb": "Male spirit naga jiangi‑shi vampire",
       "hpDetails": "fast healing 10, void healing, one more breath",
       "publicNotes": "<p>In naga culture, the foul-tempered, unkempt spirit naga holds a contemptible place similar to that of hags in humanoid cultures. These decrepit creatures live out lives of solitude, sought out only by those who are foolish or brave enough to think they can benefit from the spirit naga's powers without paying a heavy price-for most who dare to show such hubris, the price is their own lives.</p>\n<p>Spirit nagas seek out desolate ruins and places long associated with death and corruption. These sinister, serpentine beings can be found in abandoned graveyards, crumbled fortresses, rotting swamps, and blighted woodlands. Though they may know little of the actual history of such places, the nagas are nonetheless attracted to the psychic remnants of evil deeds and tormented spirits that remain within the earth and stones there.</p>\n<p>Despite their hideous appearance and treatment as pariahs by other nagas, spirit nagas feel a profound pride in their abilities and even in their hermetic existences. They see themselves as connected to a greater force whose mysteries are revealed only to those who can cast off the trappings and morals of \"civilized\" society. Even so, spirit nagas gleefully accept the worship of other creatures willing to bow to their capricious whims. They often form cults around themselves, using their charm spells and rituals to ensnare the minds of a few key individuals who spread the nagas' foul influence throughout a community.</p>\n<hr />\n<p>Nagas are identifiable by their serpentine bodies and strange, humanlike heads. All nagas have magical abilities and great intelligence, which they combine to advance their own agendas.</p>",
-      "senses": "breathsense (precise) 60 feet, darkvision",
       "speed": "rigor mortis",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
@@ -1661,7 +1627,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)"
+          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
+          "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Mage Hand": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
@@ -1714,10 +1681,8 @@
     },
     "Katpaskir": {
       "name": "Katpaskir",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Born of the souls of doomsayers and cult leaders who sought to undermine and unravel reality, katpaskirs are demons of nihilism and unmaking.</p>\n<h2>Rift Makers</h2>\n<p>Katpaskirs sense weaknesses in planar fabric. These demons worm their way into spaces between dimensions and break down the barriers. They leave holes aimed at causing chaos and dissolution. In this way, katpaskirs gnaw at reality, hoping to one day unravel it.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, see invisibility, warp sense",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -1725,6 +1690,9 @@
         "spell->Plane Shift": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift",
           "target": "1 willing creature, or up to 8 willing creatures joining hands"
+        },
+        "spell->Disintegrate": {
+          "target": "1 creature or unattended object"
         },
         "spell->Prying Eye (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]\nPrying Eye (At Will)"
@@ -1762,7 +1730,7 @@
         },
         "action->Distortion Field": {
           "name": "Distortion Field",
-          "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Reality bends and warps on the level of all senses without displacing the katpaskir's actual location. Creatures of the katpaskir's choice who start their turn in the aura must succeed at a @Check[type:will|dc:37] save or treat the area as greater difficult terrain and uneven ground (DC 20). A creature who succeeds still treats the area as difficult terrain. For such creatures, the distance through the aura is doubled for determining range penalty.</p>"
+          "description": "<p>30 feet. Reality bends and warps on the level of all senses without displacing the katpaskir's actual location. Creatures of the katpaskir's choice who start their turn in the aura must succeed at a @Check[type:will|dc:37] save or treat the area as greater difficult terrain and uneven ground (DC 20). A creature who succeeds still treats the area as difficult terrain. For such creatures, the distance through the aura is doubled for determining range penalty.</p>"
         },
         "action->Mirrored Summons": {
           "name": "Mirrored Summons",
@@ -1802,7 +1770,6 @@
       "hpDetails": "(void healing)",
       "publicNotes": "<p>When fiends and powerful evil spellcasters are lost beyond the farthest reaches of the multiverse, they sometimes return as horrific undead called devourers that consume the souls of the living to fuel their arcane machinations. Their bodies are ruined and rebuilt, hollow and twisted, even as their minds undergo a spiritual transformation. They gain the ability to bind other souls to their own and drain their essence for magical power, yet can never be sated in their pursuit of it. Seething masses of distorted ghostly shapes surge within their hollow rib cages-manifestations of the devourers' most recently consumed souls.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, detect alignment, detect magic, wavesense (imprecise) 60 feet",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Arcane Innate Spells"
@@ -1847,7 +1814,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]\nHydraulic Push (At Will)"
         },
         "equipment->The Beating": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1I90sDJk6SFokiyl]\n<p><strong>Suit</strong> Hammers (Str)</p>\n<p><strong>Alignment</strong> neutral evil</p>\n<hr />\n<p><em>The Beating</em> symbolizes attack from all sides. If you have <em>The Beating</em> invested, whenever you and an ally are flanking a foe, your melee Strikes gain a +2 item bonus to damage. This increases to a +3 item bonus at 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You wave the card to conjure up dozens of violent ghostly figures; you cast <em>@UUID[Compendium.pf2e.spells-srd.Item.PtX16vbWzDehj8qc]{Pernicious Poltergeist}</em>, and the area of the spell is treated as difficult terrain in addition to its normal effects. The level of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC.</p>",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1I90sDJk6SFokiyl]\n<p><strong>Suit</strong> Hammers (Str)</p>\n<p><strong>Alignment</strong> neutral evil</p>\n<hr />\n<p><em>The Beating</em> symbolizes attack from all sides. If you have <em>The Beating</em> invested, whenever you and an ally are flanking a foe, your melee Strikes gain a +2 item bonus to damage. This increases to a +3 item bonus at 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You wave the card to conjure up dozens of violent ghostly figures; you cast <em>@UUID[Compendium.pf2e.spells-srd.Item.PtX16vbWzDehj8qc]{Pernicious Poltergeist}</em>, and the area of the spell is treated as difficult terrain in addition to its normal effects. The rank of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC.</p>",
           "gmNote": "<p><strong>Epitome</strong> A small group of soldiers set up training grounds in the village surrounding Harrowheart. A PC who spends Downtime training here can Retrain feats, skills, and class features, provided the new feat, skill, or class feature is combat-themed. Feats and skill increases retrained here take only 5 days. Class features retrained here take only 3 weeks.</p>"
         },
         "treasure->Jewelry": {
@@ -1874,7 +1841,7 @@
         },
         "action->Vortex": {
           "name": "Vortex",
-          "description": "<p>@Template[type:emanation|distance:40]{40 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Water in the aura that is also in the same body of water as the marid is difficult terrain for Swimming creatures. Creatures with the water trait are immune.</p>"
+          "description": "<p>40 feet. Water in the aura that is also in the same body of water as the marid is difficult terrain for Swimming creatures. Creatures with the water trait are immune.</p>"
         },
         "action->Devour Soul": {
           "name": "Devour Soul",
@@ -1894,7 +1861,7 @@
         },
         "action->Soul Spells": {
           "name": "Soul Spells",
-          "description": "<p>To cast occult innate spells, Markish must expend a number of soul charges equal to the spell's level. He can heighten any occult spell to a maximum of 8th level by expending more charges as he Casts the Spell. Markish starts this combat with a trapped soul that has 16 soul charges.</p>"
+          "description": "<p>To cast occult innate spells, Markish must expend a number of soul charges equal to the spell's rank. He can heighten any occult spell to a maximum of 8th level by expending more charges as he Casts the Spell. Markish starts this combat with a trapped soul that has 16 soul charges.</p>"
         },
         "lore->Athletics": {
           "skillVariants": {
@@ -1936,7 +1903,6 @@
       "name": "Mighty Bul-Gae",
       "blurb": "Variant bul‑gae",
       "publicNotes": "<p>Bul-gaes are manifestations of the eclipsed sun and moon. They resemble large canines, though their coloration and features change as they exercise their powers over heat and cold. Depending on whether they have most recently unleashed their lunar or solar powers, a bul-gae resembles either a crimson hound wreathed in flames or a cerulean, frostbitten fox, respectively.</p>\n<p>Legends say that the first bul-gae attempted to steal the sun from the sky. As they bit down on the burning sphere, though, the bul-gae was badly burned. Having failed, they then tried to retrieve the moon, but when they touched the moon the bul-gae froze solid and fell to the ground. The descendants of that bul-gae forever hone their powers of flame and ice so that they may one day succeed where their ancestor failed.</p>",
-      "senses": "greater darkvision, scent (imprecise) 60 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -1966,7 +1932,6 @@
     "Mivanian Soldier": {
       "name": "Mivanian Soldier",
       "blurb": "Tengu soldier",
-      "senses": "low‑light vision",
       "items": {
         "armor->Leather Armor Bearing Mivanian Insignia": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nLeather Armor Bearing Mivanian Insignia"
@@ -2001,10 +1966,8 @@
     "Mogaran": {
       "name": "Mogaran",
       "blurb": "Male weakened vavakia",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Juggernauts of destruction, vavakias are formed from the souls of mortals who extract, enslave, or consume the souls of others.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, true seeing",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -2038,7 +2001,7 @@
           "description": "<p>The wolf-head shaped crystal implanted in Mogaran's brow pulses with shadowy energy at the start of each of his turns. Any PC who's legendary in Arcana, Occultism, or Religion and sees this can attempt a DC 36 check using one of those skills (@Check[type:arcana|dc:36], @Check[type:occultism|dc:36], or @Check[type:religion|dc:36]); on a success, they realize the crystal is manipulating Mogaran's actions in some way. If the crystal is destroyed or deactivated, Mogaran regains control of his actions. The crystal functions as a 19th-level magic item for the purposes of dispel magic, but it can also be destroyed by specifically targeting it (AC 40; Hardness 20; HP 90). Alternately, a character can pry the crystal from Mogaran's brow with a successful @Check[type:athletics|dc:36] check, which takes an Interact action, but only if Mogaran is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>"
         },
         "action->Frightful Presence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:35]</p>\n<p>This aura is suppressed as long as Mogaran's crystal implant is functioning.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>60 feet. @Check[type:will|dc:35]</p>\n<p>This aura is suppressed as long as Mogaran's crystal implant is functioning.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Restoration Vulnerability": {
           "name": "Restoration Vulnerability",
@@ -2069,7 +2032,6 @@
       "name": "Ndede",
       "blurb": "Male popobawa",
       "publicNotes": "<p>Cruel shapechangers, popobawas feed on negative emotions, particularly fear, despair, and anguish. Though they're dangerously strong carnivores that drink the blood of their victims, their greatest pleasure lies in mesmerizing victims to cause suffering and spread chaos. A popobawa moves about populated areas in disguise, seeking new victims and revisiting past victims to bask in their suffering, spreading gossip and incriminating innocents for its crimes while still relishing its own loathsome infamy.</p>",
-      "senses": "darkvision, scent (imprecise) 60 feet",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -2097,7 +2059,7 @@
         },
         "action->Stench": {
           "name": "Stench",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it's sickened on a critical failure).</p>\n<p>While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition.</p>\n<p>A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
+          "description": "<p>30 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it's sickened on a critical failure).</p>\n<p>While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition.</p>\n<p>A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The popobawa can take on the appearance of a human or a Small or Medium bat. It loses its stench aura while transformed. In human form it also loses its Strikes but can make fist Strikes that deal the same amount of bludgeoning damage as its talon Strike.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -2119,9 +2081,7 @@
     "Nornhound": {
       "name": "Nornhound",
       "hpDetails": "regeneration 15 (deactivated by cold iron)",
-      "languages": "Tongues",
       "publicNotes": "<p>While norns typically keep to themselves, only consulting their triumvirate or occasionally other fellow norns, they sometimes require servants to further their goals or protect their homes. Nornhounds are massive wolves spun from the old, tattered threads of fate, usually moments of time that norns severed to end a life. These wolves gain a portion of the same power over fate that norns do and serve their norn masters with unflinching loyalty.</p>\n<h2>Nornhound Packs</h2>\n<p>Long-lived or powerful norns sometimes spin multiple nornhounds and keep entire packs as guardians. These packs make quick work of intruders and also gain additional powers when working together. Much like a norn triumvirate, a norn pack can their powers to affect the flow of time in a localized area or even stop time outright.</p>",
-      "senses": "detect magic, greater darkvision, scent (precise) 120 feet, true seeing",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -2187,16 +2147,17 @@
     },
     "Obcisidaemon": {
       "name": "Obcisidaemon",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Obcisidaemons (known to some as obliteration daemons) care only for the brutality and violence that conflict brings.</p>\n<h2>Soul Hoarding</h2>\n<p>Obcisidaemons carry some souls for months or even years at a time, choosing never to consume them, even when doing so might grant an advantage in combat.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, true seeing",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
         },
         "spell->Meteor Swarm": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl]\nMeteor Swarm"
+        },
+        "spell->Disintegrate": {
+          "target": "1 creature or unattended object"
         },
         "spell->True Seeing (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing (Constant)"
@@ -2224,7 +2185,7 @@
         },
         "action->Cloak of Souls": {
           "name": "Cloak of Souls",
-          "description": "<p>An obcisidaemon is shrouded at all times in a cloak of captured souls. It can hold a number of souls equal to the daemon's Charisma modifier. Destroying the daemon frees the souls, though this doesn't return the deceased creatures to life. A creature whose soul is trapped within this cloak can't be resurrected except by a 9th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similarly powerful magic.</p>"
+          "description": "<p>An obcisidaemon is shrouded at all times in a cloak of captured souls. It can hold a number of souls equal to the daemon's Charisma modifier. Destroying the daemon frees the souls, though this doesn't return the deceased creatures to life. A creature whose soul is trapped within this cloak can't be resurrected except by a 9th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similarly powerful magic.</p>"
         },
         "action->Scorched Earth": {
           "name": "Scorched Earth",
@@ -2232,7 +2193,7 @@
         },
         "action->Consume Soul": {
           "name": "Consume Soul",
-          "description": "<p>The obcisidaemon consumes a soul from its cloak to gain one of the following effects. A consumed soul in this way can't be resurrected except by <em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}</em> or a similarly powerful effect.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YOH7YsdlsLzlMu69]{Effect: Consume Soul}</p>\n<p><em>Empower Spell</em> The obcisidaemon gains a +2 status bonus to its spell DCs and spell attack rolls until the end of its next turn.</p>\n<p><em>Empower Weapon</em> The obcisidaemon's weapon gains the effects of a greater flaming, greater frost, greater shock, or wounding rune until the end of its next turn.</p>\n<p><em>Healing</em> The daemon gains the benefit of a two-action, 8th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell ([[/r (8d8+64)[healing]]]).</p>"
+          "description": "<p>The obcisidaemon consumes a soul from its cloak to gain one of the following effects. A consumed soul in this way can't be resurrected except by <em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}</em> or a similarly powerful effect.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YOH7YsdlsLzlMu69]{Effect: Consume Soul}</p>\n<p><em>Empower Spell</em> The obcisidaemon gains a +2 status bonus to its spell DCs and spell attack rolls until the end of its next turn.</p>\n<p><em>Empower Weapon</em> The obcisidaemon's weapon gains the effects of a greater flaming, greater frost, greater shock, or wounding rune until the end of its next turn.</p>\n<p><em>Healing</em> The daemon gains the benefit of a two-action, 8th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell ([[/r (8d8+64)[healing]]]).</p>"
         },
         "action->Inherit Soul": {
           "name": "Inherit Soul",
@@ -2246,7 +2207,6 @@
     "Oppali": {
       "name": "Oppali",
       "publicNotes": "<p>An oppali is a tenacious, twisting vine with white, trumpet-shaped flowers that grows in temperate and tropical regions. Stories passed down through generations refer to the oppali as a \"bad luck vine\" and warn against letting one take over a copse or garden, lest \"your luck drain away like water down a hole.\" This folklore contains more wisdom than most farmers or settlers realize.</p>\n<p>Oppalis are usually 30 feet long, but they twist and coil on themselves so much that they occupy a space not much larger than a horse.</p>\n<h3>Oppali Trumpets</h3>\n<p>An oppali's tough trumpets are useful for creating thunderstones. Incorporating crushed oppali trumpet into crafting the thunderstone grants a +2 item bonus to the Crafting check, provided that this material makes up at least half of the raw materials used for the thunderstone. With a successful @Check[type:survival|dc:27] check, a character harvests [[/r 5d20]] gp of this raw material from a defeated oppali (double on a critical success, half on a failure, and none at all from a critical failure).</p>",
-      "senses": "low-light vision, soundsense (precise) 60 feet",
       "items": {
         "strike-melee->Vine": {
           "name": "Vine"
@@ -2281,9 +2241,7 @@
     },
     "Phasmadaemon": {
       "name": "Phasmadaemon",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Known also as terror daemons, the horrifying phasmadaemons make use of illusions and their own frightening appearance (that of a serpent with a bony tail, a horned crocodilian skull for a head, and several insectile pincers) to strike fear into the hearts of others. They represent deaths brought about by fright.</p>\n<h2>Fearful Machinations</h2>\n<p>While daemons don't typically require food, phasmadaemons seem intent on feeding on the emotions, and especially the fears, of mortals. Some believe that the life force and emotions of creatures serves as the fuel for a phasmadaemon's magic, while others believe that phasmadaemons simply enjoy facing a mortal eye-to-eye while feeding, delighting in the fear in their prey's final moments.</p>",
-      "senses": "darkvision, true seeing",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -2339,7 +2297,6 @@
       "name": "Queen Kawlinawk",
       "blurb": "Female harpy",
       "publicNotes": "<p>Harpies are filthy amalgamations of human and bird, resembling feral humans with wings, talons, and mouths full of sharp teeth. They use captivating songs to lure creatures in, then murder them while they stand transfixed. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey-humans and elves are their favorite. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies. Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Harpies live in family groups or larger clans. They are lightweight despite their size, standing 5 feet tall and weighing only around 90 pounds. While most use relatively simple weapons, some harpies take pride in learning and mastering the use of more complex tools of war such as swords and slings. Those who master the use of the bow, in particular, are often regarded as heroes among their kind and terrors among their victims.</p>",
-      "senses": "darkvision",
       "items": {
         "treasure->Jewelry": {
           "name": "Jewelry"
@@ -2369,7 +2326,6 @@
     },
     "Quoppopak Mummy": {
       "name": "Quoppopak Mummy",
-      "senses": "darkvision",
       "speed": "water glide 25 feet",
       "items": {
         "strike-melee->Beak": {
@@ -2386,7 +2342,7 @@
         },
         "action->Despair": {
           "name": "Despair",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:30] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Effect: Despair}</p>"
+          "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:30] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Effect: Despair}</p>"
         },
         "action->Ignite Oil": {
           "name": "Ignite Oil",
@@ -2394,7 +2350,7 @@
         },
         "action->Oil Rot": {
           "name": "Oil Rot",
-          "description": "<p>This disease and any damage from it can't be healed until this curse is removed. As the disease progresses, the creature's flesh grows leathery, while a foul-smelling oily layer spreads from painful splits in the dried skin. A creature killed by oil rot melts into a puddle of foul-smelling oil and can be resurrected only by a 7th-level resurrect ritual or similar magic</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:33]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[10d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 day)</p>"
+          "description": "<p>This disease and any damage from it can't be healed until this curse is removed. As the disease progresses, the creature's flesh grows leathery, while a foul-smelling oily layer spreads from painful splits in the dried skin. A creature killed by oil rot melts into a puddle of foul-smelling oil and can be resurrected only by a 7th-rank resurrect ritual or similar magic</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:33]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[10d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 day)</p>"
         },
         "action->Tentacle Stab": {
           "name": "Tentacle Stab",
@@ -2416,7 +2372,6 @@
     "Raskus": {
       "name": "Raskus",
       "blurb": "Male tengu commander",
-      "senses": "low‑light vision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -2569,7 +2524,6 @@
       "name": "Scaleseed Nagaji",
       "blurb": "Nagaji naturalist",
       "publicNotes": "<p>Nagaji are brawny bipeds with humanoid figures and serpentine heads. Their bodies are covered in tightly layered scales that range in color from green to brown, and almost all nagaji have a colorful ridge along their head and back. Ophidian eyes lend nagaji an imperious visage, with irises that span every color of the rainbow.</p>\n<p>Nagaji physiology varies somewhat. Some possess vestigial tails, while others have sharp claws, and some even sport impressive fangs that can inject a simple venom. Like snakes, nagaji are cold-blooded and reproduce by laying eggs; as a result, nagaji territories rarely overlap with those of mammalian humanoids, since their environmental needs diverge so widely. They're a hardy and strong people, but their close ties to nagas mean many have the potential for powerful magic, as well.</p>\n<p>Long ago, the naga goddess Nalinivati created the first nagaji as the backbone of a society that respected nagas. But the nagaji were never mindless vassals, and the goddess gifted them with free will. Many nagaji willingly serve nagas to this day, honoring some as outright divinities. While outsiders might regard nagaji initially as brainwashed servants, nagaji dispute this claim. Of course there are evil and unfair naga overlords, but there are just as many fair and just naga rulers, and nagaji history remembers various rebellions and revolutions when a matriarch overstepped her bounds to support a new naga's claims of rulership. Nagaji accurately note that their long history with nagas is no simple matter and claim that the partnership goes both ways: nagas rely as much on nagaji for the running of their empires as nagaji rely on nagas to lead their people to prosperity.</p>\n<p>Although nagaji might be encountered in diverse cities and urban centers, their communities are concentrated in environments that suit their biology, namely jungles and tropical forests. Where many species would languish in the heat and humidity, nagaji bask in the warmth and thrive.</p>",
-      "senses": "low-light vision",
       "items": {
         "spellcastingEntry->Primal Prepared Spells": {
           "name": "Primal Prepared Spells"
@@ -2653,7 +2607,6 @@
       "hpDetails": "regeneration 20 (deactivated by cold)",
       "publicNotes": "<p>The aberrations known as doprillus are hulks with banded muscles who wear ornate masks at all times that fill their wearers with magical strength and fighting spirit. Doprillus love to battle, especially by grappling, and are eager to start brawls. On neutral ground, a doprillu offers to duel the strongest-looking opponent, but when a doprillu's home turf is invaded, no rules apply to the confrontation. As befits the superheated blood that fuels them, doprillus make their homes in warm locations: hot jungles, sunny deserts, and underground caverns near sulfur vents.</p>",
       "saveDetails": "+2 status to all saves vs. fear",
-      "senses": "darkvision, see invisibility",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -2703,7 +2656,6 @@
     "Simple Harrowkin": {
       "name": "Simple Harrowkin",
       "publicNotes": "<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -2746,7 +2698,6 @@
       "hpDetails": "regeneration 25 (deactivated by holy or silver)",
       "publicNotes": "<p>Velstracs are horrific, shadow-dwelling fiends who seek ultimate sensation through self-mutilation. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of debasement and torture before then turning their knives on themselves. Although velstracs consider themselves beyond such limitations as morality or mortal taboos, their victims know them as emotionless tormentors who inflict debased, sadistic suffering. They claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of masochistic or sadistic mortals that are diverted into the Shadow Plane and then forged into forms that suit their vile predilections, ranging from the low-ranking augurs to the aesthetics-obsessed interlocutors.</p>\n<p>Some mortals refer to velstracs as \"kytons,\" a misattribution that the velstracs tolerate with cold amusement. The term \"kyton\" denotes a master or virtuoso among their kind, and these fiends enjoy being labeled masters of their horrid paths to perfection through agony.</p>\n<p>Velstrac storytellers and historians are known as precentors. Trailed by horrific choirs, precentors perform in the courts of the velstrac demagogues.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, detect magic, painsight, true seeing",
       "speed": "flight from fly spell",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
@@ -2799,7 +2750,7 @@
         },
         "action->Unnerving Gaze": {
           "name": "Unnerving Gaze",
-          "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>When a creature ends its turn in the aura, it must succeed at a @Check[type:will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it must succeed at a @Check[type:will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>"
         },
         "action->Assemble Choir": {
           "name": "Assemble Choir",
@@ -2822,9 +2773,7 @@
       "name": "Speaker Of Svaryr",
       "blurb": "Variant female huldra",
       "hpDetails": "regeneration 30 (deactivated by acid or fire)",
-      "languages": "Speak With Plants, Tongues",
       "publicNotes": "<p>At first glance, a huldra seems a simple creature-a human in plain robes or peasant dress, sporting long, unbound hair. These tresses and full skirts in fact disguise the huldra's supernatural features: a hollow wooden back, a long bovine tail, and incredible strength.</p>\n<p>Folk legends from the lands of the north describe huldras as the creations of troll witches, intended to lure potential meals to the slaughter. Indeed, a huldra's regeneration is so similar to a troll's that a link between the two creatures seems entirely possible, but huldras despise trolls and resent tales suggesting any connection between them. Rather, huldras are wardens of the woodlands they occupy. Grown from saplings by powerful forest-dwelling fey as a response to humanoid encroachment, huldras protect and parley for the forest itself. Woodland creatures adore huldras, and sometimes approach humans or elves thinking they're huldras. This illusion is shattered if the animal sees the humanoid's back is made of flesh or that they're lacking a tail, at which point the animal recoils and runs away.</p>\n<p>Huldras respond well to travelers who show respect and deference for the forest, bestowing those they favor with supernatural luck and fortune. Those who scorn or attack a huldra, or those who mock their distinctive, bovine tails, find themselves plagued by poor decisions and even worse luck. Huldras commonly carry a bad reputation as sirens of the deep forest-cunning monsters who seek to lure woodcutters and unwary adventurers to uncertain ends. These stories largely come from miscreants foolish enough to have treated a huldra rudely and later complain about how they were unjustly persecuted. Even woodcutters and hunters can stay in the good graces of huldras provided they plant few trees to replace what they've taken and don't kill any creatures they don't eat.</p>\n<p>Though huldras choose to appear unassuming, the attention they put into disguising the supernatural parts of their bodies is sometimes lacking when it comes to their strength. They often perform feats of strength, like bending horseshoes straight or lifting heavy objects, without realizing they're breaking their carefully crafted facade.</p>",
-      "senses": "darkvision, scent (imprecise) 60 feet",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -2889,7 +2838,6 @@
     "Storied Harrowkin": {
       "name": "Storied Harrowkin",
       "publicNotes": "<p>These harrowkin take on themes drawn from a specific harrow card.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "strike-melee->Battle Axe": {
           "name": "Battle Axe"
@@ -2917,9 +2865,7 @@
     "Suvarden": {
       "name": "Suvarden",
       "hpDetails": "all-around vision",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>While the Material Plane and the Dimension of Time remain distinct realities, the two share a powerful connection. Suvardens are living embodiments of this connection.</p>\n<h2>A Matter Of Time</h2>\n<p>Suvardens have a connection to the Dimension of Time, but exist more as natives of the Material Plane. As a result, they do not possess the Time trait. Suvardens refuse to elaborate on their place within existence and time. A suvarden first tries to maintain the order of cause and effect with its guidance, but when that fails, more powerful or cruel creatures increasingly get involved. Most agree that meeting a suvarden is preferable to encountering a hound of Tindalos or siktempora, although there certainly exist powerful suvardens as well.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -2955,9 +2901,7 @@
     "Svaryr Commander": {
       "name": "Svaryr Commander",
       "blurb": "Variant valkyrie",
-      "languages": "Ravenspeaker, Tongues",
       "publicNotes": "<p>Choosers of the slain and so-called angels of battle, the song of the valkyries plays wherever steel rings against steel. Valkyries are humanoid individuals of impressive physical stature who seek the most epic battles and legendary conflicts so that they can lay claim to the souls of the world's greatest warriors. The valkyries transform these souls into the implacable immortals known as einherjar.</p>\n<p>Valkyries most often serve gods of battle and war, though a valkyrie might pledge their service to any deity they consider worthy. Gorum is particularly well known for having valkyrie and einherjar servants, though he isn't the only such deity. Besmara also has valkyrie servitors, and many stories of \"ghost ships\" actually reference accounts of encounters with ships manned by einherjar crews devoted to the Pirate Queen.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -3000,10 +2944,8 @@
     "Svaryr Soldier": {
       "name": "Svaryr Soldier",
       "blurb": "Variant einherji",
-      "languages": "Tongues",
       "publicNotes": "<p>Einherjar are mighty warriors chosen by valkyries from the ranks of those slain in terrible and legendary battles. Forged from the souls of the greatest warriors, the implacable einherjar serve as the foot soldiers of pantheons, skilled in handto-hand combat and slaying giants.</p>\n<p>Einherjar often come from warrior cultures, including Ulfen vikings (like the einherji represented in this entry), particularly fierce pirates from the Shackles, and even Osirian conquerors. They can be chosen from wherever war and might hold sway; many deities who hold the call of battle and the pursuit of physical power more sacred than concepts of good and evil might count einherjar warriors and valkyrie choosers of the slain among their chosen servitors. For example, Gorum, Besmara, and Sekhmet have all elevated fallen worshippers as einherjar. Einherjar dedicated to different deities often wield weapons or possess varying cosmetic appearances based on their deity's preferred weapon and their place of death; however, they're universally stalwart, implacable, and efficiently deadly. Einherjar with two-handed weapons or who arise from other backgrounds often have different abilities in place of Jotun Slayer and Instant Repair.</p>",
       "saveDetails": "+4 to will saves vs. fear",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -3063,7 +3005,6 @@
       "name": "The Betrayal",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3124,7 +3065,6 @@
       "name": "The Courtesan",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3143,7 +3083,7 @@
         },
         "action->Change Faces": {
           "name": "Change Faces",
-          "description": "<p>The Courtesan removes their mask and replaces it with one depicting a specific person. This grants the Courtesan the effects of an 8th-level illusory disguise. The Courtesan doesn't need to have seen the individual person depicted on the mask.</p>"
+          "description": "<p>The Courtesan removes their mask and replaces it with one depicting a specific person. This grants the Courtesan the effects of an 8th-rank illusory disguise. The Courtesan doesn't need to have seen the individual person depicted on the mask.</p>"
         },
         "action->Harrowkin Suit (Crowns)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Zt1p0dh8ZUXIMxEt]\nHarrowkin Suit (Crowns)"
@@ -3160,7 +3100,6 @@
       "name": "The Cricket",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3196,7 +3135,6 @@
       "name": "The Crows",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3232,7 +3170,6 @@
       "name": "The Dance",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3281,7 +3218,6 @@
       "name": "The Fool",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3317,7 +3253,6 @@
       "name": "The Inquisitor",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3353,7 +3288,6 @@
       "name": "The Joke",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3391,9 +3325,7 @@
     "The Keeper": {
       "name": "The Keeper",
       "blurb": "Variant female vilderavn",
-      "languages": "Tongues",
       "publicNotes": "<p>In their true form, a vilderavn is a great raven with a wingspan of 6-8 feet. Adaptable shapeshifters, they can change to the fighting forms of a snarling wolf, a hybrid of both wolf and raven, and a tall humanoid in black armor with a massive greatsword. More sinister is their ability to assume a humanoid guise suited to insinuate themselves into the retinues of boastful mortal rulers. With historical knowledge and clever rumor-mongering, they goad the proud into squabbles, feuds, and ultimately wars. The vilderavn stays at the ruler's side until victory is within grasp, the war almost won, then exacts the cruel stroke of betrayal. Their magic turns the mortals against each other, and the vilderavn's sword falls swiftly.</p>",
-      "senses": "greater darkvision, true seeing",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3456,7 +3388,6 @@
       "name": "The Peacock",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3492,7 +3423,6 @@
       "name": "The Prince of Wolves",
       "blurb": "Male beastkin ranger",
       "saveDetails": "+1 to all saves vs. magic, +2 item to saves vs. fear and effects that render him clumsy, doomed, drained, enfeebled, or fatigued",
-      "senses": "low-light vision, scent (imprecise) 30 feet",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3508,8 +3438,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.w5ZX1R3dPvuLcuRx]\n<p>As black as coal, this blade grows more potent in darkness. While in bright light, it functions as a +1 shortsword and doesn't appear to radiate a magic aura to <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em> or similar spells unless the spells are 4th level or higher.</p>\n<p>In dim light or darkness, the <em>gloom blade</em> becomes a <em>+2 striking shortsword</em>. Whenever you use the <em>gloom blade</em> to attack a creature you're undetected by, you deal 1d6 additional precision damage.</p>\n<p>To upgrade the <em>gloom blade's</em> fundamental runes, start with the base <em>+1 shortsword</em>, but if you improve it beyond a <em>+2 striking shortsword</em>, the runes apply in dim light or darkness as well.</p>"
         },
         "equipment->The Cyclone": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.04GSFcLNlw1w2lAY]\n<p><strong>Suit</strong> Hammers (Str)</p>\n<p><strong>Alignment</strong> chaotic evil</p>\n<hr />\n<p><em>The Cyclone</em> represents tumultuous evil plots. As long as it is invested, <em>The Cyclone</em> bolsters you with helpful winds that grant you a +2 item bonus to Athletics checks made to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb}, @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}, @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, and @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}. This increases to a +3 item bonus if you are at least 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast <em>@UUID[Compendium.pf2e.spells-srd.Item.8hKW4mWQyLnkHVta]{Whirlwind}</em>. You do not treat the squares in the whirlwind as difficult terrain, but all other creatures do. The level of the spell is one-half your level, rounded down (minimum 8th level), and the save DC is your class DC.</p>",
-          "gmNote": "<p><strong>Epitome</strong> When you epitomize <em>The Cyclone</em>, assign it to a point of interest in the mountains. This marks the location of a peak that is constantly assailed by blustery winds. Leering, sinister faces made of roiling vapor constantly form and melt away in these winds, and the feeling of the gusts tugging at clothing and flesh feels eerily like the clutching of long-fingered claws. A perpetual cyclone is visible at the mountain's peak. Nonetheless, any PC who visits this location feels a strong urge to attempt an ascent of the wind-wracked mountain. A PC who wishes to attempt the dangerous climb must spend 8 hours of downtime, then attempt a @Check[type:athletics|dc:35] check to Climb.</p>\n<hr />\n<p><strong>Critical Success</strong> The PC reaches the mountain's peak! The PC gains the ability to cast a spell as a primal innate spell, choosing from <em>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</em> (once per day), <em>@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}</em> (at will), <em>@UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}</em> (three times per day), or <em>@UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration}</em> (once per day). In order to choose a spell, the spell's level must be equal to or less than half the PC's level (rounded up). The spell is automatically heightened to half the PC's level, rounded up, and uses the PC's class DC if needed. A PC can change the innate spell they gain by successfully climbing the mountain again.</p>\n<p><strong>Success</strong> The PC makes progress, but hasn't quite reached the peak. The PC becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}. The PC can either abandon the attempt and end their eight hours back at the mountain's base, or they can continue the ascent either by sheltering in place for eight hours or attempting another eight hour activity at a Climb check to reach the peak. Successfully sheltering in place requires a @Check[type:survival|dc:35] check— success removes the fatigued condition, but failure does not, and also makes the PC @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or increases the value of a current enfeebled condition by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 5}). A character who fails 3 Survival checks when attempting to shelter fails the attempt to ascend the mountain and is forced to retreat to the mountain's base (see Failure, below).</p>\n<p><strong>Failure</strong> The PC falls, taking @Damage[10d10[bludgeoning]] damage from falls and pummeling wind. The PC is fatigued.</p>\n<p><strong>Critical Failure</strong> As failure, but the PC also suffers a fall near the end of their descent, taking an additional 50 points of falling damage along the way (@Damage[(10d10+50)[bludgeoning]]).</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.04GSFcLNlw1w2lAY]\n<p><strong>Suit</strong> Hammers (Str)</p>\n<p><strong>Alignment</strong> chaotic evil</p>\n<hr />\n<p><em>The Cyclone</em> represents tumultuous evil plots. As long as it is invested, <em>The Cyclone</em> bolsters you with helpful winds that grant you a +2 item bonus to Athletics checks made to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb}, @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}, @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, and @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}. This increases to a +3 item bonus if you are at least 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast <em>@UUID[Compendium.pf2e.spells-srd.Item.8hKW4mWQyLnkHVta]{Whirlwind}</em>. You do not treat the squares in the whirlwind as difficult terrain, but all other creatures do. The rank of the spell is one-half your level, rounded down (minimum 8th level), and the save DC is your class DC.</p>",
+          "gmNote": "<p><strong>Epitome</strong> When you epitomize <em>The Cyclone</em>, assign it to a point of interest in the mountains. This marks the location of a peak that is constantly assailed by blustery winds. Leering, sinister faces made of roiling vapor constantly form and melt away in these winds, and the feeling of the gusts tugging at clothing and flesh feels eerily like the clutching of long-fingered claws. A perpetual cyclone is visible at the mountain's peak. Nonetheless, any PC who visits this location feels a strong urge to attempt an ascent of the wind-wracked mountain. A PC who wishes to attempt the dangerous climb must spend 8 hours of downtime, then attempt a @Check[type:athletics|dc:35] check to Climb.</p>\n<hr />\n<p><strong>Critical Success</strong> The PC reaches the mountain's peak! The PC gains the ability to cast a spell as a primal innate spell, choosing from <em>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</em> (once per day), <em>@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}</em> (at will), <em>@UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}</em> (three times per day), or <em>@UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration}</em> (once per day). In order to choose a spell, the spell's rank must be equal to or less than half the PC's level (rounded up). The spell is automatically heightened to half the PC's level, rounded up, and uses the PC's class DC if needed. A PC can change the innate spell they gain by successfully climbing the mountain again.</p>\n<p><strong>Success</strong> The PC makes progress, but hasn't quite reached the peak. The PC becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}. The PC can either abandon the attempt and end their eight hours back at the mountain's base, or they can continue the ascent either by sheltering in place for eight hours or attempting another eight hour activity at a Climb check to reach the peak. Successfully sheltering in place requires a @Check[type:survival|dc:35] check— success removes the fatigued condition, but failure does not, and also makes the PC @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or increases the value of a current enfeebled condition by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 5}). A character who fails 3 Survival checks when attempting to shelter fails the attempt to ascend the mountain and is forced to retreat to the mountain's base (see Failure, below).</p>\n<p><strong>Failure</strong> The PC falls, taking @Damage[10d10[bludgeoning]] damage from falls and pummeling wind. The PC is fatigued.</p>\n<p><strong>Critical Failure</strong> As failure, but the PC also suffers a fall near the end of their descent, taking an additional 50 points of falling damage along the way (@Damage[(10d10+50)[bludgeoning]]).</p>"
         },
         "equipment->The Keep": {
           "gmNote": "<p><strong>Epitome</strong> When you epitomize <em>The Keep</em>, assign it to a point of interest in the farmland. A small, fortified keep springs up here. Its interior is a complex maze of locked rooms and barricaded hallways—exploring this keep can be an exhausting ordeal, but a character who does so can be rewarded by discovering a hidden armory. A character who wishes to seek out this armory must spend 8 hours @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Forcing Open} doors, portcullises, and barricades with a @Check[type:athletics|dc:35] check, after which no one may search for the armory again for 1 week.</p>\n<hr />\n<p><strong>Critical Success</strong> You make it to one of the armories and discover a suit of +2 greater resilient armor. The type of armor is up to you, but it must be a common type of armor. For you, The Keep's armories are now forever empty, and you can never attempt this activity again.</p>\n<p><strong>Success</strong> You spend time pushing your way through the maze but don't quite reach your goal. The next time you perform this activity, you gain a +4 circumstance check to your Stealth check.</p>\n<p><strong>Failure</strong> You fail to reach the hidden armory.</p>\n<p><strong>Critical Failure</strong> You fail to reach the hidden armory and strain your muscles in an attempt to wrench open a barrier. You become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} for 1 week, or until the condition is removed via an effect like <em>@UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}</em>.</p>"
@@ -3538,7 +3468,7 @@
           "description": "<p>When the Prince of Wolves dies, his soul immediately travels to the crystalline shadow stele in his Den. His body rejuvenates over 24 hours, emerging fully formed from the shadow stele. He can be permanently slain only if the shadow stele is destroyed.</p>"
         },
         "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The Prince changes into his humanoid shape, hybrid shape, or wolf shape. While in hybrid shape, he gains a jaws Strike. While in animal shape, he gains the effects of a 5th-level casting of <em>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}</em> to become a canine. He prefers fighting in hybrid shape.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The Prince changes into his humanoid shape, hybrid shape, or wolf shape. While in hybrid shape, he gains a jaws Strike. While in animal shape, he gains the effects of a 5th-rank casting of <em>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}</em> to become a canine. He prefers fighting in hybrid shape.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->Hunt Prey": {
           "name": "Hunt Prey",
@@ -3580,7 +3510,6 @@
       "name": "The Queen Mother",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3615,9 +3544,7 @@
     "The Shadow Prince": {
       "name": "The Shadow Prince",
       "blurb": "Variant brainchild",
-      "languages": "Telepathy 100 feet, Universal Language",
       "publicNotes": "<p>A rumor can become so vivid and so persistent that it comes to life, creating a brainchild-a living illusion that hatches from an intense belief in a remorseless and implacable killer. Often, these rumors swirl around the victims of a <em>@UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em> spell. A brainchild's capabilities grow when they pursue a believer but deflate against skeptics, making them only as bad as one thinks they are. A simple drive to stalk, terrify, and kill propels a brainchild, but the creature might also exhibit other behaviors ascribed to them through gossip.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3637,10 +3564,10 @@
         },
         "action->Urban Legend": {
           "name": "Urban Legend",
-          "description": "<p>The Shadow Prince's illusory abilities granted by its urban legend include its immunity to emotion effects, its resistance to physical damage, its frightful presence, and the persistent bleed caused by its melee Strikes.</p>\n<hr />\n<p>A brainchild is sustained only by the reputation that precedes them. Mindless creatures are immune to a brainchild and can't perceive them.</p>\n<p>The brainchild's size, features, and items, as well as the appearance of their attacks, match what the foes perceiving them expect. If foes expect to see different things, the brainchild chooses which to manifest. If any creature that can perceive the brainchild believes the brainchild has one of the abilities below, the brainchild has that ability.</p>\n<p>A creature can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} (against the brainchild's Deception DC) to attempt to disbelieve an individual ability. If at any point no creature perceiving the brainchild believes in the ability, the brainchild loses that ability immediately. If foes expect different particulars, such as one believing the brainchild is immune to fire and another believing they're immune to divinations, the brainchild chooses one to have.</p>\n<ul>\n<li><strong>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</strong> (imprecise) 100 feet</li>\n<li><strong>Immunity</strong> to one damage type, magic school, or condition</li>\n<li><strong>Weakness</strong> 10 to one damage type other than mental</li>\n<li><strong>Resistance</strong> 10 to physical damage, with an exception for either cold iron or silver</li>\n<li><strong>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}</strong> (aura, emotion, fear, mental) 100 feet, DC 28</li>\n<li><strong>[[/r 1d6]]{1d6} Extra Damage</strong> on Strikes, of a type one foe believes in</li>\n<li><strong>Additional Spells</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{Phantom Pain}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG]{Shadow Blast}</em> at 6th level</li>\n</ul>"
+          "description": "<p>The Shadow Prince's illusory abilities granted by its urban legend include its immunity to emotion effects, its resistance to physical damage, its frightful presence, and the persistent bleed caused by its melee Strikes.</p>\n<hr />\n<p>A brainchild is sustained only by the reputation that precedes them. Mindless creatures are immune to a brainchild and can't perceive them.</p>\n<p>The brainchild's size, features, and items, as well as the appearance of their attacks, match what the foes perceiving them expect. If foes expect to see different things, the brainchild chooses which to manifest. If any creature that can perceive the brainchild believes the brainchild has one of the abilities below, the brainchild has that ability.</p>\n<p>A creature can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} (against the brainchild's Deception DC) to attempt to disbelieve an individual ability. If at any point no creature perceiving the brainchild believes in the ability, the brainchild loses that ability immediately. If foes expect different particulars, such as one believing the brainchild is immune to fire and another believing they're immune to divinations, the brainchild chooses one to have.</p>\n<ul>\n<li><strong>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</strong> (imprecise) 100 feet</li>\n<li><strong>Immunity</strong> to one damage type, magic school, or condition</li>\n<li><strong>Weakness</strong> 10 to one damage type other than mental</li>\n<li><strong>Resistance</strong> 10 to physical damage, with an exception for either cold iron or silver</li>\n<li><strong>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}</strong> (aura, emotion, fear, mental) 100 feet, DC 28</li>\n<li><strong>[[/r 1d6]]{1d6} Extra Damage</strong> on Strikes, of a type one foe believes in</li>\n<li><strong>Additional Spells</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{Phantom Pain}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG]{Shadow Blast}</em> at 6th rank</li>\n</ul>"
         },
         "action->Frightful Presence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:100]{100 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>100 feet. @Check[type:will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         }
       }
     },
@@ -3648,7 +3575,6 @@
       "name": "The Teamster",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3684,7 +3610,6 @@
       "name": "The Trader",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3730,7 +3655,6 @@
       "name": "The Twin",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3766,7 +3690,6 @@
       "name": "The Unicorn",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3798,7 +3721,6 @@
       "name": "The Wanderer",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3834,7 +3756,6 @@
       "name": "The Winged Serpent",
       "blurb": "Variant fabled harrowkin",
       "publicNotes": "<p>The most powerful harrowkin are living embodiments of harrow cards.</p>\n<hr />\n<p>When a harrow deck becomes infused with great magical power, it can produce a harrowkin.</p>\n<h2>Harrowkin Agency</h2>\n<p>Harrowkin lack free will, despite being sapient. All are neutral, even in the case of fabled harrowkin whose legacies force them into specific roles. They do not possess souls. When slain they revert back to the card from which they sprang.</p>\n\n<h2>Ancient Harrowkin</h2>\n<p>Some harrowkin form from ancient decks, even originating from the days before Earthfall. These harrowkin are especially powerful as they've spent a long time—sometimes millennia—learning to control their own abilities and their magical influence over the power of fate. These harrowkin are known to keep weaker harrowkin as companions or servants, living secluded lives in their own courts of fate. Unlike other harrowkin, ancient harrowkin have souls, agency, free will, and can be of any alignment.</p>",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3872,7 +3793,6 @@
       "hpDetails": "regeneration 15 (deactivated by holy or silver)",
       "publicNotes": "<p>Sacristans are failures among the velstracs, creatures whose bodies and minds have been utterly broken by the velstracs' torments. These unfortunates are assembled from scrap metal, nerveless flesh, and bits of darkness into loyal agents who take ecstatic pleasure in serving other velstracs. Sacristans are empowered by a miniature gateway to the Shadow Plane deep in their mouths. By distending their jaws, they can howl with the shrieks and windstorms of that plane. Sacristans vary in appearance but are the size of maimed humans. Their features are redundant or absent and they are wrapped in barbed and rusted chains.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "echolocation 120 feet, no vision, painsense",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -3899,7 +3819,7 @@
         },
         "action->Tick Tock Tick Tock": {
           "name": "Tick Tock Tick Tock",
-          "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>When a creature ends its turn in the aura, the constant clicking and ticking sounds coming from Ticktock worm into its thoughts and fill the listener with the sense that time is speeding up for everyone but itself. The creature must succeed at a @Check[type:will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the end of its next turn.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the aura, the constant clicking and ticking sounds coming from Ticktock worm into its thoughts and fill the listener with the sense that time is speeding up for everyone but itself. The creature must succeed at a @Check[type:will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the end of its next turn.</p>"
         },
         "action->Shadow Scream": {
           "name": "Shadow Scream",
@@ -3913,10 +3833,8 @@
     "Torgral": {
       "name": "Torgral",
       "blurb": "Male ghalzarokh",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Ghalzarokh demons, also known as tyranny demons, form from the souls of cruel autocrats. These demons subjugate weaker fiends. After amassing an army, a ghalzarokh begins a chaotic spree of bloody conquest.</p>\n<h2>Demon Thralls</h2>\n<p>Ghalzarokhs are bullies who prefer numerous thralls to allies. These demons loathe owing any other being a favor and serve stronger creatures only with the expectation of rich reward. A ghalzarokh can rarely be found without a fiendish entourage or army (such as a demon throng). They prefer \"pacts\" with \"lesser\" demons, usually offering only a feeble guarantee to allow the weaker fiend's continued existence.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, scent (imprecise) 60 feet, see invisibility",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -3968,7 +3886,6 @@
       "hpDetails": "void healing, rejuvenation",
       "publicNotes": "<p>A wizard whose insatiable desire for arcane power eclipsed their mortal life, the lich is a truly devious and versatile spellcaster.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a phylactery, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history-both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its phylactery, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its phylactery is a sure way to gain the upper hand in such a negotiation.</p>",
       "saveDetails": "+1 status to all saves vs. vitality",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
@@ -4003,6 +3920,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
         },
         "weapon->Staff of Necromancy (Greater)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Ab5EjJyoRSec5YrW]\nStaff of Necromancy (Greater)",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Ab5EjJyoRSec5YrW]\n<p>This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}</em></li>\n<li><strong>1st</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</em></li>\n<li><strong>2nd</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.fZPCv2VHuM2yPbC8]{Deafness}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest}</em></li>\n<li><strong>3rd</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Blindness}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast}</em></li>\n<li><strong>4th</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast}</em></li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>",
           "rules": {
             "0": {
               "label": "Staff of Necromancy (identify necromancy magic)"
@@ -4026,7 +3945,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 Status to All Saves vs. Vitality"
         },
         "action->Frightful Presence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>60 feet. @Check[type:will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Rejuvenation": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\nRejuvenation"
@@ -4058,10 +3977,8 @@
     },
     "Uniila": {
       "name": "Uniila",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Uniilas frequently join mortal cults, but not as leaders—instead, the uniila lurks behind the master or demagogue who leads the cult.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Arcane Spontaneous Spells": {
           "name": "Arcane Spontaneous Spells"
@@ -4119,16 +4036,14 @@
         },
         "action->Witch Token": {
           "name": "Witch Token",
-          "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p><strong>Effect</strong> As an activity that takes 1 hour, the uniila creates a token in the shape of a piece of jewelry. When the <em>witch token</em> is invested by a mortal, all of the mortal's spells, except those cast at the highest level the mortal can cast, count as 1 level higher for the purpose of counteracting other spells and being counteracted. The creature can also Activate the <em>witch token</em> to Cast a Spell once per day. This spell is chosen from one of the uniila's arcane spontaneous spells of level 4 or lower when the uniila creates the token. While a creature has the <em>witch token</em> invested, it treats its saving throws against the uniila's spells as one degree of success worse, and the uniila always knows the distance and direction to the creature. A creature can't have more than one <em>witch token</em> invested, and an uniila can't have more than one <em>witch token</em> in existence. The uniila can destroy their <em>witch token</em> as a free action with the concentrate trait; if the <em>witch token</em> is invested when the uniila does so, the creature that has the <em>witch token</em> invested takes @Damage[9d8[mental]] damage (@Check[type:will|dc:29|basic:true]).</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.mO9VXq8UkQodAucJ]{Witch Token}</p>"
+          "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p><strong>Effect</strong> As an activity that takes 1 hour, the uniila creates a token in the shape of a piece of jewelry. When the <em>witch token</em> is invested by a mortal, all of the mortal's spells, except those cast at the highest level the mortal can cast, count as 1 level higher for the purpose of counteracting other spells and being counteracted. The creature can also Activate the <em>witch token</em> to Cast a Spell once per day. This spell is chosen from one of the uniila's arcane spontaneous spells of rank 4 or lower when the uniila creates the token. While a creature has the <em>witch token</em> invested, it treats its saving throws against the uniila's spells as one degree of success worse, and the uniila always knows the distance and direction to the creature. A creature can't have more than one <em>witch token</em> invested, and an uniila can't have more than one <em>witch token</em> in existence. The uniila can destroy their <em>witch token</em> as a free action with the concentrate trait; if the <em>witch token</em> is invested when the uniila does so, the creature that has the <em>witch token</em> invested takes @Damage[9d8[mental]] damage (@Check[type:will|dc:29|basic:true]).</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.mO9VXq8UkQodAucJ]{Witch Token}</p>"
         }
       }
     },
     "Uniila Occultist": {
       "name": "Uniila Occultist",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Uniilas frequently join mortal cults, but not as leaders—instead, the uniila lurks behind the master or demagogue who leads the cult.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "greater darkvision",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
@@ -4186,15 +4101,13 @@
         },
         "action->Witch Token": {
           "name": "Witch Token",
-          "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p><strong>Effect</strong> As an activity that takes 1 hour, the uniila creates a token in the shape of a piece of jewelry. When the <em>witch token</em> is invested by a mortal, all of the mortal's spells, except those cast at the highest level the mortal can cast, count as 1 level higher for the purpose of counteracting other spells and being counteracted. The creature can also Activate the <em>witch token</em> to Cast a Spell once per day. This spell is chosen from one of the uniila's arcane spontaneous spells of level 4 or lower when the uniila creates the token. While a creature has the <em>witch token</em> invested, it treats its saving throws against the uniila's spells as one degree of success worse, and the uniila always knows the distance and direction to the creature. A creature can't have more than one <em>witch token</em> invested, and an uniila can't have more than one <em>witch token</em> in existence. The uniila can destroy their <em>witch token</em> as a free action with the concentrate trait; if the <em>witch token</em> is invested when the uniila does so, the creature that has the <em>witch token</em> invested takes @Damage[9d8[mental]] damage (@Check[type:will|dc:29|basic:true]).</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.mO9VXq8UkQodAucJ]{Witch Token}</p>"
+          "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p><strong>Effect</strong> As an activity that takes 1 hour, the uniila creates a token in the shape of a piece of jewelry. When the <em>witch token</em> is invested by a mortal, all of the mortal's spells, except those cast at the highest level the mortal can cast, count as 1 level higher for the purpose of counteracting other spells and being counteracted. The creature can also Activate the <em>witch token</em> to Cast a Spell once per day. This spell is chosen from one of the uniila's arcane spontaneous spells of rank 4 or lower when the uniila creates the token. While a creature has the <em>witch token</em> invested, it treats its saving throws against the uniila's spells as one degree of success worse, and the uniila always knows the distance and direction to the creature. A creature can't have more than one <em>witch token</em> invested, and an uniila can't have more than one <em>witch token</em> in existence. The uniila can destroy their <em>witch token</em> as a free action with the concentrate trait; if the <em>witch token</em> is invested when the uniila does so, the creature that has the <em>witch token</em> invested takes @Damage[9d8[mental]] damage (@Check[type:will|dc:29|basic:true]).</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.mO9VXq8UkQodAucJ]{Witch Token}</p>"
         }
       }
     },
     "Usilket": {
       "name": "Usilket",
       "blurb": "Genderfluid witchwyrd monk",
-      "languages": "Tongues",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Arcane Innate Spells"
@@ -4219,7 +4132,7 @@
         },
         "equipment->Hat of Disguise (Greater)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\nHat of Disguise (Greater)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-level <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
         },
         "strike-melee->Fist": {
           "name": "Fist"
@@ -4257,7 +4170,6 @@
       "blurb": "Variant crystal dragon great wyrm",
       "publicNotes": "<p>Good-natured but vain, crystal dragons are beautiful creatures with brilliant hides made of multicolored crystal and gemstone. Their beauty is a source of great pride but is also something of a weakness, as crystal dragons are easily angered by insults about their appearance. Despite their relatively benign natures when compared to other true dragons, crystal dragons can be short tempered and prone to finding insults where none were intended. Although their opinions are changeable, crystal dragons prefer orderly environments and are not fond of sudden interruptions or distractions.</p>\n<p>Crystal dragons build their lairs in underground grottoes, where they cultivate environments of great beauty. Their exacting standards and vivid imaginations mean that they are always working to improve the appearance or layout of some part of their lair. These lairs are unique to each individual crystal dragon, but there are always plenty of reflective surfaces that allow the dragon to observe their own appearance. These range from crystals to reflecting pools to finely crafted mirrors, which are arranged throughout the lair in a pleasing array. Gifts of well-crafted or magical mirrors are an excellent way to curry favor with a crystal dragon.</p>\n<p>Although crystal dragons are easily distracted by their sparkling collections or their vanity, they remain good-hearted creatures at the core and make friends quickly. While a crystal dragon tends to find evil creatures uncouth and unpleasant, any other nearby denizen or inhabitant of their home could become fast friends or beloved pets, depending upon the creature's capacity for conversation (and for providing the frequent praise and compliments that crystal dragons hunger for).</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Arcane Innate Spells"
@@ -4297,7 +4209,7 @@
           "description": "<p>The dragon gains 2 reactions at the start of each of their turns.</p>"
         },
         "action->Frightful Presence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>90 feet. @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Reflect Spell": {
           "name": "Reflect Spell",
@@ -4305,7 +4217,7 @@
         },
         "action->Scintillating Aura": {
           "name": "Scintillating Aura",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A swirling vortex of reflected color and light shimmers around the crystal dragon. Creatures in this aura's emanation are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}. Each creature that ends its turn in the emanation must succeed at a @Check[type:will|dc:37] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). Once a creature succeeds at this save, it is temporarily immune to the stunning effect for 1 minute. The crystal dragon can turn this aura on or off using a single action, which has the concentrate trait, and it can choose not to affect allies.</p>"
+          "description": "<p>30 feet. A swirling vortex of reflected color and light shimmers around the crystal dragon. Creatures in this aura's emanation are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}. Each creature that ends its turn in the emanation must succeed at a @Check[type:will|dc:37] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). Once a creature succeeds at this save, it is temporarily immune to the stunning effect for 1 minute. The crystal dragon can turn this aura on or off using a single action, which has the concentrate trait, and it can choose not to affect allies.</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
@@ -4336,7 +4248,6 @@
     "Vharnev the Butcher": {
       "name": "Vharnev the Butcher",
       "blurb": "Male tiefling human mercenary",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Arcane Spontaneous Spells": {
           "name": "Arcane Spontaneous Spells"
@@ -4377,10 +4288,8 @@
     "Vincuvicar": {
       "name": "Vincuvicar",
       "hpDetails": "regeneration 25 (deactivated by holy or silver)",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Prison keepers among velstracs, vincuvicar velstracs thrive on depriving others of freedom.</p>\n<h2>Vincuvicar Thrones</h2>\n<p>Each vincuvicar possesses a personal, spiked iron throne—a symbol of authority. This iron throne is an object with Hardness 20 and 500 Hit Points. If a vincuvicar's throne is destroyed, the velstrac must return to the Shadow Plane to acquire or construct a replacement.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "greater darkvision, painsight, true seeing",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -4419,7 +4328,7 @@
         },
         "action->Alone and Forgotten": {
           "name": "Alone and Forgotten",
-          "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>When a creature ends its turn in the aura, it feels imprisoned and must succeed at a @Check[type:will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it feels imprisoned and must succeed at a @Check[type:will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
         },
         "action->Focus Gaze": {
           "name": "Focus Gaze",
@@ -4444,7 +4353,6 @@
       "hpDetails": "regeneration 20 (deactivated by holy or silver)",
       "publicNotes": "<p>Interlocutors are the most talented surgeon-sculptors of the velstracs, carving away flesh and replacing it with new body parts of muscle, sinew, and metal. Each interlocutor structures their individual appearance carefully, but all are towering, multi-limbed amalgamations of the strongest limbs, densest bone, and sharpest metal they can find. They continually search for new material to graft to their forms, and their slain foes are rarely found intact, as little is more valuable to interlocutors than a powerful opponent's legs, eyes, or even brain. Interlocutors average 9 feet tall and weigh approximately 800 pounds.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "greater darkvision, painsight",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -4467,7 +4375,7 @@
         },
         "action->Glimpse of Stolen Flesh": {
           "name": "Glimpse of Stolen Flesh",
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>When a creature ends its turn in the aura, it sees pieces of its own body amid the interlocutor's form. The creature must succeed at a @Check[type:will|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it sees pieces of its own body amid the interlocutor's form. The creature must succeed at a @Check[type:will|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
         },
         "action->Focus Gaze": {
           "name": "Focus Gaze",
@@ -4495,13 +4403,11 @@
     "Wrath Riot": {
       "name": "Wrath Riot",
       "hpDetails": "Thresholds 200 (12 squares), 100 (8 squares)",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Wrath demons are among the most well-known and feared of the Abyss's fiends, but sometimes a wrath demon becomes stunted in size as the result of too many failed rampages, a punishment inflicted by an angry demonic commander or simple ill fortune. These smaller wrath demons, not much larger than humans, are typically slaughtered quickly by their larger kin, but rarely a group of undersized vrocks can gather in numbers large enough to form a wrath riot.</p>\n<hr />\n<p>Demons are legion. Countless examples crowd the Abyss, many of which have yet to be categorized by mortal scholars. In the Abyss, might very much makes right, and so despite their chaotic nature, weaker demons often gather together to enjoy safety in numbers.</p>\n<h2>Throng Abilities</h2>\n<p>Demon throngs are troops, as defined in Pathfinder Bestiary 3. They have the Troop Defenses, Troop Movement, and Form-Up abilities. They also have the demonic tide ability, which allows them to occupy the same space as other creatures, which is unusual for troops, and Serenity Vulnerability—a result of the troop's demonic nature.</p>\n<h2>Other Throngs</h2>\n<p>Wrath riots form because vrocks have an intrinsic quality of cooperation in their dance of ruin, but other types of demons might form into throngs as well. The more notorious forms of demon throngs found in the various tales and historical records include demonic press gangs of babaus, who abduct hapless victims to serve on nightmarish ships, and firestorms of brimoraks, who caper and swoop above eldritch volcanoes.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "darkvision",
       "items": {
         "action->Frightful Presence": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>30 feet. @Check[type:will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Serenity Vulnerability": {
           "name": "Serenity Vulnerability",
@@ -4509,7 +4415,7 @@
         },
         "action->Spores of Wrath": {
           "name": "Spores of Wrath",
-          "description": "<p>@Template[type:emanation|distance:5] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Non-demons that start their turn in the aura take @Damage[4d8[poison]] damage. Each creature damaged this way must succeed at a @Check[type:fortitude|dc:34] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/br 1d4 #days]]{1d4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if holy water is applied to the vines (with an Interact action).</p>"
+          "description": "<p>5 feet. Non-demons that start their turn in the aura take @Damage[4d8[poison]] damage. Each creature damaged this way must succeed at a @Check[type:fortitude|dc:34] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/br 1d4 #days]]{1d4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if holy water is applied to the vines (with an Interact action).</p>"
         },
         "action->Beaks, Claws, and Talons": {
           "name": "Beaks, Claws, and Talons",
@@ -4534,7 +4440,6 @@
       "blurb": "Female morlock priest of Lamashtu",
       "publicNotes": "<p>Originating from humans long lost from the world of light, morlocks are brutal monsters that dwell in the tangled tunnels of the upper reaches of the Darklands. Their wiry frames mask the strength of their limbs and their swift reactions, and their arms are long enough that they can drop into an uncanny, four-limbed shuffle for speed or stealth. They no longer remember the lives their ancestors led on the surface, although many morlocks still dwell in the shattered ruins of their ancient homes. Some morlocks worship the statues of humans from these bygone eras as gods, but others now worship Lamashtu, Rovagug, or other violent deities.</p>\n<p>Morlock young are insatiable and clamor for even the slightest morsel of food, even consuming their siblings if no other meal presents itself. Most morlocks encourage the practice to ensure their ancestral group as a whole grows stronger.</p>\n<p>A typical morlock stands just over 5 feet tall and weighs roughly 150 pounds.</p>",
       "saveDetails": "+2 status to all saves vs. disease and poison",
-      "senses": "darkvision",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
@@ -4564,6 +4469,10 @@
         },
         "equipment->The Lost": {
           "gmNote": "<p><strong>Epitome</strong> Some areas in Harrowheart's village become strangely quiet and deserted looking. A character can spend eight hours in Downtime here to focus on this loss and emptiness, taking those realities into themselves to emerge changed, with entirely new memories—be they old memories recovered for the first time or newly created memories. At the end of these eight hours, the PC can instantly Retrain a single feat, skill, or class feature, as if they had spent the normal amount of time required for that downtime activity. All the other normal restrictions for retraining apply. A PC can only use The Lost to retrain in this way once per level.</p>"
+        },
+        "equipment->Material Component Pouch": {
+          "name": "Material Component Pouch",
+          "description": "<p>This pouch contains material components for those spells that require them. Though the components are used up over time, you can refill spent components during your daily preparations.</p>"
         },
         "strike-melee->Falchion": {
           "name": "Falchion"
@@ -4601,9 +4510,7 @@
     "Zashuvin": {
       "name": "Zashuvin",
       "blurb": "Female hurlilu",
-      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Pazuzu's Abyssal realm of High M'Vania is perched on the edge of an impossibly tall cliff. The demon lord and his minions claim the air around the cliff, guarding it against enemies and usurpers alike. Hurlilus, resembling horned, humanoid hawks with blood-red taloned feet and wings in place of arms, patrol these skies at their lord's command. Yet, hurlilus are surly and rebellious by nature, preferring to lead rather than follow orders. They'd prefer to spend their time bullying smaller creatures in High M'Vania's vast cliffside cities, but they're unwelcome there and driven out when discovered by occupants with greater authority (or by those who want to earn greater authority).</p>\n<p>Hurlilus make good guardians, particularly when they have leave to travel over great distances on patrol routes and can engage in spontaneous cruelty if the opportunity arises. However, they chafe in Pazuzu's service. Some forsake High M'Vania entirely and migrate to other parts of the Abyss, where they lead gangs of lesser fiends they've bullied into submission. A few hurlilus have made their way to Golarion, where they roost in aeries with subservient harpies, manticores, or other foul flying creatures. A dozen or so hurlilus serve high positions in the Mivanians, the brutal enforcers of the Halana Theocracy.</p>\n<hr />\n<p>The hurlilu is the weakest and smallest of the avian fiends collectively known as lilus. All lilus are chaotic evil fiends who can fly, are immune to disease, have mixed avian and humanoid appearances, possess darkvision and lifesense, and resist physical damage (except from cold iron). Most have a selection of primal innate spells (often including a primal version of <em>dimension door</em>).</p>",
-      "senses": "darkvision, lifesense (imprecise) 120 feet",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -4654,7 +4561,6 @@
       "name": "Zellara Esmeranda",
       "blurb": "Female human ghost",
       "hpDetails": "void healing, rejuvenation",
-      "senses": "darkvision, harrow sense",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -4728,7 +4634,6 @@
       "converter": "translateActorItems",
       "path": "items"
     },
-    "languages": "system.traits.languages.custom",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -4744,7 +4649,6 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
-    "senses": "system.traits.senses.value",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

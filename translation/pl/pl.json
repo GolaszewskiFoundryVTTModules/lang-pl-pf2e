@@ -200,8 +200,19 @@
                 "Crafting": {
                     "Cost": "Koszt"
                 },
+                "CreateFeat": "Stwórz Atut",
                 "HandsOccupied": "Zajęte Ręce",
+                "Language": {
+                    "OverLimit": "Ten język wykracza poza liczbę możliwych do opanowania przez tę postać języków.",
+                    "Unallocated": {
+                        "Label": "Nieprzydzielony",
+                        "Tooltip": "Wybierz język znany przez tę postać."
+                    }
+                },
                 "Proficiency": {
+                    "SavingThrow": {
+                        "Title": "Rzuty Obronne"
+                    },
                     "Attack": {
                         "Advanced": "Broń Zaawansowana",
                         "Martial": "Broń Wojskowa",
@@ -240,6 +251,9 @@
                 },
                 "CriticalSpecialization": "Krytyczna Specjalizacja",
                 "Language": {
+                    "CommonLanguage": "Wspólny",
+                    "DetailsPlaceholder": "Warunki i inne nietypowe detale",
+                    "Plural": "Języki",
                     "adlet": "Adlecki",
                     "akitonian": "Akitoniański",
                     "aklo": "Aklo",
@@ -361,27 +375,32 @@
                         "Precise": "Precyzyjny",
                         "Vague": "Niejasny"
                     },
-                    "Label": "Zmysły",
+                    "Label": "Zmysł",
                     "NoRangeLimit": "Nieograniczony",
+                    "NoVision": "Bez Wizji",
+                    "Plural": "Zmysły",
                     "RangeLabel": "Zasięg",
                     "Type": {
                         "Darkvision": "Widzenie w Ciemności",
                         "Echolocation": "Echolokacja",
                         "GreaterDarkvision": "Większe Widzenie w Ciemności",
                         "Hearing": "Słuch",
-                        "Heatsight": "Wizja Termiczna",
+                        "InfraredVision": "Wizja Podczerwona",
                         "Lifesense": "Wyczucie Życia",
                         "LowLightVision": "Widzenie w Słabym Świetle",
-                        "Motionsense": "Wyczucie Ruchu",
+                        "MotionSense": "Wyczucie Ruchu",
                         "Scent": "Węch",
                         "SeeInvisibility": "Widzenie Niewidzialności",
                         "Spiritsense": "Wyczucie Dusz",
                         "Thoughtsense": "Wyczycie Myśli",
                         "Tremorsense": "Wyczucie Drgań",
+                        "Truesight": "Prawdziwe Widzenie",
+                        "Vision": "Wizja",
                         "Wavesense": "Wyczucie Fal"
                     },
                     "WithAcuity": "{sense} ({acuity})",
-                    "WithAcuityAndRange": "{sense} ({acuity} {range} ft.)"
+                    "WithAcuityAndRange": "{sense} ({acuity}) {range} Stóp",
+                    "WithRange": "{sense} {range} Stóp"
                 },
                 "Shield": {
                     "ACBonus": "Premia do KP z Tarczy (Gdy Wzniesiona)",
@@ -408,6 +427,7 @@
                     "Label": "Modyfikatory Ataku i ST Zaklęć",
                     "MagicItemTypesLabel": "Typy Magicznych Przedmiotów",
                     "Rituals": "Rytuały",
+                    "ShortLabel": "Rzucanie Zaklęć",
                     "TraditionSpellcasting": "Rzucanie Zaklęć: {tradition}",
                     "ValidItemTypes": {
                         "All": "Wszystkie Magiczne Przedmioty",
@@ -460,13 +480,31 @@
                 "Section": {
                     "WeaponsAndShields": "Broń i Tarcze"
                 },
-                "TotalBulk": "Całkowite Naręcze: {bulk}"
+                "TotalBulk": "Całkowite Naręcze: {bulk}",
+                "UnitTitle": {
+                    "Bulk": "Naręcze Jednostkowe",
+                    "Price": "Cena Jednostkowa"
+                }
             },
             "IWREditor": {
                 "DoubleVs": "Podwójna Przeciw",
                 "Exceptions": "Wyjątki",
                 "Title": "{actor}: {category}",
                 "Type": "Typ"
+            },
+            "Speed": {
+                "BaseLabel": "Bazowa Prędkość ({type})",
+                "Plural": "Prędkości",
+                "Label": "Pręskość",
+                "LabelFeet": "Prędkość (Stopy)",
+                "Type": {
+                    "Burrow": "Rycie",
+                    "Climb": "Wspinaczka",
+                    "Fly": "Latanie",
+                    "Label": "Prędkość ({type})",
+                    "Land": "Lądowa",
+                    "Swim": "Pływanie"
+                }
             },
             "NPC": {
                 "Configure": {
@@ -1187,7 +1225,7 @@
                     "unconscious": "nieprzytomny",
                     "unholy": "wyklęte",
                     "vampire-weaknesses": "słabość wampirów",
-                    "visual": "wizualność",
+                    "visual": "wzrokowość",
                     "vorpal": "worpalność",
                     "vorpal-adamantine": "worpalny adamantyt",
                     "vorpal-fear": "worpalny strach",
@@ -1297,7 +1335,7 @@
         "DeleteSpellcastEntryTitle": "Usuń Rzucanie Zaklęć",
         "DeleteSpellcastEntryWarning": "UWAGA: Wszystkie zaklęcia podlegające pod ten wpis o rzucaniu zaklęć również zostaną usunięte.",
         "DenominationLabel": "Nominał",
-        "DetailsHeading": "Szczegóły",
+        "Details": "Szczegóły",
         "DragDropFeats": "Przeciągnij atuty aby je dodać",
         "Duration": {
             "P1M": "miesiąc",
@@ -1337,7 +1375,6 @@
             },
             "RemoveToolTip": "[PPM] Usuń efekt",
             "RollDamageToolTip": "[LPM] Rzuć obrażenia",
-            "Sustained": "Podtrzymywanie?",
             "Unidentified": "Nie zidentyfikowano",
             "UnlimitedDuration": "Nieograniczony czas",
             "UntilEncounterEnds": "Do zakończenia starcia"
@@ -2124,21 +2161,37 @@
                 },
                 "Plural": "Efekty",
                 "ShowTokenIcon": "Pokazać kolor żetonu?",
-                "Sustained": "Podtrzymanie",
                 "Unidentified": "Niezidentyfikowany?"
             },
             "Feat": {
                 "Info": {
                     "Added": "Dodano {item} do kategorii {category}."
                 },
-                "KeyAbilityOptions": {
-                    "Label": "Opcje Cech Kluczowych",
-                    "Hint": "Dodatkowe opcje Cech Kluczowych poza tymi zapewnianymi przez klasę"
-                },
                 "LevelLabel": "Atut",
                 "LevelN": "Atut {level}",
                 "OnlyLevel1": "Musi zostać wybrany na poziomie 1",
                 "Plural": "Atuty",
+                "Subfeatures": {
+                    "KeyAbilityOptions": {
+                        "Label": "Opcje Cech Kluczowych",
+                        "Hint": "Dodatkowe opcje cech kluczowych, poza tymi zapewnianymi przez klasę"
+                    },
+                    "Label": "Podatrybuty",
+                    "Languages": {
+                        "OpenSlots": "Dostępne Miejsca"
+                    },
+                    "Proficiencies": {
+                        "Label": "Biegłości",
+                        "NoOptionSelected": "wybierz statystykę, do której ma zostać zastosowane zwiększenie."
+                    },
+                    "Senses": {
+                        "Darkvision": {
+                            "Ancestry": "Zapewniaj jeśli przodkowstwo postaci posiada widzenie w słabym świetle.",
+                            "LLV": "Zapewniaj jeśli postać posiada już widzenie w słabym świetle z dowolnego wcześniejszego źródła.",
+                            "Second": "Zapewniaj jeśli ten atut zostanie wybrany po raz drugi."
+                        }
+                    }
+                },
                 "TakeMultiple": {
                     "Five": "Do 5 razy",
                     "Four": "Do 4 razy",
@@ -2379,8 +2432,12 @@
                     "SecondaryChecks": "Asystujące Testy",
                     "SecondaryCasters": "Asystujący Użytkownicy Magii"
                 },
+                "Sustained": {
+                    "Duration": "Podtrzymanie do {maximum}",
+                    "Label": "Podtrzymanie"
+                },
                 "Variants": {
-                    "DeleteDialogText": "Czy na pewno chcesz usunąć '{variantName}'?",
+                    "DeleteDialogText": "Czy na pewno chcesz usunąć {variantName}?",
                     "DeleteDialogTitle": "Usuń Wariant Zaklęcia",
                     "LabelPlural": "Warianty Zaklęć",
                     "SelectOtherVariantLabel": "Wybierz Inny Wariant",
@@ -2388,8 +2445,10 @@
                     "SheetTitle": "{originalName} (Wariant)"
                 },
                 "Warning": {
-                    "InvalidLevel": "Podjęto próbę dodania zaklęcia {name} na kręgu {targetLevel}, ale zaklęcie ma krąg {baseLevel}..",
-                    "WrongSpellType": "Nie można dodać zaklęcia typu {spellType} do tego rodzaju rzucania zaklęć."
+                    "CantripToRankedSlots": "Zaklęcie {spell} jest sztuczką i musi zostać dodane do listy sztuczek.",
+                    "InvalidRank": "Zaklęcie {spell} jest {spellRank}, a te komórki przeznaczone są na {targetRank}.",
+                    "NonCantripToCantrips": "Zaklęcie {spell} nie jest sztuczką i nie może zostać dodane do listy sztuczek.",
+                    "WrongSpellType": "Nie można dodać zaklęcia typu {spellType} do tego rodzaju wpisu o rzucaniu zaklęć."
                 }
             },
             "Weapon": {
@@ -2461,9 +2520,6 @@
         "ItemBonusLabel": "Premia z Przedmiotu",
         "ItemBonusMinus2": "Fuszerka (-2)",
         "ItemBonusShortLabel": "Przedmiot",
-        "ItemDescription": "Opis",
-        "ItemDescriptionHeader": "Opis",
-        "ItemDetails": "Szczegóły",
         "ItemLevel": "{type} {level}",
         "ItemMystification": "Mistyfikacja",
         "ItemMystified": "Zmistyfikowany",
@@ -2490,7 +2546,6 @@
         "KitItems": "Przedmioty",
         "KitWorldItem": "Ten przedmiot nie pochodzi z Kompendium i nie będzie działał w innych światach",
         "LackCastConsumableCapability": "{actor} nie posiada biegłości wymaganej przez zaklęcie {spell} ani atutu Zwodzenia Magicznych Przedmiotów.",
-        "Languages": "Języki",
         "LanguagesAdditional": "Dodatkowe Języki",
         "Level1": "Poziom 1",
         "Level10": "Poziom 10",
@@ -2687,7 +2742,6 @@
             "Attacks": "Ataki",
             "Creature": "Istota",
             "Dead": "Martwy",
-            "Edit": "Edytuj",
             "EditImmunities": "Edytuj Niewrażliwości",
             "EditLanguages": "Edytuj Języki",
             "EditResistances": "Edytuj Odporności",
@@ -2711,13 +2765,11 @@
             "PassivesLabel": "Zdolności Pasywne",
             "PrivateNotes": "Notatki Prywatne",
             "PublicNotes": "Opis",
-            "Remove": "Usuń",
             "SavesExtraInfoLabelPlaceholder": "Premia do wszystkich rzutów obronnych...",
-            "SendToChat": "Wyślij na czat",
+            "SendToChat": "Wyślij na Czat",
             "SensesLabel": "Zmysły",
             "SkillRollFlavor": "Test Umiejętności {skillName} ({rank})",
             "SpeedExtraInfoLabelPlaceholder": "Szczegóły prędkości...",
-            "SpeedLabel": "Prędkość",
             "Spells": {
                 "AttackLabel": "Atak",
                 "DCLabel": "ST",
@@ -3037,8 +3089,8 @@
                 "Name": "Atuty Kampanii"
             },
             "CampaignType": {
-                "Hint": "Zasady rozszerzonej kampanii dla drużyny",
-                "Name": "Typ Kampanii",
+                "Hint": "Wsparcie rozszerzonej kampanii dla kampanii takich jak Kingmaker",
+                "Name": "Atrybuty Kampanii",
                 "Choices": {
                     "none": "Brak",
                     "kingmaker": "Kingmaker"
@@ -3108,12 +3160,22 @@
                     "Hint": "Cechy mające zastosowanie dla atutów i akcji (np. Rodowód, Mnich)",
                     "Name": "Cechy Atutów"
                 },
-                "Hint": "Dodaj niestandardowe cechy, języki i inne elementy do domorobnego świata.",
+                "Hint": "Dodaj niestandardowe cechy, typy broni, języki i inne elementy do domorobnego świata.",
                 "Instructions": "Te ustawienia pozwalają MG dodawać cechy, języki i inne elementy domorobne do świata gry. Aby dodać takie elementy, po prostu wpisz pożądane terminy w odpowiednich polach, oddzielając je przecinkami lub przyciskiem tabulacji. Pojawią się wtedy w odpowiednich miejscach na arkuszach aktorów i przedmiotów. Aby zaktualizować termin, kliknij go, aby wprowadzić żądane zmiany.",
                 "Label": "Zarządzaj Elementami Domorobnymi",
                 "Languages": {
+                    "CommonLanguage": {
+                        "Hint": "Wybierz język postrzegany w tym świecie jako \"Wspólny\".",
+                        "Label": "Język \"Wspólny\""
+                    },
                     "Hint": "Języki, które mogą znać postacie graczy (np. Smoczy, Gnomi)",
-                    "Name": "Języki"
+                    "Rarities": {
+                        "CommonLanguages": "<rarity>Powszechne</rarity> Języki",
+                        "Name": "Rzadkości Języków",
+                        "RareLanguages": "<rarity>Rzadkie</rarity> Języki",
+                        "SecretLanguages": "<rarity>Sekretne</rarity> Języki",
+                        "UncommonLanguages": "<rarity>Nietypowe</rarity> Języki"
+                    }
                 },
                 "Name": "Elementy Domorobne",
                 "ReservedTerm": "\"{term}\" to zastrzeżone określenie.",
@@ -3122,6 +3184,7 @@
                     "Name": "Cechy Zaklęć"
                 },
                 "Tabs": {
+                    "Campaign": "Kampania",
                     "Damage": "Typy Obrażeń",
                     "Traits": "Cechy i Kategorie"
                 },
@@ -3152,18 +3215,6 @@
                 "Hint": "Określ do jakich meta informacji gracze mają dostęp a do jakich nie.",
                 "Label": "Ogranicz Meta Informacje",
                 "Name": "Meta Informacje",
-                "PartyVision": {
-                    "Hint": "Po włączeniu, wszyscy gracze będą automatycznie dzielić się wizją zapewnianą przez żetony, niezależnie od ich uprawnień oraz zaznaczonych żetonów.",
-                    "Name": "Współdzielona Wizja Drużyny"
-                },
-                "SecretCondition": {
-                    "Hint": "Po włączeniu tylko MG będzie widział wiadomości czatu przypominające i aktualizujące statusy żetonów, nie należących do graczy.",
-                    "Name": "Ukryj Wiadomości o Aktualizacji Statusów"
-                },
-                "SecretDamage": {
-                    "Hint": "Po włączeniu tylko MG będzie widział wiadomości o obrażeniach/leczeniu generowane przez karty czatu nie należące do graczy.",
-                    "Name": "Ukryj Wiadomości o Odniesionych Obrażeniach"
-                },
                 "ShowDC": {
                     "Hint": "Po włączeniu gracze będą widzieli dokładny ST testów wykonywanych przeciw BN oraz innym zewnętrznym źródłom.",
                     "Name": "Pokaż ST Ataków i Rzutów Obronnych"
@@ -3172,8 +3223,24 @@
                     "Hint": "Po włączeniu gracze będą widzieli stopień sukcesu rzutów wykonywanych przeciw BN oraz innym zewnętrznym źródłom.",
                     "Name": "Pokaż Rezultaty Ataków i Rzutów Obronnych"
                 },
+                "ShowBreakdowns": {
+                    "Hint": "Gracze mogą zobaczyć składowe oraz końcowy modyfikator rzutów wykonywanych przez BG oraz innych nie należących do nich aktorów.",
+                    "Name": "Pokaż Składowe Rzutu"
+                },
+                "SecretCondition": {
+                    "Hint": "Tylko MG może widzieć wiadomości czatu przypominające i aktualizujące statusy BG i innych aktorów nie należących do graczy.",
+                    "Name": "Ukryj Wiadomości o Aktualizacji Statusów"
+                },
+                "SecretDamage": {
+                    "Hint": "Tylko MG może widzieć wiadomości o obrażeniach/leczeniu generowane przez karty czatu nie należące do graczy.",
+                    "Name": "Ukryj Wiadomości o Odniesionych Obrażeniach"
+                },
+                "PartyVision": {
+                    "Hint": "Gracze współdzielą wizję zapewnianą przez żetony, niezależnie od ich uprawnień oraz zaznaczonych żetonów.",
+                    "Name": "Współdzielona Wizja Drużyny"
+                },
                 "ShowPartyStats": {
-                    "Hint": "Po włączeniu gracze będą widzieli statystyki swoich kompanów na karcie drużyny",
+                    "Hint": "Gracze mogą widzieć statystyki swoich kompanów na karcie drużyny",
                     "Name": "Pokaż Statystyki Członków Drużyny"
                 },
                 "TokenSetsNameVisibility": {
@@ -3390,18 +3457,7 @@
         "SkillThievery": "Złodziejstwo",
         "SkillsLabel": "Umiejętności",
         "Slug": "Slug",
-        "SpecialLabel": "Specjalne",
         "SpecialSensesLabel": "Specjalne Zmysły",
-        "Speed": "Prędkość",
-        "SpeedBaseLabel": "Bazowa Prędkość ({type})",
-        "SpeedFeet": "Prędkość (stopy)",
-        "SpeedLabel": "Prędkość ({type})",
-        "SpeedTypes": "Typy Prędkości",
-        "SpeedTypesBurrow": "Rycie",
-        "SpeedTypesClimb": "Wspinaczka",
-        "SpeedTypesFly": "Latanie",
-        "SpeedTypesLand": "Lądowa",
-        "SpeedTypesSwim": "Pływanie",
         "SpellAbilityModLabel": "+ Mod.",
         "SpellArea": "Obszar: {area}",
         "SpellAttackLabel": "Atak Zaklęciem",
@@ -3410,10 +3466,8 @@
         "SpellCastingFormat": "{preparationType} Zaklęcia {traditionSpells}",
         "SpellCollectionAdd": "Dodaj do Zbioru Zaklęć",
         "SpellCollectionRemove": "Usuń ze Zbioru Zaklęć",
-        "SpellDurationLabel": "Czas Trwania",
         "SpellFlexibleAvailable": "Elastyczne: {value} / {max}",
         "SpellFlexibleLabel": "Elastyczne",
-        "SpellFocusLabel": "Skupienia",
         "SpellLevelBase": "Bazowy Krąg: {level}",
         "SpellLevelHeightened": "Wywyższenie: +{heightened}",
         "SpellLevelLabel": "Krąg Zaklęcia",
@@ -3432,8 +3486,8 @@
             "Selection": "Wywyższenie (Krąg {level}.)"
         },
         "SpellSlotEmpty": "Pusta Komórka (tutaj przeciągaj zaklęcia)",
-        "SpellSlotExpendedError": "{name} nie może zostać rzucone: zaklęcie już wykorzystano",
-        "SpellSlotNotEnoughError": "{name} nie może zostać rzucone na kręgu {level}: niewystarczająca liczba komórek zaklęć",
+        "SpellSlotExpendedError": "Nie można rzucić zaklęcia {spell}: komórkę już wykorzystano",
+        "SpellSlotNotEnoughError": "Nie można rzucić zaklęcia {spell} na kręgu {rank}: niewystarczająca liczba komórek zaklęć",
         "SpellTargetLabel": "Cele",
         "SpellTraditionsLabel": "Tradycje",
         "SpellUnlimitedLabel": "Nieograniczone",
@@ -3499,7 +3553,6 @@
         "TabCharacterLabel": "Postać",
         "TabCraftingLabel": "Rzemiosło",
         "TabDescriptionLabel": "Opis",
-        "TabDetailsLabel": "Szczegóły",
         "TabInventoryLabel": "Ekwipunek",
         "TabManageTabsLabel": "Zarządzaj Kartami",
         "TabPathfinderSociety": "Stowarzyszenie Poszukiwaczy",
@@ -3794,7 +3847,7 @@
         "TraitDescriptionCompanion": "Przedmiot z tą cechą może nosić zwierzęcy towarzysz lub podobne stworzenie. Towarzysz może zaangażować się w maksymalnie dwa przedmioty.",
         "TraitDescriptionComplex": "Zagrożenie z tą cechą posiada własne tury podczas starć.",
         "TraitDescriptionComposite": "Impuls kompozytowy łączy wiele żywiołów. Możesz zyskać impuls z cechą kompozytowości jedynie jeśli twoje żywioły kinetyka zawierają w sobie wszystkie żywioły wymienione w cechach impulsu.",
-        "TraitDescriptionComposition": "Aby rzucić sztuczkę kompozycji lub zaklęcie skupienia, zwykle używasz pewnego rodzaju Występu. Jeśli zaklęcie zawiera komponent werbalny, musisz użyć występu z cechą słuchowości, a jeśli zawiera komponent somatyczny, musisz użyć występu z cechą wizualności. Zaklęcie zyskuje wszystkie cechy użytego przez ciebie występu. W każdej turze możesz rzucić tylko jedno zaklęcie kompozycji i tylko jedna twoja kompozycja może być aktywna w danym momencie. Jeśli rzucisz nowe zaklęcie kompozycji, wszystkie trwające efekty poprzedniego zaklęcia kompozycji natychmiast się skończą.",
+        "TraitDescriptionComposition": "Aby rzucić sztuczkę kompozycji lub zaklęcie skupienia, zwykle używasz pewnego rodzaju Występu. Jeśli zaklęcie zawiera komponent werbalny, musisz użyć występu z cechą słuchowości, a jeśli zawiera komponent somatyczny, musisz użyć występu z cechą wzrokowści. Zaklęcie zyskuje wszystkie cechy użytego przez ciebie występu. W każdej turze możesz rzucić tylko jedno zaklęcie kompozycji i tylko jedna twoja kompozycja może być aktywna w danym momencie. Jeśli rzucisz nowe zaklęcie kompozycji, wszystkie trwające efekty poprzedniego zaklęcia kompozycji natychmiast się skończą.",
         "TraitDescriptionConcealable": "Tę bron zaprojektowano tak, aby była niepozorna lub łatwa do ukrycia. Otrzymujesz premię sytuacyjną +2 do testów i ST Ukrywania się, aby ukryć lub przemycić broń z tą cechą.",
         "TraitDescriptionConcentrate": "Akcja z tą cechą wymaga pewnej ilości skupienia i dyscypliny.",
         "TraitDescriptionConcussive": "Ta broń miażdży w równym stopniu co przebija. Przy określaniu odporności lub niewrażliwości istoty na obrażenia od tej broni należy użyć słabszej z odporności lub niewrażliwości celu na obrażenia kłute i obuchowe. Przykładowo, jeśli stworzenie jest niewrażliwe na obrażenia kłute oraz nie ma niewrażliwości ani odporności na obrażenia obuchowe, otrzymuje pełne obrażenia od broni wstrząsowej. Odporność lub niewrażliwość na wszystkie obrażenia fizyczne lub wszystkie obrażenia obowiązuje normalnie.",
@@ -4247,7 +4300,7 @@
         "TraitLight": "Światło",
         "TraitLilu": "Lilu",
         "TraitLineage": "Rodowód",
-        "TraitLinguistic": "Lingwistyka",
+        "TraitLinguistic": "Lingwistyczność",
         "TraitLitany": "Litania",
         "TraitLizardfolk": "Jaszczuroludź",
         "TraitLocathah": "Locathah",
@@ -4666,7 +4719,6 @@
             "None": "Pełna Prędkość",
             "NormalTerrain": "Normalna Prędkość w Terenie",
             "PartySpeed": "Prędkość Drużyny",
-            "Speed": "Prędkość",
             "TerrainSlowdown": "Prędkość w Terenie",
             "Title": "Kalkulator Czasu Podróży (Alpha)",
             "TravelDuration": "Czas Podróży",
@@ -4694,7 +4746,6 @@
             "Label": "UUID",
             "SourceId": "Źródłowe ID"
         },
-        "UnitPriceLabel": "Cena jednostkowa",
         "UnitedPaizoWorkers": {
             "PFSNote": "Note for Pathfinder Society players: In support of UPW, merchandise purchased from the union store will count in the Online PFS region for the <span class=\"hover\" title=\"When you use a Hero Point to reroll a check, add a +1 cirumstance bonus to the reroll\">Promotional Vestments</a> boon.",
             "ReleaseIntro": "Redmond, WA (October 14th, 2021) — Today, the workers at Paizo, Inc - publisher of the Pathfinder and Starfinder roleplaying games - are announcing their formation of the United Paizo Workers union (UPW), with the Communication Workers of America's CODE-CWA project. This union is the first of its kind in the tabletop roleplaying games industry.",
@@ -5353,9 +5404,6 @@
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym, błyskawice przeskakują na maksymalnie dwie wybrane przez ciebie istoty w zasięgu 10 stóp od pierwotnego celu ataku, zadając im identyczną liczbę obrażeń od elektryczności."
                 }
-            },
-            "speed": {
-                "Name": "Chyżości"
             },
             "spellStoring": {
                 "Name": "Przechowywania Zaklęć"

@@ -403,10 +403,10 @@ def main():
             )
         )
 
-    if(update_source_data):
-        # back up the old localization source
-        copy_files_and_directories(core_en_directory, temp_en_old_directory)
+    # back up the old localization source
+    copy_files_and_directories(core_en_directory, temp_en_old_directory)
 
+    if(update_source_data):
         # update the source files
         print("Running the pack extractor...")
         run_js_script("src/pack-extractor/pack-extractor.js")

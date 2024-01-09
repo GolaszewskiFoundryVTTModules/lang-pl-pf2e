@@ -59,11 +59,17 @@ class LocalizationUpdater:
         
         if isinstance(obj, dict):
             for key, value in obj.items():
-                # Check if current path ends with a period followed by a non-space, non-period character
-                if current_path and not re.search(r'\.(?![\s.])$', current_path):
-                    new_path = f'{current_path}.{key}'
+                if current_path:
+                    # if current path ends with
+                    if current_path[-1] == "." and key[0]==" " or key[0]==".":
+                        new_path = f'{current_path}{key}'
+                    else:
+                        new_path = f'{current_path}.{key}'
                 else:
-                    new_path = f'{current_path}{key}' if current_path else key
+                    new_path = key
+                
+                if ".." in current_path:
+                    print(current_path + " turned into " + new_path)
                 self.extract_localization_dict(value, new_path, result_dict)
         elif isinstance(obj, list):
             for index, item in enumerate(obj):
@@ -78,6 +84,9 @@ class LocalizationUpdater:
         nested_json = {}
 
         for compound_key, value in flat_dict.items():
+            if ".." in compound_key:
+                print(compound_key)
+        
             # Split the key intelligently based on '.' not followed by whitespace
             keys = [k for k in re.split(r'\.(?![\s.])', compound_key) if k]
             current_level = nested_json
@@ -194,10 +203,9 @@ class LocalizationUpdater:
             logging.error("Unable to proceed due to missing data.")
             return
 
-        
-        # if self.pl_extracted == self.en_extracted:
-        #     logging.info("Not translated and already up to date. Skipping!")
-        #     return
+        #Not translated and already up to date. Skipping!
+        if self.pl_extracted == self.en_extracted:
+            return
 
         self.update_localization()
         
@@ -207,7 +215,7 @@ class LocalizationUpdater:
 
         # Log the processed file name
         logging.info(f"{os.path.basename(self.pl_path)}:")
-
+        
         if self.new_keys:
             logging.info(f"  Number of new keys added: {len(self.new_keys)}")
             for key in self.new_keys:

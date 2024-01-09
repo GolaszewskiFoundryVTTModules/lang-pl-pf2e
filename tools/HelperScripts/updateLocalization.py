@@ -67,10 +67,9 @@ class LocalizationUpdater:
                         new_path = f'{current_path}.{key}'
                 else:
                     new_path = key
-                
-                if ".." in current_path:
-                    print(current_path + " turned into " + new_path)
+
                 self.extract_localization_dict(value, new_path, result_dict)
+                
         elif isinstance(obj, list):
             for index, item in enumerate(obj):
                 new_path = f"{current_path}{{{index}}}"
@@ -84,9 +83,6 @@ class LocalizationUpdater:
         nested_json = {}
 
         for compound_key, value in flat_dict.items():
-            if ".." in compound_key:
-                print(compound_key)
-        
             # Split the key intelligently based on '.' not followed by whitespace
             keys = [k for k in re.split(r'\.(?![\s.])', compound_key) if k]
             current_level = nested_json

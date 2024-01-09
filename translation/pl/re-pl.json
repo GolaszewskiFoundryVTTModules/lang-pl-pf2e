@@ -1608,8 +1608,8 @@
                 "InuredToAlchemy": {
                     "CriticalSuccess": "Każdy krytyczny sukces zmniejsza stadium alchemicznej trucizny, narkotyku lub uzależnienia o 3.",
                     "CriticalSuccessVirulent": "Każdy krytyczny sukces zmniejsza stadium zjadliwej alchemicznej trucizny, zjadliwego narkotyku lub zjadliwego uzależnienia o 2.",
-                    "Success": "Każdy sukces na rzucie obronnym przeciw alchemicznej truciźnie, narkotykowi lub uzależnieniu zmniejsza ich stadium o 2",
-                    "SuccessVirulent": "Każdy sukces na rzucie obronnym przeciw zjadliwej alchemicznej truciźnie, zjadliwemu narkotykowi lub zjadliwemu uzależnieniu zmniejsza ich stadium o 1"
+                    "Success": "Każdy sukces odniesiony w rzucie obronnym przeciw alchemicznej truciźnie, narkotykowi lub uzależnieniu zmniejsza ich stadium o 2",
+                    "SuccessVirulent": "Każdy sukces odniesiony w rzucie obronnym przeciw zjadliwej alchemicznej truciźnie, zjadliwemu narkotykowi lub zjadliwemu uzależnieniu zmniejsza ich stadium o 1"
                 },
                 "Spirit": {
                     "NegativeDamage": "Obrażenia od Pustki",
@@ -1837,7 +1837,7 @@
             },
             "Dhampir": {
                 "Adhyabhau": {
-                    "SaveNote": "Kiedy wyrzucisz sukces na rzucie obronnym Woli przeciw efektu z cechą emocji, uzyskujesz zamiast tego krytyczny sukces."
+                    "SaveNote": "Kiedy odniesiesz sukces w rzucie obronnym Woli przeciw efektu z cechą emocji, uzyskujesz zamiast tego krytyczny sukces."
                 },
                 "BloodlettingFangs": {
                     "AttackNote": "Twój Cios kłami zadaje dodatkowe [[/r 1d4[bleed]]] przytrafieniu krytycznym."
@@ -1884,7 +1884,7 @@
             },
             "Dwarf": {
                 "DeathWardenDwarf": {
-                    "Note": "Kiedy wyrzucisz sukces przeciw efektowi nekromacji, uzyskujesz zamiast tego krytyczny sukces."
+                    "Note": "Kiedy odniesiesz sukces w rzucie obronnym przeciw efektowi, który posiada cechę pustki lub ozstał wywołany przez nieumarłą istotę, uzyskujesz zamiast tego krytyczny sukces."
                 },
                 "DwarvenClan": {
                     "Aringeld": "Klan Aringeld",
@@ -1908,7 +1908,7 @@
                     "Note": "Ignorujesz status @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięcia} celu, jak i jego mniejszą, standardową lub większą osłonę."
                 },
                 "KneelForNoGod": {
-                    "Note": "Kiedy wyrzucisz sukces przeciw efektowi boskiemu, uzyskujesz zamiast tego krytyczny sukces."
+                    "Note": "Kiedy odniesiesz sukces w rzucie obronnym przeciw efektowi boskiemu, uzyskujesz zamiast tego krytyczny sukces."
                 },
                 "RockRunner": {
                     "Note": "Kiedy używasz Akrobatyki aby Balansować na wąskiej lub nierównej powierzchni wykonanej z gleby lub kamienia, nie masz opuszczonej gardy, a kiedy będąc na takim terenie wyrzucisz na swoim teście Akrobatyki sukces, traktujesz go jako krytyczny sukces."
@@ -2275,7 +2275,7 @@
                     "Prompt": "Wybierz broń, w której stajesz się wytrenowany."
                 },
                 "WitchWarden": {
-                    "SaveNote": "Kiedy wyrzucisz sukces na rzucie obronnym przeciw klątwie lub zaklęciu rzuconemu przez wiedźmę lub babę, uzyskujesz zamiast tego krytyczny sukces."
+                    "SaveNote": "Kiedy odniesiesz sukces w rzucie obronnym przeciw klątwie lub zaklęciu rzuconemu przez wiedźmę lub babę, uzyskujesz zamiast tego krytyczny sukces."
                 }
             },
             "HuntPrey": {
@@ -2703,6 +2703,7 @@
                 "Feature": "Select a feature.",
                 "FirstImplement": "Wybierz pierwszy przyrząd.",
                 "Form": "Wybierz postać.",
+                "Item": "Select an item.",
                 "Lesson": "Wybierz lekcję.",
                 "LevelOneAncestryFeat": "Wybierz 1-poziomowy atut przodkowstwa.",
                 "LevelOneClassFeat": "Wybierz 1-poziomowy atut klasowy.",
@@ -2936,6 +2937,12 @@
             },
             "SpellEffectGluttonsJaw": {
                 "Text": "If you hit with your jaws and deal damage, you gain [[/r ceil(@item.level/2)d6 #Temporary Hit Points]] temporary Hit Points."
+            },
+            "SpellEffectPreciousMetals": {
+                "Copper": "Copper",
+                "Gold": "Gold",
+                "Iron": "Iron",
+                "Steel": "Steel"
             },
             "SpellEffectProtection": {
                 "Prompt": "Choose which alignment trait you are protecting against."

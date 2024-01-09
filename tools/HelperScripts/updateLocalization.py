@@ -69,7 +69,7 @@ class LocalizationUpdater:
                     new_path = key
 
                 self.extract_localization_dict(value, new_path, result_dict)
-                
+
         elif isinstance(obj, list):
             for index, item in enumerate(obj):
                 new_path = f"{current_path}{{{index}}}"
@@ -228,7 +228,7 @@ class LocalizationUpdater:
                 logging.info(f"    {old_key} -> {new_key}")
 
         if self.updated_eng_keys:
-            logging.info(f"  Number of english keys updated: {len(self.updated_eng_keys)}")
+            logging.info(f"  Number of updated english keys: {len(self.updated_eng_keys)}")
             for key in self.updated_eng_keys:
                 logging.info(f"    {key}")
 

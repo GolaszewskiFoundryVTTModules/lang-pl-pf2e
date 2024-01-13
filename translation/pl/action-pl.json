@@ -46,7 +46,7 @@
                 },
                 "Title": "Wsparcie",
                 "Warning": {
-                    "NoStatistic": "Wsparcie może zostać dokonane z użyciem różnych statystyk, ale nie dostarczono żadnych statystyk."
+                    "NoStatistic": "Wsparcie może zostać dokonane z użyciem różnych statystyk a żadna nie została wybrana."
                 }
             },
             "ArcaneSlam": {
@@ -400,9 +400,9 @@
             "GrabAnEdge": {
                 "Description": "<p><strong>Aktywator</strong> Spadasz z lub obok krawędzi lub uchwytu.</p><p><strong>Wymagania</strong> Twoje ręce nie są związane za twoimi plecami lub w inny sposób @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętane}.</p><hr><p>Spadając z lub obok krawędzi lub uchwytu możesz spróbować go złapać aby powstrzymać swój upadek. Musisz odnieść sukces w teście Akrobatyki lub rzucie obronnym Refleksu, ty wybierasz. ST testu na ogół równe jest ST Wspinaczki. Jeśli chwycisz krawędź lub uchwyt możesz następnie @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspiąć Się} w górę, używając Atletyki.</p><hr /><p><strong>Krytyczny Sukces</strong> Chwytasz krawędź lub uchwyt, niezależnie od tego czy twoje ręce są wolne, na ogół wykorzystując odpowiednio chwycony przez siebie przedmiot (na przykład zaczepiając topór o półkę skalną). Nadal odnosisz obrażenia za upadek z przebytej do tej pory odległości, ale traktujesz upadek tak, jakby był o 30 stóp krótszy.</p><p><strong>Sukces</strong> Jeśli masz co najmniej jedną wolną rękę chwytasz krawędź lub uchwyt powstrzymując swój upadek. Nadal odnosisz obrażenia za upadek z przebytej do tej pory odległości, ale traktujesz upadek tak, jakby był o 20 stóp krótszy. Jeśli nie masz wolnych rąk kontynuujesz spadać tak, jakbyś odniósł na teście porażkę.</p><p><strong>Krytyczna Porażka</strong> Nadal spadasz a jeśli przed wykorzystaniem tej reakcji przebyłeś 20 stóp lub więcej, otrzymujesz w wyniku zderzenia @Damage[10[bludgeoning]] za każde przebyte 20 stóp.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Critical Failure</strong> Nadal spadasz a jeśli przed wykorzystaniem tej reakcji przebyłeś 20 stóp lub więcej, otrzymujesz w wyniku zderzenia @Damage[10[bludgeoning]] za każde przebyte 20 stóp.",
-                    "criticalSuccess": "<strong>Critical Success</strong> Chwytasz krawędź lub uchwyt, niezależnie od tego czy twoje ręce są wolne, na ogół wykorzystując odpowiednio chwycony przez siebie przedmiot (na przykład zaczepiając topór o półkę skalną). Nadal odnosisz obrażenia za upadek z przebytej do tej pory odległości, ale traktujesz upadek tak, jakby był o 30 stóp krótszy.",
-                    "success": "<strong>Success</strong> Jeśli masz co najmniej jedną wolną rękę chwytasz krawędź lub uchwyt powstrzymując swój upadek. Nadal odnosisz obrażenia za upadek z przebytej do tej pory odległości, ale traktujesz upadek tak, jakby był o 20 stóp krótszy. Jeśli nie masz wolnych rąk kontynuujesz spadać tak, jakbyś odniósł na teście porażkę."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Nadal spadasz a jeśli przed wykorzystaniem tej reakcji przebyłeś 20 stóp lub więcej, otrzymujesz w wyniku zderzenia @Damage[10[bludgeoning]] za każde przebyte 20 stóp.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Chwytasz krawędź lub uchwyt, niezależnie od tego czy twoje ręce są wolne, na ogół wykorzystując odpowiednio chwycony przez siebie przedmiot (na przykład zaczepiając topór o półkę skalną). Nadal odnosisz obrażenia za upadek z przebytej do tej pory odległości, ale traktujesz upadek tak, jakby był o 30 stóp krótszy.",
+                    "success": "<strong>Sukces</strong> Jeśli masz co najmniej jedną wolną rękę chwytasz krawędź lub uchwyt powstrzymując swój upadek. Nadal odnosisz obrażenia za upadek z przebytej do tej pory odległości, ale traktujesz upadek tak, jakby był o 20 stóp krótszy. Jeśli nie masz wolnych rąk kontynuujesz spadać tak, jakbyś odniósł na teście porażkę."
                 },
                 "Title": "Chwycenie Krawędzi"
             },
@@ -433,6 +433,15 @@
                 },
                 "Title": "Skok Wzwyż"
             },
+            "IdentifyAlchemy": {
+                "Description": "<p><strong>Wymagania</strong> Nosisz lub trzymasz @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]{Zestaw Alchemika}.</p><hr><p>Możesz określić naturę alchemicznego przedmiotu poprzez 10 minut testów przeprowadzanych za pomocą zestawu alchemika. Jeśli twoja próba zostanie w jakikolwiek sposób przerwana, musisz zacząć od nowa.</p><p><strong>Sukces</strong> Identyfikujesz przedmiot i określasz sposób jego aktywacji.</p><p><strong>Porażka</strong> Nie udaje ci się zidentyfikować przedmiotu, ale możesz spróbować ponownie.</p><p><strong>Krytyczna Porażka</strong> Błędnie identyfikujesz przedmiot jako inny przedmiot wybrany przez MG.</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Błędnie identyfikujesz przedmiot jako inny przedmiot wybrany przez MG.",
+                    "failure": "<strong>Porażka</strong> Nie udaje ci się zidentyfikować przedmiotu, ale możesz spróbować ponownie.",
+                    "success": "<strong>Sukces</strong> Identyfikujesz przedmiot i określasz sposób jego aktywacji."
+                },
+                "Title": "Identyfikacja Alchemii"
+            },
             "IdentifyMagic": {
                 "Description": "<p>Kiedy odkryjesz już, że przedmiot, lokacja lub trwający efekt jest magiczny, możesz poświęcić 10 minut aby zbadać tajniki tej magii. Jeśli twoja próba zostanie w jakikolwiek sposób przerwana, musisz zacząć od nowa. MG określa ST twojego testu. Przeklęta magia lub ezoterycznej natury cele mogą mieć wyższy ST lub nawet być niemożliwe do zidentyfikowania samą tą metodą. Wywyższanie zaklęcia nie podnosi ST jego identyfikacji.</p><p><strong>Krytyczny Sukces</strong> Poznajesz wszystkie właściwości magii, wliczając w to jej nazwę (w wypadku efektu), efekty, wszelkie sposoby aktywacji (w wypadku przedmiotu lub lokacji) oraz dowiadujesz się czy obiekt jest przeklęty.</p><p><strong>Sukces</strong> W wypadku lokacji lub obiektu zyskujesz pewne pojęcie o jego właściwościach. W wypadku trwającego efektu (takiego jak zaklęcie o określonym czasie trwania) poznajesz nazwę efektu oraz dowiadujesz się co robi. Nie możesz próbować ponownie w nadziei na uzyskanie krytycznego sukcesu.</p><p><strong>Porażka</strong> Nie udaje ci się zidentyfikować magii i nie możesz próbować ponownie przez 1 dzień.</p><p><strong>Krytyczna Porażka</strong> Błędnie identyfikujesz magię jako coś innego, wedle uznania MG.</p>",
                 "Notes": {
@@ -441,7 +450,10 @@
                     "failure": "<strong>Porażka</strong> Nie udaje ci się zidentyfikować magii i nie możesz próbować ponownie przez 1 dzień.",
                     "success": "<strong>Sukces</strong> W wypadku lokacji lub obiektu zyskujesz pewne pojęcie o jego właściwościach. W wypadku trwającego efektu (takiego jak zaklęcie o określonym czasie trwania) poznajesz nazwę efektu oraz dowiadujesz się co robi. Nie możesz próbować ponownie w nadziei na uzyskanie krytycznego sukcesu."
                 },
-                "Title": "Identyfikacja Magii"
+                "Title": "Identyfikacja Magii",
+                "Warning": {
+                    "NoStatistic": "Identyfikacja Magii może zostać przeprowadzona z wykorzystaniem różnych statystyk a żadna nie została wybrana."
+                }
             },
             "Impersonate": {
                 "Description": "<p>Tworzysz przebranie, aby podać się za kogoś lub coś czym nie jesteś. Przygotowywanie przekonującego przebrania zajmuje 10 minut i wymaga @UUID[Compendium.pf2e.equipment-srd.Item.Jvp0x2Sc82WVpExT]{Zestawu do Przebrań}, ale prostsze, zmontowane naprędce przebranie może być wystarczające jeśli nie usiłujesz naśladować konkretnej osoby, jeśli tak określi MG.</p><p>W większości wypadków istoty mają sposobność do przejrzenia twojego przebrania tylko jeśli świadomie użyją akcji @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukania} aby wykonać test Percepcji przeciw twojemu ST Oszukiwania. Jeśli będąc w przebraniu wchodzisz z kimś w bezpośrednią interakcję MG rzuca zamiast tego sekretny test twojego Oszukiwania przeciw ST Percepcji istoty.</p><p>Jeśli przebierasz się za konkretną osobę, MG może przyznać istotom z którymi wchodzisz w interakcję premię do testu zależną od tego jak dobrze znają osobę, pod którą się podszywasz, albo może rzucić sekretny test Oszukiwania nawet jeśli nie wchodzisz z nimi w bezpośrednią interakcję.</p><p><strong>Sukces</strong> Udaje ci się zmylić istotę i sprawić, że myśli że jesteś osobą za którą się przebrałeś. Jeśli twoje zachowanie ulegnie zmianie może być wymagany kolejny test.<br><strong>Porażka</strong> Istota orientuje się, że nie jesteś tym za kogo się podajesz.<br><strong>Krytyczna Porażka</strong> Istota orientuje się, że nie jesteś tym za kogo się podajesz, i rozpoznaje cię jeśli byłaby w stanie zrobić to bez twojego przebrania.</p>",
@@ -500,10 +512,10 @@
             "LearnASpell": {
                 "Description": "<p>Możesz zyskać dostęp do nowego zaklęcia ze swojej tradycji magicznej od kogoś kto zna to zaklęcie, lub z magicznego pisma takiego jak księga zaklęć lub zwój. Jeśli umiesz rzucać zaklęcia z różnych tradycji, możesz Uczyć się Zaklęcia z dowolnej z tych tradycji, ale musisz do tego używać odpowiadającej jej umiejętności. Przykładowo gdybyś był klerykiem z archetypem wieloklasowym barda, nie mógłbyś używać Religii aby dodać zaklęcie okultystyczne do swojego bardowskiego repertuaru zaklęć.</p><p>Aby nauczyć się zaklęcia musisz zrobić co następuje:</p><ul><li> Spędzić 1 godzinę na krąg zaklęcia, w trakcie których będziesz zawiązany w rozmowę z osobą znającą zaklęcie, lub będziesz mieć w posiadaniu magiczne pismo. </li><li> Posiadać materiały i Cenę wskazaną w tabelce Nauka Zaklęcia. </li><li> Wykonać test umiejętności odpowiadającej twojej tradycji (ST określany przez MG, na ogół bliski ST wymienionego w tabelce Nauka Zaklęcie). Nietypowe lub rzadkie zaklęcia mają wyższe ST; pełne wytyczne dla MG znajdują się na stronie 52 GM Core.</p><p><strong>Krytyczny Sukces</strong> Zużywasz połowę materiałów i uczysz się zaklęcia.</p><p><strong>Sukces</strong> Zużywasz materiały i uczysz się zaklęcia.</p><p><strong>Porażka</strong> Nie udaje ci się nauczyć się zaklęcia i możesz spróbować ponownie kiedy zyskasz poziom. Materiały nie są zużywane.</p><p><strong>Krytyczna Porażka</strong> Jak przy porażce, ale zużywasz połowę materiałów.</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Critical Failure</strong> Nie udaje ci się nauczyć się zaklęcia i możesz spróbować ponownie kiedy zyskasz poziom. Zużywasz połowę materiałów.",
-                    "criticalSuccess": "<strong>Critical Success</strong> Zużywasz połowę materiałów i uczysz się zaklęcia.",
-                    "failure": "<strong>Failure</strong> Nie udaje ci się nauczyć się zaklęcia i możesz spróbować ponownie kiedy zyskasz poziom. Materiały nie są zużywane.",
-                    "success": "<strong>Success</strong> Zużywasz materiały i uczysz się zaklęcia."
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Nie udaje ci się nauczyć się zaklęcia i możesz spróbować ponownie kiedy zyskasz poziom. Zużywasz połowę materiałów.",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Zużywasz połowę materiałów i uczysz się zaklęcia.",
+                    "failure": "<strong>Porażka</strong> Nie udaje ci się nauczyć się zaklęcia i możesz spróbować ponownie kiedy zyskasz poziom. Materiały nie są zużywane.",
+                    "success": "<strong>Sukces</strong> Zużywasz materiały i uczysz się zaklęcia."
                 },
                 "Title": "Nauka Zaklęcia"
             },

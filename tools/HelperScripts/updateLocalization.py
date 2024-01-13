@@ -10,6 +10,8 @@ import shutil
 import subprocess
 import argparse
 
+import difflib
+
 class LocalizationUpdater:
     
     def __init__(self, en_old_path, en_path, pl_path):
@@ -117,6 +119,27 @@ class LocalizationUpdater:
 
         return nested_json
 
+    def generate_concise_diff(self, old_value, new_value):
+        from difflib import SequenceMatcher
+
+        # Create a sequence matcher
+        s = SequenceMatcher(None, old_value, new_value)
+        diff = []
+
+        for tag, i1, i2, j1, j2 in s.get_opcodes():
+            if tag == 'replace':
+                diff.append('\n')
+                diff.append('      - ' + old_value[i1:i2])
+                diff.append('      + ' + new_value[j1:j2])
+            elif tag == 'delete':
+                diff.append('\n')
+                diff.append('      - ' + old_value[i1:i2])
+            elif tag == 'insert':
+                diff.append('\n')
+                diff.append('      + ' + new_value[j1:j2])
+
+        return ''.join(diff)
+
     def update_localization(self):
         # Count occurrences of each value in both dictionaries
         old_value_counts = Counter(self.en_old_extracted.values())
@@ -153,8 +176,10 @@ class LocalizationUpdater:
                     self.updated_eng_keys.append(new_key)
                 # else mark it as outdated that needs manual correction
                 else:
-                    #self.pl_extracted[new_key] += " (OUTDATED!)"
-                    self.outdated_keys.append(new_key)
+                    old_value = self.en_old_extracted.get(new_key, "")
+                    diff_string = self.generate_concise_diff(old_value, new_value)
+                    self.outdated_keys.append((new_key, diff_string))
+
             # if value does not exist in translation, add it
             elif new_key not in self.pl_extracted:
                 self.pl_extracted[new_key] = new_value
@@ -213,29 +238,29 @@ class LocalizationUpdater:
         logging.info(f"{os.path.basename(self.pl_path)}:")
         
         if self.new_keys:
-            logging.info(f"  Number of new keys added: {len(self.new_keys)}")
+            logging.info(f"  Added keys: {len(self.new_keys)}")
             for key in self.new_keys:
                 logging.info(f"    {key}")
 
         if self.removed_keys:
-            logging.info(f"  Number of obsolete keys deleted: {len(self.removed_keys)}")
+            logging.info(f"  Deleted keys: {len(self.removed_keys)}")
             for key in self.removed_keys:
                 logging.info(f"    {key}")
 
         if self.renamed_keys:
-            logging.info(f"  Number of renamed keys (transferred): {len(self.renamed_keys)}")
+            logging.info(f"  Renamed keys (transferred): {len(self.renamed_keys)}")
             for old_key, new_key in self.renamed_keys:
                 logging.info(f"    {old_key} -> {new_key}")
 
         if self.updated_eng_keys:
-            logging.info(f"  Number of updated english keys: {len(self.updated_eng_keys)}")
+            logging.info(f"  Updated english keys: {len(self.updated_eng_keys)}")
             for key in self.updated_eng_keys:
                 logging.info(f"    {key}")
 
         if self.outdated_keys:
-            logging.info(f"  Number of outdated records: {len(self.outdated_keys)}")
-            for key in self.outdated_keys:
-                logging.info(f"    {key}")
+            logging.info(f"  Outdated records: {len(self.outdated_keys)}")
+            for key, diff in self.outdated_keys:  # Unpack key and diff_string
+                logging.info(f"    Key: {key}\n    Diff:{diff}")
 
 
         validation_errors = self.validate_keys_match()

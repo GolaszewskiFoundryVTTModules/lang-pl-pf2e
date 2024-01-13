@@ -1016,8 +1016,8 @@
         "ConditionTypeObserved": "Postrzegany",
         "ConditionTypeOffGuard": "Opuszczona Garda",
         "ConditionTypeParalyzed": "Sparaliżowany",
-        "ConditionTypePersistent": "Obrażenia Trwałe",
-        "ConditionTypePersistentShort": "Trwałe",
+        "ConditionTypePersistent": "Obrażenia Przewlekłe",
+        "ConditionTypePersistentShort": "Przewlekłe",
         "ConditionTypePetrified": "Spetryfikowany",
         "ConditionTypeProne": "Powalony",
         "ConditionTypeQuickened": "Przyspieszony",
@@ -1203,7 +1203,7 @@
                     "olfactory": "węchowość",
                     "orichalcum": "orichalcum",
                     "paralyzed": "sparaliżowany",
-                    "persistent-damage": "obrażenia trwałe",
+                    "persistent-damage": "obrażenia przewlekłe",
                     "petrified": "spetryfikowany",
                     "physical": "fizyczne",
                     "plant": "roślina",
@@ -1275,7 +1275,7 @@
                 }
             },
             "NoDamageFormulaLabel": "Brak Obrażeń",
-            "PersistentTooltip": "Trwałe {damageType}",
+            "PersistentTooltip": "Przewlekłe {damageType}",
             "Precision": "Precyzyjne",
             "RollFlavor": {
                 "acid": "od kwasu",
@@ -1289,7 +1289,7 @@
                 "force": "od mocy",
                 "mental": "mentalne",
                 "metal": "metal",
-                "persistent": "trwałe {damageType}",
+                "persistent": "przewlekłe {damageType}",
                 "piercing": "kłute",
                 "poison": "od trucizny",
                 "precision": "precyzyjne",
@@ -1729,16 +1729,16 @@
                         "RecoverLabel": "Ozdrowienie: {name}"
                     },
                     "Dialog": {
-                        "Add": "Dodaj Obrażenia Trwałe",
+                        "Add": "Dodaj Obrażenia Przewlekłe",
                         "Invalid": "Formuła jest niewłaściwa.",
-                        "Remove": "Usuń Obrażenia Trwałe",
-                        "Title": "Obrażenia Trwałe ({actor})"
+                        "Remove": "Usuń Obrażenia Przewlekłe",
+                        "Title": "Obrażenia Przewlekłe ({actor})"
                     },
                     "Error": {
-                        "DoesNotExist": "Żadne trwałe obrażenia {damageType} nie występują na tym aktorze"
+                        "DoesNotExist": "Żadne przewlekłe obrażenia {damageType} nie występują na tym aktorze"
                     },
-                    "Name": "Obrażenia Trwałe ({formula} {damageType})",
-                    "NameWithDC": "Obrażenia Trwałe ({formula} ST {dc})",
+                    "Name": "Obrażenia Przewlekłe ({formula} {damageType})",
+                    "NameWithDC": "Obrażenia Przewlekłe ({formula} ST {dc})",
                     "RollDamage": "Rzut Obrażeń"
                 }
             },
@@ -2690,7 +2690,7 @@
                     "Grab": "<p><strong>Wymagania</strong> Ostatnią akcją potwora był udany Cios, który wymienia w swoich statystykach Chwyt, lub potwór @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycił} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętał} już istotę.</p><hr /><p><strong>Efekt</strong> W wypadku zastosowania po Ciosie, potwór podejmuje próbę @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Pochwycenia} istoty za pomocą części ciała, którą zaatakował. Ta próba nie uwzględnia kary za atak wielokrotny potwora ani nie dolicza się do niej.</p><p>Potwór może zamiast tego użyć Chwytu na jednej z istot, którą pochwycił lub spętał za pomocą kończyny posiadającej cechę Chwytu aby automatycznie przedłużyć czas trwania nałożonego statusu.</p>",
                     "GreaterConstrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST. Istota, która odniesie na tym teście porażkę staje się @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomna}, a istota, która zda test staje się na 1 minutę niewrażliwa na efekt Większego Przyduszenia.</p>",
                     "GreaterDarkvision": "<p>Istota z większym widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu.</em>, blokują normalne @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Widzenie w Ciemności}. Istota z większym widzeniem w ciemności widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
-                    "ImprovedGrab": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Chwycenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem. Potwór z Lepszym Chwytem nadal musi wydać akcję aby przedłużyć jego czas działania na istotach, które są już przez niego @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycone}.</p>",
+                    "ImprovedGrab": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Chwycenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem. Potwór z Lepszym Chwytem nadal musi wydać akcję aby przedłużyć czas jego działania na istoty, które są już przez niego @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycone}.</p>",
                     "ImprovedKnockdown": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Przewrócenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem.</p>",
                     "ImprovedPush": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Popchnięcia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem.</p>",
                     "Knockdown": "<p><strong>Wymagania</strong> Ostatnią akcją potwora był udany Cios, który wymienia w swoich statystykach Powalenie.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór próbuje @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Podciąć} istotę. Ta próba nie uwzględnia kary za atak wielokrotny wroga, ani się do niej nie wlicza.",
@@ -3063,7 +3063,7 @@
                     "Name": "Przeciążenie"
                 },
                 "EffectExpiration": {
-                    "Hint": "Efekty automatycznie deaktywują powiązane elementy zasad kiedy minie ich czas działania.",
+                    "Hint": "Efekty automatycznie deaktywują powiązane elementy zasad kiedy upłynie ich czas trwania.",
                     "Name": "Automatyczne Przedawnianie się Efektów"
                 },
                 "FlankingDetection": {
@@ -5114,7 +5114,7 @@
             "bloodthirsty": {
                 "Name": "Krwiopijcy",
                 "Note": {
-                    "criticalSuccess": "Kiedy trafisz krytycznie cel odnoszący @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Trwałe Obrażenia od Krwawienia}, cel ataku zostaje @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}."
+                    "criticalSuccess": "Kiedy trafisz krytycznie cel odnoszący @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Przewlekłe Obrażenia od Krwawienia}, cel ataku zostaje @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}."
                 }
             },
             "brilliant": {
@@ -5186,7 +5186,7 @@
             "flaming": {
                 "Name": "Płomieni",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym zadajesz dodatkowo [[/r 1d10[persistent,fire] #Runa Płomieni]]{1k10 trwałych obrażeń od ognia}."
+                    "criticalSuccess": "Przy trafieniu krytycznym zadajesz dodatkowo [[/r 1d10[persistent,fire] #Runa Płomieni]]{1k10 przewlekłych obrażeń od ognia}."
                 }
             },
             "flurrying": {
@@ -5257,7 +5257,7 @@
             "greaterDisrupting": {
                 "Name": "Większa Witalizująca",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} i @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiona 1} tak długo jak odnosi obrażenia trwałe od tej runy."
+                    "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} i @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiona 1} tak długo jak odnosi obrażenia przewlekłe od tej runy."
                 }
             },
             "greaterExtending": {
@@ -5275,7 +5275,7 @@
             "greaterFlaming": {
                 "Name": "Większa Płomieni",
                 "Note": {
-                    "criticalSuccess": "Obrażenia od ognia zadane przez tę broń (wliczając w to trwałe obrażenia od ognia) ignorują odporność na ogień celu.",
+                    "criticalSuccess": "Obrażenia od ognia zadane przez tę broń (wliczając w to przewlekłe obrażenia od ognia) ignorują odporność na ogień celu.",
                     "success": "Obrażenia od ognia zadane przez tę broń ignorują odporność na ogień celu."
                 }
             },
@@ -5329,10 +5329,10 @@
                     "Bow": "Test atletyki wymagany do wyciągnięcia pocisku otrzymuje ST 20.",
                     "Brawling": "Cel otrzymuje sytuacyjną karę -4 do rzutu obronnego.",
                     "Club": "Możesz odrzucić cel na odległość do 15 stóp.",
-                    "Dart": "Podstawowe obrażenia trwałe od krwawienia zwiększają się do [[/r 2d6[bleed]]].",
+                    "Dart": "Podstawowe obrażenia przewlekłe od krwawienia zwiększają się do [[/r 2d6[bleed]]].",
                     "Flail": "Przemieszczasz cel o 5 stóp. Nie możesz przemieścić go z dala od siebie, ale może być to dowolny inny wybrany przez ciebie kierunek.",
                     "Hammer": "Możesz też odrzucić cel 5 stóp od siebie.",
-                    "Knife": "Tak długo jak cel posiada @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Trwałe Obrażenia od Krwawienia}, otrzymuje karę statusową -5 stóp do swojej Prędkości ruchu.",
+                    "Knife": "Tak długo jak cel odnosi @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Przewlekłe Obrażenia od Krwawienia}, otrzymuje karę statusową -5 stóp do swojej Prędkości ruchu.",
                     "Pick": "Dodatkowe obrażenia z efektu krytycznej specjalizacji, zwiększają się do 4 za każdą kość obrażeń broni.",
                     "Polearm": "Możesz przemieścić cel do 10 stóp.",
                     "Shield": "Możesz odrzucić cel do 10 stóp od siebie.",
@@ -5438,7 +5438,7 @@
             "unholy": {
                 "Name": "Wyklęta",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> komenda; raz na dzień)<br /><strong>Aktywator</strong> Odnosisz krytyczny sukces w rzucie na atak tą bronią przeciw dobrej istocie<br /><strong>Efekt</strong> Cel odnosi @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Trwałe Obrażenia od Krwawienia} w liczbie 1k8 za każdą kość obrażeń broni."
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> komenda; raz na dzień)<br /><strong>Aktywator</strong> Odnosisz krytyczny sukces w rzucie na atak tą bronią przeciw dobrej istocie<br /><strong>Efekt</strong> Cel odnosi @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Przewlekłe Obrażenia od Krwawienia} w liczbie 1k8 za każdą kość obrażeń broni."
                 }
             },
             "vorpal": {
@@ -5695,8 +5695,8 @@
                 "summary": "Twoje ciało zastygło w miejscu."
             },
             "persistent-damage": {
-                "name": "Obrażenia Trwałe",
-                "rules": "<p>Obrażenia trwałe biorą się od efektów takich jak kwas, podpalenie i wielu innych. Opisywane są jako \"X trwałych obrażeń [typu]\" gdzie \"X\" to liczba zadawanych obrażeń a \"[typ]\" to typ odnoszonych obrażeń. Obrażeń trwałych nie odnosisz natychmiast, ponosisz je na koniec swojej tury tak długo jak jesteś pod wpływem wywołującego je statusu, za każdym razem rzucając kości obrażeń na nowo. Po otrzymaniu obrażeń trwałych rzuć @Check[type:flat|dc:15] aby określić czy udaje ci się zakończyć ich działanie. W wypadku sukcesu wywołujący je status kończy się.</p>",
+                "name": "Obrażenia Przewlekłe",
+                "rules": "<p>Obrażenia przewlekłe pojawiają się w wyniku działania efektów takich jak kwas, podpalenie i wielu innych. Opisywane są jako \"X przewlekłych obrażeń [typu]\" gdzie \"X\" to liczba zadawanych obrażeń a \"[typ]\" to typ odnoszonych obrażeń. Obrażeń przewlekłych nie odnosisz natychmiast, ponosisz je na koniec swojej tury tak długo jak jesteś pod wpływem wywołującego je statusu, za każdym razem rzucając kości obrażeń na nowo. Po otrzymaniu obrażeń przewlekłych rzuć @Check[type:flat|dc:15] aby określić czy udaje ci się zakończyć ich działanie. W wypadku sukcesu wywołujący je status kończy się.</p>",
                 "summary": "Odnosisz obrażenia z każdą rundą."
             },
             "petrified": {

@@ -166,10 +166,13 @@ class LocalizationUpdater:
                 if old_key not in self.pl_extracted:
                     print(f"Did not find old key {old_key} in polish {os.path.basename(self.pl_path)}. It may have been updated already")
                 else:
-                    self.pl_extracted[new_key] = self.pl_extracted.pop(old_key, None)
+                    self.pl_extracted[new_key] = self.pl_extracted.get(old_key, None)
                     self.renamed_keys.append((old_key, new_key))
+            
+            #continue after rename, if previous key has received a new value
+
             # if the key exists in translation, and the value changed
-            elif new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
+            if new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
                 # if value was kept in english, update it outright
                 if self.pl_extracted.get(new_key) == self.en_old_extracted.get(new_key):
                     self.pl_extracted[new_key] = new_value
@@ -276,7 +279,7 @@ class LocalizationUpdater:
 
         # Iterate over keys in the template dictionary
         for key in self.en_extracted.keys():
-            ordered_pl[key] = self.pl_extracted[key]
+            ordered_pl[key] = self.pl_extracted.get(key, None)
         
         self.pl_extracted = ordered_pl
 

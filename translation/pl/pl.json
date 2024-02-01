@@ -241,6 +241,13 @@
                 },
                 "Rest": {
                     "Label": "Udaj się na Spoczynek"
+                },
+                "Spellcasting": {
+                    "Tab": {
+                        "Activations": "Aktywacje",
+                        "KnownSpells": "Znane Zaklęcia",
+                        "Rituals": "Rytuały"
+                    }
                 }
             },
             "Creature": {
@@ -471,6 +478,9 @@
                 "Unrecoverable": "{value} punktów żywotności jest obecnie nie do odzyskania."
             },
             "Inventory": {
+                "CarryType": {
+                    "OpenMenu": "Zmień Sposób Noszenia"
+                },
                 "DistributeCoins": "Rozdaj Monety",
                 "Encumbrance": "Obciążenie",
                 "ItemQuantity": {
@@ -742,6 +752,7 @@
         "ArmorPropertyRuneRockBraced": "Impregnacji Skałą",
         "ArmorPropertyRuneShadow": "Cieni",
         "ArmorPropertyRuneSinisterKnight": "Złowrogiego Rycerza",
+        "ArmorPropertyRuneSizeChanging": "Zmiany Rozmiaru",
         "ArmorPropertyRuneSlick": "Śliskości",
         "ArmorPropertyRuneSoaring": "Podniebna",
         "ArmorPropertyRuneStanching": "Tamowania",
@@ -847,6 +858,7 @@
         "BulkMaxLabel": "Maksymalne Naręcze",
         "CapacityBarLabel": "Pojemność",
         "CarryType": {
+            "attached": "Przymocowano",
             "dropped": "Upuszczono",
             "held1": "Chwycono Jednorącz",
             "held2": "Chwycono Oburącz",
@@ -1166,6 +1178,7 @@
                     "dazzled": "zamroczony",
                     "deafened": "ogłuchły",
                     "death-effects": "efekty śmierci",
+                    "detection": "wykrywanie",
                     "disease": "choroba",
                     "djezet": "dżezet",
                     "doomed": "zgubiony",
@@ -1581,6 +1594,17 @@
         "InitiativeHeader": "Premia do Inicjatywy",
         "InitiativeLabel": "Inicjatywa",
         "InitiativeWithSkill": "Inicjatywa: {skillName}",
+        "InlineAction": {
+            "Check": {
+                "DC": "ST {dc}",
+                "StatisticVsDefense": "{statistic} kontra {defense}",
+                "VsDefense": "kontra {defense}"
+            },
+            "Warning": {
+                "InvalidAction": "Nieprawidłowa Akcja: {slug}",
+                "UnresolvableAction": "Niemożliwa do Przetwożenia Akcja: {slug}"
+            }
+        },
         "InlineCheck": {
             "BasicWithSave": "Podst. Rzut Obronny: {save}",
             "DCWithName": "ST {name}",
@@ -2241,6 +2265,21 @@
                 "Hint": "Dodatkowe tagi poza cechami, które mogą pomóc zaklasyfikować przedmiot"
             },
             "Physical": {
+                "Attach": {
+                    "CraftingCheck": "Test Rzemiosła",
+                    "Detach": {
+                        "Label": "Odczep Przedmiot",
+                        "Prompt": "Czy na pewno chcesz odczepić {attachable}?"
+                    },
+                    "Outcome": {
+                        "Failure": "Nie udało ci się przymocować {attachable}.",
+                        "Success": "{attachable} jest teraz przymocowany do {target}."
+                    },
+                    "PromptTitle": "Przymocuj {item}",
+                    "NoEligibleItem": "Nie odnaleziono przedmiotów, do których możnaby przymocować {attachable}.",
+                    "SidebarContextMenuOption": "Przymocuj do Przedmiotu"
+                },
+                "Attachments": "Przymocowane Elementy",
                 "Base": "Baza",
                 "Broken": "Uszkodzono",
                 "BrokenThreshold": {
@@ -2354,8 +2393,11 @@
             },
             "Plural": "Przedmioty",
             "RefreshFromCompendium": {
+                "DifferentItemType": "Znalezion w kompendium źródło dla przedmiotu {item} ({uuid}) jest innego typu niż przedmiot obecny na tym aktorze.",
                 "Label": "Odśwież",
-                "SourceNotFound": "W kompendium nie odnaleziono źródła dla \"{item}\" (ID źródłowe: {sourceId}).",
+                "SourceNotFound": "W kompendium nie odnaleziono źródła dla {item} (ID źródłowe: {sourceId}).",
+                "SubitemFailure": "Nie udało się odświeżyć jednego lub więcej podprzedmiotu dla {item} ({uuid}).",
+                "Success": "Przedmiot \"{item}\" został odświeżony.",
                 "Tooltip": {
                     "Disabled": "Przedmiot nie może zostać odświeżony: zawiera dane zapisane w momencie dodawania go do aktora.",
                     "Enabled": "Odśwież dane tego przedmiotu wykorzystując najnowsze zawarte w jego kompendium źródłowym."
@@ -2425,10 +2467,12 @@
                     "success": "Przeciwdziałasz celowi jeśli jego ranga przeciwdziałania wynosi {rank} lub mniej."
                 },
                 "Defense": {
+                    "BasicDefense": "podstawowy {save}",
                     "BasicSave": "Podstawowy",
                     "Label": "Defesnsywa"
                 },
                 "LevelN": "Zaklęcie Kręgu {level}",
+                "LineSplit": ";",
                 "MeasuredTemplate": {
                     "Clear": "Wyczyść Umieszczone Szablony",
                     "Place": "Umieść {area}"
@@ -2470,22 +2514,26 @@
                     "Hint": "Oznacza, że broń ta może być załadowana do innej broni jako jej amunicja."
                 },
                 "CriticalSpecialization": {
-                    "axe": "Wybierz jedną istota w twoim wysięgu, znajdującą się obo pierwotnego celu trafienia. Jeśli jej KP jest niższa od twojego rzutu na trafienie krytyczne zadajesz jej wyrzucone obrażenia kości broni (wliczając w to dodatkowe kości z runy potencji jeśli taką posiadasz). Te obrażenia nie są podwajane ani nie dodają się do nich żadne inne premie czy dodatkowe kości.",
+                    "axe": "Wybierz jedną istota w twoim wysięgu, znajdującą się obo pierwotnego celu trafienia. Jeśli jej KP jest niższa od twojego rzutu na trafienie krytyczne zadajesz jej wyrzucone obrażenia kości broni (wliczając w to dodatkowe kości z <em>runy ciosów</em> jeśli taką posiadasz). Te obrażenia nie są podwajane ani nie dodają się do nich żadne inne premie czy dodatkowe kości.",
                     "bomb": "Zwiększa promień obrażeń rozpryskowych bomby (jeśli takie posiada) do 10 stóp.",
-                    "bow": "Jeśli cel trafienia krytycznego znajduje się przy twardej powierzchni, pocisk przytwierdza go do niej. Cel jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i musi użyć akcji Interakcji aby wykonać test @Check[type:athletics|dc:10|name:Wyciągnięcie Pocisku|showDC:all] aby wyciągnąć pocisk; nie może poruszyć się ze swojego pola dopóki mu się nie uda. Istota nie zostaje przytwierdzona jeśli jest bezcielesna, jest cieczą (jak żywiołak wody lub niektóre szlamy) lub może w inny sposób uciec bez wysiłku.",
-                    "brawling": "Cel musi rzucić zdać obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Broni Ręcznej] lub staje się @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej tury.",
-                    "club": "Odrzucasz cel do 10 stóp od siebie (wybierasz odległość). Jest to wymuszony ruch.",
-                    "firearm": "Cel musi rzucić zdać obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Broni Palnej] lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
+                    "bow": "Jeśli cel trafienia krytycznego znajduje się przy twardej powierzchni, pocisk przytwierdza go do niej. Cel jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i musi użyć akcji Interakcji aby wykonać test @Check[type:athletics|dc:10|name:Wyciągnięcie Pocisku|showDC:all] aby wyciągnąć pocisk; nie może poruszyć się ze swojego pola dopóki mu się nie uda. Istota nie zostaje przytwierdzona jeśli jest bezcielesna, jest cieczą lub jeśli może w inny sposób uciec bez wysiłku (na przykład jeśli jest tak wielka, że pocisk nie byłby dla niej przeszkodą).",
+                    "brawling": "Cel musi rzucić zdać obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Broni Ręcznej] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej tury.",
+                    "club": "Odrzucasz cel do 10 stóp od siebie w prostej linii, w wybranym kierunku. Jest to wymuszony ruch.",
+                    "firearm": "Cel musi rzucić zdać obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Broni Palnej] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
                     "flail": "Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, chyba że zda rzut obronny @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Flail Critical Specialization] przeciw twojemu ST Klasowemu.",
                     "hammer": "Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, chyba że zda rzut obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Hammer Critical Specialization] przeciw twojemu ST Klasowemu.",
                     "polearm": "Cel przemieszcza się o 5 stóp w wybranym przez ciebie kierunku. Jest to wymuszony ruch.",
                     "shield": "Odrzucasz cel o 5 stóp od siebie. Jest to wymuszony ruch.",
-                    "sling": "Cel musi zdać rzut obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Procach] lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
-                    "spear": "Broń przebija cel osłabiając jego ataki. Cel staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Niezdarny 1} aż do początku twojej następnej tury.",
+                    "sling": "Cel musi zdać rzut obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Procach] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
+                    "spear": "Broń tegp typu przebija cel osłabiając jego ataki. Cel staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Niezdarny 1} aż do początku twojej następnej tury.",
                     "sword": "Cel jest wytrącany z równowagi przez twój atak i ma @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} aż do początku twojej następnej tury."
                 },
                 "Damage": {
                     "DiceNumber": "Liczba Kości"
+                },
+                "Forceful": {
+                    "Second": "Wymuszony 2. Atak",
+                    "Third": "Wymuszony 3.+ Atak"
                 },
                 "FromABP": "Automatyczny rozwój modyfikatorów tego przedmiotu sprawił, że jego {property} ma wartość {value}.",
                 "FromMaterialAndRunes": "Drogocenne materiały i runy zawarte w tym przedmiocie sprawiły, że jego {property} ma wartość {value}.",
@@ -2684,7 +2732,7 @@
                     "ChangeShape": "<p>Ten potwór może swobodnie zmieniać kształt na nieograniczoną ilość czasu. Może ponownie użyć tej akcji aby powrócić do swojego naturalnego kształtu lub przybrać nową formę. O ile nie wspomniano inaczej, potwór nie może wykorzystywać Zmiany Kształtu aby przybrać formę konkretnej istoty. Używanie Zmiany Kształtu liczy się jako przebranie na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Podszywania się} z użyciem Oszukiwania. Transformacja potwora automatycznie przebija ST Percepcji na rzecz sprawdzania czy jest on przedstawicielem przodkowstwa lub rodzaju istot w który się przemienił, oraz zapewnia premię sytuacyjną +4 do ST Oszukiwania na rzecz demaskowania jego przebrania. Zdolności Zmiany Kształtu precyzują jakie konkretnie formy może przybierać potwór. Potwór nie zyskuje żadnych specjalnych zdolności przybieranej przez siebie formy, jedynie jej wygląd. Przykładowo dla każdej przybieranej przez siebie formy potwór nadpisuje jej Prędkości, Ciosy oraz potencjalnie jej zmysły i rozmiar. Wszelkie zmiany wypisane są w bloku statystyk.</p>",
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
                     "Constrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST.</p>",
-                    "Coven": "<p>Ten potwór może stworzyć sabat wraz z dwoma lub więcej istotami, które również posiadają cechę sabatu. Wiąże się to z przeprowadzeniem 8-godzinnej ceremonii ze wszystkimi potencjalnymi członkami sabatu. Kiedy sabat zostanie utworzony, wszyscy jego członkowie stają się elitarnymi istotami, co wiąż się z odpowiednimi zmianami w ich poziomie i statystykach jak wskazują zasady istot elitarnych. Członkowie sabatu mogą wyczuć lokalizację oraz statusy innych członków sabatu wykonując pojedynczą akcję, posiadającą cechę koncentracji, oraz mogą wyczuwać zmysłami to co odczuwa inny członek sabatu wykonując dwu-akcyjną aktywność, która również posiada cechę koncentracji.</p>\n<p>Sabat zapewnia również jego członkom dostęp do zaklęć i rytuałów, ale te mogą zostać rzucone tylko poprzez współpracę trzech członków sabatu. Członek sabatu może przyczynić się do rzucania zaklęcia sabatu poprzez wykonanie jedno-akcyjnej aktywności rzucania zaklęcia o komponencie werbalnym. Jeśli dwóch członków sabatu użyło tych akcji w ostatniej rundzie, trzeci członek sabatu może rzucić w swojej turze zaklęcie wykonując aktywność rzucania zaklęcia w normalny sposób. Sabat może rzucać dostępne dla niego zaklęcia nieograniczoną ilość razy, ale może użyć tylko jednego zaklęcia w danej rundzie. Każdy sabat dostarcza <em>@UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Złowrogą Polimorfię}</em> jako zaklęcie 8. kręgu oraz następujące zaklęcia, które sabat może rzucać na dowolnym kręgu do 5. włącznie: <em>@UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Wróżba}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Zauroczenie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Jasnosłyszenie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Jasnowidzenie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Wiadomość we Śnie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Iluzoryczna Scena}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Wścibskie Oko}</em> oraz <em>@UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Mówiące Zwłoki}</em>. Poszczególne istoty wchodzące z cechą sabatu również dodają zaklęcia do dyspozycji sabatu, do którego dołączą. Sabat może również przeprowadzać rytuał <em>@UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Kontroli nad Pogodą}</em> ze ST 23 zamiast standardowego ST.</p>\n<p>Jeśli opuszczenie sabatu przez istotę lub śmierć jednego z jego członków zmniejszyły by liczebność sabatu poniżej trzech członków, pozostałe istoty utrzymują swój status elitarności przez następne 24 godziny, ale pozbawione niezbędnej ilości członków do przeprowadzenia rytuałów nie mogą rzucać zaklęć sabatu.</p>",
+                    "Coven": "<p>Ten potwór może stworzyć sabat wraz z dwoma lub więcej istotami, które również posiadają cechę sabatu. Wiąże się to z przeprowadzeniem 8-godzinnej ceremonii ze wszystkimi potencjalnymi członkami sabatu. Kiedy sabat zostanie utworzony, wszyscy jego członkowie stają się elitarnymi istotami, co wiąż się z odpowiednimi zmianami w ich poziomie i statystykach jak wskazują zasady istot elitarnych. Członkowie sabatu mogą wyczuć lokalizację oraz statusy innych członków sabatu wykonując pojedynczą akcję, posiadającą cechę koncentracji, oraz mogą wyczuwać zmysłami to co odczuwa inny członek sabatu wykonując dwu-akcyjną aktywność, która również posiada cechę koncentracji.</p>\n<p>Sabat zapewnia również jego członkom dostęp do zaklęć i rytuałów, ale te mogą zostać rzucone tylko poprzez współpracę trzech członków sabatu. Członek sabatu może przyczynić się do rzucania zaklęcia sabatu poprzez wykonanie jedno-akcyjnej aktywności rzucania zaklęcia o komponencie werbalnym. Jeśli dwóch członków sabatu użyło tych akcji w ostatniej rundzie, trzeci członek sabatu może rzucić w swojej turze zaklęcie wykonując aktywność rzucania zaklęcia w normalny sposób. Sabat może rzucać dostępne dla niego zaklęcia nieograniczoną ilość razy, ale może użyć tylko jednego zaklęcia w danej rundzie. Każdy sabat dostarcza @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Złowrogą Polimorfię} jako zaklęcie 8. kręgu oraz następujące zaklęcia, które sabat może rzucać na dowolnym kręgu do 5. włącznie: @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Wróżba}, @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Zauroczenie}, @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Jasnosłyszenie}, @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Jasnowidzenie}, @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Wiadomość we Śnie}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie}, @UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Iluzoryczna Scena}, @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Wścibskie Oko} oraz @UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Mówiące Zwłoki}. Poszczególne istoty wchodzące z cechą sabatu również dodają zaklęcia do dyspozycji sabatu, do którego dołączą. Sabat może również przeprowadzać rytuał @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Kontroli nad Pogodą} ze ST 23 zamiast standardowego ST.</p>\n<p>Jeśli opuszczenie sabatu przez istotę lub śmierć jednego z jego członków zmniejszyły by liczebność sabatu poniżej trzech członków, pozostałe istoty utrzymują swój status elitarności przez następne 24 godziny, ale pozbawione niezbędnej ilości członków do przeprowadzenia rytuałów nie mogą rzucać zaklęć sabatu.</p>",
                     "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu</em>, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
                     "Disease": "<p>Kiedy istota zostanie wystawiona na kontakt z chorobą potwora, wykonuje rzut obronny Krzepy lub poddaje się chorobie. Poziom choroby jest równy poziomowi potwora wywołującego ją. Choroba podąża za zasadami dotyczącymi przypadłości.</p>",
                     "Engulf": "<p>Potwór Biegnie na odległość wynoszącą maks. podwojoną wartość jego Prędkości i może w ramach tego ruchu przemieszczać się przez istoty na jego drodze. Każda istota rozmiaru mniejszego lub równego rozmiarowi potwora, przez której pole się przemieścił, może wykonać rzut obronny Refleksu aby uniknąć Pochłonięcia. Istota niezdolna do działania automatycznie odnosi krytyczną porażkę na tym rzucie. Istota, która zda rzut obronny może wybrać pomiędzy byciem odepchniętą na bok (z drogi potwora) albo byciem przepchniętą przed potwora w miejsce gdzie zakończy on ruch. Potwór może próbować Pochłonąć daną istotę tylko raz w ramach pojedynczego użycia Pochłonięcia. Potwór może zawierać w sobie tyle istot, ile zmieści się w jego przestrzeni.</p>\n<p>Istota, która nie zda rzutu obronnego, jest wciągana do wnętrza ciała potwora. Jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Pochłonięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po pochłonięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje pochłonięta. Pochłonięta istota może się uwolnić poprzez @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczkę} o wymienionym ST. Pochłonięta istota może zaatakować potwora, który ją pochłonął, ale tylko atakami bez broni lub bronią o lekkim lub mniejszym Naręczu. Pochłaniające stworzenie ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, pochłonięta istota wycina sobie drogą na zewnątrz i uwalnia się. Stworzenie, które uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń pochłaniającego je potwora.</p>\n<p>Jeśli potwór umrze, wszystkie pochłonięte przez niego istoty są natychmiast uwalniane podczas gdy jego ciało traci formę.</p>",
@@ -3183,11 +3231,15 @@
                     },
                     "Hint": "Języki, które mogą znać postacie graczy (np. Smoczy, Gnomi)",
                     "Rarities": {
-                        "CommonLanguages": "<rarity>Powszechne</rarity> Języki",
+                        "Common": "<rarity>Powszechne</rarity> Języki",
                         "Name": "Rzadkości Języków",
-                        "RareLanguages": "<rarity>Rzadkie</rarity> Języki",
-                        "SecretLanguages": "<rarity>Sekretne</rarity> Języki",
-                        "UncommonLanguages": "<rarity>Nietypowe</rarity> Języki"
+                        "Rare": "<rarity>Rzadkie</rarity> Języki",
+                        "Secret": "<rarity>Sekretne</rarity> Języki",
+                        "Unavailable": {
+                            "Hint": "Języki niedostępne dla żadnej istoty w tym świecie",
+                            "Label": "Niedostępne Języki"
+                        },
+                        "Uncommon": "<rarity>Nietypowe</rarity> Języki"
                     }
                 },
                 "Name": "Elementy Domorobne",
@@ -3308,14 +3360,14 @@
                     "Name": "Automatyczny Rozwój Modyfikatorów"
                 },
                 "FreeArchetype": {
-                    "Hint": "Zapewnia dodatkowe miejsca na atuty związane z zasadą wariantową darmowego archetypu. Gamemastery Guide str. 194",
+                    "Hint": "Zapewnia dodatkowe miejsca na atuty związane z zasadą wariantową darmowego archetypu. GM Core str. 84",
                     "Name": "Darmowy Archetyp"
                 },
                 "Hint": "Przełącz stan i dostosuj ustawienia reguł wariantowych takich jak Biegłość bez Poziomu czy system Wytrwałości.",
                 "Label": "Przełącz Zasady Wariantowe",
                 "Name": "Zasady Wariantowe",
                 "Proficiency": {
-                    "Hint": "Graz z uwzględnieniem wariantowej zasady biegłości bez poziomu, zawartej w Gamemastery Guide str. 198.",
+                    "Hint": "Graz z uwzględnieniem wariantowej zasady biegłości bez poziomu, zawartej w GM Core str. 85.",
                     "ModifiersHint": "Ustaw wartość modyfikatora dla każdej rangi biegłości.",
                     "Name": "Biegłość bez Poziomu"
                 },
@@ -3352,7 +3404,7 @@
                     "Name": "Resetuj Datę/Czas Świata"
                 },
                 "ShowClockButton": {
-                    "Hint": "Określ czy pokazywać przycisk zegara (wymaga odświerzenia).",
+                    "Hint": "Określ czy pokazywać przycisk zegara (wymaga odświeżenia).",
                     "Name": "Pokaż Przycisk Zegara"
                 },
                 "SyncDarkness": {
@@ -3485,7 +3537,6 @@
         "SpellLevelHeightened": "Wywyższenie: +{heightened}",
         "SpellLevelLabel": "Krąg Zaklęcia",
         "SpellPreparedLabel": "Przygotowane",
-        "SpellRangeLabel": "Zasięg",
         "SpellRequirementsLabel": "Wymagania",
         "SpellScalingInterval": {
             "Add": "Dodaj Wywyższenie (Interwał)",
@@ -3859,7 +3910,7 @@
         "TraitDescriptionCompanion": "Przedmiot z tą cechą może nosić zwierzęcy towarzysz lub podobne stworzenie. Towarzysz może zaangażować się w maksymalnie dwa przedmioty.",
         "TraitDescriptionComplex": "Zagrożenie z tą cechą posiada własne tury podczas starć.",
         "TraitDescriptionComposite": "Impuls kompozytowy łączy wiele żywiołów. Możesz zyskać impuls z cechą kompozytowości jedynie jeśli twoje żywioły kinetyka zawierają w sobie wszystkie żywioły wymienione w cechach impulsu.",
-        "TraitDescriptionComposition": "Aby rzucić sztuczkę kompozycji lub zaklęcie skupienia, zwykle używasz pewnego rodzaju Występu. Jeśli zaklęcie zawiera komponent werbalny, musisz użyć występu z cechą słuchowości, a jeśli zawiera komponent somatyczny, musisz użyć występu z cechą wzrokowści. Zaklęcie zyskuje wszystkie cechy użytego przez ciebie występu. W każdej turze możesz rzucić tylko jedno zaklęcie kompozycji i tylko jedna twoja kompozycja może być aktywna w danym momencie. Jeśli rzucisz nowe zaklęcie kompozycji, wszystkie trwające efekty poprzedniego zaklęcia kompozycji natychmiast się skończą.",
+        "TraitDescriptionComposition": "Aby rzucić sztuczkę kompozycji lub zaklęcie skupienia, używasz pewnego rodzaju Występu. Jeśli zaklęcie wymaga występu z cechą słuchowości możesz wyrecytować wiersz, zaśpiewać pieśń lub wygłosić dramatyczny monolog. Jeśli wymaga występu z cechą wzrokowści możesz zatańczyć czy użyć pantomimy. W każdej turze możesz rzucić tylko jedno zaklęcie kompozycji i tylko jedna twoja kompozycja może być aktywna w danym momencie. Jeśli rzucisz nowe zaklęcie kompozycji, wszystkie trwające efekty poprzedniego zaklęcia kompozycji natychmiast się skończą.",
         "TraitDescriptionConcealable": "Tę bron zaprojektowano tak, aby była niepozorna lub łatwa do ukrycia. Zyskujesz premię sytuacyjną +2 do testów i ST Ukrywania się, aby ukryć lub przemycić broń z tą cechą.",
         "TraitDescriptionConcentrate": "Akcja z tą cechą wymaga pewnej ilości skupienia i dyscypliny.",
         "TraitDescriptionConcussive": "Ta broń miażdży w równym stopniu co przebija. Przy określaniu odporności lub niewrażliwości istoty na obrażenia od tej broni należy użyć słabszej z odporności lub niewrażliwości celu na obrażenia kłute i obuchowe. Przykładowo, jeśli stworzenie jest niewrażliwe na obrażenia kłute oraz nie ma niewrażliwości ani odporności na obrażenia obuchowe, otrzymuje pełne obrażenia od broni wstrząsowej. Odporność lub niewrażliwość na wszystkie obrażenia fizyczne lub wszystkie obrażenia obowiązuje normalnie.",
@@ -3904,6 +3955,7 @@
         "TraitDescriptionEsoterica": "Cecha ezoteria występuje w wielu atutach i atrybutach klasowych taumaturga, stosujących różne talizmany, mistyczne błyskotki i różnorakie inne przedmioty, które nosisz ze sobą. Zdolności, które mają cechę ezoteria, wymagają posiadania od ciebie posiadania przy sobie twoich ezoteriów, aby z nich korzystać. Zwykle zakłada się, że zawsze masz przy sobie swoje ezoteria, ale w rzadkich przypadkach możesz albo nie mieć ich pod ręką, albo zostać pozbawiony ekwipunku.",
         "TraitDescriptionEvolution": "Atuty z tą cechą wpływają na twojego eidolona, a nie na ciebie, zwykle poprzez zapewnienie mu dodatkowych fizycznych zdolności.",
         "TraitDescriptionExpandable": "Przedmiot z cechą powiększania po aktywacji zwiększa się do określonego rozmiaru. O ile nie zaznaczono inaczej, ta przestrzeń musi być w twoim bezpośrednim sąsiedztwie i znajdować się na ziemi, a przedmiot musi mieć wystarczająco dużo otwartej przestrzeni, aby się powiększyć, w przeciwnym razie aktywacja nie odnosi efektu. Kiedy efekt dobiegnie końca, powiększony przedmiot dezintegruje się, jeśli jest zużywalny, lub kurczy się z powrotem do normalnego rozmiaru w wypadku przeciwnym.",
+        "TraitDescriptionExperiment": "Eksperymentalna kryptyda została celowo zmodyfikowana przez alchemię, inżynierię, magię lub rytuał aby stać się w pewnej części konstruktem. Chociaż jest ona potężna, proces ten jest niedoskonały i niestabilny.",
         "TraitDescriptionExploration": "Aktywność z opisana tą cechą zajmuje więcej niż jedną turę, i na ogół może być używana w trybie eksploracji.",
         "TraitDescriptionExtradimensional": "Ten efekt lub przedmiot tworzy przestrzeń międzywymiarową. Efekt międzywymiarowy umieszczony w innej przestrzeni międzywymiarowej przestaje działać, dopóki nie zostanie z niej usunięty.",
         "TraitDescriptionFatal": "Cecha zgubności zawiera rozmiar kości. Przy trafieniu krytycznym kości obrażeń broni zwiększają się do tego rozmiaru a do końcowego wyniku dodana zostaje jedna dodatkową kość obrażeń o podanym rozmiarze.",
@@ -4017,7 +4069,6 @@
         "TraitDescriptionOccult": "Ten magiczny przedmiot jest związany z tradycją magii okultystycznej, odwołującej się do dziwacznych i efemerycznych tajemnic. Wszystko co opisane tą cechą, jest magiczne.",
         "TraitDescriptionOil": "Oleje to magiczne żele, maści, pasty lub balsamy, które są zwykle nakładane na przedmiot i są zużywane w procesie.",
         "TraitDescriptionOlfactory": "Efekt węchowy może wpływać jedynie na istoty, które są w stanie go wyczuć. Dotyczy to tylko węchowych części efektu, określonych przez MG.",
-        "TraitDescriptionOpen": "Te manewry funkcjonują jedynie jako pierwsza salwa twojego natarcia w danej turze. Możesz używać akcji otwierających jedynie jeśli w tej turze nie używałeś jeszcze żadnej akcji ataku lub otwierającej.",
         "TraitDescriptionOracle": "Oznacza zdolności z klasy Wyroczni.",
         "TraitDescriptionOrc": "Istota z tą cechą jest przedstawicielem przodkowstwa orków. Broń z tą cechą jest tworzona i używana przez orków.",
         "TraitDescriptionOread": "Rodzaj dżinnoludźi wywodzących się od istot z Planu Ziemi.",
@@ -4051,6 +4102,7 @@
         "TraitDescriptionReach": "Naturalne ataki z tą cechę mogą zostać wykorzystane do atakowania istot w wymienionym zasięgu, a nie tylko sąsiednich istot. Bronie z tą cechą są długie i można ich użyć do atakowania istot w zasięgu 10 stóp, a nie tylko sąsiednich istot. W wypadku istot, które posiadają już wysięg dla kończyny, której dzierżą broń, broń z wysięgiem dodatkowo zwiększa zasięga ataku o 5 stóp.",
         "TraitDescriptionReckless": "Akcje z cechą ryzykanctwa wiążą się z szansą utraty przez prowadzącego kontroli nad pojazdem. Przy podejmowaniu akcji ryzykanckiej, prowadząca pojazd osoba musi najpierw zdać adekwatny test pilotażu aby utrzymać kontrolę nad pojazdem.",
         "TraitDescriptionRecovery": "Bronie powracające to rodzaj broni miotanych opracowanych z myślą o tym aby wracały do użytkownika jeśli chybią celu. Kiedy wykonasz nieudany Cios dystansowy tą bronią, wraca do twojej ręki po zakończeniu Ciosu, umożliwiając ci kolejną próbę. Jeśli w chwili powrotu broni masz zajęte ręce, upada ona na ziemi w twoim polu.",
+        "TraitDescriptionReincarnated": "Ten atut przodkowstwa jest dostępny tylko dla postaci, które chociaż raz zostały poddane reinkarnacji, czy to jako część swojej historii, czy w wyniku reinkarnacji, która miała miejsce w trakcie gry.",
         "TraitDescriptionReflection": "Istota z tą cechą posiada uniwersalne dziedzictwo odbicie. Odbicia to istoty będące kopiami żyjących ludzi, czy to w wyniku klonowania, czy planarnego powielenia, czy innego zjawiska. Zdolności z tą cechą może być wybierana i używana tylko przez odbicia.",
         "TraitDescriptionRelic": "Przedmiot z cechą relikwii rośnie w siłę razem ze swoim użytkownikiem.",
         "TraitDescriptionReload": "Podczas gdy wszystkie bronie wymagają chwili czasu na dobycie do ataku, wiele broni dystansowych wymaga również ładowania amunicją i przeładowywania. Ten wpis określa jak wiele akcji Interakcji trzeba aby przeładować taką broń. Wartość ta może wynosić 0 jeśli dobycie amunicji i strzał z broni odbywają się w ramach tej samej akcji. Jeśli przedmiot wymaga 2 lub więcej akcji na przeładowanie MG określa czy muszą być one dokonywane w jednym ciągu jako aktywność, lub czy możesz wydać część z tych akcji w jednej turze a resztę w następnej.",
@@ -4195,6 +4247,7 @@
         "TraitEthereal": "Eteryczność",
         "TraitEvolution": "Ewolucja",
         "TraitExpandable": "Powiększanie",
+        "TraitExperiment": "Eksperyment",
         "TraitExploration": "Eksploracja",
         "TraitExtradimensional": "Międzywymiarowość",
         "TraitFatal": "Zgubność",
@@ -4358,7 +4411,6 @@
         "TraitOlfactory": "Węchowość",
         "TraitOni": "Oni",
         "TraitOoze": "Śluz",
-        "TraitOpen": "Otwarcie",
         "TraitOracle": "Wyrocznia",
         "TraitOrc": "Ork",
         "TraitOread": "Oread",
@@ -4488,6 +4540,7 @@
         "TraitReckless": "Ryzykanctwo",
         "TraitRecovery": "Powracanie",
         "TraitReflection": "Odbicie",
+        "TraitReincarnated": "Reinkarnacja",
         "TraitRelic": "Relikwia",
         "TraitReload": "Przeładowanie",
         "TraitReload0": "Przeładowanie 0",
@@ -5090,7 +5143,7 @@
             "anchoring": {
                 "Name": "Kotwiczenia",
                 "Note": {
-                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową}</em> (@Check[type:will|dc:27|name:Anchoring Rune], modyfikator przeciwdziałania [[/r 1d20+17 #Test przeciwdziałania Runie Kotwiczenia]]{+17})"
+                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową} (@Check[type:will|dc:27|name:Anchoring Rune], modyfikator przeciwdziałania [[/r 1d20+17 #Test przeciwdziałania Runie Kotwiczenia]]{+17})"
                 }
             },
             "ashen": {
@@ -5215,8 +5268,8 @@
             "greaterAnchoring": {
                 "Name": "Większa Kotwiczenia",
                 "Note": {
-                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową}</em> na 8. kręgu (@Check[type:will|dc:38|name:Większa Runa Kotwicząca], modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28}), z tym, że jeśli istota krytycznie zda rzut obronny, <em>kotwica wymiarowa</em> działa 1 rundę zamiast nie zadziałać wcale.",
-                    "success": "Kiedy trafisz ciel lecz nie jest to trafienie krytyczne, cel zostaje objęty zaklęciem <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Wymiarowej Kotwicy}</em> 4. kręgu na jedną rundę z pominięciem rzutu obronnego (modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28})."
+                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową} na 8. kręgu (@Check[type:will|dc:38|name:Większa Runa Kotwicząca], modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28}), z tym, że jeśli istota krytycznie zda rzut obronny, <em>kotwica wymiarowa</em> działa 1 rundę zamiast nie zadziałać wcale.",
+                    "success": "Kiedy trafisz ciel lecz nie jest to trafienie krytyczne, cel zostaje objęty zaklęciem @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Wymiarowej Kotwicy} 4. kręgu na jedną rundę z pominięciem rzutu obronnego (modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28})."
                 }
             },
             "greaterAshen": {

@@ -16,7 +16,7 @@
         },
         "action->The Void's Revenge": {
           "name": "The Void's Revenge",
-          "description": "<p>A creature that slays Alystair is subjected to a <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em> spell with a @Check[type:will|dc:17|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
+          "description": "<p>A creature that slays Alystair is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} spell with a @Check[type:will|dc:17|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
         },
         "action->Grotesque Gift": {
           "name": "Grotesque Gift",
@@ -43,7 +43,7 @@
         },
         "action->The Void's Revenge": {
           "name": "The Void's Revenge",
-          "description": "<p>A creature that slays Alystair is subjected to a <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em> spell with a @Check[type:will|dc:20|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
+          "description": "<p>A creature that slays Alystair is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} spell with a @Check[type:will|dc:20|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
         },
         "action->Grotesque Gift": {
           "name": "Grotesque Gift",
@@ -175,7 +175,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The brimorak spits their boiling blood in a @Template[type:line|distance:20] that deals @Damage[6d6[fire]] damage (@Check[type:reflex|dc:23|basic:true] save). The brimorak can't use their Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<p>The ground within this area becomes slippery, with the effects of a <em>@UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease}</em> spell targeting an area until it's cleaned up or the brimorak is able to use their Breath Weapon again, whichever comes first.</p>"
+          "description": "<p>The brimorak spits their boiling blood in a @Template[type:line|distance:20] that deals @Damage[6d6[fire]] damage (@Check[type:reflex|dc:23|basic:true] save). The brimorak can't use their Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<p>The ground within this area becomes slippery, with the effects of a @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} spell targeting an area until it's cleaned up or the brimorak is able to use their Breath Weapon again, whichever comes first.</p>"
         },
         "action->Flaming Weapon": {
           "name": "Flaming Weapon",
@@ -732,6 +732,74 @@
         }
       }
     },
+    "Busoborn Akata": {
+      "name": "Busoborn Akata",
+      "publicNotes": "<p>An akata is a hairless, blue-skinned quadruped with fearsome jaws, glowing eyes, a pair of thin tails, and a mane of writhing tentacles. It is a strangely silent beast, as it lacks the lungs and vocal chords necessary to vocalize. It also lacks ears, but it has heightened visual and olfactory senses.</p>\n<p>When food is scarce, an akata secretes a resin from its pores that forms into a sturdy cocoon of pale green crystal-the skymetal noqual. An akata can hibernate in this cocoon without needing to eat or drink for centuries, though it retains a rudimentary sense of its surroundings and can break out in only a few minutes' time. These cocoons allow the creatures to travel through the void of space, seeking new worlds where they can infect suitable humanoid hosts with their larval young. Once a victim succumbs to this infection, the offspring fight among themselves until one proves the strongest. The surviving akata then animates the corpse-now a void zombie-which shambles about of its own accord.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Tentacle Vine": {
+          "name": "Tentacle Vine"
+        },
+        "action->Scent (Imprecise) 30 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
+        },
+        "action->Hibernation": {
+          "name": "Hibernation",
+          "description": "<p>After 3 or more days without eating, an akata can secrete resin that encases it in a noqual cocoon. The cocoon has Hardness 9, 40 HP, and a Broken Threshold of 18. It has resistance 5 to damage from magical sources. As long as the cocoon remains intact, the akata can't be harmed, and it doesn't need to eat or drink. While inside the cocoon, the akata gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]{Lifesense} 30 feet. The akata remains in a state of hibernation until it is exposed to extreme heat or senses a living creature, at which point it can burst free of its cocoon in [[/br 1d4 #minutes]]{1d4 minutes}.</p>"
+        },
+        "action->No Hearing": {
+          "name": "No Hearing",
+          "description": "<p>An akata has no auditory senses. It is immune to auditory effects, automatically critically fails Perception checks that require it to hear, and takes a -2 status penalty to Perception checks (but not initiative rolls) that involve sound but also rely on other senses.</p>"
+        },
+        "action->Bark Shield": {
+          "name": "Bark Shield",
+          "description": "<p><strong>Trigger</strong> The busoborn akata takes damage that isn't fire</p>\n<hr />\n<p><strong>Effect</strong> The akata hardens its body into a bark-like material at the point of impact and reduces the damage it takes by 5.</p>"
+        },
+        "action->No Breath": {
+          "name": "No Breath",
+          "description": "<p>An akata doesn't breathe and is immune to effects that require breathing (such as an inhaled poison).</p>"
+        },
+        "action->Salt Water Vulnerability": {
+          "name": "Salt Water Vulnerability",
+          "description": "<p>Salt water acts as an extremely strong acid to an akata. A splash of salt water deals @Damage[1d6[acid]] damage to an akata, and damaging salt water effects deal 1d6 additional damage. Full immersion in salt water deals @Damage[4d6[acid]] damage per round.</p>"
+        },
+        "action->Grasping Tendrils": {
+          "name": "Grasping Tendrils",
+          "description": "<p>The busoborn akata presses one of its tentacle vines to the ground and causes it to spread beneath creatures in a @Template[type:cone|distance:15] in front of it. Until the end of its next turn, the area is difficult terrain to enemy creatures, and the akata gains a +2 circumstance bonus to attack rolls against targets within that area</p>\n<hr />\n<p><strong>Special</strong> The akata can only use this ability if it has no more than one creature grappled.</p>"
+        },
+        "action->Pack Attack": {
+          "name": "Pack Attack",
+          "description": "<p>The busoborn akata's Strikes deal an additional 1d8 damage to creatures within reach of at least two of its allies.</p>"
+        },
+        "action->Void Death": {
+          "name": "Void Death",
+          "description": "<p>An akata implants its parasitic larval young into any creature it bites, but only Medium or Small humanoids make suitable hosts; all other creatures are immune to this disease</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect 1 (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> drained 2 and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead and corpse rises as a void zombie in [[/br 2d4 #hours]]{2d4 hours}</p>"
+        }
+      }
+    },
+    "Busoborn Void Zombie": {
+      "name": "Busoborn Void Zombie",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>A void zombie arises when a humanoid dies from an akata's void death affliction. This walking corpse is animated by a larval akata attached to the deceased creature's brain, using a grotesque feeding tendril that emerges from the corpse's mouth to drink blood from its victims.</p>\n<p>A void zombie typically exists for only a few months before it collapses and the larval akata crawls free from the motionless shell. When it feels the natural end of its unlife approaching, a void zombie finds a secluded place to vomit forth the nearly mature akata larva, then withers away. The disgorged larva metamorphizes into a full-grown akata several hours later, usually eating the corpse as its first meal.</p>\n<p>The name \"void zombie\" is something of a misnomer; though still compelled by necromantic energies, a void zombie is a host in the life cycle of a parasitic alien, not a mindless, reanimated corpse (despite their similar appearances). The fact that a typical void zombie shares the neutral alignment of the larval akata within, rather than the intrinsically evil nature of other zombies, has caused some scholars to push to reclassify them under other names. Suggestions have included \"void dead,\" \"akata spawn,\" or \"bloodwalker,\" but the visceral and compelling commonplace name has proven difficult to shed.</p>\n<p>The driving force behind a void zombie's violence rises from the ravenous hunger of the alien parasite that serves as the channel for its animating negative energies. Necromancers have tried often to duplicate the void zombie, but without a larval akata hosted within, the result is simply a zombie with missing jaws or, at best, one that moves faster than normal. Others have compared a captive void zombie to a captive yellow musk thrall in an attempt to discover a potential link between the two- after all, both are animated bodies controlled by a parasitic outside force. Strangely, a void zombie becomes particularly violent when encountering a yellow musk thrall, making direct comparisons of the two creatures particularly difficult, or even dangerous. The fact that a void zombie, unlike a yellow musk thrall, is actually undead may hold some clues as to the source of this strange behavior.</p>",
+      "items": {
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-melee->Feeding Tendril": {
+          "name": "Feeding Tendril"
+        },
+        "action->Salt Water Vulnerability": {
+          "name": "Salt Water Vulnerability",
+          "description": "<p>Salt water acts as an extremely strong acid to the larval akata inside a void zombie. A splash of salt water deals @Damage[1d6[acid]] damage to a void zombie, while full immersion in salt water deals @Damage[4d6[acid]] damage per round. The larval akata within retreats to the depths of its body on any round it takes damage as a result of this vulnerability, and the void zombie becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>"
+        },
+        "action->Blood Drain": {
+          "name": "Blood Drain",
+          "description": "<p><strong>Requirements</strong> The void zombie's previous action was a successful feeding tendril Strike against the target creature</p>\n<hr />\n<p><strong>Effect</strong> The void zombie uses its feeding tendril to drain blood from the creature it has struck. This deals @Damage[2d4[bleed]] damage, and a creature that takes this damage is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+        }
+      }
+    },
     "Captain Shenga Heartrender": {
       "name": "Captain Shenga Heartrender",
       "items": {
@@ -770,6 +838,41 @@
         }
       }
     },
+    "Carcaras": {
+      "name": "Carcaras",
+      "blurb": "Variant crocodile",
+      "publicNotes": "<p>Crocodiles can be found basking on riverbanks, lurking in swamps, or floating in lakes. They are usually are indistinguishable from logs when viewed from afar-at least until they attack. Alligators have similar statistics, but because they often live in more temperate climates, they endure cold temperatures better. Unlike alligators, crocodiles can tolerate salt water. Both are formidable predators that are likely to devour careless adventurers who fail to watch where they step.</p>\n<hr />\n<p>Powerful and primeval in appearance, crocodiles are dangerous natural predators that dwell in marshes, riverbeds, swamps, and other wetlands.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Tail": {
+          "name": "Tail"
+        },
+        "action->Deep Breath": {
+          "name": "Deep Breath",
+          "description": "<p>The crocodile can hold its breath for about 2 hours.</p>"
+        },
+        "action->Shockodile": {
+          "name": "Shockodile",
+          "description": "<p>10 feet. Creatures that enter or end their turn inside the aura take @Damage[1d4[electricity]] damage (@Check[type:reflex|dc:16|basic:true] save)</p>"
+        },
+        "action->Aquatic Ambush": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB]\n<p>35 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+        },
+        "action->Death Roll": {
+          "name": "Death Roll",
+          "description": "<p><strong>Requirements</strong> The crocodile must have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Effect</strong> The crocodile tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If it fails, it releases the creature.</p>"
+        },
+        "lore->Stealth": {
+          "skillVariants": {
+            "0": {
+              "label": "+11 in water"
+            }
+          }
+        }
+      }
+    },
     "Draugr Captain": {
       "name": "Draugr Captain",
       "blurb": "Variant draugr",
@@ -798,7 +901,7 @@
     "Dull Pukwudgie": {
       "name": "Dull Pukwudgie",
       "blurb": "Variant pukwudgie",
-      "publicNotes": "<p>Pukwudgies go by many names in many regions, but those who know of them agree that defying their mischievous nature provokes their wrath.</p>\n<p>In ancient times, pukwudgies traveled to the Material Plane from the First World, perhaps in the wake of the gnome emigration. These proud fey are obsessed with displays of respect, and while they first attempted to befriend mortals, each attempt ended in tragedy as the pukwudgies perceived any potential slight as a grave insult. Mortals, fearing these reactions, began to view pukwudgies as nuisances, and pukwudgies in turn began to resent mortals and the gods that favored them. At their best, pukwudgies play cruel jokes on mortals they encounter. At their worst, they've been known to kidnap and even kill those who don't treat them with proper respect.</p>\n<p>Pukwudgies make their villages in the oldest forests, concealed under <em>@UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage}</em> spells and <em>@UUID[Compendium.pf2e.spells-srd.Item.nA0XlPsnMNrQMpio]{Fantastic Facade}</em> rituals. They travel freely between the Material Plane and the First World through tiny portals beneath hills, trees, or stones. No strangers to violence, pukwudgies rarely travel alone and often anoint their quills or weapons with a custom-brewed poison before entering hostile situations.</p>\n<p>Standing about 2 feet tall, a pukwudgie sports sharp quills growing from their head that extends down their back. Their skin tone varies by the region in which they live, ranging from pale gray to brown.</p>",
+      "publicNotes": "<p>Pukwudgies go by many names in many regions, but those who know of them agree that defying their mischievous nature provokes their wrath.</p>\n<p>In ancient times, pukwudgies traveled to the Material Plane from the First World, perhaps in the wake of the gnome emigration. These proud fey are obsessed with displays of respect, and while they first attempted to befriend mortals, each attempt ended in tragedy as the pukwudgies perceived any potential slight as a grave insult. Mortals, fearing these reactions, began to view pukwudgies as nuisances, and pukwudgies in turn began to resent mortals and the gods that favored them. At their best, pukwudgies play cruel jokes on mortals they encounter. At their worst, they've been known to kidnap and even kill those who don't treat them with proper respect.</p>\n<p>Pukwudgies make their villages in the oldest forests, concealed under @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage} spells and @UUID[Compendium.pf2e.spells-srd.Item.nA0XlPsnMNrQMpio]{Fantastic Facade} rituals. They travel freely between the Material Plane and the First World through tiny portals beneath hills, trees, or stones. No strangers to violence, pukwudgies rarely travel alone and often anoint their quills or weapons with a custom-brewed poison before entering hostile situations.</p>\n<p>Standing about 2 feet tall, a pukwudgie sports sharp quills growing from their head that extends down their back. Their skin tone varies by the region in which they live, ranging from pale gray to brown.</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -999,7 +1102,7 @@
         },
         "consumable->Wand of Animate Dead (Level 3)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\nWand of Animate Dead (Level 3)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\n<p><em>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{Summon Undead}</em></p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{Summon Undead}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Fist": {
           "name": "Fist"
@@ -1044,7 +1147,7 @@
         },
         "consumable->Wand of Animate Dead (Level 5)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\nWand of Animate Dead (Level 5)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\n<p><em>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{Summon Undead}</em></p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{Summon Undead}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Fist": {
           "name": "Fist"
@@ -1407,6 +1510,66 @@
         }
       }
     },
+    "Little Brother Zibini": {
+      "name": "Little Brother Zibini",
+      "items": {
+        "strike-melee->Foot": {
+          "name": "Foot"
+        },
+        "strike-ranged->Chakri": {
+          "name": "Chakri"
+        },
+        "action->Deflecting Gale": {
+          "name": "Deflecting Gale",
+          "description": "<p><strong>Trigger</strong> Zibini is the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> Zibini is aware of the attack</p>\n<hr />\n<p><strong>Effect</strong> A swift gale whips up between Zibini and the source of the ranged attack, giving Zibini a +2 status bonus to AC against the triggering attack. If the attack misses, the wind deflected it. The wind can't deflect unusually large or heavy ranged projectiles (such as boulders or ballista bolts).</p>"
+        }
+      }
+    },
+    "Little Brother Zibini (3-4)": {
+      "name": "Little Brother Zibini (3-4)",
+      "tokenName": "Little Brother Zibini",
+      "items": {
+        "strike-melee->Foot": {
+          "name": "Foot"
+        },
+        "strike-ranged->Chakri": {
+          "name": "Chakri"
+        },
+        "action->Deflecting Gale": {
+          "name": "Deflecting Gale",
+          "description": "<p><strong>Trigger</strong> Zibini is the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> Zibini is aware of the attack</p>\n<hr />\n<p><strong>Effect</strong> A swift gale whips up between Zibini and the source of the ranged attack, giving Zibini a +2 status bonus to AC against the triggering attack. If the attack misses, the wind deflected it. The wind can't deflect unusually large or heavy ranged projectiles (such as boulders or ballista bolts).</p>"
+        },
+        "action->Flurry of Kicks": {
+          "name": "Flurry of Kicks",
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<hr />\n<p><strong>Effect</strong> Zibini makes two melee Strikes. He applies his multiple attack penalty to these Strikes normally.</p>"
+        },
+        "action->Handspring Kick": {
+          "name": "Handspring Kick",
+          "description": "<p><strong>Requirements</strong> Zibini has both hands free</p>\n<hr />\n<p><strong>Effect</strong> Zibini Steps, then makes a melee Strike at a –1 penalty.</p>"
+        }
+      }
+    },
+    "Metal Rascal": {
+      "name": "Metal Rascal",
+      "blurb": "Variant metal scamp ",
+      "hpDetails": "fast healing 2 (while touching metal)",
+      "publicNotes": "<p>The capricious and destructive metal scamps are self-appointed forces of entropy, taking great pleasure in indiscriminately wrecking everything around them, sometimes even to their own detriment. Metal scamps have a severe appearance, with pointed facial features and angular limbs, and their skin can be the color of any metal, often heavily oxidized as if by years of exposure to the elements.</p>",
+      "items": {
+        "spellcastingEntry->Arcane Innate Spells": {
+          "name": "Arcane Innate Spells"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Fast Healing 2 (While Touching Metal)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 2 (While Touching Metal)"
+        },
+        "action->Breathe Shrapnel": {
+          "name": "Breathe Shrapnel",
+          "description": "<p>The metal scamp breathes a @Template[type:cone|distance:15] of jagged metal flakes that deals @Damage[(2d4)[slashing],(1d4)[bleed]] damage to each creature within the area (@Check[type:reflex|dc:17|basic:true] save).</p>\n<p>The metal scamp can't Breathe Shrapnel again for [[/br 1d4 #Recharge Breathe Shrapnel]]{1d4 rounds}.</p>"
+        }
+      }
+    },
     "Omertius, The Engorged": {
       "name": "Omertius, The Engorged",
       "blurb": "Variant invidiak",
@@ -1490,7 +1653,7 @@
         },
         "action->Demon Summoning": {
           "name": "Demon Summoning",
-          "description": "<p>The demonologist can cast a 5th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}</em> arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[type:flat|dc:10] each round, ending the spell on a failure.</p>"
+          "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[type:flat|dc:10] each round, ending the spell on a failure.</p>"
         },
         "lore->Academia Lore": {
           "name": "Academia Lore"
@@ -1528,6 +1691,41 @@
         "action->Surprise Attack": {
           "name": "Surprise Attack",
           "description": "<p>In the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the orcish throat slitter.</p>"
+        }
+      }
+    },
+    "Pampla": {
+      "name": "Pampla",
+      "blurb": "Variant crocodile",
+      "publicNotes": "<p>Crocodiles can be found basking on riverbanks, lurking in swamps, or floating in lakes. They are usually are indistinguishable from logs when viewed from afar-at least until they attack. Alligators have similar statistics, but because they often live in more temperate climates, they endure cold temperatures better. Unlike alligators, crocodiles can tolerate salt water. Both are formidable predators that are likely to devour careless adventurers who fail to watch where they step.</p>\n<hr />\n<p>Powerful and primeval in appearance, crocodiles are dangerous natural predators that dwell in marshes, riverbeds, swamps, and other wetlands.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Tail": {
+          "name": "Tail"
+        },
+        "action->Deep Breath": {
+          "name": "Deep Breath",
+          "description": "<p>The crocodile can hold its breath for about 2 hours.</p>"
+        },
+        "action->Aquatic Ambush": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB]\n<p>35 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+        },
+        "action->Death Roll": {
+          "name": "Death Roll",
+          "description": "<p><strong>Requirements</strong> The crocodile must have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Effect</strong> The crocodile tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If it fails, it releases the creature.</p>"
+        },
+        "action->Fiery Maw": {
+          "name": "Fiery Maw",
+          "description": "<p>The crocodile lets out a puff of fire in a @Template[type:cone|distance:15] dealing @Damage[3d6[fire]] damage (@Check[type:reflex|dc:16|basic:true] save). It can't use Fiery Maw again for [[/br 1d4 #Recharge Fiery Maw]]{1d4 rounds}.</p>"
+        },
+        "lore->Stealth": {
+          "skillVariants": {
+            "0": {
+              "label": "+11 in water"
+            }
+          }
         }
       }
     },
@@ -1595,6 +1793,17 @@
         }
       }
     },
+    "Rope Net Trap": {
+      "name": "Rope Net Trap",
+      "description": "<p>This trap is a net weaved from rope laid out beneath the jungle underbrush with mechanisms attached to some nearby trees; when triggered, it cases the target in the net and suspends them indefinitely.</p>",
+      "disable": "<p>@Check[type:thievery|dc:14] to cut the triggering length of rope</p>",
+      "items": {
+        "action->Ensnare": {
+          "name": "Ensnare",
+          "description": "<p><strong>Trigger</strong> A creature steps on top of where the trap is located</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is caught in the rope net. The target must attempt a @Check[type:reflex|dc:20] save or be @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} in the net and suspended in the air until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} from the net.</p>"
+        }
+      }
+    },
     "Shadow Draugr": {
       "name": "Shadow Draugr",
       "blurb": "Variant draugr (Pathfinder Bestiary 2 102)",
@@ -1609,7 +1818,7 @@
         },
         "action->The Void's Revenge": {
           "name": "The Void's Revenge",
-          "description": "<p>A creature that slays a shadow draugr is subjected to a <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em> spell with a @Check[type:will|dc:17|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
+          "description": "<p>A creature that slays a shadow draugr is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} spell with a @Check[type:will|dc:17|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
         },
         "action->Grotesque Gift": {
           "name": "Grotesque Gift",
@@ -1661,7 +1870,7 @@
     "Sharp Pukwudgie": {
       "name": "Sharp Pukwudgie",
       "blurb": "Variant pukwudgie",
-      "publicNotes": "<p>Pukwudgies go by many names in many regions, but those who know of them agree that defying their mischievous nature provokes their wrath.</p>\n<p>In ancient times, pukwudgies traveled to the Material Plane from the First World, perhaps in the wake of the gnome emigration. These proud fey are obsessed with displays of respect, and while they first attempted to befriend mortals, each attempt ended in tragedy as the pukwudgies perceived any potential slight as a grave insult. Mortals, fearing these reactions, began to view pukwudgies as nuisances, and pukwudgies in turn began to resent mortals and the gods that favored them. At their best, pukwudgies play cruel jokes on mortals they encounter. At their worst, they've been known to kidnap and even kill those who don't treat them with proper respect.</p>\n<p>Pukwudgies make their villages in the oldest forests, concealed under <em>@UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage}</em> spells and <em>@UUID[Compendium.pf2e.spells-srd.Item.nA0XlPsnMNrQMpio]{Fantastic Facade}</em> rituals. They travel freely between the Material Plane and the First World through tiny portals beneath hills, trees, or stones. No strangers to violence, pukwudgies rarely travel alone and often anoint their quills or weapons with a custom-brewed poison before entering hostile situations.</p>\n<p>Standing about 2 feet tall, a pukwudgie sports sharp quills growing from their head that extends down their back. Their skin tone varies by the region in which they live, ranging from pale gray to brown.</p>",
+      "publicNotes": "<p>Pukwudgies go by many names in many regions, but those who know of them agree that defying their mischievous nature provokes their wrath.</p>\n<p>In ancient times, pukwudgies traveled to the Material Plane from the First World, perhaps in the wake of the gnome emigration. These proud fey are obsessed with displays of respect, and while they first attempted to befriend mortals, each attempt ended in tragedy as the pukwudgies perceived any potential slight as a grave insult. Mortals, fearing these reactions, began to view pukwudgies as nuisances, and pukwudgies in turn began to resent mortals and the gods that favored them. At their best, pukwudgies play cruel jokes on mortals they encounter. At their worst, they've been known to kidnap and even kill those who don't treat them with proper respect.</p>\n<p>Pukwudgies make their villages in the oldest forests, concealed under @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage} spells and @UUID[Compendium.pf2e.spells-srd.Item.nA0XlPsnMNrQMpio]{Fantastic Facade} rituals. They travel freely between the Material Plane and the First World through tiny portals beneath hills, trees, or stones. No strangers to violence, pukwudgies rarely travel alone and often anoint their quills or weapons with a custom-brewed poison before entering hostile situations.</p>\n<p>Standing about 2 feet tall, a pukwudgie sports sharp quills growing from their head that extends down their back. Their skin tone varies by the region in which they live, ranging from pale gray to brown.</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -1733,6 +1942,53 @@
         "action->Reach Spell": {
           "name": "Reach Spell",
           "description": "<p>If the next action the Shenga Heartrender uses is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>"
+        }
+      }
+    },
+    "Shrewd Busoborn Akata": {
+      "name": "Shrewd Busoborn Akata",
+      "publicNotes": "<p>An akata is a hairless, blue-skinned quadruped with fearsome jaws, glowing eyes, a pair of thin tails, and a mane of writhing tentacles. It is a strangely silent beast, as it lacks the lungs and vocal chords necessary to vocalize. It also lacks ears, but it has heightened visual and olfactory senses.</p>\n<p>When food is scarce, an akata secretes a resin from its pores that forms into a sturdy cocoon of pale green crystal-the skymetal noqual. An akata can hibernate in this cocoon without needing to eat or drink for centuries, though it retains a rudimentary sense of its surroundings and can break out in only a few minutes' time. These cocoons allow the creatures to travel through the void of space, seeking new worlds where they can infect suitable humanoid hosts with their larval young. Once a victim succumbs to this infection, the offspring fight among themselves until one proves the strongest. The surviving akata then animates the corpse-now a void zombie-which shambles about of its own accord.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Tentacle Vine": {
+          "name": "Tentacle Vine"
+        },
+        "action->Scent (Imprecise) 30 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
+        },
+        "action->Hibernation": {
+          "name": "Hibernation",
+          "description": "<p>After 3 or more days without eating, an akata can secrete resin that encases it in a noqual cocoon. The cocoon has Hardness 9, 40 HP, and a Broken Threshold of 18. It has resistance 5 to damage from magical sources. As long as the cocoon remains intact, the akata can't be harmed, and it doesn't need to eat or drink. While inside the cocoon, the akata gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]{Lifesense} 30 feet. The akata remains in a state of hibernation until it is exposed to extreme heat or senses a living creature, at which point it can burst free of its cocoon in [[/br 1d4 #minutes]]{1d4 minutes}.</p>"
+        },
+        "action->No Hearing": {
+          "name": "No Hearing",
+          "description": "<p>An akata has no auditory senses. It is immune to auditory effects, automatically critically fails Perception checks that require it to hear, and takes a -2 status penalty to Perception checks (but not initiative rolls) that involve sound but also rely on other senses.</p>"
+        },
+        "action->Bark Shield": {
+          "name": "Bark Shield",
+          "description": "<p><strong>Trigger</strong> The busoborn akata takes damage that isn't fire</p>\n<hr />\n<p><strong>Effect</strong> The akata hardens its body into a bark-like material at the point of impact and reduces the damage it takes by 5.</p>"
+        },
+        "action->No Breath": {
+          "name": "No Breath",
+          "description": "<p>An akata doesn't breathe and is immune to effects that require breathing (such as an inhaled poison).</p>"
+        },
+        "action->Salt Water Vulnerability": {
+          "name": "Salt Water Vulnerability",
+          "description": "<p>Salt water acts as an extremely strong acid to an akata. A splash of salt water deals @Damage[1d6[acid]] damage to an akata, and damaging salt water effects deal 1d6 additional damage. Full immersion in salt water deals @Damage[4d6[acid]] damage per round.</p>"
+        },
+        "action->Grasping Tendrils": {
+          "name": "Grasping Tendrils",
+          "description": "<p>The busoborn akata presses one of its tentacle vines to the ground and causes it to spread beneath creatures in a @Template[type:cone|distance:15] in front of it. Until the end of its next turn, the area is difficult terrain to enemy creatures, and the akata gains a +2 circumstance bonus to attack rolls against targets within that area</p>\n<hr />\n<p><strong>Special</strong> The akata can only use this ability if it has no more than one creature grappled.</p>"
+        },
+        "action->Pack Attack": {
+          "name": "Pack Attack",
+          "description": "<p>The busoborn akata's Strikes deal an additional 1d10 damage to creatures within reach of at least two of its allies.</p>"
+        },
+        "action->Void Death": {
+          "name": "Void Death",
+          "description": "<p>An akata implants its parasitic larval young into any creature it bites, but only Medium or Small humanoids make suitable hosts; all other creatures are immune to this disease</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect 1 (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> drained 2 and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead and corpse rises as a void zombie in [[/br 2d4 #hours]]{2d4 hours}</p>"
         }
       }
     },
@@ -1857,7 +2113,7 @@
         },
         "action->Demon Summoning": {
           "name": "Demon Summoning",
-          "description": "<p>The demonologist can cast a 5th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}</em> arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[type:flat|dc:10] each round, ending the spell on a failure.</p>"
+          "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[type:flat|dc:10] each round, ending the spell on a failure.</p>"
         },
         "lore->Academia Lore": {
           "name": "Academia Lore"
@@ -1931,6 +2187,95 @@
         },
         "strike-melee->+1 Staff of Striking": {
           "name": "+1 Staff of Striking"
+        }
+      }
+    },
+    "Tisbah": {
+      "name": "Tisbah",
+      "saveDetails": "+2 status to fortitude vs. poison",
+      "items": {
+        "spellcastingEntry->Occult Spontaneous Spells": {
+          "name": "Occult Spontaneous Spells"
+        },
+        "spellcastingEntry->Occult Focus Spells": {
+          "name": "Occult Focus Spells"
+        },
+        "spell->Mage Hand (Amped)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand (Amped)",
+          "target": "1 unattended object of 1 Bulk or less"
+        },
+        "spell->Telekinetic Projectile (Amped)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]\nTelekinetic Projectile (Amped)"
+        },
+        "spell->Telekinetic Rend (Amped)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.yyz029C9eqfY38PT]\nTelekinetic Rend (Amped)"
+        },
+        "strike-melee->Visap": {
+          "name": "Visap"
+        },
+        "action->+2 Status to Fortitude Saves vs. Poison": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to Fortitude Saves vs. Poison"
+        },
+        "action->Psi Amps": {
+          "name": "Psi Amps",
+          "description": "<p>Tisbah can cast psi cantrips as amped cantrips by using one focus point and making the following alterations:</p>\n<p><em>Mage Hand</em>: Tisbah targets a creature of Medium size or smaller and attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} them with a spell attack roll against their Fortitude DC. The first time each round Tisbah Sustains this Spell, she can attempt to Shove the creature again. The target takes a –10-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p><em>Telekinetic Projectile</em>: Tisbah increases the damage of this cantrip by [[/r 2d6]]. On a successful Strike, she pushes the target 5 feet away, or 10 feet away on a critical success.</p>\n<p><em>Telekinetic Rend</em>: Tisbah changes the cantrip's damage to 1d6 bludgeoning and 1d6 slashing. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+        },
+        "action->Psychic Practice": {
+          "name": "Psychic Practice",
+          "description": "<p>Tisbah's range for @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile} increases to 60 feet.</p>"
+        },
+        "action->Unleash Psyche": {
+          "name": "Unleash Psyche",
+          "description": "<p><strong>Trigger</strong> Tisbah's starts her turn with half or less Hit Points remaining</p>\n<hr />\n<p><strong>Effect</strong> Tisbah is surrounded by a swirl of psychic energy that effortlessly moves small objects around her, gaining a +2 status bonus to damage when casting telekinetic projectile or telekinetic rend. This effect remains for 2 rounds or until Tisbah is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first.</p>"
+        },
+        "action->Vishkanyan Venom": {
+          "name": "Vishkanyan Venom",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>"
+        }
+      }
+    },
+    "Tisbah (3-4)": {
+      "name": "Tisbah (3-4)",
+      "saveDetails": "+2 status to fortitude vs. poison",
+      "tokenName": "Tisbah",
+      "items": {
+        "spellcastingEntry->Occult Spontaneous Spells": {
+          "name": "Occult Spontaneous Spells"
+        },
+        "spellcastingEntry->Occult Focus Spells": {
+          "name": "Occult Focus Spells"
+        },
+        "spell->Mage Hand (Amped)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand (Amped)",
+          "target": "1 unattended object of 1 Bulk or less"
+        },
+        "spell->Telekinetic Projectile (Amped)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]\nTelekinetic Projectile (Amped)"
+        },
+        "spell->Telekinetic Rend (Amped)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.yyz029C9eqfY38PT]\nTelekinetic Rend (Amped)"
+        },
+        "strike-melee->Visap": {
+          "name": "Visap"
+        },
+        "action->+2 Status to Fortitude Saves vs. Poison": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to Fortitude Saves vs. Poison"
+        },
+        "action->Psi Amps": {
+          "name": "Psi Amps",
+          "description": "<p>Tisbah can cast psi cantrips as amped cantrips by using one focus point and making the following alterations:</p>\n<p><em>Mage Hand</em>: Tisbah targets a creature of Medium size or smaller and attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} them with a spell attack roll against their Fortitude DC. The first time each round Tisbah Sustains this Spell, she can attempt to Shove the creature again. The target takes a –10-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p><em>Telekinetic Projectile</em>: Tisbah increases the damage of this cantrip by [[/r 2d6]]. On a successful Strike, she pushes the target 5 feet away, or 10 feet away on a critical success.</p>\n<p><em>Telekinetic Rend</em>: Tisbah changes the cantrip's damage to 1d6 bludgeoning and 1d6 slashing. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+        },
+        "action->Psychic Practice": {
+          "name": "Psychic Practice",
+          "description": "<p>Tisbah's range for @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile} increases to 60 feet.</p>"
+        },
+        "action->Unleash Psyche": {
+          "name": "Unleash Psyche",
+          "description": "<p><strong>Trigger</strong> Tisbah's starts her turn with half or less Hit Points remaining</p>\n<hr />\n<p><strong>Effect</strong> Tisbah is surrounded by a swirl of psychic energy that effortlessly moves small objects around her. She deals @Damage[2d6[force]] damage to all creatures in a @Template[type:emanation|distance:20] (@Check[type:reflex|dc:21] save) and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. She gains a +4 status bonus to damage when casting telekinetic projectile or telekinetic rend. This effect remains for 2 rounds or until Tisbah is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first.</p>"
+        },
+        "action->Vishkanyan Venom": {
+          "name": "Vishkanyan Venom",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>"
         }
       }
     },
@@ -2168,7 +2513,7 @@
         },
         "action->The Void's Revenge": {
           "name": "The Void's Revenge",
-          "description": "<p>A creature that slays Alystair is subjected to a <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em> spell with a @Check[type:will|dc:19|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
+          "description": "<p>A creature that slays Alystair is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} spell with a @Check[type:will|dc:19|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
         },
         "action->Grotesque Gift": {
           "name": "Grotesque Gift",
@@ -2195,7 +2540,7 @@
         },
         "action->The Void's Revenge": {
           "name": "The Void's Revenge",
-          "description": "<p>A creature that slays Alystair is subjected to a <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em> spell with a @Check[type:will|dc:22|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
+          "description": "<p>A creature that slays Alystair is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} spell with a @Check[type:will|dc:22|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
         },
         "action->Grotesque Gift": {
           "name": "Grotesque Gift",
@@ -2204,6 +2549,48 @@
         "action->Swipe": {
           "name": "Swipe",
           "description": "<p>Alystair Caskwater makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Void Zombie Adventurer": {
+      "name": "Void Zombie Adventurer",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>A void zombie arises when a humanoid dies from an akata's void death affliction. This walking corpse is animated by a larval akata attached to the deceased creature's brain, using a grotesque feeding tendril that emerges from the corpse's mouth to drink blood from its victims.</p>\n<p>A void zombie typically exists for only a few months before it collapses and the larval akata crawls free from the motionless shell. When it feels the natural end of its unlife approaching, a void zombie finds a secluded place to vomit forth the nearly mature akata larva, then withers away. The disgorged larva metamorphizes into a full-grown akata several hours later, usually eating the corpse as its first meal.</p>\n<p>The name \"void zombie\" is something of a misnomer; though still compelled by necromantic energies, a void zombie is a host in the life cycle of a parasitic alien, not a mindless, reanimated corpse (despite their similar appearances). The fact that a typical void zombie shares the neutral alignment of the larval akata within, rather than the intrinsically evil nature of other zombies, has caused some scholars to push to reclassify them under other names. Suggestions have included \"void dead,\" \"akata spawn,\" or \"bloodwalker,\" but the visceral and compelling commonplace name has proven difficult to shed.</p>\n<p>The driving force behind a void zombie's violence rises from the ravenous hunger of the alien parasite that serves as the channel for its animating negative energies. Necromancers have tried often to duplicate the void zombie, but without a larval akata hosted within, the result is simply a zombie with missing jaws or, at best, one that moves faster than normal. Others have compared a captive void zombie to a captive yellow musk thrall in an attempt to discover a potential link between the two- after all, both are animated bodies controlled by a parasitic outside force. Strangely, a void zombie becomes particularly violent when encountering a yellow musk thrall, making direct comparisons of the two creatures particularly difficult, or even dangerous. The fact that a void zombie, unlike a yellow musk thrall, is actually undead may hold some clues as to the source of this strange behavior.</p>",
+      "items": {
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-melee->Feeding Tendril": {
+          "name": "Feeding Tendril"
+        },
+        "action->Salt Water Vulnerability": {
+          "name": "Salt Water Vulnerability",
+          "description": "<p>Salt water acts as an extremely strong acid on the larval akata inside the void zombie. Full immersion in salt water deals @Damage[4d6[acid]] damage per round. On any round in which the void zombie takes damage due to its salt water weakness, the larval akata retreats to the depths of the void zombie's body, causing the void zombie to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>"
+        },
+        "action->Blood Drain": {
+          "name": "Blood Drain",
+          "description": "<p><strong>Requirements</strong> The void zombie's previous action was a successful feeding tendril Strike against the target creature.</p>\n<hr />\n<p><strong>Effect</strong> The void zombie uses its feeding tendril to drain blood from the creature it has struck. This deals @Damage[2d4[bleed]] damage, and a creature that takes this damage is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+        }
+      }
+    },
+    "Void Zombie Explorer": {
+      "name": "Void Zombie Explorer",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>A void zombie arises when a humanoid dies from an akata's void death affliction. This walking corpse is animated by a larval akata attached to the deceased creature's brain, using a grotesque feeding tendril that emerges from the corpse's mouth to drink blood from its victims.</p>\n<p>A void zombie typically exists for only a few months before it collapses and the larval akata crawls free from the motionless shell. When it feels the natural end of its unlife approaching, a void zombie finds a secluded place to vomit forth the nearly mature akata larva, then withers away. The disgorged larva metamorphizes into a full-grown akata several hours later, usually eating the corpse as its first meal.</p>\n<p>The name \"void zombie\" is something of a misnomer; though still compelled by necromantic energies, a void zombie is a host in the life cycle of a parasitic alien, not a mindless, reanimated corpse (despite their similar appearances). The fact that a typical void zombie shares the neutral alignment of the larval akata within, rather than the intrinsically evil nature of other zombies, has caused some scholars to push to reclassify them under other names. Suggestions have included \"void dead,\" \"akata spawn,\" or \"bloodwalker,\" but the visceral and compelling commonplace name has proven difficult to shed.</p>\n<p>The driving force behind a void zombie's violence rises from the ravenous hunger of the alien parasite that serves as the channel for its animating negative energies. Necromancers have tried often to duplicate the void zombie, but without a larval akata hosted within, the result is simply a zombie with missing jaws or, at best, one that moves faster than normal. Others have compared a captive void zombie to a captive yellow musk thrall in an attempt to discover a potential link between the two- after all, both are animated bodies controlled by a parasitic outside force. Strangely, a void zombie becomes particularly violent when encountering a yellow musk thrall, making direct comparisons of the two creatures particularly difficult, or even dangerous. The fact that a void zombie, unlike a yellow musk thrall, is actually undead may hold some clues as to the source of this strange behavior.</p>",
+      "items": {
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-melee->Feeding Tendril": {
+          "name": "Feeding Tendril"
+        },
+        "action->Salt Water Vulnerability": {
+          "name": "Salt Water Vulnerability",
+          "description": "<p>Salt water acts as an extremely strong acid on the larval akata inside the void zombie. Full immersion in salt water deals @Damage[4d6[acid]] damage per round. On any round in which the void zombie takes damage due to its salt water weakness, the larval akata retreats to the depths of the void zombie's body, causing the void zombie to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>"
+        },
+        "action->Blood Drain": {
+          "name": "Blood Drain",
+          "description": "<p><strong>Requirements</strong> The void zombie's previous action was a successful feeding tendril Strike against the target creature.</p>\n<hr />\n<p><strong>Effect</strong> The void zombie uses its feeding tendril to drain blood from the creature it has struck. This deals @Damage[2d4[bleed]] damage, and a creature that takes this damage is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
         }
       }
     },
@@ -2309,7 +2696,7 @@
         },
         "action->The Void's Revenge": {
           "name": "The Void's Revenge",
-          "description": "<p>A creature that slays a shadow draugr is subjected to a <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em> spell with a @Check[type:will|dc:15|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
+          "description": "<p>A creature that slays a shadow draugr is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} spell with a @Check[type:will|dc:15|traits:spell] save. The curse ends if the draugr is buried in a calm sea or after 1 week passes.</p>"
         },
         "action->Grotesque Gift": {
           "name": "Grotesque Gift",
@@ -2318,6 +2705,42 @@
         "action->Swipe": {
           "name": "Swipe",
           "description": "<p>The shadow draugr makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Younger Sister Vivatu": {
+      "name": "Younger Sister Vivatu",
+      "items": {
+        "spellcastingEntry->Divine Innate Spells": {
+          "name": "Divine Innate Spells"
+        },
+        "spell->Pest Form (Monkey Only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]\nPest Form (Monkey Only)"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-melee->Bo Staff": {
+          "name": "Bo Staff"
+        },
+        "strike-ranged->Javelin": {
+          "name": "Javelin"
+        },
+        "action->Prehensile Tail": {
+          "name": "Prehensile Tail",
+          "description": "<p>Vanara can use their long, flexible tail to perform Interact actions requiring a free hand, even if both hands are otherwise occupied. Their tail can't perform actions that require fingers or significant manual dexterity, including any action that would require a check to accomplish, and they can't use it to hold items.</p>"
+        },
+        "action->Go With the Flow": {
+          "name": "Go With the Flow",
+          "description": "<p><strong>Trigger</strong> Vivatu is targeted by a physical attack and can see the attacker</p>\n<hr />\n<p><strong>Effect</strong> The targeted part of Vivatu's body turns into flowing water to hamper the blow. She gains a +2 circumstance bonus to AC against the triggering attack. If she takes electricity damage, she can't use this again for [[/br 1d4 #Recharge this]]{1d4 rounds}.</p>"
+        },
+        "action->Flurry of Blows": {
+          "name": "Flurry of Blows",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Vivatu makes two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>"
+        },
+        "action->Spring Up": {
+          "name": "Spring Up",
+          "description": "<p><strong>Requirements</strong> Vivatu is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>\n<hr />\n<p><strong>Effect</strong> Vivatu Stands, then can immediately Step twice. The Stand action doesn't trigger reactions.</p>"
         }
       }
     }

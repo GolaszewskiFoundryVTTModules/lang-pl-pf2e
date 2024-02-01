@@ -11,6 +11,7 @@ import subprocess
 import argparse
 
 import difflib
+from difflib import SequenceMatcher
 
 class LocalizationUpdater:
     
@@ -31,6 +32,7 @@ class LocalizationUpdater:
         self.renamed_keys = []
         self.outdated_keys = []
         self.updated_eng_keys = []
+        self.rudimentary_translations_updated = []
 
 
     def get_file_from_directory(self, filepath):
@@ -120,7 +122,6 @@ class LocalizationUpdater:
         return nested_json
 
     def generate_concise_diff(self, old_value, new_value):
-        from difflib import SequenceMatcher
 
         # Create a sequence matcher
         s = SequenceMatcher(None, old_value, new_value)
@@ -139,6 +140,33 @@ class LocalizationUpdater:
                 diff.append('      + ' + new_value[j1:j2].replace("\n", "\\n"))
 
         return ''.join(diff)
+
+    def is_translation_rudimentary(self, en_str, pl_str):
+        if not en_str or not pl_str:
+            print("Attempted to compare null string(s)")
+            return False
+        
+        # Regex to match and exclude
+        regex_patterns = [
+             r'@[^\]]*\[[^\[]*\]',
+             r'<[^<]+>',
+             r'\\n'
+        ]
+
+        # Function to clean the string by removing all patterns
+        def clean_string(s, patterns):
+            for pattern in patterns:
+                s = re.sub(pattern, '', s)
+            return s
+
+        # Remove matched patterns from the strings
+        en_str_cleaned = clean_string(en_str, regex_patterns)
+        pl_str_cleaned = clean_string(pl_str, regex_patterns)
+
+        similarity_threshold = 0.75
+        matcher = SequenceMatcher(None, en_str_cleaned, pl_str_cleaned)
+        similarity = matcher.ratio()
+        return similarity >= similarity_threshold
 
     def update_localization(self):
         # Count occurrences of each value in both dictionaries
@@ -168,16 +196,17 @@ class LocalizationUpdater:
                 else:
                     self.pl_extracted[new_key] = self.pl_extracted.get(old_key, None)
                     self.renamed_keys.append((old_key, new_key))
-            
-            #continue after rename, if previous key has received a new value
-
             # if the key exists in translation, and the value changed
-            if new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
+            elif new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
                 # if value was kept in english, update it outright
                 if self.pl_extracted.get(new_key) == self.en_old_extracted.get(new_key):
                     self.pl_extracted[new_key] = new_value
                     self.updated_eng_keys.append(new_key)
-                # else mark it as outdated that needs manual correction
+                # if translation is rudimentary (usually due to the effect of global regex operations) auto-update it to save time
+                elif self.is_translation_rudimentary(self.en_old_extracted.get(new_key, None), self.pl_extracted.get(new_key)):
+                    self.pl_extracted[new_key] = new_value
+                    self.rudimentary_translations_updated.append(new_key)
+                # else mark it as an outdated translation that needs manual correction
                 else:
                     old_value = self.en_old_extracted.get(new_key, "")
                     diff_string = self.generate_concise_diff(old_value, new_value)
@@ -260,10 +289,15 @@ class LocalizationUpdater:
             for key in self.updated_eng_keys:
                 logging.info(f"    {key}")
 
+        if self.rudimentary_translations_updated:
+            logging.info(f"  Rudimentary translations updated: {len(self.rudimentary_translations_updated)}")
+            for key in self.rudimentary_translations_updated:
+                logging.info(f"    {key}")
+
         if self.outdated_keys:
             logging.info(f"  Outdated records: {len(self.outdated_keys)}")
             for key, diff in self.outdated_keys:  # Unpack key and diff_string
-                logging.info(f"    Key: {key}\n    Diff:{diff}")
+                logging.info(f"    Key: {key}\n    Diff:{diff}\n")
 
 
         validation_errors = self.validate_keys_match()

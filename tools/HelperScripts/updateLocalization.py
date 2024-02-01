@@ -129,14 +129,14 @@ class LocalizationUpdater:
         for tag, i1, i2, j1, j2 in s.get_opcodes():
             if tag == 'replace':
                 diff.append('\n')
-                diff.append('      - ' + old_value[i1:i2])
-                diff.append('      + ' + new_value[j1:j2])
+                diff.append('      - ' + old_value[i1:i2].replace("\n", "\\n"))
+                diff.append('      + ' + new_value[j1:j2].replace("\n", "\\n"))
             elif tag == 'delete':
                 diff.append('\n')
-                diff.append('      - ' + old_value[i1:i2])
+                diff.append('      - ' + old_value[i1:i2].replace("\n", "\\n"))
             elif tag == 'insert':
                 diff.append('\n')
-                diff.append('      + ' + new_value[j1:j2])
+                diff.append('      + ' + new_value[j1:j2].replace("\n", "\\n"))
 
         return ''.join(diff)
 

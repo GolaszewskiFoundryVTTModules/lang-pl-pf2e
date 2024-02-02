@@ -41,6 +41,8 @@ class LocalizationUpdater:
             (r'>Activate<', r'>Aktywacja<'),
             (r'>Trigger<', r'>Aktywator<'),
             (r'>Effect<', r'>Efekt<'),
+            (r'>Secondary Effect<', r'>Efekt Dodatkowy<'),
+            (r'>Maximum Duration<', r'>Maksymalny Czas Trwania<'),
             (r'\{Effect:', r'{Efekt:'),
             (r'"name": "Effect:', r'"name": "Efekt:'),
             (r'\{Spell Effect:', r'{Efekt Zaklęcia:'),
@@ -50,6 +52,11 @@ class LocalizationUpdater:
             (r'>(Prerequisites|Requirements)<', r'>Wymagania<'),
             (r'>Saving Throw<', r'>Rzut Obronny<'),
             (r'>Onset<', r'>Nadejście Objawów<'),
+            # Poison applications
+            (r'\(Injury\)', r'(Rana)'),
+            (r'\(Contact\)', r'(Dotyk)'),
+            (r'\(Inhaled\)', r'(Wdychanie)'),
+            (r'\(Ingested\)', r'(Spożycie)'),
             # Activation details. Must be after the activate
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Interact([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Interakcja\3</p>'),

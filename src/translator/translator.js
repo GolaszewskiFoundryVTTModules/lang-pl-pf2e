@@ -375,9 +375,9 @@ class Translator {
         if (!translation || data === translation) {
             return data;
         } else if (game.settings.get("lang-pl-pf2e", "dual-language-names")) {
-            return this.normalizeName(translation) + "/" + data;
+            return translation + "/" + data;
         } else {
-            return this.normalizeName(translation);
+            return translation;
         }
     }
 

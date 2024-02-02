@@ -34,6 +34,34 @@ class LocalizationUpdater:
         self.updated_eng_keys = []
         self.rudimentary_translations_updated = []
 
+        # Auto-translated patterns
+        # PYTHON READS THE JSON STRING WITH ITS ESCAPE CHARACTERS ACCOUNTED FOR
+        # Escape signs in JSON need to be accounted for in regex (usually reduced/removed)
+        self.replacement_patterns = [
+            (r'>Activate<', r'>Aktywacja<'),
+            (r'>Trigger<', r'>Aktywator<'),
+            (r'>Effect<', r'>Efekt<'),
+            (r'\{Effect:', r'{Efekt:'),
+            (r'"name": "Effect:', r'"name": "Efekt:'),
+            (r'\{Spell Effect:', r'{Efekt Zaklęcia:'),
+            (r'"name": "Spell Effect:', r'"name": "Efekt Zaklęcia:'),
+            (r'>Special<', r'>Specjalne<'),
+            (r'>Frequency<', r'>Częstotliwość<'),
+            (r'>(Prerequisites|Requirements)<', r'>Wymagania<'),
+            (r'>Saving Throw<', r'>Rzut Obronny<'),
+            (r'>Onset<', r'>Nadejście Objawów<'),
+            # Activation details. Must be after the activate
+            (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Interact([^<]*)</p>',
+             r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Interakcja\3</p>'),
+            (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)command([^<]*)</p>',
+             r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2komenda\3</p>'),
+            (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)envision([^<]*)</p>',
+             r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2wyobrażenie\3</p>'),
+            (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
+             r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
+            (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
+        ]
+
 
     def get_file_from_directory(self, filepath):
         try:
@@ -141,14 +169,17 @@ class LocalizationUpdater:
 
         return ''.join(diff)
 
-    def is_translation_rudimentary(self, en_str, pl_str):
+    def is_translation_rudimentary(self, en_str, pl_str, verbose = False):
         if not en_str or not pl_str:
             print("Attempted to compare null string(s)")
             return False
         
         # Regex to match and exclude
         regex_patterns = [
-             r'@[^\]]*\[[^\[]*\]',
+             r'@[^\]]+\[([^\[]|\[\S+\])+\]',
+             r'(?<!\])\{[^\{]+\}',
+             r'(?<!\[)\[[^\[\]]+\]', # single suare, to remove damage
+             r'\[\[[^(\]\])]+\]\]', # afterwards, double square, to remove formulas
              r'<[^<]+>',
              r'\\n'
         ]
@@ -163,11 +194,39 @@ class LocalizationUpdater:
         en_str_cleaned = clean_string(en_str, regex_patterns)
         pl_str_cleaned = clean_string(pl_str, regex_patterns)
 
+        if(verbose):
+            print(en_str_cleaned)
+            print(pl_str_cleaned)
+            
+            matcher = SequenceMatcher(None, en_str_cleaned, pl_str_cleaned)
+            print(matcher.ratio())
+
+        # do not check for extremely short strings
+        if min(len(en_str_cleaned), len(pl_str_cleaned)) < 150:
+            return False
+
         similarity_threshold = 0.75
         matcher = SequenceMatcher(None, en_str_cleaned, pl_str_cleaned)
         similarity = matcher.ratio()
         return similarity >= similarity_threshold
 
+    def auto_pretranslate(self, en_str):
+        def replace_with_patterns(text, replacements):
+            """
+            Replaces occurrences in 'text' based on a list of ('pattern', 'replacement') tuples.
+            
+            :param text: The original text to process.
+            :param replacements: A list of tuples where the first element is the regex pattern
+                                to match and the second element is the replacement pattern.
+            :return: The modified text after all replacements.
+            """
+            for pattern, replacement in replacements:
+                text = re.sub(pattern, replacement, text)
+            return text
+
+        # Process the text
+        return replace_with_patterns(en_str, self.replacement_patterns)
+    
     def update_localization(self):
         # Count occurrences of each value in both dictionaries
         old_value_counts = Counter(self.en_old_extracted.values())
@@ -186,7 +245,7 @@ class LocalizationUpdater:
             # Key is already up to date
             if new_key in self.pl_extracted and self.pl_extracted.get(new_key) == new_value:
                 continue
-
+            
             # rename key if both before and after the value is unique
             old_key = old_value_to_key.get(new_value, None)
             if old_key and old_key != new_key and new_value in unique_new_values:
@@ -196,15 +255,18 @@ class LocalizationUpdater:
                 else:
                     self.pl_extracted[new_key] = self.pl_extracted.get(old_key, None)
                     self.renamed_keys.append((old_key, new_key))
+            
             # if the key exists in translation, and the value changed
-            elif new_value != self.en_old_extracted.get(new_key, None) and new_key in self.pl_extracted:
+            elif (new_key in self.pl_extracted and
+                new_value != self.en_old_extracted.get(new_key, None)):
+                
                 # if value was kept in english, update it outright
                 if self.pl_extracted.get(new_key) == self.en_old_extracted.get(new_key):
-                    self.pl_extracted[new_key] = new_value
+                    self.pl_extracted[new_key] = self.auto_pretranslate(new_value)
                     self.updated_eng_keys.append(new_key)
                 # if translation is rudimentary (usually due to the effect of global regex operations) auto-update it to save time
                 elif self.is_translation_rudimentary(self.en_old_extracted.get(new_key, None), self.pl_extracted.get(new_key)):
-                    self.pl_extracted[new_key] = new_value
+                    self.pl_extracted[new_key] = self.auto_pretranslate(new_value)
                     self.rudimentary_translations_updated.append(new_key)
                 # else mark it as an outdated translation that needs manual correction
                 else:
@@ -214,7 +276,7 @@ class LocalizationUpdater:
 
             # if value does not exist in translation, add it
             elif new_key not in self.pl_extracted:
-                self.pl_extracted[new_key] = new_value
+                self.pl_extracted[new_key] = self.auto_pretranslate(new_value)
                 self.new_keys.append(new_key)
 
         # remove obsolete keys
@@ -245,7 +307,7 @@ class LocalizationUpdater:
 
         return errors
 
-    def process(self):
+    def process(self, perform_regex_translate):
 
         self.en_old_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_old_path))
         self.en_extracted = self.extract_localization_dict(self.get_file_from_directory(self.en_path))
@@ -256,14 +318,19 @@ class LocalizationUpdater:
             logging.error("Unable to proceed due to missing data.")
             return
 
-        #Not translated and already up to date. Skipping!
-        if self.pl_extracted == self.en_extracted:
-            return
+        if (not perform_regex_translate):
+            #Not translated and already up to date. Skipping!
+            if self.pl_extracted == self.en_extracted:
+                return
+            
+            self.update_localization()
+        else:
+            # apply regex translation to all records
+            for key, value in tqdm(self.pl_extracted.items(), desc=f"Regex-translating {os.path.basename(self.pl_path)}"):
+                self.pl_extracted[key] = self.auto_pretranslate(self.pl_extracted[key])
 
-        self.update_localization()
-        
         # if no keys were modified, return
-        if not any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys]):
+        if not any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys]) and not perform_regex_translate:
             return
 
         # Log the processed file name
@@ -366,12 +433,16 @@ def main():
     # Set up the argument parser
     parser = argparse.ArgumentParser(description='Run the script with optional update source data flag.')
     parser.add_argument('--UpdateSourceData', action='store_true', help='Update source data if set to true.')
+    parser.add_argument('--PreformRegexTranslate', action='store_true', help='Forces re-processing all strings by regex translations.')
 
     # Parse the arguments
     args = parser.parse_args()
 
     # The flag is False by default, True if --UpdateSourceData is used in the command line
     update_source_data = args.UpdateSourceData
+
+    # The flag is False by default, True if --UpdateSourceData is used in the command line
+    preform_regex_translate = args.PreformRegexTranslate
 
     # Define sets of file paths
     file_sets = []
@@ -479,7 +550,7 @@ def main():
 
     for en_old, en, pl in file_sets:
         updater = LocalizationUpdater(en_old, en, pl)
-        updater.process()
+        updater.process(preform_regex_translate)
     
     # clean the OldLocale folder
     shutil.rmtree(temp_en_old_directory)

@@ -17,7 +17,7 @@
                 },
                 "action->Wing Thrash": {
                     "name": "Wing Thrash",
-                    "description": "<p><strong>Trigger</strong> An adjacent enemy damages the giant bat.</p>\n<hr />\n<p><strong>Efekt</strong> The bat makes one or two wing Strikes-one against the triggering creature and one against another adjacent creature.</p>"
+                    "description": "<p><strong>Aktywator</strong> An adjacent enemy damages the giant bat.</p>\n<hr />\n<p><strong>Efekt</strong> The bat makes one or two wing Strikes-one against the triggering creature and one against another adjacent creature.</p>"
                 }
             }
         },
@@ -56,7 +56,7 @@
             "items": {
                 "action->Topple Forward": {
                     "name": "Topple Forward",
-                    "description": "<p><strong>Trigger</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p>\n<p><strong>Efekt</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a @Check[type:reflex|dc:21] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[bludgeoning]] damage and is pushed into an adjacent square just outside the trap's area.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d8[bludgeoning]] damage, is pushed into an adjacent square just outside the trap's area, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in that square.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[12d8[bludgeoning]] damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 22). A non-@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} character can lift the doors by Forcing them open with a successful @Check[type:athletics|dc:22] check so that an immobilized character can crawl to safety.</p>"
+                    "description": "<p><strong>Aktywator</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p>\n<p><strong>Efekt</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a @Check[type:reflex|dc:21] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[bludgeoning]] damage and is pushed into an adjacent square just outside the trap's area.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d8[bludgeoning]] damage, is pushed into an adjacent square just outside the trap's area, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in that square.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[12d8[bludgeoning]] damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 22). A non-@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} character can lift the doors by Forcing them open with a successful @Check[type:athletics|dc:22] check so that an immobilized character can crawl to safety.</p>"
                 }
             }
         },
@@ -69,7 +69,7 @@
             "items": {
                 "action->Shift Sideways": {
                     "name": "Shift Sideways",
-                    "description": "<p><strong>Trigger</strong> A Small or larger creature approaches within 15 feet of the double door to area <strong>D9</strong>.</p>\n<p><strong>Efekt</strong> The entire room rotates, its west half descending as its right half rises, forming a 45º slope down to the west. All creatures in the room fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and slide toward the west wall (a creature adjacent to the north or south wall can attempt to arrest this fall with a DC 20 check to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}) and take [[/r (2d6 + 5)[piercing]]] damage (@Check[type:reflex|dc:20|basic:true]) as they land among the spears. At the same time, the warhammer-wielding statues to the east slide downward on chains to smash into the lower wall; each person in the trap is subjected to a sliding statue Strike.</p>"
+                    "description": "<p><strong>Aktywator</strong> A Small or larger creature approaches within 15 feet of the double door to area <strong>D9</strong>.</p>\n<p><strong>Efekt</strong> The entire room rotates, its west half descending as its right half rises, forming a 45º slope down to the west. All creatures in the room fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and slide toward the west wall (a creature adjacent to the north or south wall can attempt to arrest this fall with a DC 20 check to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}) and take [[/r (2d6 + 5)[piercing]]] damage (@Check[type:reflex|dc:20|basic:true]) as they land among the spears. At the same time, the warhammer-wielding statues to the east slide downward on chains to smash into the lower wall; each person in the trap is subjected to a sliding statue Strike.</p>"
                 },
                 "strike-melee->Sliding Statue": {
                     "name": "Sliding Statue"
@@ -87,15 +87,15 @@
                 },
                 "action->Despair": {
                     "name": "Despair",
-                    "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:22] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Effect: Despair}</p>"
+                    "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:22] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Efekt: Despair}</p>"
                 },
                 "action->Blinding Rot": {
                     "name": "Blinding Rot",
-                    "description": "<p>Cilios's fist Strikes expose those they damage to blinding rot. This disease and any damage from it can't be healed until this curse is removed. A creature killed by blinding rot turns to dust and can't be resurrected except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute);</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 day);</p>\n<p><strong>Stage 3</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 day)</p>"
+                    "description": "<p>Cilios's fist Strikes expose those they damage to blinding rot. This disease and any damage from it can't be healed until this curse is removed. A creature killed by blinding rot turns to dust and can't be resurrected except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22];</p>\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 minute);</p>\n<p><strong>Stadium 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 day);</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 day)</p>"
                 },
                 "action->Mummy Rot": {
                     "name": "Mummy Rot",
-                    "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>"
+                    "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stadium 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>"
                 }
             }
         },
@@ -204,7 +204,7 @@
                 },
                 "action->Final Spite": {
                     "name": "Final Spite",
-                    "description": "<p><strong>Trigger</strong> The wight is reduced to 0 Hit Points.</p>\n<hr />\n<p><strong>Efekt</strong> The wight makes a Strike before being destroyed. It doesn't gain any temporary HP from drain life on this Strike.</p>"
+                    "description": "<p><strong>Aktywator</strong> The wight is reduced to 0 Hit Points.</p>\n<hr />\n<p><strong>Efekt</strong> The wight makes a Strike before being destroyed. It doesn't gain any temporary HP from drain life on this Strike.</p>"
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
@@ -274,7 +274,7 @@
             "items": {
                 "action->Manifest Crystal Sphere": {
                     "name": "Manifest Crystal Sphere",
-                    "description": "<p><strong>Trigger</strong> Three or more creatures remain in the Outer Ring for 6 seconds or longer;</p>\n<p><strong>Efekt</strong> Six spheres of crystal, each measuring 2 feet in diameter, manifest from thin air and begin quickly floating toward intruders. A sphere manifests at each of the points on the map indicated with a small numeral (labeled 1 through 6); the trap then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> Three or more creatures remain in the Outer Ring for 6 seconds or longer;</p>\n<p><strong>Efekt</strong> Six spheres of crystal, each measuring 2 feet in diameter, manifest from thin air and begin quickly floating toward intruders. A sphere manifests at each of the points on the map indicated with a small numeral (labeled 1 through 6); the trap then rolls initiative.</p>"
                 }
             }
         },
@@ -285,7 +285,7 @@
             "items": {
                 "action->Drop Debris": {
                     "name": "Drop Debris",
-                    "description": "<p><strong>Trigger</strong> A creature opens the door without taking care to avoid triggering the trap;</p>\n<p><strong>Efekt</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting @Damage[3d6[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true]). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature opens the door without taking care to avoid triggering the trap;</p>\n<p><strong>Efekt</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting @Damage[3d6[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true]). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>"
                 }
             }
         },
@@ -323,7 +323,7 @@
                 },
                 "action->Gripping Tentacle": {
                     "name": "Gripping Tentacle",
-                    "description": "<p><strong>Trigger</strong> A creature in the grick's reach uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Efekt</strong> The grick makes a tentacle Strike against the target. If the attack is a critical hit and the trigger was a move action, the grick disrupts that action.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature in the grick's reach uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Efekt</strong> The grick makes a tentacle Strike against the target. If the attack is a critical hit and the trigger was a move action, the grick disrupts that action.</p>"
                 },
                 "lore->Stealth": {
                     "skillVariants": {
@@ -405,7 +405,7 @@
                 },
                 "action->Ghoul Fever": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\nGhoul Fever",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stadium 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stadium 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stadium 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stadium 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
                 },
                 "action->Gnaw and Chew": {
                     "name": "Gnaw and Chew",
@@ -413,7 +413,7 @@
                 },
                 "action->Hungry Rage": {
                     "name": "Hungry Rage",
-                    "description": "<p><strong>Trigger</strong> Hymmir damages a living creature with his jaws Strike</p>\n<hr />\n<p><strong>Efekt</strong> The taste of flesh and blood throws Hymmir into a violent rage. He gains 9 temporary Hit Points, deals an additional 2 damage with melee Strikes, and takes a -1 penalty to AC for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+                    "description": "<p><strong>Aktywator</strong> Hymmir damages a living creature with his jaws Strike</p>\n<hr />\n<p><strong>Efekt</strong> The taste of flesh and blood throws Hymmir into a violent rage. He gains 9 temporary Hit Points, deals an additional 2 damage with melee Strikes, and takes a -1 penalty to AC for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Efekt: Rage}</p>"
                 },
                 "action->Paralysis": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
@@ -454,7 +454,7 @@
                 },
                 "action->Puddled Ambush": {
                     "name": "Puddled Ambush",
-                    "description": "<p><strong>Trigger</strong> A creature enters or interacts with a space occupied by an id ooze</p>\n<p><strong>Wymagania</strong> Initiative hasn't yet been rolled</p>\n<p><strong>Efekt</strong> The id ooze automatically notices the creature, then makes a pseudopod Strike against one creature adjacent to itself before rolling initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature enters or interacts with a space occupied by an id ooze</p>\n<p><strong>Wymagania</strong> Initiative hasn't yet been rolled</p>\n<p><strong>Efekt</strong> The id ooze automatically notices the creature, then makes a pseudopod Strike against one creature adjacent to itself before rolling initiative.</p>"
                 },
                 "action->Constrict": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d4+8)[bludgeoning],1d6[acid]]{1d4+8 bludgeoning plus 1d6 acid}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -486,7 +486,7 @@
                 },
                 "equipment->Hat of Disguise (Greater)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\nHat of Disguise (Greater)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">D</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> any number of times per day</p>\n<hr />\n<p><strong>Efekt</strong> The hat casts a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
                 },
                 "strike-melee->Heartripper Blade": {
                     "name": "Heartripper Blade"
@@ -502,7 +502,7 @@
             "blurb": "Male kobold slurk-trainer",
             "items": {
                 "consumable->Black Adder Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">D</span> Interakcja (Injury)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
                 },
                 "strike-melee->Hatchet": {
                     "name": "Hatchet"
@@ -519,7 +519,7 @@
                 },
                 "action->Quick Poison Dip": {
                     "name": "Quick Poison Dip",
-                    "description": "<p><strong>Trigger</strong> Kapmek loads his crossbow while he carries a dose of poison</p>\n<hr />\n<p><strong>Efekt</strong> As he loads his crossbow, Kapmek can dip the crossbow bolt into a dose of carried poison as part of the action taken to load his crossbow.</p>"
+                    "description": "<p><strong>Aktywator</strong> Kapmek loads his crossbow while he carries a dose of poison</p>\n<hr />\n<p><strong>Efekt</strong> As he loads his crossbow, Kapmek can dip the crossbow bolt into a dose of carried poison as part of the action taken to load his crossbow.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Kapmek deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -688,7 +688,7 @@
             "items": {
                 "action->Magneto-Electric Pulse": {
                     "name": "Magneto-Electric Pulse",
-                    "description": "<p><strong>Trigger</strong> A single Medium or two or more Small creatures end their turn inside the room.</p>\n<p><strong>Efekt</strong> A pulse of electricity discharges from the lodestone to strike all four doors, with smaller arcs of electricity lancing out to strike all creatures in the room. The south and east doors slam shut, while the north and west doors fly open, releasing two vargouilles into the room. All creatures in the room take @Damage[2d6[electricity]] damage (@Check[type:reflex|dc:18|basic:true]). The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A single Medium or two or more Small creatures end their turn inside the room.</p>\n<p><strong>Efekt</strong> A pulse of electricity discharges from the lodestone to strike all four doors, with smaller arcs of electricity lancing out to strike all creatures in the room. The south and east doors slam shut, while the north and west doors fly open, releasing two vargouilles into the room. All creatures in the room take @Damage[2d6[electricity]] damage (@Check[type:reflex|dc:18|basic:true]). The trap then rolls initiative.</p>"
                 }
             }
         },
@@ -700,7 +700,7 @@
             "items": {
                 "action->Falling Slab": {
                     "name": "Falling Slab",
-                    "description": "<p><strong>Trigger</strong> A creature attempts to move the slab;</p>\n<p><strong>Efekt</strong> The slab rips free from its track and falls, slamming down in one direction while it kicks up twisted metal debris in the other. All creatures adjacent to the slab take 3d6 bludgeoning and @Damage[3d6[piercing]] damage (@Check[type:reflex|dc:20|basic:true]).</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature attempts to move the slab;</p>\n<p><strong>Efekt</strong> The slab rips free from its track and falls, slamming down in one direction while it kicks up twisted metal debris in the other. All creatures adjacent to the slab take 3d6 bludgeoning and @Damage[3d6[piercing]] damage (@Check[type:reflex|dc:20|basic:true]).</p>"
                 }
             }
         },
@@ -716,7 +716,7 @@
                 },
                 "consumable->Wand of Spider Climb (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Spider Climb (Level 2)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.5KobTMrZeZxuXMgl]{Gecko Grip}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.5KobTMrZeZxuXMgl]{Gecko Grip}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Sickle": {
                     "name": "Sickle"
@@ -735,11 +735,11 @@
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
-                    "description": "<p><strong>Trigger</strong> A creature walks into a large pit's square;</p>\n<p><strong>Efekt</strong> The triggering creature falls into the pit but can attempt a @Check[type:reflex|dc:18] save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling. On a failure, a creature falls 20 feet into an eye-filled pit. The eyes cushion the fall so the 20-foot fall inflicts only @Damage[5[bludgeoning]] damage, but they also completely obscure vision; a character is effectively blind as long as they remain in the pit. The walls of the pit are slick, though a character can @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} them with a successful @Check[type:athletics|dc:25] check.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks into a large pit's square;</p>\n<p><strong>Efekt</strong> The triggering creature falls into the pit but can attempt a @Check[type:reflex|dc:18] save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling. On a failure, a creature falls 20 feet into an eye-filled pit. The eyes cushion the fall so the 20-foot fall inflicts only @Damage[5[bludgeoning]] damage, but they also completely obscure vision; a character is effectively blind as long as they remain in the pit. The walls of the pit are slick, though a character can @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} them with a successful @Check[type:athletics|dc:25] check.</p>"
                 },
                 "action->Trip": {
                     "name": "Trip",
-                    "description": "<p><strong>Trigger</strong> A creature walks into a small pit's square;</p>\n<p><strong>Efekt</strong> The triggering creature must succeed at a @Check[type:reflex|dc:18] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (on a critical failure, the creature also twists its ankle and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until it receives any amount of healing).</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks into a small pit's square;</p>\n<p><strong>Efekt</strong> The triggering creature must succeed at a @Check[type:reflex|dc:18] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (on a critical failure, the creature also twists its ankle and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until it receives any amount of healing).</p>"
                 }
             }
         },
@@ -751,7 +751,7 @@
             "items": {
                 "action->Swinging Blades": {
                     "name": "Swinging Blades",
-                    "description": "<p><strong>Trigger</strong> This trap must be manually activated by a creature adjacent to the southwest gear stack;</p>\n<p><strong>Efekt</strong> Blades swing down to strike at all creatures in area <strong>F2</strong> before wrenching to a frozen halt against the opposite walls. All creatures in the central part of this room take [[/r (6d6 + 3)[slashing]]] damage (@Check[type:reflex|dc:20|basic:true]).</p>"
+                    "description": "<p><strong>Aktywator</strong> This trap must be manually activated by a creature adjacent to the southwest gear stack;</p>\n<p><strong>Efekt</strong> Blades swing down to strike at all creatures in area <strong>F2</strong> before wrenching to a frozen halt against the opposite walls. All creatures in the central part of this room take [[/r (6d6 + 3)[slashing]]] damage (@Check[type:reflex|dc:20|basic:true]).</p>"
                 }
             }
         },
@@ -763,11 +763,11 @@
             "items": {
                 "action->Spore Burst": {
                     "name": "Spore Burst",
-                    "description": "<p><strong>Trigger</strong> The moldy books are moved or the mold takes any damage;</p>\n<p><strong>Efekt</strong> All creatures within 10 feet of the mold patch are exposed to phantom mold spores.</p>"
+                    "description": "<p><strong>Aktywator</strong> The moldy books are moved or the mold takes any damage;</p>\n<p><strong>Efekt</strong> All creatures within 10 feet of the mold patch are exposed to phantom mold spores.</p>"
                 },
                 "action->Phantom Mold Spores": {
                     "name": "Phantom Mold Spores",
-                    "description": "<p>Any penalties to Perception from this poison persist for 1 hour after the poison's duration ends (this effect can be removed before then by any effect that neutralizes poison);</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18];</p>\n<p><strong>Maximum Duration</strong> 4 rounds;</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage;</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, and the victim takes a -1 status penalty on visual Perception checks as strange shadows and flittering movement appear in their peripheral vision;</p>\n<p><strong>Stage 3</strong> as stage 2, but a -2 status penalty.</p>"
+                    "description": "<p>Any penalties to Perception from this poison persist for 1 hour after the poison's duration ends (this effect can be removed before then by any effect that neutralizes poison);</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18];</p>\n<p><strong>Maximum Duration</strong> 4 rounds;</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage;</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, and the victim takes a -1 status penalty on visual Perception checks as strange shadows and flittering movement appear in their peripheral vision;</p>\n<p><strong>Stadium 3</strong> as stage 2, but a -2 status penalty.</p>"
                 }
             }
         },
@@ -779,7 +779,7 @@
             "items": {
                 "action->Invite Toil": {
                     "name": "Invite Toil",
-                    "description": "<p><strong>Trigger</strong> A living creature enters the pit</p>\n<hr />\n<p><strong>Efekt</strong> The surrounding dwarven shapes begin to chant in Dwarven, encouraging newcomers to join them as they grasp for them with their cold, incorporeal hands. The pit of toil rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A living creature enters the pit</p>\n<hr />\n<p><strong>Efekt</strong> The surrounding dwarven shapes begin to chant in Dwarven, encouraging newcomers to join them as they grasp for them with their cold, incorporeal hands. The pit of toil rolls initiative.</p>"
                 }
             }
         },
@@ -791,7 +791,7 @@
             "items": {
                 "action->Throw Spikes": {
                     "name": "Throw Spikes",
-                    "description": "<p><strong>Trigger</strong> This trap must be manually activated by a creature adjacent to the southwest gear stack;</p>\n<p><strong>Efekt</strong> The spike thrower makes a ranged attack against each creature in the central part of area <strong>F2</strong>.</p>"
+                    "description": "<p><strong>Aktywator</strong> This trap must be manually activated by a creature adjacent to the southwest gear stack;</p>\n<p><strong>Efekt</strong> The spike thrower makes a ranged attack against each creature in the central part of area <strong>F2</strong>.</p>"
                 },
                 "strike-ranged->Spike": {
                     "name": "Spike"
@@ -863,7 +863,7 @@
             "items": {
                 "action->Drop the Wall": {
                     "name": "Drop the Wall",
-                    "description": "<p><strong>Trigger</strong> Four or more Small or larger creatures walk onto the pressure plate at area <strong>H4a</strong>;</p>\n<hr />\n<p><strong>Efekt</strong> A magically hardened sheet of obsidian drops down like a portcullis in the western and northern entrances to this room that lead to areas <strong>H3</strong> and <strong>H5</strong>, respectively. Any creatures standing in one of these squares takes [[/r (4d6 + 4)[bludgeoning]]] damage from the falling wall (@Check[type:reflex|dc:24|basic:true]) and then decides what side of the wall they want to be on. At the same moment, four thoqquas that have spent centuries in hibernation awaken and emerge from vents into area <strong>H4b</strong>. The trap then rolls initiative, as do the thoqquas.</p>"
+                    "description": "<p><strong>Aktywator</strong> Four or more Small or larger creatures walk onto the pressure plate at area <strong>H4a</strong>;</p>\n<hr />\n<p><strong>Efekt</strong> A magically hardened sheet of obsidian drops down like a portcullis in the western and northern entrances to this room that lead to areas <strong>H3</strong> and <strong>H5</strong>, respectively. Any creatures standing in one of these squares takes [[/r (4d6 + 4)[bludgeoning]]] damage from the falling wall (@Check[type:reflex|dc:24|basic:true]) and then decides what side of the wall they want to be on. At the same moment, four thoqquas that have spent centuries in hibernation awaken and emerge from vents into area <strong>H4b</strong>. The trap then rolls initiative, as do the thoqquas.</p>"
                 },
                 "strike-ranged->Lava Gout": {
                     "name": "Lava Gout",
@@ -884,7 +884,7 @@
                 },
                 "action->Reactive Thrash": {
                     "name": "Reactive Thrash",
-                    "description": "<p><strong>Trigger</strong> A creature within the thoqqua's reach hits the thoqqua with a melee Strike</p>\n<p><strong>Efekt</strong> The thoqqua instinctively thrashes into the attack, pressing its molten hot scales forward. The attacker must attempt a @Check[type:reflex|dc:15] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The attacker is unaffected.</p>\n<p><strong>Success</strong> The attacker takes @Damage[1d4[fire]] damage.</p>\n<p><strong>Failure</strong> The attacker takes @Damage[2d4[fire]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the weapon used to Strike the thoqqua becomes broken unless the weapon is made of metal, has more than 10 Hardness, or is resistant to or immune to fire.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature within the thoqqua's reach hits the thoqqua with a melee Strike</p>\n<p><strong>Efekt</strong> The thoqqua instinctively thrashes into the attack, pressing its molten hot scales forward. The attacker must attempt a @Check[type:reflex|dc:15] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The attacker is unaffected.</p>\n<p><strong>Success</strong> The attacker takes @Damage[1d4[fire]] damage.</p>\n<p><strong>Failure</strong> The attacker takes @Damage[2d4[fire]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the weapon used to Strike the thoqqua becomes broken unless the weapon is made of metal, has more than 10 Hardness, or is resistant to or immune to fire.</p>"
                 },
                 "action->Critical Ignition": {
                     "name": "Critical Ignition",
@@ -914,7 +914,7 @@
             "items": {
                 "action->Spew Toxins": {
                     "name": "Spew Toxins",
-                    "description": "<p><strong>Trigger</strong> A visible living creature enters the room, or a Stealthy creature fails to remain @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from the toxic furnace with a @Check[type:stealth|dc:25] check (the trap's sensors have darkvision and lifesense);</p>\n<p><strong>Efekt</strong> One of the toxic furnace's vents swivels to aim at the triggering creature and then spews a gout of boiling toxin at the target. The toxic furnace then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A visible living creature enters the room, or a Stealthy creature fails to remain @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from the toxic furnace with a @Check[type:stealth|dc:25] check (the trap's sensors have darkvision and lifesense);</p>\n<p><strong>Efekt</strong> One of the toxic furnace's vents swivels to aim at the triggering creature and then spews a gout of boiling toxin at the target. The toxic furnace then rolls initiative.</p>"
                 },
                 "strike-ranged->Boiling Toxin": {
                     "name": "Boiling Toxin"
@@ -930,7 +930,7 @@
             "items": {
                 "action->Release the Cauldron": {
                     "name": "Release the Cauldron",
-                    "description": "<p><strong>Trigger</strong> More than one Medium or more than two Small creatures are inside the cauldron when it is activated to lower;</p>\n<p><strong>Efekt</strong> The cauldron releases from its anchor points on the chains and drops 30 feet to area <strong>E1</strong>; any creatures within take 15 points of bludgeoning damage in the fall. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling by clinging to a chain.</p>"
+                    "description": "<p><strong>Aktywator</strong> More than one Medium or more than two Small creatures are inside the cauldron when it is activated to lower;</p>\n<p><strong>Efekt</strong> The cauldron releases from its anchor points on the chains and drops 30 feet to area <strong>E1</strong>; any creatures within take 15 points of bludgeoning damage in the fall. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling by clinging to a chain.</p>"
                 }
             }
         },
@@ -958,7 +958,7 @@
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
-                    "description": "<p><strong>Trigger</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Efekt</strong> The stairs attempt a @Check[type:flat|dc:8] (if a Small creature triggered the hazard) or a @Check[type:flat|dc:16] (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take [[/r (2d6 + 3)[bludgeoning]]] damage from the collapsing rubble (@Check[type:reflex|dc:16|basic:true]).</p>"
+                    "description": "<p><strong>Aktywator</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Efekt</strong> The stairs attempt a @Check[type:flat|dc:8] (if a Small creature triggered the hazard) or a @Check[type:flat|dc:16] (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take [[/r (2d6 + 3)[bludgeoning]]] damage from the collapsing rubble (@Check[type:reflex|dc:16|basic:true]).</p>"
                 }
             }
         },
@@ -975,7 +975,7 @@
                 },
                 "action->Vargouille's Kiss": {
                     "name": "Vargouille's Kiss",
-                    "description": "<p><strong>Wymagania</strong> The vargouille is adjacent to a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing humanoid creature</p>\n<p><strong>Efekt</strong> The vargouille nuzzles up against a helpless or willing humanoid creature in a parody of a lover's kiss-the creature must then attempt a saving throw or begin an unsettling transformation into a vargouille. The sickened, stupefied, and unconscious conditions from Vargouille's Kiss don't improve on their own until the disease is cured. This disease can't progress in stage as long as the victim is in sunlight or in the area of a 3rd-rank or higher light effect.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> no ill effect (2 hours)</p>\n<p><strong>Stage 2</strong> victim's hair falls out, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 hours)</p>\n<p><strong>Stage 3</strong> victim's ears elongate into winglike shapes and their teeth grow tangled and sharp, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (2 hours)</p>\n<p><strong>Stage 4</strong> as Stage 3, but the victim falls unconscious (2 hours)</p>\n<p><strong>Stage 5</strong> death, and the victim's head transforms into a new vargouille that detaches from the body and flies off to spread evil on its own.</p>"
+                    "description": "<p><strong>Wymagania</strong> The vargouille is adjacent to a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing humanoid creature</p>\n<p><strong>Efekt</strong> The vargouille nuzzles up against a helpless or willing humanoid creature in a parody of a lover's kiss-the creature must then attempt a saving throw or begin an unsettling transformation into a vargouille. The sickened, stupefied, and unconscious conditions from Vargouille's Kiss don't improve on their own until the disease is cured. This disease can't progress in stage as long as the victim is in sunlight or in the area of a 3rd-rank or higher light effect.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stadium 1</strong> no ill effect (2 hours)</p>\n<p><strong>Stadium 2</strong> victim's hair falls out, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 hours)</p>\n<p><strong>Stadium 3</strong> victim's ears elongate into winglike shapes and their teeth grow tangled and sharp, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (2 hours)</p>\n<p><strong>Stadium 4</strong> as Stage 3, but the victim falls unconscious (2 hours)</p>\n<p><strong>Stadium 5</strong> death, and the victim's head transforms into a new vargouille that detaches from the body and flies off to spread evil on its own.</p>"
                 },
                 "action->Vargouille's Shriek": {
                     "name": "Vargouille's Shriek",

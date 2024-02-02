@@ -55,7 +55,7 @@
                 },
                 "action->Invoke Alocer": {
                     "name": "Invoke Alocer",
-                    "description": "<p><strong>Trigger</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>Częstotliwość</strong> once per day</p>\n<hr />\n<p><strong>Efekt</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3d6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
+                    "description": "<p><strong>Aktywator</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>Częstotliwość</strong> once per day</p>\n<hr />\n<p><strong>Efekt</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3d6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
                     "rules": {
                         "0": {
                             "label": "Is under invocation of Alocar"
@@ -86,7 +86,7 @@
             "items": {
                 "action->Shrill Chime": {
                     "name": "Shrill Chime",
-                    "description": "<p><strong>Trigger</strong> A creature other than Darius or one of his homonculi approaches within 5 feet of the table or attempts to Interact with the crystals in any way other than to attempt to disable the hazard.</p>\n<hr />\n<p><strong>Efekt</strong> The three large crystals on the table begin vibrating and humming. The hazard rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature other than Darius or one of his homonculi approaches within 5 feet of the table or attempts to Interact with the crystals in any way other than to attempt to disable the hazard.</p>\n<hr />\n<p><strong>Efekt</strong> The three large crystals on the table begin vibrating and humming. The hazard rolls initiative.</p>"
                 }
             }
         },
@@ -99,7 +99,7 @@
             "items": {
                 "action->Exhale": {
                     "name": "Exhale",
-                    "description": "<p><strong>Trigger</strong> A creature enters either of the marked areas, or a creature remains in the room for 1 minute</p>\n<hr />\n<p><strong>Efekt</strong> The trap breathes cold that envelops a @Template[type:burst|distance:15]{15-foot burst} centered on the triggering creature's square. This deals @Damage[(4d8+18)[cold]] damage (@Check[type:reflex|dc:24|basic:true|traits:cold,evocation,magical,trap,hazard] save), and a creature that critically fails the save becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes due to frostbite.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature enters either of the marked areas, or a creature remains in the room for 1 minute</p>\n<hr />\n<p><strong>Efekt</strong> The trap breathes cold that envelops a @Template[type:burst|distance:15]{15-foot burst} centered on the triggering creature's square. This deals @Damage[(4d8+18)[cold]] damage (@Check[type:reflex|dc:24|basic:true|traits:cold,evocation,magical,trap,hazard] save), and a creature that critically fails the save becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes due to frostbite.</p>"
                 }
             }
         },
@@ -123,7 +123,7 @@
                 },
                 "action->Red Cap": {
                     "name": "Red Cap",
-                    "description": "<p>A redcap's woolen hat is dyed with the blood of its victims. If the redcap loses its cap, it no longer benefits from fast healing and takes a -4 status penalty to its damage rolls. It can create a new cap in 10 minutes, but that cap doesn't grant its powers until the redcap has turned it red with Blood Soak. A cap has no benefit for creatures other than the redcap who made it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.s5mS7CyE0oOYlecv]{Effect: Lost Red Cap}</p>"
+                    "description": "<p>A redcap's woolen hat is dyed with the blood of its victims. If the redcap loses its cap, it no longer benefits from fast healing and takes a -4 status penalty to its damage rolls. It can create a new cap in 10 minutes, but that cap doesn't grant its powers until the redcap has turned it red with Blood Soak. A cap has no benefit for creatures other than the redcap who made it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.s5mS7CyE0oOYlecv]{Efekt: Lost Red Cap}</p>"
                 },
                 "action->Fast Healing 10": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 10"
@@ -134,11 +134,11 @@
                 },
                 "action->Blood Soak": {
                     "name": "Blood Soak",
-                    "description": "<p>The redcap dips its cap in the blood of a slain foe. The foe must have died in the last minute, and the redcap must have helped kill it. The redcap gains a +4 status bonus to damage rolls for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wPIGBcpCqCWgrCiq]{Effect: Blood Soak}</p>"
+                    "description": "<p>The redcap dips its cap in the blood of a slain foe. The foe must have died in the last minute, and the redcap must have helped kill it. The redcap gains a +4 status bonus to damage rolls for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wPIGBcpCqCWgrCiq]{Efekt: Blood Soak}</p>"
                 },
                 "action->Deadly Cleave": {
                     "name": "Deadly Cleave",
-                    "description": "<p><strong>Trigger</strong> The redcap reduces a creature to 0 Hit Points with a scythe Strike.</p>\n<hr />\n<p><strong>Efekt</strong> The redcap makes another scythe Strike against a different creature, using the same multiple attack penalty as the scythe Strike that triggered this reaction. This counts toward its multiple attack penalty.</p>"
+                    "description": "<p><strong>Aktywator</strong> The redcap reduces a creature to 0 Hit Points with a scythe Strike.</p>\n<hr />\n<p><strong>Efekt</strong> The redcap makes another scythe Strike against a different creature, using the same multiple attack penalty as the scythe Strike that triggered this reaction. This counts toward its multiple attack penalty.</p>"
                 },
                 "action->Stomp": {
                     "name": "Stomp",
@@ -206,7 +206,7 @@
                 },
                 "action->Metabolize Mutagen": {
                     "name": "Metabolize Mutagen",
-                    "description": "<p>Darius metabolizes the power of an active mutagen to regain [[/r 2d6[healing]]]{2d6 Hit Points}. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wE4S9lwOhtaRAm9n]{Effect: Active Mutagen}</p>"
+                    "description": "<p>Darius metabolizes the power of an active mutagen to regain [[/r 2d6[healing]]]{2d6 Hit Points}. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wE4S9lwOhtaRAm9n]{Efekt: Active Mutagen}</p>"
                 },
                 "action->Crystaline Mutation": {
                     "name": "Crystaline Mutation",
@@ -222,22 +222,22 @@
             "name": "Doatara the Poisoner",
             "items": {
                 "weapon->Alchemist's Fire (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "equipment->Religious Symbol (Silver)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "consumable->Darkvision Elixir (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Effect: Darkvision Elixir (Moderate)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Efekt: Darkvision Elixir (Moderate)}</p>"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Effect: Elixir of Life (Moderate)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Moderate)}</p>"
                 },
                 "consumable->Giant Scorpion Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">D</span> Interakcja (Injury)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
                 },
                 "consumable->Giant Wasp Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.aBOPYlfHAcXUmhF7]\n<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.aBOPYlfHAcXUmhF7]\n<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">D</span> Interakcja (Injury)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -256,7 +256,7 @@
                 },
                 "action->Reckless Toxin": {
                     "name": "Reckless Toxin",
-                    "description": "<p><strong>Trigger</strong> A creature critically fails a melee Strike against Doatara</p>\n<p><strong>Wymagania</strong> The triggering creature is affected by a poison</p>\n<hr />\n<p><strong>Efekt</strong> The poison makes it difficult to distinguish friend from foe. The triggering creature makes a melee Strike against another creature of Doatara's choice within its reach. The triggering creature's multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature critically fails a melee Strike against Doatara</p>\n<p><strong>Wymagania</strong> The triggering creature is affected by a poison</p>\n<hr />\n<p><strong>Efekt</strong> The poison makes it difficult to distinguish friend from foe. The triggering creature makes a melee Strike against another creature of Doatara's choice within its reach. The triggering creature's multiple attack penalty doesn't apply to this Strike.</p>"
                 },
                 "action->Blackfingers's Blessing": {
                     "name": "Blackfingers's Blessing",
@@ -295,16 +295,16 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "consumable->Darkvision Elixir (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Effect: Darkvision Elixir (Moderate)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Efekt: Darkvision Elixir (Moderate)}</p>"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Effect: Elixir of Life (Moderate)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Moderate)}</p>"
                 },
                 "consumable->Giant Scorpion Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">D</span> Interakcja (Injury)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
                 },
                 "consumable->Giant Wasp Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.aBOPYlfHAcXUmhF7]\n<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.aBOPYlfHAcXUmhF7]\n<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">D</span> Interakcja (Injury)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -367,7 +367,7 @@
             "items": {
                 "action->Approach and Taste": {
                     "name": "Approach and Taste",
-                    "description": "<p><strong>Trigger</strong> The PCs emerge from the forest's edge</p>\n<hr />\n<p><strong>Efekt</strong> A deer approaches the party and attempts a nibble Strike against a randomly determined PC. THe grazing deer rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> The PCs emerge from the forest's edge</p>\n<hr />\n<p><strong>Efekt</strong> A deer approaches the party and attempts a nibble Strike against a randomly determined PC. THe grazing deer rolls initiative.</p>"
                 },
                 "strike-melee->Nibble": {
                     "name": "Nibble"
@@ -382,14 +382,14 @@
             "items": {
                 "action->Darts": {
                     "name": "Darts",
-                    "description": "<p><strong>Trigger</strong> Pressure is applied to the floor tile</p>\n<hr />\n<p><strong>Efekt</strong> The trap shoots darts, making an attack against each creature in a @Template[type:line|distance:30] centered on the floor tile.</p>"
+                    "description": "<p><strong>Aktywator</strong> Pressure is applied to the floor tile</p>\n<hr />\n<p><strong>Efekt</strong> The trap shoots darts, making an attack against each creature in a @Template[type:line|distance:30] centered on the floor tile.</p>"
                 },
                 "strike-melee->Dart": {
                     "name": "Dart"
                 },
                 "action->Old Giant Wasp Venom": {
                     "name": "Old Giant Wasp Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round).</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round).</p>"
                 }
             }
         },
@@ -402,7 +402,7 @@
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
-                    "description": "<p><strong>Trigger</strong> A creature walks onto the trapdoor</p>\n<hr />\n<p><strong>Efekt</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]] damage) as well as @Damage[2d6[piercing]] damage from falling on to the knives. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor</p>\n<hr />\n<p><strong>Efekt</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]] damage) as well as @Damage[2d6[piercing]] damage from falling on to the knives. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
                 }
             }
         },
@@ -478,14 +478,14 @@
                 },
                 "action->Death Frenzy": {
                     "name": "Death Frenzy",
-                    "description": "<p><strong>Trigger</strong> The reefclaw is reduced to 0 Hit Points.</p>\n<hr />\n<p><strong>Efekt</strong> The reefclaw makes a claw Strike before dying.</p>"
+                    "description": "<p><strong>Aktywator</strong> The reefclaw is reduced to 0 Hit Points.</p>\n<hr />\n<p><strong>Efekt</strong> The reefclaw makes a claw Strike before dying.</p>"
                 },
                 "action->Constrict": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d6[bludgeoning]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "action->Crawfish Venom": {
                     "name": "Crawfish Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round).</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round).</p>"
                 },
                 "action->Grab": {
                     "name": "Grab",
@@ -667,14 +667,14 @@
                 },
                 "action->Bubonic Plague": {
                     "name": "Bubonic Plague",
-                    "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Minutes]]{1d20 minutes} (1 day)</p>"
+                    "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Nadejście Objawów</strong> 1 day</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Minutes]]{1d20 minutes} (1 day)</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The pairaka can take the appearance of any Small or Medium humanoid or animal. This doesn't change their Speed or their attack and damage modifiers with the Strikes, but it might change the damage type their strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Tormenting Dreams": {
                     "name": "Tormenting Dreams",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The pairaka torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[type:will|dc:25] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> once per day</p>\n<hr />\n<p><strong>Efekt</strong> The pairaka torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[type:will|dc:25] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>"
                 }
             }
         },
@@ -686,7 +686,7 @@
             "items": {
                 "action->Spring": {
                     "name": "Spring",
-                    "description": "<p><strong>Trigger</strong> A creature tries to unlock or @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock}</p>\n<hr />\n<p><strong>Efekt</strong> The needle extends to attack the triggering creature.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature tries to unlock or @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock}</p>\n<hr />\n<p><strong>Efekt</strong> The needle extends to attack the triggering creature.</p>"
                 },
                 "strike-melee->Needle": {
                     "name": "Needle",
@@ -694,7 +694,7 @@
                 },
                 "action->Enhanced Hunting Spider Venom": {
                     "name": "Enhanced Hunting Spider Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
                 }
             }
         },
@@ -705,7 +705,7 @@
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
-                    "description": "<p><strong>Trigger</strong> A creature attempts to climb or remove an object from the wall or the wall suffers a forceful impact</p>\n<hr />\n<p><strong>Efekt</strong> The wall collapses, dealing @Damage[2d8[bludgeoning]] damage to creatures on it or within 10 feet of it. A creature that succeeds at a @Check[type:reflex|dc:18|traits:damaging-effect] save takes half damage and rolls out of the way in a random direction. On a critical success, they take no damage and can choose the direction.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature attempts to climb or remove an object from the wall or the wall suffers a forceful impact</p>\n<hr />\n<p><strong>Efekt</strong> The wall collapses, dealing @Damage[2d8[bludgeoning]] damage to creatures on it or within 10 feet of it. A creature that succeeds at a @Check[type:reflex|dc:18|traits:damaging-effect] save takes half damage and rolls out of the way in a random direction. On a critical success, they take no damage and can choose the direction.</p>"
                 }
             }
         },

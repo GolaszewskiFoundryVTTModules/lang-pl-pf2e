@@ -50,8 +50,10 @@ class LocalizationUpdater:
             (r'>Special<', r'>Specjalne<'),
             (r'>Frequency<', r'>Częstotliwość<'),
             (r'>(Prerequisites|Requirements)<', r'>Wymagania<'),
+            (r'>Craft Requirements<', r'>Wymagania Wytwarzania<'),
             (r'>Saving Throw<', r'>Rzut Obronny<'),
             (r'>Onset<', r'>Nadejście Objawów<'),
+            (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
             # Poison applications
             (r'\(Injury\)', r'(Rana)'),
             (r'\(Contact\)', r'(Dotyk)'),
@@ -60,13 +62,22 @@ class LocalizationUpdater:
             # Activation details. Must be after the activate
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Interact([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Interakcja\3</p>'),
+            (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Cast a Spell([^<]*)</p>',
+             r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Rzucenie Zaklęcia\3</p>'),
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)command([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2komenda\3</p>'),
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)envision([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2wyobrażenie\3</p>'),
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
-            (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
+            # Crafting
+            (r'Supply a casting of the spell at the listed (rank|level).',
+             r'Dostarcz rzucenie docelowego zaklęcia na podanym kręgu.'),
+            (r'Supply a casting of a spell of the appropriate (rank|level).',
+             r'Dostarcz rzucenie docelowego zaklęcia na odpowiednim kręgu.'),
+            (r'Supply one casting of all listed levels of all listed spells.',
+             r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
+
         ]
 
 

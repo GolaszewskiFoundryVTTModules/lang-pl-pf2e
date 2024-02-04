@@ -88,11 +88,11 @@ class LocalizationUpdater:
             (r'<p><strong>Efekt</strong> You cast (@UUID\[Compendium\.pf2e\.spells-srd\.Item\.([a-zA-Z0-9]*)\]\{([a-zA-Z0-9 \p{L}]*)\}).</p>',
              r'<p><strong>Efekt</strong> Rzucasz \1.</p>'),
             # Crafting
-            (r'Supply a casting of the spell at the listed (rank|level).',
+            (r'Supply a casting of the spell at the listed (rank|level)\.',
              r'Dostarcz rzucenie docelowego zaklęcia na podanym kręgu.'),
-            (r'Supply a casting of a spell of the appropriate (rank|level).',
+            (r'Supply a casting of a spell of the appropriate (rank|level)\.',
              r'Dostarcz rzucenie docelowego zaklęcia na odpowiednim kręgu.'),
-            (r'Supply one casting of all listed levels of all listed spells.',
+            (r'Supply one casting of all listed levels of all listed spells\.',
              r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
 
         ]

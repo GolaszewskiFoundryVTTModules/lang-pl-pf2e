@@ -2,7 +2,7 @@ import os
 import json
 import logging
 
-import re
+import regex
 from collections import Counter
 from tqdm import tqdm
 import datetime
@@ -54,7 +54,7 @@ class LocalizationUpdater:
             (r'>Saving Throw<', r'>Rzut Obronny<'),
             (r'>Onset<', r'>Nadejście Objawów<'),
             (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
-            (r'<h2>([^<]*) Items</h2>\\n<table', r'<h2>Przedmioty z \1</h2>\n<table'),
+            (r'<h2>([^<]*) Items</h2>\n<table', r'<h2>Przedmioty z \1</h2>\n<table'),
             (r'<th>([^<]*) Items</th>', r'<th>Przedmioty z \1</th>'),
             (r'>Hardness<', r'>Twardość<'),
             (r'>HP<', r'>PŻ<'),
@@ -62,8 +62,8 @@ class LocalizationUpdater:
             (r'>Thin Items<', r'>Cienkie Przedmioty<'),
             (r'>Items<', r'>Przedmioty<'),
             (r'>Structures<', r'>Struktury<'),
-            (r'>Standard-grade<', r'>Standardowej Jakości<'),
-            (r'>High-grade<', r'>Wysokiej Jakości<'),
+            (r'>Standard\-grade<', r'>Standardowej Jakości<'),
+            (r'>High\-grade<', r'>Wysokiej Jakości<'),
             # Poison applications
             (r'\(Injury\)', r'(Rana)'),
             (r'\(Contact\)', r'(Dotyk)'),
@@ -152,7 +152,7 @@ class LocalizationUpdater:
 
         for compound_key, value in flat_dict.items():
             # Split the key intelligently based on '.' not followed by whitespace
-            keys = [k for k in re.split(r'\.(?![\s.])', compound_key) if k]
+            keys = [k for k in regex.split(r'\.(?![\s.])', compound_key) if k]
             current_level = nested_json
 
             for i, key in enumerate(keys):
@@ -223,7 +223,7 @@ class LocalizationUpdater:
         # Function to clean the string by removing all patterns
         def clean_string(s, patterns):
             for pattern in patterns:
-                s = re.sub(pattern, '', s)
+                s = regex.sub(pattern, '', s)
             return s
 
         # Remove matched patterns from the strings
@@ -257,7 +257,7 @@ class LocalizationUpdater:
             :return: The modified text after all replacements.
             """
             for pattern, replacement in replacements:
-                text = re.sub(pattern, replacement, text)
+                text = regex.sub(pattern, replacement, text)
             return text
 
         # Process the text

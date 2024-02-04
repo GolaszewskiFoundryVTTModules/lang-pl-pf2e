@@ -54,6 +54,16 @@ class LocalizationUpdater:
             (r'>Saving Throw<', r'>Rzut Obronny<'),
             (r'>Onset<', r'>Nadejście Objawów<'),
             (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
+            (r'<h2>([^<]*) Items</h2>\\n<table', r'<h2>Przedmioty z \1</h2>\n<table'),
+            (r'<th>([^<]*) Items</th>', r'<th>Przedmioty z \1</th>'),
+            (r'>Hardness<', r'>Twardość<'),
+            (r'>HP<', r'>PŻ<'),
+            (r'>BT<', r'>PU<'),
+            (r'>Thin Items<', r'>Cienkie Przedmioty<'),
+            (r'>Items<', r'>Przedmioty<'),
+            (r'>Structures<', r'>Struktury<'),
+            (r'>Standard-grade<', r'>Standardowej Jakości<'),
+            (r'>High-grade<', r'>Wysokiej Jakości<'),
             # Poison applications
             (r'\(Injury\)', r'(Rana)'),
             (r'\(Contact\)', r'(Dotyk)'),
@@ -70,6 +80,14 @@ class LocalizationUpdater:
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2wyobrażenie\3</p>'),
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
+            # Frequency details. Must be after frequency
+            (r'<p><strong>Częstotliwość</strong> once per day</p>',
+             r'<p><strong>Częstotliwość</strong> raz na dzień</p>'),
+            (r'<p><strong>Częstotliwość</strong> once per day, plus overcharge</p>',
+             r'<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>'),
+            # Effect details. Must be after effect.
+            (r'<p><strong>Efekt</strong> You cast (@UUID\[Compendium\.pf2e\.spells-srd\.Item\.([a-zA-Z0-9]*)\]\{([a-zA-Z0-9 \p{L}]*)\}).</p>',
+             r'<p><strong>Efekt</strong> Rzucasz \1.</p>'),
             # Crafting
             (r'Supply a casting of the spell at the listed (rank|level).',
              r'Dostarcz rzucenie docelowego zaklęcia na podanym kręgu.'),

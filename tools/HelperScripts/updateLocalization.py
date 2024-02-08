@@ -38,21 +38,26 @@ class LocalizationUpdater:
         # PYTHON READS THE JSON STRING WITH ITS ESCAPE CHARACTERS ACCOUNTED FOR
         # Escape signs in JSON need to be accounted for in regex (usually reduced/removed)
         self.replacement_patterns = [
+            # Success degrees
+            (r'>Critical Success<', r'>Krytyczny Sukces<'),
+            (r'>Success<', r'>Sukces<'),
+            (r'>Critical Failure<', r'>Krytyczna Porażka<'),
+            (r'>Failure<', r'>Porażka<'),
+            # Activation keywords
             (r'>Activate<', r'>Aktywacja<'),
             (r'>Trigger<', r'>Aktywator<'),
+            (r'>Frequency<', r'>Częstotliwość<'),
+            # Effect keywords
             (r'>Effect<', r'>Efekt<'),
             (r'>Secondary Effect<', r'>Efekt Dodatkowy<'),
-            (r'>Maximum Duration<', r'>Maksymalny Czas Trwania<'),
             (r'Spell Effect:', r'Efekt Zaklęcia:'),
             (r'Crit Effect:', r'Efekt Krytyczny:'),
             (r'Effect:', r'Efekt:'),
-            (r'>Special<', r'>Specjalne<'),
-            (r'>Frequency<', r'>Częstotliwość<'),
+            (r'>Maximum Duration<', r'>Maksymalny Czas Trwania<'),
             (r'>(Prerequisites|Requirements)<', r'>Wymagania<'),
+            (r'>Special<', r'>Specjalne<'),
             (r'>Craft Requirements<', r'>Wymagania Wytwarzania<'),
-            (r'>Saving Throw<', r'>Rzut Obronny<'),
-            (r'>Onset<', r'>Nadejście Objawów<'),
-            (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
+            # Material details
             (r'<h2>([^<]*) Items</h2>\n<table', r'<h2>Przedmioty z \1</h2>\n<table'),
             (r'<th>([^<]*) Items</th>', r'<th>Przedmioty z \1</th>'),
             (r'>Hardness<', r'>Twardość<'),
@@ -63,7 +68,14 @@ class LocalizationUpdater:
             (r'>Structures<', r'>Struktury<'),
             (r'>Standard\-grade<', r'>Standardowej Jakości<'),
             (r'>High\-grade<', r'>Wysokiej Jakości<'),
-            # Poison applications
+            # Spells
+            (r'>Cantrip<', r'>Sztuczka<'),
+            (r'>Spell<', r'>Zaklęcie<'),
+            (r'>Spells<', r'>Zaklęcia<'),
+            # Poisons diseases
+            (r'>Saving Throw<', r'>Rzut Obronny<'),
+            (r'>Onset<', r'>Nadejście Objawów<'),
+            (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
             (r'\(Injury\)', r'(Rana)'),
             (r'\(Contact\)', r'(Dotyk)'),
             (r'\(Inhaled\)', r'(Wdychanie)'),

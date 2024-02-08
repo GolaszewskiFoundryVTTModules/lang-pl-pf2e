@@ -663,6 +663,26 @@
                 "Description": "<p>You prepare to use an action that will occur outside your turn. Choose a single action or free action you can use, and designate a trigger. Your turn then ends. If the trigger you designated occurs before the start of your next turn, you can use the chosen action as a reaction (provided you still meet the requirements to use it). You can't Ready a free action that already has a trigger.</p><p>If you have a multiple attack penalty and your readied action is an attack action, your readied attack takes the multiple attack penalty you had at the time you used Ready. This is one of the few times the multiple attack penalty applies when it's not your turn.</p>",
                 "Title": "Ready"
             },
+            "RecallKnowledge": {
+                "Description": "<p>Wykonujesz test umiejętności aby spróbować przypomnieć sobie wiedzę na temat powiązany z daną umiejętnością. Zasugeruj jakiej umiejętności chciałbyś użyć i zadaj MG jedno pytanie. MG określa ST. Możliwe, że będziesz musiał współpracować z MG celem zawężenia zakresu pytania lub dostępnych umiejętności a ostatecznie możesz się zdecydować nie podejmować próby Pozyskania Wiedzy jeśli nie podobają ci się twoje opcje.</p><p><strong>Krytyczny Sukces</strong> Nieomylnie przytaczasz wiedzę. MG odpowiada na twoje pytanie w sposób prawdziwy i albo zapewnia dodatkowe informacje lub kontekst albo zezwala na jedno dalsze pytanie.</p><p><strong>Sukces</strong> Nieomylnie przytaczasz wiedzę. MG odpowiada na twoje pytanie w sposób prawdziwy.</p><p><strong>Krytyczna Porażka</strong> Przytaczasz niewłaściwe informacje. MG odpowiada na twoje pytanie w sposób fałszywy (lub decyduje się nie odpowiedzieć na twoje pytanie, jak przy porażce).</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Krytyczna Porażka</strong> Przytaczasz niewłaściwe informacje. MG odpowiada na twoje pytanie w sposób fałszywy (lub decyduje się nie odpowiedzieć na twoje pytanie, jak przy porażce).",
+                    "criticalSuccess": "<strong>Krytyczny Sukces</strong> Nieomylnie przytaczasz wiedzę. MG odpowiada na twoje pytanie w sposób prawdziwy i albo zapewnia dodatkowe informacje lub kontekst albo zezwala na jedno dalsze pytanie.",
+                    "success": "<strong>Sukces</strong> Nieomylnie przytaczasz wiedzę. MG odpowiada na twoje pytanie w sposób prawdziwy."
+                },
+                "SampleTasks": {
+                    "Caption": "Poniższe przykłady dotyczą użycia Społeczeństwa lub Religii.",
+                    "Untrained": "imię władcy, głowy państwa, kluczowego szlachcica lub większego bóstwa",
+                    "Trained": "linia sukcesji dużej rodziny szlacheckiej, kluczowe doktryny większego bóstwa",
+                    "Expert": "genealogia pomniejszego szlachcica, nauki antycznego kapłana",
+                    "Master": "hierarchia dżinnowskiego dworu szlacheckiego, istotne pozaplanarne świątynie danego bóstwa",
+                    "Legendary": "istnienie dawno zaginionego szlachetnie urodzonego dziedzica, utajnione doktryny danej religii"
+                },
+                "Title": "Pozyskanie Wiedzy",
+                "Warning": {
+                    "NoSkill": "Akcja Pozyskania Wiedzy może być używana z różnymi umiejętnościami a żadna nie została wybrana."
+                }
+            },
             "Release": {
                 "Description": "<p>Puszczasz coś co trzymasz w jednej lub obu rękach. Może to oznaczać upuszczenie przedmiotu, zdjęcie jednej dłoni z broni aby trzymać ją tylko drugą dłonią, wypuszczenie liny podtrzymującej żyrandol lub wykonanie podobnej akcji. W przeciwieństwie do większości akcji manipulacji, Puszczenie nie wywołuje reakcji, które mogą być wywołane przez akcje z cechą manipulacji (takich jak Cios Reaktywny).</p><p>Jeśli chcesz się przygotować na Puszczenie czegoś poza swoją turą, użyj aktywności @UUID[Compendium.pf2e.actionspf2e.Item.dLgAMt3TbkmLkUqE]{Przygotowanie}.</p>",
                 "Drop": {

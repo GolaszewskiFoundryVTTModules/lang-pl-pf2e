@@ -106,7 +106,9 @@ class LocalizationUpdater:
              r'Dostarcz rzucenie docelowego zaklęcia na odpowiednim kręgu.'),
             (r'Supply one casting of all listed levels of all listed spells\.',
              r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
-
+             # Styling and punctuation
+            (r' -([0-9]+)', r' –\1'),
+            (r'(\S)—(\S)', r'\1 — \2'),
         ]
 
 

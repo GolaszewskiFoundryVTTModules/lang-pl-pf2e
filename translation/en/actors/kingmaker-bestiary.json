@@ -2934,6 +2934,20 @@
         }
       }
     },
+    "Greengripe Bombardiers": {
+      "name": "Greengripe Bombardiers",
+      "description": "<p>Greengripe goblins have built a mobile platform outfitted with a catapult-like flinging arm that can throw flammable debris.</p>",
+      "items": {
+        "campaignFeature->Burning Weaponry": {
+          "name": "Burning Weaponry",
+          "description": "<p>Unlike basic siege engine armies, Greengripe Bombardiers can make melee Strikes while engaged. When a Greengripe Bombardier scores a critical success on a Strike while taking the Battle action against an army (but not against a fortification), the army struck must make a successful Maneuver check against the Greengripe Bombardiers' Maneuver DC or take one additional point of damage from the goblins' burning weaponry.</p>"
+        },
+        "campaignFeature->Explosive Defeat": {
+          "name": "Explosive Defeat",
+          "description": "<p>When the Greengripe Bombardiers are defeated, their alchemical siege engine explodes. Any army engaged with the Greengripe Bombardiers must succeed at a Maneuver check against the Greengripe Bombardier's Maneuver DC or take 1 point of damage (2 points of damage on a critical failure). As long as the Greengripe Bombardiers aren't destroyed, their siege engine gear is rebuilt automatically once the army loses the defeated condition.</p>"
+        }
+      }
+    },
     "Grigori": {
       "name": "Grigori",
       "blurb": "Male human bard",
@@ -4767,6 +4781,21 @@
         }
       }
     },
+    "Lizardfolk Defenders": {
+      "name": "Lizardfolk Defenders",
+      "description": "<p>These lizardfolk are from the settlement on the banks of Candlemere; they fight with flails and javelins.</p>",
+      "items": {
+        "campaignFeature->Swamp Dwellers": {
+          "name": "Swamp Dwellers",
+          "description": "<p>The lizardfolk defenders have the @UUID[Compendium.pf2e.kingmaker-features.Item.sdwSrVfu9yG1uwio]{Live off the Land} tactic for free (it does not count against the maximum number of tactics the army can possess), do not treat water or swamp on a battlefield as difficult terrain, and gain a +2 circumstance bonus to Scouting checks attempted in hexes that include swamps or water.</p>",
+          "rules": {
+            "0": {
+              "label": "Adjustment"
+            }
+          }
+        }
+      }
+    },
     "Lizardfolk Warrior": {
       "name": "Lizardfolk Warrior",
       "blurb": "Variant lizardfolk scout",
@@ -4835,6 +4864,34 @@
         },
         "lore->Lumber Lore": {
           "name": "Lumber Lore"
+        }
+      }
+    },
+    "M'botuu Frog Riders": {
+      "name": "M'botuu Frog Riders",
+      "description": "<p>These lance-armed boggards from M'botuu and ride giant frogs trained for warfare into battle.</p>",
+      "items": {
+        "campaignFeature->Overrun": {
+          "rules": {
+            "0": {
+              "label": "vs Infantry and Skirmisher"
+            },
+            "1": {
+              "label": "vs Area or Mental attacks"
+            }
+          }
+        },
+        "campaignFeature->Amphibious": {
+          "name": "Amphibious",
+          "description": "<p>Frog Riders ignore difficult terrain caused by swamps or water and gain a +2 circumstance bonus on Maneuver checks while fighting on a battlefield that features either of these terrains.</p>"
+        },
+        "campaignFeature->Swamp Charge": {
+          "name": "Swamp Charge",
+          "description": "<p>If the battlefield includes swamp or water, the M'botuu Frog Riders can start the encounter engaged with a target enemy army. If they do so, they gain a +1 circumstance bonus on melee Strikes against that army on the first turn of the encounter.</p>"
+        },
+        "campaignFeature->Chorus of Croaks": {
+          "name": "Chorus of Croaks",
+          "description": "<p>The terrifying croaking that constantly issues from this army of boggards causes all engaged enemy armies to suffer a -2 status penalty on Morale checks. The M'botuu Frog Riders can use the Taunt tactical action. If they know the Focused Devotion tactic, they treat critical failures made when attempting to Taunt as failures instead.</p>"
         }
       }
     },
@@ -5429,6 +5486,34 @@
               "text": "On a critical success, the target is off-guard against all melee attacks until the end of your next turn, not just yours."
             }
           }
+        }
+      }
+    },
+    "Nomen Scouts": {
+      "name": "Nomen Scouts",
+      "description": "<p>This band of Nomen centaurs fight with spears and longbows. Self-sufficient (consumption -1)</p>",
+      "items": {
+        "campaignFeature->Overrun": {
+          "rules": {
+            "0": {
+              "label": "vs Infantry and Skirmisher"
+            },
+            "1": {
+              "label": "vs Area or Mental attacks"
+            }
+          }
+        },
+        "campaignFeature->Self-Sufficient": {
+          "name": "Self-Sufficient",
+          "description": "<p>Nomen scouts are adept at providing for themselves, and never count against the kingdom's consumption. Furthermore, they can provide for other armies, and as long as they are not defeated during a Kingdom turn's Upkeep phase, they reduce the kingdom's consumption value by 1.</p>"
+        },
+        "campaignFeature->Brave": {
+          "name": "Brave",
+          "description": "<p>Nomen scouts are extraordinarily fearless and do not possess a Rout Threshold, and gain a +2 circumstance bonus on Morale checks made to avoid rout from other sources.</p>"
+        },
+        "campaignFeature->Trample (Unique)": {
+          "name": "Trample (Unique)",
+          "description": "<p>Nomen Scouts can attempt to trample an engaged enemy army by attempting a +20 melee Strike against the army’s AC. On a hit, they inflict 1 point of damage (2 points on a critical hit) and automatically move away from the army—they are no longer engaged with that army.</p>"
         }
       }
     },
@@ -6158,7 +6243,7 @@
         },
         "effect->Home Advantage (Area GL2)": {
           "name": "Home Advantage (Area GL2)",
-          "description": "<p>The Pitax Horde knows the open plains and rolling dells of of this area well, and can use the terrain to their advantage if they are attacked here. They <span style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\">gain a +2 bonus to Maneuver and +3 bonus to Scouting while in area GL2. </span></p>\n<hr />\n<p><em><span style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\"><strong>Note</strong>: This effect automates the above bonuses. Remove it if the Pitax Horde are found elsewhere.</span></em></p>"
+          "description": "<p>The Pitax Horde knows the open plains and rolling dells of this area well, and can use the terrain to their advantage if they are attacked here. They gain a +2 bonus to Maneuver and +3 bonus to Scouting while in area GL2.</p>\n<hr />\n<p><em><strong>Note</strong>: This effect automates the above bonuses. Remove it if the Pitax Horde are found elsewhere.</em></p>"
         }
       }
     },
@@ -6869,6 +6954,16 @@
         "action->Burning Room": {
           "name": "Burning Room",
           "description": "<p>The flames and heat deal [[/r 1d6[fire]]] damage (@Check[type:reflex|dc:16|basic:true] save) to creatures who end their turns in these burning chambers as long as the fires continue.</p>\n<p>Breaking the room's glass window before the fire is extinguished causes the fire within to flare up and deal [[/r 2d6[fire]]] damage at the end of that round (rather than the standard 1d6), but once at least three of the burning rooms have their windows ventilated, the smoke in these rooms and in area A16 lessens, and the DC of the Fortitude save to resist its Choke effect is reduced to 11.</p>"
+        }
+      }
+    },
+    "Sootscale Warriors": {
+      "name": "Sootscale Warriors",
+      "description": "<p>Sootscale kobolds fight with shortswords and crossbows, although they tend to do so warily and cautiously. (Ammunition: 7)</p>",
+      "items": {
+        "campaignFeature->Accustomed to Panic (Unique)": {
+          "name": "Accustomed to Panic (Unique)",
+          "description": "<p><strong>Trigger</strong> The Sootscale Warriors' shaken condition increases while they are not routed.</p>\n<p><strong>Effect</strong> The Sootscales take comfort in their fear and channel the panic into energy. Rather than increase their shaken condition, they reduce their weary condition value by 1. Additionally, when the Sootscales use the Disengage action, the result is improved one degree.</p>"
         }
       }
     },
@@ -8068,6 +8163,38 @@
         "action->Vengeful Rage": {
           "name": "Vengeful Rage",
           "description": "<p><strong>Requirements</strong> The Tiger Lord is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a rage</p>\n<p><strong>Trigger</strong> The Tiger Lord suffers damage that reduces its Hit Points to 100 or less.</p>\n<p><strong>Effect</strong> The Tiger Lord flies into a rage that lasts 1 minute. While raging, the Tiger Lord gains a +1 status bonus to attack rolls, gains a +2 status bonus to damage rolls, and takes a -2 status penalty to AC. After the rage, the Tiger Lord is fatigued.</p>"
+        }
+      }
+    },
+    "Tiger Lord Berserkers": {
+      "name": "Tiger Lord Berserkers",
+      "description": "<p>These Tiger Lord barbarians use rage in battle; they fight with greataxes.</p>",
+      "items": {
+        "campaignFeature->Furious Charge (Unique)": {
+          "name": "Furious Charge (Unique)",
+          "description": "<p><strong>Frequency</strong> once per war encounter;</p>\n<p><strong>Effect</strong> The Tiger Lord Berserkers charge at an enemy army, taking an Advance action to attempt to engage. If the Tiger Lords manage to engage successfully, they can attempt a melee Strike against the army as a reaction.</p>"
+        },
+        "campaignFeature->Reactive Rally (Unique)": {
+          "name": "Reactive Rally (Unique)",
+          "description": "<p><strong>Requirement</strong> The Tiger Lords are routed;</p>\n<p><strong>Effect</strong> Instead of taking a @UUID[Compendium.pf2e.kingmaker-features.Item.IhjlbJinff1wUSjL]{Retreat} action, the Tiger Lord Berserkers can attempt to @UUID[Compendium.pf2e.kingmaker-features.Item.8XXylMGJuqe1ozMk]{Rally}.</p>"
+        },
+        "campaignFeature->Revel in Battle (Unique)": {
+          "name": "Revel in Battle (Unique)",
+          "description": "<p><strong>Trigger</strong> The Tiger Lord Berserkers score a critical hit with a melee Strike.</p>\n<p><strong>Effect</strong> The barbarians are infused with vigor and furious passion at their devastating blow. The army restores 1 hit point.</p>"
+        },
+        "campaignFeature->Warmongers (Unique)": {
+          "name": "Warmongers (Unique)",
+          "description": "<p>The Tiger Lord Berserkers can use the following Tactical Actions without needing to meet additional requirements: @UUID[Compendium.pf2e.kingmaker-features.Item.Z6jMZgAxI1zRO7Sl]{All-Out Assault}, @UUID[Compendium.pf2e.kingmaker-features.Item.8wjiF3ctXUjP9oyX]{Counterattack}, and @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt}.</p>"
+        },
+        "campaignFeature->All-Out Assault": {
+          "rules": {
+            "0": {
+              "label": "All-Out Assault Followup Attack (Crit Success)"
+            },
+            "1": {
+              "label": "All-Out Assault Followup (Crit Success)"
+            }
+          }
         }
       }
     },

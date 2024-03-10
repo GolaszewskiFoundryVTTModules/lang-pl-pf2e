@@ -62,15 +62,50 @@
                 "zephyr-hawk",
                 "zombie-brute",
                 "zombie-shambler"
+            ],
+            "pf2e-outlaws-of-alkenstar-german": [
+                "cockatrice",
+                "fungus-leshy",
+                "giant-viper",
+                "goblin-war-chanter",
+                "goblin-warrior",
+                "homunculus",
+                "mummy-Guardian",
+                "ogre-boss",
+                "ogre-warrior",
+                "wasp-swarm"
             ]
         },
         "pathfinder-bestiary-2": {
             "pf2e-tokens-bestiaries": "all",
-            "pf2e-b2-polish": "all"
+            "pf2e-b2-polish": "all",
+            "pf2e-outlaws-of-alkenstar-german": [
+                "akizendri",
+                "catoblepas",
+                "cockroach-swarm",
+                "dweomercat",
+                "emperor-cobra",
+                "glass-golem",
+                "peryton",
+                "sand-sentry",
+                "specter",
+                "vexgit"
+            ]
         },
         "pathfinder-bestiary-3": {
             "pf2e-tokens-bestiaries": "all",
-            "pf2e-b3-polish": "all"
+            "pf2e-b3-polish": "all",
+            "pf2e-outlaws-of-alkenstar-german": [
+                "abandoned-zealot",
+                "aghash",
+                "aphorite-sharpshooter",
+                "clockwork-spy",
+                "kurobozu",
+                "mi-go",
+                "nyktera",
+                "pairaka",
+                "vishkanya-infiltrator"
+            ]
         }
     },
     "compendiumExceptions": {
@@ -86,6 +121,10 @@
         "rule": "modules/lang-pl-pf2e/static/icons/rule.webp",
         "treasure": "modules/lang-pl-pf2e/static/icons/treasure.webp"
     },
+    "itemBlacklist": [
+        "Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW",
+        "Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu"
+    ],
     "mappings": {
         "choice": {
             "entryType": "Item",
@@ -99,28 +138,56 @@
             "entryType": "Item",
             "mappingEntries": {
                 "name": "name",
+                "badges": "system.badge.labels",
+                "consumableSpellName": "system.spell.name",
+                "consumableSpellDescription": "system.spell.system.description.value",
+                "consumableSpellDuration": {
+                    "path": "system.spell.system.duration.value",
+                    "converter": "translateDuration"
+                },
+                "consumableSpellRange": {
+                    "path": "system.spell.system.range.value",
+                    "converter": "translateRange"
+                },
+                "consumableSpellTarget": "system.spell.system.target.value",
+                "consumableSpellTime": {
+                    "path": "system.spell.system.time.value",
+                    "converter": "translateTime"
+                },
                 "cost": "system.cost.value",
                 "description": "system.description.value",
                 "duration": {
                     "path": "system.duration.value",
                     "converter": "translateDuration"
                 },
+                "gmNote": "system.description.gm",
+                "heightening": {
+                    "path": "system.heightening.levels",
+                    "converter": "translateHeightening"
+                },
                 "materials": "system.materials.value",
                 "prerequisites": "system.prerequisites.value",
-                "primarycheck": "system.primarycheck.value",
+                "primarycheck": "system.ritual.primary.check",
                 "range": {
                     "path": "system.range.value",
                     "converter": "translateRange"
                 },
-                "secondarycaster": "system.secondarycasters.value",
-                "secondarycheck": "system.secondarycheck.value",
+                "rules": {
+                    "path": "system.rules",
+                    "converter": "translateRules"
+                },
+                "secondarycaster": "system.ritual.secondary.casters",
+                "secondarycheck": "system.ritual.secondary.checks",
                 "skillVariants": {
-                    "path": "system.variants",
-                    "converter": "translateSkillVariants"
+                    "path": "system.variants"
                 },
                 "source": {
                     "path": "system.source.value",
                     "converter": "translateSource"
+                },
+                "spellVariants": {
+                    "path": "system.overlays",
+                    "converter": "translateSpellVariant"
                 },
                 "target": "system.target.value",
                 "time": {
@@ -128,6 +195,12 @@
                     "converter": "translateTime"
                 },
                 "trainedLore": "system.trainedLore"
+            }
+        },
+        "tile": {
+            "entryType": "Scene",
+            "mappingEntries": {
+                "texture": "texture.src"
             }
         },
         "adventureJournal": {
@@ -145,9 +218,23 @@
                 "text": "text.content"
             }
         },
+        "adventureScene": {
+            "entryType": "Scene",
+            "mappingEntries": {
+                "name": "name",
+                "background": "background.src",
+                "drawings": { "path": "drawings", "converter": "textCollection" },
+                "notes": { "path": "notes", "converter": "textCollection" },
+                "tiles": { "path": "tiles", "converter": "translateTiles" }
+            }
+        },
         "rule": {
             "entryType": "Item",
             "mappingEntries": { "label": "label", "prompt": "prompt", "text": "text" }
+        },
+        "value": {
+            "entryType": "Item",
+            "mappingEntries": { "text": "text" }
         }
     }
 }

@@ -76,6 +76,9 @@ class Translator {
         // Create list of icons
         this.icons = config[0]?.iconList ?? {};
 
+        // Create item blacklist for items. Actor items with compendium sources on this list won't get synchronized with the compendium data
+        this.itemBlacklist = config[0]?.itemBlacklist ?? [];
+
         // Create list of mappings
         this.mappings = config[0]?.mappings ?? {};
 
@@ -135,7 +138,7 @@ class Translator {
         return label
             .replace(/([a-z])([A-Z])\B/g, "$1-$2")
             .toLowerCase()
-            .replace(/'/g, "")
+            .replace(/['’]/g, "")
             .replace(/[^a-z0-9]+/gi, " ")
             .trim()
             .replace(/[-\s]+/g, "-");
@@ -148,7 +151,7 @@ class Translator {
                 ? new CompendiumMapping(this.mappings[mapping].entryType, this.mappings[mapping].mappingEntries)
                 : {};
         }
-        return this.mapping[mapping];
+        return this.mappings[mapping];
     }
 
     // Merge an object using a provided field mapping
@@ -185,6 +188,10 @@ class Translator {
         }
     }
 
+    // Normalize name for correct display within Foundry
+    normalizeName(name) {
+        return name;
+    }
 
     registerCompendium(module, compendium, language, compendiumDirectory, imageDirectory = undefined) {
         // Register compendium, check if different modules excludes the compendium
@@ -204,6 +211,27 @@ class Translator {
         if (imageDirectory) {
             this.addMediaPath(module, compendium, `modules/${module}/${imageDirectory}`);
         }
+    }
+
+    // Translate an array of similar objects, e.g. scenes or journal pages. This supports duplicate object names within the array using ids to identify the correct data
+    translateArrayOfObjects(data, translation, mappingType) {
+        data.forEach((entry, index, arr) => {
+            let objectTranslation = translation ? translation[entry.name] ?? undefined : undefined;
+
+            // Check if the object translation is an array (in case of duplicate names)
+            // Take the objectTranslation that matches the current objects' id
+            if (Array.isArray(objectTranslation)) {
+                objectTranslation = objectTranslation.find((obj) => obj.id === entry._id) ?? false;
+            }
+            if (objectTranslation) {
+                // For adventure journal pages, normalize the name
+                if (mappingType === "adventureJournalPage") {
+                    objectTranslation.name = this.normalizeName(objectTranslation.name);
+                }
+                this.dynamicMerge(arr[index], objectTranslation, this.getMapping(mappingType, true));
+            }
+        });
+        return data;
     }
 
     // If an actor description format is provided create formatted html, otherwise use plain text
@@ -259,34 +287,72 @@ class Translator {
         return data;
     }
 
-    translateActorItems(data, translation, mergeFromCompendium = true) {
+    // Return either localized or both localized and english text, based on module setting
+    translateDualLanguage(data, translation) {
+        if (!translation || data === translation) {
+            return data;
+        } else if (game.settings.get("lang-de-pf2e", "dual-language-names")) {
+            return this.normalizeName(translation) + "/" + data;
+        } else {
+            return this.normalizeName(translation);
+        }
+    }
+
+    // Translate heightened spells
+    translateHeightening(data, translation) {
+        if (data.levels) {
+            if (translation) {
+                mergeObject(data.levels, translation, { overwrite: true });
+            }
+            Object.keys(data.levels).forEach((level) => {
+                ["duration", "range", "time"].forEach((fieldName) => {
+                    if (data.levels[level][fieldName]?.value) {
+                        data.levels[level][fieldName].value = this.translateValue(
+                            fieldName,
+                            data.levels[level][fieldName].value
+                        );
+                    }
+                });
+            });
+        }
+        return data;
+    }
+
+    translateItems(data, translation, actorItem = false, mergeFromCompendium = true) {
         data.forEach((entry, index, arr) => {
             // Get the available translation for the item and the sluggified item name
-            const itemKey =
-                entry.type != "melee"
-                    ? `${entry.type}->${entry.name}`
-                    : `strike-${entry.system.weaponType.value}->${entry.name}`;
+            let itemKey;
+
+            // Build itemKey depending on the type of item (world item or actor item)
+            if (actorItem) {
+                itemKey =
+                    entry.type != "melee"
+                        ? `${entry.type}->${entry.name}`
+                        : `strike-${entry.system.weaponType.value}->${entry.name}`;
+            } else {
+                itemKey = entry.name;
+            }
             let itemTranslation = translation ? translation[itemKey] ?? undefined : undefined;
             const itemNameSlug = this.sluggify(entry.name);
 
             // For compendium items, get the data from the compendium
             if (
                 entry.flags?.core?.sourceId &&
-                entry.flags.core.sourceId.startsWith("Compendium") &&
-                !entry.flags.core.sourceId.includes(".Actor.")
+                entry.flags.core.sourceId.startsWith("Compendium.pf2e.") &&
+                !entry.flags.core.sourceId.includes(".Actor.") &&
+                !this.itemBlacklist.includes(entry.flags.core.sourceId)
             ) {
-                                // Get the actual compendium name
-                const itemCompendium = entry.flags.core.sourceId.slice(
-                    entry.flags.core.sourceId.indexOf(".") + 1,
-                    entry.flags.core.sourceId.lastIndexOf(".", entry.flags.core.sourceId.lastIndexOf(".") - 1)
-                );
+                // Get the actual compendium name
+                const itemCompendium = entry.flags.core.sourceId.split(".");
 
                 const originalName = fromUuidSync(entry.flags.core.sourceId)?.flags?.babele?.originalName;
                 if (originalName) {
                     entry.name = originalName;
 
                     // Get the item from the compendium
-                    const itemData = game.babele.packs.get(itemCompendium).translate(entry);
+                    const itemData = game.babele.packs
+                        .get(`${itemCompendium[1]}.${itemCompendium[2]}`)
+                        .translate(entry);
 
                     if (mergeFromCompendium) {
                         arr[index] = itemData;
@@ -294,14 +360,14 @@ class Translator {
                         arr[index].system.description.value = itemData.system.description.value;
                         arr[index].name = itemData.name;
                     }
-                    
+
                     // Remove dual language translations
                     if (arr[index].name.search("/") != -1) {
                         arr[index].name = arr[index].name.substring(0, arr[index].name.search("/"));
                     }
                 }
             }
-            
+
             // Check if the item translation is an array (in case of duplicate items such as a magical and a regular shortsword)
             // Take the itemTranslation that matches the current item's id
             if (Array.isArray(itemTranslation)) {
@@ -310,6 +376,10 @@ class Translator {
 
             // Merge the available translation
             if (itemTranslation) {
+                // Normalize item name
+                if (itemTranslation.name) {
+                    itemTranslation.name = this.normalizeName(itemTranslation.name);
+                }
                 // For name and description fields, replace "<Compendium>" tag with text from compendium if translation is provided
                 ["description", "name"].forEach((dataElement) => {
                     if (itemTranslation[dataElement]) {
@@ -341,63 +411,6 @@ class Translator {
             }
         });
 
-        return data;
-    }
-
-    // Translate adventure journals. This is primarily used in order to access a custom converter for pages translation
-    translateAdventureJournals(data, translation) {
-        data.forEach((entry, index, arr) => {
-            let journalTranslation = translation ? translation[entry.name] ?? undefined : undefined;
-            this.dynamicMerge(arr[index], journalTranslation, this.getMapping("adventureJournal", true));
-        });
-        return data;
-    }
-
-    // Translate adventure journal pages. This supports duplicate page names within the same journal
-    translateAdventureJournalPages(data, translation) {
-        data.forEach((entry, index, arr) => {
-            let pageTranslation = translation ? translation[entry.name] ?? undefined : undefined;
-
-            // Check if the page translation is an array (in case of duplicate page names)
-            // Take the pageTranslation that matches the current pages' id
-            if (Array.isArray(pageTranslation)) {
-                pageTranslation = pageTranslation.find((page) => page.id === entry._id) ?? false;
-            }
-            if (pageTranslation) {
-                this.dynamicMerge(arr[index], pageTranslation, this.getMapping("adventureJournalPage", true));
-            }
-        });
-        return data;
-    }
-
-    // Return either localized or both localized and english text, based on module setting
-    translateDualLanguage(data, translation) {
-        if (!translation || data === translation) {
-            return data;
-        } else if (game.settings.get("lang-pl-pf2e", "dual-language-names")) {
-            return translation + "/" + data;
-        } else {
-            return translation;
-        }
-    }
-
-    // Translate heightened spells
-    translateHeightening(data, translation) {
-        if (data.levels) {
-            if (translation) {
-                mergeObject(data.levels, translation, { overwrite: true });
-            }
-            Object.keys(data.levels).forEach((level) => {
-                ["duration", "range", "time"].forEach((fieldName) => {
-                    if (data.levels[level][fieldName]?.value) {
-                        data.levels[level][fieldName].value = this.translateValue(
-                            fieldName,
-                            data.levels[level][fieldName].value
-                        );
-                    }
-                });
-            });
-        }
         return data;
     }
 
@@ -438,10 +451,13 @@ class Translator {
             // Translation for regular strings like labels
             this.dynamicArrayMerge(data, translation, this.getMapping("rule", true));
 
-            // Translation for array of choices within ChoiceSet rule element
+            // Translation for array of choices within ChoiceSet rule element and array of values within ItemAlteration rule element
             for (let i = 0; i < data.length; i++) {
                 if (data[i].choices && translation[i]?.choices) {
                     this.dynamicArrayMerge(data[i].choices, translation[i].choices, this.getMapping("choice", true));
+                }
+                if (data[i].value && translation[i]?.value) {
+                    this.dynamicArrayMerge(data[i].value, translation[i].value, this.getMapping("value", true));
                 }
             }
         }
@@ -477,60 +493,5 @@ class Translator {
             return artworkList[this.sluggify(dataObject.name)][type] ?? value;
         }
         return value;
-    }
-
-    // Migrate images to new structure
-    migrateImages(moduleName) {
-        for (const scene of game.scenes) {
-            for (const token of scene.tokens) {
-                if (
-                    token.actor?.flags?.core?.sourceId &&
-                    token.actor.flags.core.sourceId.startsWith("Compendium.pf2e")
-                ) {
-                    fromUuid(token.actor.flags.core.sourceId).then((compActor) => {
-                        const update = { _id: token._id };
-                        if (token.texture.src.search(`/${moduleName}/`) > -1) {
-                            Object.assign(update, { texture: { src: compActor.prototypeToken.texture.src } });
-                        }
-                        if (token.actorData?.img && token.actorData.img.search(`/${moduleName}/`) > -1) {
-                            update.actorData = update.actorData || {};
-                            Object.assign(update.actorData, { img: compActor.img });
-                        }
-                        if (token.actorData?.system?.details?.publicNotes) {
-                            update.actorData = update.actorData || {};
-                            const newNotes = token.actorData.system.details.publicNotes.replaceAll(
-                                "/npc/icons/",
-                                "/static/icons/"
-                            );
-                            Object.assign(update.actorData, { system: { details: { publicNotes: newNotes } } });
-                        }
-                        if (Object.keys(update).length > 1) {
-                            scene.updateEmbeddedDocuments("Token", [update]);
-                        }
-                    });
-                }
-            }
-        }
-
-        for (const actor of game.actors) {
-            if (actor.flags?.core?.sourceId && actor.flags.core.sourceId.startsWith("Compendium.pf2e")) {
-                fromUuid(actor.flags.core.sourceId).then((compActor) => {
-                    const update = {};
-                    if (actor.prototypeToken.texture.src.search(`/${moduleName}/`) > -1) {
-                        Object.assign(update, {
-                            prototypeToken: { texture: { src: compActor.prototypeToken.texture.src } },
-                        });
-                    }
-                    if (actor.img.search(`/${moduleName}/`) > -1) {
-                        Object.assign(update, { img: compActor.img });
-                    }
-                    if (actor.system?.details?.publicNotes) {
-                        const newNotes = actor.system.details.publicNotes.replaceAll("/npc/icons/", "/static/icons/");
-                        Object.assign(update, { system: { details: { publicNotes: newNotes } } });
-                    }
-                    actor.update(update);
-                });
-            }
-        }
     }
 }

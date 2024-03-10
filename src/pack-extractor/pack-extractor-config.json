@@ -43,11 +43,14 @@
         },
         "BasicActorPacks": {
             "packNames": [
+                "abomination-vaults-bestiary",
                 "hazards",
                 "iconics",
+                "menace-under-otari-bestiary",
                 "npc-gallery",
                 "outlaws-of-alkenstar-bestiary",
                 "paizo-pregens",
+                "rusthenge-bestiary",
                 "vehicles"
             ],
             "mapping": "actor",
@@ -113,15 +116,19 @@
         }
     },
     "itemDatabase": {
+        "blacklist": [
+            "Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW",
+            "Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu"
+        ],
         "fields": [
             "name",
             "system.cost.value",
             "system.description.value",
             "system.range.value",
             "system.materials.value",
-            "system.primarycheck.value",
-            "system.secondarycasters.value",
-            "system.secondarycheck.value",
+            "system.ritual.primary.check",
+            "system.ritual.secondary.casters",
+            "system.ritual.secondary.checks",
             "system.target.value"
         ],
         "packs": {

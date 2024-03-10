@@ -316,7 +316,7 @@ class LocalizationUpdater:
                     self.pl_extracted[new_key] = self.auto_pretranslate(new_value)
                     self.updated_eng_keys.append(new_key)
                 # if translation is rudimentary (usually due to the effect of global regex operations) auto-update it to save time
-                elif self.is_translation_rudimentary(self.en_old_extracted.get(new_key, None), self.pl_extracted.get(new_key)):
+                elif self.is_translation_rudimentary(self.auto_pretranslate(self.en_old_extracted.get(new_key, None)), self.pl_extracted.get(new_key)):
                     self.pl_extracted[new_key] = self.auto_pretranslate(new_value)
                     self.rudimentary_translations_updated.append(new_key)
                 # else mark it as an outdated translation that needs manual correction
@@ -541,8 +541,11 @@ def main():
         ("compendium/spell-effects","compendium/pf2e.spell-effects"),
         ("compendium/spells","compendium/pf2e.spells-srd"),
         ("compendium/vehicles","compendium/pf2e.vehicles"),
+        ("compendium/abomination-vaults-bestiary","compendium/pf2e.abomination-vaults-bestiary"),
+        ("compendium/menace-under-otari-bestiary","compendium/pf2e.menace-under-otari-bestiary"),
+        ("compendium/outlaws-of-alkenstar-bestiary","compendium/pf2e.outlaws-of-alkenstar-bestiary"),
+        ("compendium/rusthenge-bestiary","compendium/pf2e.rusthenge-bestiary"),
         #Bestiary
-        ("actors/abomination-vaults-bestiary","compendium/pf2e.abomination-vaults-bestiary"),
         ("actors/age-of-ashes-bestiary","compendium/pf2e.age-of-ashes-bestiary"),
         ("actors/agents-of-edgewatch-bestiary","compendium/pf2e.agents-of-edgewatch-bestiary"),
         ("actors/blog-bestiary","compendium/pf2e.blog-bestiary"),
@@ -554,11 +557,9 @@ def main():
         ("actors/gatewalkers-bestiary","compendium/pf2e.gatewalkers-bestiary"),
         ("actors/kingmaker-bestiary","compendium/pf2e.kingmaker-bestiary"),
         ("actors/malevolence-bestiary","compendium/pf2e.malevolence-bestiary"),
-        ("actors/menace-under-otari-bestiary","compendium/pf2e.menace-under-otari-bestiary"),
         ("actors/mwangi-expanse-bestiary","compendium/pf2e.mwangi-expanse-bestiary"),
         ("actors/night-of-the-gray-death-bestiary","compendium/pf2e.night-of-the-gray-death-bestiary"),
         ("actors/one-shot-bestiary","compendium/pf2e.one-shot-bestiary"),
-        ("actors/outlaws-of-alkenstar-bestiary","compendium/pf2e.outlaws-of-alkenstar-bestiary"),
         ("actors/pathfinder-bestiary-2","compendium/pf2e.pathfinder-bestiary-2"),
         ("actors/pathfinder-bestiary-3","compendium/pf2e.pathfinder-bestiary-3"),
         ("actors/pathfinder-bestiary","compendium/pf2e.pathfinder-bestiary"),
@@ -570,7 +571,6 @@ def main():
         ("actors/pfs-season-4-bestiary","compendium/pf2e.pfs-season-4-bestiary"),
         ("actors/pfs-season-5-bestiary","compendium/pf2e.pfs-season-5-bestiary"),
         ("actors/rage-of-elements-bestiary","compendium/pf2e.rage-of-elements-bestiary"),
-        ("actors/rusthenge-bestiary","compendium/pf2e.rusthenge-bestiary"),
         ("actors/season-of-ghosts-bestiary","compendium/pf2e.season-of-ghosts-bestiary"),
         ("actors/shadows-at-sundown-bestiary","compendium/pf2e.shadows-at-sundown-bestiary"),
         ("actors/sky-kings-tomb-bestiary","compendium/pf2e.sky-kings-tomb-bestiary"),

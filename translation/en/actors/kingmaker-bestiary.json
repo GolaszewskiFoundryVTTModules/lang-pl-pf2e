@@ -144,9 +144,6 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Life Bloom": {
           "name": "Life Bloom",
           "description": "<p>When Akuzhail dies, its body explodes in a riot of seething vegetation and raw life. All living creatures within a @Template[type:emanation|distance:60]{60-foot radius} are restored [[/r 12d6[healing]]] Hit Points from this energy. A fully grown bloom of Lamashtu emerges from the carcass, but it can take no actions on this round. Next round, this bloom of Lamashtu enters combat at the same point in the turn during which Akuzhail perished on the previous round, but the bloom is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. At the end of the bloom's turn, it attempts a @Check[type:flat|dc:11]; on a success it loses the slowed 1 condition at the start of its next turn.</p>"
@@ -188,6 +185,7 @@
     "Alasen": {
       "name": "Alasen",
       "blurb": "Female human weretiger",
+      "languages": "tiger empathy",
       "items": {
         "equipment->Ring of Energy Resistance (Fire)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Energy Resistance (Fire)",
@@ -228,7 +226,8 @@
           "description": "<p>When Alasen takes a Stride action to move half her Speed or less, that movement does not trigger reactions.</p>"
         },
         "action->Moon Frenzy": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\nMoon Frenzy"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\nMoon Frenzy",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\n<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike (or a similar Strike) by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dRe8n1nBWMIXd8jh]{Effect: Moon Frenzy}</p>"
         },
         "action->Pounce": {
           "name": "Pounce",
@@ -406,6 +405,7 @@
     "Ankou Assassin": {
       "name": "Ankou Assassin",
       "blurb": "Variant ankou",
+      "languages": "can't speak any language; telepathy 100 feet",
       "publicNotes": "<p>Ankous are shadowy killers who serve powerful fey creatures, or even the Eldest- the demigods of the First World. Amid the courts of the Eldest or of powerful fey rulers, these sinister assassins lurk overhead as they await the call to action-implied threats akin to deadly weapons hung as decor in a royal hall. Ankous never speak aloud; when they feel the need to communicate at all, they do so in a telepathic whisper directly into a victim's mind. While an ankou's body is made of strange, fleshy material, their claws and the cruel hooks on their wings are made of razor-sharp cold iron, a quality that makes them much feared among other fey. A typical ankou is 10 feet tall and has an 8-foot wingspan but weighs less than 80 pounds.</p>\n<p>While most ankous serve powerful masters, some of these murderous fey are left to their own devices and serve none but their own capricious, cruel whims. In some cases, their master may have been slain, while in others the ankou may have been released from service for any number of reasons. An ankou left to indulge their own whims unrestrained is often the most dangerous ankou of them all!</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -527,6 +527,7 @@
     "Auchs": {
       "name": "Auchs",
       "blurb": "Male human bandit lieutenant",
+      "languages": "(cannot read)",
       "items": {
         "consumable->Healing Potion (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
@@ -552,29 +553,14 @@
     "Avatar of the Lantern King": {
       "name": "Avatar of the Lantern King",
       "blurb": "Eldest of laughter, mischief, and transformation",
+      "languages": "telepathy 300 feet; tongues",
       "publicNotes": "<p>The Lantern King is one of the Eldest-a pantheon of demigods whose rule over the First World is one of capriciousness that can be at times playful, enigmatic, bizarre, or even downright mean. For the most part, the Lantern King's plots and shenanigans tilt toward the cruel, and while he's long been a master at riding the proverbial razor's edge between mischief and outright sadism (if only by conserving his cruelest plans for those who invite that cruelty by being cruel themselves, as in the case of Nyrissa), his latest actions have certainly drawn the notice of the other Eldest. As such, they have largely distanced themselves from him, and as a result of this, any defeat the PCs deal to him in this adventure goes not only unpunished by the Lantern King's demigod siblings but will even be enforced, in a manner of speaking, by the other Eldest so that the Lantern King won't seek continued revenge against the PCs for their victories. Whether or not this also serves to teach the capricious eldest a lesson to temper his need for mischief with occasional bouts of patience and even mercy, only time can tell.</p>\n<p>The Lantern King's direct interactions with the PCs in this campaign are via an avatar-a powerful proxy created from himself to rule over the Lantern Kingdom. While this avatar isn't as powerful as the Lantern King himself, it remains the single most dangerous foe the party faces in Kingmaker. As a demigod, the Lantern King is an even more dangerous foe, equivalent in power to a 29th-level creature and possessing abilities beyond the scope of the core experience in the <em>Pathfinder Roleplaying Game</em>. Some of these abilities, such as the power to manipulate reality, to create powerful artifacts like the <em>Apology</em>, and to build entire demiplane realms like the Hunting Dream or the Lantern Kingdom, manifest during the course of the <em>Kingmaker Adventure Path</em> not as rules content but as story elements the PCs will need to endure-see Chapter 11 of this book for more details.</p>\n<p>In combat, the Lantern King's avatar uses flight to remain out of melee for the first several rounds of combat, relying upon his spells to soften up the party before using his Strikes against them. He's fond of taking actions that disrupt, torment, or mock the PCs rather than those specifically tailored to maximize damage. For example, he often uses Playful Switch to swap a flying PC in the air with one who's on the ground and can't fly, or he uses illusions to create false foes or locations that play off of previous failures or embarrassments the PCs may have endured during the campaign itself. By playing the Lantern King's avatar in battle as more of a trickster than a cold-blooded killer, you'll not only enforce his legendary personality upon your players, but you'll also give their characters a bit more of a fighting chance against him in battle. He prefers to hold @UUID[Compendium.pf2e.spells-srd.Item.MLNeD5sAunV0E23j]{Primal Phenomenon} in reserve to recover from an unwanted condition or situation, and as he realizes the PCs are dangerous foes, he abandons \"playful tactics\" for more serious or tactical decisions aimed toward defeating the party rather than toying with them.</p>\n<p>While the Lantern King faces no lasting inconvenience if his avatar is slain, the sting of such a defeat is enough to compel the avatar to back down and ask for a truce if the PCs reduce him to fewer than 75 Hit Points. If the PCs agree to a truce, the avatar compliments their prowess and promises to turn his attentions away from the Stolen Lands. Furthermore, he agrees to any additional terms the PCs ask for, provided they are within his ability to grant. This includes restoring Nyrissa's place and realm to the First World (although he cannot provide further information about her lost lover) and unmaking <em>Briar </em>to restore her capacity to love.</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
         },
-        "spell->Fantastic Facade": {
-          "primarycheck": "Arcana or Occultism (legendary)",
-          "secondarycheck": "Society or Survival; Deception; Stealth"
-        },
         "spell->Meteor Swarm": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl]\nMeteor Swarm"
-        },
-        "spell->Control Weather": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Survival"
-        },
-        "spell->Create Demiplane": {
-          "primarycheck": "Arcana, Nature, Occultism, or Religion (legendary)",
-          "secondarycheck": "Arcana, Nature, Occultism,  Religion (whichever three aren't used for the primary check)"
-        },
-        "spell->Freedom": {
-          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
-          "secondarycheck": "Society"
         },
         "spell->Plane Shift": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift",
@@ -590,10 +576,6 @@
           "primarycheck": "Nature (master)",
           "secondarycheck": "Nature"
         },
-        "spell->Primal Call": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Crafting, Diplomacy, Survival"
-        },
         "spell->True Seeing (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing (Constant)"
         },
@@ -601,8 +583,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
         },
         "spell->Geas": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Society or Legal Lore",
           "target": "1 creature of a level no greater than double the geas ritual's level"
         },
         "spell->Dancing Lights": {
@@ -737,9 +717,6 @@
         "strike-melee->Stinger": {
           "name": "Stinger"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Savage": {
           "name": "Savage",
           "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the wyvern critically fails a skill check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern makes a stinger Strike against the triggering creature.</p>"
@@ -787,7 +764,8 @@
     "Basic Siege Engines": {
       "name": "Basic Siege Engines",
       "description": "<p>A siege engine army consists of several catapults, ballistae, trebuchets, or other mechanized engines of war.</p>\n<p><em><strong>Note</strong>: In Pathfinder: Kingmaker, the attack bonus for the basic Siege Engine is +15. This has been assumed to be an error, and substituted with the default.</em></p>",
-      "tokenName": "Siege Engines"
+      "tokenName": "Siege Engines",
+      "items": {}
     },
     "Basic Skirmishers": {
       "name": "Basic Skirmishers",
@@ -804,9 +782,6 @@
         },
         "strike-melee->Claw": {
           "name": "Claw"
-        },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
         },
         "action->Pierce Armor": {
           "name": "Pierce Armor",
@@ -877,9 +852,6 @@
         "strike-melee->Stinger": {
           "name": "Stinger"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Savage": {
           "name": "Savage",
           "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the wyvern critically fails a skill check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern makes a stinger Strike against the triggering creature.</p>"
@@ -901,6 +873,7 @@
     "Bloom of Lamashtu": {
       "name": "Bloom of Lamashtu",
       "hpDetails": "regeneration 30 (deactivated by fire or holy)",
+      "languages": "(cannot speak any language)",
       "publicNotes": "<p>A thick, green stalk with spiraling rows of thorns stands at the center of this enormous flowering plant. Each flower has a growing seed pod at its center, surrounded by vibrant petals in a wide variety of colors. Crafted after consecutive seasons of experimentation, prayer, and ritual, the bloom of Lamashtu is the triumph of the cultist Darivan and his Cult of the Bloom. The fiendish plant aids their effort to infect the humanoid population of the Stolen Lands and replace them with monstrous predators. While the Bloom of Lamashtu is intelligent and is capable of understanding Abyssal, it has very little interest in anything other than spreading its curse.</p>\n<p>Cultivated to spread misery and violence, the bloom is quietly malevolent, growing its seeds as rapidly as it can. It is 12 feet tall and weighs 600 pounds.</p>",
       "items": {
         "strike-melee->Thorny Vine": {
@@ -1159,9 +1132,6 @@
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Hunting Cry": {
           "name": "Hunting Cry",
           "description": "<p>The thylacine growls, hisses, and bares its jaws in a frightening manner as it attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a creature. It gains a +2 circumstance bonus to this Intimidation check, and the attempt is not penalized if the target can't understand the thylacine.</p>"
@@ -1212,7 +1182,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Sound Burst": {
@@ -1250,10 +1219,15 @@
         },
         "consumable->Wand of Dimension Door (Level 4)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Sn7v9SsbEDMUIwrO]\nWand of Dimension Door (Level 4)",
+          "consumableSpellName": "Dimension Door",
+          "consumableSpellDescription": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Sn7v9SsbEDMUIwrO]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Wand of Paralyze (Level 3)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\nWand of Paralyze (Level 3)",
+          "consumableSpellName": "Paralyze",
+          "consumableSpellDescription": "<p>You block the target's motor impulses before they can leave its mind, threatening to freeze the target in place. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is Paralyzed for 4 rounds. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 10 creatures.</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Rod of Razors": {
@@ -1346,6 +1320,7 @@
       "name": "Chew Spider",
       "blurb": "Variant spider swarm",
       "publicNotes": "<p>Few everyday vermin inspire as much dread as the infamous spider.</p>",
+      "senses": "web sense",
       "items": {
         "action->Web Sense": {
           "name": "Web Sense",
@@ -1470,15 +1445,13 @@
     "Cursed Guardian": {
       "name": "Cursed Guardian",
       "hpDetails": "Deadeye's Shame",
+      "languages": "can't speak any language",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
         "strike-melee->Claw": {
           "name": "Claw"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Deadeye's Shame": {
           "name": "Deadeye's Shame",
@@ -1726,9 +1699,6 @@
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Support Benefit": {
           "name": "Support Benefit",
@@ -1994,15 +1964,12 @@
           "name": "Occult Spontaneous Spells"
         },
         "spell->Animate Object": {
-          "cost": "rare oils, see Table 7-1",
-          "primarycheck": "Arcana (expert)",
-          "secondarycheck": "Crafting"
+          "cost": "rare oils, see Table 7-1"
         },
         "spell->Hideous Laughter": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Know Direction": {
@@ -2065,7 +2032,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Misdirection": {
@@ -2127,15 +2093,13 @@
       "name": "Enormous Flame Drake",
       "blurb": "Variant flame drake",
       "publicNotes": "<p>Ravenous, bestial, and driven by instinct-drakes are primitive draconic monsters who bear a fraction of the terrifying might of their larger cousins but little (if any) of the cunning. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties-small social groups fittingly called \"rampages\"-makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them only their formidable jaws and thick-scaled tails with which to attack if engaged at melee range. Most drakes would rather avoid close combat, however, preferring to use their breath weapons to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>",
+      "senses": "smoke vision",
       "items": {
         "strike-melee->Fangs": {
           "name": "Fangs"
         },
         "strike-melee->Tail": {
           "name": "Tail"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Smoke Vision": {
           "name": "Smoke Vision",
@@ -2342,6 +2306,7 @@
     "Fetch Behemoth": {
       "name": "Fetch Behemoth",
       "hpDetails": "regeneration 45 (deactivated by fire or void)",
+      "languages": "tongues",
       "publicNotes": "<p>A fetch behemoth is much larger than a stalker, and forms from the soul of a Large fey or humanoid.</p>\n<hr />\n<p>A fetch is a twisted, deviant simulacrum of a humanoid creature that exists or existed at one point on the Material Plane. Rumors of fetches that are reflections of entities from other planes persist, but none of these tales speak of fetches that duplicate anything other than a sapient source. A fetch can manifest spontaneously when a powerful creature undergoes a significant emotional event or dies, either while on the First World or while in an area significantly influenced by the First World, but one can also be created by significant forces like the Eldest in order to torment and vex those who have annoyed them. While a fetch manifests from a soul's \"reflection,\" and as such bears a striking resemblance to that creature's appearance in life, a fetch has no true memories of its own. It keeps fragments of false remembrances from its source as if it experienced them in a half-remembered dream-which ensure the fetch is enraged by and jealous of its source.</p>\n<p>A fetch is similar in appearance to the creature whose soul spawned it, save that it often displays fey-like features such as pointed ears, plantlike elements, or supernatural grace. A fetch who seeks to impersonate a stillliving source must disguise these features, and takes care to manifest its fetch weapon as one known to be wielded by its target.</p>\n<p>When a fetch dies, it and its manifested items fades away into a bloom of plant life, its soul instantly recycled into the First World, leaving behind a patch of weeds and thorny flowers roughly in the shape they held in mockery while alive.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "speed": "air walk",
@@ -2373,6 +2338,7 @@
     "Fetch Stalker": {
       "name": "Fetch Stalker",
       "hpDetails": "regeneration 40 (deactivated by fire or void)",
+      "languages": "tongues",
       "publicNotes": "<p>Fetch stalkers form from the souls of Medium or Small fey or humanoids (Small fetch stalkers have the same statistics as Medium ones.)</p>\n<hr />\n<p>A fetch is a twisted, deviant simulacrum of a humanoid creature that exists or existed at one point on the Material Plane. Rumors of fetches that are reflections of entities from other planes persist, but none of these tales speak of fetches that duplicate anything other than a sapient source. A fetch can manifest spontaneously when a powerful creature undergoes a significant emotional event or dies, either while on the First World or while in an area significantly influenced by the First World, but one can also be created by significant forces like the Eldest in order to torment and vex those who have annoyed them. While a fetch manifests from a soul's \"reflection,\" and as such bears a striking resemblance to that creature's appearance in life, a fetch has no true memories of its own. It keeps fragments of false remembrances from its source as if it experienced them in a half-remembered dream-which ensure the fetch is enraged by and jealous of its source.</p>\n<p>A fetch is similar in appearance to the creature whose soul spawned it, save that it often displays fey-like features such as pointed ears, plantlike elements, or supernatural grace. A fetch who seeks to impersonate a stillliving source must disguise these features, and takes care to manifest its fetch weapon as one known to be wielded by its target.</p>\n<p>When a fetch dies, it and its manifested items fades away into a bloom of plant life, its soul instantly recycled into the First World, leaving behind a patch of weeds and thorny flowers roughly in the shape they held in mockery while alive.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "speed": "air walk",
@@ -2455,7 +2421,8 @@
               "0": {
                 "label": "Used Battlefield Adaptability"
               }
-            }
+            },
+            "id": "AY2NO75pZICF0XpF"
           },
           {
             "name": "Battlefield Adaptability",
@@ -2520,6 +2487,7 @@
       "blurb": "Male human sorcerer",
       "publicNotes": "<p>The man who would take the name Foras grew up millennia ago among worshipers of Pharasma, yet he came to believe that the Outer Gods were the keys to claiming personal power. He tricked his people's priests into to imparting eldritch truths they would not normally share, then shared them with a few fellow secretive scholars of the occult.</p>\n<p>Gathering those whom Foras could manipulate, he retreated to a new stronghold-a location now known as Candlemere. Here, Foras's cult gave up their sight and their souls, only to become trapped with him within their own compound when their leader's brother tracked them down and imprisoned them. Yet even this hasn't stymied Foras, and he continues to this day to work toward his goal of drawing Yog-Sothoth into the world.</p>",
       "saveDetails": "resolve",
+      "senses": "unseen sight",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
@@ -2645,6 +2613,7 @@
     "Gaetane": {
       "name": "Gaetane",
       "blurb": "Male human wererat ranger",
+      "languages": "rat empathy",
       "items": {
         "weapon->Oathbow": {
           "rules": {
@@ -2678,9 +2647,6 @@
               "label": "Oathbow (tracking Oathbow's sworn target)"
             }
           }
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Rat Empathy": {
           "name": "Rat Empathy",
@@ -2876,9 +2842,6 @@
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Irritating Dander": {
           "name": "Irritating Dander",
           "description": "<p>A creature that hits the goblin bat-dog with an unarmed attack, tries to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} it, or otherwise touches it is exposed to goblin pox.</p>"
@@ -2905,9 +2868,6 @@
         },
         "strike-ranged->Trident": {
           "name": "Trident"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Self-Loathing": {
           "name": "Self-Loathing",
@@ -2992,6 +2952,7 @@
     "Gromog": {
       "name": "Gromog",
       "blurb": "Black Tear ogre",
+      "senses": "blinded",
       "items": {
         "armor->Lice-Infested Furs": {
           "name": "Lice-Infested Furs"
@@ -3028,6 +2989,9 @@
         },
         "consumable->Wand of Shocking Grasp (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Shocking Grasp (Level 2)",
+          "consumableSpellName": "Shocking Grasp",
+          "consumableSpellDescription": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes @Damage[1d4[persistent,electricity]] damage on a hit. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Jaws": {
@@ -3272,9 +3236,6 @@
         "strike-melee->Foot": {
           "name": "Foot"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->+2 Status to All Saves vs. Cold": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Cold"
         },
@@ -3298,6 +3259,7 @@
     "Hooktongue": {
       "name": "Hooktongue",
       "blurb": "Variant water orm",
+      "languages": "can't speak any language",
       "publicNotes": "<p>Legendary creatures lurking in remote lakes, water orms always find their way into the tavern tales of lakeside communities. To some travelers, every lake of respectable size seems to be surrounded by towns full of fishers claiming to have spotted a water orm. These elusive creatures inhabit lakes mainly in cool and gloomy regions. Some claim that water orms are an offshoot of sea serpents and linnorms, but no credible link between these creatures has been found.</p>\n<p>Water orms have many features that sea serpents do not, such as the ability to understand the rudiments of language. Their natural inclination to avoid contact and remain hidden often remains at odds with their equally compelling curiosity about those they might spy upon the shores of their lakes. Water orm sightings usually occur when they can't help but to rise up to the surface to take a peek at someone particularly unusual on the beach or floating on the water's surface.</p>\n<p>These creatures are extremely long-lived and can go for decades, or even centuries, with very little to eat. This allows water orms to subsist in lakes without surfacing for many years, even in bodies of fresh water without ample food sources. Water orms might lie in a silty lake bed for years, their elusiveness only contributing to their mythical reputation. When a pet or child goes missing near a lake, rumors might hold that the local water orm is responsible, leading to folk tales that caution residents against venturing out alone near the water.</p>\n<p>While most water orms are described as serpentine or long-necked reptiles, others look similar to bizarrely elongated seals or whales, impossibly large sea horses, or long-necked creatures with paddles resembling those of elasmosauruses.</p>",
       "items": {
         "strike-melee->Jaws": {
@@ -3344,9 +3306,6 @@
       "items": {
         "strike-melee->Fangs": {
           "name": "Fangs"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Hydra Regeneration": {
           "name": "Hydra Regeneration",
@@ -3509,9 +3468,6 @@
         "strike-melee->Horns": {
           "name": "Horns"
         },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-        },
         "action->+4 Status to All Saves vs. Mental": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+4 Status to All Saves vs. Mental"
         },
@@ -3624,6 +3580,7 @@
       "name": "Immense Mandragora",
       "blurb": "Variant mandragora",
       "publicNotes": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
+      "senses": "blood scent, blood scent",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -3699,6 +3656,7 @@
       "name": "Irovetti's Fetch",
       "blurb": "Variant fetch stalker",
       "hpDetails": "regeneration 45 (deactivated by fire or void)",
+      "languages": "tongues",
       "publicNotes": "<p>Fetch stalkers form from the souls of Medium or Small fey or humanoids (Small fetch stalkers have the same statistics as Medium ones.)</p>\n<hr />\n<p>A fetch is a twisted, deviant simulacrum of a humanoid creature that exists or existed at one point on the Material Plane. Rumors of fetches that are reflections of entities from other planes persist, but none of these tales speak of fetches that duplicate anything other than a sapient source. A fetch can manifest spontaneously when a powerful creature undergoes a significant emotional event or dies, either while on the First World or while in an area significantly influenced by the First World, but one can also be created by significant forces like the Eldest in order to torment and vex those who have annoyed them. While a fetch manifests from a soul's \"reflection,\" and as such bears a striking resemblance to that creature's appearance in life, a fetch has no true memories of its own. It keeps fragments of false remembrances from its source as if it experienced them in a half-remembered dream-which ensure the fetch is enraged by and jealous of its source.</p>\n<p>A fetch is similar in appearance to the creature whose soul spawned it, save that it often displays fey-like features such as pointed ears, plantlike elements, or supernatural grace. A fetch who seeks to impersonate a stillliving source must disguise these features, and takes care to manifest its fetch weapon as one known to be wielded by its target.</p>\n<p>When a fetch dies, it and its manifested items fades away into a bloom of plant life, its soul instantly recycled into the First World, leaving behind a patch of weeds and thorny flowers roughly in the shape they held in mockery while alive.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "speed": "air walk",
@@ -3741,10 +3699,6 @@
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
         },
-        "spell->Control Weather": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Survival"
-        },
         "spell->Baleful Polymorph": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
         },
@@ -3753,15 +3707,12 @@
         },
         "spell->Planar Ally": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vgy00hnqxN9VoeoF]\nPlanar Ally",
-          "cost": "rare incense and offerings worth a total value of 2 gp × the spell rank × the target's level",
-          "primarycheck": "Religion (expert)",
-          "secondarycheck": "Diplomacy"
+          "cost": "rare incense and offerings worth a total value of 2 gp × the spell rank × the target's level"
         },
         "spell->Prying Eye": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]\nPrying Eye"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "strike-melee->Claw": {
@@ -3826,9 +3777,6 @@
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Ankle Bite": {
           "name": "Ankle Bite",
           "description": "<p>If Jewel damages a Small or larger creature standing on the ground with her jaws Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round (or off-guard and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round on a critical hit).</p>"
@@ -3850,8 +3798,6 @@
       "items": {
         "spell->Awaken Animal": {
           "cost": "herbs, 1/5 the value on Table 7-1",
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Lore (any), Society, Survival",
           "target": "1 animal up to the level on Table 7-1"
         },
         "spell->Commune with Nature": {
@@ -3860,10 +3806,6 @@
           "description": "<p>As @UUID[Compendium.pf2e.spells-srd.Item.7DN13ILADW2N9Z1t]{Commune}, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
           "primarycheck": "Nature (master)",
           "secondarycheck": "Nature"
-        },
-        "spell->Primal Call": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Crafting, Diplomacy, Survival"
         },
         "strike-melee->Ghostly Hand": {
           "name": "Ghostly Hand"
@@ -4194,7 +4136,8 @@
           "name": "Dagger"
         },
         "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
         },
         "action->Sacrilegious Aura": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bTJnxBQjr7G8yr30]\nSacrilegious Aura",
@@ -4252,6 +4195,8 @@
         },
         "consumable->Wand of Burning Hands (Level 1)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\nWand of Burning Hands (Level 1)",
+          "consumableSpellName": "Burning Hands",
+          "consumableSpellDescription": "<p>Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Dagger": {
@@ -4339,7 +4284,8 @@
           "name": "Greater Shock Maul"
         },
         "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
         },
         "action->Sacrilegious Aura": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bTJnxBQjr7G8yr30]\nSacrilegious Aura",
@@ -4395,6 +4341,7 @@
     "Kundal": {
       "name": "Kundal",
       "blurb": "Male human werewolf",
+      "languages": "wolf empathy",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -4407,9 +4354,6 @@
         },
         "strike-melee->Wolf Jaws": {
           "name": "Wolf Jaws"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Wolf Empathy": {
           "name": "Wolf Empathy",
@@ -4440,6 +4384,7 @@
       "name": "Leng Envoy",
       "blurb": "Variant denizen of Leng",
       "hpDetails": "planar fast healing 15",
+      "languages": "tongues",
       "publicNotes": "<p>Slavers and raiders from the cold, windswept dimension of Leng, these malevolent humanoids range across reality in ominous black ships capable of sailing beyond the borders of dimensions and planes. Although most denizens of Leng seek slaves and plunder like any pirate, others operate as self-styled ambassadors and merchants, sowing discord with far-ranging plots. While the inscrutable denizens dress themselves in flowing robes, veils, and broad turbans to appear human, their aberrant physiology, when glimpsed, is evident from their crown of stubby horns and tentacled jaws to their furry, goat-like legs.</p>\n<p>Above the fierce captains who command the infamous black ships are an even higher caste of denizens of Leng. These cultists and musicians serve as high priests, laboring to appease the frightening gods who look down upon the Nightmare Realm with cold malice.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -4579,6 +4524,8 @@
         },
         "consumable->Wand of Glitterdust (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Glitterdust (Level 2)",
+          "consumableSpellName": "Glitterdust",
+          "consumableSpellDescription": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} instead of @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Revealing Light}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Scythe": {
@@ -4756,6 +4703,9 @@
         },
         "consumable->Wand of Invisibility (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Invisibility (Level 2)",
+          "consumableSpellName": "Invisibility",
+          "consumableSpellDescription": "<p>Cloaked in illusion, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. This makes it @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "effect->Effect: Paizo Adjustment": {
@@ -4908,10 +4858,6 @@
         "spell->Vampiric Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
-        "spell->Consecrate": {
-          "primarycheck": "Religion",
-          "secondarycheck": "Crafting, Performance"
-        },
         "spell->Chill Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
           "target": "1 living or undead creature"
@@ -4927,6 +4873,9 @@
         },
         "consumable->Wand of Heal (Level 1)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\nWand of Heal (Level 1)",
+          "consumableSpellName": "Heal",
+          "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "consumableSpellTarget": "1 willing living creature or 1 undead",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Dagger": {
@@ -4946,6 +4895,7 @@
       "blurb": "Variant mandragora",
       "hpDetails": "fast healing 15",
       "publicNotes": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
+      "senses": "blood scent, blood scent",
       "items": {
         "action->Blood Scent": {
           "name": "Blood Scent",
@@ -5049,7 +4999,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]\nGlitterdust"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Obscuring Mist": {
@@ -5088,9 +5037,6 @@
         },
         "strike-melee->Stinger": {
           "name": "Stinger"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Savage": {
           "name": "Savage",
@@ -5131,7 +5077,8 @@
     },
     "Narlmarch Hunters": {
       "name": "Narlmarch Hunters",
-      "description": "<p>This army is a band of hunters and trappers who have gathered into a ragtag group of archers led by Mayor Loy Rezbin.</p>"
+      "description": "<p>This army is a band of hunters and trappers who have gathered into a ragtag group of archers led by Mayor Loy Rezbin.</p>",
+      "items": {}
     },
     "Ngara": {
       "name": "Ngara",
@@ -5154,7 +5101,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Mage Hand": {
@@ -5231,10 +5177,6 @@
         "spellcastingEntry->Druid Order Spells": {
           "name": "Druid Order Spells"
         },
-        "spell->Call Spirit": {
-          "primarycheck": "Occultism (expert) or Religion (expert)",
-          "secondarycheck": "Occultism or Religion (whichever isn't used for the primary check)"
-        },
         "spell->Stoneskin": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]\nStoneskin"
         },
@@ -5293,6 +5235,7 @@
     "Niodrhast": {
       "name": "Niodrhast",
       "blurb": "Variant neothelid",
+      "languages": "telepathy 100 feet",
       "publicNotes": "<p>This gigantic, mauve worm has a hooked mouth with multiple circular bands of teeth and four barbed tongues. A wielder of terrible occult powers and a vast alien intellect, the neothelid serves the ageless horrors that dwell in strange dimensions beyond known reality-the Outer Gods and Great Old Ones of the Elder Mythos. Neothelids pass down these mysteries to the eerie wormlike creatures they spawn and create in preparation for a future where the worms below shall rule-a time when all other life is nothing more than food.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
@@ -5309,12 +5252,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]\nSuggestion (At Will)"
         },
         "spell->Geas": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Society or Legal Lore",
           "target": "1 creature of a level no greater than double the geas ritual's level"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Mage Hand": {
@@ -5680,6 +5620,7 @@
     },
     "Numerian Radiant Warden": {
       "name": "Numerian Radiant Warden",
+      "languages": "any one ancient language ",
       "publicNotes": "<p>The enigmatic and strange radiant wardens were constructed thousands of years ago to protect observatories and scholars against the incursion of alien aggressors from the Dominion of the Black. Over time, their roles as guardians expanded to include watching over any region where the laws of time and space have worn thin, particularly near portals and permanent gates between planets, planes, or dimensions.</p>\n<p>Named for both the radial nature of the concentric rings that make up their bodies as well as the glowing radiance of their attacks, radiant wardens carry on their orders, defending sites from invasion with single-minded purpose.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -5725,6 +5666,7 @@
     "Nyrissa": {
       "name": "Nyrissa",
       "blurb": "Female variant nymph queen",
+      "languages": "speak with animals; speak with plants",
       "publicNotes": "<p>Nyrissa has not always been a power in the First World, but when she fell in love with Count Ranalc, one of the realm's Eldest, she challenged her place in the plane's hierarchy. The lovers inspired each other to increasing acts of audacity, and it wasn't long before Nyrissa began to think of herself as the newest of the Eldest and proclaimed this to any who would listen, beginning to build her own nation in the First World. Another of the Eldest, the Lantern King, saw opportunity for mayhem here. He spread his influence among his fellow demigods, and before long, several among the Eldest opposed Nyrissa's claim and took steps to challenge her. First, they sent a jabberwock to destroy her, but Nyrissa defeated it and used its blood to create lesser jabberwocks under her own control. Then they attempted to rally a thousand powerful fey against her, but Nyrissa convinced those fey to serve her instead in return for a place in her domain. Finally, the Eldest exiled Count Ranalc to the Shadow Plane for helping to cause the problem in the first place. Suddenly, Nyrissa found herself without an ally among the Eldest. Having expended much of her energy and resources to defeat the jabberwock and recruit the thousand, she knew that she had lost the war and surrendered, apologizing for her acts.</p>\n<p>The Lantern King decided that Nyrissa's apology would suffice only for the jabberwock's death; for her other deeds, he demanded a further punishment- Nyrissa's capacity to love. Without love, the Lantern King argued to the other Eldest, Nyrissa would not be able to sway another of them to her side. However, if she could replace the \"thousand fey breaths\" she stole from the First World with a thousand stolen nations, they would accept her apology for her other actions and restore her capacity to love. Faced with no real option, Nyrissa agreed. She was allowed to keep her domain, now known as Thousandbreaths, but it was carved off to form its own demiplane to serve as a sort of prison. Her love was taken from her and transformed into the sword Briar, which was then entrusted to the Lantern King for safekeeping. He gifted Nyrissa with a chalice he called the Apology, an artifact capable of transforming Material Plane kingdoms she conquered into motes of sand. Once the Apology held a thousand motes of sand, those lands would be absorbed into the First World, Nyrissa would be forgiven, and love would be restored to her.</p>\n<p>The matter settled, the Eldest quickly moved on with their own inscrutable agendas. Yet while they eventually forget about what they'd done to Nyrissa, the nymph herself did not. She grew more and more obsessed with her loss of love-or perhaps it was the loss of love that caused her to grow more violent and obsessed. In her early attempts to discover the location of <em>Briar</em>, she received the visions that would come to haunt her-that <em>Briar </em>would be returned to her, but only as an instrument of her own death.</p>\n<p>Now she has but one kingdom left to claim: the new kingdom risen in the Stolen Lands. With the War of the River Kings over and one kingdom a victor, the time is right for the final grain to be added to the <em>Apology</em>. That this will destroy a significant region on Golarion is irrelevant to the loveless nymph; in her obsession, she fails to see that this act may be the very thing that drives her enemies from to slay her as in the vision.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
@@ -5737,13 +5679,9 @@
         "spellcastingEntry->Arcane Focus Spells": {
           "name": "Arcane Focus Spells"
         },
-        "spell->Control Weather": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Survival"
-        },
-        "spell->Create Demiplane": {
-          "primarycheck": "Arcana, Nature, Occultism, or Religion (legendary)",
-          "secondarycheck": "Arcana, Nature, Occultism,  Religion (whichever three aren't used for the primary check)"
+        "spell->Wish": {
+          "name": "Wish",
+          "description": "<p>You state a wish, making your greatest desire come true. A wish spell can produce any one of the following effects.</p>\n<ul>\n<li>Duplicate any arcane spell of 9th level or lower to which you have access.</li>\n<li>Duplicate any non-arcane spell of 7th level or lower to which you have access.</li>\n<li>Produce any effect whose power level is in line with the above effects.</li>\n<li>Reverse certain effects that refer to the wish spell.</li>\n</ul>\n<p>The GM might allow you to try using <em>wish</em> to produce greater effects than these, but doing so might be dangerous or the spell might have only a partial effect.</p>"
         },
         "spell->Discern Location": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
@@ -5760,8 +5698,6 @@
         },
         "spell->Awaken Animal": {
           "cost": "herbs, 1/5 the value on Table 7-1",
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Lore (any), Society, Survival",
           "target": "1 animal up to the level on Table 7-1"
         },
         "spell->Baleful Polymorph": {
@@ -5780,10 +5716,6 @@
         "spell->Flesh to Stone": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]\nFlesh to Stone",
           "target": "1 creature made of flesh"
-        },
-        "spell->Primal Call": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Crafting, Diplomacy, Survival"
         },
         "spell->True Seeing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
@@ -5804,8 +5736,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
         },
         "spell->Geas": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Society or Legal Lore",
           "target": "1 creature of a level no greater than double the geas ritual's level"
         },
         "spell->Hypnotic Pattern": {
@@ -5818,7 +5748,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]\nGlitterdust"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Restore Senses (At Will)": {
@@ -5995,6 +5924,7 @@
       "name": "Overgrown Viper Vine",
       "blurb": "Variant viper vine",
       "publicNotes": "<p>A voracious, flesh-eating carnivore, the viper vine has a single enormous blossom arising from a thick, leafy tangle of snake-like vines. When the plant senses the approach of suitable prey through its sensitive, shallowly buried root system, it rises up like an agitated snake and unfurls its brightly colored bloom, an act that releases a cloud of mind-numbing pollen. Persistent stories claim the viper vine can lure prey into its clutches by swaying with a hypnotic motion, but this effect is in fact created by this invisible, odorless pollen cloud.</p>\n<p>Since a viper vine gains nourishment by consuming creatures rather than through ingesting moisture and soil, it has developed rudimentary locomotion and can drag itself along the ground with its tentacle-like roots. It even has a form of rudimentary sentience, allowing it to not only discern differences in prey and make limited tactical decisions, but also to avoid creatures that are particularly large or dangerous-looking.</p>\n<p>The area around viper vine hunting grounds is often strewn with the partially devoured remains of victims. It's not unusual to find the rotting corpses of wild animals, ill-fated adventurers, and even giants in the plant's immediate vicinity, along with a scattering of incidental treasure left behind on the corpses. A viper vine rarely returns to the carcass of a creature it killed earlier, preferring to hunt fresh meat.</p>",
+      "senses": "otherwise imprecise) 60 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -6038,9 +5968,6 @@
         },
         "strike-melee->Claw": {
           "name": "Claw"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Three Headed": {
           "name": "Three Headed",
@@ -6249,7 +6176,8 @@
     },
     "Pitax War Machines": {
       "name": "Pitax War Machines",
-      "description": "<p>These siege weapons are positioned atop all of the city’s watchtowers and afford a controlling view of all approaches.</p>"
+      "description": "<p>These siege weapons are positioned atop all of the city’s watchtowers and afford a controlling view of all approaches.</p>",
+      "items": {}
     },
     "Pitax Warden": {
       "name": "Pitax Warden",
@@ -6324,9 +6252,6 @@
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Self-Loathing": {
           "name": "Self-Loathing",
           "description": "<p>A mitflit's self-loathing makes it easy to influence. It takes a -4 penalty to its Will DC against checks to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}.</p>"
@@ -6392,9 +6317,6 @@
         },
         "strike-ranged->Quill": {
           "name": "Quill"
-        },
-        "action->Scent (Precise) 120 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Precise) 120 feet"
         },
         "action->Planar Acclimation": {
           "name": "Planar Acclimation",
@@ -6494,6 +6416,7 @@
     "Rezatha": {
       "name": "Rezatha",
       "blurb": "Variant remorhaz",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>A remorhaz is an enormous arctic predator that resembles a multilegged insect with draconic features. This monster has chitinous plates and more than a score segmented legs, a multipartite maw, and winglike growths fianking its head. The most unusual aspect of the creature, however, is its internal heat, which burns with such intensity that it causes the armored plates on the creature's back to become superheated whenever the beast is agitated.</p>\n<p>Remorhazes are carnivores. Their diet includes arctic animals such as elk, but a hungry remorhaz readily devours anything it can catch and kill. It commonly lurks beneath ice or snow and ambushes prey with a sudden upward strike. Many victims die before even knowing what attacked them.</p>\n<p>Those who survive the worm's initial onslaught must face not only its deadly jaws, but also its hideously hot body. This heat can melt weapons, scorch armor, and burn flesh-all tactics the remorhaz uses to disable and defeat its foes. A remorhaz's internal fire allows it to burrow through ice and snow with ease. It leaves smooth tunnels in its wake as melted ice refreezes to leave the telltale signs of its passage. Most people underestimate a remorhaz's intelligence, assuming it to be a mere animal. However, remorhazes are capable of learning languages. Frost giants in particular use this trait to form alliances with them. The giants provide food, protection, and shelter for the worm, and in return the remorhaz acts as a guard beast and helps the giants build fortresses and forge metal weapons. The giants also employ the worms as war beasts, using them to undermine enemy positions.</p>",
       "items": {
         "strike-melee->Jaws": {
@@ -6591,6 +6514,7 @@
     "Risen Fetch": {
       "name": "Risen Fetch",
       "hpDetails": "regeneration 50 (deactivated by fire or void)",
+      "languages": "tongues",
       "publicNotes": "<p>Echoes of the corrupted soul of the undead can be used to spawn a fetch as well. A risen fetch appears more as its source did in life than as an undead.</p>\n<hr />\n<p>A fetch is a twisted, deviant simulacrum of a humanoid creature that exists or existed at one point on the Material Plane. Rumors of fetches that are reflections of entities from other planes persist, but none of these tales speak of fetches that duplicate anything other than a sapient source. A fetch can manifest spontaneously when a powerful creature undergoes a significant emotional event or dies, either while on the First World or while in an area significantly influenced by the First World, but one can also be created by significant forces like the Eldest in order to torment and vex those who have annoyed them. While a fetch manifests from a soul's \"reflection,\" and as such bears a striking resemblance to that creature's appearance in life, a fetch has no true memories of its own. It keeps fragments of false remembrances from its source as if it experienced them in a half-remembered dream-which ensure the fetch is enraged by and jealous of its source.</p>\n<p>A fetch is similar in appearance to the creature whose soul spawned it, save that it often displays fey-like features such as pointed ears, plantlike elements, or supernatural grace. A fetch who seeks to impersonate a stillliving source must disguise these features, and takes care to manifest its fetch weapon as one known to be wielded by its target.</p>\n<p>When a fetch dies, it and its manifested items fades away into a bloom of plant life, its soul instantly recycled into the First World, leaving behind a patch of weeds and thorny flowers roughly in the shape they held in mockery while alive.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "speed": "air walk",
@@ -6644,9 +6568,6 @@
         },
         "strike-melee->Paddle": {
           "name": "Paddle"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Deep Breath": {
           "name": "Deep Breath",
@@ -6788,6 +6709,7 @@
     },
     "Shambler": {
       "name": "Shambler",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Shamblers are cunning carnivorous plants that resemble heaps of wet, rotting vegetation. Even when standing erect on their stumpy legs, shamblers don't have much in the way of identifiable anatomy; they are tangles of parasitic vines that lash out at prey with their longest creepers, entwined together to deliver powerful blows. Sometimes called \"shambling mounds,\" these ambush predators have a particular fondness for flesh, and are most well known for their ability to hunker down and hide in plain sight. A shambler can draw nutrients from plant matter or soil, but won't do so if it suspects meat might soon wander near, and indeed may lie in wait for days in anticipation of such a meal.</p>\n<p>Shamblers are usually solitary creatures. Fierce thunderstorms are among the few events that bring numerous shamblers together. During such gatherings, the plants gather around strange but seemingly sacred earthen mounds in remote jungles and swamps and cavort and caper excitedly, stretching their tendrils toward the sky to hope for-or perhaps to summon-intense lightning strikes. Not only are these strange plants unharmed by even the most powerful electrical strikes, but they seem to become supernaturally empowered by such bursts of raw energy. Shamblers consider being struck by lightning a sign of divine favor, and those shamblers frequently blasted by bolts of electricity become respected elders among their kind. Shambler elders are few and far between and may possess a wide array of abilities; some can cast primal spells, others can empathically call upon the aid of other shamblers in the area, and still others wield awesome powers over electricity.</p>\n<p>Other types of shamblers exist, including those composed not of plant matter but fungal growth. These creatures, known as \"spore mounds,\" discharge clouds of toxic spores from their bodies when struck in combat. In semiarid deserts, shambler-like plants called tanglethorns dwell amid sagebrush and rock formations; they resemble bunches of tumbleweeds and cacti and inflict deep, bloody lacerations with their attacks.</p>",
       "items": {
         "strike-melee->Vine": {
@@ -6953,7 +6875,7 @@
         },
         "action->Burning Room": {
           "name": "Burning Room",
-          "description": "<p>The flames and heat deal [[/r 1d6[fire]]] damage (@Check[type:reflex|dc:16|basic:true] save) to creatures who end their turns in these burning chambers as long as the fires continue.</p>\n<p>Breaking the room's glass window before the fire is extinguished causes the fire within to flare up and deal [[/r 2d6[fire]]] damage at the end of that round (rather than the standard 1d6), but once at least three of the burning rooms have their windows ventilated, the smoke in these rooms and in area A16 lessens, and the DC of the Fortitude save to resist its Choke effect is reduced to 11.</p>"
+          "description": "<p>The flames and heat deal @Damage[1d6[fire]] damage (@Check[type:reflex|dc:16|basic:true] save) to creatures who end their turns in these burning chambers as long as the fires continue.</p>\n<p>Breaking the room's glass window before the fire is extinguished causes the fire within to flare up and deal @Damage[2d6[fire]] damage at the end of that round (rather than the standard 1d6), but once at least three of the burning rooms have their windows ventilated, the smoke in these rooms and in area A16 lessens, and the DC of the Fortitude save to resist its Choke effect is reduced to 11.</p>"
         }
       }
     },
@@ -7178,6 +7100,9 @@
         },
         "consumable->Wand of Magic Missile (Level 1)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\nWand of Magic Missile (Level 1)",
+          "consumableSpellName": "Magic Missile",
+          "consumableSpellDescription": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "effect->Spell Effect: Mage Armor": {
@@ -7326,9 +7251,6 @@
         "strike-melee->Beak": {
           "name": "Beak"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Bloodcurdling Screech": {
           "name": "Bloodcurdling Screech",
           "description": "<p>The owlbear unleashes a loud screech that terrifies its prey. Each creature in an @Template[type:emanation|distance:80] must attempt a @Check[type:will|dc:25] save. Regardless of the result, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
@@ -7394,12 +7316,7 @@
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
           "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
-          "primarycheck": "Arcana (master) or Occultism (master)",
           "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
-        },
-        "spell->Incarnate Ancestry": {
-          "primarycheck": "Nature (expert)",
-          "secondarycheck": "Arcana, Medicine, Occultism, or Religion"
         },
         "spell->Vampiric Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
@@ -7578,19 +7495,11 @@
         "spellcastingEntry->Cleric Domain Spells": {
           "name": "Cleric Domain Spells"
         },
-        "spell->Word of Recall": {
-          "primarycheck": "Arcana or Occultism (expert, the check has the secret trait)",
-          "secondarycheck": "Arcana or Occultism  (whichever isn't used for the primary check), Society"
-        },
         "spell->Feeblemind": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]\nFeeblemind"
         },
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
-        },
-        "spell->Blight": {
-          "primarycheck": "Nature (expert)",
-          "secondarycheck": "Survival"
         },
         "spell->Zone of Truth": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aewxsale5xWEPKLk]\nZone of Truth"
@@ -7920,6 +7829,7 @@
       "name": "Thresholder Disciple",
       "blurb": "Human cultist",
       "saveDetails": "evasion",
+      "senses": "unseen sight",
       "items": {
         "equipment->Robes": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRobes"
@@ -7989,6 +7899,7 @@
       "acDetails": "concealed",
       "blurb": "Human occult researcher",
       "saveDetails": "juggernaut",
+      "senses": "unseen sight",
       "items": {
         "weapon->Acid Flask (Greater) (Infused)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\nAcid Flask (Greater) (Infused)",
@@ -8061,6 +7972,7 @@
       "name": "Thresholder Mystic",
       "blurb": "Human cleric of Yog-Sothoth",
       "saveDetails": "resolve",
+      "senses": "unseen sight",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
@@ -8126,9 +8038,6 @@
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Hunting Cry": {
           "name": "Hunting Cry",
@@ -8225,6 +8134,24 @@
         "action->Wide Swing": {
           "name": "Wide Swing",
           "description": "<p>The hill giant makes a single greatclub Strike and compares the attack roll result to the ACs of up to two foes within its reach.</p>\n<p>This counts as two attacks for the hill giant's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Tok-Nikrat Scouts": {
+      "name": "Tok-Nikrat Scouts",
+      "description": "<p>Capable of striding across water, these bog striders from the settlement of Tok-Nikrat (encounter area <strong>HT12</strong>) fight with nets and spears.</p>",
+      "items": {
+        "campaignFeature->Hurl Nets": {
+          "name": "Hurl Nets",
+          "description": "<p>If the Tok-Nikrat Scouts hit an army with a net Strike, the army takes no damage. Instead, it increases its @UUID[Compendium.pf2e.kingmaker-features.Item.oVhkdym3D6TiTbrN]{Mired} condition value by 1 (or by 2 on a critical success). An army that is mired as a result of hurled nets can attempt to reduce the value of this mired condition (but not that caused by other sources) by attempting a Battle action against the Tok-Nikrat Scout’s Maneuver DC. On a success, the army reduces their mired condition by 1 (or by 2 on a critical success), but on a critical failure, they increase the mired condition caused by the hurled nets by 1. Tok-Nikrat Scouts can’t hurl nets at a target army that is distant.</p>"
+        },
+        "campaignFeature->Water Retreat": {
+          "name": "Water Retreat",
+          "description": "<p>If the battlefield features water terrain, Tok-Nikrat Scouts gain a +4 circumstance bonus on Maneuver checks made to Disengage.</p>"
+        },
+        "campaignFeature->Water Stride": {
+          "name": "Water Stride",
+          "description": "<p>The Tok-Nikrat Scouts stride over watery surfaces, and they ignore difficult terrain caused by water or swamps. They gain a +4 circumstance bonus on initiative checks in war encounters when the battlefield features either terrain.</p>"
         }
       }
     },
@@ -8420,11 +8347,21 @@
         },
         "consumable->Wand of Heal (Level 3)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\nWand of Heal (Level 3)",
+          "consumableSpellName": "Heal",
+          "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "consumableSpellTarget": "1 willing living creature or 1 undead",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
-        "feat->Domain Initiate (Fire)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.feats-srd.Item.hT4INKGtly4QY8KN]\nDomain Initiate (Fire)"
-        },
+        "feat->Domain Initiate (Fire)": [
+          {
+            "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.feats-srd.Item.hT4INKGtly4QY8KN]\nDomain Initiate (Fire)",
+            "id": "AOOhs0DhPtLpixKh"
+          },
+          {
+            "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.feats-srd.Item.hT4INKGtly4QY8KN]\nDomain Initiate (Fire)",
+            "id": "g4oMBCNZL0MZJpE6"
+          }
+        ],
         "feat->Turn Undead": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.feats-srd.Item.PGyzFBwuTgypU8cD]\nTurn Undead"
         },
@@ -8549,6 +8486,7 @@
     "Tulvak": {
       "name": "Tulvak",
       "blurb": "Variant female green hag",
+      "languages": "tongues",
       "publicNotes": "<p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.bAjHCeyNcPRqOmLv]{Changelings} who have the potential to become hags themselves.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
@@ -8557,10 +8495,6 @@
         },
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
-        },
-        "spell->Control Weather": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Survival"
         },
         "spell->Baleful Polymorph": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
@@ -8745,9 +8679,6 @@
       "blurb": "Variant army ant swarm",
       "publicNotes": "<p>An army ant swarm is a terrifying carpet of stinging insects that devours all in its path.</p>",
       "items": {
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Cling": {
           "name": "Cling",
           "description": "<p><strong>Trigger</strong> A creature leaves the swarm's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm takes [[/r {1d6}]]{1d6 damage} as ants cling to the creature and continue biting, dealing @Damage[7d6[persistent,piercing]] damage. High winds or immersion in water reduces the DC of the flat check to end this persistent damage to 5. Any area damage dealt to the creature destroys these clinging ants.</p>"
@@ -8760,6 +8691,7 @@
     },
     "Vilderavn Herald": {
       "name": "Vilderavn Herald",
+      "languages": "tongues",
       "publicNotes": "<p>In its true form, a vilderavn herald is a human-sized raven. Its ability to assume a humanoid guise suits it to insinuate itself into the retinue of a mortal ruler or to travel without too much concern, but more often these deadly fey directly serve more powerful rulers, such as the Eldest.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -8965,14 +8897,11 @@
           "name": "Arcane Prepared Spells"
         },
         "spell->Imprisonment (Cannot Currently Cast)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2CNqkt2s2IYkVnv6]\nImprisonment (Cannot Currently Cast)",
-          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
-          "secondarycheck": "Crafting, Society"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2CNqkt2s2IYkVnv6]\nImprisonment (Cannot Currently Cast)"
         },
         "spell->Planar Binding": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
           "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
-          "primarycheck": "Arcana (master) or Occultism (master)",
           "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
         },
         "spell->Tongues": {
@@ -8985,9 +8914,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.K2WpC3FFoHrqX9Q5]\nHypnotic Pattern"
         },
         "spell->Create Undead": {
-          "cost": "black onyx, see Table 7-1",
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Religion"
+          "cost": "black onyx, see Table 7-1"
         },
         "spell->Chill Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
@@ -9074,6 +9001,7 @@
       "name": "Werendegar",
       "blurb": "Variant male glimmerling",
       "publicNotes": "<p>Gimmerlings are small, shapeshifting fey who stage ambushes to sate their endless hunger and childish greed. These cruelly curious fey obsess over finding and making unusual traps and sadistic weapons, and their favorite amusement is se eing these traps sprung or the weapons wielded. When on the Material Plane, they are frequently found in urban areas, particularly slums or other parts of town where they can either go unnoticed or be easily forgotten-and have plenty of victims to choose from.</p>\n<p>A typical gimmerling disguises itself as an endangered child, doing so in hopes of drawing creatures close enough to rob. The gimmerling puts itself in apparent danger using a trap, construct, or bribed ally, or even a coerced monster like a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.BAD7npndaooB3Pz1]{Redcap}.</p>\n<p>Because gimmerlings sometimes trade obscure smithing or trapping techniques in exchange for gifts that sate their curiosity, their greed, or their hunger, they have at times been worshipped as minor gods of the forge. Some disciplined gimmerlings work as honored artisans, elite guards, or spies for the demigods known as the Eldest who dwell in the depths of the First World.</p>",
+      "senses": "hungersense (imprecise) 30 feet",
       "speed": "trickster's step",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -9126,6 +9054,7 @@
     "Whimwyrm": {
       "name": "Whimwyrm",
       "publicNotes": "<p>Whimwyrms are unpredictable dragons native to the whimsically dangerous First World. While their coloration and appearance might evoke reactions of adoration, their moods shift quickly from one extreme to the other. Many who have assumed that their adorability and relatively small size equates to safety have met swift and grisly ends on a whimwyrm's fangs or magic.</p>\n<p>A whimwyrm is a slender, sleek dragon, not much longer than seven feet from snout to tail, but its speed in combat is unnerving. When a whimwyrm attacks, be it with its fanged mouth or its long tail, it makes several quick, darting snaps or lashes at once. While stylistically, these attacks consist of multiple bites or lashings, they still resolve as a single Strike.</p>",
+      "senses": "fog vision",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Arcane Innate Spells"
@@ -9142,9 +9071,6 @@
         },
         "strike-melee->Whiplashing Tail": {
           "name": "Whiplashing Tail"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Fog Vision": {
           "name": "Fog Vision",
@@ -9170,7 +9096,9 @@
     },
     "Wild Hunt Archer": {
       "name": "Wild Hunt Archer",
+      "languages": "speak with animals; speak with plants",
       "publicNotes": "<p>These lithe, androgynous humanoids have pointed ears, glowing green eyes, and hair that flows softly at all times as if in a gentle breeze. They are methodical hunters who fire their bows with uncanny accuracy. Since wild hunt archers tend to be slower on foot than most of their companions, they often rely on wild hunt horses to provide increased mobility. Rather than carrying normal arrows, they can produce arrows as needed from magical quivers-these quivers do not function in this manner for anyone other than wild hunt archers.</p>\n<hr />\n<p>Although some believe the wild hunt is nothing more than legend, the riders of the wild hunt are real. Countless members of these fey compose the wild hunt-the term \"wild hunt\" refers to the family of creatures as a whole as well as to individual groups of these fey who gather to pursue their quarry.</p>\n<p>Wild hunt monarchs set the terms of each specific hunt, depending upon the prey and their own whims. The easier the prey, the more likely a monarch is to impose rules to make the hunt more entertaining, such as forbidding anyone but their hounds from injuring the quarry, or holding back their forces to give the target creature time to rest and recover.</p>\n<p>While most missions come from rumors gathered by a wild hunt monarch, monarchs occasionally consider proposals from the few who are brave and knowledgeable enough to seek them out. They accept tasks only from sources they deem worthy, and the payments they demand for their services vary significantly, though they have no interest in material wealth. Wild hunt monarchs take grave offense at unfavorable deals. Those who attempt to cheat a monarch often become the enraged fey's next target.</p>",
+      "senses": "greensight",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -9252,7 +9180,9 @@
     },
     "Wild Hunt Horse": {
       "name": "Wild Hunt Horse",
+      "languages": "speak with animals; speak with plants",
       "publicNotes": "<p>These steeds stand upon puffs of air, their grassy manes and tails swishing majestically in the wind. When they are not participating in a hunt, wild hunt horses enjoy constructing complicated courses through land and sky and racing each other for ever-changing stakes.</p>\n<hr />\n<p>Although some believe the wild hunt is nothing more than legend, the riders of the wild hunt are real. Countless members of these fey compose the wild hunt-the term \"wild hunt\" refers to the family of creatures as a whole as well as to individual groups of these fey who gather to pursue their quarry.</p>\n<p>Wild hunt monarchs set the terms of each specific hunt, depending upon the prey and their own whims. The easier the prey, the more likely a monarch is to impose rules to make the hunt more entertaining, such as forbidding anyone but their hounds from injuring the quarry, or holding back their forces to give the target creature time to rest and recover.</p>\n<p>While most missions come from rumors gathered by a wild hunt monarch, monarchs occasionally consider proposals from the few who are brave and knowledgeable enough to seek them out. They accept tasks only from sources they deem worthy, and the payments they demand for their services vary significantly, though they have no interest in material wealth. Wild hunt monarchs take grave offense at unfavorable deals. Those who attempt to cheat a monarch often become the enraged fey's next target.</p>",
+      "senses": "greensight",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -9328,7 +9258,9 @@
     },
     "Wild Hunt Hound": {
       "name": "Wild Hunt Hound",
+      "languages": "speak with animals; speak with plants",
       "publicNotes": "<p>Wild hunt hounds are intelligent hunters and expert trackers that take the lead against elusive prey. Left to their own devices, they seek out creatures that are notoriously difficult to track. They are always surrounded with green mist composed of fragments of the spirits of the wild hunt's victims, a mystic fog that forms itself into a spectral pack to fight at its side.</p>\n<hr />\n<p>Although some believe the wild hunt is nothing more than legend, the riders of the wild hunt are real. Countless members of these fey compose the wild hunt-the term \"wild hunt\" refers to the family of creatures as a whole as well as to individual groups of these fey who gather to pursue their quarry.</p>\n<p>Wild hunt monarchs set the terms of each specific hunt, depending upon the prey and their own whims. The easier the prey, the more likely a monarch is to impose rules to make the hunt more entertaining, such as forbidding anyone but their hounds from injuring the quarry, or holding back their forces to give the target creature time to rest and recover.</p>\n<p>While most missions come from rumors gathered by a wild hunt monarch, monarchs occasionally consider proposals from the few who are brave and knowledgeable enough to seek them out. They accept tasks only from sources they deem worthy, and the payments they demand for their services vary significantly, though they have no interest in material wealth. Wild hunt monarchs take grave offense at unfavorable deals. Those who attempt to cheat a monarch often become the enraged fey's next target.</p>",
+      "senses": "greensight",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -9393,14 +9325,12 @@
     },
     "Wild Hunt Monarch": {
       "name": "Wild Hunt Monarch",
+      "languages": "speak with animals; speak with plants",
       "publicNotes": "<p>Each wild hunt follows a wild hunt monarch, who travels between the realm of the fey and the Material Plane in search of new quarry. These limber and regal humanoids have elk antlers, long pointed ears, flowing white hair, and luminescent green eyes.</p>\n<hr />\n<p>Although some believe the wild hunt is nothing more than legend, the riders of the wild hunt are real. Countless members of these fey compose the wild hunt-the term \"wild hunt\" refers to the family of creatures as a whole as well as to individual groups of these fey who gather to pursue their quarry.</p>\n<p>Wild hunt monarchs set the terms of each specific hunt, depending upon the prey and their own whims. The easier the prey, the more likely a monarch is to impose rules to make the hunt more entertaining, such as forbidding anyone but their hounds from injuring the quarry, or holding back their forces to give the target creature time to rest and recover.</p>\n<p>While most missions come from rumors gathered by a wild hunt monarch, monarchs occasionally consider proposals from the few who are brave and knowledgeable enough to seek them out. They accept tasks only from sources they deem worthy, and the payments they demand for their services vary significantly, though they have no interest in material wealth. Wild hunt monarchs take grave offense at unfavorable deals. Those who attempt to cheat a monarch often become the enraged fey's next target.</p>",
+      "senses": "greensight",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
-        },
-        "spell->Control Weather": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Survival"
         },
         "spell->Wind Walk": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]\nWind Walk",
@@ -9416,8 +9346,6 @@
         },
         "spell->Primal Call (Creatures with the Wild Hunt Trait Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pZc8ZwtsyWnxUUW0]\nPrimal Call (Creatures with the Wild Hunt Trait Only)",
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Crafting, Diplomacy, Survival",
           "target": "1 creature with the Wild Hunt Trait"
         },
         "spell->Stone Tell": {
@@ -9488,7 +9416,9 @@
     },
     "Wild Hunt Scout": {
       "name": "Wild Hunt Scout",
+      "languages": "speak with animals; speak with plants",
       "publicNotes": "<p>These compact few have pointed ears, green eyes, and ram's horns. They relish the chance to seek revenge upon those who have wronged or insulted the wild hunt, but they tend to grow bored when the stakes aren't lethal.</p>\n<hr />\n<p>Although some believe the wild hunt is nothing more than legend, the riders of the wild hunt are real. Countless members of these fey compose the wild hunt-the term \"wild hunt\" refers to the family of creatures as a whole as well as to individual groups of these fey who gather to pursue their quarry.</p>\n<p>Wild hunt monarchs set the terms of each specific hunt, depending upon the prey and their own whims. The easier the prey, the more likely a monarch is to impose rules to make the hunt more entertaining, such as forbidding anyone but their hounds from injuring the quarry, or holding back their forces to give the target creature time to rest and recover.</p>\n<p>While most missions come from rumors gathered by a wild hunt monarch, monarchs occasionally consider proposals from the few who are brave and knowledgeable enough to seek them out. They accept tasks only from sources they deem worthy, and the payments they demand for their services vary significantly, though they have no interest in material wealth. Wild hunt monarchs take grave offense at unfavorable deals. Those who attempt to cheat a monarch often become the enraged fey's next target.</p>",
+      "senses": "greensight",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -9595,9 +9525,6 @@
         "strike-melee->Hoof": {
           "name": "Hoof"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Buck": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]\n<p>@Check[type:reflex|dc:26] @Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
         },
@@ -9610,6 +9537,7 @@
     "Winged Owlbear": {
       "name": "Winged Owlbear",
       "blurb": "Variant owlbear",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>With the body of a powerful brown bear and the keen senses of an owl, the owlbear is a dangerous territorial predator, fearlessly attacking any creature that strays into its domain. Those who run afoul of an owlbear hear its terrifying screech only seconds before the massive creature is upon them, ripping them apart with deadly talons and a powerful beak.</p>\n<p>Although their origin is lost to time, owlbears are assumed to be the result of a magical experiment to make a more cunning predator. According to the legend, the wizard was too successful and ended up being the flrst victim of the beast. Today, owlbears can be found around the world, with a variety of features. While the most common subspecies looks like a brown bear with the features of a great horned owl, owlbears from the frozen north might resemble polar bears mixed with snowy owls, and in temperate rain forests they might resemble black bears with the heads of barn owls.</p>\n<p>Most owlbears live solitary lives, gathering only to mate and raise cubs, which are hatched from eggs. An owlbear's territory usually extends to around 5 miles from its lair, with clear signs of its habitat appearing with 1 mile (clawed up trees, gigantic feathers, and shredded carcasses). The lair of an owlbear rarely holds anything of value, but some adventurers have found trinkets, coins, and even jewelry in the massive pellets of undigested bones these monsters leave behind.</p>",
       "items": {
         "strike-melee->Beak": {
@@ -9617,9 +9545,6 @@
         },
         "strike-melee->Talon": {
           "name": "Talon"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Bloodcurdling Screech": {
           "name": "Bloodcurdling Screech",
@@ -9753,6 +9678,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -9768,6 +9694,7 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

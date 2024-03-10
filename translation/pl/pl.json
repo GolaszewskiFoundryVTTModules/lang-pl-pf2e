@@ -135,6 +135,9 @@
                 "TakesNoDamage": "<actor>{actor}</actor> nie odnosi obrażeń.",
                 "TheTarget": "Cel"
             },
+            "AttackEffects": {
+                "PlusList": "(plus {list})"
+            },
             "Attacks": "Ataki",
             "Character": {
                 "Attribute": {
@@ -231,9 +234,12 @@
                     "Defense": {
                         "Heavy": "Pancerz Ciężki",
                         "HeavyBarding": "Kropierz Ciężki",
+                        "HeavyShort": "Ciężki",
                         "Light": "Pancerz Lekki",
                         "LightBarding": "Kropierz Lekki",
+                        "LightShort": "Lekki",
                         "Medium": "Pancerz Średni",
+                        "MediumShort": "Średni",
                         "Title": "Obrona",
                         "Unarmored": "Obrona bez Pancerza"
                     },
@@ -405,7 +411,7 @@
                         "LowLightVision": "Widzenie w Słabym Świetle",
                         "MotionSense": "Wyczucie Ruchu",
                         "Scent": "Węch",
-                        "SeeInvisibility": "Widzenie Niewidzialności",
+                        "SeeInvisibility": "Widzenie Niewidocznego",
                         "Spiritsense": "Wyczucie Dusz",
                         "Thoughtsense": "Wyczycie Myśli",
                         "Tremorsense": "Wyczucie Drgań",
@@ -465,7 +471,7 @@
                 "EmitsSound": {
                     "Encounter": "Podczas Starcia",
                     "False": "Nigdy",
-                    "Hint": "Czy to zagrożenie wydaje dźwięk który można wykryć zmysłem słuchu",
+                    "Hint": "Czy to zagrożenie wydaje dźwięk, który można wykryć zmysłem słuchu.",
                     "Title": "Wydaje Dźwięk?",
                     "True": "Zawsze"
                 },
@@ -501,7 +507,7 @@
                 "TotalBulk": "Całkowite Naręcze: {bulk}",
                 "UnitTitle": {
                     "Bulk": "Naręcze Jednostkowe",
-                    "Price": "Cena Jednostkowa"
+                    "Price": "Cena"
                 }
             },
             "IWREditor": {
@@ -628,7 +634,16 @@
                 },
                 "Wealth": "Majątek"
             },
-            "Plural": "Aktorzy"
+            "Plural": "Aktorzy",
+            "Vehicle": {
+                "EmitsSound": {
+                    "Encounter": "Podczas Starcia",
+                    "False": "Nigdy",
+                    "Hint": "Czy ten pojazd wydaje dźwięk, który można wykryć zmysłem słuchu.",
+                    "Title": "Wydaje Dźwięk?",
+                    "True": "Zawsze"
+                }
+            }
         },
         "ActorSizeGargantuan": "Ogromny",
         "ActorSizeHuge": "Wielki",
@@ -653,34 +668,24 @@
         "AncestryFeatLevels": "Poziomy Atutów Przodkowstwa",
         "AncestryFeatures": "Atrybuty Przodkowstwa",
         "AncestryHP": "PŻ z Przodkowstwa",
-        "AreaLabel": "Obszar",
-        "AreaSize10": "10 Stóp",
-        "AreaSize100": "100 Stóp",
-        "AreaSize1000": "1000 Stóp",
-        "AreaSize120": "120 Stóp",
-        "AreaSize15": "15 Stóp",
-        "AreaSize1Mile": "1 Mila",
-        "AreaSize20": "20 Stóp",
-        "AreaSize25": "25 Stóp",
-        "AreaSize30": "30 Stóp",
-        "AreaSize360": "360 Stóp",
-        "AreaSize40": "40 Stóp",
-        "AreaSize45": "45 Stóp",
-        "AreaSize5": "5 Stóp",
-        "AreaSize50": "50 Stóp",
-        "AreaSize500": "500 Stóp",
-        "AreaSize60": "60 Stóp",
-        "AreaSize65": "65 Stóp",
-        "AreaSize75": "75 Stóp",
-        "AreaSize80": "80 Stóp",
-        "AreaSize90": "90 Stóp",
-        "AreaSizeQuarterMile": "Ćwierć Mili",
-        "AreaTypeBurst": "Wybuch",
-        "AreaTypeCone": "Stożek",
-        "AreaTypeCube": "Sześcian",
-        "AreaTypeEmanation": "Emanacja",
-        "AreaTypeLine": "Linia",
-        "AreaTypeSquare": "Kwadrat",
+        "Area": {
+            "InFeet": "Obszar (Stopy)",
+            "Label": "Obszar",
+            "Shape": {
+                "burst": "wybuch",
+                "cone": "stożek",
+                "cube": "sześcian",
+                "cylinder": "cylinder",
+                "emanation": "emanacja",
+                "line": "linia",
+                "square": "kwadrat"
+            },
+            "Size": {
+                "Half": "pół",
+                "Mile": "mila",
+                "Quarter": "ćwierć"
+            }
+        },
         "ArmorArmorLabel": "Premia KP",
         "ArmorCheckLabel": "Kara do Testów",
         "ArmorCheckPenalty": "Kara Pancerza do Testów",
@@ -885,8 +890,8 @@
         "CharacterTraits": "Cechy Postaci",
         "CharacterTraitsHeader": "Cechy i Inne Szczegóły",
         "ChatRollDetails": {
+            "DiceAndModifiers": "Kości i Modyfikatory",
             "FlatCheckNoModifiers": "Testy płaskie nigdy nie obejmują żadnego modyfikatora, premii ani kar.",
-            "ModifiersAndDice": "Modyfikatory i Kości",
             "RollOptions": "Opcje Rzutu",
             "Select": "Zbadaj Rzut",
             "Title": "Szczegóły Rzutu"
@@ -894,10 +899,11 @@
         "Check": {
             "DC": {
                 "Label": {
-                    "AdjustedTarget": "<target>Cel: {target}</target> <dc>({dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>)</dc>",
-                    "NoChangeTarget": "<target>Cel: {target}</target> <dc>({dcType} <adjusted>{adjusted}</adjusted>)</dc>",
+                    "AdjustedTarget": "<opposer>Cel: {opposer}</opposer> <dc>({dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>)</dc>",
+                    "NoChangeTarget": "<opposer>Cel: {opposer}</opposer> <dc>({dcType} <adjusted>{adjusted}</adjusted>)</dc>",
                     "NoTarget": "<dc>{dc} {dcType}</dc>",
-                    "WithTarget": "<target>Cel: {target}</target> <dc>({dc} {dcType})</dc>"
+                    "WithTarget": "<opposer>Cel: {opposer}</opposer> <dc>({dc} {dcType})</dc>",
+                    "WithOrigin": "<opposer>Źródło: {opposer}</opposer> <dc>({dcType} {dc})</dc>"
                 },
                 "Specific": {
                     "armor": "KP",
@@ -1160,7 +1166,9 @@
                 "Type": {
                     "abysium": "otchłanium",
                     "adamantine": "adamantyt",
+                    "alchemical": "alchemiczne",
                     "all-damage": "wszystkie obrażenia",
+                    "arcane": "magia tajemna",
                     "area-damage": "obrażenia obszarowe",
                     "arrow-vulnerability": "wrażliwość na strzały",
                     "auditory": "słuchowość",
@@ -1180,6 +1188,7 @@
                     "death-effects": "efekty śmierci",
                     "detection": "wykrywanie",
                     "disease": "choroba",
+                    "divine": "magia boska",
                     "djezet": "dżezet",
                     "doomed": "zgubiony",
                     "drained": "wyniszczony",
@@ -1212,6 +1221,7 @@
                     "nonlethal-attacks": "ataki niezabójcze",
                     "noqual": "noqual",
                     "object-immunities": "niewrażliwości obiektów",
+                    "occult": "magia okultystyczna",
                     "off-guard": "opuszczona garda",
                     "olfactory": "węchowość",
                     "orichalcum": "oryszalk",
@@ -1222,6 +1232,7 @@
                     "plant": "roślina",
                     "polymorph": "polimorfia",
                     "possession": "opętanie",
+                    "primal": "magia pierwotna",
                     "prone": "powalenie",
                     "protean-anatomy": "proteańska anatomia",
                     "radiation": "radiacja",
@@ -1313,8 +1324,7 @@
                 "vitality": "od witalności",
                 "void": "od pustki",
                 "untyped": "bez typu"
-            },
-            "Scatter": "Obrażenia Rozrzutu"
+            }
         },
         "DamageButton": {
             "Adjust": "[Shift-Kliknij] Dostosuj wartość przed zastosowaniem.",
@@ -1541,7 +1551,6 @@
         "FeatTypeSkill": "Atut Umiejętności",
         "FeaturesAncestryHeader": "Atrybuty Przodkowstwa",
         "FeaturesClassHeader": "Atrybuty Klasowe",
-        "Feet": "stopy",
         "FlatCheck": "Test Płaski",
         "Focus": {
             "NotEnoughFocusPointsError": "Nie masz wystarczająco dużo punktów skupienia aby rzucić to zaklęcie.",
@@ -1552,7 +1561,18 @@
             "label": "Punkty Skupienia",
             "pointLabel": "Punkty"
         },
-        "Foot": "Stóp",
+        "Foot": {
+            "Label": "stopa",
+            "Plural": "stopy",
+            "Preformatted": {
+                "5": "5 stóp",
+                "10": "10 stóp",
+                "15": "15 stóp",
+                "20": "20 stóp",
+                "25": "25 stóp",
+                "30": "30 stóp"
+            }
+        },
         "FormulaKnownTitle": "Znane Receptury",
         "FormulaListEmpty": "Pusta (przeciągnij tu przedmiot/recepturę)",
         "Formula": "Receptura",
@@ -1839,7 +1859,10 @@
                     "Heal": "Leczenie",
                     "Label": "Boskie Źródło"
                 },
-                "DivineSkill": "Boska Umiejętność",
+                "DivineSkill": {
+                    "Hint": "Większość bóstw określa pojedynczą boską umiejętność, lecz część z nich daje swoim wyznawcom wybór pomiędzy dwoma umiejętnościami",
+                    "Label": "Boska Umiejętność"
+                },
                 "Domain": {
                     "Abomination": {
                         "Description": "Starasz się zaszczepić odrazę i przerażenie w otaczających cię ludziach.",
@@ -2181,6 +2204,7 @@
                     },
                     "Range": "Zasięg",
                     "ReevaluateFormula": {
+                        "InitiativeRoll": "Przy Rzucie Inicjatywy",
                         "Label": "Reewaluacja?",
                         "Never": "Nigdy",
                         "TurnEnd": "Na Końcu Tury",
@@ -2196,6 +2220,7 @@
                     "Description": "Może da się coś poradzić na ten status.",
                     "Name": "Dezintegracja"
                 },
+                "Looping": "Pętlować wartości?",
                 "Plural": "Efekty",
                 "ShowTokenIcon": "Pokazać ikonę na żetonie?",
                 "Unidentified": "Niezidentyfikowany?"
@@ -2722,7 +2747,7 @@
         "NPC": {
             "Abilities": {
                 "Glossary": {
-                    "AllAroundVision": "<p>Ten potwór może widzieć symultanicznie we wszystkich kierunkach w związku z czym nie da się go efektywnie flankować.</p>",
+                    "AllAroundVision": "<p>Ten potwór widzi jednocześnie we wszystkich kierunkach w związku z czym nie da się go efektywnie flankować.</p>",
                     "AquaticAmbush": "<p><strong>Wymagania</strong> Potwór ukrywa się w wodzie a istota w wymienionym zasięgu znajduje się istota, która go nie wykryła.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór przemieszcza się o maks. swoją wartość Prędkości pływania + 10 stóp w kierunku prowokującej istoty, poruszając się w wodzie lub po lądzie. Kiedy tylko istota znajdzie się w jego wysięgu, wykonuje zadaje jej Cios. Istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}.</p>",
                     "AtWillSpells": "<p>Potwór może rzucać zaklęcia oznaczone jako \"do woli\" nieograniczoną ilość razy nie zużywając do tego komórek zaklęć.</p>",
                     "AttackOfOpportunity": "<p><strong>Aktywator</strong> Istota w zasięgu potwora używa akcji z cechą manipulacji lub ruchu, wykonuje atak dystansowy albo opuszcza pole w procesie wykonywanej przez siebie akcji ruchu.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór wymierza Cios w zwarciu prowokującej reakcję istocie. Jeśli atak trafi krytycznie a aktywatorem reakcji była akcja z cechą manipulacji, potwór rozprasza tę akcję. Ten Cios nie liczy się do obliczania kary za atak wielokrotny ani też podczas jego wykonywania nie należy uwzględniać kary za atak wielokrotny.</p>",
@@ -2732,8 +2757,8 @@
                     "ChangeShape": "<p>Ten potwór może swobodnie zmieniać kształt na nieograniczoną ilość czasu. Może ponownie użyć tej akcji aby powrócić do swojego naturalnego kształtu lub przybrać nową postać. O ile nie wspomniano inaczej, potwór nie może wykorzystywać Zmiany Kształtu aby przybrać postać konkretnej istoty. Używanie Zmiany Kształtu liczy się jako przebranie na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Podszywania się} z użyciem Oszukiwania. Transformacja potwora automatycznie przebija ST Percepcji na rzecz sprawdzania czy jest on przedstawicielem przodkowstwa lub rodzaju istot w który się przemienił, oraz zapewnia premię sytuacyjną +4 do ST Oszukiwania na rzecz demaskowania jego przebrania. Zdolności Zmiany Kształtu precyzują jakie konkretnie postacie może przybierać potwór. Potwór nie zyskuje żadnych specjalnych zdolności przybieranej przez siebie postaci, jedynie jej wygląd. Przykładowo dla każdej przybieranej przez siebie postaci potwór nadpisuje jej Prędkości, Ciosy oraz potencjalnie jej zmysły i rozmiar. Wszelkie zmiany wypisane są w bloku statystyk.</p>",
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
                     "Constrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST.</p>",
-                    "Coven": "<p>Ten potwór może stworzyć sabat wraz z dwoma lub więcej istotami, które również posiadają cechę sabatu. Wiąże się to z przeprowadzeniem 8-godzinnej ceremonii ze wszystkimi potencjalnymi członkami sabatu. Kiedy sabat zostanie utworzony, wszyscy jego członkowie stają się elitarnymi istotami, co wiąż się z odpowiednimi zmianami w ich poziomie i statystykach jak wskazują zasady istot elitarnych. Członkowie sabatu mogą wyczuć lokalizację oraz statusy innych członków sabatu wykonując pojedynczą akcję, posiadającą cechę koncentracji, oraz mogą wyczuwać zmysłami to co odczuwa inny członek sabatu wykonując dwu-akcyjną aktywność, która również posiada cechę koncentracji.</p>\n<p>Sabat zapewnia również jego członkom dostęp do zaklęć i rytuałów, ale te mogą zostać rzucone tylko poprzez współpracę trzech członków sabatu. Członek sabatu może przyczynić się do rzucania zaklęcia sabatu poprzez wykonanie jedno-akcyjnej aktywności rzucania zaklęcia o komponencie werbalnym. Jeśli dwóch członków sabatu użyło tych akcji w ostatniej rundzie, trzeci członek sabatu może rzucić w swojej turze zaklęcie wykonując aktywność rzucania zaklęcia w normalny sposób. Sabat może rzucać dostępne dla niego zaklęcia nieograniczoną ilość razy, ale może użyć tylko jednego zaklęcia w danej rundzie. Każdy sabat dostarcza @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Złowrogą Polimorfię} jako zaklęcie 8. kręgu oraz następujące zaklęcia, które sabat może rzucać na dowolnym kręgu do 5. włącznie: @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Wróżba}, @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Zauroczenie}, @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Jasnosłyszenie}, @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Jasnowidzenie}, @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Wiadomość we Śnie}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie}, @UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Iluzoryczna Scena}, @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Wścibskie Oko} oraz @UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Mówiące Zwłoki}. Poszczególne istoty wchodzące z cechą sabatu również dodają zaklęcia do dyspozycji sabatu, do którego dołączą. Sabat może również przeprowadzać rytuał @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Kontroli nad Pogodą} ze ST 23 zamiast standardowego ST.</p>\n<p>Jeśli opuszczenie sabatu przez istotę lub śmierć jednego z jego członków zmniejszyły by liczebność sabatu poniżej trzech członków, pozostałe istoty utrzymują swój status elitarności przez następne 24 godziny, ale pozbawione niezbędnej ilości członków do przeprowadzenia rytuałów nie mogą rzucać zaklęć sabatu.</p>",
-                    "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu</em>, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
+                    "Coven": "<p>Ten potwór może stworzyć sabat wraz z dwoma lub więcej istotami, które również posiadają cechę sabatu. Wiąże się to z przeprowadzeniem 8-godzinnej ceremonii ze wszystkimi potencjalnymi członkami sabatu. Kiedy sabat zostanie utworzony, wszyscy jego członkowie stają się elitarnymi istotami, co wiąż się z odpowiednimi zmianami w ich poziomie i statystykach jak wskazują zasady istot elitarnych. Członkowie sabatu mogą wyczuć lokalizację oraz statusy innych członków sabatu wykonując pojedynczą akcję, posiadającą cechę koncentracji, oraz mogą wyczuwać zmysłami to co odczuwa inny członek sabatu wykonując dwu-akcyjną aktywność, która również posiada cechę koncentracji.</p>\n<p>Sabat zapewnia również jego członkom dostęp do zaklęć i rytuałów, ale te mogą zostać rzucone tylko poprzez współpracę trzech członków sabatu. Członek sabatu może przyczynić się do rzucania zaklęcia sabatu poprzez jedną akcję o cesze koncentracji. Jeśli dwóch członków sabatu użyło tych akcji w ostatniej rundzie, trzeci członek sabatu może rzucić w swojej turze zaklęcie wykonując aktywność rzucania zaklęcia w normalny sposób. Sabat może rzucać dostępne dla niego zaklęcia nieograniczoną ilość razy, ale może użyć tylko jednego zaklęcia w danej rundzie. Każdy sabat dostarcza @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Przeklętą Metamorfozę} jako zaklęcie 8. kręgu oraz następujące zaklęcia, które sabat może rzucać na dowolnym kręgu do 5. włącznie: @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Wróżba}, @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Zauroczenie}, @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Jasnosłyszenie}, @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Jasnowidzenie}, @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Wiadomość we Śnie}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie}, @UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Iluzoryczna Scena}, @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Zwiadowcze Oko} oraz @UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Mówiące Zwłoki}. Poszczególne istoty wchodzące z cechą sabatu również dodają zaklęcia do dyspozycji sabatu, do którego dołączą. Sabat może również przeprowadzać rytuał @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Kontroli nad Pogodą} ze ST 23 zamiast standardowego ST.</p>\n<p>Jeśli opuszczenie sabatu przez istotę lub jej śmierć zmniejszyłyby liczebność sabatu poniżej trzech członków, pozostałe istoty utrzymują swój status elitarności przez następne 24 godziny, ale pozbawione niezbędnej ilości członków do przeprowadzenia rytuałów nie mogą rzucać zaklęć sabatu.</p>",
+                    "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż jest to wizja jedynie czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu</em>, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
                     "Disease": "<p>Kiedy istota zostanie wystawiona na kontakt z chorobą potwora, wykonuje rzut obronny Krzepy lub poddaje się chorobie. Poziom choroby jest równy poziomowi potwora wywołującego ją. Choroba podąża za zasadami dotyczącymi przypadłości.</p>",
                     "Engulf": "<p>Potwór Biegnie na odległość wynoszącą maks. podwojoną wartość jego Prędkości i może w ramach tego ruchu przemieszczać się przez istoty na jego drodze. Każda istota rozmiaru mniejszego lub równego rozmiarowi potwora, przez której pole się przemieścił, może wykonać rzut obronny Refleksu aby uniknąć Pochłonięcia. Istota niezdolna do działania automatycznie odnosi krytyczną porażkę na tym rzucie. Istota, która zda rzut obronny może wybrać pomiędzy byciem odepchniętą na bok (z drogi potwora) albo byciem przepchniętą przed potwora w miejsce gdzie zakończy on ruch. Potwór może próbować Pochłonąć daną istotę tylko raz w ramach pojedynczego użycia Pochłonięcia. Potwór może zawierać w sobie tyle istot, ile zmieści się w jego przestrzeni.</p>\n<p>Istota, która nie zda rzutu obronnego, jest wciągana do wnętrza ciała potwora. Jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Pochłonięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po pochłonięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje pochłonięta. Pochłonięta istota może się uwolnić poprzez @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczkę} o wymienionym ST. Pochłonięta istota może zaatakować potwora, który ją pochłonął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Pochłaniająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, pochłonięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń pochłaniającego ją potwora.</p>\n<p>Jeśli potwór umrze, wszystkie pochłonięte przez niego istoty są natychmiast uwalniane podczas gdy jego ciało traci formę.</p>",
                     "FastHealing": "<p>Potwór z tą zdolnością odzyskuje w każdej rundzie, na początku swojej tury, wymienioną liczbę Punktów Żywtoności.</p>",
@@ -2742,7 +2767,7 @@
                     "FrightfulPresence": "<p>Istota wkraczająca po raz pierwszy w zasięg efektu musi wykonać rzut obronny Woli.</p>\n<p>Niezależnie od wyniku testu, istota staje się tymczasowo niewrażliwa na Przerażającą Obecność tego potwora na 1 minutę.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Obecność nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażona 1}.</p>\n<p><strong>Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażona 2}.</p>\n<p><strong>Krytyczna Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażona 4}.</p>",
                     "Grab": "<p><strong>Wymagania</strong> Ostatnią akcją potwora był udany Cios, który wymienia w swoich statystykach Chwyt, lub potwór @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycił} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętał} już istotę.</p><hr /><p><strong>Efekt</strong> W wypadku zastosowania po Ciosie, potwór podejmuje próbę @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Pochwycenia} istoty za pomocą części ciała, którą zaatakował. Ta próba nie uwzględnia kary za atak wielokrotny potwora ani nie dolicza się do niej.</p><p>Potwór może zamiast tego użyć Chwytu na jednej z istot, którą pochwycił lub spętał za pomocą kończyny posiadającej cechę Chwytu aby automatycznie przedłużyć czas trwania nałożonego statusu.</p>",
                     "GreaterConstrict": "<p>Potwór zadaje wymienione obrażenia wszystkim istotom @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST. Istota, która odniesie na tym teście porażkę staje się @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomna}, a istota, która zda test staje się na 1 minutę niewrażliwa na efekt Większego Przyduszenia.</p>",
-                    "GreaterDarkvision": "<p>Istota z większym widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż na ogół jest to wizja czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu.</em>, blokują normalne @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Widzenie w Ciemności}. Istota z większym widzeniem w ciemności widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
+                    "GreaterDarkvision": "<p>Istota z większym widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż jest to wizja jedynie czarno-biała. Istota z większym widzeniem w ciemności widzi nawet przez magiczną ciemność.</p>",
                     "ImprovedGrab": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Chwycenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem. Potwór z Lepszym Chwytem nadal musi wydać akcję aby przedłużyć czas jego działania na istoty, które są już przez niego @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycone}.</p>",
                     "ImprovedKnockdown": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Przewrócenia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem.</p>",
                     "ImprovedPush": "<p>Potwór może używać @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Popchnięcia} jako darmowej akcji aktywowanej poprzez trafienie powiązanym atakiem.</p>",
@@ -2753,14 +2778,17 @@
                     "NegativeHealing": "<p>Istota obdarzona leczeniem pustki czerpie siły życiowe z przepływu energii pustki nie siły witalnej. Obrażenia od witalności ranią ją a efekty leczące witalności nie ma na niej efektu. Obrażenia od pustki nie wywierają na nią wpływu a efekty leczące pustki mające wpływ na nieumarłych uzdrawiają ją.</p>",
                     "Poison": "<p>Kiedy istota zostanie wystawiona na działanie trucizny potwora, wykonuje rzut obronny Krzepy aby uniknąć zatrucia. Poziom trucizny jest równy poziomowi potwora aplikującego ją. Trucizna podąża za zasadami dotyczącymi przypadłości.</p>",
                     "PowerAttack": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<hr />\n<p><strong>Efekt</strong> Potwór wykonuje Cios w zwarciu. Liczy się on jako dwa ataki na rzecz obliczania kary za atak wielokrotny potwora. Jeśli ten Cios trafi, zadaje dodatkową kość obrażeń broni.</p>",
-                    "Push": "<p><strong>Wymagania</strong> Ostatnią akcją potwora był udany Cios, który wymienia w swoich statystykach Popchnięcie.</p><hr /><p><strong>Efekt</strong> Potwór próbuje @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Odepchnąć} istotę. Ta próba nie uwzględnia jego kary za atak wielokrotny ani nie wlicza się do niej. Jeśli Popchnięcie wymienia dystans, zmień odległość na którą zostaje w wypadku sukcesu odepchnięta istota na podany dystans.</p>",
+                    "Pull": "<p><strong>Wymagania</strong> Ostatnim atakiem potwara był udany atak wymieniający w swoim wpisie obrażeń Przyciągnięcie</p><hr /><p><strong>Efekt</strong> Potwór próbuje @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Przemieścić} istotę, przemieszczając ją bliżej do potwora. Ta próba nie uwzględnia kary za atak wielokrotny potwora ani nie dolicza się do niej. Jeśli Przyciągnięcie wymienia dystans, zmień odległość na którą przemieszczona zostaje w wypadku sukcesu istota na podany dystans.</p>",
+                    "Push": "<p><strong>Wymagania</strong> Ostatnią akcją potwora był udany Cios, który wymienia w swoich statystykach Popchnięcie.</p><hr /><p><strong>Efekt</strong> Potwór próbuje @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Odepchnąć} istotę. Ta próba nie uwzględnia jego kary za atak wielokrotny ani nie wlicza się do niej. Jeśli Popchnięcie wymienia dystans, zmień odległość na którą odepchnięta zostaje w wypadku sukcesu istota na podany dystans.</p>",
+                    "ReactiveStrike": "<p><strong>Aktywator</strong> Istota w wysięgu potwora używa akcji manipulacji lub akcji ruchu, wykonje atak dystansowy lub opuszcza pole w trakcie używanej akcji ruchu.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór wymierza wywołującej istocie Cios w zwarciu. Jeśli atak trafi krytycznie a aktywatorem Ciosu była akcja manipulacji, potwór przerywa tę akcję. Ten Cios nie wlicza się do kary za atak wielokrotny potwora ani kara za atak wielokrotny nie przy nim uwzględniana.</p>",
                     "Regeneration": "<p>Ten potwór odzyskuje w każdej rundzie, na początku swojej tury, wymienioną liczbę Punktów Żywotności. Wartość jego statusu @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierania} nigdy nie wzrasta ponad Umierający 3, tak długo jak regeneracja jest aktywny. Jednakże, jeśli odniesie on obrażenia wymienionego typu jego regeneracja dezaktywuje się aż do końca jego następnej tury. Dezaktywuj regenerację przed zaaplikowaniem obrażeń tego typu, ponieważ ten sam atak, który dezaktywuje regenerację może od razu zabić potwora sprowadzając go do Umierania 4.</p>",
                     "Rend": "<p>Rozszarpanie określa jeden z posiadanych przez potwora Ciosów.</p>\n<p><strong>Wymagania</strong> Potwór trafia tego samego wroga dwoma następującymi po sobie Ciosami wymienionego rodzaju w tej samej rundzie.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór automatycznie zadaje po raz kolejny obrażenia wymienionego Ciosu.</p>",
                     "RetributiveStrike": "<p><strong>Aktywator</strong> Wróg zadaje obrażenia sojusznikowi potwora i obaj znajdują się w zasięgu 15 stóp do potwora.</p>\n<hr />\n<p><strong>Efekt</strong> Sojusznik zyskuje na czas ataku odporność na wszystkie obrażenia równą 2 + poziom potwora. Jeśli wróg jest w zasięgu, potwór wymierza mu Cios w zwarciu.</p>",
                     "Scent": "<p>Węch obejmuje wyczuwanie istot lub przedmiotów po zapachu i zwykle jest to niejasny zmysł. Jego zasięg jest podany w zdolności a działa tylko on wtedy, gdy wykrywana istota lub obiekt roztacza aromat (na przykład istoty bezcielesne zwykle nie wydzielają aromatu).</p>\n<p>Jeśli istota emituje wyraźny aromat lub znajduje się pod wiatr, MG może podwoić, a nawet potroić zasięg zdolności węchowych używanych do wykrycia tej istoty, lub może zmniejszyć zasięg, jeśli istota znajduje się z wiatrem.</p>",
                     "ShieldBlock": "<p><strong>Aktywator</strong> Potwór ma wzniesioną tarczę i otrzymuje obrażenia od ataku fizycznego.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór nastawia swoją tarczę tak, aby odbić atak. Tarcza zapobiega obrażeniom w liczbie wynoszącej maks. wartość Twardości tarczy. Zarówno potwór, jak i tarcza otrzymują następni wszelkie pozostałe obrażenia, co może doprowadzić do uszkodzenia lub zniszczenia tarczy.</p>",
                     "SneakAttack": "<p>Kiedy potwór zada Cios istocie, która ma @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}, używają do tego chyżej lub finezyjnej broni, chyżego lub finezyjnego ataku wręcz albo ataku dystansowego, zadaje również wymienione obrażenia precyzyjne. W przypadku ataku dystansowego bronią miotaną również musi to być broń chyża lub finezyjna.</p>",
-                    "SwallowWhole": "<p>Potwór próbuje połknąć istotę o podanym rozmiarze lub mniejszym, którą Pochwycił w szczękach lub pysku. Jeśli połknięta istota jest maksymalnego podanego rozmiaru, potwór nie może ponownie użyć Połknięcia w Całości. Jeśli istota jest mniejszego rozmiaru niż maksymalny, potwór może zwykle połknąć więcej istot; MG określa jak wiele. Potwór wykonuje @Check[type:athletics|defense:reflex], któremu przeciwstawia się ST Refleksu Pochwyconej istoty. Jeśli mu się powiedzie, połyka istotę. Pysk lub szczęki potwora nie chwytają już połkniętej istoty, więc potwór może ponownie użyć ich do Ciosu lub Pochwycenia. Potwór nie może atakować istot, które połknął.</p>\n<p>Połknięta istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Połknięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po połknięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje połknięta. Jeśli ofiara @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieknie} ze statusu Pochwycenia wynikającego z tej umiejętności, wychodzi przez paszczę potwora. Uwalnia to również każdą inną istotę Pochwyconą obecnie przez paszczę lub szczęki potwora. Połknięta istota może zaatakować potwora, który ją połknął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Połykająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, połknięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń połykającego potwora.</p>\n<p>Jeśli potwór umrze, połknięta istota może zostać uwolniona przez istoty sąsiadujące ze zwłokami, jeśli spędzą łącznie 3 akcje, rozcinając potwora bronią lub atakiem wręcz, który zadaje obrażenia kłute lub cięte.</p>",
+                    "Stench": "<p>Istota wkraczająca w obszar aury albo zaczynająca w nim turę musi wykonać rzut obronny Krzepy lub staje się @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlona 1} (lub przy porażce krytycznej dodatkowo @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniona 1}, tak długo jak pozostaje zemdlona). Istota, która odniesie sukces na rzucie obronnym lub przestanie być zemdlona jest tymczasowo odporna na wszystkie aury smrodu przez 1 minutę.</p>",
+                    "SwallowWhole": "<p>Potwór próbuje połknąć istotę o podanym rozmiarze lub mniejszym, którą pochwycił lub spętał w swoich szczękach lub pysku. Jeśli połknięta istota jest maksymalnego podanego rozmiaru, potwór nie może ponownie użyć Połknięcia w Całości. Jeśli istota jest mniejszego rozmiaru niż maksymalny, potwór może zwykle połknąć więcej istot; MG określa jak wiele. Potwór wykonuje @Check[type:athletics|defense:reflex], któremu przeciwstawia się ST Refleksu Pochwyconej istoty. Jeśli mu się powiedzie, połyka istotę. Pysk lub szczęki potwora nie chwytają już połkniętej istoty, więc potwór może ponownie użyć ich do Ciosu lub Pochwycenia. Potwór nie może atakować istot, które połknął.</p>\n<p>Połknięta istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Połknięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po połknięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje połknięta. Jeśli ofiara @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieknie} ze statusu Pochwycenia wynikającego z tej umiejętności, wychodzi przez paszczę potwora. Uwalnia to również każdą inną istotę Pochwyconą obecnie przez paszczę lub szczęki potwora. Połknięta istota może zaatakować potwora, który ją połknął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Połykająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, połknięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń połykającego potwora.</p>\n<p>Jeśli potwór umrze, połknięta istota może zostać uwolniona przez istoty sąsiadujące ze zwłokami, jeśli spędzą łącznie 3 akcje, rozcinając potwora bronią lub atakiem wręcz, który zadaje obrażenia kłute lub cięte.</p>",
                     "SwarmMind": "<p>Ten potwór nie ma pojedynczego umysłu (zwykle dlatego, że jest to rój mniejszych stworzeń) i jest odporny na efekty mentalne, które dotyczą tylko określonej liczby istot. Nadal podlega efektom mentalnym, które wpływają na wszystkie istoty na danym obszarze.</p>",
                     "Telepathy": "<p>Potwór posiadający zdolność telepatii może porozumiewać się mentalnie z dowolnymi istotami znajdującymi się w podanym promieniu, o ile znają wspólny język. Nie daje to żadnego specjalnego wglądu w ich myśli i nie przekazuje więcej informacji niż normalna mowa.</p>",
                     "Thoughtsense": "<p>Wyczucie myśli pozwala potworowi wyczuć wszystkie nie-bezmyślne istoty w podanym zasięgu.</p>",
@@ -3280,6 +3308,10 @@
                 "Hint": "Określ do jakich meta informacji gracze mają dostęp a do jakich nie.",
                 "Label": "Ogranicz Meta Informacje",
                 "Name": "Meta Informacje",
+                "SecretChecks": {
+                    "Hint": "Gracze mogą zobaczyć na czacie rzuty z cechą sekretności.",
+                    "Name": "Pokazuj Testy Sekretne"
+                },
                 "ShowDC": {
                     "Hint": "Po włączeniu gracze będą widzieli dokładny ST testów wykonywanych przeciw BN oraz innym zewnętrznym źródłom.",
                     "Name": "Pokaż ST Ataków i Rzutów Obronnych"
@@ -3777,6 +3809,7 @@
         "TraitBottledBreath": "Zabutelkowany Oddech",
         "TraitBrace": "Gotowość",
         "TraitBrutal": "Brutalność",
+        "TraitBugbear": "Strachun",
         "TraitBulwark": "Bulwark",
         "TraitCaligni": "Caligni",
         "TraitCantrip": "Sztuczka",
@@ -3789,6 +3822,7 @@
         "TraitCatalyst": "Katalizator",
         "TraitCatfolk": "Kotoludź",
         "TraitCelestial": "Niebianin",
+        "TraitCentaur": "Centaur",
         "TraitChampion": "Czempion",
         "TraitChangeling": "Zmieniec",
         "TraitCharauKa": "Charau-ka",
@@ -3990,6 +4024,7 @@
         "TraitDescriptionGnoll": "Gnolle to humanoidy przypominające hieny.",
         "TraitDescriptionGnome": "Istota z tą cechą jest członkiem przodkowstwa gnomów. Gnomy to małe osóbki, utalentowane w magii, które szukają nowych doświadczeń i zwykle posiadają widzenie w słabym świetle. Zdolność z tą cechą może być używana lub wybierana tylko przez gnomy. Broń z tą cechą jest tworzona i używana przez gnomy.",
         "TraitDescriptionGoblin": "Istota z tą cechą może być przedstawicielem jednego z wielu rodów stworzeń, w tym goblinów, hobgoblinów i strachunów. Gobliny często posiadają widzenie w ciemności. Zdolność z tą cechą może być używana lub wybierana tylko przez gobliny. Broń z tą cechą jest tworzona i używana przez gobliny.",
+        "TraitDescriptionBugbear": "Strachuny to potwory czające się w głębi szafy i czychające pod łóżkiem.",
         "TraitDescriptionGoloma": "Wyspiarskie humanoidy, o niezliczonej liczbie oczu.",
         "TraitDescriptionGrapple": "Możesz używać tej broni do Pochwycenia wroga z użyciem Atletyki nawet jeśli brak ci wolnej ręki. Wykorzystujesz wtedy wysięg broni (jeśli jest inny od twojego) a premię przedmiotu dodawaną do ataków bronią, dodajesz jako premię przedmiotu do rzutu na Atletykę. Jeśli odniesiesz krytyczną porażkę w próbie Pochwycenia, możesz zdecydować się na upuszczenie broni aby zamiast tego ponieść efekty zwykłej porażki.",
         "TraitDescriptionGrimoire": "Księgi zaklęć są przydatnymi dla każdego użytkownika magii narzędziami, służącymi do zapisywania zaklęć i run mocy, ale podczas gdy większość ksiąg zaklęć to nic innego jak pergamin pokryty atramentem, grymuary wchłonęły magię zaklęć w nich zawartych — magię, której znający się na rzeczy użytkownicy magii mogą używać do wzmacniania swoich zaklęć.",
@@ -4506,6 +4541,7 @@
         "TraitRangeIncrement280": "Inkrement Zasięgu 280 stóp",
         "TraitRangeIncrement290": "Inkrement Zasięgu 290 stóp",
         "TraitRangeIncrement30": "Inkrement Zasięgu 30 stóp",
+        "TraitRangeIncrement35": "Inkrement Zasięgu 35 stóp",
         "TraitRangeIncrement300": "Inkrement Zasięgu 300 stóp",
         "TraitRangeIncrement310": "Inkrement Zasięgu 310 stóp",
         "TraitRangeIncrement320": "Inkrement Zasięgu 320 stóp",
@@ -4564,6 +4600,7 @@
         "TraitScrying": "Wróżbiarstwo",
         "TraitSeaDevil": "Diabeł Morski",
         "TraitSecret": "Sekretność",
+        "TraitSedacthy": "Sedacz",
         "TraitSerpentfolk": "Wężoludź",
         "TraitSeugathi": "Seugathi",
         "TraitSewnIntoClothing": "Wszywane w Ubranie",
@@ -4997,7 +5034,6 @@
                 "morningstar": "Morgensztern",
                 "naginata": "Naginata",
                 "nightstick": "Nocny Stróż",
-                "nine-ring-sword": "Jiu Huan Dao",
                 "nodachi": "Nodachi",
                 "nunchaku": "Nunczako",
                 "ogre-hook": "Ogrowy Hak",
@@ -5533,7 +5569,6 @@
         "WeaponRangeReach": "Wysięg",
         "WeaponReloadLabel": "Czas Przeładowania",
         "WeaponSpecialization": "Spejcalizacja Broni",
-        "WeaponSplashDamageLabel": "Obrażenia Rozpryskowe",
         "WeaponStrikeLabel": "Cios",
         "WeaponTypeAdvanced": "Broń Zaawansowana",
         "WeaponTypeMartial": "Broń Wojskowa",

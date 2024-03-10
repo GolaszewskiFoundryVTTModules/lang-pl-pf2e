@@ -291,7 +291,7 @@ class LocalizationUpdater:
         old_value_to_key = {value: key for key, value in self.en_old_extracted.items() if value in unique_old_values}
         new_value_to_key = {value: key for key, value in self.en_extracted.items() if value in unique_new_values}
 
-        for new_key, new_value in tqdm(self.en_extracted.items(), desc=f"Processing new keys in {os.path.basename(self.pl_path)}"):
+        for new_key, new_value in tqdm(self.en_extracted.items(), desc=f"Processing {os.path.basename(self.pl_path)}"):
             
             # Key is already up to date
             if new_key in self.pl_extracted and self.pl_extracted.get(new_key) == new_value:

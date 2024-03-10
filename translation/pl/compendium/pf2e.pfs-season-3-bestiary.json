@@ -26,6 +26,9 @@
                 },
                 "consumable->Scroll of Heal (Level 6)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\nScroll of Heal (Level 6)",
+                    "consumableSpellName": "Heal",
+                    "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> (somatic) The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. [[/r (@item.level)d8[vitality]+@item.level*8[healing]]]{2-Action Healing}</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+                    "consumableSpellTarget": "1 willing living creature or 1 undead",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Staff": {
@@ -169,6 +172,7 @@
         },
         "Arabuk": {
             "name": "Arabuk",
+            "senses": "snow vision",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -216,6 +220,7 @@
         },
         "Arabuk Yearling": {
             "name": "Arabuk Yearling",
+            "senses": "snow vision",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -839,9 +844,6 @@
                 "strike-ranged->Dagger": {
                     "name": "Dagger"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bugbear tormentor deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
@@ -919,9 +921,6 @@
                 "action->Tremorsense (Imprecise) 30 feet": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 30 feet"
                 },
-                "action->Scent (Imprecise) 60 feet)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet)"
-                },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
@@ -990,9 +989,6 @@
                 "action->Tremorsense (Imprecise) 30 feet": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 30 feet"
                 },
-                "action->Scent (Imprecise) 60 feet)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet)"
-                },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
@@ -1054,6 +1050,7 @@
         "Cinder Rat (Ashgrip)": {
             "name": "Cinder Rat (Ashgrip)",
             "publicNotes": "<p>These oversized rodents are made of smoldering charcoal and elemental fire, and noxious fumes continually bellow from their flaming flesh.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire.</p>",
+            "senses": "smoke vision",
             "tokenName": "Cinder Rat",
             "items": {
                 "strike-melee->Jaws": {
@@ -1071,6 +1068,7 @@
         "Cinder Rat (Leadroar)": {
             "name": "Cinder Rat (Leadroar)",
             "publicNotes": "<p>These oversized rodents are made of smoldering charcoal and elemental fire, and noxious fumes continually bellow from their flaming flesh.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire.</p>",
+            "senses": "smoke vision",
             "tokenName": "Cinder Rat",
             "items": {
                 "strike-melee->Jaws": {
@@ -1126,6 +1124,7 @@
         },
         "Cobbled Bruiser": {
             "name": "Cobbled Bruiser",
+            "senses": "(imprecise) 80 feet",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -1149,6 +1148,7 @@
         },
         "Cobbled Brutalizer": {
             "name": "Cobbled Brutalizer",
+            "senses": "(imprecise) 80 feet",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -1635,6 +1635,7 @@
         "Drakauthix (PFS 3-15)": {
             "name": "Drakauthix (PFS 3-15)",
             "publicNotes": "<p>The drakauthix is a massive fungus that floats through the heights of the largest Darklands caverns, propelled by bladders that spray air and spores. A voracious but slow-moving hunter, the drakauthix prefers to ambush meaty creatures from above, using its hooked appendages to pull its victims upward to feed. The drakauthix's digestive process is entirely external-it clings to victims, and its spore-laden surface slowly feeds on and grows through the flesh before the spore-infested carcass is discarded. As the infested body strikes the ground below, it bursts and releases a cloud of spores, unleashing a host of young called sporelings that immediately scuttle up the cavern walls to cling to its ceiling and grow.</p>\n<p>The drakauthix behaves no more intelligently than most predatory animals, and often uses a sort of symbiotic scavenger method to secure prey by capitalizing on the hunting methods of oozes and vermin found in the large cave systems it frequents. When a relatively mindless creature kills a victim, the drakauthix drifts down, hooks the freshly slain carcass with its tendrils, and reels in its meal. The mindless ooze or other creature that just had its food stolen rarely holds a grudge and simply slithers off to find a new quarry, letting the drakauthix digest the corpse in peace. Of course, the drakauthix isn't above feasting on more active prey as well, and might attack an adventurer who neglects to look upward for danger when exploring a network of mysterious caves.</p>\n<p>Some Darklands-dwelling creatures, such as duergars, hunt drakauthixes for their flesh, which has a unique flavor with a peppery aftertaste. Subterranean races also make ink from drakauthixes by burning their carcasses, then grinding and pressing the ashes for a long time until a silvery substance congeals.</p>",
+            "senses": "sporesight (imprecise) 60 feet",
             "tokenName": "Drakauthix",
             "items": {
                 "strike-melee->Tentacle": {
@@ -1703,6 +1704,7 @@
         "Elite Green Hag (PFS 3-99)": {
             "name": "Elite Green Hag (PFS 3-99)",
             "blurb": "Variant green hag",
+            "languages": "tongues",
             "publicNotes": "<p>Green hags hate beauty and purity, so they use disguises and treachery to lure and murder innocents, corrupt the pure of heart, and shatter the minds and morals of their victims. Green hags create imaginative schemes to utterly ruin anyone who crosses them, as well as good or righteous folk whose very existence insults the hag's twisted sensibilities. The complicated scandals perpetuated by green hags involve impersonation, mistaken identity, the seduction and betrayal of loved ones, or all these things in combination.</p>\n<hr />\n<p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.bAjHCeyNcPRqOmLv]{Changelings} who have the potential to become hags themselves.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Elite Green Hag",
@@ -1712,10 +1714,6 @@
                 },
                 "spellcastingEntry->Coven Spells": {
                     "name": "Coven Spells"
-                },
-                "spell->Control Weather": {
-                    "primarycheck": "Nature (master)",
-                    "secondarycheck": "Survival"
                 },
                 "spell->Baleful Polymorph": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
@@ -1796,14 +1794,12 @@
         "Elite Hell Hound (PFS 3-07)": {
             "name": "Elite Hell Hound (PFS 3-07)",
             "blurb": "Variant hell hound",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>A hell hound's appearance dismisses any doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features.</p>",
             "tokenName": "Hell Hound",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
-                },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1965,9 +1961,6 @@
                 "strike-ranged->Dagger": {
                     "name": "Dagger"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Inspired Feast": {
                     "name": "Inspired Feast",
                     "description": "<p>If a biloko feasts on a human corpse for 1 minute or more, they gain a +1 status bonus to attack rolls and a +2 status bonus to damage rolls for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.EM0VP31B8CyjFD15]{Efekt: Inspired Feast}</p>"
@@ -2006,6 +1999,9 @@
                 },
                 "consumable->Scroll of Heal (Level 6)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\nScroll of Heal (Level 6)",
+                    "consumableSpellName": "Heal",
+                    "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> (somatic) The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. [[/r (@item.level)d8[vitality]+@item.level*8[healing]]]{2-Action Healing}</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+                    "consumableSpellTarget": "1 willing living creature or 1 undead",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Staff": {
@@ -2046,6 +2042,9 @@
                 },
                 "consumable->Scroll of Heal (Level 5)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\nScroll of Heal (Level 5)",
+                    "consumableSpellName": "Heal",
+                    "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> (somatic) The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. [[/r (@item.level)d8[vitality]+@item.level*8[healing]]]{2-Action Healing}</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+                    "consumableSpellTarget": "1 willing living creature or 1 undead",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Staff": {
@@ -2132,9 +2131,6 @@
                 "strike-melee->Barbed Leg": {
                     "name": "Barbed Leg"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-                },
                 "action->Angry Barbs": {
                     "name": "Angry Barbs",
                     "description": "<p><strong>Aktywator</strong> An adjacent enemy damages the enraged shrouded bloodseeker, and the bloodseeker is not already attached to a creature</p>\n<hr />\n<p><strong>Efekt</strong> The bloodseeker makes one barbed leg Strike against the triggering creature. If it hits and becomes attached, it uses Blood Drain.</p>"
@@ -2211,9 +2207,6 @@
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Explosive Harness": {
                     "name": "Explosive Harness",
                     "description": "<p>The rat is connected to an explosive harness, which displays an ominous 1-minute pocket watch. The harness will explode after 1 minute (10 rounds) if it is not disabled, or immediately if the rat takes fire damage. This explosion deals @Damage[2d6[fire]] damage to the rat and all creatures within a @Template[type:burst|distance:5]{5-foot burst} (@Check[type:reflex|dc:15|basic:true] save) and ignites flammable objects in the area.<br />If the rat is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grappled}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, an adjacent creature can attempt to safely remove and disable the harness with a successful @Check[type:nature|dc:17] or @Check[type:thievery|dc:17] check or a successful @Check[type:tanning-lore|dc:15] check. An attempt to disable the harness uses two actions.</p>"
@@ -2263,9 +2256,6 @@
                 "strike-ranged->Rock": {
                     "name": "Rock"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->-1 to Saves vs. Emotion Effects": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-1 to Saves vs. Emotion Effects"
                 },
@@ -2303,9 +2293,6 @@
                 },
                 "strike-ranged->Rock": {
                     "name": "Rock"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->-1 to Saves vs. Emotion Effects": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-1 to Saves vs. Emotion Effects"
@@ -2433,7 +2420,9 @@
         },
         "Filth Fire (PFS 3-01)": {
             "name": "Filth Fire (PFS 3-01)",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>These creatures look like roiling clouds of black smoke churning above a mound of burning refuse. Leering faces form and fade in the smoke above, while the burning trash writhes in spasmodic lurches, obviously alive.</p>",
+            "senses": "smoke vision",
             "tokenName": "Filth Fire",
             "items": {
                 "strike-melee->Burning Lash": {
@@ -2791,9 +2780,6 @@
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Filth Fever": {
                     "name": "Filth Fever",
                     "description": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from filth fever don't improve on their own until the disease is cured.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect ([[/br 1d4 #hours]]{1d4 hours})</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stadium 3</strong> Sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stadium 5</strong> dead</p>"
@@ -2811,8 +2797,10 @@
             "name": "Glurorchaes (7-8)",
             "blurb": "Variant ostiarius",
             "hpDetails": "regeneration 10 (deactivated by holy or silver)",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Ostiariuses, as emissaries of the velstracs, tend to the portals between the Shadow Plane and the Material Plane. They not only escort other velstracs into the world of mortals, but also work to entice mortals into the realms of the velstracs- from which most mortals never leave. Among the most pleasant and persuasive of the velstracs, ostiariuses are prepared to converse for hours upon any topic, and they are skilled at returning, again and again, to the subject of the delights found in their perverse philosophies. Ostiariuses stand over 6 feet tall, and individuals range from skeletally thin to hugely corpulent.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
+            "senses": "painsight, sense portal",
             "tokenName": "Glurorchaes",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -2822,7 +2810,6 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]\nCalm Emotions (At will)"
                 },
                 "spell->Inveigle": {
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
                     "target": "1 creature of a level no greater than double the inveigle ritual's rank"
                 },
                 "strike-melee->Claw": {
@@ -2958,13 +2945,11 @@
         "Half-Formed Abrikandilu": {
             "name": "Half-Formed Abrikandilu",
             "blurb": "Variant abrikandilu",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Wrecker demons, also known as abrikandilus, despise beautiful things and do everything in their power to destroy both people and objects regarded as such. An abrikandilu forms from the souls mortals who were vandals, misanthropes, or defacers of artwork, particularly if their destructive actions stemmed from feelings of powerful envy.</p>\n<p>An abrikandilu loathes only one thing more than beauty: their own visage. The mere sight of their face-reflected in a mirror, a shield, or even a pool of water- can send a wrecker demon into a rage. Many demon slayers leverage tactic to their advantage, venturing into battle with polished steel shields and cold iron blades at the ready.</p>\n<hr />\n<p>Mortal souls that have been twisted and corrupted by sin sometimes arise in the afterlife as demons. These powerful and destructive fiends seek to spread their particular sin to warp more souls, thereby bolstering their numbers and continuing the cycle.</p>",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
-                },
-                "spell->Abyssal Pact": {
-                    "primarycheck": "Religion (expert; you must be a demon)"
                 },
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -3186,7 +3171,7 @@
                 },
                 "action->Swig": {
                     "name": "Swig",
-                    "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of alcohol and drink the whole thing.</p>\n<p>For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HArljmKc2IR7rtfc]{Efekt: Swig}</p>"
+                    "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of alcohol and drink the whole thing.</p>\n<p>For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>"
                 },
                 "lore->Labor Lore": {
                     "name": "Labor Lore"
@@ -3284,6 +3269,7 @@
             "name": "Khisisi (5-6)",
             "blurb": "Elite mummy guardian",
             "hpDetails": "leczenie pustką",
+            "languages": "ancient osiriani",
             "publicNotes": "<p>The majority of mummies were created by cruel and selfish masters to serve as guardians to protect their tombs from intruders. The traditional method of creating a mummy guardian is a laborious and sadistic process that begins well before the poor soul to be transformed is dead, during which the victim is ritualistically starved of nourishing food and instead fed strange spices, preservative agents, and toxins intended to quicken the desiccation of the flesh. The victim remains immobile but painfully aware during the final stages, where its now-useless entrails are extracted before it's shrouded in funerary wrappings and entombed within a necromantically ensorcelled sarcophagus to await intrusions in the potentially distant future. While it's certainly possible to use other methods to create a mummy guardian from an already-deceased body, those who seek to create these foul undead as their guardians in the afterlife often feel that such methods result in inferior undead-the pain and agony of death by mummification being an essential step in the process.</p>\n<p>Regardless of the method of their creation, mummy guardians are more than just physical shells of flesh and bone-they retain fragmented, distorted versions of their minds, with only enough memories of their living personality remaining to fuel their undead anger and jealousy of those who yet live. This burning rage only intensifies over the centuries of waiting within a crypt for the chance to actually act, and thus when most mummy guardians are awoken by tomb robbers or adventurers, they stop at nothing in pursuit of glorious slaughter.</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
             "tokenName": "Khisisi",
             "items": {
@@ -3304,6 +3290,7 @@
             "name": "Khisisi (7-8)",
             "blurb": "Mummy Pharoah",
             "hpDetails": "leczenie pustką",
+            "languages": "ancient osiriani",
             "publicNotes": "<p>While mummy guardians are undead crafted from the corpses of sacrificed-usually unwilling victims-and retain only fragments of their memories, a mummy pharaoh is the result of a deliberate embrace of undeath by a sadistic and cruel ruler. The transformation from life to undeath is no less awful and painful, but as the transition is an intentional bid to escape death by a powerful personality who fully embraces the blasphemous repercussions of the choice, the mummy pharaoh retains its memories and personality intact. Although in most cases a mummy pharaoh is formed from a particularly depraved ruler instructing their priests to perform complex rituals that grant the ruler eternal unlife, a ruler who was filled with incredible anger in life might spontaneously arise from death as a mummy pharaoh without undergoing this ritual. Depending on the nature of the ruler, a mummy pharaoh might have spellcasting or other class features instead of its Attack of Opportunity and disruptive abilities-the exact nature of the abilities the ruler had in life can significantly change or strengthen the mummy pharaoh presented here (which represents the least powerful variety of this deadly undead foe).</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
             "saveDetails": "+1 status to all saves vs. vitality",
             "tokenName": "Khisisi",
@@ -3574,9 +3561,6 @@
                 "strike-melee->Claw": {
                     "name": "Pazur"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Maul": {
                     "name": "Maul",
                     "description": "<p>The leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. Both count toward its multiple attack penalty, but the penalty increases only after both attacks are made.</p>"
@@ -3600,6 +3584,7 @@
         "Lesser Animate Dream": {
             "name": "Lesser Animate Dream",
             "blurb": "Variant animate dream",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>An animate dream coalesces from centuries of stray fragments of reverie and dream left behind as slumbering minds drift through the Dimension of Dreams. In most cases, these fragments simply disperse on their own, but when dreamers flee from nightmares back to the waking world, these fragments can take on a supernatural life of their own. They have little reasoning and intent except to seek similar fragments, absorb them, and grow. When enough of them gather together, they merge into a horrific form as an animate dream.</p>\n<p>Individually, animate dreams can hold a wide range of appearances, but most take on rudimentary shapes akin to the living forms of the minds that spawned them. Animate dreams that rise from slumbering humanoids, the most commonly encountered, thus appear humanoid, but with distorted, nightmarish shapes that incorporate additional twisted limbs and frightening features. In these forms, animate dreams find their way out of the Dreamlands and into the waking world, only to discover they have no way of returning and suffer a relentless hunger that only new nightmares can sate.</p>\n<p>An animate dream thrives on the terror fueled by nightmares and fear and uses its supernatural abilities to invoke such feelings in the minds of its victims, cursing its prey by creating a permanent link to that individual's dreams. Thereafter, the victim is subjected to all manner of reoccurring nightmares. As the nightmares continue, the victim finds it more and more difficult to remain awake. In the end, the victim plunges into an accursed slumber from which it cannot return. These victims provide the animate dream with the purest form of fear and are its preferred sustenance.</p>\n<p>An animate dream can subsist on the ambient fear generated by regular nightmares, but these lesser fears aren't as satisfying, often driving the animate dream to seek out new victims. Left without a source of fear, an animate dream won't starve to death, but it will grow increasingly violent and desperate. Famished animate dreams are the ones most often encountered, as they have been forced to abandon subtlety to pursue more blatant methods of harvesting fear. Yet such animate dreams also tend to be the least powerful of their kind. Those who have grown metaphysically fat on fear have generally done so by adopting a specific nightmare theme, such as being buried alive, being swept away by ocean waves, or being consumed by wild beasts. Such animate dreams often have similarly themed innate spells to augment their powers.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -3950,6 +3935,7 @@
         },
         "Mature Arabuk": {
             "name": "Mature Arabuk",
+            "senses": "snow vision",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -4202,6 +4188,7 @@
             "blurb": "Variant burglar",
             "publicNotes": "<p>Burglars specialize in breaking and entering to rob homes and businesses. These criminals focus on gaining access to secure buildings and bypassing traps and other security measures while remaining undetected all the while.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
             "saveDetails": "+1 circumstance to all saves vs. traps",
+            "senses": "(+11 to find traps)",
             "items": {
                 "equipment->Climbing Kit": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9UJbMaglf35GVzaZ]\n<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a @Check[type:flat|dc:5] whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit.</p>"
@@ -4317,6 +4304,7 @@
             "name": "Ninth Army Guard",
             "blurb": "Variant Guard",
             "publicNotes": "<p>Guards are rank-and-file members of a town watch or city guard, trained to look for trouble, take down criminals, and follow orders. They are a match for only the most fledgling of adventurers and criminals, but, given time, the settlement can usually muster them in numbers sufficient to neutralize most threats.</p>\n<hr />\n<p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. In good-aligned societies, these officials carry out their duties fairly. In neutral and evil ones, these officials can be harsh and cruel (with an altered alignment to reflect this), imposing severe punishments on those who can't pay for mercy.</p>",
+            "senses": "(+8 to find concealed objects)",
             "items": {
                 "strike-melee->Club": {
                     "name": "Maczuga"
@@ -4369,6 +4357,7 @@
             "acDetails": "(22 with shield raised)",
             "blurb": "Variant watch officer",
             "publicNotes": "<p>Watch officers are assigned to a certain area within a city or community. Often leading a small team of lower-ranking guards, they patrol those areas to maintain order and enforce laws. Watch officers get the job done, though their methods are not always gentle or kind. Because the watch officer is responsible to their superiors for their area, they sometimes need to make tough decisions between justice and effectiveness.</p>\n<hr />\n<p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. In good-aligned societies, these officials carry out their duties fairly. In neutral and evil ones, these officials can be harsh and cruel (with an altered alignment to reflect this), imposing severe punishments on those who can't pay for mercy.</p>",
+            "senses": "(+9 to sense motive)",
             "items": {
                 "armor->Breastplate": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
@@ -4542,6 +4531,7 @@
         "Old Drakauthix (PFS 3-15)": {
             "name": "Old Drakauthix (PFS 3-15)",
             "publicNotes": "<p>The drakauthix is a massive fungus that floats through the heights of the largest Darklands caverns, propelled by bladders that spray air and spores. A voracious but slow-moving hunter, the drakauthix prefers to ambush meaty creatures from above, using its hooked appendages to pull its victims upward to feed. The drakauthix's digestive process is entirely external-it clings to victims, and its spore-laden surface slowly feeds on and grows through the flesh before the spore-infested carcass is discarded. As the infested body strikes the ground below, it bursts and releases a cloud of spores, unleashing a host of young called sporelings that immediately scuttle up the cavern walls to cling to its ceiling and grow.</p>\n<p>The drakauthix behaves no more intelligently than most predatory animals, and often uses a sort of symbiotic scavenger method to secure prey by capitalizing on the hunting methods of oozes and vermin found in the large cave systems it frequents. When a relatively mindless creature kills a victim, the drakauthix drifts down, hooks the freshly slain carcass with its tendrils, and reels in its meal. The mindless ooze or other creature that just had its food stolen rarely holds a grudge and simply slithers off to find a new quarry, letting the drakauthix digest the corpse in peace. Of course, the drakauthix isn't above feasting on more active prey as well, and might attack an adventurer who neglects to look upward for danger when exploring a network of mysterious caves.</p>\n<p>Some Darklands-dwelling creatures, such as duergars, hunt drakauthixes for their flesh, which has a unique flavor with a peppery aftertaste. Subterranean races also make ink from drakauthixes by burning their carcasses, then grinding and pressing the ashes for a long time until a silvery substance congeals.</p>",
+            "senses": "sporesight (imprecise) 60 feet",
             "tokenName": "Old Drakauthix",
             "items": {
                 "strike-melee->Tentacle": {
@@ -4770,6 +4760,7 @@
             "name": "Pelagastr Tail",
             "hpDetails": "fast healing 1",
             "saveDetails": "+1 Status to All Saves vs. Magic",
+            "senses": "entropy sense (imprecise) 30 feet",
             "speed": "freedom of movement",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -5423,6 +5414,7 @@
             "blurb": "Variant steam mephit",
             "hpDetails": "(fast healing 2 (in boiling water or steam))",
             "publicNotes": "<p>These brash and arrogant creatures are among the more energetic mephits. They are quick to nominate themselves the leaders of any group, barking out orders in shrill, high-pitched voices and insisting on having everything done their way. Even when they aren't bossing others around, the constant hiss of steam escaping from their pores ensures that there is never a quiet moment.</p>",
+            "senses": "steam vision",
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Tajemnej"
@@ -5693,9 +5685,6 @@
                 "strike-melee->Barbed Leg": {
                     "name": "Barbed Leg"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-                },
                 "action->Umbral Shroud": {
                     "name": "Umbral Shroud",
                     "description": "<p>Coated in darkness, a shrouded bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} in bright light as if it were in dim light, even to creatures that can see clearly in those light levels.</p>"
@@ -5901,9 +5890,6 @@
                 "action->Tremorsense (Imprecise) 60 feet": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 60 feet"
                 },
-                "action->Scent 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent 30 feet"
-                },
                 "action->Armor-Rending": {
                     "name": "Armor-Rending",
                     "description": "<p>Any time the shuln scores a critical hit with a melee Strike, it also deals the same amount of damage to the target's armor, bypassing any Hardness lower than 10, like adamantine.</p>"
@@ -5930,9 +5916,6 @@
                 },
                 "strike-melee->Adamantine Fangs": {
                     "name": "Adamantine Fangs"
-                },
-                "action->Scent 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent 30 feet"
                 },
                 "action->Armor-Rending": {
                     "name": "Armor-Rending",
@@ -6210,6 +6193,7 @@
             "name": "Thick Pelagastr Tail",
             "hpDetails": "fast healing 2",
             "saveDetails": "+1 Status to All Saves vs. Magic",
+            "senses": "entropy sense (imprecise) 30 feet",
             "speed": "freedom of movement",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -6415,6 +6399,7 @@
         },
         "Thundering Wihsaak": {
             "name": "Thundering Wihsaak",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>These gaunt and insectile sahkils torment their foes by focusing on a widespread fear of insects and creeping, crawling vermin. Unlike their more subtle cousins, wihsaaks don't lurk in the periphery and instead directly engage their targets, using their unnerving buzzing to disorient and terrify.</p>\n<p>When encountering multiple foes, wihsaaks attempt to spread fear to everyone before slashing at them with their devastating claws.</p>",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -6455,6 +6440,7 @@
         },
         "Thundering Wihsaak (Arctic)": {
             "name": "Thundering Wihsaak (Arctic)",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The monsters are acclimated to the wintery climate of northern Arcadia.</p>\n<hr />\n<p>These gaunt and insectile sahkils torment their foes by focusing on a widespread fear of insects and creeping, crawling vermin. Unlike their more subtle cousins, wihsaaks don't lurk in the periphery and instead directly engage their targets, using their unnerving buzzing to disorient and terrify.</p>\n<p>When encountering multiple foes, wihsaaks attempt to spread fear to everyone before slashing at them with their devastating claws.</p>",
             "tokenName": "Thundering Wihsaak",
             "items": {
@@ -6497,6 +6483,7 @@
         "Thundering Wihsaak (Heretical)": {
             "name": "Thundering Wihsaak (Heretical)",
             "hpDetails": "leczenie pustką",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The monsters have a visceral hatred of good deities and their servants, particularly Arcadia's benevolent couatls.</p>\n<hr />\n<p>These gaunt and insectile sahkils torment their foes by focusing on a widespread fear of insects and creeping, crawling vermin. Unlike their more subtle cousins, wihsaaks don't lurk in the periphery and instead directly engage their targets, using their unnerving buzzing to disorient and terrify.</p>\n<p>When encountering multiple foes, wihsaaks attempt to spread fear to everyone before slashing at them with their devastating claws.</p>",
             "tokenName": "Thundering Wihsaak",
             "items": {
@@ -6547,6 +6534,7 @@
         },
         "Thundering Wihsaak (Rifle Mutation)": {
             "name": "Thundering Wihsaak (Rifle Mutation)",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>These gaunt and insectile sahkils torment their foes by focusing on a widespread fear of insects and creeping, crawling vermin. Unlike their more subtle cousins, wihsaaks don't lurk in the periphery and instead directly engage their targets, using their unnerving buzzing to disorient and terrify.</p>\n<p>When encountering multiple foes, wihsaaks attempt to spread fear to everyone before slashing at them with their devastating claws.</p>",
             "tokenName": "Thundering Wihsaak",
             "items": {
@@ -6681,12 +6669,10 @@
         "Umbral Cu Sith": {
             "name": "Umbral Cu Sith",
             "blurb": "Variant cu sith",
+            "languages": "(can't speak any language)",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Dooming Bark": {
                     "name": "Dooming Bark",
@@ -6707,9 +6693,6 @@
                 },
                 "strike-melee->Tail": {
                     "name": "Ogon"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Light Blindness": {
                     "name": "Light Blindness"
@@ -6950,6 +6933,7 @@
         },
         "Vengeful Ember Fox": {
             "name": "Vengeful Ember Fox",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>Ember foxes resemble their canid namesakes, save for the flames that make their fur and the tips of their long whiskers flicker and glow.</p>",
             "items": {
                 "strike-melee->Jaws": {
@@ -7135,14 +7119,12 @@
         "Weak Hell Hound (PFS 3-07)": {
             "name": "Weak Hell Hound (PFS 3-07)",
             "blurb": "Variant Weak hell hound",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>A hell hound's appearance dismisses any doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features.</p>",
             "tokenName": "Weak Hell Hound",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
-                },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -7161,6 +7143,7 @@
             "name": "Weakened Cobbleswarm",
             "blurb": "Spawned from a Cobbled Bruiser",
             "publicNotes": "<p>Busy road builders might unknowingly use cobble mites in construction.</p>\n<hr />\n<p>Cobble mites resemble squarish stones a few inches across with mouths like split geodes. Though indolent and harmless alone, they're dangerous in large groups.</p>",
+            "senses": "(imprecise) 80 feet",
             "tokenName": "Cobbleswarm",
             "items": {
                 "action->Tremorsense (Precise) 40 feet, (Imprecise) 80 feet": {
@@ -7196,6 +7179,7 @@
         },
         "Werebat (PFS 3-13)": {
             "name": "Werebat (PFS 3-13)",
+            "languages": "bat empathy",
             "publicNotes": "<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>\n<hr />\n<p>Werebats form organized colonies of opportunistic hunters. They aren't shy about transforming creatures to add to their colony, whom they initiate with elaborate social ceremonies and bloody hazing. The curse of the werebat gives them a strong urge to prey upon on weaker, lonely creatures. True werebats are often unusually tall and thin, with angular features. In combat, werebats favor their unarmed attacks because they can't fly while wielding weapons in their wings.</p>",
             "tokenName": "Werebat",
             "items": {
@@ -7233,6 +7217,7 @@
         },
         "Weretiger (PFS 3-13)": {
             "name": "Weretiger (PFS 3-13)",
+            "languages": "tiger empathy",
             "publicNotes": "<p>These ferocious werecreatures stalk prey with the cunning and skill of a true apex predator. Weretigers typically view all life as a potential meal. Powerful nocturnal hunters with excellent senses that help them ambush prey, weretigers are adaptable to an extreme range of environments. However, weretigers living in densely populated cities (potentially as courtesans, assassins, or guild leaders) often struggle to suppress their killer instincts, becoming overwhelmed by the urge to hunt. They prefer to wear loose-fitting clothing and rely on their claws and jaws in a fight.</p>\n<hr />\n<p>Werecreatures transform into animals and animal-humanoid hybrids under the light of the full moon. The doomed fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>",
             "tokenName": "Weretiger",
             "items": {
@@ -7241,9 +7226,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Pazur"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Tiger Empathy": {
                     "name": "Tiger Empathy",
@@ -7268,6 +7250,7 @@
         },
         "Young Arabuk": {
             "name": "Young Arabuk",
+            "senses": "snow vision",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -7292,6 +7275,7 @@
         },
         "Zebub (PFS)": {
             "name": "Zebub (PFS)",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Zebubs serve as Hell's messengers and spies. Their ability to share what they've seen with other creatures makes them especially useful-not only to other devils, but also to mortal conjurers. Some infernal lords unleash them in enormous, horrid swarms upon unsuspecting lands to debase flesh and land alike while collecting secrets the infernal host might later put to use. Zebubs use any opportunity to manipulate weak-willed or easily tempted mortals into serving the zebubs' whims. While arrogant and deceitful, zebubs lack the cunning and confidence of most devils, and thus their schemes often focus on satisfying self-serving or self-destructive ambitions. Zebubs form from the souls of childish and craven mortals, reshaped by the archdevil Baalzebul in the frozen, filthy wastes of Hell's seventh layer, Cocytus.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Zebub",
@@ -7308,9 +7292,6 @@
                 "spell->Invisibility (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will) (Self Only)",
                     "target": "self"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "spell->Summon Animal (Swarm creatures only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]\nSummon Animal (Swarm creatures only)"
@@ -7348,6 +7329,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"
@@ -7363,6 +7345,7 @@
         "reset": "system.details.reset",
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
+        "senses": "system.perception.details",
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

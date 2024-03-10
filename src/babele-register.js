@@ -46,20 +46,29 @@ Hooks.once("init", () => {
         });
 
         Babele.get().registerConverters({
-            // normalizeName: (_data, translation) => {
-            //     return game.langPlPf2e.normalizeName(translation);
-            // },
+            normalizeName: (_data, translation) => {
+                return game.langPlPf2e.normalizeName(translation);
+            },
+            translateAdventureActorItems: (data, translation) => {
+                return game.langPlPf2e.translateItems(data, translation, true, false);
+            },
             translateActorDescription: (data, translation) => {
                 return game.langPlPf2e.translateActorDescription(data, translation);
             },
-            translateActorItems: (data, translation, dataObject, translatedCompendium, translationObject) => {
-                return game.langPlPf2e.translateActorItems(
-                    data,
-                    translation,
-                    dataObject,
-                    translatedCompendium,
-                    translationObject
-                );
+            translateActorItems: (data, translation) => {
+                return game.langPlPf2e.translateItems(data, translation, true);
+            },
+            translateAdventureItems: (data, translation) => {
+                return game.langPlPf2e.translateItems(data, translation, false, false);
+            },
+            translateAdventureJournals: (data, translation) => {
+                return game.langPlPf2e.translateArrayOfObjects(data, translation, "adventureJournal");
+            },
+            translateAdventureJournalPages: (data, translation) => {
+                return game.langPlPf2e.translateArrayOfObjects(data, translation, "adventureJournalPage");
+            },
+            translateAdventureScenes: (data, translation) => {
+                return game.langPlPf2e.translateArrayOfObjects(data, translation, "adventureScene");
             },
             translateDualLanguage: (data, translation) => {
                 return game.langPlPf2e.translateDualLanguage(data, translation);
@@ -74,17 +83,14 @@ Hooks.once("init", () => {
                     game.langPlPf2e.getMapping("heightening", true)
                 );
             },
-            translateJournal: (pages, translation) => {
-                return game.langPlPf2e.translateJournal(pages, translation);
-            },
             translateRange: (data) => {
-               return game.langPlPf2e.translateValue("range", data);
-           },
+                return game.langPlPf2e.translateValue("range", data);
+            },
             translateRules: (data, translation) => {
                 return game.langPlPf2e.translateRules(data, translation);
             },
-           translateSource: (data) => {
-               return game.langPlPf2e.translateValue("source", data);
+            translateSource: (data) => {
+                return game.langPlPf2e.translateValue("source", data);
             },
             translateSpellVariant: (data, translation) => {
                 return game.langPlPf2e.dynamicObjectListMerge(
@@ -93,9 +99,12 @@ Hooks.once("init", () => {
                     game.langPlPf2e.getMapping("item", true)
                 );
             },
+            translateTiles: (data, translation) => {
+                return game.langPlPf2e.dynamicArrayMerge(data, translation, game.langPlPf2e.getMapping("tile", true));
+            },
             translateTime: (data) => {
-               return game.langPlPf2e.translateValue("time", data);
-           },
+                return game.langPlPf2e.translateValue("time", data);
+            },
             translateTokenName: (data, translation, _dataObject, _translatedCompendium, translationObject) => {
                 return game.langPlPf2e.translateTokenName(data, translation, translationObject);
             },
@@ -108,21 +117,6 @@ Hooks.once("init", () => {
         });
     }
 });
-
-// Hooks.once("ready", () => {
-//     const pack = game.packs.get("pf2e.feats-srd");
-//     // Alle Felder die für das Filtern gebraucht werden
-//     const fields = [
-//         "system.prerequisites.value",
-//         "system.source.value",
-//         "system.level.value",
-//         "system.description.value",
-//         "name",
-//         "originalName",
-//     ];
-//     // Erstellt einen neuen Index oder ruft einen bestehenden Index ab wenn alle Felder bereits indiziert sind
-//     pack.getIndex({ fields });
-// });
 
 Hooks.once("i18nInit", () => {
     if (game.i18n.lang === "pl") {

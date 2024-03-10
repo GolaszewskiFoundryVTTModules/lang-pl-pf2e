@@ -58,12 +58,7 @@
         },
         "action->Subduing Attack": {
           "name": "Subduing Attack",
-          "description": "<p>Abendego jailers deal an additional 3d6 precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} or within reach of at least one of their allies.</p>\n<p>The jailer can make an attack with this additional damage as a nonlethal attack, if they choose.</p>",
-          "rules": {
-            "1": {
-              "label": "Target is frightened or in reach of an ally"
-            }
-          }
+          "description": "<p>Abendego jailers deal an additional 3d6 precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} or within reach of at least one of their allies.</p>\n<p>The jailer can make an attack with this additional damage as a nonlethal attack, if they choose.</p>"
         }
       }
     },
@@ -260,10 +255,6 @@
         "spellcastingEntry->Spontaneous Arcane Spells": {
           "name": "Spontaneous Arcane Spells"
         },
-        "spell->Arcane Weaving": {
-          "primarycheck": "Arcana or Occultism (expert)",
-          "secondarycheck": "Arcana, Crafting, or Occultism"
-        },
         "spell->Hypnotic Pattern": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.K2WpC3FFoHrqX9Q5]\nHypnotic Pattern"
         },
@@ -433,6 +424,7 @@
     },
     "Ancient Rivener": {
       "name": "Ancient Rivener",
+      "languages": "can speak and understand only simple words",
       "publicNotes": "<p>Ikeshtis who eschew their society are exiled and quickly devolve into violent creatures known as riveners.</p>\n<hr />\n<p>Ikeshtis are reptilian humanoids native to Akiton's wastelands. Smaller than Golarion's iruxi, ikeshtis organize around distinct societal roles.</p>",
       "items": {
         "strike-melee->Jaws": {
@@ -459,9 +451,6 @@
       "name": "Apocalypse Ant Swarm",
       "blurb": "Variant army ant swarm",
       "items": {
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Cling": {
           "name": "Cling",
           "description": "<p><strong>Trigger</strong> A creature leaves the swarm's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm loses [[/r 2d8]]{2d8 HP} as ants cling to the creature and continue biting, dealing @Damage[7d8[persistent,piercing]] damage. High winds or immersion in water reduces the DC of the flat check to end this persistent damage to 5. Any area damage dealt to the creature destroys these clinging ants.</p>"
@@ -680,6 +669,7 @@
     },
     "Avatar Of Walkena": {
       "name": "Avatar Of Walkena",
+      "senses": "smoke vision",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -735,6 +725,7 @@
     },
     "Ba'aupa Mdoudu": {
       "name": "Ba'aupa Mdoudu",
+      "senses": "skeleton sense 60 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -849,9 +840,6 @@
         },
         "strike-ranged->Spear": {
           "name": "Spear"
-        },
-        "action->Scent (imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (imprecise) 30 feet"
         },
         "action->Inspired Feast": {
           "name": "Inspired Feast",
@@ -1023,9 +1011,6 @@
         "strike-melee->Mandibles": {
           "name": "Mandibles"
         },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-        },
         "action->Bombardier's Spray": {
           "name": "Bombardier's Spray",
           "description": "<p>The cataclysm beetle sprays a @Template[type:cone|distance:60] of acid from its abdomen that deals @Damage[12d10[acid]] damage (@Check[type:reflex|dc:40|basic:true]). It can't use Bombardier's Spray or Burning Pool for [[/br 1d4 #Recharge Acid Action]]{1d4 rounds}.</p>"
@@ -1118,6 +1103,7 @@
     },
     "Contemplative": {
       "name": "Contemplative",
+      "languages": "telepathy 30",
       "publicNotes": "<p>Even the average contemplative demonstrates an intellect that far surpasses those of most other beings.</p>\n<hr />\n<p>The ancestors of the Contemplatives of Ashok were humanoids of vast intellect who unlocked occult powers. They deliberately evolved their mental faculties at the expense of their physical forms, and their atrophied bodies dangle beneath giant brains.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -1147,6 +1133,7 @@
     },
     "Contemplative Meditant": {
       "name": "Contemplative Meditant",
+      "languages": "telepathy 60 feet; tongues",
       "publicNotes": "<p>Contemplative meditants focus their meditations and research on the vexing topic of time itself.</p>\n<hr />\n<p>The ancestors of the Contemplatives of Ashok were humanoids of vast intellect who unlocked occult powers. They deliberately evolved their mental faculties at the expense of their physical forms, and their atrophied bodies dangle beneath giant brains.</p>",
       "items": {
         "spellcastingEntry->Innate Occult Spells": {
@@ -1208,6 +1195,7 @@
     },
     "Contemplative Mentor": {
       "name": "Contemplative Mentor",
+      "languages": "telepathy 100 feet; tongues",
       "publicNotes": "<p>As they near the next phase of their journey through existence, contemplative mentors split their time between unlocking the highest secrets of time and space, and guiding their students and less-talented peers.</p>\n<hr />\n<p>The ancestors of the Contemplatives of Ashok were humanoids of vast intellect who unlocked occult powers. They deliberately evolved their mental faculties at the expense of their physical forms, and their atrophied bodies dangle beneath giant brains.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -1219,10 +1207,6 @@
         },
         "spell->Discern Location": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
-        },
-        "spell->Rite of the Red Star": {
-          "primarycheck": "DC 40 Arcana or Nature (master)",
-          "secondarycheck": "DC 35 Arcana, Nature, Occultism, or Religion"
         },
         "spell->Tongues (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
@@ -1415,6 +1399,7 @@
       "name": "Dajermube",
       "blurb": "Female elite nemhaith",
       "hpDetails": "void healing, rejuvenation",
+      "languages": "telepathy 100 feet",
       "publicNotes": "<p>This undead guardian stands amid a whirling swarm of shackled spirits that rage against their fate. Bound by a profane necromantic ritual, a nemhaith and its servitors maintain watch over an object or place so important they embraced undeath to guard it. This ritual binds connected beings-friends, family, fellow worshippers, or even sacrificed innocents-to form a single nemhaith.</p>\n<p>Most nemhaiths were, in life, priests or protectors who sought immortality to protect the temple they served or guard an important landmark. Others follow an endless and even impossible quest beyond the bounds of life and death. A nemhaith is not always evil at first, but the inherent evil and violence of a nemhaith's existence inevitably darkens even the brightest light.</p>",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
@@ -1504,6 +1489,7 @@
       "name": "Dimari-Diji",
       "blurb": "Male arboreal nature-speaker",
       "hpDetails": "regeneration 30 (deactivated by fire)",
+      "languages": "speak with animals, speak with plants, telepathy 300 feet",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -1588,6 +1574,7 @@
     },
     "Drenchdead": {
       "name": "Drenchdead",
+      "languages": "(can't speak any language)",
       "items": {
         "strike-melee->Claw": {
           "name": "Claw"
@@ -1660,6 +1647,9 @@
         },
         "consumable->Wand of Inexhaustible Cynicism (Level 7)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nmXPj9zuMRQBNT60]\nWand of Inexhaustible Cynicism (Level 7)",
+          "consumableSpellName": "Inexhaustible Cynicism",
+          "consumableSpellDescription": "<p>You inflict your targets with a crushing doubt about everyone and everything around them. For the duration, each target is unwilling to receive any effects that require a willing target (in case the effect was secretly an attack), refuse to ingest anything (in case the substances have been replaced with poisons and cursed duplicates), doesn't treat anyone as an ally (in case its friends were replaced by an impostor), and doesn't believe anything it's told (in case of lies, though this doesn't mean the creature automatically believes the opposite either). It doesn't even fully trust its own ability to Recall Knowledge, as it becomes convinced it most likely remembered false information, as from a critical failure on a check to Recall Knowledge.</p>\n<p>Finally, the creature takes 6d6 mental damage at the end of each of its turns (with no save) unless it spent at least 1 action that turn Seeking or otherwise interacting with its surroundings in an attempt to disbelieve the illusions that it feels are obviously surrounding it.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is affected for 1 round.</p>\n<p><strong>Failure</strong> The creature is affected for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is affected for 1 hour.</p>",
+          "consumableSpellTarget": "up to 5 creatures",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nmXPj9zuMRQBNT60]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gMbrNFKz9NP3TR4s]{Inexhaustible Cynicism}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Hand": {
@@ -1670,7 +1660,8 @@
           "description": "<p><strong>Trigger</strong> A creature casts a spell Dwandek has prepared.</p>\n<hr />\n<p><strong>Effect</strong> Dwandek expends a prepared spell to counter the triggering creature's casting of that same spell. Dwandek loses his spell slot as if he had cast the triggering spell. Dwandek then attempts to counteract the triggering spell.</p>"
         },
         "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\nRejuvenation"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\nRejuvenation",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\n<p>When a lich is destroyed, its soul immediately transfers to its <em>@UUID[Compendium.pf2e.equipment-srd.Item.NEbr7nKuiluJgBHT]{Soul Cage}</em>. A lich can be permanently destroyed only if its <em>soul cage</em> is found and destroyed.</p>"
         },
         "action->Resist Arcane Magic": {
           "name": "Resist Arcane Magic",
@@ -1800,6 +1791,7 @@
     },
     "Formian Mageslayer": {
       "name": "Formian Mageslayer",
+      "languages": "telepathy 120 feet",
       "publicNotes": "<p>Grim, twisted formians forced into existence through the machinations of the King of Biting Ants, formian mageslayers are created for the express purpose of neutralizing and destroying enemy spellcasters. Wired to never sleep, mageslayers are tortured hunters and guardians whose only relief is found in tearing apart the magic and flesh of spellcasters who oppose the King of Biting Ants. Formian mageslayers have wings resembling those of dragonflies and longer, sleeker bodies than most formians.</p>\n<hr />\n<p>Formians resemble unusually large ants with an insectile humanoid's upper torso. More powerful or influential formians are physically larger; common formian workers are roughly the height of a gnome, while the largest formians, such as taskmasters and queens, rival a giant in size.</p>\n<p>Formian society is a strict matriarchy. Though each hive's queen is theoretically independent and her rule absolute, allegiances are common, and less powerful hives often (grudgingly) defer to more powerful matriarchs.</p>",
       "items": {
         "strike-melee->Claw": {
@@ -1810,9 +1802,6 @@
         },
         "action->Tremorsense 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense 60 feet"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Telepathy 120 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 120 feet"
@@ -1846,6 +1835,7 @@
     },
     "Formian Queen": {
       "name": "Formian Queen",
+      "languages": "telepathy 200 feet",
       "publicNotes": "<p>The formian queen is the center of the formian hive. The queen identifies and attends to the hive's needs, laying egg clusters that vary from a single formian born to a particular task to hundreds of workers at a time. All formians are born with an instinctive deference for the queen that borders on slavish devotion, though this urge can be corrupted, as with the King of Biting Ants' mutant mageslayers.</p>\n<hr />\n<p>Formians resemble unusually large ants with an insectile humanoid's upper torso. More powerful or influential formians are physically larger; common formian workers are roughly the height of a gnome, while the largest formians, such as taskmasters and queens, rival a giant in size.</p>\n<p>Formian society is a strict matriarchy. Though each hive's queen is theoretically independent and her rule absolute, allegiances are common, and less powerful hives often (grudgingly) defer to more powerful matriarchs.</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -1862,9 +1852,6 @@
         },
         "action->Tremorsense 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense 60 feet"
-        },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
         },
         "action->Telepathy 200 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 200 feet"
@@ -1894,13 +1881,11 @@
     },
     "Formian Worker": {
       "name": "Formian Worker",
+      "languages": "telepathy 30 feet",
       "publicNotes": "<p>By far the most common formian on Akiton, workers are focused and industrious, naturally skilled at manual labor and coordinating with peers.</p>\n<hr />\n<p>Formians resemble unusually large ants with an insectile humanoid's upper torso. More powerful or influential formians are physically larger; common formian workers are roughly the height of a gnome, while the largest formians, such as taskmasters and queens, rival a giant in size.</p>\n<p>Formian society is a strict matriarchy. Though each hive's queen is theoretically independent and her rule absolute, allegiances are common, and less powerful hives often (grudgingly) defer to more powerful matriarchs.</p>",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Telepathy 30 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 30 feet"
@@ -1986,9 +1971,6 @@
         "strike-ranged->Spear": {
           "name": "Spear"
         },
-        "action->Scent (imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (imprecise) 30 feet"
-        },
         "action->Inspired Feast": {
           "name": "Inspired Feast",
           "description": "<p>If a biloko feasts on a human corpse for 1 minute or more, they gain a +1 status bonus to attack rolls and a +2 status bonus to damage rolls for 1 hour.</p>"
@@ -2015,9 +1997,6 @@
         },
         "strike-melee->Tail": {
           "name": "Tail"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Deep Breath": {
           "name": "Deep Breath",
@@ -2095,6 +2074,7 @@
     "Giant Tsetse Fly": {
       "name": "Giant Tsetse Fly",
       "publicNotes": "<p>This blood-sucking fly, the size of a horse, is widely despised as a harbinger of disease. Giant tsetse flies rarely congregate in large numbers, as they require gallons of blood each day to survive and thus crowd out or drive away rivals. Any group of creatures large enough to sustain multiple tsetse flies, such as a herd of dinosaurs, are quite likely to dominate the surrounding ecosystem on their own right.</p>\n<p>A single giant tsetse fly can kill an entire herd of large animals within a few weeks, and those they don't kill often succumb to disease. When not hunting, giant tsetse flies prefer to hide in warm, dark places in forests and swamps, though they sometimes inhabit wet cave systems where prey is plentiful. The thrumming drone of their wings echoes around such cave systems, warning travelers familiar with the noise that the creatures are lairing nearby.</p>\n<p>If food becomes scarce, a giant tsetse fly relocates elsewhere. They tend to follow rivers, animal tracks, or even roads to find food. This can take them to the fringes of civilization, where farms and ranches often have livestock that draws their attention. Settlers who find evidence of a giant tsetse fly should quickly seek out help to eliminate the pests, as all their animals (and, indeed, their families) are in jeopardy as long as the hungry insect is near.</p>\n<p>Giant tsetse flies are only moderately smarter than ordinary flies, but some creatures have learned that they can train the creatures with frequent offerings of fresh blood. Giant tsetse flies might therefore be put to use as guardians or even mounts, but any potential trainer must take care not to become the voracious insect's next meal.</p>",
+      "senses": "blood scent, blood scent",
       "items": {
         "strike-melee->Proboscis": {
           "name": "Proboscis"
@@ -2102,9 +2082,6 @@
         "action->Blood Scent": {
           "name": "Blood Scent",
           "description": "<p>The giant tsetse fly can detect blood within 30 feet. This is a precise sense against creatures within 30 feet that are bleeding.</p>"
-        },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
         },
         "action->Blood Draw": {
           "name": "Blood Draw",
@@ -2321,6 +2298,8 @@
     },
     "Grave Karina": {
       "name": "Grave Karina",
+      "languages": "(can't speak any language)",
+      "senses": "smoke vision",
       "items": {
         "strike-melee->Beak": {
           "name": "Beak"
@@ -2378,7 +2357,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.mZpX54PgTxPta5y4]\n<p>The graveknight's curse extends to their shield, or the graveknight's armor uses a portion of itself to produce a shield.</p>\n<p>The graveknight has a shield that uses the statistics of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.f9ygr5Cjrmop8LWV]{Sturdy Shield (Minor)}</em>.</p>\n<p>The shield is quasi-independent of the graveknight and automatically protects the graveknight from harm. When the shield is raised, it automatically uses Shield Block to reduce the damage of the first attack against the graveknight each round without the graveknight needing to spend their reaction to do so.</p>\n<p>The shield automatically rejuvenates with the rest of the graveknight and must be destroyed in the same manner as the graveknight's armor.</p>"
         },
         "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
         },
         "action->Devastating Blast": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
@@ -2436,7 +2416,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.fmUBaLklyVmNt3VD]\nClutching Armor"
         },
         "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
         },
         "action->Channel Magic": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.OMSsLUcnRj6ycEUa]\nChannel Magic"
@@ -2582,10 +2563,6 @@
         "spellcastingEntry->Primal Spontaneous Spells": {
           "name": "Primal Spontaneous Spells"
         },
-        "spell->Primal Call": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Crafting, Diplomacy, Survival"
-        },
         "spell->Cloudkill": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60]\nCloudkill"
         },
@@ -2593,12 +2570,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
         },
         "spell->Glyph of Warding": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW]\nGlyph of Warding",
+          "name": "Glyph of Warding",
+          "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
           "target": "1 container or a 10-foot-by-10-foot area"
-        },
-        "spell->Consecrate": {
-          "primarycheck": "Religion",
-          "secondarycheck": "Crafting, Performance"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -2721,6 +2695,7 @@
     "Hivebound Arboreal": {
       "name": "Hivebound Arboreal",
       "blurb": "Variant arboreal regent",
+      "languages": "speak with plants",
       "speed": "Freedom of Movement",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -2777,9 +2752,6 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
           "description": "<p>The i'iko dragon breathes a spray of jagged glass shards that deals @Damage[7d6[piercing]] damage in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:24|basic:true] save). They can't use Breath Weapon again for [[/br 1d4 #round]]{1d4 rounds}.</p>"
@@ -2821,6 +2793,7 @@
     "Iobane Magus": {
       "name": "Iobane Magus",
       "blurb": "Human magus",
+      "senses": "iobane vision",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
@@ -2909,6 +2882,7 @@
       "name": "Ixamè",
       "blurb": "Female poison-wracked young cloud dragon",
       "hpDetails": "void healing",
+      "senses": "mist vision",
       "speed": "cloud walk",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -2931,9 +2905,6 @@
         },
         "strike-melee->Horn": {
           "name": "Horn"
-        },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
         },
         "action->Deflecting Cloud": {
           "name": "Deflecting Cloud",
@@ -2996,6 +2967,7 @@
     },
     "Karumzek": {
       "name": "Karumzek",
+      "senses": "poison sense (precise) 30 feet",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3026,6 +2998,7 @@
     },
     "Karumzek Swarm": {
       "name": "Karumzek Swarm",
+      "senses": "poison sense (precise) 30 feet",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -3065,6 +3038,8 @@
     },
     "Kilia Mwibo": {
       "name": "Kilia Mwibo",
+      "languages": "(can't speak any language)",
+      "senses": "emotion sense 60 feet",
       "items": {
         "strike-melee->Frond": {
           "name": "Frond"
@@ -3255,6 +3230,7 @@
     },
     "Kreekoss": {
       "name": "Kreekoss",
+      "languages": "(can't speak any language)",
       "items": {
         "strike-melee->Beak": {
           "name": "Beak"
@@ -3278,6 +3254,7 @@
     },
     "Kurshkin": {
       "name": "Kurshkin",
+      "senses": "+2 to hear things",
       "items": {
         "spellcastingEntry->Innate Primal Spells": {
           "name": "Innate Primal Spells"
@@ -3490,6 +3467,7 @@
     "Mpondo": {
       "name": "Mpondo",
       "blurb": "Male human guardian",
+      "senses": "iobane vision",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
@@ -3499,10 +3477,6 @@
         },
         "spell->Maze": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]\nMaze"
-        },
-        "spell->Rite of the Red Star": {
-          "primarycheck": "DC 40 Arcana or Nature (master)",
-          "secondarycheck": "DC 35 Arcana, Nature, Occultism, or Religion"
         },
         "spell->Dimensional Lock": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XZE4BawIlTf88Yl9]\nDimensional Lock"
@@ -3640,6 +3614,7 @@
     },
     "Nkiruka": {
       "name": "Nkiruka",
+      "senses": "+29 to notice lies and sense motive",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
@@ -4054,9 +4029,6 @@
         "strike-melee->Stinger": {
           "name": "Stinger"
         },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-        },
         "action->Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[5d10[bludgeoning]] damage, @Check[type:fortitude|dc:38|basic:true].</p>\n<p>Before using Constrict, the ant can choose to smash one creature that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} against the ground. That creature uses the result one degree of success worse than its Fortitude save result against Constrict, but it is then no longer Grabbed or restrained by the ant.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
@@ -4082,9 +4054,6 @@
         },
         "strike-melee->Stinger": {
           "name": "Stinger"
-        },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
         },
         "action->Attack of Opportunity (Stinger Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]\nAttack of Opportunity (Stinger Only)",
@@ -4216,6 +4185,7 @@
     },
     "Salathiss": {
       "name": "Salathiss",
+      "languages": "telepathy 100 feet",
       "saveDetails": "+4 status to Will vs. mental, +1 status to all saves vs. magic",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -4272,9 +4242,6 @@
         },
         "strike-melee->Morphic Weapon": {
           "name": "Morphic Weapon"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Telepathy 100 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
@@ -4370,6 +4337,7 @@
     "Serpentfolk Granitescale": {
       "name": "Serpentfolk Granitescale",
       "acDetails": "(22 with shed scales)",
+      "languages": "telepathy 100 feet",
       "publicNotes": "<p>Many burly aapoph serpentfolk bear minor mutations. Granitescales have bulky frames covered in hard, speckled gray plates. These scales offer additional protection but shed when struck with too much force. As granitescales regrow lost scales quickly, they make effective long-term sentinels and vanguards for guerilla tactics. Granitescales like to carve their shed scales into small chips and attach them as rattles to the ends of their spears. Many an unsuspecting victim has heard the shaking hiss of a granitescale's rattle too late.</p>\n<hr />\n<p>Ancient and cunning, the once mighty serpentfolk have suffered numerous setbacks and indignities since the decapitation of their god, Ydersius, millennia ago. Scattered in isolated pockets, the reptilian humanoids constantly scheme their return to glory. Though many serpentfolk labor to restore Ydersius and reclaim power through him, others pursue different avenues to greatness, such as by mastering uncanny magic or practicing spycraft to take down enemy organizations from the inside.</p>",
       "saveDetails": "+2 status to Will vs. mental",
       "items": {
@@ -4381,9 +4349,6 @@
         },
         "strike-ranged->Javelin": {
           "name": "Javelin"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Telepathy 100 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
@@ -4415,6 +4380,7 @@
     },
     "Serpentfolk Venom Caller": {
       "name": "Serpentfolk Venom Caller",
+      "languages": "telepathy 100 feet",
       "publicNotes": "<p>Venom callers are zyss serpentfolk spellcasters that specialize in the use of acid and poison magic, viewing them as natural extensions of their inherent venom. They have a reputation for bold action, something that puts them at odds with other zyss who prefer stealth and subterfuge. When a venom caller can't eliminate their rivals to seize control of their colony, they often leave in a dramatic demonstration of arrogance, insisting that slithering in shadows does the serpentfolk cause no favors.</p>\n<p>Though venom callers aren't considered subtle by their kin, their schemes-which often revolve around acquiring rare magical lore-can nevertheless take humanoid communities by surprise. Venom callers often lure away unsuspecting victims, murder them, and disfigure their venom-wracked bodies with acid; the venom caller then assumes the victim's form. Authorities, believing all members of the community are accounted for, assume the unrecognizable corpse must have been a traveler. Most venom callers have broken with other serpentfolk communities and have no qualms about murdering their kin or infiltrating other serpentfolk cells if it serves their purposes.</p>\n<hr />\n<p>Ancient and cunning, the once mighty serpentfolk have suffered numerous setbacks and indignities since the decapitation of their god, Ydersius, millennia ago. Scattered in isolated pockets, the reptilian humanoids constantly scheme their return to glory. Though many serpentfolk labor to restore Ydersius and reclaim power through him, others pursue different avenues to greatness, such as by mastering uncanny magic or practicing spycraft to take down enemy organizations from the inside.</p>",
       "saveDetails": "+4 status to Will vs. mental, +1 status to all saves vs. magic",
       "items": {
@@ -4454,9 +4420,6 @@
         "strike-ranged->Shortbow": {
           "name": "Shortbow"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Telepathy 100 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
         },
@@ -4484,10 +4447,6 @@
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Arcane Innate Spells"
         },
-        "spell->Imprisonment": {
-          "primarycheck": "Arcana (legendary) or Occultism (legendary)",
-          "secondarycheck": "Crafting, Society"
-        },
         "spell->Maze": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]\nMaze"
         },
@@ -4513,9 +4472,6 @@
         },
         "strike-melee->Shadow Whip": {
           "name": "Shadow Whip"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Claim Trophy": {
           "name": "Claim Trophy",
@@ -4718,9 +4674,6 @@
         "strike-ranged->Thunderclap": {
           "name": "Thunderclap"
         },
-        "action->Scent (Imprecise) 120 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 120 feet"
-        },
         "action->Fast Healing 20": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 20"
         },
@@ -4770,6 +4723,7 @@
       "blurb": "Variant ravener husk",
       "hpDetails": "void healing",
       "publicNotes": "<p>Raveners require a steady diet of souls, and a ravener that's unable to feed for too long eventually cannibalizes their own soul. Should a ravener's soul ward ever be reduced to 0 Hit Points by hunger while the ravener has more than 1 Hit Point (see Soul Ward), they lose all traces of their former identity and descend into a feral, nearly mindless state. Even if a ravener husk later consumes soul energy, the transformation can be reversed only via Ravenous Repast.</p>\n<hr />\n<p>Though their lifespans can measure in millennia, all dragons must eventually perish. While many do so on the blades or under the spells of dragonslayers, some manage to outlast their enemies and must, in time, face the truth that awaits all living creatures at the end of their natural lifespan. As with many other creatures, some dragons respond to such looming reminders of their own mortality poorly, and the particularly prideful or wrathful of their kind often lash out in anger when confronted by this grim truth. Peace and acceptance may find some dragons, but the most stubborn of their ilk (and invariably the most wicked) may pursue a different answer to the problem. These dragons seek out sinister rites that can transform them into undead creatures known as raveners.</p>\n<p>A ravener's flesh is stripped away as part of the transformation, leaving only their skeleton. What they lose in flesh, however, the dragon gains in soul-rending power, as their raw spiritual energy forms a protective barrier around their skeleton, keeping it intact and allowing flight with now-skeletal wings. This new existence is not so easy to maintain as other forms of undeath, however, and the ravener must feed regularly on the souls of living creatures to power their profane metabolism. This hunger is much greater than that of a living dragon, so raveners are forced to relocate regularly, traveling to fresh hunting grounds each time they strip their current home of prey. A ravener may depopulate whole regions at a time in order to sate their endless hunger for souls, lest they lose much of their power and become a ravener husk.</p>",
+      "senses": "soulsense 60 feet",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -4818,6 +4772,7 @@
     },
     "Spellskein": {
       "name": "Spellskein",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
       "items": {
         "strike-melee->Sharp Edge": {
@@ -4847,6 +4802,7 @@
     },
     "Spellskein (Consecrate)": {
       "name": "Spellskein (Consecrate)",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Spellskeins created during @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consecrate} rituals have a religious symbol form and can use the one-action activity anoint while in that form.</p>\n<hr />\n<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
       "tokenName": "Spellskein",
       "items": {
@@ -4881,6 +4837,7 @@
     },
     "Spellskein (Control Weather)": {
       "name": "Spellskein (Control Weather)",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Spellskeins created during @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Control Weather} rituals have a storm cloud form and can gain the following attack in that form.</p>\n<hr />\n<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
       "tokenName": "Spellskein",
       "items": {
@@ -4914,6 +4871,7 @@
     },
     "Spellskein (Heroes' Feast)": {
       "name": "Spellskein (Heroes' Feast)",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Spellskeins created during @UUID[Compendium.pf2e.spells-srd.Item.yRf59eFtZ50cGlem]{Heroes' Feast} rituals have a teapot form and can use the two-action activity serve tea while in that form.</p>\n<hr />\n<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
       "tokenName": "Spellskein",
       "items": {
@@ -5091,6 +5049,7 @@
     },
     "Sunburst Corpse": {
       "name": "Sunburst Corpse",
+      "languages": "(can't speak any language)",
       "items": {
         "strike-melee->Claw": {
           "name": "Claw"
@@ -5126,6 +5085,7 @@
     "Ta'apundo": {
       "name": "Ta'apundo",
       "publicNotes": "<p>The First World still holds the first rough draft of many creatures in the Material Plane, but it's hard to tell what sort of creature the ta'apundo was ever intended to be. Its bark poses significant danger to metallic objects, as it converts any metal touching it into wood as fibrous and as flexible as its own body. Capricious and skittish, ta'apundos make friends easily but consider anyone who wields or wears metal to be a hated enemy.</p>",
+      "senses": "greensight",
       "speed": "woodland stride",
       "items": {
         "strike-melee->Branch": {
@@ -5234,7 +5194,9 @@
       "name": "Tatterthread",
       "blurb": "Variant norn",
       "hpDetails": "regeneration 15 (deactivated by cold iron)",
+      "languages": "tongues",
       "saveDetails": "+1 status to all saves vs. magic",
+      "senses": "detect magic",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -5253,9 +5215,7 @@
           "target": "you and up to five creatures touched"
         },
         "spell->Legend Lore": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore",
-          "primarycheck": "Occultism (master)",
-          "secondarycheck": "Performance, Society"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore"
         },
         "spell->Spellwrack (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]\nSpellwrack (At Will)"
@@ -5273,8 +5233,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pkcOby5prOausy1k]\nRead Omens (At Will)"
         },
         "spell->Geas": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Society or Legal Lore",
           "target": "1 creature of a level no greater than double the geas ritual's level"
         },
         "spell->Dispel Magic (At Will)": {
@@ -5550,12 +5508,10 @@
     },
     "Umbo": {
       "name": "Umbo",
+      "languages": "telepathy 100 feet (myceloids and those afflicted by purple pox only)",
       "items": {
         "strike-melee->Fist": {
           "name": "Fist"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Telepathy 100 feet (Myceloids and Those Afflicted by Purple Pox Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet (Myceloids and Those Afflicted by Purple Pox Only)"
@@ -5614,9 +5570,6 @@
         },
         "strike-melee->Bite": {
           "name": "Bite"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Shadow's Displeasure": {
           "name": "Shadow's Displeasure",
@@ -5977,6 +5930,7 @@
     },
     "Wereant Disciple": {
       "name": "Wereant Disciple",
+      "languages": "insect empathy, telepathy 120 feet",
       "publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>Some wereants have a religious zeal about training to protect their community and gladly give their lives for the hive.</p>",
       "items": {
         "strike-melee->Mandibles": {
@@ -5984,9 +5938,6 @@
         },
         "strike-melee->Carapace Fist": {
           "name": "Carapace Fist"
-        },
-        "action->Scent (Imprecise) 20 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 20 feet"
         },
         "action->Telepathy 120 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 120 feet"
@@ -6026,6 +5977,7 @@
     },
     "Wereant Poisoner": {
       "name": "Wereant Poisoner",
+      "languages": "inset empathy; telepathy 120 feet",
       "publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>When overwhelming force is inadvisable, a wereant hive sends a poison-dripping assassin for murderous work. These poisoners love to terrify those dying in agony from their toxins.</p>",
       "items": {
         "strike-melee->Mandibles": {
@@ -6033,9 +5985,6 @@
         },
         "strike-melee->Kukri": {
           "name": "Kukri"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Telepathy 120 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 120 feet"
@@ -6080,15 +6029,13 @@
     "Wereant Sentinel": {
       "name": "Wereant Sentinel",
       "acDetails": "(45 with shield raised)",
+      "languages": "insect empathy, telepathy 120 feet",
       "items": {
         "strike-melee->Mandibles": {
           "name": "Mandibles"
         },
         "strike-melee->Khopesh": {
           "name": "Khopesh"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Insect Empathy": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.iAXHLkxuuCUOwqkN]\nInsect Empathy",
@@ -6204,30 +6151,18 @@
         },
         "action->Hampering Strike": {
           "name": "Hampering Strike",
-          "description": "<p>A foe that takes damage from Yonsuu's melee Strike is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 3} if the Strike is a critical hit).</p>",
-          "rules": {
-            "0": {
-              "text": "A foe that takes damage from Yonsuu's melee Strike is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round."
-            },
-            "1": {
-              "text": "A foe that takes critical damage from Yonsuu's melee Strike is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 3} for 1 round."
-            }
-          }
+          "description": "<p>A foe that takes damage from Yonsuu's melee Strike is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 3} if the Strike is a critical hit).</p>"
         },
         "action->Subduing Attack": {
           "name": "Subduing Attack",
-          "description": "<p>Yonsuu deals an additional 3d6 precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} or within reach of at least one of their allies.</p>\n<p>Yonsuu can make an attack with this additional damage as a nonlethal attack, if they choose.</p>",
-          "rules": {
-            "1": {
-              "label": "Target is frightened or in reach of an ally"
-            }
-          }
+          "description": "<p>Yonsuu deals an additional 3d6 precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} or within reach of at least one of their allies.</p>\n<p>Yonsuu can make an attack with this additional damage as a nonlethal attack, if they choose.</p>"
         }
       }
     },
     "Yorulu": {
       "name": "Yorulu",
       "saveDetails": "+1 circumstance to all saves vs. traps",
+      "senses": "+11 to find traps",
       "items": {
         "equipment->Climbing Kit": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9UJbMaglf35GVzaZ]\n<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a @Check[type:flat|dc:5] whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit.</p>"
@@ -6299,6 +6234,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -6315,6 +6251,7 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

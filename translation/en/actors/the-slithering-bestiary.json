@@ -3,6 +3,7 @@
   "entries": {
     "Ahvothian": {
       "name": "Ahvothian",
+      "languages": "speak with animals",
       "publicNotes": "<p>Ahvothians are feral and cunning fiends from an Abyssal realm of jungles, dinosaurs, and relentless brutality. They resemble humanoid dinosaurs with narrow, fanged heads similar to raptors and solid, heavy legs like sauropods. Relentless trackers and survivalists, ahvothians are skilled at navigating jungles and are most commonly encountered stalking prey or operating out of fortified ruins. Ahvothians have an uncanny affinity with reptiles, and they often use dinosaurs-particularly carnivores such as allosauruses or deinonychuses-as hunting companions or guard animals. Although dangerous in large groups, ahvothians have such a strong desire to assert dominance over others that ahvothian armies frequently fall to infighting and bloody battles for dominance within days, or even hours. The mightiest ahvothians might lead dozens of their kin and herds of carnivorous dinosaurs.</p>",
       "speed": "freedom of movement",
       "items": {
@@ -375,6 +376,7 @@
     "Fuming Sludge": {
       "name": "Fuming Sludge",
       "publicNotes": "<p>The slurry from alchemical experiments is often as flammable as it is toxic. In especially volatile cases, a fuming sludge can form from ignited pools of unstable alchemical runoff. It resembles a charcoal-colored slurry studded with tiny embers, and it continually emits a thin haze of accelerant that amplifies the fires it starts.</p>\n<p>A fuming sludge must consume the base chemicals of living creatures to survive and can instinctively identify the complex molecules found in most animate creatures. The first meal of many a fuming sludge is its accidental creator, but it soon moves on to hunt in lush forests or densely populated settlements. A fuming sludge can extrude a powerful pseudopod to strike its victims, but it can also eject portions of its body with peristaltic contractions. These rapidly-cooling globs of goo slow down fleeing prey, but the cold, crusty residue can also alert canny explorers to their presence.</p>",
+      "senses": "chemical sense 60 feet",
       "items": {
         "strike-melee->Pseudopod": {
           "name": "Pseudopod"
@@ -402,6 +404,7 @@
     "Nyamat Mshwe": {
       "name": "Nyamat Mshwe",
       "blurb": "Male human cult master",
+      "senses": "(+18 to sense motive)",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
@@ -414,9 +417,6 @@
         },
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
-        },
-        "spell->Abyssal Pact": {
-          "primarycheck": "Religion (expert; you must be a demon)"
         },
         "spell->Glare of Obedience": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.MmQiEc7aM9PDLO2J]\nGlare of Obedience"
@@ -470,6 +470,7 @@
     "Paga Nikohian": {
       "name": "Paga Nikohian",
       "blurb": "Female halfling Aspis silver agent",
+      "senses": "keen eyes",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
@@ -586,6 +587,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -600,6 +602,7 @@
     },
     "reset": "system.details.reset",
     "routine": "system.details.routine",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

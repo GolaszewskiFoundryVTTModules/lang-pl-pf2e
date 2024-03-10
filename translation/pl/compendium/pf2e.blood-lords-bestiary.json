@@ -3,6 +3,7 @@
     "entries": {
         "Aeolaeka": {
             "name": "Aeolaeka",
+            "languages": "tongues",
             "publicNotes": "<p>Aeolaekas, also known as stone azatas, embody the slow but inevitable chaos of rock itself. Stone is often thought to be steadfast and unchanging, but, when viewed on a grander scale over vast periods of time, stone can transform into things as diverse as intricate crystals and fine powder. To the aeolaeka, anything that could become either sand or diamond is the very incarnation of the chaos of reality-just on a slower scale. As a result of their stone affinity, aeolaekas are less capricious than other azatas, and some have willingly forged lasting accords or agreements with mortals. Stone-skinned aeolaekas are sometimes mistaken for statues and use this fact to hide in plain sight when they don't want their presence known.</p>",
             "speed": "earth glide",
             "items": {
@@ -56,9 +57,6 @@
                 "strike-melee->Hoof": {
                     "name": "Hoof"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Grave-Bound Guts": {
                     "name": "Grave-Bound Guts",
                     "description": "<p>While within 100 feet of its vrykolakas's burial ground, an afziaka appears in the natural shape it had when it was a regular animal and can eat normally. When farther away, it doesn't gain sustenance from eating food and eventually starves to death.</p>"
@@ -81,9 +79,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Pazur"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Grave-Bound Guts": {
                     "name": "Grave-Bound Guts",
@@ -112,9 +107,7 @@
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "consumable->Rock": {
                     "name": "Rock"
@@ -424,6 +417,7 @@
         },
         "Basiri, Wellspring Keeper": {
             "name": "Basiri, Wellspring Keeper",
+            "languages": "telepathy 100 feet, tongues",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -432,9 +426,7 @@
                     "name": "Harness Wellspring"
                 },
                 "spell->Legend Lore": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore",
-                    "primarycheck": "Occultism (master)",
-                    "secondarycheck": "Performance, Society"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore"
                 },
                 "spell->Commune": {
                     "primarycheck": "Occultism (master) or Religion (master)",
@@ -639,9 +631,6 @@
                 "strike-melee->Claw": {
                     "name": "Pazur"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Corpse Eater": {
                     "name": "Corpse Eater",
                     "description": "<p>These bulettes prefer the taste of necrotic flesh and bone; their favorite prey is undead.</p>"
@@ -676,7 +665,7 @@
             "name": "Button Mash",
             "description": "<p>The room floods with harmful effects by pressing a magic sigil on a console. Each sigil causes different results. There are six sigils on the console.</p>",
             "disable": "<p>@Check[type:arcana|dc:40] (master) to disenchant each sigil (can be done from either side of the reception desk), @Check[type:thievery|dc:43] (master) twice to disable the console (can only be done while behind the reception desk), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 40) to counteract each sigil; prevent Noph from pressing the buttons by gaining access to the reception desk or other methods</p>",
-            "routine": "<p>(2 actions) Noph frantically pecks and stomps on the console, using each action to press a random sigil. Roll [[/r 1d6 #Pressed Sigil]] to determine which sigil Noph presses. Psychopomps are immune to the effects of these sigils.</p>\n<p><strong>1</strong> The area is flooded with holy light, dealing [[/r (3d12+19)[vitality]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]).</p>\n<p><strong>2</strong> The area is flooded with unholy darkness, dealing @Damage[(3d12+19)[void]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]).</p>\n<p><strong>3</strong> The area is flooded with blue flames, dealing @Damage[(3d10+19)[fire]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]). On a critical failure, a creature additionally takes @Damage[1d10[persistent,fire]] damage.</p>\n<p><strong>4</strong> A comet streaks through the area, attacking the nearest creature to Noph with a comet Strike.</p>\n<p><strong>5</strong> Force tethers sprout from the floor, grasping at intruders. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round unless they succeed at a @Check[type:fortitude|dc:43] save.</p>\n<p><strong>6</strong> Ghostly blue mist surrounds each psychopomp in the area, healing them @Damage[(3d8+19)[healing]]]{3d8+19} HP and granting them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round.</p>",
+            "routine": "<p>(2 actions) Noph frantically pecks and stomps on the console, using each action to press a random sigil. Roll [[/gmr 1d6 #Pressed Sigil]] to determine which sigil Noph presses. Psychopomps are immune to the effects of these sigils.</p>\n<p><strong>1</strong> The area is flooded with holy light, dealing @Damage[(3d12+19)[vitality]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]).</p>\n<p><strong>2</strong> The area is flooded with unholy darkness, dealing @Damage[(3d12+19)[void]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]).</p>\n<p><strong>3</strong> The area is flooded with blue flames, dealing @Damage[(3d10+19)[fire]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]). On a critical failure, a creature additionally takes @Damage[1d10[persistent,fire]] damage.</p>\n<p><strong>4</strong> A comet streaks through the area, attacking the nearest creature to Noph with a comet Strike.</p>\n<p><strong>5</strong> Force tethers sprout from the floor, grasping at intruders. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round unless they succeed at a @Check[type:fortitude|dc:43] save.</p>\n<p><strong>6</strong> Ghostly blue mist surrounds each psychopomp in the area, healing them @Damage[(3d8+19)[healing]]{3d8+19} HP and granting them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
                 "action->Lockdown": {
@@ -1100,6 +1089,7 @@
         "Dirge Piper": {
             "name": "Dirge Piper",
             "hpDetails": "leczenie pustką",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>Under rare circumstances, an attempt to reanimate a skilled musician or performer as a mindless zombie is impeded by lingering occult magic that anchors a piece of the being's artistic soul to its shambling body. The resulting dirge piper retains a fragment of the person's former intellect and personality, but lacks the coordination and acuity to make true music any longer. Instead, they force air through the cavities and organs of their decomposing bodies to produce haunting piping, squelches, and trumpeting.</p>\n<p>Most dirge pipers cling to a sense of fashion from their former lives, often obsessing over the condition of their clothes. They are aware enough of their deteriorating bodies that their own decay drives them into deepening despair. The only thing more disturbing to a dirge piper than their corpse is their own music. Despite hating the sounds they make, they cannot help but produce constant noise from their mouths and their wounds.</p>\n<p>Although many necromancers consider the noisy dirge pipers a mistake, dirge pipers can be useful as leaders of other groups of zombies because their piping invigorates their fellow walking corpses. Even their putrid, trumpeting blasts resonate in a way that doesn't harm other zombies.</p>",
             "items": {
                 "condition->Slowed": {
@@ -1129,6 +1119,7 @@
         "Drowned Mummy": {
             "name": "Drowned Mummy",
             "hpDetails": "leczenie pustką",
+            "languages": "telepathy 30 feet",
             "publicNotes": "<p>Rarely artificially created, drowned mummies are miserable, dripping undead that have adapted to exist in an aquatic environment, usually over centuries, after their tomb or lair becomes flooded.</p>",
             "items": {
                 "strike-melee->Trident": {
@@ -1193,9 +1184,6 @@
                 "strike-melee->Tail": {
                     "name": "Ogon"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-                },
                 "action->Regeneration 10 (Deactivated by Acid or Fire)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5]\nRegeneration 10 (Deactivated by Acid or Fire)"
                 },
@@ -1223,6 +1211,7 @@
         "Ectoplasmic Amalgam": {
             "name": "Ectoplasmic Amalgam",
             "hpDetails": "leczenie pustką",
+            "languages": "(can't speak any language)",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -1514,10 +1503,6 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
                 },
-                "spell->Split Shadow": {
-                    "primarycheck": "Arcana or Occultism (master, the check has the secret trait)",
-                    "secondarycheck": "Crafting, Deception, Performance, Society"
-                },
                 "spell->Plane Shift (Self Only; to Shadow Plane or Material Plane Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (Self Only; to Shadow Plane or Material Plane Only)",
                     "target": "1 willing creature, or up to 8 willing creatures joining hands"
@@ -1525,7 +1510,6 @@
                 "spell->Planar Binding": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
                     "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
-                    "primarycheck": "Arcana (master) or Occultism (master)",
                     "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
                 },
                 "spell->Prying Eye": {
@@ -1780,6 +1764,7 @@
         "Ghoul Crocodile": {
             "name": "Ghoul Crocodile",
             "hpDetails": "leczenie pustką",
+            "senses": "corpse scent (imprecise)",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -2011,9 +1996,7 @@
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "treasure->Black Onyx Gems": {
                     "name": "Black Onyx Gems"
@@ -2050,13 +2033,11 @@
         "Granite Vulture": {
             "name": "Granite Vulture",
             "blurb": "LE variant guardian beast",
+            "languages": "telepathy 60 feet",
             "saveDetails": "+1 status to all saves vs. good",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Anchored Soul": {
                     "name": "Anchored Soul",
@@ -2141,6 +2122,7 @@
         },
         "Guloval": {
             "name": "Guloval",
+            "languages": "speak with animals",
             "publicNotes": "<p>Agathions are born from petitioners who achieved enlightenment in life or after death and received Nirvana's blessing. A guloval is small in stature but fierce, appearing as an anthropomorphic wolverine with gray and black fur, a white strip down the snout, and fearsome digging claws that can be easily used as weapons.</p>\n<p>A guloval's core value is aggressive protection, and as such, they are one of the most militant of the normally peaceful agathions. A guloval attacks with a frightening ferocity to protect others, and they particularly seek out roles as guardians of children or the elderly. Despite this compulsion to protect those who may not be able to defend themselves, gulovals are also known for grumpy temperaments and impatience with social niceties. Most prefer to live as hermits when they're not assisting someone in need.</p>",
             "saveDetails": "+1 status bonus to all saves vs. magic",
             "items": {
@@ -2283,17 +2265,20 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FXHjmH1oce7Z3tZb]\nCoffin Restoration"
                 },
                 "action->Mist Escape": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\n<p><strong>Aktywator</strong> The vampire is reduced to 0 HP.</p>\n<hr />\n<p><strong>Efekt</strong> The vampire uses Turn to Mist. It can take move actions to move toward its coffin even though it's at 0 HP. While at 0 HP in this form, the vampire is unaffected by further damage.</p>\n<p>It automatically returns to its corporeal form, unconscious, if it reaches its coffin or after 2 hours, whichever comes first.</p>"
                 },
                 "action->Vampire Weaknesses": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\n<p>All vampires possess the following weaknesses.</p>\n<ul>\n<li><strong>Compulsions</strong> Vampires are creatures of strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless it is transported while it hides within its coffin, nor can it enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions-a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome its compulsion just as it does its revulsion.</li>\n<li><strong>Revulsion</strong> A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a non-evil deity. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of its revulsion, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the object of its revulsion until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a vampire can attempt a @Check[type:will|dc:25|name:Overcome Revulsion] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Stake</strong> A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents it from healing above 0 HP, even in its coffin. Staking a vampire requires three actions and works only if the vampire is unconscious. If the stake is removed, the vampire can heal above 0 HP again, and if it's in its coffin the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em> while the stake is in place, the vampire is destroyed.</li>\n<li><strong>Sunlight</strong> If exposed to direct sunlight, a vampire immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. The slowed value increases by 1 each time the vampire ends its turn in sunlight. If the vampire loses all its actions in this way, it is destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors.</li>\n</ul>"
                 },
                 "action->Change Shape": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\nChange Shape",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\n<ul>\n<li><strong>Bat</strong> Harmony changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. She gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike +26 for 3d8+10 piercing</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Create Spawn": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Spawn"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Spawn",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\n<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>"
                 },
                 "action->Dominate": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\nDominate",
@@ -2435,10 +2420,12 @@
                     "description": "<p>Hyrune's devotion to Urgathoa has become undermined by his obsession with Orgesh. Urgathoa's religious symbol can be brandished at Hyrune to trigger his revulsion, provided the person attempting to do so accuses Hyrune of being a heretic or of betraying his faith. Hyrune takes a –2 circumstance penalty to Will saves to overcome this revulsion.</p>"
                 },
                 "action->Mist Escape": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\n<p><strong>Aktywator</strong> The vampire is reduced to 0 HP.</p>\n<hr />\n<p><strong>Efekt</strong> The vampire uses Turn to Mist. It can take move actions to move toward its coffin even though it's at 0 HP. While at 0 HP in this form, the vampire is unaffected by further damage.</p>\n<p>It automatically returns to its corporeal form, unconscious, if it reaches its coffin or after 2 hours, whichever comes first.</p>"
                 },
                 "action->Vampire Weaknesses": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\n<p>All vampires possess the following weaknesses.</p>\n<ul>\n<li><strong>Compulsions</strong> Vampires are creatures of strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless it is transported while it hides within its coffin, nor can it enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions-a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome its compulsion just as it does its revulsion.</li>\n<li><strong>Revulsion</strong> A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a non-evil deity. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of its revulsion, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the object of its revulsion until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a vampire can attempt a @Check[type:will|dc:25|name:Overcome Revulsion] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Stake</strong> A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents it from healing above 0 HP, even in its coffin. Staking a vampire requires three actions and works only if the vampire is unconscious. If the stake is removed, the vampire can heal above 0 HP again, and if it's in its coffin the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em> while the stake is in place, the vampire is destroyed.</li>\n<li><strong>Sunlight</strong> If exposed to direct sunlight, a vampire immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. The slowed value increases by 1 each time the vampire ends its turn in sunlight. If the vampire loses all its actions in this way, it is destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors.</li>\n</ul>"
                 },
                 "action->Change Shape": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\nChange Shape",
@@ -2475,6 +2462,7 @@
         },
         "Intellect Assemblage": {
             "name": "Intellect Assemblage",
+            "languages": "telepathy 100 feet; tongues",
             "publicNotes": "<p>Intellect assemblages are artificial constructs created from the memories of others. These memories are solidified into jagged shards similar in appearance to shattered glass and fused together in vaguely humanoid-shaped clusters to create the assemblage's body. The resulting construct is incredibly intelligent but completely devoid of emotion, possessing the thoughts and memories of a multitude but no personal connection to any of them. Analytical and meticulous, intellect assemblages view the world and everything in it as parts of a complex equation or system. They place no value on life or morality and consider emotions an illogical weakness.</p>",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -2530,33 +2518,15 @@
                 "spellcastingEntry->Scattered Coven Spells": {
                     "name": "Scattered Coven Spells"
                 },
-                "spell->Mystic Carriage": {
-                    "primarycheck": "Arcana (Expert) or Occultism (Expert)",
-                    "secondarycheck": "Crafting or Driving Lore"
-                },
-                "spell->Unseen Custodians": {
-                    "primarycheck": "Arcana or Occultism (expert)",
-                    "secondarycheck": "Arcana or Occultism (whichever isn't used for the primary check), Diplomacy"
-                },
                 "spell->Create Undead (Zombie)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Zombie)",
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->False Life": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]\nFalse Life"
                 },
-                "spell->Heartbond": {
-                    "primarycheck": "Nature or Religion (expert)",
-                    "secondarycheck": "Diplomacy, Society"
-                },
                 "spell->Inveigle": {
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
                     "target": "1 creature of a level no greater than double the inveigle ritual's rank"
-                },
-                "spell->Elemental Sentinel": {
-                    "primarycheck": "Arcana (expert) or Occultism (expert)"
                 },
                 "equipment->Leather Bag Containing Finger Bones": {
                     "name": "Leather Bag Containing Finger Bones"
@@ -2657,9 +2627,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->Gentle Repose": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]\nGentle Repose"
@@ -2701,7 +2669,8 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>60 feet. @Check[type:will|dc:43]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Rejuvenation": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\nRejuvenation"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\nRejuvenation",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.a7A4xY3NeWI2Ya4Z]\n<p>When a lich is destroyed, its soul immediately transfers to its <em>@UUID[Compendium.pf2e.equipment-srd.Item.NEbr7nKuiluJgBHT]{Soul Cage}</em>. A lich can be permanently destroyed only if its <em>soul cage</em> is found and destroyed.</p>"
                 },
                 "action->Drain Soul Cage": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.fqZhojt2M5LfSKSH]\nDrain Soul Cage",
@@ -2729,6 +2698,7 @@
             "name": "Kemnebi",
             "blurb": "Male vetalarana vampire",
             "hpDetails": "fast healing 20, mental rebirth, leczenie pustką",
+            "languages": "tongues",
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
@@ -2765,9 +2735,7 @@
                 },
                 "spell->Create Undead (Doesn't Require Secondary Casters)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Doesn't Require Secondary Casters)",
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->False Life": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]\nFalse Life"
@@ -2880,9 +2848,7 @@
                 },
                 "spell->Create Undead (Crawling Hands, Zombies)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Crawling Hands, Zombies)",
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->Touch of Idiocy": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
@@ -3112,6 +3078,7 @@
         "Matron Uldrula": {
             "name": "Matron Uldrula",
             "blurb": "Female shoki psychopomp",
+            "languages": "tongues",
             "publicNotes": "<p>Shokis are shepherds who lead wayward souls to the Boneyard.</p>\n<hr />\n<p>Psychopomps preside over death and the cycle of souls.</p>",
             "items": {
                 "spellcastingEntry->Divine Spontaneous Spells": {
@@ -3128,9 +3095,7 @@
                     "target": "1 willing creature, or up to 8 willing creatures joining hands"
                 },
                 "spell->Call Spirit (Doesn't Require Secondary Casters)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gsYEuWv04XTDxe91]\nCall Spirit (Doesn't Require Secondary Casters)",
-                    "primarycheck": "Occultism (expert) or Religion (expert)",
-                    "secondarycheck": "Occultism or Religion (whichever isn't used for the primary check)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gsYEuWv04XTDxe91]\nCall Spirit (Doesn't Require Secondary Casters)"
                 },
                 "spell->Tongues (Constant)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
@@ -3363,6 +3328,7 @@
             "name": "Mummy Valet",
             "blurb": "Elite mummy guardian",
             "hpDetails": "leczenie pustką",
+            "languages": "any one ancient language",
             "publicNotes": "<p>The majority of mummies were created by cruel and selfish masters to serve as guardians to protect their tombs from intruders. The traditional method of creating a mummy guardian is a laborious and sadistic process that begins well before the poor soul to be transformed is dead, during which the victim is ritualistically starved of nourishing food and instead fed strange spices, preservative agents, and toxins intended to quicken the desiccation of the flesh. The victim remains immobile but painfully aware during the final stages, where its now-useless entrails are extracted before it's shrouded in funerary wrappings and entombed within a necromantically ensorcelled sarcophagus to await intrusions in the potentially distant future. While it's certainly possible to use other methods to create a mummy guardian from an already-deceased body, those who seek to create these foul undead as their guardians in the afterlife often feel that such methods result in inferior undead-the pain and agony of death by mummification being an essential step in the process.</p>\n<p>Regardless of the method of their creation, mummy guardians are more than just physical shells of flesh and bone-they retain fragmented, distorted versions of their minds, with only enough memories of their living personality remaining to fuel their undead anger and jealousy of those who yet live. This burning rage only intensifies over the centuries of waiting within a crypt for the chance to actually act, and thus when most mummy guardians are awoken by tomb robbers or adventurers, they stop at nothing in pursuit of glorious slaughter.</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
             "items": {
                 "strike-melee->Fist": {
@@ -3474,6 +3440,7 @@
         },
         "Necromunculus": {
             "name": "Necromunculus",
+            "languages": "(can't speak any language); undead master link",
             "publicNotes": "<p>A necromunculus is a tiny undead servant that can only be created by an undead creature. These servitors are common creations in Geb, where undead crafters and masterminds have countless years to dabble in necromantic crafts and a great need for unquestioning loyalty from servitors more cunning than other simple undead minions.</p>\n<p>Necromunculi are similar to homunculi, but there are a few notable differences between these undead creatures and the constructs they are named after. A necromunculus may be loyal to its master, but it also seethes with hatred for all undead, including itself. If left to its own devices, a necromunculus immediately begins plotting to kill and gnaw upon any undead with whom it must regularly interact, even its master, even though it has no need to eat. A necromunculus cannot willingly act on this urge so long as it has some other command to obey, so their creators work hard to ensure that they are constantly supplied with tasks to keep them occupied.</p>\n<p>Despite their cannibalistic urges, necromunculi are gaining increased in popularity among Geb's undead necromancers. Each creator wishes to see if they can imbue even more of their powers or personality in the delightfully treacherous servants. Besides, they make excellent practice in espionage and logical thinking for would-be Blood Lords.</p>\n<p>Necromunculi resemble skeletal, impish humanoids with leathery wings. They are created from a mixture of mud, bonemeal, juniper oil, a few drops of blood from a still-living mammal, and a pound of the creator's own flesh, blood, or bone. Undead creatures lacking a corporeal body can use a pound of flesh, blood, or bone from another willing, intelligent undead subject, but the process generally destroys the volunteer.</p>",
             "items": {
                 "strike-melee->Claw": {
@@ -3567,6 +3534,7 @@
         "Nydazuul": {
             "name": "Nydazuul",
             "blurb": "Variant augnagar",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The brutish and gluttonous augnagar live to feast- preferably on rotten flesh, and when possible, demon flesh. But to them, the greatest delicacy is the flesh of other augnagars. Augnagars have spiderlike legs with leathery membranes like a bat's wings, and three tails ending in hooked claws perfect for slicing flesh.</p>",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -3583,9 +3551,6 @@
                 },
                 "strike-melee->Sting": {
                     "name": "Sting"
-                },
-                "action->Scent (Imprecise 30) feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise 30) feet"
                 },
                 "action->Confusing Display": {
                     "name": "Confusing Display",
@@ -3796,7 +3761,8 @@
                     "name": "Composite Longbow"
                 },
                 "action->Rejuvenation": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
                 },
                 "action->Sacrilegious Aura": {
                     "name": "Sacrilegious Aura",
@@ -4269,6 +4235,8 @@
                 },
                 "consumable->Wand of Cone of Cold (Level 5)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\nWand of Cone of Cold (Level 5)",
+                    "consumableSpellName": "Cone of Cold",
+                    "consumableSpellDescription": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "backpack->Bag of Holding (Type IV)": {
@@ -4481,7 +4449,8 @@
                     "description": "<p><strong>Aktywator</strong> An enemy within 15 feet damages Seldeg</p>\n<hr />\n<p><strong>Efekt</strong> Seldeg puts an impertinent foe who dared harm him in their proper place. He commands the enemy to kneel in obedience. If they refuse, they must pay the price in pain and anguish. The triggering creature must choose one of the following options: the enemy kneels, dropping @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} as a free action, or the enemy refuses and takes @Damage[5d6[mental]] damage. In addition, Seldeg's Strikes against the triggering creature deal an additional 3 damage until the end of his next turn. Seldeg chooses whether the additional damage is spirit or void each time he uses this reaction.</p>"
                 },
                 "action->Rejuvenation": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
                 },
                 "action->Sacrilegious Aura": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bTJnxBQjr7G8yr30]\nSacrilegious Aura",
@@ -4591,10 +4560,6 @@
                 },
                 "spell->Searing Light": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]\nSearing Light"
-                },
-                "spell->Consecrate": {
-                    "primarycheck": "Religion",
-                    "secondarycheck": "Crafting, Performance"
                 },
                 "spell->Remove Fear": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]\nRemove Fear",
@@ -4708,6 +4673,7 @@
             "hpDetails": "leczenie pustką",
             "publicNotes": "<p>In ancient times, a cabal of primalists imbued an amalgam of beasts with both supernatural might and a hatred of magic itself, hoping to achieve a potent weapon for use against arcane spellcasters. Effective beyond expectation, the first leydroths broke free and turned on their creators. Worse, the leydroths bred true, and these reclusive predators have long outlived their original creators.</p>\n<p>Leydroths look like distorted, apelike felines with many-branching horns growing from the backs of their heads. Their thickly muscled limbs end in glowing claws.</p>",
             "saveDetails": "+2 status to all saves vs. magic",
+            "senses": "magic sense (imprecise) 60 feet",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -4890,6 +4856,7 @@
         },
         "Shoki": {
             "name": "Shoki",
+            "languages": "tongues",
             "publicNotes": "<p>Shokis are shepherds who lead wayward souls to the Boneyard.</p>\n<hr />\n<p>Psychopomps preside over death and the cycle of souls.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -5194,9 +5161,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->Remove Paralysis": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.BCuHKrDeJ4eq53M6]\nRemove Paralysis",
@@ -5333,9 +5298,6 @@
                 "strike-melee->Talon": {
                     "name": "Talon"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Consume Flesh": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Wymagania</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Efekt</strong> The ghoul devours a chunk of the corpse and regains [[/r 7d6[healing]]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
@@ -5452,6 +5414,7 @@
         "Tenebric Giant": {
             "name": "Tenebric Giant",
             "hpDetails": "leczenie pustką",
+            "languages": "telepathy (with its creator only) 100 feet",
             "publicNotes": "<p>Necromancers reaching for the greatest heights of experimentation know that creating a new terror requires exacting, careful work at every stage of the process. In the case of the tenebric giant, this process begins with a tomb giant who dies after consuming a dose of several poisons combined with the shadow ash reagent. This creates the right circumstances for a necromancer to raise them as a tenebric giant. They're particularly obedient to the will of the necromancer who created them and are charged full of energy from the Shadow Plane, which grants them new powers and abilities.</p>",
             "items": {
                 "strike-melee->Scythe": {
@@ -5486,6 +5449,7 @@
         "Terra-cotta Soldier": {
             "name": "Terra-cotta Soldier",
             "acDetails": "26 with shield raised",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>A single terra-cotta warrior stands 6 feet tall and weighs 600 pounds.</p>",
             "items": {
                 "strike-melee->Claw": {
@@ -5569,7 +5533,9 @@
         "Theater Phantasm": {
             "name": "Theater Phantasm",
             "hpDetails": "emotional consumption, dramatic return, leczenie pustką",
+            "languages": "up to four others",
             "publicNotes": "<p>Theater phantasms are amalgamations of the spiritual and emotional energy given up by entertainers and audiences of powerful performances.</p>",
+            "senses": "all-around vision",
             "items": {
                 "strike-melee->Spectral Hand": {
                     "name": "Spectral Hand"
@@ -5624,7 +5590,7 @@
         "Tombstone Troll": {
             "name": "Tombstone Troll",
             "hpDetails": "regeneration 5 (deactivated by acid, fire, or vitality)",
-            "publicNotes": "<p>Sometimes, when a troll is regenerating from life-threatening wounds inflicted by necromancy or void energy, the vile energy takes hold in the troll's supernaturally resilient regeneration. The force that should have killed the troll instead becomes a part of the troll's strange physiology. These trolls are not undead, but the force inside them eats at their bodies and souls, turning them into shrunken mockeries of their former selves. These so-called \\\"tombstone trolls\\\" resemble withered, diminutive trolls, bloated with starvation and obviously sickly. Their teeth, hair, and fingernails rot, fall out, and regenerate every few days in an endless cycle that is both painful to experience and sickening to see.</p>\n<p>Other trolls shun and despise tombstone trolls, who earn their name from their habit of digging up graves in their search for an easy meal that can't fight back. Tombstone trolls shun confrontation of any kind, especially in areas where their grave-robbing might put them at odds with powerful undead. They often lair underground, safe in their graveyard burrows for days at a time, gradually tunneling through the earth to devour nearby corpses. If the tombstone troll is clever, the surface might not bear any evidence of their presence except for a few divots or soft spots in the soil. Once a tombstone troll has run out of easy pickings in a cemetery, it moves on in the dead of night to find a new hunting ground. If their travel is lengthy or difficult, their hunger might drive them to attack the living.</p>",
+            "publicNotes": "<p>Sometimes, when a troll is regenerating from life-threatening wounds inflicted by necromancy or void energy, the vile energy takes hold in the troll's supernaturally resilient regeneration. The force that should have killed the troll instead becomes a part of the troll's strange physiology. These trolls are not undead, but the force inside them eats at their bodies and souls, turning them into shrunken mockeries of their former selves. These so-called \"tombstone trolls\" resemble withered, diminutive trolls, bloated with starvation and obviously sickly. Their teeth, hair, and fingernails rot, fall out, and regenerate every few days in an endless cycle that is both painful to experience and sickening to see.</p>\n<p>Other trolls shun and despise tombstone trolls, who earn their name from their habit of digging up graves in their search for an easy meal that can't fight back. Tombstone trolls shun confrontation of any kind, especially in areas where their grave-robbing might put them at odds with powerful undead. They often lair underground, safe in their graveyard burrows for days at a time, gradually tunneling through the earth to devour nearby corpses. If the tombstone troll is clever, the surface might not bear any evidence of their presence except for a few divots or soft spots in the soil. Once a tombstone troll has run out of easy pickings in a cemetery, it moves on in the dead of night to find a new hunting ground. If their travel is lengthy or difficult, their hunger might drive them to attack the living.</p>",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -5665,6 +5631,7 @@
         "Umbraex": {
             "name": "Umbraex",
             "hpDetails": "ashen rise, leczenie pustką, regeneration 20 (deactivated by fire or holy)",
+            "languages": "(can't speak any language); telepathy 100 feet",
             "publicNotes": "<p>An umbraex appears at first glance to be a massive, majestic bird, much like a phoenix. Instead of compassion and warmth, however, it seethes with cold and hate. The umbraex is among the largest of the nihilistic undead called darvakkas.</p>",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -5751,6 +5718,7 @@
             "blurb": "Female adult umbral dragon ravener",
             "hpDetails": "Soul Ward",
             "saveDetails": "+1 status to all saves vs. magic",
+            "senses": "soulsense 60 feet",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -5773,9 +5741,6 @@
                 },
                 "strike-melee->Wing": {
                     "name": "Wing"
-                },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
                 },
                 "action->Soulsense 60 feet": {
                     "name": "Soulsense 60 feet",
@@ -5841,6 +5806,7 @@
         },
         "Urglid": {
             "name": "Urglid",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The hulking monstrosities known as urglids form from the souls of murderous undertakers, sadists who buried their victims alive, and intentionally neglectful grave keepers who gave up their watch over the dead. Standing over 30 feet tall and weighing over 3,000 pounds, the demon's head seems sunken into its torso, and a gaping, toothy mouth opens at the top of its chest.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "speed": "earth glide",
@@ -5856,9 +5822,6 @@
                 },
                 "spell->Earthbind (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]\nEarthbind (At Will)"
-                },
-                "spell->Abyssal Pact": {
-                    "primarycheck": "Religion (expert; you must be a demon)"
                 },
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -5923,17 +5886,20 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FXHjmH1oce7Z3tZb]\nCoffin Restoration"
                 },
                 "action->Mist Escape": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\n<p><strong>Aktywator</strong> The vampire is reduced to 0 HP.</p>\n<hr />\n<p><strong>Efekt</strong> The vampire uses Turn to Mist. It can take move actions to move toward its coffin even though it's at 0 HP. While at 0 HP in this form, the vampire is unaffected by further damage.</p>\n<p>It automatically returns to its corporeal form, unconscious, if it reaches its coffin or after 2 hours, whichever comes first.</p>"
                 },
                 "action->Vampire Weaknesses": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\n<p>All vampires possess the following weaknesses.</p>\n<ul>\n<li><strong>Compulsions</strong> Vampires are creatures of strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless it is transported while it hides within its coffin, nor can it enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions-a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome its compulsion just as it does its revulsion.</li>\n<li><strong>Revulsion</strong> A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a non-evil deity. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of its revulsion, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the object of its revulsion until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a vampire can attempt a @Check[type:will|dc:25|name:Overcome Revulsion] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Stake</strong> A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents it from healing above 0 HP, even in its coffin. Staking a vampire requires three actions and works only if the vampire is unconscious. If the stake is removed, the vampire can heal above 0 HP again, and if it's in its coffin the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em> while the stake is in place, the vampire is destroyed.</li>\n<li><strong>Sunlight</strong> If exposed to direct sunlight, a vampire immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. The slowed value increases by 1 each time the vampire ends its turn in sunlight. If the vampire loses all its actions in this way, it is destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors.</li>\n</ul>"
                 },
                 "action->Change Shape": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\nChange Shape",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\n<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<p>Use the options in the @UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form} and @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} spells as guidelines.</p>\n<ul>\n<li><strong>Bat</strong> The vampire changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VAWmwDA08ZLQd8lW]{Bat Swarm} or @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. It gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with a +21 attack bonus. These fangs deal the same amount of damage as the vampire's claws, but deal piercing damage rather than slashing damage.</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Create Spawn": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Spawn"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Spawn",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\n<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>"
                 },
                 "action->Dominate": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\nDominate",
@@ -6023,6 +5989,7 @@
             "name": "Vampire Taviah",
             "blurb": "Female vetalarana vampire annis hag",
             "hpDetails": "fast healing 10, leczenie pustką",
+            "languages": "tongues",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -6323,14 +6290,16 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FXHjmH1oce7Z3tZb]\nCoffin Restoration"
                 },
                 "action->Vampire Weaknesses": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Weaknesses",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\n<p>All vampires possess the following weaknesses.</p>\n<ul>\n<li><strong>Compulsions</strong> Vampires are creatures of strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless it is transported while it hides within its coffin, nor can it enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions-a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome its compulsion just as it does its revulsion.</li>\n<li><strong>Revulsion</strong> A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a non-evil deity. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of its revulsion, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the object of its revulsion until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a vampire can attempt a @Check[type:will|dc:25|name:Overcome Revulsion] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Stake</strong> A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents it from healing above 0 HP, even in its coffin. Staking a vampire requires three actions and works only if the vampire is unconscious. If the stake is removed, the vampire can heal above 0 HP again, and if it's in its coffin the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em> while the stake is in place, the vampire is destroyed.</li>\n<li><strong>Sunlight</strong> If exposed to direct sunlight, a vampire immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. The slowed value increases by 1 each time the vampire ends its turn in sunlight. If the vampire loses all its actions in this way, it is destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors.</li>\n</ul>"
                 },
                 "action->Change Shape": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\nChange Shape",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\n<ul>\n<li><strong>Bat</strong> Jack changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. He gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike +25 for 2d8+13 piercing</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Create Spawn": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Spawn"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Spawn",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\n<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>"
                 },
                 "action->Dominate": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\nDominate",
@@ -6354,8 +6323,10 @@
         },
         "Wheel Archon": {
             "name": "Wheel Archon",
+            "languages": "tongues",
             "publicNotes": "<p>Among the most terrifying archons to behold, and easily the most difficult for mortals to comprehend, is the wheel archon, so named for its appearance as a flying, armor-plated wheel of fire with eyes on each spoke. Wheel archons often serve as messengers or harbingers for the armies of heaven, as their stubborn, indomitable natures make them ill-suited for missions requiring diplomacy or tact. Indeed, they have a legendary intolerance and single-mindedness in the pursuit of the punishment of evil.</p>\n<p>Wheel archons can't tolerate deceit and easily see through lies. The sensation of this celestial being's divine eyes all fixing upon a single target is usually enough to encourage honesty, but when a wheel archon detects a falsehood, their righteous wrath takes over and they mete out punishment to sinners without quarter.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
+            "senses": "discern lies",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
@@ -6411,6 +6382,7 @@
         "Yshula": {
             "name": "Yshula",
             "blurb": "Male elite pairaka div",
+            "languages": "telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
@@ -6431,9 +6403,6 @@
                 },
                 "spell->Charm (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]\nCharm (At Will)"
-                },
-                "spell->Div Pact": {
-                    "primarycheck": "Religion (expert; you must be a div)"
                 },
                 "equipment->Bone Key": {
                     "name": "Bone Key",
@@ -6550,7 +6519,6 @@
                 "spell->Planar Binding": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
                     "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
-                    "primarycheck": "Arcana (master) or Occultism (master)",
                     "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
                 },
                 "spell->Freedom of Movement": {
@@ -6558,9 +6526,6 @@
                 },
                 "spell->Vampiric Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
-                },
-                "spell->Corpse Communion": {
-                    "primarycheck": "Crafting (master), Occultism (expert), Religion (expert)"
                 },
                 "spell->See Invisibility": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
@@ -6784,6 +6749,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"
@@ -6799,6 +6765,7 @@
         "reset": "system.details.reset",
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
+        "senses": "system.perception.details",
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

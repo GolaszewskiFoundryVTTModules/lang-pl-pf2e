@@ -103,6 +103,7 @@
     "Argyrzei": {
       "name": "Argyrzei",
       "publicNotes": "<p>Most nindorus are harmed by silver, but not the argyrzei. Instead, argyrzeis use silver as a method of spreading sickness and pain, and to help them manipulate the minds of those who unwittingly fall under the curse of their infected gifts. They delight in disguising themselves and then selling or giving infected silver to victims. Other nindorus particularly fear argyrzeis for their mastery over silver, knowing that they're capable of causing painful wounds with their silver blades.</p>\n<p>Argyrzeis appear humanoid, but their feet point backwards and they have no heads. Their glowing red neck stumps are stuffed with a wide assortment of knives, blades, and shards of metal. These nindorus represent the cycle of art being created, destroyed, and recycled into new art.</p>",
+      "senses": "cursesense",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -162,18 +163,13 @@
         },
         "spell->Create Undead (Zombie Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Zombie Only)",
-          "cost": "black onyx, see Table 7-1",
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Religion"
+          "cost": "black onyx, see Table 7-1"
         },
         "spell->Animate Dead (Zombie Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]\nAnimate Dead (Zombie Only)"
         },
         "strike-melee->Claw": {
           "name": "Claw"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Cat at Heart": {
           "name": "Cat at Heart",
@@ -196,6 +192,7 @@
     "Dalgyal Gwishin": {
       "name": "Dalgyal Gwishin",
       "hpDetails": "void healing",
+      "languages": "(can't speak any language); telepathy 120 feet",
       "publicNotes": "<p>A dalgyal gwishin is a faceless, undead spirit that wears a stone mask. This forlorn undead forms from the soul of a mortal who died a lonely death with no one to remember them, and is similarly unable to remember what it looked like in life. A dalgyal gwishin wanders the land of the living in search of any trace of who they were when they were alive. Full of anger, they remain envious of well-loved or famous individuals who are surrounded by close friends and admirers—the type of people who would never share the dalgyal gwishin's fate.</p>\n<p>While a dalgyal gwishin has little more than a ghostly body made of mist, the featureless stone mask it wears on its head is solid. Even the stolen faces it claims are transitory, cracking off after a day to form what looks akin to a fragile porcelain death mask. Some of these lonely spirits keep these masks and add them to a collection in a remote and forlorn lair, hoping to find companionship in an ever-growing display of silent faces.</p>\n<h2>Faceless Horror</h2>\n<p>The dalgyal gwishin's most significant physical trait—the lack of a face—is shared with the living aberrations known as noppera-bos. Despite this shared feature and the ability to steal faces, the two creatures don't cooperate and are more often bitter enemies. Anyone slain by a dalgyal gwishin leaves behind an unnerving faceless corpse.</p>",
       "items": {
         "strike-melee->Head": {
@@ -228,10 +225,6 @@
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
-        },
-        "spell->Consecrate": {
-          "primarycheck": "Religion",
-          "secondarycheck": "Crafting, Performance"
         },
         "equipment->Key": {
           "name": "Key",
@@ -556,38 +549,59 @@
         },
         "consumable->Scroll of Crisis of Faith (Rank 4)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\nScroll of Crisis of Faith (Rank 4)",
+          "consumableSpellName": "Crisis of Faith",
+          "consumableSpellDescription": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Fire Shield (Rank 4)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\nScroll of Fire Shield (Rank 4)",
+          "consumableSpellName": "Fire Shield",
+          "consumableSpellDescription": "<p>You create a hovering shield made of fire. As long as the shield persists, its heat grants you cold resistance 5 and makes you immune to mild and severe environmental cold. You can Raise a Shield with the <em>fire shield</em> as a normal shield to gain a +1 circumstance bonus to AC. You can use the Shield Block reaction with the <em>fire shield</em>, which has Hardness 10, is immune to fire, and has 40 HP (with no Broken Threshold), and its Hardness is halved against effects that have the water trait. If you Shield Block a melee attack that is either an unarmed attack or made by an adjacent attacker, the attacker takes 2d6 fire damage.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.1RsScTvNdGD9zGWe]{Spell Effect: Fire Shield}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, the HP increase by 10, and the fire damage increases by 1d6.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Flame Strike (Rank 5)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\nScroll of Flame Strike (Rank 5)",
+          "consumableSpellName": "Flame Strike",
+          "consumableSpellDescription": "<p><strong>Area:</strong> 10-foot radius, 40-foot-tall cylinder</p>\n<hr />\n<p>You call a rain of divine fire that plummets down from above, dealing 8d6 fire damage. Because the flame is infused with divine energy, creatures in the area apply only half their usual fire resistance. Creatures that are immune to fire, instead of gaining the usual benefit of immunity, treat the results of their saving throws as one degree of success better.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.E3X2RbzWHCdz7gsk]{Flame Strike}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Haste (Rank 3)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ZmefGBXGJF3CFDbn]\nScroll of Haste (Rank 3)",
+          "consumableSpellName": "Haste",
+          "consumableSpellDescription": "<p>Magic empowers the target to act faster. It gains the @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ElkXovNrHB0Doi6O]{Spell Effect: Haste}</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ZmefGBXGJF3CFDbn]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Hydraulic Torrent (Rank 4)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\nScroll of Hydraulic Torrent (Rank 4)",
+          "consumableSpellName": "Hydraulic Torrent",
+          "consumableSpellDescription": "<p>A swirling torrent of water manifests along a straight line, battering creatures and unattended objects in its path and possibly pushing them away from you. The torrent deals 8d6 bludgeoning damage. Each creature in the area must attempt a basic Fortitude save; unattended objects automatically fail. Creatures and objects that fail are also knocked back 5 feet (10 feet on a critical failure).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Illusory Creature (Rank 5)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\nScroll of Illusory Creature (Rank 5)",
+          "consumableSpellName": "Illusory Creature",
+          "consumableSpellDescription": "<p>You create an illusory image of a Large or smaller creature. It generates the appropriate sounds, smells, and feels believable to the touch. If you and the image are ever farther than 500 feet apart, the spell ends.</p>\n<p>The image can't speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to mimic the creature, as determined by the GM. This is especially likely if you're trying to imitate a specific person and engage with someone that person knows.</p>\n<p>In combat, the illusion can use 2 actions per turn, which it uses when you Sustain the spell. It uses your spell attack modifier for attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC – 10. It is substantial enough that it can flank other creatures. If the image is hit by an attack or fails a save, the spell ends.</p>\n<p>The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes @Damage[3d4[mental]] damage. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster—for example, if an illusory Large dragon deals only 5 damage—the GM might allow the target to attempt an immediate Perception check to disbelieve the spell. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.</p>\n<p>Any creature that touches the image or uses the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan).</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Illusory Scene (Rank 5)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\nScroll of Illusory Scene (Rank 5)",
+          "consumableSpellName": "Illusory Scene",
+          "consumableSpellDescription": "<p>You craft an imaginary scene that includes up to 10 discrete creatures or objects of various sizes, all of which must be within the spell's area. These elements generate appropriate sounds and smells, and they feel right to the touch. Elements of an illusory scene are incapable of speech. Unlike with the @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature} spell, creatures in your scene lack combat abilities and statistics. Your scene doesn't include changes to the environment around it, though you can place your scene within the illusory environment of a @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage} spell.</p>\n<p>When you create the scene, you can choose to have it be static or follow a program. Though a static scene is stationary, it includes basic natural movement. For example, wind blowing on an illusory piece of paper would rustle it. A program can be up to 1 minute long and repeats when finished. For instance, you could create a scene of two orcs fighting each other, and the fight would go the same way for each repetition. If you create a loop, the two fighters end up in the same place at the start of the scene and at the end of it, but you can smooth the program so it's hard to tell when the loop ends and begins. Anyone observing the scene for more than a few minutes almost always notices it looping. You're unable to alter the program after you create the illusion.</p>\n<p>Any creature that touches any part of the image or uses the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to examine it can attempt to disbelieve your illusion. If they interact with a portion of the illusion, they disbelieve only that portion. They disbelieve the entire scene only on a critical success.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Creatures or objects in your scene can speak. You must speak the specific lines for each actor when creating your program. The spell disguises your voice for each actor.</p>\n<p><strong>Heightened (8th)</strong> As the 6th-rank version, and the duration is unlimited.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Illusory Scene}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Mirror Image (Rank 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Mirror Image (Rank 2)",
+          "consumableSpellName": "Mirror Image",
+          "consumableSpellDescription": "<p>Three illusory images of you swirl about your space, potentially causing those who attack you to hit one of the images instead of you. Any attack that would hit you has a random chance of hitting one of your images instead of you. If all three images remain, there is a 1 in 4 chance of hitting you (1 on [[/r 1d4]]). With two images remaining, there is a 1 in 3 chance of hitting you (1-2 on [[/r 1d6]]). With only one image, the chances are 1 in 2 (1-3 on [[/r 1d6]]).</p>\n<p>Once an image is hit, it is destroyed. If an attack roll fails to hit your AC but doesn't critically fail, it destroys an image but has no additional effect (even if the attack would normally have an effect on a failure). If an attack roll is a critical success and would hit one of the images, one of the images is destroyed and the attack roll becomes a success against you. Once all the images are destroyed, the spell ends.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.0PO5mFRhh9HxGAtv]{Spell Effect: Mirror Image}</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]{Mirror Image}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Soothe (Rank 4)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\nScroll of Soothe (Rank 4)",
+          "consumableSpellName": "Soothe",
+          "consumableSpellDescription": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.nkk4O5fyzrC0057i]{Spell Effect: Soothe}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "consumableSpellTarget": "1 willing creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Longsword": {
@@ -620,6 +634,7 @@
     "Heh Shan-Bao (Level 13)": {
       "name": "Heh Shan-Bao (Level 13)",
       "blurb": "Male variant brainchild",
+      "languages": "telepathy 100 feet, universal language",
       "tokenName": "Heh Shan-Bao",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -670,13 +685,11 @@
       "blurb": "Female provincial jiang-shi",
       "hpDetails": "fast healing 10, void healing, one more breath",
       "publicNotes": "<p>Jiang-shi are terrifying hopping vampires from Tian Xia. Though similar to other vampires—they are undead, drain vital energy from the living, and can be slain only in specific ways—jiang-shi feast upon the breath of the living, also known as qi or ki, instead of blood. While they possess unique powers, including their magic-deflecting paper fulus, extraordinary jumping ability, and immunity to sunlight, jiang-shi also possess unique vulnerabilities, such as the inability to see living creatures save through breathsense, a revulsion to bells and mirrors, and near-stupefying melancholia. Thankfully, most jiang-shi can't create vampiric spawn.</p>\n<p>Roused rudely from their nightmarish slumber, the provincial jiang-shi roams the villages and graveyards around their domain searching for sustenance to slake their hunger.</p>",
+      "senses": "breathsense (precise) 60 feet",
       "speed": "rigor mortis",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
-        },
-        "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)"
         },
         "strike-melee->Claw": {
           "name": "Claw"
@@ -750,6 +763,12 @@
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
+        "spell->Touch of Idiocy": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+        },
+        "spell->True Strike": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
+        },
         "weapon->Broken Katana": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y1dkRsRd1Z7Jf2y6]\nBroken Katana"
         },
@@ -777,6 +796,7 @@
     "Imprecasia": {
       "name": "Imprecasia",
       "publicNotes": "<p>An imprecasia, commonly known as a curse eater, is a solitary fey drawn to the energy emanating from curses. They appear as emaciated humanoid creatures with shadowy wings, long thin hands with sharp claws, and insectile heads with feathery antenna.</p>\n<p>An imprecasia's appearance in a region signifies the land is troubled, but they're not unpopular creatures. On the contrary, an imprecasia's whereabouts are coveted information, as they have the ability to fully consume curses on objects and creatures. Many carrying the weight of a curse seek out curse eaters, most of whom will gladly accept doomed objects or charitably destroy an individual's curse.</p>\n<p>An imprecasia will never accept the idea of healing a cursed land or blighted region. One might even seek to strengthen the afflictions on a region simply to ensure a regular supply of food. A bolder imprecasia tracks cursed families over generations, feeding off their misfortune until the curse ends or the bloodline dies off. Any who attempt to destroy such curses may find themselves the enemy of an imprecasia defending their source of sustenance.</p>",
+      "senses": "scent curse",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -808,17 +828,15 @@
     "Iogaka": {
       "name": "Iogaka",
       "blurb": "Variant female storm hag",
+      "languages": "voice of the storm",
       "publicNotes": "<p>Storm hags are the personification of a storm's rage. These crones hate those who huddle together with loved ones in warm, dry shelters while the wind howls and rain lashes the land and sea. Storm hags use their powers to wreak havoc on communities near the coastal caves or hovels where they often live.</p>\n<p>These hags send their voices on the wind to terrorize mortals before descending upon them with claws and fell magic. More than any others of their kind, they prey on the young, devouring children as much for the pain it causes their parents and caretakers as for the hags' love of young flesh.</p>\n<p>A storm hag's territory sometimes overlaps with that of sea hags and winter hags. While this may result in the formation of a coven that controls their combined territories, more often it leads to rivalries. Such feuds only increase the misery of innocent people caught between the rival hags' feuding.</p>\n<hr />\n<p>Foul creatures who appear as wizened old women, hags share little in common with the humanoids they terrorize. They are hateful entities whose greatest joy lies in the corruption and ultimate destruction of anything good and virtuous. Whatever power created the first hags is lost to time, but numerous hag varieties have arisen over the ages, each with their own powers and abilities to spread pain and suffering.</p>",
+      "senses": "stormsight",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
         "spellcastingEntry->Coven Spells": {
           "name": "Coven Spells"
-        },
-        "spell->Control Weather": {
-          "primarycheck": "Nature (master)",
-          "secondarycheck": "Survival"
         },
         "spell->Baleful Polymorph": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
@@ -1075,6 +1093,8 @@
     },
     "Noppera-Bo Impersonator (Arcane)": {
       "name": "Noppera-Bo Impersonator (Arcane)",
+      "languages": "telepathy 30 feet",
+      "senses": "no face",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Arcane Innate Spells"
@@ -1108,6 +1128,8 @@
     },
     "Noppera-Bo Impersonator (Divine)": {
       "name": "Noppera-Bo Impersonator (Divine)",
+      "languages": "telepathy 30 feet",
+      "senses": "no face",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -1141,6 +1163,8 @@
     },
     "Noppera-Bo Impersonator (Martial)": {
       "name": "Noppera-Bo Impersonator (Martial)",
+      "languages": "telepathy 30 feet",
+      "senses": "no face",
       "items": {
         "strike-melee->False Weapon": {
           "name": "False Weapon"
@@ -1171,6 +1195,8 @@
     },
     "Noppera-Bo Impersonator (Occult)": {
       "name": "Noppera-Bo Impersonator (Occult)",
+      "languages": "telepathy 30 feet",
+      "senses": "no face",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -1204,6 +1230,8 @@
     },
     "Noppera-Bo Impersonator (Primal)": {
       "name": "Noppera-Bo Impersonator (Primal)",
+      "languages": "telepathy 30 feet",
+      "senses": "no face",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -1237,6 +1265,8 @@
     },
     "Noppera-Bo Impersonator (Skilled)": {
       "name": "Noppera-Bo Impersonator (Skilled)",
+      "languages": "telepathy 30 feet",
+      "senses": "no face",
       "items": {
         "strike-melee->False Weapon": {
           "name": "False Weapon"
@@ -1267,7 +1297,9 @@
     },
     "Noppera-bo Grunt": {
       "name": "Noppera-bo Grunt",
+      "languages": "telepathy 30 feet",
       "publicNotes": "<p>Noppera-bo grunts lack the social graces necessary to fully disguise themselves with another person's face.</p>\n<hr />\n<p>Noppera-bos appear to be regular humans from behind, and might even resemble someone you know, until they turn to reveal a featureless face.</p>\n<h2>Consummate Professionals</h2>\n<p>While the typical noppera-bo is cruel and revels in the act of frightening or tormenting humanoid creatures, not all of them wallow in evil. Neutral noppera-bos tend to be pranksters who use their abilities to trick and tease, while the rare good noppera- bos instead use their abilities to honor and idolize those they admire while focusing their own time on developing their skills at art or crafting.</p>\n<h2>Noppera-bo Origins</h2>\n<p>There are many theories on the origins of noppera-bos—from tanuki whose change shape ability went wrong, to humanoids who were warped by curses, to naturally spawning yokai. Some even theorize this condition is a transmissible curse like lycanthropy. Most noppera-bos don't recall their origins, and are often more interested in pretending to be someone else entirely.</p>",
+      "senses": "no face",
       "items": {
         "strike-melee->Spear": {
           "name": "Spear"
@@ -1294,7 +1326,9 @@
     },
     "Noppera-bo Occultist": {
       "name": "Noppera-bo Occultist",
+      "languages": "telepathy 30 feet",
       "publicNotes": "<p>Some noppera-bos harness their natural magic to further frighten victims.</p>\n<hr />\n<p>Noppera-bos appear to be regular humans from behind, and might even resemble someone you know, until they turn to reveal a featureless face.</p>\n<h2>Consummate Professionals</h2>\n<p>While the typical noppera-bo is cruel and revels in the act of frightening or tormenting humanoid creatures, not all of them wallow in evil. Neutral noppera-bos tend to be pranksters who use their abilities to trick and tease, while the rare good noppera- bos instead use their abilities to honor and idolize those they admire while focusing their own time on developing their skills at art or crafting.</p>\n<h2>Noppera-bo Origins</h2>\n<p>There are many theories on the origins of noppera-bos—from tanuki whose change shape ability went wrong, to humanoids who were warped by curses, to naturally spawning yokai. Some even theorize this condition is a transmissible curse like lycanthropy. Most noppera-bos don't recall their origins, and are often more interested in pretending to be someone else entirely.</p>",
+      "senses": "no face",
       "items": {
         "strike-melee->Staff": {
           "name": "Staff"
@@ -1326,7 +1360,9 @@
     },
     "Noppera-bo Trickster": {
       "name": "Noppera-bo Trickster",
+      "languages": "telepathy 30 feet",
       "publicNotes": "<p>These noppera-bos have mastered the art of disguise.</p>\n<hr />\n<p>Noppera-bos appear to be regular humans from behind, and might even resemble someone you know, until they turn to reveal a featureless face.</p>\n<h2>Consummate Professionals</h2>\n<p>While the typical noppera-bo is cruel and revels in the act of frightening or tormenting humanoid creatures, not all of them wallow in evil. Neutral noppera-bos tend to be pranksters who use their abilities to trick and tease, while the rare good noppera- bos instead use their abilities to honor and idolize those they admire while focusing their own time on developing their skills at art or crafting.</p>\n<h2>Noppera-bo Origins</h2>\n<p>There are many theories on the origins of noppera-bos—from tanuki whose change shape ability went wrong, to humanoids who were warped by curses, to naturally spawning yokai. Some even theorize this condition is a transmissible curse like lycanthropy. Most noppera-bos don't recall their origins, and are often more interested in pretending to be someone else entirely.</p>",
+      "senses": "no face",
       "items": {
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -1373,14 +1409,11 @@
     "Path Maiden": {
       "name": "Path Maiden",
       "hpDetails": "void healing",
+      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Worshippers in Shenmen who devote their every breath to Pharasma only to defy the goddess with their last sometimes transform, upon death, into path maidens. The garments all path maidens wear are the last vestiges of their former faith, a permanent reminder of their disgrace.</p>\n<h2>Path Nomads</h2>\n<p>Path maidens almost always manifest in feminine forms. Those who manifest in masculine forms are instead known as path nomads. These undead have the same abilities but tend to travel more widely; they represent turning one's back on Pharasma's role as a prophet and manipulator of destiny than of her roles over birth and death.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
-        },
-        "spell->Create Undead": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Religion"
         },
         "strike-melee->Apostate's Shroud": {
           "name": "Apostate's Shroud"
@@ -1413,15 +1446,12 @@
     "Path Maiden (Spring's Path)": {
       "name": "Path Maiden (Spring's Path)",
       "hpDetails": "void healing",
+      "languages": "Telepathy 100 feet",
       "publicNotes": "<p>Worshippers in Shenmen who devote their every breath to Pharasma only to defy the goddess with their last sometimes transform, upon death, into path maidens. The garments all path maidens wear are the last vestiges of their former faith, a permanent reminder of their disgrace.</p>\n<h2>Path Nomads</h2>\n<p>Path maidens almost always manifest in feminine forms. Those who manifest in masculine forms are instead known as path nomads. These undead have the same abilities but tend to travel more widely; they represent turning one's back on Pharasma's role as a prophet and manipulator of destiny than of her roles over birth and death.</p>",
       "tokenName": "Path Maiden",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
-        },
-        "spell->Create Undead": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-          "secondarycheck": "Religion"
         },
         "strike-melee->Apostate's Shroud": {
           "name": "Apostate's Shroud"
@@ -1603,6 +1633,7 @@
     "Ren Mei Li": {
       "name": "Ren Mei Li",
       "blurb": "Female jorogumo",
+      "languages": "tongues",
       "publicNotes": "<p>Appearing as beautiful, well-dressed humans, jorogumo lurk in the high mountains and prey on travelers. These evil creatures can fully change into a giant spider or sprout spider legs from their backs, and they often keep giant spiders as pets. Jorogumo usually eat their prey, but some humanoids meet an even more gruesome fate as living incubators for jorogumo eggs. Though most jorogumos are solitary creatures, some have taken up worship of Norgorber and serve as valuable allies to thieves' guilds following that god's guise as the Gray Master.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -1677,6 +1708,7 @@
     "Shimmerthief": {
       "name": "Shimmerthief",
       "publicNotes": "<p>Shimmerthieves are blind, lizard-like cave dwellers with an insatiable yearning to consume the rare delicacy of light. This hunger compels them to travel beyond their subterranean lairs to the surface to feed, leaving pockets of darkness behind as they go.</p>\n<p>They're far from unintelligent yet prefer to avoid other sapient creatures, aware that many find them off-putting. They become independent at a young age but are protective of their kind, and they travel in small groups when able. Prudent shimmerthieves try to avoid feeding on light in busy areas, but such places are also the most tempting, as bustling populations mean more light sources.</p>\n<h2>Alternate Diets</h2>\n<p>Some shimmerthieves develop a taste for and the capacity to consume energy forms far more insidious than light, allowing them to feed on life energy or thought energy instead of light. Such behavior is considered monstrous by most shimmerthieves and a reason for exile. Shimmerthieves with these proclivities are dangerous predators that maintain the ability to feed on light and purposely create pockets of darkness to trap and feed on victims. A shimmerthief that feeds on life energy deals negative damage with their jaws, while one that feeds on thought energy deals mental damage with their jaws.</p>",
+      "senses": "shimmervision",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -1719,8 +1751,10 @@
     "Shinigami": {
       "name": "Shinigami",
       "hpDetails": "fast healing 40",
+      "languages": "truespeech",
       "publicNotes": "<p>Even immortals such as kami aren't immune to death. When a kami or equally powerful entity refuses the call of the Boneyard, a shinigami is summoned to bring these stubborn souls to heel. Exact and swift, shinigami are known to dispense the judgment of death efficiently and dispassionately.</p>\n<h2>Guardians Of The Cycle</h2>\n<p>Shinigami are responsible for investigating and dealing with widespread phenomena that disrupt the natural flow of life. They might be tasked with solving the issue or be told to wait, observe, and provide minimal assistance. While most shinigami can retain their impartiality during such long vigils, some are far from emotionless and end up wavering toward mercy or cruelty.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
+      "senses": "detect alignment (chaotic and lawful only)",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -1813,6 +1847,7 @@
     "Shou Matsuki": {
       "name": "Shou Matsuki",
       "blurb": "Male human carpenter",
+      "senses": "cataracts, wood-grain speaker",
       "items": {
         "equipment->Carpenter's Artisan Tools (Sterling)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.0QgniSjpzksm5riV]\nCarpenter's Artisan Tools (Sterling)",
@@ -1864,10 +1899,6 @@
       "items": {
         "spellcastingEntry->Divine Spontaneous Spells": {
           "name": "Divine Spontaneous Spells"
-        },
-        "spell->Consecrate": {
-          "primarycheck": "Religion",
-          "secondarycheck": "Crafting, Performance"
         },
         "equipment->Key Ring": {
           "name": "Key Ring",
@@ -2001,6 +2032,7 @@
     },
     "Stone Spider": {
       "name": "Stone Spider",
+      "languages": "telepathy 60 feet",
       "publicNotes": "<p>The tradition of venerating spiders as wards against vermin, pests, and evil in general far predates the modern jorogumo rule, with stone spiders filling a role similar to stone lions. Stone spider guardian beasts can be found perched on plinths near town and village entrances, standing motionless—for generations in some cases—so that many locals have forgotten their local guardian is anything more than a decoration.</p>",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
@@ -2255,6 +2287,7 @@
       "name": "Willowshore Waldgeist",
       "blurb": "Variant waldgeist",
       "hpDetails": "void healing",
+      "languages": "speak with plants",
       "publicNotes": "<p>Waldgeists act as avatars of nature that seek vengeance for environmental abuse, such as pollution and deforestation. These undead spirits of destroyed trees form at the site of their destruction or in a nearby woodland, if the original location was entirely razed. They become guardians of the forest, possessing power over the plants within its boundaries. Waldgeists show no mercy to anyone caught damaging their bonded woodland, attacking loggers, fey, travelers, and invasive species with equal prejudice.</p>\n<hr />\n<p>When disaster befalls the natural world, a different kind of undead may rise, entirely unlike risen humanoids. Most plants, fish, insects, and other animals don't possess a psychology complex enough to experience the emotional catharsis required to return as undead without intervention from an outside force. Mass extinction can serve as that outside force.</p>\n<p>Humanoids clear-cutting an entire forest or a seaside community wiping out a species critical to their ecosystem can spawn a verdorite. The collective spiritual energy and emotional distress of a dying biome powers these undead, formed as conglomerates or representatives.</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -2409,14 +2442,12 @@
     "Zoudou The Zealous": {
       "name": "Zoudou The Zealous",
       "blurb": "Female noppera-bo",
+      "languages": "telepathy 30 feet",
       "publicNotes": "<p>These noppera-bos have mastered the art of disguise.</p>\n<hr />\n<p>Noppera-bos appear to be regular humans from behind, and might even resemble someone you know, until they turn to reveal a featureless face.</p>\n<h2>Consummate Professionals</h2>\n<p>While the typical noppera-bo is cruel and revels in the act of frightening or tormenting humanoid creatures, not all of them wallow in evil. Neutral noppera-bos tend to be pranksters who use their abilities to trick and tease, while the rare good noppera- bos instead use their abilities to honor and idolize those they admire while focusing their own time on developing their skills at art or crafting.</p>\n<h2>Noppera-bo Origins</h2>\n<p>There are many theories on the origins of noppera-bos—from tanuki whose change shape ability went wrong, to humanoids who were warped by curses, to naturally spawning yokai. Some even theorize this condition is a transmissible curse like lycanthropy. Most noppera-bos don't recall their origins, and are often more interested in pretending to be someone else entirely.</p>",
+      "senses": "no face",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
-        },
-        "spell->Consecrate": {
-          "primarycheck": "Religion",
-          "secondarycheck": "Crafting, Performance"
         },
         "spell->Chill Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
@@ -2486,6 +2517,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -2501,6 +2533,7 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

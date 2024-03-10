@@ -4,6 +4,7 @@
         "Ailuran": {
             "name": "Ailuran",
             "saveDetails": "+1 status to all vs. poison",
+            "senses": "silversense (imprecise) 30 feet",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -68,9 +69,6 @@
                 "strike-melee->Claw": {
                     "name": "Pazur"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Slack of Opportunity": {
                     "name": "Slack of Opportunity",
                     "description": "<p><strong>Aktywator</strong> A creature targets the blarghest with a hostile action</p>\n<hr />\n<p><strong>Efekt</strong> The blarghest rolls its eyes and sighs, imposing a deep sense of... blargh... upon the attacker. The attacker must attempt a @Check[type:will|dc:18] save; on a failure, it decides its action is too much work and the triggering action is lost. On a critical failure, the creature is also overcome with lethargy, becoming @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} until the start of its next turn</p>"
@@ -87,6 +85,7 @@
         },
         "Cacaodaemon": {
             "name": "Cacaodaemon",
+            "languages": "telepathy 100 feet",
             "items": {
                 "strike-melee->Nib Teeth": {
                     "name": "Nib Teeth"
@@ -133,8 +132,7 @@
                     "name": "Szczęki"
                 },
                 "strike-ranged->Wind Crash": {
-                    "name": "Wind Crash",
-                    "description": "<p>(agile, nonlethal, propulsive, range 30 feet, unarmed)</p>"
+                    "name": "Wind Crash"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -171,6 +169,7 @@
         },
         "Demom": {
             "name": "Demom",
+            "languages": "telepathy 100 feet (knows what you're thinking)",
             "items": {
                 "strike-melee->Hug": {
                     "name": "Hug"
@@ -326,8 +325,7 @@
                     "name": "Dagger"
                 },
                 "strike-ranged->Dagger": {
-                    "name": "Dagger",
-                    "description": "<p>(agile, thrown 10 feet, versatile S)</p>"
+                    "name": "Dagger"
                 },
                 "action->Lunge": {
                     "name": "Lunge",
@@ -337,6 +335,7 @@
         },
         "Firebrand Ancient Brass Dragon": {
             "name": "Firebrand Ancient Brass Dragon",
+            "languages": "speak with animals",
             "publicNotes": "<p>Brass dragons are whimsical tricksters who delight in humor and play. They particularly enjoy conversations with humans and other civilized humanoids, delighting in the naive customs of these diminutive races without showing them haughtiness or scorn. While they may seem merely curious, brass dragons engage in this sort of conversation with the goal of keeping up to date on regional politics so they can anticipate future conflicts. Along the way, they create extensive information networks that begin with their own allies but stretch across all levels of humanoid society-networks which the brass dragon then uses to subtly assist settlements near their lair. Unlike the schemes and manipulations of blue dragons, brass dragons use their informant networks to establish justice and equality.</p>\n<p>These carefree dragons value independence and feel that all creatures deserve to live as they please, provided they don't harm others. They are emotional creatures and tend to have short attention spans, sometimes falling victim to depression in their twilight years. To combat this, some brass dragons keep pets and houseplants that they can care for.</p>\n<p>Though they may seem childlike in their curiosity concerning mortal affairs, a brass dragon's prowess in battle is no laughing matter. A brass dragon whose territory or allies are threatened is a terrifying foe indeed, quick to shed their innocent guise and unleash their terrifying might upon evildoers.</p>\n<p>Most brass dragons live in desert climates, and while they keep their lairs hidden, they often build near humanoid settlements.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -393,9 +392,6 @@
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
-                },
-                "action->Scent (Imprecise) 20 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 20 feet"
                 },
                 "action->Cute Aggression": {
                     "name": "Cute Aggression",
@@ -626,10 +622,16 @@
                 },
                 "consumable->Scroll of Knock (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Knock (Level 2)",
+                    "consumableSpellName": "Knock",
+                    "consumableSpellDescription": "<p>You make the target easier to open. Knock grants a +4 status bonus to any creature that tries to open the target door, lock, or container with an Athletics or a Thievery check. You can attempt a Thievery check to open the target as part of casting knock, and you add your level even if you're untrained.</p>\n<p>Knock counteracts @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Lock}.</p>",
+                    "consumableSpellTarget": "1 door, lock, or container",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>"
                 },
                 "consumable->Scroll of Invisibility (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Invisibility (Level 2)",
+                    "consumableSpellName": "Invisibility",
+                    "consumableSpellDescription": "<p>Cloaked in illusion, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. This makes it @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+                    "consumableSpellTarget": "1 creature",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>"
                 },
                 "treasure->Scholarly Journal Compendium (Fictional Literature)": {
@@ -931,6 +933,8 @@
         },
         "Weredigo": {
             "name": "Weredigo",
+            "languages": "telepathy 1 mile",
+            "senses": "hungersight",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -1059,6 +1063,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"
@@ -1072,6 +1077,7 @@
             "path": "system.details.publicNotes"
         },
         "saveDetails": "system.attributes.allSaves.value",
+        "senses": "system.perception.details",
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

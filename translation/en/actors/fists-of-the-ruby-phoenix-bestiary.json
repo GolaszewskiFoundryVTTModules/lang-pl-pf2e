@@ -181,6 +181,7 @@
       "name": "Amihan",
       "acDetails": "(39 with shield raised)",
       "blurb": "Female Tian-Sing battle dancers",
+      "languages": "wayang",
       "items": {
         "weapon->Alchemist's Fire (Greater)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
@@ -215,6 +216,7 @@
     "Angoyang": {
       "name": "Angoyang",
       "publicNotes": "<p>Angoyangs resemble white cats with black stripes like those of a tiger. They have beautifully silken fur, piercing blue eyes, and long fluffy tails. Yet, far from the picturesque feline companions they appear to be, angoyangs are actually terrifying beasts capable of peeling back the fleshy layers of their face to reveal a mass of long, toothed tentacles.</p>\n<p>Although most cats instinctively avoid areas where angoyangs roam, the unlucky felines who do encounter this creature are invariably entangled in the monster's toothy tentacles and devoured. In cities and towns where angoyangs reside, cat owners may find that their beloved pets have gone missing only to soon have a fluffy black-and-white cat coincidentally appear at their doorstep, looking up at them with wide eyes and mewing adorably. Angoyangs almost never attack their caretakers, who they see as loyal servants that feed, clean up after, and pamper them, and the creatures protect the people in their household from any would-be intruders. However, a caretaker who mistreats or neglects their angoyang ward is often met with a grisly fate. More than one coroner or gravedigger has inadvertently inherited an angoyang after being assigned to clean up the mutilated remains of a previous \"owner.\"</p>",
+      "senses": "imprecise)",
       "items": {
         "strike-melee->Claw": {
           "name": "Claw"
@@ -930,6 +932,7 @@
     },
     "Canopy Elder": {
       "name": "Canopy Elder",
+      "languages": "speak with animals, speak with plants",
       "publicNotes": "<p>In the densest and oldest jungles, arboreals can reach heights of 200 feet or more. Given thousands of undisturbed years, these massive creatures enter into a symbiotic relationship with a myriad of plants, fungi, and animals to achieve the esteemed status of canopy elder. They provide a safe home for the creatures they host and develop a variety of powers that help them defend their forest realms.</p>",
       "items": {
         "spellcastingEntry->Innate Primal Spells": {
@@ -988,9 +991,6 @@
         "strike-melee->Talon": {
           "name": "Talon"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Caustic Monitor Venom": {
           "name": "Caustic Monitor Venom",
           "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
@@ -1015,6 +1015,7 @@
     },
     "Cloudsplitter": {
       "name": "Cloudsplitter",
+      "languages": "telepathy 100 feet",
       "saveDetails": "-1 status penalty to all saves vs. death effects",
       "items": {
         "spellcastingEntry->Innate Divine Spells": {
@@ -1176,6 +1177,7 @@
     "Drake Courser": {
       "name": "Drake Courser",
       "blurb": "Variant frost drakes",
+      "senses": "snow vision",
       "speed": "Ice Climb",
       "items": {
         "strike-melee->Fangs": {
@@ -1183,9 +1185,6 @@
         },
         "strike-melee->Tail": {
           "name": "Tail"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Snow Vision": {
           "name": "Snow Vision",
@@ -1263,9 +1262,6 @@
         "strike-melee->Talon": {
           "name": "Talon"
         },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-        },
         "action->Pack Ambush": {
           "name": "Pack Ambush",
           "description": "<p><strong>Trigger</strong> Another dromornis within 10 feet Strides.</p>\n<hr />\n<p><strong>Effect</strong> The dromornis Strides up to half its Speed.</p>"
@@ -1286,6 +1282,7 @@
     "Elder Cauthooj": {
       "name": "Elder Cauthooj",
       "blurb": "Variant cauthooj",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>These large, flightless birds are deceptively agile, considering their long bodies and awkward, hopping gait. Solitary predators, they use their hypnotic warbling song to drive prey into a wild frenzy, manipulating them into attacking one another so that the cauthooj can then feast on the remains.</p>\n<p>Known to some scholars as the puppet master bird, and to others as the shrill shrike, cauthoojs are widely reviled by most intelligent humanoids, in part because the birds seem to prefer humanoids to other prey. Cauthooj sightings typically lead to the creation of hunting parties to track the creature down before it can kill again, with would-be hunters typically stuffing their ears full of wax in an effort to avoid being affected by its cry. Those who have survived the creature's song report that the experience is uniquely unnerving, and almost all accounts agree that there is no other sound as terrible.</p>\n<p>While one might assume the cauthooj is a dumb animal, these creatures are in fact quite a bit smarter than they look. Cauthoojs stalk the perimeter of remote settlements in hopes of finding a lone traveler they can feast upon. These patient creatures will wait in ambush as long as they must to sate their hunger. They can even understand a few rudimentary words in Sylvan, although they are incapable of clearly speaking themselves. This doesn't stop the cauthooj from attempting to mimic the sounds it hears, but when it does so, its eerie primal nature enhances the attempt, leading to the bird's signature ability to manipulate minds and encourage conflict, a trait the cauthooj is just barely smart enough to understand-and enjoy.</p>",
       "items": {
         "strike-melee->Beak": {
@@ -1813,6 +1810,7 @@
     "Grandfather Mantis": {
       "name": "Grandfather Mantis",
       "blurb": "Yarrika's spirit guardian",
+      "languages": "telepathy 100 feet",
       "items": {
         "spellcastingEntry->Innate Occult Spells": {
           "name": "Innate Occult Spells"
@@ -1840,9 +1838,6 @@
         },
         "strike-melee->Claw": {
           "name": "Claw"
-        },
-        "action->Scent (imprecise) 30ft": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (imprecise) 30ft"
         },
         "action->Deep Breath": {
           "name": "Deep Breath",
@@ -2023,6 +2018,7 @@
     },
     "Hantu Denai": {
       "name": "Hantu Denai",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Hantus are manifestations of the powerful nature spirits that inhabit all things, from animals to objects to the environment itself. As spiritual representations of whatever they inhabit, hantus follow no preordained agenda. Some hantus choose to act as guardians, defending the forest or waterway that they represent, while others simply set out into the world and experience the wonders of life in ways that their physical form-be it a boulder, bamboo stand, or tapir-would typically be unable to enjoy.</p>\n<p>Hantus are most well known in the archipelago of Minata, particularly in the southern islands of Rendah Pulu, where animists believe that hantus manifest in locations imbued with significant spiritual power. To the residents of Rendah Pulu, hantus exist as manifestations of their culture's anxieties, fears, and ills. An individual who encounters a hantu might interpret the meeting as a sign that they have dwelt for too long on their particular worries (or the opposite: they have ignored the source of their anxieties for too long).</p>\n<p>Interestingly, although hantus are incorporeal, they still retain tangible characteristics as varied as hantus themselves. Some give off a potent odor, such as the scent of durian or jasmine. Others leave corporeal droppings, such as literal animal waste or tufts of fur left on a tree trunk.</p>\n<p>When an environment such as a forest or stream is at risk of overhunting or overfishing, the land itself can manifest as a hantu denai in order to defend itself from overconsumption. Hantu denais stalk hunters and emit haunting cries of native fauna to scare off poachers, loggers, and other despoilers of nature before resorting to violence if necessary.</p>",
       "items": {
         "strike-melee->Claw": {
@@ -2030,9 +2026,6 @@
         },
         "strike-melee->Fangs": {
           "name": "Fangs"
-        },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
         },
         "action->Sound Imitation": {
           "name": "Sound Imitation",
@@ -2126,6 +2119,7 @@
     },
     "Inmyeonjo": {
       "name": "Inmyeonjo",
+      "languages": "telepathy 100 feet",
       "items": {
         "spellcastingEntry->Spontaneous Occult Spells": {
           "name": "Spontaneous Occult Spells"
@@ -2169,9 +2163,6 @@
         "strike-melee->Foot": {
           "name": "Foot"
         },
-        "action->Scent (Imprecise) 30ft": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30ft"
-        },
         "action->Quaking Stomp": {
           "name": "Quaking Stomp",
           "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Jaiban stomps the ground with intense force. It creates a minor earthquake with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu]{Earthquake} spell, except that the range is only 100 feet and is contained to a @Template[type:burst|distance:20].</p>"
@@ -2187,6 +2178,8 @@
     },
     "Ji-yook (Gumiho Form)": {
       "name": "Ji-yook (Gumiho Form)",
+      "languages": "(can't speak any language)",
+      "senses": "emotionsense",
       "items": {
         "weapon->+3 Greater Striking Handwraps of Mighty Blows": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+3 Greater Striking Handwraps of Mighty Blows"
@@ -2415,6 +2408,7 @@
     "Juspix Rammel": {
       "name": "Juspix Rammel",
       "blurb": "Male halfling witch",
+      "senses": "keen eyes",
       "items": {
         "spellcastingEntry->Prepared Primal Spells": {
           "name": "Prepared Primal Spells"
@@ -2717,7 +2711,9 @@
     },
     "Kun": {
       "name": "Kun",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Hungry and resentful, the malevolent kun is a mythological fish monster that dwells in the remotest, coldest depths of the ocean. This massively powerful creatures could easily rule a subaquatic domain if they cared to, but kuns are also famous for their total self-absorption and complete ambivalence toward other forms of life. A kun remains as far away from other creatures as they can, subsisting on only their own icy hatred. They can consume and digest prey, but such feedings are incidental. Most kuns remain ignorant and uncaring, keeping themselves in the dark, disregarding any signs of life around them except to occasionally lash out with a spiteful attack.</p>",
+      "senses": "light blindness",
       "items": {
         "spellcastingEntry->Innate Primal Spells": {
           "name": "Innate Primal Spells"
@@ -2845,6 +2841,7 @@
     },
     "Lophiithu": {
       "name": "Lophiithu",
+      "languages": "telepathy 100 feet, tongues",
       "publicNotes": "<p>Lophiithus dwell in the deepest ocean trenches, places untouched by light, hope, or mortal comprehension. They appear to be gaping maws with distended jaws, vestigial flaps of putrefying flesh, and filamentous tentacles tipped with glowing light. Their extraplanar mouths take up most of their bodies, leaving no room for other organs, and any prey they swallow is transported to the Maelstrom for digestion.</p>",
       "items": {
         "spellcastingEntry->Innate Occult Spells": {
@@ -2887,6 +2884,7 @@
       "name": "Maalya",
       "acDetails": "(39 with shield raised)",
       "blurb": "Female Tian-Sing battle dancers",
+      "languages": "wayang",
       "items": {
         "weapon->Alchemist's Fire (Greater)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
@@ -3054,9 +3052,6 @@
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
-        },
-        "action->Scent (Imprecise) 30ft": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30ft"
         },
         "action->Deep Breath": {
           "name": "Deep Breath",
@@ -3261,6 +3256,7 @@
     "Old Man Statue": {
       "name": "Old Man Statue",
       "blurb": "Divine warden of Irori",
+      "languages": "(can't speak any language)",
       "items": {
         "spellcastingEntry->Innate Divine Spells": {
           "name": "Innate Divine Spells"
@@ -3337,6 +3333,7 @@
     "Peng": {
       "name": "Peng",
       "publicNotes": "<p>Pengs are massive avian beasts who fly effortlessly among the highest clouds. Their bright plumage makes it difficult to see their shape against an azure sky, but with patience, an onlooker might notice movement too swift to be a natural cloud.</p>\n<p>Beautiful and graceful, pengs arise from the unlikeliest of origins: the cruel kun, a hateful fish monster whose predilection for the crushing depths of the sea matches the peng's own love of the bright, open sky. After a kun sacrifices their power for a noble heart by bathing in the sun's rays, they transform into this majestic bird, which eschews violence unless they must fight to stay free. Pengs do not seek danger or thrills; they want only to make their long voyages and fly without disruption.</p>\n<p>A peng's calm and steady nature is so strong that its mere presence can quell storms and still winds. Mariners and pilots believe spotting a peng is a sign of good luck. When the sky is clear and blue and the weather gentle for an extended period, people attribute such fine conditions to the presence of an unseen peng.</p>",
+      "senses": "heaven's view",
       "speed": "Windslice",
       "items": {
         "spellcastingEntry->Innate Primal Spells": {
@@ -3380,6 +3377,7 @@
       "name": "Planar Terra-cotta Soldier",
       "acDetails": "32 with shield raised",
       "blurb": "Variant terra-cotta soldier",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>A single terra-cotta warrior stands 6 feet tall and weighs 600 pounds.</p>",
       "items": {
         "weapon->Longsword": {
@@ -3402,6 +3400,7 @@
       "acDetails": "39 with shields raised",
       "blurb": "Variant terra-cotta soldier garrison",
       "hpDetails": "troop defenses (200/100)",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>These constructed warriors can work together as a trained group to repel intruders.</p>",
       "items": {
         "action->Planar Step": {
@@ -3432,6 +3431,7 @@
     "Portal Eater": {
       "name": "Portal Eater",
       "blurb": "Cosmic devourer of extradimensional energies",
+      "languages": "telepathy 100 feet",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
         "strike-melee->Beak": {
@@ -3940,6 +3940,7 @@
     },
     "Sanzuwu": {
       "name": "Sanzuwu",
+      "languages": "telepathy 100 feet",
       "publicNotes": "<p>Those who feast on the sun are said to carry its power within them. Sanzuwus are small crows with red plumage and dark throats. According to legend, they stole their burning power from the sun and now fly across the sky as blinding streaks of fire. When they land on the earth, it ignites around them, causing unbound destruction. A handful of people worship these radiant birds and inscribe their three-legged visage on coins, items, and weapons.</p>",
       "items": {
         "strike-melee->Beak": {
@@ -4102,6 +4103,7 @@
     "Shino Hakusa (Level 20)": {
       "name": "Shino Hakusa (Level 20)",
       "saveDetails": "+3 status to all saves vs. necromancy",
+      "senses": "lifesense",
       "tokenName": "Shino Hakusa",
       "items": {
         "weapon->+3 Major Striking Greater Shock Handwraps of Mighty Blows": {
@@ -4145,6 +4147,7 @@
     },
     "Sigbin": {
       "name": "Sigbin",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>Resembling hornless goats with extremely long tails, sigbins live in forests and prey on inhabitants of nearby humanoid villages. Sigbins drink the blood of their victims by biting into their shadows, rather than their flesh. This process typically leaves the victim so fatigued that they must lie down to rest, at which point the sigbin finishes the job by sinking their jaws into the person's chest and consuming their heart.</p>\n<p>Due to their nauseating smell, many sigbins hide among livestock and in other overwhelmingly odorous places. Sigbins have the ability to hide in plain sight simply by standing stock still, but this power works only against adults and elders; for whatever reason, children and young animals can see the invisible sigbins. Many believe this is because children are unsullied by the cruel ways of the world, and so their eyes are still innocent enough to spot the devious beasts. Unfortunately, most adults tend to ignore children's cries about the monsters, chalking up such claims to overactive imaginations or attention-seeking behavior, inadvertently allowing sigbins to continue their hunts uninterrupted.</p>",
       "items": {
         "strike-melee->Claws": {
@@ -4155,9 +4158,6 @@
         },
         "strike-melee->Tail": {
           "name": "Tail"
-        },
-        "action->Scent (Imprecise) 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
         },
         "action->Stench": {
           "name": "Stench",
@@ -4271,6 +4271,7 @@
     },
     "Spinel Leviathan Syndara": {
       "name": "Spinel Leviathan Syndara",
+      "senses": "spatial sense",
       "items": {
         "strike-melee->Spatial Pincers": {
           "name": "Spatial Pincers"
@@ -4330,6 +4331,7 @@
     "Spirit Turtle": {
       "name": "Spirit Turtle",
       "hpDetails": "regeneration 25 (deactivated by cold iron or unholy)",
+      "languages": "tongues",
       "publicNotes": "<p>Spirit turtles are benevolent fey known to heal those in need and confer other powerful gifts. These gentle giants resemble enormous turtles and often bear entire ecosystems on their shells.</p>\n<p>In ancient times, so the legend goes, spirit turtles used to grant wishes to many mortals. After millennia of such encounters, the giant creatures grew tired and went into hiding or returned to their home plane, the First World. Those few spirit turtles who remain on Golarion now grant their favors only to the purest and worthiest mortal petitioners.</p>",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -4380,6 +4382,7 @@
     "Sthira": {
       "name": "Sthira",
       "hpDetails": "void healing",
+      "languages": "(can't speak any language)",
       "publicNotes": "<p>The Wall of Heaven claims many intrepid climbers. Some such travelers come seeking fortune. Others seek enlightenment. Many, however, find only an icy death. With no means for a proper burial, many of these unfortunate souls remain abandoned to the ice, their bodies becoming macabre guideposts along mountain trails.</p>\n<p>Through means unknown, the most willful of these frozen travelers reanimate to seek vengeance upon the living for their denied burial. Such creatures, called sthiras, are composed of multiple bodies or body parts frozen together into one horrific monstrosity.</p>",
       "items": {
         "spellcastingEntry->Innate Primal Spells": {
@@ -4464,6 +4467,7 @@
       "name": "Syndara the Sculptor",
       "hpDetails": "fast healing 20",
       "saveDetails": "+2 status to all saves vs. chaotic",
+      "senses": "spatial sense, air walk",
       "items": {
         "spellcastingEntry->Innate Primal Spells": {
           "name": "Innate Primal Spells"
@@ -4706,6 +4710,7 @@
     "Taiga Yai": {
       "name": "Taiga Yai",
       "hpDetails": "regeneration 15 (deactivated by fire)",
+      "languages": "speak with animals",
       "publicNotes": "<p>Wearing the visage of taiga giants, taiga yais generally travel in a solitary fashion, always yearning for new experiences and destinations. They are zealous in their love of nature in its purest form and gleefully destroy any established civilizations that they encounter before continuing onwards.</p>",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
@@ -4756,6 +4761,7 @@
     },
     "Takatorra (Daitengu Form)": {
       "name": "Takatorra (Daitengu Form)",
+      "languages": "(can't speak any language)",
       "saveDetails": "+2 status to all saves vs. air and electricity",
       "items": {
         "strike-melee->Tengu Gale Blade": {
@@ -4886,6 +4892,7 @@
     },
     "Tino (Oni Form)": {
       "name": "Tino (Oni Form)",
+      "languages": "(can't speak any language)",
       "items": {
         "weapon->+3 Major Striking Kanabo": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.kdGqnqbrwPzQfTsm]\n+3 Major Striking Kanabo"
@@ -5057,9 +5064,6 @@
         },
         "strike-melee->Foot": {
           "name": "Foot"
-        },
-        "action->Scent (Imprecise) 60ft": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60ft"
         },
         "action->Fling": {
           "name": "Fling",
@@ -5359,6 +5363,7 @@
     },
     "Yabin (White Serpent Form)": {
       "name": "Yabin (White Serpent Form)",
+      "languages": "(can't speak any language)",
       "items": {
         "spellcastingEntry->Spontaneous Arcane Spells": {
           "name": "Spontaneous Arcane Spells"
@@ -5605,6 +5610,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -5620,6 +5626,7 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

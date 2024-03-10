@@ -87,6 +87,9 @@
                 },
                 "consumable->Scroll of Magic Weapon (Level 1)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr]\nScroll of Magic Weapon (Level 1)",
+                    "consumableSpellName": "Magic Weapon",
+                    "consumableSpellDescription": "<p>The weapon glimmers with magic and energy. The target becomes a +1 striking weapon, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.GnWkI3T3LYRlm3X8]{Efekt Zaklęcia: Runic Weapon}</p>",
+                    "consumableSpellTarget": "1 weapon that is unattended or wielded by you or a willing ally",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.TFitdEOpQC4SzKQQ]{Runic Weapon}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Dagger": {
@@ -195,9 +198,6 @@
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-                },
                 "action->Inflict Pain": {
                     "name": "Inflict Pain",
                     "description": "<p>When a target affected by the Kurnugian jackal's Hypnotic Stare ability takes damage, the jackal can focus the power of their third eye to intensify the pain of this damage, increasing the damage dealt by [[/r 1d6]]{1d6}.</p>"
@@ -256,6 +256,9 @@
                 },
                 "consumable->Wand of Fear (Level 1)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\nWand of Fear (Level 1)",
+                    "consumableSpellName": "Fear",
+                    "consumableSpellDescription": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+                    "consumableSpellTarget": "1 creature",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</p>\n<hr />\n<p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-rank casting of the spell.</p>"
                 },
                 "strike-melee->Staff": {
@@ -381,6 +384,7 @@
         },
         "Stinkweed Shambler": {
             "name": "Stinkweed Shambler",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>Stinkweed shamblers are animate masses of foul vegetation that grow from necrotic soil where ghasts, disease-ridden zombies, or other putrid undead creatures have fallen. At a site where numerous undead creatures have been destroyed, an infestation of up to a dozen stinkweed shamblers might arise. Such \"rot-mates\" work well together, sharing a preternatural coordination. Stinkweed shamblers grow quickly, initially appearing as fast-growing green shoots with light-green leaves but soon growing into a humanoid form that can pull itself free from the ground and slowly move about on its own. Stinkweed shamblers' leaves are the source of their unpleasant smell, which is most pungent when the leaves are crushed or squeezed. Stinkweed shamblers are covered with several small, white flowers, each of which grows into the shape of a tiny skull.</p>\n<p>Stinkweed shamblers are nasty creatures, but their methods are uncomplicated. They like to capture and torment larger creatures such as livestock and humanoids. Aware that they aren't particularly strong and that their smell can give them away, stinkweed shamblers like to set simple traps such as deadfalls or pits. Their perverse fun ceases only when their prey has died from numerous injuries. Stinkweed shamblers don't consume their victims and in fact lack mouths; they gain all the sustenance they need from sunlight but also seem to derive some nutritional satisfaction from the pain that their torments engender.</p>\n<p>Most stinkweed shamblers grow to be about 3 feet tall and weigh only 30 pounds.</p>",
             "items": {
                 "strike-melee->Vine": {
@@ -462,6 +466,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"

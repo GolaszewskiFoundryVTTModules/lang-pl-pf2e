@@ -18,17 +18,12 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]\nSummon Animal (lion only)"
                 },
                 "spell->Animate Object": {
-                    "cost": "rare oils, see Table 7-1",
-                    "primarycheck": "Arcana (expert)",
-                    "secondarycheck": "Crafting"
+                    "cost": "rare oils, see Table 7-1"
                 },
                 "spell->Undetectable Alignment": {
                     "name": "Undetectable Alignment",
                     "description": "<p>You shroud a creature or object in wards that hide its alignment. The target appears to be neutral to all effects that would detect its alignment.</p>",
                     "target": "1 creature or object"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -502,6 +497,7 @@
         },
         "Meliosa's Leshy": {
             "name": "Meliosa's Leshy",
+            "languages": "speak with plants (same type as leshy)",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -521,6 +517,7 @@
         },
         "Meliosa's Leshy (Golden Bamboo Leshy)": {
             "name": "Meliosa's Leshy (Golden Bamboo Leshy)",
+            "languages": "speak with plants (golden bamboo only)",
             "tokenName": "Golden Bamboo Leshy",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -549,6 +546,7 @@
         },
         "Meliosa's Leshy (Minkaian Honeysuckle Leshy)": {
             "name": "Meliosa's Leshy (Minkaian Honeysuckle Leshy)",
+            "languages": "speak with plants (minkaian honeysuckle only)",
             "tokenName": "Minkaian Honeysuckle Leshy",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -573,6 +571,7 @@
         },
         "Meliosa's Leshy (Mint Leshy)": {
             "name": "Meliosa's Leshy (Mint Leshy)",
+            "languages": "speak with plants (mint only)",
             "tokenName": "Mint Leshy",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -596,6 +595,7 @@
         },
         "Meliosa's Leshy (Wisteria Leshy)": {
             "name": "Meliosa's Leshy (Wisteria Leshy)",
+            "languages": "speak with plants (wisteria only)",
             "tokenName": "Wisteria Leshy",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -619,6 +619,7 @@
         },
         "Pairaka (One-Shot #4)": {
             "name": "Pairaka (One-Shot #4)",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Some fiends want to tear down the multiverse; others dedicate themselves to creating chaos and carnage, or to rule over realms with an iron fist. Divs strive toward a different, if equally reprehensible, goal-they seek to thwart and ruin the schemes and works of mortal beings.</p>\n<p>Long ago, divs were once genies bound to serve ancient mortal empires lost to the passage of eons. In the beginning, these genies were masters of creation, working alongside gracious mortal partners to create works of subtle design and powerful magical potential. What started as a collaboration with mortals soon morphed into abuse, disrespect, and even slavery and bondage. Eventually, these genies rebelled, but in doing so, they came under the sway of a nihilistic demigod known as Ahriman. Their new master twisted their form and granted them the power to avenge themselves upon their mortal overlords, leading to the birth of the first divs.</p>\n<p>Since that first wave of corruption, new divs arise from the spirits of the most wicked and hateful genies who die on the Material Plane, or those truly betrayed by mortals and overcome through their desire for vengeance. Upon such a death, instead of returning to the Elemental Planes, these genies' spirits are trapped in the dread orbit of Abaddon, where Ahriman reshapes them as divs and hoists them back to the world to wreak vengeance upon mortals.</p>\n<hr />\n<p>Often charming, sometimes even seductive, pairakas worm their way into mortal relationships, subtly destroying the ties of friendship and love through emotional and physical corruption and plague. Pairakas appear as beautiful, blue-skinned humanoids spotted with large rashes and boils, but they rarely take on their true forms. Instead, they adopt shapes that attract just enough attention for them to worm their way into the confidences of those they wish to torment and corrupt.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Pairaka",
@@ -642,9 +643,6 @@
                 },
                 "spell->Suggestion (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]\nSuggestion (At Will)"
-                },
-                "spell->Div Pact": {
-                    "primarycheck": "Religion (expert; you must be a div)"
                 },
                 "weapon->Poisoned Dart": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Tt4Qw64fwrxhr5gT]\nPoisoned Dart"
@@ -728,6 +726,7 @@
         "Scented Candle Homunculus": {
             "name": "Scented Candle Homunculus",
             "blurb": "Variant homunculus",
+            "languages": "can't speak any language; master link",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -836,6 +835,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"

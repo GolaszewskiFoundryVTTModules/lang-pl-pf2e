@@ -808,6 +808,7 @@
       "acDetails": "22 vs. traps",
       "publicNotes": "<p>Burglars specialize in breaking and entering to rob homes and businesses. These criminals focus on gaining access to secure buildings and bypassing traps and other security measures while remaining undetected all the while.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
       "saveDetails": "+1 circumstance to all saves vs. traps",
+      "senses": "(+11 to find traps)",
       "items": {
         "equipment->Climbing Kit": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9UJbMaglf35GVzaZ]\n<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a @Check[type:flat|dc:5] whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit.</p>"
@@ -1069,10 +1070,16 @@
         },
         "consumable->Scroll of Acid Arrow (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Acid Arrow (Level 2)",
+          "consumableSpellName": "Acid Arrow",
+          "consumableSpellDescription": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus @Damage[1d6[persistent,acid]] damage. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage} increases by 1d6.</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Heal (Level 1)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr]\nScroll of Heal (Level 1)",
+          "consumableSpellName": "Heal",
+          "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<hr />\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (somatic, verbal) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "consumableSpellTarget": "1 willing living creature or 1 undead",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Dagger": {
@@ -1236,7 +1243,8 @@
           "name": "Arcane Prepared Spells"
         },
         "spell->Glyph of Warding": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW]\nGlyph of Warding",
+          "name": "Glyph of Warding",
+          "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
           "target": "1 container or a 10-foot-by-10-foot area"
         },
         "spell->Hideous Laughter": {
@@ -1369,7 +1377,7 @@
         },
         "action->Swig": {
           "name": "Swig",
-          "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} and drink the whole thing.</p>\n<p>For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HArljmKc2IR7rtfc]{Effect: Swig}</p>"
+          "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of alcohol and drink the whole thing.</p>\n<p>For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>"
         },
         "lore->Labor Lore": {
           "name": "Labor Lore"
@@ -1404,6 +1412,7 @@
     },
     "Ethereal Sailor": {
       "name": "Ethereal Sailor",
+      "languages": "understands commands",
       "items": {
         "action->Force Body": {
           "name": "Force Body",
@@ -1704,6 +1713,7 @@
     "Guard": {
       "name": "Guard",
       "publicNotes": "<p>Guards are rank-and-file members of a town watch or city guard, trained to look for trouble, take down criminals, and follow orders. They are a match for only the most fledgling of adventurers and criminals, but, given time, the settlement can usually muster them in numbers sufficient to neutralize most threats.</p>\n<hr />\n<p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. In good-aligned societies, these officials carry out their duties fairly. In neutral and evil ones, these officials can be harsh and cruel (with an altered alignment to reflect this), imposing severe punishments on those who can't pay for mercy.</p>",
+      "senses": "(+8 to find concealed objects)",
       "items": {
         "strike-melee->Club": {
           "name": "Club"
@@ -2012,6 +2022,7 @@
     "Jailer": {
       "name": "Jailer",
       "publicNotes": "<p>A jailer's primary responsibility is to keep prisoners from escaping. Jailers must often use force, or the threat of force, to keep their charges in line, as even the most carefully crafted cells, manacles, or chains can fail with time and persistence when the prisoners have the will to attempt an escape.</p>\n<hr />\n<p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. In good-aligned societies, these officials carry out their duties fairly. In neutral and evil ones, these officials can be harsh and cruel (with an altered alignment to reflect this), imposing severe punishments on those who can't pay for mercy.</p>",
+      "senses": "(+10 to find concealed objects)",
       "items": {
         "equipment->Keyring": {
           "name": "Keyring"
@@ -2042,6 +2053,7 @@
     "Judge": {
       "name": "Judge",
       "publicNotes": "<p>These magistrates have the final say on the intent and spirit of the law. Properly exercised, the duty of a judge is the strict adherence to the law regardless of station, with minimal sentimentality toward rationalization and justification of why the law was broken. Yet expectations and practice are not always the same thing. For every unbiased justice, there is one who is zealously confident in their own agenda. In a court case or other legal proceeding, the judge is a 6th-level challenge.</p>\n<hr />\n<p>Magistrates are the cogs and gears that keep bureaucracy running, moving the machine along under the inertia of the status quo.</p>",
+      "senses": "(+15 to sense motive)",
       "items": {
         "weapon->Gavel": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FibwLZ12EIEwLGhw]\nGavel"
@@ -2327,6 +2339,8 @@
         },
         "consumable->Scroll of Spectral Hand (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Spectral Hand (Level 2)",
+          "consumableSpellName": "Spectral Hand",
+          "consumableSpellDescription": "<p>You create a semicorporeal hand out of your essence that delivers touch spells for you. Whenever you Cast a Spell with a range of touch, you can have the hand crawl to a target within range along the ground, touch it, and then crawl back to you. When making a melee spell attack with the hand, you use your normal bonuses. The hand can move as far as it needs to within range. The hand has your AC and saves, but any damage to the hand destroys it and causes you to take 1d6 damage.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rthC6dGm3nNrt1xN]{Ghostly Carrier}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Light Mace": {
@@ -2408,6 +2422,7 @@
       "acDetails": "(22 against traps)",
       "publicNotes": "<p><em>This half-elf woman looks dressed to travel anywhere and prepared for any eventuality she might find along the way.</em></p>\n<p>No two field agents follow the same path to join the Pathfinder Society, nor the same path once they embark on their first expedition. The Society's treacherous missions require all types of adventurers, from seasoned combatants to ruin delvers and experts in the occult. Some field agents are highly specialized, filling a single role in a larger group of Pathfinders, while others branch out into a broad range of abilities.</p>\n<p>This field agent seeks the thrill of discovering lost treasures from the Inner Sea's many ancient ruins. She scouts ahead for her team, keeping an eye out for enemies, traps, and other dangers. In fights, she is cautious and practical, preferring to stay mobile and out of sight. She sneaks in for a finishing blow when victory is certain.</p>\n<hr />\n<p>The Pathfinder Society is a large and influential organization seeking to learn and share their knowledge to others, and its members can be found even in the least likely of places. PCs who are members of the Pathfinder Society might accompany a Pathfinder field agent or get news and assignments from a Pathfinder venture-captain.</p>",
       "saveDetails": "+1 circumstance to all saves vs. traps",
+      "senses": "trap finder",
       "items": {
         "equipment->Thieves' Tools": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]\nThieves' Tools",
@@ -2525,6 +2540,7 @@
     "Physician": {
       "name": "Physician",
       "publicNotes": "<p>The art of medicine is a blend of the intellectual and the practical, concerned with how diseases work and how to prevent them. The physician can be found consulting well-thumbed tomes while meticulously examining patients to better understand their condition, before determining the most effective treatment. For medical matters, the physician is a 4th-level challenge.</p>\n<hr />\n<p>The world is a dangerous place. Thankfully, there are those who devote their lives to easing the pain and suffering of others.</p>",
+      "senses": "(+8 to notice ailments)",
       "items": {
         "equipment->Healer's Tools": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\nHealer's Tools",
@@ -2690,10 +2706,6 @@
         "spell->Searing Light": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]\nSearing Light"
         },
-        "spell->Consecrate": {
-          "primarycheck": "Religion",
-          "secondarycheck": "Crafting, Performance"
-        },
         "spell->Gentle Repose": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]\nGentle Repose"
         },
@@ -2785,6 +2797,9 @@
         },
         "consumable->Scroll of Remove Fear (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Remove Fear (Level 2)",
+          "consumableSpellName": "Remove Fear",
+          "consumableSpellDescription": "<p>With a touch, you ease a creature's fears. You can attempt to counteract a single fear effect that the target suffers from. This frees only the target, not any other creatures under the fear effect.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures.</p>",
+          "consumableSpellTarget": "1 creature",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]{Clear Mind}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Rapier": {
@@ -2886,6 +2901,8 @@
         },
         "consumable->Scroll of Speak with Animals (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Speak with Animals (Level 2)",
+          "consumableSpellName": "Speak with Animals",
+          "consumableSpellDescription": "<p>You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]{Speak with Animals}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "effect->Spell Effect: Longstrider": {
@@ -3021,6 +3038,7 @@
       "name": "Saboteur",
       "acDetails": "(20 vs. traps)",
       "publicNotes": "<p>Saboteurs excel at infiltration, using it to perform destructive acts, whether they are the physical destruction of a valuable object or obstructing important political proceedings. Unlike those of spies, the motivations of saboteurs is not to steal information, but rather to sow chaos among their enemies.</p>\n<hr />\n<p>Villains pursue selfish and cruel goals, trampling over anyone foolish or purehearted enough to stand in their way.</p>",
+      "senses": "(+10 to find traps)",
       "items": {
         "armor->Padded Armor": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]\n<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
@@ -3312,6 +3330,7 @@
     "Tax Collector": {
       "name": "Tax Collector",
       "publicNotes": "<p>Ledgers and marks, positive and negative flows, and levies and allotments are a tax collector's daily bread. Where coin is gained, from whom it is collected, and to whom is it disbursed are their main concerns; the collector is unconcerned with whether the taxed can afford it or take a loan to make up for any shortfall. However, tax collectors aren't immune to corruption: arrangements can be made, deals discussed, documents altered, or coin misappropriated. When dealing with matters of taxes and finance, the tax collector is a 3rd-level challenge.</p>\n<hr />\n<p>Magistrates are the cogs and gears that keep bureaucracy running, moving the machine along under the inertia of the status quo.</p>",
+      "senses": "(dc 19 against stealing)",
       "items": {
         "armor->Padded Armor": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]\n<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
@@ -3743,6 +3762,7 @@
       "name": "Watch Officer",
       "acDetails": "(22 with shield raised)",
       "publicNotes": "<p>Watch officers are assigned to a certain area within a city or community. Often leading a small team of lower-ranking guards, they patrol those areas to maintain order and enforce laws. Watch officers get the job done, though their methods are not always gentle or kind. Because the watch officer is responsible to their superiors for their area, they sometimes need to make tough decisions between justice and effectiveness.</p>\n<hr />\n<p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. In good-aligned societies, these officials carry out their duties fairly. In neutral and evil ones, these officials can be harsh and cruel (with an altered alignment to reflect this), imposing severe punishments on those who can't pay for mercy.</p>",
+      "senses": "(+9 to sense motive)",
       "items": {
         "armor->Breastplate": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
@@ -3820,6 +3840,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -3833,6 +3854,7 @@
       "path": "system.details.publicNotes"
     },
     "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

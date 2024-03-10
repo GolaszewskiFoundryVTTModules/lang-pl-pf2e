@@ -5,6 +5,7 @@
       "name": "Algea",
       "publicNotes": "<p>Algeas protect (and sometimes retrieve) souls at risk of being claimed by other entities, particularly spellcasters who dabbled with otherworldly forces but never officially pledged their souls.</p>",
       "saveDetails": "+1 status bonus to all saves vs. magic",
+      "senses": "see magic",
       "items": {
         "spellcastingEntry->Innate Divine Spells": {
           "name": "Innate Divine Spells"
@@ -12,10 +13,6 @@
         "spell->Plane Shift (Self and soul caged creatures only, to the Boneyard only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (Self and soul caged creatures only, to the Boneyard only)",
           "target": "Self and soul caged creatures only"
-        },
-        "spell->Call Spirit": {
-          "primarycheck": "Occultism (expert) or Religion (expert)",
-          "secondarycheck": "Occultism or Religion (whichever isn't used for the primary check)"
         },
         "action->Lifesense 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
@@ -147,9 +144,6 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "action->Scent (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 60 feet"
-        },
         "action->Lifesense 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
         },
@@ -177,6 +171,7 @@
     },
     "Haunted Nosoi": {
       "name": "Haunted Nosoi",
+      "languages": "truespeech",
       "items": {
         "strike-melee->Beak": {
           "name": "Beak"
@@ -201,15 +196,10 @@
         "spellcastingEntry->Innate Occult Spells": {
           "name": "Innate Occult Spells"
         },
-        "spell->Extract Brain": {
-          "primarycheck": "Occultism (expert)",
-          "secondarycheck": "Medicine"
-        },
         "spell->Gentle Repose": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]\nGentle Repose"
         },
         "spell->Inveigle": {
-          "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
         "spell->Light": {
@@ -263,10 +253,6 @@
     "Ixirizmid": {
       "name": "Ixirizmid",
       "items": {
-        "spell->Extract Brain": {
-          "primarycheck": "Occultism (expert)",
-          "secondarycheck": "Medicine"
-        },
         "strike-melee->Claw": {
           "name": "Claw"
         },
@@ -387,6 +373,7 @@
     "Undead Brain Collector": {
       "name": "Undead Brain Collector",
       "hpDetails": "void healing",
+      "languages": "telepathy 100 feet",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
         "strike-melee->Jaws": {
@@ -505,6 +492,7 @@
     },
     "Yianyin": {
       "name": "Yianyin",
+      "languages": "telepathy 120 feet, tongues",
       "saveDetails": "+1 status to all saves vs. magic",
       "items": {
         "spellcastingEntry->Innate Occult Spells": {
@@ -563,6 +551,7 @@
       "converter": "translateActorItems",
       "path": "items"
     },
+    "languages": "system.details.languages.details",
     "name": {
       "converter": "translateDualLanguage",
       "path": "name"
@@ -578,6 +567,7 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

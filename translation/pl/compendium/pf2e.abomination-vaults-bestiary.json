@@ -3,6 +3,7 @@
     "entries": {
         "Afflicted Irnakurse": {
             "name": "Afflicted Irnakurse",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>Irnakurse are surface elves who drow have subjected to particularly cruel and humiliating fleshwarping practices, as drow take special delight in the torment of their surface-dwelling kin. The process of crafting an irnakurse involves twisting an unfortunate elf into a deformed mass of misplaced limbs, loose flesh, and bony protrusions-parts that should be internal are often left on full display to the world. Irnakurse are subject to mental conditioning that causes them to hate their prior forms, and these creatures prefer to attack surface elves over all other targets.</p>\n<hr />\n<p>Horrid abominations reshaped by vile alchemical magic, the two fleshwarps presented here were created by drow, who transform captured elves or xulgaths into twisted monstrosities that can then be loosed to cause havoc and terror.</p>",
             "items": {
                 "strike-melee->Jaws": {
@@ -110,6 +111,7 @@
         "Azvalvigander": {
             "name": "Azvalvigander",
             "blurb": "Female zebub quartermaster",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Zebubs serve as Hell's messengers and spies. Their ability to share what they've seen with other creatures makes them especially useful-not only to other devils, but also to mortal conjurers. Some infernal lords unleash them in enormous, horrid swarms upon unsuspecting lands to debase flesh and land alike while collecting secrets the infernal host might later put to use. Zebubs use any opportunity to manipulate weak-willed or easily tempted mortals into serving the zebubs' whims. While arrogant and deceitful, zebubs lack the cunning and confidence of most devils, and thus their schemes often focus on satisfying self-serving or self-destructive ambitions. Zebubs form from the souls of childish and craven mortals, reshaped by the archdevil Baalzebul in the frozen, filthy wastes of Hell's seventh layer, Cocytus.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -125,9 +127,6 @@
                 "spell->Invisibility (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will) (Self Only)",
                     "target": "self"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "spell->Summon Animal (Swarm creatures only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]\nSummon Animal (Swarm creatures only)"
@@ -160,6 +159,7 @@
         "Barcumbuk": {
             "name": "Barcumbuk",
             "blurb": "Male erinys",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Erinyes exact vengeance and bloody justice for a creature's crimes, torturing and punishing their victims in ironic fashion before allowing them the escape of death. While an erinys appears as a fallen angel and the first erinyes shared that origin, erinyes now originate in myriad ways, some promoted from lesser devils and others shaped from lemures themselves forged from the souls of torturers and persecutors. The erinyes' origin is entwined with Eiseth, herself a fallen angel and one of Hell's most powerful demigods. The first erinyes were all considered to be Eiseth's metaphorical daughters, but erinyes formed since that time are no longer limited to a single gender.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -180,9 +180,6 @@
                 },
                 "spell->Illusory Disguise (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]\nIllusory Disguise (At Will)"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "armor->Breastplate": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
@@ -239,6 +236,7 @@
             "blurb": "Female ghost sorcerer",
             "hpDetails": "leczenie pustką, odrodzenie",
             "saveDetails": "+1 status to all saves vs. magic",
+            "senses": "magic sense",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
@@ -247,13 +245,7 @@
                     "name": "Sorcerer Bloodline Spells"
                 },
                 "spell->Legend Lore": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore",
-                    "primarycheck": "Occultism (master)",
-                    "secondarycheck": "Performance, Society"
-                },
-                "spell->Teleportation Circle": {
-                    "primarycheck": "Arcana or Occultism (master)",
-                    "secondarycheck": "Crafting, Survival"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]\nLegend Lore"
                 },
                 "spell->Feeblemind": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]\nFeeblemind"
@@ -261,7 +253,6 @@
                 "spell->Planar Binding": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]\nPlanar Binding",
                     "cost": "warding diagram ingredients worth a total value of 2 gp × the spell rank × the target's level",
-                    "primarycheck": "Arcana (master) or Occultism (master)",
                     "secondarycheck": "Crafting; Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
                 },
                 "spell->True Seeing": {
@@ -347,9 +338,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -405,6 +394,7 @@
         "Bloodsiphon": {
             "name": "Bloodsiphon",
             "hpDetails": "leczenie pustką",
+            "languages": "cannot speak any language",
             "items": {
                 "strike-melee->Mouth": {
                     "name": "Mouth"
@@ -473,9 +463,6 @@
                 },
                 "strike-ranged->Trident": {
                     "name": "Trójząb"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Self-Loathing": {
                     "name": "Self-Loathing",
@@ -559,7 +546,8 @@
                     "name": "Frost Composite Longbow"
                 },
                 "action->Rejuvenation": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
                 },
                 "action->Sacrilegious Aura": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bTJnxBQjr7G8yr30]\nSacrilegious Aura",
@@ -717,23 +705,20 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
                 },
                 "spell->Awaken Portal": {
-                    "primarycheck": "Arcana or Occultism (trained)",
-                    "secondarycheck": "Whichever is used for the primary check"
+                    "gmNote": "<p>The DC required to successfully awaken a portal varies based on the strength and distance between its end points. For the portals found in the Abomination Vaults Adventure Path, the DC varies according to the dungeon level on which it is located. Use the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.dRu66xNqJ9Ihe1or]{DCs by Spell Rank section} of Table 10-5 to determine the DC for a portal, using the dungeon level in place of spell rank. Thus, activating the portal on the first level of the Abomination Vaults requires a successful DC 15 check, while activating the portal on the fourth level requires a successful DC 23 check.</p>\n<p>In the Abomination Vaults, the creature conjured depends on the dungeon level where the ritual was attempted, as listed below.</p>\n<ul>\n<li><strong>First Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.NQ6qRvpD9DIwVxt3]{Vampiric Mist}</li>\n<li><strong>Second Level</strong> @UUID[Compendium.pf2e.abomination-vaults-bestiary.Actor.Nkz8Z5TrEqRePGlk]{Scalathrax}</li>\n<li><strong>Third Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.dEAneTvoPuQXZoLR]{Gibbering Mouther}</li>\n<li><strong>Fourth Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.wRQ7TZdd0n5UIIao]{Will-o'-Wisp}</li>\n<li><strong>Fifth Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.SY8pvLPqc2EgP9Xj]{Soul Eater}</li>\n<li><strong>Sixth Level</strong> @UUID[Compendium.pf2e.abomination-vaults-bestiary.Actor.ceLvlSQsYNORH8oM]{Voidglutton}</li>\n<li><strong>Seventh Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.ZGEf08j9q4fIPDFd]{Dread Wraith}</li>\n<li><strong>Eighth Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.ToSwRvspZ0IB7SHQ]{Ghost Mage}</li>\n<li><strong>Ninth Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.MUVc2ZjwGtlpcuX1]{Gosreg}</li>\n<li><strong>Tenth Level</strong> @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.t4JYGYJqT1CaqKvh]{Shining Child}</li>\n</ul>"
                 },
                 "spell->Glyph of Warding": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW]\nGlyph of Warding",
+                    "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
                     "target": "1 container or a 10-foot-by-10-foot area"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->Hideous Laughter": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
                 },
                 "spell->Inveigle": {
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
                     "target": "1 creature of a level no greater than double the inveigle ritual's rank"
                 },
                 "spell->See Invisibility": {
@@ -857,6 +842,7 @@
             "name": "Corpselight",
             "hpDetails": "leczenie pustką",
             "publicNotes": "<p>A will-o'-wisp that starves to death might rise as a cold, blue, glowing sphere of spongy wetness-a corpselight. A corpselight instinctively seeks out a host corpse to dwell within, as its physical form quickly deteriorates if not hidden within a dead creature.</p>",
+            "senses": "corpse sense (precise) 30 feet",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -892,6 +878,7 @@
             "hpDetails": "regeneration 10 (deactivated by holy or silver)",
             "publicNotes": "<p>Evangelists, the velstracs' unofficial ambassadors, roam the farthest reaches of the planes to spread the word of their kind's abhorrent belief in perfection through pain. They are therefore the most frequently encountered velstracs on the Material Plane, leading covens of hedonistic mortal flesh-sculptors or serving as wardens of horrific dungeons. In regions ruled by infernal powers, evangelists may serve as lieutenants or advisors, whispering secret paths to power in exchange for mortal's souls or choice mortal flesh. Evangelists are the same size as humans, although with the heavy chains that always drape their forms, they often weigh 350 pounds or more.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
+            "senses": "painsight",
             "items": {
                 "strike-melee->Chain": {
                     "name": "Chain"
@@ -954,6 +941,7 @@
         },
         "Deep End Sarglagon": {
             "name": "Deep End Sarglagon",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Sarglagons dwell in Hell's myriad waterways, lakes, and oceans. They serve as guardians of the Academy of Lies-the repository of secrets in Stygia, the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can move through water, land, and even air with uncanny swiftness. Few fiends travel the waterways of the multiverse, but where a river crosses the planes, odds are sarglagons have traveled it to further their infernal machinations. The only body of water they avoid is the River Styx, as the fiends have yet to develop any defense against that waterway's memory-sapping qualities. Mortal spellcasters sometimes bind sarglagons as guardians of precious secrets or treasures, particularly in aquatic areas. Most strangely, sarglagons sometimes act as unnerving caretakers to mortals who have no idea what they did to earn their unwanted protectors' attention. The constant uninvited vigilance of these devils is often disturbing and stifling to their wards.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Sarglagon",
@@ -972,9 +960,6 @@
                 },
                 "spell->See Invisibility (Constant)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility (Constant)"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "equipment->Fragment of Urevian's Pendant": {
                     "name": "Fragment of Urevian's Pendant"
@@ -1236,6 +1221,7 @@
         },
         "Drill Field Barbazu": {
             "name": "Drill Field Barbazu",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Barbazu",
@@ -1248,9 +1234,6 @@
                 },
                 "spell->Dimension Door (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "strike-melee->Glaive": {
                     "name": "Glaive"
@@ -1310,8 +1293,6 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.JOdOpbPDl7nqvJUm]\nGlobe of Invulnerability"
                 },
                 "spell->Geas": {
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Society or Legal Lore",
                     "target": "1 creature of a level no greater than double the geas ritual's rank"
                 },
                 "spell->Darkness (At Will)": {
@@ -1592,12 +1573,9 @@
                 "spell->Freedom of Movement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
                 },
-                "spell->Plant Growth": {
-                    "primarycheck": "Nature (expert)",
-                    "secondarycheck": "Farming Lore or Survival"
-                },
                 "spell->Glyph of Warding": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW]\nGlyph of Warding",
+                    "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
                     "target": "1 container or a 10-foot-by-10-foot area"
                 },
                 "spell->Meld into Stone": {
@@ -1692,6 +1670,7 @@
                 },
                 "spell->Glyph of Warding": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW]\nGlyph of Warding",
+                    "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
                     "target": "1 container or a 10-foot-by-10-foot area"
                 },
                 "spell->Darkness (At Will)": {
@@ -1731,6 +1710,7 @@
         },
         "Gibtanius": {
             "name": "Gibtanius",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>When a gibtas feeds regularly but never receives sufficient food to procreate, it grows into a mighty gibtanius. They become surly, uncontrolled predators, forsaking their bonded masters to satiate their unending hunger.</p>\n<hr />\n<p>This rubbery, spheroid scavenger is nearly all acid-dripping mouth, with five bulbous black eyes and two powerful, gangly legs. A gibtas often forms a bond with a single other creature-usually, a more powerful aberration- and serves this master loyally, if erratically. Creatures who keep a gibtas as a pet or guard soon learn to keep it away from any important possessions they don't want spattered with acid.</p>",
             "items": {
                 "strike-melee->Jaws": {
@@ -1738,9 +1718,6 @@
                 },
                 "strike-ranged->Spit": {
                     "name": "Spit"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Powerful Stench": {
                     "name": "Powerful Stench",
@@ -1765,6 +1742,7 @@
         },
         "Gibtas Bounder": {
             "name": "Gibtas Bounder",
+            "languages": "(can't speak any language)",
             "publicNotes": "<p>A full-grown gibtas uses its powerful legs and rubbery body to bound great distances. Most gibtases remain solitary, unless bonded with a creature.</p>\n<hr />\n<p>This rubbery, spheroid scavenger is nearly all acid-dripping mouth, with five bulbous black eyes and two powerful, gangly legs. A gibtas often forms a bond with a single other creature-usually, a more powerful aberration- and serves this master loyally, if erratically. Creatures who keep a gibtas as a pet or guard soon learn to keep it away from any important possessions they don't want spattered with acid.</p>",
             "items": {
                 "strike-melee->Jaws": {
@@ -1772,9 +1750,6 @@
                 },
                 "strike-ranged->Spit": {
                     "name": "Spit"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Bouncing Slam": {
                     "name": "Bouncing Slam",
@@ -1797,9 +1772,6 @@
             "name": "Gibtas Spawn Swarm",
             "publicNotes": "<p>When a gibtas gorges itself on an incredible amount of flesh, it vomits up a pool of acid filled with tiny pink egg sacs that burst immediately. The new babies hunt as a pack, growing in size until they go their separate ways or consume each other.</p>\n<hr />\n<p>This rubbery, spheroid scavenger is nearly all acid-dripping mouth, with five bulbous black eyes and two powerful, gangly legs. A gibtas often forms a bond with a single other creature-usually, a more powerful aberration- and serves this master loyally, if erratically. Creatures who keep a gibtas as a pet or guard soon learn to keep it away from any important possessions they don't want spattered with acid.</p>",
             "items": {
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Bounce": {
                     "name": "Bounce",
                     "description": "<p><strong>Aktywator</strong> A creature that the gibtas spawn swarm can see targets the swarm with an attack</p>\n<hr />\n<p><strong>Efekt</strong> The swarm bounces to the side and gains a +2 circumstance bonus to AC against the triggering attack. After the attack, the swarm can Stride up to its Speed in a straight line as part of the reaction.</p>"
@@ -1878,6 +1850,7 @@
         },
         "Hellforge Barbazu": {
             "name": "Hellforge Barbazu",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Barbazu",
@@ -1890,9 +1863,6 @@
                 },
                 "spell->Dimension Door (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "weapon->+1 Flaming Striking Hellforged Glaive": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vlnzTSsRmWeSkt9O]\n+1 Flaming Striking Hellforged Glaive"
@@ -1956,13 +1926,11 @@
         "Jafaki": {
             "name": "Jafaki",
             "blurb": "Seugathi fleshwarper",
+            "languages": "telepathy 100 feet",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
-                },
-                "spellcastingEntry->Magic Item Mastery": {
-                    "name": "Magic Item Mastery"
                 },
                 "weapon->Infused Acid Flask (Moderate)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]\nInfused Acid Flask (Moderate)",
@@ -1987,10 +1955,16 @@
                     "description": "<p>This elaborate key has a four-pronged design.</p>"
                 },
                 "consumable->Wand of Peaceful Rest (Rank 2)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Peaceful Rest (Rank 2)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Peaceful Rest (Rank 2)",
+                    "consumableSpellName": "Peaceful Rest",
+                    "consumableSpellDescription": "<p>The targeted corpse doesn't decay, nor can it be transformed into an undead. If the corpse is subject to a spell that requires the corpse to have died within a certain amount of time (for example, @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Raise Dead}), do not count the duration of <em>peaceful rest</em> against that time. This spell also prevents ordinary bugs and pests (such as maggots) from consuming the body.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell's duration is unlimited, but the spell takes one more action to cast and requires a cost (embalming fluid worth 6 gp).</p>",
+                    "consumableSpellTarget": "1 corpse"
                 },
                 "consumable->Wand of Force Barrage (Rank 1)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Force Barrage (Rank 1)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Force Barrage (Rank 1)",
+                    "consumableSpellName": "Force Barrage",
+                    "consumableSpellDescription": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>",
+                    "consumableSpellTarget": "1 creature"
                 },
                 "consumable->Infused Wyvern Poison": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\nInfused Wyvern Poison",
@@ -2095,6 +2069,7 @@
         "Jaul Mezmin": {
             "name": "Jaul Mezmin",
             "blurb": "Male human werewolf stalker",
+            "languages": "wolf empathy",
             "saveDetails": "+1 status vs. poison",
             "items": {
                 "spellcastingEntry->Primal Prepared Spells": {
@@ -2128,9 +2103,6 @@
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
-                },
                 "action->Wolf Empathy": {
                     "name": "Wolf Empathy",
                     "description": "<p>Jaul can communicate with lupines.</p>"
@@ -2162,9 +2134,6 @@
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Jaul Coordination": {
                     "name": "Jaul Coordination",
@@ -2812,6 +2781,7 @@
         "Observation Deck Seugathi Researcher": {
             "name": "Observation Deck Seugathi Researcher",
             "blurb": "Seugathi servant",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Seugathi Researcher",
@@ -2836,6 +2806,8 @@
                 },
                 "consumable->Wand of Illusory Creature (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Illusory Creature (Level 2)",
+                    "consumableSpellName": "Illusory Creature",
+                    "consumableSpellDescription": "<p>You create an illusory image of a Large or smaller creature. It generates the appropriate sounds, smells, and feels believable to the touch. If you and the image are ever farther than 500 feet apart, the spell ends.</p>\n<p>The image can't speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to mimic the creature, as determined by the GM. This is especially likely if you're trying to imitate a specific person and engage with someone that person knows.</p>\n<p>In combat, the illusion can use 2 actions per turn, which it uses when you Sustain the Spell. It uses your spell attack roll for attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC - 10. It is substantial enough that it can flank other creatures. If the image is hit by an attack or fails a save, the spell ends.</p>\n<p>The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster-for example, if an illusory Large dragon deals only 5 damage-the GM might allow the target to attempt an immediate Perception check to disbelieve the spell. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.</p>\n<p>Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan).</p>",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Bite": {
@@ -2924,6 +2896,9 @@
                 },
                 "consumable->Wand of Magic Missile (Level 3)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\nWand of Magic Missile (Level 3)",
+                    "consumableSpellName": "Magic Missile",
+                    "consumableSpellDescription": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>",
+                    "consumableSpellTarget": "1 creature",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-rank casting of the spell.</p>"
                 },
                 "strike-melee->Dagger": {
@@ -2972,6 +2947,7 @@
         "Poisoning Room Specter": {
             "name": "Poisoning Room Specter",
             "hpDetails": "leczenie pustką",
+            "languages": "telepathy 100 feet (with spectral thralls only)",
             "publicNotes": "<p>When an evil mortal creature dies, it sometimes returns to haunt the area of its death as a specter, a hateful remnant, always seeking to slay others-particularly humanoids-in an attempt to distribute its pain among as many souls as it can. A specter maintains a strange semblance of its prior identity, but with a corrupted sense of purpose. It cannot be reasoned with.</p>\n<p>A specter denied the opportunity to harm living humanoids grows increasingly agonized and irrational, akin to the mindset of a starving person forever denied a release from agony through death.</p>",
             "tokenName": "Specter",
             "items": {
@@ -3281,6 +3257,7 @@
         "Seugathi Guard": {
             "name": "Seugathi Guard",
             "blurb": "Seugathi servant",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -3295,6 +3272,8 @@
                 },
                 "consumable->Wand of See Invisibility (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of See Invisibility (Level 2)",
+                    "consumableSpellName": "See Invisibility",
+                    "consumableSpellDescription": "<p>You can see @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures and objects. They appear to you as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Bite": {
@@ -3333,6 +3312,7 @@
         },
         "Seugathi Reality Warper": {
             "name": "Seugathi Reality Warper",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Seugathi reality warpers create and destroy inhospitable environments on a small scale by manipulating the forces of raw chaos. A neothelid might spawn such a seugathi to create habitats for unique slaves or guests, or to destroy the ecosystem of a troublesome species. Darklands scholars refer to reality warpers as veterans in the seugathi ranks, but they're more accurately compared to aggressive landscape architects.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -3383,6 +3363,7 @@
         "Seugathi Researcher": {
             "name": "Seugathi Researcher",
             "blurb": "Seugathi servant",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -3400,6 +3381,9 @@
                 },
                 "consumable->Wand of Status (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Status (Level 2)",
+                    "consumableSpellName": "Status",
+                    "consumableSpellDescription": "<p>As long as you and the target are on the same plane of existence and both alive, you remain aware of its present state. You know the target's direction from you, distance from you, and any conditions affecting it.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures.</p>",
+                    "consumableSpellTarget": "1 willing living creature",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.HTou8cG05yuSkesj]{Status}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Bite": {
@@ -3438,6 +3422,7 @@
         },
         "Seugathi Servant": {
             "name": "Seugathi Servant",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -3670,6 +3655,7 @@
         },
         "Summoning Chamber Erinys": {
             "name": "Summoning Chamber Erinys",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Erinyes exact vengeance and bloody justice for a creature's crimes, torturing and punishing their victims in ironic fashion before allowing them the escape of death. While an erinys appears as a fallen angel and the first erinyes shared that origin, erinyes now originate in myriad ways, some promoted from lesser devils and others shaped from lemures themselves forged from the souls of torturers and persecutors. The erinyes' origin is entwined with Eiseth, herself a fallen angel and one of Hell's most powerful demigods. The first erinyes were all considered to be Eiseth's metaphorical daughters, but erinyes formed since that time are no longer limited to a single gender.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Erinys",
@@ -3691,9 +3677,6 @@
                 },
                 "spell->Illusory Disguise (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]\nIllusory Disguise (At Will)"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "weapon->Longsword": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
@@ -3736,6 +3719,7 @@
         },
         "Torture Chamber Barbazu": {
             "name": "Torture Chamber Barbazu",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "tokenName": "Barbazu",
@@ -3748,9 +3732,6 @@
                 },
                 "spell->Dimension Door (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "weapon->Hellforged Glaive": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vlnzTSsRmWeSkt9O]\nHellforged Glaive"
@@ -3922,6 +3903,7 @@
         "Urevian": {
             "name": "Urevian",
             "blurb": "Male phistophilus field commander",
+            "languages": "telepathy 100 feet, tongues",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -3929,10 +3911,6 @@
                 },
                 "spell->Scrying (At Will) (See Right of Inspection)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]\nScrying (At Will) (See Right of Inspection)"
-                },
-                "spell->Call Spirit": {
-                    "primarycheck": "Occultism (expert) or Religion (expert)",
-                    "secondarycheck": "Occultism or Religion (whichever isn't used for the primary check)"
                 },
                 "spell->Tongues (Constant)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
@@ -3953,11 +3931,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
                 },
                 "spell->Inveigle": {
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
                     "target": "1 creature of a level no greater than double the inveigle ritual's rank"
-                },
-                "spell->Infernal Pact": {
-                    "primarycheck": "Religion (expert; you must be a devil)"
                 },
                 "strike-melee->Diabolic Quill": {
                     "name": "Diabolic Quill"
@@ -4215,17 +4189,13 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
                 },
                 "spell->Animate Object": {
-                    "cost": "rare oils, see Table 7-1",
-                    "primarycheck": "Arcana (expert)",
-                    "secondarycheck": "Crafting"
+                    "cost": "rare oils, see Table 7-1"
                 },
                 "spell->Comprehend Language": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]\nComprehend Language"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->Darkness (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]\nDarkness (At Will)"
@@ -4383,10 +4353,6 @@
                 "spellcastingEntry->Coven Spells": {
                     "name": "Coven Spells"
                 },
-                "spell->Control Weather": {
-                    "primarycheck": "Nature (master)",
-                    "secondarycheck": "Survival"
-                },
                 "spell->Baleful Polymorph": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]\nBaleful Polymorph"
                 },
@@ -4436,6 +4402,7 @@
         "Wrin Sivinxi": {
             "name": "Wrin Sivinxi",
             "blurb": "Female tiefling elf oddities merchant",
+            "senses": "spirit sight (precise) 30 feet",
             "items": {
                 "spellcastingEntry->Primal Spontaneous Spells": {
                     "name": "Primal Spontaneous Spells"
@@ -4511,6 +4478,7 @@
             "name": "Ysondkhelir",
             "blurb": "Male denizen of leng",
             "hpDetails": "planar fast healing 5",
+            "languages": "tongues",
             "publicNotes": "<p>Slavers and raiders from the cold, windswept dimension of Leng, these malevolent humanoids range across reality in ominous black ships capable of sailing beyond the borders of dimensions and planes. Although most denizens of Leng seek slaves and plunder like any pirate, others operate as self-styled ambassadors and merchants, sowing discord with far-ranging plots. While the inscrutable denizens dress themselves in flowing robes, veils, and broad turbans to appear human, their aberrant physiology, when glimpsed, is evident from their crown of stubby horns and tentacled jaws to their furry, goat-like legs.</p>\n<p>Above the fierce captains who command the infamous black ships are an even higher caste of denizens of Leng. These cultists and musicians serve as high priests, laboring to appease the frightening gods who look down upon the Nightmare Realm with cold malice.</p>",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -4576,6 +4544,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"
@@ -4591,6 +4560,7 @@
         "reset": "system.details.reset",
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
+        "senses": "system.perception.details",
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

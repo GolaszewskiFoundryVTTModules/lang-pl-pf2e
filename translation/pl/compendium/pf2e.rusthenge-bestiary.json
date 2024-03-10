@@ -86,13 +86,11 @@
         },
         "Dretch": {
             "name": "Dretch",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Among the lowest and least powerful of all demons, dretches are just as vicious and cruel as their more powerful brethren. They happily vent their frustrations on anything weaker than themselves.</p>\n<p>Born from the souls of the slothful, these demons appear vaguely humanoid in appearance with awkward limbs and slack lumps of skin hanging from their frames. Supposedly, a single slothful soul of sufficient depravity and strength can spawn an entire horde of these creatures. However, as weaker demons, their lot in life is to suffer at the hands of more powerful Abyssal predators, and only a tiny number of dretches ever manage to become something more. For this reason, dretches are quite accommodating when summoned by mortals. They're usually content to work under conditions few other outsiders would accept, although they'll still gladly turn on even the kindest of masters who show even the slightest hint of weakness.</p>\n<hr />\n<p>Mortal souls that have been twisted and corrupted by sin sometimes arise in the afterlife as demons. These powerful and destructive fiends seek to spread their particular sin to warp more souls, thereby bolstering their numbers and continuing the cycle.</p>",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
-                },
-                "spell->Abyssal Pact": {
-                    "primarycheck": "Religion (expert; you must be a demon)"
                 },
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -207,12 +205,9 @@
                     "name": "Demonic Bloodline Spells"
                 },
                 "spell->Create Undead": {
-                    "cost": "black onyx, see Table 7-1",
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
-                    "secondarycheck": "Religion"
+                    "cost": "black onyx, see Table 7-1"
                 },
                 "spell->Inveigle": {
-                    "primarycheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
                     "target": "1 creature of a level no greater than double the inveigle ritual's rank"
                 },
                 "armor->Rusted (Broken) Breastplate": {
@@ -232,10 +227,15 @@
                 },
                 "consumable->Wand of Create Food (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Create Food (Level 2)",
+                    "consumableSpellName": "Create Food",
+                    "consumableSpellDescription": "<p>You create enough food to feed six Medium creatures for a day. This food is bland and unappealing, but it is nourishing. After 1 day, if no one has eaten the food, it decays and becomes inedible. Most Small creatures eat one-quarter as much as a Medium creature (one-sixteenth as much for most Tiny creatures), and most Large creatures eat 10 times as much (100 times as much for Huge creatures and so on).</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can feed 12 Medium creatures.</p>\n<p><strong>Heightened (6th)</strong> You can feed 50 Medium creatures.</p>\n<p><strong>Heightened (8th)</strong> You can feed 200 Medium creatures.</p>",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Mt6ZzkVX8Q4xigFq]{Create Food}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "consumable->Wand of Restoration (Level 2)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Restoration (Level 2)",
+                    "consumableSpellName": "Restoration",
+                    "consumableSpellDescription": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-rank restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>",
+                    "consumableSpellTarget": "1 creature",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Pick": {
@@ -288,6 +288,7 @@
             "name": "Primordial Envy",
             "publicNotes": "<p>The primordial envy is most often found in underground ruins within Edasseril. It hungers for magic, leaching it from any source it can come into contact with. This hunger can be exploited by clever adventurers who bait it with powerful destructive magics. A primordial envy is one of the most defensive sin oozes, and it tends to layer abjuration spells over itself to both increase its resilience and empower its attacks.</p>\n<hr />\n<p>Thassilon's ruins contain numerous sources of raw magical power that have been lost or forgotten. As many of these sources are steeped in sinful soul energy used by the runelords to enhance their power, some of these sources go \"sour,\" forming into a sinsludge — a mucky effluvium that develops into a barely rudimentary consciousness based on the emotion behind the sin.</p>\n<h2>Other Sinsludges</h2>\n<p>The primordial envy is the least dangerous sinsludge. The glistening pride's shimmering visage lures victims, then curses them with an inflated and competitive ego that tends to get them killed. The crusted sloth leaves victims wallowing in lethargy until they starve, while the shimmering greed imprisons would-be treasure seekers within shells of precious metal. The slithering lust's sweet scents enthrall victims with their deepest desires, distracting them as it feeds. But the most terrible of the sinsludges are the ravenous wrath, which uses blasts of devastating energy to feed, and the rancid gluttony, which consumes souls and leaves bodies behind as lethal undead.</p>",
             "saveDetails": "–2 status vs. evocation and necromancy",
+            "senses": "magic sense (precise) 30 feet",
             "items": {
                 "strike-melee->Pseudopod": {
                     "name": "Pseudopod"
@@ -466,6 +467,7 @@
         "Starving Werebat": {
             "name": "Starving Werebat",
             "blurb": "Weak svirfneblin werebat",
+            "languages": "bat empathy",
             "publicNotes": "<p>Werebats form organized colonies of opportunistic hunters. They aren't shy about transforming creatures to add to their colony, whom they initiate with elaborate social ceremonies and bloody hazing. The curse of the werebat gives them a strong urge to prey upon on weaker, lonely creatures. True werebats are often unusually tall and thin, with angular features. In combat, werebats favor their unarmed attacks because they can't fly while wielding weapons in their wings.</p>\n<hr />\n<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>",
             "tokenName": "Werebat",
             "items": {
@@ -480,9 +482,6 @@
                 },
                 "strike-ranged->Dagger": {
                     "name": "Dagger"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]\nScent (Imprecise) 30 feet"
                 },
                 "action->Bat Empathy": {
                     "name": "Bat Empathy",
@@ -501,7 +500,8 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ICnpftxZEilrYjn0]\n<p>This curse affects only humanoids.</p>\n<hr />\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:15]</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werecreature until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>"
                 },
                 "action->Moon Frenzy": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\nMoon Frenzy"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\nMoon Frenzy",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\n<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike (or a similar Strike) by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dRe8n1nBWMIXd8jh]{Efekt: Moon Frenzy}</p>"
                 }
             }
         },
@@ -569,6 +569,7 @@
         },
         "Vloriak": {
             "name": "Vloriak",
+            "languages": "telepathy 100 feet",
             "publicNotes": "<p>Vloriaks rise from the sinful souls of those whose acts of sabotage resulted in despair and terror, and they delight in the destruction of mortal artifice. Often called despoiler demons, vloriaks were the followers of Xar-Azmak. Their numbers have dwindled over the eons since the Lord of Rust's death; those that exist now are scattered throughout the Abyss. Their chitinous bodies and faceted eyes give them an insectile appearance.</p>\n<h2>Vlorian Influence</h2>\n<p>Vloriaks hail from the otherworldly realm of Vlorus, and as such carry within themselves the potential for decay and rusting ruin. Other creatures that dwell in Vlorus — particularly fiends who rise to power there — can gain similar powers over rust as well. The Vlorian cythnigot encountered earlier in this adventure is an example, but fiends of any type can become infested with unique rust-themed abilities if they hail from this otherworldly realm.</p>",
             "saveDetails": "+1 status to all saves vs. magic",
             "items": {
@@ -609,6 +610,7 @@
         "Vlorian Cythnigot": {
             "name": "Vlorian Cythnigot",
             "blurb": "Variant cythnigot",
+            "languages": "telepathy (touch only)",
             "publicNotes": "<p>The cythnigot is a foul fungal parasite that grows and thrives in the corpses of small creatures. It wears these bodies like a suit, but also adjusts and tailors the fleshy covering to suit its needs, and the body ends up looking as alien as anything else spawned from the Abyssal depths. The cythnigot's most identifying feature is the long stalk of fungal material that extends from creature's body, ending in a surprisingly strong set of fanged jaws.</p>",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -697,6 +699,7 @@
             "converter": "translateActorItems",
             "path": "items"
         },
+        "languages": "system.details.languages.details",
         "name": {
             "converter": "translateDualLanguage",
             "path": "name"
@@ -712,6 +715,7 @@
         "reset": "system.details.reset",
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
+        "senses": "system.perception.details",
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

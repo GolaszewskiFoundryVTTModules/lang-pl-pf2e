@@ -76,7 +76,7 @@ h4.entity-name a
 }
 
 .attribute-builder .window-content h3,
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.attributes ul .abbreviation
 {
     font-family: "Kirsty";
 }
@@ -84,18 +84,18 @@ h4.entity-name a
 /* # Character Sheet */
 
 /* Sidebar */
-.actor.sheet.character .crb-style
+.actor.sheet.character section.window-content .crb-style
 {
     grid: "sidebar header" 75px "sidebar nav" minmax(min-content, max-content) "sidebar content" 1fr/306px 1fr;
 }
 
-.actor.sheet.character .crb-style aside
+.actor.sheet.character section.window-content .crb-style aside
 {
     background-position: center calc(100% - 69px), center bottom;
     background-size: 299px 100%, 299px 69px;
 }
 
-.actor.sheet.character .crb-style aside .sidebar {
+.actor.sheet.character section.window-content .crb-style aside .sidebar {
     margin-bottom: 69px;
 }
 
@@ -103,13 +103,13 @@ h4.entity-name a
     min-width: 972px;
 }
 
-.actor.sheet.character .crb-style aside .logo {
+.actor.sheet.character section.window-content .crb-style aside .logo {
     width: auto;
     height: auto;
 }
 
 /* AC Section */
-.actor.sheet.character .crb-style aside .sidebar .armor-class {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .armor-class {
     display: grid; /* Ensure that the element is a grid container */
     grid-template-areas:
         "ac shield-hp shield-footer"
@@ -118,92 +118,99 @@ h4.entity-name a
     grid-template-rows: auto auto; /* Two rows with automatic height */
 }
 
-.actor.sheet.character .crb-style aside .sidebar .armor-class .shield.hp {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .armor-class .shield.hp {
     background-size: contain;
 }
 
-.actor.sheet.character .crb-style aside .sidebar .armor-class .ac {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .armor-class .ac {
     background-size: contain;
 }
 
-.actor.sheet.character .crb-style aside .sidebar .armor-class .ac,
-.actor.sheet.character .crb-style aside .sidebar .armor-class .shield {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .armor-class .ac,
+.actor.sheet.character section.window-content .crb-style aside .sidebar .armor-class .shield {
     height: 100%;
     padding: 1.25rem 0.625rem 0 0.625rem;
 }
 
-.actor.sheet.character .crb-style aside .sidebar .data-value h2 {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .data-value h2 {
     font-size: var(--font-size-30);
 }
 
-.actor.sheet.character .crb-style aside .sidebar .armor-class .shield {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .armor-class .shield {
     height: 96px;
     padding: 22px 10px 0 10px;
 }
 
 /* HP */
-.actor.sheet.character .crb-style aside .sidebar .hitpoints .hp-big .container.temp-hp {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .hitpoints .hp-big .container.temp-hp {
     margin-right: 0px;
 }
-.actor.sheet.character .crb-style aside .sidebar .hitpoints .hp-big .container.max-hp {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .hitpoints .hp-big .container.max-hp {
     margin-left: 0px;
 }
-.actor.sheet.character .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+.actor.sheet.character section.window-content .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
     width: auto;
 }
 
 /* Basic Info */
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details .abcd {
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.character .character-details .abcd {
     grid-template-columns: repeat(2, 50%);
 }
 
  /* Text Boxes */
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
     line-height: 1.5;
     padding: 4px 4px 2px;
 }
 
+/* Saves */
+.actor.sheet.character section.window-content .crb-style aside .sidebar ul.saves {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.actor.sheet.character section.window-content .crb-style aside .sidebar ul.saves li {
+    width: 100%;
+}
+
 /* Context Menu */
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details .detail-item-control #context-menu {
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.character .character-details .detail-item-control #context-menu {
     left: -121px;
     min-width: 141px;
 }
 
 /* Spells */
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-attribute-data button {
+/* .actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-attribute-data button {
     min-width: 170px;
-}
+} */
 
-.actor.sheet .crb-style .sheet-body .sheet-content ol.spell-list > li {
-    grid-template-columns: 55% auto 4rem 3rem;
-}
-
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
+/* .actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
     line-height: 1.3em;
 }
 
-.actor.sheet.character .crb-style select.pf-rank {
+.actor.sheet.character section.window-content .crb-style select.pf-rank {
     line-height: 1.3em;
-}
+} */
 
-.actor.sheet.character .crb-style .pf-rank {
+.actor.sheet.character section.window-content .crb-style .pf-rank {
     /* height: 100%; */
+    width: 94px;
+}
+
+/* .actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
+    //height: 100%;
     width: 100%;
 }
 
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
-    /* height: 100%; */
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
     width: 100%;
-}
+} */
 
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
-    width: 100%;
-}
-
-.actor.sheet.character .crb-style select.pf-rank
+/* .actor.sheet.character section.window-content .crb-style select.pf-rank
 {
     padding: 0 3px;
-}
+} */
 
 /* Item Sheet */
 .pf2e.item.sheet form article.sheet-content > section.sheet-sidebar {
@@ -211,8 +218,8 @@ h4.entity-name a
 }
 
 .pf2e.item.sheet.weapon form .item-details .precious-material select {
-    width:auto;
-    min-width:0px;
+    width: auto;
+    min-width: 0px;
 }
 
 .pf2e.item.sheet.weapon form .item-details label {
@@ -250,35 +257,35 @@ h4.entity-name a
 }
 
 /* Item Container */
-.actor.sheet .item-image {
+/* .actor.sheet section.window-content .item-image {
     min-width: 24px;
-}
+} */
 
 /* Inventory */
-.actor.sheet .inventory .item-weight {
+/* .actor.sheet section.window-content .inventory .item-weight {
     flex: 0 0 50px;
-}
+} */
 
 /* Party Stash */
-.sheet.party [data-tab=inventory] .inventory .item-controls {
+/* .sheet.party [data-tab=inventory] .inventory .item-controls {
     max-width: 4.75rem;
-}
+} */
 
-.actor.sheet .inventory .bulk {
+/* .actor.sheet section.window-content .inventory .bulk {
     flex: 0 0 50px;
-}
+} */
 
 /* Organized Play */
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.pfs > section.organized-play {
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.pfs > section.organized-play {
     grid-template-columns: 8em 1em 3em;
 }
 
 /* Level Display */
-.actor.sheet.character .crb-style header.char-header .char-level .exp-data {
+.actor.sheet.character section.window-content .crb-style header.char-header .char-level .exp-data {
     justify-content: center;
 }
 
-.actor.sheet form.crb-style header.char-header .char-level .level {
+.actor.sheet section.window-content form.crb-style header.char-header .char-level .level {
     height: 53px;
     width: 50px;
     background-size: 100%;

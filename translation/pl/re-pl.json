@@ -586,17 +586,17 @@
         },
         "IWR": {
             "Custom": {
-                "AdamantineBludgeoning": "obuchowe od adamantytu",
-                "AllDamageFromArcaneSpells": "all damage from arcane spells",
-                "AllDamageFromSpells": "all damage from spells",
+                "AdamantineBludgeoning": "obuchowe od adamantyny",
+                "AllDamageFromArcaneSpells": "wszystkie obrażenia od zaklęć tajemnych",
+                "AllDamageFromSpells": "wszystkie obrażenia od zaklęć",
                 "AllDamageFromUndead": "wszystkie obrażenia od nieumarłych",
                 "AllMagicalDamage": "wszystkie obrażenia magiczne",
                 "AllNonMagicalDamage": "wszystkie obrażenia niemagiczne",
-                "AllStrikeDamageFromUndeadCreatures": "all damage from Strikes made by undead creatures",
+                "AllStrikeDamageFromUndeadCreatures": "wszystkie obrażenia od Ciosów zadawanych przez nieumarłych",
                 "AttacksWaterCreatures": "ataki od istot wodnych",
                 "ColdIronBludgeoning": "obuchowe od zimnego żelaza",
                 "ImpulseFireFrom": "impuls ognia od {origin}",
-                "IngestedPoisons": "ingested poisons",
+                "IngestedPoisons": "trucizny spożywane",
                 "MagicalBludgeoning": "magiczne obuchowe",
                 "MagicalColdIron": "magiczne od zimnego żelaza",
                 "MagicalDuskwood": "magiczne od zmrokodrzewu",
@@ -615,8 +615,8 @@
                 "FeralPrompt": "Zwiększyć karę do KP aby zwiększyć rozmiar kości?"
             },
             "SanguineMutagen": {
-                "DamageNote": "Whenever you take piercing or slashing damage, you take @Damage[1d6[bleed]].",
-                "VariantSaveLabel": "{item} vs Disease, Poison, Fatigue"
+                "DamageNote": "Kiedy tylko odniesiesz obrażenia cięte lub kłute, odnosisz również @Damage[1d6[bleed]]{1k6 obrażeń od krwawienia}.",
+                "VariantSaveLabel": "{item} przeciw Chorobom, Truciznom, Wyczerpaniu"
             }
         },
         "NPCAbility": {
@@ -3959,48 +3959,48 @@
             }
         },
         "Terrain": {
-            "Aquatic": "Aquatic",
-            "Arctic": "Arctic",
-            "Desert": "Desert",
-            "Forest": "Forest",
-            "Mountain": "Mountain",
-            "Plains": "Plains",
-            "Sky": "Sky",
-            "Swamp": "Swamp",
-            "Underground": "Underground"
+            "Aquatic": "Wodny",
+            "Arctic": "Arktyczny",
+            "Desert": "Pustynny",
+            "Forest": "Leśny",
+            "Mountain": "Górski",
+            "Plains": "Równinny",
+            "Sky": "Podniebny",
+            "Swamp": "Bagnisty",
+            "Underground": "Podziemny"
         },
         "UI": {
             "RuleElements": {
                 "ChoiceSet": {
-                    "Decline": "Decline",
-                    "DragHomebrewItem": "Drag a homebrew item here if using one instead of the above options.",
-                    "HomebrewItem": "Homebrew Item",
+                    "Decline": "Odmów",
+                    "DragHomebrewItem": "W wypadku używania elementu domorobnego zamiast powyższych opcji, przeciągnij go tutaj.",
+                    "HomebrewItem": "Element Domorobny",
                     "ViewItem": {
-                        "Tooltip": "View Item",
-                        "Disabled": "Selected choice has no item sheet"
+                        "Tooltip": "Pokaż Element",
+                        "Disabled": "Wybrana opcja nie posiada karty przedmiotu"
                     },
-                    "NoLabel": "No",
-                    "Prompt": "Make a selection.",
-                    "SaveLabel": "Save",
-                    "SkillLabel": "Skill",
-                    "YesLabel": "Yes"
+                    "NoLabel": "Nie",
+                    "Prompt": "Dokonaj wyboru.",
+                    "SaveLabel": "Zapisz",
+                    "SkillLabel": "Umiejętność",
+                    "YesLabel": "Tak"
                 },
                 "EffectTarget": {
-                    "Prompt": "Choose the target of this effect."
+                    "Prompt": "Wybierz cel efektu."
                 },
                 "GrantItem": {
-                    "AlreadyHasItem": "{actor} already has {item}, so it has not been added again."
+                    "AlreadyHasItem": "{actor} posiada już element {item}, więc nie został on dodany ponownie."
                 },
                 "MultipleAttackPenalty": {
-                    "Breakdown": "MAP ({label})"
+                    "Breakdown": "KAW ({label})"
                 },
                 "Prompt": {
-                    "NoSelectionMade": "No selection was made: {item} is inactive.",
-                    "NoValidOptions": "{actor} has no valid options for {item}."
+                    "NoSelectionMade": "Nie dokonano wyboru: element {item} jest nieaktywny.",
+                    "NoValidOptions": "{actor} nie ma żadnych dostępnych opcji dla {item}."
                 },
                 "TokenMark": {
-                    "TargetToken": "Target a token by mouse-hovering one and pressing T. Press Escape to cancel.",
-                    "Timeout": "Effect creation cancelled due to lack of target."
+                    "TargetToken": "Obierz żeton na cel najeżdżając na niego i wciskając T. Wciśnij Escape aby anulować.",
+                    "Timeout": "Tworzenie efektu anulowane w związku z brakiem celu."
                 }
             }
         }

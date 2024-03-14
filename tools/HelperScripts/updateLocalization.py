@@ -93,6 +93,14 @@ class LocalizationUpdater:
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2koncentracja\3</p>'),
             (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
+            # Item type
+            (r'>Ammunition<', r'>Amunicja<'),
+            (r'<p><strong>Amunicja</strong> ([^<]*)arrow([^<]*)</p>',
+             r'<p><strong>Amunicja</strong> \1strzała\2</p>'),
+            (r'<p><strong>Amunicja</strong> ([^<]*)bolt([^<]*)</p>',
+             r'<p><strong>Amunicja</strong> \1bełt\2</p>'),
+            (r'<p><strong>Amunicja</strong> ([^<]*)any([^<]*)</p>',
+             r'<p><strong>Amunicja</strong> \1dowolna\2</p>'),
             # Frequency details. Must be after frequency
             (r'<p><strong>Częstotliwość</strong> once per day</p>',
              r'<p><strong>Częstotliwość</strong> raz na dzień</p>'),
@@ -271,6 +279,7 @@ class LocalizationUpdater:
                                 to match and the second element is the replacement pattern.
             :return: The modified text after all replacements.
             """
+            
             for pattern, replacement in replacements:
                 text = regex.sub(pattern, replacement, text)
             return text

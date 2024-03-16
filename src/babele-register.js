@@ -136,12 +136,6 @@ Hooks.once("ready", () => {
 
 	let changed = false;
 
-	    console.log(data);
-	    console.log(data.item?.flags?.babele?.originalName);
-	    console.log(data.ammoItem?.flags?.babele?.originalName);
-	    console.log(data.originalItem?.flags?.babele?.originalName);
-	    console.log(animationData);
-
         if (data.item?.flags?.babele?.originalName) {
             data.item = createItemNameProxy(
                 data.item,
@@ -169,8 +163,6 @@ Hooks.once("ready", () => {
         if (changed) {
             data.recheckAnimation = true;
         }
-
-	console.log(data);
     });
 });
 

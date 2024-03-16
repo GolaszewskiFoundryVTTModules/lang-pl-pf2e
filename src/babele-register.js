@@ -134,7 +134,7 @@ Hooks.once("ready", () => {
     Hooks.on("AutomatedAnimations-WorkflowStart", (data, animationData) => {
         if (animationData) return;
 
-	let changed = false;
+	    let changed = false;
 
         if (data.item?.flags?.babele?.originalName) {
             data.item = createItemNameProxy(

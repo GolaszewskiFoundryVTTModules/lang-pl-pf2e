@@ -50,7 +50,7 @@
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
-                    "description": "<p>If a creature walks on the area marked on the map, it falls through the weakened floorboards onto uneven rocks and sharp shards of wood, taking @Damage[1d4[piercing],1d6[bludgeoning]]{1d4 piercing damage and 1d6 bludgeoning damage}. The creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid the fall and the damage.</p>"
+                    "description": "<p>If a creature walks on the area marked on the map, it falls through the weakened floorboards onto uneven rocks and sharp shards of wood, taking @Damage[1d4[piercing],1k6[bludgeoning]]{1k4 piercing damage and 1k6 bludgeoning damage}. The creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid the fall and the damage.</p>"
                 }
             }
         },
@@ -136,7 +136,7 @@
                     "description": "<p>The kobold trapmaster deploys one spike trap in an adjacent square.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold trapmaster deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold trapmaster deals an extra 1k6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
                 },
                 "action->Spike Trap": {
                     "name": "Spike Trap",
@@ -200,7 +200,7 @@
                 },
                 "action->Inflict Pain": {
                     "name": "Inflict Pain",
-                    "description": "<p>When a target affected by the Kurnugian jackal's Hypnotic Stare ability takes damage, the jackal can focus the power of their third eye to intensify the pain of this damage, increasing the damage dealt by [[/r 1d6]]{1d6}.</p>"
+                    "description": "<p>When a target affected by the Kurnugian jackal's Hypnotic Stare ability takes damage, the jackal can focus the power of their third eye to intensify the pain of this damage, increasing the damage dealt by [[/r 1d6]]{1k6}.</p>"
                 },
                 "action->Hypnotic Stare": {
                     "name": "Hypnotic Stare",
@@ -215,7 +215,7 @@
         "Magic Starknives Trap": {
             "name": "Magic Starknives Trap",
             "description": "<p>Starknife symbols on the six pillars glow and shoot across the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on any four of the six pillars disables the entire trap (the trap is a 2nd-rank spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on any four of the six pillars disables the entire trap (the trap is a 2. kręgu spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
             "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets each day at sundown.</p>",
             "routine": "<p>(3 actions) For each of its actions on its turn, a carving on a different pillar glows and makes a magical starknife Ranged Strike against a random creature within range. Creatures might have cover from this Strike, such as from one of the pillars in the room.</p>",
             "stealth": "<p>to spot the magical energies reverberating in the pillars</p>",
@@ -257,7 +257,7 @@
                 "consumable->Wand of Fear (Level 1)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\nWand of Fear (Level 1)",
                     "consumableSpellName": "Fear",
-                    "consumableSpellDescription": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+                    "consumableSpellDescription": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>\n<hr />\n<p><strong>Heightened (3.)</strong> You can target up to five creatures.</p>",
                     "consumableSpellTarget": "1 creature",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</p>\n<hr />\n<p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>\n<hr />\n<p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a listed-rank casting of the spell.</p>"
                 },
@@ -291,7 +291,7 @@
         "Nightmare Terrain": {
             "name": "Nightmare Terrain",
             "description": "<p>What seems like an innocent stretch of land assaults trespassers with terrible illusions.</p>",
-            "disable": "<p>@Check[type:arcana|dc:22], @Check[type:nature|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd-level spell, DC 25)</p>",
+            "disable": "<p>@Check[type:arcana|dc:22], @Check[type:nature|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. poziomu. spell, DC 25)</p>",
             "reset": "<p>The terrible visions cease after all creatures have left the affected area, but the hazard is immediately ready to inflict its visions on the next creature to enter.</p>",
             "routine": "<p>(1 action) Terrible visions assail the minds of all creatures who can see within the affected area. Each creature must attempt a @Check[type:will|dc:24] saving throw.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[(2d8+9)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(4d8+18)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
             "stealth": "<p>@Check[type:perception|dc:22|traits:action:seek] to detect the subtle magical aura of the land</p>",
@@ -312,7 +312,7 @@
                     "name": "Hand Crossbow"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Omblin deals an extra 1d6 to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Omblin deals an extra 1k6 to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
                 },
                 "action->Unbalancing Blow": {
                     "name": "Unbalancing Blow",

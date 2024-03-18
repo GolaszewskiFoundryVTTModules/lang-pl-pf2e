@@ -80,10 +80,10 @@
                 },
                 "action->Deadly Disarm": {
                     "name": "Deadly Disarm",
-                    "description": "<p>The agile warrior deals 2d6 precision damage to a creature on a successful Disarm attempt.</p>"
+                    "description": "<p>The agile warrior deals 2k6 precision damage to a creature on a successful Disarm attempt.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The agile warrior's Strikes deal an additional 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The agile warrior's Strikes deal an additional 2k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
                 "action->Tumbling Attack": {
                     "name": "Tumbling Attack",
@@ -112,10 +112,10 @@
                 },
                 "action->Deadly Disarm": {
                     "name": "Deadly Disarm",
-                    "description": "<p>The agile warrior deals 2d6 precision damage to a creature on a successful Disarm attempt.</p>"
+                    "description": "<p>The agile warrior deals 2k6 precision damage to a creature on a successful Disarm attempt.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The agile warrior's Strikes deal an additional 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The agile warrior's Strikes deal an additional 2k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
                 "action->Tumbling Attack": {
                     "name": "Tumbling Attack",
@@ -129,8 +129,8 @@
         "Air Rift": {
             "name": "Air Rift",
             "description": "<p>A portal to the Plane of Air rips open onstage, causing roaring winds to tear through the opera house</p>",
-            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level; counteract DC 34) to counteract the air rift</p>",
-            "routine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take @Damage[(3d8+15)[bludgeoning]] damage on impact.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Porażka</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
+            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 34) to counteract the air rift</p>",
+            "routine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a k6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take @Damage[(3d8+15)[bludgeoning]] damage on impact.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Porażka</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
             "stealth": "<p>(master) to notice the sudden breeze in the theater</p>",
             "items": {
                 "action->AC 40 vs. Reactions and Ranged Weapon Attacks": {
@@ -138,7 +138,7 @@
                 },
                 "action->Earth Vulnerability": {
                     "name": "Earth Vulnerability",
-                    "description": "<p>The Elemental Plane of Air is opposed by the Plane of Earth. Any spell or magical effect with the earth trait that targets a creature or area within 50 feet of the rift deals 10 damage to the rift per spell ranks (or per 2 levels for magic items, feats, and so forth). For example, a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind} spell cast on a creature near the air rift deals 30 points of damage to the rift</p>"
+                    "description": "<p>The Elemental Plane of Air is opposed by the Plane of Earth. Any spell or magical effect with the earth trait that targets a creature or area within 50 feet of the rift deals 10 damage to the rift per spell ranks (or per 2 levels for magic items, feats, and so forth). For example, a 3. kręgu @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind} spell cast on a creature near the air rift deals 30 points of damage to the rift</p>"
                 },
                 "action->Weightlessness": {
                     "name": "Weightlessness",
@@ -173,7 +173,7 @@
                     "description": "<p>Akila Leaps either up to 50 feet horizontally and 10 feet vertically or up to 25 feet vertically and up to 10 feet horizontally. She can make a Strike at any point during the Leap. If she hits, she deals an extra @Damage[8[bludgeoning]] damage from the impact.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Akila deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Akila deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
                 }
             }
         },
@@ -184,7 +184,7 @@
             "languages": "wayang",
             "items": {
                 "weapon->Alchemist's Fire (Greater)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3k8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "equipment->Bracers of Armor I": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.02q8s6sSicMkhs1l]\nBracers of Armor I",
@@ -396,7 +396,7 @@
                 },
                 "action->Magma's Grasp": {
                     "name": "Magma's Grasp",
-                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Magma's Grasp]]{1d4 rounds}.</p>\n<p>Jivati's breath ignites a fire in the spirit of each creature within 10 feet of Jivati, dealing @Damage[8d6[fire]] damage. Each creature in the area must attempt a @Check[type:will|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and @Damage[1d6[persistent,fire]] damage and loses 1 Focus Point. If it has no Focus Points, the creature instead loses a random prepared spell or spell slot from the highest level it has left (maximum 6th level).</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but the creature takes double damage and @Damage[2d6[persistent,fire]] damage.</p>"
+                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Magma's Grasp]]{1k4 rounds}.</p>\n<p>Jivati's breath ignites a fire in the spirit of each creature within 10 feet of Jivati, dealing @Damage[8d6[fire]] damage. Each creature in the area must attempt a @Check[type:will|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and @Damage[1d6[persistent,fire]] damage and loses 1 Focus Point. If it has no Focus Points, the creature instead loses a random prepared spell or spell slot from the highest level it has left (maximum 6. level).</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but the creature takes double damage and @Damage[2d6[persistent,fire]] damage.</p>"
                 }
             }
         },
@@ -427,7 +427,7 @@
                 },
                 "action->Breath of the Glacier": {
                     "name": "Breath of the Glacier",
-                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Breath of the Glacier]]{1d4 rounds}.</p>\n<p>Pravan blows icy winds in a @Template[type:cone|distance:30], dealing @Damage[10d6[cold]] damage. Creatures in the area must attempt a @Check[type:reflex|dc:33|traits:damaging-effect] save as ice forms around them. The Speed penalty or immobilized condition caused by this ability persist until a creature either Breaks Open the ice or Escapes (DC 37 in either case), or if the creature takes at least 30 fire damage.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage and takes a –5- foot status penalty to its Speeds.</p>\n<p><strong>Porażka</strong> The creature takes full damage and takes a –15-foot status penalty to its Speeds.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>"
+                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Breath of the Glacier]]{1k4 rounds}.</p>\n<p>Pravan blows icy winds in a @Template[type:cone|distance:30], dealing @Damage[10d6[cold]] damage. Creatures in the area must attempt a @Check[type:reflex|dc:33|traits:damaging-effect] save as ice forms around them. The Speed penalty or immobilized condition caused by this ability persist until a creature either Breaks Open the ice or Escapes (DC 37 in either case), or if the creature takes at least 30 fire damage.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage and takes a –5- foot status penalty to its Speeds.</p>\n<p><strong>Porażka</strong> The creature takes full damage and takes a –15-foot status penalty to its Speeds.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -462,7 +462,7 @@
                 },
                 "action->Draw of the Aurora": {
                     "name": "Draw of the Aurora",
-                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Draw of the Aurora]]{1d4 rounds}.</p>\n<p>Ranya looses four lightning bolts, electrifying creatures and magnetizing them closer to her. Four @Template[type:line|distance:60]s of electricity stretch out from Ranya's space, one in each cardinal direction, dealing @Damage[4d12[electricity]] damage. Each creature in an affected area must attempt a @Check[type:reflex|dc:33|traits:damaging-effect] save. If this ability causes an undetected creature to glow, that creature becomes hidden instead to creatures that can see any part of its space (even if it is invisible or Sneaks).</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage, glows until the end of the monk's next turn, and is pulled 5 feet toward Ranya.</p>\n<p><strong>Porażka</strong> The creature takes full damage, glows until the end of the monk's next turn, and is pulled 15 feet toward Ranya.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage, glows for 1 minute, and is pulled 30 feet toward Ranya.</p>"
+                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Draw of the Aurora]]{1k4 rounds}.</p>\n<p>Ranya looses four lightning bolts, electrifying creatures and magnetizing them closer to her. Four @Template[type:line|distance:60]s of electricity stretch out from Ranya's space, one in each cardinal direction, dealing @Damage[4d12[electricity]] damage. Each creature in an affected area must attempt a @Check[type:reflex|dc:33|traits:damaging-effect] save. If this ability causes an undetected creature to glow, that creature becomes hidden instead to creatures that can see any part of its space (even if it is invisible or Sneaks).</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage, glows until the end of the monk's next turn, and is pulled 5 feet toward Ranya.</p>\n<p><strong>Porażka</strong> The creature takes full damage, glows until the end of the monk's next turn, and is pulled 15 feet toward Ranya.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage, glows for 1 minute, and is pulled 30 feet toward Ranya.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -497,7 +497,7 @@
                 },
                 "action->Breath of the Volcano": {
                     "name": "Breath of the Volcano",
-                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Breath of the Volcano]]{1d4 rounds}.</p>\n<p>Usvani exhales a miasma of acidic fumes in a @Template[type:emanation|distance:15]. A creature that starts its turn in the area takes @Damage[12d6[acid]] damage- and must attempt a @Check[type:fortitude|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
+                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Breath of the Volcano]]{1k4 rounds}.</p>\n<p>Usvani exhales a miasma of acidic fumes in a @Template[type:emanation|distance:15]. A creature that starts its turn in the area takes @Damage[12d6[acid]] damage- and must attempt a @Check[type:fortitude|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -571,18 +571,18 @@
             "tokenName": "Blue Viper",
             "items": {
                 "weapon->Acid Flask (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\nAcid Flask (Greater) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\nAcid Flask (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3k6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "weapon->Alchemist's Fire (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\nAlchemist's Fire (Greater) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\nAlchemist's Fire (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3k8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "weapon->Bottled Lightning (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]\nBottled Lightning (Greater) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]\nBottled Lightning (Większy) (Infused)"
                 },
                 "weapon->Frost Vial (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Greater) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Większy) (Infused)"
                 },
                 "consumable->Dragon Bile (Applied to Body)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6swrLimere2nZtz9]\nDragon Bile (Applied to Body)",
@@ -597,8 +597,8 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC]\n<p>The toxic deathcap mushroom can be dried, ground, and treated to form a flavorless powder with accelerated effects.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Spożycie)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>Nadejście Objawów</strong> 10 minutes</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 minutes</p>\n<p><strong>Stadium 1</strong> @Damage[13d6[poison]] damage (1 minute)</p>\n<p><strong>Stadium 2</strong> @Damage[17d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stadium 3</strong> @Damage[20d6[poison]] damage and sickened 3 (1 minute)</p>"
                 },
                 "consumable->Elixir of Life (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\nElixir of Life (Greater) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (7d6+18)[healing]]]{7d6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Efekt: Elixir of Life (Greater)}</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\nElixir of Life (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (7d6+18)[healing]]]{7k6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Efekt: Elixir of Life (Większy)}</p>"
                 },
                 "consumable->Malyass Root Paste (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe]\nMalyass Root Paste (Infused)",
@@ -633,7 +633,7 @@
                 },
                 "action->Infused Items": {
                     "name": "Infused Items",
-                    "description": "<p>Blue Viper carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask (Greater)}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire (Greater)}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId]{Blightburn Resin}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning (Greater)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC]{Deathcap Powder}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{Elixir of Life (Greater)}, 2 @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial (Greater)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe]{Malyass Root Paste}, 9 @UUID[Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi]{Purple Worm Venom}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence}, and 3 @UUID[Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7]{Spider Root}. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
+                    "description": "<p>Blue Viper carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask (Większy)}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire (Większy)}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId]{Blightburn Resin}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning (Większy)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC]{Deathcap Powder}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{Elixir of Life (Większy)}, 2 @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial (Większy)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe]{Malyass Root Paste}, 9 @UUID[Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi]{Purple Worm Venom}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence}, and 3 @UUID[Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7]{Spider Root}. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
                 },
                 "action->Poisoned Coat": {
                     "name": "Poisoned Coat",
@@ -663,18 +663,18 @@
             "tokenName": "Blue Viper",
             "items": {
                 "weapon->Acid Flask (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\nAcid Flask (Greater) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\nAcid Flask (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3k6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "weapon->Alchemist's Fire (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\nAlchemist's Fire (Greater) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\nAlchemist's Fire (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3k8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "weapon->Bottled Lightning (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]\nBottled Lightning (Greater) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]\nBottled Lightning (Większy) (Infused)"
                 },
                 "weapon->Frost Vial (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Greater) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Większy) (Infused)"
                 },
                 "consumable->Blightburn Resin (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId]\nBlightburn Resin (Infused)",
@@ -685,8 +685,8 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC]\n<p>The toxic deathcap mushroom can be dried, ground, and treated to form a flavorless powder with accelerated effects.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Spożycie)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Nadejście Objawów</strong> 10 minutes</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 minutes</p>\n<p><strong>Stadium 1</strong> @Damage[13d6[poison]] damage (1 minute)</p>\n<p><strong>Stadium 2</strong> @Damage[17d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stadium 3</strong> @Damage[20d6[poison]] damage and sickened 3 (1 minute)</p>"
                 },
                 "consumable->Elixir of Life (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\nElixir of Life (Greater) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (7d6+18)[healing]]]{7d6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Efekt: Elixir of Life (Greater)}</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\nElixir of Life (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (7d6+18)[healing]]]{7k6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Efekt: Elixir of Life (Większy)}</p>"
                 },
                 "consumable->Malyass Root Paste (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe]\nMalyass Root Paste (Infused)",
@@ -725,7 +725,7 @@
                 },
                 "action->Infused Items": {
                     "name": "Infused Items",
-                    "description": "<p>Blue Viper carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask (Greater)}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire (Greater)}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId]{Blightburn Resin}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning (Greater)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC]{Deathcap Powder}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{Elixir of Life (Greater)}, 2 @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial (Greater)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe]{Malyass Root Paste}, 9 @UUID[Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi]{Purple Worm Venom}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence}, and 3 @UUID[Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7]{Spider Root}. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
+                    "description": "<p>Blue Viper carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask (Większy)}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire (Większy)}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId]{Blightburn Resin}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning (Większy)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.87AzvRja9uQOLJCC]{Deathcap Powder}, 4 @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{Elixir of Life (Większy)}, 2 @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial (Większy)}, 3 @UUID[Compendium.pf2e.equipment-srd.Item.76T49dJYfxIrPvQe]{Malyass Root Paste}, 9 @UUID[Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi]{Purple Worm Venom}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence}, and 3 @UUID[Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7]{Spider Root}. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
                 },
                 "action->Poisoned Coat": {
                     "name": "Poisoned Coat",
@@ -759,21 +759,21 @@
             "tokenName": "Blue Viper",
             "items": {
                 "weapon->Acid Flask (Major) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GttLYMT2welSpwCd]\nAcid Flask (Major) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GttLYMT2welSpwCd]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 4d6 persistent acid damage, and 4 acid splash damage. You gain a +3 item bonus to attack rolls.</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GttLYMT2welSpwCd]\nAcid Flask (Potężny) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GttLYMT2welSpwCd]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 4k6 persistent acid damage, and 4 acid splash damage. You gain a +3 item bonus to attack rolls.</p>"
                 },
                 "weapon->Bottled Lightning (Major) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]\nBottled Lightning (Major) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]\nBottled Lightning (Potężny) (Infused)"
                 },
                 "weapon->Frost Vial (Major) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\nFrost Vial (Major) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\nFrost Vial (Potężny) (Infused)"
                 },
                 "weapon->Tanglefoot Bag (Major) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]\nTanglefoot Bag (Major) (Infused)",
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]\nTanglefoot Bag (Potężny) (Infused)",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –20-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the Escape DC is 37.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "weapon->Thunderstone (Major) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.IuGydh0En8LbfnWo]\nThunderstone (Major) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.IuGydh0En8LbfnWo]\nThunderstone (Potężny) (Infused)"
                 },
                 "consumable->Dragon Bile (Applied to Body)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6swrLimere2nZtz9]\nDragon Bile (Applied to Body)",
@@ -788,7 +788,7 @@
                 },
                 "consumable->Elixir of Life (True) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]\nElixir of Life (True) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span></p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (10d6+27)[healing]]]{10d6+27 Hit Points} and gain +4 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.9MeHc072G4L8AJkp]{Efekt: Elixir of Life (True)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span></p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (10d6+27)[healing]]]{10k6+27 Hit Points} and gain +4 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.9MeHc072G4L8AJkp]{Efekt: Elixir of Life (True)}</p>"
                 },
                 "consumable->Mindfog Mist (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GMi5tw0cbMx3ZQPg]\nMindfog Mist (Infused)",
@@ -821,7 +821,7 @@
                 },
                 "action->Infused Items": {
                     "name": "Infused Items",
-                    "description": "<p>Blue Viper carries the following infused items:</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.GttLYMT2welSpwCd]{Acid Flask (Major)}</p>\n<p>5 @UUID[Compendium.pf2e.equipment-srd.Item.xQS1MSqGQz44FWUh]{Black Lotus Extract}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]{Bottled Lightning (Major)}</p>\n<p>4 @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]{Elixir of Life (True)}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]{Frost Vial (Major)}</p>\n<p>2 @UUID[Compendium.pf2e.equipment-srd.Item.GMi5tw0cbMx3ZQPg]{Mindfog Mist}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.5hGJ6CZi0A9OjMd4]{Oblivion Essence}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]{Tanglefoot Bag (Major)}</p>\n<p>5 @UUID[Compendium.pf2e.equipment-srd.Item.gDGPvobJV1QGYBPy]{Tears of Death}</p>\n<p>2 @UUID[Compendium.pf2e.equipment-srd.Item.IuGydh0En8LbfnWo]{Thunderstone (Major)}</p>\n<p>These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
+                    "description": "<p>Blue Viper carries the following infused items:</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.GttLYMT2welSpwCd]{Acid Flask (Potężny)}</p>\n<p>5 @UUID[Compendium.pf2e.equipment-srd.Item.xQS1MSqGQz44FWUh]{Black Lotus Extract}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]{Bottled Lightning (Potężny)}</p>\n<p>4 @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]{Elixir of Life (True)}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]{Frost Vial (Potężny)}</p>\n<p>2 @UUID[Compendium.pf2e.equipment-srd.Item.GMi5tw0cbMx3ZQPg]{Mindfog Mist}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.5hGJ6CZi0A9OjMd4]{Oblivion Essence}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]{Tanglefoot Bag (Potężny)}</p>\n<p>5 @UUID[Compendium.pf2e.equipment-srd.Item.gDGPvobJV1QGYBPy]{Tears of Death}</p>\n<p>2 @UUID[Compendium.pf2e.equipment-srd.Item.IuGydh0En8LbfnWo]{Thunderstone (Potężny)}</p>\n<p>These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>"
                 },
                 "action->+3 status to all saves vs. transmutation": {
                     "name": "+3 status to all saves vs. transmutation"
@@ -919,7 +919,7 @@
                     "description": "<p>When the warrior successfully identifies a creature using Recall Knowledge, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against their attacks until the start of its next turn; if they critically succeed, it's off-guard against their attacks for 1 minute.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The warrior's Strikes deal an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The warrior's Strikes deal an additional 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
                 "action->Studied Strike": {
                     "name": "Studied Strike",
@@ -959,7 +959,7 @@
                 },
                 "action->Vine Splint": {
                     "name": "Vine Splint",
-                    "description": "<p>The canopy elder grows a mesh of vines around its broken branches, repairing the damage and restoring 40 HP to itself. The canopy elder can't use Vine Splint again for [[/br 1d4 #Recharge Vine Splint]]{1d4 rounds}.</p>"
+                    "description": "<p>The canopy elder grows a mesh of vines around its broken branches, repairing the damage and restoring 40 HP to itself. The canopy elder can't use Vine Splint again for [[/br 1d4 #Recharge Vine Splint]]{1k4 rounds}.</p>"
                 },
                 "action->Fungal Web": {
                     "name": "Fungal Web",
@@ -967,7 +967,7 @@
                 },
                 "action->Pollen Cloud": {
                     "name": "Pollen Cloud",
-                    "description": "<p>The canopy elder releases a dense cloud of pollen from the epiphytes living in its branches. The cloud emanates from the canopy elder in a @Template[type:emanation|distance:40]. The cloud doesn't move with the canopy elder and remains in place for [[/br 1d6 #rounds]]{1d6 rounds} before dissipating. Creatures inside the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud become concealed to creatures within it. Non-plant and non-fungus creatures within the cloud must attempt a @Check[type:fortitude|dc:38] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}, and on a critical failure the creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. Regardless of the result, a creature is then temporarily immune to the sickening and blinding effects of the canopy elder's pollen for 24 hours.</p>"
+                    "description": "<p>The canopy elder releases a dense cloud of pollen from the epiphytes living in its branches. The cloud emanates from the canopy elder in a @Template[type:emanation|distance:40]. The cloud doesn't move with the canopy elder and remains in place for [[/br 1d6 #rounds]]{1k6 rounds} before dissipating. Creatures inside the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud become concealed to creatures within it. Non-plant and non-fungus creatures within the cloud must attempt a @Check[type:fortitude|dc:38] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}, and on a critical failure the creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. Regardless of the result, a creature is then temporarily immune to the sickening and blinding effects of the canopy elder's pollen for 24 hours.</p>"
                 },
                 "lore->Forest Lore": {
                     "name": "Forest Lore"
@@ -997,7 +997,7 @@
                 },
                 "action->Caustic Spray": {
                     "name": "Caustic Spray",
-                    "description": "<p>The caustic monitor spits a spray of corrosive bile that deals @Damage[5d8[acid]] damage in a @Template[type:cone|distance:20] (@Check[type:reflex|dc:32|basic:true] save). It can't use Caustic Spray again for [[/br 1d4 #Recharge Caustic Spray]]{1d4 rounds}.</p>"
+                    "description": "<p>The caustic monitor spits a spray of corrosive bile that deals @Damage[5d8[acid]] damage in a @Template[type:cone|distance:20] (@Check[type:reflex|dc:32|basic:true] save). It can't use Caustic Spray again for [[/br 1d4 #Recharge Caustic Spray]]{1k4 rounds}.</p>"
                 },
                 "action->Corrosive Flesh": {
                     "name": "Corrosive Flesh",
@@ -1059,7 +1059,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>Cloudsplitter breathes fire in a @Template[type:cone|distance:30], dealing @Damage[18d6[fire]] damage (@Check[type:reflex|dc:40|basic:true] save). Cloudsplitter can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                    "description": "<p>Cloudsplitter breathes fire in a @Template[type:cone|distance:30], dealing @Damage[18d6[fire]] damage (@Check[type:reflex|dc:40|basic:true] save). Cloudsplitter can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 },
                 "action->Rearing Thrust": {
                     "name": "Rearing Thrust",
@@ -1074,7 +1074,7 @@
             "name": "Collapsing Structure",
             "description": "<p>Mogaru brushes against a structure, severely compromising the building's stability and possibly causing it to collapse.</p>",
             "disable": "<p>@Check[type:athletics|dc:43|name:Brace the Structure] (master), @Check[type:crafting|dc:43|name:Brace the Structure] (master), or @Check[type:engineering-lore|dc:43|name:Brace the Structure]{Engineering Lore} (master) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
-            "reset": "<p>The building becomes susceptible to Shake Apart again [[/r 1d6]]{1d6 rounds} after it is stabilized.</p>",
+            "reset": "<p>The building becomes susceptible to Shake Apart again [[/r 1d6]]{1k6 rounds} after it is stabilized.</p>",
             "routine": "<p>(1 action) The GM rolls a @Check[type:flat|dc:9] to determine if the building collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing @Damage[6d6[bludgeoning]] damage to @Damage[12d6[bludgeoning]] damage to [[/r 2d4]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true] save; on a critically failed Reflex save, the creature is restrained by rubble until freed [Force Open DC 38, Escape DC 35]).</p>",
             "stealth": "<p>+20 (master) to notice cracks forming in the walls of the structure as Mogaru approaches</p>",
             "items": {
@@ -1131,11 +1131,11 @@
                 },
                 "action->Rebuild": {
                     "name": "Rebuild",
-                    "description": "<p>The desecrated guardian draws in rubble from the surrounding area to rebuild its damaged body. It recovers 8d6 Hit Points. It can only use this ability if it is near suitable rock or rubble.</p>"
+                    "description": "<p>The desecrated guardian draws in rubble from the surrounding area to rebuild its damaged body. It recovers 8k6 Hit Points. It can only use this ability if it is near suitable rock or rubble.</p>"
                 },
                 "action->Avalanche": {
                     "name": "Avalanche",
-                    "description": "<p>The desecrated guardian thrashes its body about, causing the nearby terrain to crumble and crash down on creatures in a @Template[type:cone|distance:60], dealing @Damage[12d10[bludgeoning]] damage (@Check[type:reflex|dc:42|basic:true] save). It can't use Avalanche again for [[/br 1d4 #Recharge Avalanche]]{1d4 rounds}.</p>"
+                    "description": "<p>The desecrated guardian thrashes its body about, causing the nearby terrain to crumble and crash down on creatures in a @Template[type:cone|distance:60], dealing @Damage[12d10[bludgeoning]] damage (@Check[type:reflex|dc:42|basic:true] save). It can't use Avalanche again for [[/br 1d4 #Recharge Avalanche]]{1k4 rounds}.</p>"
                 },
                 "action->Coiled Rockslide": {
                     "name": "Coiled Rockslide",
@@ -1162,7 +1162,7 @@
         "Dimensional Darkside Mirror": {
             "name": "Dimensional Darkside Mirror",
             "description": "<p>A magic mirror replaces characters with evil mirror duplicates from another dimension.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (master) to permanently disable the mirror once all mirror duplicates are dead, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (master) to permanently disable the mirror once all mirror duplicates are dead, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
             "hpDetails": "The mirror can't be damaged while any mirror duplicate is alive",
             "reset": "<p>The mirror is always ready to absorb creatures into the other dimension. Ten minutes after a creature is sucked into the mirror, if an ally doesn't rescue the creature with Thievery, it reaches the other dimension, where it might be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can't destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like plane shift can't reach them.</p>",
             "routine": "<p>(1 action) The mirror absorbs another reflected creature into the mirror and replaces it with a mirror duplicate. Mirror duplicates attack on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change). A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to.</p>",
@@ -1204,7 +1204,7 @@
                 },
                 "action->Freezing Mist Breath": {
                     "name": "Freezing Mist Breath",
-                    "description": "<p>The drake spits a ball of liquid up to 60 feet that explodes into a @Template[type:burst|distance:20] of freezing mist. Those in the burst take @Damage[13d6[cold]] damage (@Check[type:reflex|dc:31|basic:true] save). The mist cakes all surfaces in the area with a sheet of slippery ice that turns the area into difficult terrain for [[/br 2d4 #rounds]]{2d4 rounds}. It can't use Freezing Mist Breath again for [[/br 1d6 #Recharge Freezing Mist Breath]]{1d6 rounds}.</p>"
+                    "description": "<p>The drake spits a ball of liquid up to 60 feet that explodes into a @Template[type:burst|distance:20] of freezing mist. Those in the burst take @Damage[13d6[cold]] damage (@Check[type:reflex|dc:31|basic:true] save). The mist cakes all surfaces in the area with a sheet of slippery ice that turns the area into difficult terrain for [[/br 2d4 #rounds]]{2k4 rounds}. It can't use Freezing Mist Breath again for [[/br 1d6 #Recharge Freezing Mist Breath]]{1k6 rounds}.</p>"
                 },
                 "action->Ice Climb (35 feet)": {
                     "name": "Ice Climb (35 feet)",
@@ -1309,7 +1309,7 @@
         "Floating Flamethrower": {
             "name": "Floating Flamethrower",
             "description": "<p>A floating skull of fire swoops around the arena, rotating as it weaves through the ring and releasing huge gouts of flame in random directions.</p>",
-            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
+            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
             "routine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals @Damage[(4d6+4)[fire]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>",
             "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the pattern of the orb's trajectory</p>",
             "items": {
@@ -1341,7 +1341,7 @@
                 },
                 "action->Hurricane Bag": {
                     "name": "Hurricane Bag",
-                    "description": "<p>A kaminari's bag holds the four winds. The kaminari unleashes four @Template[type:burst|distance:20]s within 60 feet with the effects of a 9th-rank wall of wind. In addition, a creature that enters one of the bursts takes @Damage[6d6[slashing]] damage (@Check[type:reflex|dc:40|basic:true] save). The bursts can't overlap. After using this activity the kaminari can't use Hurricane Bag for [[/br 1d4 #Recharge Hurricane Bag]]{1d4 rounds}.</p>\n<p>If a kaminari creates a column of lighting using Thunder Drums that intersects one of the areas of the wind, the wind explodes in a peal of thunder, dealing @Damage[6d10[sonic]] damage to creatures in the area of that wall of wind burst. Affected creatures must attempt a @Check[type:fortitude|dc:40|traits:damaging-effect] save. The kaminari can detonate only one burst per use of Thunder Drums.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage. Failure The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> The target takes double damage and is deafened permanently.</p>"
+                    "description": "<p>A kaminari's bag holds the four winds. The kaminari unleashes four @Template[type:burst|distance:20]s within 60 feet with the effects of a 9. kręgu wall of wind. In addition, a creature that enters one of the bursts takes @Damage[6d6[slashing]] damage (@Check[type:reflex|dc:40|basic:true] save). The bursts can't overlap. After using this activity the kaminari can't use Hurricane Bag for [[/br 1d4 #Recharge Hurricane Bag]]{1k4 rounds}.</p>\n<p>If a kaminari creates a column of lighting using Thunder Drums that intersects one of the areas of the wind, the wind explodes in a peal of thunder, dealing @Damage[6d10[sonic]] damage to creatures in the area of that wall of wind burst. Affected creatures must attempt a @Check[type:fortitude|dc:40|traits:damaging-effect] save. The kaminari can detonate only one burst per use of Thunder Drums.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage. Failure The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> The target takes double damage and is deafened permanently.</p>"
                 },
                 "action->Tempest Tether": {
                     "name": "Tempest Tether",
@@ -1349,7 +1349,7 @@
                 },
                 "action->Thunder Drums": {
                     "name": "Thunder Drums",
-                    "description": "<p>The peal of a kaminari's drums bring thunder and lightning. The kaminari summons four 100-foot-tall columns of lightning to strike in @Template[type:burst|distance:5]s within 60 feet. These columns can't overlap. Creatures in the burst take @Damage[8d12[electricity]] damage and must attempt a @Check[type:reflex|dc:40|traits:damaging-effect] save. The kaminari can't use Thunder Drums again for [[/br 1d4 #Recharge Thunder Drums]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
+                    "description": "<p>The peal of a kaminari's drums bring thunder and lightning. The kaminari summons four 100-foot-tall columns of lightning to strike in @Template[type:burst|distance:5]s within 60 feet. These columns can't overlap. Creatures in the burst take @Damage[8d12[electricity]] damage and must attempt a @Check[type:reflex|dc:40|traits:damaging-effect] save. The kaminari can't use Thunder Drums again for [[/br 1d4 #Recharge Thunder Drums]]{1k4 rounds}.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
                 },
                 "lore->Acrobatics": {
                     "skillVariants": {
@@ -1366,7 +1366,7 @@
         "Freezing Floor Tiles": {
             "name": "Freezing Floor Tiles",
             "description": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 38) to disable one of the sensors</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 38) to disable one of the sensors</p>",
             "routine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
             "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the four sensors</p>",
             "items": {
@@ -1390,7 +1390,7 @@
                 },
                 "action->Rejuvenation": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\nRejuvenation",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>Putting the abbot in A8 to rest brings peace to the ghost monks, allowing them to move on to the Serene Circle in Axis.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>Putting the abbot in A8 to rest brings peace to the ghost monks, allowing them to move on to the Serene Circle in Axis.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2k4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -1402,7 +1402,7 @@
                 },
                 "action->Telekinetic Assault": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\nTelekinetic Assault",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[type:emanation|distance:30]. Creatures in this area take @Damage[5d6[bludgeoning]] damage + 1d6 per 2 levels, subject to a @Check[type:reflex|dc:25|basic:true] save.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[type:emanation|distance:30]. Creatures in this area take @Damage[5d6[bludgeoning]] damage + 1k6 per 2 levels, subject to a @Check[type:reflex|dc:25|basic:true] save.</p>"
                 },
                 "lore->Irori Lore": {
                     "name": "Irori Lore"
@@ -1453,7 +1453,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Brartork deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Brartork deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1498,7 +1498,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Han deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Han deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1543,7 +1543,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Jun deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Jun deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1588,7 +1588,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Krankkiss deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Krankkiss deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1633,7 +1633,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Mingyu deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Mingyu deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1678,7 +1678,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Numoriz deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Numoriz deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1715,7 +1715,7 @@
                 },
                 "action->Palm Flurry": {
                     "name": "Palm Flurry",
-                    "description": "<p>Paunnima makes a dizzying number of palm Strikes, dealing @Damage[1d8[bludgeoning]] damage to all adjacent creatures. For each additional action she uses as part of Palm Flurry, the damage increases by 1d8 (@Damage[2d8[bludgeoning]]{2 actions}, @Damage[3d8[bludgeoning]]{3 actions}). Regardless of how many actions she uses, the targets can attempt a @Check[type:reflex|dc:30|basic:true] save.</p>"
+                    "description": "<p>Paunnima makes a dizzying number of palm Strikes, dealing @Damage[1d8[bludgeoning]] damage to all adjacent creatures. For each additional action she uses as part of Palm Flurry, the damage increases by 1k8 (@Damage[2d8[bludgeoning]]{2 actions}, @Damage[3d8[bludgeoning]]{3 actions}). Regardless of how many actions she uses, the targets can attempt a @Check[type:reflex|dc:30|basic:true] save.</p>"
                 },
                 "action->Powerful Fists": {
                     "name": "Powerful Fists",
@@ -1723,7 +1723,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Paunnima deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Paunnima deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -1764,7 +1764,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>Rajna deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>Rajna deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 },
                 "action->Reach Beyond": {
                     "name": "Reach Beyond",
@@ -1889,7 +1889,7 @@
                 },
                 "action->Guileful Charm": {
                     "name": "Guileful Charm",
-                    "description": "<p>Any creature that converses with a gumiho must attempt a @Check[type:will|dc:35] save. The creature then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected but knows the gumiho tried to charm it.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is affected by the failure effects of 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}.</p>\n<p><strong>Krytyczna Porażka</strong> The target is affected by the failure effects of @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}.</p>"
+                    "description": "<p>Any creature that converses with a gumiho must attempt a @Check[type:will|dc:35] save. The creature then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected but knows the gumiho tried to charm it.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is affected by the failure effects of 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}.</p>\n<p><strong>Krytyczna Porażka</strong> The target is affected by the failure effects of @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}.</p>"
                 },
                 "action->Charm Immunity": {
                     "name": "Charm Immunity"
@@ -2032,7 +2032,7 @@
                     "description": "<p>A hantu denai that succeeds at a Deception check to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} can mimic the sounds of any animal native to its environment. It adds a +4 circumstance bonus to this check.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A hantu denai's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A hantu denai's Strikes deal an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures</p>"
                 },
                 "action->Terrifying Cry": {
                     "name": "Terrifying Cry",
@@ -2185,7 +2185,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+3 Greater Striking Handwraps of Mighty Blows"
                 },
                 "consumable->Smokestick (Greater)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ehss8yPTXxiUdVlJ]\nSmokestick (Greater)",
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ehss8yPTXxiUdVlJ]\nSmokestick (Większy)",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ehss8yPTXxiUdVlJ]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>With a sharp twist of this item, you instantly create a screen of thick, opaque smoke in a burst centered on one corner of your space. All creatures within that area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>\n<p>The radius of the burst is 20 feet.</p>"
                 },
                 "strike-melee->Claw": {
@@ -2214,14 +2214,14 @@
                 },
                 "action->Foxfire Blast": {
                     "name": "Foxfire Blast",
-                    "description": "<p>Ji-yook makes a fist Strike. On a hit, the target takes an additional 3d6 electricity damage and is pushed back 5 feet. On a critical hit, the target is pushed back and then knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>"
+                    "description": "<p>Ji-yook makes a fist Strike. On a hit, the target takes an additional 3k6 electricity damage and is pushed back 5 feet. On a critical hit, the target is pushed back and then knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>"
                 },
                 "action->Pinning Shot": {
                     "name": "Pinning Shot",
                     "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it remains immobilized in this way.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook's Strikes deal an additional 4d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook's Strikes deal an additional 4k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
                 "action->Toughest Teamwork: Unsettling Murmur": {
                     "name": "Toughest Teamwork: Unsettling Murmur",
@@ -2241,7 +2241,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+2 Greater Striking Handwraps of Mighty Blows"
                 },
                 "consumable->Smokestick (Greater)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ehss8yPTXxiUdVlJ]\nSmokestick (Greater)",
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ehss8yPTXxiUdVlJ]\nSmokestick (Większy)",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ehss8yPTXxiUdVlJ]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>With a sharp twist of this item, you instantly create a screen of thick, opaque smoke in a burst centered on one corner of your space. All creatures within that area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>\n<p>The radius of the burst is 20 feet.</p>"
                 },
                 "strike-melee->Claw": {
@@ -2258,14 +2258,14 @@
                 },
                 "action->Foxfire Blast": {
                     "name": "Foxfire Blast",
-                    "description": "<p>Ji-yook makes a fist Strike. On a hit, the target takes an additional 3d4 electricity damage and is pushed back 10 feet. On a critical hit, the target is pushed back and then knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>"
+                    "description": "<p>Ji-yook makes a fist Strike. On a hit, the target takes an additional 3k4 electricity damage and is pushed back 10 feet. On a critical hit, the target is pushed back and then knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>"
                 },
                 "action->Pinning Shot": {
                     "name": "Pinning Shot",
                     "description": "<p>Ji-yook expertly aims and flings a dart to peg an opponent to a nearby wall or floor. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it remains immobilized in this way.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook Strikes deal an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook Strikes deal an additional 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -2281,7 +2281,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+1 Striking Handwraps of Mighty Blows"
                 },
                 "consumable->Smokestick (Lesser)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MoBlVd36uD9xVvZC]\nSmokestick (Lesser)",
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MoBlVd36uD9xVvZC]\nSmokestick (Mniejszy)",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MoBlVd36uD9xVvZC]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p>With a sharp twist of this item, you instantly create a screen of thick, opaque smoke in a burst centered on one corner of your space. All creatures within that area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>\n<p>The radius of the burst is 5 feet.</p>"
                 },
                 "strike-melee->Claw": {
@@ -2298,14 +2298,14 @@
                 },
                 "action->Foxfire Blast": {
                     "name": "Foxfire Blast",
-                    "description": "<p>Ji-yook makes a fist Strike. On a hit, the target takes an additional 2d4 electricity damage and is pushed back 5 feet. On a critical hit, the target is pushed back and then knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>"
+                    "description": "<p>Ji-yook makes a fist Strike. On a hit, the target takes an additional 2k4 electricity damage and is pushed back 5 feet. On a critical hit, the target is pushed back and then knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>"
                 },
                 "action->Pinning Shot": {
                     "name": "Pinning Shot",
                     "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it remains immobilized in this way.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook Strikes deal an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -2355,11 +2355,11 @@
                 },
                 "action->Wind-Fire Charge": {
                     "name": "Wind-Fire Charge",
-                    "description": "<p><strong>Wymagania</strong> Jin-Hae is wielding her feng huo lun</p>\n<hr />\n<p><strong>Efekt</strong> Jin-Hae blasts off on her feng huo lun, leaving an elemental trail in her wake. She Strides up to twice her Speed and makes a feng huo lun Strike at any point during her movement. The path left by her movement is filled with her choice of an 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind} or @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell. Jin-Hae is unaffected by any walls she creates with this ability. She cannot use Wind-Fire Charge again for [[/br 1d4 #rounds]]{1d4 rounds}. If she uses Wind-Fire Charge again, the wall created by her previous Wind-Fire Charge disappears as soon as her action is completed.</p>"
+                    "description": "<p><strong>Wymagania</strong> Jin-Hae is wielding her feng huo lun</p>\n<hr />\n<p><strong>Efekt</strong> Jin-Hae blasts off on her feng huo lun, leaving an elemental trail in her wake. She Strides up to twice her Speed and makes a feng huo lun Strike at any point during her movement. The path left by her movement is filled with her choice of an 8. kręgu @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind} or @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell. Jin-Hae is unaffected by any walls she creates with this ability. She cannot use Wind-Fire Charge again for [[/br 1d4 #rounds]]{1k4 rounds}. If she uses Wind-Fire Charge again, the wall created by her previous Wind-Fire Charge disappears as soon as her action is completed.</p>"
                 },
                 "action->Wind-Fire Chariot": {
                     "name": "Wind-Fire Chariot",
-                    "description": "<p><strong>Wymagania</strong> Jin-Hae is wielding two feng huo lun</p>\n<hr />\n<p><strong>Efekt</strong> Jin-Hae's feng huo lun float by her feet, giving her the benefits of 7th- level @UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration}. While this lasts, she can wield her feng huo lun even while her hands are full by kicking with them, and her feng huo lun gain the thrown 20 feet trait as well as the effects of a returning rune.</p>"
+                    "description": "<p><strong>Wymagania</strong> Jin-Hae is wielding two feng huo lun</p>\n<hr />\n<p><strong>Efekt</strong> Jin-Hae's feng huo lun float by her feet, giving her the benefits of 7.- level @UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration}. While this lasts, she can wield her feng huo lun even while her hands are full by kicking with them, and her feng huo lun gain the thrown 20 feet trait as well as the effects of a returning rune.</p>"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
@@ -2471,7 +2471,7 @@
                 },
                 "action->Rejuvenation": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\nRejuvenation",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>Burying Kannitri's remains in the courtyard or carving her name into the pagoda sculpture there (area <strong>A3</strong>) permanently puts her spirit to rest.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>Burying Kannitri's remains in the courtyard or carving her name into the pagoda sculpture there (area <strong>A3</strong>) permanently puts her spirit to rest.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2k4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
                 },
                 "action->Corrupting Gaze": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ga0Oj7mmjSwWQgmR]\nCorrupting Gaze",
@@ -2508,7 +2508,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8mhSUxEvNuXDP8Ki]\n<p>These stiff leather armguards grant you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>"
                 },
                 "consumable->Potion of Undetectability": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UblsH5cGyUdXypek]\n<p>Drinking this dull-black liquid makes you undetectable to divinations.</p>\n<p>This grants the same effects as @UUID[Compendium.pf2e.spells-srd.Item.C2w3YfBKjIRS07DP]{Hidden Mind}, but without the bonus against mental effects. You also gain the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Niewidzialność} spell, which protects against @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} spells of 8th level and lower and has a DC of 36 against @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}.</p>\n<p>The potion's effects last for 10 minutes.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UblsH5cGyUdXypek]\n<p>Drinking this dull-black liquid makes you undetectable to divinations.</p>\n<p>This grants the same effects as @UUID[Compendium.pf2e.spells-srd.Item.C2w3YfBKjIRS07DP]{Hidden Mind}, but without the bonus against mental effects. You also gain the effects of a 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Niewidzialność} spell, which protects against @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} spells of 8. level and lower and has a DC of 36 against @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}.</p>\n<p>The potion's effects last for 10 minutes.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -2585,7 +2585,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>The ki adept deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>The ki adept deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -2613,7 +2613,7 @@
                 },
                 "action->Channel Element": {
                     "name": "Channel Element",
-                    "description": "<p>Manyala and Rijana can draw upon the power in their bodies to temporarily channel energy. The next unarmed attack that they make deals 1d8 additional damage. This damage type is fire for Manyala and cold for Rijana.</p>"
+                    "description": "<p>Manyala and Rijana can draw upon the power in their bodies to temporarily channel energy. The next unarmed attack that they make deals 1k8 additional damage. This damage type is fire for Manyala and cold for Rijana.</p>"
                 },
                 "action->Entwined Energy Ki": {
                     "name": "Entwined Energy Ki",
@@ -2633,7 +2633,7 @@
                 },
                 "action->Punch Down": {
                     "name": "Punch Down",
-                    "description": "<p>The ki adept deals an extra 2d10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+                    "description": "<p>The ki adept deals an extra 2k10 damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creatures.</p>"
                 }
             }
         },
@@ -2739,11 +2739,11 @@
                 },
                 "action->Funnel": {
                     "name": "Funnel",
-                    "description": "<p>The kun inhales violently, sucking in heat and all creatures in the water in a @Template[type:cone|distance:60]. Creatures in the area must succeed at a @Check[type:fortitude|dc:33|traits:damaging-effect] save or take @Damage[10d8[cold]] damage. The kun can't Funnel again for [[/br 1d4 #Recharge Funnel]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is pulled 30 feet toward the kun.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is pulled 60 feet toward the kun.</p>"
+                    "description": "<p>The kun inhales violently, sucking in heat and all creatures in the water in a @Template[type:cone|distance:60]. Creatures in the area must succeed at a @Check[type:fortitude|dc:33|traits:damaging-effect] save or take @Damage[10d8[cold]] damage. The kun can't Funnel again for [[/br 1d4 #Recharge Funnel]]{1k4 rounds}.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is pulled 30 feet toward the kun.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is pulled 60 feet toward the kun.</p>"
                 },
                 "action->Heart of Darkness": {
                     "name": "Heart of Darkness",
-                    "description": "<p>Whenever the kun makes an attack from within an area of darkness, their attack deals an additional 2d6 spirit damage.</p>"
+                    "description": "<p>Whenever the kun makes an attack from within an area of darkness, their attack deals an additional 2k6 spirit damage.</p>"
                 },
                 "action->Swallow Whole": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(3d12+7)[bludgeoning]] damage, Rupture 30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -2809,7 +2809,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]\nInspire Courage"
                 },
                 "equipment->Maestro's Instrument (Greater)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rlDIbl6EQYXQpWVs]\n<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> You can play the instrument to produce the effects of an 8th level (DC 38) @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Wymagania Wytwarzania</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rlDIbl6EQYXQpWVs]\n<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> You can play the instrument to produce the effects of an 8. level (DC 38) @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Wymagania Wytwarzania</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>",
                     "rules": {
                         "0": {
                             "label": "Maestro's Instrument (playing it)"
@@ -2887,7 +2887,7 @@
             "languages": "wayang",
             "items": {
                 "weapon->Alchemist's Fire (Greater)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3k8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "equipment->Bracers of Armor I": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.02q8s6sSicMkhs1l]\nBracers of Armor I",
@@ -3125,7 +3125,7 @@
                     "description": "<p>The master xun @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Steps} or @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, then @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes}.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The master xun deals an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} opponents.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The master xun deals an extra 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} opponents.</p>"
                 }
             }
         },
@@ -3151,7 +3151,7 @@
                 },
                 "action->Mesmerizing Melody": {
                     "name": "Mesmerizing Melody",
-                    "description": "<p>The melodic squall sings in a sonorous chorus. Any creature in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:36] save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is fascinated for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The melodic squall sings in a sonorous chorus. Any creature in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:36] save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is fascinated for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
                 },
                 "action->Subsonic Burst": {
                     "name": "Subsonic Burst",
@@ -3170,7 +3170,7 @@
             "name": "Mogaru's Breath",
             "description": "<p>Mogaru exhales a blast of intense flames to eradicate any meddlesome pests in the area.</p>",
             "disable": "<p>@Check[type:performance|dc:50|name:Divert Mogaru's Attention] (legendary) or @Check[type:deception|dc:53|name:Divert Mogaru's Attention] (legendary) to momentarily divert Mogaru's attention</p>",
-            "reset": "<p>Mogaru must wait [[/br 1d4 #rounds]]{1d4 rounds} before letting loose another gout of fire.</p>",
+            "reset": "<p>Mogaru must wait [[/br 1d4 #rounds]]{1k4 rounds} before letting loose another gout of fire.</p>",
             "stealth": "<p>DC 10</p>",
             "items": {
                 "action->Volcanic Breath": {
@@ -3221,8 +3221,8 @@
             "blurb": "Female Tian-Shu empress",
             "items": {
                 "equipment->Hat of Disguise (Greater)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\nHat of Disguise (Greater)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> any number of times per day</p>\n<hr />\n<p><strong>Efekt</strong> The hat casts a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie} spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\nHat of Disguise (Większy)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WPSp5MLb0VOfmUqH]\n<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> any number of times per day</p>\n<hr />\n<p><strong>Efekt</strong> The hat casts a 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie} spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
                 },
                 "strike-melee->Butterfly Sword": {
                     "name": "Butterfly Sword"
@@ -3240,7 +3240,7 @@
                     "description": "<p><strong>Aktywator</strong> Nai Yan Fei hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Efekt</strong> The target attempts a @Check[type:fortitude|dc:39] save. It then becomes immune to Nai Yan Fei's Master Strike for 1 day.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of Nai Yan Fei's next turn.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 4 rounds.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 4 rounds, knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} for 2 hours, or killed (Nai Yan Fei's choice).</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nai Yan Fei's Strikes deal an additional 4d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nai Yan Fei's Strikes deal an additional 4k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
                 "lore->Goka Lore": {
                     "name": "Goka Lore"
@@ -3283,7 +3283,7 @@
                 },
                 "action->Faithful Weapon": {
                     "name": "Faithful Weapon",
-                    "description": "<p>A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4th level or higher, the deity's favored weapon gains the effects of a @UUID[Compendium.pf2e.equipment-srd.Item.DxCuJKynlnMQZHgp]{Striking} rune while the divine warden wields it; at 12th level, these effects are of a @UUID[Compendium.pf2e.equipment-srd.Item.KCQRFvUgbyclvOGi]{Greater Striking} rune, and at 19th level, they're instead of a @UUID[Compendium.pf2e.equipment-srd.Item.woxl2FrrgAcJDu0t]{Major Striking} rune.</p>"
+                    "description": "<p>A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4. level or higher, the deity's favored weapon gains the effects of a @UUID[Compendium.pf2e.equipment-srd.Item.DxCuJKynlnMQZHgp]{Striking} rune while the divine warden wields it; at 12. level, these effects are of a @UUID[Compendium.pf2e.equipment-srd.Item.KCQRFvUgbyclvOGi]{Greater Striking} rune, and at 19. level, they're instead of a @UUID[Compendium.pf2e.equipment-srd.Item.woxl2FrrgAcJDu0t]{Major Striking} rune.</p>"
                 },
                 "action->Instrument of Faith": {
                     "name": "Instrument of Faith",
@@ -3369,7 +3369,7 @@
                 },
                 "action->Flap Wings": {
                     "name": "Flap Wings",
-                    "description": "<p>The peng beats its wings to create a mighty burst of frosty air and push away foes. Each creature within 10 feet of the peng takes @Damage[3d6[bludgeoning]] damage and @Damage[3d6[cold]] damage (@Check[type:reflex|dc:32|basic:true] save). Creatures that fail their save are pushed away 10 feet; creatures that critically fail are pushed away 20 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The peng can't Flap Wings again for [[/br 1d4 #Recharge Flap Wings]]{1d4 rounds}.</p>"
+                    "description": "<p>The peng beats its wings to create a mighty burst of frosty air and push away foes. Each creature within 10 feet of the peng takes @Damage[3d6[bludgeoning]] damage and @Damage[3d6[cold]] damage (@Check[type:reflex|dc:32|basic:true] save). Creatures that fail their save are pushed away 10 feet; creatures that critically fail are pushed away 20 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The peng can't Flap Wings again for [[/br 1d4 #Recharge Flap Wings]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -3391,7 +3391,7 @@
                 },
                 "action->Planar Step": {
                     "name": "Planar Step",
-                    "description": "<p>The planar terra-cotta soldier momentarily moves beneath the Material Plane, instantly transporting itself to a location within 60 feet. The soldier can't use Planar Step again for [[/br 1d4 #Recharge Planar Step]]{1d4 rounds}</p>"
+                    "description": "<p>The planar terra-cotta soldier momentarily moves beneath the Material Plane, instantly transporting itself to a location within 60 feet. The soldier can't use Planar Step again for [[/br 1d4 #Recharge Planar Step]]{1k4 rounds}</p>"
                 }
             }
         },
@@ -3405,7 +3405,7 @@
             "items": {
                 "action->Planar Step": {
                     "name": "Planar Step",
-                    "description": "<p>The planar terra-cotta squadron momentarily moves beneath the Material Plane, instantly transporting itself to a location within 90 feet. The squadron can't use Planar Step again for [[/br 1d4 #Recharge Planar Step]]{1d4 rounds}</p>"
+                    "description": "<p>The planar terra-cotta squadron momentarily moves beneath the Material Plane, instantly transporting itself to a location within 90 feet. The squadron can't use Planar Step again for [[/br 1d4 #Recharge Planar Step]]{1k4 rounds}</p>"
                 },
                 "action->Troop Defenses": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 200 (12 squares), 100 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
@@ -3445,7 +3445,7 @@
                 },
                 "action->Eat Portal": {
                     "name": "Eat Portal",
-                    "description": "<p><strong>Wymagania</strong> The portal eater's beak is not grabbing a creature</p>\n<p><strong>Aktywator</strong> A creature teleports or is summoned within 50 feet of the portal eater</p>\n<hr />\n<p><strong>Efekt</strong> The portal eater attempts to eat the portal. It makes a counteract check against the effect (counteract modifier +33, counteract rank 9th). If the effect is counteracted, the creature arrives in the portal eater's beak and the portal eater @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} it.</p>"
+                    "description": "<p><strong>Wymagania</strong> The portal eater's beak is not grabbing a creature</p>\n<p><strong>Aktywator</strong> A creature teleports or is summoned within 50 feet of the portal eater</p>\n<hr />\n<p><strong>Efekt</strong> The portal eater attempts to eat the portal. It makes a counteract check against the effect (counteract modifier +33, counteract rank 9.). If the effect is counteracted, the creature arrives in the portal eater's beak and the portal eater @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} it.</p>"
                 },
                 "action->Enormous": {
                     "name": "Enormous",
@@ -3460,14 +3460,14 @@
                 },
                 "action->Reflect Spell": {
                     "name": "Reflect Spell",
-                    "description": "<p><strong>Aktywator</strong> A creature Casts a Spell that targets the portal eater</p>\n<hr />\n<p><strong>Efekt</strong> The portal eater attempts to counteract the spell (counteract modifier +32, counteract rank 9th). If the spell is counteracted, it targets the caster instead.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature Casts a Spell that targets the portal eater</p>\n<hr />\n<p><strong>Efekt</strong> The portal eater attempts to counteract the spell (counteract modifier +32, counteract rank 9.). If the spell is counteracted, it targets the caster instead.</p>"
                 },
                 "action->Swallow Whole": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Gargantuan, @Damage[(17d6+8)[force]] damage, Rupture 33</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "action->Unfurl Realities": {
                     "name": "Unfurl Realities",
-                    "description": "<p>The portal eater unfurls its crystalline cloak of stolen realities, releasing a wave of cosmic energy and casting @UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray} (DC 39) in a @Template[type:emanation|distance:60]. The portal eater can't Unfurl Realities again for [[/br 1d4 #Recharge Unfurl Realities]]{1d4 rounds}.</p>"
+                    "description": "<p>The portal eater unfurls its crystalline cloak of stolen realities, releasing a wave of cosmic energy and casting @UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray} (DC 39) in a @Template[type:emanation|distance:60]. The portal eater can't Unfurl Realities again for [[/br 1d4 #Recharge Unfurl Realities]]{1k4 rounds}.</p>"
                 },
                 "action->Improved Push 20ft": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.6l7e7CHQLESlI57U]\nImproved Push 20ft"
@@ -3478,7 +3478,7 @@
             "name": "Quaking Footfall",
             "description": "<p>Mogaru's steady footsteps pick up speed, causing the earth around him to tremble as though from a powerful earthquake.</p>",
             "disable": "<p>three @Check[type:athletics|dc:39|name:Brace a Small Structure or Surface] (trained), @Check[type:crafting|dc:39|name:Brace a Small Structure or Surface] (trained), or @Check[type:engineering|dc:39|name:Brace a Small Structure or Surface]{Engineering Lore} (trained) checks to brace a small structure or surface to cancel the effects of the quake in that area; @Check[type:performance|dc:41|name:Calm Mogaru] (legendary) to calm Mogaru momentarily</p>",
-            "reset": "<p>Mogaru doesn't rush this way again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+            "reset": "<p>Mogaru doesn't rush this way again for [[/br 1d4 #rounds]]{1k4 rounds}.</p>",
             "stealth": "<p>DC 10</p>",
             "items": {
                 "action->Quake": {
@@ -3726,7 +3726,7 @@
                 },
                 "spell->Veil": {
                     "name": "Veil",
-                    "description": "<p>You disguise the targets as other creatures of the same body shape and roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise can hide the targets' identities or let them appear to be of another ancestry, but it's not precise enough to impersonate specific individuals. The spell doesn't change voice, scent, or mannerisms. You choose the disguise for each target; for example, you could make one target appear to be a dwarf and another an elf. Casting veil counts as setting up a disguise for the purpose of the Impersonate action. It allows the target to ignore any circumstance penalties they might take for being disguised as dissimilar creatures, and it gives the targets a +4 status bonus to Deception checks to prevent others from seeing through their disguises, and add their level even if untrained. You can Dismiss any or all of these disguises.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell also disguises the targets' voices and scents; it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (7th)</strong> The targets can appear as any creature of the same size, even specific individuals. You must have seen an individual to reproduce their appearance. The spell also disguises the targets' voices and scents; it gains the auditory and olfactory traits.</p>",
+                    "description": "<p>You disguise the targets as other creatures of the same body shape and roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise can hide the targets' identities or let them appear to be of another ancestry, but it's not precise enough to impersonate specific individuals. The spell doesn't change voice, scent, or mannerisms. You choose the disguise for each target; for example, you could make one target appear to be a dwarf and another an elf. Casting veil counts as setting up a disguise for the purpose of the Impersonate action. It allows the target to ignore any circumstance penalties they might take for being disguised as dissimilar creatures, and it gives the targets a +4 status bonus to Deception checks to prevent others from seeing through their disguises, and add their level even if untrained. You can Dismiss any or all of these disguises.</p>\n<hr />\n<p><strong>Heightened (5.)</strong> The spell also disguises the targets' voices and scents; it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (7.)</strong> The targets can appear as any creature of the same size, even specific individuals. You must have seen an individual to reproduce their appearance. The spell also disguises the targets' voices and scents; it gains the auditory and olfactory traits.</p>",
                     "target": "up to 10 creatures"
                 },
                 "spell->See Invisibility": {
@@ -3748,7 +3748,7 @@
                 },
                 "equipment->Greater Maestro's Instrument (Erhu)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rlDIbl6EQYXQpWVs]\nGreater Maestro's Instrument (Erhu)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rlDIbl6EQYXQpWVs]\n<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> You can play the instrument to produce the effects of an 8th level (DC 38) @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Wymagania Wytwarzania</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rlDIbl6EQYXQpWVs]\n<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> You can play the instrument to produce the effects of an 8. level (DC 38) @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Wymagania Wytwarzania</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>",
                     "rules": {
                         "0": {
                             "label": "Maestro's Instrument (playing it)"
@@ -3760,7 +3760,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.drxEWZl8mqMOZ23E]\n<p>This sour potion enlivens your tongue with unusual flavors and uncommon eloquence, allowing you to speak and understand all languages for 4 hours after you drink it. This doesn't allow you to read these languages in their written form.</p>"
                 },
                 "consumable->Truesight Potion": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.CoMwPsQ8mPj5Evti]\n<p>Upon drinking this clear, refreshing potion, you can see things as they actually are. You gain the benefits of a 7th level @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight} spell that has a counteract modifier of [[/r 1d20+25]].</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.CoMwPsQ8mPj5Evti]\n<p>Upon drinking this clear, refreshing potion, you can see things as they actually are. You gain the benefits of a 7. level @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight} spell that has a counteract modifier of [[/r 1d20+25]].</p>"
                 },
                 "strike-melee->Erhu Bow": {
                     "name": "Erhu Bow"
@@ -3808,7 +3808,7 @@
                 },
                 "action->Kaiju Ray": {
                     "name": "Kaiju Ray",
-                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[cold]] damage (@Check[type:reflex|dc:32|basic:true|traits:cold] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1d4 rounds}.</p>"
+                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[cold]] damage (@Check[type:reflex|dc:32|basic:true|traits:cold] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -3836,7 +3836,7 @@
                 },
                 "action->Kaiju Ray": {
                     "name": "Kaiju Ray",
-                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[acid]] damage (@Check[type:reflex|dc:32|basic:true|traits:acid] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1d4 rounds}.</p>"
+                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[acid]] damage (@Check[type:reflex|dc:32|basic:true|traits:acid] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -3864,7 +3864,7 @@
                 },
                 "action->Kaiju Ray": {
                     "name": "Kaiju Ray",
-                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[void]] damage (@Check[type:reflex|dc:32|basic:true|traits:void] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1d4 rounds}.</p>"
+                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[void]] damage (@Check[type:reflex|dc:32|basic:true|traits:void] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -3892,7 +3892,7 @@
                 },
                 "action->Kaiju Ray": {
                     "name": "Kaiju Ray",
-                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[fire]] damage (@Check[type:reflex|dc:32|basic:true|traits:fire] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1d4 rounds}.</p>"
+                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[fire]] damage (@Check[type:reflex|dc:32|basic:true|traits:fire] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -3920,7 +3920,7 @@
                 },
                 "action->Kaiju Ray": {
                     "name": "Kaiju Ray",
-                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[electricity]] damage (@Check[type:reflex|dc:32|basic:true|traits:electricity] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1d4 rounds}.</p>"
+                    "description": "<p>The rivka opens its maw and projects a @Template[type:line|distance:60] of primal energy that deals @Damage[14d6[electricity]] damage (@Check[type:reflex|dc:32|basic:true|traits:electricity] save). The type of damage dealt by the ray depends on which kaiju the rivka has most recently fed from (see above). The rivka can't use Kaiju Ray again for [[/br 1d4 #Recharge Kaiju Ray]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -3951,7 +3951,7 @@
                 },
                 "action->Golden Sun": {
                     "name": "Golden Sun",
-                    "description": "<p>10 feet. A golden aura envelopes the sanzuwu, protecting them from weak magic. Any non-cold spells of 3rd rank or lower burn away and are ineffective. A sanzuwu can deactivate or activate the golden aura as a free action with the concentrate trait.</p>"
+                    "description": "<p>10 feet. A golden aura envelopes the sanzuwu, protecting them from weak magic. Any non-cold spells of 3. rank or lower burn away and are ineffective. A sanzuwu can deactivate or activate the golden aura as a free action with the concentrate trait.</p>"
                 },
                 "action->Scorching Gaze": {
                     "name": "Scorching Gaze",
@@ -3959,15 +3959,15 @@
                 },
                 "action->Fiery Transformation": {
                     "name": "Fiery Transformation",
-                    "description": "<p>The sanzuwu transforms into an enormous bird made of flame. As the sanzuwu begins their transformation, creatures within a @Template[type:emanation|distance:10] take @Damage[6d8[fire]] damage (@Check[type:reflex|dc:33|basic:true] save). While in their flame form, the sanzuwu gains the effects of 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}. They can use Fiery Transformation again to revert back to their standard form.</p>"
+                    "description": "<p>The sanzuwu transforms into an enormous bird made of flame. As the sanzuwu begins their transformation, creatures within a @Template[type:emanation|distance:10] take @Damage[6d8[fire]] damage (@Check[type:reflex|dc:33|basic:true] save). While in their flame form, the sanzuwu gains the effects of 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}. They can use Fiery Transformation again to revert back to their standard form.</p>"
                 },
                 "action->Radiant Blast": {
                     "name": "Radiant Blast",
-                    "description": "<p>The sanzuwu opens their mouth to produce a bead of burning energy, hurling it a point within 200 feet. The bead detonates, dealing @Damage[7d8[fire]] damage and @Damage[4d10[sonic]] damage to all creatures in a @Template[type:burst|distance:30] (@Check[type:reflex|dc:33|basic:true] save). Creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. The sanzuwu can't use Radiant Blast again for [[/br 1d4 #Recharge Radiant Blast]]{1d4 rounds}.</p>"
+                    "description": "<p>The sanzuwu opens their mouth to produce a bead of burning energy, hurling it a point within 200 feet. The bead detonates, dealing @Damage[7d8[fire]] damage and @Damage[4d10[sonic]] damage to all creatures in a @Template[type:burst|distance:30] (@Check[type:reflex|dc:33|basic:true] save). Creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. The sanzuwu can't use Radiant Blast again for [[/br 1d4 #Recharge Radiant Blast]]{1k4 rounds}.</p>"
                 },
                 "action->Scorch Earth": {
                     "name": "Scorch Earth",
-                    "description": "<p><strong>Wymagania</strong> The sanzuwu is standing on the ground</p>\n<hr />\n<p><strong>Efekt</strong> The sanzuwu Strides. A 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} appears in all the spaces the sanzuwu left during this movement, lasting for 1 round. The sanzuwu can't use Scorch Earth again for [[/br 1d4 #Recharge Scorch Earth]]{1d4 rounds}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The sanzuwu is standing on the ground</p>\n<hr />\n<p><strong>Efekt</strong> The sanzuwu Strides. A 6. kręgu @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} appears in all the spaces the sanzuwu left during this movement, lasting for 1 round. The sanzuwu can't use Scorch Earth again for [[/br 1d4 #Recharge Scorch Earth]]{1k4 rounds}.</p>"
                 },
                 "action->Transfixing Sunbeam": {
                     "name": "Transfixing Sunbeam",
@@ -4058,7 +4058,7 @@
                     "description": "<p>Hakusa targets a foe's pressure points to debilitate them. Hakusa makes a fist Strike. On a hit, the target takes damage as normal and must attempt a @Check[type:fortitude|dc:35] save. Regardless of the result of the save, the target is temporarily immune to Pressure Point Attack for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target's muscles become temporarily weaker. For 1 round, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and must succeed at a @Check[type:flat|dc:5] check when attempting to use actions with the manipulate trait or the action is lost.</p>\n<p><strong>Porażka</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> As success, but the duration is 1 minute, the flat check is @Check[type:flat|dc:11], and the target also takes –10-foot status penalty to their Speed for the duration.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hakusa's Strikes deal an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hakusa's Strikes deal an additional 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -4096,7 +4096,7 @@
                     "description": "<p>Hakusa makes precise attacks that can debilitate a foe's movements. Hakusa makes a fist Strike. On a hit, the target takes damage as normal and must attempt a @Check[type:fortitude|dc:38] save. Regardless of the result of the save, the target is temporarily immune to Pressure Point Attack for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target's muscles become temporarily weaker. For 1 round, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and must succeed at a @Check[type:flat|dc:5] check when attempting to use actions with the manipulate trait or the action is lost.</p>\n<p><strong>Porażka</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> As success, but the duration is 1 minute, the flat check is DC 11, and the target also takes –10-foot status penalty to their Speed for the duration.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hakusa's Strikes deal an additional 4d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hakusa's Strikes deal an additional 4k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -4110,7 +4110,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+3 Major Striking Greater Shock Handwraps of Mighty Blows"
                 },
                 "consumable->Potion of Flying (Greater)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.E999hL7XlAlfZhjK]\n<p>Upon drinking this effervescent concoction, you gain a fly Speed of 40 feet for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Zdh2uO1vVYJmaqld]{Efekt: Potion of Flying (Greater)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.E999hL7XlAlfZhjK]\n<p>Upon drinking this effervescent concoction, you gain a fly Speed of 40 feet for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Zdh2uO1vVYJmaqld]{Efekt: Potion of Flying (Większy)}</p>"
                 },
                 "strike-melee->Fingers": {
                     "name": "Fingers"
@@ -4137,7 +4137,7 @@
                     "description": "<p>Hakusa rapidly strikes at pressure points to debilitate a foe. She makes a fingers Strike. On a hit, the target takes damage as normal and must attempt a @Check[type:fortitude|dc:43] save. Regardless of the result of the save, the target is then temporarily immune to Pressure Point Attack for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target's muscles become temporarily weaker. For 1 round, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and any time it attempts to take an action with the manipulate trait, the action is disrupted unless it succeeds at a flat check with a DC equal to 5 + its enfeebled value.</p>\n<p><strong>Porażka</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> As success, but the duration is 1 minute, the flat check is DC 11, and the target takes a –10-foot status penalty to all Speeds for the duration.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hakusa's Strikes deal an extra 5d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hakusa's Strikes deal an extra 5k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
                 "action->Swallows in Flight": {
                     "name": "Swallows in Flight",
@@ -4318,7 +4318,7 @@
                 },
                 "action->Mover of Worlds": {
                     "name": "Mover of Worlds",
-                    "description": "<p>With great regret, Syndara calls his masterpieces from the firmament to crash down upon his enemies. He flings four worldspheres to any four points within 500 feet. Each worldsphere deals 20d6 damage in a @Template[type:burst|distance:40] (@Check[type:reflex|dc:48|basic:true] save). Syndara chooses the type of damage for each worldsphere, which can be any type he chooses, though each worldsphere must deal a different type of damage. On a failed save, the target is pushed to the edge of the burst. No matter how many overlapping explosions it's caught in, a creature can take damage from only one worldsphere per round. Syndara is immune to the damage dealt by his worldspheres. Syndara can't use Mover of Worlds again for [[/br 1d4 #Recharge Mover of Worlds]]{1d4 rounds}.</p>"
+                    "description": "<p>With great regret, Syndara calls his masterpieces from the firmament to crash down upon his enemies. He flings four worldspheres to any four points within 500 feet. Each worldsphere deals 20k6 damage in a @Template[type:burst|distance:40] (@Check[type:reflex|dc:48|basic:true] save). Syndara chooses the type of damage for each worldsphere, which can be any type he chooses, though each worldsphere must deal a different type of damage. On a failed save, the target is pushed to the edge of the burst. No matter how many overlapping explosions it's caught in, a creature can take damage from only one worldsphere per round. Syndara is immune to the damage dealt by his worldspheres. Syndara can't use Mover of Worlds again for [[/br 1d4 #Recharge Mover of Worlds]]{1k4 rounds}.</p>"
                 },
                 "action->Rend": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Spatial Pincers</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -4365,14 +4365,14 @@
                 },
                 "action->Pacifying Aura": {
                     "name": "Pacifying Aura",
-                    "description": "<p>100 feet. A spirit turtle exudes a constant feeling of calm. Creatures within the aura are subjected to a 10th-rank @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm} spell (@Check[type:will|dc:44] save). The effects persist up to 1 hour, even if the creature leaves the aura. Regardless of the result of the saving throw, the creature is temporarily immune for 1 hour.</p>"
+                    "description": "<p>100 feet. A spirit turtle exudes a constant feeling of calm. Creatures within the aura are subjected to a 10. kręgu @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm} spell (@Check[type:will|dc:44] save). The effects persist up to 1 hour, even if the creature leaves the aura. Regardless of the result of the saving throw, the creature is temporarily immune for 1 hour.</p>"
                 },
                 "action->Constrict": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(4d12+7)[bludgeoning]], @Check[type:fortitude|dc:41|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "action->Unbalancing Stomp": {
                     "name": "Unbalancing Stomp",
-                    "description": "<p>The spirit turtle makes a foot Strike. Whether or not the Strike hits, the stomp creates a shockwave on the ground in a @Template[type:burst|distance:15] centered on the target. All creatures in the area other than the spirit turtle take 10d10 bludgeoning and 4d8 energy damage and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (@Check[type:reflex|dc:41|basic:true] save). Creatures that critically succeed at their Reflex save are not knocked prone. The spirit turtle can't use Unbalancing Stomp again for [[/br 1d4 #Recharge Unbalancing Stomp]]{1d4 rounds}.</p>\n<p>@Damage[10d10[bludgeoning],4d8[acid]]</p>\n<p>@Damage[10d10[bludgeoning],4d8[cold]]</p>\n<p>@Damage[10d10[bludgeoning],4d8[electricity]]</p>\n<p>@Damage[10d10[bludgeoning],4d8[fire]]</p>"
+                    "description": "<p>The spirit turtle makes a foot Strike. Whether or not the Strike hits, the stomp creates a shockwave on the ground in a @Template[type:burst|distance:15] centered on the target. All creatures in the area other than the spirit turtle take 10k10 bludgeoning and 4k8 energy damage and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (@Check[type:reflex|dc:41|basic:true] save). Creatures that critically succeed at their Reflex save are not knocked prone. The spirit turtle can't use Unbalancing Stomp again for [[/br 1d4 #Recharge Unbalancing Stomp]]{1k4 rounds}.</p>\n<p>@Damage[10d10[bludgeoning],4k8[acid]]</p>\n<p>@Damage[10d10[bludgeoning],4k8[cold]]</p>\n<p>@Damage[10d10[bludgeoning],4k8[electricity]]</p>\n<p>@Damage[10d10[bludgeoning],4k8[fire]]</p>"
                 },
                 "lore->All Lores": {
                     "name": "All Lores"
@@ -4443,10 +4443,10 @@
                 },
                 "action->Rain-Scribe Arrow": {
                     "name": "Rain-Scribe Arrow",
-                    "description": "<p>When Surjit critically hits a creature with a ranged weapon or hits a creature for the second time on a turn with a ranged weapon, Surjit can attempt to counteract one magic effect on the creature (counteract rank 7th). He uses his attack modifier as his counteract modifier.</p>"
+                    "description": "<p>When Surjit critically hits a creature with a ranged weapon or hits a creature for the second time on a turn with a ranged weapon, Surjit can attempt to counteract one magic effect on the creature (counteract rank 7.). He uses his attack modifier as his counteract modifier.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Surjit deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Surjit deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
                 }
             }
         },
@@ -4454,7 +4454,7 @@
             "name": "Swatting Tail",
             "description": "<p>Mogaru's tail sweeps forth, causing an arc of devastation in a @Template[type:cone|distance:60].</p>",
             "disable": "<p>@Check[type:performance|dc:45|name:Divert Mogaru's Attention] (legendary) or @Check[type:deception|dc:48|name:Divert Mogaru's Attention] (legendary) to momentarily divert Mogaru's attention</p>",
-            "reset": "<p>Mogaru doesn't swat his tail again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+            "reset": "<p>Mogaru doesn't swat his tail again for [[/br 1d4 #rounds]]{1k4 rounds}.</p>",
             "stealth": "<p>DC 10</p>",
             "items": {
                 "action->Tail Swat": {
@@ -4524,11 +4524,11 @@
                 },
                 "action->Gateway Onslaught": {
                     "name": "Gateway Onslaught",
-                    "description": "<p><strong>Wymagania</strong> Syndara is in the Glass Lighthouse</p>\n<hr />\n<p><strong>Efekt</strong> Syndara folds the fabric of the Glass Lighthouse before opening several gateways from which dangerous elements spew forth. He teleports to his throne, regardless of distance, then makes three elemental gateway Strikes. Each Strike must target a different creature. He can't use Gateway Onslaught again for [[/br 1d4 #Recharge Gateway Onslaught]]{1d4 rounds}.</p>"
+                    "description": "<p><strong>Wymagania</strong> Syndara is in the Glass Lighthouse</p>\n<hr />\n<p><strong>Efekt</strong> Syndara folds the fabric of the Glass Lighthouse before opening several gateways from which dangerous elements spew forth. He teleports to his throne, regardless of distance, then makes three elemental gateway Strikes. Each Strike must target a different creature. He can't use Gateway Onslaught again for [[/br 1d4 #Recharge Gateway Onslaught]]{1k4 rounds}.</p>"
                 },
                 "action->Planar Restructuring": {
                     "name": "Planar Restructuring",
-                    "description": "<p><strong>Wymagania</strong> Syndara is in the Glass Lighthouse</p>\n<hr />\n<p><strong>Efekt</strong> Syndara exerts his will over the Glass Lighthouse to cause one of several effects. The effect is magical, but Syndara isn't using magic when he takes this action-just triggering a magical effect he already set up. The level for each of these effects is 10, and any save is DC 45. Syndara or Syndara's Reflection can't use Planar Restructuring for [[/br 1d4 #Recharge Planar Restructuring]]{1d4 rounds}.</p>\n<p>- Accelerate/Decelerate Syndara affects the flow of time around a target within 60 feet, affecting them with either haste or slow.</p>\n<p>- Deny Syndara rejects the existence of a power other than his own, affecting an object with disjunction.</p>\n<p>- Rewind Syndara rewinds time to undo harm. He or his reflection are affected by the two-action version of heal or by restoration.</p>\n<p>- Rise Syndara creates a gravitational nexus of reverse gravity.</p>\n<p>- Sequester Syndara folds space to affect a creature with resilient sphere.</p>"
+                    "description": "<p><strong>Wymagania</strong> Syndara is in the Glass Lighthouse</p>\n<hr />\n<p><strong>Efekt</strong> Syndara exerts his will over the Glass Lighthouse to cause one of several effects. The effect is magical, but Syndara isn't using magic when he takes this action-just triggering a magical effect he already set up. The level for each of these effects is 10, and any save is DC 45. Syndara or Syndara's Reflection can't use Planar Restructuring for [[/br 1d4 #Recharge Planar Restructuring]]{1k4 rounds}.</p>\n<p>- Accelerate/Decelerate Syndara affects the flow of time around a target within 60 feet, affecting them with either haste or slow.</p>\n<p>- Deny Syndara rejects the existence of a power other than his own, affecting an object with disjunction.</p>\n<p>- Rewind Syndara rewinds time to undo harm. He or his reflection are affected by the two-action version of heal or by restoration.</p>\n<p>- Rise Syndara creates a gravitational nexus of reverse gravity.</p>\n<p>- Sequester Syndara folds space to affect a creature with resilient sphere.</p>"
                 },
                 "action->Temporal Flurry": {
                     "name": "Temporal Flurry",
@@ -4699,7 +4699,7 @@
                 },
                 "action->Silkworm's Basket": {
                     "name": "Silkworm's Basket",
-                    "description": "<p>Syu Tak-nwa tears thousands of minute portals into space, sending a single hair through each. The hairs emerge at a space within 30 feet, braiding and twining together to create a cube 20 feet to each side. This has the effects of a 10th-rank force cage, except that Syu Tak-nwa does not need to sustain the basket; it has a duration of 1 minute. While the Silkworm's Basket persists, Syu Tak-nwa is quickened and can use the extra action only to make a hair or braid Strike against any target within the basket, regardless of her distance to them. She can't create more than one basket at a time.</p>"
+                    "description": "<p>Syu Tak-nwa tears thousands of minute portals into space, sending a single hair through each. The hairs emerge at a space within 30 feet, braiding and twining together to create a cube 20 feet to each side. This has the effects of a 10. kręgu force cage, except that Syu Tak-nwa does not need to sustain the basket; it has a duration of 1 minute. While the Silkworm's Basket persists, Syu Tak-nwa is quickened and can use the extra action only to make a hair or braid Strike against any target within the basket, regardless of her distance to them. She can't create more than one basket at a time.</p>"
                 },
                 "action->Spiraling Web": {
                     "name": "Spiraling Web",
@@ -4755,7 +4755,7 @@
                 },
                 "action->Return to Nature": {
                     "name": "Return to Nature",
-                    "description": "<p>The taiga yai commands underground plant roots to drag a creature within 60 feet into the earth. The target must succeed at a @Check[type:fortitude|dc:35] save or be @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for [[/br 1d4 #rounds]]{1d4 rounds}. After this time, the creature is buried; it is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, begins to suffocate, and takes @Damage[4d6[bludgeoning]] damage each round they remain buried. To @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} either while immobilized or grabbed, the creature must succeed at a DC 35 Escape check or an adjacent ally must succeed at a @Check[type:athletics|dc:33] check to pull them out.</p>"
+                    "description": "<p>The taiga yai commands underground plant roots to drag a creature within 60 feet into the earth. The target must succeed at a @Check[type:fortitude|dc:35] save or be @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for [[/br 1d4 #rounds]]{1k4 rounds}. After this time, the creature is buried; it is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, begins to suffocate, and takes @Damage[4d6[bludgeoning]] damage each round they remain buried. To @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} either while immobilized or grabbed, the creature must succeed at a DC 35 Escape check or an adjacent ally must succeed at a @Check[type:athletics|dc:33] check to pull them out.</p>"
                 }
             }
         },
@@ -4882,7 +4882,7 @@
                 },
                 "action->Sonic Screech": {
                     "name": "Sonic Screech",
-                    "description": "<p>Tamikan unleashes a powerful and deadly blast of sonic force from her maw that deals @Damage[12d6[sonic]] damage in a @Template[type:line|distance:100] (@Check[type:reflex|dc:37|basic:true] save). She can't use Sonic Screech again for [[/br 1d4 #Recharge Sonic Screech]]{1d4 rounds}.</p>"
+                    "description": "<p>Tamikan unleashes a powerful and deadly blast of sonic force from her maw that deals @Damage[12d6[sonic]] damage in a @Template[type:line|distance:100] (@Check[type:reflex|dc:37|basic:true] save). She can't use Sonic Screech again for [[/br 1d4 #Recharge Sonic Screech]]{1k4 rounds}.</p>"
                 },
                 "action->Wailing Dive": {
                     "name": "Wailing Dive",
@@ -5214,7 +5214,7 @@
                 },
                 "action->Telekinetic Storm": {
                     "name": "Telekinetic Storm",
-                    "description": "<p>The poltergeist telekinetically throws numerous small objects, such as dozens of pieces of silverware or books, either spreading them out among multiple foes or directing them at one target. When this effect is spread out among multiple foes, the poltergeist makes a telekinetic object Strike at a –2 penalty against each creature within 30 feet. These count as one attack for the poltergeist's multiple attack penalty, and the penalty doesn't increase until after all the attacks. When this effect has only one target, the poltergeist makes a telekinetic object Strike against the target, and the damage increases to [[/r {4d12+15}]]{4d12+15 damage}. It deals [[/r {2d12}]]{2d12 damage} on a failure, and no damage on a critical failure.</p>"
+                    "description": "<p>The poltergeist telekinetically throws numerous small objects, such as dozens of pieces of silverware or books, either spreading them out among multiple foes or directing them at one target. When this effect is spread out among multiple foes, the poltergeist makes a telekinetic object Strike at a –2 penalty against each creature within 30 feet. These count as one attack for the poltergeist's multiple attack penalty, and the penalty doesn't increase until after all the attacks. When this effect has only one target, the poltergeist makes a telekinetic object Strike against the target, and the damage increases to [[/r {4d12+15}]]{4k12+15 damage}. It deals [[/r {2d12}]]{2k12 damage} on a failure, and no damage on a critical failure.</p>"
                 }
             }
         },
@@ -5296,7 +5296,7 @@
                 },
                 "action->Wraith Spawn": {
                     "name": "Wraith Spawn",
-                    "description": "<p>A living humanoid slain by a wraith's spectral hand Strike rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.HbROgIcU9Z9m6XuD]{Wraith Spawn} after [[/br 1d4 #Wraith Spawn Transformation]]{1d4 rounds}. This wraith spawn is under the command of the wraith that killed it. It doesn't have drain life or wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains its free will, gains Wraith Spawn, and is no longer clumsy.</p>"
+                    "description": "<p>A living humanoid slain by a wraith's spectral hand Strike rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.HbROgIcU9Z9m6XuD]{Wraith Spawn} after [[/br 1d4 #Wraith Spawn Transformation]]{1k4 rounds}. This wraith spawn is under the command of the wraith that killed it. It doesn't have drain life or wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains its free will, gains Wraith Spawn, and is no longer clumsy.</p>"
                 }
             }
         },
@@ -5311,7 +5311,7 @@
                 },
                 "action->Dueling Expertise": {
                     "name": "Dueling Expertise",
-                    "description": "<p>The weapon master deals an extra 2d10 damage to creatures that are not adjacent to any allies or other foes.</p>"
+                    "description": "<p>The weapon master deals an extra 2k10 damage to creatures that are not adjacent to any allies or other foes.</p>"
                 },
                 "action->Swift Blow": {
                     "name": "Swift Blow",
@@ -5333,7 +5333,7 @@
                 },
                 "action->Dueling Expertise": {
                     "name": "Dueling Expertise",
-                    "description": "<p>The weapon master deals an extra 2d10 damage to creatures that are not adjacent to any allies or other foes.</p>"
+                    "description": "<p>The weapon master deals an extra 2k10 damage to creatures that are not adjacent to any allies or other foes.</p>"
                 },
                 "action->Swift Blow": {
                     "name": "Swift Blow",
@@ -5448,7 +5448,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
                 },
                 "weapon->Tanglefoot Bag (Greater)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\nTanglefoot Bag (Greater)",
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\nTanglefoot Bag (Większy)",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the Escape DC is 28.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "strike-melee->Bo Staff": {
@@ -5466,7 +5466,7 @@
                 },
                 "action->Quickened Casting": {
                     "name": "Quickened Casting",
-                    "description": "<p>If Yabin's next action is to cast a sorcerer cantrip or a sorcerer spell of 5th rank or lower, he reduces the number of actions to cast it by 1 (minimum 1 action).</p>"
+                    "description": "<p>If Yabin's next action is to cast a sorcerer cantrip or a sorcerer spell of 5. rank or lower, he reduces the number of actions to cast it by 1 (minimum 1 action).</p>"
                 }
             }
         },

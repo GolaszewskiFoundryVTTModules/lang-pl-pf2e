@@ -38,6 +38,21 @@ class LocalizationUpdater:
         # PYTHON READS THE JSON STRING WITH ITS ESCAPE CHARACTERS ACCOUNTED FOR
         # Escape signs in JSON need to be accounted for in regex (usually reduced/removed)
         self.replacement_patterns = [
+            # Ordinals
+            (r'([0-9]+)(st|nd|rd|th)', r'\1.'),
+            (r'([0-9]+\.)-Level', r'\1 Poziomu.'),
+            (r'([0-9]+\.)-level', r'\1 poziomu.'),
+            (r'([0-9]+\.)-Rank', r'\1 Kręgu'),
+            (r'([0-9]+\.)-rank', r'\1 kręgu'),
+            # Dies
+            (r'([0-9]*)d([0-9]+)', r'\1k\2'),
+            # Initial Variants
+            (r'\(Minor\)', r'(Drobny)'),
+            (r'\(Lesser\)', r'(Mniejszy)'),
+            (r'\(Moderate\)', r'(Umiarkowany)'),
+            (r'\(Greater\)', r'(Większy)'),
+            (r'\(Major\)', r'(Potężny)'),
+            (r'\(Supreme\)', r'(Wyjątkowy)'),
             # Success degrees
             (r'>Critical Success<', r'>Krytyczny Sukces<'),
             (r'>Success<', r'>Sukces<'),
@@ -70,6 +85,7 @@ class LocalizationUpdater:
             (r'>High\-grade<', r'>Wysokiej Jakości<'),
             # Spells
             (r'>Cantrip<', r'>Sztuczka<'),
+            (r'>Cantrips<', r'>Sztuczki<'),
             (r'>Spell<', r'>Zaklęcie<'),
             (r'>Spells<', r'>Zaklęcia<'),
             # Poisons diseases
@@ -270,6 +286,56 @@ class LocalizationUpdater:
         return similarity >= similarity_threshold
 
     def auto_pretranslate(self, en_str):
+        def save_and_replace_brackets(text):
+            """
+            Detects text encapsulated in square brackets, including nested ones,
+            replaces them with placeholders, and saves the original texts.
+
+            :param text: The original text to process.
+            :return: Modified text with placeholders, and a list of the original bracketed texts.
+            """
+            bracketed_texts = []
+            open_brackets = []
+            placeholders = []
+
+            def generate_placeholder(index):
+                return f"__PLACEHOLDER_{index}__"
+
+            i = 0
+            while i < len(text):
+                if text[i] == '[':
+                    open_brackets.append(i)
+                elif text[i] == ']' and open_brackets:
+                    start = open_brackets.pop()
+                    
+                    # skip until the outermost bracket
+                    if open_brackets:
+                        continue
+                    
+                    encapsulated = text[start:i+1]
+                    bracketed_texts.append(encapsulated)
+                    placeholder = generate_placeholder(len(bracketed_texts) - 1)
+                    placeholders.append((start, i, placeholder))
+                i += 1
+
+            # Replace the bracketed text with placeholders
+            for start, end, placeholder in reversed(placeholders):
+                text = text[:start] + placeholder + text[end+1:]
+
+            return text, bracketed_texts
+
+        def restore_bracketed_text(modified_text, bracketed_texts):
+            """
+            Restores the originally bracketed text using the placeholders.
+
+            :param modified_text: The text after regex modifications.
+            :param bracketed_texts: The list of original bracketed texts.
+            :return: The final text with the original bracketed texts restored.
+            """
+            for i, original_text in enumerate(bracketed_texts):
+                modified_text = modified_text.replace(f"__PLACEHOLDER_{i}__", original_text)
+            return modified_text
+        
         def replace_with_patterns(text, replacements):
             """
             Replaces occurrences in 'text' based on a list of ('pattern', 'replacement') tuples.
@@ -284,8 +350,16 @@ class LocalizationUpdater:
                 text = regex.sub(pattern, replacement, text)
             return text
 
-        # Process the text
-        return replace_with_patterns(en_str, self.replacement_patterns)
+        # Step 1: Save and replace bracketed sections with placeholders
+        text_with_placeholders, bracketed_texts = save_and_replace_brackets(en_str)
+
+        # Step 2: Apply regex replacements
+        modified_text = replace_with_patterns(text_with_placeholders, self.replacement_patterns)
+
+        # Step 3: Restore the original bracketed sections
+        final_text = restore_bracketed_text(modified_text, bracketed_texts)
+
+        return final_text
     
     def update_localization(self):
         # Count occurrences of each value in both dictionaries

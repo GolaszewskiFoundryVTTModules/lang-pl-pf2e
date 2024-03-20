@@ -275,7 +275,7 @@
                 },
                 "action->Blightburn Sickness": {
                     "name": "Blightburn Sickness",
-                    "description": "<p>Creatures native to the Black Desert are immune, as are creatures who are affected by blightburn sickness but recover from it. The target can't recover from the disease's drained or sickened condition except by magic.</p>\n<hr />\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>Nadejście Objawów</strong> [[/br 1d4 #days]]{1k4 days}</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 week)</p>\n<p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 month)</p>\n<p><strong>Stadium 5</strong> increase @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} condition by 1 (1 year)</p>"
+                    "description": "<p>Creatures native to the Black Desert are immune, as are creatures who are affected by blightburn sickness but recover from it. The target can't recover from the disease's drained or sickened condition except by magic.</p>\n<hr />\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>Nadejście Objawów</strong> [[/br 1d4 #days]]{1k4 dni}</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 week)</p>\n<p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 month)</p>\n<p><strong>Stadium 5</strong> increase @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} condition by 1 (1 year)</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The ararda can take on the form of a scorpion. The scorpion form always looks the same, but the ararda can choose to become either Tiny or Small in this form. This transformation doesn't change their Speed or the attack and damage bonuses of their Strikes, but might change the damage type their Strikes deal (typically to piercing).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -1662,7 +1662,7 @@
         },
         "Elysian Sheep": {
             "name": "Elysian Sheep",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "strike-melee->Horn": {
                     "name": "Horn"
@@ -2695,7 +2695,7 @@
             "name": "Kimilekki",
             "blurb": "Female variant glabrezu demon",
             "languages": "telepathy 100 feet, tongues",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
@@ -3531,7 +3531,7 @@
         "Pin Tingwheely": {
             "name": "Pin Tingwheely",
             "blurb": "Male pixie daredevil",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -5235,7 +5235,7 @@
             "blurb": "Elite marilith",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Mariliths are the generals of the Abyss, formed from the souls of proud evil mortals, often warlords and despots. They appear as tall and powerfully built humans from the waist up with snake tails and six arms. Because of Lamashtu's prominence over other demonic deities, most pride demons encountered by mortals take female form, but they can be of any gender.</p>\n<p>Mariliths are among the greatest tacticians in the Abyss, and they have an almost supernatural knack for understanding the ripples of chaos and the unpredictable nature of demonic life. Their ability to command armies rises as much from their commanding presence as it does their ability to read into the potential results of any possible act and a sufficient understanding of the flow of entropy to allow them to predict likely outcomes.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Abyss, it can become a deadly fiend-a demon. Demons are living incarnations of sin-be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold-the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Abyss.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "speed": "from fly spell",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -5309,7 +5309,7 @@
             "name": "Vavakia",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Juggernauts of destruction, vavakias are formed from the souls of mortals who extract, enslave, or consume the souls of others.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"

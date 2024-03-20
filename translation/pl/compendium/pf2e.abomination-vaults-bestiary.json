@@ -112,8 +112,8 @@
             "name": "Azvalvigander",
             "blurb": "Female zebub quartermaster",
             "languages": "telepathy 100 feet",
-            "publicNotes": "<p>Zebubs serve as Hell's messengers and spies. Their ability to share what they've seen with other creatures makes them especially useful-not only to other devils, but also to mortal conjurers. Some infernal lords unleash them in enormous, horrid swarms upon unsuspecting lands to debase flesh and land alike while collecting secrets the infernal host might later put to use. Zebubs use any opportunity to manipulate weak-willed or easily tempted mortals into serving the zebubs' whims. While arrogant and deceitful, zebubs lack the cunning and confidence of most devils, and thus their schemes often focus on satisfying self-serving or self-destructive ambitions. Zebubs form from the souls of childish and craven mortals, reshaped by the archdevil Baalzebul in the frozen, filthy wastes of Hell's seventh layer, Cocytus.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "publicNotes": "<p>Zebuby służą Piekłu za szpiegów i posłańców. Ich zdolność do dzielenia się doświadczeniami z innymi istotami czyni je szczególnie użytecznymi nie tylko dla innych czartów ale i dla śmiertelnych przywoływaczy. Niektórzy piekielni lordowie uwalniają olbrzymie, paskudne stada zebubów na niczego niespodziewające się krainy, aby upodlić zarówno cielesnych mieszkańców co same ziemie, zbierając przy tym użyteczne dla siebie sekrety. Zebuby wykorzystują tę okazję aby zmanipulować śmiertelników o słabej woli lub podatnych na pokusy i wrobić ich w spełnianie ich zachcianek. Choć aroganckie i podstępne, zebuby nie posiadają sprytu ani pewności siebie charakterystycznych dla innych czartów, w związku z czym ich machinacje na ogół skupiają się na spełnianiu samolubnych lub autodestruktywnych ambicji. Zebuby rodzą się z dusz dziecinnych i tchórzliwych śmiertelników, przemienionych przez arcyczarta Belzebuba w skutych lodem i ochydą pustkowiach siódmej warstwy piekła, Kokytosu.</p>\n<hr />\n<p>Każdy rodzaj czarta odgrywa w biurokracyjnej hierarchii Piekła określoną rolę, chociaż niektórym z nich pełnią znacznie bardziej wyspecjalizowane funkcje niż inne.</p>",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
@@ -126,7 +126,7 @@
                 },
                 "spell->Invisibility (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will) (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Summon Animal (Swarm creatures only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]\nSummon Animal (Swarm creatures only)"
@@ -144,12 +144,12 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
                 },
                 "action->Cocytan Filth": {
-                    "name": "Cocytan Filth",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Nadejście Objawów</strong> [[/br 1d4 #days]]{1k4 days}</p>\n<hr />\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 day)</p>"
+                    "name": "Kokytoskie Paskudztwo",
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Nadejście Objawów</strong> [[/br 1d4 #days]]{1k4 dni}</p>\n<hr />\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 dzień)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} (1 dzień)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 3} (1 dzień)</p>"
                 },
                 "action->Infernal Eye": {
-                    "name": "Infernal Eye",
-                    "description": "<p>The zebub records everything they see, and though they don't remember all observations, they can pass them along to another creature.</p>\n<p>The zebub replays 10 minutes of witnessed events to a touched willing creature, which receives the memories in a flash of information. By remaining in contact, the zebub can spend additional 3-action activities to replay more information.</p>\n<p>After relaying their visions to another, the zebub can't ever recall those events again.</p>"
+                    "name": "Piekielne Oko",
+                    "description": "<p>Zebuby rejestrują wszystko co widzą i chociaż nie są w stanie przypomnieć sobie wszystkich tych obserwacji, mogą przekazać je innej istocie.</p>\n<p>Zebub odtwarza 10 minut zaobserwowanych wydarzeń dotkniętej, godzącej się istocie, która doświadcza wspomnień w postaci przebłysków informacji. Pozostając w kontakcie zebub może spędzać kolejne 3-akcyjne aktywności na odtwarzaniu kolejnych informacji.</p>\n<p>Po przekazaniu wizji innej istocie, zebub na zawsze traci powiązane wspomnienia.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The zebub's Strikes deal an additional 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -161,7 +161,7 @@
             "blurb": "Male erinys",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Erinyes exact vengeance and bloody justice for a creature's crimes, torturing and punishing their victims in ironic fashion before allowing them the escape of death. While an erinys appears as a fallen angel and the first erinyes shared that origin, erinyes now originate in myriad ways, some promoted from lesser devils and others shaped from lemures themselves forged from the souls of torturers and persecutors. The erinyes' origin is entwined with Eiseth, herself a fallen angel and one of Hell's most powerful demigods. The first erinyes were all considered to be Eiseth's metaphorical daughters, but erinyes formed since that time are no longer limited to a single gender.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
@@ -235,7 +235,7 @@
             "name": "Belcorra Haruvex",
             "blurb": "Female ghost sorcerer",
             "hpDetails": "leczenie pustką, odrodzenie",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "senses": "magic sense",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
@@ -326,7 +326,7 @@
             "blurb": "Male devourer (Pathfinder Bestiary 2 78)",
             "hpDetails": "(leczenie pustką)",
             "publicNotes": "<p>When fiends and powerful evil spellcasters are lost beyond the farthest reaches of the multiverse, they sometimes return as horrific undead called devourers that consume the souls of the living to fuel their arcane machinations. Their bodies are ruined and rebuilt, hollow and twisted, even as their minds undergo a spiritual transformation. They gain the ability to bind other souls to their own and drain their essence for magical power, yet can never be sated in their pursuit of it. Seething masses of distorted ghostly shapes surge within their hollow rib cages-manifestations of the devourers' most recently consumed souls.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -877,7 +877,7 @@
             "blurb": "Female evangelist velstrac",
             "hpDetails": "regeneration 10 (deactivated by holy or silver)",
             "publicNotes": "<p>Evangelists, the velstracs' unofficial ambassadors, roam the farthest reaches of the planes to spread the word of their kind's abhorrent belief in perfection through pain. They are therefore the most frequently encountered velstracs on the Material Plane, leading covens of hedonistic mortal flesh-sculptors or serving as wardens of horrific dungeons. In regions ruled by infernal powers, evangelists may serve as lieutenants or advisors, whispering secret paths to power in exchange for mortal's souls or choice mortal flesh. Evangelists are the same size as humans, although with the heavy chains that always drape their forms, they often weigh 350 pounds or more.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "senses": "painsight",
             "items": {
                 "strike-melee->Chain": {
@@ -942,8 +942,8 @@
         "Deep End Sarglagon": {
             "name": "Deep End Sarglagon",
             "languages": "telepathy 100 feet",
-            "publicNotes": "<p>Sarglagons dwell in Hell's myriad waterways, lakes, and oceans. They serve as guardians of the Academy of Lies-the repository of secrets in Stygia, the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can move through water, land, and even air with uncanny swiftness. Few fiends travel the waterways of the multiverse, but where a river crosses the planes, odds are sarglagons have traveled it to further their infernal machinations. The only body of water they avoid is the River Styx, as the fiends have yet to develop any defense against that waterway's memory-sapping qualities. Mortal spellcasters sometimes bind sarglagons as guardians of precious secrets or treasures, particularly in aquatic areas. Most strangely, sarglagons sometimes act as unnerving caretakers to mortals who have no idea what they did to earn their unwanted protectors' attention. The constant uninvited vigilance of these devils is often disturbing and stifling to their wards.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "publicNotes": "<p>Sarglagons dwell in Hell's myriad waterways, lakes, and oceans. They serve as guardians of the Academy of Lies-the repository of secrets in Stygia, the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can move through water, land, and even air with uncanny swiftness. Few fiends travel the waterways of the multiverse, but where a river crosses the planes, odds are sarglagons have traveled it to further their infernal machinations. The only body of water they avoid is the River Styx, as the fiends have yet to develop any defense against that waterway's memory-sapping qualities. Mortal spellcasters sometimes bind sarglagons as guardians of precious secrets or treasures, particularly in aquatic areas. Most strangely, sarglagons sometimes act as unnerving caretakers to mortals who have no idea what they did to earn their unwanted protectors' attention. The constant uninvited vigilance of these devils is often disturbing and stifling to their wards.</p>\n<hr />\n<p>Każdy rodzaj czarta odgrywa w biurokracyjnej hierarchii Piekła określoną rolę, chociaż niektórym z nich pełnią znacznie bardziej wyspecjalizowane funkcje niż inne.</p>",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Sarglagon",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -1223,7 +1223,7 @@
             "name": "Drill Field Barbazu",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Barbazu",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -1249,7 +1249,7 @@
                 },
                 "action->Avernal Fever": {
                     "name": "Avernal Fever",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} (1 dzień)</p>"
                 },
                 "action->Drover's Band": {
                     "name": "Drover's Band",
@@ -1852,7 +1852,7 @@
             "name": "Hellforge Barbazu",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Barbazu",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -1881,7 +1881,7 @@
                 },
                 "action->Avernal Fever": {
                     "name": "Avernal Fever",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} (1 dzień)</p>"
                 },
                 "action->Infernal Wound": {
                     "name": "Infernal Wound",
@@ -1927,7 +1927,7 @@
             "name": "Jafaki",
             "blurb": "Seugathi fleshwarper",
             "languages": "telepathy 100 feet",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -2152,7 +2152,7 @@
                 },
                 "spell->Feather Fall (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]\nFeather Fall (At Will) (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -2193,7 +2193,7 @@
         "Kragala": {
             "name": "Kragala",
             "blurb": "Female duergar drummer",
-            "saveDetails": "+2 status to all saves vs. magic",
+            "saveDetails": "statusowe +2 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
@@ -2203,11 +2203,11 @@
                 },
                 "spell->Enlarge (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]\nEnlarge (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Invisibility (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Sound Burst": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]\nSound Burst"
@@ -2247,7 +2247,7 @@
         "Lady's Whisper": {
             "name": "Lady's Whisper",
             "hpDetails": "leczenie pustką",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
@@ -2783,7 +2783,7 @@
             "blurb": "Seugathi servant",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Seugathi Researcher",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -3259,7 +3259,7 @@
             "blurb": "Seugathi servant",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -3314,7 +3314,7 @@
             "name": "Seugathi Reality Warper",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Seugathi reality warpers create and destroy inhospitable environments on a small scale by manipulating the forces of raw chaos. A neothelid might spawn such a seugathi to create habitats for unique slaves or guests, or to destroy the ecosystem of a troublesome species. Darklands scholars refer to reality warpers as veterans in the seugathi ranks, but they're more accurately compared to aggressive landscape architects.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -3365,7 +3365,7 @@
             "blurb": "Seugathi servant",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -3424,7 +3424,7 @@
             "name": "Seugathi Servant",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
@@ -3657,7 +3657,7 @@
             "name": "Summoning Chamber Erinys",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Erinyes exact vengeance and bloody justice for a creature's crimes, torturing and punishing their victims in ironic fashion before allowing them the escape of death. While an erinys appears as a fallen angel and the first erinyes shared that origin, erinyes now originate in myriad ways, some promoted from lesser devils and others shaped from lemures themselves forged from the souls of torturers and persecutors. The erinyes' origin is entwined with Eiseth, herself a fallen angel and one of Hell's most powerful demigods. The first erinyes were all considered to be Eiseth's metaphorical daughters, but erinyes formed since that time are no longer limited to a single gender.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Erinys",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -3721,7 +3721,7 @@
             "name": "Torture Chamber Barbazu",
             "languages": "telepathy 100 feet",
             "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Barbazu",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -3750,7 +3750,7 @@
                 },
                 "action->Avernal Fever": {
                     "name": "Avernal Fever",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} (1 dzień)</p>"
                 },
                 "action->Infernal Wound": {
                     "name": "Infernal Wound",
@@ -3792,7 +3792,7 @@
                 },
                 "spell->Feather Fall (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]\nFeather Fall (At Will) (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -3827,11 +3827,11 @@
                 },
                 "spell->Invisibility (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Feather Fall (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]\nFeather Fall (At Will) (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -3872,7 +3872,7 @@
                 },
                 "spell->Feather Fall (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]\nFeather Fall (At Will) (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -3904,7 +3904,7 @@
             "name": "Urevian",
             "blurb": "Male phistophilus field commander",
             "languages": "telepathy 100 feet, tongues",
-            "saveDetails": "+1 status to all saves vs. magic",
+            "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
@@ -4029,7 +4029,7 @@
                 },
                 "spell->Feather Fall (At Will) (Self Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]\nFeather Fall (At Will) (Self Only)",
-                    "target": "self"
+                    "target": "na siebie"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"

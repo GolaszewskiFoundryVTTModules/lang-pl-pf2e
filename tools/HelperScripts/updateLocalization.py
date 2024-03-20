@@ -38,6 +38,9 @@ class LocalizationUpdater:
         # PYTHON READS THE JSON STRING WITH ITS ESCAPE CHARACTERS ACCOUNTED FOR
         # Escape signs in JSON need to be accounted for in regex (usually reduced/removed)
         self.replacement_patterns = [
+             # Styling and punctuation
+            (r' -([0-9]+)', r' –\1'),
+            (r'(\S)—(\S)', r'\1 — \2'),
             # Ordinals
             (r'([0-9]+)(st|nd|rd|th)', r'\1.'),
             (r'([0-9]+\.)-Level', r'\1 Poziomu.'),
@@ -58,8 +61,12 @@ class LocalizationUpdater:
             (r'>Success<', r'>Sukces<'),
             (r'>Critical Failure<', r'>Krytyczna Porażka<'),
             (r'>Failure<', r'>Porażka<'),
+            # Edicts and anathema
+            (r'>Edicts<', r'>Edykty<'),
+            (r'>Anathema<', r'>Anatemy<'),
             # Activation keywords
             (r'>Activate<', r'>Aktywacja<'),
+            (r'>Activate — ([a-zA-Z0-9 \p{L}]*)<', r'>Aktywacja — \1<'),
             (r'>Trigger<', r'>Aktywator<'),
             (r'>Frequency<', r'>Częstotliwość<'),
             # Effect keywords
@@ -132,9 +139,6 @@ class LocalizationUpdater:
              r'Dostarcz rzucenie docelowego zaklęcia na odpowiednim kręgu.'),
             (r'Supply one casting of all listed levels of all listed spells\.',
              r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
-             # Styling and punctuation
-            (r' -([0-9]+)', r' –\1'),
-            (r'(\S)—(\S)', r'\1 — \2'),
         ]
 
 

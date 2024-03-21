@@ -127,6 +127,8 @@ class LocalizationUpdater:
             # Frequency details. Must be after frequency
             (r'<p><strong>Częstotliwość</strong> once per day</p>',
              r'<p><strong>Częstotliwość</strong> raz na dzień</p>'),
+            (r'<p><strong>Częstotliwość</strong> once per hour</p>',
+             r'<p><strong>Częstotliwość</strong> raz na godzinę</p>'),
             (r'<p><strong>Częstotliwość</strong> once per day, plus overcharge</p>',
              r'<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>'),
             # Effect details. Must be after effect.

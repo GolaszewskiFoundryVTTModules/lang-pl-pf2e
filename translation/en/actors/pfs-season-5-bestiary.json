@@ -1,6 +1,35 @@
 {
   "label": "pfs-season-5-bestiary",
   "entries": {
+    "\"Enlightened\" Div Worshipper": {
+      "name": "\"Enlightened\" Div Worshipper",
+      "blurb": "Variant cultist",
+      "items": {
+        "armor->Cultist Garb": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nCultist Garb"
+        },
+        "strike-melee->Longsword": {
+          "name": "Longsword"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Lesser Alchemist's Fire": {
+          "name": "Lesser Alchemist's Fire",
+          "description": "<p><strong>Inexperienced Arsonist</strong> Requires Two Actions</p>"
+        },
+        "action->-4 to Will Saves vs. Higher Ranking Cult Members": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-4 to Will Saves vs. Higher Ranking Cult Members"
+        },
+        "action->Fanatical Frenzy": {
+          "name": "Fanatical Frenzy",
+          "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+        },
+        "lore->Cult of Sezruth Lore": {
+          "name": "Cult of Sezruth Lore"
+        }
+      }
+    },
     "287'S Powerful Ghost": {
       "name": "287'S Powerful Ghost",
       "hpDetails": "void healing, rejuvenation",
@@ -126,6 +155,44 @@
         "action->Swipe": {
           "name": "Swipe",
           "description": "<p>Alystair Caskwater makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Angry Foolhardy Mercenary": {
+      "name": "Angry Foolhardy Mercenary",
+      "items": {
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "action->Shoulder Check": {
+          "name": "Shoulder Check",
+          "description": "<p>The angry foolhardy mercenary strides up to their speed and makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} one adjacent target at the end of their stride.</p>"
+        },
+        "lore->Guild Lore": {
+          "name": "Guild Lore"
+        }
+      }
+    },
+    "Angry Mercenary Squad": {
+      "name": "Angry Mercenary Squad",
+      "hpDetails": "Thresholds 40 (12 squares), 20 (8 squares)",
+      "speed": "troop movement",
+      "tokenName": "Mercenary Squad",
+      "items": {
+        "action->Fire Crossbows!": {
+          "name": "Fire Crossbows!",
+          "description": "<p>The mercenary squad members draw or reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 80 feet that deals @Damage[2d8[piercing]] damage (@Check[type:reflex|dc:18|basic:true] save). When the mercenary squad is reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
+        },
+        "action->Get 'em!": {
+          "name": "Get 'em!",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The mercenary squad engages in a coordinated melee attack against each adjacent enemy, with a @Check[type:reflex|dc:18|basic:true] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+6)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d8+9)[bludgeoning]] damage</p>"
+        },
+        "action->Troop Movement": {
+          "name": "Troop Movement",
+          "description": "<p>Whenever the city guards Stride, they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the guards enters difficult terrain, the extra movement cost applies to all the guards.</p>\n<p>The mercenary squad ignores difficult terrain (but not greater difficult terrain) caused by crowds or from movement through narrow spaces such as alleyways.</p>"
         }
       }
     },
@@ -260,6 +327,63 @@
         "action->Fume": {
           "name": "Fume",
           "description": "<p>The brimorak emits a cloud of thick black smoke in a @Template[type:burst|distance:10] that remains in place for [[/br 1d4 #Duration Fume]]{1d4 rounds}.</p>\n<p>All creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within it. A creature that enters or begins its turn within the smoke it must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
+        }
+      }
+    },
+    "Assassins' Guild Grenadier": {
+      "name": "Assassins' Guild Grenadier",
+      "items": {
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Hand Crossbow": {
+          "name": "Hand Crossbow"
+        },
+        "strike-ranged->Acid Flask (Moderate)": {
+          "name": "Acid Flask (Moderate)"
+        },
+        "strike-ranged->Alchemist's Fire (Moderate)": {
+          "name": "Alchemist's Fire (Moderate)"
+        },
+        "strike-ranged->Frost Vial (Moderate)": {
+          "name": "Frost Vial (Moderate)"
+        },
+        "action->Infused Items": {
+          "name": "Infused Items",
+          "description": "<p>An assassins' guild grenadier carries 2 infused @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]{Acid Flask (Moderate)}, 2 infused @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}, and 2 infused @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]{Frost Vial (Moderate)}. These items last for 24 hours, or until the next time they make their daily preparations.</p>"
+        },
+        "action->Far Lob": {
+          "name": "Far Lob",
+          "description": "<p>The grenadier's bombs have a range increment of 30 feet (instead of 20 feet).</p>"
+        },
+        "action->Quick Bomber": {
+          "name": "Quick Bomber",
+          "description": "<p>The grenadier draws an alchemical bomb with an Interact action and throws it as a ranged Strike.</p>"
+        }
+      }
+    },
+    "Assassins' Guild Rogue": {
+      "name": "Assassins' Guild Rogue",
+      "items": {
+        "consumable->Giant Centipede Venom (Applied to One Dart)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\nGiant Centipede Venom (Applied to One Dart)",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\n<p>Giant centipede venom causes severe muscle stiffness.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-ranged->Blowgun": {
+          "name": "Blowgun"
+        },
+        "action->Hidden Movement": {
+          "name": "Hidden Movement",
+          "description": "<p>If the assassins' guild rogue starts its turn undetected by a creature or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the rogue's attacks until the end of the rogue's turn.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The assassins' guild rogue deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         }
       }
     },
@@ -597,7 +721,58 @@
         },
         "action->Disorienting Dance": {
           "name": "Disorienting Dance",
-          "description": "<p>The baby brine shark spins quickly in place, disorienting observers. All creatures within 15 feet must attempt at @Check[type:will|dc:17] save, with the following effects. The baby brine shark can't use disorienting dance again for [[/br 1d4 #Recharge Disorienting Dance]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+          "description": "<p>The baby brine shark spins quickly in place, disorienting observers. All creatures within @Template[type:emanation|distance:15]{15 feet} must attempt at @Check[type:will|dc:17] save, with the following effects. The baby brine shark can't use disorienting dance again for [[/br 1d4 #Recharge Disorienting Dance]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+        }
+      }
+    },
+    "Bandit": {
+      "name": "Bandit",
+      "items": {
+        "strike-melee->Sap": {
+          "name": "Sap"
+        },
+        "strike-melee->Club": {
+          "name": "Club"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
+        },
+        "strike-ranged->Club": {
+          "name": "Club"
+        },
+        "action->+1 Perception to Find Concealed Objects": {
+          "name": "+1 Perception to Find Concealed Objects"
+        },
+        "lore->Legal Lore": {
+          "name": "Legal Lore"
+        }
+      }
+    },
+    "Bandit Leader": {
+      "name": "Bandit Leader",
+      "items": {
+        "weapon->Naval Pike": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\nNaval Pike"
+        },
+        "strike-melee->Sap": {
+          "name": "Sap"
+        },
+        "strike-melee->Naval Pike": {
+          "name": "Naval Pike"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Naval Pike": {
+          "name": "Naval Pike"
+        },
+        "action->Leader's Command": {
+          "name": "Leader's Command",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The leader orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the leader's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Df5CnXnVHC1mVINK]{Effect: Leader's Command}</p>"
+        },
+        "action->Pike and Strike": {
+          "name": "Pike and Strike",
+          "description": "<p>The leader Strikes with their naval pike. If this Strike hits, the leader can either move the target 5 feet within the pike's reach or make a sap Strike against the target without increasing their multiple attack penalty until after the sap Strike.</p>"
         }
       }
     },
@@ -708,6 +883,28 @@
         }
       }
     },
+    "Beastmaster Cultist": {
+      "name": "Beastmaster Cultist",
+      "items": {
+        "equipment->Religious Symbol of Sezelrian": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol of Sezelrian"
+        },
+        "strike-melee->Mace": {
+          "name": "Mace"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
+        },
+        "action->Beast Training": {
+          "name": "Beast Training",
+          "description": "<p>Whenever a beastmaster cultist and one of their animal allies are adjacent to the same foe, they both count as flanking that foe regardless of their actual positions.</p>"
+        },
+        "action->Enraging Whistle": {
+          "name": "Enraging Whistle",
+          "description": "<p>The beastmaster cultist blows on her divine whistle, riling up the nearby beasts, granting a +1 status bonus to attacks and damage to all allied animals within 60 feet for one round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.DPN3d9EZM9XqktWT]{Effect: Enraging Whistle}</p>"
+        }
+      }
+    },
     "Bejeweled Rat Swarm": {
       "name": "Bejeweled Rat Swarm",
       "items": {
@@ -760,6 +957,24 @@
         }
       }
     },
+    "Blessed Uirch of the Burning Suns": {
+      "name": "Blessed Uirch of the Burning Suns",
+      "items": {
+        "spellcastingEntry->Divine Prepared Spells": {
+          "name": "Divine Prepared Spells"
+        },
+        "spellcastingEntry->Divine Focus Spells": {
+          "name": "Divine Focus Spells"
+        },
+        "strike-melee->Scimitar": {
+          "name": "Scimitar"
+        },
+        "action->Protection of the Burning Sun": {
+          "name": "Protection of the Burning Sun",
+          "description": "<p>Whenever Uirch's shield is raised, he is granted a defensive aura of sacred fire. Any time he's hit while his shield is raised with a non-reach melee weapon or unarmed attack the attacking opponent takes @Damage[2d6[fire]] damage (@Check[type:reflex|dc:23|basic:true] save).</p>"
+        }
+      }
+    },
     "Bloodied Kithangian": {
       "name": "Bloodied Kithangian",
       "blurb": "Variant kithangian",
@@ -805,6 +1020,28 @@
         "action->Rasping Tongues": {
           "name": "Rasping Tongues",
           "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The kithangian has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in one or both pincers</p>\n<hr />\n<p><strong>Effect</strong> Barbed tongues slither out of the faces in the kithangian's pincers. The tongues burrow into grabbed creatures and inject their minds with haunting psychic screams. Each grabbed creature takes @Damage[2d8[piercing],2d8[mental]]{2d8 piercing and 2d8 mental}. A creature can try to resist the mental damage by attempting a @Check[type:will|dc:23|basic:true].</p>"
+        }
+      }
+    },
+    "Burning Sun Orc": {
+      "name": "Burning Sun Orc",
+      "items": {
+        "strike-melee->Greataxe": {
+          "name": "Greataxe"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
+        }
+      }
+    },
+    "Burning Sun Warrior": {
+      "name": "Burning Sun Warrior",
+      "items": {
+        "strike-melee->Greataxe": {
+          "name": "Greataxe"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
         }
       }
     },
@@ -969,6 +1206,26 @@
         }
       }
     },
+    "Commodore Sticky Fingers": {
+      "name": "Commodore Sticky Fingers",
+      "blurb": "variant Draxie",
+      "publicNotes": "<p>The mischievous dragon sprites called draxies have dueled their pixie cousins for the title of ultimate prankster for centuries. They exercise patience and planning to create the perfect pranks, spending months, or even years, on their efforts. One exception to their flighty nature is the elucrea, a lifelong bond between a draxie and a creature they're particularly fond of, typically one with a good sense of humor. According to draxie legend, a little piece of a draxie's spirit remembers being united as the ancient fey dragonet Elucredassa, and that causes draxies to yearn for such connections with others.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-ranged->Euphoric Spark": {
+          "name": "Euphoric Spark"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The draxie breathes pixie dust in a @Template[type:cone|distance:15], with a random effect determined each time they use their Breath Weapon. Roll [[/r 1d4]] to determine the effect. Each creature in the area must succeed at a @Check[type:will|dc:14] save or be affected.</p>\n<p>The draxie can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ol>\n<li>The target takes the effects of the @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</li>\n<li>The target loses its last 5 minutes of memory.</li>\n<li>The target takes the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li>For 1 minute, the target is in a state of euphoria that makes it @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</li>\n</ol>"
+        }
+      }
+    },
     "Conference Z's Victims": {
       "name": "Conference Z's Victims",
       "description": "<p>The pain of over 300 souls crying out for recognition and revenge pierces through the room, as a spiritual whirlwind fills the space.</p>",
@@ -1027,6 +1284,57 @@
         "action->Needle Fall": {
           "name": "Needle Fall",
           "description": "<p><strong>Trigger</strong> A creature touches any consonite needle</p>\n<hr />\n<p><strong>Effect</strong> The needle snaps, and the vibrations resonate with some of the surrounding needles. The falling minerals deal @Damage[(2d8+7)[untyped]] damage to creatures within a @Template[type:burst|distance:5] surrounding the triggering individual (@Check[type:reflex|dc:22|basic:true] save). The needle fall doesn't involve every consonite growth within these squares, so can be triggered again from the same location.</p>"
+        }
+      }
+    },
+    "Cultist of Sezelrian": {
+      "name": "Cultist of Sezelrian",
+      "items": {
+        "strike-melee->Flaming Mace": {
+          "name": "Flaming Mace"
+        },
+        "strike-ranged->Alchemist's Fire (Moderate)": {
+          "name": "Alchemist's Fire (Moderate)"
+        },
+        "strike-ranged->Acid Flask (Moderate)": {
+          "name": "Acid Flask (Moderate)"
+        },
+        "action->Sacred Fire": {
+          "name": "Sacred Fire",
+          "description": "<p>Any non-consumable weapon the cultist wields gains the effects of the flaming rune in addition to a +1 weapon rune.</p>"
+        },
+        "action->Sacred Sabotage": {
+          "name": "Sacred Sabotage",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The cultist of Sezelrian can draw a poison and quickly apply it to the weapon or unarmed attack of an adjacent ally.</p>"
+        }
+      }
+    },
+    "Div Worshipper": {
+      "name": "Div Worshipper",
+      "blurb": "Variant cultist",
+      "items": {
+        "armor->Cultist Garb": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nCultist Garb"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Lesser Alchemist's Fire": {
+          "name": "Lesser Alchemist's Fire",
+          "description": "<p><strong>Inexperienced Arsonist</strong> Requires Two Actions</p>"
+        },
+        "action->-2 to Will Saves vs. Higher Ranking Cult Members": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-2 to Will Saves vs. Higher Ranking Cult Members"
+        },
+        "action->Fanatical Frenzy": {
+          "name": "Fanatical Frenzy",
+          "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+        },
+        "lore->Cult of Sezruth Lore": {
+          "name": "Cult of Sezruth Lore"
         }
       }
     },
@@ -1138,6 +1446,97 @@
         }
       }
     },
+    "Elite Commodore Sticky Fingers": {
+      "name": "Elite Commodore Sticky Fingers",
+      "blurb": "variant Draxie",
+      "publicNotes": "<p>The mischievous dragon sprites called draxies have dueled their pixie cousins for the title of ultimate prankster for centuries. They exercise patience and planning to create the perfect pranks, spending months, or even years, on their efforts. One exception to their flighty nature is the elucrea, a lifelong bond between a draxie and a creature they're particularly fond of, typically one with a good sense of humor. According to draxie legend, a little piece of a draxie's spirit remembers being united as the ancient fey dragonet Elucredassa, and that causes draxies to yearn for such connections with others.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "tokenName": "Commodore Sticky Fingers",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-ranged->Euphoric Spark": {
+          "name": "Euphoric Spark"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The draxie breathes pixie dust in a @Template[type:cone|distance:15], with a random effect determined each time they use their Breath Weapon. Roll [[/r 1d4]] to determine the effect. Each creature in the area must succeed at a @Check[type:will|dc:16] save or be affected.</p>\n<p>The draxie can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ol>\n<li>The target takes the effects of the @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</li>\n<li>The target loses its last 5 minutes of memory.</li>\n<li>The target takes the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li>For 1 minute, the target is in a state of euphoria that makes it @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</li>\n</ol>"
+        }
+      }
+    },
+    "Elite Foolhardy Mercenary": {
+      "name": "Elite Foolhardy Mercenary",
+      "tokenName": "Foolhardy Mercenary",
+      "items": {
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "lore->Guild Lore": {
+          "name": "Guild Lore"
+        }
+      }
+    },
+    "Elite Grig (PFS Q18)": {
+      "name": "Elite Grig (PFS Q18)",
+      "publicNotes": "<p>Grigs are kindly musicians of the fey, often getting themselves into trouble due to their penchant for confronting evil well beyond their ability to vanquish. Even so, they fight bravely and with great cunning, using their magic and ranged sonic attacks while flying and leaping using their wings and powerful cricket-like lower torsos to stay out of reach.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary from the benevolent grig to the trickster pixie, all sprites share a connection to magic and diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "tokenName": "Grig",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "spell->Glitterdust": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]\nGlitterdust"
+        },
+        "spell->Invisibility (Self Only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self Only)",
+          "target": "self"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-ranged->Dissonant Note": {
+          "name": "Dissonant Note"
+        },
+        "action->Fiddle": {
+          "name": "Fiddle",
+          "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[type:emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[type:will|dc:20] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Success</strong> No effect</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and -10-foot status penalty to Speeds</p>\n<p><strong>Critical Failure</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Effect: Fiddle}</p>"
+        },
+        "lore->Athletics": {
+          "skillVariants": {
+            "0": {
+              "label": "+8 to High Jump or Long Jump"
+            }
+          }
+        }
+      }
+    },
+    "Elite Lively Commodore Sticky Fingers": {
+      "name": "Elite Lively Commodore Sticky Fingers",
+      "blurb": "variant Draxie",
+      "publicNotes": "<p>The mischievous dragon sprites called draxies have dueled their pixie cousins for the title of ultimate prankster for centuries. They exercise patience and planning to create the perfect pranks, spending months, or even years, on their efforts. One exception to their flighty nature is the elucrea, a lifelong bond between a draxie and a creature they're particularly fond of, typically one with a good sense of humor. According to draxie legend, a little piece of a draxie's spirit remembers being united as the ancient fey dragonet Elucredassa, and that causes draxies to yearn for such connections with others.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "tokenName": "Commodore Sticky Fingers",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-ranged->Euphoric Spark": {
+          "name": "Euphoric Spark"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The draxie breathes pixie dust in a @Template[type:cone|distance:15], with a random effect determined each time they use their Breath Weapon. Roll [[/r 1d4]] to determine the effect. Each creature in the area must succeed at a @Check[type:will|dc:19] save or be affected.</p>\n<p>The draxie can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ol>\n<li>The target takes the effects of the @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</li>\n<li>The target loses its last 5 minutes of memory.</li>\n<li>The target takes the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li>For 1 minute, the target is in a state of euphoria that makes it @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</li>\n</ol>"
+        }
+      }
+    },
     "Elite Mutant Cryptid Snapdrake": {
       "name": "Elite Mutant Cryptid Snapdrake",
       "blurb": "Variant snapdrake",
@@ -1191,6 +1590,123 @@
         }
       }
     },
+    "Elite Sewer Ooze (PFS Q18)": {
+      "name": "Elite Sewer Ooze (PFS Q18)",
+      "publicNotes": "<p>These amorphous masses of sewage and other detritus make their way through filthy culverts beneath cities large and small.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+      "tokenName": "Sewer Ooze",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Pseudopod"
+        },
+        "action->Motion Sense 60 feet": {
+          "name": "Motion Sense 60 feet",
+          "description": "<p>A sewer ooze can sense nearby motion through vibration and air movement.</p>"
+        },
+        "action->Filth Wave": {
+          "name": "Filth Wave",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures in a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:19] save or take @Damage[1d4+4[acid]] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>\n<p>A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
+        },
+        "lore->Stealth": {
+          "skillVariants": {
+            "0": {
+              "label": "+6 in sewers"
+            }
+          }
+        }
+      }
+    },
+    "Elite Sprite (PFS Q18)": {
+      "name": "Elite Sprite (PFS Q18)",
+      "publicNotes": "<p>Common sprites, sometimes called firefly sprites, are primeval guardians that latch onto a person, place, or object and defend it for their own inscrutable reasons. Their dispositions vary from kind to spiteful, but all sprites have a capricious streak. Being only about 9 inches tall, they are wary of animals that might hunt them, particularly house cats, and prefer flight to a fight. On the other hand, sprites are incredibly curious about all forms of magic and heedlessly gather around ley line nexuses or other places of power.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "tokenName": "Sprite",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Luminous Spark": {
+          "name": "Luminous Spark"
+        },
+        "action->Luminous Fire": {
+          "name": "Luminous Fire",
+          "description": "<p>A sprite naturally sheds light like a torch. The sprite can extinguish, rekindle, or change the color of this light by using an action with the concentrate trait. While this light is extinguished, the sprite's Strikes don't deal fire damage, and they can't use their luminous spark Strike.</p>"
+        }
+      }
+    },
+    "Elite Trained Vulkariki Eidolon": {
+      "name": "Elite Trained Vulkariki Eidolon",
+      "tokenName": "Trained Vulkariki Eidolon",
+      "items": {
+        "action->Vulkariki Athletics": {
+          "name": "Vulkariki Athletics",
+          "description": "<p>A vulkariki eidolon can use Acrobatics instead of Athletics on checks normally requiring Athletics.</p>"
+        },
+        "action->Vulkariki Tricks": {
+          "name": "Vulkariki Tricks",
+          "description": "<p>A vulkariki eidolon can use Acrobatics instead of Thievery to @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal}.</p>"
+        },
+        "lore->Acrobatics": {
+          "skillVariants": {
+            "0": {
+              "label": "+13 to Balance or Tumble Through"
+            }
+          }
+        }
+      }
+    },
+    "Empowered Daeodon": {
+      "name": "Empowered Daeodon",
+      "blurb": "Variant daeodon",
+      "publicNotes": "<p>Where the typical boar is merely ill-tempered and generally unfriendly, the towering daeodon is legitimately hateful and ruthlessly violent. Although omnivorous, the daeodon prefers to feed on flesh. Primarily a scavenger, the daeodon isn't adverse to attacking creatures it encounters while searching for easier meals, or to protect any perceived encroachment into its lair or feeding grounds. Particularly brave or skilled orcs are fond of using daeodons as mounts or war-trained battle beasts; orc cavalry mounted on daeodons is a fearsome force indeed.</p>\n<p>A typical adult daeodon is 10 feet long and 7 feet tall at the shoulder. It weighs approximately 2,000 pounds.</p>\n<hr />\n<p>While domesticated pigs are a staple of farm life, wild boars are much more dangerous. Foul-tempered warthogs are relatively common, while the lumbering, primeval beasts known as daeodons are less so. Voracious eaters, boars can ravage the countryside in which they live. Boars breed freely, and a pair of boars can rapidly grow to a large family. Boars are a particular nuisance to farmers, as they break into food stores and root through gardens to sate their hunger.</p>",
+      "items": {
+        "strike-melee->Tusk": {
+          "name": "Tusk"
+        },
+        "action->Daeodon Charge": {
+          "name": "Daeodon Charge",
+          "description": "<p>The daeodon Strides twice then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll. A Medium or smaller creature struck by this attack must succeed at a @Check[type:reflex|dc:22] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>"
+        }
+      }
+    },
+    "Empowered Shadow of Sezruth": {
+      "name": "Empowered Shadow of Sezruth",
+      "languages": "telepathy 100 feet",
+      "saveDetails": "+1 status to all saves vs. magic",
+      "items": {
+        "spellcastingEntry->Divine Innate Spells": {
+          "name": "Divine Innate Spells"
+        },
+        "spell->Dimension Door": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
+        },
+        "spell->Touch of Idiocy": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+        },
+        "spell->Illusory Object (At Will)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]\nIllusory Object (At Will)"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Telepathy 100 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
+        },
+        "action->Hatred of Beauty": {
+          "name": "Hatred of Beauty",
+          "description": "<p>While aghashes hate all mortals, they particularly despise beautiful objects and beautiful or charismatic mortals. When not in physical peril, an aghash is compelled to destroy art and other works of beauty. An aghash can't enter an area of pristine beauty without first marring it in some way.</p>\n<p>Given a choice, an aghash attacks a foe with the highest Charisma score first. If barred from doing so by force or some magical effect, they take @Damage[1d6[mental]] damage at the end of their turn.</p>"
+        },
+        "action->Cursed Gaze": {
+          "name": "Cursed Gaze",
+          "description": "<p>The aghash fixes their gaze on one creature they can see within 20 feet. The creature must attempt a @Check[type:will|dc:21|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[mental]] damage and becomes either @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (the aghash's choice).</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
+        },
+        "action->Sandstorm": {
+          "name": "Sandstorm",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The aghash creates a temporary sandstorm in a @Template[type:emanation|distance:30] that lasts for 1 minute.</p>\n<p>Creatures within the emanation take a -4 circumstance penalty to Perception checks and must succeed at a @Check[type:fortitude|dc:18] save. On a failure, they're forced to hold their breath or else they start suffocating. A creature within the sandstorm at the end of its turn takes @Damage[1d6[slashing]] damage.</p>\n<p>Divs are immune to all effects of an aghash's sandstorm.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.f8rncEs06bqcn3LZ]{Effect: Sandstorm}</p>"
+        }
+      }
+    },
     "Enraged Shurrizih": {
       "name": "Enraged Shurrizih",
       "blurb": "Variant jann shuyookh ",
@@ -1237,6 +1753,56 @@
         }
       }
     },
+    "Experienced Bandit Leader": {
+      "name": "Experienced Bandit Leader",
+      "items": {
+        "weapon->Naval Pike": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\nNaval Pike"
+        },
+        "strike-melee->Sap": {
+          "name": "Sap"
+        },
+        "strike-melee->Naval Pike": {
+          "name": "Naval Pike"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Naval Pike": {
+          "name": "Naval Pike"
+        },
+        "action->Leader's Command": {
+          "name": "Leader's Command",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The leader orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the leader's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Df5CnXnVHC1mVINK]{Effect: Leader's Command}</p>"
+        },
+        "action->Pike and Strike": {
+          "name": "Pike and Strike",
+          "description": "<p>The leader Strikes with their naval pike. If this Strike hits, the leader can either move the target 5 feet within the pike's reach or make a sap Strike against the target without increasing their multiple attack penalty until after the sap Strike.</p>"
+        }
+      }
+    },
+    "Experienced Cultist of Sezelrian": {
+      "name": "Experienced Cultist of Sezelrian",
+      "items": {
+        "strike-melee->Flaming Mace": {
+          "name": "Flaming Mace"
+        },
+        "strike-ranged->Alchemist's Fire (Moderate)": {
+          "name": "Alchemist's Fire (Moderate)"
+        },
+        "strike-ranged->Acid Flask (Moderate)": {
+          "name": "Acid Flask (Moderate)"
+        },
+        "action->Sacred Fire": {
+          "name": "Sacred Fire",
+          "description": "<p>Any non-consumable weapon the cultist wields gains the effects of the <em>flaming</em> rune in addition to a <em>+1 striking</em> weapon rune.</p>"
+        },
+        "action->Sacred Sabotage": {
+          "name": "Sacred Sabotage",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The cultist of Sezelrian can draw a poison and quickly apply it to the weapon or unarmed attack of an adjacent ally.</p>"
+        }
+      }
+    },
     "Experienced Goldmonger": {
       "name": "Experienced Goldmonger",
       "items": {
@@ -1276,6 +1842,7 @@
       "name": "Extremely Helpful Wisp Swarm",
       "description": "<p>Hovering amid the branches of an acacia tree, a swarm of wood wisps attempt to gather the papers that have been caught in its leaves and thorns.</p>",
       "disable": "<p>Diplomacy @Check[type:diplomacy|dc:23] (trained) to make a @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}, @Check[type:athletics|dc:23] (trained) to climb the tree and help gather papers manually, or @Check[type:performance|dc:25] (trained) to demonstrate how the wisps can help without destroying the papers.</p>",
+      "routine": "<p><strong>(3 actions)</strong> The wisp swarm loses one action for each successful check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{disable} it. The wisps swarm to work on each of their actions, making a headbutt Strike against any creature within 10 feet of the tree and destroying [[/br 2d4 #Pages]] pages of notes.</p>",
       "stealth": "<p>(trained) to notice the creatures hovering in the trees</p>",
       "items": {
         "action->Willing Wisps": {
@@ -1321,10 +1888,49 @@
         }
       }
     },
+    "Flaming Sphere Rune": {
+      "name": "Flaming Sphere Rune",
+      "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 5-foot radius.</p>",
+      "disable": "<p>@Check[type:thievery|dc:18] (trained) to erase the rune without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2rd level; counteract DC 16) to counteract the rune</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Flaming Sphere": {
+          "name": "Flaming Sphere",
+          "description": "<p><strong>Trigger</strong> A living creature touches the sensor area.</p>\n<hr />\n<p><strong>Effect</strong> The rune detonates creating a flaming sphere in the sensor area. This is a 2nd-rank <em>flaming sphere</em> spell that deals @Damage[3d6[fire]] damage (@Check[type:reflex|dc:19|basic:true] save).</p>"
+        }
+      }
+    },
+    "Flaming Sphere Rune (5-6)": {
+      "name": "Flaming Sphere Rune (5-6)",
+      "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 5-foot radius.</p>",
+      "disable": "<p>@Check[type:thievery|dc:21] (trained) to erase the rune without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2rd level; counteract DC 18) to counteract the rune</p>",
+      "stealth": "<p>(trained)</p>",
+      "tokenName": "Flaming Sphere Rune",
+      "items": {
+        "action->Flaming Sphere": {
+          "name": "Flaming Sphere",
+          "description": "<p><strong>Trigger</strong> A living creature touches the sensor area.</p>\n<hr />\n<p><strong>Effect</strong> The rune detonates creating a flaming sphere in the sensor area. This is a 3nd-rank <em>flaming sphere</em> spell that deals @Damage[4d6[fire]] damage (@Check[type:reflex|dc:21|basic:true] save).</p>"
+        }
+      }
+    },
+    "Foolhardy Mercenary": {
+      "name": "Foolhardy Mercenary",
+      "items": {
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "lore->Guild Lore": {
+          "name": "Guild Lore"
+        }
+      }
+    },
     "Germinated Mandragora": {
       "name": "Germinated Mandragora",
       "publicNotes": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-      "senses": "blood scent, blood scent",
+      "senses": "blood scent",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -1451,6 +2057,64 @@
         },
         "lore->Monastic Lore": {
           "name": "Monastic Lore"
+        }
+      }
+    },
+    "Ghostknife Gardener": {
+      "name": "Ghostknife Gardener",
+      "items": {
+        "spellcastingEntry->Primal Prepared Spells": {
+          "name": "Primal Prepared Spells"
+        },
+        "equipment->Gardening Tools": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Zr4PwTEuBLE30kkn]\nGardening Tools"
+        },
+        "strike-melee->Sickle": {
+          "name": "Sickle"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
+        },
+        "action->Plant Empathy": {
+          "name": "Plant Empathy",
+          "description": "<p>The ghostknife gardener can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} and make very simple requests of plants.</p>"
+        },
+        "action->Decompose": {
+          "name": "Decompose",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Void energy seeps out of the ghostknife gardener, decaying everything within a @Template[type:emanation|distance:5] and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or wood trait take @Damage[1d6[void]] damage (@Check[type:fortitude|dc:16|basic:true]).</p>"
+        }
+      }
+    },
+    "Ghostknife Infiltrator": {
+      "name": "Ghostknife Infiltrator",
+      "items": {
+        "strike-melee->Kukri": {
+          "name": "Kukri"
+        },
+        "strike-ranged->Shuriken": {
+          "name": "Shuriken"
+        },
+        "action->+2 to Fortitude Saves vs. Poison": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 to Fortitude Saves vs. Poison"
+        },
+        "action->Envenom": {
+          "name": "Envenom",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Using either saliva or blood, the infiltrator applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themselves @Damage[1[slashing]] damage as part of the action.</p>"
+        },
+        "action->Flexible": {
+          "name": "Flexible",
+          "description": "<p>The infiltrator is adept at dealing with tight situations. They have a +1 circumstance bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
+        },
+        "action->Proficient Poisoner": {
+          "name": "Proficient Poisoner",
+          "description": "<p>The infiltrator doesn't lose the poison on a weapon due to a critically failed Strike.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The infiltrator deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "action->Vishkanyan Venom": {
+          "name": "Vishkanyan Venom",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>"
         }
       }
     },
@@ -1584,6 +2248,7 @@
       "name": "Helpful Wisp Swarm",
       "description": "<p>Hovering amid the branches of an acacia tree, a swarm of wood wisps attempt to gather the papers that have been caught in its leaves and thorns.</p>",
       "disable": "<p>Diplomacy @Check[type:diplomacy|dc:21] (trained) to make a @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}, @Check[type:athletics|dc:21] (trained) to climb the tree and help gather papers manually, or @Check[type:performance|dc:23] (trained) to demonstrate how the wisps can help without destroying the papers.</p>",
+      "routine": "<p><strong>(3 actions)</strong> The wisp swarm loses one action for each successful check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{disable} it. The wisps swarm to work on each of their actions, making a headbutt Strike against any creature within 10 feet of the tree and destroying [[/br 2d4 #Pages]] pages of notes.</p>",
       "stealth": "<p>(trained) to notice the creatures hovering in the trees</p>",
       "items": {
         "action->Willing Wisps": {
@@ -1838,6 +2503,46 @@
         }
       }
     },
+    "Lively Commodore Sticky Fingers": {
+      "name": "Lively Commodore Sticky Fingers",
+      "blurb": "variant Draxie",
+      "publicNotes": "<p>The mischievous dragon sprites called draxies have dueled their pixie cousins for the title of ultimate prankster for centuries. They exercise patience and planning to create the perfect pranks, spending months, or even years, on their efforts. One exception to their flighty nature is the elucrea, a lifelong bond between a draxie and a creature they're particularly fond of, typically one with a good sense of humor. According to draxie legend, a little piece of a draxie's spirit remembers being united as the ancient fey dragonet Elucredassa, and that causes draxies to yearn for such connections with others.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "tokenName": "Commodore Sticky Fingers",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-ranged->Euphoric Spark": {
+          "name": "Euphoric Spark"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The draxie breathes pixie dust in a @Template[type:cone|distance:15], with a random effect determined each time they use their Breath Weapon. Roll [[/r 1d4]] to determine the effect. Each creature in the area must succeed at a @Check[type:will|dc:17] save or be affected.</p>\n<p>The draxie can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ol>\n<li>The target takes the effects of the @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</li>\n<li>The target loses its last 5 minutes of memory.</li>\n<li>The target takes the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li>For 1 minute, the target is in a state of euphoria that makes it @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</li>\n</ol>"
+        }
+      }
+    },
+    "Mercenary Squad": {
+      "name": "Mercenary Squad",
+      "hpDetails": "Thresholds 20 (12 squares), 10 (8 squares)",
+      "speed": "troop movement",
+      "items": {
+        "action->Fire Crossbows!": {
+          "name": "Fire Crossbows!",
+          "description": "<p>The mercenary squad members draw or reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 80 feet that deals @Damage[2d6[piercing]] damage (@Check[type:reflex|dc:15|basic:true] save). When the mercenary squad is reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
+        },
+        "action->Get 'em!": {
+          "name": "Get 'em!",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The mercenary squad engages in a coordinated melee attack against each adjacent enemy, with a @Check[type:reflex|dc:15|basic:true] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d6+5)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d6+8)[bludgeoning]] damage</p>"
+        },
+        "action->Troop Movement": {
+          "name": "Troop Movement",
+          "description": "<p>Whenever the city guards Stride, they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the guards enters difficult terrain, the extra movement cost applies to all the guards.</p>\n<p>The mercenary squad ignores difficult terrain (but not greater difficult terrain) caused by crowds or from movement through narrow spaces such as alleyways.</p>"
+        }
+      }
+    },
     "Metal Rascal": {
       "name": "Metal Rascal",
       "blurb": "Variant metal scamp ",
@@ -2084,6 +2789,35 @@
         }
       }
     },
+    "Possessed Daeodons": {
+      "name": "Possessed Daeodons",
+      "description": "<p>Three daeodon corpses, animated and enraged by Sezelrian's divine intervention, trample anything within the ritual circle.</p>",
+      "disable": "<p>@Check[type:occultism|dc:21] or @Check[type:religion|dc:21] to disrupt the magic animating the spirits, @Check[type:athletics|dc:25] to hold down one of the daeodons, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd-rank, counteract DC 25). 3 successes are required.</p>",
+      "reset": "<p>The hazard resets within 24 hours if the cultists of Sezelrian still remain in the area.</p>",
+      "routine": "<p>(three actions) The animated daeodons trample all creatures within the circle, dealing @Damage[(2d8+9)[bludgeoning]] damage (@Check[type:reflex|dc:23|basic:true] save).</p>",
+      "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic} to notice the heavy divine magic in the area</p>",
+      "items": {
+        "action->Fires of Sabotage": {
+          "name": "Fires of Sabotage",
+          "description": "<p><strong>Trigger</strong> A creature enters the area of the ritual circle</p>\n<hr />\n<p><strong>Effect</strong> The outline of the circle alights with fire dealing @Damage[4d6[fire]] damage to all creatures within it (@Check[type:reflex|dc:24|basic:true] save). The trap then rolls initiative.</p>"
+        }
+      }
+    },
+    "Possessed Daeodons (7-8)": {
+      "name": "Possessed Daeodons (7-8)",
+      "description": "<p>Three daeodon corpses, animated and enraged by Sezelrian's divine intervention, trample anything within the ritual circle.</p>",
+      "disable": "<p>@Check[type:occultism|dc:24] or @Check[type:religion|dc:24] to disrupt the magic animating the spirits, @Check[type:athletics|dc:28] to hold down one of the daeodons, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th-rank, counteract DC 28). 3 successes are required.</p>",
+      "reset": "<p>The hazard resets within 24 hours if the cultists of Sezelrian still remain in the area.</p>",
+      "routine": "<p>(three actions) The animated daeodons trample all creatures within the circle, dealing @Damage[(2d10+11)[bludgeoning]] damage (@Check[type:reflex|dc:25|basic:true] save).</p>",
+      "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic} to notice the heavy divine magic in the area</p>",
+      "tokenName": "Possessed Daeodons",
+      "items": {
+        "action->Fires of Sabotage": {
+          "name": "Fires of Sabotage",
+          "description": "<p><strong>Trigger</strong> A creature enters the area of the ritual circle</p>\n<hr />\n<p><strong>Effect</strong> The outline of the circle alights with fire dealing @Damage[6d6[fire]] damage to all creatures within it (@Check[type:reflex|dc:26|basic:true] save). The trap then rolls initiative.</p>"
+        }
+      }
+    },
     "Raised Draugr": {
       "name": "Raised Draugr",
       "blurb": "Variant draugr",
@@ -2182,6 +2916,38 @@
         }
       }
     },
+    "Sezelrian Warg": {
+      "name": "Sezelrian Warg",
+      "blurb": "Variant winter wolf",
+      "publicNotes": "<p>Winter wolves are related to wargs, but are larger, smarter, and far more dangerous. They are capable of exhaling plumes of freezing breath and are big enough to easily serve as mounts for orcs and hobgoblins-provided the winter wolf is willing, of course. Like wargs, winter wolves hunt in packs, but unlike their smaller cousins, they have a notable proud streak. When they deign to serve others, they reserve this privilege for larger and more dangerous creatures such as frost giants, renegade yetis, or even white dragons.</p>\n<hr />\n<p>The warg is an intelligent and malevolent wolf that dwells among goblins, hobgoblins, orcs, and other violent humanoids.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Avenging Bite": {
+          "name": "Avenging Bite",
+          "description": "<p><strong>Trigger</strong> A creature within the reach of the Sezelrian warg's jaws attacks one of the warg's allies</p>\n<hr />\n<p><strong>Effect</strong> The Sezelrian warg makes a jaws Strike against the triggering creature.</p>"
+        },
+        "action->Buck": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]\n<p>@Check[type:reflex|dc:21]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The Sezelrian warg breathes a cloud of smoky fire in a @Template[type:cone|distance:15] that deals @Damage[5d8[fire]] damage (@Check[type:reflex|dc:23|basic:true] save). The Sezelrian warg cannot use Breath Weapon for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+        },
+        "action->Pack Attack": {
+          "name": "Pack Attack",
+          "description": "<p>The Sezelrian warg's Strikes deal 1d6 extra damage to creatures within the reach of at least two of the warg's allies.</p>"
+        },
+        "lore->Stealth": {
+          "skillVariants": {
+            "0": {
+              "label": "+16 in snow"
+            }
+          }
+        }
+      }
+    },
     "Shadow Draugr": {
       "name": "Shadow Draugr",
       "blurb": "Variant draugr (Pathfinder Bestiary 2 102)",
@@ -2206,6 +2972,40 @@
         "action->Swipe": {
           "name": "Swipe",
           "description": "<p>The shadow draugr makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Shadow of Sezruth": {
+      "name": "Shadow of Sezruth",
+      "languages": "telepathy 100 feet",
+      "saveDetails": "+1 status to all saves vs. magic",
+      "items": {
+        "spellcastingEntry->Divine Innate Spells": {
+          "name": "Divine Innate Spells"
+        },
+        "spell->Touch of Idiocy": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+        },
+        "spell->Illusory Object (At Will)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]\nIllusory Object (At Will)"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Telepathy 100 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
+        },
+        "action->Hatred of Beauty": {
+          "name": "Hatred of Beauty",
+          "description": "<p>While aghashes hate all mortals, they particularly despise beautiful objects and beautiful or charismatic mortals. When not in physical peril, an aghash is compelled to destroy art and other works of beauty. An aghash can't enter an area of pristine beauty without first marring it in some way.</p>\n<p>Given a choice, an aghash attacks a foe with the highest Charisma score first. If barred from doing so by force or some magical effect, they take @Damage[1d6[mental]] damage at the end of their turn.</p>"
+        },
+        "action->Cursed Gaze": {
+          "name": "Cursed Gaze",
+          "description": "<p>The aghash fixes their gaze on one creature they can see within 20 feet. The creature must attempt a @Check[type:will|dc:18|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[mental]] damage and becomes either @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (the aghash's choice).</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
+        },
+        "action->Sandstorm": {
+          "name": "Sandstorm",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The aghash creates a temporary sandstorm in a @Template[type:emanation|distance:30] that lasts for 1 minute.</p>\n<p>Creatures within the emanation take a -4 circumstance penalty to Perception checks and must succeed at a @Check[type:fortitude|dc:15] save. On a failure, they're forced to hold their breath or else they start suffocating. A creature within the sandstorm at the end of its turn takes @Damage[1d4[slashing]] damage.</p>\n<p>Divs are immune to all effects of an aghash's sandstorm.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.f8rncEs06bqcn3LZ]{Effect: Sandstorm}</p>"
         }
       }
     },
@@ -2243,6 +3043,18 @@
               "label": "Sneak Attack"
             }
           }
+        }
+      }
+    },
+    "Sharktopus Eidolon": {
+      "name": "Sharktopus Eidolon",
+      "items": {
+        "strike-melee->Tentacle": {
+          "name": "Tentacle"
+        },
+        "action->Faceglomph": {
+          "name": "Faceglomph",
+          "description": "<p><strong>Trigger</strong> The sharktopus eidolon makes a successful tentacle strike</p>\n<hr />\n<p><strong>Effect</strong> the sharktopus makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}. If it is successful, the target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until it escapes.</p>"
         }
       }
     },
@@ -2438,6 +3250,26 @@
         }
       }
     },
+    "Sprite (PFS Q18)": {
+      "name": "Sprite (PFS Q18)",
+      "publicNotes": "<p>Common sprites, sometimes called firefly sprites, are primeval guardians that latch onto a person, place, or object and defend it for their own inscrutable reasons. Their dispositions vary from kind to spiteful, but all sprites have a capricious streak. Being only about 9 inches tall, they are wary of animals that might hunt them, particularly house cats, and prefer flight to a fight. On the other hand, sprites are incredibly curious about all forms of magic and heedlessly gather around ley line nexuses or other places of power.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
+      "tokenName": "Sprite",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-melee->Rapier": {
+          "name": "Rapier"
+        },
+        "strike-ranged->Luminous Spark": {
+          "name": "Luminous Spark"
+        },
+        "action->Luminous Fire": {
+          "name": "Luminous Fire",
+          "description": "<p>A sprite naturally sheds light like a torch. The sprite can extinguish, rekindle, or change the color of this light by using an action with the concentrate trait. While this light is extinguished, the sprite's Strikes don't deal fire damage, and they can't use their luminous spark Strike.</p>"
+        }
+      }
+    },
     "Spry Blodeuwedd": {
       "name": "Spry Blodeuwedd",
       "blurb": "Variant blodeuwedd",
@@ -2481,7 +3313,7 @@
           "description": "<p>A blodeuwedd exudes a 30-foot aura of pollen and irritating allergens. A non-plant living creature that begins its turn in the aura must succeed at a @Check[type:fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. A creature that succeeds at its save is then temporarily immune to the allergen aura for 24 hours. A blodeuwedd can suppress this aura or activate it again as a free action.</p>"
         },
         "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>A blodeuwedd can take on the appearance of a single unique humanoid or the form of a prairie owl.</p>\n<p>When in humanoid form, the blodeuwedd loses its claw attack.</p>\n<p>In owl form, its statistics change as follows:</p>\n<ul>\n<li><strong>Size</strong> Small;</li>\n<li><strong>Speed</strong> fly 60 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a </span>talons [[/r {1d20+15} #Attack]]{+15}, Damage @Damage[(1d3-1)[slashing]].</li>\n</ul>\n<p>A blodeuwedd can return to their normal form as a free action.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>A blodeuwedd can take on the appearance of a single unique humanoid or the form of a prairie owl.</p>\n<p>When in humanoid form, the blodeuwedd loses its claw attack.</p>\n<p>In owl form, its statistics change as follows:</p>\n<ul>\n<li><strong>Size</strong> Small;</li>\n<li><strong>Speed</strong> fly 60 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> talons [[/r {1d20+15} #Attack]]{+15}, Damage @Damage[(1d3-1)[slashing]].</li>\n</ul>\n<p>A blodeuwedd can return to their normal form as a free action.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->Living Footsteps": {
           "name": "Living Footsteps",
@@ -2497,6 +3329,73 @@
               "label": "+15 in grasslands"
             }
           }
+        }
+      }
+    },
+    "Sronwa": {
+      "name": "Sronwa",
+      "items": {
+        "consumable->Giant Centipede Venom": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\n<p>Giant centipede venom causes severe muscle stiffness.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-ranged->Hand Crossbow": {
+          "name": "Hand Crossbow"
+        },
+        "action->Nimble Dodge": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.wCnsRCHvtZkZTmO0]\n<p><strong>Trigger</strong> Sronwa is targeted with a melee or ranged attack by an attacker she can see</p>\n<hr />\n<p><strong>Effect</strong> Sronwa gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+        },
+        "action->Poison Weapon": {
+          "name": "Poison Weapon",
+          "description": "<p><strong>Requirements</strong> Sronwa is wielding a piercing or slashing weapon and has a free hand</p>\n<hr />\n<p><strong>Effect</strong> Sronwa applies a poison to the weapon.</p>"
+        },
+        "action->Quick Draw": {
+          "name": "Quick Draw",
+          "description": "<p>Sronwa Interacts to draw a weapon, then Strikes with that weapon.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Sronwa deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "lore->Herbalism Lore": {
+          "name": "Herbalism Lore"
+        }
+      }
+    },
+    "Sronwa (5-6)": {
+      "name": "Sronwa (5-6)",
+      "tokenName": "Sronwa",
+      "items": {
+        "consumable->Black Adder Venom": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-ranged->Hand Crossbow": {
+          "name": "Hand Crossbow"
+        },
+        "action->Nimble Dodge": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.wCnsRCHvtZkZTmO0]\n<p><strong>Trigger</strong> Sronwa is targeted with a melee or ranged attack by an attacker she can see</p>\n<hr />\n<p><strong>Effect</strong> Sronwa gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+        },
+        "action->Poison Weapon": {
+          "name": "Poison Weapon",
+          "description": "<p><strong>Requirements</strong> Sronwa is wielding a piercing or slashing weapon and has a free hand</p>\n<hr />\n<p><strong>Effect</strong> Sronwa applies a poison to the weapon.</p>"
+        },
+        "action->Quick Draw": {
+          "name": "Quick Draw",
+          "description": "<p>Sronwa Interacts to draw a weapon, then Strikes with that weapon.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Sronwa deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "action->Surprise Attack": {
+          "name": "Surprise Attack",
+          "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the Sronwa.</p>"
+        },
+        "lore->Herbalism Lore": {
+          "name": "Herbalism Lore"
         }
       }
     },
@@ -2804,6 +3703,44 @@
         }
       }
     },
+    "Three-Headed Goat Eidolon": {
+      "name": "Three-Headed Goat Eidolon",
+      "blurb": "Variant chimera",
+      "items": {
+        "strike-melee->Markhor Goat Bite": {
+          "name": "Markhor Goat Bite"
+        },
+        "strike-melee->Saanen Goat Bite": {
+          "name": "Saanen Goat Bite"
+        },
+        "strike-melee->Hoof": {
+          "name": "Hoof"
+        },
+        "strike-melee->Boer Goat Bite": {
+          "name": "Boer Goat Bite"
+        },
+        "action->Three Headed": {
+          "name": "Three Headed",
+          "description": "<p>Any ability that would sever one of the three-headed goat's heads (such as a critical hit with a vorpal weapon) severs one head at random. Losing a head doesn't kill the three-headed goat (as long as it has one head left), but it does prevent it from making Strikes with the lost head or using the head's Breath Weapon.</p>"
+        },
+        "action->Triple Opportunity": {
+          "name": "Triple Opportunity",
+          "description": "<p>The three-headed goat eidolon gains 2 extra reactions each round that it can use only to make Attacks of Opportunity. It must use a different head for each reaction, and it can't use more than one on the same triggering action. If it loses one of its heads, it also loses one of these extra reactions.</p>"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The two-headed goat breathes a @Template[type:cone|distance:20] that deals 3d6 damage to all creatures in the area (DC 18 basic save of a type indicated below).</p>\n<p>The two-headed goat can't use either of its Breath Weapons again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Boer</strong> Cone of @Damage[3d6[sonic]] (@Check[type:will|dc:18|basic:true])</li>\n<li><strong>Markhor</strong> Cone of @Damage[3d6[poison]] (@Check[type:fortitude|dc:18|basic:true])</li>\n<li><strong>Saanen</strong> Cone of @Damage[3d6[fire]] (@Check[type:reflex|dc:18|basic:true])</li>\n</ul>"
+        },
+        "action->Elemental Bite": {
+          "name": "Elemental Bite",
+          "description": "<p>Each head deals an extra 1d6 damage of a type matching the head’s breath weapon.</p>"
+        },
+        "action->Three-Headed Strike": {
+          "name": "Three-Headed Strike",
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<hr />\n<p><strong>Effect</strong> The three-headed goat makes a Strike with each of its heads, each at a –2 penalty and targeting a different creature. These Strikes count as two attacks for the three-headed goat's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks</p>"
+        }
+      }
+    },
     "Tisbah": {
       "name": "Tisbah",
       "saveDetails": "+2 status to fortitude vs. poison",
@@ -2890,6 +3827,30 @@
         "action->Vishkanyan Venom": {
           "name": "Vishkanyan Venom",
           "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>"
+        }
+      }
+    },
+    "Titanic Flytrap": {
+      "name": "Titanic Flytrap",
+      "description": "<p>On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, reaching 10 feet across and reinforced with woody branches and lined with paralytic hairs.</p>",
+      "disable": "<p>@Check[type:survival|dc:21] (trained) to mislead the flytrap's sense of weight and pressure</p>",
+      "reset": "<p>1 hour (or longer, after a large meal)</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Snap Shut": {
+          "name": "Snap Shut",
+          "description": "<p><strong>Trigger</strong> A Small or Medium creature moves into a square that is within reach of the flytrap's hidden jaws</p>\n<hr />\n<p><strong>Effect</strong> The flytrap's jaws snap shut, making a jaws Strike against the triggering creature.</p>"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Devour": {
+          "name": "Devour",
+          "description": "<p>The target is trapped by the flytrap's jaws, gaining the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until it Escapes (DC 21). Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a –2 circumstance penalty to its saving throws against this poison. At the end of each of target's turns that it remains grabbed, the target takes @Damage[2d8[acid]] damage.</p>"
+        },
+        "action->Titanic Flytrap Toxin": {
+          "name": "Titanic Flytrap Toxin",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
         }
       }
     },
@@ -3025,6 +3986,109 @@
         }
       }
     },
+    "Tough Assassins' Guild Rogue": {
+      "name": "Tough Assassins' Guild Rogue",
+      "items": {
+        "consumable->Hunting Spider Venom (Applied to One Dart)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\nHunting Spider Venom (Applied to One Dart)",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-ranged->Blowgun": {
+          "name": "Blowgun"
+        },
+        "action->Hidden Movement": {
+          "name": "Hidden Movement",
+          "description": "<p>If the assassins' guild rogue starts its turn undetected by a creature or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the rogue's attacks until the end of the rogue's turn.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The assassins' guild rogue deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        }
+      }
+    },
+    "Tough Bandit": {
+      "name": "Tough Bandit",
+      "items": {
+        "strike-melee->Sap": {
+          "name": "Sap"
+        },
+        "strike-melee->Club": {
+          "name": "Club"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
+        },
+        "strike-ranged->Club": {
+          "name": "Club"
+        },
+        "action->+1 Perception to Find Concealed Objects": {
+          "name": "+1 Perception to Find Concealed Objects"
+        },
+        "lore->Legal Lore": {
+          "name": "Legal Lore"
+        }
+      }
+    },
+    "Tough Ghostknife Gardener": {
+      "name": "Tough Ghostknife Gardener",
+      "items": {
+        "spellcastingEntry->Primal Prepared Spells": {
+          "name": "Primal Prepared Spells"
+        },
+        "equipment->Gardening Tools": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Zr4PwTEuBLE30kkn]\nGardening Tools"
+        },
+        "strike-melee->Sickle": {
+          "name": "Sickle"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
+        },
+        "action->Plant Empathy": {
+          "name": "Plant Empathy",
+          "description": "<p>The ghostknife gardener can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} and make very simple requests of plants.</p>"
+        },
+        "action->Decompose": {
+          "name": "Decompose",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Void energy seeps out of the ghostknife gardener, decaying everything within a @Template[type:emanation|distance:5] and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or wood trait take @Damage[1d6[void]] damage (@Check[type:fortitude|dc:16|basic:true]).</p>"
+        }
+      }
+    },
+    "Tough Ghostknife Infiltrator": {
+      "name": "Tough Ghostknife Infiltrator",
+      "items": {
+        "strike-melee->Kukri": {
+          "name": "Kukri"
+        },
+        "strike-ranged->Shuriken": {
+          "name": "Shuriken"
+        },
+        "action->+2 to Fortitude Saves vs. Poison": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 to Fortitude Saves vs. Poison"
+        },
+        "action->Envenom": {
+          "name": "Envenom",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Using either saliva or blood, the infiltrator applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themselves @Damage[1[slashing]] damage as part of the action.</p>"
+        },
+        "action->Flexible": {
+          "name": "Flexible",
+          "description": "<p>The infiltrator is adept at dealing with tight situations. They have a +1 circumstance bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
+        },
+        "action->Proficient Poisoner": {
+          "name": "Proficient Poisoner",
+          "description": "<p>The infiltrator doesn't lose the poison on a weapon due to a critically failed Strike.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The infiltrator deals 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "action->Vishkanyan Venom": {
+          "name": "Vishkanyan Venom",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>"
+        }
+      }
+    },
     "Tough Robber": {
       "name": "Tough Robber",
       "items": {
@@ -3043,6 +4107,84 @@
         },
         "lore->Underworld Lore": {
           "name": "Underworld Lore"
+        }
+      }
+    },
+    "Tough Titanic Flytrap": {
+      "name": "Tough Titanic Flytrap",
+      "description": "<p>On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, reaching 10 feet across and reinforced with woody branches and lined with paralytic hairs.</p>",
+      "disable": "<p>@Check[type:survival|dc:24] (trained) to mislead the flytrap's sense of weight and pressure</p>",
+      "reset": "<p>1 hour (or longer, after a large meal)</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Snap Shut": {
+          "name": "Snap Shut",
+          "description": "<p><strong>Trigger</strong> A Small or Medium creature moves into a square that is within reach of the flytrap's hidden jaws</p>\n<hr />\n<p><strong>Effect</strong> The flytrap's jaws snap shut, making a jaws Strike against the triggering creature.</p>"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Devour": {
+          "name": "Devour",
+          "description": "<p>The target is trapped by the flytrap's jaws, gaining the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until it Escapes (DC 24). Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a –2 circumstance penalty to its saving throws against this poison. At the end of each of target's turns that it remains grabbed, the target takes @Damage[3d8[acid]] damage.</p>"
+        },
+        "action->Titanic Flytrap Toxin": {
+          "name": "Titanic Flytrap Toxin",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+        }
+      }
+    },
+    "Trained Beastmaster Cultist": {
+      "name": "Trained Beastmaster Cultist",
+      "items": {
+        "equipment->Religious Symbol of Sezelrian": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol of Sezelrian"
+        },
+        "strike-melee->Mace": {
+          "name": "Mace"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
+        },
+        "action->Beast Training": {
+          "name": "Beast Training",
+          "description": "<p>Whenever a beastmaster cultist and one of their animal allies are adjacent to the same foe, they both count as flanking that foe regardless of their actual positions.</p>"
+        },
+        "action->Enraging Whistle": {
+          "name": "Enraging Whistle",
+          "description": "<p>The beastmaster cultist blows on her divine whistle, riling up the nearby beasts, granting a +1 status bonus to attacks and damage to all allied animals within 60 feet for one round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.DPN3d9EZM9XqktWT]{Effect: Enraging Whistle}</p>"
+        }
+      }
+    },
+    "Trained Sharktopus Eidolon": {
+      "name": "Trained Sharktopus Eidolon",
+      "items": {
+        "strike-melee->Tentacle": {
+          "name": "Tentacle"
+        },
+        "action->Faceglomph": {
+          "name": "Faceglomph",
+          "description": "<p><strong>Trigger</strong> The sharktopus eidolon makes a successful tentacle strike</p>\n<hr />\n<p><strong>Effect</strong> the sharktopus makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}. If it is successful, the target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until it escapes.</p>"
+        }
+      }
+    },
+    "Trained Vulkariki Eidolon": {
+      "name": "Trained Vulkariki Eidolon",
+      "items": {
+        "action->Vulkariki Athletics": {
+          "name": "Vulkariki Athletics",
+          "description": "<p>A vulkariki eidolon can use Acrobatics instead of Athletics on checks normally requiring Athletics.</p>"
+        },
+        "action->Vulkariki Tricks": {
+          "name": "Vulkariki Tricks",
+          "description": "<p>A vulkariki eidolon can use Acrobatics instead of Thievery to @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal}.</p>"
+        },
+        "lore->Acrobatics": {
+          "skillVariants": {
+            "0": {
+              "label": "+11 to Balance or Tumble Through"
+            }
+          }
         }
       }
     },
@@ -3167,6 +4309,59 @@
         "action->Flood": {
           "name": "Flood",
           "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the treasure pile</p>\n<hr />\n<p><strong>Effect</strong> Treasure slides down the side of the triggering creature in a large wave. All creatures within 15 feet of the falling treasure must attempt a @Check[type:reflex|dc:20] save as an onslaught of treasures bears down on them, dealing @Damage[(2d10+13)[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is trapped in treasure, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} the collapsed treasure (DC 20).</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is buried in treasure, requiring another creature to dig them out of the treasure before they can Escape.</p>"
+        }
+      }
+    },
+    "Two-Headed Goat Eidolon": {
+      "name": "Two-Headed Goat Eidolon",
+      "blurb": "Variant chimera",
+      "items": {
+        "strike-melee->Markhor Goat Bite": {
+          "name": "Markhor Goat Bite"
+        },
+        "strike-melee->Saanen Goat Bite": {
+          "name": "Saanen Goat Bite"
+        },
+        "strike-melee->Hoof": {
+          "name": "Hoof"
+        },
+        "action->Double Opportunity": {
+          "name": "Double Opportunity",
+          "description": "<p>The two-headed goat gains an extra reaction each round that it can use only to make Attacks of Opportunity. It must use a different head for each reaction, and it can't use more than one on the same triggering action. If it loses one of its heads, it also loses this extra reaction.</p>"
+        },
+        "action->Two Headed": {
+          "name": "Two Headed",
+          "description": "<p>Any ability that would sever one of the twoheaded goat's heads (such as a critical hit with a vorpal weapon) severs one head at random. Losing a head doesn't kill the two-headed goat (as long as it has one head left), but it does prevent it from making Strikes with the lost head or using the head's Breath Weapon.</p>"
+        },
+        "action->Breath Weapon": {
+          "name": "Breath Weapon",
+          "description": "<p>The two-headed goat breathes a @Template[type:cone|distance:15] that deals 2d6 damage to all creatures in the area (DC 15 basic save of a type indicated below).</p>\n<p>The two-headed goat can't use either of its Breath Weapons again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Markhor</strong> Cone of @Damage[2d6[poison]] (@Check[type:fortitude|dc:15|basic:true])</li>\n<li><strong>Saanen</strong> Cone of @Damage[2d6[fire]] (@Check[type:reflex|dc:15|basic:true])</li>\n</ul>"
+        },
+        "action->Elemental Bite": {
+          "name": "Elemental Bite",
+          "description": "<p>Each head deals an extra 1d4 damage of a type matching the head’s breath weapon.</p>"
+        },
+        "action->Two-Headed Strike": {
+          "name": "Two-Headed Strike",
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<hr />\n<p><strong>Effect</strong> The two-headed goat makes a Strike with two of its heads, each at a –2 penalty and targeting a different creature. These Strikes count as only one attack for the two-headed goat's multiple attack penalty, and the penalty doesn't increase until after it has made both attacks.</p>"
+        }
+      }
+    },
+    "Uirch of the Burning Suns": {
+      "name": "Uirch of the Burning Suns",
+      "items": {
+        "spellcastingEntry->Divine Prepared Spells": {
+          "name": "Divine Prepared Spells"
+        },
+        "spellcastingEntry->Divine Focus Spells": {
+          "name": "Divine Focus Spells"
+        },
+        "strike-melee->Scimitar": {
+          "name": "Scimitar"
+        },
+        "action->Protection of the Burning Sun": {
+          "name": "Protection of the Burning Sun",
+          "description": "<p>Whenever Uirch's shield is raised, he is granted a defensive aura of sacred fire. Any time he's hit while his shield is raised with a non-reach melee weapon or unarmed attack, the attacking opponent takes @Damage[2d6[fire]] damage with a @Check[type:reflex|dc:20|basic:true] save.</p>"
         }
       }
     },
@@ -3318,6 +4513,26 @@
         }
       }
     },
+    "Vulkariki Eidolon": {
+      "name": "Vulkariki Eidolon",
+      "items": {
+        "action->Vulkariki Athletics": {
+          "name": "Vulkariki Athletics",
+          "description": "<p>A vulkariki eidolon can use Acrobatics instead of Athletics on checks normally requiring Athletics.</p>"
+        },
+        "action->Vulkariki Tricks": {
+          "name": "Vulkariki Tricks",
+          "description": "<p>A vulkariki eidolon can use Acrobatics instead of Thievery to @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal}.</p>"
+        },
+        "lore->Acrobatics": {
+          "skillVariants": {
+            "0": {
+              "label": "+9 to Balance or Tumble Through"
+            }
+          }
+        }
+      }
+    },
     "Wanikkawi": {
       "name": "Wanikkawi",
       "hpDetails": "void healing",
@@ -3381,6 +4596,63 @@
         }
       }
     },
+    "Weak \"Enlightened\" Div Worshipper": {
+      "name": "Weak \"Enlightened\" Div Worshipper",
+      "blurb": "Variant cultist",
+      "tokenName": "\"Enlightened\" Div Worshipper",
+      "items": {
+        "armor->Cultist Garb": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nCultist Garb"
+        },
+        "strike-melee->Longsword": {
+          "name": "Longsword"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Lesser Alchemist's Fire": {
+          "name": "Lesser Alchemist's Fire",
+          "description": "<p><strong>Inexperienced Arsonist</strong> Requires Two Actions</p>"
+        },
+        "action->-2 to Will Saves vs. Higher Ranking Cult Members": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-2 to Will Saves vs. Higher Ranking Cult Members"
+        },
+        "action->Fanatical Frenzy": {
+          "name": "Fanatical Frenzy",
+          "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+        },
+        "lore->Cult of Sezruth Lore": {
+          "name": "Cult of Sezruth Lore"
+        }
+      }
+    },
+    "Weak Div Worshipper": {
+      "name": "Weak Div Worshipper",
+      "blurb": "Variant cultist",
+      "tokenName": "Div Worshipper",
+      "items": {
+        "armor->Cultist Garb": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nCultist Garb"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Lesser Alchemist's Fire": {
+          "name": "Lesser Alchemist's Fire",
+          "description": "<p><strong>Inexperienced Arsonist</strong> Requires Two Actions</p>"
+        },
+        "action->Fanatical Frenzy": {
+          "name": "Fanatical Frenzy",
+          "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+        },
+        "lore->Cult of Sezruth Lore": {
+          "name": "Cult of Sezruth Lore"
+        }
+      }
+    },
     "Weak Giant Mouse": {
       "name": "Weak Giant Mouse",
       "items": {
@@ -3402,6 +4674,31 @@
         "action->Skittish": {
           "name": "Skittish",
           "description": "<p><strong>Trigger</strong> The giant-er mouse is hit with a melee attack</p>\n<hr />\n<p><strong>Effect</strong> The giant-er mouse takes a step after the effects of the triggering attack are resolved.</p>"
+        }
+      }
+    },
+    "Weak Sewer Ooze (PFS Q18)": {
+      "name": "Weak Sewer Ooze (PFS Q18)",
+      "publicNotes": "<p>These amorphous masses of sewage and other detritus make their way through filthy culverts beneath cities large and small.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+      "tokenName": "Sewer Ooze",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Pseudopod"
+        },
+        "action->Motion Sense 60 feet": {
+          "name": "Motion Sense 60 feet",
+          "description": "<p>A sewer ooze can sense nearby motion through vibration and air movement.</p>"
+        },
+        "action->Filth Wave": {
+          "name": "Filth Wave",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures in a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:15] save or take @Damage[1[acid]] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>\n<p>A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
+        },
+        "lore->Stealth": {
+          "skillVariants": {
+            "0": {
+              "label": "+2 in sewers"
+            }
+          }
         }
       }
     },

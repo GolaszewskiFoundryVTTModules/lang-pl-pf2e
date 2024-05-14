@@ -356,6 +356,10 @@ class LocalizationUpdater:
                 text = regex.sub(pattern, replacement, text)
             return text
 
+        if en_str == None:
+            print("Cannot pretranslate empty string")
+            return en_str
+
         # Step 1: Save and replace bracketed sections with placeholders
         text_with_placeholders, bracketed_texts = save_and_replace_brackets(en_str)
 

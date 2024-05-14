@@ -3582,7 +3582,7 @@
             "name": "Immense Mandragora",
             "blurb": "Variant mandragora",
             "publicNotes": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-            "senses": "blood scent, blood scent",
+            "senses": "blood scent",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -3600,7 +3600,7 @@
                 },
                 "action->Apocalyptic Shriek": {
                     "name": "Apocalyptic Shriek",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> The immense mandragora emits a devastating shriek. Each non-mandragora creature within 30 feet must attempt a @Check[type:will|dc:42|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and takes @Damage[8d8[mental]] damage.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and takes @Damage[16d8[mental]] damage.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is sickened 2, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and takes @Damage[150[mental]] damage. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> The immense mandragora emits a devastating shriek. Each non-mandragora creature within @Template[type:emanation|distance:30]{30 feet} must attempt a @Check[type:will|dc:42|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and takes @Damage[8d8[mental]] damage.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and takes @Damage[16d8[mental]] damage.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is sickened 2, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and takes @Damage[150[mental]] damage. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>"
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
@@ -3613,7 +3613,7 @@
                 "lore->Stealth": {
                     "skillVariants": {
                         "0": {
-                            "label": "+20 in vegetation"
+                            "label": "+46 in vegetation"
                         }
                     }
                 }
@@ -4897,7 +4897,7 @@
             "blurb": "Variant mandragora",
             "hpDetails": "fast healing 15",
             "publicNotes": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-            "senses": "blood scent, blood scent",
+            "senses": "blood scent",
             "items": {
                 "action->Blood Scent": {
                     "name": "Blood Scent",
@@ -8729,7 +8729,7 @@
                 },
                 "action->Aura of Disquietude": {
                     "name": "Aura of Disquietude",
-                    "description": "<p>30 feet. @Check[type:will|dc:35]</p>\n<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}, plus a creature frightened by the aura becomes suspicious: it doesn't count any other creature as its ally, and it can't @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic. The vilderavn can activate or deactivate this aura using a single action, which has the concentrate trait.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>30 feet. @Check[type:will|dc:35]</p>\n<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}, plus a creature frightened by the aura becomes suspicious: it doesn't count any other creature as its ally, and it can't @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic. The vilderavn can activate or deactivate this aura using a single action, which has the concentrate trait.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3oF2DVXCmJ7VloBb]{Efekt: Aura of Disquietude}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Bloodbird": {
                     "name": "Bloodbird",

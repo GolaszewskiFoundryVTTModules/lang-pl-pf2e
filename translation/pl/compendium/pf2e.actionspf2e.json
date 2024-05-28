@@ -369,9 +369,17 @@
             "name": "Stworzenie Dywersji",
             "description": "<p>Za pomocą <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\">gestu</span>, <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\">triku</span> albo jakichś <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\">rozpraszających słów</span> tworzysz dywersję kierującą uwagę istoty w inne miejsce. Jeśli używasz gestu lub triku ta akcja zyskuję cechę manipulacja. Jeśli używasz rozpraszających słów, zyskuje cechy słuchowość i lingwistyka.</p>\n<p>Wykonaj pojedynczy test Oszukiwania i porównaj wynik ze ST Percepcji istot, których uwagę chcesz odwrócić. Niezależnie od wyniku twojego testu. istoty które próbujesz przechytrzyć a zyskują premię sytuacyjną +4 do twoich ST Percepcji przeciw twoim próbom Stworzenia Dywersji przez 1 minutę.</p>\n<hr />\n<p><strong>Sukces</strong> Stajesz się @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} względem każdej istoty, której ST Percepcji jest mniejszy lub równy wynikowi twojego rzutu. (Status Schowania pozwala ci się @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekraść} w bezpieczne miejsce.) Efekt utrzymuje się do końca tury lub do momentu aż wykonasz akcję inną niż @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Krok}, @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schowanie Się} lub @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradnięcie Się}. Jeśli @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{zadasz Cios} istocie, posiada ona względem niego @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} a ty stajesz się @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany}. Jeśli zrobisz cokolwiek innego stajesz się postrzegany tuż przez rozpoczęciem swojego działania, chyba że MG zarządzi inaczej.</p>\n<p><strong>Porażka</strong> Nie udaje ci się odwrócić uwagi istot, których ST Percepcji wykracza poza wynik twojego rzutu a istoty te stają się świadome, że próbowałeś je oszukać.</p>"
         },
+        "Dampening Harmonics": {
+            "name": "Dampening Harmonics",
+            "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<hr />\n<p><strong>Efekt</strong> You establish a force field that grants you resistance 10 to damage dealt by spells and magical abilities with the trait of your magiphage ability, except for force damage. The force field lasts for 10 minutes. Each time the field prevents damage, the duration decreases by 1 minute.</p>"
+        },
         "Daydream Trance": {
             "name": "Senny Trans",
             "description": "<p>Wpadasz w półsenny trans. Trwa on 1 minutę lub do momentu aż staniesz się @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, cokolwiek nastąpi pierwsze. Możesz dobrowolnie zakończyć swój trans za pomocą pojedynczej akcji, posiadającej cechę koncentracja, oraz zdając rzut obronny @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] przeciw swojemu ST Klasowemu lub ST Zaklęć wybierając wyższy. Kiedy trans się skończy nie możesz wpaść ponownie w Senny Trans przez 1 minutę. Będąc w transie jesteś pod wpływem poniższych efektów:</p>\n<ul>\n<li>Zyskujesz premię statusową +1 do swoich rzutów obronnych Woli. Ta premia wzrasta do +2 przeciw efektom mentalnym. Jeśli posiadasz legendarną biegłość w Okultyzmie, premia przeciw efektom mentalnym wzrasta do +3.</li>\n<li>Ponosisz karę –1 do testów Percepcji i rzutów na inicjatywę.</li>\n</ul>"
+        },
+        "Dazzle Seeker": {
+            "name": "Dazzle Seeker",
+            "description": "<p><strong>Aktywator</strong> A creature attempts a flat check to target you due to you being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from it</p>\n<hr />\n<p><strong>Efekt</strong> You flash your bright scales in the creature's eyes, making it hard for them to pinpoint your exact location. The creature must roll the flat check twice and take the worse result.</p>"
         },
         "De-Animating Gestures (False)": {
             "name": "Gest Dez-Animacji (Fałsz)",
@@ -531,7 +539,7 @@
         },
         "Energy Shot": {
             "name": "Wystrzał Energii",
-            "description": "<p><strong>Aktywator</strong> Rzucasz inicjatywę.</p>\n<hr />\n<p>Uwalniasz mały impuls energii do swojej broni, pokrywając pocisk energią magicznego potencjału i nadając mu możliwość zadawania wrogom obrażeń od energii aby wykorzystywać ich słabości. Możesz dokonać Interakcji aby wyciągnąć broń dystansową. Przy twoich pierwszych trzech Ciosach zadanych w tym staciu kuszą lub bronią palną, zadajesz 1 dodatkowy punkt obrażeń od elektryczności kwasu, ognia lub zimna. Wybierasz jaki typ obrażeń zadać w ramach procesu zadawania każdego z Ciosów.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.zocU4IYIlWwRKUuE]{Efekt: Wystrzał Energii}</p>"
+            "description": "<p><strong>Aktywator</strong> Rzucasz inicjatywę.</p>\n<hr />\n<p>Uwalniasz mały impuls energii do swojej broni, pokrywając pocisk energią magicznego potencjału i nadając mu możliwość zadawania wrogom obrażeń od energii aby wykorzystywać ich słabości. Możesz dokonać Interakcji aby wyciągnąć broń dystansową. Przy twoich pierwszych trzech Ciosach zadanych w tym starciu kuszą lub bronią palną, zadajesz 1 dodatkowy punkt obrażeń od elektryczności kwasu, ognia lub zimna za każdą kość obrażeń broni. Wybierasz jaki typ obrażeń zadać w ramach procesu zadawania każdego z Ciosów.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.zocU4IYIlWwRKUuE]{Efekt: Wystrzał Energii}</p>"
         },
         "Entity's Resurgence": {
             "name": "Powrót Istoty",
@@ -721,6 +729,10 @@
             "name": "Pośpiech",
             "description": "<p>Wytężasz siły, aby poruszać się z dwukrotnie większą prędkością podróży. Możesz Spieszyć Się jedynie przez liczbę minut równą twojej Kondycji × 10 (minimum 10 minut). Jeśli jesteś w grupie, która się Spieszy użyj najniższej Kondycji spośród wszystkich jej członków aby określić jak prędko grupa może się Spieszyć wspólnie.</p>"
         },
+        "I Defy You!": {
+            "name": "I Defy You!",
+            "description": "<p><strong>Aktywator</strong> You fail a save against a mental effect</p>\n<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<hr />\n<p><strong>Efekt</strong> You reroll the triggering save and must take the second result.</p>"
+        },
         "Identify Alchemy": {
             "name": "Identyfikacja Alchemii",
             "description": "<p><strong>Wymagania</strong> Nosisz lub trzymasz @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]{Zestaw Alchemika}.</p>\n<hr />\n<p>Możesz określić naturę alchemicznego przedmiotu poprzez 10 minut testów przeprowadzanych za pomocą zestawu alchemika. Jeśli twoja próba zostanie w jakikolwiek sposób przerwana, musisz zacząć od nowa.</p>\n<hr />\n<p><strong>Sukces</strong> Identyfikujesz przedmiot i określasz sposób jego aktywacji.</p>\n<p><strong>Porażka</strong> Nie udaje ci się zidentyfikować przedmiotu, ale możesz spróbować ponownie.</p>\n<p><strong>Krytyczna Porażka</strong> Błędnie identyfikujesz przedmiot jako inny przedmiot wybrany przez MG.</p>"
@@ -792,6 +804,14 @@
         "Jumping Jenny": {
             "name": "Jumping Jenny",
             "description": "<p><strong>Koszt</strong> 2 batches of infused reagents</p>\n<hr />\n<p><strong>Efekt</strong> Target a flying creature within 60 feet. Until the start of your next turn, each time that creature attempts to Fly, they must succeed at an Acrobatics check to Maneuver in Flight against the DC of your fireworks display, or the Fly action is disrupted. If all the creature's attempts to Fly are disrupted, at the end of its turn, it falls harmlessly to the ground below. A jumping jenny costs 2 batches of infused reagents, rather than 1.</p>"
+        },
+        "Lantern Beam": {
+            "name": "Lantern Beam",
+            "description": "<p><strong>Wymagania</strong> Your lantern light is shining</p>\n<hr />\n<p><strong>Efekt</strong> Your lenses focus your light into a searing beam. You deal @Damage[((max(5,ceil(@actor.level/2)))d4)[fire]] damage to all creatures in a @Template[type:line|distance:30], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. Your lantern light then extinguishes, and you can't use this ability or use your lantern light again for [[/r 1d4 #Recharge Lantern Beam]]{1k4 rounds}. At 11. level and every two levels thereafter, the damage increases by 1k4.</p>"
+        },
+        "Lantern Strobe": {
+            "name": "Lantern Strobe",
+            "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<hr />\n<p><strong>Efekt</strong> As you pulse your lantern, your emitters flash erratically, disorienting your opponents that see it. Each opponent in a @Template[type:cone|distance:15] must attempt a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC (whichever is higher). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for the following round.</p>"
         },
         "Launch Fireworks Display": {
             "name": "Launch Fireworks Display",
@@ -1005,6 +1025,10 @@
             "name": "Raise Neck",
             "description": "<p>You raise your head into a striking position. The fangs Strike granted by your nagaji ancestry gains a reach of 10 feet until the end of your turn.</p>"
         },
+        "Raise Slabs": {
+            "name": "Raise Slabs",
+            "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> Thick slabs of stone rise around you before tilting over. You deal @Damage[(ceil(@actor.level/2)d6)[bludgeoning]] damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] against your class DC or spell DC, whichever is higher). On a critical failure, the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. At 3. level, and every 2 levels thereafter, this damage increases by 1k6.</p>"
+        },
         "Raise a Shield": {
             "name": "Wzniesienie Tarczy",
             "description": "<p><strong>Wymagania</strong> Dzierżysz tarczę.</p>\n<hr />\n<p>Ustawiasz tarczę tak, aby zapewniała ci ochronę. Kiedy masz Wzniesioną Tarczę otrzymujesz jej premię sytuacyjną do KP. Twoja tarcza pozostaje wzniesiona do początku twojej następnej tury.</p>"
@@ -1175,7 +1199,7 @@
         },
         "Sever Conduit": {
             "name": "Zerwanie Łącza",
-            "description": "<p><strong>Aktywator</strong> Twój eidolon odnosi obrażenia, które sprowadziłyby was do 0 Punktów Żywotności i pochodzą ze źródła innego niż efekt śmierci.</p>\n<hr />\n<p><strong>Efekt</strong> Szybko zamykasz bufor umieszczony na więzi z twoim eidolonem, sprawiając że twój towarzysz rozmywa się zanim zdąży pociągnąć cię za sobą. Twój eidolon zostaje odwołany i nie możesz Manifestować swojego Eidolona przez 1 minutę. W zamian nie odnosisz wywołujących reakcję obrażeń, chociaż twój eidolon nadal ponosi wszelkie konsekwencje, które im towarzyszyły.</p>"
+            "description": "<p><strong>Aktywator</strong> Twój eidolon odnosi obrażenia, które sprowadziłyby was do 0 Punktów Żywotności i pochodzą ze źródła innego niż efekt z cechą śmierci.</p>\n<hr />\n<p><strong>Efekt</strong> Szybko zamykasz bufor umieszczony na więzi z twoim eidolonem, sprawiając że twój towarzysz rozmywa się zanim zdąży pociągnąć cię za sobą. Twój eidolon zostaje odwołany i nie możesz Manifestować swojego Eidolona przez 1 minutę. W zamian nie odnosisz wywołujących reakcję obrażeń, chociaż twój eidolon nadal ponosi wszelkie konsekwencje, które im towarzyszyły.</p>"
         },
         "Shadow Step": {
             "name": "Shadow Step",
@@ -1200,6 +1224,10 @@
         "Shed Spirit": {
             "name": "Shed Spirit",
             "description": "<p><strong>Częstotliwość</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Efekt</strong> Your familiar's spirit exits its body, leaving its empty shell behind, before flying at an enemy within 20 feet and dealing @Damage[(6+max(0,(ceil((@actor.level –8)/2)*2)))d6[spirit]] damage, with a @Check[type:will|basic:true] save against your spell DC. If the familiar dealt damage, it then flies to an ally within 30 feet of the enemy, restoring Hit Points equal to half the damage dealt. Your familiar then re-forms in its original square. At 9. level, and every 2 levels thereafter, the attack deals an additional 2k6 damage.</p>"
+        },
+        "Shielding Wave": {
+            "name": "Shielding Wave",
+            "description": "<p>You raise a magical barrier of twisting currents. Until the start of your next turn, the first time you take acid or fire damage, you gain resistance to that damage equal to half your level (minimum 1). The resistance is equal to your level instead if you're submerged in water, if you already Cast a Spell with the water trait, or if you used another ability with the water trait this turn.</p>"
         },
         "Shove": {
             "name": "Odepchnięcie",
@@ -1239,7 +1267,7 @@
         },
         "Spinning Crush": {
             "name": "Spinning Crush",
-            "description": "<p><strong>Wymagania</strong> You're wielding a loaded firearm or loaded crossbow.</p>\n<hr />\n<p>You go into a vicious spin, smashing your weapon into those nearby and increasing your momentum by firing. All creatures adjacent to you take [[/r (1d6+@actor.abilities.str.mod)[bludgeoning]]]{1k6 bludgeoning} damage plus your Strength modifier; this increases to [[/r (2d6+@actor.abilities.str.mod)[bludgeoning]]]{2k6} if your firearm has a striking rune, [[/r (3d6+@actor.abilities.str.mod)[bludgeoning]]]{3k6} if it has a greater striking rune, and [[/r (4d6+@actor.abilities.str.mod)[bludgeoning]]]{4k6} if it has a major striking rune. This ability does not apply other effects that increase damage with your firearm Strikes such as weapon specialization. Creatures affected by this attack must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] save. A creature that fails its save is also pushed 5 feet directly away from you.</p>"
+            "description": "<p><strong>Wymagania</strong> You're wielding a loaded firearm or loaded crossbow.</p>\n<hr />\n<p>You go into a vicious spin, smashing your weapon into those nearby and increasing your momentum by firing. All creatures adjacent to you take @Damage[(4d6+@actor.abilities.str.mod)[bludgeoning]]{4k6 bludgeoning damage plus your Strength modifier}; this increases to @Damage[(6d6+@actor.abilities.str.mod)[bludgeoning]]{6k6} if your firearm has a striking rune, @Damage[(8d6+@actor.abilities.str.mod)[bludgeoning]]{8k6} if it has a greater striking rune, and @Damage[(10d6+@actor.abilities.str.mod)[bludgeoning]]{10k6} if it has a major striking rune. This ability does not apply other effects that increase damage with your firearm Strikes such as weapon specialization. Creatures affected by this attack must attempt a @Check[type:reflex|dc:resolve(@actor.system.attributes.classDC.value)|basic:true] save. A creature that fails its save is also pushed 10 feet directly away from you.</p>"
         },
         "Spirit's Mercy": {
             "name": "Spirit's Mercy",
@@ -1292,6 +1320,10 @@
         "Stride": {
             "name": "Bieg",
             "description": "<p>Przemieszczasz się na odległość nie większą od swojej Prędkości.</p>"
+        },
+        "Stridulating Song": {
+            "name": "Stridulating Song",
+            "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> You circulate magic through your wings, causing them to vibrate at high speeds such that their scraping produces disruptive sounds. You focus the sound at one creature within 30 feet who must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC (whichever is higher) or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure, as the vibrations disrupt its inner equilibrium. You can Sustain the effect for up to 1 minute; the creature can't recover from the sickened condition as long as you continue your song and it can hear you.</p>"
         },
         "Strike": {
             "name": "Cios",
@@ -1413,6 +1445,10 @@
             "name": "Opatrywanie Ran",
             "description": "<p><strong>Wymagania</strong> Nosisz lub trzymasz @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Zestaw Uzdrowiciela}</p>\n<hr />\n<p>Spędzasz 10 minut opatrując jedną ranną żyjącą istotę (obierając za cel siebie samego, jeśli chcesz). Cel jest następnie @UUID[Compendium.pf2e.feat-effects.Item.Lb4q2bBAgxamtix5]{niewrażliwy} na akcję Opatrywania Ran, ale ten interwał nakłada się z czasem, który poświęcasz na samo leczenie (a więc pacjent może być opatrywany raz na godzinę, nie raz na 70 minut).</p>\n<p>ST testu medycyny wynosi zwykle 15 ale MG może je zmodyfikować ze względu na okoliczności, takie jak opatrywanie pacjenta na zewnątrz podczas burzy lub opatrywanie ran przeklętych magią. Jeśli jesteś ekspertem w Medycynie możesz zamiast tego podjąć się testu o ST 20 by zwiększyć liczbę odzyskiwanych Punktów Żywotności o 10; jeśli jesteś mistrzem w Medycynie możesz podjąć się testu o ST 30 by zwiększyć liczbę odzyskiwanych Punktów Żywotności o 30 a jeśli jesteś legendą możesz podjąć się testu o ST 40 aby zwiększyć liczbę odzyskiwanych Punktów Żywotności o 50. Obrażenia zadawane przy krytycznej porażce pozostają bez zmian.</p>\n<p>Jeśli zdasz test możesz kontynuować opatrywanie celu aby zapewnić mu dodatkowe Punkty Żywotności. Jeśli opatrujesz jego rany przez co najmniej 1 godzinę, podwój ilość Punktów Żywotności, które odzyskuje w wyniku Opatrywania Ran.</p>\n<p>Wynik twojego testu medycyny określa ile Punktów Żywotności odzyskuje cel.</p>\n<p>@UUID[Compendium.pf2e.pf2e-macros.Macro.6duZj0Ygiqv712rq]{Opatrywanie Ran}</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Cel odzyskuje [[/r 4d8[healing] #Opatrywanie Ran]]{4k8} Punktów Żywotności oraz traci status @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny}.</p>\n<p><strong>Sukces</strong> Cel odzyskuje [[/r 2d8[healing] #Opatrywanie Ran]]{2k8} Punktów Żywotności oraz traci status ranny.</p>\n<p><strong>Krytyczna Porażka</strong> Cel otrzymuje [[/r 1d8[damage] #Opatrywanie Ran (Krytyczna Porażka)]]{1k8} obrażeń.</p>"
         },
+        "Trench Digging": {
+            "name": "Trench Digging",
+            "description": "<p><strong>Aktywator</strong> You're subjected to forced movement</p>\n<hr />\n<p><strong>Efekt</strong> You deploy your claw spikes to churn the earth asunder, creating difficult terrain in each square of ground you're moved through.</p>"
+        },
         "Trip": {
             "name": "Podcięcie",
             "description": "<p><strong>Wymagania</strong> Masz co najmniej jedną wolną rękę a cel jest od ciebie większy o nie więcej niż 1 rozmiar.</p>\n<hr />\n<p>Próbujesz powalić istotę na ziemię. Wykonaj test <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">Atletyki</span> przeciw ST Refleksu celu.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Cel pada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} na ziemię i odnosi @Damage[1d6[bludgeoning]]{1k6 obrażeń obuchowych}.</p>\n<p><strong>Sukces</strong> Cel pada powalony na ziemię.</p>\n<p><strong>Krytyczna Porażka</strong> Tracisz równowagę i padasz powalony na ziemię.</p>"
@@ -1428,6 +1464,10 @@
         "Unleash Psyche": {
             "name": "Unleash Psyche",
             "description": "<p><strong>Aktywator</strong> Your turn begins.</p>\n<hr />\n<p><strong>Wymagania</strong> You're in an encounter, you Cast a Spell on your previous turn, and you aren't @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}.</p>\n<hr />\n<p>You call on the depths of your mind and let psychic power flood through. Your Psyche remains Unleashed for 2 rounds or until your fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first. You can't voluntarily quell your unleashed psyche. While your Psyche is Unleashed, the following effects occur.</p>\n<ul>\n<li>You're constantly surrounded by the visual manifestation of your psychic magic.</li>\n<li>When you cast a damaging spell, you gain a status bonus to its damage equal to double the spell's rank. This applies only to spells that don't have a duration and that you cast using psychic spellcasting.</li>\n<li>You can use actions that have the psyche trait. After your unleashed psyche subsides, your mind must recover from the strain of channeling its full power. You can't use Unleash Psyche again for 2 rounds, and you're @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 2 rounds.</li>\n</ul>"
+        },
+        "Unwavering Resilience": {
+            "name": "Unwavering Resilience",
+            "description": "<p><strong>Aktywator</strong> You attempt a saving throw against a poison, disease, or mental effect, but you haven't rolled yet.</p>\n<hr />\n<p>You tap into the power of the Plane of Wood, gaining strength and mental fortitude. You gain a +1 circumstance bonus on the triggering save. If you critically succeed at this saving throw, you become bolstered by your success; blossoms and new growth temporarily sprout all over your body, and you gain a number of temporary Hit Point equal to your level. These temporary Hit Points last for one minute. When there temporary Hit Points are lost, the verdant growth subsides.</p>"
         },
         "Upstage": {
             "name": "Upstage",

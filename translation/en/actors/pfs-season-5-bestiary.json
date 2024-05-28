@@ -104,6 +104,29 @@
         }
       }
     },
+    "Acrid Corrosive Slime": {
+      "name": "Acrid Corrosive Slime",
+      "senses": "no vision",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Pseudopod"
+        },
+        "strike-ranged->Acrid Splash": {
+          "name": "Acrid Splash"
+        },
+        "action->Motion Sense": {
+          "name": "Motion Sense",
+          "description": "<p>A corrosive slime can sense nearby creatures through vibration and air or water movement.</p>"
+        },
+        "action->Acrid Trail": {
+          "name": "Acrid Trail",
+          "description": "<p>When the Corrosive Slime moves, it leaves a trail of bubbling slime in its wake. After moving, all squares the Corrosive Slime moves from or through count as Difficult Terrain until the end of the corrosive slime's next turn. Creatures which end their turn in one of those squares must succeed at a @Check[type:reflex|dc:22|basic:true] save or take @Damage[2d10[acid]] damage.</p>"
+        },
+        "action->Constrict": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d8[bludgeoning],1d8[acid]], @Check[type:fortitude|dc:22|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        }
+      }
+    },
     "Alystair Caskwater (1-2)": {
       "name": "Alystair Caskwater (1-2)",
       "blurb": "Variant draugr (Pathfinder Bestiary 2 102)",
@@ -276,6 +299,26 @@
         "action->Shadowed Illumination": {
           "name": "Shadowed Illumination",
           "description": "<p>Umbral pixies exude shadow, counteracting all other light and darkness effects their level or lower to leave dim light out to 10 feet (counteract rank 3, counteract bonus [[/r 1d20+10 #Counteract]]{+10}). The shadow pixie can suppress this effect with a single action, which has the concentrate trait. While the effect is suppressed, the shadow pixie's Strikes don't deal cold damage and they can't use their shadow spark Strike.</p>"
+        }
+      }
+    },
+    "Arjol Parkit": {
+      "name": "Arjol Parkit",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "equipment->Robes": {
+          "name": "Robes"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "lore->Time Lore": {
+          "name": "Time Lore"
         }
       }
     },
@@ -1023,6 +1066,56 @@
         }
       }
     },
+    "Blue-Scarf Heavy": {
+      "name": "Blue-Scarf Heavy",
+      "items": {
+        "equipment->Stolen Goods": {
+          "name": "Stolen Goods"
+        },
+        "strike-melee->Bastard Sword": {
+          "name": "Bastard Sword"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-ranged->Rock": {
+          "name": "Rock"
+        },
+        "action->Close-Quarters Fighting": {
+          "name": "Close-Quarters Fighting",
+          "description": "<p>The blue-scarf heavy gains a +4 circumstance bonus to damage rolls against creatures they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
+        },
+        "action->Sudden Rush": {
+          "name": "Sudden Rush",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The blue-scarf heavy strides up to 10 feet and attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature. If they succeed, they also deal fist damage to that creature.</p>"
+        }
+      }
+    },
+    "Blue-Scarf Tough": {
+      "name": "Blue-Scarf Tough",
+      "items": {
+        "equipment->Stolen Goods": {
+          "name": "Stolen Goods"
+        },
+        "strike-melee->Bastard Sword": {
+          "name": "Bastard Sword"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-ranged->Rock": {
+          "name": "Rock"
+        },
+        "action->Close-Quarters Fighting": {
+          "name": "Close-Quarters Fighting",
+          "description": "<p>The blue-scarf tough gains a +3 circumstance bonus to damage rolls against creatures they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
+        },
+        "action->Sudden Rush": {
+          "name": "Sudden Rush",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The blue-scarf tough strides up to 10 feet and attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature. If they succeed, they also deal fist damage to that creature.</p>"
+        }
+      }
+    },
     "Burning Sun Orc": {
       "name": "Burning Sun Orc",
       "items": {
@@ -1108,6 +1201,53 @@
         "action->Blood Drain": {
           "name": "Blood Drain",
           "description": "<p><strong>Requirements</strong> The void zombie's previous action was a successful feeding tendril Strike against the target creature</p>\n<hr />\n<p><strong>Effect</strong> The void zombie uses its feeding tendril to drain blood from the creature it has struck. This deals @Damage[2d4[bleed]] damage, and a creature that takes this damage is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+        }
+      }
+    },
+    "Cacophonous Hound Echo": {
+      "name": "Cacophonous Hound Echo",
+      "publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "spell->Discern Location": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
+        },
+        "spell->Dimensional Anchor": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]\nDimensional Anchor"
+        },
+        "spell->Invisibility (Self only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self only)"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Churning Gaze": {
+          "name": "Churning Gaze",
+          "description": "<p>30 feet. The hound echo's eyes glow balefully, causing the internal organs of a creature that meets its awful gaze to churn and spasm. When a creature ends its turn in the aura's emanation, it must succeed at a @Check[type:fortitude|dc:21] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that critically succeeds at its save is temporarily immune for 24 hours.</p>"
+        },
+        "action->Otherworldly Mind": {
+          "name": "Otherworldly Mind",
+          "description": "<p>Whenever a creature targets the hound with a mental effect, that creature takes @Damage[1d6[mental]] damage (@Check[type:will|dc:21|basic:true] save). On a failure, it also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+        },
+        "action->Vulnerable to Curved Space": {
+          "name": "Vulnerable to Curved Space",
+          "description": "<p>When a hound echo is not adjacent to a structural angle of 90° (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+        },
+        "action->Limited Angled Entry": {
+          "name": "Limited Angled Entry",
+          "description": "<p>The hound echo casts a 4th-level @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1d4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+        },
+        "lore->Survival": {
+          "skillVariants": {
+            "0": {
+              "label": "+12 to Track"
+            }
+          }
         }
       }
     },
@@ -1206,6 +1346,18 @@
         }
       }
     },
+    "Collapsing Debris": {
+      "name": "Collapsing Debris",
+      "description": "<p>The room initially appears merely dilapidated, but on closer inspection it is positively liable to collapse at any moment.</p>",
+      "disable": "<p>@Check[type:crafting|dc:20] (untrained) to safely shore up the weaknesses in the masonry by replacing rotten wood with other assorted bric-a-brac, @Check[type:thievery|dc:17] (trained) to carefully place boards and the like to create bridges over structurally weak areas.</p>",
+      "stealth": "<p>(trained) to notice the instability in the surrounding woodwork and precariously balanced masonry.</p>",
+      "items": {
+        "action->Collapse": {
+          "name": "Collapse",
+          "description": "<p><strong>Trigger</strong> A creature moves into the hazardous area</p>\n<hr />\n<p><strong>Effect</strong> Bricks and broken wood fall on the triggering creature, dealing @Damage[(2d6+5)[bludgeoning]] damage (@Check[type:reflex|dc:19|basic:true] save).</p>"
+        }
+      }
+    },
     "Commodore Sticky Fingers": {
       "name": "Commodore Sticky Fingers",
       "blurb": "variant Draxie",
@@ -1287,6 +1439,70 @@
         }
       }
     },
+    "Corrosive Slime": {
+      "name": "Corrosive Slime",
+      "senses": "no vision",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Pseudopod"
+        },
+        "strike-ranged->Acrid Splash": {
+          "name": "Acrid Splash"
+        },
+        "action->Motion Sense": {
+          "name": "Motion Sense",
+          "description": "<p>A corrosive slime can sense nearby creatures through vibration and air or water movement.</p>"
+        },
+        "action->Acrid Trail": {
+          "name": "Acrid Trail",
+          "description": "<p>When the Corrosive Slime moves, it leaves a trail of bubbling slime in its wake. After moving, all squares the Corrosive Slime moves from or through count as Difficult Terrain until the end of the corrosive slime's next turn. Creatures which end their turn in one of those squares must succeed at a @Check[type:reflex|dc:20|basic:true] save or take @Damage[2d8[acid]] damage.</p>"
+        },
+        "action->Constrict": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d6[bludgeoning],1d6[acid]], @Check[type:fortitude|dc:20|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        }
+      }
+    },
+    "Cosmic Amoeba": {
+      "name": "Cosmic Amoeba",
+      "blurb": "Variant giant amoeba",
+      "publicNotes": "<p>These blobs of nearly transparent protoplasm are identical in form and behavior to the microscopic creatures from which they have evolved, except their outlandish size makes them all the more dangerous. Unlike slimes, puddings, and other deadly oozes, giant amoebas have an outer membrane that contains their internal structures, making them more susceptible to slashing weapons than their amorphous kin. However, this membrane is also extremely flexible and permeable, allowing them to surround prey and absorb it, suffocating and slowly digesting it in the amoeba's acidic fluids.</p>",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Pseudopod"
+        },
+        "action->Motion Sense": {
+          "name": "Motion Sense",
+          "description": "<p>A cosmic amoeba can sense nearby creatures through vibration and air or water movement.</p>"
+        },
+        "action->No Breath": {
+          "name": "No Breath",
+          "description": "<p>The cosmic amoeba doesn't breathe and is immune to effects that require breathing (such as inhaled poison).</p>"
+        },
+        "action->Constrict": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d4[bludgeoning],1d4[acid]]{1d4 bludgeoning plus 1d4 acid}, @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "action->Envelop": {
+          "name": "Envelop",
+          "description": "<p><strong>Requirements</strong> The cosmic amoeba begins its turn with a target its size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The cosmic amoeba maintains the Grab and extends pseudopods to surround the creature and pull it inside the amoeba's body. This thereafter has the same effect as if the amoeba had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (@Check[type:reflex|dc:17], @Damage[1d6[acid]], @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 17, Rupture 3).</p>"
+        },
+        "action->Weak Acid": {
+          "name": "Weak Acid",
+          "description": "<p>A cosmic amoeba's acid damages only organic material—not metal, stone, or other inorganic substances.</p>"
+        }
+      }
+    },
+    "Crumbling Floor": {
+      "name": "Crumbling Floor",
+      "description": "<p>At a cursory glance the tunnel appears to be little more than a waterlogged chamber.</p>",
+      "disable": "<p>@Check[type:acrobatics|dc:17] (trained) to safely navigate the wet floor without stepping on any loose masonry or @Check[type:thievery|dc:19] (expert) to cause a controlled collapse without any danger to the PCs.</p>",
+      "stealth": "<p>(trained) to notice the worn flagstones which are crumbling away at the slightest pressure.</p>",
+      "items": {
+        "action->Collapse": {
+          "name": "Collapse",
+          "description": "<p><strong>Trigger</strong> A creature moves into the hazardous area</p>\n<hr />\n<p><strong>Effect</strong> The flooring crumbles, breaking apart under the creature and sending them into the stagnant water below, dealing @Damage[(2d12+12)[bludgeoning]] damage (@Check[type:reflex|dc:20|basic:true] save). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
+        }
+      }
+    },
     "Cultist of Sezelrian": {
       "name": "Cultist of Sezelrian",
       "items": {
@@ -1306,6 +1522,30 @@
         "action->Sacred Sabotage": {
           "name": "Sacred Sabotage",
           "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The cultist of Sezelrian can draw a poison and quickly apply it to the weapon or unarmed attack of an adjacent ally.</p>"
+        }
+      }
+    },
+    "Dangerous Collapsing Debris": {
+      "name": "Dangerous Collapsing Debris",
+      "description": "<p>The room initially appears merely dilapidated, but on closer inspection it is positively liable to collapse at any moment.</p>",
+      "disable": "<p>@Check[type:crafting|dc:23] (untrained) to safely shore up the weaknesses in the masonry by replacing rotten wood with other assorted bric-a-brac, @Check[type:thievery|dc:20] (trained) to carefully place boards and the like to create bridges over structurally weak areas.</p>",
+      "stealth": "<p>(trained) to notice the instability in the surrounding woodwork and precariously balanced masonry.</p>",
+      "items": {
+        "action->Collapse": {
+          "name": "Collapse",
+          "description": "<p><strong>Trigger</strong> A creature moves into the hazardous area</p>\n<hr />\n<p><strong>Effect</strong> Bricks and broken wood fall on the triggering creature, dealing @Damage[(2d10+13)[bludgeoning]] damage (@Check[type:reflex|dc:21|basic:true] save).</p>"
+        }
+      }
+    },
+    "Delicate Crumbling Floor": {
+      "name": "Delicate Crumbling Floor",
+      "description": "<p>At a cursory glance the tunnel appears to be little more than a waterlogged chamber.</p>",
+      "disable": "<p>@Check[type:acrobatics|dc:20] (trained) to safely navigate the wet floor without stepping on any loose masonry or @Check[type:thievery|dc:22] (expert) to cause a controlled collapse without any danger to the PCs.</p>",
+      "stealth": "<p>(trained) to notice the worn flagstones which are crumbling away at the slightest pressure.</p>",
+      "items": {
+        "action->Collapse": {
+          "name": "Collapse",
+          "description": "<p><strong>Trigger</strong> A creature moves into the hazardous area</p>\n<hr />\n<p><strong>Effect</strong> The flooring crumbles, breaking apart under the creature and sending them into the stagnant water below, dealing @Damage[(4d12+10)[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true] save). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
         }
       }
     },
@@ -1541,7 +1781,7 @@
       "name": "Elite Mutant Cryptid Snapdrake",
       "blurb": "Variant snapdrake",
       "languages": "can't speak any language",
-      "publicNotes": "<p>Skilled kizidhar mages and gardeners handcraft these lovely creatures as much for their shuyookhs’ aesthetic pleasure as for their protection. Creating a snapdrake requires first painstakingly constructing a frame of living wood in the shape of a drake before weaving thousands of colorful snapdragon flowers into intricate patterns to form its body and scales. Once complete, snapdrakes often serve kizidhars as a combination of guards, pets, and decorations for as long as they are well fed.</p>",
+      "publicNotes": "<p>Skilled kizidhar mages and gardeners handcraft these lovely creatures as much for their shuyookhs' aesthetic pleasure as for their protection. Creating a snapdrake requires first painstakingly constructing a frame of living wood in the shape of a drake before weaving thousands of colorful snapdragon flowers into intricate patterns to form its body and scales. Once complete, snapdrakes often serve kizidhars as a combination of guards, pets, and decorations for as long as they are well fed.</p>",
       "speed": "greater forest passage",
       "items": {
         "strike-melee->Fangs": {
@@ -1704,6 +1944,37 @@
         "action->Sandstorm": {
           "name": "Sandstorm",
           "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The aghash creates a temporary sandstorm in a @Template[type:emanation|distance:30] that lasts for 1 minute.</p>\n<p>Creatures within the emanation take a -4 circumstance penalty to Perception checks and must succeed at a @Check[type:fortitude|dc:18] save. On a failure, they're forced to hold their breath or else they start suffocating. A creature within the sandstorm at the end of its turn takes @Damage[1d6[slashing]] damage.</p>\n<p>Divs are immune to all effects of an aghash's sandstorm.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.f8rncEs06bqcn3LZ]{Effect: Sandstorm}</p>"
+        }
+      }
+    },
+    "Enraged Firmagor": {
+      "name": "Enraged Firmagor",
+      "items": {
+        "spellcastingEntry->Arcane Prepared Spells": {
+          "name": "Arcane Prepared Spells"
+        },
+        "equipment->Bonded Ring": {
+          "name": "Bonded Ring"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "action->Slip from the Back": {
+          "name": "Slip from the Back",
+          "description": "<p>Firmagor directs his gang members to concentrate their actions to defend him. Until the start of his next turn, when an attack against Firmagor misses, Firmagor or another friendly creature within 30 feet may use their reaction to Stride.</p>"
+        },
+        "action->Sneaky Cast": {
+          "name": "Sneaky Cast",
+          "description": "<p>Foes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Firmagor take a –2 circumstance penalty on their saving throws against his spells.</p>"
+        },
+        "lore->Thassilonian Lore": {
+          "name": "Thassilonian Lore"
         }
       }
     },
@@ -1885,6 +2156,37 @@
               "label": "+9 while inside its jar"
             }
           }
+        }
+      }
+    },
+    "Firmagor": {
+      "name": "Firmagor",
+      "items": {
+        "spellcastingEntry->Arcane Prepared Spells": {
+          "name": "Arcane Prepared Spells"
+        },
+        "equipment->Bonded Ring": {
+          "name": "Bonded Ring"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "action->Slip from the Back": {
+          "name": "Slip from the Back",
+          "description": "<p>Firmagor directs his gang members to concentrate their actions to defend him. Until the start of his next turn, when an attack against Firmagor misses, Firmagor or another friendly creature within 30 feet may use their reaction to Stride.</p>"
+        },
+        "action->Sneaky Cast": {
+          "name": "Sneaky Cast",
+          "description": "<p>Foes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Firmagor take a –2 circumstance penalty on their saving throws against his spells.</p>"
+        },
+        "lore->Thassilonian Lore": {
+          "name": "Thassilonian Lore"
         }
       }
     },
@@ -2294,6 +2596,18 @@
         }
       }
     },
+    "Hexed Chest": {
+      "name": "Hexed Chest",
+      "description": "<p>The magical runes glow at any attempt to open this chest.</p>",
+      "disable": "<p>@Check[type:thievery|dc:19] (trained) to safely scratch out the runes or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 17) to counteract the runes.</p>",
+      "stealth": "<p>(trained) to notice the runes carved into the lid.</p>",
+      "items": {
+        "action->Curse of Itchiness": {
+          "name": "Curse of Itchiness",
+          "description": "<p><strong>Trigger</strong> A creature opens the chest without speaking the command word</p>\n<hr />\n<p><strong>Effect</strong> The curse gives the target the sensation that countless ants are biting and stinging them for an entire day. The target must attempt a @Check[type:will|dc:20] save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 24 hours.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 24 hours.</p>"
+        }
+      }
+    },
     "Hoarding Bat": {
       "name": "Hoarding Bat",
       "items": {
@@ -2332,6 +2646,53 @@
           "skillVariants": {
             "0": {
               "label": "+8 to Climb"
+            }
+          }
+        }
+      }
+    },
+    "Hound Echo": {
+      "name": "Hound Echo",
+      "publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "spell->Discern Location": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
+        },
+        "spell->Dimensional Anchor": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]\nDimensional Anchor"
+        },
+        "spell->Invisibility (Self only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self only)"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Churning Gaze": {
+          "name": "Churning Gaze",
+          "description": "<p>30 feet. The hound echo's eyes glow balefully, causing the internal organs of a creature that meets its awful gaze to churn and spasm. When a creature ends its turn in the aura's emanation, it must succeed at a @Check[type:fortitude|dc:18] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that critically succeeds at its save is temporarily immune for 24 hours.</p>"
+        },
+        "action->Otherworldly Mind": {
+          "name": "Otherworldly Mind",
+          "description": "<p>Whenever a creature targets the hound with a mental effect, that creature takes @Damage[1d6[mental]] damage (@Check[type:will|dc:18|basic:true] save). On a failure, it also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+        },
+        "action->Vulnerable to Curved Space": {
+          "name": "Vulnerable to Curved Space",
+          "description": "<p>When a hound echo is not adjacent to a structural angle of 90° (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+        },
+        "action->Limited Angled Entry": {
+          "name": "Limited Angled Entry",
+          "description": "<p>The hound echo casts a 4th-level @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1d4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+        },
+        "lore->Survival": {
+          "skillVariants": {
+            "0": {
+              "label": "+9 to Track"
             }
           }
         }
@@ -2652,6 +3013,10 @@
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
+        },
+        "spell->Resilient Sphere": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qJQADktwD0x8kLAy]\nResilient Sphere",
+          "target": "1 Large or smaller creature"
         },
         "spell->Glyph of Warding": {
           "name": "Glyph of Warding",
@@ -3471,6 +3836,10 @@
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Arcane Prepared Spells"
         },
+        "spell->Resilient Sphere": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qJQADktwD0x8kLAy]\nResilient Sphere",
+          "target": "1 Large or smaller creature"
+        },
         "spell->Glyph of Warding": {
           "name": "Glyph of Warding",
           "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
@@ -3733,11 +4102,31 @@
         },
         "action->Elemental Bite": {
           "name": "Elemental Bite",
-          "description": "<p>Each head deals an extra 1d6 damage of a type matching the head’s breath weapon.</p>"
+          "description": "<p>Each head deals an extra 1d6 damage of a type matching the head's breath weapon.</p>"
         },
         "action->Three-Headed Strike": {
           "name": "Three-Headed Strike",
           "description": "<p><strong>Frequency</strong> once per turn</p>\n<hr />\n<p><strong>Effect</strong> The three-headed goat makes a Strike with each of its heads, each at a –2 penalty and targeting a different creature. These Strikes count as two attacks for the three-headed goat's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks</p>"
+        }
+      }
+    },
+    "Time-Worn Arjol Parkit": {
+      "name": "Time-Worn Arjol Parkit",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "equipment->Robes": {
+          "name": "Robes"
+        },
+        "strike-melee->Dagger": {
+          "name": "Dagger"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        },
+        "lore->Time Lore": {
+          "name": "Time Lore"
         }
       }
     },
@@ -4339,7 +4728,7 @@
         },
         "action->Elemental Bite": {
           "name": "Elemental Bite",
-          "description": "<p>Each head deals an extra 1d4 damage of a type matching the head’s breath weapon.</p>"
+          "description": "<p>Each head deals an extra 1d4 damage of a type matching the head's breath weapon.</p>"
         },
         "action->Two-Headed Strike": {
           "name": "Two-Headed Strike",
@@ -4468,6 +4857,18 @@
         "action->Swipe": {
           "name": "Swipe",
           "description": "<p>Alystair Caskwater makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Very Hexed Chest": {
+      "name": "Very Hexed Chest",
+      "description": "<p>The magical runes glow at any attempt to open this chest.</p>",
+      "disable": "<p>@Check[type:thievery|dc:22] (trained) to safely scratch out the runes or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 20) to counteract the runes.</p>",
+      "stealth": "<p>(trained) to notice the runes carved into the lid.</p>",
+      "items": {
+        "action->Curse of Itchiness": {
+          "name": "Curse of Itchiness",
+          "description": "<p><strong>Trigger</strong> A creature opens the chest without speaking the command word</p>\n<hr />\n<p><strong>Effect</strong> The curse gives the target the sensation that countless ants are biting and stinging them for an entire day. The target must attempt a @Check[type:will|dc:23] save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 24 hours.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 24 hours.</p>"
         }
       }
     },
@@ -4626,6 +5027,82 @@
         }
       }
     },
+    "Weak Cacophonous Hound Echo": {
+      "name": "Weak Cacophonous Hound Echo",
+      "publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "spell->Discern Location": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
+        },
+        "spell->Dimensional Anchor": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]\nDimensional Anchor"
+        },
+        "spell->Invisibility (Self only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self only)"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Churning Gaze": {
+          "name": "Churning Gaze",
+          "description": "<p>30 feet. The hound echo's eyes glow balefully, causing the internal organs of a creature that meets its awful gaze to churn and spasm. When a creature ends its turn in the aura's emanation, it must succeed at a @Check[type:fortitude|dc:21] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that critically succeeds at its save is temporarily immune for 24 hours.</p>"
+        },
+        "action->Otherworldly Mind": {
+          "name": "Otherworldly Mind",
+          "description": "<p>Whenever a creature targets the hound with a mental effect, that creature takes @Damage[(1d6+2)[mental]] damage (@Check[type:will|dc:21|basic:true] save). On a failure, it also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+        },
+        "action->Vulnerable to Curved Space": {
+          "name": "Vulnerable to Curved Space",
+          "description": "<p>When a hound echo is not adjacent to a structural angle of 90° (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+        },
+        "action->Limited Angled Entry": {
+          "name": "Limited Angled Entry",
+          "description": "<p>The hound echo casts a 4th-level @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1d4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+        },
+        "lore->Survival": {
+          "skillVariants": {
+            "0": {
+              "label": "+10 to Track"
+            }
+          }
+        }
+      }
+    },
+    "Weak Cosmic Amoeba": {
+      "name": "Weak Cosmic Amoeba",
+      "blurb": "Variant giant amoeba",
+      "publicNotes": "<p>These blobs of nearly transparent protoplasm are identical in form and behavior to the microscopic creatures from which they have evolved, except their outlandish size makes them all the more dangerous. Unlike slimes, puddings, and other deadly oozes, giant amoebas have an outer membrane that contains their internal structures, making them more susceptible to slashing weapons than their amorphous kin. However, this membrane is also extremely flexible and permeable, allowing them to surround prey and absorb it, suffocating and slowly digesting it in the amoeba's acidic fluids.</p>",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Pseudopod"
+        },
+        "action->Motion Sense": {
+          "name": "Motion Sense",
+          "description": "<p>A cosmic amoeba can sense nearby creatures through vibration and air or water movement.</p>"
+        },
+        "action->No Breath": {
+          "name": "No Breath",
+          "description": "<p>The cosmic amoeba doesn't breathe and is immune to effects that require breathing (such as inhaled poison).</p>"
+        },
+        "action->Constrict": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d4+2)[bludgeoning],1[acid]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "action->Envelop": {
+          "name": "Envelop",
+          "description": "<p><strong>Requirements</strong> The cosmic amoeba begins its turn with a target its size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The cosmic amoeba maintains the Grab and extends pseudopods to surround the creature and pull it inside the amoeba's body. This thereafter has the same effect as if the amoeba had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (@Check[type:reflex|dc:17], @Damage[1d6[acid]], @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 17, Rupture 3).</p>"
+        },
+        "action->Weak Acid": {
+          "name": "Weak Acid",
+          "description": "<p>A cosmic amoeba's acid damages only organic material—not metal, stone, or other inorganic substances.</p>"
+        }
+      }
+    },
     "Weak Div Worshipper": {
       "name": "Weak Div Worshipper",
       "blurb": "Variant cultist",
@@ -4674,6 +5151,53 @@
         "action->Skittish": {
           "name": "Skittish",
           "description": "<p><strong>Trigger</strong> The giant-er mouse is hit with a melee attack</p>\n<hr />\n<p><strong>Effect</strong> The giant-er mouse takes a step after the effects of the triggering attack are resolved.</p>"
+        }
+      }
+    },
+    "Weak Hound Echo": {
+      "name": "Weak Hound Echo",
+      "publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "spell->Discern Location": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
+        },
+        "spell->Dimensional Anchor": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]\nDimensional Anchor"
+        },
+        "spell->Invisibility (Self only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self only)"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Churning Gaze": {
+          "name": "Churning Gaze",
+          "description": "<p>30 feet. The hound echo's eyes glow balefully, causing the internal organs of a creature that meets its awful gaze to churn and spasm. When a creature ends its turn in the aura's emanation, it must succeed at a @Check[type:fortitude|dc:18] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that critically succeeds at its save is temporarily immune for 24 hours.</p>"
+        },
+        "action->Otherworldly Mind": {
+          "name": "Otherworldly Mind",
+          "description": "<p>Whenever a creature targets the hound with a mental effect, that creature takes @Damage[1d6[mental]] damage (@Check[type:will|dc:18|basic:true] save). On a failure, it also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+        },
+        "action->Vulnerable to Curved Space": {
+          "name": "Vulnerable to Curved Space",
+          "description": "<p>When a hound echo is not adjacent to a structural angle of 90° (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+        },
+        "action->Limited Angled Entry": {
+          "name": "Limited Angled Entry",
+          "description": "<p>The hound echo casts a 4th-level @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1d4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+        },
+        "lore->Survival": {
+          "skillVariants": {
+            "0": {
+              "label": "+7 to Track"
+            }
+          }
         }
       }
     },

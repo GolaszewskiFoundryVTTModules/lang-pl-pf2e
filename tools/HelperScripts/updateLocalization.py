@@ -118,6 +118,8 @@ class LocalizationUpdater:
              r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
             # Item type
             (r'>Ammunition<', r'>Amunicja<'),
+            (r'<p><strong>Amunicja</strong> ([^<]*)arrow, bolt([^<]*)</p>',
+             r'<p><strong>Amunicja</strong> \1bełt, strzała\2</p>'),
             (r'<p><strong>Amunicja</strong> ([^<]*)arrow([^<]*)</p>',
              r'<p><strong>Amunicja</strong> \1strzała\2</p>'),
             (r'<p><strong>Amunicja</strong> ([^<]*)bolt([^<]*)</p>',

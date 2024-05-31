@@ -79,6 +79,13 @@ class LocalizationUpdater:
             (r'>(Prerequisites|Requirements)<', r'>Wymagania<'),
             (r'>Special<', r'>Specjalne<'),
             (r'>Craft Requirements<', r'>Wymagania Wytwarzania<'),
+            (r'>Cost<', r'>Koszt<'),
+            (r'>Price<', r'>Cena<'),
+            # Creature Keywords
+            (r'>Level<', r'>Poziom<'),
+            (r'>Hit Points<', r'>Punkty Żywotności<'),
+            (r'>Senses<', r'>Zmysły<'),
+            (r'>Speed<', r'>Prędkość<'),
             # Material details
             (r'<h2>([^<]*) Items</h2>\n<table', r'<h2>Przedmioty z \1</h2>\n<table'),
             (r'<th>([^<]*) Items</th>', r'<th>Przedmioty z \1</th>'),

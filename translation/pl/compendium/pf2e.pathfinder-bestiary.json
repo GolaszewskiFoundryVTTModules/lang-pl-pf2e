@@ -132,7 +132,7 @@
                 },
                 "action->Generate Bomb": {
                     "name": "Generate Bomb",
-                    "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p>\n<p>Determine the type of bomb created by rolling 1k6 on the alchemical chambers list.</p>\n<p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p>\n<p>On a roll of 5, it creates a poisonous bomb that deals 3k10 poison damage and 3 poison splash damage with no other effects.</p>\n<p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/br 1d6 #Generate Bomb]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Acid Flask: @Damage[1[acid],3k6[persistent,acid],(3[splash])[acid]] damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and –10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{Efekt: Frost Vial (Większy)}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until start of targets next turn</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
+                    "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p>\n<p>Determine the type of bomb created by rolling 1k6 on the alchemical chambers list.</p>\n<p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p>\n<p>On a roll of 5, it creates a poisonous bomb that deals 3k10 poison damage and 3 poison splash damage with no other effects.</p>\n<p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/br 1d6 #Generate Bomb]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Acid Flask: @Damage[1[acid],3k6[persistent,acid],(3[splash])[acid]] damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and –10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{Efekt: Frost Vial (Większy)}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until start of targets next turn</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
                 }
             }
         },
@@ -465,7 +465,7 @@
                 },
                 "action->Displacement": {
                     "name": "Displacement",
-                    "description": "<p>An astradaemon bends light, appearing shifted from its true position, though still in the same space. Creatures targeting the astradaemon must attempt a @Check[type:flat|dc:11] check, as if the astradaemon were @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, even though it remains @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. Effects such as the Blind-Fight feat and halfling's keen eyes that apply on the flat check against hidden creatures also apply against a displaced astradaemon.</p>"
+                    "description": "<p>An astradaemon bends light, appearing shifted from its true position, though still in the same space. Creatures targeting the astradaemon must attempt a @Check[type:flat|dc:11] check, as if the astradaemon were @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, even though it remains @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. Effects such as the Blind-Fight feat and halfling's keen eyes that apply on the flat check against hidden creatures also apply against a displaced astradaemon.</p>"
                 },
                 "action->Soul Siphon": {
                     "name": "Soul Siphon",
@@ -529,7 +529,7 @@
                 },
                 "action->Traveler's Aura": {
                     "name": "Traveler's Aura",
-                    "description": "<p>20 feet. Creatures in the astral deva's aura are protected from ambient environmental damage from any plane, including severe and extreme heat and cold as well as more exotic dangers. The astral deva is never @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures within its aura.</p>"
+                    "description": "<p>20 feet. Creatures in the astral deva's aura are protected from ambient environmental damage from any plane, including severe and extreme heat and cold as well as more exotic dangers. The astral deva is never @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to creatures within its aura.</p>"
                 },
                 "action->Divine Armament": {
                     "name": "Divine Armament",
@@ -913,7 +913,7 @@
                 },
                 "action->Infernal Wound": {
                     "name": "Infernal Wound",
-                    "description": "<p>A bearded devil's glaive Strike also deals @Damage[1d6[bleed]] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.inLBsuLRE5xmVHdn]{Efekt: Infernal Wound}</p>"
+                    "description": "<p>A bearded devil's glaive Strike also deals @Damage[1d6[bleed]] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Udzielenie Pierwszej Pomocy} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.inLBsuLRE5xmVHdn]{Efekt: Infernal Wound}</p>"
                 },
                 "action->Reposition": {
                     "name": "Reposition",
@@ -1335,7 +1335,7 @@
                 },
                 "action->Attach": {
                     "name": "Attach",
-                    "description": "<p>When a bloodseeker hits a target larger than itself, its barbed legs attach it to that creature. This is similar to grabbing the creature, but the bloodseeker moves with that creature rather than holding it in place.</p>\n<p>The bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while attached. If the bloodseeker is killed or pushed away while attached to a creature it has drained blood from, that creature takes @Damage[1[bleed]] damage.</p>\n<p>Escaping the attach or removing the bloodseeker in other ways doesn't cause bleed damage.</p>"
+                    "description": "<p>When a bloodseeker hits a target larger than itself, its barbed legs attach it to that creature. This is similar to grabbing the creature, but the bloodseeker moves with that creature rather than holding it in place.</p>\n<p>The bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while attached. If the bloodseeker is killed or pushed away while attached to a creature it has drained blood from, that creature takes @Damage[1[bleed]] damage.</p>\n<p>Escaping the attach or removing the bloodseeker in other ways doesn't cause bleed damage.</p>"
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
@@ -2688,11 +2688,11 @@
                     "name": "Sztylet"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bugbear tormentor deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bugbear tormentor deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Twin Feint": {
                     "name": "Twin Feint",
-                    "description": "<p>The bugbear tormentor makes a dazzling series of attacks with two weapons, using the first attack to throw their foe off guard against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the second attack. Apply the bugbear tormentor's multiple attack penalty to the Strikes normally.</p>"
+                    "description": "<p>The bugbear tormentor makes a dazzling series of attacks with two weapons, using the first attack to throw their foe off guard against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against the second attack. Apply the bugbear tormentor's multiple attack penalty to the Strikes normally.</p>"
                 }
             }
         },
@@ -2819,7 +2819,7 @@
                     "description": "<p>When the caligni creeper dies, their body combusts in a flash of bright light.</p>\n<p>All creatures in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:17] save or be @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d6 #rounds]]{1k6 rounds}.</p>\n<p>Creatures with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW]{Light Blindness} who successfully save are still blinded for 1 round.</p>\n<p>The creeper's gear and treasure are left in a pile where they died. As this isn't a magical effect, the light has no effect within magical darkness.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The caligni creeper deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The caligni creeper deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -2863,7 +2863,7 @@
                     "description": "<p>The caligni dancer touches a foe and curses it.</p>\n<p>If the target fails a @Check[type:will|dc:18] save, it gains @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p>The target is then temporarily immune for 24 hours.</p>\n<p>These conditions persist until the curse is removed. The victim can attempt a new @Check[type:will|dc:18] save once per hour to end the curse.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The caligni dancer deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The caligni dancer deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -2898,7 +2898,7 @@
                     "description": "<p>Each caligni creeper within @Template[type:emanation|distance:30]{30 feet} of the stalker can Step. Each creeper can benefit from Encircling Command only once per round.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The caligni stalker deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The caligni stalker deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -3052,7 +3052,7 @@
                 },
                 "action->Centipede Swarm Venom": {
                     "name": "Centipede Swarm Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
@@ -4124,7 +4124,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The dandasuka takes on the appearance of any Small humanoid. This doesn't change the dandasuka's Speed or its attack and damage modifiers with its Strikes, but it might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dandasuka deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dandasuka deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -4195,7 +4195,7 @@
                 },
                 "action->Sudden Strike": {
                     "name": "Sudden Strike",
-                    "description": "<p>On the first round of combat, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the deadly mantis.</p>"
+                    "description": "<p>On the first round of combat, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the deadly mantis.</p>"
                 }
             }
         },
@@ -4249,7 +4249,7 @@
                 },
                 "action->Hidden Movement": {
                     "name": "Hidden Movement",
-                    "description": "<p>If the deep gnome scout starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to a creature, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the deep gnome scout's attacks until the end of the turn.</p>"
+                    "description": "<p>If the deep gnome scout starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} to a creature, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against the deep gnome scout's attacks until the end of the turn.</p>"
                 },
                 "lore->Stealth": {
                     "skillVariants": {
@@ -4292,7 +4292,7 @@
                 },
                 "action->Predator's Advantage": {
                     "name": "Predator's Advantage",
-                    "description": "<p>Bleeding creatures are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the deinonychus.</p>"
+                    "description": "<p>Bleeding creatures are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the deinonychus.</p>"
                 },
                 "lore->Athletics": {
                     "skillVariants": {
@@ -4472,7 +4472,7 @@
                     "name": "Wrodzone Zaklęcia Magii Okultystycznej"
                 },
                 "consumable->Giant Centipede Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\n<p>Giant centipede venom causes severe muscle stiffness.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\n<p>Giant centipede venom causes severe muscle stiffness.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
                 },
                 "strike-melee->Aklys": {
                     "name": "Aklys"
@@ -4492,7 +4492,7 @@
                     "description": "<p>A dero stalker takes [[/r {4}]]{4 damage} for every hour they're exposed to sunlight.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A dero stalker deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A dero stalker deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -4560,7 +4560,7 @@
                 },
                 "action->Surprise Attacker": {
                     "name": "Surprise Attacker",
-                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the desert drake.</p>"
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the desert drake.</p>"
                 }
             }
         },
@@ -4584,7 +4584,7 @@
                 },
                 "action->Amnesia Venom": {
                     "name": "Amnesia Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> off-guard and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 2</strong> off-guard and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
                 },
                 "action->Constrict": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d6+2)[bludgeoning]] damage, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -4725,7 +4725,7 @@
                 },
                 "action->End the Charade": {
                     "name": "End the Charade",
-                    "description": "<p><strong>Aktywator</strong> The doppelganger is transformed with Change Shape and another creature moves adjacent to it or takes a hostile action against it.</p>\n<hr />\n<p><strong>Efekt</strong> The doppelganger reverts to its natural form and can make a Strike against the triggering creature. If the creature was unaware the doppelganger was in disguise, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against this attack.</p>"
+                    "description": "<p><strong>Aktywator</strong> The doppelganger is transformed with Change Shape and another creature moves adjacent to it or takes a hostile action against it.</p>\n<hr />\n<p><strong>Efekt</strong> The doppelganger reverts to its natural form and can make a Strike against the triggering creature. If the creature was unaware the doppelganger was in disguise, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against this attack.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The doppelganger takes on the specific appearance of any Small or Medium humanoid who it has seen and whose appearance it remembers. This doesn't change the doppelganger's Speed or its attack and damage bonuses with its Strikes but might change the damage type its Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -4969,7 +4969,7 @@
                     "description": "<p>The drow rogue draws a weapon using the Interact action, then Strikes with that weapon.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The drow rogue deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The drow rogue deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -5001,7 +5001,7 @@
                 },
                 "action->Nature Empathy": {
                     "name": "Nature Empathy",
-                    "description": "<p>The dryad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals and plants.</p>"
+                    "description": "<p>The dryad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals and plants.</p>"
                 },
                 "action->Tree Dependent": {
                     "name": "Tree Dependent",
@@ -5079,7 +5079,7 @@
                 },
                 "action->Nature Empathy": {
                     "name": "Nature Empathy",
-                    "description": "<p>The dryad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals and plants.</p>"
+                    "description": "<p>The dryad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals and plants.</p>"
                 },
                 "action->Tied to the Land": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UHuA1hue5xrRM6KK]\nTied to the Land",
@@ -5431,7 +5431,7 @@
                 },
                 "action->Cinder Dispersal": {
                     "name": "Cinder Dispersal",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Aktywator</strong> The elananx takes damage from a hostile source.</p>\n<hr />\n<p><strong>Efekt</strong> The elananx disperses into a cloud of smoke and cinders, filling its space and a @Template[type:emanation|distance:20]. While in this form, the elananx can't be attacked or targeted, and it doesn't take up space. Anything inside this cloud is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and any creature ending its turn there takes @Damage[2d6[fire]] damage. At the start of its turn, the elananx returns to its normal form in any square the cloud covered. If the elananx Strikes a creature using its first action after returning to its normal form, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and the Strike deals an extra @Damage[1d6[fire]] damage.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Aktywator</strong> The elananx takes damage from a hostile source.</p>\n<hr />\n<p><strong>Efekt</strong> The elananx disperses into a cloud of smoke and cinders, filling its space and a @Template[type:emanation|distance:20]. While in this form, the elananx can't be attacked or targeted, and it doesn't take up space. Anything inside this cloud is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and any creature ending its turn there takes @Damage[2d6[fire]] damage. At the start of its turn, the elananx returns to its normal form in any square the cloud covered. If the elananx Strikes a creature using its first action after returning to its normal form, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} and the Strike deals an extra @Damage[1d6[fire]] damage.</p>"
                 },
                 "action->Pack Attack": {
                     "name": "Pack Attack",
@@ -5439,7 +5439,7 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The elananx Strides and makes a Strike at the end of that movement. If the elananx began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after the attack.</p>"
+                    "description": "<p>The elananx Strides and makes a Strike at the end of that movement. If the elananx began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, it remains hidden until after the attack.</p>"
                 },
                 "lore->Survival": {
                     "skillVariants": {
@@ -5795,7 +5795,7 @@
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
-                    "description": "<p>The faceless stalker deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<p>The faceless stalker deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -6534,7 +6534,7 @@
                 },
                 "action->Giant Centipede Venom": {
                     "name": "Giant Centipede Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
                 }
             }
         },
@@ -6622,7 +6622,7 @@
                 },
                 "action->Uncanny Climber": {
                     "name": "Uncanny Climber",
-                    "description": "<p>A giant gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a giant gecko attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} and critically fails, it gets a failure instead.</p>"
+                    "description": "<p>A giant gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a giant gecko attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinaczka} and critically fails, it gets a failure instead.</p>"
                 },
                 "lore->Athletics": {
                     "skillVariants": {
@@ -6653,7 +6653,7 @@
                 },
                 "action->Sudden Strike": {
                     "name": "Sudden Strike",
-                    "description": "<p>On the first round of combat, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the giant mantis.</p>"
+                    "description": "<p>On the first round of combat, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the giant mantis.</p>"
                 }
             }
         },
@@ -6687,7 +6687,7 @@
                 },
                 "action->Ambush": {
                     "name": "Ambush",
-                    "description": "<p><strong>Aktywator</strong> A target creature passes within 20 feet of the giant moray eel's hiding place and has not detected the giant moray eel.</p>\n<hr />\n<p><strong>Efekt</strong> The giant moray eel lunges out of its hiding place, Swims directly toward the triggering creature, and makes a jaws Strike against it. The target creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to this attack.</p>"
+                    "description": "<p><strong>Aktywator</strong> A target creature passes within 20 feet of the giant moray eel's hiding place and has not detected the giant moray eel.</p>\n<hr />\n<p><strong>Efekt</strong> The giant moray eel lunges out of its hiding place, Swims directly toward the triggering creature, and makes a jaws Strike against it. The target creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to this attack.</p>"
                 },
                 "action->Pharyngeal Jaws": {
                     "name": "Pharyngeal Jaws",
@@ -6718,7 +6718,7 @@
                 },
                 "action->Giant Octopus Venom": {
                     "name": "Giant Octopus Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
                 },
                 "action->Ink Cloud": {
                     "name": "Ink Cloud",
@@ -6807,7 +6807,7 @@
                 },
                 "action->Giant Tarantula Venom": {
                     "name": "Giant Tarantula Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 8 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]], @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d6[poison]], off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stadium 4</strong> @Damage[1d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 8 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]], @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda}, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d6[poison]], off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stadium 4</strong> @Damage[1d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
                 },
                 "action->Hair Barrage": {
                     "name": "Hair Barrage",
@@ -6914,7 +6914,7 @@
                 },
                 "action->Trip Up": {
                     "name": "Trip Up",
-                    "description": "<p><strong>Aktywator</strong> A creature critically fails a melee attack to hit the gimmerling or moves into a space within the gimmerling's treacherous aura.</p>\n<hr />\n<p><strong>Efekt</strong> The triggering creature must attempt a @Check[type:reflex|dc:32|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Porażka</strong> The target takes @Damage[2d10[bludgeoning]] damage and is off-guard until the start of its next turn.</p>\n<p><strong>Critical failure</strong> As failure, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature critically fails a melee attack to hit the gimmerling or moves into a space within the gimmerling's treacherous aura.</p>\n<hr />\n<p><strong>Efekt</strong> The triggering creature must attempt a @Check[type:reflex|dc:32|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the start of its next turn.</p>\n<p><strong>Porażka</strong> The target takes @Damage[2d10[bludgeoning]] damage and is off-guard until the start of its next turn.</p>\n<p><strong>Critical failure</strong> As failure, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The gimmerling changes into its natural form or that of any humanoid. In humanoid form, it loses its treacherous aura, and its equipment appears to be trinkets or toys. As a humanoid that lacks claws or fangs, it loses the matching Strike. If it loses its claw Strike, it gains a fist Strike that is identical except that it deals bludgeoning damage.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -6924,7 +6924,7 @@
                     "description": "<p><strong>Wymagania</strong> The gimmerling's last action was a success with a Strike that has Disarm in its damage entry.</p>\n<hr />\n<p><strong>Efekt</strong> The gimmerling knocks a held or carried weapon to the ground in the target's space.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The gimmerling deals 2k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The gimmerling deals 2k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Trickster's Step": {
                     "name": "Trickster's Step",
@@ -7641,7 +7641,7 @@
                 },
                 "action->Frightening Display": {
                     "name": "Frightening Display",
-                    "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within @Template[type:emanation|distance:30]{30 feet} must attempt a @Check[type:will|dc:20] save.</p>\n<p>While a creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the gorilla.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                    "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within @Template[type:emanation|distance:30]{30 feet} must attempt a @Check[type:will|dc:20] save.</p>\n<p>While a creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the gorilla.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 }
             }
         },
@@ -8386,7 +8386,7 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The griffon Strides and makes a talon Strike at the end of that movement. If the griffon began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after the attack.</p>"
+                    "description": "<p>The griffon Strides and makes a talon Strike at the end of that movement. If the griffon began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, it remains hidden until after the attack.</p>"
                 }
             }
         },
@@ -8412,7 +8412,7 @@
                 },
                 "action->Fiddle": {
                     "name": "Fiddle",
-                    "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[type:emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[type:will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Sukces</strong> No effect</p>\n<p><strong>Porażka</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and –10-foot status penalty to Speeds</p>\n<p><strong>Krytyczna Porażka</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Efekt: Fiddle}</p>"
+                    "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[type:emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[type:will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Sukces</strong> No effect</p>\n<p><strong>Porażka</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} and –10-foot status penalty to Speeds</p>\n<p><strong>Krytyczna Porażka</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Efekt: Fiddle}</p>"
                 },
                 "lore->Athletics": {
                     "skillVariants": {
@@ -9000,7 +9000,7 @@
                 },
                 "action->Hunting Spider Venom": {
                     "name": "Hunting Spider Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
                 },
                 "action->Web Trap": {
                     "name": "Web Trap",
@@ -9187,10 +9187,10 @@
                 },
                 "action->Naturally Invisible": {
                     "name": "Naturally Invisible",
-                    "description": "<p>The invisible stalker is invisible at all times, though when it takes a hostile action of any kind, it is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} instead of @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} until the start of its next turn, as the vague outline of its humanoid form is faintly visible for a short period of time.</p>"
+                    "description": "<p>The invisible stalker is invisible at all times, though when it takes a hostile action of any kind, it is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} instead of @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} until the start of its next turn, as the vague outline of its humanoid form is faintly visible for a short period of time.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The invisible stalker deals 2k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The invisible stalker deals 2k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Survival": {
                     "skillVariants": {
@@ -9279,7 +9279,7 @@
                     "name": "Shortsword"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The jinkin deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The jinkin deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Tinker": {
                     "name": "Tinker",
@@ -9480,7 +9480,7 @@
                     "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> The kobold dragon mage is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The dragon mage creates an illusion of itself in its square and then becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} (with the effects of a 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell) for [[/br 1d4 #Duration Illusory Retreat]]{1k4 rounds}. The dragon mage can move up to half its Speed, but it must end its movement in a space that's not adjacent to any enemies.</p>\n<p>This is a 1. kręgu spell that requires a somatic component.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Dragon Lore": {
                     "name": "Dragon Lore"
@@ -9518,7 +9518,7 @@
                     "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> The kobold dragon mage is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The dragon mage creates an illusion of itself in its square and then becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} (with the effects of a 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell) for [[/br 1d4 #Duration Illusory Retreat]]{1k4 rounds}. The dragon mage can move up to half its Speed, but it must end its movement in a space that's not adjacent to any enemies.</p>\n<p>This is a 1. kręgu spell that requires a somatic component.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Dragon Lore": {
                     "name": "Dragon Lore"
@@ -9556,7 +9556,7 @@
                     "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> The kobold dragon mage is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The dragon mage creates an illusion of itself in its square and then becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} (with the effects of a 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell) for [[/br 1d4 #Duration Illusory Retreat]]{1k4 rounds}. The dragon mage can move up to half its Speed, but it must end its movement in a space that's not adjacent to any enemies.</p>\n<p>This is a 1. kręgu spell that requires a somatic component.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Dragon Lore": {
                     "name": "Dragon Lore"
@@ -9594,7 +9594,7 @@
                     "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> The kobold dragon mage is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The dragon mage creates an illusion of itself in its square and then becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} (with the effects of a 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell) for [[/br 1d4 #Duration Illusory Retreat]]{1k4 rounds}. The dragon mage can move up to half its Speed, but it must end its movement in a space that's not adjacent to any enemies.</p>\n<p>This is a 1. kręgu spell that requires a somatic component.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Dragon Lore": {
                     "name": "Dragon Lore"
@@ -9633,7 +9633,7 @@
                     "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> The kobold dragon mage is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The dragon mage creates an illusion of itself in its square and then becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} (with the effects of a 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell) for [[/br 1d4 #Duration Illusory Retreat]]{1k4 rounds}. The dragon mage can move up to half its Speed, but it must end its movement in a space that's not adjacent to any enemies.</p>\n<p>This is a 1. kręgu spell that requires a somatic component.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The dragon mage deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Dragon Lore": {
                     "name": "Dragon Lore"
@@ -9655,7 +9655,7 @@
                     "description": "<p><strong>Wymagania</strong> The kobold scout is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The kobold scout Strides up to its Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. It must end this movement in a space that's not adjacent to any enemy.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold scout deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold scout deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Crafting": {
                     "skillVariants": {
@@ -9684,7 +9684,7 @@
                     "description": "<p><strong>Wymagania</strong> The kobold warrior is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> The kobold warrior Strides up to its Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. It must end this movement in a space that's not adjacent to any enemy.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold warrior deals an extra 1k4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold warrior deals an extra 1k4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Crafting": {
                     "skillVariants": {
@@ -9813,7 +9813,7 @@
                 },
                 "action->Poison Tooth": {
                     "name": "Poison Tooth",
-                    "description": "<p><strong>Wymagania</strong> The krooth damaged a creature with its jaws on its most recent action this turn.</p>\n<hr />\n<p><strong>Efekt</strong> The krooth snaps off one of its teeth in the creature it hit. The creature takes @Damage[1d6[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Neither can be healed while the tooth remains. Removing the tooth safely requires a successful DC 26 check to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}. Instead of ending bleeding or stabilizing, this removes the drained condition, but it doesn't automatically end the bleed damage.</p>"
+                    "description": "<p><strong>Wymagania</strong> The krooth damaged a creature with its jaws on its most recent action this turn.</p>\n<hr />\n<p><strong>Efekt</strong> The krooth snaps off one of its teeth in the creature it hit. The creature takes @Damage[1d6[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Neither can be healed while the tooth remains. Removing the tooth safely requires a successful DC 26 check to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Udzielenie Pierwszej Pomocy}. Instead of ending bleeding or stabilizing, this removes the drained condition, but it doesn't automatically end the bleed damage.</p>"
                 },
                 "lore->Stealth": {
                     "skillVariants": {
@@ -10092,10 +10092,10 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The leopard Strides and makes a Strike at the end of that movement. If the leopard began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after this ability's Strike.</p>"
+                    "description": "<p>The leopard Strides and makes a Strike at the end of that movement. If the leopard began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, it remains hidden until after this ability's Strike.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The leopard deals 1k4 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The leopard deals 1k4 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Stealth": {
                     "skillVariants": {
@@ -10367,10 +10367,10 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The lion Strides and makes a Strike at the end of that movement. If the lion began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after this ability's Strike.</p>"
+                    "description": "<p>The lion Strides and makes a Strike at the end of that movement. If the lion began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, it remains hidden until after this ability's Strike.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The lion deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The lion deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -10490,7 +10490,7 @@
                 },
                 "action->Terrain Advantage": {
                     "name": "Terrain Advantage",
-                    "description": "<p>Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures that are in water and lack a swim Speed are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the lizardfolk defender.</p>"
+                    "description": "<p>Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures that are in water and lack a swim Speed are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the lizardfolk defender.</p>"
                 }
             }
         },
@@ -10517,18 +10517,18 @@
                 },
                 "action->Giant Centipede Venom": {
                     "name": "Giant Centipede Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
                 },
                 "action->Hidden Movement": {
                     "name": "Hidden Movement",
-                    "description": "<p>If the lizardfolk scout starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by a creature or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the scout's attacks until the end of the scout's turn.</p>"
+                    "description": "<p>If the lizardfolk scout starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by a creature or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against the scout's attacks until the end of the scout's turn.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The lizardfolk scout deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The lizardfolk scout deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Terrain Advantage": {
                     "name": "Terrain Advantage",
-                    "description": "<p>Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures that are in water and lack a swim Speed are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the lizardfolk scout.</p>"
+                    "description": "<p>Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures that are in water and lack a swim Speed are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the lizardfolk scout.</p>"
                 }
             }
         },
@@ -10887,11 +10887,11 @@
                 },
                 "action->Mangling Rend": {
                     "name": "Mangling Rend",
-                    "description": "<p>A megaprimatus makes two fist Strikes against the same target. If both hit, the attack deals an additional @Damage[2d6[bludgeoning]] damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and the target takes a –20-foot status penalty to all Speeds until the end of its next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.5roCV7EbPx1G5xOd]{Efekt: Mangling Rend}</p>"
+                    "description": "<p>A megaprimatus makes two fist Strikes against the same target. If both hit, the attack deals an additional @Damage[2d6[bludgeoning]] damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda}, and the target takes a –20-foot status penalty to all Speeds until the end of its next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.5roCV7EbPx1G5xOd]{Efekt: Mangling Rend}</p>"
                 },
                 "action->Terrifying Display": {
                     "name": "Terrifying Display",
-                    "description": "<p>The megaprimatus beats its chest in a terrifying display. Creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:27|name:Frightening Display] save.</p>\n<p>While a creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the megaprimatus and to gorillas.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn.</p>"
+                    "description": "<p>The megaprimatus beats its chest in a terrifying display. Creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:27|name:Frightening Display] save.</p>\n<p>While a creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the megaprimatus and to gorillas.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn.</p>"
                 }
             }
         },
@@ -11028,11 +11028,11 @@
                 },
                 "action->Self-Loathing": {
                     "name": "Self-Loathing",
-                    "description": "<p>A mitflit's self-loathing makes it easy to influence. It takes a –4 penalty to its Will DC against checks to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}.</p>"
+                    "description": "<p>A mitflit's self-loathing makes it easy to influence. It takes a –4 penalty to its Will DC against checks to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Wymuszenie}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia}, and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośba}.</p>"
                 },
                 "action->Vermin Empathy": {
                     "name": "Vermin Empathy",
-                    "description": "<p>Mitflits can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} things of arthropods (insects, spiders, scorpions, crabs, and similar invertebrate animals). Most arthropods have a starting attitude of @UUID[Compendium.pf2e.conditionitems.Item.fuG8dgthlDWfWjIA]{Indifferent} to mitflits.</p>"
+                    "description": "<p>Mitflits can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośba} things of arthropods (insects, spiders, scorpions, crabs, and similar invertebrate animals). Most arthropods have a starting attitude of @UUID[Compendium.pf2e.conditionitems.Item.fuG8dgthlDWfWjIA]{Indifferent} to mitflits.</p>"
                 },
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
@@ -11307,7 +11307,7 @@
                 },
                 "action->Wild Empathy": {
                     "name": "Wild Empathy",
-                    "description": "<p>The naiad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals.</p>"
+                    "description": "<p>The naiad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals.</p>"
                 },
                 "action->Water Dependent": {
                     "name": "Water Dependent",
@@ -11351,7 +11351,7 @@
                 },
                 "action->Wild Empathy": {
                     "name": "Wild Empathy",
-                    "description": "<p>The naiad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals.</p>"
+                    "description": "<p>The naiad can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on and make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals.</p>"
                 },
                 "action->Nymph's Beauty": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kG4fDd16fYEFvmgy]\nNymph's Beauty",
@@ -11547,7 +11547,7 @@
                 },
                 "action->Spell Ambush": {
                     "name": "Spell Ambush",
-                    "description": "<p>A creature @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the night hag takes a –2 circumstance penalty to checks and DCs to defend against her spells.</p>"
+                    "description": "<p>A creature @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the night hag takes a –2 circumstance penalty to checks and DCs to defend against her spells.</p>"
                 }
             }
         },
@@ -11997,7 +11997,7 @@
                 },
                 "action->Infernal Wound": {
                     "name": "Infernal Wound",
-                    "description": "<p>A contract devil's Strikes also deals @Damage[3d6[bleed]] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 29 counteract check or the magic fails to heal the creature.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.inLBsuLRE5xmVHdn]{Efekt: Infernal Wound}</p>"
+                    "description": "<p>A contract devil's Strikes also deals @Damage[3d6[bleed]] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Udzielenie Pierwszej Pomocy} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 29 counteract check or the magic fails to heal the creature.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.inLBsuLRE5xmVHdn]{Efekt: Infernal Wound}</p>"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -12491,7 +12491,7 @@
                 },
                 "action->Abyssal Knowledge": {
                     "name": "Abyssal Knowledge",
-                    "description": "<p>When a quasit offers @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} for an Arcana or Religion check, it gets the critical success result on any success and gets the critical failure result on any failure.</p>"
+                    "description": "<p>When a quasit offers @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Wsparcie} for an Arcana or Religion check, it gets the critical success result on any success and gets the critical failure result on any failure.</p>"
                 },
                 "action->Virtue Aversion": {
                     "name": "Virtue Aversion",
@@ -13625,7 +13625,7 @@
                 },
                 "action->Bloodletting": {
                     "name": "Bloodletting",
-                    "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or if the attack was a critical hit.</p>"
+                    "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} or if the attack was a critical hit.</p>"
                 },
                 "action->Hateful Tide": {
                     "name": "Hateful Tide",
@@ -13670,7 +13670,7 @@
                 },
                 "action->Bloodletting": {
                     "name": "Bloodletting",
-                    "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or if the attack was a critical hit.</p>"
+                    "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} or if the attack was a critical hit.</p>"
                 },
                 "action->Unimpeded Throw": {
                     "name": "Unimpeded Throw",
@@ -13715,7 +13715,7 @@
                 },
                 "action->Bloodletting": {
                     "name": "Bloodletting",
-                    "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or if the attack was a critical hit.</p>"
+                    "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} or if the attack was a critical hit.</p>"
                 },
                 "lore->Athletics": {
                     "skillVariants": {
@@ -14100,7 +14100,7 @@
                 },
                 "action->Radiance Dependence": {
                     "name": "Radiance Dependence",
-                    "description": "<p>The shining child is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while in areas of darkness.</p>"
+                    "description": "<p>The shining child is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while in areas of darkness.</p>"
                 },
                 "action->Blinding Aura": {
                     "name": "Blinding Aura",
@@ -14842,10 +14842,10 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The smilodon Strides and makes a Strike at the end of that movement. If the smilodon began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after this ability's Strike.</p>"
+                    "description": "<p>The smilodon Strides and makes a Strike at the end of that movement. If the smilodon began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, it remains hidden until after this ability's Strike.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The smilodon deals 1k6 extra precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The smilodon deals 1k6 extra precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda}.</p>"
                 }
             }
         },
@@ -15163,7 +15163,7 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The sphinx Strides and makes a Strike at the end of that movement. If the sphinx began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, they remain hidden until after the attack.</p>"
+                    "description": "<p>The sphinx Strides and makes a Strike at the end of that movement. If the sphinx began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, they remain hidden until after the attack.</p>"
                 },
                 "action->Warding Glyph": {
                     "name": "Warding Glyph",
@@ -15449,7 +15449,7 @@
                 },
                 "action->Rejection Vulnerability": {
                     "name": "Rejection Vulnerability",
-                    "description": "<p>As succubi are beings of pure lust, creatures that reject their lust can metaphysically harm them. When a succubus fails a Diplomacy check to Embrace or @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}, or when a creature succeeds at its save against a succubus's mental spell or ability, the succubus takes @Damage[2d6[mental]] damage. For one hour after causing mental damage to a succubus in this way, a creature can deal @Damage[2d6[mental]] damage to the succubus with a successful @UUID[Compendium.pf2e.action-macros.Macro.nEwqNNWX6scLt4sc]{Demoralize} incorporating its rejection.</p>"
+                    "description": "<p>As succubi are beings of pure lust, creatures that reject their lust can metaphysically harm them. When a succubus fails a Diplomacy check to Embrace or @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Prośba}, or when a creature succeeds at its save against a succubus's mental spell or ability, the succubus takes @Damage[2d6[mental]] damage. For one hour after causing mental damage to a succubus in this way, a creature can deal @Damage[2d6[mental]] damage to the succubus with a successful @UUID[Compendium.pf2e.action-macros.Macro.nEwqNNWX6scLt4sc]{Demoralize} incorporating its rejection.</p>"
                 },
                 "action->Seductive Presence": {
                     "name": "Seductive Presence",
@@ -15554,11 +15554,11 @@
                     }
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The tengu deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The tengu deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Surprise Attacker": {
                     "name": "Surprise Attacker",
-                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the tengu.</p>"
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the tengu.</p>"
                 }
             }
         },
@@ -15689,10 +15689,10 @@
                 },
                 "action->Pounce": {
                     "name": "Pounce",
-                    "description": "<p>The tiger Strides and makes a Strike at the end of that movement. If the tiger began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after this ability's Strike.</p>"
+                    "description": "<p>The tiger Strides and makes a Strike at the end of that movement. If the tiger began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, it remains hidden until after this ability's Strike.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The tiger deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The tiger deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Wrestle": {
                     "name": "Wrestle",
@@ -15994,7 +15994,7 @@
                 },
                 "action->Wild Empathy": {
                     "name": "Wild Empathy",
-                    "description": "<p>The unicorn has a connection to the creatures of the natural world that allows it to communicate with them. The unicorn can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on animals and to make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of them.</p>"
+                    "description": "<p>The unicorn has a connection to the creatures of the natural world that allows it to communicate with them. The unicorn can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on animals and to make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of them.</p>"
                 },
                 "action->+2 to Will Saves vs. Mental": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 to Will Saves vs. Mental"
@@ -16228,7 +16228,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.c04ICnrzygyFG3PK]\n<p><strong>Wymagania</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Efekt</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the vampire regains [[/r 5[healing]]]{5 Hit Points}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drain value by 1. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[type:medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The vampire spawn deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The vampire spawn deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -16639,7 +16639,7 @@
                 },
                 "action->Web Lurker Venom": {
                     "name": "Web Lurker Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:19]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 10 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:19]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 10 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>"
                 },
                 "action->Web Trap": {
                     "name": "Web Trap",
@@ -16827,7 +16827,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FA0ri2fAcMa1HgZe]\n<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2k4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dRe8n1nBWMIXd8jh]{Efekt: Moon Frenzy}</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The wererat deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The wererat deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Athletics": {
                     "skillVariants": {
@@ -17347,7 +17347,7 @@
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
-                    "description": "<p>The will-o'-wisp extinguishes its glow, becoming @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. It can end this effect with another use of this action. If it uses its shock attack while invisible, the arc of electricity lets any observer determine its location, making the will-o'-wisp only @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to all observers until it moves.</p>"
+                    "description": "<p>The will-o'-wisp extinguishes its glow, becoming @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. It can end this effect with another use of this action. If it uses its shock attack while invisible, the arc of electricity lets any observer determine its location, making the will-o'-wisp only @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} to all observers until it moves.</p>"
                 }
             }
         },
@@ -17568,10 +17568,10 @@
                 },
                 "action->Hidden Movement": {
                     "name": "Hidden Movement",
-                    "description": "<p>If a xulgath skulker starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by a creature or merely @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the skulker's attacks until the end of the skulker's turn.</p>"
+                    "description": "<p>If a xulgath skulker starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by a creature or merely @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against the skulker's attacks until the end of the skulker's turn.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A xulgath skulker deals an additional 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A xulgath skulker deals an additional 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -17618,11 +17618,11 @@
                 },
                 "action->Vanish": {
                     "name": "Vanish",
-                    "description": "<p><strong>Aktywator</strong> The yeti is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} while not in combat, and a creature would observe it.</p>\n<hr />\n<p><strong>Efekt</strong> The yeti Strides or Climbs up to half its Speed to a location where it can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}, then Hides. If its new Stealth check result meets or exceeds the triggering creature's Perception DC, the yeti remains hidden.</p>"
+                    "description": "<p><strong>Aktywator</strong> The yeti is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} while not in combat, and a creature would observe it.</p>\n<hr />\n<p><strong>Efekt</strong> The yeti Strides or Climbs up to half its Speed to a location where it can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}, then Hides. If its new Stealth check result meets or exceeds the triggering creature's Perception DC, the yeti remains hidden.</p>"
                 },
                 "action->Grizzly Arrival": {
                     "name": "Grizzly Arrival",
-                    "description": "<p><strong>Aktywator</strong> The yeti hits a creature in the first round of combat and the yeti was @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from that creature at the start of combat.</p>\n<hr />\n<p><strong>Efekt</strong> Each enemy within @Template[type:emanation|distance:30]{30 feet} that witnesses the attack (including the target of the attack) must attempt a @Check[type:will|dc:23] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>"
+                    "description": "<p><strong>Aktywator</strong> The yeti hits a creature in the first round of combat and the yeti was @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from that creature at the start of combat.</p>\n<hr />\n<p><strong>Efekt</strong> Each enemy within @Template[type:emanation|distance:30]{30 feet} that witnesses the attack (including the target of the attack) must attempt a @Check[type:will|dc:23] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>"
                 },
                 "action->Rend": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"

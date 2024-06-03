@@ -482,19 +482,19 @@
                 },
                 "action->Keen Eyes": {
                     "name": "Keen Eyes",
-                    "description": "<p>Calmont's eyes are sharp, allowing him to make out small details about @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or even @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures that others might miss. He gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of him. When Calmont target an opponent that is concealed from him or hidden from him, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+                    "description": "<p>Calmont's eyes are sharp, allowing him to make out small details about @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or even @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures that others might miss. He gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of him. When Calmont target an opponent that is concealed from him or hidden from him, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
                     "rules": {
                         "2": {
                             "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, make a @Check[type:flat|dc:3|traits:target:condition:concealed] check"
                         },
                         "3": {
-                            "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, make a @Check[type:flat|dc:9|traits:target:condition:hidden] check"
+                            "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, make a @Check[type:flat|dc:9|traits:target:condition:hidden] check"
                         }
                     }
                 },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
-                    "description": "<p>Calmont isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, or flanking creatures of level 3 or lower.</p>"
+                    "description": "<p>Calmont isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, or flanking creatures of level 3 or lower.</p>"
                 },
                 "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
@@ -505,11 +505,11 @@
                     "description": "<p>Calmont draws his weapon and attacks with the same motion. He Interacts to draw a weapon, then Strikes with that weapon.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Calmont deals 1k6 extra damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Calmont deals 1k6 extra damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Surprise Attack": {
                     "name": "Surprise Attack",
-                    "description": "<p>If Calmont used Deception or Stealth for initiative, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Calmont on the first round of combat.</p>"
+                    "description": "<p>If Calmont used Deception or Stealth for initiative, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to Calmont on the first round of combat.</p>"
                 },
                 "lore->Breachill Lore": {
                     "name": "Breachill Lore"
@@ -616,7 +616,7 @@
                 },
                 "action->Caustic Nightmare Vapor": {
                     "name": "Caustic Nightmare Vapor",
-                    "description": "<p>Oozes are immune to this poison</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Nadejście Objawów</strong> 1 round</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[4d6[acid]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[6d6[acid]] damage, confused, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[8d6[acid]] damage, confused, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+                    "description": "<p>Oozes are immune to this poison</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Nadejście Objawów</strong> 1 round</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[4d6[acid]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[6d6[acid]] damage, confused, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 3</strong> @Damage[8d6[acid]] damage, confused, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
                 }
             }
         },
@@ -1027,7 +1027,7 @@
             "items": {
                 "action->Recognize Ally": {
                     "name": "Recognize Ally",
-                    "description": "<p>A dragon pillar can see through its empty eye sockets, and it can recognize Cinderclaws and their allies. A character disguised as a Cinderclaw can trick a dragon pillar into perceiving it as a Cinderclaw ally by using Deception to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}. A dragon pillar always uses Perception for initiative.</p>"
+                    "description": "<p>A dragon pillar can see through its empty eye sockets, and it can recognize Cinderclaws and their allies. A character disguised as a Cinderclaw can trick a dragon pillar into perceiving it as a Cinderclaw ally by using Deception to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Podszywać Się}. A dragon pillar always uses Perception for initiative.</p>"
                 },
                 "action->Perception and Vision": {
                     "name": "Perception and Vision",
@@ -1246,7 +1246,7 @@
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
-                    "description": "<p>The slave lord designates as its prey a single creature that they can see or hear or that they are Tracking. They gain a +2 circumstance bonus to Perception checks when they @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} their prey and a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} their prey. They also ignore the penalty for making ranged attacks within their second range increment against their prey.</p>\n<p>The first time a slave lord hits their hunted prey in a round, they deal 2k8 additional precision damage. A slave lord can have only one prey designated at a time.</p>"
+                    "description": "<p>The slave lord designates as its prey a single creature that they can see or hear or that they are Tracking. They gain a +2 circumstance bonus to Perception checks when they @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} their prey and a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tropienie} their prey. They also ignore the penalty for making ranged attacks within their second range increment against their prey.</p>\n<p>The first time a slave lord hits their hunted prey in a round, they deal 2k8 additional precision damage. A slave lord can have only one prey designated at a time.</p>"
                 },
                 "action->Hunter's Flurry": {
                     "name": "Hunter's Flurry",
@@ -1313,7 +1313,7 @@
                     "description": "<p>The Ekujae guardian makes two Strikes against the same target, one with each of their daggers. The guardian combines the damage of any attacks that hit and applies precision damage, resistance, and weaknesses only once. Both attacks count toward the guardian's multiple attack penalty, but the penalty increases only after both attacks.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The ekujae guardian deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The ekujae guardian deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Woodland Stride": {
                     "name": "Woodland Stride",
@@ -1480,10 +1480,10 @@
                 },
                 "action->Scoundrel": {
                     "name": "Scoundrel",
-                    "description": "<p>When Falrok successfully @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against melee attacks he attempts against it until the end of his next turn. On a critical success, the target is off-guard against all melee attacks until the end of their next turn, not just Falrok's.</p>"
+                    "description": "<p>When Falrok successfully @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against melee attacks he attempts against it until the end of his next turn. On a critical success, the target is off-guard against all melee attacks until the end of their next turn, not just Falrok's.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Falrok deal 4k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Falrok deal 4k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Swift Leap": {
                     "name": "Swift Leap",
@@ -1770,7 +1770,7 @@
                 },
                 "action->Green Empathy": {
                     "name": "Green Empathy",
-                    "description": "<p>The greenspeaker can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of plants and fungi.</p>"
+                    "description": "<p>The greenspeaker can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} on and make very simple Requests of plants and fungi.</p>"
                 },
                 "action->Jungle Stride": {
                     "name": "Jungle Stride",
@@ -1854,10 +1854,10 @@
                 },
                 "action->Identify an Opening": {
                     "name": "Identify an Opening",
-                    "description": "<p><strong>Wymagania</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Heuberk's next melee attack.</p>\n<hr />\n<p><strong>Efekt</strong> Heuberk points out a lapse in the creature's defenses. The creature is off-guard against all melee attacks attempted by any of Heuberk's allies who hear and understand this instruction until the start of Heuberk's next turn.</p>"
+                    "description": "<p><strong>Wymagania</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against Heuberk's next melee attack.</p>\n<hr />\n<p><strong>Efekt</strong> Heuberk points out a lapse in the creature's defenses. The creature is off-guard against all melee attacks attempted by any of Heuberk's allies who hear and understand this instruction until the start of Heuberk's next turn.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hueberk deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hueberk deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "lore->Mercantile Lore": {
                     "name": "Mercantile Lore"
@@ -1902,10 +1902,10 @@
                 },
                 "action->Smoky Retreat": {
                     "name": "Smoky Retreat",
-                    "description": "<p><strong>Koszt</strong> 1 batch of infused reagents.</p>\n<p><strong>Wymagania</strong> Hezle must be adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> Hezle throws a mix of special powders centered on a corner of her space, creating a plume of smoke filling a @Template[type:burst|distance:5] until the end of her turn that causes her to be @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}. She then immediately @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaks}, but must end her movement in a space that's not adjacent to any enemies.</p>\n<p>All creatures other than Hezle in the smoke cloud must attempt a @Check[type:fortitude|dc:26] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+                    "description": "<p><strong>Koszt</strong> 1 batch of infused reagents.</p>\n<p><strong>Wymagania</strong> Hezle must be adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Efekt</strong> Hezle throws a mix of special powders centered on a corner of her space, creating a plume of smoke filling a @Template[type:burst|distance:5] until the end of her turn that causes her to be @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}. She then immediately @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaks}, but must end her movement in a space that's not adjacent to any enemies.</p>\n<p>All creatures other than Hezle in the smoke cloud must attempt a @Check[type:fortitude|dc:26] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hezle deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Hezle deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Staff Mastery": {
                     "name": "Staff Mastery",
@@ -3043,7 +3043,7 @@
                 },
                 "action->Shipboard Grace": {
                     "name": "Shipboard Grace",
-                    "description": "<p>The mercenary sailor is not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balancing} or @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} while on a watercraft.</p>"
+                    "description": "<p>The mercenary sailor is not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balancing} or @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} while on a watercraft.</p>"
                 },
                 "action->Mobility": {
                     "name": "Mobility",
@@ -3090,7 +3090,7 @@
                 },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
-                    "description": "<p>Mialari isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to flanking creatures of 10. level or lower, or creatures of 10. level or lower using surprise attack.</p>"
+                    "description": "<p>Mialari isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to flanking creatures of 10. level or lower, or creatures of 10. level or lower using surprise attack.</p>"
                 },
                 "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
@@ -3101,7 +3101,7 @@
                     "description": "<p>Mialari can use telekinesis to perform manipulate actions that use the Thievery skill at a range of 30 feet, but she takes a –2 circumstance penalty to her check when doing so.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Mialari deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Mialari deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Steady Spellcasting": {
                     "name": "Steady Spellcasting",
@@ -3109,11 +3109,11 @@
                 },
                 "action->Surprise Attack": {
                     "name": "Surprise Attack",
-                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Mialari.</p>"
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to Mialari.</p>"
                 },
                 "action->Unbalancing Blow": {
                     "name": "Unbalancing Blow",
-                    "description": "<p>Creatures Mialari hits with a critical hit are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against her attacks until the end of her next turn.</p>"
+                    "description": "<p>Creatures Mialari hits with a critical hit are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against her attacks until the end of her next turn.</p>"
                 },
                 "lore->Kintargo Lore": {
                     "name": "Kintargo Lore"
@@ -3274,7 +3274,7 @@
                     "description": "<p>Nolly doesn't trigger reactions with her movement or with any use of the Thievery skill.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nolly deals an extra 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nolly deals an extra 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -3386,7 +3386,7 @@
                 },
                 "action->Shield Shove": {
                     "name": "Shield Shove",
-                    "description": "<p>The Promise guard makes a Strike with their longsword, then attempts to push the target back. If the Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the guard's next turn, and the guard can automatically Shove the target, with the same benefits as the Shove action (including the critical success effect if the Strike was a critical hit). If the guard moves to follow the target, this movement doesn't trigger reactions. In addition, if the target has to stop moving because it would hit an object, it takes damage equal to the guard's Strength modifier.</p>"
+                    "description": "<p>The Promise guard makes a Strike with their longsword, then attempts to push the target back. If the Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the start of the guard's next turn, and the guard can automatically Shove the target, with the same benefits as the Shove action (including the critical success effect if the Strike was a critical hit). If the guard moves to follow the target, this movement doesn't trigger reactions. In addition, if the target has to stop moving because it would hit an object, it takes damage equal to the guard's Strength modifier.</p>"
                 },
                 "action->Sudden Charge": {
                     "name": "Sudden Charge",
@@ -3486,7 +3486,7 @@
                 },
                 "action->Anadi Venom": {
                     "name": "Anadi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 4 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 4 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, off-guard, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Renali changes into her true form, spider form, or human form. The above statistics assume Renali is in her true form. While in their human form, Renali can't use her fangs attack and loses her climb Speed. When in spider form, she can't use weapons.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -3711,7 +3711,7 @@
                 },
                 "action->Precise Debilitations": {
                     "name": "Precise Debilitations",
-                    "description": "<p><strong>Aktywator</strong> The Scarlet Triad agent's Strike hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Efekt</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</li>\n<li><em>Deep Cut</em> The target takes an additional 2k6 precision damage from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a –10-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{Efekt: Hamstring}</p>",
+                    "description": "<p><strong>Aktywator</strong> The Scarlet Triad agent's Strike hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Efekt</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda}.</li>\n<li><em>Deep Cut</em> The target takes an additional 2k6 precision damage from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a –10-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{Efekt: Hamstring}</p>",
                     "rules": {
                         "0": {
                             "text": "<span class=\"action-glyph\">F</span> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn."
@@ -3719,11 +3719,11 @@
                     }
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad agent deals an extra 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad agent deals an extra 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Weapon Trick": {
                     "name": "Weapon Trick",
-                    "description": "<p>When the Scarlet Triad agent critically succeeds at an attack roll against an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature, they apply the critical specialization effect for the weapon they are wielding.</p>"
+                    "description": "<p>When the Scarlet Triad agent critically succeeds at an attack roll against an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creature, they apply the critical specialization effect for the weapon they are wielding.</p>"
                 }
             }
         },
@@ -3753,7 +3753,7 @@
                     "description": "<p>The Scarlet Triad boss <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">Feints</span> a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad boss deals 4k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad boss deals 4k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 }
             }
         },
@@ -3814,7 +3814,7 @@
                 },
                 "action->Dual Abuse": {
                     "name": "Dual Abuse",
-                    "description": "<p>The enforcer uses the pain of one attack as an opening to deal a devastating second blow. The enforcer makes two attacks against the same target: a scimitar Strike and sap Strike (in any order) or two composite shortbow Strikes. If both attacks hit, the second attack deals an additional 3k6 damage, and the enforcer gives the target one of the following conditions until the end of the enforcer's next turn: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p>This counts as two attacks when calculating the enforcer's multiple attack penalty, but the penalty doesn't increase until after both attacks.</p>"
+                    "description": "<p>The enforcer uses the pain of one attack as an opening to deal a devastating second blow. The enforcer makes two attacks against the same target: a scimitar Strike and sap Strike (in any order) or two composite shortbow Strikes. If both attacks hit, the second attack deals an additional 3k6 damage, and the enforcer gives the target one of the following conditions until the end of the enforcer's next turn: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda}, or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p>This counts as two attacks when calculating the enforcer's multiple attack penalty, but the penalty doesn't increase until after both attacks.</p>"
                 },
                 "action->Efficient Capture": {
                     "name": "Efficient Capture",
@@ -3936,7 +3936,7 @@
                 },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
-                    "description": "<p>The sneak isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, or flanking creatures of 6. level or lower, or creatures of 6. level or lower using surprise attack.</p>"
+                    "description": "<p>The sneak isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, or flanking creatures of 6. level or lower, or creatures of 6. level or lower using surprise attack.</p>"
                 },
                 "action->Mobility": {
                     "name": "Mobility",
@@ -3951,11 +3951,11 @@
                     "description": "<p><strong>Wymagania</strong> The sneak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Efekt</strong> The sneak attempts to bind the creature's wrists or ankles with the manacles. If the sneak succeeds at an attack roll with a [[/r 1d20+16 #Manacles]]{+16} modifier against the target's AC, they apply the manacles.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sneak deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sneak deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Surprise Attack": {
                     "name": "Surprise Attack",
-                    "description": "<p>In the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the sneak.</p>"
+                    "description": "<p>In the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to the sneak.</p>"
                 }
             }
         },
@@ -3981,7 +3981,7 @@
                     "description": "<p>The sniper fires one arrow at each creature they choose within a @Template[type:burst|distance:15]. The center of the burst must be within 100 feet of the sniper, but can't be within 30 feet. The sniper makes each attack roll separately. All attacks count toward the sniper's multiple attack penalty, but the penalty increases only after all the attacks are made.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sniper deals an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sniper deals an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
                 },
                 "action->Swiftness": {
                     "name": "Swiftness",
@@ -4729,7 +4729,7 @@
                 "consumable->Scroll of True Strike (Level 1)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr]\nScroll of True Strike (Level 1)",
                     "consumableSpellName": "True Strike",
-                    "consumableSpellDescription": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.fpGDAz2v5PG0zUSl]{Efekt Zaklęcia: Sure Strike}</p>",
+                    "consumableSpellDescription": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.fpGDAz2v5PG0zUSl]{Efekt Zaklęcia: Sure Strike}</p>",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]{Sure Strike}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Dagger": {

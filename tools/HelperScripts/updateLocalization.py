@@ -81,6 +81,7 @@ class LocalizationUpdater:
             (r'>Craft Requirements<', r'>Wymagania Wytwarzania<'),
             (r'>Cost<', r'>Koszt<'),
             (r'>Price<', r'>Cena<'),
+            (r'>Prerequisite<', r'>Wymaganie<'),
             # Creature Keywords
             (r'>Level<', r'>Poziom<'),
             (r'>Hit Points<', r'>Punkty Żywotności<'),

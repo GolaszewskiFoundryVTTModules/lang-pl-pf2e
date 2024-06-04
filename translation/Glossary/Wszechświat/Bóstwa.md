@@ -1,0 +1,1 @@
+The Beast of Gluttondark - Bestia z [[Kosmologia#Gluttondark - Mrokogłód|Mrokogłodu]] 

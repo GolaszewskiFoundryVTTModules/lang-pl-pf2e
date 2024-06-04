@@ -1,0 +1,2 @@
+Targe - Tarża
+Rondache - Rondasz

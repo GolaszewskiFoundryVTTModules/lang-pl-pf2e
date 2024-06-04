@@ -1,0 +1,3 @@
+
+Zaklęcia:
+Foresight - Przeczucie

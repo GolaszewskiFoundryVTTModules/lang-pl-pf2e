@@ -1,2 +1,3 @@
 # Terminy
 Szeptucha
+Guślarz

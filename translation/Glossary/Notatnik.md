@@ -1,3 +1,4 @@
 # Terminy
 Szeptucha
 Guślarz
+Straceńcy

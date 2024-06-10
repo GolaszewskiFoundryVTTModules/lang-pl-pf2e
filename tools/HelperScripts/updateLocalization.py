@@ -82,6 +82,7 @@ class LocalizationUpdater:
             (r'>Cost<', r'>Koszt<'),
             (r'>Price<', r'>Cena<'),
             (r'>Prerequisite<', r'>Wymaganie<'),
+            (r'>Access<', r'>Dostęp<'),
             # Creature Keywords
             (r'>Level<', r'>Poziom<'),
             (r'>Hit Points<', r'>Punkty Żywotności<'),

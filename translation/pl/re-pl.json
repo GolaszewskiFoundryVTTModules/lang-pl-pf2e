@@ -81,7 +81,7 @@
             "IncreasedCriticalChance": "If the attack hits and the creature rolls a 19 on the k20 roll, the attack is a critical hit. This has no effect if the 19 would be a failure.",
             "IncreasedReach5": "Reach increased by 5 feet",
             "InterruptAction": "On a hit, the target's action is interrupted.",
-            "KnockProne": "On a hit, the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+            "KnockProne": "On a hit, the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}."
         },
         "BattleForm": {
             "AberrantForm": {
@@ -420,19 +420,19 @@
             },
             "PressureBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage}, Medium or smaller targets are pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage}, Medium or smaller targets are pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
                     "success": "<strong>Efekt</strong> The bomb also deals [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage}, Medium or smaller targets are pushed 5 feet away from you."
                 },
                 "Lesser": {
-                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage}, Tiny or smaller targets are pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage}, Tiny or smaller targets are pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
                     "success": "<strong>Efekt</strong> The bomb also deals [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage}, Tiny or smaller targets are pushed 5 feet away from you."
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage}, Medium or smaller creatures who take splash damage are pushed 5 feet away from the target, and then, if the target is Large or smaller, it is pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage}, Medium or smaller creatures who take splash damage are pushed 5 feet away from the target, and then, if the target is Large or smaller, it is pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
                     "success": "<strong>Efekt</strong> The bomb also deals [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage}, Medium or smaller creatures who take splash damage are pushed 5 feet away from the target, and then, if the target is Large or smaller, it is pushed 5 feet away from you."
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage}, Small or smaller targets are pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+                    "criticalSuccess": "<strong>Efekt</strong> The bomb also deals [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage}, Small or smaller targets are pushed 5 feet away from you, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
                     "success": "<strong>Efekt</strong> The bomb also deals [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage}, Small or smaller targets are pushed 5 feet away from you."
                 }
             },
@@ -803,7 +803,7 @@
                 "CriticalHit": "Custom Armor Broken by a Critical Hit"
             },
             "CyclopsBully": {
-                "TerrorizingSwing": "If the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and takes damage, it takes an additional 2k10 damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+                "TerrorizingSwing": "If the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and takes damage, it takes an additional 2k10 damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}."
             },
             "DeadFaine": {
                 "TargetFeintOrTraitorousBetrayal": "Target off-guard due to Feint or Traitorous Betrayal"
@@ -1744,9 +1744,9 @@
                 "Prompt": "Wybierz 7-poziomowy lub niższy atut generalny."
             },
             "AerialPiledriver": {
-                "SuccessText": "The target lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+                "SuccessText": "The target lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
                 "FailureText": "You lose your grip on the target, and it is no longer grabbed or restrained by you.",
-                "CriticalFailureText": "You fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and the target is no longer grabbed or restrained by you."
+                "CriticalFailureText": "You fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, and the target is no longer grabbed or restrained by you."
             },
             "AftermathFeats": {
                 "DormantEruptionToggle": "You've Used Thermal Eruption Today",
@@ -1834,7 +1834,7 @@
                     "ArcaneLocomotion": "Arcane Locomotion",
                     "ArcanePropulsion": "Arcane Propulsion",
                     "ArcaneSafeguards": "Arcane Safeguards",
-                    "ArcaneSlam": "Arcane Slam",
+                    "ArcaneSlam": "Arkaniczne Powalenie",
                     "AstralBlink": "Astral Blink",
                     "AutomatonArmament": "Automaton Armament",
                     "AutomatonLore": "Automaton Lore",
@@ -1935,7 +1935,7 @@
                 "Muse": {
                     "Enigma": "Enigma",
                     "Maestro": "Maestro",
-                    "Polymath": "Erudyta",
+                    "Polymath": "Polihistor",
                     "Prompt": "Wybierz muzę.",
                     "Warrior": "Wojownik"
                 },
@@ -2231,7 +2231,7 @@
                 "TitanSwing": {
                     "NoteFifteenFeet": "The target is pushed back 15 feet.",
                     "NoteFiveFeet": "The target is pushed back 5 feet.",
-                    "NoteProne": "You push the target back double the normal distance and knock it @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+                    "NoteProne": "You push the target back double the normal distance and knock it @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.",
                     "NoteTenFeet": "The target is pushed back 10 feet."
                 }
             },
@@ -2741,7 +2741,7 @@
                     "Note": "If you still fail this check, you become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}."
                 },
                 "DesperateSwing": {
-                    "Note": "If the attack fails, you release your weapon, or drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} if you were using an unarmed attack or otherwise can't release your weapon."
+                    "Note": "If the attack fails, you release your weapon, or drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} if you were using an unarmed attack or otherwise can't release your weapon."
                 }
             },
             "Hobgoblin": {
@@ -2870,7 +2870,7 @@
                 "Impulse": {
                     "CriticalBlast": {
                         "Air": "Push the target up to 10 feet.",
-                        "Earth": "If the target is on the ground, it's knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; if it isn't on the ground, it descends up to 20 feet (you choose the distance).",
+                        "Earth": "If the target is on the ground, it's knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}; if it isn't on the ground, it descends up to 20 feet (you choose the distance).",
                         "Fire": "The target takes 1k6 persistent fire damage. You gain an item bonus to this persistent damage equal to your item bonus to impulse attack rolls, such as from a gate attenuator.",
                         "Label": "Critical Blast",
                         "Metal": "The target takes 1k6 persistent bleed damage; if the creature has the metal trait or is made of metal, it instead takes @Damage[1d6[persistent,untyped]] damage with no type from rust. You gain an item bonus to this persistent damage equal to your item bonus to impulse attack rolls, such as from a gate attenuator.",
@@ -3158,7 +3158,7 @@
                     "Note": "Cel musi zdać rzut obronny @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true] against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure)."
                 },
                 "WolfDrag": {
-                    "Note": "If the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+                    "Note": "If the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}."
                 }
             },
             "MountainStance": {
@@ -3417,7 +3417,7 @@
                     },
                     "RemovePresence": "Choose one target of the spell or one creature in its area. If that enemy fails its save or the spell hits it, you become undetected by that creature, disappearing from its senses for 1 minute or until you use a hostile action. This is similar to being @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, but effects like see invisibility don't reveal you — you're affecting the target's mind, not its vision. True seeing can still see through this illusion if the counteract check succeeds.",
                     "ShatterMind": "You increase the area of the spell to your choice of a @Template[type:cone|distance:30] or @Template[type:cone|distance:60], and the damage dice for the spell change to k10s. Creatures that fail are @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the start of your next turn (or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure).",
-                    "ShatterSpace": "You or one target of the spell are surrounded by a spiral of torn space. This is an aura, and you choose the radius of the emanation, up to 20 feet. A creature that starts its turn in the aura or enters the aura during its turn takes @Damage[(@item.level)d6[slashing]] damage, with a basic Reflex save against your spell DC. If the creature critically fails, the torn space throws it off balance and it falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The aura lasts until the beginning of your next turn. You can choose whether the aura affects the creature emitting it.",
+                    "ShatterSpace": "You or one target of the spell are surrounded by a spiral of torn space. This is an aura, and you choose the radius of the emanation, up to 20 feet. A creature that starts its turn in the aura or enters the aura during its turn takes @Damage[(@item.level)d6[slashing]] damage, with a basic Reflex save against your spell DC. If the creature critically fails, the torn space throws it off balance and it falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. The aura lasts until the beginning of your next turn. You can choose whether the aura affects the creature emitting it.",
                     "Shield": {
                         "Base": "You create a layered barrier of three shields to improve your defenses. The duration increases to sustained up to 1 minute. The shield still lowers at the start of each of your turns, but you can raise it again when you Sustain the Spell.",
                         "BaseTwo": "When you Shield Block with this spell, one of the three layers breaks and you cease to gain the bonus to AC, but the spell doesn't end. You can keep using the spell until the final layer breaks; once it does, the spell ends and you can't cast shield or amped shield again for 10 minutes. You can choose to break additional layers when you Shield Block with this spell to improve your defenses. If you break two layers instead of one, increase the Hardness to 1-1/2 × the normal amount (7 at 1. rank, 15 at 3. rank, 22 at 5. rank, 30 at 7. rank, and 37 at 9. rank). If you break all three layers, increase the Hardness to double the normal amount."
@@ -3871,7 +3871,7 @@
                     "Description": "When you cast _summon instrument_, you can modify its duration to be sustained, up to 1 minute. When you do, you summon a number of instruments equal to your spellcasting ability modifier that hover around you and play of their own accord. Once per turn when you Sustain the Spell, choose an opponent within 30 feet who can hear your performance. The target must attempt a @Check[type:will] save against the spell's DC; on a failure, it becomes distracted by your performance and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} for 1 round. The target is then temporarily immune for 24 hours."
                 },
                 "TopplingTentacles": {
-                    "Description": "When you cast _black tentacles_, replace the spell's standard effects with the following: Tentacles slither along the ground in the area, attempting to hinder anyone within. Sticky black tentacles attempt to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} each creature in the area. Attempt spell attack rolls against the Reflex DCs of each affected creature. Any creature you succeed against is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes @Damage[3d6[bludgeoning]] damage. Whenever a creature ends its turn in the area, the tentacles attempt to Trip that creature if it isn't already prone, and they deal @Damage[1d6[bludgeoning]] damage to any creature already prone. Creatures treat the spell's area as difficult terrain."
+                    "Description": "When you cast _black tentacles_, replace the spell's standard effects with the following: Tentacles slither along the ground in the area, attempting to hinder anyone within. Sticky black tentacles attempt to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} each creature in the area. Attempt spell attack rolls against the Reflex DCs of each affected creature. Any creature you succeed against is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} and takes @Damage[3d6[bludgeoning]] damage. Whenever a creature ends its turn in the area, the tentacles attempt to Trip that creature if it isn't already prone, and they deal @Damage[1d6[bludgeoning]] damage to any creature already prone. Creatures treat the spell's area as difficult terrain."
                 },
                 "TracingSigil": {
                     "Description": "When you cast _sigil_, you can modify the spell to add the following to its standard effects: The target leaves a magical trail that you and others can try to follow. You and other creatures can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tropienie} the target, substituting an Arcana, Nature, Occultism, or Religion check (whichever matches the magical tradition of your _sigil_ spell) for the Survival check. Much like Tracking with Survival, this must take place somewhere the target has been and follow the trail; it doesn't allow anyone to find the target from a distance. You can only have a single target marked with a modified _sigil_ in this way. If you use this ability again on a second target, the _sigil_ spell on the first target ends, and your mark fades."

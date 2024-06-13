@@ -793,13 +793,13 @@
         },
         "Ageless Patience": {
             "name": "Długowieczna Cierpliwość",
-            "description": "<p>You work at a pace born from longevity that enhances your thoroughness. You can voluntarily spend twice as much time as normal on a Perception check or skill check. If you do, you gain a +2 circumstance bonus to the check and don't automatically reduce your degree of success on a natural 1 (you get a critical failure only if your result is 10 lower than the DC). For example, you could get these benefits if you spent 2 actions to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}, which normally takes 1 action. You can get these benefits during exploration by taking twice as long exploring as normal, or in downtime by spending twice as much downtime.</p>\n<p>The GM might determine a situation doesn't grant you a benefit if a delay would be directly counterproductive to your success, such as a tense negotiation with an impatient creature.</p>",
+            "description": "<p>Pracujesz w tempie zrodzonym z twojej długowieczności, co poprawia dokładność twoich starań. Możesz dobrowolnie poświęcić dwa razy więcej czasu na test Percepcji lub test umiejętności. Jeśli to zrobisz, zyskujesz premię sytuacyjną +2 do testu i ignorujesz automatyczną redukcję stopnia sukcesu przy wyrzuceniu naturalnej 1 (osiągasz krytyczną porażkę jedynie jeśli wynik twojego rzutu jest o 10 mniejszy od ST). Przykładowo, możesz uzyskać te korzyści jeśli poświęcisz 2 akcje na @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie}, które zwykle zajęłoby 1 akcję. Możesz uzyskać te korzyści podczas eksploracji, poświęcając na nią dwa razy więcej czasu niż zwykle, lub podczas przestoju, spędzając go dwa razy więcej na danej czynności.</p>\n<p>MG może orzec, że dana sytuacja nie pozwala ci na efektywne skorzystanie z tej zdolności, jeśli zwlekanie byłoby w niej kontrproduktywne, na przykład podczas napiętych negocjacji z niecierpliwą istotą.</p>",
             "rules": {
                 "2": {
-                    "text": "You don't treat a natural 1 as worse than usual on perception checks; you get a critical failure only if your result is 10 lower than the DC."
+                    "text": "Nie traktujesz naturalnej 1 jako wyniku gorszego niż zwykle na swoich testach Percepcji; osiągasz krytyczną porażkę jedynie jeśli wynik twojego rzutu jest o 10 mniejszy od ST."
                 },
                 "3": {
-                    "text": "You don't treat a natural 1 as worse than usual on skill checks; you get a critical failure only if your result is 10 lower than the DC."
+                    "text": "Nie traktujesz naturalnej 1 jako wyniku gorszego niż zwykle na swoich testach umiejętności; osiągasz krytyczną porażkę jedynie jeśli wynik twojego rzutu jest o 10 mniejszy od ST."
                 }
             }
         },
@@ -1184,20 +1184,20 @@
             "description": "<p>You have extensive knowledge of your ancestors' ancient origins. You gain the trained proficiency rank in Alghollthu Lore and Azlanti Lore. If you roll a critical failure on an Alghollthu Lore or Azlanti Lore check to Recall Knowledge, you get a failure instead.</p>"
         },
         "Ancestral Linguistics": {
-            "name": "Ancestral Linguistics",
-            "description": "<p>Over your extensive lifespan, you've studied many languages. During your daily preparations, you can recede into old memories to become fluent in one common language or one other language you have access to. You know this language until you prepare again. Since this knowledge is temporary, you can't use it as a prerequisite for a permanent character option.</p>",
+            "name": "Rodowe Językoznawstwo",
+            "description": "<p>Na przestrzeni swojego długiego życia, nauczyłeś się wielu języków. Podczas swoich codziennych przygotowań możesz zgłębić stare wspomnienia i zyskać biegłość w jednym powszechnym języku, lub innym języku do którego masz dostęp. Znasz ten język do momentu swoich kolejnych codziennych przygotowań. Jako, że ta wiedza jest tymczasowa, nie możesz jej wykorzystywać do spełniania wymagań na rzecz nowych stałych zdolności twojej postaci.</p>",
             "prerequisites": [
                 {
-                    "value": "at least 100 years old"
+                    "value": "Wiek co najmniej 100 lat"
                 }
             ]
         },
         "Ancestral Longevity": {
-            "name": "Ancestral Longevity",
-            "description": "<p>You have accumulated a vast array of lived knowledge over the years. During your daily preparations, you can reflect upon your life experiences to gain the trained proficiency rank in one skill of your choice. This proficiency lasts until you prepare again. Since this proficiency is temporary, you can't use it as a prerequisite for a skill increase or a permanent character option like a feat.</p>",
+            "name": "Rodowa Długowieczność",
+            "description": "<p>Przez lata zgromadziłeś ogromną ilość życiowego doświadczenia. Podczas swoich codziennych przygotowań możesz głęboko przemyśleć swoje doświadczenia aby zyskać rangę biegłości wytrenowania w jednej wybranej umiejętności. Ta biegłość utrzymuje się do czasu twoich kolejnych codziennych przygotowań. Jako, że ta biegłość jest tymczasowa, nie możesz jej wykorzystywać do spełniania wymagań na rzecz nowych stałych zdolności twojej postaci.</p>",
             "prerequisites": [
                 {
-                    "value": "at least 100 years old"
+                    "value": "Wiek co najmniej 100 lat"
                 }
             ]
         },
@@ -3363,7 +3363,7 @@
         },
         "Blasting Beams": {
             "name": "Blasting Beams",
-            "description": "<p><strong>Wymagania</strong> You have a free hand.</p>\n<hr />\n<p>A directed beam of heat or an arc of lightning is one of the simplest ways to project energy. You fire a blast or beam from one hand. Make an @Check[type:deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the beam deals @Damage[(floor(@actor.level/2)d6)[@actor.flags.pf2e.deviantAbilities.dragon.damageType]]{1k6 damage} for every 2 levels you have to the target, or double damage on a critical success.</p>\n<hr />\n<p><strong>Awakening</strong> Your beams blast through targets. Instead of making an attack roll to damage a single creature within 30 feet, you can use Blasting Beams as a 2-action activity to damage all creatures in a @Template[type:line|distance:60], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>\n<hr />\n<p><strong>Awakening</strong> You can choose to launch smaller, quicker beams from your eyes instead. These deal [[/r (floor(@actor.level/2)d4)]]{k4s} instead of k6s, but the attack has the agile trait, and you don't need a hand free to make it, though your eyes must be uncovered.</p>"
+            "description": "<p><strong>Wymagania</strong> Masz wolną rękę.</p>\n<hr />\n<p>A directed beam of heat or an arc of lightning is one of the simplest ways to project energy. You fire a blast or beam from one hand. Make an @Check[type:deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the beam deals @Damage[(floor(@actor.level/2)d6)[@actor.flags.pf2e.deviantAbilities.dragon.damageType]]{1k6 damage} for every 2 levels you have to the target, or double damage on a critical success.</p>\n<hr />\n<p><strong>Awakening</strong> Your beams blast through targets. Instead of making an attack roll to damage a single creature within 30 feet, you can use Blasting Beams as a 2-action activity to damage all creatures in a @Template[type:line|distance:60], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>\n<hr />\n<p><strong>Awakening</strong> You can choose to launch smaller, quicker beams from your eyes instead. These deal [[/r (floor(@actor.level/2)d4)]]{k4s} instead of k6s, but the attack has the agile trait, and you don't need a hand free to make it, though your eyes must be uncovered.</p>"
         },
         "Blaze Of Revelation": {
             "name": "Blaze Of Revelation",
@@ -3437,7 +3437,7 @@
         },
         "Blessed Blood (Nephilim)": {
             "name": "Blessed Blood (Nephilim)",
-            "description": "<p>Your spilled blood is sanctified, with effects similar to those of @UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}. Whenever a fiend, undead, or creature with a weakness to holy drinks your blood or deals piercing or slashing damage to you with jaws, fangs, or a similar attack, that creature takes @Damage[1d6[spirit]|traits:holy] damage with the holy trait. You gain a +4 circumstance bonus to Crafting checks to @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Wytwarzanie} <em>holy water</em> using your blood as one of the ingredients.</p>",
+            "description": "<p>Your spilled blood is sanctified, with effects similar to those of @UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Woda Święcona}. Whenever a fiend, undead, or creature with a weakness to holy drinks your blood or deals piercing or slashing damage to you with jaws, fangs, or a similar attack, that creature takes @Damage[1d6[spirit]|traits:holy] damage with the holy trait. You gain a +4 circumstance bonus to Crafting checks to @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Wytwarzanie} <em>holy water</em> using your blood as one of the ingredients.</p>",
             "rules": {
                 "0": {
                     "label": "Blessed Blood (craft Holy Water with own blood)"
@@ -4195,7 +4195,7 @@
         },
         "Call Implement": {
             "name": "Call Implement",
-            "description": "<p><strong>Wymagania</strong> You have a free hand.</p>\n<hr />\n<p>You can tug on the bonds of ownership between yourself and your implement, causing it to find its way back to you. You look down and find that your implement has mysteriously appeared in your free hand, as long as the implement was within 1 mile and on the same plane of existence. If your implement is attended by another creature, that creature can prevent the implement from teleporting away if it succeeds at a @Check[type:will|dc:resolve(@actor.system.proficiencies.classDCs.thaumaturge.value)] save against your class DC. If the creature succeeds, you can't attempt to Call that Implement again; you must track the creature down to get the implement back.</p>"
+            "description": "<p><strong>Wymagania</strong> Masz wolną rękę.</p>\n<hr />\n<p>You can tug on the bonds of ownership between yourself and your implement, causing it to find its way back to you. You look down and find that your implement has mysteriously appeared in your free hand, as long as the implement was within 1 mile and on the same plane of existence. If your implement is attended by another creature, that creature can prevent the implement from teleporting away if it succeeds at a @Check[type:will|dc:resolve(@actor.system.proficiencies.classDCs.thaumaturge.value)] save against your class DC. If the creature succeeds, you can't attempt to Call that Implement again; you must track the creature down to get the implement back.</p>"
         },
         "Call Of The Green Man": {
             "name": "Call Of The Green Man",
@@ -5502,7 +5502,7 @@
         },
         "Communal Crafting": {
             "name": "Grupowe Wytwarzanie",
-            "description": "<p>Inni BG mogą pomóc ci @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Wytwarzać} przedmiot, pod twoim przewodnictwem. Pomagający BG wykonuje test umiejętności, w której jest wytrenowany. Umiejętnością tą musi być Rzemiosło albo inna umiejętność adekwatna do wytwarzanego przedmiotu, wedle uznania MG. Przykładowo, BG może użyć religii aby pomóc ci w wytwarzaniu przedmiotu o cesze magii boskiej lub Obeznania w Wojaczce aby pomóć ci w wytwarzaniu broni. O tym czy z powodzeniem wytworzycie przedmiot, nadal decyduje twój rzut. Rzuty osób wspomagających cię pomagają w redukowaniu kosztu w oparciu o wartości z tabelki @UUID[Compendium.pf2e.actionspf2e.Item.QyzlsLrqM0EEwd7j]{Zarabianie Pieniędzy}; wykorzystywane są do tego celu biegłość sojusznika w danej umiejętności, oraz jego poziom – 1 jako poziom zadania. Pomagający BG muszą ci towarzyszyć podczas Wytwarzania (co sprawia, że nie mogą wykonywać innych aktywności przestoju) albo ta korzyść jest tracona. Zależnie od okoliczności MG może określić, że może ci pomagać ograniczona liczba BG. Grupowe Wytwarzanie pozwala ci też przyjąć rolę pomocnika podczas gdy ktoś inny wytwarza przedmiot, o ile tylko ta osoba przyjmie twoje Wsparcie.</p>",
+            "description": "<p>Inni BG mogą pomóc ci @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Wytwarzać} przedmiot, pod twoim przewodnictwem. Pomagający BG wykonuje test umiejętności, w której jest wytrenowany. Umiejętnością tą musi być Rzemiosło albo inna umiejętność adekwatna do wytwarzanego przedmiotu, wedle uznania MG. Przykładowo, BG może użyć religii aby pomóc ci w wytwarzaniu przedmiotu o cesze magii boskiej lub Obeznania w Wojaczce aby pomóć ci w wytwarzaniu broni. O tym czy z powodzeniem wytworzycie przedmiot, nadal decyduje twój rzut. Rzuty osób wspomagających cię pomagają w redukowaniu kosztu w oparciu o wartości z tabelki @UUID[Compendium.pf2e.actionspf2e.Item.QyzlsLrqM0EEwd7j]{Zarabianie Pieniędzy}; wykorzystywane są do tego celu biegłość sojusznika w danej umiejętności, oraz jego poziom – 1 jako poziom zadania. Pomagający BG muszą ci towarzyszyć podczas Wytwarzania (co sprawia, że nie mogą wykonywać innych aktywności przestoju) albo ta korzyść jest tracona. Zależnie od okoliczności MG może określić, że może ci pomagać ograniczona liczba BG. Grupowe Wytwarzanie pozwala ci też przyjąć rolę pomocnika podczas gdy ktoś inny wytwarza przedmiot, zapewniając mu podobne korzyści — o ile tylko ta osoba przyjmie twoje Wsparcie.</p>",
             "prerequisites": [
                 {
                     "value": "Rzemiosło (Eksperctwo)"
@@ -7209,8 +7209,8 @@
             ]
         },
         "Demonbane Warrior": {
-            "name": "Demonbane Warrior",
-            "description": "<p>You gain a +1 circumstance bonus to damage with weapons and unarmed attacks against demons. If your attack would deal more than one weapon die of damage (as is common at higher levels than 1.), the bonus is equal to the number of weapon dice or unarmed attack dice. If your actions force a demon to take damage from its sin vulnerability, increase that damage by 2.</p>"
+            "name": "Wojownicza Zmora Demonów",
+            "description": "<p>Zyskujesz premię sytuacyjną +1 do obrażeń zadawanych demonom z użyciem broni i ataków wręcz. Jeśli twój atak miałby zadać obrażenia z użyciem więcej niż jednej kości obrażeń broni (co powszechne na poziomach powyżej 1.), premia ta jest równa ilości kości obrażeń broni lub ataku wręcz. Jeśli twoje akcje zmuszą demona do poniesienia obrażeń od jego podatności grzechu, zwiększ te obrażenia o 2.</p>"
         },
         "Demonblood Frenzy": {
             "name": "Demonblood Frenzy",
@@ -8284,7 +8284,7 @@
         },
         "Dragon Spit": {
             "name": "Dragon Spit",
-            "description": "<p>Many Tian-Dan claim to have dragon blood in their veins, and in your case, this is true-you can spit energy, and you might have an especially visible sign of your draconic heritage. Choose one of the following cantrips: @UUID[Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt]{Acid Splash}, @UUID[Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf]{Electric Arc}, @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}, or @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost}. You can cast this spell as an innate arcane spell at will, and when you cast it, the spell's energy emerges from your mouth.</p>",
+            "description": "<p>Many Tian-Dan claim to have dragon blood in their veins, and in your case, this is true-you can spit energy, and you might have an especially visible sign of your draconic heritage. Choose one of the following cantrips: @UUID[Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt]{Rozprysk Kwasu}, @UUID[Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf]{Electric Arc}, @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}, or @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost}. You can cast this spell as an innate arcane spell at will, and when you cast it, the spell's energy emerges from your mouth.</p>",
             "prerequisites": [
                 {
                     "value": "Tian-Dan ethnicity"
@@ -9260,8 +9260,8 @@
             ]
         },
         "Elemental Wrath": {
-            "name": "Elemental Wrath",
-            "description": "<p>You are so attuned to the land that you can call forth a bolt of energy from your surroundings. When you gain this feat, select acid, cold, electricity, or fire. You can call to the land to cast the @UUID[Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt]{Acid Splash} cantrip as an innate primal spell at will, except the spell has only verbal components and deals the type of damage you chose instead of acid damage; the spell gains the trait appropriate to its damage instead of the acid trait. A cantrip is heightened to a spell rank equal to half your level rounded up.</p>"
+            "name": "Gniew Żywiołów",
+            "description": "<p>Jesteś tak zżyty z ziemią, że jesteś w stanie cisnąć pociskiem ze znajdującej się w twoim otoczeniu energii. Kiedy zyskujesz ten atut wybierz elektryczność, kwas, ogień lub zimo. Możesz wezwać siły ziemi aby rzucać do woli sztuczkę @UUID[Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt]{Rozprysk Kwasu} jako wrodzone zaklęcie magii pierwotnej, traci ona jednak cechę manipulacji oraz zadaje wybrane przez ciebie w momencie zdobywania atutu obrażenia zamiast obrażeń od kwasu — zaklęcie zdobywa zamiast cechy kwas, cechę odpowiadającą jego obrażeniom. Sztuczka jest wywyższana do kręgu równego połowie twojego poziomu zaokrąglonej w górę.</p>"
         },
         "Elementalist Dedication": {
             "name": "Dedykacja Elementalist",
@@ -10552,10 +10552,10 @@
         },
         "Expert Longevity": {
             "name": "Expert Longevity",
-            "description": "<p>You've continued to refine the knowledge and skills you've gained through your life. When you choose a skill in which to become trained with @UUID[Compendium.pf2e.feats-srd.Item.WoLh16gyDp8y9WOZ]{Ancestral Longevity}, you can also choose a skill in which you are already trained and become an expert in that skill. This lasts until your Ancestral Longevity expires.</p>\n<p>When the effects of Ancestral Longevity and Expert Longevity expire, you can retrain one of your skill increases. The skill increase you gain from this retraining must either make you trained in the skill you chose with Ancestral Longevity or make you an expert in the skill you chose with Expert Longevity.</p>",
+            "description": "<p>You've continued to refine the knowledge and skills you've gained through your life. When you choose a skill in which to become trained with @UUID[Compendium.pf2e.feats-srd.Item.WoLh16gyDp8y9WOZ]{Rodowa Długowieczność}, you can also choose a skill in which you are already trained and become an expert in that skill. This lasts until your Ancestral Longevity expires.</p>\n<p>When the effects of Ancestral Longevity and Expert Longevity expire, you can retrain one of your skill increases. The skill increase you gain from this retraining must either make you trained in the skill you chose with Ancestral Longevity or make you an expert in the skill you chose with Expert Longevity.</p>",
             "prerequisites": [
                 {
-                    "value": "Ancestral Longevity"
+                    "value": "Rodowa Długowieczność"
                 }
             ]
         },
@@ -12816,7 +12816,7 @@
         },
         "Gear Up": {
             "name": "Gear Up",
-            "description": "<p>Whether it's wooden stakes, <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em>, or more unusual tools, you always have just the right thing to handle an undead's unusual weaknesses and vulnerabilities. You gain the @UUID[Compendium.pf2e.feats-srd.Item.bh2jHyyYrkLMsIdX]{Przewidujący Planista} and @UUID[Compendium.pf2e.feats-srd.Item.lHFz4MmebvPqTb0A]{Przewidziany Przedmiot Zużywalny} feats. When using Prescient Planner specifically to pull out an item you need to deal with an undead's weakness or vulnerability, you can pull out the item as a 2-action activity to remove your backpack (or similar container) and draw the item, rather than taking 1 minute.</p>\n<p>If you have the @UUID[Compendium.pf2e.feats-srd.Item.HVP3ZGIOlxlFy0ni]{Hunter's Sanctum} feat, you keep your sanctum well stocked with the basics and can spend 1 hour in your sanctum refreshing your supplies in order to meet the requirements for Prescient Planner, even if you haven't been able to purchase goods.</p>",
+            "description": "<p>Whether it's wooden stakes, <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Woda Święcona}</em>, or more unusual tools, you always have just the right thing to handle an undead's unusual weaknesses and vulnerabilities. You gain the @UUID[Compendium.pf2e.feats-srd.Item.bh2jHyyYrkLMsIdX]{Przewidujący Planista} and @UUID[Compendium.pf2e.feats-srd.Item.lHFz4MmebvPqTb0A]{Przewidziany Przedmiot Zużywalny} feats. When using Prescient Planner specifically to pull out an item you need to deal with an undead's weakness or vulnerability, you can pull out the item as a 2-action activity to remove your backpack (or similar container) and draw the item, rather than taking 1 minute.</p>\n<p>If you have the @UUID[Compendium.pf2e.feats-srd.Item.HVP3ZGIOlxlFy0ni]{Hunter's Sanctum} feat, you keep your sanctum well stocked with the basics and can spend 1 hour in your sanctum refreshing your supplies in order to meet the requirements for Prescient Planner, even if you haven't been able to purchase goods.</p>",
             "prerequisites": [
                 {
                     "value": "Undead Slayer Dedication"
@@ -24987,7 +24987,7 @@
         },
         "Sabotage": {
             "name": "Sabotage",
-            "description": "<p><strong>Wymagania</strong> You have a free hand.</p>\n<hr />\n<p>You subtly damage others' equipment. Choose one item that a creature within your reach wields or carries. The item must have moving parts that you could possibly sabotage (a shortbow could be sabotaged, but a longsword could not). Attempt a @Check[type:thievery|defense:reflex] check against the Reflex DC of the creature. Damage dealt by Sabotage can't take the item below its Broken Threshold.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> You deal damage equal to 4 x your Thievery proficiency bonus.</p>\n<p><strong>Sukces</strong> You deal damage equal to double your Thievery proficiency bonus.</p>\n<p><strong>Krytyczna Porażka</strong> The item is temporarily immune to your Sabotage for 1 day.</p>"
+            "description": "<p><strong>Wymagania</strong> Masz wolną rękę.</p>\n<hr />\n<p>You subtly damage others' equipment. Choose one item that a creature within your reach wields or carries. The item must have moving parts that you could possibly sabotage (a shortbow could be sabotaged, but a longsword could not). Attempt a @Check[type:thievery|defense:reflex] check against the Reflex DC of the creature. Damage dealt by Sabotage can't take the item below its Broken Threshold.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> You deal damage equal to 4 x your Thievery proficiency bonus.</p>\n<p><strong>Sukces</strong> You deal damage equal to double your Thievery proficiency bonus.</p>\n<p><strong>Krytyczna Porażka</strong> The item is temporarily immune to your Sabotage for 1 day.</p>"
         },
         "Sacral Lord": {
             "name": "Sacral Lord",
@@ -25103,7 +25103,7 @@
         },
         "Sanctify Water": {
             "name": "Sanctify Water",
-            "description": "<p>You imbue water with your deity's blessing. Choose a container of water on your person that is of light Bulk. For 1 round, if you or an ally throw this container at a foe, it has the damaging effects of @UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water} (if you follow a good deity) or @UUID[Compendium.pf2e.equipment-srd.Item.EGhUorZhB7nV73Ev]{Unholy Water} (if you follow an evil deity). The water's transient power doesn't make it gain any value, allow it to be used to supply the cost for a spell or ritual, and so on. If you have legendary proficiency in Religion, you can sanctify three containers held by you or allies within your reach instead of one.</p>",
+            "description": "<p>You imbue water with your deity's blessing. Choose a container of water on your person that is of light Bulk. For 1 round, if you or an ally throw this container at a foe, it has the damaging effects of @UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Woda Święcona} (if you follow a good deity) or @UUID[Compendium.pf2e.equipment-srd.Item.EGhUorZhB7nV73Ev]{Woda Wyklęta} (if you follow an evil deity). The water's transient power doesn't make it gain any value, allow it to be used to supply the cost for a spell or ritual, and so on. If you have legendary proficiency in Religion, you can sanctify three containers held by you or allies within your reach instead of one.</p>",
             "prerequisites": [
                 {
                     "value": "Religia (Mistrzostwo)"
@@ -29124,7 +29124,7 @@
         },
         "Streetwise": {
             "name": "Wiedza Uliczna",
-            "description": "<p>Wiesz co dzieje się na ulicach i znasz rytm, w którym bije serce twojej lokalnej społeczności. Możesz używać Społeczeństwa zamiast Dyplomacji aby @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Zbierać Informacje}. W osadach, które lokalnie odwiedzasz, możesz używać Pozyskania Wiedzy ze zdolnością Społeczeństwa aby dowiadywać się tych samych informacji, które mógłbyś pozyskać za pomocą Dyplomacji przy Zbieraniu Informacji. ST jest na ogół znacząco wyższy, ale posiadasz te informacje bez konieczności poświęcania czasu na ich gromadzenie. Jeśli odniesiesz porażkę przy Pozyskiwaniu Wiedzy, możesz później nadal Zebrać Informacje w normalny sposób.</p>",
+            "description": "<p>Wiesz co dzieje się na ulicach i znasz rytm, w którym bije serce twojej lokalnej społeczności. Możesz używać Społeczeństwa zamiast Dyplomacji aby @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Zbierać Informacje}. W osadach, które lokalnie odwiedzasz, możesz używać Pozyskania Wiedzy z umiejętnością Społeczeństwa aby dowiadywać się tych samych informacji, które mógłbyś pozyskać za pomocą Dyplomacji przy Zbieraniu Informacji. ST jest na ogół znacząco wyższy, ale posiadasz te informacje bez konieczności poświęcania czasu na ich gromadzenie. Jeśli odniesiesz porażkę przy Pozyskiwaniu Wiedzy, możesz później nadal Zebrać Informacje w normalny sposób.</p>",
             "prerequisites": [
                 {
                     "value": "Społeczeństwo (Wytrenowanie)"
@@ -32178,10 +32178,10 @@
         },
         "Universal Longevity": {
             "name": "Universal Longevity",
-            "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p>You've perfected your ability to keep up with all the skills you've learned over your long life, so you're almost never truly untrained at a skill. You reflect on your life experiences, changing the skill you selected with @UUID[Compendium.pf2e.feats-srd.Item.WoLh16gyDp8y9WOZ]{Ancestral Longevity} (and the skill you selected with @UUID[Compendium.pf2e.feats-srd.Item.vfuHVSuExvtyajkW]{Expert Longevity} if you have that feat).</p>",
+            "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p>You've perfected your ability to keep up with all the skills you've learned over your long life, so you're almost never truly untrained at a skill. You reflect on your life experiences, changing the skill you selected with @UUID[Compendium.pf2e.feats-srd.Item.WoLh16gyDp8y9WOZ]{Rodowa Długowieczność} (and the skill you selected with @UUID[Compendium.pf2e.feats-srd.Item.vfuHVSuExvtyajkW]{Expert Longevity} if you have that feat).</p>",
             "prerequisites": [
                 {
-                    "value": "Ancestral Longevity"
+                    "value": "Rodowa Długowieczność"
                 }
             ]
         },
@@ -32986,7 +32986,7 @@
         },
         "Vine Lash": {
             "name": "Vine Lash",
-            "description": "<p><strong>Wymagania</strong> You have a free hand.</p>\n<hr />\n<p>A long vine sprouts from your arm, which you can temporarily wield like a whip. Make a melee @Check[type:deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the vine deals @Damage[(floor(@actor.level/2)d6)[slashing]] damage for every 2 levels you have to the target, or double damage on a success.</p>\n<p><strong>Awakening</strong> The vine coils around your foes, squeezing them lifeless. On a successful hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the vine. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} the vine is equal to your Class DC or Spell DC, whichever is higher. Each round on your turn, if the target is still grabbed, the vine squeezes them, dealing @Damage[(floor(@actor.level/2)d6)[bludgeoning]] damage for every 2 levels you have.</p>\n<p><strong>Awakening</strong> Rather than lash at your foes with a single vine, dozens of writhing vines emerge from your hands, lashing all creatures in a large area. You can use Vine Lash as a 2-action activity to damage all creatures in a @Template[type:cone|distance:30], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>"
+            "description": "<p><strong>Wymagania</strong> Masz wolną rękę.</p>\n<hr />\n<p>A long vine sprouts from your arm, which you can temporarily wield like a whip. Make a melee @Check[type:deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the vine deals @Damage[(floor(@actor.level/2)d6)[slashing]] damage for every 2 levels you have to the target, or double damage on a success.</p>\n<p><strong>Awakening</strong> The vine coils around your foes, squeezing them lifeless. On a successful hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the vine. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} the vine is equal to your Class DC or Spell DC, whichever is higher. Each round on your turn, if the target is still grabbed, the vine squeezes them, dealing @Damage[(floor(@actor.level/2)d6)[bludgeoning]] damage for every 2 levels you have.</p>\n<p><strong>Awakening</strong> Rather than lash at your foes with a single vine, dozens of writhing vines emerge from your hands, lashing all creatures in a large area. You can use Vine Lash as a 2-action activity to damage all creatures in a @Template[type:cone|distance:30], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>"
         },
         "Violent Unleash": {
             "name": "Violent Unleash",
@@ -33889,7 +33889,7 @@
         },
         "Wild Stride": {
             "name": "Wild Stride",
-            "description": "<p><strong>Wymagania</strong> You have a free hand.</p>\n<hr />\n<p>You can move quickly when using your preferred modes of travel. Stride twice. You gain a +5-foot circumstance bonus to your Speed for these Strides, or a +10-foot circumstance bonus if you have two hands free.</p>"
+            "description": "<p><strong>Wymagania</strong> Masz wolną rękę.</p>\n<hr />\n<p>You can move quickly when using your preferred modes of travel. Stride twice. You gain a +5-foot circumstance bonus to your Speed for these Strides, or a +10-foot circumstance bonus if you have two hands free.</p>"
         },
         "Wild Strider": {
             "name": "Wild Strider",

@@ -84,6 +84,10 @@ class LocalizationUpdater:
             (r'>Prerequisite<', r'>Wymaganie<'),
             (r'>Access<', r'>Dostęp<'),
             (r'>Destruction<', r'>Zniszczenie<'),
+            # Usage
+            (r'>Usage<', r'>Zastosowanie<'),
+            (r'<p><strong>Zastosowanie</strong> affixed to armor</p>',
+             r'<p><strong>Zastosowanie</strong> mocowanie do pancerza</p>'),
             # Creature Keywords
             (r'>Level<', r'>Poziom<'),
             (r'>Hit Points<', r'>Punkty Żywotności<'),

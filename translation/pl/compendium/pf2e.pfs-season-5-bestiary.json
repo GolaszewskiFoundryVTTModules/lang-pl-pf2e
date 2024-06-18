@@ -322,6 +322,50 @@
                 }
             }
         },
+        "Arrogant Entodemonologist": {
+            "name": "Arrogant Entodemonologist",
+            "blurb": "Male human variant demonologist",
+            "publicNotes": "<p>Demonologists can pull a creature from the Abyss and bend it to their will... for a time.</p>\n<hr />\n<p>Those initiated into the hidden truths and forbidden secrets of the world are forever transformed-or so they claim. To the cynical, a mystic is nothing more than a charlatan or zealot. Others profess to sense an aura around such luminaries and treat them with reverence, lest they offend some harbinger of unspeakable doom.</p>",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "spell->Light": {
+                    "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+                },
+                "armor->Scholarly Robes": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\nScholarly Robes",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\n<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                },
+                "equipment->Spell Component Pouch": {
+                    "name": "Spell Component Pouch",
+                    "description": "<p>This pouch contains material components for those spells that require them. Though the components are used up over time, you can refill spent components during your daily preparations.</p>"
+                },
+                "equipment->Spellbook": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook"
+                },
+                "strike-melee->Sickle": {
+                    "name": "Sickle"
+                },
+                "action->Command Demon": {
+                    "name": "Command Demon",
+                    "description": "<p><strong>Wymagania</strong> The entodemonologist has a demon ally in melee with an enemy</p><hr /><p><strong>Efekt</strong> The entodemonologist commands their ally to attack. The demon ally uses its reaction to make a Strike against its opponent.</p>"
+                },
+                "lore->Academia Lore": {
+                    "name": "Academia Lore"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
+                },
+                "lore->Diplomacy": {
+                    "skillVariants": {
+                        "0": {
+                            "label": "+14 with demons"
+                        }
+                    }
+                }
+            }
+        },
         "Ashen Brimorak": {
             "name": "Ashen Brimorak",
             "blurb": "Variant brimorak",
@@ -777,11 +821,11 @@
                 "strike-melee->Club": {
                     "name": "Club"
                 },
-                "strike-ranged->Crossbow": {
-                    "name": "Crossbow"
-                },
                 "strike-ranged->Club": {
                     "name": "Club"
+                },
+                "strike-ranged->Crossbow": {
+                    "name": "Crossbow"
                 },
                 "action->+1 Perception to Find Concealed Objects": {
                     "name": "+1 Perception to Find Concealed Objects"
@@ -1015,6 +1059,20 @@
                 "action->Protection of the Burning Sun": {
                     "name": "Protection of the Burning Sun",
                     "description": "<p>Whenever Uirch's shield is raised, he is granted a defensive aura of sacred fire. Any time he's hit while his shield is raised with a non-reach melee weapon or unarmed attack the attacking opponent takes @Damage[2d6[fire]] damage (@Check[type:reflex|dc:23|basic:true] save).</p>"
+                }
+            }
+        },
+        "Blood Shadow Mirror": {
+            "name": "Blood Shadow Mirror",
+            "description": "<p>A dark shape moves in the surface of an ornate mirror, its eyes wide as blood seeps down its tormented face.</p>",
+            "disable": "<p>@Check[type:thievery|dc:16] (trained) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 18) to dispel the mirror.</p>",
+            "reset": "<p>1 minute if no fresh blood has been spilled.</p>",
+            "routine": "<p>(2 actions; arcane, mental) The bloody figure in the mirror transforms to reflect a creature within 30 feet. The reflection bleeds profusely from the eyes, nose, and mouth, and the reflected creature must attempt a @Check[type:will|dc:18|traits:arcane,mental] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Sukces</strong> The creature bleeds from their mouth or nose.</p><p><strong>Porażka</strong> The creature bleeds from their eyes, mouth, and nose, and takes @Damage[1d10[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
+            "stealth": "<p>(trained); DC 0 to notice the mirror without noting it is a trap</p>",
+            "items": {
+                "action->Bloody Glare": {
+                    "name": "Bloody Glare",
+                    "description": "<p><strong>Aktywator</strong> A creature spills blood in the room</p><hr /><p><strong>Efekt</strong> A ghastly figure of blood appears in the mirror's surface, forcing all creatures who can see it to attempt a @Check[type:fortitude|dc:18] save. The trap then rolls initiative.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature bleeds from their nose and mouth.</p>\n<p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
                 }
             }
         },
@@ -1509,10 +1567,10 @@
                 "strike-melee->Flaming Mace": {
                     "name": "Flaming Mace"
                 },
-                "strike-ranged->Alchemist's Fire (Moderate)": {
+                "strike-melee->Alchemist's Fire (Moderate)": {
                     "name": "Alchemist's Fire (Umiarkowany)"
                 },
-                "strike-ranged->Acid Flask (Moderate)": {
+                "strike-melee->Acid Flask (Moderate)": {
                     "name": "Acid Flask (Umiarkowany)"
                 },
                 "action->Sacred Fire": {
@@ -1546,6 +1604,69 @@
                 "action->Collapse": {
                     "name": "Collapse",
                     "description": "<p><strong>Aktywator</strong> A creature moves into the hazardous area</p>\n<hr />\n<p><strong>Efekt</strong> The flooring crumbles, breaking apart under the creature and sending them into the stagnant water below, dealing @Damage[(4d12+10)[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true] save). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Chwycenie Krawędzi} reaction to avoid falling.</p>"
+                }
+            }
+        },
+        "Deskari Cultist": {
+            "name": "Deskari Cultist",
+            "saveDetails": "-2 will vs. higher-ranking members of the cult",
+            "items": {
+                "armor->Cultist Garb": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nCultist Garb"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->-2 Will Vs. Higher-Ranking Members of the Cult": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-2 Will Vs. Higher-Ranking Members of the Cult"
+                },
+                "action->Fanatical Frenzy": {
+                    "name": "Fanatical Frenzy",
+                    "description": "<p><strong>Wymagania</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Efekt</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a –2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Efekt: Fanatical Frenzy}</p>"
+                },
+                "lore->Deskari Lore": {
+                    "name": "Deskari Lore"
+                }
+            }
+        },
+        "Deskari Effigy": {
+            "name": "Deskari Effigy",
+            "description": "<p>A statuette of the deceased demon lord creates frightening illusions of insect swarms.</p>",
+            "disable": "<p>@Check[type:arcana|dc:17] (expert) or @Check[type:religion|dc:17] (trained) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 20) to dispel the statuette</p>",
+            "reset": "<p>1 minute as the illusory insects harass intruders before scuttling into the earth.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->False Swarm": {
+                    "name": "False Swarm",
+                    "description": "<p><strong>Aktywator</strong> A creature moves within 30 feet of the hidden entrance without saying the cultists' password</p><hr /><p><strong>Efekt</strong> A swarm of illusionary insects bursts out of the grass in a @Template[type:cone|distance:60] from the Deskari effigy and seemingly crawl over the intruders, shrieking incessantly. All creatures in the area must make a @Check[type:fortitude|dc:16] save or become temporarily @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (deafened and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute on a critical failure).</p>"
+                }
+            }
+        },
+        "Deskari Fantatic": {
+            "name": "Deskari Fantatic",
+            "saveDetails": "-2 will vs. higher-ranking members of the cult",
+            "items": {
+                "armor->Cultist Garb": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA]\nCultist Garb"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->-2 Will Vs. Higher-Ranking Members of the Cult": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-2 Will Vs. Higher-Ranking Members of the Cult"
+                },
+                "action->Frenzied Assault": {
+                    "name": "Frenzied Assault",
+                    "description": "<p>The Deskari fanatic Strides to an enemy creature and makes three Strikes in a frenzy. These Strikes have a +1 status bonus to attack and a +2 status bonus to damage. The Deskari fanatic can't make a frenzied assault on a creature it's already in melee with.</p>"
+                },
+                "lore->Deskari Lore": {
+                    "name": "Deskari Lore"
                 }
             }
         },
@@ -1711,12 +1832,16 @@
             "name": "Elite Foolhardy Mercenary",
             "tokenName": "Foolhardy Mercenary",
             "items": {
-                "strike-melee->Dagger": {
-                    "name": "Dagger"
-                },
-                "strike-ranged->Dagger": {
-                    "name": "Dagger"
-                },
+                "strike-ranged->Dagger": [
+                    {
+                        "name": "Dagger",
+                        "id": "ko4pLhz0jrDR5J8M"
+                    },
+                    {
+                        "name": "Dagger",
+                        "id": "cXAOmyc1Agflxop6"
+                    }
+                ],
                 "lore->Guild Lore": {
                     "name": "Guild Lore"
                 }
@@ -1751,6 +1876,53 @@
                     "skillVariants": {
                         "0": {
                             "label": "+8 to High Jump or Long Jump"
+                        }
+                    }
+                }
+            }
+        },
+        "Elite Hound Of Tindalos": {
+            "name": "Elite Hound Of Tindalos",
+            "publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Discern Location": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]\nDiscern Location"
+                },
+                "spell->Dimensional Anchor": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]\nDimensional Anchor"
+                },
+                "spell->Invisibility (Self only)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self only)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Otherworldly Mind": {
+                    "name": "Otherworldly Mind",
+                    "description": "<p>Whenever a creature targets the hound with a mental effect, that creature takes @Damage[(4d6+2)[mental]] damage (@Check[type:will|dc:25|basic:true] save). On a critical failure, it also becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                },
+                "action->Ripping Gaze": {
+                    "name": "Ripping Gaze",
+                    "description": "<p>30 feet. The hound of Tindalos's eyes glow balefully, causing painful but bloodless wounds to rip open in the body of a creature that meets its awful gaze. When a creature ends its turn in the aura's emanation, it takes @Damage[(4d6+2)[slashing]] damage (@Check[type:fortitude|dc:25|basic:true] save).</p>\n<p>A creature that critically succeeds at its save is temporarily immune for 24 hours.</p>"
+                },
+                "action->Vulnerable to Curved Space": {
+                    "name": "Vulnerable to Curved Space",
+                    "description": "<p>When a hound of Tindalos is not adjacent to a structural angle of 90º (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Efekt: Vulnerable to Curved Space}</p>"
+                },
+                "action->Angled Entry": {
+                    "name": "Angled Entry",
+                    "description": "<p>The hound of Tindalos casts a 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+                },
+                "lore->Survival": {
+                    "skillVariants": {
+                        "0": {
+                            "label": "+17 to Track"
                         }
                     }
                 }
@@ -1910,6 +2082,19 @@
                 }
             }
         },
+        "Empowered Deskari Effigy": {
+            "name": "Empowered Deskari Effigy",
+            "description": "<p>A statuette of the deceased demon lord creates frightening illusions of insect swarms.</p>",
+            "disable": "<p>@Check[type:arcana|dc:20] (expert) or @Check[type:religion|dc:20] (trained) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 23) to dispel the statuette</p>",
+            "reset": "<p>1 minute as the illusory insects harass intruders before scuttling into the earth.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->False Swarm": {
+                    "name": "False Swarm",
+                    "description": "<p><strong>Aktywator</strong> A creature moves within 30 feet of the hidden entrance without saying the cultists' password</p><hr /><p><strong>Efekt</strong> A swarm of illusionary insects bursts out of the grass in a @Template[type:cone|distance:60] from the Deskari effigy and seemingly crawl over the intruders, shrieking incessantly. All creatures in the area must make a @Check[type:fortitude|dc:19] save or become temporarily @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (deafened and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute on a critical failure).</p>"
+                }
+            }
+        },
         "Empowered Shadow of Sezruth": {
             "name": "Empowered Shadow of Sezruth",
             "languages": "telepathy 100 feet",
@@ -2024,6 +2209,50 @@
                 }
             }
         },
+        "Entodemonologist": {
+            "name": "Entodemonologist",
+            "blurb": "Male human variant demonologist",
+            "publicNotes": "<p>Demonologists can pull a creature from the Abyss and bend it to their will... for a time.</p>\n<hr />\n<p>Those initiated into the hidden truths and forbidden secrets of the world are forever transformed-or so they claim. To the cynical, a mystic is nothing more than a charlatan or zealot. Others profess to sense an aura around such luminaries and treat them with reverence, lest they offend some harbinger of unspeakable doom.</p>",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "spell->Light": {
+                    "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+                },
+                "armor->Scholarly Robes": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\nScholarly Robes",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\n<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                },
+                "equipment->Spell Component Pouch": {
+                    "name": "Spell Component Pouch",
+                    "description": "<p>This pouch contains material components for those spells that require them. Though the components are used up over time, you can refill spent components during your daily preparations.</p>"
+                },
+                "equipment->Spellbook": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook"
+                },
+                "strike-melee->Sickle": {
+                    "name": "Sickle"
+                },
+                "action->Command Demon": {
+                    "name": "Command Demon",
+                    "description": "<p><strong>Wymagania</strong> The entodemonologist has a demon ally in melee with an enemy</p><hr /><p><strong>Efekt</strong> The entodemonologist commands their ally to attack. The demon ally uses its reaction to make a Strike against its opponent.</p>"
+                },
+                "lore->Academia Lore": {
+                    "name": "Academia Lore"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
+                },
+                "lore->Diplomacy": {
+                    "skillVariants": {
+                        "0": {
+                            "label": "+11 with demons"
+                        }
+                    }
+                }
+            }
+        },
         "Experienced Bandit Leader": {
             "name": "Experienced Bandit Leader",
             "items": {
@@ -2058,10 +2287,10 @@
                 "strike-melee->Flaming Mace": {
                     "name": "Flaming Mace"
                 },
-                "strike-ranged->Alchemist's Fire (Moderate)": {
+                "strike-melee->Alchemist's Fire (Moderate)": {
                     "name": "Alchemist's Fire (Umiarkowany)"
                 },
-                "strike-ranged->Acid Flask (Moderate)": {
+                "strike-melee->Acid Flask (Moderate)": {
                     "name": "Acid Flask (Umiarkowany)"
                 },
                 "action->Sacred Fire": {
@@ -2218,12 +2447,16 @@
         "Foolhardy Mercenary": {
             "name": "Foolhardy Mercenary",
             "items": {
-                "strike-melee->Dagger": {
-                    "name": "Dagger"
-                },
-                "strike-ranged->Dagger": {
-                    "name": "Dagger"
-                },
+                "strike-ranged->Dagger": [
+                    {
+                        "name": "Dagger",
+                        "id": "ko4pLhz0jrDR5J8M"
+                    },
+                    {
+                        "name": "Dagger",
+                        "id": "cXAOmyc1Agflxop6"
+                    }
+                ],
                 "lore->Guild Lore": {
                     "name": "Guild Lore"
                 }
@@ -2493,6 +2726,20 @@
                 }
             }
         },
+        "Greater Blood Shadow Mirror": {
+            "name": "Greater Blood Shadow Mirror",
+            "description": "<p>A dark shape moves in the surface of an ornate mirror, its eyes wide as blood seeps down its tormented face.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (trained) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 22) to dispel the mirror.</p>",
+            "reset": "<p>1 minute if no fresh blood has been spilled.</p>",
+            "routine": "<p>(2 actions; arcane, mental) The bloody figure in the mirror transforms to reflect a creature within 30 feet. The reflection bleeds profusely from the eyes, nose, and mouth, and the reflected creature must attempt a @Check[type:will|dc:21|traits:arcane,mental] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Sukces</strong> The creature bleeds from their mouth or nose.</p><p><strong>Porażka</strong> The creature bleeds from their eyes, mouth, and nose, and takes @Damage[2d8[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
+            "stealth": "<p>(trained); DC 0 to notice the mirror without noting it is a trap</p>",
+            "items": {
+                "action->Bloody Glare": {
+                    "name": "Bloody Glare",
+                    "description": "<p><strong>Aktywator</strong> A creature spills blood in the room</p><hr /><p><strong>Efekt</strong> A ghastly figure of blood appears in the mirror's surface, forcing all creatures who can see it to attempt a @Check[type:fortitude|dc:23] save. The trap then rolls initiative.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature bleeds from their nose and mouth.</p>\n<p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                }
+            }
+        },
         "Hardened Azarketi Ruffian": {
             "name": "Hardened Azarketi Ruffian",
             "items": {
@@ -2523,6 +2770,45 @@
                             "label": "+15 Underwater"
                         }
                     }
+                }
+            }
+        },
+        "Hardened Locust Knight": {
+            "name": "Hardened Locust Knight",
+            "items": {
+                "weapon->Chitin Dagger": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z]\nChitin Dagger"
+                },
+                "weapon->Rotcarver Scythe": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.H74vYwHJ8XT4qOPI]\nRotcarver Scythe"
+                },
+                "strike-melee->Chitin Dagger": {
+                    "name": "Chitin Dagger"
+                },
+                "strike-ranged->Chitin Dagger": {
+                    "name": "Chitin Dagger"
+                },
+                "strike-melee->Rotcarver Scythe": {
+                    "name": "Rotcarver Scythe"
+                },
+                "action->Unnatural Armor": {
+                    "name": "Unnatural Armor",
+                    "description": "<p>The locust knight's exoskeleton functions as heavy armor but has no speed penalty.</p>"
+                },
+                "action->Husk Shield": {
+                    "name": "Husk Shield",
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Aktywator</strong> The locust knight takes more than 10 damage in one blow</p><hr /><p><strong>Efekt</strong> The locust knight molts, leaving their discarded exoskeleton behind and Striding up to their full speed. The molted exoskeleton has an AC of 20, 15 Hit Points, and is treated as an enemy occupying that space for purposes of flanking.</p>\n<p>@UUID[Compendium.pf2e.pfs-season-5-bestiary.Actor.9i6k29a2Y62VMoQa]{Husk Shield}</p>"
+                },
+                "action->Cutting Plague": {
+                    "name": "Cutting Plague",
+                    "description": "<p>The carved maggots in the blade of the rotcarver scythe shoot out in a @Template[type:cone|distance:30], transforming into a swarm of locusts. Creatures in the area take @Damage[7d6[piercing]] damage as they're cut by the locusts' spurs (@Check[type:reflex|dc:24|basic:true] save). The locust knight can't use this ability again for [[/br 1d4 #Recharge this ability]]{1k4 rounds}.</p>"
+                },
+                "action->Lunge": {
+                    "name": "Lunge",
+                    "description": "<p>The locust knight makes a Strike with their rotcarver scythe, increasing their reach by 5 feet for that Strike. They can choose to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{trip} their opponent instead of making a Strike.</p>"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
                 }
             }
         },
@@ -2698,6 +2984,9 @@
                 }
             }
         },
+        "Husk Shield": {
+            "name": "Husk Shield"
+        },
         "Hyacinth Lamprey": {
             "name": "Hyacinth Lamprey",
             "items": {
@@ -2711,6 +3000,67 @@
                 "action->Drain Water": {
                     "name": "Drain Water",
                     "description": "<p><strong>Wymagania</strong> The hyacinth lamprey is attached to a creature</p>\n<hr />\n<p><strong>Efekt</strong> The hyacinth lamprey drains water from the creature it is attached to. This deals [[/r 1d4]] damage, and the hyacinth lamprey gains temporary Hit Points equal to the damage dealt. A creature that has its water drained by a hyacinth lamprey is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+                }
+            }
+        },
+        "Jamimpi": {
+            "name": "Jamimpi",
+            "blurb": "Variant Elite Guardian Naga",
+            "publicNotes": "<p>The opposite of dark nagas in many ways, guardian nagas are benevolent and wise protectors of places of great natural or supernatural significance: ancient oak groves, forgotten holy temples, and vaults of sacred power are just a few examples of locations that these nagas protect. Guardian nagas believe that the beautiful elements of the cosmos are worthy of protection and that devotion to such a grand effort is its own reward. A guardian naga may join a group with similar values, such as a sect of priests or monks, to aid it in its holy endeavors and to exchange knowledge of the heavens.</p>\n<p>Guardian nagas usually encourage their young, upon reaching adulthood, to depart the nest and seek out their own natural wonders or ancient ruins to protect. Sometimes generations of guardian nagas might guard the same place, passing the honor of such care from parent to child. In such cases, the parent nagas aim to have at least one of their children elect to stay behind and become the guardian of their ancestral ward, giving the parents the peace of mind that the site they protect will continue to be guarded by their descendants.</p>\n<p>It is difficult for many societies that vilify serpents or see them as symbols of evil to accept the fact that guardian nagas are benevolent and kindly. Fortunately for these people, guardian nagas are also patient and understanding, and see encounters with such societies as opportunities to educate and expand worldviews.</p>\n<hr />\n<p>Nagas are serpentine beings with magical powers and keen, nearly inscrutable intellects. Physically, they resemble massive snakes with eerie visages that resemble those of humans. Nagas use their innate magic and poisonous fangs to keep all but the most stalwart foes at bay. Beyond the natural weapons they use to ward away foes, little is understood of the naga's unsettling physiology.</p>\n<p>Nagas are intelligent creatures with powerful needs to pursue, be they the accumulation of knowledge, the collection of rare art, or the rule of an entire nation. On Golarion, the nation of Nagajor is one such society-an entire empire ruled by nagas and populated by reptilian humanoids who serve their naga rulers with a patriotic pride that borders on worship.</p>\n<p>Still, most adventurers interact with nagas on a much smaller scale, encountering them as dangerous guardians in remote locations or not-so-abandoned ruins. In many cases, these nagas have heard of distant Nagajor, but they are usually unwilling to abandon their own pursuits to seek out a land where they might be worshipped as gods.</p>",
+            "items": {
+                "spellcastingEntry->Divine Spontaneous Spells": {
+                    "name": "Divine Spontaneous Spells"
+                },
+                "spell->Freedom of Movement": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
+                },
+                "spell->Remove Curse": {
+                    "name": "Remove Curse",
+                    "description": "<p>Your touch grants a reprieve to a cursed creature. You attempt to counteract one curse afflicting the target. If the curse comes from a cursed item or other external source, a success indicates that the target creature can rid itself of the cursed item, but it doesn't remove the curse from the item.</p>",
+                    "target": "1 creature"
+                },
+                "spell->Neutralize Poison": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]\nNeutralize Poison",
+                    "target": "1 creature"
+                },
+                "spell->Remove Disease": {
+                    "name": "Remove Disease",
+                    "description": "<p>Healing magic purges disease from a creature's body. You attempt to counteract one disease afflicting the target.</p>",
+                    "target": "1 creature"
+                },
+                "spell->Searing Light": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]\nSearing Light"
+                },
+                "spell->Calm Emotions": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]\nCalm Emotions"
+                },
+                "spell->See Invisibility": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
+                },
+                "spell->Sound Burst": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]\nSound Burst"
+                },
+                "spell->Light": {
+                    "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+                },
+                "spell->Mage Hand": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
+                },
+                "spell->Protection": {
+                    "target": "1 creature"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-ranged->Spit": {
+                    "name": "Spit"
+                },
+                "action->Guardian Naga Venom": {
+                    "name": "Guardian Naga Venom",
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[3d6[poison]] (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>"
+                },
+                "lore->Heaven Lore": {
+                    "name": "Heaven Lore"
                 }
             }
         },
@@ -2882,6 +3232,50 @@
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
                     "description": "<p>The draxie breathes pixie dust in a @Template[type:cone|distance:15], with a random effect determined each time they use their Breath Weapon. Roll [[/r 1d4]] to determine the effect. Each creature in the area must succeed at a @Check[type:will|dc:17] save or be affected.</p>\n<p>The draxie can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>\n<ol>\n<li>The target takes the effects of the @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</li>\n<li>The target loses its last 5 minutes of memory.</li>\n<li>The target takes the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li>For 1 minute, the target is in a state of euphoria that makes it @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</li>\n</ol>"
+                }
+            }
+        },
+        "Locust Knight": {
+            "name": "Locust Knight",
+            "items": {
+                "weapon->Chitin Dagger": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z]\nChitin Dagger"
+                },
+                "weapon->Rotcarver Scythe": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.H74vYwHJ8XT4qOPI]\nRotcarver Scythe"
+                },
+                "strike-melee->Chitin Dagger": {
+                    "name": "Chitin Dagger"
+                },
+                "strike-ranged->Chitin Dagger": {
+                    "name": "Chitin Dagger"
+                },
+                "strike-melee->Rotcarver Scythe": {
+                    "name": "Rotcarver Scythe"
+                },
+                "action->Unnatural Armor": {
+                    "name": "Unnatural Armor",
+                    "description": "<p>The locust knight's exoskeleton functions as heavy armor but has no speed penalty.</p>"
+                },
+                "action->Cutting Plague": {
+                    "name": "Cutting Plague",
+                    "description": "<p>The carved maggots in the blade of the rotcarver scythe shoot out in a @Template[type:cone|distance:30], transforming into a swarm of locusts. Creatures in the area take @Damage[5d6[piercing]] damage as they're cut by the locusts' spurs (@Check[type:reflex|dc:21|basic:true] save). The locust knight can't use this ability again for [[/br 1d4 #Recharge this ability]]{1k4 rounds}.</p>"
+                },
+                "action->Lunge": {
+                    "name": "Lunge",
+                    "description": "<p>The locust knight makes a Strike with their rotcarver scythe, increasing their reach by 5 feet for that Strike. They can choose to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{trip} their opponent instead of making a Strike.</p>"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
+                }
+            }
+        },
+        "Locust Swarm": {
+            "name": "Locust Swarm",
+            "items": {
+                "action->Swarming Bites": {
+                    "name": "Swarming Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>"
                 }
             }
         },
@@ -3130,6 +3524,34 @@
                 }
             }
         },
+        "Paper Locust Swarm": {
+            "name": "Paper Locust Swarm",
+            "description": "<p>A book unfurls and its case forms into a leathery locust, its pages folding into an overwhelming swarm.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] to tear up the leather locust, or @Check[type:arcana|dc:18] (trained) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 22) to render the magic inert.</p>",
+            "reset": "<p>The paper locust swarm resets after 1 minute if there are no creatures to target.</p>",
+            "routine": "<p>(1 action) The swarm moves up to 30 feet to share the nearest creature's space, slicing into them with their paper wings and spurs. The targeted creature must attempt a @Check[type:reflex|dc:21] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature takes @Damage[(2d8+5)[slashing]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[2d8[slashing]] damage and @Damage[1d6[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Fold Swarm": {
+                    "name": "Fold Swarm",
+                    "description": "<p><strong>Aktywator</strong> A creature touches the bookshelf</p><hr /><p><strong>Efekt</strong> The enchanted book transforms into a swarm of origami locusts and one leather locust. The trap then rolls initiative.</p>"
+                }
+            }
+        },
+        "Paper Locust Tornado": {
+            "name": "Paper Locust Tornado",
+            "description": "<p>A book unfurls and its case forms into a leathery locust, its pages folding into an overwhelming swarm.</p>",
+            "disable": "<p>@Check[type:thievery|dc:23] to tear up the leather locust, or @Check[type:arcana|dc:21] (trained) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. rank; counteract DC 25) to render the magic inert.</p>",
+            "reset": "<p>The paper locust tornado resets after 1 minute if there are no creatures to target.</p>",
+            "routine": "<p>(2 actions) The tornado uses each action to move up to 30 feet and share a creature's space, slicing into them with their paper wings and spurs. The targeted creatures must attempt a @Check[type:reflex|dc:24] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature takes @Damage[(2d8+9)[slashing]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[2d8[slashing]] damage and @Damage[1d10[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Fold Swarm": {
+                    "name": "Fold Swarm",
+                    "description": "<p><strong>Aktywator</strong> A creature touches the bookshelf</p><hr /><p><strong>Efekt</strong> The enchanted book transforms into a tornado of origami locusts and one leather locust. The trap then rolls initiative.</p>"
+                }
+            }
+        },
         "Pit of Lives Lost (1-2)": {
             "name": "Pit of Lives Lost (1-2)",
             "description": "<p>The spout trickling blood, sludge, and offal begins to draw upon your life energy, increasing the flow and spreading an even fouler smell within the chamber.</p>",
@@ -3209,6 +3631,76 @@
                 "action->Swipe": {
                     "name": "Swipe",
                     "description": "<p>The draugr makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+                }
+            }
+        },
+        "Ravenous Locust Swarm": {
+            "name": "Ravenous Locust Swarm",
+            "items": {
+                "action->Swarming Bites": {
+                    "name": "Swarming Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[2d8[piercing]] damage (@Check[type:reflex|dc:20|basic:true] save).</p>"
+                }
+            }
+        },
+        "Resolved Jamimpi": {
+            "name": "Resolved Jamimpi",
+            "blurb": "Variant Guardian Naga",
+            "publicNotes": "<p>The opposite of dark nagas in many ways, guardian nagas are benevolent and wise protectors of places of great natural or supernatural significance: ancient oak groves, forgotten holy temples, and vaults of sacred power are just a few examples of locations that these nagas protect. Guardian nagas believe that the beautiful elements of the cosmos are worthy of protection and that devotion to such a grand effort is its own reward. A guardian naga may join a group with similar values, such as a sect of priests or monks, to aid it in its holy endeavors and to exchange knowledge of the heavens.</p>\n<p>Guardian nagas usually encourage their young, upon reaching adulthood, to depart the nest and seek out their own natural wonders or ancient ruins to protect. Sometimes generations of guardian nagas might guard the same place, passing the honor of such care from parent to child. In such cases, the parent nagas aim to have at least one of their children elect to stay behind and become the guardian of their ancestral ward, giving the parents the peace of mind that the site they protect will continue to be guarded by their descendants.</p>\n<p>It is difficult for many societies that vilify serpents or see them as symbols of evil to accept the fact that guardian nagas are benevolent and kindly. Fortunately for these people, guardian nagas are also patient and understanding, and see encounters with such societies as opportunities to educate and expand worldviews.</p>\n<hr />\n<p>Nagas are serpentine beings with magical powers and keen, nearly inscrutable intellects. Physically, they resemble massive snakes with eerie visages that resemble those of humans. Nagas use their innate magic and poisonous fangs to keep all but the most stalwart foes at bay. Beyond the natural weapons they use to ward away foes, little is understood of the naga's unsettling physiology.</p>\n<p>Nagas are intelligent creatures with powerful needs to pursue, be they the accumulation of knowledge, the collection of rare art, or the rule of an entire nation. On Golarion, the nation of Nagajor is one such society-an entire empire ruled by nagas and populated by reptilian humanoids who serve their naga rulers with a patriotic pride that borders on worship.</p>\n<p>Still, most adventurers interact with nagas on a much smaller scale, encountering them as dangerous guardians in remote locations or not-so-abandoned ruins. In many cases, these nagas have heard of distant Nagajor, but they are usually unwilling to abandon their own pursuits to seek out a land where they might be worshipped as gods.</p>",
+            "items": {
+                "spellcastingEntry->Divine Spontaneous Spells": {
+                    "name": "Divine Spontaneous Spells"
+                },
+                "spell->Freedom of Movement": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
+                },
+                "spell->Remove Curse": {
+                    "name": "Remove Curse",
+                    "description": "<p>Your touch grants a reprieve to a cursed creature. You attempt to counteract one curse afflicting the target. If the curse comes from a cursed item or other external source, a success indicates that the target creature can rid itself of the cursed item, but it doesn't remove the curse from the item.</p>",
+                    "target": "1 creature"
+                },
+                "spell->Neutralize Poison": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]\nNeutralize Poison",
+                    "target": "1 creature"
+                },
+                "spell->Remove Disease": {
+                    "name": "Remove Disease",
+                    "description": "<p>Healing magic purges disease from a creature's body. You attempt to counteract one disease afflicting the target.</p>",
+                    "target": "1 creature"
+                },
+                "spell->Searing Light": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]\nSearing Light"
+                },
+                "spell->Calm Emotions": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]\nCalm Emotions"
+                },
+                "spell->See Invisibility": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
+                },
+                "spell->Sound Burst": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]\nSound Burst"
+                },
+                "spell->Light": {
+                    "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+                },
+                "spell->Mage Hand": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
+                },
+                "spell->Protection": {
+                    "target": "1 creature"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-ranged->Spit": {
+                    "name": "Spit"
+                },
+                "action->Guardian Naga Venom": {
+                    "name": "Guardian Naga Venom",
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:33]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rounds</p>\n<p><strong>Stadium 1</strong> @Damage[3d6[poison]] (1 round)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>"
+                },
+                "lore->Heaven Lore": {
+                    "name": "Heaven Lore"
                 }
             }
         },
@@ -3504,6 +3996,34 @@
                 "action->Reach Spell": {
                     "name": "Reach Spell",
                     "description": "<p>If the next action the Shenga Heartrender uses is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>"
+                }
+            }
+        },
+        "Shining Shooting Sphere": {
+            "name": "Shining Shooting Sphere",
+            "description": "<p>A gilded armillary sphere spins in place, shooting jeweled stars and planets at intruders.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (expert) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. rank; counteract DC 23) to remove the enchantment.</p>",
+            "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
+            "routine": "<p>(1 action) A jeweled planet shoots from the sphere, targeting a random creature within 30 feet. The creature takes @Damage[(2d8+7)[bludgeoning]] damage (@Check[type:reflex|dc:22|basic:true] save).</p>",
+            "stealth": "<p>(expert) to notice the floor sensor; DC 0 to notice the sphere</p>",
+            "items": {
+                "action->Orbital Spin": {
+                    "name": "Orbital Spin",
+                    "description": "<p><strong>Aktywator</strong> A creature moves within 10 feet of the sphere, stepping on the floor sensor</p><hr /><p><strong>Efekt</strong> The sphere rotates and the trap rolls initiative.</p>"
+                }
+            }
+        },
+        "Shooting Sphere": {
+            "name": "Shooting Sphere",
+            "description": "<p>A gilded armillary sphere spins in place, shooting jeweled stars and planets at intruders.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (expert) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 20) to remove the enchantment.</p>",
+            "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
+            "routine": "<p>(1 action) A jeweled planet shoots from the sphere, targeting a random creature within 30 feet. The creature takes @Damage[(1d10+6)[bludgeoning]] damage (@Check[type:reflex|dc:20|basic:true] save).</p>",
+            "stealth": "<p>(expert) to notice the floor sensor; DC 0 to notice the sphere</p>",
+            "items": {
+                "action->Orbital Spin": {
+                    "name": "Orbital Spin",
+                    "description": "<p><strong>Aktywator</strong> A creature moves within 10 feet of the sphere, stepping on the floor sensor</p><hr /><p><strong>Efekt</strong> The sphere rotates and the trap rolls initiative.</p>"
                 }
             }
         },
@@ -4018,6 +4538,64 @@
                 }
             }
         },
+        "The Inscrutable Librarian": {
+            "name": "The Inscrutable Librarian",
+            "blurb": "Variant Morrowkin",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Disgusted by Food": {
+                    "name": "Disgusted by Food",
+                    "description": "<p>The morrowkin eats dreams and potential, not food. A creature that spends an action to brandish food at the morrowkin automatically makes the creature @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or increases its sickened value by 1, to a maximum of sickened 6), decreasing the morrowkin's AC, attack rolls, saves, skills, and ability DCs accordingly, as normal for the sickened condition. The morrowkin can't retch to reduce its sickened condition.</p>"
+                },
+                "action->Endless": {
+                    "name": "Endless",
+                    "description": "<p>If reduced to 0 Hit Points or incapacitated for more than a few rounds, the morrowkin vanishes. In 1 minute, it reappears refreshed completely as if the previous battle never happened, with full HP, with all effects on it cleared, and with its Swallow Future ability ready to use again.</p>"
+                },
+                "action->Drain Potential": {
+                    "name": "Drain Potential",
+                    "description": "<p>The morrowkin tries to drain the motivation from its target, who must attempt a @Check[type:fortitude|dc:31] save. If the target fails, it is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure) and must roll twice and use the worse result on all checks for 1 minute. Creatures wearing a hope talisman are unaffected.</p>"
+                },
+                "action->Swallow Future": {
+                    "name": "Swallow Future",
+                    "description": "<p>The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a @Template[type:emanation|distance:30] of the morrowkin take [[/r (6d8 + 18)[mental]]] damage and must attempt a @Check[type:will|dc:34] save.</p>\n<p>The morrowkin can't Swallow Future again for 1 minute.</p>\n<p>Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 4} (likely causing it to die immediately).</p>"
+                },
+                "action->Tomorrow's Fury": {
+                    "name": "Tomorrow's Fury",
+                    "description": "<p>The morrowkin makes claw attacks against any number of targets within reach. The claw attacks count against the morrowkin's multiple attack penalty, but don't apply the penalty until after all attacks have been made.</p>"
+                }
+            }
+        },
+        "The Librarian": {
+            "name": "The Librarian",
+            "blurb": "Variant Morrowkin",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Disgusted by Food": {
+                    "name": "Disgusted by Food",
+                    "description": "<p>The morrowkin eats dreams and potential, not food. A creature that spends an action to brandish food at the morrowkin automatically makes the creature @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or increases its sickened value by 1, to a maximum of sickened 6), decreasing the morrowkin's AC, attack rolls, saves, skills, and ability DCs accordingly, as normal for the sickened condition. The morrowkin can't retch to reduce its sickened condition.</p>"
+                },
+                "action->Endless": {
+                    "name": "Endless",
+                    "description": "<p>If reduced to 0 Hit Points or incapacitated for more than a few rounds, the morrowkin vanishes. In 1 minute, it reappears refreshed completely as if the previous battle never happened, with full HP, with all effects on it cleared, and with its Swallow Future ability ready to use again.</p>"
+                },
+                "action->Drain Potential": {
+                    "name": "Drain Potential",
+                    "description": "<p>The morrowkin tries to drain the motivation from its target, who must attempt a @Check[type:fortitude|dc:29] save. If the target fails, it is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure) and must roll twice and use the worse result on all checks for 1 minute. Creatures wearing a hope talisman are unaffected.</p>"
+                },
+                "action->Swallow Future": {
+                    "name": "Swallow Future",
+                    "description": "<p>The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a @Template[type:emanation|distance:30] of the morrowkin take [[/r (5d8 + 18)[mental]]] damage and must attempt a @Check[type:will|dc:33] save.</p>\n<p>The morrowkin can't Swallow Future again for 1 minute.</p>\n<p>Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 3}.</p>"
+                },
+                "action->Tomorrow's Fury": {
+                    "name": "Tomorrow's Fury",
+                    "description": "<p>The morrowkin makes claw attacks against any number of targets within reach. The claw attacks count against the morrowkin's multiple attack penalty, but don't apply the penalty until after all attacks have been made.</p>"
+                }
+            }
+        },
         "The Upset Warden (1-2)": {
             "name": "The Upset Warden (1-2)",
             "tokenName": "The Upset Warden",
@@ -4412,11 +4990,11 @@
                 "strike-melee->Club": {
                     "name": "Club"
                 },
-                "strike-ranged->Crossbow": {
-                    "name": "Crossbow"
-                },
                 "strike-ranged->Club": {
                     "name": "Club"
+                },
+                "strike-ranged->Crossbow": {
+                    "name": "Crossbow"
                 },
                 "action->+1 Perception to Find Concealed Objects": {
                     "name": "+1 Perception to Find Concealed Objects"
@@ -4595,13 +5173,13 @@
                 "strike-ranged->Dagger": {
                     "name": "Sztylet"
                 },
-                "strike-ranged->Acid Flask (Moderate)": {
+                "strike-melee->Acid Flask (Moderate)": {
                     "name": "Acid Flask (Umiarkowany)"
                 },
-                "strike-ranged->Alchemist's Fire (Moderate)": {
+                "strike-melee->Alchemist's Fire (Moderate)": {
                     "name": "Alchemist's Fire (Umiarkowany)"
                 },
-                "strike-ranged->Vexing Vapor (Moderate)": {
+                "strike-melee->Vexing Vapor (Moderate)": {
                     "name": "Vexing Vapor (Umiarkowany)"
                 },
                 "action->Infused Items": {
@@ -4645,13 +5223,13 @@
                 "strike-ranged->Dagger": {
                     "name": "Sztylet"
                 },
-                "strike-ranged->Acid Flask (Moderate)": {
+                "strike-melee->Acid Flask (Moderate)": {
                     "name": "Acid Flask (Umiarkowany)"
                 },
-                "strike-ranged->Alchemist's Fire (Moderate)": {
+                "strike-melee->Alchemist's Fire (Moderate)": {
                     "name": "Alchemist's Fire (Umiarkowany)"
                 },
-                "strike-ranged->Vexing Vapor (Moderate)": {
+                "strike-melee->Vexing Vapor (Moderate)": {
                     "name": "Vexing Vapor (Umiarkowany)"
                 },
                 "action->Infused Items": {

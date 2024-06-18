@@ -448,11 +448,11 @@
                 "strike-melee->Club": {
                     "name": "Maczuga"
                 },
-                "strike-ranged->Sling": {
-                    "name": "Sling"
-                },
                 "strike-ranged->Club": {
                     "name": "Maczuga"
+                },
+                "strike-ranged->Sling": {
+                    "name": "Sling"
                 },
                 "action->Brutal Beating": {
                     "name": "Brutal Beating",
@@ -482,8 +482,8 @@
                 "strike-melee->Rapier": {
                     "name": "Rapier"
                 },
-                "strike-melee->Dagger": {
-                    "name": "Sztylet"
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Noble's Ally": {
                     "name": "Noble's Ally",
@@ -913,11 +913,11 @@
                 "strike-melee->Club": {
                     "name": "Maczuga"
                 },
-                "strike-ranged->Sling": {
-                    "name": "Sling"
-                },
                 "strike-ranged->Club": {
                     "name": "Maczuga"
+                },
+                "strike-ranged->Sling": {
+                    "name": "Sling"
                 },
                 "action->Brutal Beating": {
                     "name": "Brutal Beating",
@@ -1478,6 +1478,9 @@
                 "spell->Death Knell (At Will)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp]\nDeath Knell (At Will)"
                 },
+                "spell->Mimic Undead": {
+                    "requirements": "You're a living creature"
+                },
                 "spell->Animate Dead": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]\nAnimate Dead"
                 },
@@ -1645,7 +1648,7 @@
                     "name": "Load the Cannons",
                     "description": "<p><strong>Aktywator</strong> The ship flies within 30 feet of Star</p>\n<p><strong>Efekt</strong> The cannon rolls initiative.</p>"
                 },
-                "strike-melee->Cannon Blast": {
+                "strike-ranged->Cannon Blast": {
                     "name": "Cannon Blast",
                     "description": "<p>to creatures in a @Template[type:burst|distance:5] (@Check[type:reflex|dc:21|basic:true])</p>"
                 }
@@ -2731,13 +2734,13 @@
                 "strike-ranged->Dagger": {
                     "name": "Sztylet"
                 },
-                "strike-ranged->Bottled Lightning (Lesser) (Infused)": {
+                "strike-melee->Bottled Lightning (Lesser) (Infused)": {
                     "name": "Bottled Lightning (Mniejszy) (Infused)"
                 },
-                "strike-ranged->Frost Vial (Lesser) (Infused)": {
+                "strike-melee->Frost Vial (Lesser) (Infused)": {
                     "name": "Frost Vial (Mniejszy) (Infused)"
                 },
-                "strike-ranged->Thunderstone (Lesser) (Infused)": {
+                "strike-melee->Thunderstone (Lesser) (Infused)": {
                     "name": "Thunderstone (Mniejszy) (Infused)"
                 },
                 "strike-ranged->Holy Water": {
@@ -2811,11 +2814,11 @@
                 "strike-melee->Dagger": {
                     "name": "Sztylet"
                 },
-                "strike-ranged->Hand Crossbow": {
-                    "name": "Hand Crossbow"
-                },
                 "strike-ranged->Dagger": {
                     "name": "Sztylet"
+                },
+                "strike-ranged->Hand Crossbow": {
+                    "name": "Hand Crossbow"
                 },
                 "action->Torch Combatant": {
                     "name": "Torch Combatant",
@@ -3260,6 +3263,9 @@
                 "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
                 },
+                "spell->Blood Vendetta": {
+                    "requirements": "You can bleed"
+                },
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
                     "target": "1 living or undead creature"
@@ -3330,11 +3336,11 @@
                 "strike-melee->Sap": {
                     "name": "Pałka"
                 },
-                "strike-ranged->Crossbow": {
-                    "name": "Crossbow"
-                },
                 "strike-ranged->Club": {
                     "name": "Maczuga"
+                },
+                "strike-ranged->Crossbow": {
+                    "name": "Crossbow"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -3595,7 +3601,7 @@
                     "name": "Continually Sur-piesed",
                     "description": "<p><strong>Aktywator</strong> A creature enters the room, attempts an action with the concentrate trait for the first time this turn, or ends their turn</p>\n<hr />\n<p><strong>Efekt</strong> The hazard makes a pie Strike against the triggering creature.</p>"
                 },
-                "strike-ranged->Pie": {
+                "strike-melee->Pie": {
                     "name": "Pie"
                 }
             }
@@ -3615,7 +3621,7 @@
                     "name": "Continually Sur-piesed",
                     "description": "<p><strong>Aktywator</strong> A creature enters the room, attempts an action with the concentrate trait for the first time this turn, or ends their turn</p>\n<hr />\n<p><strong>Efekt</strong> The hazard makes a pie Strike against the triggering creature.</p>"
                 },
-                "strike-ranged->Pie": {
+                "strike-melee->Pie": {
                     "name": "Pie"
                 }
             }
@@ -4072,6 +4078,9 @@
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
                 },
+                "spell->Thunderous Strike": {
+                    "requirements": "You're wielding a melee weapon in two hands"
+                },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
                 },
@@ -4106,6 +4115,9 @@
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
+                },
+                "spell->Thunderous Strike": {
+                    "requirements": "You're wielding a melee weapon in two hands"
                 },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -4142,6 +4154,9 @@
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
                 },
+                "spell->Thunderous Strike": {
+                    "requirements": "You're wielding a melee weapon in two hands"
+                },
                 "strike-melee->Elven Branched Spear": {
                     "name": "Elven Branched Spear"
                 },
@@ -4174,6 +4189,9 @@
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
+                },
+                "spell->Thunderous Strike": {
+                    "requirements": "You're wielding a melee weapon in two hands"
                 },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -4555,14 +4573,18 @@
                 "strike-melee->Battle Axe": {
                     "name": "Battle Axe"
                 },
-                "strike-melee->Hatchet": {
-                    "name": "Toporek"
-                },
-                "strike-ranged->Hatchet": {
-                    "name": "Toporek"
-                },
-                "strike-ranged->Shortbow": {
-                    "name": "Łuk Krótki"
+                "strike-ranged->Hatchet": [
+                    {
+                        "name": "Hatchet",
+                        "id": "Wde1YVsXp0Jo3K2y"
+                    },
+                    {
+                        "name": "Hatchet",
+                        "id": "qfkLEtQ89hScIpwb"
+                    }
+                ],
+                "strike-melee->Shortbow": {
+                    "name": "Shortbow"
                 },
                 "action->Bardic Lore": {
                     "name": "Bardic Lore",
@@ -4621,14 +4643,18 @@
                 "strike-melee->Battle Axe": {
                     "name": "Battle Axe"
                 },
-                "strike-melee->Hatchet": {
-                    "name": "Toporek"
-                },
-                "strike-ranged->Hatchet": {
-                    "name": "Toporek"
-                },
-                "strike-ranged->Shortbow": {
-                    "name": "Łuk Krótki"
+                "strike-ranged->Hatchet": [
+                    {
+                        "name": "Hatchet",
+                        "id": "Wde1YVsXp0Jo3K2y"
+                    },
+                    {
+                        "name": "Hatchet",
+                        "id": "qfkLEtQ89hScIpwb"
+                    }
+                ],
+                "strike-melee->Shortbow": {
+                    "name": "Shortbow"
                 },
                 "action->Bardic Lore": {
                     "name": "Bardic Lore",
@@ -4768,8 +4794,8 @@
                 "equipment->Wayfinder": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gbwr57aT9ou8yKWT]\n<p>This compact compass repurposes ancient technology to draw fantastic powers from the mysterious magical items called aeon stones. It serves as a badge of office for agents of the Pathfinder Society and as a status symbol among adventurers of any stripe. A wayfinder functions as a compass.</p>\n<p>An indentation in the middle of the <em>wayfinder</em> can hold a single <em>aeon stone</em>. Placing an <em>aeon stone</em> in this indentation provides you all the benefits of having the <em>aeon stone</em> orbiting your head, but it protects the stone from being noticed or stolen as easily. You invest a <em>wayfinder</em> and the <em>aeon stone</em> within it simultaneously, and they count as only one item toward your investiture limit. An invested <em>aeon stone</em> slotted in a <em>wayfinder</em> also grants its resonant power.</p>\n<p>If you have more than one <em>wayfinder</em> with an invested <em>aeon stone</em> on your person at a given time, destructive interference from their resonance prevents you from gaining benefits from any of them. You can still benefit from additional <em>aeon stones</em> orbiting your head, just not in <em>wayfinders</em>.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> komenda</p>\n<hr />\n<p><strong>Efekt</strong> The <em>wayfinder</em> is targeted by a 1. kręgu @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell.</p>"
                 },
-                "strike-melee->Dagger": {
-                    "name": "Sztylet"
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Denounce Heretic": {
                     "name": "Denounce Heretic",
@@ -4808,8 +4834,8 @@
                 "equipment->Wayfinder": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gbwr57aT9ou8yKWT]\n<p>This compact compass repurposes ancient technology to draw fantastic powers from the mysterious magical items called aeon stones. It serves as a badge of office for agents of the Pathfinder Society and as a status symbol among adventurers of any stripe. A wayfinder functions as a compass.</p>\n<p>An indentation in the middle of the <em>wayfinder</em> can hold a single <em>aeon stone</em>. Placing an <em>aeon stone</em> in this indentation provides you all the benefits of having the <em>aeon stone</em> orbiting your head, but it protects the stone from being noticed or stolen as easily. You invest a <em>wayfinder</em> and the <em>aeon stone</em> within it simultaneously, and they count as only one item toward your investiture limit. An invested <em>aeon stone</em> slotted in a <em>wayfinder</em> also grants its resonant power.</p>\n<p>If you have more than one <em>wayfinder</em> with an invested <em>aeon stone</em> on your person at a given time, destructive interference from their resonance prevents you from gaining benefits from any of them. You can still benefit from additional <em>aeon stones</em> orbiting your head, just not in <em>wayfinders</em>.</p>\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> komenda</p>\n<hr />\n<p><strong>Efekt</strong> The <em>wayfinder</em> is targeted by a 1. kręgu @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell.</p>"
                 },
-                "strike-melee->Dagger": {
-                    "name": "Sztylet"
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Denounce Heretic": {
                     "name": "Denounce Heretic",
@@ -4943,7 +4969,7 @@
                     "name": "Load the Cannons",
                     "description": "<p><strong>Aktywator</strong> The ship flies within 30 feet of Star</p>\n<p><strong>Efekt</strong> The cannon rolls initiative.</p>"
                 },
-                "strike-melee->Cannon Blast": {
+                "strike-ranged->Cannon Blast": {
                     "name": "Cannon Blast",
                     "description": "<p>to creatures in a @Template[type:burst|distance:5] (@Check[type:reflex|dc:18|basic:true])</p>"
                 }
@@ -5630,6 +5656,9 @@
                 "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
                 },
+                "spell->Blood Vendetta": {
+                    "requirements": "You can bleed"
+                },
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
                     "target": "1 living or undead creature"
@@ -6002,17 +6031,17 @@
                 "weapon->Longsword": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
-                "strike-melee->Hatchet": {
-                    "name": "Toporek"
+                "strike-ranged->Hatchet": {
+                    "name": "Hatchet"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
                 },
-                "strike-ranged->Javelin": {
+                "strike-melee->Javelin": {
                     "name": "Javelin"
                 },
-                "strike-ranged->Shortbow": {
-                    "name": "Łuk Krótki"
+                "strike-melee->Shortbow": {
+                    "name": "Shortbow"
                 },
                 "action->Bravery": {
                     "name": "Bravery",
@@ -6224,17 +6253,17 @@
                 "weapon->Longsword": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
-                "strike-melee->Hatchet": {
-                    "name": "Toporek"
+                "strike-ranged->Hatchet": {
+                    "name": "Hatchet"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
                 },
-                "strike-ranged->Javelin": {
+                "strike-melee->Javelin": {
                     "name": "Javelin"
                 },
-                "strike-ranged->Shortbow": {
-                    "name": "Łuk Krótki"
+                "strike-melee->Shortbow": {
+                    "name": "Shortbow"
                 },
                 "action->Bravery": {
                     "name": "Bravery",

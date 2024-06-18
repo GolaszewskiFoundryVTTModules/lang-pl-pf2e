@@ -1004,7 +1004,7 @@
                     "name": "Cold Snap",
                     "description": "<p><strong>Aktywator</strong> A creature steps on the white bricks</p>\n<hr />\n<p><strong>Efekt</strong> The trap makes a frost jet Strike against the triggering creature and rolls initiative.</p>"
                 },
-                "strike-ranged->Frost Jet": {
+                "strike-melee->Frost Jet": {
                     "name": "Frost Jet",
                     "description": "<p>No multiple attack penalty.</p>"
                 },
@@ -1748,7 +1748,7 @@
                     "name": "Violent Deluge",
                     "description": "<p><strong>Aktywator</strong> The water tank is broken or destroyed</p>\n<hr />\n<p><strong>Efekt</strong> A torrent of water bursts from the shattered tank, dealing @Damage[3d8[bludgeoning]] to each creature within 15 feet (basic @Check[type:reflex|dc:22] save). The trap is then disabled.</p>"
                 },
-                "strike-ranged->Water Jet": {
+                "strike-melee->Water Jet": {
                     "name": "Water Jet"
                 },
                 "action->No MAP": {
@@ -1915,6 +1915,9 @@
             "items": {
                 "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
+                },
+                "spell->Alarm": {
+                    "requirements": "3 gp silver bell focus"
                 },
                 "spell->Light": {
                     "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"

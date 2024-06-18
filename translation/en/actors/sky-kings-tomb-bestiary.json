@@ -237,10 +237,10 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Moderate Alchemist's Fire": {
+        "strike-melee->Moderate Alchemist's Fire": {
           "name": "Moderate Alchemist's Fire"
         },
-        "strike-ranged->Moderate Sulfur Bomb": {
+        "strike-melee->Moderate Sulfur Bomb": {
           "name": "Moderate Sulfur Bomb"
         },
         "action->Telepathy 30 feet (Munavris Only)": {
@@ -345,6 +345,9 @@
         "spellcastingEntry->Arcane Focus Spells": {
           "name": "Arcane Focus Spells"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
         "spell->True Strike": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
         },
@@ -352,12 +355,16 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\nScroll of Translocate",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate}</p>\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
-        "strike-melee->Light Hammer": {
-          "name": "Light Hammer"
-        },
-        "strike-ranged->Light Hammer": {
-          "name": "Light Hammer"
-        },
+        "strike-ranged->Light Hammer": [
+          {
+            "name": "Light Hammer",
+            "id": "uo0E9r6SvOozRsyw"
+          },
+          {
+            "name": "Light Hammer",
+            "id": "sWCXaYTh85pV5ORu"
+          }
+        ],
         "action->Tormenter": {
           "name": "Tormenter",
           "description": "<p>Bronwyl deals an additional 2d6 mental damage with weapon Strikes against creatures that are @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}, or have persistent damage.</p>"
@@ -652,7 +659,7 @@
         "strike-melee->Rapier": {
           "name": "Rapier"
         },
-        "strike-melee->Luminous Spark": {
+        "strike-ranged->Luminous Spark": {
           "name": "Luminous Spark"
         },
         "action->Natural Glow": {
@@ -807,6 +814,9 @@
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
         },
         "backpack->Bag": {
           "name": "Bag"
@@ -970,6 +980,9 @@
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
         },
         "strike-melee->Guisarme": {
           "name": "Guisarme"
@@ -1142,6 +1155,9 @@
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
         "equipment->Climbing Kit (Extreme)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TWv2EeDJaCjtmGUN]\n<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a @Check[type:flat|dc:5] whenever you critically fail to prevent a fall.</p>\n<p>You gain a +1 item bonus to Athletics checks to Climb while using an extreme climbing kit. A single kit has only enough materials for one climber; each climber needs their own kit.</p>",
           "rules": {
@@ -1157,7 +1173,7 @@
         "consumable->Bolts (4 magazines with 5 bolts each)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AITVZmakiu3RgfKo]\nBolts (4 magazines with 5 bolts each)"
         },
-        "strike-melee->Dagger": {
+        "strike-ranged->Dagger": {
           "name": "Dagger"
         },
         "strike-ranged->Repeating Heavy Crossbow": {
@@ -1191,12 +1207,19 @@
         "spell->Freedom of Movement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement"
         },
-        "strike-melee->Light Hammer": {
-          "name": "Light Hammer"
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
         },
-        "strike-ranged->Light Hammer": {
-          "name": "Light Hammer"
-        },
+        "strike-ranged->Light Hammer": [
+          {
+            "name": "Light Hammer",
+            "id": "h9USQEyWa6Up3H6l"
+          },
+          {
+            "name": "Light Hammer",
+            "id": "JedB5tgx4PI9K9wc"
+          }
+        ],
         "action->Sheltered Command": {
           "name": "Sheltered Command",
           "description": "<p><strong>Trigger</strong> The battlepriest is targeted with an attack while adjacent to or sharing a space with a hryngar</p>\n<hr />\n<p><strong>Effect</strong> The battlepriest commands the hryngar to intercept the attack. The hryngar becomes the target of the attack.</p>"
@@ -1253,6 +1276,9 @@
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
         "strike-melee->Light Hammer": {
           "name": "Light Hammer"
         },
@@ -1276,6 +1302,9 @@
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
         "weapon->Bola": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YUzPv0i8d8p2J9yx]\n<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to entangle foes.</p>"
         },
@@ -1296,14 +1325,14 @@
         "strike-melee->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Hand Crossbow": {
-          "name": "Hand Crossbow"
-        },
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
         "strike-ranged->Bola": {
           "name": "Bola"
+        },
+        "strike-ranged->Hand Crossbow": {
+          "name": "Hand Crossbow"
         },
         "action->Lie to Me": {
           "name": "Lie to Me",
@@ -1334,6 +1363,9 @@
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
         },
         "weapon->Longsword": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
@@ -1379,6 +1411,9 @@
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
         "weapon->Greataxe": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>"
         },
@@ -1408,6 +1443,9 @@
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
         },
         "weapon->Greataxe": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>"
@@ -1444,6 +1482,9 @@
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
         },
         "weapon->Tanglefoot Bag (Moderate)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\nTanglefoot Bag (Moderate)",
@@ -2122,6 +2163,12 @@
         "spell->Vampiric Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
+        },
         "spell->Chill Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
           "target": "1 living or undead creature"
@@ -2132,8 +2179,7 @@
         "spell->True Strike": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
         },
-        "equipment->Wand of Widening (5th-Level Spell)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TGxZ3acyWjjTvfU9]\nWand of Widening (5th-Level Spell)",
+        "equipment->Wand of Widening (5th-Rank Spell)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TGxZ3acyWjjTvfU9]\n<p>The end of this wand is forked instead of tapered.</p>\n<p><strong>Activate</strong> Cast a Spell; The activation takes <span class=\"action-glyph\">2</span> if the spell normally takes <span class=\"action-glyph\">1</span> to cast, or <span class=\"action-glyph\">3</span> if the spell normally take <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell, and increase its area. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet; add 5 feet to the length of a cone or line that is normally 15 feet long or smaller; or add 10 feet to the length of a larger cone or line.</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of a spell of the appropriate rank. The spell must have a casting time of <span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">2</span>, can't have a duration, and must have an area of burst (10 feet or more), cone, or line.</p>"
         },
         "equipment->Religious Symbol": {
@@ -3049,6 +3095,12 @@
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "strike-melee->Claw": {
           "name": "Claw"

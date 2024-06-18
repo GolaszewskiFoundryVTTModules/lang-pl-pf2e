@@ -331,6 +331,7 @@
                     "kibwani": "Kibwański",
                     "kitsune": "Kitsune",
                     "kovintal": "Kovintuski",
+                    "lashunta": "Laszunta",
                     "lirgeni": "Lirgeński",
                     "mahwek": "Mahwek",
                     "migo": "Mi-Go",
@@ -369,6 +370,7 @@
                     "skald": "Skaldów",
                     "sphinx": "Sfinksów",
                     "strix": "Strixów",
+                    "surki": "Surkijski",
                     "sussuran": "Sussurański",
                     "taldane": "Taldański",
                     "talican": "Talikański",
@@ -970,6 +972,7 @@
                 "CreateDialogText": "Utworzyć Tabelę rzutów o liczbie rezultatów: {count}?",
                 "CreateLabel": "Utwórz Tabelę Rzutów",
                 "SelectTableTitle": "Wybierz Tabelę Rzutów",
+                "TooManyResults": "Wynikowa lista rozmiaru {size} jest zbyt duża. Maksymalny rozmiar to {maxSize}",
                 "WeightLabel": "Waga"
             },
             "Settings": {
@@ -1175,6 +1178,7 @@
                     "arrow-vulnerability": "wrażliwość na strzały",
                     "auditory": "słuchowość",
                     "axe-vulnerability": "wrażliwość na topory",
+                    "axes": "topory",
                     "blinded": "oślepiony",
                     "broken": "uszkodzony",
                     "clumsy": "niezdarny",
@@ -1487,6 +1491,28 @@
             "RevealName": "Odkryj Nazwę",
             "XP": "PD"
         },
+        "Environment": {
+            "Type": {
+                "Aquatic": "Wodny",
+                "Arctic": "Arktyczny",
+                "Desert": "Pustynny",
+                "Forest": "Leśny",
+                "Mountain": "Górski",
+                "Plains": "Równinny",
+                "Swamp": "Bagnisty",
+                "Underground": "Podniebny",
+                "Urban": "Miejski"
+            },
+            "Feature": {
+                "Crowd": "Tłum",
+                "Ice": "Lód",
+                "Lava": "Lawa",
+                "Rubble": "Rumowisko",
+                "Sand": "Piasek",
+                "Sewer": "Ściek",
+                "Snow": "Śnieg"
+            }
+        },
         "ErrorMessage": {
             "CantCreateEffectMacro": "Efekt makro przełączania musi pochodzić z kompendium lub przedmiotu świata.",
             "CantImportTooHighVersion": "Nie udało się zaimportować {sourceName}: wersja schematu ({sourceSchemaVersion}) jest wyższa niż wersja schematu świata ({worldSchemaVersion}).",
@@ -1653,6 +1679,7 @@
         "InvestedLabel": "Zaangażowano",
         "Item": {
             "ABC": {
+                "Add": "Dodaj",
                 "Features": "Atrybuty",
                 "InvalidDrop": "W tym miejscu nie może zostać upuszczony obiekt typu {badType} (musi być to obiekt typu {goodType})"
             },
@@ -2298,6 +2325,7 @@
                         "Label": "Odczep Przedmiot",
                         "Prompt": "Czy na pewno chcesz odczepić {attachable}?"
                     },
+                    "Label": "Przypnij",
                     "Outcome": {
                         "Failure": "Nie udało ci się przymocować {attachable}.",
                         "Success": "{attachable} jest teraz przymocowany do {target}."
@@ -2438,12 +2466,14 @@
                 "Hint": {
                     "Slug": "A stable, human-readable identifier: if set, it will remain in place even if the item is renamed.",
                     "SourceId": "UUID oryginalnego przedmiotu w kompendium",
-                    "UUID": "Uniwersalnie unikalny identyfikator tego przedmiotu"
+                    "UUID": "Uniwersalnie unikalny identyfikator tego przedmiotu",
+                    "RollOptions": "Prefiks opcji rzutu danego przedmiotu zależy od jego zastosowania. <em>item:</em> jest wykorzystywany w większości przypadków, lecz <em>parent:</em> jest wykorzystywany w wypadku przedmiotów zawierających element zasad."
                 },
                 "New": "Nowy Element Zasad",
                 "RegenerateSlug": "(Re)generuj Slug",
                 "Remove": "Usuń Element Zasad",
-                "Tab": "Zasady"
+                "Tab": "Zasady",
+                "ViewRollOptions": "Pokaż Opcje Rzutu"
             },
             "Shield": {
                 "Base": {
@@ -2621,10 +2651,6 @@
         "ItemTitle": "Przedmiot",
         "ItemsLabel": "Przedmioty",
         "Keybinding": {
-            "CycleTokenStack": {
-                "Hint": "Przewijaj pozycję na osi Z grupy żetonów namierzonych myszką, wrzucając wierzchni żeton na spód.",
-                "Label": "Przewijaj Stos Żetonów"
-            },
             "GMVision": {
                 "Hint": "Rozjaśnia ciemne sceny dla łatwiejszego poglądu.",
                 "Label": "Wizja MG"
@@ -3060,6 +3086,33 @@
             "rollingDescription": "ST {dc} (Umierający {dying})",
             "success": "Zmniejsz wartość umierania o 1."
         },
+        "Region": {
+            "Environment": {
+                "Mode": {
+                    "Add": {
+                        "Label": "Dodaj"
+                    },
+                    "Hint": "Ustaw tryb zachowania dla tego terenu. Albo dodaje to wybrane typy do wybranych typów środowiska, usuwa wybrane typy z istniejących typów lub nadpisuje istniejące typy wybranymi typami.",
+                    "Label": "Tryb",
+                    "Override": {
+                        "Label": "Nadpisanie"
+                    },
+                    "Remove": {
+                        "Label": "Usuwanie"
+                    }
+                },
+                "Label": "Środowisko",
+                "RegionLegend": {
+                    "Header": "Domyślne Sceny",
+                    "SceneRegionsHeader": "Regiony Sceny"
+                },
+                "Type": {
+                    "Hint": "Jeden lub więcej typów środowiska dla tego regionu sceny.",
+                    "Label": "Środowisko",
+                    "SceneHint": "Określ jeden lub więcej typów środowiska dla całej sceny."
+                }
+            }
+        },
         "RemoveCoinsByValueLabel": "Usun wartość, nie konkrenty typ",
         "RemoveCoinsTitle": "Usuń Monety",
         "RemoveCombatProficiency": {
@@ -3110,6 +3163,7 @@
                     "Label": "Etykieta",
                     "None": "Brak",
                     "Override": "Nadpisz {value}",
+                    "OverrideLabel": "Nadpisz",
                     "Splash": "{damageType} Rozprysk",
                     "TitleCritical": "Rzut Obrażeń Krytycznych",
                     "Title": "Rzut Obrażeń"
@@ -3205,6 +3259,9 @@
                 "ShowUnknownSources": "Nie filtruj wpisów z nieznanym źródłem.",
                 "SourcesListHeader": "Określone Źródła"
             },
+            "Core": {
+                "ManagedBySystem": "Zarządzane i zablokowane przez system PF2"
+            },
             "CritRule": {
                 "Choices": {
                     "Doubledamage": "Podwój wynik rzutu",
@@ -3221,10 +3278,6 @@
                 "Enabled": "Włączono",
                 "Default": "Domyślne dla Świata ({worldDefault})",
                 "Disabled": "Wyłączono"
-            },
-            "EnabledRulesUI": {
-                "Hint": "Po włączeniu, gracze mogą widzieć zakładkę Elementów Zasad na kartach przedmiotów i mieć do nich dostęp.",
-                "Name": "Dostęp do Elementów Zasad"
             },
             "Homebrew": {
                 "BaseWeapons": {
@@ -3285,6 +3338,10 @@
                     "Campaign": "Kampania",
                     "Damage": "Typy Obrażeń",
                     "Traits": "Cechy i Kategorie"
+                },
+                "EnvironmentTypes": {
+                    "Hint": "Niestandardowe typy środowiska",
+                    "Name": "Typy Środowiska"
                 },
                 "WeaponCategories": {
                     "Hint": "Górny poziom taksonomii broni w Pathfinder 2e (np. Proste, Wojskowe)",
@@ -3349,6 +3406,10 @@
                     "Hint": "Po włączeniu, jeśli nazwa żetonu BN jest ukryta przed graczami, będzie ona ukryta również w oknie starcia i wiadomościach czatu.",
                     "Name": "Żetony Określają Widoczność Imion BN"
                 }
+            },
+            "MinimumRulesUI": {
+                "Hint": "Minimalna rola wymagana aby widzieć i zarządzać panalem elementów zasad na kartach przedmiotów.",
+                "Name": "Minimalna Rola Dostępu do Elementów Zasad"
             },
             "NathMode": {
                 "Hint": "Używaj lepszych domyślnych ikon dla żetonów",
@@ -3519,44 +3580,30 @@
         "SidebarAppearanceLabel": "Aparycja",
         "Size": "Rozmiar",
         "SizeLabel": "Rozmiar",
-        "SkillAcr": "Akrobatyka",
-        "SkillAcrobatics": "Akrobatyka",
-        "SkillArc": "Wiedza Tajemna",
-        "SkillArcana": "Wiedza Tajemna",
-        "SkillAth": "Atletyka",
-        "SkillAthletics": "Atletyka",
+        "Skill": {
+            "Acrobatics": "Akrobatyka",
+            "Arcana": "Wiedza Tajemna",
+            "Athletics": "Atletyka",
+            "Crafting": "Rzemiosło",
+            "Deception": "Oszukiwanie",
+            "Diplomacy": "Dyplomacja",
+            "Intimidation": "Zastraszanie",
+            "Medicine": "Medycyna",
+            "Nature": "Przyroda",
+            "Occultism": "Okultyzm",
+            "Performance": "Występy",
+            "Religion": "Religia",
+            "Society": "Społeczeństwo",
+            "Stealth": "Skradanie Się",
+            "Survival": "Sztuka Przetrwania",
+            "Thievery": "Złodziejstwo"
+        },
         "SkillCheckWithName": "Test Umiejętności: {skillName}",
-        "SkillCra": "Rzemiosło",
-        "SkillCrafting": "Rzemiosło",
-        "SkillDec": "Oszukiwanie",
-        "SkillDeception": "Oszukiwanie",
-        "SkillDip": "Dyplomacja",
-        "SkillDiplomacy": "Dyplomacja",
         "SkillFeatLevels": "Poziomy Atutów Umiejętności",
         "SkillIncreaseLevels": "Poziomy Rozwinięcia Umiejętności",
-        "SkillIntimidation": "Zastraszanie",
-        "SkillItm": "Zastraszanie",
         "SkillLabel": "Umiejętność",
         "SkillLore": "Obeznanie",
-        "SkillMed": "Medycyna",
-        "SkillMedicine": "Medycyna",
-        "SkillNat": "Przyroda",
-        "SkillNature": "Przyroda",
-        "SkillOcc": "Okultyzm",
-        "SkillOccultism": "Okultyzm",
-        "SkillPerformance": "Występy",
         "SkillPotencyHeader": "Potencje Umiejętności",
-        "SkillPrf": "Występy",
-        "SkillRel": "Religia",
-        "SkillReligion": "Religia",
-        "SkillSoc": "Społeczeństwo",
-        "SkillSociety": "Społeczeństwo",
-        "SkillSte": "Skradanie Się",
-        "SkillStealth": "Skradanie Się",
-        "SkillSur": "Sztuka Przetrwania",
-        "SkillSurvival": "Sztuka Przetrwania",
-        "SkillThi": "Złodziejstwo",
-        "SkillThievery": "Złodziejstwo",
         "SkillsLabel": "Umiejętności",
         "Slug": "Slug",
         "SpecialSensesLabel": "Specjalne Zmysły",
@@ -4274,6 +4321,7 @@
         "TraitDescriptionVampire": "Wampiry nieumarłe istoty, które wyróżnia ich pragnienie krwi. Są znane ze swojej wszechstronności i tego jak trudno je zniszczyć.",
         "TraitDescriptionVanara": "Dociekliwe przodkowstwo obdarzone rysami naczelnych ssaków i chwytnymi ogonami.",
         "TraitDescriptionVehicular": "Broń pojazdowa jest montowana na środku transportu lub noszona przez wierzchowca i na ogół może z niej korzystać tylko osoba kierująca pojazdem lub główny jeździec wierzchowca. Kierowca lub jeździec może kontrolować broń pojazdową tymi samimi rękoma, których używa do sterowania pojazdem lub prowadzenia wieżchowca. Z broni pojazdowej można kogoś Rozbroić wytrącając mu z rąk ster (typowo lejce dla wierzchowca, lub przyrząd sterujący w wypadku pojazdu).",
+        "TraitDescriptionVenomous": "Te bronie aplikują truciznę przy każdym trafieniu. Kiedy trafisz tą bronią istotę, zadaje ona dodatkowo 1 przewlekłe obrażenie od trucizny. Zwieksza się to do 2 przewlekłych obrażeń od trucuzny jeśli broń ma runę większych ciosów.",
         "TraitDescriptionVersatile": "Broń wszechstronna może być używana do zadawania obrażeń innego typu niż te zdefiniowane w jej rubryce Obrażeń. Cecha wskazuje alternatywny rodzaj obrażeń. Przykładowo broń kłuta, która jest wszechstronna C może być używana do zadawania obrażeń kłutych lub ciętych. Wybierasz rodzaj obrażeń z każdym razem kiedy dokonujesz ataku.",
         "TraitDescriptionVirulent": "Zjadliwe przypadłości są trudniejsze do usunięcia. Musisz zdać dwa rzuty obronne pod rząd, aby cofnąć stadium przypadłości o 1. Krytyczny sukces cofa stadium rozwoju zjadliwej przypadłości o 1, zamiast o 2.",
         "TraitDescriptionVishkanya": "Przodkowstwo charakteryzowane przez wężowe rysy i potężny jad.",
@@ -4780,6 +4828,7 @@
         "TraitVanara": "Vanara",
         "TraitVehicular": "Pojazdowa",
         "TraitVelstrac": "Velstrac",
+        "TraitVenomous": "Jadowitość",
         "TraitVersatile": "Wszechstronność",
         "TraitVersatileAcid": "Wszechstronność: od Kwasu",
         "TraitVersatileB": "Wszechstronność: O",
@@ -6003,6 +6052,7 @@
             "DepositSubtitle": "Deponuj przedmiot",
             "EditLootLabel": "Konfigurować Łupy?",
             "GMSupervisionError": "MG musi być online aby można było interaktować z {loot}.",
+            "Give": "Daj",
             "GiveMessage": "{giver} daje {recipient} {quantity} × {item}.",
             "GiveSubtitle": "Daj przedmiot",
             "HiddenWhenEmpty": {
@@ -6027,8 +6077,9 @@
             "PermissionError": "MG musi być online aby móc łupić albo odkładać przedmioty.",
             "PlantMessage": "{planter} umieszcza w {corpse} {quantity} × {item}.",
             "PlantSubtitle": "Umieść przedmiot",
-            "PurchaseLoot": "Kup Przedmioty",
-            "PurchaseLootMessage": "Jak wiele sztuk chcesz kupić?",
+            "Purchase": "Kup",
+            "PurchaseLootPrompt": "Czy {buyer} chce kupić ten przedmiot?",
+            "PurchasePrice": "Cena Kupna",
             "Quantity": "Liczba",
             "SellMessage": "{seller} sprzedaje u {buyer} {quantity} × {item}.",
             "SellSubtitle": "Sprzedaj przedmiot",

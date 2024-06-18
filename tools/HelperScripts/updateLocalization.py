@@ -489,56 +489,52 @@ class LocalizationUpdater:
             # apply regex translation to all records
             for key, value in tqdm(self.pl_extracted.items(), desc=f"Regex-translating {os.path.basename(self.pl_path)}"):
                 self.pl_extracted[key] = self.auto_pretranslate(self.pl_extracted[key])
-
-        # Determine if no keys were modified
-        no_keys_modified_verbose = not any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys])
-        no_keys_modified_non_verbose = not any([self.outdated_keys])
-
+        
         # Simplify the if condition
-        if ((self.verbose and no_keys_modified_verbose) or (not self.verbose and no_keys_modified_non_verbose)) and not perform_regex_translate:
+        if not any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys]) and not perform_regex_translate:
             return
 
-        # Log the processed file name
-        logging.info(f"{os.path.basename(self.pl_path)}:")
-        
-        if self.new_keys and self.verbose:
-            logging.info(f"  Added keys: {len(self.new_keys)}")
-            for key in self.new_keys:
-                logging.info(f"    {key}")
+        if self.verbose or any([self.outdated_keys]):
+            # Log the processed file name
+            logging.info(f"{os.path.basename(self.pl_path)}:")
+            
+            if self.new_keys and self.verbose:
+                logging.info(f"  Added keys: {len(self.new_keys)}")
+                for key in self.new_keys:
+                    logging.info(f"    {key}")
 
-        if self.removed_keys and self.verbose:
-            logging.info(f"  Deleted keys: {len(self.removed_keys)}")
-            for key in self.removed_keys:
-                logging.info(f"    {key}")
+            if self.removed_keys and self.verbose:
+                logging.info(f"  Deleted keys: {len(self.removed_keys)}")
+                for key in self.removed_keys:
+                    logging.info(f"    {key}")
 
-        if self.renamed_keys and self.verbose:
-            logging.info(f"  Renamed keys (transferred): {len(self.renamed_keys)}")
-            for old_key, new_key in self.renamed_keys:
-                logging.info(f"    {old_key} -> {new_key}")
+            if self.renamed_keys and self.verbose:
+                logging.info(f"  Renamed keys (transferred): {len(self.renamed_keys)}")
+                for old_key, new_key in self.renamed_keys:
+                    logging.info(f"    {old_key} -> {new_key}")
 
-        if self.updated_eng_keys and self.verbose:
-            logging.info(f"  Updated english keys: {len(self.updated_eng_keys)}")
-            for key in self.updated_eng_keys:
-                logging.info(f"    {key}")
+            if self.updated_eng_keys and self.verbose:
+                logging.info(f"  Updated english keys: {len(self.updated_eng_keys)}")
+                for key in self.updated_eng_keys:
+                    logging.info(f"    {key}")
 
-        if self.rudimentary_translations_updated and self.verbose:
-            logging.info(f"  Rudimentary translations updated: {len(self.rudimentary_translations_updated)}")
-            for key in self.rudimentary_translations_updated:
-                logging.info(f"    {key}")
+            if self.rudimentary_translations_updated and self.verbose:
+                logging.info(f"  Rudimentary translations updated: {len(self.rudimentary_translations_updated)}")
+                for key in self.rudimentary_translations_updated:
+                    logging.info(f"    {key}")
 
-        if self.outdated_keys:
-            logging.info(f"  Outdated records: {len(self.outdated_keys)}")
-            for key, diff in self.outdated_keys:  # Unpack key and diff_string
-                logging.info(f"    Key: {key}\n    Diff:{diff}\n")
+            if self.outdated_keys:
+                logging.info(f"  Outdated records: {len(self.outdated_keys)}")
+                for key, diff in self.outdated_keys:  # Unpack key and diff_string
+                    logging.info(f"    Key: {key}\n    Diff:{diff}\n")
 
-
-        validation_errors = self.validate_keys_match()
-        if validation_errors:
-            for error in validation_errors:
-                logging.error(error)
-            logging.error("Validation failed, the keys in English and Polish files do not match.")
-        else:
-            logging.info("Validation successful, all keys match.")
+            validation_errors = self.validate_keys_match()
+            if validation_errors:
+                for error in validation_errors:
+                    logging.error(error)
+                logging.error("Validation failed, the keys in English and Polish files do not match.")
+            else:
+                logging.info("Validation successful, all keys match.")
         
         # sort the dictionary
         ordered_pl = {}

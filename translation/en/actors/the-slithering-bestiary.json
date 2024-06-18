@@ -187,11 +187,11 @@
         "strike-melee->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Crossbow": {
-          "name": "Crossbow"
-        },
         "strike-ranged->Dagger": {
           "name": "Dagger"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
         },
         "action->Bravery": {
           "name": "Bravery",
@@ -493,6 +493,9 @@
         "spell->Touch of Idiocy": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
         },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
+        },
         "spell->Inspire Courage": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]\nInspire Courage"
         },
@@ -508,12 +511,16 @@
         "strike-melee->Slime Whip": {
           "name": "Slime Whip"
         },
-        "strike-melee->Dagger": {
-          "name": "Dagger"
-        },
-        "strike-ranged->Dagger": {
-          "name": "Dagger"
-        },
+        "strike-ranged->Dagger": [
+          {
+            "name": "Dagger",
+            "id": "IlWKl19AMjb0wKSS"
+          },
+          {
+            "name": "Dagger",
+            "id": "VXibStVptgeqYJHW"
+          }
+        ],
         "action->Keen Eyes": {
           "name": "Keen Eyes",
           "description": "<p>Paga gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of her.</p>\n<p>When she targets an opponent that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from her or hidden, she reduces the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>"

@@ -662,7 +662,7 @@
                     "name": "Bullet Spray",
                     "description": "<p><strong>Aktywator</strong> A creature comes within 60 feet of Tan-Takneh's campsite</p>\n<hr />\n<p><strong>Efekt</strong> The turret attacks the triggering creature with a longrifle Strike.</p>"
                 },
-                "strike-ranged->Longrifle": {
+                "strike-melee->Longrifle": {
                     "name": "Longrifle"
                 }
             }
@@ -782,11 +782,11 @@
                 "strike-melee->Fist": {
                     "name": "Pięść"
                 },
-                "strike-ranged->Shock Heavy Crossbow": {
-                    "name": "Shock Heavy Crossbow"
-                },
                 "strike-ranged->Shock Trident": {
                     "name": "Shock Trident"
+                },
+                "strike-ranged->Shock Heavy Crossbow": {
+                    "name": "Shock Heavy Crossbow"
                 },
                 "action->No Escape": {
                     "name": "No Escape",
@@ -3134,8 +3134,8 @@
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
                 },
-                "equipment->Wand of Manifold Missiles (7th-Level Spell)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WeX7rAO2kAyP0QnG]\nWand of Manifold Missiles (7. kręgu spell)",
+                "equipment->Wand of Manifold Missiles (7th-Rank Spell)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WeX7rAO2kAyP0QnG]\nWand of Manifold Missiles (7. Kręgu Spell)",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WeX7rAO2kAyP0QnG]\n<p>This wand features a carved dragon's head at its top and a polished metal sphere set in its midsection.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Efekt</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Grad Magii} at 7. rank.</p>\n<p>After you cast the spell, an additional missile or missiles are released from the wand at the start of each of your turns, as though you cast the 1-action version of <em>magic missile</em>. Choose targets each time. This lasts for 1 minute, until you're no longer wielding the wand, or until you try to activate the wand again.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a casting of <em>magic missile</em> of the appropriate rank.</p>"
                 },
                 "strike-melee->Tendril": {
@@ -3214,7 +3214,7 @@
                 "strike-melee->Longsword": {
                     "name": "Longsword"
                 },
-                "strike-melee->Heavy Crossbow": {
+                "strike-ranged->Heavy Crossbow": {
                     "name": "Heavy Crossbow"
                 },
                 "action->A Quick Word": {
@@ -4668,6 +4668,9 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
+                },
+                "spell->Storm Lord": {
+                    "requirements": "You are outdoors and aboveground."
                 },
                 "spell->Freedom of Movement (Constant)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement (Constant)"

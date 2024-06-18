@@ -672,7 +672,7 @@
           "name": "Lockdown",
           "description": "<p><strong>Trigger</strong> Noph or another creature arms the trap by pressing a sigil on the console</p>\n<hr />\n<p><strong>Effect</strong> A barrier of force forms from floor to ceiling surrounding the reception desk. The DC to counteract this barrier with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} is 43. The trap then rolls initiative.</p>"
         },
-        "strike-ranged->Comet": {
+        "strike-melee->Comet": {
           "name": "Comet"
         }
       }
@@ -998,6 +998,9 @@
         },
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
+        },
+        "spell->Mimic Undead": {
+          "requirements": "You're a living creature"
         },
         "strike-melee->Dagger": {
           "name": "Dagger"
@@ -2133,6 +2136,9 @@
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
         },
+        "spell->Righteous Might": {
+          "requirements": "You have a deity"
+        },
         "spell->Remove Curse": {
           "name": "Remove Curse",
           "description": "<p>Your touch grants a reprieve to a cursed creature. You attempt to counteract one curse afflicting the target. If the curse comes from a cursed item or other external source, a success indicates that the target creature can rid itself of the cursed item, but it doesn't remove the curse from the item.</p>",
@@ -2395,9 +2401,16 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\nHungerfang",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\n<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>\n<p>Currently contains @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}</p>"
         },
-        "strike-melee->Spear": {
-          "name": "Spear"
-        },
+        "strike-ranged->Spear": [
+          {
+            "name": "Spear",
+            "id": "H6hkoILYhK28azbC"
+          },
+          {
+            "name": "Spear",
+            "id": "riNFnzpqePheDa5n"
+          }
+        ],
         "strike-melee->Fangs": {
           "name": "Fangs"
         },
@@ -2406,9 +2419,6 @@
         },
         "strike-melee->Bat Fangs": {
           "name": "Bat Fangs"
-        },
-        "strike-ranged->Spear": {
-          "name": "Spear"
         },
         "action->Children of the Deep": {
           "name": "Children of the Deep",
@@ -2532,6 +2542,9 @@
         },
         "spell->Inveigle": {
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
+        },
+        "spell->Mimic Undead": {
+          "requirements": "You're a living creature"
         },
         "equipment->Leather Bag Containing Finger Bones": {
           "name": "Leather Bag Containing Finger Bones"
@@ -2738,6 +2751,9 @@
         "spell->Vampiric Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
         "spell->Create Undead (Doesn't Require Secondary Casters)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Doesn't Require Secondary Casters)",
           "cost": "black onyx, see Table 7-1"
@@ -2747,6 +2763,9 @@
         },
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Animate Dead": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]\nAnimate Dead"
@@ -2765,8 +2784,7 @@
         "spell->Ray of Enfeeblement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
         },
-        "equipment->Wand of Widening (9th-Level Spell)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.t5978mZ6CqfUDCP6]\nWand of Widening (9th-Level Spell)",
+        "equipment->Wand of Widening (9th-Rank Spell)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.t5978mZ6CqfUDCP6]\n<p>The end of this wand is forked instead of tapered.</p>\n<p><strong>Activate</strong> Cast a Spell; The activation takes <span class=\"action-glyph\">2</span> if the spell normally takes <span class=\"action-glyph\">1</span> to cast, or <span class=\"action-glyph\">3</span> if the spell normally take <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell, and increase its area. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet; add 5 feet to the length of a cone or line that is normally 15 feet long or smaller; or add 10 feet to the length of a larger cone or line.</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of a spell of the appropriate rank. The spell must have a casting time of <span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">2</span>, can't have a duration, and must have an area of burst (10 feet or more), cone, or line.</p>"
         },
         "equipment->Religious Symbol of Urgathoa": {
@@ -4312,8 +4330,14 @@
         "spellcastingEntry->Scattered Coven Spells": {
           "name": "Scattered Coven Spells"
         },
+        "spell->Mimic Undead": {
+          "requirements": "You're a living creature"
+        },
         "spell->See Invisibility": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Mage Hand": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
@@ -4562,6 +4586,9 @@
         },
         "spellcastingEntry->Cleric Domain Spells": {
           "name": "Cleric Domain Spells"
+        },
+        "spell->Scintillating Safeguard": {
+          "requirements": "An effect would deal physical or energy damage to you or a creature in range."
         },
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
@@ -5293,7 +5320,7 @@
           "name": "Intruder Alert",
           "description": "<p><strong>Trigger</strong> An intruder enters the room</p>\n<hr />\n<p><strong>Effect</strong> The comets change from blue to red in color. The trap then rolls initiative.</p>"
         },
-        "strike-ranged->Comet": {
+        "strike-melee->Comet": {
           "name": "Comet"
         }
       }
@@ -6477,8 +6504,8 @@
         "spell->Ray of Enfeeblement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
         },
-        "equipment->Wand of Manifold Missiles (3rd-Level Spell)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Lexs7KnhbV0HgFh]\nWand of Manifold Missiles (3rd-Level Spell)",
+        "equipment->Wand of Manifold Missiles (3rd-Rank Spell)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Lexs7KnhbV0HgFh]\nWand of Manifold Missiles (3rd-Rank Spell)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Lexs7KnhbV0HgFh]\n<p>This wand features a carved dragon's head at its top and a polished metal sphere set in its midsection.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage} at 3rd rank.</p>\n<p>After you cast the spell, an additional missile or missiles are released from the wand at the start of each of your turns, as though you cast the 1-action version of <em>magic missile</em>. Choose targets each time. This lasts for 1 minute, until you're no longer wielding the wand, or until you try to activate the wand again.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of <em>magic missile</em> of the appropriate rank.</p>"
         },
         "strike-melee->Jaws": {

@@ -338,11 +338,11 @@
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
-        "strike-ranged->Sling": {
-          "name": "Sling"
-        },
         "strike-ranged->Hatchet": {
           "name": "Hatchet"
+        },
+        "strike-ranged->Sling": {
+          "name": "Sling"
         },
         "action->Aspis Ambush": {
           "name": "Aspis Ambush",
@@ -1105,7 +1105,7 @@
           "name": "Boil",
           "description": "<p><strong>Trigger</strong> A creature disturbs the mold, typically by walking through it</p>\n<hr />\n<p><strong>Effect</strong> The hazard makes a spatter attack against the triggering creature, and then rolls initiative as the lava begins to bubble.</p>"
         },
-        "strike-ranged->Spatter": {
+        "strike-melee->Spatter": {
           "name": "Spatter"
         },
         "action->Solidifying Lava": {
@@ -1127,7 +1127,7 @@
           "name": "Boil",
           "description": "<p><strong>Trigger</strong> A creature disturbs the mold, typically by walking through it</p>\n<hr />\n<p><strong>Effect</strong> The hazard makes a spatter attack against the triggering creature, and then rolls initiative as the lava begins to bubble.</p>"
         },
-        "strike-ranged->Spatter": {
+        "strike-melee->Spatter": {
           "name": "Spatter"
         },
         "action->Solidifying Lava": {
@@ -1567,11 +1567,11 @@
         "strike-melee->Club": {
           "name": "Club"
         },
-        "strike-ranged->Sling": {
-          "name": "Sling"
-        },
         "strike-ranged->Club": {
           "name": "Club"
+        },
+        "strike-ranged->Sling": {
+          "name": "Sling"
         },
         "action->Brutal Beating": {
           "name": "Brutal Beating",
@@ -2940,7 +2940,7 @@
         "strike-melee->Branch": {
           "name": "Branch"
         },
-        "strike-ranged->Thorn Spike": {
+        "strike-melee->Thorn Spike": {
           "name": "Thorn Spike"
         },
         "action->Blight Dependent": {
@@ -2983,7 +2983,7 @@
         "strike-melee->Branch": {
           "name": "Branch"
         },
-        "strike-ranged->Thorn Spike": {
+        "strike-melee->Thorn Spike": {
           "name": "Thorn Spike"
         },
         "action->Blight Dependent": {
@@ -3152,11 +3152,11 @@
         "strike-melee->Spear": {
           "name": "Spear"
         },
-        "strike-ranged->Sling": {
-          "name": "Sling"
-        },
         "strike-ranged->Spear": {
           "name": "Spear"
+        },
+        "strike-ranged->Sling": {
+          "name": "Sling"
         },
         "action->Hurried Retreat": {
           "name": "Hurried Retreat",
@@ -3585,6 +3585,9 @@
         "spellcastingEntry->Witch Hex Spells": {
           "name": "Witch Hex Spells"
         },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
+        },
         "spell->Magic Missile": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
         },
@@ -3629,6 +3632,9 @@
         },
         "spell->Touch of Idiocy": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Magic Missile": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
@@ -3969,7 +3975,7 @@
         "strike-melee->Whip": {
           "name": "Whip"
         },
-        "strike-melee->Blowgun": {
+        "strike-ranged->Blowgun": {
           "name": "Blowgun"
         },
         "action->Canny Reversal": {
@@ -5599,7 +5605,7 @@
           "name": "Opening Melody",
           "description": "<p><strong>Trigger</strong> A creature enters area <strong>B3</strong></p>\n<hr />\n<p><strong>Effect</strong> Winds surge into the room. The hazard rolls initiative.</p>"
         },
-        "strike-melee->Solid Refrain": {
+        "strike-ranged->Solid Refrain": {
           "name": "Solid Refrain"
         },
         "action->Mesmerizing Duet": {
@@ -5621,7 +5627,7 @@
           "name": "Opening Melody",
           "description": "<p><strong>Trigger</strong> A creature enters area <strong>B3</strong></p>\n<hr />\n<p><strong>Effect</strong> Winds surge into the room. The hazard rolls initiative.</p>"
         },
-        "strike-melee->Solid Refrain": {
+        "strike-ranged->Solid Refrain": {
           "name": "Solid Refrain"
         },
         "action->Mesmerizing Duet": {
@@ -5745,7 +5751,7 @@
         },
         "action->Sythi: Nervous Retreat": {
           "name": "Sythi: Nervous Retreat",
-          "description": "<p><strong>Trigger</strong><span class=\"fontstyle2\">An ally ends a move action adjacent to Sythi. </span></p>\n<hr />\n<p><strong>Effect</strong><span class=\"fontstyle2\">Sythi hides behind his ally. He Steps to another square adjacent to the triggering ally and gains a +2 circumstance bonus to his AC against the next attack that targets him. (Sythi only.)</span></p>",
+          "description": "<p><strong>Trigger</strong> <span class=\"fontstyle2\">An ally ends a move action adjacent to Sythi. </span></p>\n<hr />\n<p><strong>Effect</strong> <span class=\"fontstyle2\">Sythi hides behind his ally. He Steps to another square adjacent to the triggering ally and gains a +2 circumstance bonus to his AC against the next attack that targets him. (Sythi only.)</span></p>",
           "rules": {
             "1": {
               "label": "Nervous Retreat (Sythi Only)"
@@ -5801,7 +5807,7 @@
         },
         "action->Sythi: Nervous Retreat": {
           "name": "Sythi: Nervous Retreat",
-          "description": "<p><strong>Trigger</strong><span class=\"fontstyle2\">An ally ends a move action adjacent to Sythi. </span></p>\n<hr />\n<p><strong>Effect</strong><span class=\"fontstyle2\">Sythi hides behind his ally. He Steps to another square adjacent to the triggering ally and gains a +2 circumstance bonus to his AC against the next attack that targets him. (Sythi only.)</span></p>",
+          "description": "<p><strong>Trigger</strong> <span class=\"fontstyle2\">An ally ends a move action adjacent to Sythi. </span></p>\n<hr />\n<p><strong>Effect</strong> <span class=\"fontstyle2\">Sythi hides behind his ally. He Steps to another square adjacent to the triggering ally and gains a +2 circumstance bonus to his AC against the next attack that targets him. (Sythi only.)</span></p>",
           "rules": {
             "1": {
               "label": "Nervous Retreat (Sythi Only)"
@@ -6145,7 +6151,7 @@
           "name": "No MAP",
           "description": "<p>Multiple Attack Penalties do not apply to the corrupted fire bolt strike.</p>"
         },
-        "strike-ranged->Corrupted Fire Bolt": {
+        "strike-melee->Corrupted Fire Bolt": {
           "name": "Corrupted Fire Bolt",
           "description": "<p>No MAP applies to strikes made by corrupted fire bolt attacks</p>"
         }
@@ -6167,7 +6173,7 @@
           "name": "No MAP",
           "description": "<p>Multiple Attack Penalties do not apply to the corrupted fire bolt strike.</p>"
         },
-        "strike-ranged->Corrupted Fire Bolt": {
+        "strike-melee->Corrupted Fire Bolt": {
           "name": "Corrupted Fire Bolt",
           "description": "<p>No MAP applies to strikes made by corrupted fire bolt attacks</p>"
         }
@@ -6301,12 +6307,16 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-melee->Light Hammer": {
-          "name": "Light Hammer"
-        },
-        "strike-ranged->Light Hammer": {
-          "name": "Light Hammer"
-        },
+        "strike-ranged->Light Hammer": [
+          {
+            "name": "Light Hammer",
+            "id": "aSOHZO2fdoyIP6Kl"
+          },
+          {
+            "name": "Light Hammer",
+            "id": "Cl36gN3bsMqK2eeQ"
+          }
+        ],
         "action->Telepathy 100 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
         },
@@ -6360,12 +6370,16 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-melee->Light Hammer": {
-          "name": "Light Hammer"
-        },
-        "strike-ranged->Light Hammer": {
-          "name": "Light Hammer"
-        },
+        "strike-ranged->Light Hammer": [
+          {
+            "name": "Light Hammer",
+            "id": "ANK65Rn9gpOoo7dV"
+          },
+          {
+            "name": "Light Hammer",
+            "id": "fVkYywphm278bmiv"
+          }
+        ],
         "action->Telepathy 100 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
         },
@@ -6707,7 +6721,7 @@
         },
         "action->Shell Block": {
           "name": "Shell Block",
-          "description": "<p><strong>Trigger</strong><span class=\"fontstyle2\">A creature adjacent to the dragon turtle targets it with a melee attack. </span></p>\n<hr />\n<p><strong>Effect</strong><span class=\"fontstyle2\">The dragon turtle rolls its shell toward the triggering creature, gaining a +2 circumstance bonus to its AC against the triggering attack.</span></p>"
+          "description": "<p><strong>Trigger</strong> <span class=\"fontstyle2\">A creature adjacent to the dragon turtle targets it with a melee attack. </span></p>\n<hr />\n<p><strong>Effect</strong> <span class=\"fontstyle2\">The dragon turtle rolls its shell toward the triggering creature, gaining a +2 circumstance bonus to its AC against the triggering attack.</span></p>"
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
@@ -6735,7 +6749,7 @@
         },
         "action->Shell Block": {
           "name": "Shell Block",
-          "description": "<p><strong>Trigger</strong><span class=\"fontstyle2\">A creature adjacent to the dragon turtle targets it with a melee attack. </span></p>\n<hr />\n<p><strong>Effect</strong><span class=\"fontstyle2\">The dragon turtle rolls its shell toward the triggering creature, gaining a +2 circumstance bonus to its AC against the triggering attack.</span></p>"
+          "description": "<p><strong>Trigger</strong> <span class=\"fontstyle2\">A creature adjacent to the dragon turtle targets it with a melee attack. </span></p>\n<hr />\n<p><strong>Effect</strong> <span class=\"fontstyle2\">The dragon turtle rolls its shell toward the triggering creature, gaining a +2 circumstance bonus to its AC against the triggering attack.</span></p>"
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
@@ -6865,7 +6879,7 @@
         },
         "action->Tangling Kelp": {
           "name": "Tangling Kelp",
-          "description": "<p><strong>Trigger</strong><span class=\"fontstyle2\">A creature attempts a melee attack against a zombie grindylow with a bludgeoning or slashing weapon</span></p>\n<hr />\n<p><strong>Effect</strong><span class=\"fontstyle2\">The creature must succeed at a @Check[type:reflex|dc:13] saving throw or become tangled in the kelp that surrounds the zombie grindylow, giving the creature a -10 circumstance penalty to its Speeds until it spends a manipulate action to remove the kelp.</span></p>"
+          "description": "<p><strong>Trigger</strong> <span class=\"fontstyle2\">A creature attempts a melee attack against a zombie grindylow with a bludgeoning or slashing weapon</span></p>\n<hr />\n<p><strong>Effect</strong> <span class=\"fontstyle2\">The creature must succeed at a @Check[type:reflex|dc:13] saving throw or become tangled in the kelp that surrounds the zombie grindylow, giving the creature a -10 circumstance penalty to its Speeds until it spends a manipulate action to remove the kelp.</span></p>"
         }
       }
     }

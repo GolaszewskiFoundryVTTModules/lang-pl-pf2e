@@ -808,12 +808,16 @@
         "backpack->Belt Pouch": {
           "name": "Belt Pouch"
         },
-        "strike-melee->Dagger": {
-          "name": "Dagger"
-        },
-        "strike-ranged->Dagger": {
-          "name": "Dagger"
-        },
+        "strike-ranged->Dagger": [
+          {
+            "name": "Dagger",
+            "id": "dX22wsxoPsGLzOQ0"
+          },
+          {
+            "name": "Dagger",
+            "id": "LbdwyQgOrSBqDgv9"
+          }
+        ],
         "strike-ranged->Hand Crossbow": {
           "name": "Hand Crossbow"
         }
@@ -825,6 +829,9 @@
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Monstrous Bloom": {
           "name": "Monstrous Bloom"
@@ -1055,12 +1062,16 @@
         "strike-melee->Tongue": {
           "name": "Tongue"
         },
-        "strike-melee->Trident": {
-          "name": "Trident"
-        },
-        "strike-ranged->Trident": {
-          "name": "Trident"
-        },
+        "strike-ranged->Trident": [
+          {
+            "name": "Trident",
+            "id": "oka4i9kQ0yTjUsVF"
+          },
+          {
+            "name": "Trident",
+            "id": "In6OZtLo0Avr0mV1"
+          }
+        ],
         "strike-ranged->Blowgun": {
           "name": "Blowgun"
         },
@@ -1105,7 +1116,7 @@
           "name": "Draining Inhalation",
           "description": "<p><strong>Trigger</strong> A non-flying living creature moves more than 10 feet into the area</p>\n<p><strong>Effect</strong> Each face inhales then exhales, and all living creatures in the area feel their strength and vitality being drawn out of them as tendrils of shadow from the faces latch onto their bodies. Each creature must succeed at a @Check[type:fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical failure).</p>"
         },
-        "strike-ranged->Despairing Breath": {
+        "strike-melee->Despairing Breath": {
           "name": "Despairing Breath",
           "description": "<p>No multiple attack penalty. A creature damaged by the despairing breath must succeed at a @Check[type:will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} 1 on a critical failure); this effect has the fear trait.</p>",
           "rules": {
@@ -1345,12 +1356,16 @@
     "Chief Sootscale": {
       "name": "Chief Sootscale",
       "items": {
-        "strike-melee->Club": {
-          "name": "Club"
-        },
-        "strike-ranged->Club": {
-          "name": "Club"
-        },
+        "strike-ranged->Club": [
+          {
+            "name": "Club",
+            "id": "LHPXbhgsSYCjB4uG"
+          },
+          {
+            "name": "Club",
+            "id": "TR472pgOTxUJrN9B"
+          }
+        ],
         "action->Bark Orders": {
           "name": "Bark Orders",
           "description": "<p>Chief Sootscale pushes other kobolds under his command to fight harder and more bravely. Until the start of his next turn, all kobold allies within @Template[type:emanation|distance:30]{30 feet} of him gain a +1 status bonus on attack rolls and saving throws against fear effects.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Hv4NO0HADyAAdS4F]{Effect: Bark Orders}</p>"
@@ -1377,12 +1392,16 @@
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
-        "strike-melee->Dagger": {
-          "name": "Dagger"
-        },
-        "strike-ranged->Dagger": {
-          "name": "Dagger"
-        },
+        "strike-ranged->Dagger": [
+          {
+            "name": "Dagger",
+            "id": "xIXTT704xBEHdGIn"
+          },
+          {
+            "name": "Dagger",
+            "id": "1Lvngo9gteYE4ep9"
+          }
+        ],
         "action->Release the Inmost Worm": {
           "name": "Release the Inmost Worm",
           "description": "<p>The cleansed cultist makes fists with both hands, pressing them to their temples so that their outward pointing thumbs extend to the left and right while they cry out in painful religious rapture. The hourglass-shaped scar on their forehead bulges briefly before a bloody worm is expelled from the center of the scar. This worm shoots through the air to target a single creature within 30 feet, who must then attempt a @Check[type:fortitude|dc:24] save. The cultist can't Release the Inmost Worm again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The worm lands on the target and causes agonizing pain before dropping to the floor and fading away. The target takes @Damage[3d6[mental]] damage.</p>\n<p><strong>Failure</strong> The worm lands on the target and burrows into their flesh, leaving no trace of a hole. The target seems to age rapidly for a moment, takes @Damage[6d6[mental]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round before the pain fades and the target returns to its actual age.</p>\n<p><strong>Critical Failure</strong> As failure, but the target also takes @Damage[6d6[persistent,mental]] damage. The target remains stupefied 1 as long as the mental damage persists, during which they appear to be aging rapidly. Once the persistent damage ends, the target's appearance reverts to normal.</p>"
@@ -1978,6 +1997,9 @@
         "spell->Inveigle": {
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
         },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
+        },
         "spell->Know Direction": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tXa5vOu5giBNCjdR]\nKnow Direction"
         },
@@ -2240,7 +2262,7 @@
       "items": {
         "action->Falling Portcullis": {
           "name": "Falling Portcullis",
-          "description": "<p><strong>Trigger</strong> The trip wire is pulled or severed</p>\n<hr />\n<p><strong>Effect</strong> The portcullis comes crashing down, sealing the entrance and alerting the denizens of the keep to the intruder's presence. Any creature passing under the portcullis or standing below it must attempt a @Check[type:reflex|dc:27] save. Once it falls, the portcullis can be lifted with a @Check[type:athletics|dc:30] check to Force it Open, or via the winch.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature dodges aside into an adjacent square (the player chooses which square they end up in).</p>\n<p><strong>Success</strong> As critical success, but the creature takes a glancing blow from the falling portcullis and takes @Damage[2d8[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> As critical success, but the creature takes a solid blow from the falling portcullis and takes 4d8 + @Damage[18[bludgeoning]].</p>\n<p><strong>Critical Failure</strong> The portcullis lands squarely on the creature, inflicting 6d8 + @Damage[18[piercing]] and immobilizing them. A Medium or smaller creature is also knocked Prone.</p>"
+          "description": "<p><strong>Trigger</strong> The trip wire is pulled or severed (typically by a person walking through the archway)</p><hr /><p><strong>Effect</strong> The portcullis comes crashing down, sealing the entrance and alerting the denizens of the keep to the intruder's presence. Any creature passing under the portcullis or standing below it must attempt a @Check[type:reflex|dc:27] save. Once it falls, the portcullis can be lifted with a @Check[type:athletics|dc:30|traits:action:force-open] check to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force it Open}, or via the winch.</p><hr /><p><strong>Critical Success</strong> The creature dodges aside into an adjacent square (the player chooses which square they end up in).</p>\n<p><strong>Success</strong> As critical success, but the creature takes a glancing blow from the falling portcullis and takes @Damage[2d8[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> As critical success, but the creature takes a solid blow from the falling portcullis and takes @Damage[(4d8+18)[bludgeoning]] damage.</p>\n<p><strong>Critical Failure</strong> The portcullis lands squarely on the creature, inflicting @Damage[(6d8+18)[piercing]] damage and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilizing} them. A Medium or smaller creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
         }
       }
     },
@@ -2259,6 +2281,9 @@
         },
         "spell->Hideous Laughter": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -2872,12 +2897,16 @@
         "spell->Speak with Animals (At Will) (Arthropods Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]\nSpeak with Animals (At Will) (Arthropods Only)"
         },
-        "strike-melee->Trident": {
-          "name": "Trident"
-        },
-        "strike-ranged->Trident": {
-          "name": "Trident"
-        },
+        "strike-ranged->Trident": [
+          {
+            "name": "Trident",
+            "id": "8zIAec8NlrwPEbab"
+          },
+          {
+            "name": "Trident",
+            "id": "4z1JD9bhf1R5wpmX"
+          }
+        ],
         "action->Self-Loathing": {
           "name": "Self-Loathing",
           "description": "<p>A mitflit's self-loathing makes it easy to influence. It takes a -4 penalty to its Will DC against checks to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}.</p>"
@@ -2936,6 +2965,9 @@
         },
         "spell->Hideous Laughter": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Inspire Courage": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]\nInspire Courage"
@@ -3199,14 +3231,18 @@
         "strike-melee->Battle Axe": {
           "name": "Battle Axe"
         },
-        "strike-melee->Hatchet": {
-          "name": "Hatchet"
-        },
+        "strike-ranged->Hatchet": [
+          {
+            "name": "Hatchet",
+            "id": "Up8YexckH0qYu7Mg"
+          },
+          {
+            "name": "Hatchet",
+            "id": "ApHre7Dw1aJJlSiv"
+          }
+        ],
         "strike-ranged->Rock": {
           "name": "Rock"
-        },
-        "strike-ranged->Hatchet": {
-          "name": "Hatchet"
         },
         "action->Menace Prey": {
           "name": "Menace Prey",
@@ -3370,6 +3406,9 @@
         },
         "spell->Entangle": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangle"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -4234,12 +4273,16 @@
         "strike-melee->Tail": {
           "name": "Tail"
         },
-        "strike-melee->Trident": {
-          "name": "Trident"
-        },
-        "strike-ranged->Trident": {
-          "name": "Trident"
-        },
+        "strike-ranged->Trident": [
+          {
+            "name": "Trident",
+            "id": "cpFEKCq7CWkJ3qrw"
+          },
+          {
+            "name": "Trident",
+            "id": "4bbZ6NaZSeW5sE1f"
+          }
+        ],
         "action->Righteous Certainty": {
           "name": "Righteous Certainty",
           "description": "<p>Whenever Vesket becomes frightened, he reduces the condition value by 1. If Vesket ever realizes the spirit of Stisshak is actually a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.wRQ7TZdd0n5UIIao]{Will-o'-Wisp}, he loses this ability.</p>"
@@ -4815,12 +4858,16 @@
         "strike-melee->Battle Axe": {
           "name": "Battle Axe"
         },
-        "strike-melee->Hatchet": {
-          "name": "Hatchet"
-        },
-        "strike-ranged->Hatchet": {
-          "name": "Hatchet"
-        },
+        "strike-ranged->Hatchet": [
+          {
+            "name": "Hatchet",
+            "id": "E3C47mJQhyySioGh"
+          },
+          {
+            "name": "Hatchet",
+            "id": "wbtt2m0nhK330JwC"
+          }
+        ],
         "action->Tandem Chop": {
           "name": "Tandem Chop",
           "description": "<p><strong>Trigger</strong> A creature or object within their reach is hit with a Strike by an ally using a weapon in the axe group</p>\n<p><strong>Requirements</strong> The logger is holding a weapon in the axe group</p>\n<p><strong>Effect</strong> The logger attempts a Strike against the same creature or object. If it hits, combine the damage with the damage from the triggering Strike for the purpose of Hardness, resistances, and weaknesses. A creature or object can only be the target of a single Tandem Chop per turn, regardless of the number of loggers in reach.</p>"
@@ -4870,6 +4917,9 @@
         },
         "spell->Vampiric Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Chill Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
@@ -5314,12 +5364,16 @@
         "consumable->Healing Potion (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
         },
-        "strike-melee->Dagger": {
-          "name": "Dagger"
-        },
-        "strike-ranged->Dagger": {
-          "name": "Dagger"
-        },
+        "strike-ranged->Dagger": [
+          {
+            "name": "Dagger",
+            "id": "ohbFrIxS5WF1abVb"
+          },
+          {
+            "name": "Dagger",
+            "id": "pllCGrR7E0eAP35u"
+          }
+        ],
         "action->Double Strike": {
           "name": "Double Strike",
           "description": "<p>Nishkiv makes two dagger Strikes against the same target. If his first attack hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the second attack. The multiple attack penalty applies to these attacks as normal.</p>"
@@ -5906,12 +5960,16 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]\nRepair Kit",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]\n<p>A repair kit allows you to perform simple repairs while traveling. It contains a portable anvil, tongs, woodworking tools, a whetstone, and oils for conditioning leather and wood. You can use a repair kit to Repair items using the Crafting skill.</p>"
         },
-        "strike-melee->Light Hammer": {
-          "name": "Light Hammer"
-        },
-        "strike-ranged->Light Hammer": {
-          "name": "Light Hammer"
-        }
+        "strike-ranged->Light Hammer": [
+          {
+            "name": "Light Hammer",
+            "id": "lim8vhAnHsss3MkL"
+          },
+          {
+            "name": "Light Hammer",
+            "id": "ucBBQrbesTH1rIdv"
+          }
+        ]
       }
     },
     "Orb Blast Trap": {
@@ -5927,7 +5985,7 @@
           "name": "Slam Doors",
           "description": "<p><strong>Trigger</strong> A second creature crosses a magical sensor at the midpoint of the hall.</p>\n<hr />\n<p><strong>Effect</strong> The doors at either end of the hall slam shut and lock in place while the trap is active (the doors open automatically if the trap is disabled or destroyed). The doors (Hardness 14, HP 56 [28 BT]) can be Forced Open with a @Check[type:athletics|dc:40|traits:action:force-open] check, or via a @Check[type:thievery|dc:35|traits:action:pick-a-lock] check to Pick the Lock. The trap rolls initiative.</p>"
         },
-        "strike-ranged->Force Bolt": {
+        "strike-melee->Force Bolt": {
           "name": "Force Bolt",
           "description": "<p>(can target any creature in area <strong>A8</strong>)</p>"
         }
@@ -6683,6 +6741,9 @@
         },
         "spellcastingEntry->Cleric Domain Spells": {
           "name": "Cleric Domain Spells"
+        },
+        "spell->Commanding Lash": {
+          "requirements": "Your most recent action dealt damage to a target."
         },
         "equipment->Religious Symbol of Gogunta (Silver)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\nReligious Symbol of Gogunta (Silver)",
@@ -9654,6 +9715,9 @@
         "spell->Vampiric Touch": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
         },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
+        },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
         },
@@ -9728,5 +9792,8 @@
       "converter": "translateTokenName",
       "path": "prototypeToken.name"
     }
+  },
+  "folders": {
+    "Armies": "Armies"
   }
 }

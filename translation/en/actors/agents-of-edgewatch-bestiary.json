@@ -414,6 +414,9 @@
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
         },
+        "spell->Weapon of Judgment": {
+          "requirements": "You have a deity."
+        },
         "spell->Dispel Magic (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]\nDispel Magic (At Will)"
         },
@@ -663,10 +666,10 @@
           "name": "Arrows",
           "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
         },
-        "strike-melee->Club": {
+        "strike-ranged->Club": {
           "name": "Club"
         },
-        "strike-melee->Nightmare Cudgel": {
+        "strike-ranged->Nightmare Cudgel": {
           "name": "Nightmare Cudgel",
           "description": "<p>Carried by one guard only</p>"
         },
@@ -713,10 +716,10 @@
           "name": "Arrows",
           "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
         },
-        "strike-melee->Club": {
+        "strike-ranged->Club": {
           "name": "Club"
         },
-        "strike-melee->Nightmare Cudgel": {
+        "strike-ranged->Nightmare Cudgel": {
           "name": "Nightmare Cudgel",
           "description": "<p>Carried by one guard only</p>"
         },
@@ -1625,7 +1628,7 @@
         "consumable->Healing Potion (Moderate)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3d8+10 Hit Points}.</p>"
         },
-        "strike-melee->Dagger": {
+        "strike-ranged->Dagger": {
           "name": "Dagger"
         },
         "action->Sneak Attack": {
@@ -1826,7 +1829,7 @@
           "name": "Dart Volley",
           "description": "<p><strong>Trigger</strong> More than two Small or larger creatures step on the brass seal.</p>\n<hr />\n<p><strong>Effect</strong> The trap makes up to four dart Strikes against creatures standing on the seal, then rolls initiative.</p>"
         },
-        "strike-ranged->Dart": {
+        "strike-melee->Dart": {
           "name": "Dart"
         },
         "action->No MAP": {
@@ -2014,7 +2017,7 @@
         "equipment->Spellbook": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook"
         },
-        "strike-melee->Dagger": {
+        "strike-ranged->Dagger": {
           "name": "Dagger"
         },
         "lore->Farming Lore": {
@@ -2128,7 +2131,7 @@
         "strike-ranged->Despair Ray": {
           "name": "Despair Ray"
         },
-        "strike-ranged->Feeblemind Ray": {
+        "strike-melee->Feeblemind Ray": {
           "name": "Feeblemind Ray"
         },
         "strike-ranged->Spirit Blast Ray": {
@@ -2184,12 +2187,16 @@
         "strike-melee->Main-Gauche": {
           "name": "Main-Gauche"
         },
-        "strike-melee->Dagger": {
-          "name": "Dagger"
-        },
-        "strike-ranged->Dagger": {
-          "name": "Dagger"
-        },
+        "strike-ranged->Dagger": [
+          {
+            "name": "Dagger",
+            "id": "Idet44bdRqy8cmfx"
+          },
+          {
+            "name": "Dagger",
+            "id": "EGOkkUlxQlgkV8Ao"
+          }
+        ],
         "action->Nimble Dodge": {
           "name": "Nimble Dodge",
           "description": "<p><strong>Trigger</strong> A creature targets Fayati with an attack and she can see the attacker</p>\n<hr />\n<p><strong>Effect</strong> Fayati dodges out of the way, gaining a +2 circumstance bonus to AC against the triggering attack.</p>"
@@ -2348,12 +2355,16 @@
         "strike-melee->Alietta": {
           "name": "Alietta"
         },
-        "strike-melee->Spear": {
-          "name": "Spear"
-        },
-        "strike-ranged->Spear": {
-          "name": "Spear"
-        },
+        "strike-ranged->Spear": [
+          {
+            "name": "Spear",
+            "id": "tyx67m7w5wjz8Xc5"
+          },
+          {
+            "name": "Spear",
+            "id": "NGOG0Y8bjtNkNrjz"
+          }
+        ],
         "action->Lifesense 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
         },
@@ -2400,7 +2411,7 @@
         "equipment->Vault Key": {
           "name": "Vault Key"
         },
-        "strike-melee->Dagger": {
+        "strike-ranged->Dagger": {
           "name": "Dagger"
         },
         "strike-ranged->Hand Crossbow": {
@@ -2476,11 +2487,11 @@
         "strike-melee->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Crossbow": {
-          "name": "Crossbow"
-        },
         "strike-ranged->Dagger": {
           "name": "Dagger"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
         },
         "action->Sidestep": {
           "name": "Sidestep",
@@ -2962,7 +2973,7 @@
         "consumable->Healing Potion (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
         },
-        "strike-melee->Lawkeeper": {
+        "strike-ranged->Lawkeeper": {
           "name": "Lawkeeper"
         },
         "strike-ranged->Hand Crossbow": {
@@ -2991,7 +3002,7 @@
         "weapon->Alchemist's Fire (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>"
         },
-        "strike-melee->Club": {
+        "strike-ranged->Club": {
           "name": "Club"
         },
         "strike-ranged->Lesser Alchemist's Fire": {
@@ -3693,6 +3704,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]\nNeutralize Poison",
           "target": "1 creature"
         },
+        "spell->Spiritual Weapon": {
+          "requirements": "You have a deity."
+        },
         "spell->Purify Food and Drink": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qXTB7Ec9yYh5JPPV]\nPurify Food and Drink",
           "target": "1 cubic foot of contaminated food or water"
@@ -3748,6 +3762,9 @@
         },
         "spell->Nondetection": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]\nNondetection"
+        },
+        "spell->Alarm": {
+          "requirements": "3 gp silver bell focus"
         },
         "spell->Color Spray": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]\nColor Spray"
@@ -4124,7 +4141,7 @@
     "Lyrma Swampwalker": {
       "name": "Lyrma Swampwalker",
       "items": {
-        "strike-melee->Trident": {
+        "strike-ranged->Trident": {
           "name": "Trident"
         }
       }
@@ -4266,7 +4283,7 @@
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
         },
-        "strike-melee->Dagger": {
+        "strike-ranged->Dagger": {
           "name": "Dagger"
         },
         "strike-ranged->Crossbow": {
@@ -4977,7 +4994,7 @@
         "weapon->Alchemist's Fire (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>"
         },
-        "strike-melee->Club": {
+        "strike-ranged->Club": {
           "name": "Club"
         },
         "strike-ranged->Lesser Alchemist's Fire": {
@@ -5122,7 +5139,7 @@
           "name": "Dart Volley",
           "description": "<p><strong>Trigger</strong> A creature makes noise in the hall, which can be avoided with a successful @Check[type:stealth|dc:28|name:Avoid Notice|traits:action:sneak,move,secret] check</p>\n<hr />\n<p><strong>Effect</strong> The trap makes a poisoned dart Strike against the triggering creature, then rolls initiative.</p>"
         },
-        "strike-ranged->Poisoned Dart": {
+        "strike-melee->Poisoned Dart": {
           "name": "Poisoned Dart"
         },
         "action->Continuous Barrage": {
@@ -5519,8 +5536,8 @@
         "equipment->Spellbook": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook"
         },
-        "equipment->Wand of Manifold Missiles (3rd-Level Spell)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Lexs7KnhbV0HgFh]\nWand of Manifold Missiles (3rd-Level Spell)",
+        "equipment->Wand of Manifold Missiles (3rd-Rank Spell)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Lexs7KnhbV0HgFh]\nWand of Manifold Missiles (3rd-Rank Spell)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Lexs7KnhbV0HgFh]\n<p>This wand features a carved dragon's head at its top and a polished metal sphere set in its midsection.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage} at 3rd rank.</p>\n<p>After you cast the spell, an additional missile or missiles are released from the wand at the start of each of your turns, as though you cast the 1-action version of <em>magic missile</em>. Choose targets each time. This lasts for 1 minute, until you're no longer wielding the wand, or until you try to activate the wand again.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of <em>magic missile</em> of the appropriate rank.</p>"
         },
         "strike-melee->Dagger": {
@@ -5797,12 +5814,16 @@
     "Skebs": {
       "name": "Skebs",
       "items": {
-        "strike-melee->Dagger": {
-          "name": "Dagger"
-        },
-        "strike-ranged->Dagger": {
-          "name": "Dagger"
-        },
+        "strike-ranged->Dagger": [
+          {
+            "name": "Dagger",
+            "id": "qnVCozwzjFK6gieU"
+          },
+          {
+            "name": "Dagger",
+            "id": "n72S7jEvm5AQeVky"
+          }
+        ],
         "action->Distracting Shadows": {
           "name": "Distracting Shadows",
           "description": "<p>Skebs can use creatures that are at least one size larger than themself as cover for the @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} actions.</p>"
@@ -6550,12 +6571,16 @@
           "name": "+2 Striking Spear",
           "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
         },
-        "strike-melee->Spear": {
-          "name": "Spear"
-        },
-        "strike-ranged->Spear": {
-          "name": "Spear"
-        },
+        "strike-ranged->Spear": [
+          {
+            "name": "Spear",
+            "id": "EFGYVjmnPR7oeSdb"
+          },
+          {
+            "name": "Spear",
+            "id": "PfYigOWR2ynFziwC"
+          }
+        ],
         "action->Water Shield": {
           "name": "Water Shield",
           "description": "<p>The aquamancer is surrounded by a bubble of water that buffers attacks. Each round, the shield absorbs the first 25 damage that would be dealt to the aquamancer. The shield can absorb only bludgeoning, piercing, slashing, acid, cold, and fire damage types. The aquamancer can dismiss or raise their shield by spending a single action.</p>"

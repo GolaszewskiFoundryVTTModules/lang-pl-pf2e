@@ -13,7 +13,7 @@
       "flags": {}
     }
   ],
-  "description": "WIP Polish Translation for Pathfinder 2e",
+  "description": "Polish Translation for Pathfinder 2e",
   "languages": [
     {
       "lang": "pl",
@@ -42,8 +42,8 @@
             "id": "pf2e",
             "type": "system",
             "compatibility": {
-                "minimum": "5.13.1",
-                "verified": "5.13.1"
+                "minimum": "6.0.2",
+                "verified": "6.0.2"
             }
         }
     ],
@@ -52,15 +52,15 @@
             "id": "babele",
             "type": "module",
             "compatibility": {
-                "minimum": "2.5.1",
-                "verified": "2.5.1"
+                "minimum": "2.5.5",
+                "verified": "2.5.5"
             }
         }
     ]
 },
-"esmodules": ["src/babele-register.js"],
-"system": ["pf2e"],
-"packs": [],
-"scripts": ["src/translator/translator.js"],
+"esmodules":[
+    "src/babele-register.js",
+    "src/translator/translator.js"
+],
 "styles": ["PF2PLAdjustments.css"]
 }

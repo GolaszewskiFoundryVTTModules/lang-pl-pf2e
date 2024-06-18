@@ -2,7 +2,7 @@
 function removeMismatchingTypes(fallback, other = {}) {
     for (let k of Object.keys(other)) {
         const replacement = other[k];
-        const replacementType = getType(replacement);
+        const replacementType = foundry.utils.getType(replacement);
 
         if (!fallback.hasOwnProperty(k)) {
             delete other[k];
@@ -10,7 +10,7 @@ function removeMismatchingTypes(fallback, other = {}) {
         }
 
         const original = fallback[k];
-        const originalType = getType(original);
+        const originalType = foundry.utils.getType(original);
 
         if (replacementType === "Object" && originalType === "Object") {
             removeMismatchingTypes(original, replacement);
@@ -23,6 +23,39 @@ function removeMismatchingTypes(fallback, other = {}) {
     }
 
     return fallback;
+}
+
+// Automated Animations compatibility for translated items - thanks to n1xx1 from the italian localization for the coding
+
+function hookOnAutoAnimations() {
+    if (!game.modules.has("autoanimations")) {
+        return;
+    }
+
+    Hooks.on("AutomatedAnimations-WorkflowStart", (data, animationData) => {
+        if (data.item?.flags?.babele?.originalName) {
+            data.recheckAnimation = true;
+            data.item = AACreateItemNameProxy(data.item, data.item.flags.babele.originalName);
+        }
+
+        if (data.ammoItem?.flags?.babele?.originalName) {
+            data.recheckAnimation = true;
+            data.ammoItem = AACreateItemNameProxy(data.ammoItem, data.ammoItem.flags.babele.originalName);
+        }
+
+        if (data.originalItem?.flags?.babele?.originalName) {
+            data.recheckAnimation = true;
+            data.originalItem = AACreateItemNameProxy(data.originalItem, data.originalItem.flags.babele.originalName);
+        }
+    });
+}
+
+function AACreateItemNameProxy(item, realName) {
+    return new Proxy(item, {
+        get(target, p, receiver) {
+            return "name" === p ? realName : Reflect.get(target, p, receiver);
+        },
+    });
 }
 
 Hooks.once("init", () => {
@@ -105,6 +138,9 @@ Hooks.once("init", () => {
             translateTime: (data) => {
                 return game.langPlPf2e.translateValue("time", data);
             },
+            translateTokens: (data, translation, _dataObject, _translatedCompendium) => {
+                return game.langPlPf2e.translateArrayOfObjects(data, translation, "token");
+            },
             translateTokenName: (data, translation, _dataObject, _translatedCompendium, translationObject) => {
                 return game.langPlPf2e.translateTokenName(data, translation, translationObject);
             },
@@ -115,6 +151,8 @@ Hooks.once("init", () => {
                 return game.langPlPf2e.updateImage("token", data, dataObject, translatedCompendium);
             },
         });
+
+        hookOnAutoAnimations();
     }
 });
 
@@ -124,55 +162,3 @@ Hooks.once("i18nInit", () => {
         removeMismatchingTypes(fallback, game.i18n.translations);
     }
 });
-
-Hooks.once("ready", () => {
-    // Register auto-translation of Automated Animations
-    if (!game.modules.has("autoanimations")) {
-        return;
-    }
-    
-    Hooks.on("AutomatedAnimations-WorkflowStart", (data, animationData) => {
-        if (animationData) return;
-
-	    let changed = false;
-
-        if (data.item?.flags?.babele?.originalName) {
-            data.item = createItemNameProxy(
-                data.item,
-                data.item.flags.babele.originalName
-            );
-            changed = true;
-        }
-	
-        if (data.ammoItem?.flags?.babele?.originalName) {
-            data.ammoItem = createItemNameProxy(
-                data.ammoItem,
-                data.ammoItem.flags.babele.originalName
-            );
-            changed = true;
-        }
-	
-        if (data.originalItem?.flags?.babele?.originalName) {
-            data.originalItem = createItemNameProxy(
-                data.originalItem,
-                data.originalItem.flags.babele.originalName
-            );
-            changed = true;
-        }
-
-        if (changed) {
-            data.recheckAnimation = true;
-        }
-    });
-});
-
-function createItemNameProxy(item, realName) {
-    return new Proxy(item, {
-        get(target, p, receiver) {
-        if (p === "name") {
-            return realName;
-        }
-        return Reflect.get(target, p, receiver);
-        },
-    });
-}

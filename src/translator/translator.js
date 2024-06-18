@@ -1,3 +1,5 @@
+import { CompendiumMapping } from "../../../babele/script/compendium-mapping.js";
+
 // Create Translator instance and register settings
 Hooks.once("init", () => {
     game.langPlPf2e = Translator.get();
@@ -40,7 +42,7 @@ class Translator {
         Object.keys(artworkExceptions).forEach((compendium) => {
             Object.keys(artworkExceptions[compendium]).forEach((module) => {
                 if (game.modules.get(module)?.active) {
-                    mergeObject(this.artworkExceptions, {
+                    foundry.utils.mergeObject(this.artworkExceptions, {
                         [compendium]: { [module]: artworkExceptions[compendium][module] },
                     });
                 }
@@ -52,7 +54,7 @@ class Translator {
         const basicCompendiumExceptions = config[0]?.compendiumExceptions ?? {};
         Object.keys(basicCompendiumExceptions).forEach((compendium) => {
             if (game.modules.get(basicCompendiumExceptions[compendium])?.active) {
-                mergeObject(this.compendiumExceptions, {
+                foundry.utils.mergeObject(this.compendiumExceptions, {
                     [compendium]: basicCompendiumExceptions[compendium],
                 });
             }
@@ -128,7 +130,7 @@ class Translator {
                     })
                 );
 
-                mergeObject(this.artworkLists, { [compendium]: images });
+                foundry.utils.mergeObject(this.artworkLists, { [compendium]: images });
             });
         }
     }
@@ -157,7 +159,7 @@ class Translator {
     // Merge an object using a provided field mapping
     dynamicMerge(sourceObject, translation, mapping) {
         if (translation) {
-            mergeObject(sourceObject, mapping.map(sourceObject, translation ?? {}), { overwrite: true });
+            foundry.utils.mergeObject(sourceObject, mapping.map(sourceObject, translation ?? {}), { overwrite: true });
         }
         return sourceObject;
     }
@@ -188,6 +190,17 @@ class Translator {
         }
     }
 
+    // Check if strike is ranged or melee and return the type
+    checkStrikeType(strike) {
+        let strikeType = "strike-melee";
+        strike.system.traits.value.forEach((trait) => {
+            if (trait.startsWith("range-") || trait.startsWith("thrown-")) {
+                strikeType = "strike-ranged";
+            }
+        });
+        return strikeType;
+    }
+
     // Normalize name for correct display within Foundry
     normalizeName(name) {
         return name;
@@ -197,7 +210,7 @@ class Translator {
         // Register compendium, check if different modules excludes the compendium
         if (!(this.compendiumExceptions[compendium] && this.compendiumExceptions[compendium] !== module)) {
             if (typeof Babele !== "undefined") {
-                Babele.get().register({
+                game.babele.register({
                     module: module,
                     lang: language,
                     dir: compendiumDirectory,
@@ -302,7 +315,7 @@ class Translator {
     translateHeightening(data, translation) {
         if (data.levels) {
             if (translation) {
-                mergeObject(data.levels, translation, { overwrite: true });
+                foundry.utils.mergeObject(data.levels, translation, { overwrite: true });
             }
             Object.keys(data.levels).forEach((level) => {
                 ["duration", "range", "time"].forEach((fieldName) => {
@@ -328,12 +341,12 @@ class Translator {
                 itemKey =
                     entry.type != "melee"
                         ? `${entry.type}->${entry.name}`
-                        : `strike-${entry.system.weaponType.value}->${entry.name}`;
+                        : `${this.checkStrikeType(entry)}->${entry.name}`;
             } else {
                 itemKey = entry.name;
             }
             let itemTranslation = translation ? translation[itemKey] ?? undefined : undefined;
-            const itemNameSlug = this.sluggify(entry.name);
+            let itemName = entry.name;
 
             // For compendium items, get the data from the compendium
             if (
@@ -348,6 +361,7 @@ class Translator {
                 const originalName = fromUuidSync(entry.flags.core.sourceId)?.flags?.babele?.originalName;
                 if (originalName) {
                     entry.name = originalName;
+                    itemName = originalName;
 
                     // Get the item from the compendium
                     const itemData = game.babele.packs
@@ -399,6 +413,20 @@ class Translator {
 
                 this.dynamicMerge(arr[index], itemTranslation, this.getMapping("item", true));
 
+                // Add babele standard translated fields
+                foundry.utils.mergeObject(arr[index], {
+                    translated: true,
+                    hasTranslation: true,
+                    originalName: itemName,
+                    flags: {
+                        babele: {
+                            translated: true,
+                            hasTranslation: true,
+                            originalName: itemName,
+                        },
+                    },
+                });
+
                 // Translate available rules
                 if (itemTranslation.rules) {
                     arr[index].system.rules = this.translateRules(entry.system.rules, itemTranslation.rules);
@@ -407,7 +435,7 @@ class Translator {
 
             // Add the item slug if not already included
             if (!arr[index].system.slug || arr[index].system.slug === "") {
-                arr[index].system.slug = itemNameSlug;
+                arr[index].system.slug = this.sluggify(itemName);
             }
         });
 

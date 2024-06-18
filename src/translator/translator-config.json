@@ -9,11 +9,12 @@
             "pf2e-beginner-box": [
                 "animated-armor",
                 "basilisk",
-                "black-kobold-dragon-mage",
-                "blue-kobold-dragon-mage",
                 "boar",
                 "brine-shark",
-                "bugbear-thug",
+                "bugbear-tormentor",
+                "caligni-creeper",
+                "caligni-dancer",
+                "caligni-stalker",
                 "cinder-rat",
                 "doppelganger",
                 "drow-fighter",
@@ -29,22 +30,27 @@
                 "goblin-commando",
                 "goblin-pyro",
                 "goblin-warrior",
-                "green-kobold-dragon-mage",
                 "harpy",
                 "hell-hound",
                 "hobgoblin-soldier",
                 "hunting-spider",
+                "kobold-dragon-mage-black",
+                "kobold-dragon-mage-blue",
+                "kobold-dragon-mage-green",
+                "kobold-dragon-mage-red",
+                "kobold-dragon-mage-white",
                 "kobold-scout",
                 "kobold-warrior",
                 "leopard",
                 "mimic",
+                "minotaur",
                 "ogre-warrior",
                 "orc-brute",
                 "orc-warchief",
                 "orc-warrior",
                 "owlbear",
                 "pugwampi",
-                "red-kobold-dragon-mage",
+                "reefclaw",
                 "sewer-ooze",
                 "shadow",
                 "skeletal-giant",
@@ -52,9 +58,10 @@
                 "sod-hound",
                 "troll",
                 "viper",
+                "warg",
                 "web-lurker",
-                "white-kobold-dragon-mage",
                 "wight",
+                "winter-wolf",
                 "wolf",
                 "xulgath-leader",
                 "xulgath-skulker",
@@ -149,6 +156,9 @@
                     "path": "system.spell.system.range.value",
                     "converter": "translateRange"
                 },
+                "consumableSpellRequirements": {
+                    "path": "system.spell.system.requirements"
+                },
                 "consumableSpellTarget": "system.spell.system.target.value",
                 "consumableSpellTime": {
                     "path": "system.spell.system.time.value",
@@ -172,6 +182,9 @@
                     "path": "system.range.value",
                     "converter": "translateRange"
                 },
+                "requirements": {
+                    "path": "system.requirements"
+                },
                 "rules": {
                     "path": "system.rules",
                     "converter": "translateRules"
@@ -194,7 +207,7 @@
                     "path": "system.time.value",
                     "converter": "translateTime"
                 },
-                "trainedLore": "system.trainedLore"
+                "trainedLore": "system.trainedSkills.lore"
             }
         },
         "tile": {
@@ -207,7 +220,10 @@
             "entryType": "JournalEntry",
             "mappingEntries": {
                 "name": "name",
-                "pages": { "path": "pages", "converter": "translateAdventureJournalPages" }
+                "pages": {
+                    "path": "pages",
+                    "converter": "translateAdventureJournalPages"
+                }
             }
         },
         "adventureJournalPage": {
@@ -223,14 +239,41 @@
             "mappingEntries": {
                 "name": "name",
                 "background": "background.src",
-                "drawings": { "path": "drawings", "converter": "textCollection" },
-                "notes": { "path": "notes", "converter": "textCollection" },
-                "tiles": { "path": "tiles", "converter": "translateTiles" }
+                "drawings": {
+                    "path": "drawings",
+                    "converter": "textCollection"
+                },
+                "notes": {
+                    "path": "notes",
+                    "converter": "textCollection"
+                },
+                "tiles": {
+                    "path": "tiles",
+                    "converter": "translateTiles"
+                },
+                "tokens": {
+                    "path": "tokens",
+                    "converter": "translateTokens"
+                }
             }
         },
         "rule": {
             "entryType": "Item",
-            "mappingEntries": { "label": "label", "prompt": "prompt", "text": "text" }
+            "mappingEntries": {
+                "label": "label",
+                "prompt": "prompt",
+                "text": "text"
+            }
+        },
+        "token": {
+            "entryType": "Actor",
+            "mappingEntries": {
+                "name": "name",
+                "items": {
+                    "path": "delta.items",
+                    "converter": "translateActorItems"
+                }
+            }
         },
         "value": {
             "entryType": "Item",

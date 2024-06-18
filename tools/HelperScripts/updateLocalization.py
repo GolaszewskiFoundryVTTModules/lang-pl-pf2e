@@ -15,11 +15,12 @@ from difflib import SequenceMatcher
 
 class LocalizationUpdater:
     
-    def __init__(self, en_old_path, en_path, pl_path):
+    def __init__(self, en_old_path, en_path, pl_path, verbose):
         # filepaths
         self.en_old_path = en_old_path
         self.en_path = en_path
         self.pl_path = pl_path
+        self.verbose = verbose
 
         # data containers
         self.en_old_extracted = {}
@@ -489,34 +490,38 @@ class LocalizationUpdater:
             for key, value in tqdm(self.pl_extracted.items(), desc=f"Regex-translating {os.path.basename(self.pl_path)}"):
                 self.pl_extracted[key] = self.auto_pretranslate(self.pl_extracted[key])
 
-        # if no keys were modified, return
-        if not any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys]) and not perform_regex_translate:
+        # Determine if no keys were modified
+        no_keys_modified_verbose = not any([self.new_keys, self.removed_keys, self.renamed_keys, self.updated_eng_keys, self.outdated_keys])
+        no_keys_modified_non_verbose = not any([self.outdated_keys])
+
+        # Simplify the if condition
+        if ((self.verbose and no_keys_modified_verbose) or (not self.verbose and no_keys_modified_non_verbose)) and not perform_regex_translate:
             return
 
         # Log the processed file name
         logging.info(f"{os.path.basename(self.pl_path)}:")
         
-        if self.new_keys:
+        if self.new_keys and self.verbose:
             logging.info(f"  Added keys: {len(self.new_keys)}")
             for key in self.new_keys:
                 logging.info(f"    {key}")
 
-        if self.removed_keys:
+        if self.removed_keys and self.verbose:
             logging.info(f"  Deleted keys: {len(self.removed_keys)}")
             for key in self.removed_keys:
                 logging.info(f"    {key}")
 
-        if self.renamed_keys:
+        if self.renamed_keys and self.verbose:
             logging.info(f"  Renamed keys (transferred): {len(self.renamed_keys)}")
             for old_key, new_key in self.renamed_keys:
                 logging.info(f"    {old_key} -> {new_key}")
 
-        if self.updated_eng_keys:
+        if self.updated_eng_keys and self.verbose:
             logging.info(f"  Updated english keys: {len(self.updated_eng_keys)}")
             for key in self.updated_eng_keys:
                 logging.info(f"    {key}")
 
-        if self.rudimentary_translations_updated:
+        if self.rudimentary_translations_updated and self.verbose:
             logging.info(f"  Rudimentary translations updated: {len(self.rudimentary_translations_updated)}")
             for key in self.rudimentary_translations_updated:
                 logging.info(f"    {key}")
@@ -594,6 +599,7 @@ def main():
     parser = argparse.ArgumentParser(description='Run the script with optional update source data flag.')
     parser.add_argument('--UpdateSourceData', action='store_true', help='Update source data if set to true.')
     parser.add_argument('--PreformRegexTranslate', action='store_true', help='Forces re-processing all strings by regex translations.')
+    parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose logging.')
 
     # Parse the arguments
     args = parser.parse_args()
@@ -603,6 +609,9 @@ def main():
 
     # The flag is False by default, True if --UpdateSourceData is used in the command line
     preform_regex_translate = args.PreformRegexTranslate
+
+    # False by default. true if --verbose or -v
+    verbose = args.verbose
 
     # Define sets of file paths
     file_sets = []
@@ -703,13 +712,13 @@ def main():
     # back up the old localization source
     copy_files_and_directories(core_en_directory, temp_en_old_directory)
 
-    if(update_source_data):
+    if update_source_data:
         # update the source files
         print("Running the pack extractor...")
         run_js_script("src/pack-extractor/pack-extractor.js")
 
     for en_old, en, pl in file_sets:
-        updater = LocalizationUpdater(en_old, en, pl)
+        updater = LocalizationUpdater(en_old, en, pl, verbose)
         updater.process(preform_regex_translate)
     
     # clean the OldLocale folder

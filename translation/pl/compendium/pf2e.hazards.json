@@ -220,7 +220,7 @@
             "name": "Gravehall Trap",
             "description": "<p>When a living creature crosses the midpoint of the trapped tunnel, necromantic magic partially animates the corpses buried in the walls and ceiling.</p>",
             "disable": "<p>@Check[type:thievery|dc:24|name:Disrupt Magical Trigger|traits:action:disable-a-device] (expert) to disrupt the magical trigger before the hazard rolls initiative, or @Check[type:religion|dc:18|name:Overwhelm the Area with Vitality Energy] (trained) to overwhelm the area with vitality energy and prevent the hazard from using its routine for 1 round; on the third successful Religion check, the necromantic energies are disrupted and the hazard is destroyed.</p>",
-            "routine": "<p>(1 action) Undead fists assail all creatures in the hall, dealing @Damage[4d6[bludgeoning]] damage. Creatures in the hall must attempt a @Check[type:reflex|dc:21].</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> The target takes full damage, and its Speeds are reduced by 10 feet (to a minimum of 5 feet) for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</p>",
+            "routine": "<p>(1 action) Undead fists assail all creatures in the hall, dealing @Damage[4d6[bludgeoning]] damage. Creatures in the hall must attempt a @Check[type:reflex|dc:21].</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> Cel odnosi pełne obrażenia and its Speeds are reduced by 10 feet (to a minimum of 5 feet) for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia.and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</p>",
             "items": {
                 "action->Lunging Dead": {
                     "name": "Lunging Dead",
@@ -366,7 +366,7 @@
                 },
                 "action->Filth Fever": {
                     "name": "Filth Fever",
-                    "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from filth fever don't improve on their own until the disease is cured.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Stadium 1</strong> carrier with no ill effect ([[/br 1d4 #hours]]{1k4 hours})</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stadium 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it remains sickened (1 day)</p>\n<p><strong>Stadium 4</strong> unconscious (1 day)</p>\n<p><strong>Stadium 5</strong> dead</p>"
+                    "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from filth fever don't improve on their own until the disease is cured.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Stadium 1</strong> Bezobjawowy nosiciel ([[/br 1d4 #hours]]{1k4 hours})</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it remains sickened (1 dzień)</p>\n<p><strong>Stadium 4</strong> unconscious (1 dzień)</p>\n<p><strong>Stadium 5</strong> dead</p>"
                 }
             }
         },
@@ -645,7 +645,7 @@
                 },
                 "action->Sportlebore Infestation": {
                     "name": "Sportlebore Infestation",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22|basic:true]</p>\n<p><strong>Stadium 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 hour)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} (1 hour)</p>\n<p><strong>Stadium 4</strong> @Damage[4d6[bludgeoning]] damage (@Check[type:fortitude|dc:25|basic:true] save) as the host painfully vomits out a sportlebore swarm and returns to stage 1</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22|basic:true]</p>\n<p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 dzień)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 hour)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} (1 hour)</p>\n<p><strong>Stadium 4</strong> @Damage[4d6[bludgeoning]] damage (@Check[type:fortitude|dc:25|basic:true] save) as the host painfully vomits out a sportlebore swarm and returns to stage 1</p>"
                 }
             }
         },

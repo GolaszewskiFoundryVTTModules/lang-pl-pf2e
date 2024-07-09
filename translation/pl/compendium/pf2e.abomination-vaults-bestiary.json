@@ -226,10 +226,10 @@
         "Befuddling Gas Trap": {
             "name": "Befuddling Gas Trap",
             "description": "<p>Seven nozzles hidden within holes in the 15‑foot-high ceiling release a poison gas.</p>",
-            "disable": "<p>@Check[type:thievery|dc:33|name:Disable Hidden Mechanism|traits:action:disable-a-device] (master) to disable the hidden mechanism on the north wall, immediately sucking the gas from the room, or @Check[type:thievery|dc:29|name:Plug One Nozzle|traits:action:disable-a-device] (expert) to adequately plug one of the seven nozzles. When all seven nozzles are plugged or destroyed, the trap is deactivated.</p>",
+            "disable": "<p>@Check[type:thievery|dc:33|name:Disable Hidden Mechanism|traits:action:disable-a-device] (mistrzostwo) to disable the hidden mechanism on the north wall, immediately sucking the gas from the room, or @Check[type:thievery|dc:29|name:Plug One Nozzle|traits:action:disable-a-device] (eksperctwo) to adequately plug one of the seven nozzles. When all seven nozzles are plugged or destroyed, the trap is deactivated.</p>",
             "reset": "<p>After an hour, the trap deactivates; the gas disperses slowly, and the doors can be opened again. After 24 hours, the gas builds up and the trap can be triggered again.</p>",
             "routine": "<p>(1 action) The gas intensifies. Each creature in the room must make a @Check[type:fortitude|dc:30].</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and becomes temporarily immune to the gas for 1 hour, though if the creature has already been stupefied by the trap, that condition remains for its normal duration.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours. If the target is already stupefied, the condition value increases by 1 (to a maximum of stupefied 4) and the target takes @Damage[8d6[mental]] damage.</p>\n<p><strong>Critical Effect</strong> As failure, except the target takes double the mental damage.</p>",
-            "stealth": "<p>+21 (expert) or @Check[type:perception|dc:31|traits:action:seek] (expert) to notice the hidden override mechanism in the north wall</p>",
+            "stealth": "<p>+21 (eksperctwo) or @Check[type:perception|dc:31|traits:action:seek] (eksperctwo) to notice the hidden override mechanism in the north wall</p>",
             "items": {
                 "action->Gas Release": {
                     "name": "Gas Release",
@@ -373,9 +373,9 @@
         "Blast Tumbler": {
             "name": "Blast Tumbler",
             "description": "<p>A hard-to-reach rune is placed on the lock's tumbler. It emits a blast of force when the door is jostled.</p>",
-            "disable": "<p>@Check[type:thievery|dc:32|name:Disarm the Rune|traits:action:disable-a-device] (master) to disarm the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the rune's magic.</p>",
+            "disable": "<p>@Check[type:thievery|dc:32|name:Disarm the Rune|traits:action:disable-a-device] (mistrzostwo) to disarm the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the rune's magic.</p>",
             "reset": "<p>The rune resets 1 minute after it triggers.</p>",
-            "stealth": "<p>@Check[type:perception|dc:32|traits:action:seek] (master)</p>",
+            "stealth": "<p>@Check[type:perception|dc:32|traits:action:seek] (mistrzostwo)</p>",
             "items": {
                 "action->Force Blast": {
                     "name": "Force Blast",
@@ -386,10 +386,10 @@
         "Blood of Belcorra": {
             "name": "Blood of Belcorra",
             "description": "<p>A bloody image of Belcorra arises, emits a soul‑draining light, then inhales blood from living creatures in the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22|name:Wipe Away Blood] (trained) to wipe away enough of the bloodstain to disrupt the haunt's necromantic energies, or @Check[type:religion|dc:20|name:Excorcise Haunt] (trained) to exorcise the haunt</p>",
+            "disable": "<p>@Check[type:thievery|dc:22|name:Wipe Away Blood] (wytrenowanie) to wipe away enough of the bloodstain to disrupt the haunt's necromantic energies, or @Check[type:religion|dc:20|name:Excorcise Haunt] (wytrenowanie) to exorcise the haunt</p>",
             "reset": "<p>If the haunt is disabled or destroyed through damage, the bloody phantom of Belcorra sprays upward in a spiral, dousing the trap door leading to area <strong>A25</strong> before draining upward through the keyhole, which reduces the Thievery DC to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock} to @Check[type:thievery|dc:20|name:Pick Trap Door|traits:action:pick-a-lock,skill,manipulate].</p>\n<p>At the next sunrise, the blood drains back down to this room and the haunt resets. The haunt is destroyed permanently once Lasda Venkervale is rescued from area <strong>D9</strong>.</p>",
             "routine": "<p>(1 action) The bloody image opens its mouth and appears to inhale, drawing blood from the body of one creature in its line of sight within 90 feet from the center of area <strong>A11</strong>. The creature targeted must attempt a @Check[type:fortitude|dc:20|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature takes @Damage[1d10[bleed]].</p>\n<p><strong>Porażka</strong> The creature takes @Damage[(1d10+6)[bleed]] damage.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(2d10+6)[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} as long as it's bleeding.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Gauntlight Beam": {
                     "name": "Gauntlight Beam",
@@ -918,9 +918,9 @@
         "Daemonic Fog": {
             "name": "Daemonic Fog",
             "description": "<p>The fog solidifies into tiny, gnawing creatures that devour everyone within before fading back into mist.</p>",
-            "disable": "<p>@Check[type:survival|dc:28|name:Disrupt the Fog] (expert) to disrupt the fog before the hazard triggers or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to counteract the magic.</p>",
+            "disable": "<p>@Check[type:survival|dc:28|name:Disrupt the Fog] (eksperctwo) to disrupt the fog before the hazard triggers or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to counteract the magic.</p>",
             "reset": "<p>The hazard resets over the course of an hour as the daemonic stain reenergizes the fog.</p>",
-            "stealth": "<p>@Check[type:perception|dc:30|traits:action:seek] (expert)</p>",
+            "stealth": "<p>@Check[type:perception|dc:30|traits:action:seek] (eksperctwo)</p>",
             "items": {
                 "action->Gnawing Fog": {
                     "name": "Gnawing Fog",
@@ -1066,9 +1066,9 @@
         "Doom of Tomorrow": {
             "name": "Doom of Tomorrow",
             "description": "<p>The sounds of devastation rise from the diorama, and a beam of shimmering energy lances outward from the tiny model of Gauntlight.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20|name:Deactivate Model of Gauntlight|traits:magical,trap] (trained) to quickly deactivate the model of Gauntlight before it triggers, or @Check[type:stealth|dc:23|name:Creep by Trap|traits:magical,trap] (trained) to creep by a trap without triggering it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20|name:Deactivate Model of Gauntlight|traits:magical,trap] (wytrenowanie) to quickly deactivate the model of Gauntlight before it triggers, or @Check[type:stealth|dc:23|name:Creep by Trap|traits:magical,trap] (wytrenowanie) to creep by a trap without triggering it.</p>",
             "reset": "<p>Each trap resets automatically after 1 hour.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Apocalypse Beam": {
                     "name": "Apocalypse Beam",
@@ -1286,7 +1286,7 @@
                     "name": "Wrodzone Zaklęcia Magii Boskiej"
                 },
                 "spell->Commune": {
-                    "primarycheck": "Occultism (master) or Religion (master)",
+                    "primarycheck": "Occultism (mistrzostwo) or Religion (mistrzostwo)",
                     "secondarycheck": "Occultism or Religion (whichever is used for the primary check)"
                 },
                 "spell->Prying Eye": {
@@ -1909,9 +1909,9 @@
         "Images of Failure": {
             "name": "Images of Failure",
             "description": "<p>Psychically enhanced illusions flood the minds of creatures in the 40-foot-long, 15-foot-wide hallway (the white dotted box on the map) with memories of their past failures.</p>",
-            "disable": "<p>@Check[type:occultism|dc:32|name:Weaken the images] (master) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to weaken the images; three successes are required to disable the trap</p>",
+            "disable": "<p>@Check[type:occultism|dc:32|name:Weaken the images] (mistrzostwo) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to weaken the images; three successes are required to disable the trap</p>",
             "reset": "<p>The trap resets immediately and can affect the same creature multiple times on the creature's turn.</p>",
-            "stealth": "<p>(expert) to realize the illusory images conceal a magical trap (noticing the images has a DC of 0)</p>",
+            "stealth": "<p>(eksperctwo) to realize the illusory images conceal a magical trap (noticing the images has a DC of 0)</p>",
             "items": {
                 "action->Echoes of Defeat": {
                     "name": "Echoes of Defeat",
@@ -1922,9 +1922,9 @@
         "Images of Powerlessness": {
             "name": "Images of Powerlessness",
             "description": "<p>Psychically-enhanced illusions flood the minds of creatures in the 95-foot-long, 15-foot-wide hallway (the white dotted box on the map) with visions of their failures yet to come.</p>",
-            "disable": "<p>@Check[type:occultism|dc:32|name:Weaken the images] (master) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to weaken the images; three successes are required to disable the trap</p>",
+            "disable": "<p>@Check[type:occultism|dc:32|name:Weaken the images] (mistrzostwo) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to weaken the images; three successes are required to disable the trap</p>",
             "reset": "<p>The trap resets immediately and can affect the same creature multiple times on the creature's turn.</p>",
-            "stealth": "<p>(expert) to realize the illusory images conceal a magical trap (noticing the images has a DC of 0)</p>",
+            "stealth": "<p>(eksperctwo) to realize the illusory images conceal a magical trap (noticing the images has a DC of 0)</p>",
             "items": {
                 "action->Flood of Despair": {
                     "name": "Flood of Despair",
@@ -2926,9 +2926,9 @@
         "Painful Suggestion Trap": {
             "name": "Painful Suggestion Trap",
             "description": "<p>A hidden rune on the floor under the filth, just past the threshold, triggers an ersatz ghost.</p>",
-            "disable": "<p>@Check[type:thievery|dc:28|name:Remove Rune|traits:magical,trap] (expert) to remove the rune without triggering it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 26) to dispel the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:28|name:Remove Rune|traits:magical,trap] (eksperctwo) to remove the rune without triggering it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 26) to dispel the rune</p>",
             "reset": "<p>The trap automatically resets after 1 hour.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Counterfeit Haunting": {
                     "name": "Counterfeit Haunting",
@@ -2939,10 +2939,10 @@
         "Paralyzing Light Trap": {
             "name": "Paralyzing Light Trap",
             "description": "<p>When any creature other than a devil enters the light, the magic interwoven in the light holds the creature in place and rings an alarm.</p>",
-            "disable": "<p>@Check[type:thievery|dc:26|name:Distort or Diffuse the Light|traits:magical,trap] (master) to distort or diffuse the light, keeping the light cone intact but preventing the trap from triggering, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 26) to dispel the light, leaving the room in darkness</p>",
+            "disable": "<p>@Check[type:thievery|dc:26|name:Distort or Diffuse the Light|traits:magical,trap] (mistrzostwo) to distort or diffuse the light, keeping the light cone intact but preventing the trap from triggering, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 26) to dispel the light, leaving the room in darkness</p>",
             "reset": "<p>The stasis magic in the light builds up over the course of an hour, after which the trap can trigger again.</p>",
             "routine": "<p>(1 action) All @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} creatures in the room take @Damage[1d10[mental]] damage (@Check[type:will|dc:26|basic:true|traits:magical,trap] save). Creatures who fail also become paralyzed for 1 round but can use a reaction to mentally fight off this stasis; creatures who do so take @Damage[5d10[mental]] damage mental damage but are no longer paralyzed.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Stasis Field": {
                     "name": "Stasis Field",
@@ -3101,7 +3101,7 @@
             "name": "Rusty Grate Pit",
             "description": "<p>The rusty grate covers a pit that's 10 feet in diameter and 40 feet deep.</p>",
             "disable": "<p>@Check[type:thievery|dc:18|name:Harmlessly Trigger Trap] to harmlessly trigger the trap by nudging the gate or the dangling winch, or @Check[type:thievery|dc:24|name:Stabilize Grate] to stabilize the grate so it doesn't collapse.</p>",
-            "stealth": "<p>(expert), or 0 if the grate is open</p>",
+            "stealth": "<p>(eksperctwo), or 0 if the grate is open</p>",
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
@@ -3538,10 +3538,10 @@
         "Shuffling Scythe Blades": {
             "name": "Shuffling Scythe Blades",
             "description": "<p>Six long blades, hidden in grooves in the walls and floor, zigzag through different parts of this hallway when any pressure plate in the hallway intersection is depressed; there are so many plates it's impossible to avoid them when moving through the room. The blades retreat into the floor and move through the hidden grooves before swinging out from the wall again in a different location.</p>",
-            "disable": "<p>@Check[type:thievery|dc:26|name:Disable Each Blade] (expert) to disable each blade, or utter the magical passphrase (which only Chafkhem knows) to deactivate the trap for 10 minutes</p>",
+            "disable": "<p>@Check[type:thievery|dc:26|name:Disable Each Blade] (eksperctwo) to disable each blade, or utter the magical passphrase (which only Chafkhem knows) to deactivate the trap for 10 minutes</p>",
             "reset": "<p>The trap resets when no creatures remain in area <strong>B20</strong>. Damaged or destroyed blades aren't repaired when the trap resets.</p>",
             "routine": "<p>(7 actions) The trap spends 1 action for each of its blades; a blade makes a scythe Strike against each creature in its region. With its final action, the trap uses Scythe Shuffle. Reduce the number of actions the trap can take by 1 for each destroyed blade.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Dicing Scythes": {
                     "name": "Dicing Scythes",
@@ -3639,10 +3639,10 @@
         "Stonescale Spirits": {
             "name": "Stonescale Spirits",
             "description": "<p>A half-dozen ghostly kobolds rise from the rubble in a howling vortex.</p>",
-            "disable": "<p>@Check[type:intimidation|dc:18|name:Frighten the Spirits] (trained) to frighten the spirits with a threatening display, or @Check[type:religion|dc:21|name:Excorcise the Spirits] (trained) to exorcise the spirits</p>",
+            "disable": "<p>@Check[type:intimidation|dc:18|name:Frighten the Spirits] (wytrenowanie) to frighten the spirits with a threatening display, or @Check[type:religion|dc:21|name:Excorcise the Spirits] (wytrenowanie) to exorcise the spirits</p>",
             "reset": "<p>The haunt deactivates if there are no frightened creatures in area <strong>A7</strong> at the start of its turn. The ghostly kobolds return to the rubble pile.</p>\n<p>The haunt can't activate again for 1 hour.</p>",
             "routine": "<p>(1 action) The spirits swoop together toward one creature in area <strong>A7</strong> who's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, instilling feelings of betrayal and confusion. The target takes @Damage[(1d10+4)[mental]] damage (@Check[type:will|dc:18|basic:true] save).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Confusing Confrontation": {
                     "name": "Confusing Confrontation",
@@ -4005,12 +4005,12 @@
             }
         },
         "Vengeful Furnace": {
-            "name": "Vengeful Furnace",
-            "description": "<p>The hatch atop the haunted furnace flips open and disgorges a pair of shrieking, burning ghosts.</p>",
-            "disable": "<p>@Check[type:intimidation|dc:22|name:Cow a Spirit] (trained) to cow one of the vengeful spirits or @Check[type:religion|dc:25|name:Exorcise the Spirit] (trained) to exorcise the spirit. The haunt remains active until both spirits are cowed or exorcised, or until the furnace is destroyed.</p>",
+            "name": "Mściwy Piec",
+            "description": "<p>Pokrywa na szczycie tego nawiedzonego pieca otwiera się, wypluwając dwa skrzeczące, płonące duchy.</p>",
+            "disable": "<p>@Check[type:intimidation|dc:22|name:Zastraszenie Duchów] (wytrenowanie) to cow one of the vengeful spirits or @Check[type:religion|dc:25|name:Exorcise the Spirit] (wytrenowanie) to exorcise the spirit. The haunt remains active until both spirits are cowed or exorcised, or until the furnace is destroyed.</p>",
             "reset": "<p>The haunt resets 1 hour after there are no creatures in the room.</p>",
             "routine": "<p>(3 actions) The burning ghosts lash at a random @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} creature in the room (or any random creature, if no creatures in the room are stupefied).</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Burn Knowledge": {
                     "name": "Burn Knowledge",
@@ -4311,10 +4311,10 @@
         "Watching Wall": {
             "name": "Watching Wall",
             "description": "<p>An overwhelming feeling of being watched wells up in the minds of those in the room, an instant before an eerie red eye opens in the western wall.</p>",
-            "disable": "<p>@Check[type:deception|dc:22|name:Appear Uninteresting|traits:haunt] (trained) to appear uninteresting to the watching eye (and thus be ignored by it) or @Check[type:religion|dc:22|name:Ward Against Being Seen|traits:haunt] (trained) to ward against being seen by or affected by the eye.</p>",
+            "disable": "<p>@Check[type:deception|dc:22|name:Appear Uninteresting|traits:haunt] (wytrenowanie) to appear uninteresting to the watching eye (and thus be ignored by it) or @Check[type:religion|dc:22|name:Ward Against Being Seen|traits:haunt] (wytrenowanie) to ward against being seen by or affected by the eye.</p>",
             "reset": "<p>The haunt becomes inert at the end of any round in which there are no @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} creatures it can see. It stays dormant for 1 hour, after which point it resets.</p>",
             "routine": "<p>(1 action) The eye glances about, and those it can see (whether in area <strong>C4</strong> or outside of it) take @Damage[4d6[mental]] damage (@Check[type:will|dc:21|basic:true|traits:haunt] save) as fears of being watched impart ripples of pain.</p>\n<p>A creature that takes mental damage from this effect doesn't reduce their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} value at the end of their next turn.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Someone is Watching": {
                     "name": "Someone is Watching",

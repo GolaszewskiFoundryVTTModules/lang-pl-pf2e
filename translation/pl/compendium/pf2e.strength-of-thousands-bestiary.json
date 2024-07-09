@@ -113,8 +113,8 @@
         "Agitated Carnivorous Plants": {
             "name": "Agitated Carnivorous Plants",
             "description": "<p>Many carnivorous plants that were once kept satiated now hunger for any meat they can get, even lashing out onto the path to get it.</p>",
-            "disable": "<p>@Check[type:survival|dc:25|name:Distract or Trick the Plants] (trained) to distract or trick the plants or @Check[type:nature|dc:22|name:Calm the Plants] (expert) to calm the plants</p>",
-            "stealth": "<p>(trained)</p>",
+            "disable": "<p>@Check[type:survival|dc:25|name:Distract or Trick the Plants] (wytrenowanie) to distract or trick the plants or @Check[type:nature|dc:22|name:Calm the Plants] (eksperctwo) to calm the plants</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Trapping Vines": {
                     "name": "Trapping Vines",
@@ -654,9 +654,9 @@
         "Auto-Turret": {
             "name": "Auto-Turret",
             "description": "<p>A mounted gun equipped with a magical targeting system and integrated ammo supply.</p>",
-            "disable": "<p>@Check[type:thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (master) to disconnect the turret from its ammo supply system, or @Check[type:arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (master) to neutralize the magical targeting system.</p>\n<p>Tan‑Takneh can also deactivate one or both auto‑turrets remotely with a special command word.</p>",
+            "disable": "<p>@Check[type:thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (mistrzostwo) to disconnect the turret from its ammo supply system, or @Check[type:arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (mistrzostwo) to neutralize the magical targeting system.</p>\n<p>Tan‑Takneh can also deactivate one or both auto‑turrets remotely with a special command word.</p>",
             "routine": "<p>(3 actions) With each action, the auto‑turret makes a longrifle Strike against a creature within 60 feet of Tan‑Takneh's campsite (other than Tan-Takneh). If there are no such creatures, the auto‑turret instead uses its action to sprout mechanical legs, totter 20 feet in the direction of its last target, and then plant itself into the ground again. Programmed to spread its fire around, the auto‑turret doesn't attack any creature it's already attacked in the round.</p>\n<p>After making 15 Strikes, the auto‑turret depletes its ammunition and automatically deactivates.</p>",
-            "stealth": "<p>(expert); darkvision</p>",
+            "stealth": "<p>(eksperctwo); darkvision</p>",
             "items": {
                 "action->Bullet Spray": {
                     "name": "Bullet Spray",
@@ -965,9 +965,9 @@
         "Boulder Deadfall Trap": {
             "name": "Boulder Deadfall Trap",
             "description": "<p>A weight-sensitive plate buried underneath sand pulls a boulder over a cliff ledge, causing it to fall on targets within the entrance.</p>",
-            "disable": "<p>@Check[type:crafting|dc:27|name:Disable the Plate|traits:mechanical,trap] (expert) or @Check[type:thievery|dc:25|name:Disable the Plate|traits:mechanical,trap] (expert) to find and disconnect the plate from the tipping mechanism</p>",
+            "disable": "<p>@Check[type:crafting|dc:27|name:Disable the Plate|traits:mechanical,trap] (eksperctwo) or @Check[type:thievery|dc:25|name:Disable the Plate|traits:mechanical,trap] (eksperctwo) to find and disconnect the plate from the tipping mechanism</p>",
             "reset": "<p>Resetting the boulders in the trap is a labor-intensive project that takes 2 hours.</p>",
-            "stealth": "<p>(trained); DC 0 to spot the balanced boulders</p>",
+            "stealth": "<p>(wytrenowanie); DC 0 to spot the balanced boulders</p>",
             "items": {
                 "action->Deadfall": {
                     "name": "Deadfall",
@@ -1024,9 +1024,9 @@
         "Centipede Carcasses Trap": {
             "name": "Centipede Carcasses Trap",
             "description": "<p>Three giant centipede carcasses have wire springs that pull out and fling their sharpened legs around the room.</p>",
-            "disable": "<p>@Check[type:nature|dc:23|name:Bend Carapace|traits:mechanical,trap] (trained) to bend the centipede carapace so the wire can't pull out any more legs, or @Check[type:thievery|dc:21|name:Cut Wires|traits:mechanical,trap] (expert) to cut the springy wires. After all three carcasses are disabled (regardless of the check used), the trap is deactivated. The trap automatically deactivates after 10 rounds.</p>",
+            "disable": "<p>@Check[type:nature|dc:23|name:Bend Carapace|traits:mechanical,trap] (wytrenowanie) to bend the centipede carapace so the wire can't pull out any more legs, or @Check[type:thievery|dc:21|name:Cut Wires|traits:mechanical,trap] (eksperctwo) to cut the springy wires. After all three carcasses are disabled (regardless of the check used), the trap is deactivated. The trap automatically deactivates after 10 rounds.</p>",
             "routine": "<p>(1 action) Each creature within 30 feet of a centipede carcass that hasn't been disabled takes @Damage[6d4[piercing]] damage (@Check[type:reflex|dc:22|basic:true|name:Avoid Carapace Strike|traits:mechanical,trap] save).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Volley of Legs": {
                     "name": "Volley of Legs",
@@ -1475,9 +1475,9 @@
         "Deathly Dream": {
             "name": "Deathly Dream",
             "description": "<p>Sinister runes adorn the doorway, opening a portal to a realm of nightmares if anyone other than Dwandek opens the door.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (master) to seal the rift using materials strongly grounded to the Material Plane, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7.‑level, counteract DC 33) to counteract the portal.</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (mistrzostwo) to seal the rift using materials strongly grounded to the Material Plane, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7.‑level, counteract DC 33) to counteract the portal.</p>",
             "reset": "<p>The deathly dream trap resets automatically as long as it hasn't been disabled or destroyed. Each time it resets, the tiny pocket plane of nightmare it sends its victim into resets as well, so no two victims will ever share the same deathly dream.</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Drawn to Nightmare": {
                     "name": "Drawn to Nightmare",
@@ -1691,10 +1691,10 @@
         "Electrified Water Ward": {
             "name": "Electrified Water Ward",
             "description": "<p>Passing over an invisible rune on the floor between the north and south doors triggers a dancing burst of electricity.</p>",
-            "disable": "<p>@Check[type:thievery|dc:26|name:Bleed away trap energy|traits:complex,magical,trap] (expert), @Check[type:arcana|dc:28|name:Bleed away trap energy|traits:complex,magical,trap] (expert), or @Check[type:occultism|dc:28|name:Bleed away trap energy|traits:complex,magical,trap] (expert) to harmlessly bleed away the electrical energy from the rune. Once the trap has been activated, the electrical energy is stronger, so three successful checks (of any combination of the relevant skills) are necessary to deactivate it, but these checks can be attempted from anywhere in the room.</p>",
+            "disable": "<p>@Check[type:thievery|dc:26|name:Bleed away trap energy|traits:complex,magical,trap] (eksperctwo), @Check[type:arcana|dc:28|name:Bleed away trap energy|traits:complex,magical,trap] (eksperctwo), or @Check[type:occultism|dc:28|name:Bleed away trap energy|traits:complex,magical,trap] (eksperctwo) to harmlessly bleed away the electrical energy from the rune. Once the trap has been activated, the electrical energy is stronger, so three successful checks (of any combination of the relevant skills) are necessary to deactivate it, but these checks can be attempted from anywhere in the room.</p>",
             "reset": "<p>The pulses stop as soon as no creatures are in the hallway, and then reset after 1 hour.</p>",
             "routine": "<p>(1 action) The trap deals @Damage[4d10[electricity]] damage (@Check[type:reflex|dc:26|basic:true|name:Avoid Electrical Shock|traits:complex,magical,trap,arcane,electricity,evocation] save) to all creatures in the room. A creature that fails the save is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). A creature that isn't touching the water treats the result of its saving throw as one degree of success better.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Electrocution": {
                     "name": "Electrocution",
@@ -1705,10 +1705,10 @@
         "Entropy Choir": {
             "name": "Entropy Choir",
             "description": "<p>A choir of ghostly shadows fill the benches in this room, chanting a haunting and unearthly melody.</p>",
-            "disable": "<p>@Check[type:religion|dc:40|name:Exorcise the Spirits|traits:haunt,hazard] (master) to exorcise the spirits and break the power binding them into a single entity, or @Check[type:performance|dc:35|name:Counter the Choir|traits:haunt,hazard] (expert) to counter the choir and nullify the destructive elements of its song</p>",
+            "disable": "<p>@Check[type:religion|dc:40|name:Exorcise the Spirits|traits:haunt,hazard] (mistrzostwo) to exorcise the spirits and break the power binding them into a single entity, or @Check[type:performance|dc:35|name:Counter the Choir|traits:haunt,hazard] (eksperctwo) to counter the choir and nullify the destructive elements of its song</p>",
             "reset": "<p>The entropy choir resets automatically after 24 hours, even if it has been disabled or destroyed. It fades away forever once Dwandek and other members of the cult to which it sings its praises are destroyed.</p>",
             "routine": "<p>(3 actions; auditory, divine, evocation, sonic) The choir continues to sing its grim dirge every round until it is disabled or destroyed. If there are any non‑slowed living creatures in area <strong>A3</strong> when its turn starts, it first uses Call to Nothingness as a single action.</p>\n<p>It uses its remaining actions (or all three actions if there are slowed living creatures in the room already) to focus soul‑shattering choruses onto individual targets.</p>\n<p>The choir can target any living creature in area <strong>A3</strong> with an action, but never more than once per round per creature. It prefers to attack slowed creatures over all others, but it targets non‑slowed creatures if they're the only viable targets. A targeted creature must attempt a @Check[type:fortitude|dc:36|traits:auditory,divine,evocation,sonic] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes @Damage[5d6[sonic]] damage.</p>\n<p><strong>Porażka</strong> The target takes @Damage[10d6[sonic]] damage.</p>\n<p><strong>Krytyczna Porażka</strong> The target takes @Damage[15d6[sonic]] damage and increases their @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} condition by 1, to a maximum of drained 4.</p>",
-            "stealth": "<p><strong>Performance</strong> +33 (master); creatures in the area automatically notice the eerily swaying shadows</p>",
+            "stealth": "<p><strong>Performance</strong> +33 (mistrzostwo); creatures in the area automatically notice the eerily swaying shadows</p>",
             "items": {
                 "action->Call to Nothingness": {
                     "name": "Call to Nothingness",
@@ -1779,9 +1779,9 @@
         "Flensing Chute": {
             "name": "Flensing Chute",
             "description": "<p>The stairs collapse into a downward spiral.</p>",
-            "disable": "<p>@Check[type:thievery|dc:35|name:Decouple Mechanisms] (master) to decouple several mechanisms barely accessible through gaps between the shifting risers, or @Check[type:perception|dc:38|name:Note Stairs Wear Patterns DC] to note which stairs have slightly different wear patterns to know which ones are safe to step on</p>",
+            "disable": "<p>@Check[type:thievery|dc:35|name:Decouple Mechanisms] (mistrzostwo) to decouple several mechanisms barely accessible through gaps between the shifting risers, or @Check[type:perception|dc:38|name:Note Stairs Wear Patterns DC] to note which stairs have slightly different wear patterns to know which ones are safe to step on</p>",
             "reset": "<p>The flensing chute resets automatically.</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Change to Chute": {
                     "name": "Change to Chute",
@@ -4184,8 +4184,8 @@
         "Rigged Ramen Cart": {
             "name": "Rigged Ramen Cart",
             "description": "<p>A seemingly innocent ramen cart is rigged to detonate if moved from its current location.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Disable the Detonation Trigger|traits:hazard,alchemical,mechanical,trap] (master) to disable the detonation trigger</p>",
-            "stealth": "<p>(expert)</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Disable the Detonation Trigger|traits:hazard,alchemical,mechanical,trap] (mistrzostwo) to disable the detonation trigger</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Death by Noodle": {
                     "name": "Death by Noodle",
@@ -4335,8 +4335,8 @@
         "Serpent Ward": {
             "name": "Serpent Ward",
             "description": "<p>Illusionary snakes erupt from the trapped door, inflicting a venomous curse on intruders.</p>",
-            "disable": "<p>@Check[type:thievery|dc:26|name:Deactivate the trigger|traits:uncommon,magical,trap] (expert) or @Check[type:occultism|dc:24|name:Deactivate the trigger|traits:uncommon,magical,trap] (expert) to deactivate the magical trigger</p>",
-            "stealth": "<p>(expert)</p>",
+            "disable": "<p>@Check[type:thievery|dc:26|name:Deactivate the trigger|traits:uncommon,magical,trap] (eksperctwo) or @Check[type:occultism|dc:24|name:Deactivate the trigger|traits:uncommon,magical,trap] (eksperctwo) to deactivate the magical trigger</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Curse the Intruders": {
                     "name": "Curse the Intruders",
@@ -4920,9 +4920,9 @@
         "Spider Summoning Rune": {
             "name": "Spider Summoning Rune",
             "description": "<p>An @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} rune on the floor summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.T5CUuPsMPb17d6Qy]{Goliath Spider} when disturbed by someone who isn't wearing Norgorber's religious symbol.</p>",
-            "disable": "<p>@Check[type:thievery|dc:34|name:Erase the Rune|traits:uncommon,magical,trap,complex] (master) to erase the rune or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. rank; counteract DC 36) to dispel the rune.</p>",
+            "disable": "<p>@Check[type:thievery|dc:34|name:Erase the Rune|traits:uncommon,magical,trap,complex] (mistrzostwo) to erase the rune or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. rank; counteract DC 36) to dispel the rune.</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Summon Animal": {
                     "name": "Przywołanie Animal",
@@ -4975,9 +4975,9 @@
         "Stinger Ward Trap": {
             "name": "Stinger Ward Trap",
             "description": "<p>A ghostly stinger appears in the air and jabs at anyone moving through the opening.</p>",
-            "disable": "<p>@Check[type:thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (master) to prevent the ghostly stinger from forming or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 34).</p>",
+            "disable": "<p>@Check[type:thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (mistrzostwo) to prevent the ghostly stinger from forming or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 34).</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Deadly Sting": {
                     "name": "Deadly Sting",
@@ -5926,10 +5926,10 @@
         "Venom Pool": {
             "name": "Venom Pool",
             "description": "A shallow, foul-smelling puddle of toxic acid blocks a narrow hall (marked with a dotted line on the map), and poison bursts from it when disturbed.",
-            "disable": "<p>@Check[type:crafting|dc:40|name:Neutralize the acid|traits:hazard,complex,environmental] (master) or @Check[type:survival|dc:42|name:Neutralize the acid|traits:hazard,complex,environmental] (legendary) to neutralize the acid while within reach of it. Three successes using either skill (or a combination of both) destroys the hazard.</p>",
+            "disable": "<p>@Check[type:crafting|dc:40|name:Neutralize the acid|traits:hazard,complex,environmental] (mistrzostwo) or @Check[type:survival|dc:42|name:Neutralize the acid|traits:hazard,complex,environmental] (legendarność) to neutralize the acid while within reach of it. Three successes using either skill (or a combination of both) destroys the hazard.</p>",
             "reset": "The hazard ends after 1 minute, contracting to its original size and keeping still until disturbed again.",
             "routine": "<p>(2 actions) The hazard uses its first action to spread 10 feet down the hallway in both directions. Once out of the hall, each side spreads in a random direction each round, but they don't go through doors. The hazard uses its second action to move the center of the @UUID[Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60]{Toxic Cloud} up to 20 feet in any direction to which any part of the pool has line of effect (normally, to encompass the greatest number of characters). If the <em>cloudkill</em> isn't present, it instead uses its second action to produce a new <em>cloudkill</em>, as Poison Puff.</p>",
-            "stealth": "<p>(legendary) to distinguish between the hazard and the oozes within it; @Check[type:perception|dc:0|traits:hazard,complex,environmental] to notice the pool</p>",
+            "stealth": "<p>(legendarność) to distinguish between the hazard and the oozes within it; @Check[type:perception|dc:0|traits:hazard,complex,environmental] to notice the pool</p>",
             "items": {
                 "action->Deadly Footing": {
                     "name": "Deadly Footing",

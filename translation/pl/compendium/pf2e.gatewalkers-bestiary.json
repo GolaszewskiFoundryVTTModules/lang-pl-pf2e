@@ -351,9 +351,9 @@
         "Blooming Jijioa": {
             "name": "Blooming Jijioa",
             "description": "<p>An invisible solar fare causes this patch of unassuming ground cover to suddenly bloom into a radioactive feld.</p>",
-            "disable": "<p>@Check[type:survival|dc:22] (trained) to remove a 5-foot square of jijioa, or 5 points of fire damage to destroy an affected area</p>",
+            "disable": "<p>@Check[type:survival|dc:22] (wytrenowanie) to remove a 5-foot square of jijioa, or 5 points of fire damage to destroy an affected area</p>",
             "reset": "<p>An hour after blooming, a jijioa patch goes dormant for 1 week.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Solar Bloom": {
                     "name": "Solar Bloom",
@@ -487,9 +487,9 @@
         "Cordon Alarm": {
             "name": "Cordon Alarm",
             "description": "<p>A hempen rope tied between trees emanates an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, cylindrical barrier that sounds an alarm when crossed.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (trained) to move the rope without setting of the alarm, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to disable the rope's magic</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to move the rope without setting of the alarm, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to disable the rope's magic</p>",
             "reset": "<p>The alarm resets immediately. Multiple breaches can cause the alarm to sound in multiple places at the same time, though the alarm can still be triggered only once per round.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Alarm": {
                     "name": "Alarm",
@@ -500,7 +500,7 @@
         "Corpse Disposal": {
             "name": "Corpse Disposal",
             "description": "<p>A wooden trapdoor conceals a spike-filled pit 10 feet square and 20 feet deep. The DC to Climb out of the pit is @Check[type:athletics|dc:10|traits:action:climb].</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (trained) to jam the trapdoor open</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to jam the trapdoor open</p>",
             "stealth": "<p>(or 0 if the trapdoor is disabled or broken)</p>",
             "items": {
                 "action->Dispose": {
@@ -647,8 +647,8 @@
         "Dream-Poisoned Door": {
             "name": "Dream-Poisoned Door",
             "description": "<p>Eerie shapes manifest within the doorway as it's opened, conjuring a group of four @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Y9SDbANT1DWI1DKU]{Animate Dreams} into being.</p>",
-            "disable": "<p>@Check[type:occultism|dc:30] (expert) to concentrate on the eldritch energies and diffuse them through meditation, @Check[type:thievery|dc:35] (master) to scratch warding runes along the door's hinges and block dreams from manifesting, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 30) to counteract the trap.</p>",
-            "stealth": "<p>(master)</p>",
+            "disable": "<p>@Check[type:occultism|dc:30] (eksperctwo) to concentrate on the eldritch energies and diffuse them through meditation, @Check[type:thievery|dc:35] (mistrzostwo) to scratch warding runes along the door's hinges and block dreams from manifesting, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 30) to counteract the trap.</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Manifest Dream Guardians": {
                     "name": "Manifest Dream Guardians",
@@ -936,10 +936,10 @@
         "Etward's Nightmare": {
             "name": "Etward's Nightmare",
             "description": "<p>The incense burners begin to smoke, filling the air with strangely nostalgic scents.</p>",
-            "disable": "<p>@Check[type:occultism|dc:26] (expert) to enter a state akin to lucid dreaming so as to unweave the nightmare from within, or @Check[type:intimidation|dc:30] (master) to stand resolute against the nightmares and turn the fear back upon itself</p>",
+            "disable": "<p>@Check[type:occultism|dc:26] (eksperctwo) to enter a state akin to lucid dreaming so as to unweave the nightmare from within, or @Check[type:intimidation|dc:30] (mistrzostwo) to stand resolute against the nightmares and turn the fear back upon itself</p>",
             "reset": "<p>The hazard resets when Etward dreams in this room.</p>",
             "routine": "<p>(2 actions; cold, enchantment, mental, occult) The haunt uses its first action to light incense burners again, forcing any creature that isn't already @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} to save against that effect once more. Its second action is to cause any unconscious creatures in the room to experience horrific, vivid dreams about being lost in the arctic during a blizzard, while enormous furred figures&mdash; saumen kar&mdash;lunge at them through the snow to attack repeatedly. Each unconscious creature must attempt a @Check[type:fortitude|dc:28|traits:cold,enchantment,mental,occult] saving throw. If at the end of the round there are no unconscious creatures in the room, Etward's nightmare ends and the trap deactivates.</p>\n<hr>\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and wakes up.</p>\n<p><strong>Sukces</strong> The creature remains unconscious and takes @Damage[1d10[cold]] and @Damage[1d10[mental]]. This damage does not wake the creature, and those who are awake can see the unconscious creature thrash as if in the throes of a nightmare while their body rimes over with layers of frost. The creature can fight against the bitter cold and monstrous shapes by attempting a @Check[type:will|dc:28|traits:cold,enchantment,mental,occult] save as a three-action activity on its turn&mdash; on a success, the creature wakes up.</p>\n<p><strong>Porażka</strong> As success, but 1k10+6 cold and @Damage[(1d10+6)[mental]], and with a @Check[type:will|dc:32|traits:cold,enchantment,mental,occult] save to wake up.</p>\n<p><strong>Krytyczna Porażka</strong> The creature remains unconscious and takes @Damage[(2d10+12)[cold]] and @Damage[(2d10+12)[mental]].</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Light Incense Burners": {
                     "name": "Light Incense Burners",
@@ -950,8 +950,8 @@
         "Exploding Stove": {
             "name": "Exploding Stove",
             "description": "<p>The stove has been rigged to explode when pressure sensors under the floor are depressed.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] (trained) to disable the pressure sensors, or @Check[type:survival|dc:20] (trained) to safely extinguish the stove fires</p>",
-            "stealth": "<p>(expert)</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to disable the pressure sensors, or @Check[type:survival|dc:20] (wytrenowanie) to safely extinguish the stove fires</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Explode": {
                     "name": "Explode",
@@ -962,8 +962,8 @@
         "Falling Bridge": {
             "name": "Falling Bridge",
             "description": "<p>The frayed ropes on both sides of this bridge snap when enough weight is put on the bridge's center.</p>",
-            "disable": "<p>@Check[type:survival|dc:20] (trained) to reinforce and secure the ropes on one side of the bridge</p>",
-            "stealth": "<p>(trained)</p>",
+            "disable": "<p>@Check[type:survival|dc:20] (wytrenowanie) to reinforce and secure the ropes on one side of the bridge</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
@@ -974,9 +974,9 @@
         "Formian Sting Trench": {
             "name": "Formian Sting Trench",
             "description": "<p>A thin layer of canvas conceals this 10-foot-square pit, the walls of which are studded with dagger-sized formian stingers. Creatures that fall into the trap risk being gouged by the poisonous barbs.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22] (trained)</p>",
+            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie)</p>",
             "reset": "<p>Creatures can still fall into the trap, but the canvas must be reset manually for the trap to become hidden again.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Entrench": {
                     "name": "Entrench",
@@ -994,11 +994,11 @@
         "Freezing Floor": {
             "name": "Freezing Floor",
             "description": "<p>The white brick floor radiates ice-cold air.</p>",
-            "disable": "<p>@Check[type:thievery|dc:24] (expert) to erase a rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 24) to dispel a rune; all three runes must be erased or dispelled to disable the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:24] (eksperctwo) to erase a rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 24) to dispel a rune; all three runes must be erased or dispelled to disable the trap.</p>",
             "hpDetails": "to destroy the bricks and disable the trap;",
             "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
             "routine": "<p>(3 actions) With each action, the trap attempts a frost jet Strike against any creature standing on the white bricks. The trap loses 1 action per disabled or dispelled rune.</p>",
-            "stealth": "<p>(expert) or @Check[type:perception|dc:31] (master) to notice the cold fog rising from the floor</p>",
+            "stealth": "<p>(eksperctwo) or @Check[type:perception|dc:31] (mistrzostwo) to notice the cold fog rising from the floor</p>",
             "items": {
                 "action->Cold Snap": {
                     "name": "Cold Snap",
@@ -1106,7 +1106,7 @@
         "Haunted Aiudara": {
             "name": "Haunted Aiudara",
             "description": "<p>The spiritual imprints of long-dead explorers haunt this <em>aiudara</em>, manifesting as a trio of astral wraiths who guard the gateway jealously.</p>",
-            "disable": "<p>@Check[type:religion|dc:25] (trained) to exorcise one of the wraiths or @Check[type:occultism|dc:25] (expert) to erase one of the wraith's astral sigils; three successful checks are required to disable the haunt</p>",
+            "disable": "<p>@Check[type:religion|dc:25] (wytrenowanie) to exorcise one of the wraiths or @Check[type:occultism|dc:25] (eksperctwo) to erase one of the wraith's astral sigils; three successful checks are required to disable the haunt</p>",
             "reset": "<p>The aiudara wraiths disperse after 1 minute, but the haunt resets after 24 hours.</p>",
             "routine": "<p>(3 actions; conjuration, divine, teleportation) With spectral claws, the aiudara wraiths hurl trespassers through time and space. Each of the three wraiths has 1 action which it can use to make a forceful hand Strike against a creature within 60 feet. The haunt loses 1 action for each successful check to disable the haunt.</p>\n<p>When the haunt rolls a critical hit to Strike a creature, the creature is instantly shunted to an empty space within 30 feet. The haunt chooses which space the creature is transported to.</p>",
             "items": {
@@ -1369,9 +1369,9 @@
         "Memory of Osoyo": {
             "name": "Memory of Osoyo",
             "description": "<p>The party's memories of Osoyo coalesce into a titanic mirage in the storm clouds above.</p>",
-            "disable": "<p>@Check[type:occultism|dc:22] (trained) or @Check[type:arcana|dc:24] (trained) to divert the memory's rage; three total successful checks are required to disable the hazard</p>",
+            "disable": "<p>@Check[type:occultism|dc:22] (wytrenowanie) or @Check[type:arcana|dc:24] (wytrenowanie) to divert the memory's rage; three total successful checks are required to disable the hazard</p>",
             "routine": "<p>(1 action) The memory of Osoyo gives a keening scream that shatters the layer of ice coating the deck of the Mermaid's Tears. Any creature on difficult terrain created by the memory's Glacial Gust takes @Damage[(2d8+7)[cold]] (@Check[type:reflex|dc:26|basic:true]) from the icy shrapnel.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Glacial Gust": {
                     "name": "Glacial Gust",
@@ -1382,9 +1382,9 @@
         "Mindhammer Mushrooms": {
             "name": "Mindhammer Mushrooms",
             "description": "<p>The mushrooms emit powerful psychic blasts that overwhelm potential predators with exhausting psychedelic visions.</p>",
-            "disable": "<p>@Check[type:survival|dc:20] (trained) to navigate a safe path without triggering the mushrooms</p>",
+            "disable": "<p>@Check[type:survival|dc:20] (wytrenowanie) to navigate a safe path without triggering the mushrooms</p>",
             "reset": "<p>The mushrooms must rest for 24 hours before they can emit another Psychic Blast.</p>",
-            "stealth": "<p>(trained) to notice small animal skeletons among the mushrooms</p>",
+            "stealth": "<p>(wytrenowanie) to notice small animal skeletons among the mushrooms</p>",
             "items": {
                 "action->Psychic Blast": {
                     "name": "Psychic Blast",
@@ -1664,9 +1664,9 @@
         "Poisonous Atmosphere": {
             "name": "Poisonous Atmosphere",
             "description": "<p>Aucturn's poisonous, magical atmosphere has strange effects on the planet's creatures.</p>",
-            "disable": "<p>@Check[type:survival|dc:20] (trained) or Occultism (trained) to breathe pockets of safe air trapped in bags and clothing</p>",
+            "disable": "<p>@Check[type:survival|dc:20] (wytrenowanie) or Occultism (wytrenowanie) to breathe pockets of safe air trapped in bags and clothing</p>",
             "routine": "<p>(1 action; illusion, mental, occult) The atmosphere continues to affect all creatures in the area, requiring a new Fortitude save each round against its Poisonous Atmosphere. A creature holding its breath gains a +2 circumstance bonus to the save.</p>",
-            "stealth": "<p>(expert) to identify the source of sudden nausea</p>",
+            "stealth": "<p>(eksperctwo) to identify the source of sudden nausea</p>",
             "items": {
                 "action->Poisonous Atmosphere": {
                     "name": "Poisonous Atmosphere",
@@ -1730,11 +1730,11 @@
         "Reservoir Trap": {
             "name": "Reservoir Trap",
             "description": "<p>Pipes extending from a pressurized water tank spray flesh-cutting jets of water at unwary passersby.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (trained) to safely puncture a pipe, or @Check[type:engineering-lore|dc:16]{Engineering Lore} (trained) to find and turn a pressure release valve; any combination of three punctured pipes or turned valves disables the trap</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to safely puncture a pipe, or @Check[type:engineering-lore|dc:16]{Engineering Lore} (wytrenowanie) to find and turn a pressure release valve; any combination of three punctured pipes or turned valves disables the trap</p>",
             "hpDetails": "See Pipes",
             "reset": "<p>The trap deactivates after 5 rounds. It cannot be reactivated until the reservoir is refilled, which takes an average of 5 days.</p>",
             "routine": "<p>(3 actions) For each pipe destroyed or disabled, the trap loses 1 action. On each of the trap's actions, the trap targets a random creature in the room with a water jet Strike.</p>",
-            "stealth": "<p>(trained); @Check[type:perception|dc:19] (expert) to notice the water tank bulging under the immense pressure</p>",
+            "stealth": "<p>(wytrenowanie); @Check[type:perception|dc:19] (eksperctwo) to notice the water tank bulging under the immense pressure</p>",
             "items": {
                 "action->Pipes": {
                     "name": "Pipes",
@@ -1760,9 +1760,9 @@
         "Rushing Wind": {
             "name": "Rushing Wind",
             "description": "<p>A raging wind sucks creatures in the area toward the aiudara.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] (trained) or Arcana (trained) to recognize what's happening and craft a patch to block air from escaping through the portal</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) or Arcana (wytrenowanie) to recognize what's happening and craft a patch to block air from escaping through the portal</p>",
             "routine": "<p>(1 action) The hazard uses its action to suck each creature (except the cairn wight) toward the aiudara. Each affected creature must attempt a @Check[type:fortitude|dc:18] save.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature is pulled 5 feet toward the aiudara and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. If the creature is already adjacent to the aiudara, it doesn't move but is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is pulled 10 feet toward the aiudara, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, and is stunned 1. If the creature is already adjacent to the aiudara, it doesn't move but falls prone and is stunned 2.</p>",
-            "stealth": "<p>(trained) to detect the change in pressure</p>",
+            "stealth": "<p>(wytrenowanie) to detect the change in pressure</p>",
             "items": {
                 "action->Gale": {
                     "name": "Gale",
@@ -1773,9 +1773,9 @@
         "Sacred Geyser": {
             "name": "Sacred Geyser",
             "description": "<p>A geyser of boiling water erupts at any character who attempts to take water from the oasis.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21] (trained) to concoct a mechanism for indirectly harvesting the water from a safe distance</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (wytrenowanie) to concoct a mechanism for indirectly harvesting the water from a safe distance</p>",
             "reset": "<p>The geyser resets automatically and adapts to previous circumvention, requiring a new check to disable it each time.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Sacred Geyser": {
                     "name": "Sacred Geyser",
@@ -1821,10 +1821,10 @@
         "Scholar's Bane": {
             "name": "Scholar's Bane",
             "description": "<p>Illusion magic overwhelms the minds of particularly intelligent creatures, forcing them to relive every intellectual failure and shame they've ever suffered.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22] (trained) to carve out one eye sensor, @Check[type:arcana|dc:22] or @Check[type:occultism|dc:22] (trained) to blank out one's mind (disables trap for self only), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 20) to counteract one eye sensor</p>",
+            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie) to carve out one eye sensor, @Check[type:arcana|dc:22] or @Check[type:occultism|dc:22] (wytrenowanie) to blank out one's mind (disables trap for self only), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 20) to counteract one eye sensor</p>",
             "reset": "<p>The trap can function for 10 rounds, which don't need to be consecutive, before it must recharge for 24 hours.</p>",
             "routine": "<p>(4 actions) The trap uses each action to target a creature in the room with an Intelligence score of 10 or greater. A target must succeed at a @Check[type:will|dc:22] save or take @Damage[(2d8+2)[mental]]. On a critical failure, the creature takes a &ndash;10-foot status penalty to Speed for 1 minute as they stagger under the weight of their failures. The trap loses 1 action for each eye sensor disabled or destroyed.</p>",
-            "stealth": "<p>(trained) to notice magical sensors hidden within four of the carvings' eyes</p>",
+            "stealth": "<p>(wytrenowanie) to notice magical sensors hidden within four of the carvings' eyes</p>",
             "items": {
                 "action->Reveal Failure": {
                     "name": "Reveal Failure",
@@ -1835,10 +1835,10 @@
         "Shadow Guards": {
             "name": "Shadow Guards",
             "description": "<p>Shadowy caricatures of elves peel themselves from the floor and attack everyone in the room.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:16] to move through the room without touching any of the runes, followed by @Check[type:thievery|dc:18] (trained) to carve them out of the wood without triggering them; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to counteract the runes</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:16] to move through the room without touching any of the runes, followed by @Check[type:thievery|dc:18] (wytrenowanie) to carve them out of the wood without triggering them; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to counteract the runes</p>",
             "reset": "<p>The trap deactivates and resets after 1 minute. The drawings cannot pursue characters out of the room.</p>",
             "routine": "<p>(1 action) The drawings stab at each character in the room with spears drawn from sharp lines.</p>",
-            "stealth": "<p>(trained) to notice the runes concealed among the drawings</p>",
+            "stealth": "<p>(wytrenowanie) to notice the runes concealed among the drawings</p>",
             "items": {
                 "action->Shadow Rush": {
                     "name": "Shadow Rush",
@@ -1852,10 +1852,10 @@
         "Shadowshift Field": {
             "name": "Shadowshift Field",
             "description": "<p>Cross-planar seepage from the Oaksteward rebels' ritual causes shadowy warping effects to strain and damage living creatures in the forest clearing.</p>",
-            "disable": "<p>@Check[type:arcana|dc:17] (trained) to will the Material Plane's hold on the area back into firmness and disable the effect for 1 hour, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 15) to end the effect permanently</p>",
+            "disable": "<p>@Check[type:arcana|dc:17] (wytrenowanie) to will the Material Plane's hold on the area back into firmness and disable the effect for 1 hour, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 15) to end the effect permanently</p>",
             "reset": "<p>This effect continues for 1 day, after which it ends and cannot be triggered again without another ritual.</p>",
             "routine": "<p>(1 action) Each creature in the clearing must attempt a @Check[type:fortitude|dc:17] save as the planar warping threatens to create microscopic tears inside their body. Fey, plant creatures, and druids are unaffected.</p>\n<hr>\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and immune for 24 hours. The land is healed [[/br 1d6]] points by the primal magic.</p>\n<p><strong>Sukces</strong> The creature is unaffected and immune to the effect for 24 hours.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[(1d6+3)[force]].</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(2d6+6)[force]].</p>",
-            "stealth": "<p>(trained) to notice the air and plants wavering and shifting</p>",
+            "stealth": "<p>(wytrenowanie) to notice the air and plants wavering and shifting</p>",
             "items": {
                 "action->Shadowshift": {
                     "name": "Shadowshift",
@@ -1866,8 +1866,8 @@
         "Shroud of Silence": {
             "name": "Shroud of Silence",
             "description": "<p>Sounds become muted in a 20-foot-wide, 100-foot-long segment of this street corridor.</p>",
-            "disable": "<p>@Check[type:occultism|dc:25] (expert) to twist the magic of the ley line around you, disabling the hazard for only you; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 23) to disable the hazard permanently</p>",
-            "stealth": "<p>(expert)</p>",
+            "disable": "<p>@Check[type:occultism|dc:25] (eksperctwo) to twist the magic of the ley line around you, disabling the hazard for only you; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 23) to disable the hazard permanently</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Hush": {
                     "name": "Hush",
@@ -1948,8 +1948,8 @@
         "Soporific Lecture": {
             "name": "Soporific Lecture",
             "description": "<p>Several hidden nozzles spray colorless sleeping gas into the seating area.</p>",
-            "disable": "<p>@Check[type:thievery|dc:28] (expert) to crimp shut the primary feeding tube for the gas, or @Check[type:perception|dc:31] (expert) to discover the hidden bypass switch next to the door to area <strong>A3</strong> that shuts the trap off</p>",
-            "stealth": "<p>(expert)</p>",
+            "disable": "<p>@Check[type:thievery|dc:28] (eksperctwo) to crimp shut the primary feeding tube for the gas, or @Check[type:perception|dc:31] (eksperctwo) to discover the hidden bypass switch next to the door to area <strong>A3</strong> that shuts the trap off</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Gas Spray": {
                     "name": "Gas Spray",
@@ -2047,10 +2047,10 @@
         "Test of the God Caller": {
             "name": "Test of the God Caller",
             "description": "<p>An incorporeal Sarkorian deity manifests before the party and challenges their resolve. Only aspirants whose motives are pure and whose hearts are in tune with the natural world can hope to overcome this \"test of the god caller.\"</p>",
-            "disable": "<p>Three @Check[type:nature|dc:27] or @Check[type:occultism|dc:27] (trained) checks can disable the haunt</p>",
+            "disable": "<p>Three @Check[type:nature|dc:27] or @Check[type:occultism|dc:27] (wytrenowanie) checks can disable the haunt</p>",
             "reset": "<p>8 hours</p>",
             "routine": "<p>(3 actions) The Sarkorian divinity commands a swarm of ghostly animals to overwhelm creatures in a @Template[type:burst|distance:10] in the well. The haunt can select up to three different points to target, spending 1 action per burst. Creatures in an affected take @Damage[4d6[force]] and must attempt a @Check[type:will|dc:25] save. The haunt loses 1 action for each successful check to disable the haunt.</p>\n<hr>\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the beginning of the haunt's next turn.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia. is off-guard until the beginning of the haunt's next turn, and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Manifest": {
                     "name": "Manifest",
@@ -2146,8 +2146,8 @@
         "Toppling Shelves": {
             "name": "Toppling Shelves",
             "description": "<p>This stone bookshelf is badly compromised. It's just one push away from toppling over.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22] (expert) or @Check[type:engineering-lore|dc:22]{Engineering Lore} (trained) to shore up the shelf</p>",
-            "stealth": "<p>(trained) to notice the shelf's precarious instability</p>",
+            "disable": "<p>@Check[type:thievery|dc:22] (eksperctwo) or @Check[type:engineering-lore|dc:22]{Engineering Lore} (wytrenowanie) to shore up the shelf</p>",
+            "stealth": "<p>(wytrenowanie) to notice the shelf's precarious instability</p>",
             "items": {
                 "action->Topple": {
                     "name": "Topple",
@@ -2220,9 +2220,9 @@
         "Valmar's Pit Trap": {
             "name": "Valmar's Pit Trap",
             "description": "<p>The ground here is made of loosely packed soil that, when stepped upon, collapses.</p>",
-            "disable": "<p>@Check[type:survival|dc:22] (trained) to reinforce the dirt so it's safe to walk on, or @Check[type:thievery|dc:18] (trained) to collapse the trap from a safe distance</p>",
+            "disable": "<p>@Check[type:survival|dc:22] (wytrenowanie) to reinforce the dirt so it's safe to walk on, or @Check[type:thievery|dc:18] (wytrenowanie) to collapse the trap from a safe distance</p>",
             "reset": "<p>Creatures can still fall into the pit, but the soil must be replaced for the trap to become hidden again.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
@@ -2286,7 +2286,7 @@
             "name": "Violet Mister",
             "description": "<p>Opening the door pulls a thread, which causes a plant mister to spray a cloud of poison into the triggering creature's face.</p>",
             "disable": "<p>@Check[type:thievery|dc:18] to safely cut the thread</p>",
-            "stealth": "<p>(trained) to notice the trap's trigger-thread attached to the door</p>",
+            "stealth": "<p>(wytrenowanie) to notice the trap's trigger-thread attached to the door</p>",
             "items": {
                 "action->Poisoned Welcome": {
                     "name": "Poisoned Welcome",

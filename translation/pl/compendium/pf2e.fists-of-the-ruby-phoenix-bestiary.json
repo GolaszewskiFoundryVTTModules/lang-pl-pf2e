@@ -129,9 +129,9 @@
         "Air Rift": {
             "name": "Air Rift",
             "description": "<p>A portal to the Plane of Air rips open onstage, causing roaring winds to tear through the opera house</p>",
-            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 34) to counteract the air rift</p>",
+            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (mistrzostwo) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendarność) to open enough windows and doors to reduce its intensity, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 34) to counteract the air rift</p>",
             "routine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a k6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take @Damage[(3d8+15)[bludgeoning]] damage on impact.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Porażka</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
-            "stealth": "<p>(master) to notice the sudden breeze in the theater</p>",
+            "stealth": "<p>(mistrzostwo) to notice the sudden breeze in the theater</p>",
             "items": {
                 "action->AC 40 vs. Reactions and Ranged Weapon Attacks": {
                     "name": "AC 40 vs. Reactions and Ranged Weapon Attacks"
@@ -863,10 +863,10 @@
         "Broken Rebus Attack": {
             "name": "Broken Rebus Attack",
             "description": "<p>Ghostly attackers knock the tables about, send dishes flying, and pull fleeing creatures into the room.</p>",
-            "disable": "<p>@Check[type:religion|dc:34|name:Say an Iroran prayer|traits:haunt] (expert) to say an Iroran prayer and put the haunt temporarily to rest, @Check[type:occultism|dc:38|name:Ward Against Future Hauntings|traits:haunt] (master) to create a ward against future hauntings.</p>",
+            "disable": "<p>@Check[type:religion|dc:34|name:Say an Iroran prayer|traits:haunt] (eksperctwo) to say an Iroran prayer and put the haunt temporarily to rest, @Check[type:occultism|dc:38|name:Ward Against Future Hauntings|traits:haunt] (mistrzostwo) to create a ward against future hauntings.</p>",
             "reset": "<p>The haunt deactivates after 1 minute. It re-forms at the same times every day, 7 a.m. and 7 p.m., which is when the monks had their morning and evening meals. If at least two people cook a meal in the kitchen, share a meal in the refectory, and utter a prayer to Irori before the meal, the haunt becomes permanently disabled and doesn't re-form.</p>",
             "routine": "<p>(1 action) The haunt sends a flurry of objects hurtling across the room. All creatures in the room are battered by the ghostly objects, taking @Damage[(3d10+14)[force]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Ghostly Pull": {
                     "name": "Ghostly Pull",
@@ -1076,10 +1076,10 @@
         "Collapsing Structure": {
             "name": "Collapsing Structure",
             "description": "<p>Mogaru brushes against a structure, severely compromising the building's stability and possibly causing it to collapse.</p>",
-            "disable": "<p>@Check[type:athletics|dc:43|name:Brace the Structure] (master), @Check[type:crafting|dc:43|name:Brace the Structure] (master), or @Check[type:engineering-lore|dc:43|name:Brace the Structure]{Engineering Lore} (master) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
+            "disable": "<p>@Check[type:athletics|dc:43|name:Brace the Structure] (mistrzostwo), @Check[type:crafting|dc:43|name:Brace the Structure] (mistrzostwo), or @Check[type:engineering-lore|dc:43|name:Brace the Structure]{Engineering Lore} (mistrzostwo) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
             "reset": "<p>The building becomes susceptible to Shake Apart again [[/r 1d6]]{1k6 rounds} after it is stabilized.</p>",
             "routine": "<p>(1 action) The GM rolls a @Check[type:flat|dc:9] to determine if the building collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing @Damage[6d6[bludgeoning]] damage to @Damage[12d6[bludgeoning]] damage to [[/r 2d4]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true] save; on a critically failed Reflex save, the creature is restrained by rubble until freed [Force Open DC 38, Escape DC 35]).</p>",
-            "stealth": "<p>+20 (master) to notice cracks forming in the walls of the structure as Mogaru approaches</p>",
+            "stealth": "<p>+20 (mistrzostwo) to notice cracks forming in the walls of the structure as Mogaru approaches</p>",
             "items": {
                 "action->Shake Apart": {
                     "name": "Shake Apart",
@@ -1168,11 +1168,11 @@
         "Dimensional Darkside Mirror": {
             "name": "Dimensional Darkside Mirror",
             "description": "<p>A magic mirror replaces characters with evil mirror duplicates from another dimension.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (master) to permanently disable the mirror once all mirror duplicates are dead, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendarność) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (mistrzostwo) to permanently disable the mirror once all mirror duplicates are dead, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
             "hpDetails": "The mirror can't be damaged while any mirror duplicate is alive",
             "reset": "<p>The mirror is always ready to absorb creatures into the other dimension. Ten minutes after a creature is sucked into the mirror, if an ally doesn't rescue the creature with Thievery, it reaches the other dimension, where it might be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can't destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like plane shift can't reach them.</p>",
             "routine": "<p>(1 action) The mirror absorbs another reflected creature into the mirror and replaces it with a mirror duplicate. Mirror duplicates attack on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change). A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to.</p>",
-            "stealth": "<p>(master) to notice it isn't a regular mirror</p>",
+            "stealth": "<p>(mistrzostwo) to notice it isn't a regular mirror</p>",
             "items": {
                 "action->Reflection of Evil": {
                     "name": "Reflection of Evil",
@@ -1315,9 +1315,9 @@
         "Floating Flamethrower": {
             "name": "Floating Flamethrower",
             "description": "<p>A floating skull of fire swoops around the arena, rotating as it weaves through the ring and releasing huge gouts of flame in random directions.</p>",
-            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
+            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendarność) checks or castings of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
             "routine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals @Damage[(4d6+4)[fire]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>",
-            "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the pattern of the orb's trajectory</p>",
+            "stealth": "<p>+23 (eksperctwo) or @Check[type:perception|dc:38|traits:action:seek] (mistrzostwo) to notice the pattern of the orb's trajectory</p>",
             "items": {
                 "action->Blaze": {
                     "name": "Blaze",
@@ -1372,9 +1372,9 @@
         "Freezing Floor Tiles": {
             "name": "Freezing Floor Tiles",
             "description": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 38) to disable one of the sensors</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendarność) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 38) to disable one of the sensors</p>",
             "routine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
-            "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the four sensors</p>",
+            "stealth": "<p>+23 (eksperctwo) or @Check[type:perception|dc:38|traits:action:seek] (mistrzostwo) to notice the four sensors</p>",
             "items": {
                 "action->Frigid Floor": {
                     "name": "Frigid Floor",
@@ -3194,7 +3194,7 @@
         "Mogaru's Breath": {
             "name": "Mogaru's Breath",
             "description": "<p>Mogaru exhales a blast of intense flames to eradicate any meddlesome pests in the area.</p>",
-            "disable": "<p>@Check[type:performance|dc:50|name:Divert Mogaru's Attention] (legendary) or @Check[type:deception|dc:53|name:Divert Mogaru's Attention] (legendary) to momentarily divert Mogaru's attention</p>",
+            "disable": "<p>@Check[type:performance|dc:50|name:Divert Mogaru's Attention] (legendarność) or @Check[type:deception|dc:53|name:Divert Mogaru's Attention] (legendarność) to momentarily divert Mogaru's attention</p>",
             "reset": "<p>Mogaru must wait [[/br 1d4 #rounds]]{1k4 rounds} before letting loose another gout of fire.</p>",
             "stealth": "<p>DC 10</p>",
             "items": {
@@ -3502,7 +3502,7 @@
         "Quaking Footfall": {
             "name": "Quaking Footfall",
             "description": "<p>Mogaru's steady footsteps pick up speed, causing the earth around him to tremble as though from a powerful earthquake.</p>",
-            "disable": "<p>three @Check[type:athletics|dc:39|name:Brace a Small Structure or Surface] (trained), @Check[type:crafting|dc:39|name:Brace a Small Structure or Surface] (trained), or @Check[type:engineering|dc:39|name:Brace a Small Structure or Surface]{Engineering Lore} (trained) checks to brace a small structure or surface to cancel the effects of the quake in that area; @Check[type:performance|dc:41|name:Calm Mogaru] (legendary) to calm Mogaru momentarily</p>",
+            "disable": "<p>three @Check[type:athletics|dc:39|name:Brace a Small Structure or Surface] (wytrenowanie), @Check[type:crafting|dc:39|name:Brace a Small Structure or Surface] (wytrenowanie), or @Check[type:engineering|dc:39|name:Brace a Small Structure or Surface]{Engineering Lore} (wytrenowanie) checks to brace a small structure or surface to cancel the effects of the quake in that area; @Check[type:performance|dc:41|name:Calm Mogaru] (legendarność) to calm Mogaru momentarily</p>",
             "reset": "<p>Mogaru doesn't rush this way again for [[/br 1d4 #rounds]]{1k4 rounds}.</p>",
             "stealth": "<p>DC 10</p>",
             "items": {
@@ -3952,10 +3952,10 @@
         "Sand Whirlwind": {
             "name": "Sand Whirlwind",
             "description": "<p>Buffeting winds swirl sharp grains of sand about the room.</p>",
-            "disable": "<p>@Check[type:religon|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (expert) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[type:occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (master) to create a ward against future hauntings</p>",
+            "disable": "<p>@Check[type:religon|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (eksperctwo) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[type:occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (mistrzostwo) to create a ward against future hauntings</p>",
             "reset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[type:crafting|dc:30|name:Create Image in Sand] or @Check[type:thievery|dc:30|name:Create Image in Sand]check.</p>",
             "routine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing@Damage[(6d10+30)[bludgeoning]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Sand Vacuum": {
                     "name": "Sand Vacuum",
@@ -4478,7 +4478,7 @@
         "Swatting Tail": {
             "name": "Swatting Tail",
             "description": "<p>Mogaru's tail sweeps forth, causing an arc of devastation in a @Template[type:cone|distance:60].</p>",
-            "disable": "<p>@Check[type:performance|dc:45|name:Divert Mogaru's Attention] (legendary) or @Check[type:deception|dc:48|name:Divert Mogaru's Attention] (legendary) to momentarily divert Mogaru's attention</p>",
+            "disable": "<p>@Check[type:performance|dc:45|name:Divert Mogaru's Attention] (legendarność) or @Check[type:deception|dc:48|name:Divert Mogaru's Attention] (legendarność) to momentarily divert Mogaru's attention</p>",
             "reset": "<p>Mogaru doesn't swat his tail again for [[/br 1d4 #rounds]]{1k4 rounds}.</p>",
             "stealth": "<p>DC 10</p>",
             "items": {
@@ -5377,9 +5377,9 @@
         "Wronged Monk's Wrath": {
             "name": "Wronged Monk's Wrath",
             "description": "<p>A monk's tormented spirit attacks intruders.</p>",
-            "disable": "<p>@Check[type:irori-lore|dc:32|name:Restore the Prayer Items|traits:haunt]{Irori Lore} (trained) to clean the room and return the prayer items to their proper arrangement, @Check[type:religion|dc:37|name:Iroran Prayer of Peace] (expert) to state an Iroran prayer of peace and put the haunt to rest, or @Check[type:occultism|dc:40|name:Create a Ward Against Future Hauntings] (master) to create a ward against future hauntings</p>",
+            "disable": "<p>@Check[type:irori-lore|dc:32|name:Restore the Prayer Items|traits:haunt]{Irori Lore} (wytrenowanie) to clean the room and return the prayer items to their proper arrangement, @Check[type:religion|dc:37|name:Iroran Prayer of Peace] (eksperctwo) to state an Iroran prayer of peace and put the haunt to rest, or @Check[type:occultism|dc:40|name:Create a Ward Against Future Hauntings] (mistrzostwo) to create a ward against future hauntings</p>",
             "reset": "<p>The haunt re-forms after 1 hour. The haunt becomes disabled and doesn't re-form if a creature lights all of the candles in the room and offers a prayer to Irori.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Ki Storm": {
                     "name": "Ki Storm",

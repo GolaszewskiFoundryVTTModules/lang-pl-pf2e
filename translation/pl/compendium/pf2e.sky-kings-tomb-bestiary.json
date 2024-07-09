@@ -174,10 +174,10 @@
         "Angry Dead": {
             "name": "Angry Dead",
             "description": "<p>The faces of the original dwarven inhabitants of the city appear in the stone and scream in anger.</p>",
-            "disable": "<p>@Check[type:religion|dc:23] (trained) to ritually pray for the dead or @Check[type:occultism|dc:25] (trained) to exorcise the spirits' anger; a dwarf succeeds at a @Check[type:diplomacy|dc:22] or Intimidate check, asking or ordering the spirits to stand down.</p>",
+            "disable": "<p>@Check[type:religion|dc:23] (wytrenowanie) to ritually pray for the dead or @Check[type:occultism|dc:25] (wytrenowanie) to exorcise the spirits' anger; a dwarf succeeds at a @Check[type:diplomacy|dc:22] or Intimidate check, asking or ordering the spirits to stand down.</p>",
             "reset": "<p>The haunt deactivates 1 round after all living creatures leave the area. After 1 hour, the haunt reactivates. If the haunt is disabled by a dwarf succeeding at a Diplomacy or Intimidate check, the haunt is destroyed.</p>",
             "routine": "<p>(1 action) The faces continue to scream, dealing @Damage[5d6[sonic]] damage (@Check[type:reflex|dc:26|basic:true] save) to all living creatures within 20 feet of the steps. On a critical failure, a creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. Deaf creatures are immune to this effect.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Howl of Agony": {
                     "name": "Howl of Agony",
@@ -267,9 +267,9 @@
         "Avernal Flashback": {
             "name": "Avernal Flashback",
             "description": "<p>A phantasmal crimson worm appears to rampage outside the workshop, afflicting the area with phantom tremors, blistering heat, and cave-ins.</p>",
-            "disable": "<p>@Check[type:athletics|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22]; it takes three successful checks to weaken the haunt or erect supports that brace the ceiling. A PC who speaks Dwarven can attempt @Check[type:diplomacy|dc:22] (trained) checks to calm the phantasmal cave worm.</p>",
+            "disable": "<p>@Check[type:athletics|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22]; it takes three successful checks to weaken the haunt or erect supports that brace the ceiling. A PC who speaks Dwarven can attempt @Check[type:diplomacy|dc:22] (wytrenowanie) checks to calm the phantasmal cave worm.</p>",
             "routine": "<p>(2 actions) Zogototaru uses 1 action to create a Tremor. With her other action, she either Exudes Heat or makes Rocks Fall, alternating between the two each round.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Exude Heat": {
                     "name": "Exude Heat",
@@ -288,9 +288,9 @@
         "Bestial Transformation": {
             "name": "Bestial Transformation",
             "description": "<p>Enchanted carvings of animals transform any creatures who damage the door into the animal they harmed.</p>",
-            "disable": "<p>@Check[type:nature|dc:26] (expert) to handle the animal carvings or @Check[type:thievery|dc:33] (master) to scratch out the animal carvings or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the spell</p>",
+            "disable": "<p>@Check[type:nature|dc:26] (eksperctwo) to handle the animal carvings or @Check[type:thievery|dc:33] (mistrzostwo) to scratch out the animal carvings or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the spell</p>",
             "reset": "<p>automatic</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Animal Form": {
                     "name": "Animal Form",
@@ -374,7 +374,7 @@
         "Buried Shock Glyph": {
             "name": "Buried Shock Glyph",
             "description": "<p>A magical glyph unleashes a blast of electricity when handled.</p>",
-            "disable": "<p>@Check[type:athletics|dc:20] (trained) to hurl the stone a safe distance before it activates, or @Check[type:thievery|dc:21] to delicately move the stone without triggering the glyph.</p>",
+            "disable": "<p>@Check[type:athletics|dc:20] (wytrenowanie) to hurl the stone a safe distance before it activates, or @Check[type:thievery|dc:21] to delicately move the stone without triggering the glyph.</p>",
             "hpDetails": "BT 16",
             "items": {
                 "action->Electrocution": {
@@ -436,9 +436,9 @@
         "Caustic Gas Trap": {
             "name": "Caustic Gas Trap",
             "description": "<p>Pressure plates in the hall trigger the release of caustic gas.</p>",
-            "disable": "<p>@Check[type:crafting|dc:28] (master) to neutralize the acid or @Check[type:thievery|dc:30] (master) to disable the pressure plates</p>",
+            "disable": "<p>@Check[type:crafting|dc:28] (mistrzostwo) to neutralize the acid or @Check[type:thievery|dc:30] (mistrzostwo) to disable the pressure plates</p>",
             "reset": "<p>A 10-minute Interact activity and a new supply of caustic gas.</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
@@ -449,8 +449,8 @@
         "Cave-In": {
             "name": "Cave-In",
             "description": "<p>The rubble shifts and the cavern ceiling collapses.</p>",
-            "disable": "<p>@Check[type:crafting|dc:28] (expert) or @Check[type:survival|dc:31] (trained) to prop up the cavern ceiling without triggering a collapse.</p>",
-            "stealth": "<p>(trained)</p>",
+            "disable": "<p>@Check[type:crafting|dc:28] (eksperctwo) or @Check[type:survival|dc:31] (wytrenowanie) to prop up the cavern ceiling without triggering a collapse.</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
@@ -461,7 +461,7 @@
         "Coal Residue": {
             "name": "Coal Residue",
             "description": "<p>Combustible material can ignite and burn ferociously.</p>",
-            "disable": "<p>@Check[type:mining-lore|dc:15] (trained) to spread inert material over the area or @Check[type:survival|dc:18] to pry up enough of the material to prevent a chain reaction.</p>",
+            "disable": "<p>@Check[type:mining-lore|dc:15] (wytrenowanie) to spread inert material over the area or @Check[type:survival|dc:18] to pry up enough of the material to prevent a chain reaction.</p>",
             "items": {
                 "action->Ignite": {
                     "name": "Ignite",
@@ -555,7 +555,7 @@
         "Dart Launcher": {
             "name": "Dart Launcher",
             "description": "<p>A series of hidden launch tubes fire toxic darts at a 5-foot square.</p>",
-            "disable": "<p>@Check[type:thievery|dc:16] (trained)</p>",
+            "disable": "<p>@Check[type:thievery|dc:16] (wytrenowanie)</p>",
             "hpDetails": "BT 12",
             "items": {
                 "action->Dart Volley": {
@@ -598,9 +598,9 @@
         "Electrified Hall": {
             "name": "Electrified Hall",
             "description": "<p>Runes hidden in the door's carvings blast lightning down the hall.</p>",
-            "disable": "<p>@Check[type:thievery|dc:30] (master) to scratch out the runes, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the runes</p>",
+            "disable": "<p>@Check[type:thievery|dc:30] (mistrzostwo) to scratch out the runes, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the runes</p>",
             "reset": "<p>automatic</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Synaptic Jolt": {
                     "name": "Synaptic Jolt",
@@ -639,7 +639,7 @@
         "Enraged Polar Bear Spirit": {
             "name": "Enraged Polar Bear Spirit",
             "description": "<p>The ghostly spirit of a polar bear stands on its hind legs and roars.</p>",
-            "disable": "<p>@Check[type:nature|dc:26] (expert) to calm the spirit, @Check[type:intimidate|dc:30] (master) to cow the spirit, or @Check[type:religion|dc:30] (expert) to contain the spiritual corruption (each successful check reduces its number of actions by 1)</p>",
+            "disable": "<p>@Check[type:nature|dc:26] (eksperctwo) to calm the spirit, @Check[type:intimidate|dc:30] (mistrzostwo) to cow the spirit, or @Check[type:religion|dc:30] (eksperctwo) to contain the spiritual corruption (each successful check reduces its number of actions by 1)</p>",
             "reset": "<p>The bear spirit calms after no creatures are in the room for 1 minute but is ready to lash out again after 10 minutes.</p>",
             "routine": "<p>(3 actions) The bear moves around the room at an alarming speed, seemingly teleporting, and Strikes a random creature with its spiritual claws.</p>",
             "items": {
@@ -705,8 +705,8 @@
         "Explosive Entrance": {
             "name": "Explosive Entrance",
             "description": "<p>An alchemical bombs explodes when the rubble is shifted, filling the hall with flame.</p>",
-            "disable": "<p>@Check[type:crafting|dc:30] (master) to nullify the bomb's alchemical components or @Check[type:thievery|dc:28] (master) to disable the bomb</p>",
-            "stealth": "<p>(master)</p>",
+            "disable": "<p>@Check[type:crafting|dc:30] (mistrzostwo) to nullify the bomb's alchemical components or @Check[type:thievery|dc:28] (mistrzostwo) to disable the bomb</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
@@ -1587,16 +1587,16 @@
         "Inexorable Door": {
             "name": "Inexorable Door",
             "description": "<p>A recessed mechanism slowly pushes two iron doors closed, holding them in pace for 24 hours.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21] (expert)</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (eksperctwo)</p>",
             "hpDetails": "BT 27"
         },
         "Invertebrate Infiltrator Trap": {
             "name": "Invertebrate Infiltrator Trap",
             "description": "<p>Variant confounding betrayal</p>\n<p>Allies appear to shed their skin, transforming into either giant worm monsters or masses of wriggling worms.</p>",
-            "disable": "<p>@Check[type:thievery|dc:28] (expert) twice to suppress the trap's trigger, or @Check[type:occultism|dc:28] (expert) to create a ward against the trap's mental effects.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28] (eksperctwo) twice to suppress the trap's trigger, or @Check[type:occultism|dc:28] (eksperctwo) to create a ward against the trap's mental effects.</p>",
             "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
             "routine": "<p>(1 action, illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a @Check[type:will|dc:26].</p>\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The creature is unaffected.</p>\n<p><strong>Porażka</strong> The creature is confused for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is confused for 1 minute.</p>",
-            "stealth": "<p>(expert)</p>",
+            "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Unmask": {
                     "name": "Unmask",
@@ -2089,10 +2089,10 @@
         "Mist Projector Trap": {
             "name": "Mist Projector Trap",
             "description": "<p>Hidden jets expel gas that quickly freezes, causing limited damage to nearby books.</p>",
-            "disable": "<p>@Check[type:thievery|dc:27] (expert) to deactivate the trap without its control key or @Check[type:crafting|dc:26] to create and apply a chemical that neutralizes the gas.</p>",
+            "disable": "<p>@Check[type:thievery|dc:27] (eksperctwo) to deactivate the trap without its control key or @Check[type:crafting|dc:26] to create and apply a chemical that neutralizes the gas.</p>",
             "hpDetails": " (BT 30)",
             "reset": "<p><span class=\"fontstyle0\">8 hours</span> </p>",
-            "stealth": "<p><span class=\"fontstyle0\">(expert)</span> </p>",
+            "stealth": "<p><span class=\"fontstyle0\">(eksperctwo)</span> </p>",
             "items": {
                 "action->Icy Mist": {
                     "name": "Icy Mist",
@@ -2232,7 +2232,7 @@
             "description": "<p>Funerary inscriptions flicker and display different messages, causing ghostly ancestors to briefly appear and complain that their descendants have forgotten them.</p>",
             "disable": "<p>three @Check[type:diplomacy|dc:20], @Check[type:occultism|dc:20], or @Check[type:religion|dc:20] checks to rebuke the cantankerous spirits</p>",
             "routine": "<p>(2 actions) Ancestral spirits appear throughout areas <strong>D1</strong> and <strong>D2</strong>, each fading after several rounds to be replaced by a different spirit.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Growing Grumbles": {
                     "name": "Growing Grumbles",
@@ -2247,9 +2247,9 @@
         "Ornery Augdunars": {
             "name": "Ornery Augdunars",
             "description": "<p>Spooked augdunars gallop wildly about the paddock, biting and kicking as they run.</p>",
-            "disable": "<p>Succeed at four of the following checks in any combination: @Check[type:nature|dc:14] (trained) to calm the animals, @Check[type:intimidation|dc:16] (untrained) to scare the augdunars away, @Check[type:will|dc:18] (trained) to avoid flinching and project confidence, causing the augdunars to veer away. For each success, the hazard takes a cumulative –1 penalty to attack rolls.</p>",
+            "disable": "<p>Succeed at four of the following checks in any combination: @Check[type:nature|dc:14] (wytrenowanie) to calm the animals, @Check[type:intimidation|dc:16] (untrained) to scare the augdunars away, @Check[type:will|dc:18] (wytrenowanie) to avoid flinching and project confidence, causing the augdunars to veer away. For each success, the hazard takes a cumulative –1 penalty to attack rolls.</p>",
             "routine": "<p>(2 actions) The augdunars use an action to Strike one target with their jaws, and they use another action to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a different target (Athletics [[/r 1d20+9 #Athletics]]{+9}). If the augdunars have taken damage since their last turn, they instead use Lashing Hooves with their first action and then make either a jaws Strike or Trip attempt with their second action.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Rile": {
                     "name": "Rile",
@@ -2338,9 +2338,9 @@
         "Repelling Surge": {
             "name": "Repelling Surge",
             "description": "<p>A shockwave of energy surges out from the room's center.</p>",
-            "disable": "<p>@Check[type:arcana|dc:29] (expert) to fool the wards, DC 31 Thievery (master) to disable the wards, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the wards</p>",
+            "disable": "<p>@Check[type:arcana|dc:29] (eksperctwo) to fool the wards, DC 31 Thievery (mistrzostwo) to disable the wards, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the wards</p>",
             "reset": "<p>Automatic</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Repel": {
                     "name": "Repel",
@@ -2354,7 +2354,7 @@
             "disable": "<p>@Check[type:thievery|dc:25] check to create a wedge to immobilize the column, @Check[type:athletics|dc:21] check to immobilize the column until the end of the creature's next turn, a creature can Climb over an @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} column with a successful @Check[type:athletics|dc:18] check.</p>",
             "hpDetails": " (BT 29)",
             "routine": "<p>(1 action) The rolling stone cylinder trap uses Crushing Roll.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Drop and Roll": {
                     "name": "Drop and Roll",
@@ -2419,9 +2419,9 @@
                 "spell->Create Mycoguardian": {
                     "name": "Create Mycoguardian",
                     "cost": "parasitic fungal spores, see Table 7-1",
-                    "description": "<p>To create a mycoguardian, such as a sporeborn, a ritualist can perform a ritual similar to create undead (Pathfinder Core Rulebook 411) called create mycoguardian, but providing valuable parasitic fungal spores instead of black onyx. This ritual uses Fungus Lore (trained) or Nature (expert) for both the Primary Check and Secondary Checks, and lacks the Evil trait.</p>\n<hr />\n<p>You transform the target into an undead creature with a level up to that allowed in Table 7-1. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of <em>create undead</em>.</p>\n<h2>Table 7-1: Creatures Creation Rituals</h2>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Creature Level</th>\n<th>Spell Rank Required</th>\n<th>Koszt</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1 or 0</td>\n<td>2</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2</td>\n<td>60 gp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>105 gp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>180 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>300 gp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n<td>480 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>750 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>1,080 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>6</td>\n<td>1,500 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6</td>\n<td>2,100 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7</td>\n<td>3,000 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>7</td>\n<td>4,200 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>8</td>\n<td>6,000 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>8</td>\n<td>9,000 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>9</td>\n<td>13,500 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>9</td>\n<td>19,500 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>10</td>\n<td>30,000 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>10</td>\n<td>45,000 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Krytyczny Sukces</strong> The target becomes an undead creature of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.</p>\n<p><strong>Sukces</strong> As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.</p>\n<p><strong>Porażka</strong> You fail to create the undead.</p>\n<p><strong>Krytyczna Porażka</strong> You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.</p>",
-                    "primarycheck": "Fungus Lore (trained), Nature (expert)",
-                    "secondarycheck": "Fungus Lore (trained), Nature (expert)",
+                    "description": "<p>To create a mycoguardian, such as a sporeborn, a ritualist can perform a ritual similar to create undead (Pathfinder Core Rulebook 411) called create mycoguardian, but providing valuable parasitic fungal spores instead of black onyx. This ritual uses Fungus Lore (wytrenowanie) or Nature (eksperctwo) for both the Primary Check and Secondary Checks, and lacks the Evil trait.</p>\n<hr />\n<p>You transform the target into an undead creature with a level up to that allowed in Table 7-1. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of <em>create undead</em>.</p>\n<h2>Table 7-1: Creatures Creation Rituals</h2>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Creature Level</th>\n<th>Spell Rank Required</th>\n<th>Koszt</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1 or 0</td>\n<td>2</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2</td>\n<td>60 gp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>105 gp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>180 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>300 gp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n<td>480 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>750 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>1,080 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>6</td>\n<td>1,500 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6</td>\n<td>2,100 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7</td>\n<td>3,000 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>7</td>\n<td>4,200 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>8</td>\n<td>6,000 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>8</td>\n<td>9,000 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>9</td>\n<td>13,500 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>9</td>\n<td>19,500 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>10</td>\n<td>30,000 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>10</td>\n<td>45,000 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Krytyczny Sukces</strong> The target becomes an undead creature of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.</p>\n<p><strong>Sukces</strong> As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.</p>\n<p><strong>Porażka</strong> You fail to create the undead.</p>\n<p><strong>Krytyczna Porażka</strong> You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.</p>",
+                    "primarycheck": "Fungus Lore (wytrenowanie), Nature (eksperctwo)",
+                    "secondarycheck": "Fungus Lore (wytrenowanie), Nature (eksperctwo)",
                     "target": "1 dead creature"
                 },
                 "spell->Dancing Lights": {
@@ -2779,9 +2779,9 @@
         "Spitter Pods": {
             "name": "Spitter Pods",
             "description": "<p>Specialized spore pods burst open, expel toxic globules, and recharge from alchemical reservoirs.</p>",
-            "disable": "<p>@Check[type:crafting|dc:18] to add disruptive chemicals to the fungus's reservoir, @Check[type:nature|dc:18] (trained) to recognize how to constrict the chemicals' flow, or @Check[type:deception|dc:20] (trained) to spread spores that befuddle the fungus; three total successes are required to disable the trap.</p>",
+            "disable": "<p>@Check[type:crafting|dc:18] to add disruptive chemicals to the fungus's reservoir, @Check[type:nature|dc:18] (wytrenowanie) to recognize how to constrict the chemicals' flow, or @Check[type:deception|dc:20] (wytrenowanie) to spread spores that befuddle the fungus; three total successes are required to disable the trap.</p>",
             "routine": "<p>(3 actions) The spitter pods alternate between making Strikes and Reloading. The pods lose 1 action for each successful check to disable the trap.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Unfurl": {
                     "name": "Unfurl",
@@ -2794,7 +2794,7 @@
         },
         "Sporeborn Myceloid": {
             "name": "Sporeborn Myceloid",
-            "publicNotes": "<p>While most sporeborn are created from the flesh of vertebrates or creatures with exoskeletons, fungal and plant creatures serve as a fine host for a sporeborn's parasitic spores. In these cases, the sporeborn mycelial network burrows through the corpse, replacing the original hyphae in fungal creatures and the xylem and pith in plants. This allows the sporeborn to puppet the creature, much as it does in mammals by replacing the tendons with its own rugged mycelium. Fungus and plant hosts are more likely to develop the potent poison sporeborn ability to enhance the hosts' natural abilities.</p>\n<hr />\n<p>When a mindless guardian is needed, but the ethical bounds of creating undead are too uncouth, ritual casters may turn to a more fungal solution by creating a mycoguardian. Using valuable parasitic fungal spores, a ritualist may seed the corpse of a creature and encourage them to grow, sending mycelium tendrils throughout the body. The tendrils bond to mobile tissue such as bones, while replacing tendons with reinforced mycelium. This ritual magically replicates the yellow musk creepers' ability to spread throughout a dead organism then mobilize its body. But rather than a completely mindless fungal carrier, the ritualist has some control over the infested creature's behavior.</p>\n<p>The magic of the ritual includes basic instructions and rules that guide the new fungal mycoguardian (in this case, a sporeborn). Simple instructions like \"guard this room\" or \"slay all of the tiny creatures in this basement\" should work well enough, but complex commands such as \"deliver this letter to the Harbormaster of Caliphas\" are doomed to failure.</p>\n<h2>Fungel Ristualists</h2>\n<p>While mycoguardians are rare, several different types of primal spellcasters might create a mycoguardian. Druids might turn the bodies of a poacher's victim against the poacher, seeking to avenge the wrongful death and rebalance the scales of life. Leshy spellcasters create mycoguardians to protect their hidden communities and sacred groves. The fey of Northern Fangwood transform fallen or rotted trees into crustoreal mycoguardians, massive arboreal-looking creatures covered in parasitic lichen. These lumbering sentinels patrol their borders, crushing all non-fey who dare approach. There are rumors of crustoreals being imbued with void energy from the Gravelands and going berserk.</p>\n<h2>Creating Mycoguardians</h2>\n<p>To create a mycoguardian, such as a sporeborn, a ritualist can perform a ritual similar to create undead (Pathfinder Core Rulebook 411) called create mycoguardian, but providing valuable parasitic fungal spores instead of black onyx. This ritual uses Fungus Lore (trained) or Nature (expert) for both the Primary Check and Secondary Checks, and lacks the Evil trait.</p>\n<h2>Different Mycoguardians</h2>\n<p>In addition to the sporeborn presented here, there are many versions of the create mycoguardian ritual for making mycoguardians other than sporeborn, such as for aquatic chytridions and so on. Some forms of mycoguardians, such as mycelial mindbores, come to be using their own unique methods and can't be created with a version of create mycoguardian.</p>",
+            "publicNotes": "<p>While most sporeborn are created from the flesh of vertebrates or creatures with exoskeletons, fungal and plant creatures serve as a fine host for a sporeborn's parasitic spores. In these cases, the sporeborn mycelial network burrows through the corpse, replacing the original hyphae in fungal creatures and the xylem and pith in plants. This allows the sporeborn to puppet the creature, much as it does in mammals by replacing the tendons with its own rugged mycelium. Fungus and plant hosts are more likely to develop the potent poison sporeborn ability to enhance the hosts' natural abilities.</p>\n<hr />\n<p>When a mindless guardian is needed, but the ethical bounds of creating undead are too uncouth, ritual casters may turn to a more fungal solution by creating a mycoguardian. Using valuable parasitic fungal spores, a ritualist may seed the corpse of a creature and encourage them to grow, sending mycelium tendrils throughout the body. The tendrils bond to mobile tissue such as bones, while replacing tendons with reinforced mycelium. This ritual magically replicates the yellow musk creepers' ability to spread throughout a dead organism then mobilize its body. But rather than a completely mindless fungal carrier, the ritualist has some control over the infested creature's behavior.</p>\n<p>The magic of the ritual includes basic instructions and rules that guide the new fungal mycoguardian (in this case, a sporeborn). Simple instructions like \"guard this room\" or \"slay all of the tiny creatures in this basement\" should work well enough, but complex commands such as \"deliver this letter to the Harbormaster of Caliphas\" are doomed to failure.</p>\n<h2>Fungel Ristualists</h2>\n<p>While mycoguardians are rare, several different types of primal spellcasters might create a mycoguardian. Druids might turn the bodies of a poacher's victim against the poacher, seeking to avenge the wrongful death and rebalance the scales of life. Leshy spellcasters create mycoguardians to protect their hidden communities and sacred groves. The fey of Northern Fangwood transform fallen or rotted trees into crustoreal mycoguardians, massive arboreal-looking creatures covered in parasitic lichen. These lumbering sentinels patrol their borders, crushing all non-fey who dare approach. There are rumors of crustoreals being imbued with void energy from the Gravelands and going berserk.</p>\n<h2>Creating Mycoguardians</h2>\n<p>To create a mycoguardian, such as a sporeborn, a ritualist can perform a ritual similar to create undead (Pathfinder Core Rulebook 411) called create mycoguardian, but providing valuable parasitic fungal spores instead of black onyx. This ritual uses Fungus Lore (wytrenowanie) or Nature (eksperctwo) for both the Primary Check and Secondary Checks, and lacks the Evil trait.</p>\n<h2>Different Mycoguardians</h2>\n<p>In addition to the sporeborn presented here, there are many versions of the create mycoguardian ritual for making mycoguardians other than sporeborn, such as for aquatic chytridions and so on. Some forms of mycoguardians, such as mycelial mindbores, come to be using their own unique methods and can't be created with a version of create mycoguardian.</p>",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -3145,9 +3145,9 @@
         "Unbreakable Sorrow": {
             "name": "Unbreakable Sorrow",
             "description": "<p>The PCs hear the sound of sobbing and feel an overwhelming sense of sorrow, as if they'd lost something more precious to them than their own life.</p>",
-            "disable": "<p>@Check[type:deception|dc:32] or @Check[type:performance|dc:32] (master) to laugh away the sadness, @Check[type:occultism|dc:31] (expert) to banish the psychic imprint, @Check[type:thievery|dc:33] (master) to disperse the emotional energy</p>",
+            "disable": "<p>@Check[type:deception|dc:32] or @Check[type:performance|dc:32] (mistrzostwo) to laugh away the sadness, @Check[type:occultism|dc:31] (eksperctwo) to banish the psychic imprint, @Check[type:thievery|dc:33] (mistrzostwo) to disperse the emotional energy</p>",
             "reset": "<p>The trap resets automatically after 24 hours.</p>",
-            "stealth": "<p>(master)</p>",
+            "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Mourn": {
                     "name": "Mourn",
@@ -3315,7 +3315,7 @@
         "Zogototaru": {
             "name": "Zogototaru",
             "description": "<p>Narseigus's worm-calling enchantments have attained imperfect control over Zogototaru, compelling her to aid him. She follows his directions loosely and with little finesse.</p>",
-            "disable": "<p>Disable @Check[type:arcana|dc:28] or @Check[type:occultism|dc:28] (trained) to identify a loophole in mind-controlling magic, @Check[type:diplomacy|dc:30] to reason with Zogototaru, or @Check[type:deception|dc:31] or @Check[type:performance|dc:31] to speak as if the PC were Taargick</p>",
+            "disable": "<p>Disable @Check[type:arcana|dc:28] or @Check[type:occultism|dc:28] (wytrenowanie) to identify a loophole in mind-controlling magic, @Check[type:diplomacy|dc:30] to reason with Zogototaru, or @Check[type:deception|dc:31] or @Check[type:performance|dc:31] to speak as if the PC were Taargick</p>",
             "routine": "<p>(1 action) Zogototaru acts on Narseigus's most recent command, either Rescuing, Roaring, or Thrashing.</p>",
             "stealth": "<p><strong>Perception</strong> +15</p>",
             "items": {

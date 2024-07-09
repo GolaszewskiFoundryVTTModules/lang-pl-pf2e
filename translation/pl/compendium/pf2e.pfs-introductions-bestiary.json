@@ -4,9 +4,9 @@
         "Ancient Summoning Rune": {
             "name": "Ancient Summoning Rune",
             "description": "<p>A cloud of invisible magical sensors in a 10-foot radius surrounds the central column of the room.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:15|name:Approach the Rune|traits:magical,trap] to approach without triggering the trap followed by @Check[type:thievery|dc:17|name:Erase the Rune|traits:action:disable-a-device,magical,trap] (trained) to erase the rune, or @Check[type:athletics|dc:19|name:Remove Stones|traits:magical,trap] to remove enough stones from the pillar to disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 15) to counteract the rune.</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:15|name:Approach the Rune|traits:magical,trap] to approach without triggering the trap followed by @Check[type:thievery|dc:17|name:Erase the Rune|traits:action:disable-a-device,magical,trap] (wytrenowanie) to erase the rune, or @Check[type:athletics|dc:19|name:Remove Stones|traits:magical,trap] to remove enough stones from the pillar to disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 15) to counteract the rune.</p>",
             "reset": "<p>The trap resets each day at dawn.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Summon Weak Monster": {
                     "name": "Przywołanie Weak Monster",
@@ -17,10 +17,10 @@
         "Befuddled Thoughts": {
             "name": "Befuddled Thoughts",
             "description": "<p>The fanged skull rune begins speaking in sweet, honeyed tones about eternal life.</p>",
-            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirit|traits:complex,haunt] (trained) to exorcise the spirit, @Check[type:religion|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] or @Check[type:occultism|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] (trained) to sever the connection between <em>Hunger's Call</em> and the temple, or @Check[type:athletics|dc:21|name:Crack the Wall|traits:complex,haunt] to crack the wall in several places; three total successes are required to disable the haunt.</p>",
+            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirit|traits:complex,haunt] (wytrenowanie) to exorcise the spirit, @Check[type:religion|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] or @Check[type:occultism|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] (wytrenowanie) to sever the connection between <em>Hunger's Call</em> and the temple, or @Check[type:athletics|dc:21|name:Crack the Wall|traits:complex,haunt] to crack the wall in several places; three total successes are required to disable the haunt.</p>",
             "reset": "<p>The mosaic ceases its routine 2 rounds after all living creatures are out of sight of the stairs. After 6 hours the haunt is ready to trigger again.</p>",
             "routine": "<p>(3 actions) A pulsing red ball of energy flies from the wall and explodes in negative energy in the room. Anyone in the room takes @Damage[(1d10+4)[void]] damage (@Check[type:reflex|dc:20|basic:true|name:Avoid the Energy|traits:complex,haunt,void] save).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Hunger's Possession": {
                     "name": "Hunger's Possession",
@@ -31,10 +31,10 @@
         "Blood Hunger": {
             "name": "Blood Hunger",
             "description": "<p>Blood flows from the fanged skull rune as if it were an open wound.</p>",
-            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirit|traits:complex,haunt] (trained) to exorcise the spirit, @Check[type:religion|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] or @Check[type:occultism|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] (trained) to sever the connection between <em>Hunger's Call</em> and the temple, or @Check[type:crafting|dc:21|name:Break up the Mural|traits:complex,haunt] (trained) to break up the pattern of the mural; three total successes are required to disable the haunt.</p>",
+            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirit|traits:complex,haunt] (wytrenowanie) to exorcise the spirit, @Check[type:religion|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] or @Check[type:occultism|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] (wytrenowanie) to sever the connection between <em>Hunger's Call</em> and the temple, or @Check[type:crafting|dc:21|name:Break up the Mural|traits:complex,haunt] (wytrenowanie) to break up the pattern of the mural; three total successes are required to disable the haunt.</p>",
             "reset": "<p>The mosaic ceases its routine 2 rounds after all living creatures are out of sight of the stairs. After 6 hours the haunt is ready to trigger again.</p>",
             "routine": "<p>(3 actions) The bloody mosaic blasts shards of colored glass at anyone within 10 feet of the eastern wall, and they each take @Damage[1d10[slashing]] damage plus @Damage[1[bleed]] damage (@Check[type:reflex|dc:20|basic:true|name:Avoid the Glass Shards|traits:complex,haunt,slashing] save; critical success negates the bleed damage).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Hunger's Possession": {
                     "name": "Hunger's Possession",
@@ -45,10 +45,10 @@
         "Cheerful Tune": {
             "name": "Cheerful Tune",
             "description": "<p>A cheerful, wordless tune fills the room, compelling everyone to get to work.</p>",
-            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirits|traits:complex,haunt] (trained) to exorcise the spirits, or @Check[type:intimidation|dc:21|name:Take a Break|traits:complex,haunt] to convince the spirits it is time to take a break; three total successes are required to disable the haunt.</p>",
+            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirits|traits:complex,haunt] (wytrenowanie) to exorcise the spirits, or @Check[type:intimidation|dc:21|name:Take a Break|traits:complex,haunt] to convince the spirits it is time to take a break; three total successes are required to disable the haunt.</p>",
             "reset": "<p>The ghostly workers cease their routine 2 rounds after all living creatures leave the room and reset after 6 hours.</p>",
             "routine": "<p>(3 actions) Ghostly workers appear in the room and begin abrading, scrubbing, and splashing cleaning chemicals on anyone in the area. Each creature in the room takes @Damage[(1d4+2)[slashing]] and @Damage[(1d4+2)[acid]] damage (@Check[type:reflex|dc:20|basic:true|name:Avoid Workers|traits:haunt,complex] save; roll once for both).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Nose to the Grindstone": {
                     "name": "Nose to the Grindstone",
@@ -59,10 +59,10 @@
         "Cleaning Agents": {
             "name": "Cleaning Agents",
             "description": "<p>Solvents and detergents spray from the ceiling and run down the walls where they combine in dangerous ways.</p>",
-            "disable": "<p>@Check[type:engineering-lore|dc:20|name:Disable Control Panel|traits:mechanical,complex]{Engineering Lore} (trained) or @Check[type:thievery|dc:20|name:Disable Control Panel|traits:mechanical,complex] (trained) to deactivate the control panel, or @Check[type:athletics|dc:21|name:Plug the Spouts|traits:mechanical,complex] or @Check[type:acrobatics|dc:21|name:Plug the Spouts|traits:mechanical,complex] to plug the spouts that release the chemicals; three successes are required to disable the trap.</p>",
+            "disable": "<p>@Check[type:engineering-lore|dc:20|name:Disable Control Panel|traits:mechanical,complex]{Engineering Lore} (wytrenowanie) or @Check[type:thievery|dc:20|name:Disable Control Panel|traits:mechanical,complex] (wytrenowanie) to deactivate the control panel, or @Check[type:athletics|dc:21|name:Plug the Spouts|traits:mechanical,complex] or @Check[type:acrobatics|dc:21|name:Plug the Spouts|traits:mechanical,complex] to plug the spouts that release the chemicals; three successes are required to disable the trap.</p>",
             "reset": "<p>The trap deactivates after 1 minute and resets in 1 hour.</p>",
             "routine": "<p>(3 actions) The trap fills the room with a cloud of caustic vapor and deals @Damage[(2d6+2)[acid]] damage to all creatures in the area (@Check[type:fortitude|dc:20|basic:true|name:Cleaning Agent|traits:acid]).</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Decontamination Spray": {
                     "name": "Decontamination Spray",
@@ -73,10 +73,10 @@
         "Encouraging Supervision": {
             "name": "Encouraging Supervision",
             "description": "<p>The face of the Azlanti supervisor on the wall animates and begins scolding those in the room for their poor attitudes at work.</p>",
-            "disable": "<p>@Check[type:deception|dc:20|name:Fake a Smile|traits:complex,haunt] to fake a cheerful, positive attitude, or @Check[type:crafting|dc:21|name:Show Skill at a Task|traits:complex,haunt] (trained) to show skill at a task; three successful checks are required to disable the haunt.</p>",
+            "disable": "<p>@Check[type:deception|dc:20|name:Fake a Smile|traits:complex,haunt] to fake a cheerful, positive attitude, or @Check[type:crafting|dc:21|name:Show Skill at a Task|traits:complex,haunt] (wytrenowanie) to show skill at a task; three successful checks are required to disable the haunt.</p>",
             "reset": "<p>The ghostly voice ceases its routine 2 rounds after all living creatures leave the room and resets after 6 hours.</p>",
             "routine": "<p>(3 actions) The supervisor's voice fills the room and compels everyone within to start smiling. Each creature in the room takes @Damage[(1d8+4)[mental]] damage and must attempt a @Check[type:will|dc:20|name:Try Not to Smile too Hard|traits:complex,haunt] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target takes no damage.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Smile! Smile!": {
                     "name": "Smile! Smile!",
@@ -169,10 +169,10 @@
         "Spite of the Righteous": {
             "name": "Spite of the Righteous",
             "description": "<p>The image of a ghostly warrior her holy symbol dripping blood and pulsing with negative energy, steps from the wall and seeks to kill any living creature.</p>",
-            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirit|traits:complex,haunt] (trained) to exorcise the spirit, @Check[type:religion|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] or @Check[type:occultism|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] (trained) to sever the connection between <em>Hunger's Call</em> and the temple, or @Check[type:thievery|dc:21|name:Scratch Eyes out of the Mural|traits:complex,haunt] (trained) to scratch the eyes out of the mural; three total successes are required to disable the haunt.</p>",
+            "disable": "<p>@Check[type:religion|dc:20|name:Exorcise Spirit|traits:complex,haunt] (wytrenowanie) to exorcise the spirit, @Check[type:religion|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] or @Check[type:occultism|dc:21|name:Sever Spiritual Connection|traits:complex,haunt] (wytrenowanie) to sever the connection between <em>Hunger's Call</em> and the temple, or @Check[type:thievery|dc:21|name:Scratch Eyes out of the Mural|traits:complex,haunt] (wytrenowanie) to scratch the eyes out of the mural; three total successes are required to disable the haunt.</p>",
             "reset": "<p>The spectral warrior returns to the wall and ceases 2 rounds after all living creatures are out of sight of the stairs. After 6 hours the haunt is ready to trigger again.</p>",
             "routine": "<p>(3 actions) The warrior's blade sweeps through the bodies of any living creature within sight of the exit stairs, and they each take @Damage[(1d10+4)[slashing]] damage (@Check[type:fortitude|dc:20|basic:true|name:Avoid the Warrior's Blade|traits:complex,haunt,slashing] save). Undead creatures in the area gain 5 temporary hit points.</p>",
-            "stealth": "<p>(trained)</p>",
+            "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Racing Blood": {
                     "name": "Racing Blood",
@@ -242,10 +242,10 @@
         "Swampy Quicksand": {
             "name": "Swampy Quicksand",
             "description": "<p>A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.</p>",
-            "disable": "<p>@Check[type:survival|dc:16|name:Disturb Surface|traits:environmental] (trained) to disturb the surface</p>",
+            "disable": "<p>@Check[type:survival|dc:16|name:Disturb Surface|traits:environmental] (wytrenowanie) to disturb the surface</p>",
             "reset": "<p>The hazard still submerges anyone who walks in, but the surface doesn't become hidden again until it settles over the course of 24 hours.</p>",
             "routine": "<p>(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation.</p>\n<p>A creature in the quicksand can attempt a @Check[type:athletics|dc:18|name:Swim out of Quicksand|traits:action:swim,environmental] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:18|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
-            "stealth": "<p>(trained), or DC 0 and no minimum proficiency if the surface is disturbed.</p>",
+            "stealth": "<p>(wytrenowanie), or DC 0 and no minimum proficiency if the surface is disturbed.</p>",
             "items": {
                 "action->Submerge": {
                     "name": "Submerge",

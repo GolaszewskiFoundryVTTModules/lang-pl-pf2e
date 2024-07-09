@@ -116,6 +116,8 @@ class LocalizationUpdater:
             (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
             (r'> carrier with no ill effect', r'> Bezobjawowy nosiciel'),
             (r'\(1 day\)', r'(1 dzień)'),
+            (r'\(1 round\)', r'(1 runda)'),
+            (r'> ([0-9]+) rounds<', r'> \1 rund<'),
             (r'\(Injury\)', r'(Rana)'),
             (r'\(Contact\)', r'(Dotyk)'),
             (r'\(Inhaled\)', r'(Wdychanie)'),

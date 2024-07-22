@@ -463,6 +463,8 @@
             "Dead": "Martwy",
             "Familiar": {
                 "Blurb": "Chowaniec ({master})",
+                "MinimumAttributeModifier": "Minimum Attribute Modifier",
+                "NoAttribute": "None (Pet)",
                 "Master": {
                     "ArmorClass": "Klasa Pancerza Pana",
                     "Perception": "Percepcja Pana"
@@ -565,8 +567,16 @@
                     }
                 },
                 "SimpleSheet": "Prosta Karta BN",
+                "SpecialSkill": "+{mod} {label}",
                 "SkillsEditor": {
+                    "AddSpecial": "Add Special",
+                    "Error": {
+                        "PredicateArray": "Predicate must be an array"
+                    },
                     "LorePlaceholder": "Obeznanie w Ciesielce",
+                    "Note": "Note",
+                    "Predicate": "Predicate",
+                    "Special": "Special",
                     "Title": "Edytor Umiejętności ({actor})"
                 }
             },
@@ -1136,10 +1146,14 @@
                 "ApplicationBreakdown": {
                     "ignored": "Odporność na {type} zignorowana!",
                     "immunity": "Niewrażliwość na {type}: {adjustment}",
+                    "redirect": {
+                        "immunity": "Immune to {type} (treated as {redirect}): {adjustment}",
+                        "resistance": "Resistant to {type} (treated as {redirect}): {adjustment}"
+                    },
+                    "reduction": "Redukowane przez {type}: {adjustment}",
                     "resistance": "Odporność na {type}: {adjustment}",
                     "unaffected": "Niewzruszony wobec {type}: {adjustment}",
-                    "weakness": "Podatność na {type}: {adjustment}",
-                    "reduction": "Redukowane przez {type}: {adjustment}"
+                    "weakness": "Podatność na {type}: {adjustment}"
                 },
                 "CompositeLabel": {
                     "Exceptions0DoubleVs0": "{type} {value}",
@@ -1526,6 +1540,7 @@
             "NoUpdatePermission": "Brak ci uprawnień aby aktualizować tego aktora.",
             "NotEnoughAmmo": "Nie masz dość amunicji aby wykonać ten Cios.",
             "NotEnoughCoins": "Niewystarczająca Liczba Monet",
+            "MissingStatisticSelected": "Missing statistic {statistic} on selected actors.",
             "RuleElementSyntax": "Błąd składni w definicji elementu zasad: {message}",
             "SubV9Module": "Moduł {module} nie jest utrzymywany i może spowodować problemy ze stabilnością gry.",
             "WeaponNoDamage": "Ta broń nie zadaje obrażeń.",
@@ -2430,6 +2445,7 @@
                         "collar": "Obroża",
                         "crown": "Korona",
                         "epaulet": "Pagon",
+                        "eyeglasses": "Eyeglasses",
                         "eyepiece": "Okular",
                         "footwear": "Obuwie",
                         "garment": "Część Garderoby",
@@ -2645,15 +2661,22 @@
         "ItemMystification": "Mistyfikacja",
         "ItemMystified": "Zmistyfikowany",
         "ItemNamePlaceholder": "Nazwa",
-        "ItemNewSkillVariant": "Nowy Wariant Umiejętności",
         "ItemNotSupportedOnActor": "Przedmiot nie wspierant przrz aktora",
         "ItemRemoveRuleElement": "Usuń Element Zasad",
         "ItemTitle": "Przedmiot",
         "ItemsLabel": "Przedmioty",
         "Keybinding": {
+            "CycleTokenStack": {
+                "Hint": "Cycle the Z indices of a mouse-hovered stack of tokens, pushing the top to the bottom.",
+                "Label": "Cycle Token Stack"
+            },
             "GMVision": {
                 "Hint": "Rozjaśnia ciemne sceny dla łatwiejszego poglądu.",
                 "Label": "Wizja MG"
+            },
+            "PlaceWaypoint": {
+                "Hint": "Place a waypoint while using drag measurement.",
+                "Label": "Place Waypoint (Drag Measurement)"
             },
             "TogglePartySheet": {
                 "Hint": "Otwórz lub zamknij kartę aktywnej lub (w wypadku gracza) przypisanej drużyny.",
@@ -2677,6 +2700,11 @@
         "Level19": "Poziom 19",
         "Level2": "Poziom 2",
         "Level20": "Poziom 20",
+        "Level21": "Level 21",
+        "Level22": "Level 22",
+        "Level23": "Level 23",
+        "Level24": "Level 24",
+        "Level25": "Level 25",
         "Level3": "Poziom 3",
         "Level4": "Poziom 4",
         "Level5": "Poziom 5",
@@ -2704,7 +2732,6 @@
             "two": "{first} lub {second}"
         },
         "Lore": "Obeznanie",
-        "LoreProficiencyDisclaimer": "Tylko poglądowe. Nie zmieni modyfikatora umiejętności.",
         "LoreSkillsHeader": "Umiejętności Obeznania",
         "MAPAbbreviationLabel": "KAW {penalty}",
         "MAPAbbreviationValueLabel": "{value} (KAW {penalty})",
@@ -2783,7 +2810,7 @@
                     "AtWillSpells": "<p>Potwór może rzucać zaklęcia oznaczone jako \"do woli\" nieograniczoną ilość razy nie zużywając do tego komórek zaklęć.</p>",
                     "AttackOfOpportunity": "<p><strong>Aktywator</strong> Istota w wysięgu potwora używa akcji manipulacji lub akcji ruchu, wykonje atak dystansowy lub opuszcza pole w trakcie używanej akcji ruchu.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór wymierza Cios w zwarciu wywołującej reakcję istocie. Jeśli atak trafi krytycznie a aktywatorem reakcji była akcja z cechą manipulacji, potwór przerywa tę akcję. Cios ten nie wlicza się do kary za atak wielokrotny ani też podczas jego wykonywania nie należy uwzględniać kary za atak wielokrotny.</p>",
                     "Aura": "<p>Aura potwora automatycznie dotyczy wszystkiego w zasięgu określonej emanacji wokół potwora. Potwór nie musi wydawać akcji aby zarządzać aurą; zamiast tego efekty aury są aplikowane w konkretnych momentach czasu, na przykład kiedy istota skończy swoją turę w aurze lub kiedy istota pierwszy raz wkroczy w zasięg aury.</p>\n<p>Jeśli aura nie robi nic poza zadawaniem obrażeń, wpis o niej nie wymienia nic poza jej promieniem, obrażeniami i rzutem obronnym. Tego typu aury zadają obrażenia kiedy istota wkroczy w jej zasięg oraz kiedy istota rozpocznie turę w jej zasięgu. Istota może odnieść obrażenia od aury tylko raz na rundę.</p>\n<p>MG może uznać, że aura potwora nie ma wpływu na jego sojuszników. Przykładowo istota może być niewrażliwa na przerażającą obecność potwora, jeśli przebywały one razem dostatecznie długo.</p>",
-                    "Buck": "<hr />\n<p>Większość potworów służących jako wierzchowce jest w stanie wierzgać aby zrzucić z siebie uporczywego jeźdźca, ale większość z nich nie użyje tej akcji przeciw zaufanej istocie o ile nie zostanie przestraszona lub źle potraktowana.</p>\n<p><strong>Aktywator</strong> Istota @UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{Dosiada} potwora lub używa akcji @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Zapanowania Nad Zwierzęciem} ujeżdżając potwora.</p>\n<hr />\n<p><strong>Efekt</strong> Aktywująca reakcję istota musi wykonać rzut obronny Refleksu o wymienionym ST lub spada z potwora i ląduje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalona}. Przy krytycznej porażce aktywująca efekt istota otrzymuje [[/roll 1d6[bludgeoning]]]{1k6 obrażeń obuchowych} w dodatku do standardowych obrażeń od upadku.</p>",
+                    "Buck": "<hr />\n<p>Większość potworów służących jako wierzchowce jest w stanie wierzgać aby zrzucić z siebie uporczywego jeźdźca, ale większość z nich nie użyje tej akcji przeciw zaufanej istocie o ile nie zostanie przestraszona lub źle potraktowana.</p>\n<p><strong>Aktywator</strong> Istota @UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{Dosiada} potwora lub używa akcji @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Zapanowania Nad Zwierzęciem} ujeżdżając potwora.</p>\n<hr />\n<p><strong>Efekt</strong> Aktywująca reakcję istota musi wykonać rzut obronny Refleksu o wymienionym ST lub spada z potwora i ląduje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalona}. Przy krytycznej porażce aktywująca efekt istota otrzymuje @Damage[1d6[bludgeoning]]{1k6 obrażeń obuchowych} w dodatku do standardowych obrażeń od upadku.</p>",
                     "CatchRock": "<p><strong>Wymagania</strong> Potwór musi mieć wolną rękę ale może @UUID[Compendium.pf2e.actionspf2e.Item.wQYmDStjdjn0I26t]{Puścić} cokolwiek trzyma w ramach tej reakcji.</p>\n<p><strong>Aktywator</strong> Potwór jest celem Ciosu ciskającego w niego głazem lub głaz spada na niego.</p>\n<hr />\n<p><strong>Efekt</strong> Potwór zyskuje premię sytuacyjną +4 przeciwko atakowi prowokującemu reakcję lub przeciw wszelkiej obronie przed spadającym głazem. Jeśli atak spudłuje lub obrona przeciw spadającemu głazowi się powiedzie, potwór nie odnosi żadnych obrażeń i chwyta głaz, od tej pory go trzymając.</p>",
                     "ChangeShape": "<p>Ten potwór może swobodnie zmieniać kształt na nieograniczoną ilość czasu. Może ponownie użyć tej akcji aby powrócić do swojego naturalnego kształtu lub przybrać nową postać. O ile nie wspomniano inaczej, potwór nie może wykorzystywać Zmiany Kształtu aby przybrać postać konkretnej istoty. Używanie Zmiany Kształtu liczy się jako przebranie na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Podszywania się} z użyciem Oszukiwania. Transformacja potwora automatycznie przebija ST Percepcji na rzecz sprawdzania czy jest on przedstawicielem przodkowstwa lub rodzaju istot w który się przemienił, oraz zapewnia premię sytuacyjną +4 do ST Oszukiwania na rzecz demaskowania jego przebrania. Zdolności Zmiany Kształtu precyzują jakie konkretnie postacie może przybierać potwór. Potwór nie zyskuje żadnych specjalnych zdolności przybieranej przez siebie postaci, jedynie jej wygląd. Przykładowo dla każdej przybieranej przez siebie postaci potwór nadpisuje jej Prędkości, Ciosy oraz potencjalnie jej zmysły i rozmiar. Wszelkie zmiany wypisane są w bloku statystyk.</p>",
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
@@ -3111,6 +3138,17 @@
                     "Label": "Środowisko",
                     "SceneHint": "Określ jeden lub więcej typów środowiska dla całej sceny."
                 }
+            },
+            "EnvironmentFeature": {
+                "Label": "Environment Feature",
+                "Terrain": {
+                    "Difficult": {
+                        "Difficult": "Difficult",
+                        "Greater": "Greater Difficult",
+                        "Label": "Difficult Terrain",
+                        "None": "None"
+                    }
+                }
             }
         },
         "RemoveCoinsByValueLabel": "Usun wartość, nie konkrenty typ",
@@ -3273,6 +3311,13 @@
             "DeathIcon": {
                 "Hint": "Ustaw ikonę śmierci oznaczającą martwych aktorów.",
                 "Name": "Ikona Śmierci"
+            },
+            "DragMeasurement": {
+                "Always": "Always",
+                "Encounters": "During Encounters",
+                "Hint": "Measure distance traveled when dragging a token without the need for holding down another key. Waypoints are placed by pressing the \"{key}\" key and removed by right-clicking.",
+                "Name": "Drag Measurement",
+                "Never": "Never"
             },
             "EnabledDisabled": {
                 "Enabled": "Włączono",
@@ -3725,10 +3770,10 @@
         "ToggleSignatureSpellTitle": "Przełącz Zaklęcie Popisowe",
         "ToggleSlotlessSpellLevelsTitle": "Przełącz widoczność kręgów zaklęć, dla których nie ma komórek",
         "ToggleSpellVisibilityTitle": "Przygotowanie Zaklęć",
-        "ToggleUnreadyStrikes": "Przełącz niewyposażoną broń",
         "ToggleWithName": "Przełącz: {property}",
         "TogglesLabel": "Przełączniki",
         "Token": {
+            "ActorLinkForced": "{type} actors cannot be unlinked.",
             "Appearance": "Wygląd",
             "Flanking": "Flankowanie",
             "SecretDisposition": {
@@ -4207,6 +4252,14 @@
         "TraitDescriptionOverflow": "Potężny impulsy tymczasowo przeciążają energię twojej kinetycznej bramy. Kiedy użyjesz impulsu posiadającego cechę przesycenia, twoja kinetyczna aura dezaktywuje się dopóki jej nie zrewitalizujesz (na ogół z pomocą Kształtowania Żywiołów). Wygaszanie twojego żywiołu jest niezwykle wyczerpujące, co sprawia, że możesz użyć tylko jednego przesycającego impulsu w rundzie, nawet jeśli reaktywujesz swoją kinetyczną bramę.",
         "TraitDescriptionParry": "Ta broń może zostać wykorzystana defensywnie, w celu blokowania ataków. Jeśli poziom twojej biegłości w posługiwaniu się nią wynosi wytrenowanie lub wyżej, dzierżąc ją możesz wykorzystać jedną akcję na przybranie defensywnej postawy, zyskując premię sytuacyjną +1 do twojej KP aż do początku twojej następnej tury.",
         "TraitDescriptionPeachwood": "Bronie wykonane z brzoskwiniodrzewu oglądane pod promieniami słońca mienią się charakterystycznym kasztanowym refleksem. Brzoskwiniodrzew jest traktowany jak zmrokodrzew na rzecz wszelkich odporności i podatności powiązanych ze zmrokodrzewem (pozwalając brzoskwiniodrzewowi na przykład na ominięcie odporności jiang-shi). Ponadto broń z brzoskwiniodrzewu pomija małą część odporności każdej nieumarłej istoty. Ciosy brzoskwiniodrzewiową bronią traktują odporności nieumarłych na obrażenia fizyczne jakby było 2 niższe w wypadku broni o standardowej jakości brzoskwiniodrzewu, lub o 4 w wypadku wysokiej jakości brzoskwiniodrzewu.",
+        "TraitDescriptionPersonaFlirt": "The public perceives you as the most romantic of the group, and you may be thought of as a seducer or vapid pretender who gets by on their looks and brings nothing of value to the party.",
+        "TraitDescriptionPersonaGuardian": "The public perceives you as the healer and protector of the group, but some may also consider you too soft-hearted and meek to be a \"true hero.\"",
+        "TraitDescriptionPersonaLeader": "The public perceives you as the leader of the group, but some likewise consider you too brash or even pompous.",
+        "TraitDescriptionPersonaScholar": "The public considers you the problem-solver and brains of the group, though some also perceive you as arrogant or incapable of physical tasks.",
+        "TraitDescriptionPersonaScoundrel": "The public is convinced you are the \"bad boy/bad girl\" of the group who gets the distasteful but necessary things done, but who is at times thought of as a criminal or potential traitor to the party.",
+        "TraitDescriptionPersonaUnderdog": "The public perceives you as a \"fish out of water\" — someone who accidently got swept up by the group and still manages to triumph, but who is sometimes thought of as a weak link or loser.",
+        "TraitDescriptionPersonaWarrior": "The public believes you are the strong-arm of the group, the person who excels in a fight but is also at times considered cruel, uncouth, or even a bully.",
+        "TraitDescriptionPersonaWildcard": "The public perceives you as a source of whimsy, outlandish ideas, and comedy in the group, but that reputation is a double-edged sword, as some also consider you a liability or unreliable.",
         "TraitDescriptionPhantom": "Fantom to dusza, która oddzieliła się od Rzeki Dusz na Planie Eterycznym zanim zdążyła zostać osądzona. Na ogół zachowują one swoje wspomnienia z życia śmiertelnego, ale nie są nieumarłymi.",
         "TraitDescriptionPlant": "Istoty będące powiązane z florą mają cechę roślinność. Są jednak odmienne od zwykłych roślin. Magiczne efekty z tą cechą wyczarowują roślinność lub materię roślinną, albo manipulują nią w jakiś sposób. Te, które manipulują roślinnością nie odnoszą efektu w obszarach pozbawionych roślinności.",
         "TraitDescriptionPoison": "Efekt z tą cechą aplikuje truciznę lub zadaje obrażenia od trucizny. Przedmiot z tą cechą jest trujący lub może powodować pewną przypadłość.",
@@ -4572,6 +4625,14 @@
         "TraitOverflow": "Przesycenie",
         "TraitPaaridar": "Paaridar",
         "TraitParry": "Parowanie",
+        "TraitPersonaFlirt": "Persona: Flirt",
+        "TraitPersonaGuardian": "Persona: Guardian",
+        "TraitPersonaLeader": "Persona: Leader",
+        "TraitPersonaScholar": "Persona: Scholar",
+        "TraitPersonaScoundrel": "Persona: Scoundrel",
+        "TraitPersonaUnderdog": "Persona: Underdog",
+        "TraitPersonaWarrior": "Persona: Warrior",
+        "TraitPersonaWildcard": "Persona: Wildcard",
         "TraitPervasiveMagic": "Wszechobecna Magia",
         "TraitPetitioner": "Petent",
         "TraitPhantom": "Fantom",
@@ -5322,7 +5383,7 @@
                 "Name": "Astralna",
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[type:will|dc:26] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
-                    "Note": "Broń może krzywdzić istoty pozbawione fizycznej postaci. Broń astralna jest szczególnie skuteczna przeciw istotom bezcielesnym, które niemal zawsze mają dedykowaną podatność na bronie astralne. Bezcielesne istoty mogą dotykać, trzymać czy nawet dzierżyć bronie astralne (w przeciwieństwie do większości fizycznych obiektów)."
+                    "Note": "Runa ta ma te same efekty co runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Duchowego Dotyku}. Jeśli zostanie użyta do zaatakowania istoty opętującej inną istotę, nie zadaje ona obrażeń istocie opętywanej."
                 }
             },
             "authorized": {
@@ -5358,7 +5419,7 @@
             "corrosive": {
                 "Name": "Korozji",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym pancerz celu (jeśli cel takowy posiada) otrzymuje [[/r 3d6[acid] #Runa Korozji]]{3k6 obrażeń od kwasu} (przez wliczeniem jego Twardości); jeśli cel ma wzniesioną tarczę, zamiast tego to ona odnosi te obrażenia."
+                    "criticalSuccess": "Przy trafieniu krytycznym pancerz celu (jeśli cel takowy posiada) otrzymuje @Damage[3d6[acid]]{3k6 obrażeń od kwasu} (przez wliczeniem jego Twardości); jeśli cel ma wzniesioną tarczę, zamiast tego to ona odnosi te obrażenia."
                 }
             },
             "crushing": {
@@ -5371,7 +5432,7 @@
                 "Name": "Przebiegłości"
             },
             "dancing": {
-                "Name": "Tańca"
+                "Name": "Animacji"
             },
             "decaying": {
                 "Name": "Rozkładu"
@@ -5381,12 +5442,6 @@
             },
             "demolishing": {
                 "Name": "Dewastacji"
-            },
-            "disrupting": {
-                "Name": "Witalizacji",
-                "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest też @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona1} do końca twojej następnej tury."
-                }
             },
             "earthbinding": {
                 "Name": "Uziemienia"
@@ -5409,7 +5464,7 @@
             "flaming": {
                 "Name": "Płomieni",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym zadajesz dodatkowo [[/r 1d10[persistent,fire] #Runa Płomieni]]{1k10 przewlekłych obrażeń od ognia}."
+                    "criticalSuccess": "Przy trafieniu krytycznym zadajesz dodatkowo @Damage[1d10[persistent,fire]]{1k10 przewlekłych obrażeń od ognia}."
                 }
             },
             "flickering": {
@@ -5454,7 +5509,7 @@
                 "Name": "Większa Astralna",
                 "Note": {
                     "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[type:will|dc:36] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
-                    "Note": "Broń może krzywdzić istoty pozbawione fizycznej postaci. Broń astralna jest szczególnie skuteczna przeciw istotom bezcielesnym, które niemal zawsze mają dedykowaną podatność na bronie astralne. Bezcielesne istoty mogą dotykać, trzymać czy nawet dzierżyć bronie astralne (w przeciwieństwie do większości fizycznych obiektów)."
+                    "Note": "Runa ta ma te same efekty co runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Duchowego Dotyku}. Jeśli zostanie użyta do zaatakowania istoty opętującej inną istotę, nie zadaje ona obrażeń istocie opętywanej."
                 }
             },
             "greaterBloodbane": {
@@ -5463,14 +5518,14 @@
             "greaterBrilliant": {
                 "Name": "Większa Światłości",
                 "Note": {
-                    "criticalSuccess": "Obrażenia zadawane przez tę broń ignorują odporności na ogień, dobro czy witalność celu. Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:41|name:Większa Runa Światłości] lub zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę.",
-                    "success": "Obrażenia zadawane przez tę broń ignorują odporności na ogień, witalność czy obrażenia pozytywne celu."
+                    "criticalSuccess": "Obrażenia zadawane przez tę broń ignorują odporności celu na obrażenia od ognia, duchowe oraz witalności. Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:41|name:Większa Runa Światłości] lub zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę.",
+                    "success": "Obrażenia zadawane przez tę broń ignorują odporności celu na obrażenia od ognia, duchowe oraz witalności."
                 }
             },
             "greaterCorrosive": {
                 "Name": "Większa Korozji",
                 "Note": {
-                    "criticalSuccess": "Obrażenia od kwasu zadawane przez tę broń ignorują odporność na kwas celu. Przy trafieniu krytycznym pancerz celu (jeśli cel takowy posiada) otrzymuje [[/r 6d6[acid]#Większa Runa Korozji]]{6k6 obrażeń od kwasu} (przez wliczeniem jego Twardości); jeśli cel ma wzniesioną tarczę, zamiast tego to ona odnosi te obrażenia.",
+                    "criticalSuccess": "Obrażenia od kwasu zadawane przez tę broń ignorują odporność na kwas celu. Przy trafieniu krytycznym pancerz celu (jeśli cel takowy posiada) otrzymuje @Damage[6d6[acid]]{6k6 obrażeń od kwasu} (przez wliczeniem jego Twardości); jeśli cel ma wzniesioną tarczę, zamiast tego to ona odnosi te obrażenia.",
                     "success": "Obrażenia od kwasu zadawane przez tę broń ignorują odporność na kwas celu."
                 }
             },
@@ -5504,8 +5559,8 @@
             "greaterFlaming": {
                 "Name": "Większa Płomieni",
                 "Note": {
-                    "criticalSuccess": "Obrażenia od ognia zadane przez tę broń (wliczając w to przewlekłe obrażenia od ognia) ignorują odporność na ogień celu.",
-                    "success": "Obrażenia od ognia zadane przez tę broń ignorują odporność na ogień celu."
+                    "criticalSuccess": "Przy trafieniu krytycznym zadajesz dodatkowo @Damage[2d10[persistent,fire]]{2k10 przewlekłych obrażeń od ognia}. Obrażenia od ognia zadane przez tę broń (wliczając w to przewlekłe obrażenia od ognia) ignorują odporność celu na ogień.",
+                    "success": "Obrażenia od ognia zadane przez tę broń ignorują odporność celu na ogień."
                 }
             },
             "greaterFrost": {
@@ -5558,7 +5613,9 @@
                     "Bow": "Test atletyki wymagany do wyciągnięcia pocisku otrzymuje ST 20.",
                     "Brawling": "Cel otrzymuje sytuacyjną karę –4 do rzutu obronnego.",
                     "Club": "Możesz odrzucić cel na odległość do 15 stóp.",
-                    "Dart": "Podstawowe obrażenia przewlekłe od krwawienia zwiększają się do [[/r 2d6[bleed]]].",
+                    "Crossbow": "Jeśli cel trafienia znajduje się w sąsiedztwie powierzchni, zostaje przygwożdżony do tej powierzchni pociskiem, jak w wypadku krytycznej specjalizacji łuku.",
+                    "Dart": "Podstawowe przewlekłe obrażenia od krwawienia zwiększają się do @Damage[2d6[persistent,bleed]]{2k6 przewlekłych obrażeń od krwawienia}.",
+                    "Firearm": "Cel ponosi karę sytuacyjną –4 do rzutu obronnego.",
                     "Flail": "Przemieszczasz cel o 5 stóp. Nie możesz przemieścić go z dala od siebie, ale może być to dowolny inny wybrany przez ciebie kierunek.",
                     "Hammer": "Możesz też odrzucić cel 5 stóp od siebie.",
                     "Knife": "Tak długo jak cel odnosi @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Przewlekłe Obrażenia od Krwawienia}, ponosi karę statusową –5 stóp do swojej Prędkości ruchu.",
@@ -5576,7 +5633,7 @@
             "holy": {
                 "Name": "Święta",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> komenda; raz na dzień)<br /><strong>Aktywator</strong> Odnosisz krytyczny sukces w rzucie na atak tą bronią przeciw złej istocie<br /><strong>Efekt</strong> Odzyskujesz PŻ w liczbie równej podwojonemu poziomowi złej istoty. Jest to efekt leczący o cechach dobra i witalności."
+                    "criticalSuccess": "Święte Leczenie <span class=\"action-glyph\">R</span> (koncentracja, leczenie, witalność)</p><p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Aktywator</strong> Odnosisz krytyczny sukces na Ciosie tą bronią przeciw wyklętej istocie</p><hr /><p><strong>Efekt</strong> Odzyskujesz PŻ w liczbie równej podwojonemu poziomowi wyklętej istoty."
                 }
             },
             "hopeful": {
@@ -5627,6 +5684,10 @@
             "pacifying": {
                 "Name": "Pacyfikacji"
             },
+            "quickstrike": {
+                "Name": "Quickstrike",
+                "Note": "While wielding a quickstrike weapon, you gain the @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} condition, but you can use the additional action granted only to make a Strike with the etched weapon."
+            },
             "returning": {
                 "Name": "Powrotu",
                 "Note": "Kiedy zadasz Cios miotany tą bronią, wraca ona do twojej dłoni po zakończeniu Ciosu. Jeśli twoje ręce są zajęte kiedy broń do ciebie wraca, upada ona na ziemię w twoim polu."
@@ -5649,8 +5710,12 @@
                     "criticalSuccess": "Przy trafieniu krytycznym, błyskawice przeskakują na maksymalnie dwie wybrane przez ciebie istoty w zasięgu 10 stóp od pierwotnego celu ataku, zadając im identyczną liczbę obrażeń od elektryczności."
                 }
             },
+            "shockwave": {
+                "Name": "Shockwave",
+                "Note": "Strikes with this weapon deal bludgeoning splash damage equal to the number of weapon damage dice. You're immune to this splash damage."
+            },
             "spellStoring": {
-                "Name": "Przechowywania Zaklęć"
+                "Name": "Rezerwuaru Zaklęć"
             },
             "swarming": {
                 "Name": "Roju"
@@ -5673,13 +5738,19 @@
             "unholy": {
                 "Name": "Wyklęta",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> komenda; raz na dzień)<br /><strong>Aktywator</strong> Odnosisz krytyczny sukces w rzucie na atak tą bronią przeciw dobrej istocie<br /><strong>Efekt</strong> Cel odnosi @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Przewlekłe Obrażenia od Krwawienia} w liczbie 1k8 za każdą kość obrażeń broni."
+                    "criticalSuccess": "Wyklęty Rozlew Krwi <span class='pf2-icon'>R</span> (koncentracja)</p><p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Aktywator</strong> Odnosisz krytyczny sukces na Ciosie tą bronią przeciw świętej istocie.</p><hr /><p><strong>Efekt</strong> Cel odnosi przewlekłe obrażenia od krwawienia w liczbie 1k8 za każdą kość obrażeń broni."
+                }
+            },
+            "disrupting": {
+                "Name": "Witalizacji",
+                "Note": {
+                    "criticalSuccess": "Przy trafieniu krytycznym nieumarła istota jest też @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} do końca twojej następnej tury."
                 }
             },
             "vorpal": {
                 "Name": "Worpalna",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> wyobrażenie (śmierć, obezwładnienie))<br /><strong>Aktywator</strong> Rzucasz naturalną 20 na Cios tą bronią wymierzany istocie posiadającej głowę, odnosisz krytyczny sukces, i zadajesz obrażenia cięte.<br /><strong>Efekt</strong> Cel musi zdać rzut obronny @Check[type:fortitude|dc:37|traits:death,incapacitation|name:Runa Worpalna] lub zostaje zdekapitowany. Natychmiast zabija to każdą istotę, poza tymi, które nie potrzebują głowy do życia. W wypadku istot o wielu głowach, istota umiera na ogół dopiero kiedy odcięta głowa była jej ostatnią."
+                    "criticalSuccess": "Świstocięcie <span class=\"action-glyph\">R</span> (koncentracja, śmierć, obezwładnienie)</p><p><strong>Aktywator</strong> Rzucasz naturalną 20 na Cios tą bronią wymierzany istocie posiadającej głowę, odnosisz krytyczny sukces, i zadajesz obrażenia cięte.</p><hr /><p><strong>Efekt</strong> Cel musi zdać rzut obronny @Check[type:fortitude|dc:37|traits:death,incapacitation|name:Runa Worpalna] lub zostaje zdekapitowany. Natychmiast zabija to każdą istotę, poza tymi, które nie potrzebują głowy do życia. W wypadku istot o wielu głowach, istota umiera na ogół dopiero kiedy odcięta głowa była jej ostatnią."
                 }
             },
             "wounding": {

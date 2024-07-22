@@ -306,8 +306,8 @@ class LocalizationUpdater:
             print(matcher.ratio())
 
         # do not check for extremely short strings
-        if min(len(en_str_cleaned), len(pl_str_cleaned)) < 150:
-            return False
+        # if min(len(en_str_cleaned), len(pl_str_cleaned)) < 150:
+        #     return False
 
         similarity_threshold = 0.75
         matcher = SequenceMatcher(None, en_str_cleaned, pl_str_cleaned)

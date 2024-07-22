@@ -47,3 +47,4 @@ Moderate - Umiarkowana
 Greater - Większa
 Major - Potężna
 Supreme - Wyjątkowa
+True - Prawdziwa

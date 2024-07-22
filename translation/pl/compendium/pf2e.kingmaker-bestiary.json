@@ -628,15 +628,7 @@
                 },
                 "action->Blindness": {
                     "name": "Blindness",
-                    "description": "<p>A creature damaged by the Lantern King's blinding beam Strike must make a @Check[type:fortitude|dc:48] save. If the Strike was a critical hit, the save's result is worsened one degree.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected by blindness.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. At the end of each of its turns, the creature can attempt a @Check[type:fortitude|dc:48] save to end this blindness early.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is blinded permanently.</p>",
-                    "rules": {
-                        "0": {
-                            "text": "<p>A creature damaged by the Lantern King's blinding beam Strike must make a @Check[type:fortitude|dc:48] save. If the Strike was a critical hit, the save's result is worsened one degree.</p>\n<hr>\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected by blindness.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. At the end of each of its turns, the creature can attempt a @Check[type:fortitude|dc:48] save to end this blindness early.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is blinded permanently.</p>"
-                        },
-                        "1": {
-                            "text": "<p>A creature damaged by the Lantern King's blinding beam Strike must make a @Check[type:fortitude|dc:48] save. If the Strike was a critical hit, the save's result is worsened one degree.</p>\n<hr>\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected by blindness.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. At the end of each of its turns, the creature can attempt a @Check[type:fortitude|dc:48] save to end this blindness early.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is blinded permanently.</p>"
-                        }
-                    }
+                    "description": "<p>A creature damaged by the Lantern King's blinding beam Strike must make a @Check[type:fortitude|dc:48] save. If the Strike was a critical hit, the save's result is worsened one degree.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected by blindness.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. At the end of each of its turns, the creature can attempt a @Check[type:fortitude|dc:48] save to end this blindness early.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is blinded permanently.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -906,7 +898,7 @@
                 },
                 "action->Bloom Curse": {
                     "name": "Bloom Curse",
-                    "description": "<p>A living creature is exposed to the bloom curse if it eats any portion of a bloom of Lamashtu, fails a save against the bloom's seed pod, or is critically hit by the bloom's thorny vine Strike. Unlike the bloom curse contracted from secondary sources, there is no onset time for this version of the curse, and the creature spawned by the victim's death may be much more powerful and is always chaotic evil.</p>\n<hr />\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Stadium 1</strong> no ill effects (1 dzień)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> enfeebled 1 and @Damage[2d6[poison]] damage (8 hours)</p>\n<p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and @Damage[4d6[poison]] damage (10 minutes)</p>\n<p><strong>Stadium 5</strong> death;</p>\n<p><strong>Specjalne</strong> A creature that dies from the bloom curse explodes in a blast of First World foliage and releases a monster into the world. This creature is a chaotic evil low-intelligence beast or dragon (chosen by the GM ) of the same level as the dead creature.</p>",
+                    "description": "<p>A living creature is exposed to the bloom curse if it eats any portion of a bloom of Lamashtu, fails a save against the bloom's seed pod, or is critically hit by the bloom's thorny vine Strike. Unlike the bloom curse contracted from secondary sources, there is no onset time for this version of the curse, and the creature spawned by the victim's death may be much more powerful and is always chaotic evil.</p>\n<hr />\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Stadium 1</strong> no ill effects (1 dzień)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> enfeebled 1 and @Damage[2d6[poison]] damage (8 hours)</p>\n<p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and @Damage[4d6[poison]] damage (10 minutes)</p>\n<p><strong>Stadium 5</strong> death;</p>\n<p><strong>Specjalne</strong> A creature that dies from the bloom curse explodes in a blast of First World foliage and releases a monster into the world. This creature is a chaotic evil low-intelligence beast or dragon (chosen by the GM) of the same level as the dead creature.</p>",
                     "rules": {
                         "0": {
                             "text": "On a critical hit the creature is exposed to Bloom Curse"
@@ -916,13 +908,6 @@
                 "action->Spew Seed Pod": {
                     "name": "Spew Seed Pod",
                     "description": "<p>The bloom of Lamashtu's central stalk disgorges a pulsing seed pod from its flower, spitting it at a range of up to 60 feet and creating a @Template[type:burst|distance:20] when the seed pod explodes into a spray of supernatural acidic poison. All creatures in this area must attempt a @Check[type:reflex|dc:29] save. The bloom of Lamashtu can't Spew Seed Pod for [[/br 1d4 #Recharge Spew Seed Pod]]{1k4 rounds}.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes @Damage[3d6[acid]] damage and @Damage[3d6[poison]] damage.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[5d6[acid]] damage and @Damage[5d6[poison]] damage and is exposed to the bloom curse.</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but @Damage[10d6[acid]] damage and @Damage[10d6[poison]] damage, plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} by the force of the blast.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+22 in wooded or underground areas"
-                        }
-                    }
                 }
             }
         },
@@ -987,13 +972,6 @@
                 "action->Bog Rot": {
                     "name": "Bog Rot",
                     "description": "<p>This affliction can't be reduced below stage 1, nor can the damage from it be healed, until it's successfully treated with remove curse or a similar effect; the affliction can then be removed as normal for a disease. A creature killed by bog rot melts into a noxious sludge and can't be brought back to life except by a 7. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Wskrzeszenie} ritual or similar magic</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:28]</p>\n<p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 minute)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 dzień)</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+20 while buried in a bog"
-                        }
-                    }
                 }
             }
         },
@@ -1092,13 +1070,6 @@
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warden hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal Grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue. A creature can sever the tongue by hitting AC 24 and dealing at least 10 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+23 in water"
-                        }
-                    }
                 }
             }
         },
@@ -1375,13 +1346,6 @@
                 "action->Unbalancing Blow": {
                     "name": "Unbalancing Blow",
                     "description": "<p>Whenever Chief Sootscale critically hits and deals damage to a foe with a Strike, the creature struck is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against his attacks until the end of his next turn.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 traps"
-                        }
-                    }
                 }
             }
         },
@@ -1706,13 +1670,6 @@
                 "action->Tortuous Touch": {
                     "name": "Tortuous Touch",
                     "description": "<p>A creature struck by the defaced naiad queen's painful caress Strike must attempt a @Check[type:fortitude|dc:36] save. On a failure, painful, jagged wounds open on the creature's body, the pain of which makes it @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} on a critical failure). The clumsy condition is permanent until it is removed via an effect like @UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+29 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -2106,13 +2063,6 @@
                 "action->Swoop": {
                     "name": "Swoop",
                     "description": "<p>The dragonfly Flies up to its Speed and makes one mandible Strike at any point during that movement.</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+19 to Maneuver in Flight"
-                        }
-                    }
                 }
             }
         },
@@ -2142,7 +2092,7 @@
                 },
                 "action->Fireball Breath": {
                     "name": "Fireball Breath",
-                    "description": "<p>The flame drake expels a ball of flame to a range of 180 feet that explodes in a @Template[type:burst|distance:20] . Creatures in the burst take @Damage[9d6[fire]] damage (@Check[type:reflex|dc:26|basic:true] save).</p>\n<p>The flame drake can't use Fireball Breath again for [[/br 1d6 #Recharge Fireball Breath]]{1k6 rounds}.</p>"
+                    "description": "<p>The flame drake expels a ball of flame to a range of 180 feet that explodes in a @Template[type:burst|distance:20]. Creatures in the burst take @Damage[9d6[fire]] damage (@Check[type:reflex|dc:26|basic:true] save).</p>\n<p>The flame drake can't use Fireball Breath again for [[/br 1d6 #Recharge Fireball Breath]]{1k6 rounds}.</p>"
                 },
                 "action->Speed Surge": {
                     "name": "Przypływ Prędkości",
@@ -2211,13 +2161,6 @@
                 "action->Manifest Shawl": {
                     "name": "Manifest Shawl",
                     "description": "<p>The nereid divests themself of part of their connection to the First World and imbues this essence into a flowing shawl that enables them to function on land. The nereid can Dismiss this effect as long as they are touching the shawl. As long as the shawl exists, the nereid gains the amphibious trait. A non-nereid who carries the shawl also gains the amphibious trait.</p>\n<p>If a nereid's shawl is destroyed rather than Dismissed, the nereid can't Manifest a Shawl for 24 hours.</p>\n<p>Evindra currently does not posses her shawl.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+23 to Swim"
-                        }
-                    }
                 },
                 "lore->First World Lore": {
                     "name": "First World Lore"
@@ -2711,13 +2654,6 @@
                 "action->Targeting Shot": {
                     "name": "Targeting Shot",
                     "description": "<p><strong>Wymagania</strong> Gaetane is currently suffering a multiple attack penalty</p>\n<hr />\n<p><strong>Efekt</strong> Gaetane aims carefully, then makes an oathbow Strike; he ignores the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition and all cover.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+28 to Climb or Swim"
-                        }
-                    }
                 }
             }
         },
@@ -2921,13 +2857,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -3370,13 +3299,6 @@
                 "action->Storm of Jaws": {
                     "name": "Storm of Jaws",
                     "description": "<p>The hydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the hydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the hydra makes all its attacks.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+27 in water"
-                        }
-                    }
                 }
             }
         },
@@ -3440,13 +3362,6 @@
                 "action->Wild Stride": {
                     "name": "Wild Stride",
                     "description": "<p>Ilora moves quickly through obstacles. She ignores the effects of nonmagical difficult terrain and treats the hindrances of greater difficult terrain as those of difficult terrain. Within 300 feet of a river bank, she ignores the effects of all nonmagical difficult and greater difficult terrain.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+23 to Jump"
-                        }
-                    }
                 },
                 "lore->River Lore": {
                     "name": "River Lore"
@@ -3658,13 +3573,6 @@
                 "action->Immense Mandragora Venom": {
                     "name": "Immense Mandragora Venom",
                     "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:42]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[4d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, and stupefied 1 (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[6d6[poison]] damage, confused, and stupefied 1 (1 runda)</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+46 in vegetation"
-                        }
-                    }
                 }
             }
         },
@@ -3693,13 +3601,6 @@
                 "action->Tail Drag": {
                     "name": "Tail Drag",
                     "description": "<p><strong>Wymagania</strong> Irahkatu has a Medium or smaller creature grabbed with its tail claw</p>\n<hr />\n<p><strong>Efekt</strong> Irahkatu attempts an @Check[type:athletics|defense:fortitude] check against the creature's Fortitude DC.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> If the creature is 10 feet away from Irahkatu, it is dragged into a square adjacent to Irahkatu. Irahkatu can make a jaws Strike against the creature.</p>\n<p><strong>Sukces</strong> If the creature is 10 feet away from Irahkatu, it is dragged into a square adjacent to Irahkatu.</p>\n<p><strong>Porażka</strong> The creature is not dragged.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is not dragged and Irahkatu no longer has the creature grabbed.</p>"
-                },
-                "lore->Deception": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+27 when using Voice Imitation"
-                        }
-                    }
                 }
             }
         },
@@ -4115,13 +4016,6 @@
                 "action->Wide Swing": {
                     "name": "Wide Swing",
                     "description": "<p>The frost giant makes a single greataxe Strike and compares the attack roll result to the ACs of up to two foes within its reach. This counts as two attacks for the frost giant's multiple attack penalty.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+37 in snow"
-                        }
-                    }
                 }
             }
         },
@@ -4161,13 +4055,6 @@
                 "action->Wide Swing": {
                     "name": "Wide Swing",
                     "description": "<p>The frost giant makes a single greataxe Strike and compares the attack roll result to the ACs of up to two foes within its reach. This counts as two attacks for the frost giant's multiple attack penalty.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+29 in snow"
-                        }
-                    }
                 }
             }
         },
@@ -4742,7 +4629,8 @@
                     "description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when playing a string instrument. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Fiddle, harp, lute, viol</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>"
                 },
                 "equipment->Choker of Elocution (Sylvan)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TacKaUs8cIddqiCU]\nChoker of Elocution (Sylvan)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TacKaUs8cIddqiCU]\nChoker of Elocution (Sylvan)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TacKaUs8cIddqiCU]\n<p>This platinum choker bears characters from a language's alphabet, and it gives knowledge of that language and the associated culture's customs.</p>\n<p>You gain a +1 item bonus to Society checks and the ability to understand, speak, and write the chosen language.</p>\n<p>Your excellent elocution reduces the DC of the flat check to perform an auditory action while deafened from 5 to 3.</p>\n<p><strong>Wymagania Wytwarzania</strong> You know the language or languages the choker grants.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
@@ -4985,13 +4873,6 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[7d8[piercing]] damage (@Check[type:reflex|dc:40|basic:true]) and is exposed to mandragora swarm venom. A successful save negates the poison exposure.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+38 in vegetation"
-                        }
-                    }
                 }
             }
         },
@@ -5036,13 +4917,6 @@
                 "action->Angled Entry": {
                     "name": "Angled Entry",
                     "description": "<p>The hound of Tindalos casts a 7. kręgu @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translokacja} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+29 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -5934,13 +5808,6 @@
                 "action->Shell Defense": {
                     "name": "Shell Defense",
                     "description": "<p>Old Crackjaw retracts its limbs and head into its shell and ends its turn. This increases its AC to 25, but it can't act except to reemerge, which it can do as a single action.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 in Water"
-                        }
-                    }
                 }
             }
         },
@@ -6338,13 +6205,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -6771,13 +6631,6 @@
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warden hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal Grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue. A creature can sever the tongue by hitting AC 27 and dealing at least 14 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+24 in water"
-                        }
-                    }
                 }
             }
         },
@@ -6812,13 +6665,6 @@
                 "action->Vine Lash": {
                     "name": "Vine Lash",
                     "description": "<p>The shambler makes a vine Strike against each creature within reach. Its multiple attack penalty increases only after all the attacks.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+18 in forests or swamps"
-                        }
-                    }
                 }
             }
         },
@@ -7072,13 +6918,6 @@
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
                     "description": "<p>When a storm-struck arboreal damages an item or structure it deals an additional [[/r 3d12]] damage to that item or structure.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+35 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -7366,13 +7205,6 @@
                 "action->Drink Blood": {
                     "name": "Drink Blood",
                     "description": "<p><strong>Wymagania</strong> A bleeding creature is within the baobhan sith's reach</p>\n<hr />\n<p><strong>Efekt</strong> The baobhan sith tries to Drink the Blood from the bleeding creature's wounds. The baobhan sith attempts an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC. On a success, the victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the baobhan sith regains [[/r 10[healing]]]{10 HP}, gaining any Hit Points in excess of their maximum Hit Points as temporary Hit Points.</p>\n<p>Drinking Blood from a victim that's already drained doesn't restore any Hit Points to the baobhan sith but increases the victim's drained value by 1. A victim's drained condition decreases by 1 per week. A blood transfusion, which requires 10 minutes, a successful @Check[type:medicine|dc:20] check, and sufficient blood or a blood donor, reduces the drained value by 1.</p>"
-                },
-                "lore->Performance": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+20 when dancing"
-                        }
-                    }
                 }
             }
         },
@@ -7617,13 +7449,6 @@
                 "action->Word of Recall": {
                     "name": "Word of Recall",
                     "description": "<p>The Knurly Witch has used @UUID[Compendium.pf2e.spells-srd.Item.nzbnTqHgNKiGZkrZ]{Word of Recall} to bind herself to the House at the Edge of Time (area <strong>K16</strong>).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 to Grapple"
-                        }
-                    }
                 }
             }
         },
@@ -7959,13 +7784,6 @@
                     "name": "Temporal Strikes",
                     "description": "<p>The disciple's Strikes force the creature hit to endure a deluge of unfamiliar memories from a combination of past lives and parallel existences, causing an additional 3k6 mental damage with a successful hit.</p>"
                 },
-                "lore->Intimidation": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+28 to Demoralize"
-                        }
-                    }
-                },
                 "lore->Yog-Sothoth Lore": {
                     "name": "Yog-Sothoth Lore"
                 }
@@ -8297,13 +8115,6 @@
                 "action->Woodland Ambush": {
                     "name": "Woodland Ambush",
                     "description": "<p><strong>Wymagania</strong> The Tree that Weeps is using Dead Tree in forested terrain, and a creature that hasn't detected it is within 30 feet</p>\n<p><strong>Efekt</strong> The Tree that Weeps Strides with a +10-foot circumstance bonus to its Speed in the direction of the triggering creature. Once the creature is in reach, the Tree that Weeps makes a scythe branch Strike against it. The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against this Strike.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+33 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -9390,13 +9201,6 @@
                 "action->Summon Pack": {
                     "name": "Przywołanie Pack",
                     "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Efekt</strong> With a howl, the wild hunt hound summons a fog that manifests into several misty hounds. These foggy hounds shift and race and howl in a @Template[type:emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} as long as the wild hunt hound Sustains the effect. While the hounds seem to be made of fog, their teeth are very real, and any creature that ends its turn in this aura takes @Damage[6d6[piercing]] damage from numerous bites (@Check[type:reflex|dc:31|basic:true]).</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+29 when Tracking"
-                        }
-                    }
                 }
             }
         },

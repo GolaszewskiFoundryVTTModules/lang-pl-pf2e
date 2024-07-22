@@ -40,7 +40,7 @@
                 },
                 "equipment->Lionlodge Key Ring": {
                     "name": "Lionlodge Key Ring",
-                    "description": "<p>Key ring for every door in <span style=\"color: var(--body); font-size: 1em;\">Lionlodge.</span></p>"
+                    "description": "<p>Key ring for every door in Lionlodge.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
@@ -141,13 +141,6 @@
                 "action->Stomp": {
                     "name": "Stomp",
                     "description": "<p>The redcap Strides up to half its Speed and makes a boot Strike at any point during that movement. If the boot Strike hits a @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} creature, it deals an extra @Damage[2d6[bleed]].</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 for shoes"
-                        }
-                    }
                 }
             }
         },
@@ -368,12 +361,12 @@
             "description": "<p>A herd of deer exits the woods to investigate the delicious-looking leshys.</p>",
             "disable": "<p>@Check[type:diplomacy|dc:17|name:Befriend the Deer]{Diplomacy (with Wild Empathy)} to befriend the deer and convince them that leshys aren't for nibbling, or @Check[type:intimidation|dc:20|name:Scare the Deer Away]{Intimidation} to scare away the deer.</p>",
             "hpDetails": "(if the grazing deer take this much damage, they aren't killed, but they do flee into the woods and don't return)",
-            "routine": "<p>(2 akcje) The grazing deer takes one action to move about, and then one action to eagerly nibble at a randomly chosen NPC. A character who spends three actions on their turn to Stride can avoid being nibbled by the grazing deer during the hazard's next turn. If all of the PCs do so, attempt a @Check[type:flat|dc:5|name:Escape the Deer]-on a success, the party escapes the deer and can proceed onward to Petalbrook, but they become delayed as a result of having to flee the pack of ravenous deer.</p>",
+            "routine": "<p>(2 actions) The grazing deer takes one action to move about, and then one action to eagerly nibble at a randomly chosen PC. A character who spends three actions on their turn to Stride can avoid being nibbled by the grazing deer during the hazard's next turn. If all of the PCs do so, attempt a @Check[type:flat|dc:5|name:Escape the Deer]-on a success, the party escapes the deer and can proceed onward to Petalbrook, but they become delayed as a result of having to flee the pack of ravenous deer.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Approach and Taste": {
                     "name": "Approach and Taste",
-                    "description": "<p><strong>Aktywator</strong> The PCs emerge from the forest's edge</p>\n<hr />\n<p><strong>Efekt</strong> A deer approaches the party and attempts a nibble Strike against a randomly determined PC. THe grazing deer rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> The PCs emerge from the forest's edge</p>\n<hr />\n<p><strong>Efekt</strong> A deer approaches the party and attempts a nibble Strike against a randomly determined PC. The grazing deer rolls initiative.</p>"
                 },
                 "strike-melee->Nibble": {
                     "name": "Nibble"
@@ -437,13 +430,6 @@
                 "action->Tinker": {
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 traps"
-                        }
-                    }
                 }
             }
         },
@@ -496,13 +482,6 @@
                 "action->Grab": {
                     "name": "Chwycenie",
                     "description": "<p><strong>Wymagania</strong> The monster's last action was a success with a Strike that lists Grab in its damage entry, or it has a creature grabbed using this action.</p>\n<hr />\n<p><strong>Efekt</strong> The monster automatically Grabs the target until the end of the monster's next turn. The creature is grabbed by whichever body part the monster attacked with, and that body part can't be used to Strike creatures until the grab is ended. Using Grab extends the duration of the monster's Grab until the end of its next turn for all creatures grabbed by it. A grabbed creature can use the Escape action to get out of the grab, and the Grab ends for a grabbed creatures if the monster moves away from it.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -768,13 +747,6 @@
                 },
                 "strike-melee->Warhammer": {
                     "name": "Młot Bojowy"
-                },
-                "lore->Deception": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to Impersonate"
-                        }
-                    }
                 }
             }
         },
@@ -822,13 +794,6 @@
                 "action->Tinker": {
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 traps"
-                        }
-                    }
                 }
             }
         }

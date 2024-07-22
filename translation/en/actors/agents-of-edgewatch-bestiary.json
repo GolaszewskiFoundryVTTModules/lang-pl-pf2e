@@ -253,7 +253,7 @@
         },
         "action->Magic Horn": {
           "name": "Magic Horn",
-          "description": "<p>Any living creature slain by the almiraj's horn Strike immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} with no saving throw, in addition to dying.</p>\n<p>A severed almiraj horn retains a wisp of its former magic; in combat, the horn can be wielded as a <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z]{dagger}</em> or, if affixed to a shaft, a <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]{spear}</em></p>"
+          "description": "<p>Any living creature slain by the almiraj's horn Strike immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} with no saving throw, in addition to dying.</p>\n<p>A severed almiraj horn retains a wisp of its former magic; in combat, the horn can be wielded as a <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z]{Dagger}</em> or, if affixed to a shaft, a <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]{Spear}</em></p>"
         }
       }
     },
@@ -389,16 +389,6 @@
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The avarek's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-        },
-        "lore->Athletics": {
-          "skillVariants": {
-            "0": {
-              "label": "+16 to Climb"
-            },
-            "1": {
-              "label": "or Swim"
-            }
-          }
         },
         "lore->Sailing Lore": {
           "name": "Sailing Lore"
@@ -549,13 +539,6 @@
         "action->Paralysis": {
           "name": "Paralysis",
           "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[type:fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
-        },
-        "lore->Athletics": {
-          "skillVariants": {
-            "0": {
-              "label": "+21 to Grapple"
-            }
-          }
         }
       }
     },
@@ -1083,13 +1066,6 @@
         "action->Tug": {
           "name": "Tug",
           "description": "<p>The bregdi pulls a creature it can reach or a creature holding something it can reach (such as a fishing line in the water).</p>\n<p>The bregdi attempts an @Check[type:athletics|defense:fortitude] check against the creature's Fortitude DC. On a success, it pulls the creature into an adjacent space. On a critical success, the bregdi can also make a jaws Strike against the creature pulled into an adjacent space.</p>"
-        },
-        "lore->Survival": {
-          "skillVariants": {
-            "0": {
-              "label": "+20 to Track a creature at half its Hit Points or fewer"
-            }
-          }
         }
       }
     },
@@ -1712,13 +1688,6 @@
         "action->Steady Spellcasting": {
           "name": "Steady Spellcasting",
           "description": "<p>If a reaction would disrupt the Daemonic Infector's spellcasting action, he attempts a @Check[type:flat|dc:15] check. On a success, the action isn't disrupted.</p>"
-        },
-        "lore->Crafting": {
-          "skillVariants": {
-            "0": {
-              "label": "+41 when crafting poison"
-            }
-          }
         },
         "lore->Norgorber Lore": {
           "name": "Norgorber Lore"
@@ -2866,13 +2835,6 @@
         "action->Vermicular Movement": {
           "name": "Vermicular Movement",
           "description": "<p>When a grick takes a Stride action to move half its Speed or less, that movement doesn't trigger reactions.</p>"
-        },
-        "lore->Stealth": {
-          "skillVariants": {
-            "0": {
-              "label": "+14 in rocky terrain"
-            }
-          }
         }
       }
     },
@@ -4634,13 +4596,6 @@
         "action->Najra Swarm Attack": {
           "name": "Najra Swarm Attack",
           "description": "<p>The najra lizard's melee Strikes deal 1d6 precision damage to creatures sharing a square with more than one najra lizard.</p>"
-        },
-        "lore->Deception": {
-          "skillVariants": {
-            "0": {
-              "label": "+12 to Create a Diversion"
-            }
-          }
         }
       }
     },
@@ -6743,6 +6698,7 @@
     },
     "Vaultbreaker Ooze": {
       "name": "Vaultbreaker Ooze",
+      "senses": "treasure sense (imprecise) 30 feet",
       "items": {
         "strike-melee->Pseudopod": {
           "name": "Pseudopod"
@@ -6764,7 +6720,7 @@
         },
         "action->Form Tool": {
           "name": "Form Tool",
-          "description": "<p>The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod as thieves' tools to Pick a Lock or Disable a Device.</p>"
+          "description": "<p>The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod as thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick a Lock} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}.</p>"
         }
       }
     },

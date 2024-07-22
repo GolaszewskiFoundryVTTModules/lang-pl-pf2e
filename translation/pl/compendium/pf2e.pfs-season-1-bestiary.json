@@ -32,18 +32,6 @@
                             "text": "The target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}."
                         }
                     }
-                },
-                "lore->Deception": {
-                    "rules": {
-                        "0": {
-                            "label": "Impersonate a Zombie"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 to impersonate a zombie"
-                        }
-                    }
                 }
             }
         },
@@ -76,18 +64,6 @@
                     "rules": {
                         "3": {
                             "text": "The target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}."
-                        }
-                    }
-                },
-                "lore->Deception": {
-                    "rules": {
-                        "0": {
-                            "label": "Impersonate a Zombie"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to impersonate a zombie"
                         }
                     }
                 }
@@ -134,13 +110,6 @@
                 "action->Spine Rake": {
                     "name": "Spine Rake",
                     "description": "<p>The young sea serpent extends the spines along its back and Swims or Strides. Each creature the serpent is adjacent to at any point during its movement takes @Damage[(1d8+4)[slashing]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 to swim"
-                        }
-                    }
                 }
             }
         },
@@ -459,13 +428,6 @@
                 },
                 "action->Rend": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 to Grapple"
-                        }
-                    }
                 }
             }
         },
@@ -1177,13 +1139,6 @@
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warrior hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue.</p>\n<p>A creature can sever the tongue by hitting AC 15 and dealing at least 3 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 in water"
-                        }
-                    }
                 }
             }
         },
@@ -1582,30 +1537,6 @@
                 "action->Poison Tooth": {
                     "name": "Poison Tooth",
                     "description": "<p><strong>Wymagania</strong> The krooth damaged a creature with its jaws Strike on its most recent action this turn</p><hr />\n<p><strong>Efekt</strong> The krooth snaps off one of its teeth in the creature it hit. The creature takes @Damage[1d6[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Neither the persistent bleed damage nor the drained condition can be healed while the tooth remains. Removing the tooth safely requires a successful @Check[type:medicine|dc:24|traits:action:administer-first-aid] check to Administer First Aid. Instead of ending bleeding or stabilizing, this removes the drained condition, but it doesn't automatically end the bleed damage.</p>"
-                },
-                "lore->Stealth": {
-                    "rules": {
-                        "0": {
-                            "label": "In water"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 in water"
-                        }
-                    }
-                },
-                "lore->Survival": {
-                    "rules": {
-                        "0": {
-                            "label": "Track a Bleeding Creature"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 to track a bleeding creature"
-                        }
-                    }
                 }
             }
         },
@@ -1920,13 +1851,6 @@
                 "action->Tree Meld": {
                     "name": "Tree Meld",
                     "description": "<p>The dryad touches a tree of enough volume to contain her and merges into it for as long as she wishes. She can Cast a Spell while inside as long as the spell doesn't require a line of effect outside the tree. She can hear, but not see, what's going on outside the tree. She can Dismiss this effect.</p>\n<p>Significant physical damage dealt to the tree expels the dryad from the tree and deals [[/r {3d6}]]{3k6 damage} to her. @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]{Magic Passage} expels the dryad without dealing damage.</p>\n<p>If a dryad uses this ability on her bonded tree, she instead enters an extradimensional living space within the tree; Tree Meld gains the extradimensional trait. A dryad can bring up to two other creatures with her when entering her home within her bonded tree. The dryad can still be expelled from this space as above.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 woodworking"
-                        }
-                    }
                 }
             }
         },
@@ -2235,13 +2159,6 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Częstotliwość</strong> once per minute</p>\n<hr />\n<p><strong>Efekt</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:19|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 in sewers"
-                        }
-                    }
                 }
             }
         },
@@ -2663,18 +2580,6 @@
                 "action->Distraction": {
                     "name": "Distraction",
                     "description": "<p>Any living creature within the area of a frog swarm must attempt a @Check[type:will|dc:12] save. Humanoids that fail this save are @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure). Animals are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} on a successful save, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} on a failure, and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and fleeing on a critical failure.</p>"
-                },
-                "lore->Acrobatics": {
-                    "rules": {
-                        "0": {
-                            "label": "To Jump"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to jump"
-                        }
-                    }
                 }
             }
         },
@@ -2793,18 +2698,6 @@
                 "action->Shrew Venom": {
                     "name": "Shrew Venom",
                     "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:14]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 4 rund</p>\n<p><strong>Stadium 1</strong> @Damage[1d4[poison]] (1 runda)</p>"
-                },
-                "lore->Athletics": {
-                    "rules": {
-                        "0": {
-                            "label": "To Climb or Swim"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 to Climb or Swim"
-                        }
-                    }
                 }
             }
         },
@@ -2925,18 +2818,6 @@
                 "action->Earth Glide": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.DIYZNvVP28U2UnDb]\nEarth Glide",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.DIYZNvVP28U2UnDb]\n<p>The metallic sod hound can @UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]{Burrow} through any earthen matter, including rock or metal. When it does so, the metallic sod hound moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
-                },
-                "lore->Survival": {
-                    "rules": {
-                        "0": {
-                            "label": "to Track"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 to track"
-                        }
-                    }
                 }
             }
         },
@@ -3144,13 +3025,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -3195,13 +3069,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -3594,18 +3461,6 @@
                 "action->Quick Bomber": {
                     "name": "Quick Bomber",
                     "description": "<p>Iloise can use Interact to draw a bomb, then Strike with it</p>"
-                },
-                "lore->Performance": {
-                    "rules": {
-                        "0": {
-                            "label": "Performance with a Tesla Coil"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 with Tesla Coil"
-                        }
-                    }
                 }
             }
         },
@@ -3665,13 +3520,6 @@
                 "action->Uncanny Climber": {
                     "name": "Uncanny Climber",
                     "description": "<p>A giant gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a giant gecko attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinaczka} and critically fails, it gets a failure instead.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 to climb"
-                        }
-                    }
                 }
             }
         },
@@ -3689,13 +3537,6 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Częstotliwość</strong> once per minute</p>\n<hr />\n<p><strong>Efekt</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:15|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+2 in sewers"
-                        }
-                    }
                 }
             }
         },
@@ -3723,13 +3564,6 @@
                 "action->Reposition": {
                     "name": "Reposition",
                     "description": "<p>The otyugh attempts to move all creatures that it has grabbed into other spaces within the reach of its tentacles, rolling a single Athletics check and comparing the result against each creature's Fortitude DC. On a failure, the creature remains in place, and on a critical failure, the creature is no longer grabbed.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 in lair"
-                        }
-                    }
                 }
             }
         },
@@ -3750,19 +3584,12 @@
                 "action->Tinker": {
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 traps"
-                        }
-                    }
                 }
             }
         },
         "Jury-Rigged Annihilator": {
             "name": "Jury-Rigged Annihilator",
-            "description": "<p>A gargantuan scorpion-like robot, covered in signs of damage, has been bolted into the canyon's rock walls.</p>\n<hr />\n<p><strong>Integrated Chain Gun</strong> Hardness 10, HP 40 (BT 20) per integrated chain gun</p>\n<p><strong>Plasma Lance </strong>Hardness 10, Plasma Lance HP 20 (BT 10)</p>",
+            "description": "<p>A gargantuan scorpion-like robot, covered in signs of damage, has been bolted into the canyon's rock walls.</p>\n<hr />\n<p><strong>Integrated Chain Gun</strong> Hardness 10, HP 40 (BT 20) per integrated chain gun</p>\n<p><strong>Plasma Lance</strong> Hardness 10, Plasma Lance HP 20 (BT 10)</p>",
             "disable": "<p>@Check[type:thievery|dc:23] (eksperctwo) to successfully disable the annihilator at the control box on the northwest ledge, @Check[type:thievery|dc:20] (wytrenowanie) or @Check[type:engineering-lore|dc:15] (wytrenowanie) to jam the mechanics of either of the two chain guns, or the \"tail\" mechanism where the plasma lance is mounted, preventing it from firing. Jamming the guns or tail requires first getting on top of the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} annihilator, which counts as difficult terrain. All attempts take 2 actions.</p>",
             "hpDetails": "per integrated chain gun; Plasma Lance Hardness 10, Plasma Lance HP 20 (BT 10)",
             "routine": "<p>(2 Actions) When the plasma lance is ready, the annihilator uses it to attack as many PCs as it can, otherwise it attacks with its two integrated chain guns while the plasma lance recharges, spending one action for each of its two integrated chain guns that is still functional. This trap doesn't take a multiple attack penalty. If Synthetic Khismar is destroyed, the annihilator attacks as many creatures as possible.</p>",
@@ -4063,13 +3890,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold warrior deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+5 traps"
-                        }
-                    }
                 }
             }
         },
@@ -4090,13 +3910,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold scout deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+5 traps"
-                        }
-                    }
                 }
             }
         },
@@ -4126,13 +3939,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold warrior deals an extra 1k4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 traps"
-                        }
-                    }
                 }
             }
         },
@@ -4156,13 +3962,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The kobold warrior deals an extra 1k4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 traps"
-                        }
-                    }
                 }
             }
         },
@@ -4172,13 +3971,6 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[type:reflex|dc:20|basic:true]) and @Damage[1d4[bleed]].</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 in water"
-                        }
-                    }
                 }
             }
         },
@@ -4343,13 +4135,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The leopard deals 1k4 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in undergrowth"
-                        }
-                    }
                 }
             }
         },
@@ -4522,13 +4307,6 @@
                 "action->Entangling Slime": {
                     "name": "Entangling Slime",
                     "description": "<p>A creature struck by a slurk's slime squirt becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a –5-foot penalty to Speed for 1 hour or until the slime is removed. The slime can be removed with a total of three Interact actions by the entangled creature or creatures adjacent to the creature.</p>\n<p>These actions don't need to be consecutive or made by the same creature.</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 to escape"
-                        }
-                    }
                 }
             }
         },
@@ -4555,13 +4333,6 @@
                 "action->Entangling Slime": {
                     "name": "Entangling Slime",
                     "description": "<p>A creature struck by a slurk's slime squirt becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a –5-foot penalty to Speed for 1 hour or until the slime is removed. The slime can be removed with a total of three Interact actions by the entangled creature or creatures adjacent to the creature.</p>\n<p>These actions don't need to be consecutive or made by the same creature.</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 to Escape"
-                        }
-                    }
                 }
             }
         },
@@ -4878,18 +4649,6 @@
                 "action->Earth Glide": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.DIYZNvVP28U2UnDb]\nEarth Glide",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.DIYZNvVP28U2UnDb]\n<p>The metallic sod hound can @UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]{Burrow} through any earthen matter, including rock or metal. When it does so, the metallic sod hound moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
-                },
-                "lore->Survival": {
-                    "rules": {
-                        "0": {
-                            "label": "to Track"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 to track"
-                        }
-                    }
                 }
             }
         },
@@ -4968,13 +4727,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -5010,13 +4762,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -5900,13 +5645,6 @@
                 "action->Sap": {
                     "name": "Pałka",
                     "description": "<p>A pine brute's bark secretes sticky sap. Any creature that hits the pine brute with a melee attack, is hit by the pine brute, or otherwise touches the pine brute must succeed at a @Check[type:reflex|dc:17] save or suffer the effects of a lesser tanglefoot bag, also becoming @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the sticky substance is removed. A creature striking the pine brute with a weapon or object can automatically succeed at this Reflex save by leaving the object stuck to the pine brute. The object can then be removed with a successful @Check[type:athletics|dc:17|name:Unstick Object] check (made as a single action).</p>\n<p>A pine brute can have any number of objects stuck to it at a time. The pine brute can release a stuck object by using a single action, and the sap dissolves 1 minute after the pine brute dies, releasing all stuck objects.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{Efekt: Tanglefoot Bag (Mniejszy)}</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -6275,13 +6013,6 @@
                 "action->Swarming Claws and Teeth": {
                     "name": "Swarming Claws and Teeth",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d4[piercing]] damage and must attempt a @Check[type:reflex|dc:17|traits:damaging-effect] save.</p>\n<p>A creature affected by this attack can spend 2 actions on its turn to attempt another @Check[type:reflex|dc:17] to remove the clumsy condition.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage</p>\n<p><strong>Porażka</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and is exposed to rabies.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage, is clumsy 2, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, and is exposed to rabies.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to Climb"
-                        }
-                    }
                 }
             }
         },
@@ -6440,18 +6171,6 @@
                 "action->Swear Vengeance": {
                     "name": "Swear Vengeance",
                     "description": "<p><strong>Aktywator</strong> A creature that Reast can see damages a follower of Groetus other than Reast</p>\n<hr />\n<p><strong>Efekt</strong> Reast gains the effect of a 1. kręgu @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]{Sure Strike} spell. If Reast makes an attack roll against anyone other than the triggering creature, the true strike ends with no effect.</p>\n<p>Reast can use this reaction once per day.</p>"
-                },
-                "lore->Performance": {
-                    "rules": {
-                        "0": {
-                            "label": "Delivering a Sermon"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 to deliver sermons"
-                        }
-                    }
                 }
             }
         },
@@ -6544,13 +6263,6 @@
                 "action->Reefclaw Venom": {
                     "name": "Reefclaw Venom",
                     "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 4 rund</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 runda)</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -6572,18 +6284,6 @@
                 "action->Reefclaw Venom": {
                     "name": "Reefclaw Venom",
                     "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 4 rund</p>\n<p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}(1 runda),</p>\n<p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}(1 runda).</p>"
-                },
-                "lore->Athletics": {
-                    "rules": {
-                        "0": {
-                            "label": "To Swim"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -6713,13 +6413,6 @@
                 "action->Bloodletting": {
                     "name": "Bloodletting",
                     "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} or if the attack was a critical hit.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 to swim"
-                        }
-                    }
                 }
             }
         },
@@ -6741,13 +6434,6 @@
                 },
                 "strike-ranged->Knife": {
                     "name": "Knife"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 to swim"
-                        }
-                    }
                 },
                 "lore->Ocean Lore": {
                     "name": "Ocean Lore"
@@ -6773,13 +6459,6 @@
                 "strike-ranged->Knife": {
                     "name": "Knife"
                 },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to swim"
-                        }
-                    }
-                },
                 "lore->Ocean Lore": {
                     "name": "Ocean Lore"
                 }
@@ -6790,7 +6469,7 @@
             "description": "<p>Arcs of primal energy emerge from the L-shaped stone wall at the center of each alcove.</p>",
             "disable": "<p><span class=\"action-glyph\">1</span> @Check[type:crafting|dc:25] or @Check[type:thievery|dc:25] (eksperctwo) to rig up a dummy or other object to distract one of the trap's sensors, or</p>\n<p><span class=\"action-glyph\">1</span> @Check[type:nature|dc:23] (wytrenowanie) to temporarily befuddle one of the sensors with knowledge of primal magic.</p>\n<p>Alternatively, inserting the correct key into an alcove's keyhole disables that alcove's sensor.</p>",
             "reset": "<p>The trap is powered by the Eternal Bloom. It resets after 5 minutes, at which time the doors to the vault slam shut once again.</p>",
-            "routine": "<p>(4 actions) The trap loses one action per magical sensor disabled. On its initiative, the trap uses each of its actions to target one creature adjacent to or within an alcove with a negative effect that corresponds to the season opposite the one depicted on the alcove's murals (@Check[type:fortitude|dc:24] to resist). For the purposes of this trap, creatures who are within an alcove's landscape count are within that alcove. The trap can target only one creature per alcove per round.</p>\n<hr />\n<p><strong>Spring Alcove (death)</strong> The decay of late autumn takes hold of the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[void]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[void]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[void]] damage and @Damage[1d6[persistent,void]] damage. Effects that use vitality energy, such as the @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell, automatically end this persistent damage.<hr /></li>\n</ul>\n<p><strong>Summer Alcove (cold)</strong> Winter's bitter chill descends on the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[cold]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[cold]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[cold]] damage;and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour.<hr /></li>\n</ul>\n<p><strong>Autumn Alcove (poison)</strong> Poisonous springtime pollen sprays at the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[poison]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[poison]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.<hr /></li>\n</ul>\n<p><strong>Winter Alcove (fire)</strong> Heat greater than the hottest summer afternoon engulfs the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[fire]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[fire]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 hour.</li>\n</ul>",
+            "routine": "<p>(4 actions) The trap loses one action per magical sensor disabled. On its initiative, the trap uses each of its actions to target one creature adjacent to or within an alcove with a negative effect that corresponds to the season opposite the one depicted on the alcove's murals (@Check[type:fortitude|dc:24] to resist). For the purposes of this trap, creatures who are within an alcove's landscape count are within that alcove. The trap can target only one creature per alcove per round.</p>\n<hr />\n<p><strong>Spring Alcove (death)</strong> The decay of late autumn takes hold of the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[void]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[void]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[void]] damage and @Damage[1d6[persistent,void]] damage. Effects that use vitality energy, such as the @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell, automatically end this persistent damage.</li>\n</ul>\n<hr />\n<p><strong>Summer Alcove (cold)</strong> Winter's bitter chill descends on the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[cold]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[cold]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[cold]] damage;and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour.</li>\n</ul>\n<hr />\n<p><strong>Autumn Alcove (poison)</strong> Poisonous springtime pollen sprays at the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[poison]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[poison]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</li>\n</ul>\n<hr />\n<p><strong>Winter Alcove (fire)</strong> Heat greater than the hottest summer afternoon engulfs the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[2d6[fire]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[4d6[fire]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[4d6[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 hour.</li>\n</ul>",
             "stealth": "<p>(eksperctwo)</p>",
             "tokenName": "Season's Toll",
             "items": {
@@ -6805,7 +6484,7 @@
             "description": "<p>Arcs of primal energy emerge from the L-shaped stone wall at the center of each alcove.</p>",
             "disable": "<p>@Check[type:crafting|dc:28] or @Check[type:thievery|dc:28] (eksperctwo) to rig up a dummy or other object to distract one of the trap's sensors, or @Check[type:nature|dc:26] (wytrenowanie) to temporarily befuddle one of the sensors with knowledge of primal magic.</p>\n<p>Alternatively, inserting the correct key into an alcove's keyhole disables that alcove's sensor.</p>",
             "reset": "<p>The trap is powered by the Eternal Bloom. It resets after 5 minutes, at which time the doors to the vault slam shut once again.</p>",
-            "routine": "<p>(4 actions) The trap loses one action per magical sensor disabled. On its initiative, the trap uses each of its actions to target one creature adjacent to or within an alcove with a negative effect that corresponds to the season opposite the one depicted on the alcove's murals (@Check[type:fortitude|dc:27] to resist). For the purposes of this trap, creatures who are within an alcove's landscape count are within that alcove. The trap can target only one creature per alcove per round.</p>\n<hr />\n<p><strong>Spring Alcove (death)</strong> The decay of late autumn takes hold of the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[void]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[void]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[void]] damage and @Damage[1d6[persistent,void]] damage. Effects that use vitality energy, such as the @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell, automatically end this persistent damage.<hr /></li>\n</ul>\n<p><strong>Summer Alcove (cold)</strong> Winter's bitter chill descends on the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[cold]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[cold]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[cold]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour.<hr /></li>\n</ul>\n<p><strong>Autumn Alcove (poison)</strong> Poisonous springtime pollen sprays at the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[poison]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[poison]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.<hr /></li>\n</ul>\n<p><strong>Winter Alcove (fire)</strong> Heat greater than the hottest summer afternoon engulfs the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[fire]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[fire]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 hour.</li>\n</ul>",
+            "routine": "<p>(4 actions) The trap loses one action per magical sensor disabled. On its initiative, the trap uses each of its actions to target one creature adjacent to or within an alcove with a negative effect that corresponds to the season opposite the one depicted on the alcove's murals (@Check[type:fortitude|dc:27] to resist). For the purposes of this trap, creatures who are within an alcove's landscape count are within that alcove. The trap can target only one creature per alcove per round.</p>\n<hr />\n<p><strong>Spring Alcove (death)</strong> The decay of late autumn takes hold of the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[void]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[void]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[void]] damage and @Damage[1d6[persistent,void]] damage. Effects that use vitality energy, such as the @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell, automatically end this persistent damage.</li>\n</ul>\n<hr />\n<p><strong>Summer Alcove (cold)</strong> Winter's bitter chill descends on the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[cold]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[cold]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[cold]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour.</li>\n</ul>\n<hr />\n<p><strong>Autumn Alcove (poison)</strong> Poisonous springtime pollen sprays at the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[poison]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[poison]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</li>\n</ul>\n<hr />\n<p><strong>Winter Alcove (fire)</strong> Heat greater than the hottest summer afternoon engulfs the target.</p>\n<ul>\n<li><strong>Krytyczny Sukces</strong> The trap has no effect.</li>\n<li><strong>Sukces</strong> The target takes @Damage[(2d6+2)[fire]] damage.</li>\n<li><strong>Porażka</strong> The target takes @Damage[(4d6+4)[fire]] damage.</li>\n<li><strong>Krytyczna Porażka</strong> The target takes @Damage[(4d6+4)[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 hour.</li>\n</ul>",
             "stealth": "<p>(eksperctwo)</p>",
             "tokenName": "Season's Toll",
             "items": {
@@ -7125,13 +6804,6 @@
                 "action->Swarming Claws and Teeth": {
                     "name": "Swarming Claws and Teeth",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d4[piercing]] damage and must attempt a @Check[type:reflex|dc:17|traits:damaging-effect] save.</p>\n<p>A creature affected by this attack can spend 2 actions on it's turn to attempt another @Check[type:reflex|dc:17] to remove the clumsy condition.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage, is clumsy 2, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to Climb"
-                        }
-                    }
                 }
             }
         },
@@ -7508,18 +7180,6 @@
                 "action->Shrew Venom": {
                     "name": "Shrew Venom",
                     "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> [[/r {1d6} [poison]]]{1k6 poison} (1 runda)</p>\n<p><strong>Stadium 2</strong> [[/r {1d6} [poison]]]{1k6 poison} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}</p>"
-                },
-                "lore->Athletics": {
-                    "rules": {
-                        "0": {
-                            "label": "To Climb or Swim"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to Climb or Swim"
-                        }
-                    }
                 }
             }
         },
@@ -7921,13 +7581,6 @@
                 "action->Shield Push": {
                     "name": "Shield Push",
                     "description": "<p>The arboreal warden Strides and then makes a shield bash Strike. If the attack hits, the target is pushed 10 feet.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -8318,13 +7971,6 @@
                 "action->Young Sea Serpent Algae": {
                     "name": "Young Sea Serpent Algae",
                     "description": "<p>The water in the ballast organs around the sea serpent's neck is full of psychotropic algae.</p>\n<p><strong>Saving throw</strong> @Check[type:fortitude|dc:18|name:Young Sea Serpent Algae Poison]</p>\n<p><strong>Maximum duration</strong> 3 rund</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and, if flying, spends its first action each turn to descend 20 feet (1 runda)</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to swim"
-                        }
-                    }
                 }
             }
         },
@@ -8391,18 +8037,6 @@
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
-                },
-                "lore->Society": {
-                    "rules": {
-                        "0": {
-                            "label": "Create a Forgery"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 to Create Forgeries"
-                        }
-                    }
                 },
                 "lore->Underworld Lore": {
                     "name": "Obeznanie w Półświatku"
@@ -8478,18 +8112,6 @@
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
-                },
-                "lore->Society": {
-                    "rules": {
-                        "0": {
-                            "label": "Create a Forgery"
-                        }
-                    },
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to Create Forgeries"
-                        }
-                    }
                 },
                 "lore->Underworld Lore": {
                     "name": "Obeznanie w Półświatku"

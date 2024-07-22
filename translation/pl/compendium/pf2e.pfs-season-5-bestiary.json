@@ -356,13 +356,6 @@
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 with demons"
-                        }
-                    }
                 }
             }
         },
@@ -414,6 +407,76 @@
                 "action->Fume": {
                     "name": "Fume",
                     "description": "<p>The brimorak emits a cloud of thick black smoke in a @Template[type:burst|distance:10] that remains in place for [[/br 1d4 #Duration Fume]]{1k4 rounds}.</p>\n<p>All creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within it. A creature that enters or begins its turn within the smoke it must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
+                }
+            }
+        },
+        "Asper Hajeri": {
+            "name": "Asper Hajeri",
+            "blurb": "Female rakshasa lieutenant",
+            "items": {
+                "spellcastingEntry->Primal Spontaneous Spells": {
+                    "name": "Primal Spontaneous Spells"
+                },
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Dive and Breach (At Will)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.1xM9muPRa8hiyJtI]\nDive and Breach (At Will)"
+                },
+                "spell->Slashing Gust": {
+                    "requirements": "You have at least one free hand."
+                },
+                "strike-melee->Wish Knife": {
+                    "name": "Wish Knife"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "action->Elemental Aura": {
+                    "name": "Elemental Aura",
+                    "description": "<p>Asper surrounds herself with the power of one of the elements under her control (air, fire, or water). If air, she gains resistance 10 to electricity damage and doubles her speed. If fire, she gains resistance 10 to fire damage. Any creature within 30 feet of her who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage. If water, she gains resistance 10 to cold damage and fast healing 20. This aura persists until she is knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, she dismisses the aura, or she releases it via Elemental Burst.</p>"
+                },
+                "action->Elemental Burst": {
+                    "name": "Elemental Burst",
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> Asper releases the elemental aura she currently holds, dealing @Damage[2d8[electricity]] (if air), @Damage[2d8[fire]], or @Damage[2d8[cold]] (if water) damage. She cannot use elemental aura again for that element for 2 rounds.</p>"
+                }
+            }
+        },
+        "Asper Hajeri (9–10)": {
+            "name": "Asper Hajeri (9–10)",
+            "blurb": "Female rakshasa lieutenant",
+            "items": {
+                "spellcastingEntry->Primal Spontaneous Spells": {
+                    "name": "Primal Spontaneous Spells"
+                },
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Dive and Breach (At Will)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.1xM9muPRa8hiyJtI]\nDive and Breach (At Will)"
+                },
+                "spell->Slashing Gust": {
+                    "requirements": "You have at least one free hand."
+                },
+                "strike-melee->Wish Knife": {
+                    "name": "Wish Knife"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "action->Elemental Aura": {
+                    "name": "Elemental Aura",
+                    "description": "<p>Asper surrounds herself with the power of one of the elements under her control (air, fire, or water). If air, she gains resistance 10 to electricity damage and doubles her speed. If fire, she gains resistance 10 to fire damage. Any creature within 30 feet of her who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage. If water, she gains resistance 10 to cold damage and fast healing 20. This aura persists until she is knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, she dismisses the aura, or she releases it via Elemental Burst.</p>"
+                },
+                "action->Elemental Burst": {
+                    "name": "Elemental Burst",
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> Asper releases the elemental aura she currently holds, dealing @Damage[2d8[electricity]] (if air), @Damage[2d8[fire]], or @Damage[2d8[cold]] (if water) damage. She cannot use elemental aura again for that element for 2 rounds.</p>"
                 }
             }
         },
@@ -571,20 +634,6 @@
                 "action->Submerged Stealth": {
                     "name": "Submerged Stealth",
                     "description": "<p>While submerged in water, an azarketi ruffian gains a +2 circumstance bonus on their Stealth check, indicated above.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 to Swim"
-                        }
-                    }
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 Underwater"
-                        }
-                    }
                 }
             }
         },
@@ -904,13 +953,6 @@
                     "name": "Paralyzing Spew",
                     "description": "<p>The lacedon discharges a spray of carrion vomit at a creature within 20 feet, dealing @Damage[1d6[poison]] damage with a @Check[type:fortitude|dc:19|basic:true]. A non-elf creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save to end the paralysis at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save. The lacedon can't use Paralyzing Spew again for [[/br 1d4 #Recharge Paralyzing Spew]]{1k4 rounds}.</p>"
                 },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to Swim"
-                        }
-                    }
-                },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
                 }
@@ -958,13 +1000,6 @@
                     "name": "Paralyzing Spew",
                     "description": "<p>The lacedon discharges a spray of carrion vomit at a creature within 20 feet, dealing @Damage[1d6[poison]] damage with a @Check[type:fortitude|dc:19|basic:true]. A non-elf creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save to end the paralysis at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save. The lacedon can't use Paralyzing Spew again for [[/br 1d4 #Recharge Paralyzing Spew]]{1k4 rounds}.</p>"
                 },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 to Swim"
-                        }
-                    }
-                },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
                 }
@@ -998,20 +1033,6 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[type:reflex|dc:18|basic:true] save). A creature that fails their saving throw becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 to Climb"
-                        }
-                    }
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 within treasure"
-                        }
-                    }
                 }
             }
         },
@@ -1034,13 +1055,6 @@
                 "action->Flaming Shroud": {
                     "name": "Flaming Shroud",
                     "description": "<p>A flaming skull is shrouded in hideous flames. It deals @Damage[1d6[fire]] damage to any unattended item it touches and on a forehead Strike. On a critical hit with a Strike, the target catches fire, taking @Damage[1d4[persistent,fire]].</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to Maneuver in Flight"
-                        }
-                    }
                 }
             }
         },
@@ -1121,6 +1135,20 @@
                 "action->Rasping Tongues": {
                     "name": "Rasping Tongues",
                     "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> The kithangian has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in one or both pincers</p>\n<hr />\n<p><strong>Efekt</strong> Barbed tongues slither out of the faces in the kithangian's pincers. The tongues burrow into grabbed creatures and inject their minds with haunting psychic screams. Each grabbed creature takes @Damage[2d8[piercing],2k8[mental]]{2k8 piercing and 2k8 mental}. A creature can try to resist the mental damage by attempting a @Check[type:will|dc:23|basic:true].</p>"
+                }
+            }
+        },
+        "Blowing Off Steam": {
+            "name": "Blowing Off Steam",
+            "description": "<p>Hidden vents emit scalding hot steam made from a particularly acrid solution, irritating the eyes and throat of anyone who inhales it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:29] (trained) to block a vent, or @Check[type:crafting|dc:27] (trained) to disable the heating element within the vent that turns the liquid into steam</p>",
+            "reset": "<p>The steam vents cease to operate 1 minute after all creatures have left the area and go into a maintenance cycle for 1 hour. After this time, they can be triggered again.</p>",
+            "routine": "<p>(4 actions) Each of the four steam vents uses a single action each to emit superheated steam, which spreads for 60 feet along the wall from its location and extends out from the wall by 30 feet, dealing @Damage[(2d10+11)[untyped]] damage to each creature in their range (@Check[type:fortitude|dc:26] save). For each disabled vent, the trap loses 1 action each turn.</p>",
+            "stealth": "<p>(trained); @Check[type:perception|dc:28] (expert) to find the precise location of the steam vents</p>",
+            "items": {
+                "action->Venting Steam": {
+                    "name": "Venting Steam",
+                    "description": "<p><strong>Aktywator</strong> A creature enters the area of the trap</p><hr /><p><strong>Efekt</strong> All four vents rapidly heat and let out steam for 5 seconds, filling room with a painfully acrid smell. Each creature in the room must attempt a @Check[type:fortitude|dc:26] save, and the trap then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}, and, struck by a coughing fit, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             }
         },
@@ -1299,13 +1327,6 @@
                 "action->Limited Angled Entry": {
                     "name": "Limited Angled Entry",
                     "description": "<p>The hound echo casts a 4. poziomu. @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1k4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -1394,13 +1415,6 @@
                 "action->Death Roll": {
                     "name": "Death Roll",
                     "description": "<p><strong>Wymagania</strong> The crocodile must have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The crocodile tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If it fails, it releases the creature.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in water"
-                        }
-                    }
                 }
             }
         },
@@ -1871,13 +1885,6 @@
                 "action->Fiddle": {
                     "name": "Fiddle",
                     "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[type:emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[type:will|dc:20] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Sukces</strong> No effect</p>\n<p><strong>Porażka</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} and –10-foot status penalty to Speeds</p>\n<p><strong>Krytyczna Porażka</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Efekt: Fiddle}</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to High Jump or Long Jump"
-                        }
-                    }
                 }
             }
         },
@@ -1918,13 +1925,6 @@
                 "action->Angled Entry": {
                     "name": "Angled Entry",
                     "description": "<p>The hound of Tindalos casts a 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -2017,13 +2017,6 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Częstotliwość</strong> once per minute</p>\n<hr />\n<p><strong>Efekt</strong> The sewer ooze unleashes a wave of filth, covering all creatures in a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:19] save or take @Damage[1d4+4[acid]] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}).</p>\n<p>A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Efekt: Filth Wave}</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 in sewers"
-                        }
-                    }
                 }
             }
         },
@@ -2058,13 +2051,6 @@
                 "action->Vulkariki Tricks": {
                     "name": "Vulkariki Tricks",
                     "description": "<p>A vulkariki eidolon can use Acrobatics instead of Thievery to @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Zgarnięcie Obiektu} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Kradzież}.</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 to Balance or Tumble Through"
-                        }
-                    }
                 }
             }
         },
@@ -2243,13 +2229,57 @@
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
+                }
+            }
+        },
+        "Exhausted Raja Rakshasa": {
+            "name": "Exhausted Raja Rakshasa",
+            "blurb": "Variant raja rakshasa",
+            "publicNotes": "<p>When not disguised as a humanoid, the raja rakshasa has the head of an animal. The hands of a raja rakshasa are more subtly unsettling, for the fingers of these fiends bend outward, away from the palms.</p>\n<p>More than any other types of rakshasa, rajas scoff at religion. They understand the power of the divine, yet they view themselves as the only things worthy of worship from mortal creatures; not even their own immortals are deemed deserving of such glorification. Raja rakshasas often form close-knit families that work together to bring down mortal cities or to rule them from the shadows within. Such families of rakshasas often incorporate other breeds of the fiend, often using dandasukas as favored servants or stealthy spies. Even though a raja family works together to achieve a shared goal, infighting and treachery among their own is a constant threat.</p>\n<hr />\n<p>Rakshasas are evil spirits that cloak themselves in the guises of humanoid creatures, that they might walk unseen among their prey. They embody what is taboo among most societies, and in the shape of those they seek to defile, rakshasas gorge themselves on these hideous acts. A wide range of rakshasas exist; presented below are the diminutive, sinister dandasuka rakshasa and the infamous raja rakshasa, who are the most widespread and commonly encountered of these fiends.</p>",
+            "saveDetails": "+2 status to all saves vs. magic, +3 status to all saves vs. divine magic",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
                 },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 with demons"
-                        }
-                    }
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Mind Reading (At Will)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
+                },
+                "spell->Nondetection": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]\nNondetection"
+                },
+                "spell->Vampiric Touch": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
+                },
+                "spell->Hideous Laughter": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
+                },
+                "spell->Mage Hand": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
+                },
+                "strike-melee->Kukri": {
+                    "name": "Kukri"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->+2 Status to All Saves vs. Magic": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+                },
+                "action->+3 Status to All Saves vs. Divine Magic": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+3 Status to All Saves vs. Divine Magic"
+                },
+                "action->Scoff at the Divine": {
+                    "name": "Scoff at the Divine",
+                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability</p>\n<p><strong>Wymagania</strong> The raja rakshasa has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p><strong>Efekt</strong> The raja rakshasa expends a spell slot that could be used to cast dispel magic and attempts to counteract the triggering spell or ability. The raja rakshasa can't Scoff at the Divine for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                },
+                "action->Change Shape": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The raja rakshasa takes on the appearance of any Medium humanoid. This doesn't change the raja rakshasa's Speed or its attack and damage modifiers with its Strikes but might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 }
             }
         },
@@ -2378,13 +2408,24 @@
                 "action->Ram": {
                     "name": "Ram",
                     "description": "<p>The hermit rat rolls in its vessel up to its full movement, ramming into a target in its path and dealing @Damage[(1d6+2)[bludgeoning]] damage (@Check[type:reflex|dc:18|basic:true] save).</p>"
+                }
+            }
+        },
+        "Fey Table Hound": {
+            "name": "Fey Table Hound",
+            "senses": "scent (imprecise) 30 feet",
+            "speed": "unfettered movement while in the forest",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
                 },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 while inside its jar"
-                        }
-                    }
+                "action->Leshy Friend": {
+                    "name": "Leshy Friend",
+                    "description": "<p>Table Hounds are raised by Leaf Leshy in tandem with the canine's animal mother. The leshy intermingle magical herbs with the hound's regular food as soon as they are weened. This grants the hound the leshy trait and it is treated as a leshy for all effects. It also counts as a plant for a leshy's verdant burst.</p>"
+                },
+                "action->Unfettered Movement while in the Forest": {
+                    "name": "Unfettered Movement while in the Forest",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]{Unfettered Movement}</p>"
                 }
             }
         },
@@ -2462,6 +2503,20 @@
                 }
             }
         },
+        "Full Head of Steam": {
+            "name": "Full Head of Steam",
+            "description": "<p>Hidden vents emit scalding hot steam made from a particularly acrid solution, irritating the eyes and throat of anyone who inhales it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:33] (expert) to block a vent, or @Check[type:crafting|dc:31] (expert) to disable the heating element within the vent that turns the liquid into steam</p>",
+            "reset": "<p>The steam vents cease to operate 1 minute after all creatures have left the area and go into a maintenance cycle for 1 hour. After this time, they can be triggered again.</p>",
+            "routine": "<p>(4 actions) Each of the four steam vents uses a single action each to emit superheated steam, which spreads for 60 feet along the wall from its location and extends out from the wall by 30 feet, dealing @Damage[(2d12+13)[untyped]] damage to each creature in their range (@Check[type:fortitude|dc:29] save). For each disabled vent, the trap loses 1 action each turn.</p>",
+            "stealth": "<p>(trained); @Check[type:perception|dc:32] (expert) to find the precise location of the steam vents</p>",
+            "items": {
+                "action->Billowing Steam": {
+                    "name": "Billowing Steam",
+                    "description": "<p><strong>Aktywator</strong> A creature enters the area of the trap</p><hr /><p><strong>Efekt</strong> All four vents rapidly heat and let out steam for 5 seconds, filling room with a painfully acrid smell. Each creature in the room must attempt a @Check[type:fortitude|dc:29] save, and the trap then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}, and, struck by a coughing fit, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                }
+            }
+        },
         "Germinated Mandragora": {
             "name": "Germinated Mandragora",
             "publicNotes": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
@@ -2492,13 +2547,6 @@
                 "action->Piercing Shriek": {
                     "name": "Piercing Shriek",
                     "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> The germinated mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a @Check[type:will|dc:23] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is sickened 2 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+18 in vegetation"
-                        }
-                    }
                 }
             }
         },
@@ -2678,13 +2726,6 @@
                 "action->Ram": {
                     "name": "Ram",
                     "description": "<p>The hermit rat rolls in its vessel up to its full movement, ramming into a target in its path and dealing @Damage[(1d6+3)[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 while inside its jar"
-                        }
-                    }
                 }
             }
         },
@@ -2756,20 +2797,6 @@
                 "action->Submerged Stealth": {
                     "name": "Submerged Stealth",
                     "description": "<p>While submerged in water, an azarketi ruffian gains a +2 circumstance bonus on their Stealth check, indicated above.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 to Swim"
-                        }
-                    }
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 Underwater"
-                        }
-                    }
                 }
             }
         },
@@ -2805,7 +2832,7 @@
                 },
                 "action->Lunge": {
                     "name": "Lunge",
-                    "description": "<p>The locust knight makes a Strike with their rotcarver scythe, increasing their reach by 5 feet for that Strike. They can choose to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{trip} their opponent instead of making a Strike.</p>"
+                    "description": "<p>The locust knight makes a Strike with their rotcarver scythe, increasing their reach by 5 feet for that Strike. They can choose to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} their opponent instead of making a Strike.</p>"
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
@@ -2872,13 +2899,6 @@
                 "action->Ram": {
                     "name": "Ram",
                     "description": "<p>The hermit rat rolls in its vessel up to its full movement, ramming into a target in its path and dealing @Damage[1d6[bludgeoning]] damage (@Check[type:reflex|dc:16|basic:true] save).</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 while inside its jar"
-                        }
-                    }
                 }
             }
         },
@@ -2891,6 +2911,26 @@
                 "action->Curse of Itchiness": {
                     "name": "Curse of Itchiness",
                     "description": "<p><strong>Aktywator</strong> A creature opens the chest without speaking the command word</p>\n<hr />\n<p><strong>Efekt</strong> The curse gives the target the sensation that countless ants are biting and stinging them for an entire day. The target must attempt a @Check[type:will|dc:20] save.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 24 hours.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 24 hours.</p>"
+                }
+            }
+        },
+        "Hidden Current": {
+            "name": "Hidden Current",
+            "publicNotes": "<p>Often considered cousins of phades, veiled currents are loose veils of wind who catch prey within their folds.</p>\n<hr />\n<p>Many elementals that roam the Plane of Air embody the mercurial formlessness and chaos of tumultuous storms.</p>\n<h2>Tempestuous Spirits</h2>\n<p>Air elementals are often flighty contrarians, often more concerned with bringing about change than with the specific changes they enact. Art and writing created by such elementals is exceptionally rare, as they usually destroy their projects once the challenge and excitement of completing them fades.</p>\n<h2>Invisible Courtiers</h2>\n<p>Formless and invisible elementals are the favored children of Hshurha, the air elementals' mother goddess. They receive favorable treatment in her realm, Verglas Precessional, where they serve as trusted advisors, emissaries to other planes, and members of her personal retinue, in addition to performing clandestine tasks the goddess wishes to keep hidden.</p>",
+            "items": {
+                "strike-melee->Static Fold": {
+                    "name": "Static Fold"
+                },
+                "strike-ranged->Static Scream": {
+                    "name": "Static Scream"
+                },
+                "action->Naturally Invisible": {
+                    "name": "Naturally Invisible",
+                    "description": "<p>The veiled current is @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} at all times. When they take a hostile action of any kind, the veiled current is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} instead of undetected as the vague outline of their humanoid form becomes faintly visible until the start of their next turn.</p>"
+                },
+                "action->Envelop": {
+                    "name": "Envelop",
+                    "description": "<p><strong>Wymagania</strong> The veiled current begins their turn with a target of their size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> The veiled current maintains the Grab and coalesces around the creature, stretching themself into a semisolid veil that smothers the creature within. This thereafter has the same effect as if the veiled current had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (DC 26, 1k8+8 bludgeoning, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 26, Rupture 17). As engulfing a creature is a hostile action, the veiled current is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} instead of undetected every round it has a creature engulfed.</p>"
                 }
             }
         },
@@ -2927,13 +2967,6 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[type:reflex|dc:18|basic:true] save).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to Climb"
-                        }
-                    }
                 }
             }
         },
@@ -2974,13 +3007,6 @@
                 "action->Limited Angled Entry": {
                     "name": "Limited Angled Entry",
                     "description": "<p>The hound echo casts a 4. poziomu. @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1k4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -3263,7 +3289,7 @@
                 },
                 "action->Lunge": {
                     "name": "Lunge",
-                    "description": "<p>The locust knight makes a Strike with their rotcarver scythe, increasing their reach by 5 feet for that Strike. They can choose to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{trip} their opponent instead of making a Strike.</p>"
+                    "description": "<p>The locust knight makes a Strike with their rotcarver scythe, increasing their reach by 5 feet for that Strike. They can choose to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} their opponent instead of making a Strike.</p>"
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
@@ -3455,13 +3481,6 @@
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 with demons"
-                        }
-                    }
                 }
             }
         },
@@ -3514,13 +3533,6 @@
                 "action->Fiery Maw": {
                     "name": "Fiery Maw",
                     "description": "<p>The crocodile lets out a puff of fire in a @Template[type:cone|distance:15] dealing @Damage[3d6[fire]] damage (@Check[type:reflex|dc:16|basic:true] save). It can't use Fiery Maw again for [[/br 1d4 #Recharge Fiery Maw]]{1k4 rounds}.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in water"
-                        }
-                    }
                 }
             }
         },
@@ -3779,6 +3791,21 @@
                 }
             }
         },
+        "Sewer Gator": {
+            "name": "Sewer Gator",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Wall Slam": {
+                    "name": "Wall Slam",
+                    "description": "<p><strong>Wymagania</strong> The sewer gator must have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Efekt</strong> The sewer gator flips its body, twisting its victim, then releases, flinging them into the nearest wall. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also does @Damage[(2d4+7)[bludgeoning]] damage and knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If it fails, it releases the creature.</p>"
+                }
+            }
+        },
         "Sezelrian Warg": {
             "name": "Sezelrian Warg",
             "blurb": "Variant winter wolf",
@@ -3801,13 +3828,6 @@
                 "action->Pack Attack": {
                     "name": "Pack Attack",
                     "description": "<p>The Sezelrian warg's Strikes deal 1k6 extra damage to creatures within the reach of at least two of the warg's allies.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 in snow"
-                        }
-                    }
                 }
             }
         },
@@ -4141,6 +4161,48 @@
                 }
             }
         },
+        "Springloaded Statues": {
+            "name": "Springloaded Statues",
+            "description": "<p>Four animal statues sit on pillars, one in each corner of the statuary, with decorated tiles between them in a seemingly random arrangement.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28] (expert) or @Check[type:stealth|dc:31] (expert) to disarm the statue while adjacent to it</p>",
+            "reset": "<p>Each statue resets immediately after being triggered.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Iced": {
+                    "name": "Iced",
+                    "description": "<p><strong>Aktywator</strong> A creature steps on one of the plain silver tiles in the statuary</p><hr /><p><strong>Efekt</strong> A wave of cold passes through the target, dealing @Damage[(2d10+13)[cold]] damage (@Check[type:fortitude|dc:26|basic:true] save).</p>"
+                },
+                "action->Slithering Shock": {
+                    "name": "Slithering Shock",
+                    "description": "<p><strong>Aktywator</strong> A creature steps on one of the diamond-embedded silver tiles in the statuary</p><hr /><p><strong>Efekt</strong> A jolt of electricity arcs up from the tile and strikes the target, dealing @Damage[(2d10+13)[electricity]] damage (@Check[type:reflex|dc:26|basic:true] save).</p>"
+                },
+                "action->Yowl": {
+                    "name": "Yowl",
+                    "description": "<p><strong>Aktywator</strong> A creature steps on one of the plain copper tiles in the statuary</p><hr /><p><strong>Efekt</strong> The high-pitched yowl of an attacking cat echoes in the target's head, dealing @Damage[(2d10+13)[sonic]] damage (@Check[type:fortitude|dc:26|basic:true] save).</p>"
+                }
+            }
+        },
+        "Springloaded Statues (9–10)": {
+            "name": "Springloaded Statues (9–10)",
+            "description": "<p>Four animal statues sit on pillars, one in each corner of the statuary, with decorated tiles between them in a seemingly random arrangement.</p>",
+            "disable": "<p>@Check[type:thievery|dc:31] (expert) or @Check[type:stealth|dc:32] (expert) to disarm the statue while adjacent to it</p>",
+            "reset": "<p>Each statue resets immediately after being triggered.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Iced": {
+                    "name": "Iced",
+                    "description": "<p><strong>Aktywator</strong> A creature steps on one of the plain silver tiles in the statuary</p><hr /><p><strong>Efekt</strong> A wave of cold passes through the target, dealing @Damage[(2d10+13)[cold]] damage (@Check[type:fortitude|dc:26|basic:true] save).</p>"
+                },
+                "action->Slithering Shock": {
+                    "name": "Slithering Shock",
+                    "description": "<p><strong>Aktywator</strong> A creature steps on one of the diamond-embedded silver tiles in the statuary</p><hr /><p><strong>Efekt</strong> A jolt of electricity arcs up from the tile and strikes the target, dealing @Damage[(2d10+13)[electricity]] damage (@Check[type:reflex|dc:29|basic:true] save).</p>"
+                },
+                "action->Yowl": {
+                    "name": "Yowl",
+                    "description": "<p><strong>Aktywator</strong> A creature steps on one of the plain copper tiles in the statuary</p><hr /><p><strong>Efekt</strong> The high-pitched yowl of an attacking cat echoes in the target's head, dealing @Damage[(2d10+13)[sonic]] damage (@Check[type:fortitude|dc:29|basic:true] save).</p>"
+                }
+            }
+        },
         "Sprite (PFS Q18)": {
             "name": "Sprite (PFS Q18)",
             "publicNotes": "<p>Common sprites, sometimes called firefly sprites, are primeval guardians that latch onto a person, place, or object and defend it for their own inscrutable reasons. Their dispositions vary from kind to spiteful, but all sprites have a capricious streak. Being only about 9 inches tall, they are wary of animals that might hunt them, particularly house cats, and prefer flight to a fight. On the other hand, sprites are incredibly curious about all forms of magic and heedlessly gather around ley line nexuses or other places of power.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
@@ -4213,13 +4275,6 @@
                 "action->Nature's Infusion": {
                     "name": "Nature's Infusion",
                     "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> While surrounded by any field or fertile plain, a blodeuwedd can infuse themself with borrowed life energy from nearby plants and nutrients in the ground. The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 in grasslands"
-                        }
-                    }
                 }
             }
         },
@@ -4403,13 +4458,6 @@
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 with demons"
-                        }
-                    }
                 }
             }
         },
@@ -4551,7 +4599,7 @@
                 },
                 "action->Endless": {
                     "name": "Endless",
-                    "description": "<p>If reduced to 0 Hit Points or incapacitated for more than a few rounds, the morrowkin vanishes. In 1 minute, it reappears refreshed completely as if the previous battle never happened, with full HP, with all effects on it cleared, and with its Swallow Future ability ready to use again.</p>"
+                    "description": "<p>If reduced to 0 Hit Points or incapacitated for more than a few rounds, the morrowkin vanishes. In 1 hour, it reappears refreshed completely as if the previous battle never happened, with full HP, with all effects on it cleared, and with its Swallow Future ability ready to use again. This ability is severed if the Dark Tapestry segment it is tied to is removed.</p>"
                 },
                 "action->Drain Potential": {
                     "name": "Drain Potential",
@@ -4559,7 +4607,7 @@
                 },
                 "action->Swallow Future": {
                     "name": "Swallow Future",
-                    "description": "<p>The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a @Template[type:emanation|distance:30] of the morrowkin take [[/r (6d8 + 18)[mental]]] damage and must attempt a @Check[type:will|dc:34] save.</p>\n<p>The morrowkin can't Swallow Future again for 1 minute.</p>\n<p>Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 4} (likely causing it to die immediately).</p>"
+                    "description": "<p>The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a @Template[type:emanation|distance:30] of the morrowkin take @Damage[(6d8+18)[mental]] damage and must attempt a @Check[type:will|dc:34] save. The morrowkin can't Swallow Future again for 1 minute.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 4} (likely causing it to die immediately).</p>"
                 },
                 "action->Tomorrow's Fury": {
                     "name": "Tomorrow's Fury",
@@ -4580,7 +4628,7 @@
                 },
                 "action->Endless": {
                     "name": "Endless",
-                    "description": "<p>If reduced to 0 Hit Points or incapacitated for more than a few rounds, the morrowkin vanishes. In 1 minute, it reappears refreshed completely as if the previous battle never happened, with full HP, with all effects on it cleared, and with its Swallow Future ability ready to use again.</p>"
+                    "description": "<p>If reduced to 0 Hit Points or incapacitated for more than a few rounds, the morrowkin vanishes. In 1 hour, it reappears refreshed completely as if the previous battle never happened, with full HP, with all effects on it cleared, and with its Swallow Future ability ready to use again. This ability is severed if the Dark Tapestry segment it is tied to is removed.</p>"
                 },
                 "action->Drain Potential": {
                     "name": "Drain Potential",
@@ -4588,7 +4636,7 @@
                 },
                 "action->Swallow Future": {
                     "name": "Swallow Future",
-                    "description": "<p>The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a @Template[type:emanation|distance:30] of the morrowkin take [[/r (5d8 + 18)[mental]]] damage and must attempt a @Check[type:will|dc:33] save.</p>\n<p>The morrowkin can't Swallow Future again for 1 minute.</p>\n<p>Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 3}.</p>"
+                    "description": "<p>The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a @Template[type:emanation|distance:30] of the morrowkin take @Damage[(5d8+18)[mental]] damage and must attempt a @Check[type:will|dc:32] save. The morrowkin can't Swallow Future again for 1 minute.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p>\n<p><strong>Sukces</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 3}.</p>"
                 },
                 "action->Tomorrow's Fury": {
                     "name": "Tomorrow's Fury",
@@ -4842,13 +4890,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The loyalist deals an extra 1k4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+3 traps"
-                        }
-                    }
                 }
             }
         },
@@ -4868,13 +4909,6 @@
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The loyalist deals an extra 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 traps"
-                        }
-                    }
                 }
             }
         },
@@ -4920,13 +4954,6 @@
                 "action->Intimidating Display": {
                     "name": "Intimidating Display",
                     "description": "<p>When using Intimidation to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a target, a topiary beast doesn't take a penalty for not speaking the same language as the target.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -4949,13 +4976,6 @@
                 },
                 "action->Knockdown (Unicorn Form Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]\nKnockdown (Unicorn Form Only)"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -5107,6 +5127,25 @@
                 }
             }
         },
+        "Toxic Sewer Gator": {
+            "name": "Toxic Sewer Gator",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Toxic Gulp": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\nToxic Gulp",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>The toxic gator uses Swallow Whole on a creature of Medium size or smaller, @Damage[(2d6+5)[bludgeoning],1k6[poison]]{2k6+5 damage plus 1k6 poison}, Rupture 15</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Wall Slam": {
+                    "name": "Wall Slam",
+                    "description": "<p><strong>Wymagania</strong> The toxic gator must have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Efekt</strong> The toxic gator flips its body, twisting its victim, then releases, flinging them into the nearest wall. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also does @Damage[(2d6+8)[bludgeoning]] damage and knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If it fails, it releases the creature.</p>"
+                }
+            }
+        },
         "Trained Beastmaster Cultist": {
             "name": "Trained Beastmaster Cultist",
             "items": {
@@ -5151,13 +5190,6 @@
                 "action->Vulkariki Tricks": {
                     "name": "Vulkariki Tricks",
                     "description": "<p>A vulkariki eidolon can use Acrobatics instead of Thievery to @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Zgarnięcie Obiektu} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Kradzież}.</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 to Balance or Tumble Through"
-                        }
-                    }
                 }
             }
         },
@@ -5200,13 +5232,6 @@
                 },
                 "lore->Absalom Lore": {
                     "name": "Absalom Lore"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 traps"
-                        }
-                    }
                 }
             }
         },
@@ -5250,13 +5275,6 @@
                 },
                 "lore->Absalom Lore": {
                     "name": "Absalom Lore"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 traps"
-                        }
-                    }
                 }
             }
         },
@@ -5508,13 +5526,6 @@
                 "action->Vulkariki Tricks": {
                     "name": "Vulkariki Tricks",
                     "description": "<p>A vulkariki eidolon can use Acrobatics instead of Thievery to @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Zgarnięcie Obiektu} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Kradzież}.</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 to Balance or Tumble Through"
-                        }
-                    }
                 }
             }
         },
@@ -5648,13 +5659,6 @@
                 "action->Limited Angled Entry": {
                     "name": "Limited Angled Entry",
                     "description": "<p>The hound echo casts a 4. poziomu. @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1k4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -5775,13 +5779,39 @@
                 "action->Limited Angled Entry": {
                     "name": "Limited Angled Entry",
                     "description": "<p>The hound echo casts a 4. poziomu. @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space it can see that is adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges. It can't use Limited Angled Entry again for [[/br 1d4 #Recharge Limited Angled Entry]]{1k4 rounds}.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+                }
+            }
+        },
+        "Weak Leaf Leshy (Q19)": {
+            "name": "Weak Leaf Leshy (Q19)",
+            "languages": "speak with plants (trees only)",
+            "publicNotes": "<p>Leaf leshys are diminutive protectors of forests clad in pine cone armor and hats of fruit, flowers, or leaves. They enjoy mock battles but act cautiously in real ones.</p>\n<hr />\n<p>Leshys are intelligent plant creatures that guard areas of primeval wilderness or earthly power. Originally created by powerful fey, they manifest when a skilled practitioner of primal magic-typically a druid-combines a nature spirit with a body carefully grown from local vegetation. The rites and materials required to create a leshy vary depending on the type of leshy. They are typically given life in an area of great natural significance, such as an arboreal's grove, a druidic circle, a fairy ring, or a great natural wonder.</p>",
+            "speed": "glide",
+            "tokenName": "Leaf Leshy",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
                 },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 to Track"
-                        }
-                    }
+                "strike-melee->Longspear": {
+                    "name": "Longspear"
+                },
+                "strike-ranged->Seedpod": {
+                    "name": "Seedpod"
+                },
+                "action->Verdant Burst": {
+                    "name": "Verdant Burst",
+                    "description": "<p>When a leaf leshy dies, a burst of primal energy explodes from its body, restoring [[/r 1d4[healing]]] Hit Points to each plant creature in a @Template[type:emanation|distance:30]. This area is filled with tree saplings, becoming difficult terrain. If the terrain is not a viable environment for these trees, they wither after 24 hours.</p>"
+                },
+                "action->Change Shape": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The leaf leshy transforms into a Small tree. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Deafening Blow": {
+                    "name": "Deafening Blow",
+                    "description": "<p>When a leaf leshy hits with its seedpod Strike, the target must attempt a @Check[type:fortitude|dc:14] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected and temporarily immune for 24 hours.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p>"
+                },
+                "action->Glide": {
+                    "name": "Glide",
+                    "description": "<p>The leshy glides gently through the air, moving 5 feet toward the ground and up to 25 feet forward. As long as the leshy spends at least 1 action gliding each round, it remains in the air at the end of each turn. For the purpose of determining damage from falls, a leaf leshy always treats falls as if they were 20 feet shorter.</p>"
                 }
             }
         },
@@ -5800,13 +5830,6 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Częstotliwość</strong> once per minute</p>\n<hr />\n<p><strong>Efekt</strong> The sewer ooze unleashes a wave of filth, covering all creatures in a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:15] save or take @Damage[1[acid]] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}).</p>\n<p>A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Efekt: Filth Wave}</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+2 in sewers"
-                        }
-                    }
                 }
             }
         },
@@ -5835,6 +5858,96 @@
                 "action->Swipe": {
                     "name": "Swipe",
                     "description": "<p>The shadow draugr makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+                }
+            }
+        },
+        "Weary Raja Rakshasa": {
+            "name": "Weary Raja Rakshasa",
+            "blurb": "Variant raja rakshasa",
+            "publicNotes": "<p>When not disguised as a humanoid, the raja rakshasa has the head of an animal. The hands of a raja rakshasa are more subtly unsettling, for the fingers of these fiends bend outward, away from the palms.</p>\n<p>More than any other types of rakshasa, rajas scoff at religion. They understand the power of the divine, yet they view themselves as the only things worthy of worship from mortal creatures; not even their own immortals are deemed deserving of such glorification. Raja rakshasas often form close-knit families that work together to bring down mortal cities or to rule them from the shadows within. Such families of rakshasas often incorporate other breeds of the fiend, often using dandasukas as favored servants or stealthy spies. Even though a raja family works together to achieve a shared goal, infighting and treachery among their own is a constant threat.</p>\n<hr />\n<p>Rakshasas are evil spirits that cloak themselves in the guises of humanoid creatures, that they might walk unseen among their prey. They embody what is taboo among most societies, and in the shape of those they seek to defile, rakshasas gorge themselves on these hideous acts. A wide range of rakshasas exist; presented below are the diminutive, sinister dandasuka rakshasa and the infamous raja rakshasa, who are the most widespread and commonly encountered of these fiends.</p>",
+            "saveDetails": "+2 status to all saves vs. magic, +3 status to all saves vs. divine magic",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Mind Reading (At Will)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
+                },
+                "spell->Nondetection": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]\nNondetection"
+                },
+                "spell->Vampiric Touch": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]\nVampiric Touch"
+                },
+                "spell->Hideous Laughter": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
+                },
+                "spell->Mage Hand": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
+                },
+                "strike-melee->Kukri": {
+                    "name": "Kukri"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->+2 Status to All Saves vs. Magic": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+                },
+                "action->+3 Status to All Saves vs. Divine Magic": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+3 Status to All Saves vs. Divine Magic"
+                },
+                "action->Scoff at the Divine": {
+                    "name": "Scoff at the Divine",
+                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability</p>\n<p><strong>Wymagania</strong> The raja rakshasa has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p><strong>Efekt</strong> The raja rakshasa expends a spell slot that could be used to cast dispel magic and attempts to counteract the triggering spell or ability. The raja rakshasa can't Scoff at the Divine for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                },
+                "action->Change Shape": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The raja rakshasa takes on the appearance of any Medium humanoid. This doesn't change the raja rakshasa's Speed or its attack and damage modifiers with its Strikes but might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                }
+            }
+        },
+        "Well-Fed Dandasuka": {
+            "name": "Well-Fed Dandasuka",
+            "blurb": "Variant dandasuka",
+            "publicNotes": "<p>Known as \"biters\" among the more powerful rakshasa castes, dandasukas serve as spies and assassins for rakshasa clans or powerful spellcasters who have found methods to bind one of these fiends to their will. Born to manipulate and murder, these half-sized terrors revel in their work and delight in the sight of blood. They often dress in extravagant clothes dyed with ostentatious colors and wear numerous elaborate accessories, whether in their true form or in disguise as human children, halfling merchants, or anything else that helps them blend into their targeted society.</p>\n<p>A dandasuka rakshasa is constantly haunted by a monstrous hunger that gnaws at its hyperactive body, forcing it to feed often. In combat, a dandasuka might pause to lick a bloody blade or lap at a pool of spilled blood on the floor. These creatures settle for other meat when they must, but much prefer the taste of mortal humanoid flesh. Regular offers of such victuals can keep a dandasuka loyal to anyone willing to provide frequent meals, but care must be taken in keeping a dandasuka, for many stories tell of them being overly eager to serve an adored benefactor, taking off-hand remarks too literally, and performing services of violence that were never intended.</p>\n<hr />\n<p>Rakshasas are evil spirits that cloak themselves in the guises of humanoid creatures, that they might walk unseen among their prey. They embody what is taboo among most societies, and in the shape of those they seek to defile, rakshasas gorge themselves on these hideous acts. A wide range of rakshasas exist; presented below are the diminutive, sinister dandasuka rakshasa and the infamous raja rakshasa, who are the most widespread and commonly encountered of these fiends.</p>",
+            "saveDetails": "+2 status to all saves vs. magic, +3 status to all saves vs. divine magic",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Mind Reading (At Will)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
+                },
+                "spell->Mage Hand": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->+2 Status to All Saves vs. Magic": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+                },
+                "action->+3 Status to All Saves vs. Divine Magic": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+3 Status to All Saves vs. Divine Magic"
+                },
+                "action->Bloody Mist": {
+                    "name": "Bloody Mist",
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> The blood-gorged dandasuka has taken a drink of blood in the last 2 rounds</p><hr /><p><strong>Efekt</strong> The blood-gorged dandasuka sprays bloody spit at the face of a single target within 10 feet. The target takes @Damage[1d6[poison]] damage (@Check[type:fortitude|dc:25] save) and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. On a critical failure, the target also takes @Damage[1d6[persistent,poison]] damage.</p>"
+                },
+                "action->Change Shape": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The blood-gorged dandasuka takes on the appearance of any Small humanoid. This doesn't change the dandasuka's Speed or its attack and damage modifiers with its Strikes, but it might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 }
             }
         },

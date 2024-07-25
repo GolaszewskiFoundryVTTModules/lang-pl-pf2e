@@ -4,6 +4,11 @@
         "Abbot Tsujon": {
             "name": "Abbot Tsujon",
             "saveDetails": "+1 status to all saves vs. death effects",
+            "skillSpecialDeception": {
+                "0": {
+                    "label": "to Impersonate a past self"
+                }
+            },
             "items": {
                 "spellcastingEntry->Focus Spells": {
                     "name": "Focus Spells"
@@ -525,6 +530,11 @@
         "Berberoka": {
             "name": "Berberoka",
             "publicNotes": "<p>Berberokas are giant humanoids who live among forests and swamps, where they use their ability to swallow massive amounts of water to drain small ponds and lakes. Creatures who visit their favorite watering hole and find only an empty mud basin become prey for the berberoka, who hides in the brush and overwhelm their prey with a massive torrent of regurgitated water.</p>\n<p>A berberoka's mottled backside-which resembles a bundle of local plants, small trees, and large rocks-grants them natural camouflage that allows them to hide in plain sight. Berberokas tend to disguise themselves as rock formations in the center of a dried-up waterbed while they lie in wait for passersby. In the tropical regions where berberokas are most common, locals know to give empty ponds a wide berth, regardless of the enticing fish flopping about. Hungry travelers, on the other hand, might see such bounty as a blessing from the gods, only to be swept up in the berberoka's deadly deluge.</p>",
+            "skillSpecialDeception": {
+                "0": {
+                    "label": "to Impersonate a small mound or island in its native environment"
+                }
+            },
             "speed": "15 while waterlogged",
             "items": {
                 "strike-melee->Fist": {
@@ -920,6 +930,11 @@
             "name": "Canopy Elder",
             "languages": "speak with animals, speak with plants",
             "publicNotes": "<p>In the densest and oldest jungles, arboreals can reach heights of 200 feet or more. Given thousands of undisturbed years, these massive creatures enter into a symbiotic relationship with a myriad of plants, fungi, and animals to achieve the esteemed status of canopy elder. They provide a safe home for the creatures they host and develop a variety of powers that help them defend their forest realms.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in forests"
+                }
+            },
             "items": {
                 "spellcastingEntry->Innate Primal Spells": {
                     "name": "Innate Primal Spells"
@@ -1097,6 +1112,11 @@
         "Desecrated Guardian": {
             "name": "Desecrated Guardian",
             "publicNotes": "<p>Countless temples across Golarion, dedicated to deities both living and forgotten, have risen and fallen through the ages. Many find themselves buried under sand, snow, or vine never to be found. In such places, the spirits of the faithful can bind with their ruined temple to form a guardian construct, though with nothing left to guard, these spirits often become hollow, resentful, and filled with malice. These \"desecrated guardians\" lie in wait, sometimes for centuries, and destroy any adventurers who happen upon them. The most powerful desecrated guardians, such as the one presented here, incorporate the structures of multiple temples into their massive serpentine forms.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in ruins"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -1302,6 +1322,11 @@
         },
         "Flying Mountain Kaminari": {
             "name": "Flying Mountain Kaminari",
+            "skillSpecialAcrobatics": {
+                "0": {
+                    "label": "to Maneuver in Flight"
+                }
+            },
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -1803,6 +1828,11 @@
             "name": "Grave Spinosaurus",
             "blurb": "Variant spinosaurus",
             "publicNotes": "<p>The spinosaurus is more than just one of the largest carnivorous dinosaurs-it's also one of the most unusual in appearance, with a large, sail-like fin running along its spine. Often quite colorful, this sail allows the spinosaurus to attract mates, aids in swimming, and makes it appear to be even larger than it actually is. A swimming spinosaurus can also use the sail as part of a unique means of staggering prey by slapping the water with it to make a crushing wave.</p>\n<p>The spinosaurus is equally at home in water as it is on land, and its long, toothy maw is well-adapted to catching swimming prey. Attempts by giants to capture spinosauruses to serve as guardians typically go poorly, for these headstrong dinosaurs do not domesticate well. Their surly attitudes and striking appearances make them better suited for bloodsports, and they are popular prizes for those who run arenas specializing in battles that pit gladiators against hungry animals or beasts. Of course, an angry dinosaur forced to fight for the amusement of others won't discriminate between potential meals on the battleground and ones seated in the surrounding stands.</p>\n<p>The spinosaurus's appearance and strength make it attractive to more than just giants and bloodsport organizers. Spellcasters who mutate and transform animals into magical guardians have long been intrigued by the spinosaurus's potential. More so than any other dinosaurs, spinosauruses have been subjected to fleshwarping procedures, crossbreeding with monsters, and other magical techniques to enhance the creatures' viability as effective guardians.</p>\n<p>A spinosaurus can measure up to 60 feet in length and weighs 25 000 pounds.</p>",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Swim"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -3515,6 +3545,11 @@
         "Rai Sho Postulant": {
             "name": "Rai Sho Postulant",
             "saveDetails": "+4 status to all saves vs. fear and dreams",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in snow"
+                }
+            },
             "items": {
                 "spellcastingEntry->Innate Divine Spells": {
                     "name": "Innate Divine Spells"
@@ -5604,6 +5639,22 @@
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
         "senses": "system.perception.details",
+        "skillSpecialAcrobatics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.acrobatics.special"
+        },
+        "skillSpecialAthletics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.athletics.special"
+        },
+        "skillSpecialDeception": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.deception.special"
+        },
+        "skillSpecialStealth": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.stealth.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

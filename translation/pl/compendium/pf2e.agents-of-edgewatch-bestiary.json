@@ -345,6 +345,11 @@
         "Avarek": {
             "name": "Avarek",
             "languages": "speak with animals",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Climb"
+                }
+            },
             "items": {
                 "spellcastingEntry->Innate Primal Spells": {
                     "name": "Innate Primal Spells"
@@ -510,6 +515,11 @@
         "Barnacle Ghoul": {
             "name": "Barnacle Ghoul",
             "hpDetails": "leczenie pustką",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Grapple"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -1042,6 +1052,11 @@
         },
         "Bregdi": {
             "name": "Bregdi",
+            "skillSpecialSurvival": {
+                "0": {
+                    "label": "to Track a creature at half its Hit Points or fewer"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -1639,6 +1654,11 @@
         },
         "Daemonic Infector": {
             "name": "Daemonic Infector",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "when crafting poison"
+                }
+            },
             "items": {
                 "spellcastingEntry->Divine Prepared Spells": {
                     "name": "Przygotowane Zaklęcia Boskie"
@@ -2821,6 +2841,11 @@
         "Grick": {
             "name": "Grick",
             "languages": "(can't speak any language)",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in rocky terrain"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -4578,6 +4603,11 @@
         },
         "Najra Lizard": {
             "name": "Najra Lizard",
+            "skillSpecialDeception": {
+                "0": {
+                    "label": "to Create a Diversion"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -7207,6 +7237,26 @@
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
         "senses": "system.perception.details",
+        "skillSpecialAthletics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.athletics.special"
+        },
+        "skillSpecialCrafting": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.crafting.special"
+        },
+        "skillSpecialDeception": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.deception.special"
+        },
+        "skillSpecialStealth": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.stealth.special"
+        },
+        "skillSpecialSurvival": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.survival.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

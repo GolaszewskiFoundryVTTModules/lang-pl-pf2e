@@ -4,6 +4,11 @@
     "Chakanaj": {
       "name": "Chakanaj",
       "languages": "telepathy 100 feet",
+      "skillSpecialDeception": {
+        "0": {
+          "label": "to impersonate clothing"
+        }
+      },
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -204,6 +209,11 @@
     },
     "Gray Gardener Assassin": {
       "name": "Gray Gardener Assassin",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "to hide"
+        }
+      },
       "items": {
         "equipment->Executioner's Hood": {
           "name": "Executioner's Hood"
@@ -786,6 +796,11 @@
     },
     "Zintaya Calbieste": {
       "name": "Zintaya Calbieste",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "to hide"
+        }
+      },
       "items": {
         "equipment->Executioner's Hood": {
           "name": "Executioner's Hood"
@@ -860,6 +875,14 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "senses": "system.perception.details",
+    "skillSpecialDeception": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.deception.special"
+    },
+    "skillSpecialStealth": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.stealth.special"
+    },
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

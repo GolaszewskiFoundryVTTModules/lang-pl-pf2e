@@ -86,6 +86,11 @@
     "Cacaodaemon": {
       "name": "Cacaodaemon",
       "languages": "telepathy 100 feet",
+      "skillSpecialDeception": {
+        "0": {
+          "label": "to appear as an inanimate object"
+        }
+      },
       "items": {
         "strike-melee->Nib Teeth": {
           "name": "Nib Teeth"
@@ -478,6 +483,11 @@
     },
     "Kobold Tunnelrunner": {
       "name": "Kobold Tunnelrunner",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "items": {
         "strike-melee->Light Pick": {
           "name": "Light Pick"
@@ -1110,6 +1120,14 @@
     },
     "saveDetails": "system.attributes.allSaves.value",
     "senses": "system.perception.details",
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "skillSpecialDeception": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.deception.special"
+    },
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

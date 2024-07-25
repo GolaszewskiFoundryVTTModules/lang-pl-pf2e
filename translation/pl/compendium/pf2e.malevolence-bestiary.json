@@ -252,6 +252,11 @@
         },
         "Ixirizmid": {
             "name": "Ixirizmid",
+            "skillSpecialDeception": {
+                "0": {
+                    "label": "to impersonate"
+                }
+            },
             "items": {
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -564,6 +569,10 @@
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
         "senses": "system.perception.details",
+        "skillSpecialDeception": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.deception.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

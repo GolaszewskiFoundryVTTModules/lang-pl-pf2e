@@ -218,6 +218,11 @@
         "Swamp Ooze": {
             "name": "Swamp Ooze",
             "publicNotes": "<p>These amorphous masses of sewage and other detritus make their way through filthy culverts beneath cities large and small.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in swamps"
+                }
+            },
             "items": {
                 "strike-melee->Pseudopod": {
                     "name": "Pseudopod"
@@ -273,6 +278,10 @@
         },
         "reset": "system.details.reset",
         "routine": "system.details.routine",
+        "skillSpecialStealth": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.stealth.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

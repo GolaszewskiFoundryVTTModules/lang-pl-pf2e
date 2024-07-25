@@ -5,6 +5,11 @@
             "name": "Ahvothian",
             "languages": "speak with animals",
             "publicNotes": "<p>Ahvothians are feral and cunning fiends from an Abyssal realm of jungles, dinosaurs, and relentless brutality. They resemble humanoid dinosaurs with narrow, fanged heads similar to raptors and solid, heavy legs like sauropods. Relentless trackers and survivalists, ahvothians are skilled at navigating jungles and are most commonly encountered stalking prey or operating out of fortified ruins. Ahvothians have an uncanny affinity with reptiles, and they often use dinosaurs-particularly carnivores such as allosauruses or deinonychuses-as hunting companions or guard animals. Although dangerous in large groups, ahvothians have such a strong desire to assert dominance over others that ahvothian armies frequently fall to infighting and bloody battles for dominance within days, or even hours. The mightiest ahvothians might lead dozens of their kin and herds of carnivorous dinosaurs.</p>",
+            "skillSpecialIntimidation": {
+                "0": {
+                    "label": "against humanoids"
+                }
+            },
             "speed": "freedom of movement",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -121,6 +126,11 @@
         },
         "Angazhani Cultist": {
             "name": "Angazhani Cultist",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "against demons"
+                }
+            },
             "items": {
                 "spellcastingEntry->Divine Prepared Spells": {
                     "name": "Przygotowane Zaklęcia Boskie"
@@ -391,6 +401,11 @@
             "name": "Nyamat Mshwe",
             "blurb": "Male human cult master",
             "senses": "(+18 to sense motive)",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "against demons"
+                }
+            },
             "items": {
                 "spellcastingEntry->Divine Prepared Spells": {
                     "name": "Przygotowane Zaklęcia Boskie"
@@ -592,6 +607,14 @@
         "reset": "system.details.reset",
         "routine": "system.details.routine",
         "senses": "system.perception.details",
+        "skillSpecialDiplomacy": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.diplomacy.special"
+        },
+        "skillSpecialIntimidation": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.intimidation.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

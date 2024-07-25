@@ -3,6 +3,11 @@
     "entries": {
         "'Zombie' Flesh Golem (3-4)": {
             "name": "'Zombie' Flesh Golem (3-4)",
+            "skillSpecialDeception": {
+                "0": {
+                    "label": "to impersonate a zombie"
+                }
+            },
             "tokenName": "'Zombie' Flesh Golem",
             "items": {
                 "strike-melee->Fist": {
@@ -37,6 +42,11 @@
         },
         "'Zombie' Flesh Golem (5-6)": {
             "name": "'Zombie' Flesh Golem (5-6)",
+            "skillSpecialDeception": {
+                "0": {
+                    "label": "to impersonate a zombie"
+                }
+            },
             "tokenName": "'Zombie' Flesh Golem",
             "items": {
                 "strike-melee->Fist": {
@@ -93,6 +103,11 @@
         },
         "Adolescent Sea Serpent": {
             "name": "Adolescent Sea Serpent",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to swim"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -399,6 +414,11 @@
             "name": "Annis Hag (1-06)",
             "publicNotes": "<p>Annis hags are brutal torturers and murderers, delighting in the musical screams and tasty flesh of young creatures and those who are pure of heart. Annis hags are the most direct of all hags, engaging in physical combat and using their change shape ability to hunt rather than to infiltrate and betray humanoids. But an Annis hag takes a grisly trophy from each kill and uses it to sow discord, sending the trophy to one of her victim's loved ones in a way that implicates another family member in the murder. Also known as iron hags, annis hags have iron-like yet flexible flesh that resists edged weapons, and their own touch is the same cold iron that burns the flesh of other hags. This allows them to bully their way to the leadership of hag covens.</p>\n<hr />\n<p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.bAjHCeyNcPRqOmLv]{Changelings} who have the potential to become hags themselves.</p>",
             "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Grapple"
+                }
+            },
             "tokenName": "Annis Hag",
             "items": {
                 "spellcastingEntry->Coven Spells": {
@@ -1113,6 +1133,11 @@
         "Boggard Warrior (PFS 1-09)": {
             "name": "Boggard Warrior (PFS 1-09)",
             "publicNotes": "<p>Boggard warriors exalt in single combat, and prefer to fight alone so that none can contest their kills. They have been known to pursue enemies who flee combat with a single-mindedness that seems almost supernatural.</p>\n<hr />\n<p>Boggards are aggressive humanoid amphibians that thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develops arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare-everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in water"
+                }
+            },
             "speed": "swamp stride",
             "tokenName": "Boggard Warrior",
             "items": {
@@ -1514,6 +1539,16 @@
         "Dehydrated Krooth": {
             "name": "Dehydrated Krooth",
             "saveDetails": "+4 status bonus to all saves vs. Fear",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in water"
+                }
+            },
+            "skillSpecialSurvival": {
+                "0": {
+                    "label": "to track a bleeding creature"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -1817,6 +1852,11 @@
             "name": "Dryad (1-16)",
             "languages": "speak with plants",
             "publicNotes": "<p>Dryads are fey guardians of the trees and creatures who dwell in wooded areas. They prefer using indirect methods to dissuade those who would harm their sacred groves and beloved forests, but they are not above using enchantments to enlist the aid of allies when evil threats cannot be dissuaded with words alone. In times of peace, dryads happily live secluded lives inside their trees, and a community at harmony with nature might not even realize a dryad lives nearby.</p>\n<p>Though they watch over all the woods around them, dryads are inextricably tied to a specific tree, usually an oak. Dryads who are bonded to another type of tree are fundamentally the same, but they may differ in temperament and appearance to match their ward. For instance, kraneiai, or cherry-tree dryads, have beautiful pink coloration and concern themselves with the fragile beauty of life.</p>\n<hr />\n<p>Nymphs are a family of fey that take the form of beautiful humanoids with elven features and have a deep association with the natural world. The most common of their kind are the dryads, which are spirits that embody great trees, but many other kinds of nymphs exist, including naiads, who watch over bodies of water. All nymphs are guardians of some element of nature, typically a specific tree or pond, or even-in the case of nymph queens-whole forests or massive bodies of water</p>",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "woodworking"
+                }
+            },
             "tokenName": "Dryad",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -2041,7 +2081,7 @@
                 },
                 "action->Take Them Down!": {
                     "name": "Take Them Down!",
-                    "description": "<p>The duergar taskmaster smashes their maul into the ground and invokes Droskar's name to rally their allies to action. All allied duergars of equal or lower level that are within 20 feet of the duergar taskmaster gain a[[/r +1 # status bonus to attack rolls and damage]] status bonus to attack rolls and damage rolls until the end of the duergar taskmaster's next turn.</p>"
+                    "description": "<p>The duergar taskmaster smashes their maul into the ground and invokes Droskar's name to rally their allies to action. All allied duergars of equal or lower level that are within @Template[type:emanation|distance:20]{20 feet} of the duergar taskmaster gain a +1 status bonus to attack rolls and damage rolls until the end of the duergar taskmaster's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.u1Z7i2RyL6Sd9OVU]{Efekt: Take Them Down!}</p>"
                 }
             }
         },
@@ -2147,6 +2187,11 @@
         "Elite Sewer Ooze (Q9)": {
             "name": "Elite Sewer Ooze (Q9)",
             "publicNotes": "<p>These amorphous masses of sewage and other detritus make their way through filthy culverts beneath cities large and small.</p>\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in sewers"
+                }
+            },
             "tokenName": "Elite Sewer Ooze",
             "items": {
                 "strike-melee->Pseudopod": {
@@ -2576,6 +2621,11 @@
         "Frog Swarm": {
             "name": "Frog Swarm",
             "publicNotes": "<p>Swarms of centipedes are dangerous indeed, ravenous carpets of skittering hunger capable of devouring a traveler whole in a matter of minutes. Some alchemists submerge whole centipedes taken from swarms in their elixirs and some mutagens, claiming such infusions increase potency, though other say this is nothing more than quackish claptrap. Kobolds and mitflits are both known to incorporate swarms of centipedes into cunning traps, from simple pits filled with vermin or more complex affairs involving chutes that dump the vermin onto the heads of unwary intruders.</p>",
+            "skillSpecialAcrobatics": {
+                "0": {
+                    "label": "to jump"
+                }
+            },
             "items": {
                 "action->Distraction": {
                     "name": "Distraction",
@@ -2691,6 +2741,11 @@
         },
         "Giant Shrew": {
             "name": "Giant Shrew",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Climb or Swim"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -2806,6 +2861,11 @@
             "name": "Greater Metallic Sod Hound",
             "blurb": "Variant sod hound",
             "senses": "metal sense (imprecise) 60 feet",
+            "skillSpecialSurvival": {
+                "0": {
+                    "label": "to track"
+                }
+            },
             "speed": "earth glide",
             "items": {
                 "strike-melee->Jaws": {
@@ -2990,6 +3050,11 @@
         },
         "Gwibble (1-2)": {
             "name": "Gwibble (1-2)",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "vs. arthropods"
+                }
+            },
             "tokenName": "Gwibble",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -3030,6 +3095,11 @@
         },
         "Gwibble (3-4)": {
             "name": "Gwibble (3-4)",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "vs. arthropods"
+                }
+            },
             "tokenName": "Gwibble",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -3420,6 +3490,11 @@
         "Iloise (5-6)": {
             "name": "Iloise (5-6)",
             "hpDetails": "leczenie pustką",
+            "skillSpecialPerformance": {
+                "0": {
+                    "label": "with Tesla Coil"
+                }
+            },
             "tokenName": "Iloise",
             "items": {
                 "weapon->Bottled Lightning (Moderate) (Infused)": {
@@ -3513,6 +3588,11 @@
         },
         "Immature Giant Gecko": {
             "name": "Immature Giant Gecko",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to climb"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -3526,6 +3606,11 @@
         "Injured Sewer Ooze": {
             "name": "Injured Sewer Ooze",
             "publicNotes": "<p>These amorphous masses of sewage and other detritus make their way through filthy culverts beneath cities large and small.</p>\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in sewers"
+                }
+            },
             "items": {
                 "strike-melee->Pseudopod": {
                     "name": "Pseudopod"
@@ -3543,6 +3628,11 @@
         "Injured Weak Otyugh": {
             "name": "Injured Weak Otyugh",
             "publicNotes": "<p>Lords of sewers, ditches, and landfllls, otyughs are filthy monstrosities that stomp about on three massive legs in search of tasty garbage and refuse. Using two barbed tentacles to grasp and tear, guided by a third with a proliferation of eyes at the end, the otyugh has perfectly adapted to life in its cramped, disgusting environment, where it uses its appendages to see into tight spaces and grasp hidden prey.</p>\n<p>Most assume that otyughs originally evolved in swamps and moved into sewers as civilization encroached on their natural habitats. True or not, they are now one of the larger predators in those dank environs. Otyughs are territorial, but they have been known to form loose collectives, even giving each other important-sounding titles like 'king of offal' and 'duchess of slime' to indicate their rank and station in their sludgy underworld beneath the streets.</p>\n<p>Those who run across an otyugh might be surprised to hear it speak, shouting at intruders to leave its putrid home or demanding tribute in the form of trash or other prizes of dubious nature.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in lair"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -3570,6 +3660,11 @@
         "Jinkin (PFS 1-17)": {
             "name": "Jinkin (PFS 1-17)",
             "publicNotes": "<p>Jinkins are sadistic tinkers who steal and sabotage items and take great pride in their power to curse precious objects. They hold grudges and create convoluted plans for revenge whenever they feel slighted, such as when a creature dares to remove one of their curses. Rarely content to wreak simple mayhem, jinkins also take immense pleasure in torture and murder, though they prefer to lead victims into traps designed to capture or incapacitate rather than kill outright. Deep pits are favorites, since victims who survive the fall face a slow death from starvation and thirst. Jinkins enjoy gathering at the edge of pits to mock, tease, and torment.</p>\n<hr />\n<p>Gremlins are cruel fey tricksters and saboteurs who have fully acclimated to life on the Material Plane, finding distinct niches for their inventive destructiveness. All gremlins delight in ruining or breaking things, whether it's something physical like a device or vehicle or something intangible such as an alliance or relationship. A gremlin's greatest joy is watching the collapse of complex creations, preferably after the lightest and slightest, carefully targeted push from the gremlin. Gremlins tend to denigrate, bully, or even slaughter their lesser kin, particularly mitflits, whom gremlins (and many others) derisively call \"mites.\"</p>",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "traps"
+                }
+            },
             "tokenName": "Jinkin",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -3870,6 +3965,11 @@
         "Kobold Scout (1-14)": {
             "name": "Kobold Scout (1-14)",
             "publicNotes": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, creatures trained for stalking and the hunt.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "traps"
+                }
+            },
             "tokenName": "Kobold Scout",
             "items": {
                 "weapon->Alchemist's Fire (Lesser)": {
@@ -3896,6 +3996,11 @@
         "Kobold Scout (PFS 1-11)": {
             "name": "Kobold Scout (PFS 1-11)",
             "publicNotes": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, creatures trained for stalking and the hunt.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "traps"
+                }
+            },
             "tokenName": "Kobold Scout",
             "items": {
                 "strike-melee->Shortsword": {
@@ -3916,6 +4021,11 @@
         "Kobold Warrior (1-14)": {
             "name": "Kobold Warrior (1-14)",
             "publicNotes": "<p>The typical kobold trains with agile weaponry, favoring the light pick for its use in crafting new tunnels to expand their domains through underground reaches. Kobolds are capable of landing sneaky strikes against unsuspecting foes but are just as quick to scamper off to safety when they don't, as a group, outnumber their enemies at least two to one.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "traps"
+                }
+            },
             "tokenName": "Kobold Warrior",
             "items": {
                 "weapon->Alchemist's Fire (Lesser)": {
@@ -3945,6 +4055,11 @@
         "Kobold Warrior (PFS 1-11)": {
             "name": "Kobold Warrior (PFS 1-11)",
             "publicNotes": "<p>The typical kobold trains with agile weaponry, favoring the light pick for its use in crafting new tunnels to expand their domains through underground reaches. Kobolds are capable of landing sneaky strikes against unsuspecting foes but are just as quick to scamper off to safety when they don't, as a group, outnumber their enemies at least two to one.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+            "skillSpecialCrafting": {
+                "0": {
+                    "label": "traps"
+                }
+            },
             "tokenName": "Kobold Warrior",
             "items": {
                 "strike-melee->Spear": {
@@ -3967,6 +4082,11 @@
         },
         "Krooth Hatchlings": {
             "name": "Krooth Hatchlings",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in water"
+                }
+            },
             "items": {
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
@@ -4117,6 +4237,11 @@
         "Leopard (1-14)": {
             "name": "Leopard (1-14)",
             "publicNotes": "<p>Leopards are among the smallest of the big cats, yet they are still dangerous creatures to tangle with. Leopard statistics can also be used for black panthers, white-spotted snow leopards, or tawny-coated cougars.</p>\n<hr />\n<p>Few predators of the natural world can match the cat's talent for stalking and stealth.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in undergrowth"
+                }
+            },
             "tokenName": "Leopard",
             "items": {
                 "strike-melee->Jaws": {
@@ -4288,6 +4413,11 @@
             "name": "Little Zura (1-2)",
             "languages": "(can't speak any language)",
             "saveDetails": "+2 to fortitude saves vs. attempts to grapple or shove",
+            "skillSpecialAcrobatics": {
+                "0": {
+                    "label": "to escape"
+                }
+            },
             "tokenName": "Little Zura",
             "items": {
                 "strike-melee->Tusks": {
@@ -4314,6 +4444,11 @@
             "name": "Little Zura (3-4)",
             "languages": "(can't speak any language)",
             "saveDetails": "+2 to fortitude saves vs. attempts to grapple or shove",
+            "skillSpecialAcrobatics": {
+                "0": {
+                    "label": "to Escape"
+                }
+            },
             "tokenName": "Little Zura",
             "items": {
                 "strike-melee->Tusks": {
@@ -4637,6 +4772,11 @@
             "name": "Metallic Sod Hound",
             "blurb": "Variant sod hound",
             "senses": "metal sense (imprecise) 60 feet",
+            "skillSpecialSurvival": {
+                "0": {
+                    "label": "to track"
+                }
+            },
             "speed": "earth glide",
             "items": {
                 "strike-melee->Jaws": {
@@ -4699,6 +4839,11 @@
         "Mitflit (PFS 1-02)": {
             "name": "Mitflit (PFS 1-02)",
             "publicNotes": "<p>Mitflits, also known as mites, are self-loathing and pitiful cowards, easily bullied into servitude by other creatures or even slightly more powerful mitflit leaders. They tame insects, spiders, and other such creatures to serve as faithful allies. Mitflits have lost most of their ancestral gremlin magic, leaving these incomplete beings full of doubt and insecurity. Mitflits find companionship in the other base creatures of the world, and forge bonds of friendship with vermin, the only other beings that seem willing to accept them. A social structure, even one in which they are bullied, partially fills the hole within mitflits' personalities, and they rarely rebel or rail out unless their rage hits a breaking point.</p>\n<hr />\n<p>Gremlins are cruel fey tricksters and saboteurs who have fully acclimated to life on the Material Plane, finding distinct niches for their inventive destructiveness. All gremlins delight in ruining or breaking things, whether it's something physical like a device or vehicle or something intangible such as an alliance or relationship. A gremlin's greatest joy is watching the collapse of complex creations, preferably after the lightest and slightest, carefully targeted push from the gremlin. Gremlins tend to denigrate, bully, or even slaughter their lesser kin, particularly mitflits, whom gremlins (and many others) derisively call \"mites.\"</p>",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "vs. arthropods"
+                }
+            },
             "tokenName": "Mitflit",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
@@ -4732,6 +4877,11 @@
         },
         "Mitflit Sneak": {
             "name": "Mitflit Sneak",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "vs. arthropods"
+                }
+            },
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -5634,6 +5784,11 @@
         },
         "Pine Brute": {
             "name": "Pine Brute",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in forests"
+                }
+            },
             "items": {
                 "strike-melee->Branch": {
                     "name": "Branch"
@@ -6005,6 +6160,11 @@
         "Rabid Squirrel Swarm": {
             "name": "Rabid Squirrel Swarm",
             "publicNotes": "<p>Swarms of centipedes are dangerous indeed, ravenous carpets of skittering hunger capable of devouring a traveler whole in a matter of minutes. Some alchemists submerge whole centipedes taken from swarms in their elixirs and some mutagens, claiming such infusions increase potency, though other say this is nothing more than quackish claptrap. Kobolds and mitflits are both known to incorporate swarms of centipedes into cunning traps, from simple pits filled with vermin or more complex affairs involving chutes that dump the vermin onto the heads of unwary intruders.</p>",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Climb"
+                }
+            },
             "items": {
                 "action->Rabies": {
                     "name": "Rabies",
@@ -6135,6 +6295,11 @@
         },
         "Reast Mycer (1-2)": {
             "name": "Reast Mycer (1-2)",
+            "skillSpecialPerformance": {
+                "0": {
+                    "label": "to deliver sermons"
+                }
+            },
             "tokenName": "Reast Mycer",
             "items": {
                 "spellcastingEntry->Divine Spontaneous Spells": {
@@ -6248,6 +6413,11 @@
             "name": "Reefclaw (PFS 1-12)",
             "languages": "(can't speak any language)",
             "publicNotes": "<p>Reefclaws are aquatic monsters that resemble huge shrimp or lobsters. As one might expect from its name, a reefclaw's oversized claws are powerful weapons with their vicelike grip and the ability to inject potent venom into unfortunate prey.</p>\n<p>While reefclaws can't speak, they are intelligent enough to understand the local language of humanoids near their hunting grounds. The creatures sometimes listen to conversations, either to gain intelligence on the best place to ambush aquatic or land-dwelling prey, or merely for entertainment value-reefclaws are particularly fond of listening to people with high-pitched voices. Reefclaws are usually solitary hunters, but small swarms of female reefclaws have been known to gather around a single male for mating purposes or together for the communal raising of their broods. In the latter case, the females will perform widespread hunts in order to bring back a large enough bounty to feed their young. Such hunting parties are extremely dangerous-they've been known to tip over small flshing boats and attack those who fall overboard.</p>\n<p>Once a reefclaw has decided upon a course of action, it follows through even if doing so spells its own end. More than one reefclaw survivor has said that the creature released its bone-crushing grasp only after its brains were leaking from its broken skull, and even then the reefclaw was able to perform a terrible last slash as part of its dying breath. During mating season, female reefclaws are often a little more pragmatic and release their prey before endangering themselves and their offspring.</p>\n<p>Despite their intelligence and the accompanying moral quandaries, reefclaws frequently find their way onto the dinner plates of land-dwelling hunters such as humans and hobgoblins. According to those who have a taste for reefclaw flesh, the meat is either delectably sweet or slightly tangy (in the case of warm-water reefclaws). Most civilized people who know of reefclaws' intellect find the act of eating them distasteful, but this does not dissuade unscrupulous nobles in coastal regions, for whom reefclaw meat is a delicacy well worth the expense. Likewise, fisherfolk whose focus is on the bottom line of their ledgers are more than willing to hunt the dangerous creatures-or, even better, hire out the task to naive adventurers.</p>",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Swim"
+                }
+            },
             "tokenName": "Reefclaw",
             "items": {
                 "strike-melee->Claw": {
@@ -6269,6 +6439,11 @@
         "Reefclaw Spawn": {
             "name": "Reefclaw Spawn",
             "languages": "can't speak any language",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Swim"
+                }
+            },
             "items": {
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -6382,6 +6557,11 @@
         "Sea Devil Invader": {
             "name": "Sea Devil Invader",
             "languages": "shark commune 150 feet",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to swim"
+                }
+            },
             "items": {
                 "strike-melee->Trident": {
                     "name": "Trójząb"
@@ -6418,6 +6598,11 @@
         },
         "Seaborn Captain": {
             "name": "Seaborn Captain",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to swim"
+                }
+            },
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -6442,6 +6627,11 @@
         },
         "Seaborn Fisher": {
             "name": "Seaborn Fisher",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to swim"
+                }
+            },
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -6799,6 +6989,11 @@
         "Squirrel Swarm (1-04)": {
             "name": "Squirrel Swarm (1-04)",
             "publicNotes": "<p>Swarms of centipedes are dangerous indeed, ravenous carpets of skittering hunger capable of devouring a traveler whole in a matter of minutes. Some alchemists submerge whole centipedes taken from swarms in their elixirs and some mutagens, claiming such infusions increase potency, though other say this is nothing more than quackish claptrap. Kobolds and mitflits are both known to incorporate swarms of centipedes into cunning traps, from simple pits filled with vermin or more complex affairs involving chutes that dump the vermin onto the heads of unwary intruders.</p>",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Climb"
+                }
+            },
             "tokenName": "Squirrel Swarm",
             "items": {
                 "action->Swarming Claws and Teeth": {
@@ -7173,6 +7368,11 @@
         },
         "Tough Giant Shrew": {
             "name": "Tough Giant Shrew",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Climb or Swim"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -7559,6 +7759,11 @@
         "Weak Arboreal Warden": {
             "name": "Weak Arboreal Warden",
             "acDetails": "20 with shield raised",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in forests"
+                }
+            },
             "items": {
                 "weapon->Stone Longsword": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\nStone Longsword",
@@ -7954,6 +8159,11 @@
         },
         "Young Sea Serpent": {
             "name": "Young Sea Serpent",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to swim"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -7977,6 +8187,11 @@
         "Zatqualmish (3-4)": {
             "name": "Zatqualmish (3-4)",
             "saveDetails": "+1 Status to All Saves vs. Illusions",
+            "skillSpecialSociety": {
+                "0": {
+                    "label": "to Create Forgeries"
+                }
+            },
             "tokenName": "Zatqualmish",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
@@ -8046,6 +8261,11 @@
         "Zatqualmish (5-6)": {
             "name": "Zatqualmish (5-6)",
             "saveDetails": "+1 Status to All Saves vs. Illusions",
+            "skillSpecialSociety": {
+                "0": {
+                    "label": "to Create Forgeries"
+                }
+            },
             "tokenName": "Zatqualmish",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
@@ -8308,6 +8528,42 @@
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
         "senses": "system.perception.details",
+        "skillSpecialAcrobatics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.acrobatics.special"
+        },
+        "skillSpecialAthletics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.athletics.special"
+        },
+        "skillSpecialCrafting": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.crafting.special"
+        },
+        "skillSpecialDeception": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.deception.special"
+        },
+        "skillSpecialDiplomacy": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.diplomacy.special"
+        },
+        "skillSpecialPerformance": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.performance.special"
+        },
+        "skillSpecialSociety": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.society.special"
+        },
+        "skillSpecialStealth": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.stealth.special"
+        },
+        "skillSpecialSurvival": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.survival.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

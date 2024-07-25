@@ -5,6 +5,11 @@
       "name": "Alchemist Ivy",
       "blurb": "Variant Assassin Vine",
       "publicNotes": "<p>The assassin vine is a carnivorous plant with a voracious appetite. Rather than consuming creatures directly, it creates its own fertilizer by entangling prey and squeezing the life from it. Once the plant has killed a creature, it pulls the carcass over to its roots to feed from the decaying flesh. Although an assassin vine lacks eyes, it can detect and track prey through a combination of using its root systems to detect vibrations through topsoil and its leaves to detect heat changes in the vicinity. Although the assassin vine has no real intelligence, its learned behaviors mimic those of cunning ambush hunters.</p>\n<p>As it is slow moving, the assassin vine typically remains rooted in a single area for as long as it has sufficient prey. Though most often found along woodland trails or swamps, these plants can also be encountered in more rural settlements, poorly tended fields, and vineyards. While assassin vines can't be trained in the classical sense, they can be used as defenses, and woodland-dwelling creatures like goblins and fey have been known to cultivate assassin vines as guardians for less-used routes into their lairs. In such cases, the tenders often seek to make the path more obvious than its disuse would otherwise suggest, while simultaneously working to ensure the bones of the vines' victims are removed to keep their presence a secret, resulting in what appears to be an easy approach to the den but is actually an organic ambush.</p>\n<p>Mature assassin vines grow to 20 feet long and have smaller vines extending off the main trunk that reach from to 5 to 10 feet in length. The smallest of these vines sprout every 6 inches or so; they tend to grow clusters of full leaves and occasionally bear small berries. A recently fed assassin vine can have bunches of plump, blood-red berries that are juicy and tart but leave a slightly unpleasant iron aftertaste, as if from the faint taste of blood from a bitten lip.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in forests or grasslands"
+        }
+      },
       "items": {
         "strike-melee->Vine": {
           "name": "Vine"
@@ -706,6 +711,11 @@
       "name": "Fazil",
       "blurb": "Variant Kobold Scout",
       "publicNotes": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, creatures trained for stalking and the hunt.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "items": {
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -1588,6 +1598,11 @@
     "Jinkin": {
       "name": "Jinkin",
       "publicNotes": "<p>Jinkins are sadistic tinkers who steal and sabotage items and take great pride in their power to curse precious objects. They hold grudges and create convoluted plans for revenge whenever they feel slighted, such as when a creature dares to remove one of their curses. Rarely content to wreak simple mayhem, jinkins also take immense pleasure in torture and murder, though they prefer to lead victims into traps designed to capture or incapacitate rather than kill outright. Deep pits are favorites, since victims who survive the fall face a slow death from starvation and thirst. Jinkins enjoy gathering at the edge of pits to mock, tease, and torment.</p>\n<hr />\n<p>Gremlins are cruel fey tricksters and saboteurs who have fully acclimated to life on the Material Plane, finding distinct niches for their inventive destructiveness. All gremlins delight in ruining or breaking things, whether it's something physical like a device or vehicle or something intangible such as an alliance or relationship. A gremlin's greatest joy is watching the collapse of complex creations, preferably after the lightest and slightest, carefully targeted push from the gremlin. Gremlins tend to denigrate, bully, or even slaughter their lesser kin, particularly mitflits, whom gremlins (and many others) derisively call \"mites.\"</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
@@ -2830,6 +2845,11 @@
       "blurb": "Variant Flaming Skull",
       "hpDetails": "void healing",
       "publicNotes": "<p>More dangerous than simple severed heads, these skulls are wreathed in unearthly flames.</p>\n<hr />\n<p>Beheaded are the reanimated heads of decapitation victims. These mindless undead fly through the air or roll around to attack their prey.</p>",
+      "skillSpecialAcrobatics": {
+        "0": {
+          "label": "to Maneuver in Flight"
+        }
+      },
       "items": {
         "strike-melee->Forehead": {
           "name": "Forehead"
@@ -3031,6 +3051,11 @@
     "Ulat-Kini Initiate": {
       "name": "Ulat-Kini Initiate",
       "publicNotes": "<p>Several groups of ulat-kinis have rediscovered the ancient way of kirtanang, a martial art from that uses broad, flowing motions of the claws.</p>\n<h2>Ulat-Kini Culture</h2>\n<p>The creatures who surface humanoids consider scum still hold grand empires beneath the waves. While some ulat-kinis still revere the alghollthu who created them and others have learned to hate their creators, there are ulat-kinis who have found a new way forward. They have developed their own culture outside of alghollthu influence, founding new underwater traditions and creating new cultural standards.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "while swimming"
+        }
+      },
       "items": {
         "strike-melee->Claw": {
           "name": "Claw"
@@ -3324,6 +3349,18 @@
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
     "senses": "system.perception.details",
+    "skillSpecialAcrobatics": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.acrobatics.special"
+    },
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "skillSpecialStealth": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.stealth.special"
+    },
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

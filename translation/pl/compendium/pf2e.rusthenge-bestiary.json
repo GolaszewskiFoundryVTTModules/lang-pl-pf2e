@@ -434,6 +434,11 @@
             "blurb": "Variant severed head",
             "hpDetails": "leczenie pustką",
             "publicNotes": "<p>The most common beheaded appears simply as a rotting head, barely preserved by the magic that created it.</p>\n<hr />\n<p>Beheaded are the reanimated heads of decapitation victims. These mindless undead fly through the air or roll around to attack their prey.</p>",
+            "skillSpecialAcrobatics": {
+                "0": {
+                    "label": "to Maneuver in Flight"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -719,6 +724,10 @@
         "routine": "system.details.routine",
         "saveDetails": "system.attributes.allSaves.value",
         "senses": "system.perception.details",
+        "skillSpecialAcrobatics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.acrobatics.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

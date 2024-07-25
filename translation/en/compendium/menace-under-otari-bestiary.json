@@ -492,6 +492,11 @@
     "Giant Rat (BB)": {
       "name": "Giant Rat (BB)",
       "publicNotes": "<p>Giant rats are enormous versions of the common vermin. They're typically found in abundant numbers, but since they can't fit in the nooks where ordinary rats typically hide, they're much easier to locate and exterminate. In fact, finding and slaying a giant rat is a rite of passage for many an adventurer. Such tasks get tiresome quickly, so many veterans subcontract extermination to new adventurers.</p>\n<p>Giant rats mostly live in sewers where they can scavenge from the streets above, but some families of giant rats live in more remote locations, such as dank caves, forests, or hills. Rats are incredibly adept survivors and can be found nearly anywhere in the world, though they tend to favor temperate or warm climates as opposed to cold regions.</p>\n<p>Although their bite alone isn't lethal except to the very weak, some giant rats carry a dangerous disease common to rodents around the world-a pestilence more than capable of ravaging rural communities. The rats are merely carriers with no risk of succumbing to the disease themselves.</p>",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "to Climb or Swim"
+        }
+      },
       "tokenName": "Giant Rat",
       "items": {
         "strike-melee->Jaws": {
@@ -606,6 +611,11 @@
     "Harpy (BB)": {
       "name": "Harpy (BB)",
       "publicNotes": "<p>Harpies are an amalgamation of human and bird, using their ancestral control of the wind to lure prey or even directly pull in their next meal. Harpies can eat most creatures, but prefer to eat humans and elves in particular. Harpies live in family groups or larger clans, although they rarely hunt in big groups, preferring to keep most meals for themselves.</p>",
+      "skillSpecialPerformance": {
+        "0": {
+          "label": "singing"
+        }
+      },
       "tokenName": "Harpy",
       "items": {
         "strike-melee->Talon": {
@@ -628,6 +638,11 @@
       "name": "Hell Hound (BB)",
       "languages": "(can't speak)",
       "publicNotes": "<p>Temperamental and quick to aggressive behavior, hell hounds are fiendish canines from a hellish plane. They're skilled hunters and can breathe supernatural gouts of flame from their maws. A hell hound's appearance leaves no doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features. Though they can't speak, they understand Diabolic, the language of Hell.</p>",
+      "skillSpecialSurvival": {
+        "0": {
+          "label": "to Track"
+        }
+      },
       "tokenName": "Hell Hound",
       "items": {
         "strike-melee->Jaws": {
@@ -926,6 +941,11 @@
     "Kobold Warrior (BB)": {
       "name": "Kobold Warrior (BB)",
       "publicNotes": "<p>A typical kobold trains with simple weaponry. Kobolds are capable of landing sneaky strikes against unsuspecting foes, but they're just as quick to scamper off to safety if their group wouldn't outnumber their enemies by at least two to one.</p>\n<p>Kobolds believe in pragmatism, and a defeated kobold would rather surrender than face death. One might even abandon their kobold kin and concede to serve the victor if the alternative is an untimely demise.</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "tokenName": "Kobold Warrior",
       "items": {
         "strike-melee->Spear": {
@@ -946,6 +966,11 @@
     "Leopard (BB)": {
       "name": "Leopard (BB)",
       "publicNotes": "<p>Leopards range from the iconic yellow with black spots to black panthers and white-furred, black-spotted snow leopards. Few predators can match their talent for stalking and stealth.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in undergrowth"
+        }
+      },
       "tokenName": "Leopard",
       "items": {
         "strike-melee->Jaws": {
@@ -1166,6 +1191,11 @@
       "name": "Reefclaw (BB)",
       "publicNotes": "<p>Reefclaws are aquatic monsters that resemble huge shrimp or lobsters. Though reefclaws can't speak, they are intelligent enough to understand the local language of humanoids near their hunting grounds.</p>",
       "senses": "darkvision",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "to swim"
+        }
+      },
       "tokenName": "Reefclaw",
       "items": {
         "strike-melee->Claw": {
@@ -1212,6 +1242,11 @@
     "Sewer Ooze (BB)": {
       "name": "Sewer Ooze (BB)",
       "publicNotes": "<p>These amorphous masses of sewage and detritus make their way through filthy culverts beneath cities. Some grow to enormous sizes and have insatiable appetites.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in sewers"
+        }
+      },
       "tokenName": "Sewer Ooze",
       "items": {
         "strike-melee->Pseudopod": {
@@ -1313,6 +1348,11 @@
       "name": "Sod Hound (BB)",
       "publicNotes": "<p>Earth elementals such as sod hounds make excellent bodyguards for spelunkers and are ideal protectors of important subterranean locations. Coming from the Plane of Earth, they often appear in caverns deep underground.</p>\n<p>Sod hounds take the form of mossy canines made of packed dirt and pebbles. They can band together with other sod hounds, traveling as a pack.</p>",
       "senses": "crystal sense 60 feet",
+      "skillSpecialSurvival": {
+        "0": {
+          "label": "to Track"
+        }
+      },
       "tokenName": "Sod Hound",
       "items": {
         "strike-melee->Jaws": {
@@ -1349,6 +1389,11 @@
     "Viper (BB)": {
       "name": "Viper (BB)",
       "publicNotes": "<p>Each member of this family of venomous snakes has long, hinged fangs that inject potent venom into their prey. Different vipers inject different types of venom, which might result in paralysis, extreme pain and swelling, blood clotting, or even the sudden stopping of the victim's heart.</p>\n<p>Though far less of an imposing physical threat than a giant viper, a common viper poses far more danger than its size would suggest. A viper mainly hunts small mammals or lizards but will attack a humanoid it perceives as a threat.</p>",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "to Climb"
+        }
+      },
       "tokenName": "Viper",
       "items": {
         "strike-melee->Fangs": {
@@ -1577,6 +1622,26 @@
     "reset": "system.details.reset",
     "routine": "system.details.routine",
     "senses": "system.perception.details",
+    "skillSpecialAthletics": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.athletics.special"
+    },
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "skillSpecialPerformance": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.performance.special"
+    },
+    "skillSpecialStealth": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.stealth.special"
+    },
+    "skillSpecialSurvival": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.survival.special"
+    },
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

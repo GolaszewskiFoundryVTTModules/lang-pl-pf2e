@@ -3,6 +3,11 @@
     "entries": {
         "Brimstone Rat": {
             "name": "Brimstone Rat",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to Climb or Swim"
+                }
+            },
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -49,6 +54,11 @@
         },
         "Hargrit Leadbuster": {
             "name": "Hargrit Leadbuster",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "against Devils"
+                }
+            },
             "items": {
                 "spellcastingEntry->Divine Prepared Spells": {
                     "name": "Przygotowane Zaklęcia Boskie"
@@ -132,6 +142,11 @@
         },
         "Kotgar Leadbuster": {
             "name": "Kotgar Leadbuster",
+            "skillSpecialAthletics": {
+                "0": {
+                    "label": "to shove"
+                }
+            },
             "items": {
                 "armor->Half Plate": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]\n<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>"
@@ -210,6 +225,11 @@
         },
         "Morgrym Leadbuster": {
             "name": "Morgrym Leadbuster",
+            "skillSpecialDiplomacy": {
+                "0": {
+                    "label": "against Demons"
+                }
+            },
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Przygotowane Zaklęcia Tajemne"
@@ -453,6 +473,14 @@
         },
         "reset": "system.details.reset",
         "routine": "system.details.routine",
+        "skillSpecialAthletics": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.athletics.special"
+        },
+        "skillSpecialDiplomacy": {
+            "converter": "translateSkillSpecial",
+            "path": "system.skills.diplomacy.special"
+        },
         "source": {
             "converter": "translateSource",
             "path": "system.details.publication.title"

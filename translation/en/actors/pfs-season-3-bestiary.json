@@ -918,7 +918,7 @@
         },
         "action->Funereal Dirge": {
           "name": "Funereal Dirge",
-          "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/br 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a -2 status penalty to saving throws against drain life.</p>"
+          "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/br 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a -2 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
         }
       }
     },
@@ -1832,6 +1832,11 @@
       "blurb": "Variant hell hound",
       "languages": "(can't speak any language)",
       "publicNotes": "<p>A hell hound's appearance dismisses any doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features.</p>",
+      "skillSpecialSurvival": {
+        "0": {
+          "label": "to Track"
+        }
+      },
       "tokenName": "Hell Hound",
       "items": {
         "strike-melee->Jaws": {
@@ -2232,6 +2237,11 @@
     },
     "Explosive Rat": {
       "name": "Explosive Rat",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "to climb or swim"
+        }
+      },
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -2460,6 +2470,11 @@
     },
     "Fipp the Prophet": {
       "name": "Fipp the Prophet",
+      "skillSpecialPerformance": {
+        "0": {
+          "label": "to Spout Prophecy"
+        }
+      },
       "items": {
         "spellcastingEntry->Divine Spontaneous Spells": {
           "name": "Divine Spontaneous Spells"
@@ -2785,6 +2800,11 @@
     "Giant Rat (PFS 3-98)": {
       "name": "Giant Rat (PFS 3-98)",
       "publicNotes": "<p>Rats are a ubiquitous menace, scurrying through the sewers and on the streets of nearly every settlement the world over. Though a regular rat darting underfoot might startle or even frighten the average passerby, giant rats and rat swarms are far more dangerous.</p>\n<hr />\n<p>Giant rats are enormous versions of the common vermin. They are typically found in abundant numbers, but since they cannot fit in the nooks where mundane rats typically hide, they are much easier to locate and exterminate. They mostly live in sewers where they can scavenge from the streets above, but some families of giant rats live in more remote locations, such as dank caves or forests and hills. Rats are incredibly adept survivors and can be found nearly anywhere in the world, though they tend to favor temperate or warm climates as opposed to cold regions.</p>\n<p>Although its bite alone is not lethal except to the very young or very old, the giant rat carries the filth fever common to rodents around the world-a pestilence more than capable of ravaging rural communities.</p>",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "to Climb or Swim"
+        }
+      },
       "tokenName": "Giant Rat",
       "items": {
         "strike-melee->Jaws": {
@@ -2868,6 +2888,11 @@
     "Grimple (PFS 3-18)": {
       "name": "Grimple (PFS 3-18)",
       "publicNotes": "<p>Gremlins arose long ago in the First World, living embodiments of nature's ability to wear away, erode, and decompose. On the Material Plane, their encounters with mortal civilizations twisted them into creatures devoted to chaos, sabotage, and traps, each variety specializing in a particular brand of mayhem.</p>\n<hr />\n<p>Even more than most gremlins, grimples resent the trappings of civilization: inn common rooms with their rowdy singalongs, livery yards with their whinnying horses, church steeples with their clanging bells. Grimples live to spoil these conventions, dropping tavern signs on patrons, urinating in rain barrels, and opening stable doors. When all else fails, they literally vomit their disdain on passersby.</p>\n<p>Grimples resemble humanoid, mange-ridden opossums, with boar-like tusks that aid them in rooting through garbage heaps for food. They are agile climbers who glide from eave to eave on the loose flaps of skin between their limbs. Savvy gremlin-hunters know to look for the skin flakes and fur grimples shed from their parasite-infested hides.</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "tokenName": "Grimple",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -3371,6 +3396,11 @@
     "Kobold Scout (PFS 3-99)": {
       "name": "Kobold Scout (PFS 3-99)",
       "publicNotes": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, creatures trained for stalking and the hunt.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "tokenName": "Kobold Scout",
       "items": {
         "strike-melee->Shortsword": {
@@ -3391,6 +3421,11 @@
     "Kobold Warrior (PFS 3-99)": {
       "name": "Kobold Warrior (PFS 3-99)",
       "publicNotes": "<p>The typical kobold trains with agile weaponry, favoring the light pick for its use in crafting new tunnels to expand their domains through underground reaches. Kobolds are capable of landing sneaky strikes against unsuspecting foes but are just as quick to scamper off to safety when they don't, as a group, outnumber their enemies at least two to one.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "tokenName": "Kobold Warrior",
       "items": {
         "strike-melee->Spear": {
@@ -3534,6 +3569,11 @@
     "Leopard (PFS 3-13)": {
       "name": "Leopard (PFS 3-13)",
       "publicNotes": "<p>Leopards are among the smallest of the big cats, yet they are still dangerous creatures to tangle with. Leopard statistics can also be used for black panthers, white-spotted snow leopards, or tawny-coated cougars.</p>\n<hr />\n<p>Few predators of the natural world can match the cat's talent for stalking and stealth.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in undergrowth"
+        }
+      },
       "tokenName": "Leopard",
       "items": {
         "strike-melee->Jaws": {
@@ -4468,6 +4508,11 @@
     "Nuglub (PFS 3-18)": {
       "name": "Nuglub (PFS 3-18)",
       "publicNotes": "<p>The \"towering\" hunchbacked nuglubs are among the largest gremlins, though they're not quite three feet tall. Nuglubs have three glowing blue eyes and black, oily hair on their head and back that covers them like a cloak. Nuglubs enjoy killing with a glee that other gremlins reserve for sabotage. Indeed, they spend long hours preparing ambushes for unwary travelers or plotting the murders of sleeping villagers. Though less technically inclined than their kin, nuglubs do enjoy building traps. They delight in stealthily constructing traps in places their victims consider familiar, such as front doors and the floors around beds. If someone else gets blamed for the mayhem the nuglub creates, all the better.</p>\n<p>In combat, nuglubs focus on targets wearing metal armor. Some attribute this to envy on the part of the nuglubs, who find it difficult to fit armor on their twisted bodies. Nuglubs are particularly talented at causing those nearby to stumble over them and fall prone. Once an enemy falls to the ground, all the nuglubs descend upon the target, biting and scratching until nothing remains.</p>\n<p>Nuglubs rarely gather in groups larger than half a dozen, as quarrels often lead to violence and cannibalism. A lone nuglub who bullies a group of smaller gremlins is more likely to get their way, and thus less likely to attack their allies.</p>",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
       "tokenName": "Nuglub",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
@@ -4698,6 +4743,11 @@
       "name": "Panicked Bat Swarm",
       "blurb": "Variant vampire bat swarm",
       "publicNotes": "<p>Although the typical vampire bat has a wingspan of 7 inches and doesn't pose a significant threat to larger prey alone (and indeed, these blood-drinkers can feed without their sleeping victims ever noticing), some unusually aggressive species of these bats hunt in deadly swarms. A churning cloud of vampire bats is much more dangerous than the sum of its individual parts and is capable of inflicting an overwhelming number of bleeding wounds in a frighteningly short span of time.</p>\n<hr />\n<p>A wide range of bats dwell throughout the world. Most of these nocturnal animals are harmless insectivores, but deadly breeds of vampire bats and oversized bats the size of horses pose much more significant threats to adventurers.</p>",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "to Climb"
+        }
+      },
       "items": {
         "action->Echolocation (Precise) 20 feet": {
           "name": "Echolocation (Precise) 20 feet",
@@ -5016,6 +5066,11 @@
     "Pup of Tindalos": {
       "name": "Pup of Tindalos",
       "blurb": "Variant hound of Tindalos",
+      "skillSpecialSurvival": {
+        "0": {
+          "label": "to Track"
+        }
+      },
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -5912,6 +5967,11 @@
     },
     "Sulfuric Slime": {
       "name": "Sulfuric Slime",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in water or mud"
+        }
+      },
       "items": {
         "strike-ranged->Sulfur Spout": {
           "name": "Sulfur Spout"
@@ -6179,6 +6239,11 @@
       "name": "Thomil Bolyrius (3-4)",
       "blurb": "Variant troubadour",
       "publicNotes": "<p>Troubadours keep alive the traditional songs of their cultural and write original works to commemorate major events.</p>\n<hr />\n<p>Performances can serve as entertainment, expressions of beauty, or part of a shared culture.</p>",
+      "skillSpecialPerformance": {
+        "0": {
+          "label": "when playing the lute"
+        }
+      },
       "tokenName": "Thomil Bolyrius",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
@@ -6236,6 +6301,11 @@
     "Thomil Bolyrius (5-6)": {
       "name": "Thomil Bolyrius (5-6)",
       "publicNotes": "<p>Troubadours keep alive the traditional songs of their cultural and write original works to commemorate major events.</p>\n<hr />\n<p>Performances can serve as entertainment, expressions of beauty, or part of a shared culture.</p>",
+      "skillSpecialPerformance": {
+        "0": {
+          "label": "when playing the lute"
+        }
+      },
       "tokenName": "Thomil Bolyrius",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
@@ -7023,6 +7093,11 @@
       "blurb": "Variant Weak hell hound",
       "languages": "(can't speak any language)",
       "publicNotes": "<p>A hell hound's appearance dismisses any doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features.</p>",
+      "skillSpecialSurvival": {
+        "0": {
+          "label": "to Track"
+        }
+      },
       "tokenName": "Weak Hell Hound",
       "items": {
         "strike-melee->Jaws": {
@@ -7244,6 +7319,26 @@
     "routine": "system.details.routine",
     "saveDetails": "system.attributes.allSaves.value",
     "senses": "system.perception.details",
+    "skillSpecialAthletics": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.athletics.special"
+    },
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "skillSpecialPerformance": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.performance.special"
+    },
+    "skillSpecialStealth": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.stealth.special"
+    },
+    "skillSpecialSurvival": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.survival.special"
+    },
     "source": {
       "converter": "translateSource",
       "path": "system.details.publication.title"

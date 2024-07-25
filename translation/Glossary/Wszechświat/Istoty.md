@@ -3,5 +3,7 @@ devil - czart
 demon - demon
 daemon - daimon
 
+sprite - chochlik
+pixie - skrzat
 
 warpwave - pulsprzemiana?

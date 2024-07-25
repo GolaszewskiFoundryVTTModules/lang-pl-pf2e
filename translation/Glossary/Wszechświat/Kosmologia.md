@@ -1,4 +1,4 @@
-Plane of Existance - Sfe
+Plane of Existance - Plan Egzystencji
 ###### Netherworld - Zaświaty
 ###### the Universe - Świat Główny
 ###### Outer Rifts - Zewnętrzne Szczeliny

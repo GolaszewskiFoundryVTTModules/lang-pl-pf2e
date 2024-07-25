@@ -39,7 +39,7 @@ class LocalizationUpdater:
         # PYTHON READS THE JSON STRING WITH ITS ESCAPE CHARACTERS ACCOUNTED FOR
         # Escape signs in JSON need to be accounted for in regex (usually reduced/removed)
         self.replacement_patterns = [
-             # Styling and punctuation
+            # Styling and punctuation
             (r' -([0-9]+)', r' –\1'),
             (r'(\S)—(\S)', r'\1 — \2'),
             # Ordinals
@@ -50,6 +50,8 @@ class LocalizationUpdater:
             (r'([0-9]+\.)-rank', r'\1 kręgu'),
             # Dies
             (r'([0-9]*)d([0-9]+)', r'\1k\2'),
+            # Statuses
+            (r'\{Invisible\}', r'{Niewidzialność}'),            
             # Initial Variants
             (r'\(Minor\)', r'(Drobny)'),
             (r'\(Lesser\)', r'(Mniejszy)'),
@@ -110,6 +112,13 @@ class LocalizationUpdater:
             (r'>Cantrips<', r'>Sztuczki<'),
             (r'>Spell<', r'>Zaklęcie<'),
             (r'>Spells<', r'>Zaklęcia<'),
+            (r'\(At Will\)', r'(Do Woli)'),
+            (r'(\S*) Innate Spells', r'Wrodzone Zaklęcia \1'),
+            (r'(\S*) Prepared Spells', r'Przygotowane Zaklęcia \1'),
+            (r'(Wrodzone|Przygotowane) (Zaklęcia) Occult', r'\1 \2 Okultystyczne'),
+            (r'(Wrodzone|Przygotowane) (Zaklęcia) Divine', r'\1 \2 Boskie'),
+            (r'(Wrodzone|Przygotowane) (Zaklęcia) Primal', r'\1 \2 Pierwotne'),
+            (r'(Wrodzone|Przygotowane) (Zaklęcia) Arcane', r'\1 \2 Tajemne'),
             # Poisons diseases
             (r'>Saving Throw<', r'>Rzut Obronny<'),
             (r'>Onset<', r'>Nadejście Objawów<'),
@@ -164,6 +173,7 @@ class LocalizationUpdater:
              r'Dostarcz rzucenie docelowego zaklęcia na odpowiednim kręgu.'),
             (r'Supply one casting of all listed levels of all listed spells\.',
              r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
+            
         ]
 
 

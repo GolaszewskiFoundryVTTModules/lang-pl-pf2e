@@ -292,7 +292,7 @@ class LocalizationUpdater:
         regex_patterns = [
              r'@[^\]]+\[([^\[]|\[\S+\])+\]',
              r'(?<!\])\{[^\{]+\}',
-             r'(?<!\[)\[[^\[\]]+\]', # single suare, to remove damage
+             r'(?<!\[)\[[^\[\]]+\]', # single square, to remove damage
              r'\[\[[^(\]\])]+\]\]', # afterwards, double square, to remove formulas
              r'<[^<]+>',
              r'\\n'

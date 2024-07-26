@@ -52,6 +52,7 @@ en_to_pl_file_pairs = [
     ("compendium/menace-under-otari-bestiary","compendium/pf2e.menace-under-otari-bestiary"),
     ("compendium/outlaws-of-alkenstar-bestiary","compendium/pf2e.outlaws-of-alkenstar-bestiary"),
     ("compendium/rusthenge-bestiary","compendium/pf2e.rusthenge-bestiary"),
+    #Bestiary
     ("actors/age-of-ashes-bestiary","compendium/pf2e.age-of-ashes-bestiary"),
     ("actors/agents-of-edgewatch-bestiary","compendium/pf2e.agents-of-edgewatch-bestiary"),
     ("actors/blog-bestiary","compendium/pf2e.blog-bestiary"),

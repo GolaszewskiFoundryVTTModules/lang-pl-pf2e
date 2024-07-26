@@ -292,16 +292,22 @@ class LocalizationUpdater:
                 logging.info(f"  Outdated records: {len(self.outdated_keys)}")
                 for key, diff in self.outdated_keys:
                     logging.info(f"    Key: {key}\n    Diff:{diff}\n")
+            
             validation_errors = self.validate_keys_match()
+            
             if validation_errors:
                 for error in validation_errors:
                     logging.error(error)
                 logging.error("Validation failed, the keys in English and Polish files do not match.")
             else:
                 logging.info("Validation successful, all keys match.")
+       
         ordered_pl = {}
+       
         for key in self.en_extracted.keys():
             ordered_pl[key] = self.pl_extracted.get(key, None)
+
         self.pl_extracted = ordered_pl
+
         logging.info("\n")
         self.save_file_to_directory(self.pl_path, self.rebuild_nested_json(self.pl_extracted))

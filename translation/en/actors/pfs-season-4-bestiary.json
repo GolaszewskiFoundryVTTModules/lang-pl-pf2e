@@ -4688,7 +4688,7 @@
       "tokenName": "Runt",
       "items": {
         "effect->Restorative Familiar": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.familiar-abilities.Item.Q42nrq9LwDdbeZM5]\n<p>Once per day, your familiar can use 2 actions with the concentrate trait to give up some of its animating energy and heal you. It must be in your space to do so. You restore a number of Hit Points equal to [[/r max(floor(@actor.level/2)d8, 1d8)]]{1d8 times half your level} (minimum 1d8).</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.familiar-abilities.Item.Q42nrq9LwDdbeZM5]\n<p>Once per day, your familiar can use 2 actions with the concentrate trait to give up some of its animating energy and heal you. It must be in your space to do so. You restore a number of Hit Points equal to @Damage[(max(floor(@actor.level/2),1))d8[healing]]{1d8 times half your level} (minimum 1d8).</p>"
         }
       }
     },
@@ -4698,7 +4698,7 @@
       "tokenName": "Runt",
       "items": {
         "effect->Restorative Familiar": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.familiar-abilities.Item.Q42nrq9LwDdbeZM5]\n<p>Once per day, your familiar can use 2 actions with the concentrate trait to give up some of its animating energy and heal you. It must be in your space to do so. You restore a number of Hit Points equal to [[/r max(floor(@actor.level/2)d8, 1d8)]]{1d8 times half your level} (minimum 1d8).</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.familiar-abilities.Item.Q42nrq9LwDdbeZM5]\n<p>Once per day, your familiar can use 2 actions with the concentrate trait to give up some of its animating energy and heal you. It must be in your space to do so. You restore a number of Hit Points equal to @Damage[(max(floor(@actor.level/2),1))d8[healing]]{1d8 times half your level} (minimum 1d8).</p>"
         }
       }
     },
@@ -5561,7 +5561,7 @@
         },
         "action->Restorative Familiar": {
           "name": "Restorative Familiar",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Runt gives up some of his animating energy and heals Suhko. He must be in Suhko's space to do so. Runt restores [[/r 1d8[healing]]]{1d8 Hit Points} to Suhko.</p>\n<hr />\n<p><strong>Note</strong> Suhko must spend 1 action to command Runt to give him the 2 actions needed to use Restorative Familiar.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Runt gives up some of his animating energy and heals Suhko. He must be in Suhko's space to do so. Runt restores @Damage[1d8[healing]]{1d8 Hit Points} to Suhko.</p>\n<hr />\n<p><strong>Note</strong> Suhko must spend 1 action to command Runt to give him the 2 actions needed to use Restorative Familiar.</p>"
         }
       }
     },
@@ -5604,7 +5604,7 @@
         },
         "action->Restorative Familiar": {
           "name": "Restorative Familiar",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Runt gives up some of his animating energy and heals Suhko. He must be in Suhko's space to do so. Runt restores [[/r 2d8[healing]]]{2d8 Hit Points} to Suhko.</p>\n<hr />\n<p><strong>Note</strong> Suhko must spend 1 action to command Runt to give him the 2 actions needed to use Restorative Familiar.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Runt gives up some of his animating energy and heals Suhko. He must be in Suhko's space to do so. Runt restores @Damage[2d8[healing]]{2d8 Hit Points} to Suhko.</p>\n<hr />\n<p><strong>Note</strong> Suhko must spend 1 action to command Runt to give him the 2 actions needed to use Restorative Familiar.</p>"
         }
       }
     },

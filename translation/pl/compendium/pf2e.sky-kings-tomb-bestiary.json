@@ -34,7 +34,7 @@
                 },
                 "action->Grasping Foliage": {
                     "name": "Grasping Foliage",
-                    "description": "<p><strong>Aktywator</strong> The assassin vine detects a creature within 20 feet via @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</p>\n<hr />\n<p><strong>Efekt</strong> The assassin vine causes vegetation within a @Template[type:emanation|distance:20] to writhe for 1 round, turning this area into difficult terrain. When a creature starts its turn in this area, it must attempt a @Check[type:reflex|dc:20] save. On a failure, it takes a –10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>Assassin vines are immune to Grasping Foliage.</p>"
+                    "description": "<p><strong>Aktywator</strong> The assassin vine detects a creature within 20 feet via @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</p>\n<hr />\n<p><strong>Efekt</strong> The assassin vine causes vegetation within a @Template[type:emanation|distance:20] to writhe for 1 round, turning this area into difficult terrain. When a creature starts its turn in this area, it must attempt a @Check[type:reflex|dc:20] save. On a failure, it takes a –10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>Assassin vines are immune to Grasping Foliage.</p>"
                 },
                 "action->Constrict": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d8+4)[bludgeoning]], @Check[type:fortitude|dc:20|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -112,7 +112,7 @@
                 },
                 "action->Ancient Anecdote": {
                     "name": "Ancient Anecdote",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<hr />\n<p><strong>Efekt</strong> Alkepsur banters with a creature within 60 feet while referencing a forgotten anecdote. The creature must attempt either a @Check[type:will|dc:18] saving throw or @Check[type:dwarf-lore|dc:15] check.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} as they try to decipher the reference.</p>\n<p><strong>Krytyczna Porażka</strong> The anecdote makes the target @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<hr />\n<p><strong>Efekt</strong> Alkepsur banters with a creature within 60 feet while referencing a forgotten anecdote. The creature must attempt either a @Check[type:will|dc:18] saving throw or @Check[type:dwarf-lore|dc:15] check.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} as they try to decipher the reference.</p>\n<p><strong>Krytyczna Porażka</strong> The anecdote makes the target @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>"
                 },
                 "lore->Dwarf Lore": {
                     "name": "Dwarf Lore"
@@ -139,7 +139,7 @@
                 },
                 "action->Splatter": {
                     "name": "Splatter",
-                    "description": "<p>A living graffiti splatters paint into a creature's face with its paint Strike. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round or until it Interacts to remove the paint from its face.</p>"
+                    "description": "<p>A living graffiti splatters paint into a creature's face with its paint Strike. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round or until it Interacts to remove the paint from its face.</p>"
                 }
             }
         },
@@ -169,12 +169,12 @@
             "description": "<p>The faces of the original dwarven inhabitants of the city appear in the stone and scream in anger.</p>",
             "disable": "<p>@Check[type:religion|dc:23] (wytrenowanie) to ritually pray for the dead or @Check[type:occultism|dc:25] (wytrenowanie) to exorcise the spirits' anger; a dwarf succeeds at a @Check[type:diplomacy|dc:22] or Intimidate check, asking or ordering the spirits to stand down.</p>",
             "reset": "<p>The haunt deactivates 1 round after all living creatures leave the area. After 1 hour, the haunt reactivates. If the haunt is disabled by a dwarf succeeding at a Diplomacy or Intimidate check, the haunt is destroyed.</p>",
-            "routine": "<p>(1 akcja) The faces continue to scream, dealing @Damage[5d6[sonic]] damage (@Check[type:reflex|dc:26|basic:true] save) to all living creatures within 20 feet of the steps. On a critical failure, a creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. Deaf creatures are immune to this effect.</p>",
+            "routine": "<p>(1 akcja) The faces continue to scream, dealing @Damage[5d6[sonic]] damage (@Check[type:reflex|dc:26|basic:true] save) to all living creatures within 20 feet of the steps. On a critical failure, a creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 round. Deaf creatures are immune to this effect.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Howl of Agony": {
                     "name": "Howl of Agony",
-                    "description": "<p><strong>Aktywator</strong> At least two living creatures step on the staircase</p>\n<hr />\n<p><strong>Efekt</strong> Dozens of mouths open on the stairs and eastern wall doors of the chamber and howl in anger and misery. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 2 rounds and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} unless they succeed at a @Check[type:fortitude|dc:27] save. Creatures who critically fail are deafened for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}. The haunt then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> At least two living creatures step on the staircase</p>\n<hr />\n<p><strong>Efekt</strong> Dozens of mouths open on the stairs and eastern wall doors of the chamber and howl in anger and misery. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 2 rounds and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} unless they succeed at a @Check[type:fortitude|dc:27] save. Creatures who critically fail are deafened for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}. The haunt then rolls initiative.</p>"
                 }
             }
         },
@@ -217,7 +217,7 @@
                 },
                 "equipment->Demon's Knot": {
                     "name": "Demon's Knot",
-                    "description": "<p>The demon Kaivirris is housed in the magnificent ruby that serves as the centerpiece of this beautiful, goldplated, cold iron pendant necklace. Creatures within 30 feet of the <em>demon's knot</em> feel a subtle urge to acquire the necklace and take a –1 status penalty to Will saves.</p>\n<p>Upon donning the <em>demon's knot</em>, it fuses to you. You are subject to a @UUID[Compendium.pf2e.spells-srd.Item.Q690d3mw3TUrKX7E]{Geas} that requires you to free Kaivirris from his prison. If you die without completing this task, you become a sulfur zombie that always remains within 100 feet of the demon's knot and is under the control of whoever is cursed by the <em>demon's knot</em>.</p>\n<p>The <em>demon's knot</em> sustains your physical form and protects your mind from mental control. You don't need to eat or drink. You become immune to the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} conditions.</p>\n<p>The <em>demon's knot</em> corrupts anyone wearing it. You gain weakness to cold iron 10 and holy 10. Whenever you're within 60 feet of a celestial, you're @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and can't reduce the value of the frightened condition below 2.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> komenda</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Efekt</strong> You allow Kaivirris's corrupting influence over you to outwardly manifest. For 1 minute, your features adopt a cruel cast, and you radiate a palpable aura of evil. During this time, you gain a +2 status bonus to Intimidation checks, and your Strikes deal an additional @Damage[1d6[spirit]] damage.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.IxhKGd3nK2lcIpMw]{Efekt: Demon's Knot}</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> komenda, Interakcja</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Efekt</strong> The demon's knot casts @UUID[Compendium.pf2e.spells-srd.Item.sRfSBHWHdbIa0aGc]{Mrożąca Ciemność}.</p>",
+                    "description": "<p>The demon Kaivirris is housed in the magnificent ruby that serves as the centerpiece of this beautiful, goldplated, cold iron pendant necklace. Creatures within 30 feet of the <em>demon's knot</em> feel a subtle urge to acquire the necklace and take a –1 status penalty to Will saves.</p>\n<p>Upon donning the <em>demon's knot</em>, it fuses to you. You are subject to a @UUID[Compendium.pf2e.spells-srd.Item.Q690d3mw3TUrKX7E]{Geas} that requires you to free Kaivirris from his prison. If you die without completing this task, you become a sulfur zombie that always remains within 100 feet of the demon's knot and is under the control of whoever is cursed by the <em>demon's knot</em>.</p>\n<p>The <em>demon's knot</em> sustains your physical form and protects your mind from mental control. You don't need to eat or drink. You become immune to the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} and @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Kontrolowany} conditions.</p>\n<p>The <em>demon's knot</em> corrupts anyone wearing it. You gain weakness to cold iron 10 and holy 10. Whenever you're within 60 feet of a celestial, you're @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} and can't reduce the value of the frightened condition below 2.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> komenda</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Efekt</strong> You allow Kaivirris's corrupting influence over you to outwardly manifest. For 1 minute, your features adopt a cruel cast, and you radiate a palpable aura of evil. During this time, you gain a +2 status bonus to Intimidation checks, and your Strikes deal an additional @Damage[1d6[spirit]] damage.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.IxhKGd3nK2lcIpMw]{Efekt: Demon's Knot}</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> komenda, Interakcja</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Efekt</strong> The demon's knot casts @UUID[Compendium.pf2e.spells-srd.Item.sRfSBHWHdbIa0aGc]{Mrożąca Ciemność}.</p>",
                     "gmNote": "<p><strong>Zniszczenie</strong> A celestial creature must hold the necklace in their hands for at least an hour while meditating on the damage it has caused, then weep on the ruby. It must then be completely sealed within a cold iron container and cast into the heart of an active volcano, allowing the magma to melt the container and the necklace within.</p>"
                 },
                 "consumable->Elixir of Life (Moderate) (Infused)": {
@@ -322,7 +322,7 @@
             "items": {
                 "action->Blood Draining Bites": {
                     "name": "Blood Draining Bites",
-                    "description": "<p>Each creature in the swarm's space takes @Damage[1d6[piercing],1k6[bleed]]{1k6 piercing damage plus 1k6 persistent bleed} damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. A successful @Check[type:reflex|dc:20] save reduces the piercing damage by half and negates the bleed damage and drained condition.</p>"
+                    "description": "<p>Each creature in the swarm's space takes @Damage[1d6[piercing],1k6[bleed]]{1k6 piercing damage plus 1k6 persistent bleed} damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}. A successful @Check[type:reflex|dc:20] save reduces the piercing damage by half and negates the bleed damage and drained condition.</p>"
                 }
             }
         },
@@ -391,7 +391,7 @@
                 },
                 "action->Shadow Shift": {
                     "name": "Shadow Shift",
-                    "description": "<p>Caligni assassins are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} in dim light or darkness even to creatures that can see clearly in those light levels.</p>"
+                    "description": "<p>Caligni assassins are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} in dim light or darkness even to creatures that can see clearly in those light levels.</p>"
                 },
                 "action->Swift Sneak": {
                     "name": "Swift Sneak",
@@ -458,7 +458,7 @@
             "items": {
                 "action->Ignite": {
                     "name": "Ignite",
-                    "description": "<p><strong>Aktywator</strong> An effect in the area deals at least @Damage[8[electricity]] or @Damage[4[fire]]</p>\n<hr />\n<p><strong>Efekt</strong> The coal residue rapidly ignites, dealing @Damage[4d6[fire]] damage to all creatures in the area (@Check[type:reflex|dc:18|basic:true] save). The area burns for 1 minute, during which creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, other creatures are concealed to them, and creatures who end their turn in the area take @Damage[1d6[fire]] damage.</p>"
+                    "description": "<p><strong>Aktywator</strong> An effect in the area deals at least @Damage[8[electricity]] or @Damage[4[fire]]</p>\n<hr />\n<p><strong>Efekt</strong> The coal residue rapidly ignites, dealing @Damage[4d6[fire]] damage to all creatures in the area (@Check[type:reflex|dc:18|basic:true] save). The area burns for 1 minute, during which creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}, other creatures are concealed to them, and creatures who end their turn in the area take @Damage[1d6[fire]] damage.</p>"
                 }
             }
         },
@@ -625,7 +625,7 @@
                 },
                 "action->Endless Nightmare": {
                     "name": "Endless Nightmare",
-                    "description": "<p>An animate dream's touch fills the victim's mind with terrifying visions</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} (1 dzień)</p>\n<p><strong>Stadium 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> The victim falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't be awakened as long as they remain at this stage (1 dzień).</p>"
+                    "description": "<p>An animate dream's touch fills the victim's mind with terrifying visions</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} (1 dzień)</p>\n<p><strong>Stadium 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> The victim falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} and can't be awakened as long as they remain at this stage (1 dzień).</p>"
                 }
             }
         },
@@ -638,7 +638,7 @@
             "items": {
                 "action->Feral Roar": {
                     "name": "Feral Roar",
-                    "description": "<p><strong>Aktywator</strong> A creature approaches within 10 feet of the polar bear spirit</p>\n<hr />\n<p><strong>Efekt</strong> The polar bear spirit roars. Each creature in the room must attempt a @Check[type:will|dc:28] save. The enraged polar bear spirit rolls initiative.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę. Success The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[6d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[12d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature approaches within 10 feet of the polar bear spirit</p>\n<hr />\n<p><strong>Efekt</strong> The polar bear spirit roars. Each creature in the room must attempt a @Check[type:will|dc:28] save. The enraged polar bear spirit rolls initiative.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę. Success The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[6d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[12d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
                 },
                 "strike-melee->Spiritual Claws": {
                     "name": "Spiritual Claws"
@@ -661,7 +661,7 @@
                 },
                 "action->Hilarious Insult": {
                     "name": "Hilarious Insult",
-                    "description": "<p>The ether sprite taunts a creature within 30 feet and rolls @Check[type:performance|defense:will] against the target's Will DC. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the end of their next turn.</p>"
+                    "description": "<p>The ether sprite taunts a creature within 30 feet and rolls @Check[type:performance|defense:will] against the target's Will DC. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} until the end of their next turn.</p>"
                 }
             }
         },
@@ -675,11 +675,11 @@
                 },
                 "action->Rowdy Clamor": {
                     "name": "Rowdy Clamor",
-                    "description": "<p>20 feet. The sprite swarm creates a din by laughing, taunting, and insulting nearby creatures. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}.</p>"
+                    "description": "<p>20 feet. The sprite swarm creates a din by laughing, taunting, and insulting nearby creatures. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły}.</p>"
                 },
                 "action->Luminous Pattern": {
                     "name": "Luminous Pattern",
-                    "description": "<p>The sprites glow brightly, flying in a shifting pattern of light. All creatures within 20 feet become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute (@Check[type:will|dc:16] negates).</p>"
+                    "description": "<p>The sprites glow brightly, flying in a shifting pattern of light. All creatures within 20 feet become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 minute (@Check[type:will|dc:16] negates).</p>"
                 },
                 "action->Spark Bombardment": {
                     "name": "Spark Bombardment",
@@ -780,7 +780,7 @@
                 },
                 "action->Smoke Vision": {
                     "name": "Smoke Vision",
-                    "description": "<p>The elemental inferno ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                    "description": "<p>The elemental inferno ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} condition from smoke.</p>"
                 },
                 "action->Explosion": {
                     "name": "Explosion",
@@ -817,11 +817,11 @@
                 },
                 "strike-melee->Jaws": {
                     "name": "Szczęki",
-                    "description": "<p><strong>Wymagania</strong> Four-Tooth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p>See Jaws activity.</p>"
+                    "description": "<p><strong>Wymagania</strong> Four-Tooth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p>\n<hr />\n<p>See Jaws activity.</p>"
                 },
                 "action->Jaws": {
                     "name": "Szczęki",
-                    "description": "<p><strong>Wymagania</strong> Four-Tooth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Efekt</strong> Four-Tooth makes a jaws unarmed Strike against the grabbed or restrained target with an attack modifier of +19 that deals 1k8+5 piercing damage, deals 3k6 poison damage, and exposes the target to the sewer haze disease.</p>\n<h2>Sewer Haze</h2>\n<p>Many healers and alchemists suspect that sewer haze has a supernatural origin, given its association with particularly strong otyughs.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23|traits:disease,virulent|overrideTraits:true]</p>\n<p><strong>Nadejście Objawów</strong> 2 days</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 dzień)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and stupefied 2 (1 dzień)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} (1 dzień)</p>"
+                    "description": "<p><strong>Wymagania</strong> Four-Tooth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p>\n<hr />\n<p><strong>Efekt</strong> Four-Tooth makes a jaws unarmed Strike against the grabbed or restrained target with an attack modifier of +19 that deals 1k8+5 piercing damage, deals 3k6 poison damage, and exposes the target to the sewer haze disease.</p>\n<h2>Sewer Haze</h2>\n<p>Many healers and alchemists suspect that sewer haze has a supernatural origin, given its association with particularly strong otyughs.</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:23|traits:disease,virulent|overrideTraits:true]</p>\n<p><strong>Nadejście Objawów</strong> 2 days</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 dzień)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} and stupefied 2 (1 dzień)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 3} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} (1 dzień)</p>"
                 },
                 "action->Slashing Snare": {
                     "name": "Slashing Snare",
@@ -852,7 +852,7 @@
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The bloodseeker's last action was a successful Strike with its proboscis against a target with blood</p>\n<hr />\n<p><strong>Efekt</strong> The bloodseeker sucks blood from that target, dealing @Damage[2d4] damage, and the bloodseeker gains temporary Hit Points equal to the damage dealt. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The bloodseeker's last action was a successful Strike with its proboscis against a target with blood</p>\n<hr />\n<p><strong>Efekt</strong> The bloodseeker sucks blood from that target, dealing @Damage[2d4] damage, and the bloodseeker gains temporary Hit Points equal to the damage dealt. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}.</p>"
                 }
             }
         },
@@ -869,11 +869,11 @@
                 },
                 "action->Parasitizing": {
                     "name": "Parasitizing",
-                    "description": "<p>While burrowed into Lady Shimmersnip, a giant leech has cover, can't make attacks, and can Squirm. If a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}, a creature can attempt to remove the leech by spending a single action, which has the attack and manipulate traits, attempting an @Check[type:athletics|dc:resolve(@actor.system.saves.fortitude.dc)] or @Check[type:medicine|dc:resolve(@actor.system.saves.fortitude.dc)] check against the giant leech's Fortitude DC. On a success, the creature extracts the leech, reduces Lady Shimmersnip's @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy} condition by 1, and places the leech in a space adjacent to the creature and Lady Shimmersnip.</p>"
+                    "description": "<p>While burrowed into Lady Shimmersnip, a giant leech has cover, can't make attacks, and can Squirm. If a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}, a creature can attempt to remove the leech by spending a single action, which has the attack and manipulate traits, attempting an @Check[type:athletics|dc:resolve(@actor.system.saves.fortitude.dc)] or @Check[type:medicine|dc:resolve(@actor.system.saves.fortitude.dc)] check against the giant leech's Fortitude DC. On a success, the creature extracts the leech, reduces Lady Shimmersnip's @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy} condition by 1, and places the leech in a space adjacent to the creature and Lady Shimmersnip.</p>"
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The giant leech has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Efekt</strong> The giant leech drains blood from the creature it has grabbed. This deals [[/r 2d4]] damage. A creature that has its blood drained by a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives any kind or amount of healing.</p>"
+                    "description": "<p><strong>Wymagania</strong> The giant leech has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p>\n<hr />\n<p><strong>Efekt</strong> The giant leech drains blood from the creature it has grabbed. This deals [[/r 2d4]] damage. A creature that has its blood drained by a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives any kind or amount of healing.</p>"
                 },
                 "action->Gnash": {
                     "name": "Gnash",
@@ -901,7 +901,7 @@
                 },
                 "action->Inexorable": {
                     "name": "Inexorable",
-                    "description": "<p>The glacial worm recovers from the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of its turn. It's also immune to penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition, and it ignores difficult terrain and greater difficult terrain.</p>"
+                    "description": "<p>The glacial worm recovers from the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of its turn. It's also immune to penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition, and it ignores difficult terrain and greater difficult terrain.</p>"
                 },
                 "action->Leech Heat": {
                     "name": "Leech Heat",
@@ -948,7 +948,7 @@
                 },
                 "action->Inexorable": {
                     "name": "Inexorable",
-                    "description": "<p>The gray worm recovers from the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of its turn. It's also immune to penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition, and it ignores difficult terrain and greater difficult terrain.</p>"
+                    "description": "<p>The gray worm recovers from the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of its turn. It's also immune to penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition, and it ignores difficult terrain and greater difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -956,7 +956,7 @@
                 },
                 "action->Paralysis": {
                     "name": "Paralysis",
-                    "description": "<p>Any living creature hit by a gray worm's stinger Strike must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                    "description": "<p>Any living creature hit by a gray worm's stinger Strike must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 },
                 "action->Thrash": {
                     "name": "Thrash",
@@ -1023,7 +1023,7 @@
                 },
                 "action->Endless Nightmare": {
                     "name": "Endless Nightmare",
-                    "description": "<p>An animate dream's touch fills the victim's mind with terrifying visions</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} (1 dzień)</p>\n<p><strong>Stadium 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> The victim falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't be awakened as long as they remain at this stage (1 dzień).</p>"
+                    "description": "<p>An animate dream's touch fills the victim's mind with terrifying visions</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} (1 dzień)</p>\n<p><strong>Stadium 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 dzień)</p>\n<p><strong>Stadium 3</strong> The victim falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} and can't be awakened as long as they remain at this stage (1 dzień).</p>"
                 }
             }
         },
@@ -1119,7 +1119,7 @@
                 },
                 "action->Bravery": {
                     "name": "Bravery",
-                    "description": "<p>When the Hrungul rolls a success on a Will save against a fear effect, he gets a critical success instead. In addition, any time he gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                    "description": "<p>When the Hrungul rolls a success on a Will save against a fear effect, he gets a critical success instead. In addition, any time he gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} condition, reduce its value by 1.</p>"
                 },
                 "action->Double Slice": {
                     "name": "Podwójne Cięcie",
@@ -1278,7 +1278,7 @@
                 },
                 "action->Toil is Strength": {
                     "name": "Toil is Strength",
-                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet would succeed at a save against a spell or ability that causes the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition</p>\n<hr />\n<p><strong>Efekt</strong> The target must reroll the triggering saving throw and use the worse result.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet would succeed at a save against a spell or ability that causes the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition</p>\n<hr />\n<p><strong>Efekt</strong> The target must reroll the triggering saving throw and use the worse result.</p>"
                 },
                 "action->Hammerfall": {
                     "name": "Hammerfall",
@@ -1335,11 +1335,11 @@
                 },
                 "action->Nerve Strike": {
                     "name": "Nerve Strike",
-                    "description": "<p>The king's agent Strikes with their fist. If they hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of the agent's next turn (@Check[type:fortitude|dc:19] negates).</p>"
+                    "description": "<p>The king's agent Strikes with their fist. If they hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} until the end of the agent's next turn (@Check[type:fortitude|dc:19] negates).</p>"
                 },
                 "action->Quick Arrest": {
                     "name": "Quick Arrest",
-                    "description": "<p><strong>Wymagania</strong> The hryngar king's agent is holding manacles and is adjacent to a creature who is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}</p>\n<hr />\n<p><strong>Efekt</strong> The hryngar king's agent applies the manacles.</p>"
+                    "description": "<p><strong>Wymagania</strong> The hryngar king's agent is holding manacles and is adjacent to a creature who is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}</p>\n<hr />\n<p><strong>Efekt</strong> The hryngar king's agent applies the manacles.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The hryngar king's agent deals an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -1376,7 +1376,7 @@
                 },
                 "action->Bravery": {
                     "name": "Bravery",
-                    "description": "<p>When the captain of the guard rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                    "description": "<p>When the captain of the guard rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} condition, reduce its value by 1.</p>"
                 },
                 "action->Shield Warden": {
                     "name": "Shield Warden",
@@ -1449,11 +1449,11 @@
                 },
                 "action->Behead": {
                     "name": "Behead",
-                    "description": "<p><strong>Wymagania</strong> The executioner is adjacent to a dying creature or a creature specifically prepared for a killing blow</p>\n<hr />\n<p><strong>Efekt</strong> The executioner Strikes the creature with their greataxe. On a hit, in addition to taking damage, the target must attempt a @Check[type:fortitude|dc:24] save or be reduced to 0 HP and become @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying 1}. If the creature was already dying (including if it was reduced to 0 HP by the Strike's damage), the creature's dying value increases by 1, in addition to any increase from the Strike. On a critical failure, the creature dies instantly.</p>\n<p>If the executioner's Strike was a critical hit, the target uses the outcome for one degree of success worse than the result of their saving throw.</p>"
+                    "description": "<p><strong>Wymagania</strong> The executioner is adjacent to a dying creature or a creature specifically prepared for a killing blow</p>\n<hr />\n<p><strong>Efekt</strong> The executioner Strikes the creature with their greataxe. On a hit, in addition to taking damage, the target must attempt a @Check[type:fortitude|dc:24] save or be reduced to 0 HP and become @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający 1}. If the creature was already dying (including if it was reduced to 0 HP by the Strike's damage), the creature's dying value increases by 1, in addition to any increase from the Strike. On a critical failure, the creature dies instantly.</p>\n<p>If the executioner's Strike was a critical hit, the target uses the outcome for one degree of success worse than the result of their saving throw.</p>"
                 },
                 "action->Intimidating Strike": {
                     "name": "Intimidating Strike",
-                    "description": "<p>The executioner makes a melee Strike. If it hits and deals damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit.</p>"
+                    "description": "<p>The executioner makes a melee Strike. If it hits and deals damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical hit.</p>"
                 },
                 "action->Mark for Death": {
                     "name": "Mark for Death",
@@ -1479,7 +1479,7 @@
                 },
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\nTanglefoot Bag (Umiarkowany)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]] Hit Points.</p>"
@@ -1492,7 +1492,7 @@
                 },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
-                    "description": "<p>The gang leader isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to creatures of 7. level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using surprise attack.</p>"
+                    "description": "<p>The gang leader isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} to creatures of 7. level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty}, flanking, or using surprise attack.</p>"
                 },
                 "action->Evasion": {
                     "name": "Evasion",
@@ -1637,7 +1637,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -1649,7 +1649,7 @@
                 },
                 "action->Killing Shake": {
                     "name": "Killing Shake",
-                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
+                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
                 },
                 "action->Rock Tunneler": {
                     "name": "Rock Tunneler",
@@ -1675,7 +1675,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -1687,7 +1687,7 @@
                 },
                 "action->Killing Shake": {
                     "name": "Killing Shake",
-                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
+                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
                 },
                 "action->Rock Tunneler": {
                     "name": "Rock Tunneler",
@@ -1713,7 +1713,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -1725,7 +1725,7 @@
                 },
                 "action->Killing Shake": {
                     "name": "Killing Shake",
-                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
+                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
                 },
                 "action->Rock Tunneler": {
                     "name": "Rock Tunneler",
@@ -1752,7 +1752,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -1764,7 +1764,7 @@
                 },
                 "action->Killing Shake": {
                     "name": "Killing Shake",
-                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
+                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
                 },
                 "action->Rock Tunneler": {
                     "name": "Rock Tunneler",
@@ -1790,7 +1790,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -1802,7 +1802,7 @@
                 },
                 "action->Killing Shake": {
                     "name": "Killing Shake",
-                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
+                    "description": "<p><strong>Wymagania</strong> The juvenile cave worm has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> The juvenile cave Juvenile Cave Worm worm shakes the creature back and forth quickly, tearing flesh with its multiple rows of teeth. The target takes @Damage[(2d12+9)[slashing]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. If the creature is adjacent to a solid surface, such as a stone wall, it takes an additional @Damage[2d6[bludgeoning]] damage. The creature attempts a @Check[type:reflex|dc:23|basic:true] save against all damage; if the creature succeeds, it isn't knocked prone.</p>"
                 },
                 "action->Rock Tunneler": {
                     "name": "Rock Tunneler",
@@ -1850,7 +1850,7 @@
                 },
                 "action->Possessed": {
                     "name": "Possessed",
-                    "description": "<p>A hostile spirit controls Krohan, which gives him the void healing ability and otherwise has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell. Krohan attempts a @Check[type:flat|dc:20] at the end of his turn; this is reduced to @Check[type:flat|dc:15] if the corrupted blade spirit is destroyed. If he succeeds, the possession effect is suppressed and he is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of his next turn, allowing him to act normally. If he critically succeeds, the possession effect ends.</p>"
+                    "description": "<p>A hostile spirit controls Krohan, which gives him the void healing ability and otherwise has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell. Krohan attempts a @Check[type:flat|dc:20] at the end of his turn; this is reduced to @Check[type:flat|dc:15] if the corrupted blade spirit is destroyed. If he succeeds, the possession effect is suppressed and he is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} until the end of his next turn, allowing him to act normally. If he critically succeeds, the possession effect ends.</p>"
                 },
                 "action->Occult Catharsis": {
                     "name": "Occult Catharsis",
@@ -1958,7 +1958,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -1983,7 +1983,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -2008,7 +2008,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -2034,7 +2034,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -2059,7 +2059,7 @@
                 },
                 "action->Relentless": {
                     "name": "Relentless",
-                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
+                    "description": "<p>When a juvenile cave worm gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, reduce the duration by half, to a minimum of 1 round. It also recovers from penalties to its Speeds and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} condition at the end of its turn. Finally, it ignores non-magical difficult terrain and treats greater difficult terrain like difficult terrain.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -2189,7 +2189,7 @@
                 },
                 "action->Inexorable": {
                     "name": "Inexorable",
-                    "description": "<p>When Narseigus gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, roll a @Check[type:flat|dc:15]. On a success, he ignores the condition.</p>"
+                    "description": "<p>When Narseigus gains the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, roll a @Check[type:flat|dc:15]. On a success, he ignores the condition.</p>"
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
@@ -2270,11 +2270,11 @@
                 },
                 "strike-melee->Jaws": {
                     "name": "Szczęki",
-                    "description": "<p><strong>Wymagania</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}.</p>"
                 },
                 "action->Slow": {
                     "name": "Slow",
-                    "description": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                    "description": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions.</p>"
                 },
                 "action->Zombie Rot": {
                     "name": "Zombie Rot",
@@ -2312,7 +2312,7 @@
                 },
                 "action->Divine Revulsion": {
                     "name": "Divine Revulsion",
-                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The redcap is unaffected</p>\n<p><strong>Sukces</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Porażka</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}</p>"
+                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The redcap is unaffected</p>\n<p><strong>Sukces</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}</p>\n<p><strong>Porażka</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}</p>"
                 },
                 "action->Blood Soak": {
                     "name": "Blood Soak",
@@ -2340,7 +2340,7 @@
         "Rolling Stone Cylinder Trap": {
             "name": "Rolling Stone Cylinder Trap",
             "description": "<p>A 10-foot-long, 5-foot-thick column of stone thuds to the ground, just in front of the bridge. It immediately starts to roll down the bridge, quickly picking up speed.</p>",
-            "disable": "<p>@Check[type:thievery|dc:25] check to create a wedge to immobilize the column, @Check[type:athletics|dc:21] check to immobilize the column until the end of the creature's next turn, a creature can Climb over an @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} column with a successful @Check[type:athletics|dc:18] check.</p>",
+            "disable": "<p>@Check[type:thievery|dc:25] check to create a wedge to immobilize the column, @Check[type:athletics|dc:21] check to immobilize the column until the end of the creature's next turn, a creature can Climb over an @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} column with a successful @Check[type:athletics|dc:18] check.</p>",
             "hpDetails": " (BT 29)",
             "routine": "<p>(1 akcja) The rolling stone cylinder trap uses Crushing Roll.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
@@ -2354,7 +2354,7 @@
                 },
                 "action->Crushing Roll": {
                     "name": "Crushing Roll",
-                    "description": "<p><strong>Wymagania</strong> The rolling stone cylinder is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}</p>\n<hr />\n<p><strong>Efekt</strong> The rolling stone cylinder trap moves its Speed west along the bridge. Creatures it moves past or lands on take @Damage[5d6[bludgeoning]] damage and are forced to move west to the first available space (@Check[type:reflex|dc:27|basic:true]). Creatures who critically succeed at the Reflex save are not damaged but are still moved west. If the rolling stone tries to move into a non-creature obstruction, such as a wall or barricade, it deals bludgeoning damage to the obstruction and only continues moving if the obstruction is destroyed, otherwise the trap stops.</p>"
+                    "description": "<p><strong>Wymagania</strong> The rolling stone cylinder is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony}</p>\n<hr />\n<p><strong>Efekt</strong> The rolling stone cylinder trap moves its Speed west along the bridge. Creatures it moves past or lands on take @Damage[5d6[bludgeoning]] damage and are forced to move west to the first available space (@Check[type:reflex|dc:27|basic:true]). Creatures who critically succeed at the Reflex save are not damaged but are still moved west. If the rolling stone tries to move into a non-creature obstruction, such as a wall or barricade, it deals bludgeoning damage to the obstruction and only continues moving if the obstruction is destroyed, otherwise the trap stops.</p>"
                 }
             }
         },
@@ -2369,7 +2369,7 @@
                 },
                 "action->Slow": {
                     "name": "Slow",
-                    "description": "<p>A shambler troop is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                    "description": "<p>A shambler troop is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions.</p>"
                 },
                 "action->Troop Defenses": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 60 (12 squares), 30 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
@@ -2481,7 +2481,7 @@
                 },
                 "action->Envelop": {
                     "name": "Envelop",
-                    "description": "<p>The puppeteer wraps their body around an adjacent target (@Check[type:reflex|dc:24] negates). The target is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} and the puppeteer is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. The puppeteer can make only tail Strikes against the restrained creature and can only engulf a single Medium or Large creature. The puppeteer can end an Envelop as a free action.</p>"
+                    "description": "<p>The puppeteer wraps their body around an adjacent target (@Check[type:reflex|dc:24] negates). The target is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} and the puppeteer is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony}. The puppeteer can make only tail Strikes against the restrained creature and can only engulf a single Medium or Large creature. The puppeteer can end an Envelop as a free action.</p>"
                 },
                 "action->Mimic Form": {
                     "name": "Mimic Form",
@@ -2533,7 +2533,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2561,7 +2561,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2589,7 +2589,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2617,7 +2617,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2645,7 +2645,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2673,7 +2673,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2701,7 +2701,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2729,7 +2729,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2757,7 +2757,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>\n<hr />\n<p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[type:fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2828,7 +2828,7 @@
                 },
                 "action->Slow": {
                     "name": "Slow",
-                    "description": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                    "description": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions.</p>"
                 },
                 "action->Wasting Wheeze": {
                     "name": "Wasting Wheeze",
@@ -2885,11 +2885,11 @@
                 },
                 "action->Petrifying Glance": {
                     "name": "Petrifying Glance",
-                    "description": "<p>30 feet. <strong>Aktywator</strong> A creature within 30 feet that the basilisk can see starts its turn.</p>\n<hr />\n<p><strong>Efekt</strong> The target must attempt a @Check[type:fortitude|dc:20] save. If it fails, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as its body slowly stiffens.</p>"
+                    "description": "<p>30 feet. <strong>Aktywator</strong> A creature within 30 feet that the basilisk can see starts its turn.</p>\n<hr />\n<p><strong>Efekt</strong> The target must attempt a @Check[type:fortitude|dc:20] save. If it fails, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 minute as its body slowly stiffens.</p>"
                 },
                 "action->Petrifying Gaze": {
                     "name": "Petrifying Gaze",
-                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. That creature must attempt a @Check[type:fortitude|dc:22] save. If it fails and has not already been slowed by Petrifying Glance or this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. If the creature was already slowed by this ability or Petrifying Glance, a failed save causes the creature to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>\n<p>A creature petrified in this manner that is coated (not just splashed) with fresh basilisk blood (taken from a basilisk that has been dead no longer than 1 hour) is instantly restored to flesh.</p>\n<p>A single basilisk contains enough blood to coat [[/br 1d3 #Medium Creatures]]{1k3 Medium creatures} in this manner.</p>"
+                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. That creature must attempt a @Check[type:fortitude|dc:22] save. If it fails and has not already been slowed by Petrifying Glance or this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}. If the creature was already slowed by this ability or Petrifying Glance, a failed save causes the creature to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Spetryfikowany} permanently.</p>\n<p>A creature petrified in this manner that is coated (not just splashed) with fresh basilisk blood (taken from a basilisk that has been dead no longer than 1 hour) is instantly restored to flesh.</p>\n<p>A single basilisk contains enough blood to coat [[/br 1d3 #Medium Creatures]]{1k3 Medium creatures} in this manner.</p>"
                 }
             }
         },
@@ -2946,7 +2946,7 @@
                 },
                 "action->Measure Soul": {
                     "name": "Measure Soul",
-                    "description": "<p>Stoneriver mentally pries through the mind of a creature within 60 feet, dealing @Damage[10d8[mental]] damage (@Check[type:will|dc:29|basic:true] save). Stoneriver can choose to make this damage nonlethal or choose not to damage the creature at all. For 1 minute, Stoneriver gains a +1 circumstance bonus to attack rolls, damage rolls, and Perception checks against that creature. If the creature is evil and it failed its save, the creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure). Stoneriver can't use Measure Soul again for 1k4 rounds.</p>"
+                    "description": "<p>Stoneriver mentally pries through the mind of a creature within 60 feet, dealing @Damage[10d8[mental]] damage (@Check[type:will|dc:29|basic:true] save). Stoneriver can choose to make this damage nonlethal or choose not to damage the creature at all. For 1 minute, Stoneriver gains a +1 circumstance bonus to attack rolls, damage rolls, and Perception checks against that creature. If the creature is evil and it failed its save, the creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4} on a critical failure). Stoneriver can't use Measure Soul again for 1k4 rounds.</p>"
                 },
                 "action->Rock Tunneler": {
                     "name": "Rock Tunneler",
@@ -2988,11 +2988,11 @@
                 },
                 "action->Droskar's Grasp": {
                     "name": "Droskar's Grasp",
-                    "description": "<p>The toilforged sentinel can Grab a creature using only one hand. It can move normally with a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in its claw, carrying the creature along. If it has a creature grabbed in this way, it can't use its claw Strike. It activates Swallow Whole with its claw by depositing a grabbed creature into its soul furnace.</p>"
+                    "description": "<p>The toilforged sentinel can Grab a creature using only one hand. It can move normally with a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} in its claw, carrying the creature along. If it has a creature grabbed in this way, it can't use its claw Strike. It activates Swallow Whole with its claw by depositing a grabbed creature into its soul furnace.</p>"
                 },
                 "action->Soul Furnace": {
                     "name": "Soul Furnace",
-                    "description": "<p>The toilforged sentinel has a cage incorporated into its central body, filled with profane fire and called a soul furnace. As long as a toilforged sentinels' soul furnace contains a living creature, the toilforged sentinel is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} (Stride or Strike).</p>"
+                    "description": "<p>The toilforged sentinel has a cage incorporated into its central body, filled with profane fire and called a soul furnace. As long as a toilforged sentinels' soul furnace contains a living creature, the toilforged sentinel is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony} (Stride or Strike).</p>"
                 },
                 "action->Swallow Whole": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[3d6[fire],3k6[void]]{3k6 fire and 3k6 void}, Rozdarcie 21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -3234,7 +3234,7 @@
                 },
                 "action->Dark Naga Venom": {
                     "name": "Dark Naga Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 5 minutes</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 runda)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up ([[/br 1d4+1 #minutes]]{1k4+1 minutes})</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maksymalny Czas Trwania</strong> 5 minutes</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} (1 runda)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} with no Perception check to wake up ([[/br 1d4+1 #minutes]]{1k4+1 minutes})</p>"
                 }
             }
         },
@@ -3282,7 +3282,7 @@
                 },
                 "action->Adhesive": {
                     "name": "Adhesive",
-                    "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[type:reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (Escape DC 23). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[type:athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
+                    "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[type:reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} (Escape DC 23). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[type:athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
                 },
                 "action->Object Lesson": {
                     "name": "Object Lesson",
@@ -3310,7 +3310,7 @@
                 },
                 "action->Roar": {
                     "name": "Roar",
-                    "description": "<p>Zogototaru looms and screeches ferociously. Creatures in a @Template[type:cone|distance:60] take @Damage[6d6[sonic]] damage (@Check[type:fortitude|dc:29|basic:true] save) and must attempt a @Check[type:will|dc:29] save.</p>\n<p><strong>Krytyczny Sukces</strong> No effect.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for [[/br 1d6 #rounds]]{1k6 rounds} and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                    "description": "<p>Zogototaru looms and screeches ferociously. Creatures in a @Template[type:cone|distance:60] take @Damage[6d6[sonic]] damage (@Check[type:fortitude|dc:29|basic:true] save) and must attempt a @Check[type:will|dc:29] save.</p>\n<p><strong>Krytyczny Sukces</strong> No effect.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for [[/br 1d6 #rounds]]{1k6 rounds} and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
                 },
                 "action->Thrash": {
                     "name": "Thrash",

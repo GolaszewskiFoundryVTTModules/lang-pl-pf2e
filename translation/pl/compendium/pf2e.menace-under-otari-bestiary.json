@@ -29,11 +29,11 @@
                 },
                 "action->Petrifying Glance": {
                     "name": "Petrifying Glance",
-                    "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[type:fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>"
+                    "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[type:fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} condition for 1 minute as its body slowly stiffens.</p>"
                 },
                 "action->Petrifying Gaze": {
                     "name": "Petrifying Gaze",
-                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[type:fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>"
+                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[type:fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>"
                 }
             }
         },
@@ -46,7 +46,7 @@
                     "name": "Tusk"
                 },
                 "action->Ferocity": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN]\n<p>When the boar is reduced to 0 Hit Points, it can use its reaction to remain conscious with 1 Hit Point, but it gains the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1} condition (or increases its wounded value by 1 if it already has that condition). It can't use this ability at wounded 3.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN]\n<p>When the boar is reduced to 0 Hit Points, it can use its reaction to remain conscious with 1 Hit Point, but it gains the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny 1} condition (or increases its wounded value by 1 if it already has that condition). It can't use this ability at wounded 3.</p>"
                 },
                 "action->Boar Charge": {
                     "name": "Boar Charge",
@@ -67,7 +67,7 @@
                     "description": "<p>The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbing} a creature.</p>"
                 },
                 "action->Grab": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the brine shark succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the brine shark succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} condition until the end of its next turn.</p>"
                 }
             }
         },
@@ -94,7 +94,7 @@
                 },
                 "action->Mauler": {
                     "name": "Mauler",
-                    "description": "<p>The bugbear prowler gains a +3 circumstance bonus to damage rolls against creatures they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
+                    "description": "<p>The bugbear prowler gains a +3 circumstance bonus to damage rolls against creatures they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p>"
                 }
             }
         },
@@ -152,7 +152,7 @@
                 },
                 "action->Darkening Poison": {
                     "name": "Darkening Poison",
-                    "description": "<p>The next time the hunter deals damage with a shortsword Strike, the target must succeed at a @Check[type:fortitude|dc:16|traits:damaging-effect] save or take @Damage[1d8[poison]] damage and treat all creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} for 1 round.</p>"
+                    "description": "<p>The next time the hunter deals damage with a shortsword Strike, the target must succeed at a @Check[type:fortitude|dc:16|traits:damaging-effect] save or take @Damage[1d8[poison]] damage and treat all creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} for 1 round.</p>"
                 }
             }
         },
@@ -178,7 +178,7 @@
                 },
                 "action->Darkening Poison": {
                     "name": "Darkening Poison",
-                    "description": "<p>The next time the skulker deals damage with a dagger Strike, the target must succeed at a @Check[type:fortitude|dc:16|traits:damaging-effect] save or take @Damage[1d8[poison]] damage and treat all creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} for 1 round.</p>"
+                    "description": "<p>The next time the skulker deals damage with a dagger Strike, the target must succeed at a @Check[type:fortitude|dc:16|traits:damaging-effect] save or take @Damage[1d8[poison]] damage and treat all creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} for 1 round.</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]\nSneak Attack",
@@ -212,11 +212,11 @@
                 },
                 "action->Smoke Vision": {
                     "name": "Smoke Vision",
-                    "description": "<p>The cinder rat ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                    "description": "<p>The cinder rat ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} condition from smoke.</p>"
                 },
                 "action->Fetid Fumes": {
                     "name": "Fetid Fumes",
-                    "description": "<p>A cloud of smoke surrounds the cinder rat. All creatures within @Template[type:emanation|distance:5]{5 feet}, including the cinder rat, gain the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a @Check[type:fortitude|dc:22] save or take a –1 status penalty to all checks and DCs for 1 round <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>"
+                    "description": "<p>A cloud of smoke surrounds the cinder rat. All creatures within @Template[type:emanation|distance:5]{5 feet}, including the cinder rat, gain the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a @Check[type:fortitude|dc:22] save or take a –1 status penalty to all checks and DCs for 1 round <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>"
                 }
             }
         },
@@ -255,7 +255,7 @@
                 },
                 "shield->Shield": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\nShield",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Blok Tarczą}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Naprawa} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Uszkodzony}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Blok Tarczą}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Naprawa} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
                 },
                 "equipment->Religious Symbol (Wooden)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -421,7 +421,7 @@
                 },
                 "action->Frightful Moan": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\nFrightful Moan",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>Each living creature within @Template[type:emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[type:will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>Each living creature within @Template[type:emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[type:will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
                 }
             }
         },
@@ -682,7 +682,7 @@
                 },
                 "shield->Shield": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\nShield",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Blok Tarczą}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Naprawa} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Uszkodzony}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Blok Tarczą}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Naprawa} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -981,7 +981,7 @@
                 },
                 "action->Maul": {
                     "name": "Maul",
-                    "description": "<p>The leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a –10 multiple attack penalty (or a –8 multiple attack penalty for its claws).</p>"
+                    "description": "<p>The leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a –10 multiple attack penalty (or a –8 multiple attack penalty for its claws).</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",
@@ -991,7 +991,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The leopard deals an extra 1k4 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} condition.</p>"
                 },
                 "action->Grab": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the leopard succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the leopard succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} condition until the end of its next turn.</p>"
                 }
             }
         },
@@ -1017,7 +1017,7 @@
                 },
                 "action->Adhesive": {
                     "name": "Adhesive",
-                    "description": "<p>Any creature that touches the mimic (usually from a fist Strike, the mimic's pseudopod, or a @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} or @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}) must succeed at a @Check[type:reflex|dc:23] save or gain the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} is 23. A melee or thrown weapon that hits the mimic sticks to it. A character can spend an action to attempt a @Check[type:athletics|dc:23] check, removing the weapon on a success. The adhesive dissolves 1 minute after the mimic dies.</p>"
+                    "description": "<p>Any creature that touches the mimic (usually from a fist Strike, the mimic's pseudopod, or a @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} or @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}) must succeed at a @Check[type:reflex|dc:23] save or gain the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} condition. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} is 23. A melee or thrown weapon that hits the mimic sticks to it. A character can spend an action to attempt a @Check[type:athletics|dc:23] check, removing the weapon on a success. The adhesive dissolves 1 minute after the mimic dies.</p>"
                 },
                 "action->Object Lesson": {
                     "name": "Object Lesson",
@@ -1134,7 +1134,7 @@
                     "name": "Javelin"
                 },
                 "action->Ferocity": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN]\n<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1} condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN]\n<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny 1} condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
                 }
             }
         },
@@ -1151,14 +1151,14 @@
                 },
                 "action->Bloodcurdling Screech": {
                     "name": "Bloodcurdling Screech",
-                    "description": "<p>Each creature within @Template[type:emanation|distance:80]{80 feet} who can hear the owlbear's screech must attempt a @Check[type:will|dc:20] save. The creatures can't be affected by another screech for 1 minute. On a critical success, the creature is unaffected; on a success, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} condition; on a failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition; on a critical failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} condition and must spend its next turn running away from the owlbear.</p>"
+                    "description": "<p>Each creature within @Template[type:emanation|distance:80]{80 feet} who can hear the owlbear's screech must attempt a @Check[type:will|dc:20] save. The creatures can't be affected by another screech for 1 minute. On a critical success, the creature is unaffected; on a success, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} condition; on a failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} condition; on a critical failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3} condition and must spend its next turn running away from the owlbear.</p>"
                 },
                 "action->Screeching Advance": {
                     "name": "Screeching Advance",
                     "description": "<p>The owlbear makes a Bloodcurdling Screech and Strides twice. All creatures within @Template[type:emanation|distance:80]{80 feet} of the owlbear at any point during this movement are subjected to the effects of Bloodcurdling Screech.</p>"
                 },
                 "action->Grab": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the owlbear succeeds at its talon Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the owlbear succeeds at its talon Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} condition until the end of its next turn.</p>"
                 }
             }
         },
@@ -1207,7 +1207,7 @@
                 },
                 "action->Constrict": {
                     "name": "Constrict",
-                    "description": "<p>If the reefclaw has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, it can spend one action to crush them in its coils. The creature takes @Damage[1d6[bludgeoning]] damage depending on its @Check[type:fortitude|dc:17|basic:true] save.</p>"
+                    "description": "<p>If the reefclaw has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}, it can spend one action to crush them in its coils. The creature takes @Damage[1d6[bludgeoning]] damage depending on its @Check[type:fortitude|dc:17|basic:true] save.</p>"
                 },
                 "action->Reefclaw Venom": {
                     "name": "Reefclaw Venom",
@@ -1428,7 +1428,7 @@
                 },
                 "action->Shred": {
                     "name": "Shred",
-                    "description": "<p>If the warg has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, it can spend one action to shred them with its teeth. The creature takes @Damage[1d6[slashing]] damage and can make a @Check[type:fortitude|dc:18|basic:true] save.</p>"
+                    "description": "<p>If the warg has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}, it can spend one action to shred them with its teeth. The creature takes @Damage[1d6[slashing]] damage and can make a @Check[type:fortitude|dc:18|basic:true] save.</p>"
                 },
                 "action->Grab": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the warg succeeds at its jaws Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the target. This Grapple doesn't apply or count toward the warg's multiple attack penalty.</p>"
@@ -1582,14 +1582,14 @@
                 },
                 "strike-melee->Jaws": {
                     "name": "Szczęki",
-                    "description": "<p><strong>Wymagania</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}.</p>"
                 },
                 "action->Slow": {
                     "name": "Slow",
                     "description": "<p>A zombie has only 2 actions on its turn, and it can't use reactions.</p>"
                 },
                 "action->Grab": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the zombie hits with its fist Strike, it can use this action to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n<p>When the zombie hits with its fist Strike, it can use this action to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} condition until the end of its next turn.</p>"
                 }
             }
         }

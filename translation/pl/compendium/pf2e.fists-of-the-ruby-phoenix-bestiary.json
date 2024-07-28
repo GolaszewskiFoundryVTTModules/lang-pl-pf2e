@@ -40,14 +40,14 @@
                 },
                 "action->Falling Sal Stance": {
                     "name": "Falling Sal Stance",
-                    "description": "<p>Abbot Tsujon joins their palms together in the shape of a sal flower, evoking the truth that all things eventually decay. In this stance, they can make sal blossom Strikes (see Strikes) and are @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}, and can use the extra action only to cast wholeness of body.</p>"
+                    "description": "<p>Abbot Tsujon joins their palms together in the shape of a sal flower, evoking the truth that all things eventually decay. In this stance, they can make sal blossom Strikes (see Strikes) and are @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony 1}, and can use the extra action only to cast wholeness of body.</p>"
                 },
                 "action->+1 status to all saves vs. death effects": {
                     "name": "+1 status to all saves vs. death effects"
                 },
                 "action->All This Has Happened Before": {
                     "name": "All This Has Happened Before",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Aktywator</strong> Abbot Tsujon is about to roll initiative</p>\n<hr />\n<p><strong>Efekt</strong> Abbot Tsujon experiences a flash of recognition from a previous existence, gaining a +4 circumstance bonus to the triggering roll.</p>\n<p>If this causes Abbot Tsujon to be the first creature to act, they also become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 round, but they can use the extra action only to Recall Knowledge or Step.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p>\n<p><strong>Aktywator</strong> Abbot Tsujon is about to roll initiative</p>\n<hr />\n<p><strong>Efekt</strong> Abbot Tsujon experiences a flash of recognition from a previous existence, gaining a +4 circumstance bonus to the triggering roll.</p>\n<p>If this causes Abbot Tsujon to be the first creature to act, they also become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony} for 1 round, but they can use the extra action only to Recall Knowledge or Step.</p>"
                 },
                 "action->All This Will Happen Again": {
                     "name": "All This Will Happen Again",
@@ -232,11 +232,11 @@
                 },
                 "action->Silent Yowl": {
                     "name": "Silent Yowl",
-                    "description": "<p>The angoyang opens its mouth and drops its innocent disguise, releasing its monstrous tentacles and letting out a blood-curdling scream directed at a single target that it can see to deal @Damage[8d10[mental]] damage. Only the target of this ability can hear this scream. The target must succeed at a @Check[type:will|dc:30|traits:damaging-effect] save as the sound tears through their mind.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target takes no damage and is immune to Silent Yowl for 24 hours.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia.and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                    "description": "<p>The angoyang opens its mouth and drops its innocent disguise, releasing its monstrous tentacles and letting out a blood-curdling scream directed at a single target that it can see to deal @Damage[8d10[mental]] damage. Only the target of this ability can hear this scream. The target must succeed at a @Check[type:will|dc:30|traits:damaging-effect] save as the sound tears through their mind.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target takes no damage and is immune to Silent Yowl for 24 hours.</p>\n<p><strong>Sukces</strong> The target takes half damage.</p>\n<p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia.and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
                 },
                 "action->Slow Blink": {
                     "name": "Slow Blink",
-                    "description": "<p>The angoyang lets out a small meow and slowly blinks twice at a single creature. The target must attempt a @Check[type:will|dc:31] save. On a critical success, the target is unaffected and immune to Slow Blink for 24 hours. Otherwise, the creature is overcome with the urge to pet the angoyang's silken fur, becoming @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}. If the angoyang attacks the creature, the creature can attempt a new save at the beginning of their next turn.</p>"
+                    "description": "<p>The angoyang lets out a small meow and slowly blinks twice at a single creature. The target must attempt a @Check[type:will|dc:31] save. On a critical success, the target is unaffected and immune to Slow Blink for 24 hours. Otherwise, the creature is overcome with the urge to pet the angoyang's silken fur, becoming @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Zafascynowany}. If the angoyang attacks the creature, the creature can attempt a new save at the beginning of their next turn.</p>"
                 }
             }
         },
@@ -425,7 +425,7 @@
                 },
                 "action->Breath of the Glacier": {
                     "name": "Breath of the Glacier",
-                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Breath of the Glacier]]{1k4 rounds}.</p>\n<p>Pravan blows icy winds in a @Template[type:cone|distance:30], dealing @Damage[10d6[cold]] damage. Creatures in the area must attempt a @Check[type:reflex|dc:33|traits:damaging-effect] save as ice forms around them. The Speed penalty or immobilized condition caused by this ability persist until a creature either Breaks Open the ice or Escapes (DC 37 in either case), or if the creature takes at least 30 fire damage.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage and takes a –5- foot status penalty to its Speeds.</p>\n<p><strong>Porażka</strong> The creature takes full damage and takes a –15-foot status penalty to its Speeds.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>"
+                    "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #Recharge Breath of the Glacier]]{1k4 rounds}.</p>\n<p>Pravan blows icy winds in a @Template[type:cone|distance:30], dealing @Damage[10d6[cold]] damage. Creatures in the area must attempt a @Check[type:reflex|dc:33|traits:damaging-effect] save as ice forms around them. The Speed penalty or immobilized condition caused by this ability persist until a creature either Breaks Open the ice or Escapes (DC 37 in either case), or if the creature takes at least 30 fire damage.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage and takes a –5- foot status penalty to its Speeds.</p>\n<p><strong>Porażka</strong> The creature takes full damage and takes a –15-foot status penalty to its Speeds.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony}.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -519,7 +519,7 @@
                 },
                 "action->Soul Arrow": {
                     "name": "Soul Arrow",
-                    "description": "<p>When Artus Strikes with his longbow, he can shoot an arrow made from his soul. This arrow appears to be made of pure light and casts bright light in a @Template[type:burst|distance:20] (and dim light for another 20 feet). When Artus rolls a critical hit on a longbow Strike with a soul arrow, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of Artus's next turn.</p>"
+                    "description": "<p>When Artus Strikes with his longbow, he can shoot an arrow made from his soul. This arrow appears to be made of pure light and casts bright light in a @Template[type:burst|distance:20] (and dim light for another 20 feet). When Artus rolls a critical hit on a longbow Strike with a soul arrow, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} until the end of Artus's next turn.</p>"
                 },
                 "action->Veering Miss": {
                     "name": "Veering Miss",
@@ -546,7 +546,7 @@
                 },
                 "action->Fear of Crabs": {
                     "name": "Fear of Crabs",
-                    "description": "<p>If a berberoka sees a crab or crab-like creature, the berberoka must attempt a @Check[type:will|dc:33] save. They then becomes immune to the sight of that creature for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The berberoka is unaffected.</p>\n<p><strong>Sukces</strong> The berberoka becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Porażka</strong> The berberoka gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>"
+                    "description": "<p>If a berberoka sees a crab or crab-like creature, the berberoka must attempt a @Check[type:will|dc:33] save. They then becomes immune to the sight of that creature for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The berberoka is unaffected.</p>\n<p><strong>Sukces</strong> The berberoka becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p>\n<p><strong>Porażka</strong> The berberoka gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}.</p>"
                 },
                 "action->Consume Lake": {
                     "name": "Consume Lake",
@@ -766,7 +766,7 @@
                 },
                 "weapon->Tanglefoot Bag (Major) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]\nTanglefoot Bag (Potężny) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –20-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the Escape DC is 37.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.BxJNWWvpxacDIsdt]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –20-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the Escape DC is 37.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "weapon->Thunderstone (Major) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.IuGydh0En8LbfnWo]\nThunderstone (Potężny) (Infused)"
@@ -780,7 +780,7 @@
                 },
                 "consumable->Black Lotus Extract (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.xQS1MSqGQz44FWUh]\nBlack Lotus Extract (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.xQS1MSqGQz44FWUh]\n<p>Black lotus extract causes severe internal bleeding.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Dotyk)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:42]</p>\n<p><strong>Nadejście Objawów</strong> 1 minute</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[15d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[17d6[poison]] damage and drained 1 (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[20d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 runda)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.xQS1MSqGQz44FWUh]\n<p>Black lotus extract causes severe internal bleeding.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Dotyk)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:42]</p>\n<p><strong>Nadejście Objawów</strong> 1 minute</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[15d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[17d6[poison]] damage and drained 1 (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[20d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} (1 runda)</p>"
                 },
                 "consumable->Elixir of Life (True) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]\nElixir of Life (True) (Infused)",
@@ -788,14 +788,14 @@
                 },
                 "consumable->Mindfog Mist (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GMi5tw0cbMx3ZQPg]\nMindfog Mist (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GMi5tw0cbMx3ZQPg]\n<p>Mindfog mist can be used to undermine spellcasters, as its effect on a victim's mental faculties are swift and powerful.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Wdychanie)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:35]</p>\n<p><strong>Nadejście Objawów</strong> 1 round</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} (1 runda)</p>\n<p><strong>Stadium 3</strong> confused and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} (1 runda)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GMi5tw0cbMx3ZQPg]\n<p>Mindfog mist can be used to undermine spellcasters, as its effect on a victim's mental faculties are swift and powerful.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Wdychanie)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:35]</p>\n<p><strong>Nadejście Objawów</strong> 1 round</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>\n<p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} (1 runda)</p>\n<p><strong>Stadium 3</strong> confused and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} (1 runda)</p>"
                 },
                 "consumable->Oblivion Essence (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5hGJ6CZi0A9OjMd4]\nOblivion Essence (Infused)"
                 },
                 "consumable->Tears of Death (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gDGPvobJV1QGYBPy]\nTears of Death (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gDGPvobJV1QGYBPy]\n<p>Tears of death are among the most powerful of alchemical poisons, distilled from extracts of five other deadly poisons in just the right ratios.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Dotyk)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:46]</p>\n<p><strong>Nadejście Objawów</strong> 1 minute</p>\n<p><strong>Maksymalny Czas Trwania</strong> 10 minutes</p>\n<p><strong>Stadium 1</strong> @Damage[18d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[25d6[poison]] damage and paralyzed (1 minute)</p>\n<p><strong>Stadium 3</strong> @Damage[30d6[poison]] damage and paralyzed (1 minute)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gDGPvobJV1QGYBPy]\n<p>Tears of death are among the most powerful of alchemical poisons, distilled from extracts of five other deadly poisons in just the right ratios.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja (Dotyk)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:46]</p>\n<p><strong>Nadejście Objawów</strong> 1 minute</p>\n<p><strong>Maksymalny Czas Trwania</strong> 10 minutes</p>\n<p><strong>Stadium 1</strong> @Damage[18d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[25d6[poison]] damage and paralyzed (1 minute)</p>\n<p><strong>Stadium 3</strong> @Damage[30d6[poison]] damage and paralyzed (1 minute)</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -891,7 +891,7 @@
                 },
                 "action->Lunar Burst": {
                     "name": "Lunar Burst",
-                    "description": "<p>The bul-gae releases a blast of otherworldly frost that deals @Damage[6d8[cold]] damage to each creature in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:34|basic:true] save). On a critical failure, a creature also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}. After using this ability, the bul-gae's flames heat up and they can't use Lunar Burst again until after they have used Solar Flare.</p>"
+                    "description": "<p>The bul-gae releases a blast of otherworldly frost that deals @Damage[6d8[cold]] damage to each creature in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:34|basic:true] save). On a critical failure, a creature also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2}. After using this ability, the bul-gae's flames heat up and they can't use Lunar Burst again until after they have used Solar Flare.</p>"
                 },
                 "action->Thermal Mastery": {
                     "name": "Thermal Mastery",
@@ -971,7 +971,7 @@
                 },
                 "action->Pollen Cloud": {
                     "name": "Pollen Cloud",
-                    "description": "<p>The canopy elder releases a dense cloud of pollen from the epiphytes living in its branches. The cloud emanates from the canopy elder in a @Template[type:emanation|distance:40]. The cloud doesn't move with the canopy elder and remains in place for [[/br 1d6 #rounds]]{1k6 rounds} before dissipating. Creatures inside the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud become concealed to creatures within it. Non-plant and non-fungus creatures within the cloud must attempt a @Check[type:fortitude|dc:38] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}, and on a critical failure the creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. Regardless of the result, a creature is then temporarily immune to the sickening and blinding effects of the canopy elder's pollen for 24 hours.</p>"
+                    "description": "<p>The canopy elder releases a dense cloud of pollen from the epiphytes living in its branches. The cloud emanates from the canopy elder in a @Template[type:emanation|distance:40]. The cloud doesn't move with the canopy elder and remains in place for [[/br 1d6 #rounds]]{1k6 rounds} before dissipating. Creatures inside the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}, and all creatures outside the cloud become concealed to creatures within it. Non-plant and non-fungus creatures within the cloud must attempt a @Check[type:fortitude|dc:38] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}, and on a critical failure the creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} for 1 minute. Regardless of the result, a creature is then temporarily immune to the sickening and blinding effects of the canopy elder's pollen for 24 hours.</p>"
                 },
                 "lore->Forest Lore": {
                     "name": "Forest Lore"
@@ -1087,7 +1087,7 @@
             "items": {
                 "action->Riotous Parade": {
                     "name": "Riotous Parade",
-                    "description": "<p>60 feet. The night parade sweeps up those nearby in a riotous celebration. All creatures in the aura must attempt a @Check[type:will|dc:39|traits:auditory,aura,emotion,enchantment,mental] save. The target is then temporarily immune for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unafflicted.</p>\n<p><strong>Sukces</strong> The target laughs and dances. It can't use reactions as long as it stays in the area, and if it attempts to use a concentrate action, it must succeed at a @Check[type:flat|dc:5] check; on a failure, the action is lost.</p>\n<p><strong>Porażka</strong> As success, except the target is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while in the area.</p>\n<p><strong>Krytyczna Porażka</strong> As success, except the target is also slowed 1 while in the area and the flat check DC is 10.</p>"
+                    "description": "<p>60 feet. The night parade sweeps up those nearby in a riotous celebration. All creatures in the aura must attempt a @Check[type:will|dc:39|traits:auditory,aura,emotion,enchantment,mental] save. The target is then temporarily immune for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unafflicted.</p>\n<p><strong>Sukces</strong> The target laughs and dances. It can't use reactions as long as it stays in the area, and if it attempts to use a concentrate action, it must succeed at a @Check[type:flat|dc:5] check; on a failure, the action is lost.</p>\n<p><strong>Porażka</strong> As success, except the target is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} while in the area.</p>\n<p><strong>Krytyczna Porażka</strong> As success, except the target is also slowed 1 while in the area and the flat check DC is 10.</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -1230,7 +1230,7 @@
                 },
                 "action->Dreadful Screech": {
                     "name": "Dreadful Screech",
-                    "description": "<p>The dread roc screeches terrifyingly. Each creature in a @Template[type:emanation|distance:120] must attempt a @Check[type:will|dc:32] save. Regardless of the result, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is fleeing for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                    "description": "<p>The dread roc screeches terrifyingly. Each creature in a @Template[type:emanation|distance:120] must attempt a @Check[type:will|dc:32] save. Regardless of the result, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is fleeing for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
                 },
                 "action->Flying Strafe": {
                     "name": "Flying Strafe",
@@ -1242,7 +1242,7 @@
                 },
                 "action->Snatch": {
                     "name": "Snatch",
-                    "description": "<p>A roc can Fly at half Speed while it has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in either or both of its talons, carrying that creature along with it.</p>"
+                    "description": "<p>A roc can Fly at half Speed while it has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} in either or both of its talons, carrying that creature along with it.</p>"
                 },
                 "action->Improved Push 15ft": {
                     "name": "Improved Push 15ft",
@@ -1296,11 +1296,11 @@
                 },
                 "action->Staccato Strike": {
                     "name": "Staccato Strike",
-                    "description": "<p>With subtle alterations in the pitch and tone of its song, the cauthooj directs one creature @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by its Warbling Song to make a Strike. This works like other Strikes made by confused creatures, except that the cauthooj chooses the target. If no target is in reach or range, or the creature is unable to Strike for any other reason, this ability has no effect.</p>"
+                    "description": "<p>With subtle alterations in the pitch and tone of its song, the cauthooj directs one creature @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} by its Warbling Song to make a Strike. This works like other Strikes made by confused creatures, except that the cauthooj chooses the target. If no target is in reach or range, or the creature is unable to Strike for any other reason, this ability has no effect.</p>"
                 },
                 "action->Warbling Song": {
                     "name": "Warbling Song",
-                    "description": "<p>The cauthooj gives a strange, ululating cry that causes nearby creatures to lash out violently and without control. Each creature within @Template[type:emanation|distance:120] that can hear the cauthooj must attempt a @Check[type:will|dc:34] save to resist the effect.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected and is temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round and immediately attacks itself (in the normal fashion for attacking oneself while confused). This Strike doesn't give the creature a flat check to recover from the confusion.</p>"
+                    "description": "<p>The cauthooj gives a strange, ululating cry that causes nearby creatures to lash out violently and without control. Each creature within @Template[type:emanation|distance:120] that can hear the cauthooj must attempt a @Check[type:will|dc:34] save to resist the effect.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected and is temporarily immune for 1 minute.</p>\n<p><strong>Sukces</strong> The target is unaffected.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round and immediately attacks itself (in the normal fashion for attacking oneself while confused). This Strike doesn't give the creature a flat check to recover from the confusion.</p>"
                 }
             }
         },
@@ -1340,11 +1340,11 @@
                 },
                 "action->Stormsight": {
                     "name": "Stormsight",
-                    "description": "<p>Wind, precipitation, and clouds don't impair a kaminari's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from storms, mist, precipitation, and the like.</p>"
+                    "description": "<p>Wind, precipitation, and clouds don't impair a kaminari's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} condition from storms, mist, precipitation, and the like.</p>"
                 },
                 "action->Hurricane Bag": {
                     "name": "Hurricane Bag",
-                    "description": "<p>A kaminari's bag holds the four winds. The kaminari unleashes four @Template[type:burst|distance:20]s within 60 feet with the effects of a 9. kręgu wall of wind. In addition, a creature that enters one of the bursts takes @Damage[6d6[slashing]] damage (@Check[type:reflex|dc:40|basic:true] save). The bursts can't overlap. After using this activity the kaminari can't use Hurricane Bag for [[/br 1d4 #Recharge Hurricane Bag]]{1k4 rounds}.</p>\n<p>If a kaminari creates a column of lighting using Thunder Drums that intersects one of the areas of the wind, the wind explodes in a peal of thunder, dealing @Damage[6d10[sonic]] damage to creatures in the area of that wall of wind burst. Affected creatures must attempt a @Check[type:fortitude|dc:40|traits:damaging-effect] save. The kaminari can detonate only one burst per use of Thunder Drums.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage. Failure Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia.and is deafened permanently.</p>"
+                    "description": "<p>A kaminari's bag holds the four winds. The kaminari unleashes four @Template[type:burst|distance:20]s within 60 feet with the effects of a 9. kręgu wall of wind. In addition, a creature that enters one of the bursts takes @Damage[6d6[slashing]] damage (@Check[type:reflex|dc:40|basic:true] save). The bursts can't overlap. After using this activity the kaminari can't use Hurricane Bag for [[/br 1d4 #Recharge Hurricane Bag]]{1k4 rounds}.</p>\n<p>If a kaminari creates a column of lighting using Thunder Drums that intersects one of the areas of the wind, the wind explodes in a peal of thunder, dealing @Damage[6d10[sonic]] damage to creatures in the area of that wall of wind burst. Affected creatures must attempt a @Check[type:fortitude|dc:40|traits:damaging-effect] save. The kaminari can detonate only one burst per use of Thunder Drums.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage. Failure Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 minute.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia.and is deafened permanently.</p>"
                 },
                 "action->Tempest Tether": {
                     "name": "Tempest Tether",
@@ -1363,7 +1363,7 @@
             "name": "Freezing Floor Tiles",
             "description": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
             "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendarność) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 38) to disable one of the sensors</p>",
-            "routine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
+            "routine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
             "stealth": "<p>+23 (eksperctwo) or @Check[type:perception|dc:38|traits:action:seek] (mistrzostwo) to notice the four sensors</p>",
             "items": {
                 "action->Frigid Floor": {
@@ -1394,7 +1394,7 @@
                 },
                 "action->Frightful Moan": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\nFrightful Moan",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>The ghost laments its fate, forcing each living creature within @Template[type:emanation|distance:30]{30 feet} to attempt a @Check[type:will|dc:25] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>The ghost laments its fate, forcing each living creature within @Template[type:emanation|distance:30]{30 feet} to attempt a @Check[type:will|dc:25] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
                 },
                 "action->Telekinetic Assault": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\nTelekinetic Assault",
@@ -1850,11 +1850,11 @@
                 },
                 "action->Rip and Tear": {
                     "name": "Rip and Tear",
-                    "description": "<p><strong>Wymagania</strong> The grave spinosaurus has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p>\n<hr />\n<p><strong>Efekt</strong> The grave spinosaurus reaches up and slashes with its claws at the creature it has grabbed, dealing @Damage[6d10[slashing]] damage (@Check[type:reflex|dc:36|basic:true] save) and @Damage[2d6[bleed]].</p>"
+                    "description": "<p><strong>Wymagania</strong> The grave spinosaurus has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} in its jaws</p>\n<hr />\n<p><strong>Efekt</strong> The grave spinosaurus reaches up and slashes with its claws at the creature it has grabbed, dealing @Damage[6d10[slashing]] damage (@Check[type:reflex|dc:36|basic:true] save) and @Damage[2d6[bleed]].</p>"
                 },
                 "action->Staggering Sail": {
                     "name": "Staggering Sail",
-                    "description": "<p><strong>Wymagania</strong> The grave spinosaurus is swimming on the surface of water</p>\n<hr />\n<p><strong>Efekt</strong> With a powerful lunge to the side, the grave spinosaurus uses its sail to slap the surface of the water, creating a crushing wave of water that deals @Damage[8d6[bludgeoning]] damage in a @Template[type:cone|distance:30]. Each creature in the water in the area must attempt a @Check[type:reflex|dc:36|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The grave spinosaurus is swimming on the surface of water</p>\n<hr />\n<p><strong>Efekt</strong> With a powerful lunge to the side, the grave spinosaurus uses its sail to slap the surface of the water, creating a crushing wave of water that deals @Damage[8d6[bludgeoning]] damage in a @Template[type:cone|distance:30]. Each creature in the water in the area must attempt a @Check[type:reflex|dc:36|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} until the end of its next turn.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
                 },
                 "action->Swallow Whole": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium,@Damage[(3d12+12)[bludgeoning]] damage, Rozdarcie 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -2002,7 +2002,7 @@
                 },
                 "action->Unrest Aura": {
                     "name": "Unrest Aura",
-                    "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[type:will|dc:27] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the end of its next turn (1 minute on a critical failure). During this confusion, the creature attempts to cause turmoil, using its actions to create disarray in its general vicinity by throwing around objects or scaring passersby. A creature that succeeds at its save is immune to all hantu belians' unrest auras for 1 hour. A hantu belian can suppress or resume the effects of this aura as an action, which has the concentrate trait.</p>"
+                    "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[type:will|dc:27] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} until the end of its next turn (1 minute on a critical failure). During this confusion, the creature attempts to cause turmoil, using its actions to create disarray in its general vicinity by throwing around objects or scaring passersby. A creature that succeeds at its save is immune to all hantu belians' unrest auras for 1 hour. A hantu belian can suppress or resume the effects of this aura as an action, which has the concentrate trait.</p>"
                 },
                 "action->Greater Possession": {
                     "name": "Greater Possession",
@@ -2026,11 +2026,11 @@
                     "description": "<p>A hantu denai that succeeds at a Deception check to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Kłamstwo} can mimic the sounds of any animal native to its environment. It adds a +4 circumstance bonus to this check.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A hantu denai's Strikes deal an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A hantu denai's Strikes deal an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures</p>"
                 },
                 "action->Terrifying Cry": {
                     "name": "Terrifying Cry",
-                    "description": "<p>The hantu denai unleashes a loud animal cry to scare off nearby creatures. Each creature in a @Template[type:emanation|distance:120] must attempt a @Check[type:will|dc:27] save and is then immune to the hantu denai's Terrifying Cry for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is fleeing for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                    "description": "<p>The hantu denai unleashes a loud animal cry to scare off nearby creatures. Each creature in a @Template[type:emanation|distance:120] must attempt a @Check[type:will|dc:27] save and is then immune to the hantu denai's Terrifying Cry for 1 minute.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is fleeing for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
                 }
             }
         },
@@ -2139,7 +2139,7 @@
                 },
                 "action->Terrifying Beauty": {
                     "name": "Terrifying Beauty",
-                    "description": "<p>60 feet. Any creature within 60 feet of an inmyeonjo that the inmyeonjo can see must attempt a @Check[type:will|dc:32|traits:aura,emotion,fear,mental] save. The effects last for 1 day while it is within the area of blurred countenance.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and is immune to the inmyeonjo's Terrifying Beauty for 1 day.</p>\n<p><strong>Sukces</strong> The creature finds the inmyeonjo beguiling and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p><strong>Porażka</strong> The creature finds the inmyeonjo terrifying and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature finds the inmyeonjo dreadful, becoming @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. They can't willingly move closer to the inmyeonjo.</p>"
+                    "description": "<p>60 feet. Any creature within 60 feet of an inmyeonjo that the inmyeonjo can see must attempt a @Check[type:will|dc:32|traits:aura,emotion,fear,mental] save. The effects last for 1 day while it is within the area of blurred countenance.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and is immune to the inmyeonjo's Terrifying Beauty for 1 day.</p>\n<p><strong>Sukces</strong> The creature finds the inmyeonjo beguiling and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p><strong>Porażka</strong> The creature finds the inmyeonjo terrifying and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature finds the inmyeonjo dreadful, becoming @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}. They can't willingly move closer to the inmyeonjo.</p>"
                 },
                 "action->Blurred Countenance": {
                     "name": "Blurred Countenance",
@@ -2200,14 +2200,14 @@
                 },
                 "action->Waylay": {
                     "name": "Waylay",
-                    "description": "<p>When Ji-yook Strides at least 10 feet, illusions make her @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} until the start of her next turn.</p>"
+                    "description": "<p>When Ji-yook Strides at least 10 feet, illusions make her @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} until the start of her next turn.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Ji-yook transforms into her human form. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. Ji-yook can remain in her human form indefinitely, and she can shift back to her true kitsune form by using this action again.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Disquieting Change Shape": {
                     "name": "Disquieting Change Shape",
-                    "description": "<p>Ji-yook selects one enemy within 60 feet, then Changes Shape into humanoid form, taking the form of a person emotionally close to that enemy, such as a dead family member. Ji-yook is not aware of the form she will take until she transforms. If her target sees her, even if they are aware it is a trick, they must attempt a @Check[type:will|dc:40] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure) for 1 round. This is a fear effect.</p>"
+                    "description": "<p>Ji-yook selects one enemy within 60 feet, then Changes Shape into humanoid form, taking the form of a person emotionally close to that enemy, such as a dead family member. Ji-yook is not aware of the form she will take until she transforms. If her target sees her, even if they are aware it is a trick, they must attempt a @Check[type:will|dc:40] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure) for 1 round. This is a fear effect.</p>"
                 },
                 "action->Foxfire Blast": {
                     "name": "Foxfire Blast",
@@ -2215,7 +2215,7 @@
                 },
                 "action->Pinning Shot": {
                     "name": "Pinning Shot",
-                    "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while it remains immobilized in this way.</p>"
+                    "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while it remains immobilized in this way.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook's Strikes deal an additional 4k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -2259,7 +2259,7 @@
                 },
                 "action->Pinning Shot": {
                     "name": "Pinning Shot",
-                    "description": "<p>Ji-yook expertly aims and flings a dart to peg an opponent to a nearby wall or floor. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while it remains immobilized in this way.</p>"
+                    "description": "<p>Ji-yook expertly aims and flings a dart to peg an opponent to a nearby wall or floor. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while it remains immobilized in this way.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook Strikes deal an additional 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -2299,7 +2299,7 @@
                 },
                 "action->Pinning Shot": {
                     "name": "Pinning Shot",
-                    "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while it remains immobilized in this way.</p>"
+                    "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} while it remains immobilized in this way.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ji-yook Strikes deal an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -2529,7 +2529,7 @@
                 },
                 "action->Tangled Forest Trip": {
                     "name": "Tangled Forest Trip",
-                    "description": "<p><strong>Wymagania</strong> Kas Xi Rai is in tangled forest stance</p>\n<p><strong>Aktywator</strong> A creature leaves a space within Kas Xi Rai's reach</p>\n<hr />\n<p><strong>Efekt</strong> The triggering creature must attempt a @Check[type:reflex|dc:37] save, @Check[type:acrobatics|dc:37] check, or @Check[type:athletics|dc:37] check. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for that action.</p>"
+                    "description": "<p><strong>Wymagania</strong> Kas Xi Rai is in tangled forest stance</p>\n<p><strong>Aktywator</strong> A creature leaves a space within Kas Xi Rai's reach</p>\n<hr />\n<p><strong>Efekt</strong> The triggering creature must attempt a @Check[type:reflex|dc:37] save, @Check[type:acrobatics|dc:37] check, or @Check[type:athletics|dc:37] check. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for that action.</p>"
                 },
                 "action->Exhausting Flurry": {
                     "name": "Exhausting Flurry",
@@ -2871,7 +2871,7 @@
                 },
                 "action->Beguiling Lure": {
                     "name": "Beguiling Lure",
-                    "description": "<p>A creature hit by a lophiithu's lure must succeed at a @Check[type:will|dc:41|traits:illusion,mental,occult,visual] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the lophiithu's lures for 1 minute. On a critical failure, it can't use reactions while it remains fascinated. A creature that succeeds at its save is temporarily immune for 1 hour.</p>"
+                    "description": "<p>A creature hit by a lophiithu's lure must succeed at a @Check[type:will|dc:41|traits:illusion,mental,occult,visual] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Zafascynowany} with the lophiithu's lures for 1 minute. On a critical failure, it can't use reactions while it remains fascinated. A creature that succeeds at its save is temporarily immune for 1 hour.</p>"
                 },
                 "action->Dimensional Swallow": {
                     "name": "Dimensional Swallow",
@@ -3115,7 +3115,7 @@
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The manananggal has a creature grabbed.</p>\n<hr />\n<p><strong>Efekt</strong> The manananggal drives its tongue into the grabbed creature to drink its blood. This deals [[/r 4d6]] damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+                    "description": "<p><strong>Wymagania</strong> The manananggal has a creature grabbed.</p>\n<hr />\n<p><strong>Efekt</strong> The manananggal drives its tongue into the grabbed creature to drink its blood. This deals [[/r 4d6]] damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives healing (of any kind or amount).</p>"
                 }
             }
         },
@@ -3164,11 +3164,11 @@
                 },
                 "action->Mesmerizing Melody": {
                     "name": "Mesmerizing Melody",
-                    "description": "<p>The melodic squall sings in a sonorous chorus. Any creature in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:36] save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is fascinated for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                    "description": "<p>The melodic squall sings in a sonorous chorus. Any creature in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:36] save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Zafascynowany} for 1 round.</p>\n<p><strong>Porażka</strong> The creature is fascinated for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
                 },
                 "action->Subsonic Burst": {
                     "name": "Subsonic Burst",
-                    "description": "<p>The melodic squall focuses intense sound at an inaudible frequency in a @Template[type:line|distance:100]. Each creature in the line must attempt a @Check[type:fortitude|dc:34] save.</p>\n<p><strong>Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the beginning of the melodic squall's next turn.</p>"
+                    "description": "<p>The melodic squall focuses intense sound at an inaudible frequency in a @Template[type:line|distance:100]. Each creature in the line must attempt a @Check[type:fortitude|dc:34] save.</p>\n<p><strong>Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} until the beginning of the melodic squall's next turn.</p>"
                 },
                 "action->Swiftness": {
                     "name": "Swiftness",
@@ -3221,7 +3221,7 @@
                 },
                 "action->Blinding Mud": {
                     "name": "Blinding Mud",
-                    "description": "<p>When a muckish creep hits a creature with a mud ball Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} on a critical hit). The creature can use an Interact action to wipe away the mud and remove the dazzled or blinded condition.</p>"
+                    "description": "<p>When a muckish creep hits a creature with a mud ball Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} on a critical hit). The creature can use an Interact action to wipe away the mud and remove the dazzled or blinded condition.</p>"
                 },
                 "action->Overwhelm": {
                     "name": "Overwhelm",
@@ -3250,7 +3250,7 @@
                 },
                 "action->Master Strike": {
                     "name": "Master Strike",
-                    "description": "<p><strong>Aktywator</strong> Nai Yan Fei hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Efekt</strong> The target attempts a @Check[type:fortitude|dc:39] save. It then becomes immune to Nai Yan Fei's Master Strike for 1 day.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of Nai Yan Fei's next turn.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 4 rounds.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 4 rounds, knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} for 2 hours, or killed (Nai Yan Fei's choice).</p>"
+                    "description": "<p><strong>Aktywator</strong> Nai Yan Fei hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Efekt</strong> The target attempts a @Check[type:fortitude|dc:39] save. It then becomes immune to Nai Yan Fei's Master Strike for 1 day.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of Nai Yan Fei's next turn.</p>\n<p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 4 rounds.</p>\n<p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 4 rounds, knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} for 2 hours, or killed (Nai Yan Fei's choice).</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Nai Yan Fei's Strikes deal an additional 4k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -3527,7 +3527,7 @@
                 },
                 "action->Falling Sal Stance": {
                     "name": "Falling Sal Stance",
-                    "description": "<p>The disciple joins their palms together in the shape of a sal flower, evoking the truth that all things eventually decay. In this stance, they can make sal blossom Strikes (see Strikes) and are @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}, and can use the extra action only to cast wholeness of body.</p>"
+                    "description": "<p>The disciple joins their palms together in the shape of a sal flower, evoking the truth that all things eventually decay. In this stance, they can make sal blossom Strikes (see Strikes) and are @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony}, and can use the extra action only to cast wholeness of body.</p>"
                 },
                 "action->+1 status to all saves vs. mental": {
                     "name": "+1 status to all saves vs. mental"
@@ -3576,7 +3576,7 @@
                 },
                 "action->Snowblind": {
                     "name": "Snowblind",
-                    "description": "<p>When Hiding, the yeti is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} by any snowfall, even if it's not thick enough to make other creatures concealed.</p>"
+                    "description": "<p>When Hiding, the yeti is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by any snowfall, even if it's not thick enough to make other creatures concealed.</p>"
                 },
                 "action->Vanish": {
                     "name": "Vanish",
@@ -3588,7 +3588,7 @@
                 },
                 "action->Grizzly Arrival": {
                     "name": "Grizzly Arrival",
-                    "description": "<p><strong>Aktywator</strong> The rai sho postulant hits a creature in the first round of combat and the rai sho postulant was @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from that creature at the start of combat.</p>\n<hr />\n<p><strong>Efekt</strong> Each enemy within 30 feet that witnesses the attack (including the target of the attack) must attempt a @Check[type:will|dc:37] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>"
+                    "description": "<p><strong>Aktywator</strong> The rai sho postulant hits a creature in the first round of combat and the rai sho postulant was @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from that creature at the start of combat.</p>\n<hr />\n<p><strong>Efekt</strong> Each enemy within 30 feet that witnesses the attack (including the target of the attack) must attempt a @Check[type:will|dc:37] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}.</p>"
                 }
             }
         },
@@ -3621,7 +3621,7 @@
                 },
                 "action->Whirlwind Toss": {
                     "name": "Whirlwind Toss",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to spins the creature he's holding, smashing them against any creatures within his reach, and then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Ran-to tosses his foe a great distance. The grab ends. The grabbed creature is thrown into a space within 10 feet, takes @Damage[10d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:34|basic:true] save).</p>\n<p><strong>Sukces</strong> As critical success, except the grabbed creatures is thrown into a space within 5 feet, and creatures take @Damage[6d6[bludgeoning]] damage.</p>\n<p><strong>Porażka</strong> Ran-to tosses his foe aside. The grab ends. The grabbed creature falls prone.</p>\n<p><strong>Krytyczna Porażka</strong> Ran-to loses hold of his foe, causing the grapple to end.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to spins the creature he's holding, smashing them against any creatures within his reach, and then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Ran-to tosses his foe a great distance. The grab ends. The grabbed creature is thrown into a space within 10 feet, takes @Damage[10d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:34|basic:true] save).</p>\n<p><strong>Sukces</strong> As critical success, except the grabbed creatures is thrown into a space within 5 feet, and creatures take @Damage[6d6[bludgeoning]] damage.</p>\n<p><strong>Porażka</strong> Ran-to tosses his foe aside. The grab ends. The grabbed creature falls prone.</p>\n<p><strong>Krytyczna Porażka</strong> Ran-to loses hold of his foe, causing the grapple to end.</p>"
                 },
                 "lore->Wrestling Lore": {
                     "name": "Wrestling Lore"
@@ -3648,7 +3648,7 @@
                 },
                 "action->Body Slam": {
                     "name": "Body Slam",
-                    "description": "<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to throws his foe to the ground. The grabbed creature takes @Damage[10d6[bludgeoning]] damage (@Check[type:fortitude|dc:37|basic:true] save) and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. The grab ends.</p>"
+                    "description": "<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to throws his foe to the ground. The grabbed creature takes @Damage[10d6[bludgeoning]] damage (@Check[type:fortitude|dc:37|basic:true] save) and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. The grab ends.</p>"
                 },
                 "action->Greater Leaping Catch": {
                     "name": "Greater Leaping Catch",
@@ -3660,7 +3660,7 @@
                 },
                 "action->Whirlwind Toss": {
                     "name": "Whirlwind Toss",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to spins the creature he's holding, smashing them against any creatures within his reach, and then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Ran-to tosses his foe a great distance. The grab ends. The grabbed creature is thrown into a space within 10 feet, takes @Damage[12d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:37|basic:true] save).</p>\n<p><strong>Sukces</strong> As critical success, except the grabbed creatures is thrown into a space within 5 feet, and creatures take @Damage[8d6[bludgeoning]] damage.</p>\n<p><strong>Porażka</strong> Ran-to tosses his foe aside. The grab ends. The grabbed creature falls prone.</p>\n<p><strong>Krytyczna Porażka</strong> Ran-to loses hold of his foe, causing the grapple to end.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to spins the creature he's holding, smashing them against any creatures within his reach, and then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Ran-to tosses his foe a great distance. The grab ends. The grabbed creature is thrown into a space within 10 feet, takes @Damage[12d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:37|basic:true] save).</p>\n<p><strong>Sukces</strong> As critical success, except the grabbed creatures is thrown into a space within 5 feet, and creatures take @Damage[8d6[bludgeoning]] damage.</p>\n<p><strong>Porażka</strong> Ran-to tosses his foe aside. The grab ends. The grabbed creature falls prone.</p>\n<p><strong>Krytyczna Porażka</strong> Ran-to loses hold of his foe, causing the grapple to end.</p>"
                 },
                 "lore->Wrestling Lore": {
                     "name": "Wrestling Lore"
@@ -3706,7 +3706,7 @@
                 },
                 "action->Whirlwind Toss": {
                     "name": "Whirlwind Toss",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to spins the creature he's holding, smashing it against any creatures within his reach, then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC. Regardless of the result, the creature is no longer grabbed after this activity.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Ran-to tosses his foe mightily. The grabbed creature is thrown into a space within 20 feet, takes @Damage[16d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p><strong>Sukces</strong> As critical success, except the grabbed creature is thrown into a space within 10 feet, and creatures take @Damage[12d6[bludgeoning]] damage.</p>\n<p><strong>Porażka</strong> Ran-to tosses his foe aside. The grabbed creature falls prone.</p>\n<p><strong>Krytyczna Porażka</strong> Ran-to loses hold of his foe.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p><strong>Wymagania</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}</p>\n<hr />\n<p><strong>Efekt</strong> Ran-to spins the creature he's holding, smashing it against any creatures within his reach, then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC. Regardless of the result, the creature is no longer grabbed after this activity.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Ran-to tosses his foe mightily. The grabbed creature is thrown into a space within 20 feet, takes @Damage[16d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p><strong>Sukces</strong> As critical success, except the grabbed creature is thrown into a space within 10 feet, and creatures take @Damage[12d6[bludgeoning]] damage.</p>\n<p><strong>Porażka</strong> Ran-to tosses his foe aside. The grabbed creature falls prone.</p>\n<p><strong>Krytyczna Porażka</strong> Ran-to loses hold of his foe.</p>"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
@@ -3940,12 +3940,12 @@
             "description": "<p>Buffeting winds swirl sharp grains of sand about the room.</p>",
             "disable": "<p>@Check[type:religon|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (eksperctwo) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[type:occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (mistrzostwo) to create a ward against future hauntings</p>",
             "reset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[type:crafting|dc:30|name:Create Image in Sand] or @Check[type:thievery|dc:30|name:Create Image in Sand]check.</p>",
-            "routine": "<p>(1 akcja) The haunt's violent winds savagely buffet everyone in the room, dealing@Damage[(6d10+30)[bludgeoning]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
+            "routine": "<p>(1 akcja) The haunt's violent winds savagely buffet everyone in the room, dealing@Damage[(6d10+30)[bludgeoning]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} for 1 minute.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Sand Vacuum": {
                     "name": "Sand Vacuum",
-                    "description": "<p><strong>Aktywator</strong> A creature attempts to leave the chamber</p>\n<hr />\n<p><strong>Efekt</strong> A powerful wind pulls the creature back into the room. The triggering creature must attempt a @Check[type:fortitude|dc:39|traits:haunt] save. The haunt can use this reaction any number of times per round, but only once per creature that tries to leave the room. The haunt then rolls initiative, if it hasn't already.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is pulled back 10 feet into the room.</p>\n<p><strong>Porażka</strong> The creature is pulled back 15 feet into the room and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is pulled back 15 feet into the room and is blinded for 1 minute.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature attempts to leave the chamber</p>\n<hr />\n<p><strong>Efekt</strong> A powerful wind pulls the creature back into the room. The triggering creature must attempt a @Check[type:fortitude|dc:39|traits:haunt] save. The haunt can use this reaction any number of times per round, but only once per creature that tries to leave the room. The haunt then rolls initiative, if it hasn't already.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is pulled back 10 feet into the room.</p>\n<p><strong>Porażka</strong> The creature is pulled back 15 feet into the room and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is pulled back 15 feet into the room and is blinded for 1 minute.</p>"
                 }
             }
         },
@@ -3974,7 +3974,7 @@
                 },
                 "action->Radiant Blast": {
                     "name": "Radiant Blast",
-                    "description": "<p>The sanzuwu opens their mouth to produce a bead of burning energy, hurling it a point within 200 feet. The bead detonates, dealing @Damage[7d8[fire]] damage and @Damage[4d10[sonic]] damage to all creatures in a @Template[type:burst|distance:30] (@Check[type:reflex|dc:33|basic:true] save). Creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. The sanzuwu can't use Radiant Blast again for [[/br 1d4 #Recharge Radiant Blast]]{1k4 rounds}.</p>"
+                    "description": "<p>The sanzuwu opens their mouth to produce a bead of burning energy, hurling it a point within 200 feet. The bead detonates, dealing @Damage[7d8[fire]] damage and @Damage[4d10[sonic]] damage to all creatures in a @Template[type:burst|distance:30] (@Check[type:reflex|dc:33|basic:true] save). Creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} for 1 round. The sanzuwu can't use Radiant Blast again for [[/br 1d4 #Recharge Radiant Blast]]{1k4 rounds}.</p>"
                 },
                 "action->Scorch Earth": {
                     "name": "Scorch Earth",
@@ -4018,7 +4018,7 @@
                     "name": "Sonic Missile",
                     "rules": {
                         "0": {
-                            "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round"
+                            "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 round"
                         }
                     }
                 },
@@ -4034,7 +4034,7 @@
                 },
                 "action->Shadow Touch": {
                     "name": "Shadow Touch",
-                    "description": "<p>A shadow yai's touch harms their target's spiritual essence in addition to its body. A creature hit by the shadow yai's fist Strike must attempt a @Check[type:will|dc:36] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes @Damage[2d6[void]] damage.</p>\n<p><strong>Porażka</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and takes @Damage[3d6[void]] damage. As long as the creature is drained as a result of this ability, it loses the ability to speak above a whisper. When the creature attempts to Cast a Spell with a verbal component, it must succeed at a flat check or the spell is disrupted. The DC of this flat check is equal to 5 plus the creature's drained value (for example, DC 7 if the creature is drained 2).</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and takes @Damage[6d6[void]] damage.</p>"
+                    "description": "<p>A shadow yai's touch harms their target's spiritual essence in addition to its body. A creature hit by the shadow yai's fist Strike must attempt a @Check[type:will|dc:36] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes @Damage[2d6[void]] damage.</p>\n<p><strong>Porażka</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} and takes @Damage[3d6[void]] damage. As long as the creature is drained as a result of this ability, it loses the ability to speak above a whisper. When the creature attempts to Cast a Spell with a verbal component, it must succeed at a flat check or the spell is disrupted. The DC of this flat check is equal to 5 plus the creature's drained value (for example, DC 7 if the creature is drained 2).</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} and takes @Damage[6d6[void]] damage.</p>"
                 }
             }
         },
@@ -4180,7 +4180,7 @@
                 },
                 "action->Shadow Drain": {
                     "name": "Shadow Drain",
-                    "description": "<p><strong>Wymagania</strong> The sigbin is @UUID[Compendium.pf2e.conditionitems.Item.9evPzg9E6muFcoSk]{Unnoticed} by its target.</p>\n<hr />\n<p><strong>Efekt</strong> The sigbin makes a fangs Strike (unlike other Strikes, this does not end its @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny} if the sigbin is invisible). On a hit, the target takes nonlethal damage from the Strike and becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical hit). The sigbin gains 15 temporary Hit Points that remain for 1 hour.</p>"
+                    "description": "<p><strong>Wymagania</strong> The sigbin is @UUID[Compendium.pf2e.conditionitems.Item.9evPzg9E6muFcoSk]{Unnoticed} by its target.</p>\n<hr />\n<p><strong>Efekt</strong> The sigbin makes a fangs Strike (unlike other Strikes, this does not end its @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny} if the sigbin is invisible). On a hit, the target takes nonlethal damage from the Strike and becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical hit). The sigbin gains 15 temporary Hit Points that remain for 1 hour.</p>"
                 }
             }
         },
@@ -4422,7 +4422,7 @@
                 },
                 "action->Frostbite": {
                     "name": "Frostbite",
-                    "description": "<p>A creature that takes cold damage from a sthira's Strikes or aura must attempt a @Check[type:fortitude|dc:42] save. A creature that already has persistent cold damage from frostbite ignores this effect.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected, and is temporarily immune to this ability for 1 hour.</p>\n<p><strong>Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[3d6[persistent,cold]] damage.</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                    "description": "<p>A creature that takes cold damage from a sthira's Strikes or aura must attempt a @Check[type:fortitude|dc:42] save. A creature that already has persistent cold damage from frostbite ignores this effect.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected, and is temporarily immune to this ability for 1 hour.</p>\n<p><strong>Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[3d6[persistent,cold]] damage.</p>\n<p><strong>Krytyczna Porażka</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}.</p>"
                 }
             }
         },
@@ -4438,11 +4438,11 @@
                 },
                 "action->Camouflage": {
                     "name": "Camouflage",
-                    "description": "<p>While in natural terrain, Surjit can @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradanie Się} even while @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}.</p>"
+                    "description": "<p>While in natural terrain, Surjit can @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradanie Się} even while @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany}.</p>"
                 },
                 "action->Sense the Unseen": {
                     "name": "Sense the Unseen",
-                    "description": "<p><strong>Aktywator</strong> Surjit fails a Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}</p>\n<hr />\n<p><strong>Efekt</strong> Surjit automatically senses any @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures in the area where he was Seeking, making them merely @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} to him.</p>"
+                    "description": "<p><strong>Aktywator</strong> Surjit fails a Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}</p>\n<hr />\n<p><strong>Efekt</strong> Surjit automatically senses any @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty} creatures in the area where he was Seeking, making them merely @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} to him.</p>"
                 },
                 "action->Attack of Opportunity (Special)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]\nAttack of Opportunity (Special)",
@@ -4753,7 +4753,7 @@
                 },
                 "action->Botanic Interruption": {
                     "name": "Botanic Interruption",
-                    "description": "<p><strong>Aktywator</strong> The taiga yai is standing in natural foliage or undergrowth and is targeted by a melee attack</p>\n<hr />\n<p><strong>Efekt</strong> The taiga yai infuses their power within the plants around them, causing the plants to shoot up and create a protective barrier. The taiga yai gains a +2 circumstance bonus to AC against the triggering attack roll. If the attack misses, the attacker must attempt a @Check[type:reflex|dc:33] save. On a failed save, the attacker is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round as the plants grab hold of them; on a critical failure, the attacker is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
+                    "description": "<p><strong>Aktywator</strong> The taiga yai is standing in natural foliage or undergrowth and is targeted by a melee attack</p>\n<hr />\n<p><strong>Efekt</strong> The taiga yai infuses their power within the plants around them, causing the plants to shoot up and create a protective barrier. The taiga yai gains a +2 circumstance bonus to AC against the triggering attack roll. If the attack misses, the attacker must attempt a @Check[type:reflex|dc:33] save. On a failed save, the attacker is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round as the plants grab hold of them; on a critical failure, the attacker is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
                 },
                 "action->+1 status to all saves vs. magic": {
                     "name": "+1 status to all saves vs. magic"
@@ -4766,7 +4766,7 @@
                 },
                 "action->Return to Nature": {
                     "name": "Return to Nature",
-                    "description": "<p>The taiga yai commands underground plant roots to drag a creature within 60 feet into the earth. The target must succeed at a @Check[type:fortitude|dc:35] save or be @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for [[/br 1d4 #rounds]]{1k4 rounds}. After this time, the creature is buried; it is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, begins to suffocate, and takes @Damage[4d6[bludgeoning]] damage each round they remain buried. To @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} either while immobilized or grabbed, the creature must succeed at a DC 35 Escape check or an adjacent ally must succeed at a @Check[type:athletics|dc:33] check to pull them out.</p>"
+                    "description": "<p>The taiga yai commands underground plant roots to drag a creature within 60 feet into the earth. The target must succeed at a @Check[type:fortitude|dc:35] save or be @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for [[/br 1d4 #rounds]]{1k4 rounds}. After this time, the creature is buried; it is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}, begins to suffocate, and takes @Damage[4d6[bludgeoning]] damage each round they remain buried. To @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} either while immobilized or grabbed, the creature must succeed at a DC 35 Escape check or an adjacent ally must succeed at a @Check[type:athletics|dc:33] check to pull them out.</p>"
                 }
             }
         },
@@ -4897,7 +4897,7 @@
                 },
                 "action->Wailing Dive": {
                     "name": "Wailing Dive",
-                    "description": "<p>The kongamato Flies while emitting a terrifying screech. Each creature the kongamato flies over must succeed at a @Check[type:will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>\n<p>After attempting their saves, the creatures are temporarily immune for 1 hour. At the end of their movement, the kongamato can make a beak Strike.</p>"
+                    "description": "<p>The kongamato Flies while emitting a terrifying screech. Each creature the kongamato flies over must succeed at a @Check[type:will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>\n<p>After attempting their saves, the creatures are temporarily immune for 1 hour. At the end of their movement, the kongamato can make a beak Strike.</p>"
                 }
             }
         },
@@ -5049,11 +5049,11 @@
                 },
                 "action->Avalanche Pummel": {
                     "name": "Avalanche Pummel",
-                    "description": "<p>Troff makes an icicle gouge Strike against an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creature. On a hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}. Either way, the effect lasts until the start of Troff's next turn. If his Strike fails (but isn't a critical failure), Troff still deals @Damage[13[piercing]] damage to the creature.</p>"
+                    "description": "<p>Troff makes an icicle gouge Strike against an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creature. On a hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony}. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony}. Either way, the effect lasts until the start of Troff's next turn. If his Strike fails (but isn't a critical failure), Troff still deals @Damage[13[piercing]] damage to the creature.</p>"
                 },
                 "action->Chattering Blow": {
                     "name": "Chattering Blow",
-                    "description": "<p><strong>Wymagania</strong> Troff is within reach of a creature that has taken cold damage since the end of Troff's last turn</p>\n<hr />\n<p><strong>Efekt</strong> Troff jabs a pressure point on the creature made vulnerable by cold. The creature must attempt a @Check[type:fortitude|dc:31|traits:damaging-effect] save as its skin freezes and its limbs turn sluggish and clammy.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes @Damage[2d4[persistent,cold]] damage and a –5-foot status penalty to its Speeds until the persistent cold damage ends. Dealing fire damage to the creature is an especially effective way to help end the persistent cold damage (allowing a new flat check to end it at DC 10).</p>\n<p><strong>Porażka</strong> As success, but the damage is @Damage[4d4[persistent,cold]] damage and the penalty is –15-foot.</p>\n<p><strong>Krytyczna Porażka</strong> As success, but the damage is @Damage[6d4[persistent,cold]] damage and the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} instead of taking a Speed penalty.</p>"
+                    "description": "<p><strong>Wymagania</strong> Troff is within reach of a creature that has taken cold damage since the end of Troff's last turn</p>\n<hr />\n<p><strong>Efekt</strong> Troff jabs a pressure point on the creature made vulnerable by cold. The creature must attempt a @Check[type:fortitude|dc:31|traits:damaging-effect] save as its skin freezes and its limbs turn sluggish and clammy.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes @Damage[2d4[persistent,cold]] damage and a –5-foot status penalty to its Speeds until the persistent cold damage ends. Dealing fire damage to the creature is an especially effective way to help end the persistent cold damage (allowing a new flat check to end it at DC 10).</p>\n<p><strong>Porażka</strong> As success, but the damage is @Damage[4d4[persistent,cold]] damage and the penalty is –15-foot.</p>\n<p><strong>Krytyczna Porażka</strong> As success, but the damage is @Damage[6d4[persistent,cold]] damage and the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} instead of taking a Speed penalty.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -5082,7 +5082,7 @@
                 },
                 "action->Pin Prey": {
                     "name": "Pin Prey",
-                    "description": "<p><strong>Aktywator</strong> The tyrannosaurus critically hits a Large or smaller foe with its foot.</p>\n<hr />\n<p><strong>Efekt</strong> The creature struck by the foot is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} and the tyrannosaurus uses its foot to hold the creature in place. As long as the tyrannosaurus doesn't move from its position, the pinned creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. A tyrannosaurus gains a +2 circumstance bonus to attack a creature it has pinned in this manner, but it cannot use swallow whole on the target unless it uses its jaws to Grab the victim first.</p>"
+                    "description": "<p><strong>Aktywator</strong> The tyrannosaurus critically hits a Large or smaller foe with its foot.</p>\n<hr />\n<p><strong>Efekt</strong> The creature struck by the foot is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} and the tyrannosaurus uses its foot to hold the creature in place. As long as the tyrannosaurus doesn't move from its position, the pinned creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}. A tyrannosaurus gains a +2 circumstance bonus to attack a creature it has pinned in this manner, but it cannot use swallow whole on the target unless it uses its jaws to Grab the victim first.</p>"
                 },
                 "action->Swallow Whole": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium, @Damage[(4d6+8)[bludgeoning]], Rozdarcie 34</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -5141,7 +5141,7 @@
                 },
                 "action->Story of Valor": {
                     "name": "Story of Valor",
-                    "description": "<p>Umbasi expounds on the values of courage and respect. They remove the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition from and reduce the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} value of each ally within 30 feet by 1. If this is the first time they've used this action in combat, Umbasi automatically rallies the crowd for their team</p>"
+                    "description": "<p>Umbasi expounds on the values of courage and respect. They remove the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} condition from and reduce the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} value of each ally within 30 feet by 1. If this is the first time they've used this action in combat, Umbasi automatically rallies the crowd for their team</p>"
                 },
                 "lore->Bardic Lore": {
                     "name": "Bardic Lore"
@@ -5222,7 +5222,7 @@
                 },
                 "action->Frighten": {
                     "name": "Frighten",
-                    "description": "<p><strong>Wymagania</strong> The poltergeist must be @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}.</p>\n<hr />\n<p><strong>Efekt</strong> The poltergeist becomes visible, appearing as a skeletal, ghostlike humanoid. Each creature within 30 feet must attempt a @Check[type:will|dc:33] save, becoming @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a failure. On a critical failure, it's also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for as long as it's frightened. On a success, the creature is temporarily immune for 1 minute. At the start of its next turn, the poltergeist becomes invisible again.</p>"
+                    "description": "<p><strong>Wymagania</strong> The poltergeist must be @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}.</p>\n<hr />\n<p><strong>Efekt</strong> The poltergeist becomes visible, appearing as a skeletal, ghostlike humanoid. Each creature within 30 feet must attempt a @Check[type:will|dc:33] save, becoming @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a failure. On a critical failure, it's also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} for as long as it's frightened. On a success, the creature is temporarily immune for 1 minute. At the start of its next turn, the poltergeist becomes invisible again.</p>"
                 },
                 "action->Telekinetic Storm": {
                     "name": "Telekinetic Storm",
@@ -5304,7 +5304,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the wraith damages a living creature with its spectral hand Strike, the wraith gains [[/r 15 #Temporary Hit Points]]{5 temporary Hit Points} and the creature must succeed at a @Check[type:fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4.</p>"
+                    "description": "<p>When the wraith damages a living creature with its spectral hand Strike, the wraith gains [[/r 15 #Temporary Hit Points]]{5 temporary Hit Points} and the creature must succeed at a @Check[type:fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4.</p>"
                 },
                 "action->Wraith Spawn": {
                     "name": "Wraith Spawn",
@@ -5369,7 +5369,7 @@
             "items": {
                 "action->Ki Storm": {
                     "name": "Ki Storm",
-                    "description": "<p><strong>Aktywator</strong> A creature enters the prayer room.</p>\n<hr />\n<p><strong>Efekt</strong> The abbot's spirit appears and begins to channel powerful ki energy. One round later, the room fills with a powerful kinetic storm, dealing @Damage[(3d10+15)[electricity]] damage and @Damage[(3d10+15)[force]] damage to all creatures in the room. Creatures in the room must attempt a @Check[type:reflex|dc:37|traits:haunt] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes full damage, @Damage[2d8[persistent,electricity]] damage, and becomes deafened for 1 minute.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature enters the prayer room.</p>\n<hr />\n<p><strong>Efekt</strong> The abbot's spirit appears and begins to channel powerful ki energy. One round later, the room fills with a powerful kinetic storm, dealing @Damage[(3d10+15)[electricity]] damage and @Damage[(3d10+15)[force]] damage to all creatures in the room. Creatures in the room must attempt a @Check[type:reflex|dc:37|traits:haunt] save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature takes half damage.</p>\n<p><strong>Porażka</strong> The creature takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 round.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes full damage, @Damage[2d8[persistent,electricity]] damage, and becomes deafened for 1 minute.</p>"
                 }
             }
         },
@@ -5421,7 +5421,7 @@
                 },
                 "action->White Serpent Venom": {
                     "name": "White Serpent Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[3d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[3d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} (1 runda)</p>"
                 }
             }
         },
@@ -5461,7 +5461,7 @@
                 },
                 "weapon->Tanglefoot Bag (Greater)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\nTanglefoot Bag (Większy)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the Escape DC is 28.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the Escape DC is 28.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "strike-melee->Bo Staff": {
                     "name": "Bo Staff"
@@ -5474,7 +5474,7 @@
                 },
                 "action->Nagaji Venom": {
                     "name": "Nagaji Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:30]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:30]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} (1 runda)</p>"
                 },
                 "action->Quickened Casting": {
                     "name": "Quickened Casting",
@@ -5523,7 +5523,7 @@
                 },
                 "action->Nagaji Venom": {
                     "name": "Nagaji Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[2d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} (1 runda)</p>"
                 }
             }
         },
@@ -5594,7 +5594,7 @@
                 },
                 "action->Deploy Countermeasures": {
                     "name": "Deploy Countermeasures",
-                    "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> Yoh is piloting the Solar Jian II</p>\n<hr />\n<p><strong>Efekt</strong> While the Solar Jian II is not a combat vessel, it does have a magically renewing supply of fireworks for victory parades and the like. Yoh fires them at a @Template[type:burst|distance:20] within 60 feet. Creatures in the area take @Damage[3d6[fire]] damage and @Damage[3d6[sonic]] damage with a Fortitude save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is dazzled for 3 rounds.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia. takes @Damage[3d4[persistent,fire]] damage, and is dazzled for 1 minute.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p>\n<p><strong>Wymagania</strong> Yoh is piloting the Solar Jian II</p>\n<hr />\n<p><strong>Efekt</strong> While the Solar Jian II is not a combat vessel, it does have a magically renewing supply of fireworks for victory parades and the like. Yoh fires them at a @Template[type:burst|distance:20] within 60 feet. Creatures in the area take @Damage[3d6[fire]] damage and @Damage[3d6[sonic]] damage with a Fortitude save.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The target is unaffected.</p>\n<p><strong>Sukces</strong> The target takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round.</p>\n<p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is dazzled for 3 rounds.</p>\n<p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia. takes @Damage[3d4[persistent,fire]] damage, and is dazzled for 1 minute.</p>"
                 },
                 "action->I'll Get You into Position!": {
                     "name": "I'll Get You into Position!",

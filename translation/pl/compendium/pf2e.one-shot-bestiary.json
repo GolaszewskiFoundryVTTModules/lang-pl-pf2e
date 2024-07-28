@@ -53,7 +53,7 @@
                 },
                 "action->Invoke Alocer": {
                     "name": "Invoke Alocer",
-                    "description": "<p><strong>Aktywator</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3k6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3k6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
+                    "description": "<p><strong>Aktywator</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>Częstotliwość</strong> raz na dzień</p>\n<hr />\n<p><strong>Efekt</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3k6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3k6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>",
                     "rules": {
                         "0": {
                             "label": "Is under invocation of Alocar"
@@ -79,7 +79,7 @@
             "description": "<p>The three larger crystals on the table begin to vibrate and emit a swiftly growing peal of sound.</p>",
             "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) or @Check[type:occultism|dc:17] (wytrenowanie) to disrupt the magic enchanting one of the crystals, or @Check[type:performance|dc:20] (wytrenowanie) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Przeciwwystęp} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level, DC 18) to counteract a crystal.</span></p>",
             "hpDetails": "HP per crystal",
-            "routine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[type:fortitude|dc:20|basic:true]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. At the end of the hazard's routine, attempt a @Check[type:flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
+            "routine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[type:fortitude|dc:20|basic:true]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 minute. At the end of the hazard's routine, attempt a @Check[type:flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Shrill Chime": {
@@ -133,7 +133,7 @@
                 },
                 "action->Divine Revulsion": {
                     "name": "Divine Revulsion",
-                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The redcap is unaffected</p>\n<p><strong>Sukces</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Porażka</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}</p>"
+                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> The redcap is unaffected</p>\n<p><strong>Sukces</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}</p>\n<p><strong>Porażka</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}</p>"
                 },
                 "action->Blood Soak": {
                     "name": "Blood Soak",
@@ -357,7 +357,7 @@
                 },
                 "action->Impaling Hook": {
                     "name": "Impaling Hook",
-                    "description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes @Damage[(1d10+10)[piercing]] damage from the agonizing wound.</p>"
+                    "description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes @Damage[(1d10+10)[piercing]] damage from the agonizing wound.</p>"
                 }
             }
         },
@@ -432,7 +432,7 @@
                 },
                 "action->Rip Flesh": {
                     "name": "Rip Flesh",
-                    "description": "<p><strong>Wymagania</strong> A jinkin has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with their pincer claw</p>\n<hr />\n<p><strong>Efekt</strong> The jinkin forcefully pulls the pincer claw out of the creature, ripping flesh and cackling in sadistic glee. The creature takes @Damage[1d8[piercing]] damage and is no longer grabbed.</p>"
+                    "description": "<p><strong>Wymagania</strong> A jinkin has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} with their pincer claw</p>\n<hr />\n<p><strong>Efekt</strong> The jinkin forcefully pulls the pincer claw out of the creature, ripping flesh and cackling in sadistic glee. The creature takes @Damage[1d8[piercing]] damage and is no longer grabbed.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The jinkin deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -463,7 +463,7 @@
                 },
                 "action->Combat Grab": {
                     "name": "Combat Grab",
-                    "description": "<p><strong>Wymagania</strong> The Kelorbeyan guard has one hand free, and their target is in reach of that hand</p>\n<hr />\n<p><strong>Efekt</strong> The guard makes a melee Strike while keeping one hand free. If the Strike hits, they grab the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the guard's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>"
+                    "description": "<p><strong>Wymagania</strong> The Kelorbeyan guard has one hand free, and their target is in reach of that hand</p>\n<hr />\n<p><strong>Efekt</strong> The guard makes a melee Strike while keeping one hand free. If the Strike hits, they grab the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} until the end of the guard's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>"
                 },
                 "action->Knockdown": {
                     "name": "Knockdown",
@@ -811,7 +811,7 @@
                 },
                 "action->Rip Flesh": {
                     "name": "Rip Flesh",
-                    "description": "<p><strong>Wymagania</strong> A jinkin has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with their pincer claw</p>\n<hr />\n<p><strong>Efekt</strong> The jinkin forcefully pulls the pincer claw out of the creature, ripping flesh and cackling in sadistic glee. The creature takes @Damage[1d8[piercing]] damage and is no longer grabbed.</p>"
+                    "description": "<p><strong>Wymagania</strong> A jinkin has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} with their pincer claw</p>\n<hr />\n<p><strong>Efekt</strong> The jinkin forcefully pulls the pincer claw out of the creature, ripping flesh and cackling in sadistic glee. The creature takes @Damage[1d8[piercing]] damage and is no longer grabbed.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The jinkin deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"

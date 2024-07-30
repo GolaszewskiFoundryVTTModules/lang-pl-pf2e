@@ -2,7 +2,7 @@ replacement_patterns = [
     # Styling and punctuation
     (r' -([0-9]+)', r' –\1'),
     (r'(\S)—(\S)', r'\1 — \2'),
-    (r'([„”“])', r'\"'),
+    (r'([„”“])', r'"'),
     # Ordinals
     (r'([0-9]+)(st|nd|rd|th)', r'\1.'),
     (r'([0-9]+\.)-Level', r'\1 Poziomu.'),

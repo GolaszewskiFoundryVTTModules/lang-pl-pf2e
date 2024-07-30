@@ -183,7 +183,7 @@
                 "Shove": "You can spend an action immediately after a hit to push the target 5 feet with the effects of a successful @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}"
             },
             "OozeForm": {
-                "GelatinousCubeNote": "A creature hit by your cube face Strike must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round on a critical failure); this save has the incapacitation trait."
+                "GelatinousCubeNote": "A creature hit by your cube face Strike must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round on a critical failure); this save has the incapacitation trait."
             },
             "WormForm": {
                 "PurpleWorm": "Purple Worm",
@@ -311,16 +311,16 @@
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(3[splash])[vitality]]{3 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn."
+                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(3[splash])[vitality]]{3 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} until the start of your next turn."
                 },
                 "Lesser": {
-                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(1[splash])[vitality]]{1 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn."
+                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(1[splash])[vitality]]{1 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} until the start of your next turn."
                 },
                 "Major": {
-                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(4[splash])[vitality]]{4 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn."
+                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(4[splash])[vitality]]{4 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} until the start of your next turn."
                 },
                 "Moderate": {
-                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(2[splash])[vitality]]{2 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn."
+                    "success": "<strong>Efekt</strong> The bomb also deals @Damage[(2[splash])[vitality]]{2 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} until the start of your next turn."
                 }
             },
             "GooGrenade": {
@@ -1122,7 +1122,7 @@
                         },
                         "SunderedVeins": {
                             "Label": "Sundered Veins Stance",
-                            "Note": "The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}"
+                            "Note": "The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}"
                         }
                     }
                 }
@@ -2427,7 +2427,7 @@
                     "Note": "On a critical hit, the target must also succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] saving throw, or be immediately slain."
                 },
                 "EnchantingArrow": {
-                    "Note": "On a critical hit, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}."
+                    "Note": "On a critical hit, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}."
                 }
             },
             "Elf": {
@@ -2685,7 +2685,7 @@
             },
             "Fighter": {
                 "DazingBlow": {
-                    "Note": "If the Strike hits, the creature must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation] save against your class DC; this is an incapacitation effect.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}."
+                    "Note": "If the Strike hits, the creature must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation] save against your class DC; this is an incapacitation effect.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.</p>\n<p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 2}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3}."
                 },
                 "DoubleSlice": {
                     "SecondAttackLabel": "Drugi cios Podwójnego Cięcia"
@@ -2834,7 +2834,7 @@
                     "Spellshot": "Droga Czarostrzału (Archetyp)"
                 },
                 "FinalShot": {
-                    "Note": "Regardless of your roll, after the attack you're @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the start of your next turn and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.",
+                    "Note": "Regardless of your roll, after the attack you're @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the start of your next turn and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
                     "NoteFailure": "The weapon misfires."
                 }
             },
@@ -3299,8 +3299,8 @@
                 "SimpleMartialTwoHandedMeleeWeapons": "Prosta i Wojskowa Dwuręczna Broń Biała"
             },
             "MechanicalSymbiosis": {
-                "FailureNote": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}",
-                "CriticalFailureNote": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}"
+                "FailureNote": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}",
+                "CriticalFailureNote": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 2}"
             },
             "MechanicalTorch": {
                 "Label": "Mechanical Torch is lit",
@@ -3331,7 +3331,7 @@
                     "TwoActionLabel": "One Inch Punch (Two Actions)"
                 },
                 "StunningFist": {
-                    "Note": "Cel musi zdać rzut obronny @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true] against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure)."
+                    "Note": "Cel musi zdać rzut obronny @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true] against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3} on a critical failure)."
                 },
                 "WolfDrag": {
                     "Note": "If the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}."
@@ -3547,7 +3547,7 @@
                     "DistortionLens": "The lens can interfere with creatures as well as attacks. Once during a Medium or smaller ally's move action, the ally can move into and out of the lens's square without that square counting against the total distance moved. Conversely, the lens is difficult terrain for your enemies.",
                     "EntropicWheel": "You gain two motes instead of one when you Cast the Spell and each time the wheel gains another mote.",
                     "Figment": "When you amp the spell, you can create a particularly distracting illusion as part of its normal effects. Choose an unoccupied square within the spell's range. The illusion in that square provides flanking for a single melee attack made before the beginning of your next turn. If you Sustain the spell, the details of the illusion change and shift to keep your enemies unsettled; the flanking illusion's duration extends until the beginning of your next turn and you can move it to any unoccupied square in the spell's range. The flanking illusion can't provide its benefit against any creature who has disbelieved the figment.",
-                    "ForbiddenThought": "Your telepathic push is particularly shocking to those who resist it. If the target fails its save, it's also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.",
+                    "ForbiddenThought": "Your telepathic push is particularly shocking to those who resist it. If the target fails its save, it's also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
                     "ForeseeThePath": "The spell has the same result on a failure as on a success (but still no effect on a critical failure). Each time you Sustain the Spell, you can choose an additional ally to target, granting them the same benefit as the initial target ally.",
                     "Frostbite": {
                         "Base": "You drain thermal energy at a distance, using what you plunder to replenish yourself. The orb deals 3k4 cold damage. You gain temporary Hit Points equal to half the damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.",
@@ -3611,7 +3611,7 @@
                         "Heightened": "The damage increases by 2k6 instead of by 1k6."
                     },
                     "TelekineticRend": {
-                        "Base": "Your thoughts expand in scope and power. The bursts deal 1k6 bludgeoning damage and 1k6 slashing damage, instead of the usual damage. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.",
+                        "Base": "Your thoughts expand in scope and power. The bursts deal 1k6 bludgeoning damage and 1k6 slashing damage, instead of the usual damage. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
                         "Heightened": "Both types of damage increase by 1k6 instead of just one. Add a third non-overlapping @Template[type:burst|distance:5] to the area."
                     },
                     "TesseractTunnel": "Physical movement is no longer necessary to connect two points in space. When you cast tesseract tunnel, you simply create a tunnel that ends in a square within a range equal to your Speed; you can choose to immediately teleport to the space at the far end of the tunnel. Furthermore, the tunnel can be traversed in both directions, instead of only from entrance to exit. Finally, the spell's duration changes to 1 minute. You can Dismiss the spell.",
@@ -3693,8 +3693,8 @@
             },
             "RelicGift": {
                 "DivineRetribution": {
-                    "CriticalSuccess": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn on a critical hit.",
-                    "Success": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn on a hit."
+                    "CriticalSuccess": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} until the start of your next turn on a critical hit.",
+                    "Success": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} until the start of your next turn on a hit."
                 }
             },
             "ResonantReflection": {
@@ -3736,7 +3736,7 @@
                     },
                     "Enfeebled": {
                         "Label": "Enfeebled",
-                        "Note": "The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}."
+                        "Note": "The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}."
                     },
                     "Label": "Debilitation",
                     "OffGuard": {
@@ -4400,7 +4400,7 @@
                 }
             },
             "VitalityManipulationStance": {
-                "Note": "When you use Stunning Fist, instead of saving against being stunned, you can choose to have the target make a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] save against your class DC with the following results. You must choose to do this before the target rolls its save.</p><hr><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target's muscles become temporarily weaker. For 1 round, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and any time it attempts to take an action with the manipulate trait, the action is disrupted unless it succeeds at a flat check with a DC equal to 5 + its enfeebled value.</p><p><strong>Porażka</strong> As success, but the duration is 1 minute.</p><p><strong>Krytyczna Porażka</strong> As success, but the duration is 1 minute, the flat check is DC 11, and the target takes –10-foot status penalty to all Speeds for the duration.</p>",
+                "Note": "When you use Stunning Fist, instead of saving against being stunned, you can choose to have the target make a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] save against your class DC with the following results. You must choose to do this before the target rolls its save.</p><hr><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target's muscles become temporarily weaker. For 1 round, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2}, and any time it attempts to take an action with the manipulate trait, the action is disrupted unless it succeeds at a flat check with a DC equal to 5 + its enfeebled value.</p><p><strong>Porażka</strong> As success, but the duration is 1 minute.</p><p><strong>Krytyczna Porażka</strong> As success, but the duration is 1 minute, the flat check is DC 11, and the target takes –10-foot status penalty to all Speeds for the duration.</p>",
                 "StrikeLabel": "Vitality Blast"
             },
             "WardMedic": {

@@ -3,6 +3,7 @@ replacement_patterns = [
     (r' -(\d+)', r' –\1'),
     (r'(\S)—(\S)', r'\1 — \2'),
     (r'([„”“])', r'"'),
+    (r'>\n<', r'><'),
     # Ordinals
     (r'(\d+)(st|nd|rd|th)', r'\1.'),
     (r'(\d+\.)-Level', r'\1 Poziomu.'),

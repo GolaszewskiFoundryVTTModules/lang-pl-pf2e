@@ -200,6 +200,9 @@
                 "spell->Augment Summoning": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tWzxuJdbXqvskdIo]\nAugment Summoning"
                 },
+                "spell->Floating Disk": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.LvezN4a3kYf1OHMg]\nFloating Disk"
+                },
                 "spell->Light": {
                     "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
                 },
@@ -772,7 +775,7 @@
         "Dahak's Shell": {
             "name": "Dahak's Shell",
             "description": "<p>A ring of eight dragon pillar replicas mark the border of a dome of magical prismatic energy that entirely contains the Fortress of Sorrow.</p>",
-            "disable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[type:thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (mistrzostwo) check or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/br 1d4 #rounds]]{1k4 rounds}.</p>",
+            "disable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[type:thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (mistrzostwo) check or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (6. level; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/br 1d4 #rounds]]{1k4 rounds}.</p>",
             "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii}</p>",
             "items": {
                 "strike-ranged->Eye Beam": {
@@ -781,7 +784,7 @@
                 },
                 "action->Prismatic Beam": {
                     "name": "Prismatic Beam",
-                    "description": "<p><strong>Aktywator</strong> a creature attempts and fails to disable one of the shell colors via Thievery or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p>\n<hr />\n<p><strong>Efekt</strong> Dahak's shell Strikes the triggering creature with a random eye beam. Roll [[/r 1d8 #Eye Beam]] to determine the color:</p>\n<ol>\n<li>Red</li>\n<li>Orange</li>\n<li>Yellow</li>\n<li>Green</li>\n<li>Blue</li>\n<li>Indigo</li>\n<li>Violet</li>\n<li>Black</li>\n</ol>"
+                    "description": "<p><strong>Aktywator</strong> a creature attempts and fails to disable one of the shell colors via Thievery or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii}</p>\n<hr />\n<p><strong>Efekt</strong> Dahak's shell Strikes the triggering creature with a random eye beam. Roll [[/r 1d8 #Eye Beam]] to determine the color:</p>\n<ol>\n<li>Red</li>\n<li>Orange</li>\n<li>Yellow</li>\n<li>Green</li>\n<li>Blue</li>\n<li>Indigo</li>\n<li>Violet</li>\n<li>Black</li>\n</ol>"
                 },
                 "action->Shell Defense": {
                     "name": "Shell Defense",
@@ -824,7 +827,7 @@
         "Dahak's Skull": {
             "name": "Dahak's Skull",
             "description": "<p>A pair of magical gems inside the dragon skull's eye sockets act as magical sensors with a 30-foot radius.</p>",
-            "disable": "<p>@Check[type:thievery|dc:27|name:Pry Out the Embedded Gems|traits:complex,magical,fire,trap,hazard] (eksperctwo) two times to pry the gems embedded deep in the skull's eye sockets without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level, counteract DC 22) twice to dispel both eyes.</p>",
+            "disable": "<p>@Check[type:thievery|dc:27|name:Pry Out the Embedded Gems|traits:complex,magical,fire,trap,hazard] (eksperctwo) two times to pry the gems embedded deep in the skull's eye sockets without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level, counteract DC 22) twice to dispel both eyes.</p>",
             "routine": "<p>(2 akcje) On its initiative, Dahak's skull fires up to two eye beams; it must target a different creature with each attack. The eye beams can't target creatures directly below the skull.</p>",
             "stealth": "<p>but @Check[type:perception|dc:24|name:Notice Lights in Eyes|traits:complex,magical,fire,trap,hazard] to notice that the fiery lights within the skull's eye sockets seem to be looking around the room.</p>",
             "items": {
@@ -1020,7 +1023,7 @@
         "Dragon Pillar": {
             "name": "Dragon Pillar",
             "description": "<p>A 10-foot-tall wooden pole topped by a wooden carving of Dahak's head. Each dragon pillar's head has been treated with something to give it a distinct color, as indicated in the specific encounter, but regardless of color, plumes of smoke waft up from the mouth.</p>",
-            "disable": "<p>@Check[type:athletics|dc:26|name:Push the Pillar Over|traits:complex,magical,trap,hazard] (eksperctwo) to push the pillar over, or @Check[type:thievery|dc:26|name:Erase Magic Runes|traits:complex,magical,trap,hazard] (eksperctwo) on the pillar to erase the magic runes that power it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 22) to dispel the pillar's magic.</p>",
+            "disable": "<p>@Check[type:athletics|dc:26|name:Push the Pillar Over|traits:complex,magical,trap,hazard] (eksperctwo) to push the pillar over, or @Check[type:thievery|dc:26|name:Erase Magic Runes|traits:complex,magical,trap,hazard] (eksperctwo) on the pillar to erase the magic runes that power it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 22) to dispel the pillar's magic.</p>",
             "reset": "<p>The dragon pillar deactivates and resets as soon as it perceives no appropriate targets in range.</p>",
             "routine": "<p>(1 akcja) On its initiative, the dragon pillar fires an eye beam at the closest target within 120 feet.</p>",
             "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii}</p>",
@@ -1938,6 +1941,10 @@
                 "spell->Dimension Door": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
                 },
+                "spell->Invisibility Sphere": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.I0j56TNRmGcTyoqJ]\nInvisibility Sphere",
+                    "target": "you and any number of creatures in range"
+                },
                 "spell->Inveigle": {
                     "target": "1 creature of a level no greater than double the inveigle ritual's rank"
                 },
@@ -2091,10 +2098,12 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.cLZrOihPht5M7eTw]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 4k8 fire damage, 4 persistent fire damage, and 4 fire splash damage. You gain a +3 item bonus to attack rolls.</p>"
                 },
                 "weapon->Bottled Lightning (Major) [Infused]": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]\nBottled Lightning (Potężny) [Infused]"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]\nBottled Lightning (Potężny) [Infused]",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rpbbfkexLhtadBDV]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 4k6 electricity damage and 4 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn. You gain a +3 item bonus to attack rolls.</p>"
                 },
                 "weapon->Frost Vial (Major) [Infused]": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\nFrost Vial (Potężny) [Infused]"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\nFrost Vial (Potężny) [Infused]",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4k6 cold damage and 4 cold splash damage, and the target takes a –15-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.4G9qnI0oRyL6eKFQ]{Efekt: Frost Vial (Potężny)}</p>"
                 },
                 "equipment->Alchemist's Tools": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]\nAlchemist's Tools",
@@ -2108,10 +2117,12 @@
                     "name": "Syringe Filled with Unstable Mutagen"
                 },
                 "consumable->Bestial Mutagen (Major) [Infused]": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nS75vsM3x5jxlUqn]\nBestial Mutagen (Potężny) [Infused]"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nS75vsM3x5jxlUqn]\nBestial Mutagen (Potężny) [Infused]",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nS75vsM3x5jxlUqn]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p>\n<hr />\n<p>Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy.</p>\n<p><strong>Benefit</strong> You gain a +4 item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack (@Damage[1d8[slashing]] damage) with the agile trait and a jaws unarmed attack (@Damage[1d10[piercing]] damage). You gain the weapon specialization with the claws and jaws, or greater weapon specialization, if you already have weapon specialization with these unarmed attacks.</p>\n<p><strong>Drawback</strong> You take a –1 penalty to AC and a –2 penalty to Reflex saves.</p>\n<p><strong>Duration</strong> 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.1ouUo8lLK6H79Rqh]{Efekt: Bestial Mutagen (Potężny)}</p>"
                 },
                 "consumable->Juggernaut Mutagen (Major) [Infused]": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1kNp6yOS0aZPBPzZ]\nJuggernaut Mutagen (Potężny) [Infused]"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1kNp6yOS0aZPBPzZ]\nJuggernaut Mutagen (Potężny) [Infused]",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.1kNp6yOS0aZPBPzZ]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<hr />\n<p>After you drink this mutagen, your body becomes thick and sturdy. You exhibit a healthy glow, though you tend to be ponderous and unobservant.</p>\n<p><strong>Benefit</strong> You gain a +4 item bonus to Fortitude saves and 45 temporary Hit Points. Whenever you are at maximum Hit Points for at least 1 full minute, you regain the temporary Hit Points. When you roll a success on a Fortitude save you get a critical success instead, and you critical failures on Fortitude saves become failures instead.</p>\n<p><strong>Drawback</strong> You take a –2 penalty to Will saves, Perception checks and initiative rolls.</p>\n<p><strong>Duration</strong> 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.2PNo8u4wxSbz5WEs]{Efekt: Juggernaut Mutagen (Potężny)}</p>"
                 },
                 "consumable->Elixir of Life (True) [Infused]": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]\nElixir of Life (True) [Infused]",
@@ -2521,6 +2532,9 @@
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
                 },
+                "equipment->Wand of Smoldering Fireballs (7th-Rank Spell)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YR8IAV94fPo0kfBz]\n<p>This blackened, heavily burned stick smells faintly of bat guano.</p>\n<p><strong>Aktywacja</strong> Cast a Spell</p>\n<p><strong>Częstotliwość</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Efekt</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} at 7. rank.</p>\n<p>Each creature that fails its save takes @Damage[3d6[persistent,fire]] damage.</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply a casting of fireball of the appropriate rank.</p>"
+                },
                 "strike-melee->Thundering Maul": {
                     "name": "Thundering Maul"
                 },
@@ -2668,7 +2682,7 @@
         "Lesser Dragonstorm": {
             "name": "Lesser Dragonstorm",
             "description": "<p>A small-scale version of a dragonstorm-a churning vortex of wind infused with fire, acid, lightning, poison, and ice-fills Alseta's Ring.</p>",
-            "disable": "<p>@Check[type:religion|dc:40|name:Call for Divine Intervention] (legendarność) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[type:thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendarność) to deactivate Vengegate while the manifestation is forcing it open, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10. level; DC 40) to counteract the lesser dragonstorm.</p>",
+            "disable": "<p>@Check[type:religion|dc:40|name:Call for Divine Intervention] (legendarność) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[type:thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendarność) to deactivate Vengegate while the manifestation is forcing it open, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (10. level; DC 40) to counteract the lesser dragonstorm.</p>",
             "routine": "<p>(1 akcja) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take @Damage[2d8[acid],2k8[cold],2k8[electricity],2k8[fire],2k8[poison]]{10k8 damage} (@Check[type:reflex|dc:46|basic:true]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>",
             "stealth": "<p>(legendarność)</p>",
             "items": {
@@ -2774,7 +2788,7 @@
         "Luminous Ward": {
             "name": "Luminous Ward",
             "description": "<p>A burst of radiance explodes from the door.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:|traits:action:disable-a-device] (mistrzostwo) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9. level; counteract DC 38) to counteract the ward</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:|traits:action:disable-a-device] (mistrzostwo) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (9. level; counteract DC 38) to counteract the ward</p>",
             "reset": "<p>The trap resets after 1 hour.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
@@ -2979,7 +2993,7 @@
                 },
                 "action->Contingency": {
                     "name": "Ewentualność",
-                    "description": "<p><strong>Aktywator</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Efekt</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level) attempts to counteract the triggering spell.</p>"
+                    "description": "<p><strong>Aktywator</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Efekt</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (7. level) attempts to counteract the triggering spell.</p>"
                 },
                 "action->Extra Reaction": {
                     "name": "Extra Reaction",
@@ -3686,6 +3700,10 @@
                 "consumable->Lethargy Poison": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 4 hours</p>\n<p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (1 runda)</p>\n<p><strong>Stadium 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} with no Perception check to wake up (1 runda)</p>\n<p><strong>Stadium 4</strong> unconscious with no Perception check to wake up ([[/br 1d4 #hours]]{1k4 hours}).</p>"
                 },
+                "consumable->Purple Worm Venom": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi]\nPurple Worm Venom",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.iRDCa4OVSTGUD3vi]\n<p>Venom from enormous purple worms leaves a victim weakened.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[6d6[poison]] damage and enfeebled 2 (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[8d6[poison]] damage and enfeebled 2 (1 runda)</p>"
+                },
                 "treasure->Ruby and Sapphire ring": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Mm3xgz27Q94wZhti]\nRuby and Sapphire ring"
                 },
@@ -4019,7 +4037,7 @@
         "Seismic Spears Trap": {
             "name": "Seismic Spears Trap",
             "description": "<p>Lines of searing lava lance through the area, causing targets to shake as if caught in an earthquake and potentially become petrified.</p>",
-            "disable": "<p>@Check[type:thievery|dc:43|name:Disable the Wards|traits:magical,trap] (mistrzostwo) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9. level; counteract DC 38) to counteract the ward.</p>",
+            "disable": "<p>@Check[type:thievery|dc:43|name:Disable the Wards|traits:magical,trap] (mistrzostwo) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (9. level; counteract DC 38) to counteract the ward.</p>",
             "reset": "<p>The trap resets after 1 minute.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
@@ -4205,7 +4223,7 @@
             "name": "Tarrasque, The Armageddon Engine",
             "hpDetails": "regeneration 50",
             "languages": "(can't speak any language)",
-            "publicNotes": "<p>The most powerful spawn is Tarrasque, whose legend spread across countless worlds beyond Golarion. Its destruction of the nation of Ninshabur and its march across Avistan in –632 AR culminated in the destruction of the flying Shory city of Kho before this spawn was sealed away in a remote cavern.</p>\n<hr />\n<p>The spawn are titanic terrors of immense size and strength that live only to destroy. Tarrasque and Xotani are but two of Rovagug's spawn. Others, including Chemnosit (the Monarch Worm), Kothogaz (the Dance of Disharmony), and Volnagur (the End-Singer) hold places of horror in the history of various regions, but the most famed is Ulunat (the Unholy First), whose beetle-like carcass remains sprawled in Sothis, the capital of Osirion.</p>",
+            "publicNotes": "<p>The most powerful spawn is Tarrasque, whose legend spread across countless worlds beyond Golarion. Its destruction of the nation of Ninshabur and its march across Avistan in –632 RA culminated in the destruction of the flying Shory city of Kho before this spawn was sealed away in a remote cavern.</p>\n<hr />\n<p>The spawn are titanic terrors of immense size and strength that live only to destroy. Tarrasque and Xotani are but two of Rovagug's spawn. Others, including Chemnosit (the Monarch Worm), Kothogaz (the Dance of Disharmony), and Volnagur (the End-Singer) hold places of horror in the history of various regions, but the most famed is Ulunat (the Unholy First), whose beetle-like carcass remains sprawled in Sothis, the capital of Osirion.</p>",
             "saveDetails": "statusowe +2 do wszystkich rzutów obronnych przeciw magii",
             "items": {
                 "strike-melee->Jaws": {
@@ -4537,7 +4555,7 @@
                 },
                 "action->Scoff at the Divine": {
                     "name": "Scoff at the Divine",
-                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability.</p>\n<p><strong>Wymagania</strong> Vaklish has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}.</p>\n<hr />\n<p><strong>Efekt</strong> Vaklish expends a spell slot that could be used to cast <em>dispel magic</em> and attempts to counteract the triggering spell or ability.</p>\n<p>Vaklish can't Scoff at the Divine for [[/br 1d4 #Recharge Scoff at the Divine]]{1k4 rounds}.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability.</p>\n<p><strong>Wymagania</strong> Vaklish has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii}.</p>\n<hr />\n<p><strong>Efekt</strong> Vaklish expends a spell slot that could be used to cast <em>dispel magic</em> and attempts to counteract the triggering spell or ability.</p>\n<p>Vaklish can't Scoff at the Divine for [[/br 1d4 #Recharge Scoff at the Divine]]{1k4 rounds}.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Vaklish takes on the appearance of any Medium humanoid. This doesn't change Valish's Speed or the attack and damage modifiers with his Strikes but might change the damage type his Strikes deal (typically to bludgeoning). He typically loses his fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -4569,7 +4587,7 @@
                     "name": "Zębiska"
                 },
                 "strike-ranged->Web": {
-                    "name": "Web"
+                    "name": "Sieć"
                 },
                 "action->Hostile Juxtaposition": {
                     "name": "Hostile Juxtaposition",
@@ -4653,7 +4671,7 @@
         "Vision of Dahak": {
             "name": "Vision of Dahak",
             "description": "<p>Blasts of fire and smoke pour out of the tunnel walls to coalesce into the burning form of Dahak himself; a PC who succeeds at a @Check[type:religion|dc:20|name:Recognize Depiction of Dahak|traits:hazard,complex,fire,magical,trap,action:recall-knowledge] check to Recall Knowledge notes that the fiery dragon closely resembles classical depictions of the draconic god of destruction.</p>",
-            "disable": "<p>@Check[type:religion|dc:26|name:Counteract Dahak With Prayers|traits:complex,fire,magical,trap,hazard] (eksperctwo) to utter prayers to a non-evil deity to counteract Dahak's presence (prayers to Apsu allow this check to be made if the character is merely trained in Religion), @Check[type:thievery|dc:30|name:Divert the Hazard's Energy Back|traits:complex,fire,magical,trap,hazard] (eksperctwo) to divert the hazard's energies back upon themselves, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 26).</p>",
+            "disable": "<p>@Check[type:religion|dc:26|name:Counteract Dahak With Prayers|traits:complex,fire,magical,trap,hazard] (eksperctwo) to utter prayers to a non-evil deity to counteract Dahak's presence (prayers to Apsu allow this check to be made if the character is merely trained in Religion), @Check[type:thievery|dc:30|name:Divert the Hazard's Energy Back|traits:complex,fire,magical,trap,hazard] (eksperctwo) to divert the hazard's energies back upon themselves, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 26).</p>",
             "reset": "<p>The vision of Dahak deactivates and resets automatically once no creatures remain within the Huntergate way station.</p>",
             "routine": "<p>(2 akcje) The vision of Dahak manifests next to the creature that is closest to the center of the way station, then uses its Breath Weapon in a direction that catches the most possible targets in its area.</p>",
             "stealth": "<p>(eksperctwo)</p>",
@@ -4859,7 +4877,7 @@
         "Wrath of the Destroyer": {
             "name": "Wrath of the Destroyer",
             "description": "<p>These heavy doors, carved with an image of Dahak, echo with a hatred so powerful that it can kill anyone who comes nearby, manifesting a vision of Dahak's head emerging from the doors to strike at a foe.</p>",
-            "disable": "<p>@Check[type:thievery|dc:29|name:Disrupt the Divine Magic|traits:complex,magical,trap,hazard] (eksperctwo) to disrupt the divine magic, @Check[type:religion|dc:29|name:Placate Wrathful Energies|traits:complex,magical,trap,hazard] (eksperctwo) to placate the wrathful energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26).</p>",
+            "disable": "<p>@Check[type:thievery|dc:29|name:Disrupt the Divine Magic|traits:complex,magical,trap,hazard] (eksperctwo) to disrupt the divine magic, @Check[type:religion|dc:29|name:Placate Wrathful Energies|traits:complex,magical,trap,hazard] (eksperctwo) to placate the wrathful energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 26).</p>",
             "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature being in range.</p>",
             "routine": "<p>(1 akcja) On its initiative, the wrath of the destroyer targets the closest target in area <strong>C6</strong> with Face of the Fatal Divine.</p>",
             "stealth": "<p>(eksperctwo) to notice subtle vapors of magical energy seething across the doors</p>",
@@ -4924,7 +4942,7 @@
             "name": "Xotani, The Firebleeder",
             "hpDetails": "regeneration 25",
             "languages": "can't speak any language",
-            "publicNotes": "<p>A monstrosity of living flame and magma, Xotani may be the weakest of Rovagug's spawn, but it remains a formidable threat. Xotani was slain in 2104 AR by an alliance of spellcasters, but recently its deathlike slumber was interrupted. Its corpse twitches, signaling that it might be close to returning.</p>\n<hr />\n<p>The spawn are titanic terrors of immense size and strength that live only to destroy. Tarrasque and Xotani are but two of Rovagug's spawn. Others, including Chemnosit (the Monarch Worm), Kothogaz (the Dance of Disharmony), and Volnagur (the End-Singer) hold places of horror in the history of various regions, but the most famed is Ulunat (the Unholy First), whose beetle-like carcass remains sprawled in Sothis, the capital of Osirion.</p>",
+            "publicNotes": "<p>A monstrosity of living flame and magma, Xotani may be the weakest of Rovagug's spawn, but it remains a formidable threat. Xotani was slain in 2104 RA by an alliance of spellcasters, but recently its deathlike slumber was interrupted. Its corpse twitches, signaling that it might be close to returning.</p>\n<hr />\n<p>The spawn are titanic terrors of immense size and strength that live only to destroy. Tarrasque and Xotani are but two of Rovagug's spawn. Others, including Chemnosit (the Monarch Worm), Kothogaz (the Dance of Disharmony), and Volnagur (the End-Singer) hold places of horror in the history of various regions, but the most famed is Ulunat (the Unholy First), whose beetle-like carcass remains sprawled in Sothis, the capital of Osirion.</p>",
             "senses": "blindsight (precise) 120 feet",
             "tokenName": "Xotani",
             "items": {
@@ -5050,10 +5068,12 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Ta flaszka wypełniona żrącym kwasem zadaje 1 obrażenie od kwasu, 3k6 przewlekłych obrażeń od kwasu oraz 3 rozpryskowe obrażenia od kwasu. You gain a +2 item bonus to attack rolls.</p>"
                 },
                 "weapon->Frost Vial (Greater) [Infused]": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Większy) [Infused]"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Większy) [Infused]",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3k6 cold damage and 3 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{Efekt: Frost Vial (Większy)}</p>"
                 },
                 "weapon->Thunderstone (Greater) [Infused]": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dsMkvuLgpOOGLWDy]\nThunderstone (Większy) [Infused]"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dsMkvuLgpOOGLWDy]\nThunderstone (Większy) [Infused]",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dsMkvuLgpOOGLWDy]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[type:fortitude|dc:28|name:Greater Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls. The bomb deals 3k4 sonic damage and 3 sonic splash damage, and the DC is 28.</p>"
                 },
                 "weapon->Alchemist's Fire (Greater) [Infused]": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]\nAlchemist's Fire (Większy) [Infused]",

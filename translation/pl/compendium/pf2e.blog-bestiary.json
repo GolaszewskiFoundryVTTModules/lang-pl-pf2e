@@ -408,13 +408,17 @@
                 "strike-melee->Fist": {
                     "name": "Pięść"
                 },
+                "strike-melee->Jaws": {
+                    "name": "Jaws",
+                    "description": "<p><strong>Requirement</strong> The goblin zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p>"
+                },
                 "action->Alchemical Rupture": {
                     "name": "Alchemical Rupture",
-                    "description": "<p>When the goblin zombie is reduced to 0 Hit Points, an alchemical device jammed in its belly ruptures. Roll 1k4 and consult the following for the effect: 1 creatures in a @Template[type:emanation|distance:5] take @Damage[1d3[persistent,acid]] damage; 2 creatures in a @Template[type:emanation|distance:5] take @Damage[1d4[fire]] damage (@Check[type:reflex|dc:16|basic:true] save); 3 creatures in a @Template[type:emanation|distance:5] take @Damage[1d4[poison]] damage (@Check[type:fortitude|dc:16|basic:true] save); 4 smoke billows out in a @Template[type:emanation|distance:5] for 1 round (creatures in that area are concealed, and all other creatures are concealed to them).</p>"
+                    "description": "<p>When the goblin zombie is reduced to 0 Hit Points, an alchemical device jammed in its belly ruptures. Roll 1k4 and consult the following for the effect:</p><table class=\"pf2e\"><thead><tr><th>[[/br 1d4 #Alchemical Rupture]]</th><th>Alchemical Effect</th></tr></thead><tbody><tr><td>1</td><td>creatures in a @Template[type:emanation|distance:5] take @Damage[1d3[persistent,acid]|traits:area-damage] damage</td></tr><tr><td>2</td><td>creatures in a 5-foot emanation take @Damage[1d4[fire]|traits:area-damage] damage (@Check[type:reflex|dc:16|basic:true] save)</td></tr><tr><td>3</td><td>creatures in a 5-foot emanation take @Damage[1d4[poison]|traits:area-damage] damage (@Check[type:fortitude|dc:16|basic:true] save)</td></tr><tr><td>4</td><td>smoke billows out in a 5-foot emanation for 1 round (creatures in that area are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}, and all other creatures are concealed to them)</td></tr></tbody></table>"
                 },
-                "action->Jaws": {
-                    "name": "Szczęki",
-                    "description": "<p><strong>Requirement</strong> The goblin zombie has a creature grabbed or restrained</p>\n<hr />\n<p><strong>Efekt</strong> The goblin zombie makes a jaws unarmed melee Strike against the grabbed or restrained creature with an attack modifier of +7 that deals @Damage[(1d8+3)[piercing]] damage.</p>"
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A goblin zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions.</p>"
                 }
             }
         },
@@ -611,7 +615,7 @@
                 },
                 "equipment->Spellbook": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\n<p><strong>Sztuczki</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]{Otumanienie}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Światło}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]{Telekinetyczna Dłoń}</p>\n<hr />\n<p><strong>Krąg 1.</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]{Oszałamiające Barwy}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Grad Magii}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.xqmHD8JIjak15lRk]{Widmowy Sługa}</p>\n<hr />\n<p><strong>Krąg 2.</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{Translate}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\n<p><strong>Sztuczki</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]{Otumanienie}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Światło}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]{Telekinetyczna Dłoń}</p>\n<hr />\n<p><strong>Krąg 1.</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]{Oszałamiające Barwy}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Grad Magii}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.xqmHD8JIjak15lRk]{Widmowy Sługa}</p>\n<hr />\n<p><strong>Krąg 2.</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{Translacja}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature}</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]] Hit Points.</p>"

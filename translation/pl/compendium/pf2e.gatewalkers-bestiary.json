@@ -483,7 +483,7 @@
         "Cordon Alarm": {
             "name": "Cordon Alarm",
             "description": "<p>A hempen rope tied between trees emanates an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}, cylindrical barrier that sounds an alarm when crossed.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to move the rope without setting of the alarm, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to disable the rope's magic</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to move the rope without setting of the alarm, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (1. level; counteract DC 16) to disable the rope's magic</p>",
             "reset": "<p>The alarm resets immediately. Multiple breaches can cause the alarm to sound in multiple places at the same time, though the alarm can still be triggered only once per round.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
@@ -643,7 +643,7 @@
         "Dream-Poisoned Door": {
             "name": "Dream-Poisoned Door",
             "description": "<p>Eerie shapes manifest within the doorway as it's opened, conjuring a group of four @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Y9SDbANT1DWI1DKU]{Animate Dreams} into being.</p>",
-            "disable": "<p>@Check[type:occultism|dc:30] (eksperctwo) to concentrate on the eldritch energies and diffuse them through meditation, @Check[type:thievery|dc:35] (mistrzostwo) to scratch warding runes along the door's hinges and block dreams from manifesting, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6. level; counteract DC 30) to counteract the trap.</p>",
+            "disable": "<p>@Check[type:occultism|dc:30] (eksperctwo) to concentrate on the eldritch energies and diffuse them through meditation, @Check[type:thievery|dc:35] (mistrzostwo) to scratch warding runes along the door's hinges and block dreams from manifesting, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (6. level; counteract DC 30) to counteract the trap.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Manifest Dream Guardians": {
@@ -875,10 +875,12 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "consumable->Cognitive Mutagen (Moderate) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]\nCognitive Mutagen (Umiarkowany) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]\nCognitive Mutagen (Umiarkowany) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<hr />\n<p>Your mind becomes clear and cognition flows freely, but physical matters seem ephemeral.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Arcana, Crafting, Lore, Occultism, and Society checks and all checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Your critical failures on Recall Knowledge checks become failures instead.</p>\n<p><strong>Drawback</strong> You take a –2 penalty to weapon and unarmed attack rolls, Athletics checks, and acrobatics checks. You can carry 2 less Bulk than normal before becoming encumbered, and the maximum Bulk you can carry is reduced by 4.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ztxW3lBPRcesF7wK]{Efekt: Cognitive Mutagen (Umiarkowany)}</p>"
                 },
                 "consumable->Comprehension Elixir (Greater) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.OcBPjVplvy2GbQ8P]\nComprehension Elixir (Większy) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.OcBPjVplvy2GbQ8P]\nComprehension Elixir (Większy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.OcBPjVplvy2GbQ8P]\n<p>This bitter draught opens your mind to the potential of the written word. For the listed duration after drinking this elixir, you can understand any words you read, so long as they are written in a common language. This elixir doesn't automatically allow you to understand codes or extremely esoteric passages-you still need to attempt a skill check to Decipher Writing. The duration is 10 minutes.</p>"
                 },
                 "consumable->Elixir of Life (Moderate) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\nElixir of Life (Umiarkowany) (Infused)",
@@ -891,7 +893,8 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.IzniYBi8QYxHnffr]\nVat-Grown Brain (Infused)"
                 },
                 "consumable->Winter Wolf Elixir (Lesser) (Infused)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n9VrmK9Us0viv20P]\nWinter Wolf Elixir (Mniejszy) (Infused)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n9VrmK9Us0viv20P]\nWinter Wolf Elixir (Mniejszy) (Infused)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.n9VrmK9Us0viv20P]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p>\n<p>This elixir warms your core and improves your circulation. For 24 hours, you are protected from the effects of severe cold.</p>"
                 },
                 "strike-melee->Dagger": {
                     "name": "Sztylet"
@@ -984,7 +987,7 @@
         "Freezing Floor": {
             "name": "Freezing Floor",
             "description": "<p>The white brick floor radiates ice-cold air.</p>",
-            "disable": "<p>@Check[type:thievery|dc:24] (eksperctwo) to erase a rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 24) to dispel a rune; all three runes must be erased or dispelled to disable the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:24] (eksperctwo) to erase a rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 24) to dispel a rune; all three runes must be erased or dispelled to disable the trap.</p>",
             "hpDetails": "to destroy the bricks and disable the trap;",
             "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
             "routine": "<p>(3 actions) With each action, the trap attempts a frost jet Strike against any creature standing on the white bricks. The trap loses 1 action per disabled or dispelled rune.</p>",
@@ -1807,7 +1810,7 @@
         "Scholar's Bane": {
             "name": "Scholar's Bane",
             "description": "<p>Illusion magic overwhelms the minds of particularly intelligent creatures, forcing them to relive every intellectual failure and shame they've ever suffered.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie) to carve out one eye sensor, @Check[type:arcana|dc:22] or @Check[type:occultism|dc:22] (wytrenowanie) to blank out one's mind (disables trap for self only), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 20) to counteract one eye sensor</p>",
+            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie) to carve out one eye sensor, @Check[type:arcana|dc:22] or @Check[type:occultism|dc:22] (wytrenowanie) to blank out one's mind (disables trap for self only), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 20) to counteract one eye sensor</p>",
             "reset": "<p>The trap can function for 10 rounds, which don't need to be consecutive, before it must recharge for 24 hours.</p>",
             "routine": "<p>(4 actions) The trap uses each action to target a creature in the room with an Intelligence score of 10 or greater. A target must succeed at a @Check[type:will|dc:22] save or take @Damage[(2d8+2)[mental]]. On a critical failure, the creature takes a &ndash;10-foot status penalty to Speed for 1 minute as they stagger under the weight of their failures. The trap loses 1 action for each eye sensor disabled or destroyed.</p>",
             "stealth": "<p>(wytrenowanie) to notice magical sensors hidden within four of the carvings' eyes</p>",
@@ -1821,7 +1824,7 @@
         "Shadow Guards": {
             "name": "Shadow Guards",
             "description": "<p>Shadowy caricatures of elves peel themselves from the floor and attack everyone in the room.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:16] to move through the room without touching any of the runes, followed by @Check[type:thievery|dc:18] (wytrenowanie) to carve them out of the wood without triggering them; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to counteract the runes</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:16] to move through the room without touching any of the runes, followed by @Check[type:thievery|dc:18] (wytrenowanie) to carve them out of the wood without triggering them; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (1. level; counteract DC 16) to counteract the runes</p>",
             "reset": "<p>The trap deactivates and resets after 1 minute. The drawings cannot pursue characters out of the room.</p>",
             "routine": "<p>(1 akcja) The drawings stab at each character in the room with spears drawn from sharp lines.</p>",
             "stealth": "<p>(wytrenowanie) to notice the runes concealed among the drawings</p>",
@@ -1838,7 +1841,7 @@
         "Shadowshift Field": {
             "name": "Shadowshift Field",
             "description": "<p>Cross-planar seepage from the Oaksteward rebels' ritual causes shadowy warping effects to strain and damage living creatures in the forest clearing.</p>",
-            "disable": "<p>@Check[type:arcana|dc:17] (wytrenowanie) to will the Material Plane's hold on the area back into firmness and disable the effect for 1 hour, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 15) to end the effect permanently</p>",
+            "disable": "<p>@Check[type:arcana|dc:17] (wytrenowanie) to will the Material Plane's hold on the area back into firmness and disable the effect for 1 hour, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (1. level; counteract DC 15) to end the effect permanently</p>",
             "reset": "<p>This effect continues for 1 day, after which it ends and cannot be triggered again without another ritual.</p>",
             "routine": "<p>(1 akcja) Each creature in the clearing must attempt a @Check[type:fortitude|dc:17] save as the planar warping threatens to create microscopic tears inside their body. Fey, plant creatures, and druids are unaffected.</p>\n<hr>\n<p><strong>Krytyczny Sukces</strong> The creature is unaffected and immune for 24 hours. The land is healed [[/br 1d6]] points by the primal magic.</p>\n<p><strong>Sukces</strong> The creature is unaffected and immune to the effect for 24 hours.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[(1d6+3)[force]].</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(2d6+6)[force]].</p>",
             "stealth": "<p>(wytrenowanie) to notice the air and plants wavering and shifting</p>",
@@ -1852,7 +1855,7 @@
         "Shroud of Silence": {
             "name": "Shroud of Silence",
             "description": "<p>Sounds become muted in a 20-foot-wide, 100-foot-long segment of this street corridor.</p>",
-            "disable": "<p>@Check[type:occultism|dc:25] (eksperctwo) to twist the magic of the ley line around you, disabling the hazard for only you; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 23) to disable the hazard permanently</p>",
+            "disable": "<p>@Check[type:occultism|dc:25] (eksperctwo) to twist the magic of the ley line around you, disabling the hazard for only you; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 23) to disable the hazard permanently</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Hush": {

@@ -1,16 +1,16 @@
 replacement_patterns = [
     # Styling and punctuation
-    (r' -([0-9]+)', r' –\1'),
+    (r' -(\d+)', r' –\1'),
     (r'(\S)—(\S)', r'\1 — \2'),
     (r'([„”“])', r'"'),
     # Ordinals
-    (r'([0-9]+)(st|nd|rd|th)', r'\1.'),
-    (r'([0-9]+\.)-Level', r'\1 Poziomu.'),
-    (r'([0-9]+\.)-level', r'\1 poziomu.'),
-    (r'([0-9]+\.)-Rank', r'\1 Kręgu'),
-    (r'([0-9]+\.)-rank', r'\1 kręgu'),
+    (r'(\d+)(st|nd|rd|th)', r'\1.'),
+    (r'(\d+\.)-Level', r'\1 Poziomu.'),
+    (r'(\d+\.)-level', r'\1 poziomu.'),
+    (r'(\d+\.)-Rank', r'\1 Kręgu'),
+    (r'(\d+\.)-rank', r'\1 kręgu'),
     # Dies
-    (r'([0-9]*)d([0-9]+)', r'\1k\2'),
+    (r'(\d*)d(\d+)', r'\1k\2'),
     # Statuses
     (r'\{Invisible\}', r'{Niewidzialny}'),
     (r'\{Blinded\}', r'{Oślepiony}'),
@@ -41,15 +41,15 @@ replacement_patterns = [
     (r'\{Unconscious\}', r'{Nieprzytomny}'),
     (r'\{Undetected\}', r'{Niewykryty}'),
     (r'\{Unfriendly\}', r'{Nieprzyjazny}'),
-    (r'\{Enfeebled(| [0-9]+)\}', r'{Osłabiony\1}'),
-    (r'\{Drained(| [0-9]+)\}', r'{Wyniszczony\1}'),
-    (r'\{Stupified(| [0-9]+)\}', r'{Ogłupiony\1}'),
-    (r'\{Stunned(| [0-9]+)\}', r'{Ogłuszony\1}'),
-    (r'\{Wounded(| [0-9]+)\}', r'{Ranny\1}'),
-    (r'\{Dying(| [0-9]+)\}', r'{Umierający\1}'),
-    (r'\{Frightened(| [0-9]+)\}', r'{Przerażony\1}'),
-    (r'\{Quickened(| [0-9]+)\}', r'{Przyspieszony\1}'),
-    (r'\{Slowed(| [0-9]+)\}', r'{Spowolniony\1}'),
+    (r'\{Enfeebled(| \d+)\}', r'{Osłabiony\1}'),
+    (r'\{Drained(| \d+)\}', r'{Wyniszczony\1}'),
+    (r'\{Stupified(| \d+)\}', r'{Ogłupiony\1}'),
+    (r'\{Stunned(| \d+)\}', r'{Ogłuszony\1}'),
+    (r'\{Wounded(| \d+)\}', r'{Ranny\1}'),
+    (r'\{Dying(| \d+)\}', r'{Umierający\1}'),
+    (r'\{Frightened(| \d+)\}', r'{Przerażony\1}'),
+    (r'\{Quickened(| \d+)\}', r'{Przyspieszony\1}'),
+    (r'\{Slowed(| \d+)\}', r'{Spowolniony\1}'),
     # Initial Variants
     (r'\(Minor\)', r'(Drobny)'),
     (r'\(Lesser\)', r'(Mniejszy)'),
@@ -67,7 +67,7 @@ replacement_patterns = [
     (r'>Anathema<', r'>Anatemy<'),
     # Activation keywords
     (r'>Activate<', r'>Aktywacja<'),
-    (r'>Activate — ([a-zA-Z0-9 \p{L}]*)<', r'>Aktywacja — \1<'),
+    (r'>Activate — ([\p{L}\d ]*)<', r'>Aktywacja — \1<'),
     (r'>Trigger<', r'>Aktywator<'),
     (r'>Frequency<', r'>Częstotliwość<'),
     # Effect keywords
@@ -77,7 +77,7 @@ replacement_patterns = [
     (r'Crit Effect:', r'Efekt Krytyczny:'),
     (r'Effect:', r'Efekt:'),
     (r'>Maximum Duration<', r'>Maksymalny Czas Trwania<'),
-    (r'>(Prerequisites|Requirements)<', r'>Wymagania<'),
+    (r'>(Prerequisites|Requirements|Requirement)<', r'>Wymagania<'),
     (r'>Special<', r'>Specjalne<'),
     (r'>Craft Requirements<', r'>Wymagania Wytwarzania<'),
     (r'>Cost<', r'>Koszt<'),
@@ -121,11 +121,11 @@ replacement_patterns = [
     # Poisons diseases
     (r'>Saving Throw<', r'>Rzut Obronny<'),
     (r'>Onset<', r'>Nadejście Objawów<'),
-    (r'>Stage ([0-9]+)<', r'>Stadium \1<'),
+    (r'>Stage (\d+)<', r'>Stadium \1<'),
     (r'> carrier with no ill effect', r'> Bezobjawowy nosiciel'),
     (r'\(1 day\)', r'(1 dzień)'),
     (r'\(1 round\)', r'(1 runda)'),
-    (r'> ([0-9]+) rounds<', r'> \1 rund<'),
+    (r'> (\d+) rounds<', r'> \1 rund<'),
     (r'\(Injury\)', r'(Rana)'),
     (r'\(Contact\)', r'(Dotyk)'),
     (r'\(Inhaled\)', r'(Wdychanie)'),
@@ -163,7 +163,7 @@ replacement_patterns = [
     (r'<p><strong>Częstotliwość</strong> once per day, plus overcharge(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>'),
     # Effect details. Must be after effect.
-    (r'<p><strong>Efekt</strong> You cast (@UUID\[Compendium\.pf2e\.spells-srd\.Item\.([a-zA-Z0-9]*)\]\{([a-zA-Z0-9 \p{L}]*)\}).</p>',
+    (r'<p><strong>Efekt</strong> You cast (@UUID\[Compendium\.pf2e\.spells-srd\.Item\.([\w\d]*)\]\{([\p{L}\d ]*)\}).</p>',
         r'<p><strong>Efekt</strong> Rzucasz \1.</p>'),
     # Crafting
     (r'Supply a casting of the spell at the listed (rank|level)\.',
@@ -172,4 +172,6 @@ replacement_patterns = [
         r'Dostarcz rzucenie docelowego zaklęcia na odpowiednim kręgu.'),
     (r'Supply one casting of all listed levels of all listed spells\.',
         r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
+    # Lore and setting
+    (r'(\d+) AR([\W])', r'\1 RA\2'),
 ]

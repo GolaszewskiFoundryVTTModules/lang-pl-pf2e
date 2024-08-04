@@ -768,6 +768,9 @@
         "spell->Litany of Depravity": {
           "target": "1 good creature"
         },
+        "spell->Touch of Corruption": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jFmWSIpJGGebim6y]\nTouch of Corruption"
+        },
         "weapon->Bastard Sword": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6KWYmeRMxsQfWhhJ]\n<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>"
         },
@@ -1136,7 +1139,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AITVZmakiu3RgfKo]\n<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence}</p>"
         },
         "consumable->Shadow Essence (Applied to Bolts)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\nShadow Essence (Applied to Bolts)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\nShadow Essence (Applied to Bolts)",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\n<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
         },
         "treasure->Bejeweled Belt": {
           "name": "Bejeweled Belt"
@@ -2932,6 +2936,10 @@
         "spell->Tongues (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
         },
+        "spell->Sanctified Ground": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y3jlOfgsQH1JjkJE]\nSanctified Ground",
+          "cost": "1 vial of holy water"
+        },
         "spell->Disrupting Weapons": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2iQKhCQBijhj5Rf3]\nDisrupting Weapons",
           "target": "up to two weapons, each of which must be wielded by you or a willing ally, or else unattended"
@@ -3472,7 +3480,7 @@
         },
         "equipment->The Waxworks": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.HXvS7TIFFcioESqA]\n<p><strong>Suit</strong> Shield (Con)</p>\n<p><strong>Alignment</strong> chaotic evil</p>\n<hr />\n<p>The Waxworks represents helplessness and entropy. As long as you have this card invested, you gain a +2 item bonus to saving throws against effects that render you @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}. The item bonus increases to +3 if you are 20th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cause two @Template[type:line|distance:30]s of hot wax to extend out of the card as you present it. The two lines must both start at you and extend in different directions. If you are at least 15th level, you can create a third line, and if you're at least 19th level you can create a fourth line. All creatures in the area must attempt a Fortitude save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[persistent,fire]] damage and @Damage[2d6[persistent,mental]] damage. An affected creature or adjacent ally can reduce both of these values by 1d6 by spending an Interact action to scrape off the goo. Until the damage is reduced to 1d6 per type, the affected creature is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (this is an emotion and mental effect).</p>\n<p><strong>Failure</strong> As success, but @Damage[4d6[persistent,fire]] damage and @Damage[4d6[persistent,mental]] damage.</p>\n<p><strong>Critical Failure</strong> As success, but @Damage[6d6[persistent,fire]] damage and @Damage[6d6[persistent,mental]] damage, and the creature's speed is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the damage is reduced to 1d6 per type.</p>",
-          "gmNote": "<p><strong>Epitome</strong> When <em>The Waxworks</em> is epitomized, an unsettling laboratory comes into being in the dungeons below Harrowheart. Here, bubbling cauldrons of wax sputter and smoke, while metal molds containing the likenesses of the PCs and significant NPCs from their past stand unnervingly along the walls. The laboratory is attended by a sallow-complexioned tiefling who is always way too excited and polite to visiting PCs. This tiefling knows the rituals for @UUID[Compendium.pf2e.spells-srd.Item.pZr1xrCpaSu6qrXU]{Clone} and @UUID[Compendium.pf2e.spells-srd.Item.h5UqEdeqK8iTcU0J]{Simulacrum}, and can teach them to the PCs. Skill checks attempted in the laboratory to perform either of these rituals gain a +2 item bonus.</p>"
+          "gmNote": "<p><strong>Epitome</strong> When <em>The Waxworks</em> is epitomized, an unsettling laboratory comes into being in the dungeons below Harrowheart. Here, bubbling cauldrons of wax sputter and smoke, while metal molds containing the likenesses of the PCs and significant NPCs from their past stand unnervingly along the walls. The laboratory is attended by a sallow-complexioned tiefling who is always way too excited and polite to visiting PCs. This tiefling knows the rituals for @UUID[Compendium.pf2e.spells-srd.Item.pZr1xrCpaSu6qrXU]{Clone} and @UUID[Compendium.pf2e.spells-srd.Item.h5UqEdeqK8iTcU0J]{Shadow Double}, and can teach them to the PCs. Skill checks attempted in the laboratory to perform either of these rituals gain a +2 item bonus.</p>"
         },
         "strike-melee->Morningstar": {
           "name": "Morningstar"
@@ -4143,6 +4151,9 @@
         "spell->Tongues (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
         },
+        "spell->Abundant Step": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Az3PmWnlWSb5ELX9]\nAbundant Step"
+        },
         "spell->Dimension Door": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
         },
@@ -4150,8 +4161,20 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qJQADktwD0x8kLAy]\nResilient Sphere",
           "target": "1 Large or smaller creature"
         },
+        "spell->Ki Blast": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.oo7YcRC2gcez81PV]\nKi Blast"
+        },
+        "spell->Wholeness of Body": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qJZZdYBdNaWRJFER]\nWholeness of Body"
+        },
         "spell->Floating Disk (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.LvezN4a3kYf1OHMg]\nFloating Disk (At Will)"
+        },
+        "spell->Ki Rush": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8]\nKi Rush"
+        },
+        "spell->Ki Strike": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]\nKi Strike"
         },
         "spell->Unseen Servant (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.xqmHD8JIjak15lRk]\nUnseen Servant (At Will)"

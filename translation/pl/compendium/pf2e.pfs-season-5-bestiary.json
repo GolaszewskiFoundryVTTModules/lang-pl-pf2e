@@ -488,6 +488,9 @@
         "Assassins' Guild Grenadier": {
             "name": "Assassins' Guild Grenadier",
             "items": {
+                "weapon->Frost Vial (Moderate)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2k6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Efekt: Frost Vial (Umiarkowany)}</p>"
+                },
                 "strike-melee->Dagger": {
                     "name": "Dagger"
                 },
@@ -1119,7 +1122,7 @@
         "Blood Shadow Mirror": {
             "name": "Blood Shadow Mirror",
             "description": "<p>A dark shape moves in the surface of an ornate mirror, its eyes wide as blood seeps down its tormented face.</p>",
-            "disable": "<p>@Check[type:thievery|dc:16] (wytrenowanie) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 18) to dispel the mirror.</p>",
+            "disable": "<p>@Check[type:thievery|dc:16] (wytrenowanie) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. rank; counteract DC 18) to dispel the mirror.</p>",
             "reset": "<p>1 minute if no fresh blood has been spilled.</p>",
             "routine": "<p>(2 actions; arcane, mental) The bloody figure in the mirror transforms to reflect a creature within 30 feet. The reflection bleeds profusely from the eyes, nose, and mouth, and the reflected creature must attempt a @Check[type:will|dc:18|traits:arcane,mental] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Sukces</strong> The creature bleeds from their mouth or nose.</p><p><strong>Porażka</strong> The creature bleeds from their eyes, mouth, and nose, and takes @Damage[1d10[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>",
             "stealth": "<p>(wytrenowanie); DC 0 to notice the mirror without noting it is a trap</p>",
@@ -1408,6 +1411,9 @@
                 },
                 "spell->Clear Mind (Remove Frightened Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]\nClear Mind (Remove Frightened Only)"
+                },
+                "spell->Glutton's Jaw": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SdXFiQ4Py8761sNO]\nGlutton's Jaw"
                 },
                 "spell->Ray of Enfeeblement": [
                     {
@@ -1699,7 +1705,7 @@
         "Deskari Effigy": {
             "name": "Deskari Effigy",
             "description": "<p>A statuette of the deceased demon lord creates frightening illusions of insect swarms.</p>",
-            "disable": "<p>@Check[type:arcana|dc:17] (eksperctwo) or @Check[type:religion|dc:17] (wytrenowanie) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 20) to dispel the statuette</p>",
+            "disable": "<p>@Check[type:arcana|dc:17] (eksperctwo) or @Check[type:religion|dc:17] (wytrenowanie) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. rank; counteract DC 20) to dispel the statuette</p>",
             "reset": "<p>1 minute as the illusory insects harass intruders before scuttling into the earth.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
@@ -2141,7 +2147,7 @@
         "Empowered Deskari Effigy": {
             "name": "Empowered Deskari Effigy",
             "description": "<p>A statuette of the deceased demon lord creates frightening illusions of insect swarms.</p>",
-            "disable": "<p>@Check[type:arcana|dc:20] (eksperctwo) or @Check[type:religion|dc:20] (wytrenowanie) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 23) to dispel the statuette</p>",
+            "disable": "<p>@Check[type:arcana|dc:20] (eksperctwo) or @Check[type:religion|dc:20] (wytrenowanie) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. rank; counteract DC 23) to dispel the statuette</p>",
             "reset": "<p>1 minute as the illusory insects harass intruders before scuttling into the earth.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
@@ -2351,7 +2357,7 @@
                 },
                 "action->Scoff at the Divine": {
                     "name": "Scoff at the Divine",
-                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability</p>\n<p><strong>Wymagania</strong> The raja rakshasa has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p><strong>Efekt</strong> The raja rakshasa expends a spell slot that could be used to cast dispel magic and attempts to counteract the triggering spell or ability. The raja rakshasa can't Scoff at the Divine for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability</p>\n<p><strong>Wymagania</strong> The raja rakshasa has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii}</p><hr /><p><strong>Efekt</strong> The raja rakshasa expends a spell slot that could be used to cast dispel magic and attempts to counteract the triggering spell or ability. The raja rakshasa can't Scoff at the Divine for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The raja rakshasa takes on the appearance of any Medium humanoid. This doesn't change the raja rakshasa's Speed or its attack and damage modifiers with its Strikes but might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -2543,7 +2549,7 @@
         "Flaming Sphere Rune": {
             "name": "Flaming Sphere Rune",
             "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 5-foot radius.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to erase the rune without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 16) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to erase the rune without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 16) to counteract the rune</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Flaming Sphere": {
@@ -2555,7 +2561,7 @@
         "Flaming Sphere Rune (5-6)": {
             "name": "Flaming Sphere Rune (5-6)",
             "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 5-foot radius.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21] (wytrenowanie) to erase the rune without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 18) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (wytrenowanie) to erase the rune without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 18) to counteract the rune</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Flaming Sphere Rune",
             "items": {
@@ -2860,7 +2866,7 @@
         "Greater Blood Shadow Mirror": {
             "name": "Greater Blood Shadow Mirror",
             "description": "<p>A dark shape moves in the surface of an ornate mirror, its eyes wide as blood seeps down its tormented face.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 22) to dispel the mirror.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. rank; counteract DC 22) to dispel the mirror.</p>",
             "reset": "<p>1 minute if no fresh blood has been spilled.</p>",
             "routine": "<p>(2 actions; arcane, mental) The bloody figure in the mirror transforms to reflect a creature within 30 feet. The reflection bleeds profusely from the eyes, nose, and mouth, and the reflected creature must attempt a @Check[type:will|dc:21|traits:arcane,mental] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Sukces</strong> The creature bleeds from their mouth or nose.</p><p><strong>Porażka</strong> The creature bleeds from their eyes, mouth, and nose, and takes @Damage[2d8[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p>",
             "stealth": "<p>(wytrenowanie); DC 0 to notice the mirror without noting it is a trap</p>",
@@ -3010,7 +3016,7 @@
         "Hexed Chest": {
             "name": "Hexed Chest",
             "description": "<p>The magical runes glow at any attempt to open this chest.</p>",
-            "disable": "<p>@Check[type:thievery|dc:19] (wytrenowanie) to safely scratch out the runes or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. rank; counteract DC 17) to counteract the runes.</p>",
+            "disable": "<p>@Check[type:thievery|dc:19] (wytrenowanie) to safely scratch out the runes or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. rank; counteract DC 17) to counteract the runes.</p>",
             "stealth": "<p>(wytrenowanie) to notice the runes carved into the lid.</p>",
             "items": {
                 "action->Curse of Itchiness": {
@@ -3664,7 +3670,7 @@
         "Paper Locust Swarm": {
             "name": "Paper Locust Swarm",
             "description": "<p>A book unfurls and its case forms into a leathery locust, its pages folding into an overwhelming swarm.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] to tear up the leather locust, or @Check[type:arcana|dc:18] (wytrenowanie) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 22) to render the magic inert.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] to tear up the leather locust, or @Check[type:arcana|dc:18] (wytrenowanie) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. rank; counteract DC 22) to render the magic inert.</p>",
             "reset": "<p>The paper locust swarm resets after 1 minute if there are no creatures to target.</p>",
             "routine": "<p>(1 akcja) The swarm moves up to 30 feet to share the nearest creature's space, slicing into them with their paper wings and spurs. The targeted creature must attempt a @Check[type:reflex|dc:21] save.</p><hr><p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature takes @Damage[(2d8+5)[slashing]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[2d8[slashing]] damage and @Damage[1d6[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
@@ -3678,7 +3684,7 @@
         "Paper Locust Tornado": {
             "name": "Paper Locust Tornado",
             "description": "<p>A book unfurls and its case forms into a leathery locust, its pages folding into an overwhelming swarm.</p>",
-            "disable": "<p>@Check[type:thievery|dc:23] to tear up the leather locust, or @Check[type:arcana|dc:21] (wytrenowanie) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. rank; counteract DC 25) to render the magic inert.</p>",
+            "disable": "<p>@Check[type:thievery|dc:23] to tear up the leather locust, or @Check[type:arcana|dc:21] (wytrenowanie) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. rank; counteract DC 25) to render the magic inert.</p>",
             "reset": "<p>The paper locust tornado resets after 1 minute if there are no creatures to target.</p>",
             "routine": "<p>(2 akcje) The tornado uses each action to move up to 30 feet and share a creature's space, slicing into them with their paper wings and spurs. The targeted creatures must attempt a @Check[type:reflex|dc:24] save.</p><hr><p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature takes @Damage[(2d8+9)[slashing]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[2d8[slashing]] damage and @Damage[1d10[persistent,bleed]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
@@ -3722,7 +3728,7 @@
         "Possessed Daeodons": {
             "name": "Possessed Daeodons",
             "description": "<p>Three daeodon corpses, animated and enraged by Sezelrian's divine intervention, trample anything within the ritual circle.</p>",
-            "disable": "<p>@Check[type:occultism|dc:21] or @Check[type:religion|dc:21] to disrupt the magic animating the spirits, @Check[type:athletics|dc:25] to hold down one of the daeodons, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. kręgu, counteract DC 25). 3 successes are required.</p>",
+            "disable": "<p>@Check[type:occultism|dc:21] or @Check[type:religion|dc:21] to disrupt the magic animating the spirits, @Check[type:athletics|dc:25] to hold down one of the daeodons, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. kręgu, counteract DC 25). 3 successes are required.</p>",
             "reset": "<p>The hazard resets within 24 hours if the cultists of Sezelrian still remain in the area.</p>",
             "routine": "<p>(three actions) The animated daeodons trample all creatures within the circle, dealing @Damage[(2d8+9)[bludgeoning]] damage (@Check[type:reflex|dc:23|basic:true] save).</p>",
             "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii} to notice the heavy divine magic in the area</p>",
@@ -3736,7 +3742,7 @@
         "Possessed Daeodons (7-8)": {
             "name": "Possessed Daeodons (7-8)",
             "description": "<p>Three daeodon corpses, animated and enraged by Sezelrian's divine intervention, trample anything within the ritual circle.</p>",
-            "disable": "<p>@Check[type:occultism|dc:24] or @Check[type:religion|dc:24] to disrupt the magic animating the spirits, @Check[type:athletics|dc:28] to hold down one of the daeodons, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. kręgu, counteract DC 28). 3 successes are required.</p>",
+            "disable": "<p>@Check[type:occultism|dc:24] or @Check[type:religion|dc:24] to disrupt the magic animating the spirits, @Check[type:athletics|dc:28] to hold down one of the daeodons, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. kręgu, counteract DC 28). 3 successes are required.</p>",
             "reset": "<p>The hazard resets within 24 hours if the cultists of Sezelrian still remain in the area.</p>",
             "routine": "<p>(three actions) The animated daeodons trample all creatures within the circle, dealing @Damage[(2d10+11)[bludgeoning]] damage (@Check[type:reflex|dc:25|basic:true] save).</p>",
             "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii} to notice the heavy divine magic in the area</p>",
@@ -4128,6 +4134,9 @@
                 "spell->Clear Mind (Remove Frightened Only)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]\nClear Mind (Remove Frightened Only)"
                 },
+                "spell->Glutton's Jaw": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SdXFiQ4Py8761sNO]\nGlutton's Jaw"
+                },
                 "spell->Ray of Enfeeblement": [
                     {
                         "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement",
@@ -4157,7 +4166,7 @@
         "Shining Shooting Sphere": {
             "name": "Shining Shooting Sphere",
             "description": "<p>A gilded armillary sphere spins in place, shooting jeweled stars and planets at intruders.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21] (eksperctwo) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. rank; counteract DC 23) to remove the enchantment.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (eksperctwo) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. rank; counteract DC 23) to remove the enchantment.</p>",
             "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
             "routine": "<p>(1 akcja) A jeweled planet shoots from the sphere, targeting a random creature within 30 feet. The creature takes @Damage[(2d8+7)[bludgeoning]] damage (@Check[type:reflex|dc:22|basic:true] save).</p>",
             "stealth": "<p>(eksperctwo) to notice the floor sensor; DC 0 to notice the sphere</p>",
@@ -4171,7 +4180,7 @@
         "Shooting Sphere": {
             "name": "Shooting Sphere",
             "description": "<p>A gilded armillary sphere spins in place, shooting jeweled stars and planets at intruders.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (eksperctwo) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. rank; counteract DC 20) to remove the enchantment.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (eksperctwo) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. rank; counteract DC 20) to remove the enchantment.</p>",
             "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
             "routine": "<p>(1 akcja) A jeweled planet shoots from the sphere, targeting a random creature within 30 feet. The creature takes @Damage[(1d10+6)[bludgeoning]] damage (@Check[type:reflex|dc:20|basic:true] save).</p>",
             "stealth": "<p>(eksperctwo) to notice the floor sensor; DC 0 to notice the sphere</p>",
@@ -4635,7 +4644,7 @@
                 },
                 "action->Diverse Training": {
                     "name": "Diverse Training",
-                    "description": "<p>Each individual tanuki replaces their skill bonus in one skill with +13. Additionally, they get abilities as listed below.</p>\n<hr />\n<p><strong>Dainiki</strong> Nature</p>\n<p><strong>Ability</strong> The tanuki gains a +2 bonus on ranged attack rolls with shuriken and may</p>\n<p><strong>Mark Target</strong> <span class=\"action-glyph\">1</span></p>\n<p>the tanuki chooses a target he can see. Once per round, the tanuki may deal an additional 1k8 precision damage to this target on a successful strike. This choice lasts until the tanuki chooses a new target with Mark Target.</p>\n<hr />\n<p><strong>Kagebashi</strong> Acrobatics</p>\n<p><strong>Ability</strong> The tanuki's fist deals electricity damage instead of bludgeoning damage, and he gains</p>\n<p><strong>Kinetic Strike</strong> <span class=\"action-glyph\">2</span> the tanuki makes a fist strike gaining a +6 status bonus to the damage roll.</p>\n<hr />\n<p><strong>Mochi</strong> Performance</p>\n<p><strong>Ability</strong> The tanuki gains the @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]{Courageous Anthem} composition cantrip.</p>\n<hr />\n<p><strong>Suzu</strong> Religion</p>\n<p><strong>Ability</strong> The tanuki can cast 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf]{Łuk Elektryczny} at will as a primal innate spell (DC 21).</p>\n<hr />\n<p><strong>Tonta</strong> Athletics</p>\n<p><strong>Ability</strong> The tanuki gains the @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]{Ki Strike} focus spell, a focus pool of 1, and</p>\n<p><strong>Flurry of Blows</strong> <span class=\"action-glyph\">1</span></p>\n<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p>the tanuki makes two strikes</p>\n<hr />\n<p><strong>Toshiro</strong> Deception</p>\n<p><strong>Ability</strong> The tanuki deals an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures, and on the first round of combat, creatures that haven't acted are off-guard to him.</p>"
+                    "description": "<p>Each individual tanuki replaces their skill bonus in one skill with +13. Additionally, they get abilities as listed below.</p>\n<hr />\n<p><strong>Dainiki</strong> Nature</p>\n<p><strong>Ability</strong> The tanuki gains a +2 bonus on ranged attack rolls with shuriken and may</p>\n<p><strong>Mark Target</strong> <span class=\"action-glyph\">1</span></p>\n<p>the tanuki chooses a target he can see. Once per round, the tanuki may deal an additional 1k8 precision damage to this target on a successful strike. This choice lasts until the tanuki chooses a new target with Mark Target.</p>\n<hr />\n<p><strong>Kagebashi</strong> Acrobatics</p>\n<p><strong>Ability</strong> The tanuki's fist deals electricity damage instead of bludgeoning damage, and he gains</p>\n<p><strong>Kinetic Strike</strong> <span class=\"action-glyph\">2</span> the tanuki makes a fist strike gaining a +6 status bonus to the damage roll.</p>\n<hr />\n<p><strong>Mochi</strong> Performance</p>\n<p><strong>Ability</strong> The tanuki gains the @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]{Courageous Anthem} composition cantrip.</p>\n<hr />\n<p><strong>Suzu</strong> Religion</p>\n<p><strong>Ability</strong> The tanuki can cast 2. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf]{Electric Arc} at will as a primal innate spell (DC 21).</p>\n<hr />\n<p><strong>Tonta</strong> Athletics</p>\n<p><strong>Ability</strong> The tanuki gains the @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]{Inner Upheaval} focus spell, a focus pool of 1, and</p>\n<p><strong>Flurry of Blows</strong> <span class=\"action-glyph\">1</span></p>\n<p><strong>Częstotliwość</strong> raz na rundę</p>\n<p>the tanuki makes two strikes</p>\n<hr />\n<p><strong>Toshiro</strong> Deception</p>\n<p><strong>Ability</strong> The tanuki deals an additional 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures, and on the first round of combat, creatures that haven't acted are off-guard to him.</p>"
                 },
                 "action->Flurry of Blows (Tonta Only)": {
                     "name": "Flurry of Blows (Tonta Only)",
@@ -5377,7 +5386,8 @@
             },
             "items": {
                 "equipment->Formula Book": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\nFormula Book"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\nFormula Book",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\n<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; characters of the alchemist class typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "strike-melee->Dagger": {
                     "name": "Sztylet"
@@ -5425,7 +5435,8 @@
             "tokenName": "Trapmaster Tok",
             "items": {
                 "equipment->Formula Book": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\nFormula Book"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\nFormula Book",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\n<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; characters of the alchemist class typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "strike-melee->Dagger": {
                     "name": "Sztylet"
@@ -5650,7 +5661,7 @@
         "Very Hexed Chest": {
             "name": "Very Hexed Chest",
             "description": "<p>The magical runes glow at any attempt to open this chest.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie) to safely scratch out the runes or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. rank; counteract DC 20) to counteract the runes.</p>",
+            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie) to safely scratch out the runes or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. rank; counteract DC 20) to counteract the runes.</p>",
             "stealth": "<p>(wytrenowanie) to notice the runes carved into the lid.</p>",
             "items": {
                 "action->Curse of Itchiness": {
@@ -6110,7 +6121,7 @@
                 },
                 "action->Scoff at the Divine": {
                     "name": "Scoff at the Divine",
-                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability</p>\n<p><strong>Wymagania</strong> The raja rakshasa has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p><strong>Efekt</strong> The raja rakshasa expends a spell slot that could be used to cast dispel magic and attempts to counteract the triggering spell or ability. The raja rakshasa can't Scoff at the Divine for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature within 30 feet casts a divine spell or uses a divine ability</p>\n<p><strong>Wymagania</strong> The raja rakshasa has an unexpended spell slot that can be used to cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii}</p><hr /><p><strong>Efekt</strong> The raja rakshasa expends a spell slot that could be used to cast dispel magic and attempts to counteract the triggering spell or ability. The raja rakshasa can't Scoff at the Divine for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The raja rakshasa takes on the appearance of any Medium humanoid. This doesn't change the raja rakshasa's Speed or its attack and damage modifiers with its Strikes but might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"

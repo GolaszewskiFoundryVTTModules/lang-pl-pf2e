@@ -219,6 +219,7 @@
                     "name": "Executioner's Hood"
                 },
                 "consumable->Shadow Essence": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\nShadow Essence",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\n<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and enfeebled 2 (1 runda)</p>"
                 },
                 "strike-melee->Kukri": {
@@ -325,7 +326,7 @@
                 },
                 "action->Consecration Vulnerability": {
                     "name": "Consecration Vulnerability",
-                    "description": "<p>A Gray Gardener enforcer in a place of worship dedicated to a non-evil deity or on sacred ground, such as an area blessed by @UUID[Compendium.pf2e.spells-srd.Item.y3jlOfgsQH1JjkJE]{Sanctified Ground}, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}.</p>"
+                    "description": "<p>A Gray Gardener enforcer in a place of worship dedicated to a non-evil deity or on sacred ground, such as an area blessed by @UUID[Compendium.pf2e.spells-srd.Item.y3jlOfgsQH1JjkJE]{Anointed Ground}, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}.</p>"
                 },
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
@@ -576,7 +577,7 @@
         "Pendulum Pit": {
             "name": "Pendulum Pit",
             "description": "<p>Several swinging pendulums of force cleave through the room across the platforms, knocking people into the pit.</p>",
-            "disable": "<p>@Check[type:arcana|dc:48|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (legendarność), @Check[type:thievery|dc:44|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (mistrzostwo), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9. level; counteract DC 44) on a platform to deactivate its pendulum blade; once all five platforms have been deactivated, the trap is disabled and the room rotates back into position along the exits. @Check[type:thievery|dc:48|name:Rotate the Room Open|traits:complex,magical,mechanical,trap] (legendarność) from any blocked exit to activate the rotating mechanism and rotate the room back into position before the trap has been disabled.</p>",
+            "disable": "<p>@Check[type:arcana|dc:48|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (legendarność), @Check[type:thievery|dc:44|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (mistrzostwo), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (9. level; counteract DC 44) on a platform to deactivate its pendulum blade; once all five platforms have been deactivated, the trap is disabled and the room rotates back into position along the exits. @Check[type:thievery|dc:48|name:Rotate the Room Open|traits:complex,magical,mechanical,trap] (legendarność) from any blocked exit to activate the rotating mechanism and rotate the room back into position before the trap has been disabled.</p>",
             "reset": "<p>The trap resets after 1 hour. If the @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} throughout the room has been dispelled, the <em>darkness</em> in the room returns when the trap resets.</p>",
             "routine": "<p>(5 actions) For each active platform, the trap uses an action to create a pendulum of force to swing down along a straight line between the platform and one other creature in the room that isn't on the platform (if any). The trap makes a pendulum blade attack against any creature in that line. For each platform deactivated, reduce the number of actions the trap takes in its routine by 1.</p>",
             "stealth": "<p>(legendarność) to realize the chamber is a complex rotating trap before it triggers. No check is necessary to notice the platforms and the pit.</p>",
@@ -602,7 +603,7 @@
         "Planar Eviction Trap": {
             "name": "Planar Eviction Trap",
             "description": "<p>An invisible magic rune emits a burst of psychic static and sends extraplanar creatures to Pharasma's realm.</p>",
-            "disable": "<p>@Check[type:religion|dc:42|name:Discharge Glyph|traits:uncommon,trap,magical] (mistrzostwo) or @Check[type:thievery|dc:42|name:Discharge Glyph|traits:uncommon,trap,magical] (mistrzostwo) to discharge the glyph's power harmlessly, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. rank; counteract DC 40) to counteract the glyph</p>",
+            "disable": "<p>@Check[type:religion|dc:42|name:Discharge Glyph|traits:uncommon,trap,magical] (mistrzostwo) or @Check[type:thievery|dc:42|name:Discharge Glyph|traits:uncommon,trap,magical] (mistrzostwo) to discharge the glyph's power harmlessly, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (8. rank; counteract DC 40) to counteract the glyph</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
                 "action->Wracking Eviction": {
@@ -806,6 +807,7 @@
                     "name": "Executioner's Hood"
                 },
                 "consumable->Shadow Essence": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\nShadow Essence",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\n<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p>\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maksymalny Czas Trwania</strong> 6 rund</p>\n<p><strong>Stadium 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 runda)</p>\n<p><strong>Stadium 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (1 runda)</p>\n<p><strong>Stadium 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and enfeebled 2 (1 runda)</p>"
                 },
                 "strike-melee->Kukri": {

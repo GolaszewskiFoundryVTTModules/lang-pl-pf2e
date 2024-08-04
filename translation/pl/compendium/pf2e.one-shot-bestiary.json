@@ -11,6 +11,8 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.JyxTmqjYYn63V5LY]\nGlibness"
                 },
                 "spell->Simulacrum": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.h5UqEdeqK8iTcU0J]\nSimulacrum",
+                    "cost": "a piece of hair, drop of blood, or other part of the creature to be duplicated, plus rare oils, minerals, and pigments with a total value of 300 gp",
                     "primarycheck": "Arcana or Occultism (master, the check has the secret trait",
                     "secondarycheck": "Arcana, Nature, Occultism,  Religion, or Society (whichever is required to Recall Knowledge about the creature being duplicated); Crafting; Deception"
                 },
@@ -45,6 +47,10 @@
                 "consumable->Healing Potion (Lesser)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
                 },
+                "consumable->Sleep Arrow": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RcQ4ZIzRK2xLf4G5]\nSleep Arrow",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RcQ4ZIzRK2xLf4G5]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p><em>Sleep arrows</em> often have shafts of deep blue or black, and their fletching is exceptionally soft and downy. An activated <em>sleep arrow</em> deals no damage, but a living creature hit by it is subject to the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell (DC 17).</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply one casting of <em>sleep</em>.</p>"
+                },
                 "strike-melee->Warhammer": {
                     "name": "Młot Bojowy"
                 },
@@ -77,7 +83,7 @@
         "Bad Vibrations": {
             "name": "Bad Vibrations",
             "description": "<p>The three larger crystals on the table begin to vibrate and emit a swiftly growing peal of sound.</p>",
-            "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) or @Check[type:occultism|dc:17] (wytrenowanie) to disrupt the magic enchanting one of the crystals, or @Check[type:performance|dc:20] (wytrenowanie) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Przeciwwystęp} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level, DC 18) to counteract a crystal.</span></p>",
+            "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) or @Check[type:occultism|dc:17] (wytrenowanie) to disrupt the magic enchanting one of the crystals, or @Check[type:performance|dc:20] (wytrenowanie) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Przeciwwystęp} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level, DC 18) to counteract a crystal.</span></p>",
             "hpDetails": "HP per crystal",
             "routine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[type:fortitude|dc:20|basic:true]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 minute. At the end of the hazard's routine, attempt a @Check[type:flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
             "stealth": "<p>(eksperctwo)</p>",
@@ -172,6 +178,10 @@
                 "weapon->Spiked Gauntlet": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YFfG2fMyaIAXkmtr]\n<p>Providing the same defensive function as a standard gauntlet, this version has a group of spikes protruding from the knuckles to deliver piercing damage with a punch.</p>"
                 },
+                "consumable->Sleep Arrow": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RcQ4ZIzRK2xLf4G5]\nSleep Arrow",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RcQ4ZIzRK2xLf4G5]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<p><em>Sleep arrows</em> often have shafts of deep blue or black, and their fletching is exceptionally soft and downy. An activated <em>sleep arrow</em> deals no damage, but a living creature hit by it is subject to the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell (DC 17).</p>\n<p><strong>Wymagania Wytwarzania</strong> Supply one casting of <em>sleep</em>.</p>"
+                },
                 "strike-melee->Spiked Gauntlet": {
                     "name": "Spiked Gauntlet"
                 },
@@ -197,6 +207,9 @@
                 "equipment->Improvised Wax Sprayer": {
                     "name": "Improvised Wax Sprayer"
                 },
+                "consumable->Bestial Mutagen (Moderate)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.VISk5uLPVIvNWovB]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p>\n<hr />\n<p>Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack (@Damage[1d6[slashing]] damage) with the agile trait and a jaws unarmed attack (@Damage[1d8[piercing]] damage).</p>\n<p><strong>Drawback</strong> You take a –1 penalty to AC and a –2 penalty to Reflex saves.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.xFQRiVU6h8EA6Lw9]{Efekt: Bestial Mutagen (Umiarkowany)}</p>"
+                },
                 "strike-melee->Wax Stirring Stick": {
                     "name": "Wax Stirring Stick"
                 },
@@ -219,6 +232,9 @@
             "items": {
                 "weapon->Alchemist's Fire (Moderate)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2k8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                },
+                "weapon->Bottled Lightning (Moderate)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.97QyNEOAyYLdGaYc]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 2k6 electricity damage and 2 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "equipment->Religious Symbol (Silver)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -767,6 +783,34 @@
                 },
                 "strike-melee->Warhammer": {
                     "name": "Młot Bojowy"
+                }
+            }
+        },
+        "Soulbound Guardian": {
+            "name": "Soulbound Guardian",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Personality Fragments": {
+                    "name": "Personality Fragments",
+                    "description": "<p>A soulbound guardian shares fragments of its donor soul's personality, though none of that creature's memories. This causes a soulbound guardian to match a strong personality trait of its donor soul. Because of its soul sliver, a soulbound guardian is not immune to spirit as most constructs are.</p>"
+                },
+                "action->Mannequin": {
+                    "name": "Mannequin",
+                    "description": "<p>Until the next time it acts, the soulbound guardian appears to be a harmless mannequin. It has an automatic result of 30 on Deception checks and DCs to pass as a mannequin.</p>"
+                },
+                "action->Splitsoul": {
+                    "name": "Splitsoul",
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The soulbound guardian lends some of the energy animating it to other inanimate objects in the area. Three Small items or pieces of furniture within 60 feet come to life for 1 minute. These objects have the minion trait, though all the objects can act when the soulbound guardian uses a single action to issue them commands. The soulbound guardian can also issue commands to each object as part of using this ability.</p>\n<p>Each object animated in this way has a Speed of 20 feet and can make an unarmed melee Strike at +11 that deals @Damage[(1d6+3)[bludgeoning]] damage. In addition, each object has an AC of 16, a Hardness of 3, and 14 Hit Points.</p>"
+                }
+            }
+        },
+        "Splitsoul Object": {
+            "name": "Splitsoul Object",
+            "items": {
+                "strike-melee->Object": {
+                    "name": "Object"
                 }
             }
         },

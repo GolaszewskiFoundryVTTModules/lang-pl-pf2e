@@ -321,6 +321,10 @@
         "Aspis Agent": {
             "name": "Aspis Agent",
             "items": {
+                "weapon->Thunderstone (Lesser)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Xnqglykl3Cif8rN9]\nThunderstone (Mniejszy)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Xnqglykl3Cif8rN9]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[type:fortitude|dc:17|name:Lesser Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>The bomb deals 1k4 sonic damage and 1 sonic splash damage, and the DC is 17.</p>"
+                },
                 "treasure->Bronze Aspis Consortium Badge": {
                     "name": "Bronze Aspis Consortium Badge"
                 },
@@ -470,6 +474,10 @@
         "Aspis Striker": {
             "name": "Aspis Striker",
             "items": {
+                "weapon->Thunderstone (Moderate)": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.JOaELkzLWTywhn5Z]\nThunderstone (Umiarkowany)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.JOaELkzLWTywhn5Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[type:fortitude|dc:20|name:Moderate Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals 2k4 sonic damage and 2 sonic splash damage, and the DC is 20.</p>"
+                },
                 "treasure->Bronze Aspis Consortium Badge": {
                     "name": "Bronze Aspis Consortium Badge"
                 },
@@ -1123,26 +1131,26 @@
         "Cleansing Cascade": {
             "name": "Cleansing Cascade",
             "description": "<p>The ritual power in this room, corrupted by necromantic energy, slams purifying water into all \"unclean\" creatures that try to leave.</p>",
-            "disable": "<p>@Check[type:religion|dc:25|name:Ceremonially purify everyone] (eksperctwo) to ceremonially purify everyone in the room, by pouring water from a tub over their hands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 25) to counteract the corrupted ritual magic.</p>",
+            "disable": "<p>@Check[type:religion|dc:25|name:Ceremonially purify everyone] (eksperctwo) to ceremonially purify everyone in the room, by pouring water from a tub over their hands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 25) to counteract the corrupted ritual magic.</p>",
             "reset": "<p>1 minute</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Purifying Blast": {
                     "name": "Purifying Blast",
-                    "description": "<p><strong>Aktywator</strong> A living creature steps out of the room.</p>\n<hr />\n<p><strong>Efekt</strong> Water sprays out of the tubs. Every creature in the room or within 10 feet of the doors takes @Damage[(4d10+18)[bludgeoning]] damage (@Check[type:reflex|dc:27|basic:true] save) and the water casts 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} with a counteract modifier of [[/r {1d20+15} #Counteract Check]]{+15} against the highest-rank spell active on each target (or all spells on a target that critically fails its Reflex save).</p>"
+                    "description": "<p><strong>Aktywator</strong> A living creature steps out of the room.</p>\n<hr />\n<p><strong>Efekt</strong> Water sprays out of the tubs. Every creature in the room or within 10 feet of the doors takes @Damage[(4d10+18)[bludgeoning]] damage (@Check[type:reflex|dc:27|basic:true] save) and the water casts 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} with a counteract modifier of [[/r {1d20+15} #Counteract Check]]{+15} against the highest-rank spell active on each target (or all spells on a target that critically fails its Reflex save).</p>"
                 }
             }
         },
         "Cleansing Torrent": {
             "name": "Cleansing Torrent",
             "description": "<p>The ritual power in this room, corrupted by necromantic energy, slams purifying water into all \"unclean\" creatures that try to leave.</p>",
-            "disable": "<p>@Check[type:religion|dc:28|name:Ceremonially purify everyone] (eksperctwo) to ceremonially purify everyone in the room, by pouring water from a tub over their hands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the corrupted ritual magic.</p>",
+            "disable": "<p>@Check[type:religion|dc:28|name:Ceremonially purify everyone] (eksperctwo) to ceremonially purify everyone in the room, by pouring water from a tub over their hands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 28) to counteract the corrupted ritual magic.</p>",
             "reset": "<p>1 minute</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Purifying Blast": {
                     "name": "Purifying Blast",
-                    "description": "<p><strong>Aktywator</strong> A living creature steps out of the room.</p>\n<hr />\n<p><strong>Efekt</strong> Water sprays out of the tubs. Every creature in the room or within 10 feet of the doors takes @Damage[(4d10+26)[bludgeoning]] damage (@Check[type:reflex|dc:30|basic:true] save) and the water casts 5. kręgu @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} with a counteract modifier of [[/r {1d20+18} #Counteract Check]]{+18} against the highest-rank spell active on each target (or all spells on a target that critically fails its Reflex save).</p>"
+                    "description": "<p><strong>Aktywator</strong> A living creature steps out of the room.</p>\n<hr />\n<p><strong>Efekt</strong> Water sprays out of the tubs. Every creature in the room or within 10 feet of the doors takes @Damage[(4d10+26)[bludgeoning]] damage (@Check[type:reflex|dc:30|basic:true] save) and the water casts 5. kręgu @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} with a counteract modifier of [[/r {1d20+18} #Counteract Check]]{+18} against the highest-rank spell active on each target (or all spells on a target that critically fails its Reflex save).</p>"
                 }
             }
         },
@@ -2186,7 +2194,7 @@
         "Eternal Hall (1-2)": {
             "name": "Eternal Hall (1-2)",
             "description": "<p>Time distorts along this hallway, making the air feel like sludge.</p>",
-            "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 16) to disperse the temporal energy</p>",
+            "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (1. level; counteract DC 16) to disperse the temporal energy</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Eternal Hall",
             "items": {
@@ -2199,7 +2207,7 @@
         "Eternal Hall (3-4)": {
             "name": "Eternal Hall (3-4)",
             "description": "<p>Time distorts along this hallway, making the air feel like sludge.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 18) to disperse the temporal energy</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 18) to disperse the temporal energy</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Eternal Hall",
             "items": {
@@ -2212,7 +2220,7 @@
         "Eternal Hall (5-6)": {
             "name": "Eternal Hall (5-6)",
             "description": "<p>Time distorts along this hallway, making the air feel like sludge.</p>",
-            "disable": "<p>@Check[type:thievery|dc:23] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 21) to disperse the temporal energy</p>",
+            "disable": "<p>@Check[type:thievery|dc:23] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 21) to disperse the temporal energy</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "tokenName": "Eternal Hall",
             "items": {
@@ -2225,7 +2233,7 @@
         "Eternal Hall (7-8)": {
             "name": "Eternal Hall (7-8)",
             "description": "<p>Time distorts along this hallway, making the air feel like sludge.</p>",
-            "disable": "<p>@Check[type:thievery|dc:27] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 25) to disperse the temporal energy</p>",
+            "disable": "<p>@Check[type:thievery|dc:27] (wytrenowanie) to disrupt the temporal distortions, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 25) to disperse the temporal energy</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "tokenName": "Eternal Hall",
             "items": {
@@ -2536,7 +2544,7 @@
         "Firespark Trap (1-2)": {
             "name": "Firespark Trap (1-2)",
             "description": "<p>Magical motion sensors detect when a creature enters the chamber.</p>",
-            "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) to disable the sensor without triggering them, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 15) to counteract the sensors</p>",
+            "disable": "<p>@Check[type:thievery|dc:17] (wytrenowanie) to disable the sensor without triggering them, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (1. level; counteract DC 15) to counteract the sensors</p>",
             "reset": "<p>The trap resets after 10 minutes.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Firespark Trap",
@@ -2550,7 +2558,7 @@
         "Firespark Trap (3-4)": {
             "name": "Firespark Trap (3-4)",
             "description": "<p>Magical motion sensors detect when a creature enters the chamber.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to disable the sensor without triggering them, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 18) to counteract the sensors</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) to disable the sensor without triggering them, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 18) to counteract the sensors</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Firespark Trap",
             "items": {
@@ -4002,6 +4010,12 @@
                 "spellcastingEntry->Monk Focus Spells": {
                     "name": "Monk Focus Spells"
                 },
+                "spell->Ki Rush": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8]\nKi Rush"
+                },
+                "spell->Ki Strike": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]\nKi Strike"
+                },
                 "strike-melee->Bo Staff": {
                     "name": "Bo Staff"
                 },
@@ -4024,6 +4038,12 @@
             "items": {
                 "spellcastingEntry->Monk Focus Spells": {
                     "name": "Monk Focus Spells"
+                },
+                "spell->Ki Rush": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8]\nKi Rush"
+                },
+                "spell->Ki Strike": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]\nKi Strike"
                 },
                 "strike-melee->Bo Staff": {
                     "name": "Bo Staff"
@@ -4065,7 +4085,7 @@
         "Muesello's Best Summoning Rune": {
             "name": "Muesello's Best Summoning Rune",
             "description": "<p>A cloud of invisible magical sensors in a 5-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:23] to approach without triggering the trap followed by @Check[type:thievery|dc:25] (eksperctwo) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 22) to counteract the rune</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:23] to approach without triggering the trap followed by @Check[type:thievery|dc:25] (eksperctwo) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 22) to counteract the rune</p>",
             "reset": "<p>The trap resets each day at dawn.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -4078,7 +4098,7 @@
         "Muesello's Elite Summoning Rune": {
             "name": "Muesello's Elite Summoning Rune",
             "description": "<p>A cloud of invisible magical sensors in a 5-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:20] to approach without triggering the trap followed by @Check[type:thievery|dc:22] (wytrenowanie) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 19) to counteract the rune</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:20] to approach without triggering the trap followed by @Check[type:thievery|dc:22] (wytrenowanie) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 19) to counteract the rune</p>",
             "reset": "<p>The trap resets each day at dawn.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -4091,7 +4111,7 @@
         "Muesello's Greater Summoning Rune": {
             "name": "Muesello's Greater Summoning Rune",
             "description": "<p>A cloud of invisible magical sensors in a 5-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:21] to approach without triggering the trap followed by @Check[type:thievery|dc:23] (eksperctwo) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 20) to counteract the rune</span></p>",
+            "disable": "<p>@Check[type:acrobatics|dc:21] to approach without triggering the trap followed by @Check[type:thievery|dc:23] (eksperctwo) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 20) to counteract the rune</span></p>",
             "reset": "<p>The trap resets each day at dawn.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -4104,7 +4124,7 @@
         "Muesello's Summoning Rune": {
             "name": "Muesello's Summoning Rune",
             "description": "<p>A cloud of invisible magical sensors in a 5-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:18] to approach without triggering the trap followed by @Check[type:thievery|dc:20] (wytrenowanie) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 18) to counteract the rune</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:18] to approach without triggering the trap followed by @Check[type:thievery|dc:20] (wytrenowanie) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 18) to counteract the rune</p>",
             "reset": "<p>The trap resets each day at dawn.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -4153,7 +4173,7 @@
         "Natron Eruption": {
             "name": "Natron Eruption",
             "description": "<p>Negative-energy charged natron sprays out of the tub and starts to mummify nearby creatures.</p>",
-            "disable": "<p>@Check[type:thievery|dc:27|name:Safely remove the vise] (wytrenowanie) to safely remove the umbral vise from the tub without triggering the natron or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 25) to counteract the ritual energy.</p>",
+            "disable": "<p>@Check[type:thievery|dc:27|name:Safely remove the vise] (wytrenowanie) to safely remove the umbral vise from the tub without triggering the natron or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 25) to counteract the ritual energy.</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -4166,7 +4186,7 @@
         "Natron Explosion": {
             "name": "Natron Explosion",
             "description": "<p>Negative-energy charged natron sprays out of the tub and starts to mummify nearby creatures.</p>",
-            "disable": "<p>@Check[type:thievery|dc:30|name:Safely remove the vise] (eksperctwo) to safely remove the umbral vise from the tub without triggering the natron or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the ritual energy.</p>",
+            "disable": "<p>@Check[type:thievery|dc:30|name:Safely remove the vise] (eksperctwo) to safely remove the umbral vise from the tub without triggering the natron or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 28) to counteract the ritual energy.</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -4690,7 +4710,7 @@
         "Overloading Arch (1-2)": {
             "name": "Overloading Arch (1-2)",
             "description": "<p>The <em>Eternity Arch</em> sparks with electricity, releasing bolts of lightning at each of the four largest time rifts.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) or @Check[type:arcana|dc:18], @Check[type:nature|dc:18], @Check[type:occultism|dc:18], or @Check[type:religion|dc:18] (wytrenowanie) to seal each of the four time rifts, @Check[type:crafting|dc:20] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1. level; counteract DC 17) to counteract each time rift. Each attempt requires 2 actions. Skill checks to disable a time rift must attempted from adjacent to the rift.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (wytrenowanie) or @Check[type:arcana|dc:18], @Check[type:nature|dc:18], @Check[type:occultism|dc:18], or @Check[type:religion|dc:18] (wytrenowanie) to seal each of the four time rifts, @Check[type:crafting|dc:20] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (1. level; counteract DC 17) to counteract each time rift. Each attempt requires 2 actions. Skill checks to disable a time rift must attempted from adjacent to the rift.</p>",
             "routine": "<p>(4 actions) The trap loses 1 action each turn for each disabled time rift. On each of the trap's actions, the <em>Eternity Arch</em> releases a bolt of lightning that activates that rift, dealing @Damage[2d6[electricity]] damage to all creatures in a @Template[type:emanation|distance:10] around the time rift (@Check[type:reflex|dc:20|basic:true] save). It can release a bolt at each active time rift no more than once each turn.</p>",
             "tokenName": "Overloading Arch",
             "items": {
@@ -4703,7 +4723,7 @@
         "Overloading Arch (3-4)": {
             "name": "Overloading Arch (3-4)",
             "description": "<p>The <em>Eternity Arch</em> sparks with electricity, releasing bolts of lightning at each of the four largest time rifts.</p>",
-            "disable": "<p>@Check[type:thievery|dc:23] (wytrenowanie) or @Check[type:arcana|dc:21] (wytrenowanie), @Check[type:nature|dc:21] (wytrenowanie), @Check[type:occultism|dc:21] (wytrenowanie), or @Check[type:religion|dc:21] (wytrenowanie) to seal each of the four time rifts, @Check[type:crafting|dc:23] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 20) to counteract each time rift. Each attempt requires 2 actions. Skill checks to disable a time rift must attempted from adjacent to the rift.</p>",
+            "disable": "<p>@Check[type:thievery|dc:23] (wytrenowanie) or @Check[type:arcana|dc:21] (wytrenowanie), @Check[type:nature|dc:21] (wytrenowanie), @Check[type:occultism|dc:21] (wytrenowanie), or @Check[type:religion|dc:21] (wytrenowanie) to seal each of the four time rifts, @Check[type:crafting|dc:23] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 20) to counteract each time rift. Each attempt requires 2 actions. Skill checks to disable a time rift must attempted from adjacent to the rift.</p>",
             "routine": "<p>(4 actions) The trap loses 1 action each turn for each disabled time rift. On each of the trap's actions, the <em>Eternity Arch</em> releases a bolt of lightning that activates that rift, dealing @Damage[2d8[electricity]] damage to all creatures in a @Template[type:emanation|distance:10] around the time rift (@Check[type:reflex|dc:22|basic:true] save). It can release a bolt at each active time rift no more than once each turn.</p>",
             "tokenName": "Overloading Arch",
             "items": {
@@ -4716,7 +4736,7 @@
         "Overloading Arch (5-6)": {
             "name": "Overloading Arch (5-6)",
             "description": "<p>The <em>Eternity Arch</em> sparks with electricity, releasing bolts of lightning at each of the four largest time rifts.</p>",
-            "disable": "<p>@Check[type:thievery|dc:27] (wytrenowanie) or @Check[type:arcana|dc:25], @Check[type:nature|dc:25], @Check[type:occultism|dc:25], or @Check[type:religion|dc:25] (wytrenowanie) to seal each of the four time rifts, @Check[type:crafting|dc:27] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 23) to counteract each time rift.</p>",
+            "disable": "<p>@Check[type:thievery|dc:27] (wytrenowanie) or @Check[type:arcana|dc:25], @Check[type:nature|dc:25], @Check[type:occultism|dc:25], or @Check[type:religion|dc:25] (wytrenowanie) to seal each of the four time rifts, @Check[type:crafting|dc:27] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 23) to counteract each time rift.</p>",
             "routine": "<p>(4 actions) The trap loses 1 action each turn for each disabled time rift. On each of the trap's actions, the <em>Eternity Arch</em> releases a bolt of lightning that activates that rift, dealing @Damage[2d10[electricity]] damage to all creatures in a @Template[type:emanation|distance:10] around the time rift (@Check[type:reflex|dc:25|basic:true] save). It can release a bolt at each active time rift no more than once each turn.</p>",
             "tokenName": "Overloading Arch",
             "items": {
@@ -4729,7 +4749,7 @@
         "Overloading Arch (7-8)": {
             "name": "Overloading Arch (7-8)",
             "description": "<p>The <em>Eternity Arch</em> sparks with electricity, releasing bolts of lightning at each of the four largest time rifts.</p>",
-            "disable": "<p>@Check[type:thievery|dc:30] (eksperctwo) or @Check[type:arcana|dc:28], @Check[type:nature|dc:28], @Check[type:occultism|dc:28], or @Check[type:religion|dc:28] (eksperctwo) to seal each of the four time rifts, @Check[type:crafting|dc:30] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 26) to counteract each time rift.</p>",
+            "disable": "<p>@Check[type:thievery|dc:30] (eksperctwo) or @Check[type:arcana|dc:28], @Check[type:nature|dc:28], @Check[type:occultism|dc:28], or @Check[type:religion|dc:28] (eksperctwo) to seal each of the four time rifts, @Check[type:crafting|dc:30] (wytrenowanie) to divert the lightning to another source, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 26) to counteract each time rift.</p>",
             "routine": "<p>(4 actions) The trap loses 1 action each turn for each disabled time rift. On each of the trap's actions, the <em>Eternity Arch</em> releases a bolt of lightning that activates that rift, dealing @Damage[2d12[electricity]] damage to all creatures in a @Template[type:emanation|distance:10] around the time rift (@Check[type:reflex|dc:28|basic:true] save). It can release a bolt at each active time rift no more than once each turn.</p>",
             "tokenName": "Overloading Arch",
             "items": {
@@ -5171,6 +5191,9 @@
                 "weapon->Alchemist's Fire (Moderate)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2k8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
+                "weapon->Frost Vial (Moderate)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2k6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Efekt: Frost Vial (Umiarkowany)}</p>"
+                },
                 "armor->Work Coat": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]\nWork Coat",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]\n<p>Functions as @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]{Padded Armor}</p>\n<hr />\n<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
@@ -5471,7 +5494,7 @@
         "Shadow Double Runes (1-2)": {
             "name": "Shadow Double Runes (1-2)",
             "description": "<p>A cloud of invisible magical sensors in a 10-foot radius surrounds a shadowy 3-foot-diameter rune on the floor.</p>",
-            "disable": "<p>@Check[type:thievery|dc:12|name:Erase the Rune|traits:action:disable-a-device,magical,trap] (wytrenowanie) to carefully erase the rune without triggering the sensors, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} or a spell with the Light trait (1. level; counteract DC 13) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:12|name:Erase the Rune|traits:action:disable-a-device,magical,trap] (wytrenowanie) to carefully erase the rune without triggering the sensors, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} or a spell with the Light trait (1. level; counteract DC 13) to counteract the rune</p>",
             "reset": "<p>The trap resets each night at dusk.</p>",
             "tokenName": "Shadow Double Runes",
             "items": {
@@ -5484,7 +5507,7 @@
         "Shadow Double Runes (3-4)": {
             "name": "Shadow Double Runes (3-4)",
             "description": "<p>A cloud of invisible magical sensors in a 10-foot radius surrounds a shadowy 3-foot-diameter rune on the floor.</p>",
-            "disable": "<p>@Check[type:thievery|dc:14|name:Erase the Rune|traits:action:disable-a-device,magical,trap] (wytrenowanie) to carefully erase the rune without triggering the sensors, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} or a spell with the Light trait (1. level; counteract DC 15) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:14|name:Erase the Rune|traits:action:disable-a-device,magical,trap] (wytrenowanie) to carefully erase the rune without triggering the sensors, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} or a spell with the Light trait (1. level; counteract DC 15) to counteract the rune</p>",
             "reset": "<p>The trap resets each night at dusk.</p>",
             "tokenName": "Shadow Double Runes",
             "items": {
@@ -5521,7 +5544,7 @@
         "Shadow Spears (7-8)": {
             "name": "Shadow Spears (7-8)",
             "description": "<p>Invisible runes are concealed within an elaborate light-woven floor mosaic.</p>",
-            "disable": "<p>@Check[type:thievery|dc:27] (wytrenowanie) to remove pieces from the mosaic without triggering the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 23) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:27] (wytrenowanie) to remove pieces from the mosaic without triggering the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 23) to counteract the rune</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Shadow Spears",
             "items": {
@@ -5537,7 +5560,7 @@
         "Shadow Spears (9-10)": {
             "name": "Shadow Spears (9-10)",
             "description": "<p>Invisible runes are concealed within an elaborate light-woven floor mosaic.</p>",
-            "disable": "<p>@Check[type:thievery|dc:30] (wytrenowanie) to remove pieces from the mosaic without triggering the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 26) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:30] (wytrenowanie) to remove pieces from the mosaic without triggering the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 26) to counteract the rune</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Shadow Spears",
             "items": {
@@ -5939,7 +5962,7 @@
         "Strong Electric Latch Rune": {
             "name": "Strong Electric Latch Rune",
             "description": "<p>An invisible rune imprinted on a door latch releases a powerful electric discharge.</p>",
-            "disable": "<p>@Check[type:thievery|dc:23|name:Scratch Out the Rune|traits:electricity,evocation,magical,trap,hazard] (eksperctwo) to scratch out the rune without allowing electricity to flow, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. level; counteract DC 21) to counteract the rune</p>",
+            "disable": "<p>@Check[type:thievery|dc:23|name:Scratch Out the Rune|traits:electricity,evocation,magical,trap,hazard] (eksperctwo) to scratch out the rune without allowing electricity to flow, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 21) to counteract the rune</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Electrocution": {
@@ -6612,6 +6635,9 @@
             "items": {
                 "spellcastingEntry->Champion Devotion Spells": {
                     "name": "Champion Devotion Spells"
+                },
+                "spell->Touch of Corruption": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jFmWSIpJGGebim6y]\nTouch of Corruption"
                 },
                 "weapon->Greataxe": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>"

@@ -115,7 +115,8 @@
             "publicNotes": "<p>Kobold trapmasters are the masterminds behind crafting and implementing wily traps in kobold lairs, and are widely respected among their kind.</p>",
             "items": {
                 "consumable->Spike Trap": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx]\nSpike Trap"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx]\nSpike Trap",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx]\n<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2k8 piercing damage. The creature must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -209,7 +210,7 @@
         "Magic Starknives Trap": {
             "name": "Magic Starknives Trap",
             "description": "<p>Starknife symbols on the six pillars glow and shoot across the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (eksperctwo) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on any four of the six pillars disables the entire trap (the trap is a 2. kręgu spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (eksperctwo) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} on any four of the six pillars disables the entire trap (the trap is a 2. kręgu spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
             "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets each day at sundown.</p>",
             "routine": "<p>(3 actions) For each of its actions on its turn, a carving on a different pillar glows and makes a magical starknife Ranged Strike against a random creature within range. Creatures might have cover from this Strike, such as from one of the pillars in the room.</p>",
             "stealth": "<p>to spot the magical energies reverberating in the pillars</p>",
@@ -283,7 +284,7 @@
         "Nightmare Terrain": {
             "name": "Nightmare Terrain",
             "description": "<p>What seems like an innocent stretch of land assaults trespassers with terrible illusions.</p>",
-            "disable": "<p>@Check[type:arcana|dc:22], @Check[type:nature|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. poziomu. spell, DC 25)</p>",
+            "disable": "<p>@Check[type:arcana|dc:22], @Check[type:nature|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. poziomu. spell, DC 25)</p>",
             "reset": "<p>The terrible visions cease after all creatures have left the affected area, but the hazard is immediately ready to inflict its visions on the next creature to enter.</p>",
             "routine": "<p>(1 akcja) Terrible visions assail the minds of all creatures who can see within the affected area. Each creature must attempt a @Check[type:will|dc:24] saving throw.</p>\n<hr />\n<p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p>\n<p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p>\n<p><strong>Porażka</strong> The creature takes @Damage[(2d8+9)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>\n<p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(4d8+18)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}.</p>",
             "stealth": "<p>@Check[type:perception|dc:22|traits:action:seek] to detect the subtle magical aura of the land</p>",

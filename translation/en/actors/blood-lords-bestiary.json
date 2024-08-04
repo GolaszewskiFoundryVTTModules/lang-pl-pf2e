@@ -480,6 +480,9 @@
       "name": "Bellator Mortus Soldier",
       "acDetails": "(39 with shield)",
       "items": {
+        "weapon->Khopesh": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YLb6XnT7OxAVGL5m]\n<p>This curved sickle sword has a pointed tip, allowing it to be swung like a handaxe or thrust like a short sword. The tip of a khopesh is usually hooked so that it can be used to disarm an opponent's shield or weapon.</p>"
+        },
         "strike-melee->Khopesh": {
           "name": "Khopesh"
         },
@@ -1458,6 +1461,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6nrCxNQFycUVFOV2]\nThieves' Tools (Infiltrator)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6nrCxNQFycUVFOV2]\n<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action. If you wear your thieves' tools, you can draw and replace them as part of the action that uses them.</p>"
         },
+        "consumable->Striking Snare": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6KdYdFovFBivwI8M]\n<p>You affix a trip line or other trigger to a group of either stones or wooden stakes to strike a creature that enters the snare's square. The creature must attempt a @Check[type:reflex|dc:26|basic:true] saving throw. If you choose stones, the snare deals 9d8 bludgeoning damage; if you choose spikes, it deals 9d8 piercing damage.</p>"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -1716,6 +1722,9 @@
         "spellcastingEntry->Divine Focus Spells": {
           "name": "Divine Focus Spells"
         },
+        "spell->Touch of Corruption": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jFmWSIpJGGebim6y]\nTouch of Corruption"
+        },
         "armor->Full Plate": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]\n<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>"
         },
@@ -1866,6 +1875,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6nrCxNQFycUVFOV2]\n<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action. If you wear your thieves' tools, you can draw and replace them as part of the action that uses them.</p>"
         },
         "consumable->Shadow Essence": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\nShadow Essence",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]\n<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and enfeebled 2 (1 round)</p>"
         },
         "strike-melee->Jaws": {
@@ -2123,6 +2133,7 @@
           "name": "Divine Innate Spells"
         },
         "spell->Righteous Might": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.MMCQsh12TPaDdPbV]\nRighteous Might",
           "requirements": "You have a deity"
         },
         "spell->Remove Curse": {
@@ -2524,12 +2535,18 @@
         "spellcastingEntry->Scattered Coven Spells": {
           "name": "Scattered Coven Spells"
         },
+        "spell->Unseen Custodians": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uuoPmbjEtqzWZs0v]\nUnseen Custodians"
+        },
         "spell->Create Undead (Zombie)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]\nCreate Undead (Zombie)",
           "cost": "black onyx, see Table 7-1"
         },
         "spell->False Life": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]\nFalse Life"
+        },
+        "spell->Heartbond": {
+          "cost": "fine wine and a set of matching rings or other tokens worth 40 gp total"
         },
         "spell->Inveigle": {
           "target": "1 creature of a level no greater than double the inveigle ritual's level"
@@ -3660,7 +3677,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
         },
         "weapon->Frost Vial (Moderate, Infused)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\nFrost Vial (Moderate, Infused)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\nFrost Vial (Moderate, Infused)",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Effect: Frost Vial (Moderate)}</p>"
         },
         "equipment->Alchemist's Tools": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]\nAlchemist's Tools",
@@ -4219,6 +4237,9 @@
         "spell->Hideous Laughter": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]\nHideous Laughter"
         },
+        "spell->Floating Disk": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.LvezN4a3kYf1OHMg]\nFloating Disk"
+        },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
         },
@@ -4445,6 +4466,9 @@
       "items": {
         "spellcastingEntry->Champion Devotion Spells": {
           "name": "Champion Devotion Spells"
+        },
+        "spell->Touch of Corruption": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jFmWSIpJGGebim6y]\nTouch of Corruption"
         },
         "weapon->Longsword": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
@@ -6154,6 +6178,9 @@
         },
         "spell->True Strike": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
+        },
+        "equipment->Wand of the Snowfields (7th-Rank Spell)": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.q2kE0mEUAEL3gQv0]\n<p>This wand is a slender length of ice-blue glass.</p>\n<p><strong>Activate</strong> Cast a spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold} at 7th rank.</p>\n<p>The ground within the spell's area is swathed in deep snow, becoming difficult terrain for 1 minute.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of cone of cold at 7th-rank.</p>"
         },
         "strike-melee->Hand": {
           "name": "Hand"

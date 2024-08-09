@@ -2589,15 +2589,15 @@
                 "CriticalSpecialization": {
                     "axe": "Wybierz jedną istota w twoim wysięgu, znajdującą się obo pierwotnego celu trafienia. Jeśli jej KP jest niższa od twojego rzutu na trafienie krytyczne zadajesz jej wyrzucone obrażenia kości broni (wliczając w to dodatkowe kości z <em>runy ciosów</em> jeśli taką posiadasz). Te obrażenia nie są podwajane ani nie dodają się do nich żadne inne premie czy dodatkowe kości.",
                     "bomb": "Zwiększa promień obrażeń rozpryskowych bomby (jeśli takie posiada) do 10 stóp.",
-                    "bow": "Jeśli cel trafienia krytycznego znajduje się przy twardej powierzchni, pocisk przytwierdza go do niej. Cel jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i musi użyć akcji Interakcji aby wykonać test @Check[type:athletics|dc:10|name:Wyciągnięcie Pocisku|showDC:all] aby wyciągnąć pocisk; nie może poruszyć się ze swojego pola dopóki mu się nie uda. Istota nie zostaje przytwierdzona jeśli jest bezcielesna, jest cieczą lub jeśli może w inny sposób uciec bez wysiłku (na przykład jeśli jest tak wielka, że pocisk nie byłby dla niej przeszkodą).",
-                    "brawling": "Cel musi rzucić zdać obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Broni Ręcznej] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej tury.",
+                    "bow": "Jeśli cel trafienia krytycznego znajduje się przy twardej powierzchni, pocisk przytwierdza go do niej. Cel jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i musi użyć akcji Interakcji aby wykonać test @Check[athletics|dc:10|name:Pull the Missile Free|showDC:all] aby wyciągnąć pocisk; nie może poruszyć się ze swojego pola dopóki mu się nie uda. Istota nie zostaje przytwierdzona jeśli jest bezcielesna, jest cieczą lub jeśli może w inny sposób uciec bez wysiłku (na przykład jeśli jest tak wielka, że pocisk nie byłby dla niej przeszkodą).",
+                    "brawling": "Cel musi rzucić zdać obronny @Check[fortitude|against:class|name:Krytyczna Specjalizacja w Broni Ręcznej] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej tury.",
                     "club": "Odrzucasz cel do 10 stóp od siebie w prostej linii, w wybranym kierunku. Jest to wymuszony ruch.",
-                    "firearm": "Cel musi rzucić zdać obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Broni Palnej] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
-                    "flail": "Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, chyba że zda rzut obronny @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Flail Critical Specialization] przeciw twojemu ST Klasowemu.",
-                    "hammer": "Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, chyba że zda rzut obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Hammer Critical Specialization] przeciw twojemu ST Klasowemu.",
+                    "firearm": "Cel musi rzucić zdać obronny @Check[fortitude|against:class|name:Krytyczna Specjalizacja w Broni Palnej] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
+                    "flail": "Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, chyba że zda rzut obronny @Check[reflex|against:class|name:Flail Critical Specialization] przeciw twojemu ST Klasowemu.",
+                    "hammer": "Cel zostaje @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, chyba że zda rzut obronny @Check[fortitude|against:class|name:Hammer Critical Specialization] przeciw twojemu ST Klasowemu.",
                     "polearm": "Cel przemieszcza się o 5 stóp w wybranym przez ciebie kierunku. Jest to wymuszony ruch.",
                     "shield": "Odrzucasz cel o 5 stóp od siebie. Jest to wymuszony ruch.",
-                    "sling": "Cel musi zdać rzut obronny @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Krytyczna Specjalizacja w Procach] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
+                    "sling": "Cel musi zdać rzut obronny @Check[fortitude|against:class|name:Krytyczna Specjalizacja w Procach] przeciw twojemu ST klasowemu lub staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.",
                     "spear": "Broń tegp typu przebija cel osłabiając jego ataki. Cel staje się @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Niezdarny 1} aż do początku twojej następnej tury.",
                     "sword": "Cel jest wytrącany z równowagi przez twój atak i ma @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} aż do początku twojej następnej tury."
                 },
@@ -2846,7 +2846,7 @@
                     "ShieldBlock": "<p><strong>Aktywator</strong> Potwór ma wzniesioną tarczę i otrzymuje obrażenia od ataku fizycznego.</p><hr /><p><strong>Efekt</strong> Potwór nastawia swoją tarczę tak, aby odbić atak. Tarcza zapobiega obrażeniom w liczbie wynoszącej maks. wartość Twardości tarczy. Zarówno potwór, jak i tarcza otrzymują następni wszelkie pozostałe obrażenia, co może doprowadzić do uszkodzenia lub zniszczenia tarczy.</p>",
                     "SneakAttack": "<p>Kiedy potwór zada Cios istocie, która ma @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}, używają do tego chyżej lub finezyjnej broni, chyżego lub finezyjnego ataku wręcz albo ataku dystansowego, zadaje również wymienione obrażenia precyzyjne. W przypadku ataku dystansowego bronią miotaną również musi to być broń chyża lub finezyjna.</p>",
                     "Stench": "<p>Istota wkraczająca w obszar aury albo zaczynająca w nim turę musi wykonać rzut obronny Krzepy lub staje się @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlona 1} (lub przy porażce krytycznej dodatkowo @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniona 1}, tak długo jak pozostaje zemdlona). Istota, która odniesie sukces na rzucie obronnym lub przestanie być zemdlona jest tymczasowo odporna na wszystkie aury smrodu przez 1 minutę.</p>",
-                    "SwallowWhole": "<p>Potwór próbuje połknąć istotę o podanym rozmiarze lub mniejszym, którą pochwycił lub spętał w swoich szczękach lub pysku. Jeśli połknięta istota jest maksymalnego podanego rozmiaru, potwór nie może ponownie użyć Połknięcia w Całości. Jeśli istota jest mniejszego rozmiaru niż maksymalny, potwór może zwykle połknąć więcej istot; MG określa jak wiele. Potwór wykonuje @Check[type:athletics|defense:reflex], któremu przeciwstawia się ST Refleksu Pochwyconej istoty. Jeśli mu się powiedzie, połyka istotę. Pysk lub szczęki potwora nie chwytają już połkniętej istoty, więc potwór może ponownie użyć ich do Ciosu lub Pochwycenia. Potwór nie może atakować istot, które połknął.</p><p>Połknięta istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Połknięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po połknięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje połknięta. Jeśli ofiara @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieknie} ze statusu Pochwycenia wynikającego z tej umiejętności, wychodzi przez paszczę potwora. Uwalnia to również każdą inną istotę Pochwyconą obecnie przez paszczę lub szczęki potwora. Połknięta istota może zaatakować potwora, który ją połknął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Połykająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, połknięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń połykającego potwora.</p><p>Jeśli potwór umrze, połknięta istota może zostać uwolniona przez istoty sąsiadujące ze zwłokami, jeśli spędzą łącznie 3 akcje, rozcinając potwora bronią lub atakiem wręcz, który zadaje obrażenia kłute lub cięte.</p>",
+                    "SwallowWhole": "<p>Potwór próbuje połknąć istotę o podanym rozmiarze lub mniejszym, którą pochwycił lub spętał w swoich szczękach lub pysku. Jeśli połknięta istota jest maksymalnego podanego rozmiaru, potwór nie może ponownie użyć Połknięcia w Całości. Jeśli istota jest mniejszego rozmiaru niż maksymalny, potwór może zwykle połknąć więcej istot; MG określa jak wiele. Potwór wykonuje @Check[athletics|defense:reflex], któremu przeciwstawia się ST Refleksu Pochwyconej istoty. Jeśli mu się powiedzie, połyka istotę. Pysk lub szczęki potwora nie chwytają już połkniętej istoty, więc potwór może ponownie użyć ich do Ciosu lub Pochwycenia. Potwór nie może atakować istot, które połknął.</p><p>Połknięta istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Połknięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po połknięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje połknięta. Jeśli ofiara @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieknie} ze statusu Pochwycenia wynikającego z tej umiejętności, wychodzi przez paszczę potwora. Uwalnia to również każdą inną istotę Pochwyconą obecnie przez paszczę lub szczęki potwora. Połknięta istota może zaatakować potwora, który ją połknął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Połykająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, połknięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń połykającego potwora.</p><p>Jeśli potwór umrze, połknięta istota może zostać uwolniona przez istoty sąsiadujące ze zwłokami, jeśli spędzą łącznie 3 akcje, rozcinając potwora bronią lub atakiem wręcz, który zadaje obrażenia kłute lub cięte.</p>",
                     "SwarmMind": "<p>Ten potwór nie ma pojedynczego umysłu (zwykle dlatego, że jest to rój mniejszych stworzeń) i jest odporny na efekty mentalne, które dotyczą tylko określonej liczby istot. Nadal podlega efektom mentalnym, które wpływają na wszystkie istoty na danym obszarze.</p>",
                     "Telepathy": "<p>Potwór posiadający zdolność telepatii może porozumiewać się mentalnie z dowolnymi istotami znajdującymi się w podanym promieniu, o ile znają wspólny język. Nie daje to żadnego specjalnego wglądu w ich myśli i nie przekazuje więcej informacji niż normalna mowa.</p>",
                     "Thoughtsense": "<p>Wyczucie myśli pozwala potworowi wyczuć wszystkie nie-bezmyślne istoty w podanym zasięgu.</p>",
@@ -3325,9 +3325,17 @@
                 "Disabled": "Wyłączono"
             },
             "Homebrew": {
+                "ArmorGroups": {
+                    "Hint": "Pośredni poziom taksonomii pancerza w Pathfinder 2e (np. Płytowy, Kolczy)",
+                    "Name": "Grupy Pancerza"
+                },
+                "BaseArmors": {
+                    "Hint": "Niski poziom taksonomii pancerza w Pathfinder 2e (np. Zbroja Płytowa, Kolczuga)",
+                    "Name": "Armor Base Types"
+                },
                 "BaseWeapons": {
                     "Hint": "Niski poziom taksonomii broni w Pathfinder 2e (np. Ciężka Kusza, Miecz Długi)",
-                    "Name": "Broń Bazowa"
+                    "Name": "Bazowe Typy Broni"
                 },
                 "ConfirmDelete": {
                     "Message": "Usunąć Domorobny Element<strong>{element}</strong>?",
@@ -3345,7 +3353,7 @@
                     "Label": "Etykieta"
                 },
                 "EquipmentTraits": {
-                    "Hint": "Cechy mające zastosowanie dla ekwipunku innego niż broń",
+                    "Hint": "Cechy mające zastosowanie dla ekwipunku, pancerza i przedmiotów zużywalnych",
                     "Name": "Cechy Ekwipunku"
                 },
                 "FeatTraits": {
@@ -3361,6 +3369,7 @@
                         "Label": "Język \"Wspólny\""
                     },
                     "Hint": "Języki, które mogą znać postacie graczy (np. Smoczy, Gnomi)",
+                    "Name": "Języki",
                     "Rarities": {
                         "Common": "<rarity>Powszechne</rarity> Języki",
                         "Name": "Rzadkości Języków",
@@ -3375,18 +3384,19 @@
                 },
                 "Name": "Elementy Domorobne",
                 "ReservedTerm": "\"{term}\" to zastrzeżone określenie.",
+                "ShieldTraits": {
+                    "Hint": "Cechy mające zastosowanie dla tarcz",
+                    "Name": "Cechy Tarcz"
+                },
                 "SpellTraits": {
-                    "Hint": "Cech mające zastosowanie dla zaklęć (np. Klątwięź, Leczenie)",
+                    "Hint": "Cechy mające zastosowanie dla zaklęć (np. Klątwięź, Leczenie)",
                     "Name": "Cechy Zaklęć"
                 },
                 "Tabs": {
                     "Campaign": "Kampania",
                     "Damage": "Typy Obrażeń",
-                    "Traits": "Cechy i Kategorie"
-                },
-                "EnvironmentTypes": {
-                    "Hint": "Niestandardowe typy środowiska",
-                    "Name": "Typy Środowiska"
+                    "Taxonomies": "Taksonomia Rynsztunku",
+                    "Traits": "Cechy"
                 },
                 "WeaponCategories": {
                     "Hint": "Górny poziom taksonomii broni w Pathfinder 2e (np. Proste, Wojskowe)",
@@ -3397,7 +3407,7 @@
                     "Name": "Grupy Broni"
                 },
                 "WeaponTraits": {
-                    "Hint": "Cech mające zastosowanie dla ataków BN lub broni",
+                    "Hint": "Cechy mające zastosowanie dla ataków BN lub broni",
                     "Name": "Cechy Broni"
                 }
             },
@@ -4015,7 +4025,7 @@
         "TraitDescriptionArtifact": "Przedmioty z tą cechą są artefaktami. Tych magicznych przedmiotów nie można wytworzyć w konwencjonalny sposób i nie można ich też w konwencjonalny sposób uszkodzić. Artefakty są zawsze rzadkie lub unikalne.",
         "TraitDescriptionAstral": "Istoty astralne są rodzimymi mieszkańcami Planu Astralnego. Mogą one znosić bez problemów podstawowe efekty środowiskowe Planu Astralnego.",
         "TraitDescriptionAthamaru": "Atamaru są przypominającymi ryby, wodno-lądowymi humanoidami.",
-        "TraitDescriptionAttached": "Broń mocowana musi być połączona z innym elementem wyposażenia. Cecha określa typ przedmiotu, do którego musi być zamocowana broń. Musisz dzierżyć lub nosić przedmiot, do którego jest przymocowana broń, aby móc nią atakować. Na przykład kolce na tarczę są mocowane do tarczy, co pozwala ci atakować kolcami zamiast grzmotnięcia tarczą, ale tylko wtedy, gdy dzierżysz tę tarczę. Mocowana broń jest zwykle przykręcona lub wbudowywana w przedmiot, do którego jest przymocowana, i zazwyczaj przedmiot może mieć zamocowaną na sobie tylko jedną broń. Mocowaną broń można dołączyć do przedmiotu w ramach 10 minutach pracy i udanego testu @Check[type:crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia broni z poprzedniego przedmiotu, jeśli to konieczne. Jeśli przedmiot zostanie zniszczony, przymocowaną do niego broń można zwykle odratować.",
+        "TraitDescriptionAttached": "Broń mocowana musi być połączona z innym elementem wyposażenia. Cecha określa typ przedmiotu, do którego musi być zamocowana broń. Musisz dzierżyć lub nosić przedmiot, do którego jest przymocowana broń, aby móc nią atakować. Na przykład kolce na tarczę są mocowane do tarczy, co pozwala ci atakować kolcami zamiast grzmotnięcia tarczą, ale tylko wtedy, gdy dzierżysz tę tarczę. Mocowana broń jest zwykle przykręcona lub wbudowywana w przedmiot, do którego jest przymocowana, i zazwyczaj przedmiot może mieć zamocowaną na sobie tylko jedną broń. Mocowaną broń można dołączyć do przedmiotu w ramach 10 minutach pracy i udanego testu @Check[crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia broni z poprzedniego przedmiotu, jeśli to konieczne. Jeśli przedmiot zostanie zniszczony, przymocowaną do niego broń można zwykle odratować.",
         "TraitDescriptionAttack": "Zdolność z tą cechą wiąże się z atakiem. Po wykonaniu pierwszego ataku w twojej turze, każdy następny który wykonasz jest obarczony karą za atak wielokrotny.",
         "TraitDescriptionAuditory": "Działania i efekty słuchowe opierają się na dźwięku. Akcja z cechą słuchowości może zostać pomyślnie wykonana tylko wtedy, gdy istota używająca tej akcji może mówić lub w inny sposób wydawać wymagane dźwięki. Zaklęcie lub efekt z cechą słuchowości działają tylko wtedy, gdy cel może je usłyszeć. Dotyczy to tylko dźwiękowych części efektu, określonych przez MG. Jest to cecha odrębna od dźwiękowości, która wpływa też na cele, które nie słyszą efektu (takie jak cele ogłuchłe), o ile sam efekt wydaje dźwięk.",
         "TraitDescriptionAura": "Aura to emanacja, którą nieustannie roztaczasz, wpływając na istoty w określonym promieniu. Aura może również odnosić się do magicznej sygnatury przedmiotu lub istot o silnym charakterze.",
@@ -4053,7 +4063,7 @@
         "TraitDescriptionClimbing": "Ręki dzierżącej tą broń nadal można używać do wspinaczki.",
         "TraitDescriptionClockwork": "Mechanizmy zegarowe to zawiłe i złożone konstrukcje, które można zaprogramować do wykonywania określonych funkcji.",
         "TraitDescriptionCoatl": "Rodzina nadnaturalnych opierzonych węży, służących w Świecie Głównym za strażników i posłańców różnorakich świętych boskich sił.",
-        "TraitDescriptionCobbled": "Ta broń palna jest sklecona naprędce i ma sporą szansę na niewypał. Bez względu na to, jak dobrze o nią dbasz, przy nieudanym rzucie ataku atak chybia a ty musisz rzucić @Check[type:flat|dc:5]. Jeśli ten test się nie powiedzie, strzał to niewypał.",
+        "TraitDescriptionCobbled": "Ta broń palna jest sklecona naprędce i ma sporą szansę na niewypał. Bez względu na to, jak dobrze o nią dbasz, przy nieudanym rzucie ataku atak chybia a ty musisz rzucić @Check[flat|dc:5]. Jeśli ten test się nie powiedzie, strzał to niewypał.",
         "TraitDescriptionCoda": "<p>Instrumenty z cechą kody działają w dużym stopniu jak kostury i mają cechę kostur. Istnieją dwie różnice: instrumenty z kodą mają postać instrumentów muzycznych i mogą być przygotowywane tylko przez bardów. Ponieważ fizycznie nie są to kostury, nie można nimi atakować ani wyryć na nich run broni.</p><p>Proces przygotowania instrumentu z kodą obejmuje granie znacznych fragmentów utworów związanych z zawartymi w nim zaklęciami — albo klasycznych utworów albo twoich własnych kreacji. Pozostawia to magiczny pogłos w instrumencie, który pozwala dokończyć utwory, grając ich kodę później w ciągu dnia.</p>",
         "TraitDescriptionCold": "Efekty z tą cechą zadają obrażenia od zimna. Istoty z tą cechą mają magiczną więź z tym żywiołem.",
         "TraitDescriptionCombination": "<p>Broń kombinacyjna łączy w sobie funkcjonalności broni białej i broni dystansowej w unikalny lub niezwykły sposób. Broń kombinacyjna ma postać lub użycie dystansowe oraz postać lub użycie w zwarciu. Tabela broni kombinacyjnych zawiera najpierw statystyki broni dystansowej, poniżej statystyki broni białej, tuż nad amunicją. Przełączanie między użyciem broni białej i broni dystansowej wymaga akcji Interakcji. Jednakże, jeśli twoją ostatnią akcją był udany Cios formą do walki w zwarciu przeciw wrogowi, możesz wykonać Cios dystansowy tą bronią przeciwko temu wrogowi bez pełnego przełączania się na tryb dystansowy, strzelając z broni dystansowej dokładnie w momencie trafienia. W takim przypadku broń kombinacyjna powraca do formy do walki w zwarciu po Ciosie formą dystansową.</p><p>Ponieważ broń kombinacyjna to jedna broń z dwoma formami, obie formy współdzielą runy fundamentalne. Możesz umieścić runę właściwości na broni kombinacyjnej, o ile jest ona zgodna z przynajmniej jedną z form, ale jeśli tylko jedna spełnia wymagania runy właściwości, efekty runy właściwości mają zastosowanie tylko do niej. Na przykład worpalny toporo-muszkiet stosuje runę właściwości worpalności tylko wtedy, gdy używasz go jako topora. Ze względu na swoją złożoność broń kombinacyjna nie można do niej przymocować kolejnych modyfikacji czy dodatkowej broni, takich jak wzmocniona kolba czy bagnet.</p>",
@@ -4133,10 +4143,10 @@
         "TraitDescriptionFire": "Efekty z cechą ogień zadają obrażenia od ognia albo manipulują ogniem lub go wyczarowują. Te, które manipulują ogniem, nie odnoszą efektu na obszarze pozbawionym ognia. Istoty z tą cechą składają się głównie z ognia lub są powiązane z magicznym ogniem.",
         "TraitDescriptionFleshwarp": "Humanoid tak dogłębnie przekształcony przez siły zewnętrzne, że stanowi teraz wyjątkowe przedkowstwo.",
         "TraitDescriptionFlexible": "Ten pancerz jest na tyle elastyczny, że nie przeszkadza w większości działań. Nie stosujesz jej kary do testów do testów Akrobatyki i Atletyki.",
-        "TraitDescriptionFlourish": "Akcje emfazy to akcje, które wymagają zbyt dużego wysiłku, aby wykonać dużą ich liczbę z rzędu. Możesz użyć tylko 1 akcji z cechą Emfaza na turę.",
+        "TraitDescriptionFlourish": "Akcje z cechą emfazy to specjalne techniki, które wymagają zbyt dużego wysiłku, aby wykonywać je często. Możesz użyć tylko jednej akcji z cechą emfaza na rundę.",
         "TraitDescriptionFocus": "Zaklęcia skupienia to specjalny rodzaj zaklęć, uzyskiwanych bezpośrednio w wyniku określonego rodzaju nauk, od bóstwa lub z innego specyficznego źródła. Zaklęć skupienia możesz się nauczyć jedynie przez specjalne atrybuty i atuty klasowe, w przeciwieństwie do wybierania ich z listy. Ponadto zaklęcia skupienia rzucasz za pomocą specjalnej puli Punktów Skupienia - nie możesz przygotować ich w komórce zaklęć ani używać komórek zaklęć do ich rzucania; podobnie, nie możesz wydawać swoich Punktów Skupienia aby rzucić zaklęcia, które zaklęciami skupienia nie są.",
         "TraitDescriptionFocused": "Przedmiot z tą cechą może dać ci dodatkowy Punkt Skupienia. Ten punkt skupienia jest oddzielony od twojej puli skupienia i nie wlicza się do limitu twojej puli skupienia. Możesz uzyskać tę korzyść tylko wtedy, gdy masz pulę skupienia a ponadto sposób w jaki można użyć tego punktu skupienia może być ograniczony. Nie możesz zdobyć więcej niż 1 Punkt Skupienia dziennie z przedmiotów skupiających.",
-        "TraitDescriptionFoldaway": "<p>Ta tarcza może zostać złożona w mniejszą formę przymocowaną do rękawicy, aby zapewnić stabilność i ułatwić podróż. Możesz użyć akcji Interakcji, aby rozłożyć lub złożyć tarczę. Gdy jest rozłożona, możesz Wznieść Tarczę, o ile ręka na której ją nosisz jest pusta lub trzyma przedmiot lekkiego Naręcza inny niż broń. Tarcza utrudnia korzystanie z ręki, gdy jest rozłożona. Chociaż nadal możesz trzymać w tej ręce przedmioty, nie możesz w niej dzierżyć broni, obsługiwać niczego, co wymaga dwóch rąk, ani atakować rękawicą.</p><p>Składana tarcza musi być przymocowana do rękawicy, aby zapewnić jej stabilność. Można ją przymocować do przedmiotu w ramach 10 minut pracy oraz udanego testu @Check[type:crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia tarczy z poprzedniej rękawicy, jeśli to konieczne. Jeśli rekawica zostanie zniszczona, składaną tarczę można zwykle odratować. Składany charakter tarczy uniemożliwia przymocowanie do niej broni mocowanej.</p>",
+        "TraitDescriptionFoldaway": "<p>Ta tarcza może zostać złożona w mniejszą formę przymocowaną do rękawicy, aby zapewnić stabilność i ułatwić podróż. Możesz użyć akcji Interakcji, aby rozłożyć lub złożyć tarczę. Gdy jest rozłożona, możesz Wznieść Tarczę, o ile ręka na której ją nosisz jest pusta lub trzyma przedmiot lekkiego Naręcza inny niż broń. Tarcza utrudnia korzystanie z ręki, gdy jest rozłożona. Chociaż nadal możesz trzymać w tej ręce przedmioty, nie możesz w niej dzierżyć broni, obsługiwać niczego, co wymaga dwóch rąk, ani atakować rękawicą.</p><p>Składana tarcza musi być przymocowana do rękawicy, aby zapewnić jej stabilność. Można ją przymocować do przedmiotu w ramach 10 minut pracy oraz udanego testu @Check[crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia tarczy z poprzedniej rękawicy, jeśli to konieczne. Jeśli rekawica zostanie zniszczona, składaną tarczę można zwykle odratować. Składany charakter tarczy uniemożliwia przymocowanie do niej broni mocowanej.</p>",
         "TraitDescriptionForce": "Efekty z tą cechą zadają obrażenia od mocy lub tworzą obiekty wykonane z czystej mocy magicznej.",
         "TraitDescriptionForceful": "Ta broń staje się coraz bardziej niebezpieczna, wraz z nabieranym przez ciebie rozpędem. Kiedy atakujesz nią więcej niż raz w swojej turze, drugi atak zyskuje premię sytuacyjną do obrażeń równą liczbie kości obrażeń broni, a każdy kolejny atak zyskuje premię sytuacyjną do obrażeń równą dwukrotności liczby kości obrażeń broni.",
         "TraitDescriptionFortune": "Efekt szczęścia zmienia sposób rzucania kośćmi na twoją korzyść. Nigdy nie możesz odnosić korzyści z więcej niż jednego efektu szczęścia na pojedynczym rzucie. Jeśli miałoby zastosowanie kilka efektów szczęścia ty decydujesz, którego z nich chcesz użyć. Jeśli efekt szczęścia i efekt nieszczęścia dotyczyłyby tego samego rzutu, oba znoszą się nawzajem i rzucasz normalnie.",
@@ -4334,7 +4344,7 @@
         "TraitDescriptionStance": "Postawa to ogólna strategia walki, którą przybierasz, używając akcji z cechą postawy i w której pozostajesz przez pewien czas. Pozostajesz w postawie dopóki nie zostaniesz pozbawiony przytomności, dopóki jej wymogi (jeśli posiada) nie zostaną naruszone, dopóki nie zakończy się starcie, lub dopóki nie wejdziesz w nową postawę, którekolwiek nastąpi pierwsze. Kiedy użyjesz akcji z cechą postawy, nie możesz używać kolejnej do końca bieżącej rundy. Możesz przybierać postawy tylko podczas starć.",
         "TraitDescriptionSteam": "Przedmioty z tą cechą są napędzane silnikami podgrzewającymi wodę aby wyprodukować parę i za jej pomocą wprawiać w ruch ich komponenty.",
         "TraitDescriptionStrix": "Skzydlate humanoidy, w większości żyjące w okolicach Cheliaxu.",
-        "TraitDescriptionStructure": "Przedmiot z cechą struktura tworzy magiczną budowlę albo innego rodzaju strukturę przy swojej aktywacji. Przedmiot musi zostać aktywowany na połaci ziemi wolnej od innych struktur. Struktura adaptuje się do otaczającego terenu, przybierając cechy konstrukcyjne niezbędne do jej powstania w tym miejscu. Struktura dostosowuje się do małych przestrzeni takich jak sadzawki czy występy skalne, nie może jednak zostać postawiona w całości na wodzie czy innej płynnej powierzchni. W wypadku aktywacji na śniegu, wydmach piaskowych, albo innej miękkiej powierzchni z twardą warstwą ukrytą głębiej, fundamenty struktury (jeśli je posiada) dosięgają stabilnej warstwy. Jeśli przedmiot z tą cechą zostanie aktywowany na solidnej ale niestabilnej powierzchni, takiej jak bagniska lub obszary nękane przez wstrząsy tektoniczne, rzucaj każdego dnia @Check[type:flat|dc:3]; przy porażce struktura zaczyna się zapadać lub burzyć. Struktura nie krzywdzi okolicznych istot w procesie swojego powstawania i nie może zostać stworzona w tłumie czy gęsto zaludnionym obszarze. Każda istota złapana przypadkowo w procesie powstawania struktury ląduje bezpiecznie w jej wnętrzu i zawsze posiada drogę do wyjścia. Istota przebywająca wewnątrz struktury w momencie kiedy jej aktywacja się kończy nie jest krzywdzona i upada bezpiecznie na ziemię jeśli była na wyższych piętrach.",
+        "TraitDescriptionStructure": "Przedmiot z cechą struktura tworzy magiczną budowlę albo innego rodzaju strukturę przy swojej aktywacji. Przedmiot musi zostać aktywowany na połaci ziemi wolnej od innych struktur. Struktura adaptuje się do otaczającego terenu, przybierając cechy konstrukcyjne niezbędne do jej powstania w tym miejscu. Struktura dostosowuje się do małych przestrzeni takich jak sadzawki czy występy skalne, nie może jednak zostać postawiona w całości na wodzie czy innej płynnej powierzchni. W wypadku aktywacji na śniegu, wydmach piaskowych, albo innej miękkiej powierzchni z twardą warstwą ukrytą głębiej, fundamenty struktury (jeśli je posiada) dosięgają stabilnej warstwy. Jeśli przedmiot z tą cechą zostanie aktywowany na solidnej ale niestabilnej powierzchni, takiej jak bagniska lub obszary nękane przez wstrząsy tektoniczne, rzucaj każdego dnia @Check[flat|dc:3]; przy porażce struktura zaczyna się zapadać lub burzyć. Struktura nie krzywdzi okolicznych istot w procesie swojego powstawania i nie może zostać stworzona w tłumie czy gęsto zaludnionym obszarze. Każda istota złapana przypadkowo w procesie powstawania struktury ląduje bezpiecznie w jej wnętrzu i zawsze posiada drogę do wyjścia. Istota przebywająca wewnątrz struktury w momencie kiedy jej aktywacja się kończy nie jest krzywdzona i upada bezpiecznie na ziemię jeśli była na wyższych piętrach.",
         "TraitDescriptionSubjectiveGravity": "Na planach o tej cesze, wszystkie ciała mają możliwość bycia centrum grawitacji z tą samą siłą, jednak wymaga to określenia przez wolę nie-bezmyślnej istoty.",
         "TraitDescriptionSubtle": "Zaklęcie z cechą subtelności może być rzucane bez inkantacji i nie posiada oczywistych przejawów.",
         "TraitDescriptionSuli": "Suli to planarne przodkowstwo wywodzące się od jannów.",
@@ -5375,19 +5385,19 @@
             "anchoring": {
                 "Name": "Kotwiczenia",
                 "Note": {
-                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową} (@Check[type:will|dc:27|name:Anchoring Rune], modyfikator przeciwdziałania [[/r 1d20+17 #Test przeciwdziałania Runie Kotwiczenia]]{+17})"
+                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową} (@Check[will|dc:27|name:Anchoring Rune], modyfikator przeciwdziałania [[/r 1d20+17 #Test przeciwdziałania Runie Kotwiczenia]]{+17})"
                 }
             },
             "ashen": {
                 "Name": "Popielna",
                 "Note": {
-                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:25]."
+                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[will|dc:25]."
                 }
             },
             "astral": {
                 "Name": "Astralności",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[type:will|dc:26] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
+                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[will|dc:26] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
                     "Note": "Runa ta ma te same efekty co runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Duchowego Dotyku}. Jeśli zostanie użyta do zaatakowania istoty opętującej inną istotę, nie zadaje ona obrażeń istocie opętywanej."
                 }
             },
@@ -5409,7 +5419,7 @@
             "brilliant": {
                 "Name": "Światłości",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:29|name:Runa Światłości] albo zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę."
+                    "criticalSuccess": "Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[fortitude|dc:29|name:Runa Światłości] albo zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę."
                 }
             },
             "called": {
@@ -5484,7 +5494,7 @@
             "frost": {
                 "Name": "Mrozu",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym, cel jest również @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej rundy, chyba że zda rzut obronny @Check[type:fortitude|dc:24|name:Runa Mrozu]."
+                    "criticalSuccess": "Przy trafieniu krytycznym, cel jest również @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej rundy, chyba że zda rzut obronny @Check[fortitude|dc:24|name:Runa Mrozu]."
                 }
             },
             "ghostTouch": {
@@ -5500,20 +5510,20 @@
             "greaterAnchoring": {
                 "Name": "Większego Kotwiczenia",
                 "Note": {
-                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową} na 8. kręgu (@Check[type:will|dc:38|name:Większa Runa Kotwicząca], modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28}), z tym, że jeśli istota krytycznie zda rzut obronny, <em>kotwica wymiarowa</em> działa 1 rundę zamiast nie zadziałać wcale.",
+                    "criticalSuccess": "Kiedy trafisz krytycznie za pomocą broni z runą kotwiczącą, rzuca ona na cel @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Kotwicę Wymiarową} na 8. kręgu (@Check[will|dc:38|name:Większa Runa Kotwicząca], modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28}), z tym, że jeśli istota krytycznie zda rzut obronny, <em>kotwica wymiarowa</em> działa 1 rundę zamiast nie zadziałać wcale.",
                     "success": "Kiedy trafisz ciel lecz nie jest to trafienie krytyczne, cel zostaje objęty zaklęciem @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Wymiarowej Kotwicy} 4. kręgu na jedną rundę z pominięciem rzutu obronnego (modyfikator przeciwdziałania [[/r 1d20+28 #Test przeciwdziałania Większej Runie Kotwiczenia]]{+28})."
                 }
             },
             "greaterAshen": {
                 "Name": "Większego Popielna",
                 "Note": {
-                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[type:will|dc:35]. Przy krytycznej porażce efekt dezorientacji trwa 1 minutę."
+                    "success": "Popiół zakłóca zmysły ofiary, powodując dezorientację na 1 rundę, chyba że zda ona rzut obronny @Check[will|dc:35]. Przy krytycznej porażce efekt dezorientacji trwa 1 minutę."
                 }
             },
             "greaterAstral": {
                 "Name": "Większej Astralności",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[type:will|dc:36] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
+                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[will|dc:36] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
                     "Note": "Runa ta ma te same efekty co runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Duchowego Dotyku}. Jeśli zostanie użyta do zaatakowania istoty opętującej inną istotę, nie zadaje ona obrażeń istocie opętywanej."
                 }
             },
@@ -5523,7 +5533,7 @@
             "greaterBrilliant": {
                 "Name": "Większej Światłości",
                 "Note": {
-                    "criticalSuccess": "Obrażenia zadawane przez tę broń ignorują odporności celu na obrażenia od ognia, duchowe oraz witalności. Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:41|name:Większa Runa Światłości] lub zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę.",
+                    "criticalSuccess": "Obrażenia zadawane przez tę broń ignorują odporności celu na obrażenia od ognia, duchowe oraz witalności. Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[fortitude|dc:41|name:Większa Runa Światłości] lub zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} na 1 rundę.",
                     "success": "Obrażenia zadawane przez tę broń ignorują odporności celu na obrażenia od ognia, duchowe oraz witalności."
                 }
             },
@@ -5571,7 +5581,7 @@
             "greaterFrost": {
                 "Name": "Większego Mrozu",
                 "Note": {
-                    "criticalSuccess": "Obrażenia od zimna zadawane przez tą broń ignorują odporność na zimno celu. Przy trafieniu krytycznym, cel jest również @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej rundy, chyba że zda rzut obronny @Check[type:fortitude|dc:34|name:Większa Runa Mrozu].",
+                    "criticalSuccess": "Obrażenia od zimna zadawane przez tą broń ignorują odporność na zimno celu. Przy trafieniu krytycznym, cel jest również @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} aż do końca twojej następnej rundy, chyba że zda rzut obronny @Check[fortitude|dc:34|name:Większa Runa Mrozu].",
                     "success": "Obrażenia od zimna zadawane przez tą broń ignorują odporność na zimno celu."
                 }
             },
@@ -5579,7 +5589,7 @@
                 "Name": "Większego Zabójcy Gigantów",
                 "Note": {
                     "success": "Mentalne obrażenia zadawane przez tę broń ignorują odporność celu.",
-                    "criticalSuccess": "Przy krytycznym trafieniu tą bronią, gigant musi wykonać @Check[type:fortitude|dc:34] o poniższym efekcie.<br /><strong>Krytyczny Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} do końca twojej następnej tury.<br /><strong>Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} do końca twojej następnej tury i odnosi @Damage[1d10[mental]].<br /><strong>Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} na następną minutę i odnosi @Damage[2d10[mental]].<br/><strong>Krytyczna Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 4} na następną minutę i odnosi @Damage[4d10[mental]]."
+                    "criticalSuccess": "Przy krytycznym trafieniu tą bronią, gigant musi wykonać @Check[fortitude|dc:34] o poniższym efekcie.<br /><strong>Krytyczny Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} do końca twojej następnej tury.<br /><strong>Sukces</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} do końca twojej następnej tury i odnosi @Damage[1d10[mental]].<br /><strong>Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} na następną minutę i odnosi @Damage[2d10[mental]].<br/><strong>Krytyczna Porażka</strong> Gigant jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 4} na następną minutę i odnosi @Damage[4d10[mental]]."
                 }
             },
             "greaterHauling": {
@@ -5588,7 +5598,7 @@
             "greaterImpactful": {
                 "Name": "Większego Impetu",
                 "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu możesz wymusić na celu rzut obronny @Check[type:fortitude|dc:37|name:Większa Runa Impetu], w wypadku porażki jest on odpychany10 stóp od ciebie."
+                    "criticalSuccess": "Przy krytycznym trafieniu możesz wymusić na celu rzut obronny @Check[fortitude|dc:37|name:Większa Runa Impetu], w wypadku porażki jest on odpychany10 stóp od ciebie."
                 }
             },
             "greaterRooting": {
@@ -5607,7 +5617,7 @@
             "greaterThundering": {
                 "Name": "Większego Grzmotu",
                 "Note": {
-                    "criticalSuccess": "Obrażenia od dźwięku zadawane przez tę broń ignorują odporność na obrażenia od dźwięku celu. Przy rzucie krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:34|name:Większa Runa Grzmotu] albo zostaje permanentnie @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły}.",
+                    "criticalSuccess": "Obrażenia od dźwięku zadawane przez tę broń ignorują odporność na obrażenia od dźwięku celu. Przy rzucie krytycznym cel musi zdać rzut obronny @Check[fortitude|dc:34|name:Większa Runa Grzmotu] albo zostaje permanentnie @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły}.",
                     "success": "Obrażenia od dźwięku zadawane przez tę broń ignorują odporność na obrażenia od dźwięku celu."
                 }
             },
@@ -5656,7 +5666,7 @@
             "impactful": {
                 "Name": "Impetu",
                 "Note": {
-                    "criticalSuccess": "Przy krytycznym trafieniu możesz wymusić na celu rzut obronny @Check[type:fortitude|dc:27|name:Runa Impetu], w wypadku porażki jest on odpychany 5 stóp od ciebie."
+                    "criticalSuccess": "Przy krytycznym trafieniu możesz wymusić na celu rzut obronny @Check[fortitude|dc:27|name:Runa Impetu], w wypadku porażki jest on odpychany 5 stóp od ciebie."
                 }
             },
             "impossible": {
@@ -5728,7 +5738,7 @@
             "thundering": {
                 "Name": "Grzmotu",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[type:fortitude|dc:24|name:Runa Grzmotu] albo zostaje @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} na 1 minutę (lub 1 godzinę przy krytycznej porażce)."
+                    "criticalSuccess": "Przy trafieniu krytycznym cel musi zdać rzut obronny @Check[fortitude|dc:24|name:Runa Grzmotu] albo zostaje @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} na 1 minutę (lub 1 godzinę przy krytycznej porażce)."
                 }
             },
             "trueRooting": {
@@ -5755,7 +5765,7 @@
             "vorpal": {
                 "Name": "Worpalności",
                 "Note": {
-                    "criticalSuccess": "Świstocięcie <span class=\"action-glyph\">R</span> (koncentracja, śmierć, obezwładnienie)</p><p><strong>Aktywator</strong> Rzucasz naturalną 20 na Cios tą bronią wymierzany istocie posiadającej głowę, odnosisz krytyczny sukces, i zadajesz obrażenia cięte.</p><hr /><p><strong>Efekt</strong> Cel musi zdać rzut obronny @Check[type:fortitude|dc:37|traits:death,incapacitation|name:Runa Worpalna] lub zostaje zdekapitowany. Natychmiast zabija to każdą istotę, poza tymi, które nie potrzebują głowy do życia. W wypadku istot o wielu głowach, istota umiera na ogół dopiero kiedy odcięta głowa była jej ostatnią."
+                    "criticalSuccess": "Świstocięcie <span class=\"action-glyph\">R</span> (koncentracja, śmierć, obezwładnienie)</p><p><strong>Aktywator</strong> Rzucasz naturalną 20 na Cios tą bronią wymierzany istocie posiadającej głowę, odnosisz krytyczny sukces, i zadajesz obrażenia cięte.</p><hr /><p><strong>Efekt</strong> Cel musi zdać rzut obronny @Check[fortitude|dc:37|traits:death,incapacitation|name:Runa Worpalna] lub zostaje zdekapitowany. Natychmiast zabija to każdą istotę, poza tymi, które nie potrzebują głowy do życia. W wypadku istot o wielu głowach, istota umiera na ogół dopiero kiedy odcięta głowa była jej ostatnią."
                 }
             },
             "wounding": {
@@ -5875,12 +5885,12 @@
             },
             "concealed": {
                 "name": "Przysłonięty",
-                "rules": "<p>Kiedy jesteś przysłonięty dla danej istoty, na przykład przez gęstą mgłę, jest jej trudno cię dostrzec. Nadal jesteś przez nią postrzegany, ale jesteś cięższym celem. Istota, wobec której jesteś przysłonięty, musi zdać @Check[type:flat|dc:5] jeśli próbuje wziąć cię za cel ataku, zaklęcia lub innego efektu.</p><p>Jeśli test się nie powiedzie, atak, zaklęcie lub efekt nie imają się ciebie. Efekty obszarowe nie podlegają pod ten płaski test. </p>",
+                "rules": "<p>Kiedy jesteś przysłonięty dla danej istoty, na przykład przez gęstą mgłę, jest jej trudno cię dostrzec. Nadal jesteś przez nią postrzegany, ale jesteś cięższym celem. Istota, wobec której jesteś przysłonięty, musi zdać @Check[flat|dc:5] jeśli próbuje wziąć cię za cel ataku, zaklęcia lub innego efektu.</p><p>Jeśli test się nie powiedzie, atak, zaklęcie lub efekt nie imają się ciebie. Efekty obszarowe nie podlegają pod ten płaski test. </p>",
                 "summary": "Mgła lub inna tego rodzaju przeszkoda sprawia, że jesteś ciężkim celem."
             },
             "confused": {
                 "name": "Zdezorientowany",
-                "rules": "<p>Nie jesteś w pełni sobą i atakujesz wszystko wokół. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} i nie traktujesz nikogo jako swojego sojusznika (chociaż inni nadal mogą traktować cię jako swojego), oraz nie możesz Opóźniać tury, Przygotowywać akcji ani używać reakcji.</p><p>Zużywasz wszystkie swoje akcje aby wymierzać Ciosy lub rzucać ofensywne sztuczki, chociaż MG może zadecydować, że podejmujesz też inne akcje niezbędne do skutecznej ofensywy takie jak wyciągnięcie broni, czy przemieszczenie się do swojego celu. Twoje cele są określane losowo przez MG. Jeśli nie posiadasz żadnych innych możliwych celów, atakujesz siebie automatycznie trafiając chociaż nigdy krytycznie. Jeśli nie posiadasz możliwości ataku ani rzucania zaklęć, bełkoczesz niezrozumiale i marnujesz wszystkie swoje akcje.</p><p>Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia wykonujesz @Check[type:flat|dc:11], jeśli go zdasz twoje zdezorientowanie mija i tracisz ten status.</p>",
+                "rules": "<p>Nie jesteś w pełni sobą i atakujesz wszystko wokół. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} i nie traktujesz nikogo jako swojego sojusznika (chociaż inni nadal mogą traktować cię jako swojego), oraz nie możesz Opóźniać tury, Przygotowywać akcji ani używać reakcji.</p><p>Zużywasz wszystkie swoje akcje aby wymierzać Ciosy lub rzucać ofensywne sztuczki, chociaż MG może zadecydować, że podejmujesz też inne akcje niezbędne do skutecznej ofensywy takie jak wyciągnięcie broni, czy przemieszczenie się do swojego celu. Twoje cele są określane losowo przez MG. Jeśli nie posiadasz żadnych innych możliwych celów, atakujesz siebie automatycznie trafiając chociaż nigdy krytycznie. Jeśli nie posiadasz możliwości ataku ani rzucania zaklęć, bełkoczesz niezrozumiale i marnujesz wszystkie swoje akcje.</p><p>Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia wykonujesz @Check[flat|dc:11], jeśli go zdasz twoje zdezorientowanie mija i tracisz ten status.</p>",
                 "summary": "Atakujesz wszystko bez wyjątku."
             },
             "controlled": {
@@ -5895,7 +5905,7 @@
             },
             "deafened": {
                 "name": "Ogłuchły",
-                "rules": "<p>Nic nie słyszysz. Automatycznie odnosisz krytyczną porażkę na testach Percepcji wymagających użycia słuchu. Otrzymujesz karę statusową –2 do testów Percepcji na inicjatywę oraz testów, które zawierają słuch jako jeden ze swoich elementów ale polegają też na innych zmysłach. Jeśli dokonujesz akcji z cechą słuchowości musisz zdać @Check[type:flat|dc:5] lub tracisz tę akcję; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty. Jesteś niewrażliwy na efekty dźwiękowe.</p>",
+                "rules": "<p>Nic nie słyszysz. Automatycznie odnosisz krytyczną porażkę na testach Percepcji wymagających użycia słuchu. Otrzymujesz karę statusową –2 do testów Percepcji na inicjatywę oraz testów, które zawierają słuch jako jeden ze swoich elementów ale polegają też na innych zmysłach. Jeśli dokonujesz akcji z cechą słuchowości musisz zdać @Check[flat|dc:5] lub tracisz tę akcję; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty. Jesteś niewrażliwy na efekty dźwiękowe.</p>",
                 "summary": "Straciłeś słuch."
             },
             "doomed": {
@@ -5955,7 +5965,7 @@
             },
             "grabbed": {
                 "name": "Pochwycony",
-                "rules": "<p>Jesteś utrzymywany w miejscu przez inną istotę - @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[type:flat|dc:5] lub ją utracić; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty.</p>",
+                "rules": "<p>Jesteś utrzymywany w miejscu przez inną istotę - @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[flat|dc:5] lub ją utracić; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty.</p>",
                 "summary": "Istota, obiekt lub magia trzyma cię w miejscu."
             },
             "group": {
@@ -5971,7 +5981,7 @@
             },
             "hidden": {
                 "name": "Schowany",
-                "rules": "<p>Kiedy jesteś schowany przed daną istotą, wie ona na jakim polu się znajdujesz, ale nie potrafi określić gdzie dokładnie jesteś. Na ogół stajesz się schowany w wyniku używania Skradania się podczas akcji Schowania się. Kiedy Szukasz istoty za pomocą zmysłów nieprecyzyjnych pozostaje ona schowana zamiast stać się postrzeganą. Istota, przed którą udało ci się schować, ma wobec ciebie @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz musi zdać @Check[type:flat|dc:11] jeśli chce obrać cię za cel ataku, zaklęcia lub innego efektu. Efekty obszarowe nie wymagają testu płaskiego.</p><p>Istota może być w stanie użyć akcji Szukania aby zacząć cię na nowo postrzegać.</p>",
+                "rules": "<p>Kiedy jesteś schowany przed daną istotą, wie ona na jakim polu się znajdujesz, ale nie potrafi określić gdzie dokładnie jesteś. Na ogół stajesz się schowany w wyniku używania Skradania się podczas akcji Schowania się. Kiedy Szukasz istoty za pomocą zmysłów nieprecyzyjnych pozostaje ona schowana zamiast stać się postrzeganą. Istota, przed którą udało ci się schować, ma wobec ciebie @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz musi zdać @Check[flat|dc:11] jeśli chce obrać cię za cel ataku, zaklęcia lub innego efektu. Efekty obszarowe nie wymagają testu płaskiego.</p><p>Istota może być w stanie użyć akcji Szukania aby zacząć cię na nowo postrzegać.</p>",
                 "summary": "Istota, przed którą się schowałeś, wie gdzie się znajdujesz ale nie może cię dostrzec."
             },
             "hostile": {
@@ -6006,7 +6016,7 @@
             },
             "persistent-damage": {
                 "name": "Obrażenia Przewlekłe",
-                "rules": "<p>Obrażenia przewlekłe pojawiają się w wyniku działania efektów takich jak kwas, podpalenie i wielu innych. Opisywane są jako \"X przewlekłych obrażeń [typu]\" gdzie \"X\" to liczba zadawanych obrażeń a \"[typ]\" to typ odnoszonych obrażeń. Obrażeń przewlekłych nie odnosisz natychmiast, ponosisz je na koniec swojej tury tak długo jak jesteś pod wpływem wywołującego je statusu, za każdym razem rzucając kości obrażeń na nowo. Po otrzymaniu obrażeń przewlekłych rzuć @Check[type:flat|dc:15] aby określić czy udaje ci się zakończyć ich działanie. W wypadku sukcesu wywołujący je status kończy się.</p>",
+                "rules": "<p>Obrażenia przewlekłe pojawiają się w wyniku działania efektów takich jak kwas, podpalenie i wielu innych. Opisywane są jako \"X przewlekłych obrażeń [typu]\" gdzie \"X\" to liczba zadawanych obrażeń a \"[typ]\" to typ odnoszonych obrażeń. Obrażeń przewlekłych nie odnosisz natychmiast, ponosisz je na koniec swojej tury tak długo jak jesteś pod wpływem wywołującego je statusu, za każdym razem rzucając kości obrażeń na nowo. Po otrzymaniu obrażeń przewlekłych rzuć @Check[flat|dc:15] aby określić czy udaje ci się zakończyć ich działanie. W wypadku sukcesu wywołujący je status kończy się.</p>",
                 "summary": "Odnosisz obrażenia z każdą rundą."
             },
             "petrified": {
@@ -6056,7 +6066,7 @@
             },
             "undetected": {
                 "name": "Niewykryty",
-                "rules": "<p>Kiedy jesteś niewykryty przez daną istotę, istota ta w ogóle cię nie postrzega i nie ma pojęcia jakie pole zajmujesz. Nie może ona brać cię na cel, chociaż nadal podlegasz pod efekty, które biorą na cel obszar. Kiedy jesteś niewykryty przez daną istotę, ma ona wobec ciebie opuszczoną gardę.</p><p>Istota, dla której jesteś niewykryty, może próbować zgadywać w jakim polu się znajdujesz aby spróbować wziąć cię na cel. Musi wybrać pole i podjąć próbę ataku. Działa to jak celowanie w ukrytą istotę (wymaga @Check[type:flat|dc:11]), ale zarówno test płaski jak rzut ataku wykonywane są w sekrecie przez MG, który w wypadku pudła nie zdradza czy wynikało ono z niepowodzenia któregokolwiek z rzutów, czy z obrania za cel niewłaściwego pola.</p><p>Istota może podjąć się akcji Szukania aby cię odnaleźć.</p>",
+                "rules": "<p>Kiedy jesteś niewykryty przez daną istotę, istota ta w ogóle cię nie postrzega i nie ma pojęcia jakie pole zajmujesz. Nie może ona brać cię na cel, chociaż nadal podlegasz pod efekty, które biorą na cel obszar. Kiedy jesteś niewykryty przez daną istotę, ma ona wobec ciebie opuszczoną gardę.</p><p>Istota, dla której jesteś niewykryty, może próbować zgadywać w jakim polu się znajdujesz aby spróbować wziąć cię na cel. Musi wybrać pole i podjąć próbę ataku. Działa to jak celowanie w ukrytą istotę (wymaga @Check[flat|dc:11]), ale zarówno test płaski jak rzut ataku wykonywane są w sekrecie przez MG, który w wypadku pudła nie zdradza czy wynikało ono z niepowodzenia któregokolwiek z rzutów, czy z obrania za cel niewłaściwego pola.</p><p>Istota może podjąć się akcji Szukania aby cię odnaleźć.</p>",
                 "summary": "Istota, wobec której pozostajesz niewykryty, nie potrafi określić gdzie jesteś."
             },
             "unfriendly": {

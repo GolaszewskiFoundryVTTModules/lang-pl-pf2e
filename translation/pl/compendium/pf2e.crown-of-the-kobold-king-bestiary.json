@@ -50,26 +50,26 @@
         "Avalanche Doors": {
             "name": "Avalanche Doors",
             "description": "<p>The double door is a false door; when triggered, the door slams downward like a drawbridge to crush anyone standing before it.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22] (wytrenowanie) to detach the trigger from the doors and lock them in place</p>",
+            "disable": "<p>@Check[thievery|dc:22] (trained) to detach the trigger from the doors and lock them in place</p>",
             "hpDetails": "BT 25",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Topple Forward": {
                     "name": "Topple Forward",
-                    "description": "<p><strong>Aktywator</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p><p><strong>Efekt</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a @Check[type:reflex|dc:21] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p><p><strong>Sukces</strong> The creature takes @Damage[3d8[bludgeoning]] damage and is pushed into an adjacent square just outside the trap's area.</p><p><strong>Porażka</strong> The creature takes @Damage[6d8[bludgeoning]] damage, is pushed into an adjacent square just outside the trap's area, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} in that square.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[12d8[bludgeoning]] damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 22). A non-@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} character can lift the doors by Forcing them open with a successful @Check[type:athletics|dc:22] check so that an immobilized character can crawl to safety.</p>"
+                    "description": "<p><strong>Aktywator</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p><p><strong>Efekt</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a @Check[reflex|dc:21] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p><p><strong>Sukces</strong> The creature takes @Damage[3d8[bludgeoning]] damage and is pushed into an adjacent square just outside the trap's area.</p><p><strong>Porażka</strong> The creature takes @Damage[6d8[bludgeoning]] damage, is pushed into an adjacent square just outside the trap's area, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} in that square.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[12d8[bludgeoning]] damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 22). A non-@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} character can lift the doors by Forcing them open with a successful @Check[athletics|dc:22] check so that an immobilized character can crawl to safety.</p>"
                 }
             }
         },
         "Charge of the Spear Legion": {
             "name": "Charge of the Spear Legion",
             "description": "<p>When triggered, the room lurches suddenly on its side, causing those in the room to slide down toward the double line of spears on the west wall while the statues on the east slide down on a pulley-and-roller system to smash into the victims.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] to deactivate the triggering pressure plate near the northern door</p>",
+            "disable": "<p>@Check[thievery|dc:20] to deactivate the triggering pressure plate near the northern door</p>",
             "reset": "<p>After 1 minute, the chamber rights itself and resets the trap.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Shift Sideways": {
                     "name": "Shift Sideways",
-                    "description": "<p><strong>Aktywator</strong> A Small or larger creature approaches within 15 feet of the double door to area <strong>D9</strong>.</p><p><strong>Efekt</strong> The entire room rotates, its west half descending as its right half rises, forming a 45º slope down to the west. All creatures in the room fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} and slide toward the west wall (a creature adjacent to the north or south wall can attempt to arrest this fall with a DC 20 check to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Chwycenie Krawędzi}) and take [[/r (2d6 + 5)[piercing]]] damage (@Check[type:reflex|dc:20|basic:true]) as they land among the spears. At the same time, the warhammer-wielding statues to the east slide downward on chains to smash into the lower wall; each person in the trap is subjected to a sliding statue Strike.</p>"
+                    "description": "<p><strong>Aktywator</strong> A Small or larger creature approaches within 15 feet of the double door to area <strong>D9</strong>.</p><p><strong>Efekt</strong> The entire room rotates, its west half descending as its right half rises, forming a 45º slope down to the west. All creatures in the room fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} and slide toward the west wall (a creature adjacent to the north or south wall can attempt to arrest this fall with a DC 20 check to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}) and take [[/r (2d6 + 5)[piercing]]] damage (@Check[reflex|dc:20|basic]) as they land among the spears. At the same time, the warhammer-wielding statues to the east slide downward on chains to smash into the lower wall; each person in the trap is subjected to a sliding statue Strike.</p>"
                 },
                 "strike-melee->Sliding Statue": {
                     "name": "Sliding Statue"
@@ -88,11 +88,11 @@
                 },
                 "action->Despair": {
                     "name": "Despair",
-                    "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[type:will|dc:22] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round. The creature is then temporarily immune for 24 hours.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Efekt: Despair}</p>"
+                    "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a @Check[will|dc:22] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round. The creature is then temporarily immune for 24 hours.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Efekt: Despair}</p>"
                 },
                 "action->Blinding Rot": {
                     "name": "Blinding Rot",
-                    "description": "<p>Cilios's fist Strikes expose those they damage to blinding rot. This disease and any damage from it can't be healed until this curse is removed. A creature killed by blinding rot turns to dust and can't be resurrected except by a 7. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Wskrzeszenie} ritual or similar magic.</p><p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p><hr /><p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 minute)</p><p><strong>Stadium 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} (1 dzień)</p><p><strong>Stadium 3</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} (1 dzień)</p>"
+                    "description": "<p>Cilios's fist Strikes expose those they damage to blinding rot. This disease and any damage from it can't be healed until this curse is removed. A creature killed by blinding rot turns to dust and can't be resurrected except by a 7. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:22]</p><hr /><p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 minute)</p><p><strong>Stadium 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} (1 dzień)</p><p><strong>Stadium 3</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} (1 dzień)</p>"
                 }
             }
         },
@@ -134,11 +134,11 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Precise) 60 feet"
                 },
                 "action->Constrict": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d8[bludgeoning]], @Check[type:fortitude|dc:17|basic:true]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d8[bludgeoning]], @Check[fortitude|dc:17|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "action->Shed Darkness": {
                     "name": "Shed Darkness",
-                    "description": "<p>The darkmantle sheds an inky blob of black fluid from the folds of its body. It can shed this blob horizontally to a distance of up to 30 feet, or simply let it fall up to 120 feet below itself (shed darkness that falls more than 120 feet before striking a surface evaporates without effect). When the blob of darkness lands, it explodes into a @Template[type:burst|distance:10] of darkness that prevents light from penetrating or emanating within the area. Light doesn't enter this area, and any non-magical light sources, such as a torch or lantern, don't emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of 1. level or lower but has no effect on magical light from 2. kręgu or higher spells. From the outside, it appears as a globe of pure darkness. The darkmantle can't shed darkness again for 24 hours.</p>"
+                    "description": "<p>The darkmantle sheds an inky blob of black fluid from the folds of its body. It can shed this blob horizontally to a distance of up to 30 feet, or simply let it fall up to 120 feet below itself (shed darkness that falls more than 120 feet before striking a surface evaporates without effect). When the blob of darkness lands, it explodes into a @Template[burst|distance:10] of darkness that prevents light from penetrating or emanating within the area. Light doesn't enter this area, and any non-magical light sources, such as a torch or lantern, don't emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of 1. level or lower but has no effect on magical light from 2. kręgu or higher spells. From the outside, it appears as a globe of pure darkness. The darkmantle can't shed darkness again for 24 hours.</p>"
                 }
             }
         },
@@ -163,7 +163,7 @@
                 },
                 "action->Disabling Strike": {
                     "name": "Disabling Strike",
-                    "description": "<p>The dismemberment table attempts a blade Strike on a single target that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}. If this Strike hits, the blade cuts deep into one of the target's limbs. The target must attempt a @Check[type:fortitude|dc:22] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature suffers no additional effect.</p><p><strong>Sukces</strong> The creature takes @Damage[1d6[bleed]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[2d6[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}. This clumsy condition ends once the creature is restored to full Hit Points.</p><p><strong>Krytyczna Porażka</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+                    "description": "<p>The dismemberment table attempts a blade Strike on a single target that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}. If this Strike hits, the blade cuts deep into one of the target's limbs. The target must attempt a @Check[fortitude|dc:22] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature suffers no additional effect.</p><p><strong>Sukces</strong> The creature takes @Damage[1d6[bleed]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[2d6[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}. This clumsy condition ends once the creature is restored to full Hit Points.</p><p><strong>Krytyczna Porażka</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
                 }
             }
         },
@@ -206,11 +206,11 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the wight damages a living creature with its claw Strike, the wight gains [[/r 3 #Temporary Hit Points]]{3 temporary Hit Points} and the creature must succeed at a @Check[type:fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4.</p>"
+                    "description": "<p>When the wight damages a living creature with its claw Strike, the wight gains [[/r 3 #Temporary Hit Points]]{3 temporary Hit Points} and the creature must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1}. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4.</p>"
                 },
                 "action->Raise Bone Wall": {
                     "name": "Raise Bone Wall",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Wymagania</strong> Drazmorg is in the Lower Vault of Droskar's Crucible</p><hr /><p><strong>Efekt</strong> Drazmorg draws upon the necromantic energy that infuses the area and causes a tangled wall of bones to rise from the ground. The wall is 5 feet thick, 10 feet wide, and 10 feet tall; once created, it's permanent until Drazmorg uses this ability again, whereupon a previously created bone wall (such as the one at area <strong>G2</strong>) crumbles. The bone wall has AC 10, Hardness 10, and 25 Hit Points. It's immune to critical hits and precision damage, and it heals damage to itself at a rate of [[/r 2d6[healing]]]{2k6 Hit Points} at the end of a round. Everything on each side of the wall has greater cover from creatures on the opposite side, and the wall can't be moved through. A destroyed section of the wall of bones can be moved through freely and no longer heals damage. A creature caught in a space when a bone wall is created must attempt a @Check[type:reflex|dc:25|traits:damaging-effect] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected, and the bone wall fails to form in any square occupied by that creature.</p><p><strong>Sukces</strong> The creature is forced into an adjacent square of its choice as the bone wall forms in its previous space.</p><p><strong>Porażka</strong> As success, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p><p><strong>Krytyczna Porażka</strong> As failure, but the creature also takes @Damage[4d6[piercing],4k6[bludgeoning]]{4k6 piercing and 4k6 bludgeoning damage} from the force of being struck by the bone wall.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Wymagania</strong> Drazmorg is in the Lower Vault of Droskar's Crucible</p><hr /><p><strong>Efekt</strong> Drazmorg draws upon the necromantic energy that infuses the area and causes a tangled wall of bones to rise from the ground. The wall is 5 feet thick, 10 feet wide, and 10 feet tall; once created, it's permanent until Drazmorg uses this ability again, whereupon a previously created bone wall (such as the one at area <strong>G2</strong>) crumbles. The bone wall has AC 10, Hardness 10, and 25 Hit Points. It's immune to critical hits and precision damage, and it heals damage to itself at a rate of [[/r 2d6[healing]]]{2k6 Hit Points} at the end of a round. Everything on each side of the wall has greater cover from creatures on the opposite side, and the wall can't be moved through. A destroyed section of the wall of bones can be moved through freely and no longer heals damage. A creature caught in a space when a bone wall is created must attempt a @Check[reflex|dc:25|traits:damaging-effect] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected, and the bone wall fails to form in any square occupied by that creature.</p><p><strong>Sukces</strong> The creature is forced into an adjacent square of its choice as the bone wall forms in its previous space.</p><p><strong>Porażka</strong> As success, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p><p><strong>Krytyczna Porażka</strong> As failure, but the creature also takes @Damage[4d6[piercing],4k6[bludgeoning]]{4k6 piercing and 4k6 bludgeoning damage} from the force of being struck by the bone wall.</p>"
                 },
                 "action->Wight Spawn": {
                     "name": "Wight Spawn",
@@ -268,9 +268,9 @@
         "Explosive Crystal Spheres": {
             "name": "Explosive Crystal Spheres",
             "description": "<p>Shimmering, glyph-graven, two-foot-diameter crystalline spheres shimmer and condense in the air, launching with explosive force at intruders.</p>",
-            "disable": "<p>@Check[type:thievery|dc:25] (eksperctwo) to locate and deface tiny activation runes located at one of the six locations that spawn crystal spheres, or @Check[type:arcana|dc:28] (eksperctwo) or @Check[type:occultism|dc:28] (eksperctwo) to manipulate the magical energy at one of those locations to render the spheres inert, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 22) to counteract one of the crystal sphere spawn points</p>",
+            "disable": "<p>@Check[thievery|dc:25] (eksperctwo) to locate and deface tiny activation runes located at one of the six locations that spawn crystal spheres, or @Check[arcana|dc:28] (eksperctwo) or @Check[occultism|dc:28] (eksperctwo) to manipulate the magical energy at one of those locations to render the spheres inert, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. level; counteract DC 22) to counteract one of the crystal sphere spawn points</p>",
             "hpDetails": "BT 27",
-            "routine": "<p>(6 actions) On each of the trap's actions, a crystal sphere that hasn't yet taken an action during the turn either flies 25 feet toward the closest creature in the Outer Ring (if no creature is within 25 feet), or it attacks a visible creature within 25 feet (the crystal spheres can sense targets via darkvision). If a crystal sphere attacks a target, that target takes @Damage[1d6[force]] damage (@Check[type:reflex|dc:24|basic:true]) as the sphere hits them and bursts. A creature can be attacked by multiple spheres in a turn, but a sphere always targets the closest target. Once a sphere attacks and bursts, it vanishes but respawns at its spawn point at the start of the next turn and continues its routine. A sphere that has been destroyed or had its spawn point disabled vanishes and doesn't continue to respawn and attack, and the trap loses 1 action for each sphere destroyed or disabled in this way.</p>",
+            "routine": "<p>(6 actions) On each of the trap's actions, a crystal sphere that hasn't yet taken an action during the turn either flies 25 feet toward the closest creature in the Outer Ring (if no creature is within 25 feet), or it attacks a visible creature within 25 feet (the crystal spheres can sense targets via darkvision). If a crystal sphere attacks a target, that target takes @Damage[1d6[force]] damage (@Check[reflex|dc:24|basic]) as the sphere hits them and bursts. A creature can be attacked by multiple spheres in a turn, but a sphere always targets the closest target. Once a sphere attacks and bursts, it vanishes but respawns at its spawn point at the start of the next turn and continues its routine. A sphere that has been destroyed or had its spawn point disabled vanishes and doesn't continue to respawn and attack, and the trap loses 1 action for each sphere destroyed or disabled in this way.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Manifest Crystal Sphere": {
@@ -282,11 +282,11 @@
         "Falling Debris": {
             "name": "Falling Debris",
             "description": "<p>A net filled with stones and a small anvil crashes down on someone who steps into the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:17] to disarm the trap through a cracked-open door, or <span class=\"action-glyph\">3</span> Interact to open the door slowly without triggering the trap</p>",
+            "disable": "<p>@Check[thievery|dc:17] to disarm the trap through a cracked-open door, or <span class=\"action-glyph\">3</span> Interact to open the door slowly without triggering the trap</p>",
             "items": {
                 "action->Drop Debris": {
                     "name": "Drop Debris",
-                    "description": "<p><strong>Aktywator</strong> A creature opens the door without taking care to avoid triggering the trap;</p><p><strong>Efekt</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting @Damage[3d6[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true]). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature opens the door without taking care to avoid triggering the trap;</p><p><strong>Efekt</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting @Damage[3d6[bludgeoning]] damage (@Check[reflex|dc:17|basic]). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>"
                 }
             }
         },
@@ -351,7 +351,7 @@
                 },
                 "action->Drain Mind": {
                     "name": "Drain Mind",
-                    "description": "<p>When Grimbal damages a living creature with his ghostly hand Strike, the ghost gains 5 temporary Hit Points, and the creature must succeed at a @Check[type:will|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. Further damage dealt by the ghost increases this stupefied value by 1 on a failed save to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}. Each time a creature affected by drain mind gets a full night's rest, decrease its stupefied value caused by drain mind by 1.</p>"
+                    "description": "<p>When Grimbal damages a living creature with his ghostly hand Strike, the ghost gains 5 temporary Hit Points, and the creature must succeed at a @Check[will|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. Further damage dealt by the ghost increases this stupefied value by 1 on a failed save to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}. Each time a creature affected by drain mind gets a full night's rest, decrease its stupefied value caused by drain mind by 1.</p>"
                 }
             }
         },
@@ -403,7 +403,7 @@
                 },
                 "action->Ghoul Fever": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\nGhoul Fever",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:22]</p><hr /><p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 dzień)</p><p><strong>Stadium 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 dzień)</p><p><strong>Stadium 3</strong> as stage 2 (1 dzień)</p><p><strong>Stadium 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 dzień)</p><p><strong>Stadium 5</strong> as stage 4 (1 dzień)</p><p><strong>Stadium 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:22]</p><hr /><p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 dzień)</p><p><strong>Stadium 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 dzień)</p><p><strong>Stadium 3</strong> as stage 2 (1 dzień)</p><p><strong>Stadium 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 dzień)</p><p><strong>Stadium 5</strong> as stage 4 (1 dzień)</p><p><strong>Stadium 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
                 },
                 "action->Gnaw and Chew": {
                     "name": "Gnaw and Chew",
@@ -415,7 +415,7 @@
                 },
                 "action->Paralysis": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[type:fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 },
                 "action->Swift Leap": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
@@ -461,7 +461,7 @@
                     "description": "<p><strong>Aktywator</strong> A creature enters or interacts with a space occupied by an id ooze</p><p><strong>Wymagania</strong> Initiative hasn't yet been rolled</p><p><strong>Efekt</strong> The id ooze automatically notices the creature, then makes a pseudopod Strike against one creature adjacent to itself before rolling initiative.</p>"
                 },
                 "action->Constrict": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d4+8)[bludgeoning],1k6[acid]]{1k4+8 bludgeoning plus 1k6 acid}, @Check[type:fortitude|dc:25|basic:true]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d4+8)[bludgeoning],1k6[acid]]{1k4+8 bludgeoning plus 1k6 acid}, @Check[fortitude|dc:25|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 }
             }
         },
@@ -490,7 +490,7 @@
                 },
                 "action->Smoky Retreat": {
                     "name": "Smoky Retreat",
-                    "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p><p><strong>Wymagania</strong> Jekkajak is adjacent to at least one enemy</p><hr /><p><strong>Efekt</strong> Jekkajak squeals in fright as she exhales a noxious cloud of stinking smoke. This smoke fills a @Template[type:emanation|distance:10] around her and grants concealment to all creatures within the smoke. In addition, any non-kobold starting their turn in the smoke must succeed at a @Check[type:fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the foul smoke (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). Once created, the cloud of smoke is immobile and persists for 3 rounds. Jekkajak can move up to her Speed, but she must end her movement in a space that isn't adjacent to any enemies. This is a 2. kręgu spell that requires a somatic component.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p><p><strong>Wymagania</strong> Jekkajak is adjacent to at least one enemy</p><hr /><p><strong>Efekt</strong> Jekkajak squeals in fright as she exhales a noxious cloud of stinking smoke. This smoke fills a @Template[emanation|distance:10] around her and grants concealment to all creatures within the smoke. In addition, any non-kobold starting their turn in the smoke must succeed at a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the foul smoke (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). Once created, the cloud of smoke is immobile and persists for 3 rounds. Jekkajak can move up to her Speed, but she must end her movement in a space that isn't adjacent to any enemies. This is a 2. kręgu spell that requires a somatic component.</p>"
                 }
             }
         },
@@ -499,7 +499,7 @@
             "blurb": "Male kobold slurk-trainer",
             "items": {
                 "consumable->Black Adder Venom": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p><p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p><p><strong>Maksymalny Czas Trwania</strong> 3 rund</p><p><strong>Stadium 1</strong> @Damage[1d8[poison]] damage (1 runda)</p><p><strong>Stadium 2</strong> @Damage[1d10[poison]] damage (1 runda)</p><p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage (1 runda)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb]\n<p>Adder venom is a simple but effective way to enhance a weapon.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:18]</p><p><strong>Maksymalny Czas Trwania</strong> 3 rund</p><p><strong>Stadium 1</strong> @Damage[1d8[poison]] damage (1 runda)</p><p><strong>Stadium 2</strong> @Damage[1d10[poison]] damage (1 runda)</p><p><strong>Stadium 3</strong> @Damage[2d6[poison]] damage (1 runda)</p>"
                 },
                 "strike-melee->Hatchet": {
                     "name": "Toporek"
@@ -541,7 +541,7 @@
                 },
                 "action->Whispering Retreat": {
                     "name": "Whispering Retreat",
-                    "description": "<p><strong>Wymagania</strong> Kerrdremak is adjacent to at least one enemy;</p><p><strong>Efekt</strong> Kerrdremak whispers under his breath, and one adjacent enemy must attempt a @Check[type:will|dc:17] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} as they hear a whispering voice just behind them that claims to know when the target will die; the target is then temporarily immune to Whispering Retreat for 1 hour. Kerrdremak then Strides, and this movement doesn't trigger reactions from frightened creatures. He must end this movement in a space that isn't adjacent to any enemy.</p>"
+                    "description": "<p><strong>Wymagania</strong> Kerrdremak is adjacent to at least one enemy;</p><p><strong>Efekt</strong> Kerrdremak whispers under his breath, and one adjacent enemy must attempt a @Check[will|dc:17] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} as they hear a whispering voice just behind them that claims to know when the target will die; the target is then temporarily immune to Whispering Retreat for 1 hour. Kerrdremak then Strides, and this movement doesn't trigger reactions from frightened creatures. He must end this movement in a space that isn't adjacent to any enemy.</p>"
                 }
             }
         },
@@ -571,7 +571,7 @@
                 },
                 "action->Final Blasphemy": {
                     "name": "Final Blasphemy",
-                    "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 3-action 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm} spell (@Check[type:fortitude|dc:26|basic:true]).</p><p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>"
+                    "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 3-action 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm} spell (@Check[fortitude|dc:26|basic]).</p><p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>"
                 },
                 "action->Heretic's Smite": {
                     "name": "Heretic's Smite",
@@ -619,7 +619,7 @@
                 },
                 "action->Imperious Retreat": {
                     "name": "Imperious Retreat",
-                    "description": "<p><strong>Wymagania</strong> King Merlokrep is adjacent to at least one enemy</p><hr /><p><strong>Efekt</strong> King Merlokrep whips his fabulous satin cloak into the face of an adjacent creature and attempts an @Check[type:intimidation|defense:will] check against that creature's Will DC. On a success, the creature is humiliated and distracted by the act and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the end of King Merlokrep's next turn. King Merlokrep then Strides up to his Speed and gains a +2 circumstance bonus to AC against reactions triggered by this movement. He must end this movement in a space that isn't adjacent to any enemy.</p>"
+                    "description": "<p><strong>Wymagania</strong> King Merlokrep is adjacent to at least one enemy</p><hr /><p><strong>Efekt</strong> King Merlokrep whips his fabulous satin cloak into the face of an adjacent creature and attempts an @Check[intimidation|defense:will] check against that creature's Will DC. On a success, the creature is humiliated and distracted by the act and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of King Merlokrep's next turn. King Merlokrep then Strides up to his Speed and gains a +2 circumstance bonus to AC against reactions triggered by this movement. He must end this movement in a space that isn't adjacent to any enemy.</p>"
                 },
                 "action->Signature Spells": {
                     "name": "Signature Spells",
@@ -665,26 +665,26 @@
         "Lodestone Trap": {
             "name": "Lodestone Trap",
             "description": "<p>The magical lodestone discharges bolts of electricity that also magnetize metal in the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] to unhook the pressure plates from the trap, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level, counteract DC 18) to counteract the trap</p>",
+            "disable": "<p>@Check[thievery|dc:18] to unhook the pressure plates from the trap, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level, counteract DC 18) to counteract the trap</p>",
             "hpDetails": "BT 15",
             "reset": "<p>At the end of a round in which there are no creatures standing on the floor or stuck to the lodestone, the trap deactivates. The vargouilles return to their alcoves, and the doors close. The trap resets automatically after 1 minute.</p>",
-            "routine": "<p>(1 akcja) On its initiative, the trap exerts a strong magnetic pull on the doors, causing the north and west doors to open if they're closed, or causing the south and east doors to close if they're open. A character can open or close a door against this pull with a successful @Check[type:athletics|dc:18] check to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} the door. At the same time, any character in the room who wears primarily metal armor must attempt a @Check[type:reflex|dc:18] save (characters in medium metal armor suffer a –1 circumstance penalty to this save, and characters in heavy metal armor suffer a –2 circumstance penalty).</p><hr><p><strong>Krytyczny Sukces</strong> The PC is unaffected.</p><p><strong>Sukces</strong> The PC resists the pull but treats the room as difficult terrain.</p><p><strong>Porażka</strong> The PC treats the room as difficult terrain and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. A PC who's already prone suffers a critical failure instead.</p><p><strong>Krytyczna Porażka</strong> As failure, but the PC is also pulled 5 feet toward the lodestone. A PC who is adjacent to the lodestone instead becomes stuck to it and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} as long as the trap continues its routine (escape DC 18).</p>",
+            "routine": "<p>(1 action) On its initiative, the trap exerts a strong magnetic pull on the doors, causing the north and west doors to open if they're closed, or causing the south and east doors to close if they're open. A character can open or close a door against this pull with a successful @Check[athletics|dc:18] check to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} the door. At the same time, any character in the room who wears primarily metal armor must attempt a @Check[reflex|dc:18] save (characters in medium metal armor suffer a –1 circumstance penalty to this save, and characters in heavy metal armor suffer a –2 circumstance penalty).</p><hr><p><strong>Krytyczny Sukces</strong> The PC is unaffected.</p><p><strong>Sukces</strong> The PC resists the pull but treats the room as difficult terrain.</p><p><strong>Porażka</strong> The PC treats the room as difficult terrain and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}. A PC who's already prone suffers a critical failure instead.</p><p><strong>Krytyczna Porażka</strong> As failure, but the PC is also pulled 5 feet toward the lodestone. A PC who is adjacent to the lodestone instead becomes stuck to it and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} as long as the trap continues its routine (escape DC 18).</p>",
             "items": {
                 "action->Magneto-Electric Pulse": {
                     "name": "Magneto-Electric Pulse",
-                    "description": "<p><strong>Aktywator</strong> A single Medium or two or more Small creatures end their turn inside the room.</p><p><strong>Efekt</strong> A pulse of electricity discharges from the lodestone to strike all four doors, with smaller arcs of electricity lancing out to strike all creatures in the room. The south and east doors slam shut, while the north and west doors fly open, releasing two vargouilles into the room. All creatures in the room take @Damage[2d6[electricity]] damage (@Check[type:reflex|dc:18|basic:true]). The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A single Medium or two or more Small creatures end their turn inside the room.</p><p><strong>Efekt</strong> A pulse of electricity discharges from the lodestone to strike all four doors, with smaller arcs of electricity lancing out to strike all creatures in the room. The south and east doors slam shut, while the north and west doors fly open, releasing two vargouilles into the room. All creatures in the room take @Damage[2d6[electricity]] damage (@Check[reflex|dc:18|basic]). The trap then rolls initiative.</p>"
                 }
             }
         },
         "Loose Slab": {
             "name": "Loose Slab",
             "description": "<p>The stone slab tears free from its track with the ear-piercing sound of failing metal.</p>",
-            "disable": "<p>@Check[type:crafting|dc:20] (eksperctwo) to shore up the track so that it functions as intended, or @Check[type:thievery|dc:18] (wytrenowanie) to wedge the slab in place to immobilize it</p>",
+            "disable": "<p>@Check[crafting|dc:20] (expert) to shore up the track so that it functions as intended, or @Check[thievery|dc:18] (trained) to wedge the slab in place to immobilize it</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Falling Slab": {
                     "name": "Falling Slab",
-                    "description": "<p><strong>Aktywator</strong> A creature attempts to move the slab;</p><p><strong>Efekt</strong> The slab rips free from its track and falls, slamming down in one direction while it kicks up twisted metal debris in the other. All creatures adjacent to the slab take 3k6 bludgeoning and @Damage[3d6[piercing]] damage (@Check[type:reflex|dc:20|basic:true]).</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature attempts to move the slab;</p><p><strong>Efekt</strong> The slab rips free from its track and falls, slamming down in one direction while it kicks up twisted metal debris in the other. All creatures adjacent to the slab take 3k6 bludgeoning and @Damage[3d6[piercing]] damage (@Check[reflex|dc:20|basic]).</p>"
                 }
             }
         },
@@ -710,7 +710,7 @@
                 },
                 "action->Wild Retreat": {
                     "name": "Wild Retreat",
-                    "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p><p><strong>Wymagania</strong> Narlynark is adjacent to at least one enemy;</p><hr /><p><strong>Efekt</strong> Narlynark shrieks in terror, a sound that quickly transitions from a kobold cry to the shrill cry of a bird. A pair of feathery wings grows from his back and his feet turn into bird talons. As he leaps into the air to flee, his talons lash out-one adjacent enemy of Narlynark's choice takes [[/r (3d6 + 6)[slashing]]] damage (@Check[type:reflex|dc:22|basic:true]). Narlynark can then fly up to 35 feet away. He must end his movement in a space that isn't adjacent to any enemies, and if he doesn't end the movement on the ground, he falls to the ground as his wings vanish and his feet return to normal.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p><p><strong>Wymagania</strong> Narlynark is adjacent to at least one enemy;</p><hr /><p><strong>Efekt</strong> Narlynark shrieks in terror, a sound that quickly transitions from a kobold cry to the shrill cry of a bird. A pair of feathery wings grows from his back and his feet turn into bird talons. As he leaps into the air to flee, his talons lash out-one adjacent enemy of Narlynark's choice takes [[/r (3d6 + 6)[slashing]]] damage (@Check[reflex|dc:22|basic]). Narlynark can then fly up to 35 feet away. He must end his movement in a space that isn't adjacent to any enemies, and if he doesn't end the movement on the ground, he falls to the ground as his wings vanish and his feet return to normal.</p>"
                 }
             }
         },
@@ -722,30 +722,30 @@
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
-                    "description": "<p><strong>Aktywator</strong> A creature walks into a large pit's square;</p><p><strong>Efekt</strong> The triggering creature falls into the pit but can attempt a @Check[type:reflex|dc:18] save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Chwycenie Krawędzi} to avoid falling. On a failure, a creature falls 20 feet into an eye-filled pit. The eyes cushion the fall so the 20-foot fall inflicts only @Damage[5[bludgeoning]] damage, but they also completely obscure vision; a character is effectively blind as long as they remain in the pit. The walls of the pit are slick, though a character can @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinaczka} them with a successful @Check[type:athletics|dc:25] check.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks into a large pit's square;</p><p><strong>Efekt</strong> The triggering creature falls into the pit but can attempt a @Check[reflex|dc:18] save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling. On a failure, a creature falls 20 feet into an eye-filled pit. The eyes cushion the fall so the 20-foot fall inflicts only @Damage[5[bludgeoning]] damage, but they also completely obscure vision; a character is effectively blind as long as they remain in the pit. The walls of the pit are slick, though a character can @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} them with a successful @Check[athletics|dc:25] check.</p>"
                 },
                 "action->Trip": {
                     "name": "Trip",
-                    "description": "<p><strong>Aktywator</strong> A creature walks into a small pit's square;</p><p><strong>Efekt</strong> The triggering creature must succeed at a @Check[type:reflex|dc:18] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} (on a critical failure, the creature also twists its ankle and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until it receives any amount of healing).</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks into a small pit's square;</p><p><strong>Efekt</strong> The triggering creature must succeed at a @Check[reflex|dc:18] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} (on a critical failure, the creature also twists its ankle and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until it receives any amount of healing).</p>"
                 }
             }
         },
         "Pendulum Blades": {
             "name": "Pendulum Blades",
             "description": "<p>Several swinging pendulums mounted with razor-sharp blades extend from the ceiling and slice into the room below.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20] to jam the gears and prevent the trap from being activated</p>",
+            "disable": "<p>@Check[thievery|dc:20] to jam the gears and prevent the trap from being activated</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Swinging Blades": {
                     "name": "Swinging Blades",
-                    "description": "<p><strong>Aktywator</strong> This trap must be manually activated by a creature adjacent to the southwest gear stack;</p><p><strong>Efekt</strong> Blades swing down to strike at all creatures in area <strong>F2</strong> before wrenching to a frozen halt against the opposite walls. All creatures in the central part of this room take [[/r (6d6 + 3)[slashing]]] damage (@Check[type:reflex|dc:20|basic:true]).</p>"
+                    "description": "<p><strong>Aktywator</strong> This trap must be manually activated by a creature adjacent to the southwest gear stack;</p><p><strong>Efekt</strong> Blades swing down to strike at all creatures in area <strong>F2</strong> before wrenching to a frozen halt against the opposite walls. All creatures in the central part of this room take [[/r (6d6 + 3)[slashing]]] damage (@Check[reflex|dc:20|basic]).</p>"
                 }
             }
         },
         "Phantom Mold": {
             "name": "Phantom Mold",
             "description": "<p>A burst of pale gray spores sprays into the air.</p>",
-            "disable": "<p>@Check[type:survival|dc:18] to remove the mold without triggering the spores</p>",
+            "disable": "<p>@Check[survival|dc:18] to remove the mold without triggering the spores</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Spore Burst": {
@@ -754,15 +754,15 @@
                 },
                 "action->Phantom Mold Spores": {
                     "name": "Phantom Mold Spores",
-                    "description": "<p>Any penalties to Perception from this poison persist for 1 hour after the poison's duration ends (this effect can be removed before then by any effect that neutralizes poison);</p><p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18];</p><p><strong>Maksymalny Czas Trwania</strong> 4 rounds;</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage;</p><p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, and the victim takes a –1 status penalty on visual Perception checks as strange shadows and flittering movement appear in their peripheral vision;</p><p><strong>Stadium 3</strong> as stage 2, but a –2 status penalty.</p>"
+                    "description": "<p>Any penalties to Perception from this poison persist for 1 hour after the poison's duration ends (this effect can be removed before then by any effect that neutralizes poison);</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:18];</p><p><strong>Maksymalny Czas Trwania</strong> 4 rounds;</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage;</p><p><strong>Stadium 2</strong> @Damage[1d6[poison]] damage, and the victim takes a –1 status penalty on visual Perception checks as strange shadows and flittering movement appear in their peripheral vision;</p><p><strong>Stadium 3</strong> as stage 2, but a –2 status penalty.</p>"
                 }
             }
         },
         "Pit of Toil": {
             "name": "Pit of Toil",
             "description": "<p>As ghostly, ectoplasm-dripping figures of dwarves work all around, the body of a living creature within the pit begins to ache with the pains of countless hours of back-breaking toil.</p>",
-            "disable": "<p>@Check[type:crafting|dc:21] (eksperctwo) to shame the pit by miming skilled artistry, or @Check[type:religion|dc:18] (wytrenowanie) to exorcise the haunt.</p>",
-            "routine": "<p>(1 action; divine, necromancy) As the dwarves continue to chant and grasp at the living, the pit infuses all living creatures inside it with the ache and pain a body endures after hours of constant toil. Each living creature in the pit must attempt a @Check[type:fortitude|dc:18|traits:divine,necromancy,damaging-effect] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature suffers no ill effect and is thereafter immune to the pit of toil's routine.</p><p><strong>Sukces</strong> The creature suffers no ill effect.</p><p><strong>Porażka</strong> The creature takes @Damage[2d6[void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} for 1 round.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[4d6[void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>",
+            "disable": "<p>@Check[crafting|dc:21] (expert) to shame the pit by miming skilled artistry, or @Check[religion|dc:18] (trained) to exorcise the haunt.</p>",
+            "routine": "<p>(1 action; divine, necromancy) As the dwarves continue to chant and grasp at the living, the pit infuses all living creatures inside it with the ache and pain a body endures after hours of constant toil. Each living creature in the pit must attempt a @Check[fortitude|dc:18|traits:divine,necromancy,damaging-effect] save.</p><hr><p><strong>Krytyczny Sukces</strong> The creature suffers no ill effect and is thereafter immune to the pit of toil's routine.</p><p><strong>Sukces</strong> The creature suffers no ill effect.</p><p><strong>Porażka</strong> The creature takes @Damage[2d6[void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} for 1 round.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[4d6[void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>",
             "items": {
                 "action->Invite Toil": {
                     "name": "Invite Toil",
@@ -773,7 +773,7 @@
         "Spike Thrower": {
             "name": "Spike Thrower",
             "description": "<p>Slats in the ceiling open and pepper the chamber below with long, metal spikes fired from the spring-loaded tubes.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] to jam the gears and prevent the trap from being activated</p>",
+            "disable": "<p>@Check[thievery|dc:18] to jam the gears and prevent the trap from being activated</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Throw Spikes": {
@@ -806,7 +806,7 @@
                 },
                 "action->Encase": {
                     "name": "Encase",
-                    "description": "<p>The tallow guardian attempts to pull a Medium or smaller creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} into its body. The tallow guardian attempts an @Check[type:athletics|defense:reflex] check opposed by the grabbed creature's Reflex DC. If it succeeds, it encases the creature with its body. An encased creature is grabbed, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}, and must hold its breath or start suffocating. It takes @Damage[2d6[fire]] damage from the tallow guardian's molten hot wax when it's first encased, and at the end of each of its turns while it's encased.</p><p>A tallow guardian can only have one encased creature at a time; if a tallow guardian encases a new creature, a previously encased creature is forced out of its body into an adjacent square of the creature's choice.</p><p>An encased creature can break free with a successful DC 22 check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. An encased creature can attack the tallow guardian, but only with unarmed attacks or with weapons of light Bulk or less. The tallow guardian is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} against the attack. If the tallow guardian takes 7 or more bludgeoning or slashing damage from an encased creature, the creature wrenches itself free. A creature that gets free by either method can immediately breathe and exits the tallow guardian's space, but it continues to take @Damage[1d6[persistent,fire]] damage from the molten wax that clings to its body.</p><p>If a tallow guardian is destroyed, any creature it has encased is automatically released as the guardian's body collapses into a shapeless mound of tallow.</p>"
+                    "description": "<p>The tallow guardian attempts to pull a Medium or smaller creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} into its body. The tallow guardian attempts an @Check[athletics|defense:reflex] check opposed by the grabbed creature's Reflex DC. If it succeeds, it encases the creature with its body. An encased creature is grabbed, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}, and must hold its breath or start suffocating. It takes @Damage[2d6[fire]] damage from the tallow guardian's molten hot wax when it's first encased, and at the end of each of its turns while it's encased.</p><p>A tallow guardian can only have one encased creature at a time; if a tallow guardian encases a new creature, a previously encased creature is forced out of its body into an adjacent square of the creature's choice.</p><p>An encased creature can break free with a successful DC 22 check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. An encased creature can attack the tallow guardian, but only with unarmed attacks or with weapons of light Bulk or less. The tallow guardian is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the attack. If the tallow guardian takes 7 or more bludgeoning or slashing damage from an encased creature, the creature wrenches itself free. A creature that gets free by either method can immediately breathe and exits the tallow guardian's space, but it continues to take @Damage[1d6[persistent,fire]] damage from the molten wax that clings to its body.</p><p>If a tallow guardian is destroyed, any creature it has encased is automatically released as the guardian's body collapses into a shapeless mound of tallow.</p>"
                 }
             }
         },
@@ -832,18 +832,18 @@
                 },
                 "action->Agonized Howl": {
                     "name": "Agonized Howl",
-                    "description": "<p>The unrisen howls in pain at its cursed existence. Creatures within a @Template[type:emanation|distance:30] take @Damage[6d8[mental]] damage (@Check[type:will|dc:25|basic:true]). The unrisen can't use Agonized Howl again for [[/br 1d4 #Recharge Agonized Howl]]{1k4 rounds}.</p>"
+                    "description": "<p>The unrisen howls in pain at its cursed existence. Creatures within a @Template[emanation|distance:30] take @Damage[6d8[mental]] damage (@Check[will|dc:25|basic]). The unrisen can't use Agonized Howl again for [[/br 1d4 #Recharge Agonized Howl]]{1k4 rounds}.</p>"
                 },
                 "action->Awful Approach": {
                     "name": "Awful Approach",
-                    "description": "<p>The unrisen reshapes its grotesque form to move swiftly. It Strides twice. Any living creature that can see the unrisen during this movement must succeed at a @Check[type:fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). This is a mental and visual effect. The unrisen can't use Awful Approach again for [[/br 1d4 #Recharge Awful Approach]]{1k4 rounds}.</p>"
+                    "description": "<p>The unrisen reshapes its grotesque form to move swiftly. It Strides twice. Any living creature that can see the unrisen during this movement must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). This is a mental and visual effect. The unrisen can't use Awful Approach again for [[/br 1d4 #Recharge Awful Approach]]{1k4 rounds}.</p>"
                 }
             }
         },
         "The Last Crucible": {
             "name": "The Last Crucible",
             "description": "<p>Magically hardened sheets of obsidian drop down over the room's exits while the machinery within taps into wells of magma to begin spewing lava-and monsters-into the maze.</p>",
-            "disable": "<p>@Check[type:thievery|dc:28] (eksperctwo) to disable the main pressure plate at area <strong>H4a</strong> and deactivate the trap entirely (this causes the obsidian walls to retract up into the ceiling as well), @Check[type:thievery|dc:25] (wytrenowanie) to disable one of the three lava spouts, or @Check[type:athletics|dc:28] (wytrenowanie) to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} a fallen obsidian wall</p>",
+            "disable": "<p>@Check[thievery|dc:28] (expert) to disable the main pressure plate at area <strong>H4a</strong> and deactivate the trap entirely (this causes the obsidian walls to retract up into the ceiling as well), @Check[thievery|dc:25] (trained) to disable one of the three lava spouts, or @Check[athletics|dc:28] (trained) to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} a fallen obsidian wall</p>",
             "hpDetails": "BT 29 to smash a 5-ft-sq hole in the wall; Spout H 13; Spout HP 20 (BT 10)",
             "reset": "<p>The Last Crucible deactivates and resets 10 minutes after it has no target creatures (because the creatures either left area <strong>H4</strong> or died). Any thoqquas that still live sense the magma river at area <strong>H6</strong> and eventually make their way north to that area to swim away.</p>",
             "routine": "<p>(3 actions) The trap loses 1 action per disabled spout each turn. On each action, a different spout located at one of the three areas marked <strong>H4c</strong> spews a gout of lava at the closest non-thoqqua target in its line of sight; these spouts use magical sensors that have darkvision and a Perception DC of 25. Originally, agents of the abbot would come through here after the trap was triggered, deactivate it, and clean out the hardened blobs of lava and dead bodies that remained, but the amount of time it would take for this trap to clog tunnels with cooled lava makes tracking that slow accretion over the course of this adventure unnecessary.</p>",
@@ -851,7 +851,7 @@
             "items": {
                 "action->Drop the Wall": {
                     "name": "Drop the Wall",
-                    "description": "<p><strong>Aktywator</strong> Four or more Small or larger creatures walk onto the pressure plate at area <strong>H4a</strong>;</p><hr /><p><strong>Efekt</strong> A magically hardened sheet of obsidian drops down like a portcullis in the western and northern entrances to this room that lead to areas <strong>H3</strong> and <strong>H5</strong>, respectively. Any creatures standing in one of these squares takes [[/r (4d6 + 4)[bludgeoning]]] damage from the falling wall (@Check[type:reflex|dc:24|basic:true]) and then decides what side of the wall they want to be on. At the same moment, four thoqquas that have spent centuries in hibernation awaken and emerge from vents into area <strong>H4b</strong>. The trap then rolls initiative, as do the thoqquas.</p>"
+                    "description": "<p><strong>Aktywator</strong> Four or more Small or larger creatures walk onto the pressure plate at area <strong>H4a</strong>;</p><hr /><p><strong>Efekt</strong> A magically hardened sheet of obsidian drops down like a portcullis in the western and northern entrances to this room that lead to areas <strong>H3</strong> and <strong>H5</strong>, respectively. Any creatures standing in one of these squares takes [[/r (4d6 + 4)[bludgeoning]]] damage from the falling wall (@Check[reflex|dc:24|basic]) and then decides what side of the wall they want to be on. At the same moment, four thoqquas that have spent centuries in hibernation awaken and emerge from vents into area <strong>H4b</strong>. The trap then rolls initiative, as do the thoqquas.</p>"
                 },
                 "strike-melee->Lava Gout": {
                     "name": "Lava Gout",
@@ -874,11 +874,11 @@
                 },
                 "action->Molten Body": {
                     "name": "Molten Body",
-                    "description": "<p>A thoqqua's body is hot enough to melt stone. A creature who grabs a thoqqua, is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} by a thoqqua, or critically fails a melee Strike with an unarmed attack or agile weapon takes @Damage[1d4[fire]] damage (@Check[type:reflex|dc:15|basic:true]).</p>"
+                    "description": "<p>A thoqqua's body is hot enough to melt stone. A creature who grabs a thoqqua, is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} by a thoqqua, or critically fails a melee Strike with an unarmed attack or agile weapon takes @Damage[1d4[fire]] damage (@Check[reflex|dc:15|basic]).</p>"
                 },
                 "action->Reactive Thrash": {
                     "name": "Reactive Thrash",
-                    "description": "<p><strong>Aktywator</strong> A creature within the thoqqua's reach hits the thoqqua with a melee Strike</p><p><strong>Efekt</strong> The thoqqua instinctively thrashes into the attack, pressing its molten hot scales forward. The attacker must attempt a @Check[type:reflex|dc:15] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The attacker is unaffected.</p><p><strong>Sukces</strong> The attacker takes @Damage[1d4[fire]] damage.</p><p><strong>Porażka</strong> The attacker takes @Damage[2d4[fire]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, but the weapon used to Strike the thoqqua becomes broken unless the weapon is made of metal, has more than 10 Hardness, or is resistant to or immune to fire.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature within the thoqqua's reach hits the thoqqua with a melee Strike</p><p><strong>Efekt</strong> The thoqqua instinctively thrashes into the attack, pressing its molten hot scales forward. The attacker must attempt a @Check[reflex|dc:15] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The attacker is unaffected.</p><p><strong>Sukces</strong> The attacker takes @Damage[1d4[fire]] damage.</p><p><strong>Porażka</strong> The attacker takes @Damage[2d4[fire]] damage.</p><p><strong>Krytyczna Porażka</strong> As failure, but the weapon used to Strike the thoqqua becomes broken unless the weapon is made of metal, has more than 10 Hardness, or is resistant to or immune to fire.</p>"
                 },
                 "action->Critical Ignition": {
                     "name": "Critical Ignition",
@@ -893,7 +893,7 @@
         "Toxic Furnace": {
             "name": "Toxic Furnace",
             "description": "<p>The smoking furnace begins to hiss and click, and its vents swivel and adjust to spew toxic fumes in the direction of intruders.</p>",
-            "disable": "<p>@Check[type:thievery|dc:25] (wytrenowanie) to render one of the vents useless, or @Check[type:athletics|dc:25] to wrench and bend a vent until it no longer functions</p>",
+            "disable": "<p>@Check[thievery|dc:25] (trained) to render one of the vents useless, or @Check[athletics|dc:25] to wrench and bend a vent until it no longer functions</p>",
             "hpDetails": "Furnace BT 28, Vent Hardness 10, Vent HP 18 (BT 9)",
             "reset": "<p>The trap resets after 1 minute, during which it sees no creatures to target.</p>",
             "routine": "<p>(3 actions) The trap loses 1 action for each disabled vent. On each of the trap's actions, a vent spews a gout of boiling toxin at a living creature in sight of it. It can't target a single creature more than once per round, so if there aren't enough viable targets for all 3 actions, the trap loses those unspent actions.</p>",
@@ -901,7 +901,7 @@
             "items": {
                 "action->Spew Toxins": {
                     "name": "Spew Toxins",
-                    "description": "<p><strong>Aktywator</strong> A visible living creature enters the room, or a Stealthy creature fails to remain @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from the toxic furnace with a @Check[type:stealth|dc:25] check (the trap's sensors have darkvision and lifesense);</p><p><strong>Efekt</strong> One of the toxic furnace's vents swivels to aim at the triggering creature and then spews a gout of boiling toxin at the target. The toxic furnace then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A visible living creature enters the room, or a Stealthy creature fails to remain @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} from the toxic furnace with a @Check[stealth|dc:25] check (the trap's sensors have darkvision and lifesense);</p><p><strong>Efekt</strong> One of the toxic furnace's vents swivels to aim at the triggering creature and then spews a gout of boiling toxin at the target. The toxic furnace then rolls initiative.</p>"
                 },
                 "strike-ranged->Boiling Toxin": {
                     "name": "Boiling Toxin"
@@ -911,7 +911,7 @@
         "Trapped Elevator": {
             "name": "Trapped Elevator",
             "description": "<p>An oversized cauldron rigged as an elevator suddenly drops 30 feet if it's overloaded.</p>",
-            "disable": "<p>@Check[type:thievery|dc:18] (wytrenowanie) to lock the releasing mechanisms in place, or @Check[type:crafting|dc:20] to rig additional supports for the cauldron (this activity requires 10 minutes of work)</p>",
+            "disable": "<p>@Check[thievery|dc:18] (trained) to lock the releasing mechanisms in place, or @Check[crafting|dc:20] to rig additional supports for the cauldron (this activity requires 10 minutes of work)</p>",
             "reset": "<p>Creatures can still fall down the shaft even after the cauldron is released, but the cauldron must be reset manually.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -941,11 +941,11 @@
         "Unsafe Stairs": {
             "name": "Unsafe Stairs",
             "description": "<p>The rickety stairs groan and strain alarmingly if a Small or larger creature ascends them.</p>",
-            "disable": "<p>@Check[type:crafting|dc:16] to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
+            "disable": "<p>@Check[crafting|dc:16] to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
             "items": {
                 "action->Collapse": {
                     "name": "Collapse",
-                    "description": "<p><strong>Aktywator</strong> A Small or larger creature attempts to climb the stairs;</p><p><strong>Efekt</strong> The stairs attempt a @Check[type:flat|dc:8] (if a Small creature triggered the hazard) or a @Check[type:flat|dc:16] (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take [[/r (2d6 + 3)[bludgeoning]]] damage from the collapsing rubble (@Check[type:reflex|dc:16|basic:true]).</p>"
+                    "description": "<p><strong>Aktywator</strong> A Small or larger creature attempts to climb the stairs;</p><p><strong>Efekt</strong> The stairs attempt a @Check[flat|dc:8] (if a Small creature triggered the hazard) or a @Check[flat|dc:16] (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take [[/r (2d6 + 3)[bludgeoning]]] damage from the collapsing rubble (@Check[reflex|dc:16|basic]).</p>"
                 }
             }
         },
@@ -958,15 +958,15 @@
                 },
                 "action->Tenacious Wounds": {
                     "name": "Tenacious Wounds",
-                    "description": "<p>A creature who takes poison damage from a vargouille must succeed at a @Check[type:fortitude|dc:18] save or be cursed. The cursed creature can't regain HP except via magic, and anyone Casting a Spell to heal the creature must succeed at a DC 18 counteract check or the healing has no effect. The vargouille's counteract rank is equal to its creature level. A creature can attempt a new @Check[type:fortitude|dc:18] save once per day (typically when it makes its daily preparations) to end this curse. The curse ends automatically if the creature is healed to maximum HP.</p>"
+                    "description": "<p>A creature who takes poison damage from a vargouille must succeed at a @Check[fortitude|dc:18] save or be cursed. The cursed creature can't regain HP except via magic, and anyone Casting a Spell to heal the creature must succeed at a DC 18 counteract check or the healing has no effect. The vargouille's counteract rank is equal to its creature level. A creature can attempt a new @Check[fortitude|dc:18] save once per day (typically when it makes its daily preparations) to end this curse. The curse ends automatically if the creature is healed to maximum HP.</p>"
                 },
                 "action->Vargouille's Kiss": {
                     "name": "Vargouille's Kiss",
-                    "description": "<p><strong>Wymagania</strong> The vargouille is adjacent to a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, or willing humanoid creature</p><p><strong>Efekt</strong> The vargouille nuzzles up against a helpless or willing humanoid creature in a parody of a lover's kiss-the creature must then attempt a saving throw or begin an unsettling transformation into a vargouille. The sickened, stupefied, and unconscious conditions from Vargouille's Kiss don't improve on their own until the disease is cured. This disease can't progress in stage as long as the victim is in sunlight or in the area of a 3. kręgu or higher light effect.</p><p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:18]</p><p><strong>Stadium 1</strong> no ill effect (2 hours)</p><p><strong>Stadium 2</strong> victim's hair falls out, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 hours)</p><p><strong>Stadium 3</strong> victim's ears elongate into winglike shapes and their teeth grow tangled and sharp, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (2 hours)</p><p><strong>Stadium 4</strong> as Stage 3, but the victim falls unconscious (2 hours)</p><p><strong>Stadium 5</strong> death, and the victim's head transforms into a new vargouille that detaches from the body and flies off to spread evil on its own.</p>"
+                    "description": "<p><strong>Wymagania</strong> The vargouille is adjacent to a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, or willing humanoid creature</p><p><strong>Efekt</strong> The vargouille nuzzles up against a helpless or willing humanoid creature in a parody of a lover's kiss-the creature must then attempt a saving throw or begin an unsettling transformation into a vargouille. The sickened, stupefied, and unconscious conditions from Vargouille's Kiss don't improve on their own until the disease is cured. This disease can't progress in stage as long as the victim is in sunlight or in the area of a 3. kręgu or higher light effect.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:18]</p><p><strong>Stadium 1</strong> no ill effect (2 hours)</p><p><strong>Stadium 2</strong> victim's hair falls out, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 hours)</p><p><strong>Stadium 3</strong> victim's ears elongate into winglike shapes and their teeth grow tangled and sharp, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (2 hours)</p><p><strong>Stadium 4</strong> as Stage 3, but the victim falls unconscious (2 hours)</p><p><strong>Stadium 5</strong> death, and the victim's head transforms into a new vargouille that detaches from the body and flies off to spread evil on its own.</p>"
                 },
                 "action->Vargouille's Shriek": {
                     "name": "Vargouille's Shriek",
-                    "description": "<p>The vargouille distends its jaw awfully and emits an unnerving shriek. All creatures within 60 feet who can see and hear the vargouille must attempt a @Check[type:fortitude|dc:15] save.</p><p><strong>Sukces</strong> The creature is unaffected and is temporarily immune to Vargouille's Shriek for 24 hours.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} until the end of its next turn.</p><p><strong>Krytyczna Porażka</strong> The creature is paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                    "description": "<p>The vargouille distends its jaw awfully and emits an unnerving shriek. All creatures within 60 feet who can see and hear the vargouille must attempt a @Check[fortitude|dc:15] save.</p><p><strong>Sukces</strong> The creature is unaffected and is temporarily immune to Vargouille's Shriek for 24 hours.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} until the end of its next turn.</p><p><strong>Krytyczna Porażka</strong> The creature is paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 }
             }
         },

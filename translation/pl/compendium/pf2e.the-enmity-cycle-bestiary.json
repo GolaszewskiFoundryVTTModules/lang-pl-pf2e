@@ -21,14 +21,14 @@
                 },
                 "action->Cruel Performance": {
                     "name": "Cruel Performance",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The bard makes cruel, cutting comments that draw blood. All enemies within 30 feet take @Damage[7d6[slashing]] damage (@Check[type:fortitude|dc:24|basic:true] save).</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The bard makes cruel, cutting comments that draw blood. All enemies within 30 feet take @Damage[7d6[slashing]] damage (@Check[fortitude|dc:24|basic] save).</p>"
                 }
             }
         },
         "Clockwork Dancers": {
             "name": "Clockwork Dancers",
             "description": "<p>Several clockwork humanoid figures armed with spinning blades move throughout the area.</p>",
-            "disable": "<p>@Check[type:thievery|dc:25|traits:action:disable-a-device] (eksperctwo) to deactivate the clockworks from the control panel. Two successes are needed to deactivate the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:25|traits:action:disable-a-device] (expert) to deactivate the clockworks from the control panel. Two successes are needed to deactivate the trap.</p>",
             "reset": "<p>The trap deactivates after 4 rounds and resets after 1 minute.</p>",
             "routine": "<p>(1 akcja) The clockwork dancers target each creature on the stage within 10 feet of a pillar by a spinning blade Strike.</p>",
             "stealth": "<p>(eksperctwo)</p>",
@@ -45,21 +45,21 @@
         "Corrupted Draft": {
             "name": "Corrupted Draft",
             "description": "<p>Discordant music, dance, and poetry combine to build a deep suspicion and distrust of strangers.</p>",
-            "disable": "<p>@Check[type:performance|dc:28] to counteract the performance or @Check[type:religion|dc:28] or @Check[type:occult|dc:28] to disrupt the spiritual energy. Two total successes are needed to disable the trap. The mechanical head can automatically disable the trap with two uses of Inspired Recitation.</p>",
+            "disable": "<p>@Check[performance|dc:28] to counteract the performance or @Check[religion|dc:28] or @Check[occult|dc:28] to disrupt the spiritual energy. Two total successes are needed to disable the trap. The mechanical head can automatically disable the trap with two uses of Inspired Recitation.</p>",
             "reset": "<p>The hazard stops when there are no conscious creatures in area <strong>E3</strong> and resets after 1 minute.</p>",
-            "routine": "<p>(1 action; emotion, fear, mental, occult) The echoes continue to reverberate, tearing at those in the area and filling them with distrust of others. All creatures in the area take @Damage[(2d10+11)[mental]] damage and must attempt a @Check[type:will|dc:28|traits:emotion,fear,mental,occult,damaging-effect] save.</p><hr><p><strong>Krytyczny Sukces</strong> The target is unaffected and is immune to the effects for 1 minute.</p><p><strong>Sukces</strong> The target takes half damage.</p><p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by feelings of distrust and anxiety.</p><p><strong>Krytyczna Porażka</strong> Cel odnosi podwójne obrażenia.and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
+            "routine": "<p>(1 action; emotion, fear, mental, occult) The echoes continue to reverberate, tearing at those in the area and filling them with distrust of others. All creatures in the area take @Damage[(2d10+11)[mental]] damage and must attempt a @Check[will|dc:28|traits:emotion,fear,mental,occult,damaging-effect] save.</p><hr><p><strong>Krytyczny Sukces</strong> The target is unaffected and is immune to the effects for 1 minute.</p><p><strong>Sukces</strong> The target takes half damage.</p><p><strong>Porażka</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by feelings of distrust and anxiety.</p><p><strong>Krytyczna Porażka</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
             "stealth": "<p>(eksperctwo) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii}</p>",
             "items": {
                 "action->Sickening Performance": {
                     "name": "Sickening Performance",
-                    "description": "<p><strong>Aktywator</strong> Two or more characters enter area <strong>E3</strong> and make any sound at all</p><hr /><p><strong>Efekt</strong> Sounds or speech are amplified and garbled into a terrible, shrieking cry. All creatures in the area take @Damage[(2d10+11)[mental]] damage (@Check[type:will|dc:28|basic:true] save). The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> Two or more characters enter area <strong>E3</strong> and make any sound at all</p><hr /><p><strong>Efekt</strong> Sounds or speech are amplified and garbled into a terrible, shrieking cry. All creatures in the area take @Damage[(2d10+11)[mental]] damage (@Check[will|dc:28|basic] save). The trap then rolls initiative.</p>"
                 }
             }
         },
         "Deadly Workshop": {
             "name": "Deadly Workshop",
             "description": "<p>Swinging bladed chains whip through the entire workshop.</p>",
-            "disable": "<p>@Check[type:thievery|dc:20|traits:action:disable-a-device] (eksperctwo) on the control panel on the raised platform deactivates the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:20|traits:action:disable-a-device] (expert) on the control panel on the raised platform deactivates the trap.</p>",
             "hpDetails": "to destroy the chains and disable the trap",
             "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
             "routine": "<p>(1 akcja) The trap swings one slashing blade against every creature in the workshop as 1 action. The entire workshop is treated as difficult terrain because of the sheer number of slashing chains. This trap doesn't take a multiple attack penalty.</p>",
@@ -81,7 +81,7 @@
         "Entangling Shredder Trap": {
             "name": "Entangling Shredder Trap",
             "description": "<p>Dozens of ropes embedded with steel barbs spring out from the walls when at least two creatures step on the rugs.</p>",
-            "disable": "<p>@Check[type:thievery|dc:24|traits:action:disable-a-device] (eksperctwo) on the pressure plates.</p>",
+            "disable": "<p>@Check[thievery|dc:24|traits:action:disable-a-device] (expert) on the pressure plates.</p>",
             "hpDetails": "to cut the barbed ropes and disable the trap",
             "reset": "<p>manual</p>",
             "stealth": "<p>(eksperctwo) to notice the pressure plates under the rugs</p>",
@@ -95,7 +95,7 @@
                 },
                 "action->Grasping Ropes": {
                     "name": "Grasping Ropes",
-                    "description": "<p>The ropes whip around the limbs of the target. The target must attempt a @Check[type:reflex|dc:25] save.</p><hr /><p><strong>Sukces</strong> The target is unaffected.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until it cuts the ropes or @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 25).</p><p><strong>Krytyczna Porażka</strong> As failure, but the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony}.</p>"
+                    "description": "<p>The ropes whip around the limbs of the target. The target must attempt a @Check[reflex|dc:25] save.</p><hr /><p><strong>Sukces</strong> The target is unaffected.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until it cuts the ropes or @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 25).</p><p><strong>Krytyczna Porażka</strong> As failure, but the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony}.</p>"
                 },
                 "action->No MAP": {
                     "name": "No MAP",
@@ -122,7 +122,7 @@
                 },
                 "action->Prayer of Oblivion": {
                     "name": "Prayer of Oblivion",
-                    "description": "<p>The priest chants a prayer to his deity that invokes the forces of nothingness.</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> All enemies within @Template[type:emanation|distance:30]{30 feet} take @Damage[5d6[void]] damage (@Check[type:will|dc:21|basic:true] save).</p>"
+                    "description": "<p>The priest chants a prayer to his deity that invokes the forces of nothingness.</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> All enemies within @Template[emanation|distance:30]{30 feet} take @Damage[5d6[void]] damage (@Check[will|dc:21|basic] save).</p>"
                 }
             }
         },
@@ -181,7 +181,7 @@
                 },
                 "action->Inspired Recitation": {
                     "name": "Inspired Recitation",
-                    "description": "<p>The mechanical assistant recites an inspiring poem, filling allies with determination and vigor. All allies within @Template[type:emanation|distance:60]{60 feet} gain a +1 status bonus to saving throws and 10 temporary Hit Points for 1 minute. Once an ally has benefited from this ability, they become temporarily immune to Inspired Recitation for 10 minutes.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.MT5gxuuxBaN2RdYf]{Efekt: Inspired Recitation}</p>"
+                    "description": "<p>The mechanical assistant recites an inspiring poem, filling allies with determination and vigor. All allies within @Template[emanation|distance:60]{60 feet} gain a +1 status bonus to saving throws and 10 temporary Hit Points for 1 minute. Once an ally has benefited from this ability, they become temporarily immune to Inspired Recitation for 10 minutes.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.MT5gxuuxBaN2RdYf]{Efekt: Inspired Recitation}</p>"
                 },
                 "lore->Poetry Lore": {
                     "name": "Poetry Lore"
@@ -211,7 +211,7 @@
                 },
                 "action->Tinker": {
                     "name": "Tinker",
-                    "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
+                    "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
                 },
                 "action->Trap Tinker": {
                     "name": "Trap Tinker",
@@ -248,11 +248,11 @@
                 },
                 "action->Choking Sands": {
                     "name": "Choking Sands",
-                    "description": "<p>The sand wolf discorporates into a cloud of whirling sand. It can Stride, moving freely through occupied spaces. Any creatures within those spaces take [[/r 2d10]] damage and must attempt a @Check[type:reflex|dc:19|traits:damaging-effect] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target takes no damage.</p><p><strong>Sukces</strong> The target takes half damage.</p><p><strong>Porażka</strong> Cel odnosi pełne obrażenia and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Krytyczna Porażka</strong> As failure, but the effect is increased to @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
+                    "description": "<p>The sand wolf discorporates into a cloud of whirling sand. It can Stride, moving freely through occupied spaces. Any creatures within those spaces take [[/r 2d10]] damage and must attempt a @Check[reflex|dc:19|traits:damaging-effect] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target takes no damage.</p><p><strong>Sukces</strong> The target takes half damage.</p><p><strong>Porażka</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Krytyczna Porażka</strong> As failure, but the effect is increased to @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
                 },
                 "action->Susurrating Song": {
                     "name": "Susurrating Song",
-                    "description": "<p>The sand wolf sings a short, enchanting song. Any creature other than a sand wolf within 30 feet must attempt a @Check[type:will|dc:19] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected and is temporarily immune to further susurrating song exposures for 24 hours.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p><p><strong>Krytyczna Porażka</strong> As failure, and the target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}.</p>"
+                    "description": "<p>The sand wolf sings a short, enchanting song. Any creature other than a sand wolf within 30 feet must attempt a @Check[will|dc:19] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected and is temporarily immune to further susurrating song exposures for 24 hours.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p><p><strong>Krytyczna Porażka</strong> As failure, and the target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}.</p>"
                 }
             }
         },
@@ -298,7 +298,7 @@
                 },
                 "action->Rebuild Armor": {
                     "name": "Rebuild Armor",
-                    "description": "<p><strong>Wymagania</strong> The scrapborn's previous action was a successful claw Strike against a target wearing armor and that armor is not broken</p><hr /><p><strong>Efekt</strong> The scrapborn pulls and rips at the target's armor. The target must attempt a @Check[type:reflex|dc:20] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target's armor takes @Damage[1d8[piercing]] damage, ignoring the armor's Hardness.</p><p><strong>Porażka</strong> The target's armor takes @Damage[2d8[piercing]] damage, which ignores the armor's Hardness; if this causes the armor to become broken, the scrapborn can incorporate the removed armor piece into its own body and raise its AC by 1 (to a maximum of 22).</p><p><strong>Krytyczna Porażka</strong> As failure, except instead of damage, the target's armor is automatically reduced to its BT and the scrapborn increases its AC by 2.</p>"
+                    "description": "<p><strong>Wymagania</strong> The scrapborn's previous action was a successful claw Strike against a target wearing armor and that armor is not broken</p><hr /><p><strong>Efekt</strong> The scrapborn pulls and rips at the target's armor. The target must attempt a @Check[reflex|dc:20] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target's armor takes @Damage[1d8[piercing]] damage, ignoring the armor's Hardness.</p><p><strong>Porażka</strong> The target's armor takes @Damage[2d8[piercing]] damage, which ignores the armor's Hardness; if this causes the armor to become broken, the scrapborn can incorporate the removed armor piece into its own body and raise its AC by 1 (to a maximum of 22).</p><p><strong>Krytyczna Porażka</strong> As failure, except instead of damage, the target's armor is automatically reduced to its BT and the scrapborn increases its AC by 2.</p>"
                 }
             }
         },
@@ -331,21 +331,21 @@
                 },
                 "action->Change Size": {
                     "name": "Change Size",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The janni changes a creature's size. This works as a 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge} or @UUID[Compendium.pf2e.spells-srd.Item.PjhUmyKnq6K5uDby]{Shrink} spell but can target an unwilling creature (@Check[type:fortitude|dc:24] save negates).</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The janni changes a creature's size. This works as a 4. kręgu @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge} or @UUID[Compendium.pf2e.spells-srd.Item.PjhUmyKnq6K5uDby]{Shrink} spell but can target an unwilling creature (@Check[fortitude|dc:24] save negates).</p>"
                 }
             }
         },
         "The Enmity Cycle": {
             "name": "The Enmity Cycle",
             "description": "<p>Discordant music, dance, and poetry combine to build a deep suspicion and distrust of strangers.</p>",
-            "disable": "<p>@Check[type:performance|dc:26] to counteract the performance or @Check[type:religion|dc:27] or @Check[type:occult|dc:27] to disrupt the spiritual energy. Three total successes are needed to disable the trap.</p>",
+            "disable": "<p>@Check[performance|dc:26] to counteract the performance or @Check[religion|dc:27] or @Check[occult|dc:27] to disrupt the spiritual energy. Three total successes are needed to disable the trap.</p>",
             "reset": "<p>A new production of <em>The Enmity Cycle</em> must be arranged; this process usually takes at least 1 week.</p>",
-            "routine": "<p>(1 akcja) The performance continues to sow seeds of enmity, discord, and distrust on those in its area. All creatures in attendance other than Zridi must attempt a @Check[type:will|dc:25] save.</p><hr><p><strong>Krytyczny Sukces</strong> The target is unaffected and is immune to the effects for 1 day.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} for 2 rounds.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} for 1 minute and is certain the source of this fear is their fellow citizens, especially those from places other than their hometown. For 1 week the target suffers a &ndash;2 penalty to all Diplomacy skill checks against people from other Thuvian cities and regains the frightened 2 condition whenever they are in one of those cities.</p><p><strong>Krytyczna Porażka</strong> As failure, but the target becomes a carrier for <em>The Enmity Cycle</em> for the next week. The target is compelled to travel to a city other than where they were exposed and recite as many lines from the anbarit as they can recall. Those who hear or witness the performance are treated as if they had attended a performance of <em>The Enmity Cycle</em>, but with a @Check[type:will|dc:23] save</p>",
+            "routine": "<p>(1 action) The performance continues to sow seeds of enmity, discord, and distrust on those in its area. All creatures in attendance other than Zridi must attempt a @Check[will|dc:25] save.</p><hr><p><strong>Krytyczny Sukces</strong> The target is unaffected and is immune to the effects for 1 day.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} for 2 rounds.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} for 1 minute and is certain the source of this fear is their fellow citizens, especially those from places other than their hometown. For 1 week the target suffers a &ndash;2 penalty to all Diplomacy skill checks against people from other Thuvian cities and regains the frightened 2 condition whenever they are in one of those cities.</p><p><strong>Krytyczna Porażka</strong> As failure, but the target becomes a carrier for <em>The Enmity Cycle</em> for the next week. The target is compelled to travel to a city other than where they were exposed and recite as many lines from the anbarit as they can recall. Those who hear or witness the performance are treated as if they had attended a performance of <em>The Enmity Cycle</em>, but with a @Check[will|dc:23] save</p>",
             "stealth": "<p>(eksperctwo) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii}</p>",
             "items": {
                 "action->Discordant Performance": {
                     "name": "Discordant Performance",
-                    "description": "<p><strong>Aktywator</strong> Zridi spends an action to activate <em>The Enmity Cycle</em> while in area <strong>F2</strong></p><hr /><p><strong>Efekt</strong> All creatures other than Zridi in <strong>F2</strong> take @Damage[(2d8+9)[mental]] damage (@Check[type:will|dc:25|basic:true] save). The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> Zridi spends an action to activate <em>The Enmity Cycle</em> while in area <strong>F2</strong></p><hr /><p><strong>Efekt</strong> All creatures other than Zridi in <strong>F2</strong> take @Damage[(2d8+9)[mental]] damage (@Check[will|dc:25|basic] save). The trap then rolls initiative.</p>"
                 }
             }
         },
@@ -454,18 +454,18 @@
                 },
                 "action->Bubonic Plague": {
                     "name": "Bubonic Plague",
-                    "description": "<p>A creature can't remove the fatigued condition while infected</p><p><strong>Rzut Obronny</strong> @Check[type:fortitude|dc:24]</p><hr /><p><strong>Nadejście Objawów</strong> 1 day</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} (1 dzień)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 2} and fatigued (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabienie 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Persistent Damage Interval]]{1k20 minutes} (1 dzień)</p>"
+                    "description": "<p>A creature can't remove the fatigued condition while infected</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:24]</p><hr /><p><strong>Nadejście Objawów</strong> 1 day</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} (1 dzień)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} and fatigued (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Persistent Damage Interval]]{1k20 minutes} (1 dzień)</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Zridi can take the appearance of any Small or Medium humanoid or animal. This doesn't change her Speed or her attack and damage modifiers with the Strikes, but it might change the damage type her Strikes deal.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Compelled Performance": {
                     "name": "Compelled Performance",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Zridi grants the target a +2 status bonus to Performance checks for one week. The target must attempt a @Check[type:will|dc:26] save.</p><p><strong>Krytyczny Sukces</strong> No further effect.</p><p><strong>Sukces</strong> The target must @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Występ} for 1 action on its next turn.</p><p><strong>Porażka</strong> The target must Perform for 3 actions on its next turn, undertaking a Performance task set by Zridi.</p><p><strong>Krytyczna Porażka</strong> As failure, but Zridi can choose to delay the effect and trigger it at any point in the next week as a reaction.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yb5rg3MEojIHQX8H]{Efekt: Compelled Performance}</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Zridi grants the target a +2 status bonus to Performance checks for one week. The target must attempt a @Check[will|dc:26] save.</p><p><strong>Krytyczny Sukces</strong> No further effect.</p><p><strong>Sukces</strong> The target must @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform} for 1 action on its next turn.</p><p><strong>Porażka</strong> The target must Perform for 3 actions on its next turn, undertaking a Performance task set by Zridi.</p><p><strong>Krytyczna Porażka</strong> As failure, but Zridi can choose to delay the effect and trigger it at any point in the next week as a reaction.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yb5rg3MEojIHQX8H]{Efekt: Compelled Performance}</p>"
                 },
                 "action->Tormenting Dreams": {
                     "name": "Tormenting Dreams",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Zridi torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[type:will|dc:26] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Zridi torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[will|dc:26] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>"
                 }
             }
         }

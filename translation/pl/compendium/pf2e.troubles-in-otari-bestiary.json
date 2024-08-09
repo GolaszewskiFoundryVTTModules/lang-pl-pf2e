@@ -42,7 +42,7 @@
         "Collapsing Porch": {
             "name": "Collapsing Porch",
             "description": "<p>A section of splintery and rotten floorboards drop a creature 6 feet onto uneven rocks and piercing shards of wood.</p>",
-            "disable": "<p>@Check[type:crafting|dc:15] (wytrenowanie) to replace or cover the weak sections of flooring, or @Check[type:survival|dc:15] (wytrenowanie) to crumble the rotten floorboards from a safe distance</p>",
+            "disable": "<p>@Check[crafting|dc:15] (trained) to replace or cover the weak sections of flooring, or @Check[survival|dc:15] (trained) to crumble the rotten floorboards from a safe distance</p>",
             "reset": "<p>Once this section of the porch has collapsed, creatures can still fall through the hole until the porch is Repaired.</p>",
             "stealth": "<p>(or 0 after the hazard is triggered)</p>",
             "items": {
@@ -116,7 +116,7 @@
             "items": {
                 "consumable->Spike Trap": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx]\nSpike Trap",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx]\n<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2k8 piercing damage. The creature must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3V2U720YhW2nyGVx]\n<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2k8 piercing damage. The creature must attempt a @Check[reflex|dc:17|basic] saving throw.</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -137,7 +137,7 @@
                 },
                 "action->Spike Trap": {
                     "name": "Spike Trap",
-                    "description": "<p>Once this trap is deployed, anyone who steps on the square it's in takes @Damage[2d8[piercing]] damage and must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>"
+                    "description": "<p>Once this trap is deployed, anyone who steps on the square it's in takes @Damage[2d8[piercing]] damage and must attempt a @Check[reflex|dc:17|basic] saving throw.</p>"
                 }
             }
         },
@@ -203,21 +203,21 @@
                 },
                 "action->Remove Memory": {
                     "name": "Remove Memory",
-                    "description": "<p>The Kurnugian ends their Hypnotic Stare ability early, and just before this happens, the target must succeed at a @Check[type:will|dc:24] saving throw or forget any hostile activities the Kurnugian jackal performed against it.</p>"
+                    "description": "<p>The Kurnugian ends their Hypnotic Stare ability early, and just before this happens, the target must succeed at a @Check[will|dc:24] saving throw or forget any hostile activities the Kurnugian jackal performed against it.</p>"
                 }
             }
         },
         "Magic Starknives Trap": {
             "name": "Magic Starknives Trap",
             "description": "<p>Starknife symbols on the six pillars glow and shoot across the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (eksperctwo) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} on any four of the six pillars disables the entire trap (the trap is a 2. kręgu spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:21|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on any four of the six pillars disables the entire trap (the trap is a 2. kręgu spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
             "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets each day at sundown.</p>",
             "routine": "<p>(3 actions) For each of its actions on its turn, a carving on a different pillar glows and makes a magical starknife Ranged Strike against a random creature within range. Creatures might have cover from this Strike, such as from one of the pillars in the room.</p>",
             "stealth": "<p>to spot the magical energies reverberating in the pillars</p>",
             "items": {
                 "action->Starknife Attack": {
                     "name": "Starknife Attack",
-                    "description": "<p>If a creature passes the middle pair of pillars, both doors leading out of the room slam shut and lock; while the trap is active, the doors must be battered open with a successful @Check[type:athletics|dc:23|name:Batter Open Door|traits:action:force-open] check or sufficient damage (Hardness 12; HP 48 [BT 24]). One of the starknife carvings glows with light, detaches from the pillar, and then flies outward, making a magical starknife Ranged Strike against a random creature within range. The trap then rolls initiative with its Stealth modifier of +12</p>"
+                    "description": "<p>If a creature passes the middle pair of pillars, both doors leading out of the room slam shut and lock; while the trap is active, the doors must be battered open with a successful @Check[athletics|dc:23|name:Batter Open Door|traits:action:force-open] check or sufficient damage (Hardness 12; HP 48 [BT 24]). One of the starknife carvings glows with light, detaches from the pillar, and then flies outward, making a magical starknife Ranged Strike against a random creature within range. The trap then rolls initiative with its Stealth modifier of +12</p>"
                 },
                 "strike-ranged->Magical Starknife": {
                     "name": "Magical Starknife"
@@ -284,10 +284,10 @@
         "Nightmare Terrain": {
             "name": "Nightmare Terrain",
             "description": "<p>What seems like an innocent stretch of land assaults trespassers with terrible illusions.</p>",
-            "disable": "<p>@Check[type:arcana|dc:22], @Check[type:nature|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (3. poziomu. spell, DC 25)</p>",
+            "disable": "<p>@Check[arcana|dc:22], @Check[nature|dc:22], @Check[occultism|dc:22], or @Check[religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3. poziomu. spell, DC 25)</p>",
             "reset": "<p>The terrible visions cease after all creatures have left the affected area, but the hazard is immediately ready to inflict its visions on the next creature to enter.</p>",
-            "routine": "<p>(1 akcja) Terrible visions assail the minds of all creatures who can see within the affected area. Each creature must attempt a @Check[type:will|dc:24] saving throw.</p><hr /><p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p><p><strong>Porażka</strong> The creature takes @Damage[(2d8+9)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(4d8+18)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}.</p>",
-            "stealth": "<p>@Check[type:perception|dc:22|traits:action:seek] to detect the subtle magical aura of the land</p>",
+            "routine": "<p>(1 action) Terrible visions assail the minds of all creatures who can see within the affected area. Each creature must attempt a @Check[will|dc:24] saving throw.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p><p><strong>Porażka</strong> The creature takes @Damage[(2d8+9)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[(4d8+18)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}.</p>",
+            "stealth": "<p>@Check[perception|dc:22|traits:action:seek] to detect the subtle magical aura of the land</p>",
             "items": {
                 "action->Step into Nightmares": {
                     "name": "Step into Nightmares",
@@ -331,7 +331,7 @@
                 },
                 "action->Battle Cry": {
                     "name": "Battle Cry",
-                    "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within @Template[type:emanation|distance:60]{60 feet} who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yqq4AkZ9lrm4CcID]{Efekt: Battle Cry}</p>"
+                    "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within @Template[emanation|distance:60]{60 feet} who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yqq4AkZ9lrm4CcID]{Efekt: Battle Cry}</p>"
                 }
             }
         },
@@ -371,7 +371,7 @@
                 },
                 "action->Wing Flash": {
                     "name": "Wing Flash",
-                    "description": "<p>The scalliwing spreads their iridescent wings and flutters them in a hypnotizing pattern. Each creature within 30 feet that can see the scalliwing must attempt a @Check[type:will|dc:20] save.</p><hr /><p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until the start of its next turn.</p><p><strong>Porażka</strong> The creature is off-guard until the start of its next turn, and it must spend its first action on its next turn admiring the scalliwing.</p><p><strong>Krytyczna Porażka</strong> The creature is off-guard until the start of its next turn. For 1 minute, the creature must spend its first action each turn admiring the scalliwing. This effect ends if the scalliwing attacks or uses another hostile action against the affected creature.</p>"
+                    "description": "<p>The scalliwing spreads their iridescent wings and flutters them in a hypnotizing pattern. Each creature within 30 feet that can see the scalliwing must attempt a @Check[will|dc:20] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p><p><strong>Porażka</strong> The creature is off-guard until the start of its next turn, and it must spend its first action on its next turn admiring the scalliwing.</p><p><strong>Krytyczna Porażka</strong> The creature is off-guard until the start of its next turn. For 1 minute, the creature must spend its first action each turn admiring the scalliwing. This effect ends if the scalliwing attacks or uses another hostile action against the affected creature.</p>"
                 }
             }
         },
@@ -388,7 +388,7 @@
                 },
                 "action->Stench": {
                     "name": "Stench",
-                    "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} for 1 round (and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+                    "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round (and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
                 },
                 "action->Stinky Leaves": {
                     "name": "Stinky Leaves",
@@ -407,10 +407,10 @@
         "Tongues of Flame": {
             "name": "Tongues of Flame",
             "description": "<p>Nozzles hidden in the ceiling of the four corridors leading to the intersection spray jets of flame along their lengths when the trap is triggered.</p>",
-            "disable": "<p>@Check[type:thievery|dc:22|traits:action:disable-a-device] to disable a single nozzle, @Check[type:thievery|dc:21|traits:action:pick-a-lock] twice to unlock a door, or @Check[type:thievery|dc:25|traits:action:disable-a-device] to deactivate the trap from the control panel. A hero who isn't trained in Thievery automatically fails these checks.</p>",
+            "disable": "<p>@Check[thievery|dc:22|traits:action:disable-a-device] to disable a single nozzle, @Check[thievery|dc:21|traits:action:pick-a-lock] twice to unlock a door, or @Check[thievery|dc:25|traits:action:disable-a-device] to deactivate the trap from the control panel. A hero who isn't trained in Thievery automatically fails these checks.</p>",
             "hpDetails": "to destroy a single nozzle; <strong>Door</strong> Hardness 6,  <strong>PŻ</strong>  22 (BT 11) to break open a door and escape the hallway",
             "reset": "<p>The trap deactivates and resets after 10 minutes. After the trap is activated for the fourth time, it runs out of fuel and must be reset manually.</p>",
-            "routine": "<p>(4 actions) The trap loses 1 action each turn for each disabled nozzle. On each action, a different nozzle fires a jet of flame down a different corridor, dealing @Damage[3d6[fire]] damage to each creature in the first 10 feet of the corridor past the intersection (@Check[type:reflex|dc:22|basic:true]).</p><p>A creature standing in the corridor intersection can be hit by only one flame jet per round even if they're in the area of multiple flame jets. The creature attempts only one saving throw per round, but it takes a –2 circumstance penalty to its saving throw.</p>",
+            "routine": "<p>(4 actions) The trap loses 1 action each turn for each disabled nozzle. On each action, a different nozzle fires a jet of flame down a different corridor, dealing @Damage[3d6[fire]] damage to each creature in the first 10 feet of the corridor past the intersection (@Check[reflex|dc:22|basic]).</p><p>A creature standing in the corridor intersection can be hit by only one flame jet per round even if they're in the area of multiple flame jets. The creature attempts only one saving throw per round, but it takes a –2 circumstance penalty to its saving throw.</p>",
             "items": {
                 "action->Seal the Doors": {
                     "name": "Seal the Doors",
@@ -421,7 +421,7 @@
         "Viper Urn": {
             "name": "Viper Urn",
             "description": "<p>A ceramic urn containing a coiled viper tips and shatters when a tripwire is pulled.</p>",
-            "disable": "<p>@Check[type:thievery|dc:15|traits:action:disable-a-device] (wytrenowanie) to stabilize the urn, or @Check[type:athletics|dc:15] to carefully lower the heavy urn</p>",
+            "disable": "<p>@Check[thievery|dc:15|traits:action:disable-a-device] (trained) to stabilize the urn, or @Check[athletics|dc:15] to carefully lower the heavy urn</p>",
             "items": {
                 "action->Topple": {
                     "name": "Topple",
@@ -435,7 +435,7 @@
         "Web Lurker Noose": {
             "name": "Web Lurker Noose",
             "description": "<p>Discreet webbing at throat level snags a creature that walks into it.</p>",
-            "disable": "<p>@Check[type:survival|dc:18] (wytrenowanie) or @Check[type:thievery|dc:18|traits:action:disable-a-device] (eksperctwo) to rearrange the webbing</p>",
+            "disable": "<p>@Check[survival|dc:18] (trained) or @Check[thievery|dc:18|traits:action:disable-a-device] (expert) to rearrange the webbing</p>",
             "items": {
                 "strike-melee->Noose": {
                     "name": "Noose",

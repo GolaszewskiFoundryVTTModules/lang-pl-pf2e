@@ -3,3 +3,5 @@ The Beast of Gluttondark - Bestia z [[Kosmologia#Gluttondark - Mrokogłód|Mroko
 Treerazer - Drzewomór
 
 Norgorber - (Ojciec Skóroszwacz)
+
+Dawnflower - świtokwiecie

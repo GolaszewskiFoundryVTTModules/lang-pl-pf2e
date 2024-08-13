@@ -58,6 +58,7 @@ replacement_patterns = [
     (r'\(Greater\)', r'(Większy)'),
     (r'\(Major\)', r'(Potężny)'),
     (r'\(Supreme\)', r'(Wyjątkowy)'),
+    (r'\(Type (\S+)\)', r'(Typ \1)'),
     # Success degrees
     (r'>Critical Success<', r'>Krytyczny Sukces<'),
     (r'>Success<', r'>Sukces<'),

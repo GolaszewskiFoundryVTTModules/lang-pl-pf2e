@@ -338,7 +338,7 @@
         },
         "Fruit Leshy": {
             "name": "Fruit Leshy",
-            "description": "<p>Your body continually produces small fruits imbued with primal magic. At dawn each day, a new fruit ripens. You or an ally can remove this fruit as an Interact action. If a living creature that can derive sustenance from fruit consumes it as an Interact action within the next hour, they regain 1k8 Hit Points, plus an additional 1k8 Hit Points for every 2 of your levels beyond 1.. This effect has the healing and vitality traits.</p><p>[[/r ceil(@actor.level/2)d8[healing]]]{Leveled Healing}</p>"
+            "description": "<p>Your body continually produces small fruits imbued with primal magic. At dawn each day, a new fruit ripens. You or an ally can remove this fruit as an Interact action. If a living creature that can derive sustenance from fruit consumes it as an Interact action within the next hour, they regain 1k8 Hit Points, plus an additional 1k8 Hit Points for every 2 of your levels beyond 1.. This effect has the healing and vitality traits.</p><p>@Damage[ceil(@actor.level/2)d8[healing]]{Leveled Healing}</p>"
         },
         "Fungus Leshy": {
             "name": "Fungus Leshy",
@@ -687,7 +687,7 @@
         },
         "Rite of Light": {
             "name": "Rite of Light",
-            "description": "<p>Your exoskeleton bears small shoots that can share life. When using your Sunlight Healing, you can restore the Hit Points of an adjacent ally instead of yourself. That ally becomes temporarily immune to all uses of Sunlight Healing for 1 day.</p>"
+            "description": "<p>Your exoskeleton bears small shoots that can share life. When using your @UUID[Compendium.pf2e.ancestryfeatures.Item.BgHrucbZ9TH92RDv]{Sunlight Healing}, you can restore the Hit Points of an adjacent ally instead of yourself. That ally becomes temporarily immune to all uses of Sunlight Healing for 1 day.</p>"
         },
         "Rite of Passage": {
             "name": "Rite of Passage",

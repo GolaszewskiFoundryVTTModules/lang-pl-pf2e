@@ -126,7 +126,7 @@
                 },
                 "action->Proven Devotion": {
                     "name": "Proven Devotion",
-                    "description": "<p>The agradaemon regains 15 Hit Points, and a pledged fanatic of the agradaemon's choice that it can see loses 15 Hit Points (no effects apply that would decrease this Hit Point loss).</p><p>A pledged creature that dies in this way explodes and deals @Damage[9d10[fire]] damage in a @Template[emanation|distance:20] (@Check[reflex|dc:41|basic] save).</p>"
+                    "description": "<p>The agradaemon regains @Damage[15[untyped]] Hit Points, and a pledged fanatic of the agradaemon's choice that it can see loses 15 Hit Points (no effects apply that would decrease this Hit Point loss).</p><p>A pledged creature that dies in this way explodes and deals @Damage[9d10[fire]] damage in a @Template[emanation|distance:20] (@Check[reflex|dc:41|basic] save).</p>"
                 },
                 "action->Rend": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -200,7 +200,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\n<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:26]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[5d6[poison]] damage (1 runda)</p><p><strong>Stadium 2</strong> @Damage[6d6[poison]] damage (1 runda)</p><p><strong>Stadium 3</strong> @Damage[8d6[poison]] damage (1 runda)</p>"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
                 },
                 "strike-melee->Rapier": {
                     "name": "Rapier"
@@ -545,7 +545,7 @@
                 },
                 "action->Consume Flesh": {
                     "name": "Consume Flesh",
-                    "description": "<p><strong>Wymagania</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Efekt</strong> The barnacle ghoul devours a chunk of the corpse and regains [[/r 5d6[healing]]] Hit Points.</p><p>It can regain Hit Points from any given corpse only once.</p>"
+                    "description": "<p><strong>Wymagania</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Efekt</strong> The barnacle ghoul devours a chunk of the corpse and regains @Damage[5d6[healing]] Hit Points.</p><p>It can regain Hit Points from any given corpse only once.</p>"
                 },
                 "action->Fill Lungs": {
                     "name": "Fill Lungs",
@@ -615,7 +615,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3Zv5hSXXtlaDatUv]\n+1 Greatpick"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-melee->Greatpick": {
                     "name": "Greatpick"
@@ -878,7 +878,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.OTeONq4r10Xm6gSy]\n<p>This plain silver ring has an almost oily sheen. While wearing the ring, you gain a +2 item bonus to Deception checks.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p><hr /><p><strong>Efekt</strong> Snapping your fingers on the hand that wears the ring causes the ring to cast @UUID[Compendium.pf2e.spells-srd.Item.JyxTmqjYYn63V5LY]{Honeyed Words} on you with no visual manifestations of a spell being cast.</p>"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
                 },
                 "consumable->Spellstrike Ammunition (Type III) (Blindness) (DC 24)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mz0GbCF2WT1DSYac]\nSpellstrike Ammunition (Typ III) (Blindness) (DC 24)",
@@ -1256,7 +1256,7 @@
                 },
                 "action->Golem Antimagic": {
                     "name": "Golem Antimagic",
-                    "description": "<p>harmed by fire ([[/r 5d8]], [[/r 3d4]] from areas or persistent damage); healed by electricity (area [[/r 2d4[healing]]] Hit Points); slowed by cold</p><hr /><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p><p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p><p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 2d6 #rounds]]{2k6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for that round.</p><p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
+                    "description": "<p>harmed by fire ([[/r 5d8]], [[/r 3d4]] from areas or persistent damage); healed by electricity (area @Damage[2d4[healing]] Hit Points); slowed by cold</p><hr /><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p><p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p><p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 2d6 #rounds]]{2k6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for that round.</p><p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
                 },
                 "action->Vulnerable to Flesh to Stone": {
                     "name": "Vulnerable to Flesh to Stone",
@@ -1264,7 +1264,7 @@
                 },
                 "action->Berserk Slam": {
                     "name": "Berserk Slam",
-                    "description": "<p><strong>Wymagania</strong> The flesh golem is berserk.</p><hr /><p><strong>Efekt</strong> The flesh golem Strikes with its fist at a –1 circumstance penalty. If it hits, it deals [[/r 1d6]] extra damage and knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The flesh golem is berserk.</p><hr /><p><strong>Efekt</strong> The flesh golem Strikes with its fist at a –1 circumstance penalty. If it hits, it deals 1k6 extra damage and knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
                 }
             }
         },
@@ -1307,7 +1307,7 @@
                 },
                 "action->Golem Antimagic": {
                     "name": "Golem Antimagic",
-                    "description": "<p>harmed by sonic ([[/r 5d8]], [[/r 2d6]] from areas or persistent damage); healed by acid (area [[/r 2d4[healing]]] Hit Points); slowed by cold</p><hr /><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p><p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p><p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 2d6 #rounds]]{2k6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for that round.</p><p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
+                    "description": "<p>harmed by sonic ([[/r 5d8]], [[/r 2d6]] from areas or persistent damage); healed by acid (area @Damage[2d4[healing]] Hit Points); slowed by cold</p><hr /><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p><p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p><p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 2d6 #rounds]]{2k6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for that round.</p><p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
                 },
                 "action->Vulnerable to Shatter": {
                     "name": "Vulnerable to Shatter",
@@ -1638,7 +1638,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-ranged->Dagger": {
                     "name": "Dagger"
@@ -2986,7 +2986,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-ranged->Lawkeeper": {
                     "name": "Lawkeeper"
@@ -3170,7 +3170,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8YnlhfZSQ89FjDZ2]\n<p>This small pendant is usually shaped like a humanoid skull or small animal skull.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">3</span> Interakcja</p><p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> You become undetectable to undead creatures for 10 minutes. Undead can't see, hear, or smell you, nor detect you with sensory capabilities such as scent or tremorsense. A creature can attempt a single DC 18 Will saving throw to ignore this effect. If an undead has reason to believe that undetected opponents are present, it can still attempt to Seek or Strike you. If you attempt to use a vitality spell to damage undead, use <em>Command Undead</em>, touch or damage an undead creature, or attack any creature while warded in this manner, the pendant's effects immediately end. An undead creature who observes you in this manner or one who succeeds at the Will save is immune to the corpseward pendant for 24 hours.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "consumable->Hunting Spider Venom (in Reaper's Lancet)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds]\nHunting Spider Venom (in Reaper's Lancet)",
@@ -3808,7 +3808,7 @@
                 },
                 "consumable->Healing Potion (Moderate)": {
                     "name": "Healing Potion (Umiarkowany)",
-                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -3913,7 +3913,7 @@
             "items": {
                 "action->Dominate": {
                     "name": "Dominate",
-                    "description": "<p><strong>Aktywator</strong> A creature who doesn't bear the sigil of Kharnas attempts to open the door</p><hr /><p><strong>Efekt</strong> A surge of the Radiant Spark's latent power courses through the glyph and washes over the triggering creature. If the creature is undead, it takes @Damage[10d10[vitality]] damage. If it's living, it instead regains [[/r 10d10[healing]]] Hit Points. It then must succeed at a @Check[will|dc:40|traits:incapacitation,mental] save or be affected by a 6. kręgu @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} spell.</p><p>The spell commands the affected creature to attack the nearest creature who doesn't bear the sigil of Kharnas.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature who doesn't bear the sigil of Kharnas attempts to open the door</p><hr /><p><strong>Efekt</strong> A surge of the Radiant Spark's latent power courses through the glyph and washes over the triggering creature. If the creature is undead, it takes @Damage[10d10[vitality]] damage. If it's living, it instead regains @Damage[10d10[healing]] Hit Points. It then must succeed at a @Check[will|dc:40|traits:incapacitation,mental] save or be affected by a 6. kręgu @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} spell.</p><p>The spell commands the affected creature to attack the nearest creature who doesn't bear the sigil of Kharnas.</p>"
                 }
             }
         },
@@ -4321,9 +4321,6 @@
                 },
                 "weapon->+1 Rapier": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tH5GirEy7YB3ZgCk]\n+1 Rapier"
-                },
-                "equipment->Deafening Music Box": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.k9BYXA4b7Z4Hy6lZ]\n<p>Symbols of musical notes decorate this gold-framed wooden cube measuring just under 1 foot by 1 foot. A funnel-shaped trumpet protrudes from the box's top at an angle, though it feels surprisingly light. The box has a large button on its side, and it must be set down on a flat surface in order to activate it; while it's activated, the rumbling and churning gears inside the box make it impossible to carry without dropping it.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interact;<strong>Efekt</strong> You press the button on the side of the music box, causing it to erupt with a cacophonous and discordant melody for 1 minute while it plays its entire melody, and it can't be shut off prematurely. The music is so loud that any creature within 60 feet must succeed at a @Check[fortitude|dc:24] or become @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for as long as they remain within 60 feet of the music box, and for 1 minute thereafter. On a critical success, a creature need not make any more saves and is temporarily immune to the<em>deafening music box</em>for the next 24 hours; on a success, the creature must attempt a new save each round it remains within 60 feet of the music box.</p>"
                 },
                 "consumable->Darkvision Elixir (Lesser)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.88pGCHV0uKMskTVO]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p><p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.7UL8belWmo7U5YGM]{Efekt: Darkvision Elixir (Mniejszy)}</p>"
@@ -5297,7 +5294,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FABVnBeYtGXshlwm]\n<p>This ring magically conceals any armor and sheathed weapons you're wearing by either turning them invisible or creating the illusion of ordinary clothes. The ring doesn't change your appearance beyond concealing weapons and armor. As soon as you wield a weapon, the weapon becomes obvious to onlookers and is no longer affected by the ring until you sheathe the weapon for at least 1 minute. A creature can disbelieve this illusion by Seeking or any time it hits you with an attack.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -5333,7 +5330,7 @@
                 },
                 "action->Forced Regeneration": {
                     "name": "Forced Regeneration",
-                    "description": "<p><strong>Wymagania</strong> The ravenile's regeneration is currently active</p><hr /><p>The ravenile regains [[/r 20[healing]]] HP.</p>"
+                    "description": "<p><strong>Wymagania</strong> The ravenile's regeneration is currently active</p><hr /><p>The ravenile regains @Damage[20[healing]] HP.</p>"
                 },
                 "action->Furious Wallop": {
                     "name": "Furious Wallop",
@@ -5453,7 +5450,7 @@
                 },
                 "action->Lifedrinker": {
                     "name": "Lifedrinker",
-                    "description": "<p><strong>Aktywator</strong> The rhevanna kills a living creature of at least 16. level</p><hr /><p><strong>Efekt</strong> The rhevanna drinks the triggering creature's life force and regains [[/r 40[healing]]]{40 Hit Points}. If the triggering creature is a celestial, the rhevanna instead regains [[/r 80[healing]]]{80 Hit Points}.</p>"
+                    "description": "<p><strong>Aktywator</strong> The rhevanna kills a living creature of at least 16. level</p><hr /><p><strong>Efekt</strong> The rhevanna drinks the triggering creature's life force and regains @Damage[40[healing]]{40 Hit Points}. If the triggering creature is a celestial, the rhevanna instead regains @Damage[80[healing]]{80 Hit Points}.</p>"
                 },
                 "action->Malefic Binding": {
                     "name": "Malefic Binding",
@@ -5864,7 +5861,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "equipment->Skinsaw Mask": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sgH9U2fKqWCedKNO]\n<p>A patchwork of humanoid flesh makes up this grotesque mask stitched together with black silk or wire. It is distinctive for its bulbous orange eye- crafted from a magical glass bauble-and wide row of teeth.</p><p>When worn, the mask amplifies your ability to sense fear in other creatures.</p><p>You automatically know the value of the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} condition of any @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany} creature, and you gain a +1 item bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} frightened creatures. Whenever you deal precision damage to a frightened creature, you deal 1 additional precision damage.</p><p>If you are not evil, you are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} while wearing the<em>Skinsaw mask</em>.</p>",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sgH9U2fKqWCedKNO]\n<p>A patchwork of humanoid flesh makes up this grotesque mask stitched together with black silk or wire. It is distinctive for its bulbous orange eye- crafted from a magical glass bauble-and wide row of teeth.</p><p>When worn, the mask amplifies your ability to sense fear in other creatures.</p><p>You automatically know the value of the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} condition of any @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany} creature, and you gain a +1 item bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} frightened creatures. Whenever you deal precision damage to a frightened creature, you deal 1 additional precision damage.</p><p>If you are not evil, you are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} while wearing the <em>Skinsaw mask</em>.</p>",
                     "rules": {
                         "0": {
                             "label": "Skinsaw Mask (Seek Frightened target)"
@@ -5906,7 +5903,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "equipment->Skinsaw Mask": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sgH9U2fKqWCedKNO]\n<p>A patchwork of humanoid flesh makes up this grotesque mask stitched together with black silk or wire. It is distinctive for its bulbous orange eye- crafted from a magical glass bauble-and wide row of teeth.</p><p>When worn, the mask amplifies your ability to sense fear in other creatures.</p><p>You automatically know the value of the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} condition of any @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany} creature, and you gain a +1 item bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} frightened creatures. Whenever you deal precision damage to a frightened creature, you deal 1 additional precision damage.</p><p>If you are not evil, you are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} while wearing the<em>Skinsaw mask</em>.</p>",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sgH9U2fKqWCedKNO]\n<p>A patchwork of humanoid flesh makes up this grotesque mask stitched together with black silk or wire. It is distinctive for its bulbous orange eye- crafted from a magical glass bauble-and wide row of teeth.</p><p>When worn, the mask amplifies your ability to sense fear in other creatures.</p><p>You automatically know the value of the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony} condition of any @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Postrzegany} creature, and you gain a +1 item bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} frightened creatures. Whenever you deal precision damage to a frightened creature, you deal 1 additional precision damage.</p><p>If you are not evil, you are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} while wearing the <em>Skinsaw mask</em>.</p>",
                     "rules": {
                         "0": {
                             "label": "Skinsaw Mask (Seek Frightened target)"
@@ -5966,7 +5963,7 @@
                 },
                 "action->Stitch Skin": {
                     "name": "Stitch Skin",
-                    "description": "<p><strong>Wymagania</strong> The skitterstitch hasn't used this ability since the last time it successfully used its Flay ability</p><hr /><p><strong>Efekt</strong> The skitterstitch sews flayed flesh to its body to seal tears and rents. The skitterstitch regains [[/r 8[healing]]]{8 Hit Points}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The skitterstitch hasn't used this ability since the last time it successfully used its Flay ability</p><hr /><p><strong>Efekt</strong> The skitterstitch sews flayed flesh to its body to seal tears and rents. The skitterstitch regains @Damage[8[healing]]{8 Hit Points}.</p>"
                 }
             }
         },
@@ -6269,7 +6266,7 @@
                 },
                 "action->Bone Drink": {
                     "name": "Bone Drink",
-                    "description": "<p><strong>Wymagania</strong> The tenome has a creature grabbed or restrained</p><hr /><p><strong>Efekt</strong> The tenome makes a jaws Strike against the grabbed or restrained creature. If the Strike hits, the creature must succeed at a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (or the value of the creature's drained condition increases by 1 if it already has a drained value, to a maximum of drained 4).</p><p>The tenome regains [[/r 1d8[healing]]] Hit Points each time it uses Bone Drink.</p>"
+                    "description": "<p><strong>Wymagania</strong> The tenome has a creature grabbed or restrained</p><hr /><p><strong>Efekt</strong> The tenome makes a jaws Strike against the grabbed or restrained creature. If the Strike hits, the creature must succeed at a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (or the value of the creature's drained condition increases by 1 if it already has a drained value, to a maximum of drained 4).</p><p>The tenome regains @Damage[1d8[healing]] Hit Points each time it uses Bone Drink.</p>"
                 },
                 "action->Burst of Speed": {
                     "name": "Burst of Speed",
@@ -6679,7 +6676,7 @@
                 },
                 "action->Subsume": {
                     "name": "Subsume",
-                    "description": "<p>Tyrroicese lifts an adjacent dying creature with its pseudopods and subsumes that creature into its own oozy flesh. The subsumed creature's dying value does not increase, though it can't decrease either.</p><p>Tyrroicese regains [[/r 30[healing]]]{30 HP} and also gains the ability to use one or two of the subsumed creature's special abilities or feats, subject to the GM's discretion.</p><p>A creature adjacent to Tyrroicese can extract a subsumed creature by spending 2 actions to attempt a @Check[athletics|dc:29|name:Extract Subsumed Creature] check.</p><p>On a success, the subsumed creature is pulled from Tyrroicese and falls into the nearest available space.</p>"
+                    "description": "<p>Tyrroicese lifts an adjacent dying creature with its pseudopods and subsumes that creature into its own oozy flesh. The subsumed creature's dying value does not increase, though it can't decrease either.</p><p>Tyrroicese regains @Damage[30[healing]]{30 HP} and also gains the ability to use one or two of the subsumed creature's special abilities or feats, subject to the GM's discretion.</p><p>A creature adjacent to Tyrroicese can extract a subsumed creature by spending 2 actions to attempt a @Check[athletics|dc:29|name:Extract Subsumed Creature] check.</p><p>On a success, the subsumed creature is pulled from Tyrroicese and falls into the nearest available space.</p>"
                 },
                 "lore->Dark Tapestry Lore": {
                     "name": "Dark Tapestry Lore"

@@ -45,7 +45,7 @@
                     "description": "<p>Key ring for every door in Lionlodge.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "consumable->Sleep Arrow": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RcQ4ZIzRK2xLf4G5]\nSleep Arrow",
@@ -59,7 +59,7 @@
                 },
                 "action->Invoke Alocer": {
                     "name": "Invoke Alocer",
-                    "description": "<p><strong>Aktywator</strong> Auldegrund is reduced to 60 or fewer Hit Points</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p><p>He immediately heals [[/r (3d6+7)[healing]]]{3k6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p><p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3k6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>",
+                    "description": "<p><strong>Aktywator</strong> Auldegrund is reduced to 60 or fewer Hit Points</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p><p>He immediately heals @Damage[(3d6+7)[healing]]{3k6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p><p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3k6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>",
                     "rules": {
                         "0": {
                             "label": "Is under invocation of Alocar"
@@ -215,7 +215,7 @@
                 },
                 "action->Metabolize Mutagen": {
                     "name": "Metabolize Mutagen",
-                    "description": "<p>Darius metabolizes the power of an active mutagen to regain [[/r 2d6[healing]]]{2k6 Hit Points}. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.wE4S9lwOhtaRAm9n]{Efekt: Active Mutagen}</p>"
+                    "description": "<p>Darius metabolizes the power of an active mutagen to regain @Damage[2d6[healing]]{2k6 Hit Points}. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.wE4S9lwOhtaRAm9n]{Efekt: Active Mutagen}</p>"
                 },
                 "action->Crystaline Mutation": {
                     "name": "Crystaline Mutation",
@@ -223,7 +223,7 @@
                 },
                 "action->Spray Hot Wax": {
                     "name": "Spray Hot Wax",
-                    "description": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[cone|distance:15]. All creatures in the area must attempt a @Check[reflex|dc:20] save. Scented candle homonoculi in the area take no damage, instead healing [[/r 2d6[healing]]] damage. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p><p><strong>Sukces</strong> The creature takes @Damage[2d6[fire]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[3d6[fire],1k6[persistent,fire]]{3k6 fire damage plus 1k6 persistent fire damage}.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[5d6[fire],2k6[persistent,fire]]{5k6 fire damage plus 2k6 persistent fire damage}.</p>"
+                    "description": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[cone|distance:15]. All creatures in the area must attempt a @Check[reflex|dc:20] save. Scented candle homonoculi in the area take no damage, instead healing @Damage[2d6[healing]] damage. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature takes no damage.</p><p><strong>Sukces</strong> The creature takes @Damage[2d6[fire]] damage.</p><p><strong>Porażka</strong> The creature takes @Damage[3d6[fire],1k6[persistent,fire]]{3k6 fire damage plus 1k6 persistent fire damage}.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[5d6[fire],2k6[persistent,fire]]{5k6 fire damage plus 2k6 persistent fire damage}.</p>"
                 }
             }
         },
@@ -243,7 +243,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p><p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Efekt: Darkvision Elixir (Umiarkowany)}</p>"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
                 },
                 "consumable->Giant Scorpion Venom": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:22]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 runda)</p><p><strong>Stadium 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 runda)</p>"
@@ -254,16 +254,9 @@
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
                 },
-                "strike-ranged->Dagger": [
-                    {
-                        "name": "Dagger",
-                        "id": "yuUqFU9aeQibXK4x"
-                    },
-                    {
-                        "name": "Dagger",
-                        "id": "3C97dBJxHVxzmZbK"
-                    }
-                ],
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
                 "strike-ranged->Alchemist's Fire": {
                     "name": "Alchemist's Fire"
                 },
@@ -314,7 +307,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Interakcja</p><p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Efekt: Darkvision Elixir (Umiarkowany)}</p>"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
                 },
                 "consumable->Giant Scorpion Venom": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]\n<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja (Rana)</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:22]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 runda)</p><p><strong>Stadium 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 runda)</p>"
@@ -325,16 +318,9 @@
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
                 },
-                "strike-ranged->Dagger": [
-                    {
-                        "name": "Dagger",
-                        "id": "yuUqFU9aeQibXK4x"
-                    },
-                    {
-                        "name": "Dagger",
-                        "id": "3C97dBJxHVxzmZbK"
-                    }
-                ],
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
                 "action->Channel Smite": {
                     "name": "Channel Smite",
                     "description": "<p><strong>Wymagania</strong> Doatara expends a @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm} spell</p><hr /><p><strong>Efekt</strong> Doatara makes a melee Strike and adds the <em>harm</em> spell's void damage to the Strike's damage.</p>"
@@ -528,7 +514,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -549,7 +535,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Bend Back": {
                     "name": "Bend Back",
@@ -582,7 +568,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -603,7 +589,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -627,7 +613,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -765,7 +751,7 @@
                 },
                 "action->Dunk in Wax": {
                     "name": "Dunk in Wax",
-                    "description": "<p>A scented candle homunculus who is adjacent to the large wax cauldron can dunk itself in wax, healing [[/r 2d6[healing]]] damage.</p>"
+                    "description": "<p>A scented candle homunculus who is adjacent to the large wax cauldron can dunk itself in wax, healing @Damage[2d6[healing]] damage.</p>"
                 }
             }
         },

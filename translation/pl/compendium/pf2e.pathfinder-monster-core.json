@@ -5597,7 +5597,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a fungus leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]]{2k8 Hit Points} to each fungi creature in a @Template[emanation|distance:30]. This area is filled with fungi, becoming difficult terrain.</p><p>If the terrain is not a viable environment for this fungi, they wither after 24 hours.</p>"
+                    "description": "<p>When a fungus leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]]{2k8 Hit Points} to each fungi creature in a @Template[emanation|distance:30]. This area is filled with fungi, becoming difficult terrain.</p><p>If the terrain is not a viable environment for this fungi, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The fungus leshy transforms into a giant mushroom or patch of fungi. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -5736,7 +5736,7 @@
                 },
                 "action->Consume Flesh": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Wymagania</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Efekt</strong> The ghoul devours a chunk of the corpse and regains [[/r 2d6[healing]]] Hit Points.</p><p>It can regain Hit Points from any given corpse only once.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Wymagania</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Efekt</strong> The ghoul devours a chunk of the corpse and regains @Damage[2d6[healing]] Hit Points.</p><p>It can regain Hit Points from any given corpse only once.</p>"
                 },
                 "action->Ghoul Whispers": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
@@ -5767,7 +5767,7 @@
                 },
                 "action->Consume Flesh": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Wymagania</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Efekt</strong> The ghoul devours a chunk of the corpse and regains [[/r 1d6[healing]]] Hit Points.</p><p>It can regain Hit Points from any given corpse only once.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Wymagania</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Efekt</strong> The ghoul devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points.</p><p>It can regain Hit Points from any given corpse only once.</p>"
                 },
                 "action->Ghoul Whispers": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
@@ -8202,7 +8202,7 @@
                 },
                 "action->Fiendish Healing": {
                     "name": "Fiendish Healing",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The imp regains [[/r 1d6[healing]]] Hit Points.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The imp regains @Damage[1d6[healing]] Hit Points.</p>"
                 },
                 "action->Fiendish Temptation": {
                     "name": "Fiendish Temptation",
@@ -11880,7 +11880,7 @@
                 },
                 "action->Propel Sphere": {
                     "name": "Propel Sphere",
-                    "description": "<p><strong>Wymagania</strong> The pleroma has a sphere of creation or sphere of oblivion active</p><hr /><p><strong>Efekt</strong> The pleroma makes one of its spheres fly 10 feet in any direction, ignoring difficult terrain and greater difficult terrain. A sphere of creation creates new matter in its path, which the pleroma can have manifest as normal terrain, difficult terrain, greater difficult terrain, or a cube of solid mater (such as clay, wood, or stone). A sphere of oblivion destroys unattended objects it touches, though larger objects are destroyed at a rate of one 10-foot cube per round of contact. The sphere can enter the space of a creature; when it does, the creature takes 20k6 damage with a @Check[fortitude|dc:43] save.</p><p>This is an incapacitation effect.</p><p><strong>Sukces</strong> The creature takes no damage and is pushed out of the sphere to the nearest open space of the GM's choice.</p><p><strong>Porażka</strong> The creature takes full damage; this is [[/r 20d6[vitality]]]{vitality} damage for a sphere of creation or [[/r 20d6[void]]]{void} damage for a sphere of oblivion, but it can damage any type of creature regardless of its normal immunities. The creature is then pushed out of the sphere as on a success. A creature reduced to 0 HP is slain instead of being pushed out, either merged with new matter for a sphere of creation or completely destroyed for a void of oblivion; the creature can be restored only via a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} ritual or similarly powerful effect. This is a death effect.</p><p><strong>Krytyczna Porażka</strong> As failure, but the creature takes double damage.</p>"
+                    "description": "<p><strong>Wymagania</strong> The pleroma has a sphere of creation or sphere of oblivion active</p><hr /><p><strong>Efekt</strong> The pleroma makes one of its spheres fly 10 feet in any direction, ignoring difficult terrain and greater difficult terrain. A sphere of creation creates new matter in its path, which the pleroma can have manifest as normal terrain, difficult terrain, greater difficult terrain, or a cube of solid mater (such as clay, wood, or stone). A sphere of oblivion destroys unattended objects it touches, though larger objects are destroyed at a rate of one 10-foot cube per round of contact. The sphere can enter the space of a creature; when it does, the creature takes 20k6 damage with a @Check[fortitude|dc:43] save.</p><p>This is an incapacitation effect.</p><p><strong>Sukces</strong> The creature takes no damage and is pushed out of the sphere to the nearest open space of the GM's choice.</p><p><strong>Porażka</strong> The creature takes full damage; this is @Damage[20d6[vitality]]{vitality} damage for a sphere of creation or @Damage[20d6[void]]{void} damage for a sphere of oblivion, but it can damage any type of creature regardless of its normal immunities. The creature is then pushed out of the sphere as on a success. A creature reduced to 0 HP is slain instead of being pushed out, either merged with new matter for a sphere of creation or completely destroyed for a void of oblivion; the creature can be restored only via a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} ritual or similarly powerful effect. This is a death effect.</p><p><strong>Krytyczna Porażka</strong> As failure, but the creature takes double damage.</p>"
                 }
             }
         },

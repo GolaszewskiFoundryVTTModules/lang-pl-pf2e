@@ -278,7 +278,7 @@
         },
         "Spell Effect: Armor of Bones": {
             "name": "Efekt Zaklęcia: Armor of Bones",
-            "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.pSNLufPPsReKQtJR]{Armor of Bones}</p><p><span style=\"font-family:Roboto, sans-serif\">You gain resistance to cold, electricity, fire, piercing, and slashing damage.</span></p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.pSNLufPPsReKQtJR]{Armor of Bones}</p><p>You gain resistance to cold, electricity, fire, piercing, and slashing damage.</p>"
         },
         "Spell Effect: Ash Form": {
             "name": "Efekt Zaklęcia: Ash Form",
@@ -576,19 +576,14 @@
             "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.Vctwx1ewa8HUOA94]{Diabolic Edict}</p>",
             "rules": {
                 "0": {
-                    "label": "Performing requested Diabolic Edict task"
-                },
-                "1": {
-                    "label": "Diabolic Edict Request"
-                },
-                "2": {
-                    "label": "Diabolic Edict Refused"
-                },
-                "3": {
-                    "label": "Diabolic Edict Performed"
-                },
-                "4": {
-                    "label": "Diabolic Edict Refused"
+                    "choices": {
+                        "0": {
+                            "label": "Accept"
+                        },
+                        "1": {
+                            "label": "Refuse"
+                        }
+                    }
                 }
             }
         },
@@ -1320,7 +1315,7 @@
         },
         "Spell Effect: Incendiary Aura": {
             "name": "Efekt Zaklęcia: Incendiary Aura",
-            "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.AspA30tzKCHFWRf0]{Incendiary Aura}</p><p>Each time a creature within the emanation takes fire damage, it catches on fire, taking [[/r (ceil(@item.level/2)+1)d4[persistent,fire]]] damage.</p>"
+            "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.AspA30tzKCHFWRf0]{Incendiary Aura}</p><p>Each time a creature within the emanation takes fire damage, it catches on fire, taking @Damage[(ceil(@item.level/2)+1)d4[persistent,fire]] damage.</p>"
         },
         "Spell Effect: Infectious Enthusiasm": {
             "name": "Efekt Zaklęcia: Zaraźliwy Entuzjazm",
@@ -1618,6 +1613,10 @@
         "Spell Effect: Musical Accompaniment": {
             "name": "Efekt Zaklęcia: Muzyczny Akompaniament",
             "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.mnhuvqTIELcpJOFX]{Muzyczny Akompaniament}</p><p>Muzyka zapewnia premię statusową +1 do testów Występów. Tak długo, jak gra muzyka, ponosisz karę –4 do testów Skradania Się.</p>"
+        },
+        "Spell Effect: Musical Shift": {
+            "name": "Efekt Zaklęcia: Musical Shift",
+            "description": "<p><strong>Flat</strong> (key signature) Whenever an enemy critically fails at a Strike, saving throw, or skill check, they fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} in addition to other effects from the critical failure.</p><p><strong>Natural</strong> (key signature) Enemies take a –2 status penalty to attack rolls.</p><p><strong>Sharp</strong> (key signature) Whenever an enemy takes piercing or slashing damage, they also take 2k6 persistent bleed damage.</p><p><strong>Double</strong> (time signature) You and your allies become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony} and can use the extra action each round only for @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}, Stand, Step, or Stride actions.</p><p><strong>Quadruple</strong> (time signature) You and your allies gain a +2 status bonus to attack rolls.</p><p><strong>Triple</strong> (time signature) You and your allies gain a +2 status bonus to Armor Class and Reflex saving throws.</p>"
         },
         "Spell Effect: Mystic Armor": {
             "name": "Efekt Zaklęcia: Mistyczna Zbroja",
@@ -2024,6 +2023,10 @@
             "name": "Efekt Zaklęcia: Snake Fangs",
             "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.wLWMswY7aBHEFTRb]{Snake Fangs}</p><p>You gain a fangs unarmed attack. They're a finesse, grapple, unarmed attack that deals piercing damage and extra poison damage.</p>"
         },
+        "Spell Effect: Song of Silver": {
+            "name": "Efekt Zaklęcia: Song of Silver",
+            "description": "<p>You gain a +2 status bonus to all saving throws against mental effects; this bonus doubles to a +4 status bonus against all fear effects. On a critical success all weapons you wield are treated as silver.</p>"
+        },
         "Spell Effect: Song of Strength": {
             "name": "Efekt Zaklęcia: Song of Strength",
             "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.Xxdwkt0EEDgP1LGc]{Song of Strength}</p><p>You gain a +1 status bonus to Athletics checks and DCs against Athletics skill actions such as Disarm, Reposition, Shove, and Trip.</p>"
@@ -2345,7 +2348,7 @@
                 "k8",
                 "k10"
             ],
-            "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.ikSb3LRGnrwXJBVX]{Vital Beacon}<br />Vitality radiates outward from you, allowing others to supplicate and receive healing. Once per round, either you or an ally can use an Interact action to supplicate and lay hands upon you to regain Hit Points. Each time the beacon heals someone, it decreases in strength. It restores 4k10 Hit Points to the first creature, 4k8 Hit Points to the second, 4k6 Hit Points to the third, and 4k4 Hit Points to the fourth, after which the spell ends. You can have only one vital beacon active at a time.<br />[[/r (@item.level)d10[healing]]]{First Activation (k10)}<br />[[/r (@item.level)d8[healing]]]{Second Activation (k8)}<br />[[/r (@item.level)d6[healing]]]{Third Activation (k6)}<br />[[/r (@item.level)d4[healing]]]{Fourth Activation (k4)}</p>"
+            "description": "<p>Zapewniany przez @UUID[Compendium.pf2e.spells-srd.Item.ikSb3LRGnrwXJBVX]{Vital Beacon}<br />Vitality radiates outward from you, allowing others to supplicate and receive healing. Once per round, either you or an ally can use an Interact action to supplicate and lay hands upon you to regain Hit Points. Each time the beacon heals someone, it decreases in strength. It restores 4k10 Hit Points to the first creature, 4k8 Hit Points to the second, 4k6 Hit Points to the third, and 4k4 Hit Points to the fourth, after which the spell ends. You can have only one vital beacon active at a time.<br />@Damage[(@item.level)d10[healing]]{First Activation (k10)}<br />@Damage[(@item.level)d8[healing]]{Second Activation (k8)}<br />@Damage[(@item.level)d6[healing]]{Third Activation (k6)}<br />@Damage[(@item.level)d4[healing]]{Fourth Activation (k4)}</p>"
         },
         "Spell Effect: Vital Luminance": {
             "name": "Efekt Zaklęcia: Vital Luminance",

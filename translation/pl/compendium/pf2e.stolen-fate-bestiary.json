@@ -286,7 +286,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.fFq8nsGvSUgzVeND]\nSteel-Colored Feather Token (Bird)"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Halberd": {
                     "name": "Halberd"
@@ -361,7 +361,7 @@
                 },
                 "action->Take Root": {
                     "name": "Take Root",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Wymagania</strong> The Blood-Pear Tree has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p><hr /><p><strong>Efekt</strong> The Blood-Pear Tree buries its roots into the creature, dealing @Damage[(2d6+17)[piercing]] damage (@Check[fortitude|dc:38|basic] save). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (or increases the value by 1 if already enfeebled), and the corpseroot regains [[/r 15[healing]]] HP. If this would make a creature @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 5}, the creature dies.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Wymagania</strong> The Blood-Pear Tree has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p><hr /><p><strong>Efekt</strong> The Blood-Pear Tree buries its roots into the creature, dealing @Damage[(2d6+17)[piercing]] damage (@Check[fortitude|dc:38|basic] save). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (or increases the value by 1 if already enfeebled), and the corpseroot regains @Damage[15[healing]] HP. If this would make a creature @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 5}, the creature dies.</p>"
                 }
             }
         },
@@ -728,7 +728,7 @@
                 },
                 "action->Sever Fate": {
                     "name": "Sever Fate",
-                    "description": "<p>When a norn deals void damage with a Strike, she regains [[/r 10[healing]]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical failure).</p><p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
+                    "description": "<p>When a norn deals void damage with a Strike, she regains @Damage[10[healing]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical failure).</p><p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
                 },
                 "action->Shift Fate": {
                     "name": "Shift Fate",
@@ -1051,7 +1051,7 @@
                 },
                 "action->Sever Fate": {
                     "name": "Sever Fate",
-                    "description": "<p>When a norn deals void damage with a Strike, she regains [[/r 10[healing]]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical failure).</p><p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
+                    "description": "<p>When a norn deals void damage with a Strike, she regains @Damage[10[healing]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical failure).</p><p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
                 },
                 "action->Shift Fate": {
                     "name": "Shift Fate",
@@ -1501,7 +1501,7 @@
                 },
                 "action->Sever Fate": {
                     "name": "Sever Fate",
-                    "description": "<p>When a norn deals void damage with a Strike, she regains [[/r 10[healing]]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical failure).</p><p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
+                    "description": "<p>When a norn deals void damage with a Strike, she regains @Damage[10[healing]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} on a critical failure).</p><p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
                 },
                 "action->Shift Fate": {
                     "name": "Shift Fate",
@@ -1691,7 +1691,7 @@
                 },
                 "action->Drain Qi": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.QMlQ5AvcunCvjlfM]\nDrain Qi",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.QMlQ5AvcunCvjlfM]\n<p><strong>Wymagania</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, or willing creature is within the jiang-shi's reach</p><hr /><p><strong>Efekt</strong> The jiang-shi drains the victim's life energy, or qi, through their breath. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} and the jiang-shi regains [[/r 18[healing]]]{18 HP}, gaining any excess as temporary Hit Points. Draining qi from a creature that's already drained doesn't restore any HP to the jiang-shi but increases the victim's drained condition value by 1, killing the victim when it reaches drained 5. If the victim has the ability to cast ki spells, it can spend 1 Focus Point to avoid becoming drained. This protects it only from the current attack, not from subsequent attempts to Drain Qi.</p><p>A victim's drained condition value decreases by 1 every week. If the creature restricts their diet to glutinous rice for at least 1 day and spends 10 minutes dancing, jogging, or otherwise engaging in vigorous physical activity by succeeding at a @Check[athletics|dc:25] check, it reduces its drained condition by 1.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.QMlQ5AvcunCvjlfM]\n<p><strong>Wymagania</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, or willing creature is within the jiang-shi's reach</p><hr /><p><strong>Efekt</strong> The jiang-shi drains the victim's life energy, or qi, through their breath. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} and the jiang-shi regains @Damage[18[healing]]{18 HP}, gaining any excess as temporary Hit Points. Draining qi from a creature that's already drained doesn't restore any HP to the jiang-shi but increases the victim's drained condition value by 1, killing the victim when it reaches drained 5. If the victim has the ability to cast ki spells, it can spend 1 Focus Point to avoid becoming drained. This protects it only from the current attack, not from subsequent attempts to Drain Qi.</p><p>A victim's drained condition value decreases by 1 every week. If the creature restricts their diet to glutinous rice for at least 1 day and spends 10 minutes dancing, jogging, or otherwise engaging in vigorous physical activity by succeeding at a @Check[athletics|dc:25] check, it reduces its drained condition by 1.</p>"
                 },
                 "action->Manipulate the Green": {
                     "name": "Manipulate the Green",
@@ -2050,7 +2050,7 @@
                 },
                 "action->Soulfire Inhalation": {
                     "name": "Soulfire Inhalation",
-                    "description": "<p><strong>Wymagania</strong> Mogaran's last action was Soulfire Breath</p><hr /><p><strong>Efekt</strong> Mogaran inhales and regains [[/r 10[healing]]] Hit Points for each creature damaged by his Soulfire Breath. Any excess healing is gained as temporary Hit Points, which remain for 1 minute.</p>"
+                    "description": "<p><strong>Wymagania</strong> Mogaran's last action was Soulfire Breath</p><hr /><p><strong>Efekt</strong> Mogaran inhales and regains @Damage[10[healing]] Hit Points for each creature damaged by his Soulfire Breath. Any excess healing is gained as temporary Hit Points, which remain for 1 minute.</p>"
                 },
                 "action->Stunning Tail": {
                     "name": "Stunning Tail",
@@ -2096,7 +2096,7 @@
                 },
                 "action->Feed on Sorrow": {
                     "name": "Feed on Sorrow",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The popobawa draws strength from the suffering of others. It regains [[/r 10[healing]]]{10 Hit Points} for each enemy within @Template[emanation|distance:30]{30 feet} feet that has one of the following conditions, to a maximum of 40 Hit Points: @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany}, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Zgubiony}, @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony}, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony}, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}, or @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny}.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The popobawa draws strength from the suffering of others. It regains @Damage[10[healing]]{10 Hit Points} for each enemy within @Template[emanation|distance:30]{30 feet} feet that has one of the following conditions, to a maximum of 40 Hit Points: @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany}, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Zgubiony}, @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony}, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony}, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}, or @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Ranny}.</p>"
                 },
                 "action->Hallucinatory Haunting": {
                     "name": "Hallucinatory Haunting",
@@ -2223,7 +2223,7 @@
                 },
                 "action->Consume Soul": {
                     "name": "Consume Soul",
-                    "description": "<p>The obcisidaemon consumes a soul from its cloak to gain one of the following effects. A consumed soul in this way can't be resurrected except by @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} or a similarly powerful effect.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.YOH7YsdlsLzlMu69]{Efekt: Consume Soul}</p><p><em>Empower Spell</em> The obcisidaemon gains a +2 status bonus to its spell DCs and spell attack rolls until the end of its next turn.</p><p><em>Empower Weapon</em> The obcisidaemon's weapon gains the effects of a greater flaming, greater frost, greater shock, or wounding rune until the end of its next turn.</p><p><em>Healing</em> The daemon gains the benefit of a two-action, 8. kręgu @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell ([[/r (8d8+64)[healing]]]).</p>"
+                    "description": "<p>The obcisidaemon consumes a soul from its cloak to gain one of the following effects. A consumed soul in this way can't be resurrected except by @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} or a similarly powerful effect.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.YOH7YsdlsLzlMu69]{Efekt: Consume Soul}</p><p><em>Empower Spell</em> The obcisidaemon gains a +2 status bonus to its spell DCs and spell attack rolls until the end of its next turn.</p><p><em>Empower Weapon</em> The obcisidaemon's weapon gains the effects of a greater flaming, greater frost, greater shock, or wounding rune until the end of its next turn.</p><p><em>Healing</em> The daemon gains the benefit of a two-action, 8. kręgu @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell (@Damage[(8d8+64)[healing]]).</p>"
                 },
                 "action->Inherit Soul": {
                     "name": "Inherit Soul",
@@ -2606,7 +2606,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -2962,7 +2962,7 @@
                 },
                 "action->Recall the Fallen": {
                     "name": "Recall the Fallen",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Aktywator</strong> An allied creature within 60 feet who isn't a construct or undead is reduced to 0 Hit Points and their dying value is 2 or less</p><hr /><p><strong>Efekt</strong> The commander restores [[/r 8d10[healing]]] Hit Points to the target.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Aktywator</strong> An allied creature within 60 feet who isn't a construct or undead is reduced to 0 Hit Points and their dying value is 2 or less</p><hr /><p><strong>Efekt</strong> The commander restores @Damage[8d10[healing]] Hit Points to the target.</p>"
                 },
                 "action->Storm of Battle": {
                     "name": "Storm of Battle",
@@ -3235,7 +3235,7 @@
             "name": "The Eclipse",
             "description": "<p>The Eclipse is located high in the sky, manifesting as an eclipsed sun.</p>",
             "disable": "<p>Reduce the Eclipse to 0 HP, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (10. level; counteract DC 39) to counteract the Eclipse (once it's in range)</p>",
-            "routine": "<p>(1 action) The Eclipse heals [[/r 50[healing]]] points of damage, retreats upward from PCs if any have approached (as determined by its Distance Score), then unleashes a meteor down on the island below. The meteor explodes upon striking the island, creating a @Template[burst|distance:30] that inflicts @Damage[8d6[fire],4k6[bludgeoning]]{8k6 fire damage and 4k6 bludgeoning damage} (@Check[reflex|dc:41|basic|traits:damaging-effect] save) to all creatures caught in the blast. The eclipse targets these strikes to catch as many PCs in the blast as it can each time&mdash;while it doesn't seek to damage a bul‑gae, it won't worry about catching one or both in the area of effect if that spot is the most advantageous to striking the most possible PCs.</p>",
+            "routine": "<p>(1 action) The Eclipse heals @Damage[50[healing]] points of damage, retreats upward from PCs if any have approached (as determined by its Distance Score), then unleashes a meteor down on the island below. The meteor explodes upon striking the island, creating a @Template[burst|distance:30] that inflicts @Damage[8d6[fire],4k6[bludgeoning]]{8k6 fire damage and 4k6 bludgeoning damage} (@Check[reflex|dc:41|basic|traits:damaging-effect] save) to all creatures caught in the blast. The eclipse targets these strikes to catch as many PCs in the blast as it can each time&mdash;while it doesn't seek to damage a bul‑gae, it won't worry about catching one or both in the area of effect if that spot is the most advantageous to striking the most possible PCs.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Herald the End": {
@@ -4549,7 +4549,7 @@
                 },
                 "action->Instinctual Tinker": {
                     "name": "Instynktowne Majsterkowanie",
-                    "description": "<p>Morlok majsterkuje przy sąsiadującym konstrukcie lub mechanicznym zagrożeniu. Wykonuje on test @Check[crafting|defense:fortitude]{Rzemiosła} przeciwko ST Krzepy danego konstruktu lub zagrożenia. Jeśli poziom celu jest wyższy od dwukrotności poziomu morloka, morlok nie może uzyskać na tym teście wyniku lepszego od porażki.</p><hr /><p><strong>Krytyczny Sukces</strong> Cel odzyskuje [[/r 4d6[healing]]]{4k6} Punktów Żywotności i zyskuje premię sytuacyjną +1 do rzutów ataku na 1 minutę.</p><p><strong>Sukces</strong> Cel odzyskuje [[/r 2d6[healing]]]{2k6} Punktów Żywotności.</p><p><strong>Krytyczna Porażka</strong> Morlok kaleczy się, odnosząc [[/r 2d6]]{2k6 obrażeń} (na ogół obuchowych, ciętych lub kłutych, ale potencjalnie innych wedle uznania MG).</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.TEzLEXBZzNCp6flg]{Efekt: Instynktowne Majsterkowanie (Krytyczny Sukces)}</p>"
+                    "description": "<p>Morlok majsterkuje przy sąsiadującym konstrukcie lub mechanicznym zagrożeniu. Wykonuje on test @Check[crafting|defense:fortitude]{Rzemiosła} przeciwko ST Krzepy danego konstruktu lub zagrożenia. Jeśli poziom celu jest wyższy od dwukrotności poziomu morloka, morlok nie może uzyskać na tym teście wyniku lepszego od porażki.</p><hr /><p><strong>Krytyczny Sukces</strong> Cel odzyskuje @Damage[4d6[healing]]{4k6} Punktów Żywotności i zyskuje premię sytuacyjną +1 do rzutów ataku na 1 minutę.</p><p><strong>Sukces</strong> Cel odzyskuje @Damage[2d6[healing]]{2k6} Punktów Żywotności.</p><p><strong>Krytyczna Porażka</strong> Morlok kaleczy się, odnosząc [[/r 2d6]]{2k6 obrażeń} (na ogół obuchowych, ciętych lub kłutych, ale potencjalnie innych wedle uznania MG).</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.TEzLEXBZzNCp6flg]{Efekt: Instynktowne Majsterkowanie (Krytyczny Sukces)}</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Xiuli deals an additional 3k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"

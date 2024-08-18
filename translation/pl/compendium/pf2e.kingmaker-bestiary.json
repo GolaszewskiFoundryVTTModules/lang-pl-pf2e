@@ -62,7 +62,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "backpack->Bag of Holding (Type II)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.JBMBaN9dZLytfFLQ]\nBag of Holding (Typ II)",
@@ -76,7 +76,7 @@
                 },
                 "action->Enraged Growth": {
                     "name": "Enraged Growth",
-                    "description": "<p><strong>Aktywator</strong> The spriggan warlord takes damage</p><hr /><p><strong>Efekt</strong> The spriggan warlord grows to size Large, along with their equipment (which returns to natural size if removed). The spriggan warlord's reach increases by 5 feet. They regain [[/r 15[healing]]]{15 Hit Points} and gain a +2 status bonus to melee attack and damage rolls.</p><p>This effect continues until the end of the spriggan warlord's next turn, but on any turn in which the spriggan warlord deals damage to another creature and is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}, the effect extends until the end of the following turn.</p><p>When Enraged Growth ends, the spriggan warlord is fatigued for 1 hour.</p>"
+                    "description": "<p><strong>Aktywator</strong> The spriggan warlord takes damage</p><hr /><p><strong>Efekt</strong> The spriggan warlord grows to size Large, along with their equipment (which returns to natural size if removed). The spriggan warlord's reach increases by 5 feet. They regain @Damage[15[healing]]{15 Hit Points} and gain a +2 status bonus to melee attack and damage rolls.</p><p>This effect continues until the end of the spriggan warlord's next turn, but on any turn in which the spriggan warlord deals damage to another creature and is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}, the effect extends until the end of the following turn.</p><p>When Enraged Growth ends, the spriggan warlord is fatigued for 1 hour.</p>"
                 },
                 "action->Bully's Bludgeon": {
                     "name": "Bully's Bludgeon",
@@ -103,7 +103,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of iron is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "treasure->Silver Stag Lord Amulet": {
                     "name": "Silver Stag Lord Amulet"
@@ -146,7 +146,7 @@
                 },
                 "action->Life Bloom": {
                     "name": "Life Bloom",
-                    "description": "<p>When Akuzhail dies, its body explodes in a riot of seething vegetation and raw life. All living creatures within a @Template[emanation|distance:60]{60-foot radius} are restored [[/r 12d6[healing]]] Hit Points from this energy. A fully grown bloom of Lamashtu emerges from the carcass, but it can take no actions on this round. Next round, this bloom of Lamashtu enters combat at the same point in the turn during which Akuzhail perished on the previous round, but the bloom is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}. At the end of the bloom's turn, it attempts a @Check[flat|dc:11]; on a success it loses the slowed 1 condition at the start of its next turn.</p>"
+                    "description": "<p>When Akuzhail dies, its body explodes in a riot of seething vegetation and raw life. All living creatures within a @Template[emanation|distance:60]{60-foot radius} are restored @Damage[12d6[healing]] Hit Points from this energy. A fully grown bloom of Lamashtu emerges from the carcass, but it can take no actions on this round. Next round, this bloom of Lamashtu enters combat at the same point in the turn during which Akuzhail perished on the previous round, but the bloom is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1}. At the end of the bloom's turn, it attempts a @Check[flat|dc:11]; on a success it loses the slowed 1 condition at the start of its next turn.</p>"
                 },
                 "action->Of Three Minds": {
                     "name": "Of Three Minds",
@@ -288,7 +288,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.bikFUFRLwfdvX2x2]\n<p>An invisibility potion is colorless and oddly lightweight. Upon drinking it, you gain the effects of a 2. kręgu invisibility spell.</p>"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -327,7 +327,7 @@
                     "name": "Warfare Lore"
                 },
                 "consumable->Elixir of Life (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
                 },
                 "weapon->Bastard Sword": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6KWYmeRMxsQfWhhJ]\n<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>"
@@ -358,7 +358,7 @@
                     "name": "Belt Pouch"
                 },
                 "consumable->Elixir of Life (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]]{5k6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Efekt: Elixir of Life (Umiarkowany)}</p>"
                 },
                 "feat->Fast Recovery": {
                     "rules": {
@@ -403,7 +403,7 @@
                 },
                 "action->Feed on Fear": {
                     "name": "Feed on Fear",
-                    "description": "<p><strong>Wymagania</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający} within 15 feet of the will-o'-wisp.</p><hr /><p><strong>Efekt</strong> The will-o'wisp feeds on the creature's terror. It regains [[/r 2d8[healing]]] Hit Points, and if it has Gone Dark, its glow reignites.</p><p>A will-o'-wisp can take this action only once per round.</p>"
+                    "description": "<p><strong>Wymagania</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający} within 15 feet of the will-o'-wisp.</p><hr /><p><strong>Efekt</strong> The will-o'wisp feeds on the creature's terror. It regains @Damage[2d8[healing]] Hit Points, and if it has Gone Dark, its glow reignites.</p><p>A will-o'-wisp can take this action only once per round.</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -548,7 +548,7 @@
             "languages": "(cannot read)",
             "items": {
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "treasure->Knight and Dragon Toys": {
                     "name": "Knight and Dragon Toys"
@@ -854,7 +854,7 @@
                 },
                 "action->Absorb the Bloom": {
                     "name": "Absorb the Bloom",
-                    "description": "<p>The bloom cultist places a hand against the wall or floor in the Cradle of Lamashtu and utters a prayer to the Mother of Monsters. Filaments of fungus slither up into the cultist's flesh, healing [[/r 4d6[healing]]]{4k6} points of damage. The cultist can't Absorb the Bloom for 24 hours.</p>"
+                    "description": "<p>The bloom cultist places a hand against the wall or floor in the Cradle of Lamashtu and utters a prayer to the Mother of Monsters. Filaments of fungus slither up into the cultist's flesh, healing @Damage[4d6[healing]]{4k6} points of damage. The cultist can't Absorb the Bloom for 24 hours.</p>"
                 }
             }
         },
@@ -1333,7 +1333,7 @@
                 },
                 "action->Feasting Bite": {
                     "name": "Feasting Bite",
-                    "description": "<p>If Cephal critically succeeds at a jaws Strike against a foe or successfully hits a helpless foe with a jaws Strike, he gnaws upon the foe's flesh and drains its life force to bolster his own health. This restores [[/r 3d6[healing]]]{3k6 HP} to Cephal (he gains any excess HP as temporary HP, and also becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony 1} during his next turn; he may use his extra action only to make a jaws Strike).</p>"
+                    "description": "<p>If Cephal critically succeeds at a jaws Strike against a foe or successfully hits a helpless foe with a jaws Strike, he gnaws upon the foe's flesh and drains its life force to bolster his own health. This restores @Damage[3d6[healing]]{3k6 HP} to Cephal (he gains any excess HP as temporary HP, and also becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony 1} during his next turn; he may use his extra action only to make a jaws Strike).</p>"
                 }
             }
         },
@@ -1452,7 +1452,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-melee->Greataxe": {
                     "name": "Greataxe"
@@ -1594,7 +1594,7 @@
                 },
                 "action->Bloom Regeneration": {
                     "name": "Bloom Regeneration",
-                    "description": "<p><strong>Aktywator</strong> Darivan takes damage while he's within the Cradle of Lamashtu.</p><p><strong>Efekt</strong> Darivan cries out a quick prayer to the Mother of Monsters, and filaments of fungus slither up into his wounded body, healing [[/r 4d6[healing]]]{4k6 points} of damage. For the next 4 rounds, Darivan gains regeneration 10; this regeneration can be deactivated by cold iron or spirit damage. Darivan can't activate Bloom Regeneration again for 24 hours.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.BKZS6xpUndRSnxK1]{Efekt: Bloom Regeneration}</p>"
+                    "description": "<p><strong>Aktywator</strong> Darivan takes damage while he's within the Cradle of Lamashtu.</p><p><strong>Efekt</strong> Darivan cries out a quick prayer to the Mother of Monsters, and filaments of fungus slither up into his wounded body, healing @Damage[4d6[healing]]{4k6 points} of damage. For the next 4 rounds, Darivan gains regeneration 10; this regeneration can be deactivated by cold iron or spirit damage. Darivan can't activate Bloom Regeneration again for 24 hours.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.BKZS6xpUndRSnxK1]{Efekt: Bloom Regeneration}</p>"
                 },
                 "action->Bleed for Lamashtu": {
                     "name": "Bleed for Lamashtu",
@@ -1923,7 +1923,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.M1k5QQc1qQLxzyCK]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p><p>Ta flaszka wypełniona żrącym kwasem zadaje 1 obrażenie od kwasu, 1k6 przewlekłych obrażeń od kwasu oraz 1 rozpryskowe obrażenie od kwasu.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "backpack->Bag of Holding (Type I)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jaEEvuQ32GjAa8jy]\nBag of Holding (Typ I)",
@@ -2008,7 +2008,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.y34yjumCFakrbtdw]\n<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, blacksmith's tools differ from woodworker's tools.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "consumable->Owlbear Claw": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qoM7Va5GqcLLBzgu]\nOwlbear Claw",
@@ -2971,7 +2971,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-melee->Rapier": {
                     "name": "Rapier"
@@ -3058,7 +3058,7 @@
                     "description": "<p>Contains keys to all locks in Drelev Keep</p>"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -3919,7 +3919,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p><p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1k8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>"
                 },
                 "consumable->Elixir of Life (Minor)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r 1d6[healing]]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Efekt: Elixir of Life (Drobny)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Efekt: Elixir of Life (Drobny)}</p>"
                 },
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Magii Pierwotnej"
@@ -4023,7 +4023,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p><p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2k8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "consumable->Elixir of Life (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
                 },
                 "effect->Effect: Paizo Adjustment": {
                     "name": "Efekt: Paizo Adjustment",
@@ -4362,7 +4362,7 @@
             "blurb": "Female bandit leader",
             "items": {
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "treasure->Silver Stag Lord Amulet": {
                     "name": "Silver Stag Lord Amulet"
@@ -4736,7 +4736,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TacKaUs8cIddqiCU]\n<p>This platinum choker bears characters from a language's alphabet, and it gives knowledge of that language and the associated culture's customs.</p><p>You gain a +1 item bonus to Society checks and the ability to understand, speak, and write the chosen language.</p><p>Your excellent elocution reduces the DC of the flat check to perform an auditory action while deafened from 5 to 3.</p><p><strong>Wymagania Wytwarzania</strong> You know the language or languages the choker grants.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "equipment->Maestro's Instrument (Lesser) (Lute)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.bAfyWCvgsYDyw3ff]\nMaestro's Instrument (Mniejszy) (Lute)",
@@ -5347,7 +5347,7 @@
             "blurb": "Male Black Tears rogue",
             "items": {
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-ranged->Dagger": [
                     {
@@ -5513,7 +5513,7 @@
             "name": "Ntavi",
             "items": {
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "strike-melee->Maul": {
                     "name": "Maul"
@@ -5565,7 +5565,7 @@
                 },
                 "action->Survival of the Fittest": {
                     "name": "Survival of the Fittest",
-                    "description": "<p><strong>Aktywator</strong> A 1.- or higher-level animal summoned by Nugrah is killed within 30 feet of him</p><hr /><p><strong>Efekt</strong> Blood- red energy flows from the slain creature into Nugrah's mouth. He immediately heals [[/r 1d6[healing]]] Hit Points per level of the slain animal, gaining any excess healing as temporary Hit Points that last for 10 minutes. As long as he possesses these temporary Hit Points, blood-red energy ripples across his flesh and his AC increases to 22.</p>"
+                    "description": "<p><strong>Aktywator</strong> A 1.- or higher-level animal summoned by Nugrah is killed within 30 feet of him</p><hr /><p><strong>Efekt</strong> Blood- red energy flows from the slain creature into Nugrah's mouth. He immediately heals @Damage[1d6[healing]] Hit Points per level of the slain animal, gaining any excess healing as temporary Hit Points that last for 10 minutes. As long as he possesses these temporary Hit Points, blood-red energy ripples across his flesh and his AC increases to 22.</p>"
                 },
                 "action->Swift Summon": {
                     "name": "Swift Summon",
@@ -5583,7 +5583,7 @@
                 },
                 "action->Golem Antimagic": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa]\nGolem Antimagic",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa]\n<p>harmed by acid ([[/r {9d10}]]{9k10 damage}, [[/r {2d10}]]{2k10 damage} from areas or persistent damage); healed by fire (area [[/r 2d10[healing]]] Hit Points); slowed by electricity</p><hr /><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><ul><li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li><li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li><li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 2d6 #rounds]]{2k6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li><li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li></ul>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa]\n<p>harmed by acid ([[/r {9d10}]]{9k10 damage}, [[/r {2d10}]]{2k10 damage} from areas or persistent damage); healed by fire (area @Damage[2d10[healing]] Hit Points); slowed by electricity</p><hr /><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><ul><li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li><li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li><li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 2d6 #rounds]]{2k6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li><li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li></ul>"
                 },
                 "action->Numerian Construct": {
                     "name": "Numerian Construct",
@@ -5607,7 +5607,7 @@
                 },
                 "action->Self-Repair": {
                     "name": "Self-Repair",
-                    "description": "<p>The golem repairs itself, regaining [[/r 30[healing]]]{30 Hit Points}.</p>"
+                    "description": "<p>The golem repairs itself, regaining @Damage[30[healing]]{30 Hit Points}.</p>"
                 },
                 "action->Vent": {
                     "name": "Vent",
@@ -5946,6 +5946,9 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]\nRepair Kit",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]\n<p>A repair kit allows you to perform simple repairs while traveling. It contains a portable anvil, tongs, woodworking tools, a whetstone, and oils for conditioning leather and wood. You can use a repair kit to Repair items using the Crafting skill.</p>"
                 },
+                "consumable->Lover's Knot": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.l8wky2NQduHYsY9B]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> wyobrażenie;</p><p><strong>Wymagania</strong> You are trained in Medicine.</p><hr /><p>This lock of hair is wrapped around a twig twisted into the shape of a heart. Popular among many of Restov's explorers, traders, and mercenaries, often a person carries several lover's knots on their person in case of emergency. While the original lover's knots were specific rewards granted by a particularly flirtatious Swordlord to her favored agents, time has seen these talismans become much more widespread through southern Brevoy. When you activate a lover's knot, you regain @Damage[2d6[healing]]{2k6 Hit Points}. If you have the @UUID[Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt]{Battle Medicine} feat, you instead regain @Damage[(2d6+7)[healing]]{2k6+7 Hit Points}.</p>"
+                },
                 "strike-ranged->Light Hammer": [
                     {
                         "name": "Light Hammer",
@@ -6249,7 +6252,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Greatsword": {
                     "name": "Greatsword"
@@ -6329,7 +6332,7 @@
                 },
                 "action->Launch Marbles": {
                     "name": "Launch Marbles",
-                    "description": "<p>The mitflit uses the marble launcher to fire six marbles at a creature. The target must attempt a @Check[reflex|dc:16] save.</p><p><strong>Sukces</strong> The creature is unaffected.</p><p><strong>Porażka</strong> The creature is distracted by the marbles and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} until the end of its next turn.</p><p><strong>Krytyczna Porażka</strong> As failure, but one of the marbles hits the creature somewhere sensitive, causing [[/r 1d6[nonlethal,bludgeoning]]]{1k6 nonlethal bludgeoning damage}.</p>"
+                    "description": "<p>The mitflit uses the marble launcher to fire six marbles at a creature. The target must attempt a @Check[reflex|dc:16] save.</p><p><strong>Sukces</strong> The creature is unaffected.</p><p><strong>Porażka</strong> The creature is distracted by the marbles and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} until the end of its next turn.</p><p><strong>Krytyczna Porażka</strong> As failure, but one of the marbles hits the creature somewhere sensitive, causing @Damage[1d6[nonlethal,bludgeoning]]{1k6 nonlethal bludgeoning damage}.</p>"
                 },
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
@@ -6831,7 +6834,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
                 "consumable->Healing Potion (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3k8+10 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3k8+10 Hit Points}.</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -6960,7 +6963,7 @@
                 },
                 "action->Recovery": {
                     "name": "Recovery",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Aktywator</strong> The Spiral Seal is damaged but is above its Broken Threshold</p><hr /><p><strong>Efekt</strong> The Spiral Seal repairs itself, regaining [[/r 30[healing]]]{30 Hit Points}.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Aktywator</strong> The Spiral Seal is damaged but is above its Broken Threshold</p><hr /><p><strong>Efekt</strong> The Spiral Seal repairs itself, regaining @Damage[30[healing]]{30 Hit Points}.</p>"
                 }
             }
         },
@@ -6988,7 +6991,7 @@
                 },
                 "action->Feed on Fear": {
                     "name": "Feed on Fear",
-                    "description": "<p><strong>Wymagania</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający} within 15 feet of the will-o'-wisp.</p><hr /><p><strong>Efekt</strong> The will-o'wisp feeds on the creature's terror. It regains [[/r 2d4[healing]]] Hit Points, and if it has Gone Dark, its glow reignites.</p><p>A will-o'-wisp can take this action only once per round.</p>"
+                    "description": "<p><strong>Wymagania</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierający} within 15 feet of the will-o'-wisp.</p><hr /><p><strong>Efekt</strong> The will-o'wisp feeds on the creature's terror. It regains @Damage[2d4[healing]] Hit Points, and if it has Gone Dark, its glow reignites.</p><p>A will-o'-wisp can take this action only once per round.</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -7008,7 +7011,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "treasure->Silver Stag Lord Amulet": {
                     "name": "Silver Stag Lord Amulet"
@@ -7353,7 +7356,7 @@
                 },
                 "action->Drink Blood": {
                     "name": "Drink Blood",
-                    "description": "<p><strong>Wymagania</strong> A bleeding creature is within the baobhan sith's reach</p><hr /><p><strong>Efekt</strong> The baobhan sith tries to Drink the Blood from the bleeding creature's wounds. The baobhan sith attempts an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC. On a success, the victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} and the baobhan sith regains [[/r 10[healing]]]{10 HP}, gaining any Hit Points in excess of their maximum Hit Points as temporary Hit Points.</p><p>Drinking Blood from a victim that's already drained doesn't restore any Hit Points to the baobhan sith but increases the victim's drained value by 1. A victim's drained condition decreases by 1 per week. A blood transfusion, which requires 10 minutes, a successful @Check[medicine|dc:20] check, and sufficient blood or a blood donor, reduces the drained value by 1.</p>"
+                    "description": "<p><strong>Wymagania</strong> A bleeding creature is within the baobhan sith's reach</p><hr /><p><strong>Efekt</strong> The baobhan sith tries to Drink the Blood from the bleeding creature's wounds. The baobhan sith attempts an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC. On a success, the victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} and the baobhan sith regains @Damage[10[healing]]{10 HP}, gaining any Hit Points in excess of their maximum Hit Points as temporary Hit Points.</p><p>Drinking Blood from a victim that's already drained doesn't restore any Hit Points to the baobhan sith but increases the victim's drained value by 1. A victim's drained condition decreases by 1 per week. A blood transfusion, which requires 10 minutes, a successful @Check[medicine|dc:20] check, and sufficient blood or a blood donor, reduces the drained value by 1.</p>"
                 }
             }
         },
@@ -7682,7 +7685,7 @@
                 },
                 "action->Forced Regeneration": {
                     "name": "Forced Regeneration",
-                    "description": "<p><strong>Wymagania</strong> The troll king's regeneration is not currently deactivated.</p><hr /><p><strong>Efekt</strong> The troll king regains [[/r 25[healing]]]{25 HP}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The troll king's regeneration is not currently deactivated.</p><hr /><p><strong>Efekt</strong> The troll king regains @Damage[25[healing]]{25 HP}.</p>"
                 },
                 "action->Jangle the Chain": {
                     "name": "Jangle the Chain",
@@ -7733,7 +7736,7 @@
                     "name": "Lock of green hair bound with red twine"
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "condition->Sickened": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]\n<p>You feel ill. Sickened always includes a value. You take a status penalty equal to this value on all your checks and DCs. You can't willingly ingest anything-including elixirs and potions-while sickened.</p><p>You can spend a single action retching in an attempt to recover, which lets you immediately attempt a Fortitude save against the DC of the effect that made you sickened. On a success, you reduce your sickened value by 1 (or by 2 on a critical success).</p>"
@@ -7909,7 +7912,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "consumable->Elixir of Life (Major)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (8d6+21)[healing]]]{8k6+21 Hit Points} and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.PpLxndUSgzgs6dd0]{Efekt: Elixir of Life (Potężny)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]]{8k6+21 Hit Points} and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.PpLxndUSgzgs6dd0]{Efekt: Elixir of Life (Potężny)}</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -7985,7 +7988,7 @@
                 },
                 "consumable->Elixir of Life (Major) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]\nElixir of Life (Potężny) (Infused)",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (8d6+21)[healing]]]{8k6+21 Hit Points} and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.PpLxndUSgzgs6dd0]{Efekt: Elixir of Life (Potężny)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]]{8k6+21 Hit Points} and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.PpLxndUSgzgs6dd0]{Efekt: Elixir of Life (Potężny)}</p>"
                 },
                 "consumable->Mistform Elixir (Greater) (Infused)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.04giYigfDL5geu5f]\nMistform Elixir (Większy) (Infused)",
@@ -8314,7 +8317,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\n<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]] Hit Points.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
                 },
                 "equipment->Healer's Tools": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\nHealer's Tools",
@@ -8370,7 +8373,7 @@
                     "name": "Forest Lore"
                 },
                 "consumable->Healing Potion (Minor)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]] Hit Points.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
                 },
                 "equipment->Healer's Tools": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\nHealer's Tools",
@@ -8397,7 +8400,7 @@
                     "name": "Divine Focus Spells"
                 },
                 "equipment->Healer's Gloves (Greater)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.0GOHTXBxs6H6ARBz]\n<p>Na tych czystych, białych rękawiczkach nigdy nie osiada ani kropla krwi, nawet podczas używania ich do zszywania ran lub leczenia innego rodzaju przypadłości. Zapewniają ci premię przedmiotu +2 do testów Medycyny.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> You can soothe the wounds of a willing, living, adjacent creature, restoring [[/r (4d6+15)[healing]]]{4k6+15 Hit Points} to that creature. This is a vitality healing effect. You can't harm undead with this healing.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.0GOHTXBxs6H6ARBz]\n<p>Na tych czystych, białych rękawiczkach nigdy nie osiada ani kropla krwi, nawet podczas używania ich do zszywania ran lub leczenia innego rodzaju przypadłości. Zapewniają ci premię przedmiotu +2 do testów Medycyny.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> You can soothe the wounds of a willing, living, adjacent creature, restoring @Damage[(4d6+15)[healing]]{4k6+15 Hit Points} to that creature. This is a vitality healing effect. You can't harm undead with this healing.</p>"
                 },
                 "equipment->Ring of Energy Resistance (Fire)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Energy Resistance (Fire)",
@@ -8501,7 +8504,7 @@
                 },
                 "action->Forced Regeneration": {
                     "name": "Forced Regeneration",
-                    "description": "<p><strong>Wymagania</strong> The troll guard's regeneration is not currently deactivated.</p><hr /><p><strong>Efekt</strong> The guard king regains [[/r 20[healing]]]{20 HP}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The troll guard's regeneration is not currently deactivated.</p><hr /><p><strong>Efekt</strong> The guard king regains @Damage[20[healing]]{20 HP}.</p>"
                 },
                 "action->Primordial Roar": {
                     "name": "Primordial Roar",
@@ -8707,7 +8710,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.mj9i9GeQTADByNPZ]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><hr /><p>After you drink this mutagen, your body becomes thick and sturdy. You exhibit a healthy glow, though you tend to be ponderous and unobservant.</p><p><strong>Benefit</strong> You gain a +2 item bonus to Fortitude saves and 10 temporary Hit Points. Whenever you are at maximum Hit Points for at least 1 full minute, you regain the temporary Hit Points.</p><p><strong>Drawback</strong> You take a –2 penalty to Will saves, Perception checks and initiative rolls.</p><p><strong>Duration</strong> 10 minute.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.fUrZ4xcMJz0CfTyG]{Efekt: Juggernaut Mutagen (Umiarkowany)}</p>"
                 },
                 "consumable->Elixir of Life (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
                 },
                 "equipment->Ring of Energy Resistance (Fire)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Energy Resistance (Fire)",
@@ -8930,7 +8933,7 @@
                     }
                 },
                 "consumable->Healing Potion (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2k8+5 Hit Points}.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "treasure->Jade and Pearl Necklace": {
                     "name": "Jade and Pearl Necklace"

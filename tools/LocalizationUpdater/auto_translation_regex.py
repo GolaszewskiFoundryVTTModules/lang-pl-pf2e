@@ -44,7 +44,7 @@ replacement_patterns = [
     (r'\{Unfriendly\}', r'{Nieprzyjazny}'),
     (r'\{Enfeebled(| \d+)\}', r'{Osłabiony\1}'),
     (r'\{Drained(| \d+)\}', r'{Wyniszczony\1}'),
-    (r'\{Stupified(| \d+)\}', r'{Ogłupiony\1}'),
+    (r'\{Stupefied(| \d+)\}', r'{Ogłupiony\1}'),
     (r'\{Stunned(| \d+)\}', r'{Ogłuszony\1}'),
     (r'\{Wounded(| \d+)\}', r'{Ranny\1}'),
     (r'\{Dying(| \d+)\}', r'{Umierający\1}'),

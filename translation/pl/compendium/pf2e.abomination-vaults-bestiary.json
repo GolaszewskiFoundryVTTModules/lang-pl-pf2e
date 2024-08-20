@@ -25,7 +25,7 @@
                 },
                 "action->Soul Scream": {
                     "name": "Soul Scream",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The irnakurse unleashes an alien shriek of nightmarish horror and pain. All non-evil creatures within a @Template[emanation|distance:10] must attempt a @Check[will|dc:28] save. The irnakurse can Sustain Soul Scream for up to 6 rounds; each time it does, it repeats the effect.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected, and is temporarily immune to Soul Scream for 24 hours.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p><p><strong>Porażka</strong> The creature is stupefied 1. Further failed saves against Soul Scream increase the condition value by 1, to a maximum of stupefied 4. Each time the character gets a full night's rest, the stupefied condition gained from Soul Scream decreases by 1.</p><p><strong>Krytyczna Porażka</strong> As failure, except the stupefied value increases by 2 instead of by 1.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The irnakurse unleashes an alien shriek of nightmarish horror and pain. All non-evil creatures within a @Template[emanation|distance:10] must attempt a @Check[will|dc:28] save. The irnakurse can Sustain Soul Scream for up to 6 rounds; each time it does, it repeats the effect.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected, and is temporarily immune to Soul Scream for 24 hours.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} for 1 round.</p><p><strong>Porażka</strong> The creature is stupefied 1. Further failed saves against Soul Scream increase the condition value by 1, to a maximum of stupefied 4. Each time the character gets a full night's rest, the stupefied condition gained from Soul Scream decreases by 1.</p><p><strong>Krytyczna Porażka</strong> As failure, except the stupefied value increases by 2 instead of by 1.</p>"
                 },
                 "action->Storm of Tentacles": {
                     "name": "Storm of Tentacles",
@@ -219,12 +219,12 @@
             "description": "<p>Seven nozzles hidden within holes in the 15‑foot-high ceiling release a poison gas.</p>",
             "disable": "<p>@Check[thievery|dc:33|name:Disable Hidden Mechanism|traits:action:disable-a-device] (master) to disable the hidden mechanism on the north wall, immediately sucking the gas from the room, or @Check[thievery|dc:29|name:Plug One Nozzle|traits:action:disable-a-device] (expert) to adequately plug one of the seven nozzles. When all seven nozzles are plugged or destroyed, the trap is deactivated.</p>",
             "reset": "<p>After an hour, the trap deactivates; the gas disperses slowly, and the doors can be opened again. After 24 hours, the gas builds up and the trap can be triggered again.</p>",
-            "routine": "<p>(1 action) The gas intensifies. Each creature in the room must make a @Check[fortitude|dc:30].</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and becomes temporarily immune to the gas for 1 hour, though if the creature has already been stupefied by the trap, that condition remains for its normal duration.</p><p><strong>Sukces</strong> The creature is unaffected.</p><p><strong>Porażka</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours. If the target is already stupefied, the condition value increases by 1 (to a maximum of stupefied 4) and the target takes @Damage[8d6[mental]] damage.</p><p><strong>Critical Effect</strong> As failure, except the target takes double the mental damage.</p>",
+            "routine": "<p>(1 action) The gas intensifies. Each creature in the room must make a @Check[fortitude|dc:30].</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and becomes temporarily immune to the gas for 1 hour, though if the creature has already been stupefied by the trap, that condition remains for its normal duration.</p><p><strong>Sukces</strong> The creature is unaffected.</p><p><strong>Porażka</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} for 24 hours. If the target is already stupefied, the condition value increases by 1 (to a maximum of stupefied 4) and the target takes @Damage[8d6[mental]] damage.</p><p><strong>Critical Effect</strong> As failure, except the target takes double the mental damage.</p>",
             "stealth": "<p>+21 (expert) or @Check[perception|dc:31|traits:action:seek] (expert) to notice the hidden override mechanism in the north wall</p>",
             "items": {
                 "action->Gas Release": {
                     "name": "Gas Release",
-                    "description": "<p><strong>Aktywator</strong> Both secret doors are closed and at least one creature is in the room</p><hr /><p><strong>Efekt</strong> Gas fills the chamber. Creatures within the chamber must succeed on a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> Both secret doors are closed and at least one creature is in the room</p><hr /><p><strong>Efekt</strong> Gas fills the chamber. Creatures within the chamber must succeed on a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} on a critical failure). The trap then rolls initiative.</p>"
                 }
             }
         },
@@ -306,7 +306,7 @@
                 },
                 "action->Corrupting Gaze": {
                     "name": "Corrupting Gaze",
-                    "description": "<p>Belcorra stares at a creature she can see within 30 feet. The target takes @Damage[9d6[mental]] damage (@Check[will|dc:33|basic] save).</p><p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
+                    "description": "<p>Belcorra stares at a creature she can see within 30 feet. The target takes @Damage[9d6[mental]] damage (@Check[will|dc:33|basic] save).</p><p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} for 1 minute.</p>"
                 },
                 "action->Haunted Lighthouse": {
                     "name": "Haunted Lighthouse",
@@ -765,7 +765,7 @@
                 },
                 "action->Mummy Rot": {
                     "name": "Mummy Rot",
-                    "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:24]</p><hr /><p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 minute)</p><p><strong>Stadium 2</strong> @Damage[6d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 dzień)</p>"
+                    "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7. kręgu @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:24]</p><hr /><p><strong>Stadium 1</strong> Bezobjawowy nosiciel (1 minute)</p><p><strong>Stadium 2</strong> @Damage[6d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 dzień)</p>"
                 }
             }
         },
@@ -2011,7 +2011,7 @@
                 },
                 "action->Seugathi Venom": {
                     "name": "Seugathi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:24]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:24]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} (1 runda)</p>"
                 }
             }
         },
@@ -2807,7 +2807,7 @@
                 },
                 "action->Seugathi Venom": {
                     "name": "Seugathi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} (1 runda)</p>"
                 }
             }
         },
@@ -2907,7 +2907,7 @@
             "items": {
                 "action->Stasis Field": {
                     "name": "Stasis Field",
-                    "description": "<p><strong>Aktywator</strong> A non-devil creature moves into the light</p><hr /><p><strong>Efekt</strong> The light expands to fill the room, and each nondevil creature within the room must attempt a @Check[will|dc:26] save. A high-pitched chime sounds in the barracks (area <strong>D15</strong>), audible in this room as well. The trap then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 2}.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round.</p><p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for [[/br 1d4 #Duration Stupefied]]{1k4 rounds} and paralyzed for 1 round.</p>"
+                    "description": "<p><strong>Aktywator</strong> A non-devil creature moves into the light</p><hr /><p><strong>Efekt</strong> The light expands to fill the room, and each nondevil creature within the room must attempt a @Check[will|dc:26] save. A high-pitched chime sounds in the barracks (area <strong>D15</strong>), audible in this room as well. The trap then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 2}.</p><p><strong>Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round.</p><p><strong>Krytyczna Porażka</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for [[/br 1d4 #Duration Stupefied]]{1k4 rounds} and paralyzed for 1 round.</p>"
                 }
             }
         },
@@ -2945,7 +2945,7 @@
                 },
                 "action->Spectral Corruption": {
                     "name": "Spectral Corruption",
-                    "description": "<p>The specter makes a vile touch Strike. If it damages a living creature, the specter gains 5 temporary Hit Points and the target creature must attempt a @Check[will|dc:24] save to avoid becoming corrupted.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and is temporarily immune to spectral corruption for 1 minute.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p><p><strong>Porażka</strong> The creature succumbs to the corruption and becomes a spectral thrall temporarily. The creature is @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Kontrolowany} by the specter, obeying the specter's telepathic or spoken orders, though a spectral thrall does not obey obviously self-destructive orders. This lasts until the end of the thrall's next turn, at which point it is no longer controlled but becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p><p><strong>Krytyczna Porażka</strong> As failure, but the duration is unlimited. The thrall can attempt a new Will save at the end of each of its turns; on a success, it is no longer controlled by the specter but becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p>"
+                    "description": "<p>The specter makes a vile touch Strike. If it damages a living creature, the specter gains 5 temporary Hit Points and the target creature must attempt a @Check[will|dc:24] save to avoid becoming corrupted.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and is temporarily immune to spectral corruption for 1 minute.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 1 hour.</p><p><strong>Porażka</strong> The creature succumbs to the corruption and becomes a spectral thrall temporarily. The creature is @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Kontrolowany} by the specter, obeying the specter's telepathic or spoken orders, though a spectral thrall does not obey obviously self-destructive orders. This lasts until the end of the thrall's next turn, at which point it is no longer controlled but becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 1 hour.</p><p><strong>Krytyczna Porażka</strong> As failure, but the duration is unlimited. The thrall can attempt a new Will save at the end of each of its turns; on a success, it is no longer controlled by the specter but becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 1 hour.</p>"
                 }
             }
         },
@@ -3271,7 +3271,7 @@
                 },
                 "action->Seugathi Venom": {
                     "name": "Seugathi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} (1 runda)</p>"
                 }
             }
         },
@@ -3314,7 +3314,7 @@
                 },
                 "action->Seugathi Venom": {
                     "name": "Seugathi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:25]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:25]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} (1 runda)</p>"
                 },
                 "action->Warp Reality": {
                     "name": "Warp Reality",
@@ -3375,7 +3375,7 @@
                 },
                 "action->Seugathi Venom": {
                     "name": "Seugathi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} (1 runda)</p>"
                 }
             }
         },
@@ -3421,7 +3421,7 @@
                 },
                 "action->Seugathi Venom": {
                     "name": "Seugathi Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><hr /><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} (1 runda)</p>"
                 }
             }
         },

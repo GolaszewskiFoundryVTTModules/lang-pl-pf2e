@@ -70,7 +70,7 @@
                 },
                 "action->Invasive Blackfrost": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kLQ0eq18SvKEvggc]\nInvasive Blackfrost",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kLQ0eq18SvKEvggc]\n<p>Gatewalker characters are not immune to blackfrost effects inflicted by Ainamuuren</p><p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:32]</p><p><strong>Stadium 1</strong> @Damage[4d6[cold]] (1 minute)</p><p><strong>Stadium 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (1 dzień)</p><p><strong>Stadium 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} (1 dzień)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kLQ0eq18SvKEvggc]\n<p>Gatewalker characters are not immune to blackfrost effects inflicted by Ainamuuren</p><p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Ulżenie w Dolegliwości} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:32]</p><p><strong>Stadium 1</strong> @Damage[4d6[cold]] (1 minute)</p><p><strong>Stadium 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (1 dzień)</p><p><strong>Stadium 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} (1 dzień)</p>"
                 },
                 "action->Twist Deviance": {
                     "name": "Twist Deviance",
@@ -180,7 +180,7 @@
                 },
                 "action->Poison Stock": {
                     "name": "Poison Stock",
-                    "description": "<p>When the cabinet hits a creature with its poison bottle Strike, roll [[/br 1d4]] to determine what kind of poison splashes onto the struck creature:</p><ol><li>nerve poison (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1})</li><li>weakening poison (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1})</li><li>noxious poison (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</li><li>clouded mind poison (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1}).</li></ol><p>The target must attempt a @Check[fortitude|dc:24|traits:poison] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unafected.</p><p><strong>Sukces</strong> The creature takes @Damage[1d6[poison]].</p><p><strong>Porażka</strong> The creature takes @Damage[2d6[poison]] and is aficted with the rolled poison's associated condition until the end of its next turn.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[2d6[poison]] and is aficted with the rolled poison's associated condition for [[/br 1d4+1 #Rounds]] rounds.</p>"
+                    "description": "<p>When the cabinet hits a creature with its poison bottle Strike, roll [[/br 1d4]] to determine what kind of poison splashes onto the struck creature:</p><ol><li>nerve poison (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1})</li><li>weakening poison (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1})</li><li>noxious poison (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1})</li><li>clouded mind poison (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1}).</li></ol><p>The target must attempt a @Check[fortitude|dc:24|traits:poison] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unafected.</p><p><strong>Sukces</strong> The creature takes @Damage[1d6[poison]].</p><p><strong>Porażka</strong> The creature takes @Damage[2d6[poison]] and is aficted with the rolled poison's associated condition until the end of its next turn.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[2d6[poison]] and is aficted with the rolled poison's associated condition for [[/br 1d4+1 #Rounds]] rounds.</p>"
                 }
             }
         },
@@ -276,7 +276,7 @@
                 },
                 "action->Wrathful Misfortune": {
                     "name": "Wrathful Misfortune",
-                    "description": "<p>A creature damaged by a guecubu must succeed at a @Check[will|dc:26] save or become cursed with consummate bad luck. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p><p>Each time that creature rolls initiative, on their next roll they must roll twice and use the worse result; this is a misfortune effect.</p>"
+                    "description": "<p>A creature damaged by a guecubu must succeed at a @Check[will|dc:26] save or become cursed with consummate bad luck. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 2}.</p><p>Each time that creature rolls initiative, on their next roll they must roll twice and use the worse result; this is a misfortune effect.</p>"
                 }
             }
         },
@@ -505,7 +505,7 @@
                 },
                 "action->Tetanus": {
                     "name": "Tetanus",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:14]</p><p><strong>Nadejście Objawów</strong> 10 days</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 week)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and can't speak (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} with spasms (1 dzień)</p><p><strong>Stadium 4</strong> death</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:14]</p><p><strong>Nadejście Objawów</strong> 10 days</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} (1 week)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 2} and can't speak (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} with spasms (1 dzień)</p><p><strong>Stadium 4</strong> death</p>"
                 }
             }
         },
@@ -810,7 +810,7 @@
                 },
                 "action->Blackfrost Rot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kLQ0eq18SvKEvggc]\nBlackfrost Rot",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kLQ0eq18SvKEvggc]\n<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:30]</p><p><strong>Stadium 1</strong> @Damage[4d6[cold]] (1 minute)</p><p><strong>Stadium 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (1 dzień)</p><p><strong>Stadium 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} (1 dzień)</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.kLQ0eq18SvKEvggc]\n<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Ulżenie w Dolegliwości} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:30]</p><p><strong>Stadium 1</strong> @Damage[4d6[cold]] (1 minute)</p><p><strong>Stadium 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} (1 dzień)</p><p><strong>Stadium 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} (1 dzień)</p>"
                 },
                 "action->Frozen Breath": {
                     "name": "Frozen Breath",
@@ -936,7 +936,7 @@
             "items": {
                 "action->Light Incense Burners": {
                     "name": "Light Incense Burners",
-                    "description": "<p><strong>Aktywator</strong> A creature lies down on the bed, or a living creature spends more than 3 rounds inside this room</p><hr /><p><strong>Efekt</strong> Incense swiftly fills the room (even if the incense burners have been removed or were destroyed). All creatures in area <strong>A12</strong> must attempt a @Check[fortitude|dc:32] save. The haunt then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the incense's scent.</p><p><strong>Porażka</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}. If it's still unconscious after 1 minute, it wakes up automatically.</p><p><strong>Krytyczna Porażka</strong> As failure, but if it's still unconscious after 1 hour, it wakes up automatically.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature lies down on the bed, or a living creature spends more than 3 rounds inside this room</p><hr /><p><strong>Efekt</strong> Incense swiftly fills the room (even if the incense burners have been removed or were destroyed). All creatures in area <strong>A12</strong> must attempt a @Check[fortitude|dc:32] save. The haunt then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} by the incense's scent.</p><p><strong>Porażka</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}. If it's still unconscious after 1 minute, it wakes up automatically.</p><p><strong>Krytyczna Porażka</strong> As failure, but if it's still unconscious after 1 hour, it wakes up automatically.</p>"
                 }
             }
         },
@@ -980,7 +980,7 @@
                 },
                 "action->Formian Trench Poison": {
                     "name": "Formian Trench Poison",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] (1 runda)</p><p><strong>Stadium 2</strong> @Damage[1d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 runda)</p><p><strong>Stadium 3</strong> @Damage[1d6[poison]], clumsy 1, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (1 runda)</p><p><strong>Stadium 4</strong> @Damage[2d6[poison]], clumsy 1, and enfeebled 1 (1 runda)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:21]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d6[poison]] (1 runda)</p><p><strong>Stadium 2</strong> @Damage[1d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} (1 runda)</p><p><strong>Stadium 3</strong> @Damage[1d6[poison]], clumsy 1, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (1 runda)</p><p><strong>Stadium 4</strong> @Damage[2d6[poison]], clumsy 1, and enfeebled 1 (1 runda)</p>"
                 }
             }
         },
@@ -1003,7 +1003,7 @@
                 },
                 "action->Frostbite": {
                     "name": "Frostbite",
-                    "description": "<p>A creature that takes persistent cold damage from the trap's frost jet Strike must attempt a @Check[fortitude|dc:18] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature isn't affected and is immune to this frostbite effect for 24 hours.</p><p><strong>Sukces</strong> The creature isn't affected.</p><p><strong>Porażka</strong> The creature can't stop shivering and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>"
+                    "description": "<p>A creature that takes persistent cold damage from the trap's frost jet Strike must attempt a @Check[fortitude|dc:18] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature isn't affected and is immune to this frostbite effect for 24 hours.</p><p><strong>Sukces</strong> The creature isn't affected.</p><p><strong>Porażka</strong> The creature can't stop shivering and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1}.</p><p><strong>Krytyczna Porażka</strong> As failure, and the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>"
                 }
             }
         },
@@ -1321,7 +1321,7 @@
                 },
                 "action->Kithangian Venom": {
                     "name": "Kithangian Venom",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:25]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[2d6[poison]] (2 rounds)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 rounds)</p><p><strong>Stadium 3</strong> @Damage[3d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (2 rounds)</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:25]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[2d6[poison]] (2 rounds)</p><p><strong>Stadium 2</strong> @Damage[2d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (2 rounds)</p><p><strong>Stadium 3</strong> @Damage[3d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 2} (2 rounds)</p>"
                 },
                 "action->Rasping Tongues": {
                     "name": "Rasping Tongues",
@@ -1659,7 +1659,7 @@
             "items": {
                 "action->Poisonous Atmosphere": {
                     "name": "Poisonous Atmosphere",
-                    "description": "<p><strong>Aktywator</strong> A non-native creature breathes the atmosphere</p><hr /><p><strong>Efekt</strong> The triggering creature must attempt a @Check[fortitude|dc:17] save. The hazard then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is invigorated by the atmosphere and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony} for 1 round.</p><p><strong>Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p><p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round.</p>"
+                    "description": "<p><strong>Aktywator</strong> A non-native creature breathes the atmosphere</p><hr /><p><strong>Efekt</strong> The triggering creature must attempt a @Check[fortitude|dc:17] save. The hazard then rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is invigorated by the atmosphere and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Przyspieszony} for 1 round.</p><p><strong>Sukces</strong> Efekt nie wywiera wpływu na istotę.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1}.</p><p><strong>Krytyczna Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round.</p>"
                 }
             }
         },
@@ -1880,7 +1880,7 @@
                 },
                 "action->Anesthetic Saliva": {
                     "name": "Anesthetic Saliva",
-                    "description": "<p>A creature exposed to a skin beetle's saliva must succeed on a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>"
+                    "description": "<p>A creature exposed to a skin beetle's saliva must succeed on a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} for 1 round.</p>"
                 },
                 "action->Harvest Flesh": {
                     "name": "Harvest Flesh",
@@ -1894,7 +1894,7 @@
             "items": {
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>Each enemy in the swarm's space takes @Damage[5d6[piercing]] (@Check[reflex|dc:23|basic]). A creature that fails the saving throw also takes @Damage[1d4[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} as long as it's taking bleed damage.</p>"
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[5d6[piercing]] (@Check[reflex|dc:23|basic]). A creature that fails the saving throw also takes @Damage[1d4[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} as long as it's taking bleed damage.</p>"
                 }
             }
         },
@@ -2057,7 +2057,7 @@
                 },
                 "action->Fall Apart": {
                     "name": "Fall Apart",
-                    "description": "<p>When one of the Guests dies, its body falls apart into a tangle of meat, gristle, fur, bone, and gore. All creatures within a @Template[emanation|distance:10] (other than other Guests) must make a @Check[will|dc:22] save to avoid becoming @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4} on a critical failure) at the sight and smell of this fate.</p>"
+                    "description": "<p>When one of the Guests dies, its body falls apart into a tangle of meat, gristle, fur, bone, and gore. All creatures within a @Template[emanation|distance:10] (other than other Guests) must make a @Check[will|dc:22] save to avoid becoming @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 2} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 4} on a critical failure) at the sight and smell of this fate.</p>"
                 },
                 "action->Frozen Wind": {
                     "name": "Frozen Wind",
@@ -2321,7 +2321,7 @@
                 },
                 "action->Paralyzing Poison": {
                     "name": "Paralyzing Poison",
-                    "description": "<p>The plants send out runner shoots that quickly develop purple bulbs. These bulbs, the plant's polyps, sprout many long, hooked vines before detaching from the mother plant. Polyps are short lived but active, foraging for a week or so before they shrivel and die. These polyps aren't dangerous unless handled. They secrete a fine dust that acts as a paralyzing poison that seizes the nervous system of creatures who come in contact with them.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:19]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 runda)</p><p><strong>Stadium 2</strong> off-guard and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 runda)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} (1 runda)</p>"
+                    "description": "<p>The plants send out runner shoots that quickly develop purple bulbs. These bulbs, the plant's polyps, sprout many long, hooked vines before detaching from the mother plant. Polyps are short lived but active, foraging for a week or so before they shrivel and die. These polyps aren't dangerous unless handled. They secrete a fine dust that acts as a paralyzing poison that seizes the nervous system of creatures who come in contact with them.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:19]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} (1 runda)</p><p><strong>Stadium 2</strong> off-guard and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 2} (1 runda)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} (1 runda)</p>"
                 },
                 "action->Swallow Whole": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium, @Damage[(2d12+8)[bludgeoning]], Rozdarcie 18</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"

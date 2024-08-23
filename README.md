@@ -14,6 +14,6 @@ Currently the module covers all the core system UI and nomenclature.
 The compendium data and rule elements are being translated by-demand based on my private campaign needs and will probably remain semi-translated for quite a while still. (Steady does it...)
 
 ## Localization Notice
-The translation a personal project. I am in no way affiliated with Paizo nor with the developers of the Foundry VTT or the PF2 system adaptation.  While I try to remain as faithful to the original texts, the areas of gray are filled by my personal decisions and styling preferences.
+The translation a personal project. I am in no way affiliated with Paizo nor with the developers of the Foundry VTT or the PF2 system adaptation.  While I try to remain as faithful to the original texts as possible, the areas of gray are filled with my personal decisions and styling preferences.
 
 This includes me taking the liberty to editorialize some outdated pre-remaster content where it still lingers (removing the mention of alignments or schools of magic) and to clear up some questionable wordings here and there to the best of my understanding of the rules - for the ease of Game Mastering my games and for the sake of my players.

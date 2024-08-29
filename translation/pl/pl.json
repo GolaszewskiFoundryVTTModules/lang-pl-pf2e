@@ -374,6 +374,7 @@
                     "sussuran": "Sussurański",
                     "taldane": "Taldański",
                     "talican": "Talikański",
+                    "tang": "Tang",
                     "tanuki": "Tanuki",
                     "tekritanin": "Tekritański",
                     "tengu": "Tengu",
@@ -389,6 +390,8 @@
                     "wildsong": "Pieśń Dziczy",
                     "wyrwood": "Drzewnicki",
                     "xanmba": "Xanmba",
+                    "wayang": "Wayang",
+                    "yaksha": "Yaksza",
                     "yithian": "Yithiański",
                     "ysoki": "Ysoki"
                 },
@@ -1084,10 +1087,9 @@
                 "TotalCost": "Całkowity Koszt"
             },
             "Alerts": {
-                "CharacterLevel": "Poziom przedmiotu przekracza poziom postaci.",
                 "FormulaExpended": "Przygotowana receptura została już wytworzona.",
                 "ItemMissingTraits": "Przedmiot nie jest kompatybilny z wymaganiami wpisu o rzemiośle.",
-                "MaxItemLevel": "Poziom przedmiotu przekracza maksymalny możliwy poziom dla tego wpisu o rzemiośle.",
+                "MaxItemLevel": "Poziom przedmiotu przekracza maksymalny możliwy poziom wytwarzania — {level}.",
                 "MaxSlots": "Wpis o rzemiośle ma już zapełnione wszystkie dostępne miejsca.",
                 "MissingReagents": "Niewystarczająca liczba nasyconych odczynników aby ukończyć wytwarzanie."
             },
@@ -1671,6 +1673,7 @@
         "InlineCheck": {
             "BasicWithSave": "Podst. Rzut Obronny: {save}",
             "DCWithName": "ST {name}",
+            "DCAdjustment": "Dostosowanie ST",
             "Invalid": "Nieprawidłowe wyrażenie @Check: {message}",
             "Errors": {
                 "AdjustmentLengthMismatch": "ilość parametrów typu jest niezgodna z ilością parametrów modyfikatorów",
@@ -3805,6 +3808,7 @@
         "TrainedSkillsLabel": "Umiejętności Wytrenowane",
         "TraitAberration": "Wynaturzenie",
         "TraitAcid": "Kwas",
+        "TraitAdditive": "Addytyw",
         "TraitAdditive0": "Addytyw 0",
         "TraitAdditive1": "Addytyw 1",
         "TraitAdditive2": "Addytyw 2",
@@ -3942,6 +3946,7 @@
         "TraitClimbing": "Wspinaczka",
         "TraitClockwork": "Mechanizm Zegarowy",
         "TraitCobbled": "Fuszerka",
+        "TraitCoagulant": "Koagulant",
         "TraitCoda": "Koda",
         "TraitCold": "Zimno",
         "TraitColdiron": "Zimne Żelazo",
@@ -3996,7 +4001,7 @@
         "TraitDero": "Dero",
         "TraitDescriptionAberration": "Wynaturzenia to istoty pochodzące z innych planów lub będące wypaczeniem naturalnego porządku.",
         "TraitDescriptionAcid": "Efekty z cechą ogień zadają obrażenia od kwasu. Istoty z tą cechą mają magiczną więź z tym kwasem.",
-        "TraitDescriptionAdditive": "Atuty z cechą addytyw pozwalają wykorzystać akcje na dodawanie specjalnych substancji do bomb lub eliksirów. Możesz dodać tylko jeden addytyw do danego przedmiotu alchemicznego, a próba dodania kolejnego psuje przedmiot. Zwykle możesz używać akcji z cechą addytyw tylko podczas tworzenia nasyconego przedmiotu alchemicznego, a niektóre mogą być używane tylko z akcją Szybka Alchemia. Cech addytyw zawsze posiada poziom, na przykład addytyw 2. Addytyw dodaje swój poziom do poziomu przedmiotu alchemicznego, który modyfikujesz; wynik jest nowym poziomem uzyskanej mieszanki. Nie możesz tworzyć mieszanki o poziomie wyższym niż twój poziom zaawansowanej alchemii.",
+        "TraitDescriptionAdditive": "Atuty z cechą addytyw pozwalają na dodawanie specjalnych substancji do alchemicznych przedmiotów zużywalnych wytworzonych za pomocą Szybkiej Alchemii (nie możesz używać addytywów dla szybkich fiolek). Możesz dodać tylko jeden addytyw do danego przedmiotu alchemicznego, możesz dodać addytyw tylko raz na rundę a większość addytywów precyzuje rodzaj alchemicznych przedmiotów zużywalnych, do których może zostać dodana.",
         "TraitDescriptionAdjusted": "Ekwipunek z tą cechą posiada regulację opisaną w jego wpisie. Ta regulacja jest wbudowana w sprzęt na stałe, co oznacza, że nie można wymienić jej na inną regulację ani dodać do przedmiotu kolejnej regulacji . Jeśli regulacja zmienia podstawowe statystyki przedmiotu, takie jak dodanie cechy hałas, jest to już odzwierciedlone we wpisie w tabeli statystyk przedmiotu.",
         "TraitDescriptionAdjustment": "Przedmioty z tą cechą mają na celu modyfikację istniejących elementów wyposażenia, zwykle pancerza, tarcz i broni. Każdy przedmiot określa, jaki rodzaj wyposażenia reguluje. Na dany element wyposażenia może mieć wpływ tylko jedna regulacja na raz. O ile nie zaznaczono inaczej, dodanie lub usunięcie regulacji wymaga 10-minutowej aktywności i zestawu naprawczego.",
         "TraitDescriptionAeon": "Ci nadzorcy to samozwańczy obrońcy rzeczywistości. Tradycyjne eony mają dualistyczną naturę i formy oraz utrzymują dychotomię interesów, chociaż aksjomici i nieuniknieni nie. Eony inne niż aksjomici i nieuniknieni komunikują się poprzez dziwną telepatyczną mieszankę przesyłanych bodźców zmysłowych zwaną wyobrażeniami.",
@@ -4062,6 +4067,7 @@
         "TraitDescriptionCleric": "Oznacza zdolności z klasy Kleryka.",
         "TraitDescriptionClimbing": "Ręki dzierżącej tą broń nadal można używać do wspinaczki.",
         "TraitDescriptionClockwork": "Mechanizmy zegarowe to zawiłe i złożone konstrukcje, które można zaprogramować do wykonywania określonych funkcji.",
+        "TraitDescriptionCoagulant": "Lecznicze przedmioty alchemiczne z cechą koagulantu tracą na efektywności gdy stosuje się ich wiele w krótkim odstępie czasu. Jeśli istota odzyska Punkty Żywotności dzięki przemiotowi z cechą koagulantu, istota ta staje się na 10 minut tymczasowo niewrażliwa na odzyskiwanie Punktów Żywotności z dalszych użyć przedmiotów z cechą koagulantu (ale nie jest niewrażliwa na pozostałe efekty tych przedmiotów).",
         "TraitDescriptionCoatl": "Rodzina nadnaturalnych opierzonych węży, służących w Świecie Głównym za strażników i posłańców różnorakich świętych boskich sił.",
         "TraitDescriptionCobbled": "Ta broń palna jest sklecona naprędce i ma sporą szansę na niewypał. Bez względu na to, jak dobrze o nią dbasz, przy nieudanym rzucie ataku atak chybia a ty musisz rzucić @Check[flat|dc:5]. Jeśli ten test się nie powiedzie, strzał to niewypał.",
         "TraitDescriptionCoda": "<p>Instrumenty z cechą kody działają w dużym stopniu jak kostury i mają cechę kostur. Istnieją dwie różnice: instrumenty z kodą mają postać instrumentów muzycznych i mogą być przygotowywane tylko przez bardów. Ponieważ fizycznie nie są to kostury, nie można nimi atakować ani wyryć na nich run broni.</p><p>Proces przygotowania instrumentu z kodą obejmuje granie znacznych fragmentów utworów związanych z zawartymi w nim zaklęciami — albo klasycznych utworów albo twoich własnych kreacji. Pozostawia to magiczny pogłos w instrumencie, który pozwala dokończyć utwory, grając ich kodę później w ciągu dnia.</p>",
@@ -4193,7 +4199,7 @@
         "TraitDescriptionIncapacitation": "Zdolność z tą cechą może całkowicie wykluczyć postać z walki lub nawet ją zabić, a jej użycie jest tym trudniejsze im potężniejsza jest postać. Jeśli zaklęcie ma cechę obezwładnienia, każda istota o poziomie dwukrotnie wyższym niż krąg zaklęcia traktuje wynik swojego testu na uniknięcie obezwładnienia przez to zaklęcie jako jeden stopień sukcesu wyżej, lub wynik jakiegokolwiek testu wykonanego przez rzucającego zaklęcie w celu obezwładnienia jej jako jeden stopień sukcesu niżej. Jeśli jakiś inny efekt ma cechę obezwładnienia, istota poziomu wyższego niż przedmiot, istota lub zagrożenie generujące efekt, uzyskuje te same korzyści.",
         "TraitDescriptionIncarnate": "Zaklęcie z cechą wcielenia jest tematycznie podobne do zaklęć przywołujących istoty, ale nie przywołuje sługusa z cechą przywołania. Zamiast tego, kiedy skończysz Rzucać Zaklęcie, pojawiające się wcielenie wykonuje swoją akcję Przybycia. Na koniec twojej następnej tury wcielenie może wykonać Krok, Bieg lub wykonać akcję wynikającą z innego typu ruchu, który posiada (takiego jak Wspinaczka lub Rycie), a następnie wykonuje swoją akcję Odejścia. W tym momencie zaklęcie się kończy. Nazwy określonych akcji Przybycia i Odejścia są odpowiednio wymienione kursywą po słowach \"Przybycie\" lub \"Odejście\", wraz z wszelkimi ich cechami. Przywołane wcielenie działa w twoim interesie, kieruje efekty swoich działań jak najkorzystniej dla ciebie i twoich sojuszników oraz może słuchać twoich próśb, ale ostatecznie podejmuje własne decyzje. Jeśli zaklęcie wskazuje, że wcielenie podejmuje decyzję, MG określa jego zachowanie. Wcielenie może nawet stać się bardziej skłonne do robienia dokładnie tego, czego sobie życzysz, na przestrzeni wielu przywołań. Wcielenie nie jest w pełni istotą. Nie może wykonywać żadnych innych akcji ani nie może być celem Ciosów, zaklęć ani innych efektów, chyba że byłyby w stanie obrać za cel lub zakończyć efekt zaklęcia (jak rozproszenie magii). Ma rozmiar na rzecz określania rozmieszczenia jego oraz jego efektów, ale nie blokuje ruchu. Jeśli jest to potrzebne, jego efekty wykorzystują twój ST zaklęć i twój modyfikator rzutu ataku zaklęciem.",
         "TraitDescriptionIncorporeal": "Istota lub przedmiot z cechą bezcielesności nie ma fizycznej formy. Może przechodzić przez litą materię, w tym ściany. Będąc wewnątrz obiektu, bezcielesna istota nie może postrzegać, atakować ani wchodzić w interakcje z niczym co na zewnątrz obiektu, a jeśli rozpocznie swoją turę w obiekcie, zostaje spowolniona 1 do końca swojej tury. Istoty cielesne i bezcielesne mogą przechodzić przez siebie nawzajem, ale nie mogą zakończyć swojego ruchu w tej samej przestrzeni. Istota bezcielesna nie może wykonywać testów opartych na Sile przeciwko cielesnym istotom lub obiektom — tylko przeciwko bezcielesnym — chyba że obiekty te posiadają runę właściwości duchowego dotyku. Podobnie istota cielesna nie może wykonywać testów opartych na Sile przeciwko istotom lub przedmiotom bezcielesnym. Istoty bezcielesne zwykle są odporne na efekty lub statusy wymagające ciała fizycznego, takie jak choroby, trucizny i obrażenia precyzyjne. Zwykle mają odporność na wszystkie obrażenia (z wyjątkiem obrażeń od mocy, obrażeń duchowych i obrażeń od Ciosów zadanych z użyciem runy właściwości duchowego dotyku), oraz dysponują podwójnie dużą odpornością na obrażenia niemagiczne.",
-        "TraitDescriptionInfused": "Stworzyłeś przedmiot alchemiczny z cechą nasycenia przy użyciu nasyconych odczynników i ma on ograniczony czas przydatności do użycia zanim straci swoje właściwości. Wszelkie nietrwałe efekty nasyconych przedmiotów alchemicznych, z wyjątkiem powodowanych przez nie przypadłości, takich jak wolno działające trucizny, przestają działać, gdy ponownie wykonasz codzienne przygotowania.",
+        "TraitDescriptionInfused": "Przedmiot alchemiczny z cechą nasycenia ma ograniczony czas przydatności do użycia zanim straci swoje właściwości. Wszelkie nietrwałe efekty nasyconych przedmiotów alchemicznych, z wyjątkiem powodowanych przez nie przypadłości, takich jak wolno działające trucizny, przestają działać, gdy ponownie wykonasz codzienne przygotowania.",
         "TraitDescriptionInfusion": "Akcje z cechą Infuzja dostosowują twoje impulsy kinetyczne. Akcji infuzji musisz użyć dokładnie przed akcją impulsu, którą chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji (włączając w to akcje darmowe i reakcje) innej niż akcja impulsu, tracisz wszystkie benefity wynikające z akcji infuzji. Wszelkie dodawane przez infuzję efekty stają się częścią akcji impulsu, nie akcji infuzji.",
         "TraitDescriptionIngested": "Ta trucizna jest aplikowana poprzez zjedzenie lub wypicie.",
         "TraitDescriptionInhaled": "Ta trucizna aplikowana jest poprzez wdychanie jej.",
@@ -4543,6 +4549,7 @@
         "TraitHryngar": "Hryngar",
         "TraitHuman": "Człowiek",
         "TraitHumanoid": "Humanoid",
+        "TraitHungerseed": "Nasiono Głodu",
         "TraitIfrit": "Ifryt",
         "TraitIkeshti": "Ikeshti",
         "TraitIllusion": "Iluzja",
@@ -4785,6 +4792,7 @@
         "TraitSahkil": "Sahkil",
         "TraitSamsaran": "Samsaranin",
         "TraitSanctified": "Namaszczenie",
+        "TraitSarangay": "Sarangej",
         "TraitScatter": "Rozrzut",
         "TraitScatter10": "Rozrzut 10",
         "TraitScatter15": "Rozrzut 15",
@@ -4981,6 +4989,8 @@
         "TraitWraithvine": "Upiorośl",
         "TraitWyrwood": "Drzewnik",
         "TraitXulgath": "Xulgat",
+        "TraitYaksha": "Yaksza",
+        "TraitYaoguai": "Yaoguai",
         "TraitZombie": "Zombie",
         "Traits": "Cechy",
         "TraitsLabel": "Cechy",
@@ -5219,6 +5229,7 @@
                 "light-mace": "Lekka Buława",
                 "light-pick": "Lekki Nadziak",
                 "lion-scythe": "Lwia Kosa",
+                "liuyedao": "Liuyedao",
                 "long-air-repeater": "Długa Wiatrówka",
                 "long-hammer": "Młot Długi",
                 "longbow": "Łuk Długi",
@@ -5282,6 +5293,7 @@
                 "shobhad-longrifle": "Shobhadzki Długostrzał",
                 "shortbow": "Łuk Krótki",
                 "shortsword": "Miecz Krótki",
+                "shuan-ji": "Shuan Ji",
                 "shuriken": "Shuriken",
                 "sickle": "Sierp",
                 "sickle-saber": "Sierpo-szabla",
@@ -5337,6 +5349,7 @@
                 "wooden-taws": "Drewniane Tau",
                 "wrecker": "Wyburzyciel",
                 "wrist-launcher": "Wyrzutnia na nadgarstek",
+                "zhuazhi-bang": "Zhuazhi Bang",
                 "zulfikar": "Zulfikar"
             }
         },
@@ -5626,7 +5639,7 @@
                 "Note": {
                     "Axe": "Możesz zadać obrażenia trzeciej istocie, stosując się do tych samych ograniczeń.",
                     "Bow": "Test atletyki wymagany do wyciągnięcia pocisku otrzymuje ST 20.",
-                    "Brawling": "Cel otrzymuje sytuacyjną karę –4 do rzutu obronnego.",
+                    "Brawling": "Cel otrzymuje karę sytuacyjną –4 do rzutu obronnego.",
                     "Club": "Możesz odrzucić cel na odległość do 15 stóp.",
                     "Crossbow": "Jeśli cel trafienia znajduje się w sąsiedztwie powierzchni, zostaje przygwożdżony do tej powierzchni pociskiem, jak w wypadku krytycznej specjalizacji łuku.",
                     "Dart": "Podstawowe przewlekłe obrażenia od krwawienia zwiększają się do @Damage[2d6[persistent,bleed]]{2k6 przewlekłych obrażeń od krwawienia}.",
@@ -5870,7 +5883,7 @@
         "condition": {
             "blinded": {
                 "name": "Oślepiony",
-                "rules": "<p>Nic nie widzisz. Każdy zwykły teren jest dla ciebie trudnym terenem. Nie możesz niczego wykrywać z wykorzystaniem wzroku. Automatycznie odnosisz krytyczną porażkę na testach Percepcji, które polegają na wzroku, a jeśli wzrok jest twoim jedynym zmysłem precyzyjnym odnosisz statusową karę –4 do wszystkich pozostałych testów Percepcji. Jesteś niewrażliwy na wszystkie efekty wzrokowe. Oślepienie nadpisuje Zamroczenie.</p>",
+                "rules": "<p>Nic nie widzisz. Każdy zwykły teren jest dla ciebie trudnym terenem. Nie możesz niczego wykrywać z wykorzystaniem wzroku. Automatycznie odnosisz krytyczną porażkę na testach Percepcji, które polegają na wzroku, a jeśli wzrok jest twoim jedynym zmysłem precyzyjnym odnosisz karę statusową –4 do wszystkich pozostałych testów Percepcji. Jesteś niewrażliwy na wszystkie efekty wzrokowe. Oślepienie nadpisuje Zamroczenie.</p>",
                 "summary": "Straciłeś wzrok."
             },
             "broken": {
@@ -5935,7 +5948,7 @@
             },
             "fascinated": {
                 "name": "Zafascynowany",
-                "rules": "<p>Odczuwasz przemożną potrzebę poświęcania czemuś uwagi i odwracania jej od wszystkiego innego wokół ciebie. Otrzymujesz statusową karę –2 do testów Percepcji oraz testów umiejętności i nie możesz używać akcji z cechą koncentracja, chyba że ich konsekwencje są związane z celem twojej fascynacji (rozstrzyga MG). Przykładowo możesz być w stanie Szukać celu lub Pozyskiwać Wiedzę na jego temat, ale nie możesz rzucić zaklęcia kierowanego w inną istotę. Status ten kończy się jeśli obiekt twojej fascynacji dokona działania wrogiego wobec ciebie lub twoich towarzyszy.</p>",
+                "rules": "<p>Odczuwasz przemożną potrzebę poświęcania czemuś uwagi i odwracania jej od wszystkiego innego wokół ciebie. Otrzymujesz karę statusową –2 do testów Percepcji oraz testów umiejętności i nie możesz używać akcji z cechą koncentracja, chyba że ich konsekwencje są związane z celem twojej fascynacji (rozstrzyga MG). Przykładowo możesz być w stanie Szukać celu lub Pozyskiwać Wiedzę na jego temat, ale nie możesz rzucić zaklęcia kierowanego w inną istotę. Status ten kończy się jeśli obiekt twojej fascynacji dokona działania wrogiego wobec ciebie lub twoich towarzyszy.</p>",
                 "summary": "Odczuwasz przemożną potrzebę poświęcania czemuś uwagi."
             },
             "fatigued": {
@@ -5945,7 +5958,7 @@
             },
             "off-guard": {
                 "name": "Opuszczona Garda",
-                "rules": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz sytuacyjną karę –2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności efekty statusowe - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \\\"Cel ma opuszczoną gardę.\\\"</p>",
+                "rules": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz karę sytuacyjną –2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności efekty statusowe - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \\\"Cel ma opuszczoną gardę.\\\"</p>",
                 "summary": "Nie jesteś w stanie bronić się na miarę swoich możliwości."
             },
             "fleeing": {
@@ -5960,7 +5973,7 @@
             },
             "frightened": {
                 "name": "Przerażony",
-                "rules": "<p>Jesteś ogarnięty strachem i z trudem kontrolujesz nerwy. Przerażenie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości do wszystkich swoich testów i ST. O ile nie sprecyzowano inaczej wartość twojego przerażenia spada o 1 na koniec każdej twojej tury.</p>",
+                "rules": "<p>Jesteś ogarnięty strachem i z trudem kontrolujesz nerwy. Przerażenie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości do wszystkich swoich testów i ST. O ile nie sprecyzowano inaczej wartość twojego przerażenia spada o 1 na koniec każdej twojej tury.</p>",
                 "summary": "Strach osłabia twoje zdolności do ataku i obrony."
             },
             "grabbed": {
@@ -6026,7 +6039,7 @@
             },
             "prone": {
                 "name": "Powalony",
-                "rules": "<p>Leżysz na ziemi. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz ponosisz sytuacyjną karę –2 do rzutów ataku. Jedyne akcje ruchu, których możesz dokonywać będąc powalonym to Czołganie się lub Powstanie. Powstanie kończy twoje powalenie. Będąc powalonym możesz Kryć się za Osłoną nawet jeśli nie masz przed sobą żadnego obiektu, aby skulić się i zyskać osłonę przed atakami dystansowymi, zyskując sytuacyjną premię +4 do KP przeciw atakom dystansowym (nadal masz jednak opuszczoną gardę).</p><p>Jeśli zostaniesz powalony podczas kiedy Latasz lub Wspinasz się, zaczynasz spadać. Nie możesz zostać powalony kiedy Pływasz.</p>",
+                "rules": "<p>Leżysz na ziemi. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} oraz ponosisz karę sytuacyjną –2 do rzutów ataku. Jedyne akcje ruchu, których możesz dokonywać będąc powalonym to Czołganie się lub Powstanie. Powstanie kończy twoje powalenie. Będąc powalonym możesz Kryć się za Osłoną nawet jeśli nie masz przed sobą żadnego obiektu, aby skulić się i zyskać osłonę przed atakami dystansowymi, zyskując premię sytuacyjną +4 do KP przeciw atakom dystansowym (nadal masz jednak opuszczoną gardę).</p><p>Jeśli zostaniesz powalony podczas kiedy Latasz lub Wspinasz się, zaczynasz spadać. Nie możesz zostać powalony kiedy Pływasz.</p>",
                 "summary": "Leżysz na ziemi i łatwiej cię zaatakować."
             },
             "quickened": {
@@ -6041,7 +6054,7 @@
             },
             "sickened": {
                 "name": "Zemdlony",
-                "rules": "<p>Czujesz się schorowany. Zemdlenie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości, na wszystkich swoich testach i ST. Kiedy jesteś zemdlony nie możesz dobrowolnie pobierać pokarmu, wliczając w to mikstury i eliksiry.</p><p>Możesz poświęcić jedną akcję na poddanie się odruchowi wymiotnemu i próbę pozbycia się mdłości, co pozwala ci na natychmiastowe podjęcie testu Krzepy przeciw ST efektu który wywołał w tobie zemdlenie. W wypadku sukcesu redukujesz wartość zemdlenia o 1 (przy sukcesie krytycznym o 2).</p>",
+                "rules": "<p>Czujesz się schorowany. Zemdlenie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości, na wszystkich swoich testach i ST. Kiedy jesteś zemdlony nie możesz dobrowolnie pobierać pokarmu, wliczając w to mikstury i eliksiry.</p><p>Możesz poświęcić jedną akcję na poddanie się odruchowi wymiotnemu i próbę pozbycia się mdłości, co pozwala ci na natychmiastowe podjęcie testu Krzepy przeciw ST efektu który wywołał w tobie zemdlenie. W wypadku sukcesu redukujesz wartość zemdlenia o 1 (przy sukcesie krytycznym o 2).</p>",
                 "summary": "Jest ci niedobrze i cierpisz na mdłości."
             },
             "slowed": {
@@ -6056,7 +6069,7 @@
             },
             "stupefied": {
                 "name": "Ogłupiony",
-                "rules": "<p>Twoje myśli i instynkty są zamglone. Ogłupienie zawsze posiada wartość. Otrzymujesz statusową karę równą tej wartości, do wszystkich swoich testów i ST opartych o Inteligencję, Mądrość i Charyzmę, wliczając w to rzut obronny Woli, rzuty ataku zaklęciem, ST zaklęć oraz testy umiejętności oparte o te cechy. Za każdym razem kiedy usiłujesz Rzucić Zaklęcie będąc ogłupionym, musisz wykonać płaski test o ST równym 5 + wartość ogłupienia - przy porażce zaklęcie jest rozpraszane.</p>",
+                "rules": "<p>Twoje myśli i instynkty są zamglone. Ogłupienie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości, do wszystkich swoich testów i ST opartych o Inteligencję, Mądrość i Charyzmę, wliczając w to rzut obronny Woli, rzuty ataku zaklęciem, ST zaklęć oraz testy umiejętności oparte o te cechy. Za każdym razem kiedy usiłujesz Rzucić Zaklęcie będąc ogłupionym, musisz wykonać płaski test o ST równym 5 + wartość ogłupienia - przy porażce zaklęcie jest rozpraszane.</p>",
                 "summary": "Nie jesteś w stanie wykorzystać pełni swoich sił umysłowych i masz trudności z rzucaniem zaklęć."
             },
             "unconscious": {

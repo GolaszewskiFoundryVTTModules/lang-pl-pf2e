@@ -674,7 +674,7 @@
         "Unexploded Bomb",
         "Faulty Wand"
       ],
-      "description": "<p>The scroungefeather gains access to the listed abilities until it uses Tossed Scraps to discard the debris or until it Releases the debris. The scroungefeather can't use its beak attack while it is using its beak to Grab Debris.</p><ol><li><p><strong>Armor scrap</strong> The scroungefeather gains a +2 circumstance bonus to its AC.</p></li><li><p><strong>Shattered blade</strong> The scroungefeather gains a broken blade melee Strike with a +12 attack modifier that deals 2d10+6 slashing damage.</p></li><li><p><strong>Unexploded bomb</strong> When the scroungefeather throws this with Tossed Scraps, all the damage is fire damage, and the bomb also deals 3 fire splash damage.</p></li><li><p><strong>Faulty wand</strong> The scroungefeather gains a magic bolt ranged Strike with a +14 attack modifier that deals 2d6+6 force damage.</p></li></ol>"
+      "description": "<p>The scroungefeather gains access to the listed abilities until it uses Tossed Scraps to discard the debris or until it Releases the debris. The scroungefeather can't use its beak attack while it is using its beak to Grab Debris.</p>\n<ol>\n<li>\n<p><strong>Armor scrap</strong> The scroungefeather gains a +2 circumstance bonus to its AC.</p>\n</li>\n<li>\n<p><strong>Shattered blade</strong> The scroungefeather gains a broken blade melee Strike with a +12 attack modifier that deals 2d10+6 slashing damage.</p>\n</li>\n<li>\n<p><strong>Unexploded bomb</strong> When the scroungefeather throws this with Tossed Scraps, all the damage is fire damage, and the bomb also deals 3 fire splash damage.</p>\n</li>\n<li>\n<p><strong>Faulty wand</strong> The scroungefeather gains a magic bolt ranged Strike with a +14 attack modifier that deals 2d6+6 force damage.</p>\n</li>\n</ol>"
     },
     "Effect: Grasp of the Deep": {
       "name": "Effect: Grasp of the Deep",
@@ -887,6 +887,10 @@
           "label": "Lantern of Hope (vs Crushing Despair)"
         }
       }
+    },
+    "Effect: Lawbringer": {
+      "name": "Effect: Lawbringer",
+      "description": "<p>The shieldmarshal marks a foe for judgment.</p>"
     },
     "Effect: Leader's Command": {
       "name": "Effect: Leader's Command",
@@ -1171,57 +1175,6 @@
         }
       }
     },
-    "Effect: Rune of Destruction (Greatsword)": {
-      "name": "Effect: Rune of Destruction (Greatsword)",
-      "description": "<p>The greatsword gains the deadly trait with 3d12, and a creature hit with the greatsword is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
-    },
-    "Effect: Rune of Destruction (Longspear)": {
-      "name": "Effect: Rune of Destruction (Longspear)",
-      "description": "<p>The longspear gains the deadly trait with 3d8, and a creature hit with the longspear is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
-    },
-    "Effect: Rune of Destruction (Rock)": {
-      "name": "Effect: Rune of Destruction (Rock)",
-      "description": "<p>The rock gains the deadly trait with 3d12, and a creature hit with the rock is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
-    },
-    "Effect: Rune of Flames (Greatsword)": {
-      "name": "Effect: Rune of Flames (Greatsword)",
-      "description": "<p>The greatsword deals an additional 3d6 fire damage on all attacks.</p>",
-      "rules": {
-        "0": {
-          "label": "Rune of Flames"
-        }
-      }
-    },
-    "Effect: Rune of Flames (Longspear)": {
-      "name": "Effect: Rune of Flames (Longspear)",
-      "description": "<p>The longspear deals an additional 3d6 fire damage on all attacks.</p>",
-      "rules": {
-        "0": {
-          "label": "Rune of Flames"
-        }
-      }
-    },
-    "Effect: Rune of Flames (Rock)": {
-      "name": "Effect: Rune of Flames (Rock)",
-      "description": "<p>The rock deals an additional 3d6 fire damage on all attacks.</p>",
-      "rules": {
-        "0": {
-          "label": "Rune of Flames"
-        }
-      }
-    },
-    "Effect: Rune of Smiting (Greatsword)": {
-      "name": "Effect: Rune of Smiting (Greatsword)",
-      "description": "<p>When the greatsword hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
-    },
-    "Effect: Rune of Smiting (Longspear)": {
-      "name": "Effect: Rune of Smiting (Longspear)",
-      "description": "<p>When the longspear hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
-    },
-    "Effect: Rune of Smiting (Rock)": {
-      "name": "Effect: Rune of Smiting (Rock)",
-      "description": "<p>When the rock hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
-    },
     "Effect: Runic Resistance": {
       "name": "Effect: Runic Resistance",
       "description": "<p>The creature gains resistance 5 to one damage type.</p>"
@@ -1296,7 +1249,7 @@
       "description": "<p>The bunyip's tail Strike gains reach 10 and @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab}, but it's Jaws Strike looses the persistent bleed damage.</p>",
       "rules": {
         "0": {
-          "text": "<p>@Localize[PF2E.AttackEffects.IncreasedReach5]</p><hr /><p><strong><span class=\"action-glyph\">1</span> @Localize[PF2E.AttackEffectGrab]</strong> ({item|name})</p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+          "text": "<p>@Localize[PF2E.AttackEffects.IncreasedReach5]</p>\n<hr />\n<p><strong><span class=\"action-glyph\">1</span> @Localize[PF2E.AttackEffectGrab]</strong> ({item|name})</p>\n@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
         }
       }
     },

@@ -264,6 +264,7 @@
       "name": "Ambush Assassin",
       "blurb": "Variant assassin",
       "publicNotes": "<p>Assassins commit murder, either for pay or due to their belief in a cause, such as a religion or a political movement. Some assassins work alone and choose their own victims. Others are members of assassins' guilds, organizations that accept contracts to kill in return for money, favors, or both.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
+      "privateNotes": "<p>\"Sleep poison\" changed to \"Lethargy poison\" per Shay on org play server</p>",
       "items": {
         "consumable->Darkvision Elixir (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.88pGCHV0uKMskTVO]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.7UL8belWmo7U5YGM]{Effect: Darkvision Elixir (Lesser)}</p>"
@@ -1313,7 +1314,7 @@
         },
         "action->Burrowing Viper Rat Venom": {
           "name": "Burrowing Viper Rat Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<hr />\n<p><strong>Stage 1</strong> [[/r (1d6)[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 1</strong> [[/r (1d8)[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p><hr /><p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
         }
       }
     },
@@ -3139,7 +3140,7 @@
     },
     "Fey-Touched Great Wolf": {
       "name": "Fey-Touched Great Wolf",
-      "publicNotes": "<p>Much larger and more foul-tempered than their common cousins, dire wolves haunt primeval lands that accommodate their massive size and proportionately large hunting grounds and appetites. Orcs are fond of using dire wolves as mounts, finding their vicious tempers perfect for hunting and warfare.</p>\n<hr /><p>Wolves roam forests, hills, and other wild lands, where they hunt in packs to beleaguer and surround their prey before going in for the kill. Like most predatory animals, wolves prefer to attack the weakest or most vulnerable prey they can find.</p>",
+      "publicNotes": "<p>Much larger and more foul-tempered than their common cousins, dire wolves haunt primeval lands that accommodate their massive size and proportionately large hunting grounds and appetites. Orcs are fond of using dire wolves as mounts, finding their vicious tempers perfect for hunting and warfare.</p>\n<hr />\n<p>Wolves roam forests, hills, and other wild lands, where they hunt in packs to beleaguer and surround their prey before going in for the kill. Like most predatory animals, wolves prefer to attack the weakest or most vulnerable prey they can find.</p>",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -4005,7 +4006,7 @@
         },
         "action->Giant Scorpion Venom": {
           "name": "Giant Scorpion Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:20|basic]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p><hr /><p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> 4d6 poison damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
         }
       }
     },
@@ -4046,6 +4047,7 @@
     "Nathatel (3-4)": {
       "name": "Nathatel (3-4)",
       "blurb": "Male elf zealot",
+      "privateNotes": "<p>Force damage from melee strikes removed as Nathatel does not have Arcane Cascade per Alex from the Org Play Server</p>",
       "tokenName": "Nathatel",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -4084,6 +4086,7 @@
     "Nathatel (5-6)": {
       "name": "Nathatel (5-6)",
       "blurb": "Male elf zealot",
+      "privateNotes": "<p>Force damage from melee strikes and Cascade Countermeasure focus spell removed as Nathatel does not have Arcane Cascade per Alex from the Org Play Server. Focus Point value not changed from 3.</p>",
       "tokenName": "Nathatel",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -4123,6 +4126,7 @@
     "Nathatel (7-8)": {
       "name": "Nathatel (7-8)",
       "blurb": "Male elf zealot",
+      "privateNotes": "<p>Force damage from melee strikes and Cascade Countermeasure focus spell removed as Nathatel does not have Arcane Cascade per Alex from the Org Play Server. Focus Point value not changed from 3.</p>",
       "tokenName": "Nathatel",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -4790,6 +4794,7 @@
       "blurb": "Female roru demon",
       "languages": "speak with animals, telepathy 100 feet",
       "publicNotes": "<p>Rorus, sometimes called hunter demons, are brutal fiends that arise from the souls of mortals who mutilated animal corpses. As demons, these individuals don animal pelts, then infiltrate packs or herds to corrupt entire swaths of animals, turning their victims bloodthirsty and feral.</p>",
+      "privateNotes": "<p>Common added per Alex Speidel/Shay discussion on org play server</p>",
       "skillSpecialNature": {
         "0": {
           "label": "to Command an Animal"
@@ -4843,6 +4848,7 @@
       "blurb": "Female variant roru demon",
       "languages": "speak with animals, telepathy 100 feet",
       "publicNotes": "<p>Rorus, sometimes called hunter demons, are brutal fiends that arise from the souls of mortals who mutilated animal corpses. As demons, these individuals don animal pelts, then infiltrate packs or herds to corrupt entire swaths of animals, turning their victims bloodthirsty and feral.</p>",
+      "privateNotes": "<p>Common added per Alex Speidel/Shay discussion on org play server</p>",
       "skillSpecialNature": {
         "0": {
           "label": "to Command an Animal"
@@ -6593,6 +6599,7 @@
       "converter": "updateActorImage",
       "path": "img"
     },
+    "privateNotes": "system.details.privateNotes",
     "publicNotes": {
       "converter": "translateActorDescription",
       "path": "system.details.publicNotes"

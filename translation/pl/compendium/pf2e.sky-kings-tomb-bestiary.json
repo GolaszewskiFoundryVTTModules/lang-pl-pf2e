@@ -180,16 +180,16 @@
         },
         "Ansestor Statue": {
             "name": "Ansestor Statue",
-            "acDetails": "(17 when broken); construct armor",
+            "acDetails": "(17 gdy uszkodzony); pancerz konstruktu",
             "blurb": "Elite animated statue",
-            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p><hr /><p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p><hr /><p>Ożywione przedmioty, obdarzone namiastką życia w wyniku zastosowania rytuałów lub innej osobliwej magii, wystąpują w wielu postaciach i mają różnorakie zastosowania. Wiele z tych istot pełni rolę strażników, zaskakujących nieświadomych poszukiwaczy przygód nagłym atakiem. Inne stanowią dla wyjątkowo bogatych źródło rozrywki, prostą służbę stworzoną do wykonywania prymitywnych zadań i tym podobne.</p>",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
                 },
                 "action->Construct Armor (Hardness 6)": {
-                    "name": "Construct Armor (Hardness 6)",
-                    "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p><p>Once an elite animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 17.</p>"
+                    "name": "Pancerz Konstruktu (Twardość 6)",
+                    "description": "<p>Ożywiony posąg posiada Twartość, tak jak zwykłe obiekty. Twardość ta zmniejsza wszelkie otrzymane przez niego obrażenia o wartość równą tej Twardości.</p><p>Kiedy Punkty Żywotności elite animated statue zostaną zmniejszone do wartości poniżej połowy ich maksimum, lub natychmiastowo przy odniesieniu obrażeń od trafienia krytycznego, jego pancerz konstruktu uszkadza się, a jego klasa pancerza jest zmniejszana do 17.</p>"
                 }
             }
         },
@@ -282,7 +282,7 @@
         "Bestial Transformation": {
             "name": "Bestial Transformation",
             "description": "<p>Enchanted carvings of animals transform any creatures who damage the door into the animal they harmed.</p>",
-            "disable": "<p>@Check[nature|dc:26] (expert) to handle the animal carvings or @Check[thievery|dc:33] (master) to scratch out the animal carvings or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the spell</p>",
+            "disable": "<p>@Check[nature|dc:26] (expert) to handle the animal carvings or @Check[thievery|dc:33] (master) to scratch out the animal carvings or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 28) to counteract the spell</p>",
             "reset": "<p>automatic</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
@@ -513,7 +513,7 @@
         },
         "Crimson Worm Statue": {
             "name": "Crimson Worm Statue",
-            "acDetails": "(22 when broken); construct armor",
+            "acDetails": "(22 gdy uszkodzony); pancerz konstruktu",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Szczęki"
@@ -523,7 +523,7 @@
                 },
                 "action->Construct Armor": {
                     "name": "Construct Armor",
-                    "description": "<p>Like normal objects, a crimson worm statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a crimson worm statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>"
+                    "description": "<p>crimson worm statue posiada Twartość, tak jak zwykłe obiekty. Twardość ta zmniejsza wszelkie otrzymane przez niego obrażenia o wartość równą tej Twardości. Kiedy Punkty Żywotności crimson worm statue zostaną zmniejszone do wartości poniżej połowy ich maksimum, lub natychmiastowo przy odniesieniu obrażeń od trafienia krytycznego, jego pancerz konstruktu uszkadza się, a jego klasa pancerza jest zmniejszana do 22.</p>"
                 },
                 "action->Thrash": {
                     "name": "Thrash",
@@ -596,7 +596,7 @@
         "Electrified Hall": {
             "name": "Electrified Hall",
             "description": "<p>Runes hidden in the door's carvings blast lightning down the hall.</p>",
-            "disable": "<p>@Check[thievery|dc:30] (master) to scratch out the runes, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the runes</p>",
+            "disable": "<p>@Check[thievery|dc:30] (master) to scratch out the runes, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 28) to counteract the runes</p>",
             "reset": "<p>automatic</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -2335,7 +2335,7 @@
         "Repelling Surge": {
             "name": "Repelling Surge",
             "description": "<p>A shockwave of energy surges out from the room's center.</p>",
-            "disable": "<p>@Check[arcana|dc:29] (expert) to fool the wards, DC 31 Thievery (master) to disable the wards, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5. level; counteract DC 28) to counteract the wards</p>",
+            "disable": "<p>@Check[arcana|dc:29] (expert) to fool the wards, DC 31 Thievery (master) to disable the wards, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 28) to counteract the wards</p>",
             "reset": "<p>Automatic</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {

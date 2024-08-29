@@ -53,6 +53,7 @@ replacement_patterns = [
     (r'\{Quickened(| \d+)\}', r'{Przyspieszony\1}'),
     (r'\{Slowed(| \d+)\}', r'{Spowolniony\1}'),
     # Initial Variants
+
     (r'\(Minor\)', r'(Drobny)'),
     (r'\(Lesser\)', r'(Mniejszy)'),
     (r'\(Moderate\)', r'(Umiarkowany)'),
@@ -113,7 +114,7 @@ replacement_patterns = [
     (r'>Cantrips<', r'>Sztuczki<'),
     (r'>Spell<', r'>Zaklęcie<'),
     (r'>Spells<', r'>Zaklęcia<'),
-    (r'>Heightened (\S+)<', r'>Wywyższenie \1<'),
+    (r'>Heightened (\(\S+\))<', r'>Wywyższenie \1<'),
     (r'\(At Will\)', r'(Do Woli)'),
     (r'(\S*) Innate Spells', r'Wrodzone Zaklęcia \1'),
     (r'(\S*) Prepared Spells', r'Przygotowane Zaklęcia \1'),

@@ -83,7 +83,7 @@
         "Bad Vibrations": {
             "name": "Bad Vibrations",
             "description": "<p>The three larger crystals on the table begin to vibrate and emit a swiftly growing peal of sound.</p>",
-            "disable": "<p>@Check[thievery|dc:17] (trained) or @Check[occultism|dc:17] (trained) to disrupt the magic enchanting one of the crystals, or @Check[performance|dc:20] (trained) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Counter Performance} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level, DC 18) to counteract a crystal.</span></p>",
+            "disable": "<p>@Check[thievery|dc:17] (trained) or @Check[occultism|dc:17] (trained) to disrupt the magic enchanting one of the crystals, or @Check[performance|dc:20] (trained) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Counter Performance} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level, DC 18) to counteract a crystal.</span></p>",
             "hpDetails": "HP per crystal",
             "routine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[fortitude|dc:20|basic]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 minute. At the end of the hazard's routine, attempt a @Check[flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
             "stealth": "<p>(eksperctwo)</p>",
@@ -641,7 +641,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (Do Woli)"
                 },
                 "spell->Misdirection (At Will, Self Only)": {
-                    "name": "Misdirection (At Will, Self Only)",
+                    "name": "Misdirection (Do Woli, Tylko na Siebie)",
                     "description": "<p>You reshape the magic aura of one creature or object to resemble that of another. You designate one target as the primary target and the other as the secondary target. Effects that would detect auras on the primary target instead detect the same types of auras from the secondary target. A creature reading the aura can attempt to disbelieve the illusion. You can Dismiss the spell from up to a mile away.</p>",
                     "target": "na siebie"
                 },
@@ -722,8 +722,8 @@
                     "name": "Headbutt"
                 },
                 "action->Construct Armor (Hardness 5)": {
-                    "name": "Construct Armor (Hardness 5)",
-                    "description": "<p>Like normal objects, an animated rocking horse has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once the animated rocking horse is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 13.</p>"
+                    "name": "Pancerz Konstruktu (Twardość 5)",
+                    "description": "<p>animated rocking horse posiada Twartość, tak jak zwykłe obiekty. Twardość ta zmniejsza wszelkie otrzymane przez niego obrażenia o wartość równą tej Twardości. Kiedy Punkty Żywotności animated rocking horse zostaną zmniejszone do wartości poniżej połowy ich maksimum, lub natychmiastowo przy odniesieniu obrażeń od trafienia krytycznego, jego pancerz konstruktu uszkadza się, a jego klasa pancerza jest zmniejszana do 13.</p>"
                 },
                 "action->Trample": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Princess Sunset Strides up to double its Speed and can move through the spaces of creatures of size Small or smaller, Trampling each creature whose space it enters. Princess Sunset can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the headbutt Strike, but trampled creatures can attempt a basic Reflex save at @Check[reflex|dc:14|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -756,16 +756,16 @@
             }
         },
         "Simulacrum": {
-            "name": "Simulacrum",
+            "name": "Symulakrum",
             "skillSpecialDeception": {
                 "0": {
-                    "label": "to Impersonate"
+                    "label": "przy Podszywaniu Się"
                 }
             },
             "items": {
                 "equipment->Key Ring": {
-                    "name": "Key Ring",
-                    "description": "<p>Carried by Auldegrund in the dining hall.</p>"
+                    "name": "Pęk kluczy",
+                    "description": "<p>Noszony przez Auldegrunda w sali jadalnej.</p>"
                 },
                 "strike-melee->Warhammer": {
                     "name": "Młot Bojowy"

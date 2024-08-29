@@ -182,7 +182,7 @@
         },
         "Animated Fireplace": {
             "name": "Animated Fireplace",
-            "acDetails": "(20 when broken); construct armor",
+            "acDetails": "(20 gdy uszkodzony); pancerz konstruktu",
             "blurb": "Variant animated furnace",
             "publicNotes": "<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
             "items": {
@@ -190,7 +190,7 @@
                     "name": "Hearth"
                 },
                 "action->Construct Armor (Hardness 7)": {
-                    "name": "Construct Armor (Hardness 7)",
+                    "name": "Pancerz Konstruktu (Twardość 7)",
                     "description": "<p>Like normal objects, the animated fireplace has Hardness. This Hardness reduces any damage the fireplace takes by 7. Once the animated fireplace is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 20.</p>"
                 },
                 "action->Bellow Soot": {
@@ -220,7 +220,7 @@
                     "name": "Dish"
                 },
                 "action->Construct Armor (Hardness 8)": {
-                    "name": "Construct Armor (Hardness 8)",
+                    "name": "Pancerz Konstruktu (Twardość 8)",
                     "description": "<p>Like normal objects, an animated tea cart has Hardness. This Hardness reduces any damage the tea cart takes by an amount equal to the Hardness. Once an animated tea cart is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 24.</p>"
                 },
                 "action->Scald": {
@@ -661,7 +661,7 @@
         "Button Mash": {
             "name": "Button Mash",
             "description": "<p>The room floods with harmful effects by pressing a magic sigil on a console. Each sigil causes different results. There are six sigils on the console.</p>",
-            "disable": "<p>@Check[arcana|dc:40] (master) to disenchant each sigil (can be done from either side of the reception desk), @Check[thievery|dc:43] (master) twice to disable the console (can only be done while behind the reception desk), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 40) to counteract each sigil; prevent Noph from pressing the buttons by gaining access to the reception desk or other methods</p>",
+            "disable": "<p>@Check[arcana|dc:40] (master) to disenchant each sigil (can be done from either side of the reception desk), @Check[thievery|dc:43] (master) twice to disable the console (can only be done while behind the reception desk), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (8. level; counteract DC 40) to counteract each sigil; prevent Noph from pressing the buttons by gaining access to the reception desk or other methods</p>",
             "routine": "<p>(2 actions) Noph frantically pecks and stomps on the console, using each action to press a random sigil. Roll [[/gmr 1d6 #Pressed Sigil]] to determine which sigil Noph presses. Psychopomps are immune to the effects of these sigils.</p><p><strong>1</strong> The area is flooded with holy light, dealing @Damage[(3d12+19)[vitality]] damage to each creature in the area (@Check[reflex|dc:43|basic]).</p><p><strong>2</strong> The area is flooded with unholy darkness, dealing @Damage[(3d12+19)[void]] damage to each creature in the area (@Check[reflex|dc:43|basic]).</p><p><strong>3</strong> The area is flooded with blue flames, dealing @Damage[(3d10+19)[fire]] damage to each creature in the area (@Check[reflex|dc:43|basic]). On a critical failure, a creature additionally takes @Damage[1d10[persistent,fire]] damage.</p><p><strong>4</strong> A comet streaks through the area, attacking the nearest creature to Noph with a comet Strike.</p><p><strong>5</strong> Force tethers sprout from the floor, grasping at intruders. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round unless they succeed at a @Check[fortitude|dc:43] save.</p><p><strong>6</strong> Ghostly blue mist surrounds each psychopomp in the area, healing them @Damage[(3d8+19)[healing]]{3k8+19} HP and granting them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
@@ -677,7 +677,7 @@
         "Castigate the Faithless": {
             "name": "Castigate the Faithless",
             "description": "<p>Magic forces those who pass by the statue to the ground with sudden force; pressing the bypass button deactivates the trap for 1 minute.</p>",
-            "disable": "<p>@Check[religion|dc:47] (legendary) to deactivate the trap through prayer, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 47) to counteract the trap, or press the bypass button</p>",
+            "disable": "<p>@Check[religion|dc:47] (legendary) to deactivate the trap through prayer, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (8. level; counteract DC 47) to counteract the trap, or press the bypass button</p>",
             "reset": "<p>The trap resets automatically if triggered, after 1 minute if the bypass button is pressed, or after 15 minutes if disabled or counteracted.</p>",
             "stealth": "<p>(master) or @Check[perception|dc:50] (legendary) to notice the bypass button hidden in Urgathoa's skeletal feet</p>",
             "items": {
@@ -746,7 +746,7 @@
         "Choking Tethers": {
             "name": "Choking Tethers",
             "description": "<p>Three shadow tethers form when a creature reaches the hall's midpoint; each lashes, grabs, and crushes creatures in the hall.</p>",
-            "disable": "<p>@Check[thievery|dc:48] (legendary) to disable each tether or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10. level, counteract DC 48) to counteract each tether</p>",
+            "disable": "<p>@Check[thievery|dc:48] (legendary) to disable each tether or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (10. level, counteract DC 48) to counteract each tether</p>",
             "routine": "<p>(six actions) This trap loses 2 actions each turn for each disabled shadow tether. Each shadow tether has 2 actions it can use to either Strike a creature or Constrict a @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} creature, in any combination.</p>",
             "stealth": "<p>(legendarność)</p>",
             "items": {
@@ -964,7 +964,7 @@
         "Crush the Uninvited": {
             "name": "Crush the Uninvited",
             "description": "<p>A warning carved into the door frame magically crushes any who pass through the doorway without Kemnebi's permission.</p>",
-            "disable": "<p>@Check[thievery|dc:48] (legendary) to scratch out the warning or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10. level; counteract DC 48) to counteract the magic in the warning</p>",
+            "disable": "<p>@Check[thievery|dc:48] (legendary) to scratch out the warning or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (10. level; counteract DC 48) to counteract the magic in the warning</p>",
             "stealth": "<p>(legendary); @Check[perception|dc:20] to notice the warning carved in the door frame</p>",
             "items": {
                 "action->Implosion": {
@@ -1230,7 +1230,7 @@
         "Electrified Gate": {
             "name": "Electrified Gate",
             "description": "<p>A warded metal gate electrocutes anyone who touches the gate without pressing the bypass button.</p>",
-            "disable": "<p>@Check[thievery|dc:47] (legendary) to destroy the ward, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 47) to counteract the ward, or press the bypass button</p>",
+            "disable": "<p>@Check[thievery|dc:47] (legendary) to destroy the ward, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (8. level; counteract DC 47) to counteract the ward, or press the bypass button</p>",
             "reset": "<p>The trap resets automatically if triggered, after 1 minute if the bypass button is pressed, or after 15 minutes if disabled or counteracted.</p>",
             "stealth": "<p>(master) or @Check[perception|dc:50|traits:secret] (legendary) to notice the bypass button hidden in a skull's eye socket</p>",
             "items": {
@@ -1254,7 +1254,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement (Constant)"
                 },
                 "spell->Invisibility (At Will, Self Only)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will, Self Only)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Do Woli, Tylko na Siebie)"
                 },
                 "strike-melee->Spirit Needle": {
                     "name": "Spirit Needle"
@@ -1926,7 +1926,7 @@
         "Glyph of Warding (B8)": {
             "name": "Glyph of Warding (B8)",
             "description": "<p>A magical glyph flashes before triggering a spell.</p>",
-            "disable": "<p>@Check[thievery|dc:33] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level, counteract DC 33) to counteract the glyph</p>",
+            "disable": "<p>@Check[thievery|dc:33] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (7. level, counteract DC 33) to counteract the glyph</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Glyph of Warding",
             "items": {
@@ -1939,7 +1939,7 @@
         "Glyph of Warding (D5)": {
             "name": "Glyph of Warding (D5)",
             "description": "<p>A magical glyph flashes before triggering a spell.</p>",
-            "disable": "<p>@Check[thievery|dc:34] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level, counteract DC 34) to counteract the glyph</p>",
+            "disable": "<p>@Check[thievery|dc:34] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (7. level, counteract DC 34) to counteract the glyph</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Glyph of Warding",
             "items": {
@@ -3138,7 +3138,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]\nFalse Life"
                 },
                 "spell->Invisibility (At Will, Self Only)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will, Self Only)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Do Woli, Tylko na Siebie)"
                 },
                 "spell->See Invisibility": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
@@ -3248,15 +3248,15 @@
         },
         "Mechanical Laborer": {
             "name": "Mechanical Laborer",
-            "acDetails": "(18 when broken); construct armor",
+            "acDetails": "(18 gdy uszkodzony); pancerz konstruktu",
             "blurb": "Variant animated statue",
-            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p><hr /><p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p><hr /><p>Ożywione przedmioty, obdarzone namiastką życia w wyniku zastosowania rytuałów lub innej osobliwej magii, wystąpują w wielu postaciach i mają różnorakie zastosowania. Wiele z tych istot pełni rolę strażników, zaskakujących nieświadomych poszukiwaczy przygód nagłym atakiem. Inne stanowią dla wyjątkowo bogatych źródło rozrywki, prostą służbę stworzoną do wykonywania prymitywnych zadań i tym podobne.</p>",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Pięść"
                 },
                 "action->Construct Armor (Hardness 8)": {
-                    "name": "Construct Armor (Hardness 8)",
+                    "name": "Pancerz Konstruktu (Twardość 8)",
                     "description": "<p>Like normal objects, a mechanical laborer has Hardness. This Hardness reduces any damage it takes by 8. Once a mechanical laborer is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks. It loses its Hardness, and its Armor Class is reduced to 18.</p>"
                 }
             }
@@ -3264,7 +3264,7 @@
         "Memory Hole": {
             "name": "Memory Hole",
             "description": "<p>Anyone looking into the hole has memories sucked from their head.</p>",
-            "disable": "<p>@Check[deception|dc:29] (master) to feed the pit false thoughts that plug it, or @Check[occultism|dc:28] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4. level; counteract DC 27) to drain the pit's magic</p>",
+            "disable": "<p>@Check[deception|dc:29] (master) to feed the pit false thoughts that plug it, or @Check[occultism|dc:28] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (4. level; counteract DC 27) to drain the pit's magic</p>",
             "reset": "<p>The trap resets after 1 hour if it's not disabled.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
@@ -3277,7 +3277,7 @@
         "Mental Assault": {
             "name": "Mental Assault",
             "description": "<p>Magic sigils @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} in the grain of the wooden door trigger a magic trap that damages the mind of anyone attempting to pick the door's lock.</p>",
-            "disable": "<p>@Check[thievery|dc:48] (legendary) to deface the symbols or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10. level, counteract DC 48) to counteract the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:48] (legendary) to deface the symbols or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (10. level, counteract DC 48) to counteract the trap.</p>",
             "reset": "<p>The trap resets automatically if triggered and doesn't reset if disabled.</p>",
             "stealth": "<p>(legendarność)</p>",
             "items": {
@@ -3481,7 +3481,7 @@
         "Night's Breath Trap": {
             "name": "Night's Breath Trap",
             "description": "<p>The night giant mummy unfolds its arms and leans forward to exhale a blast of gray mist and shrieking spirits into the room.</p>",
-            "disable": "<p>@Check[thievery|dc:33] to \"blind\" the statue so that it cannot notice any who approach, @Check[occultism|dc:35] to redirect and expend the trap's occult energies harmlessly, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level, counteract DC 32) to counteract the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:33] to \"blind\" the statue so that it cannot notice any who approach, @Check[occultism|dc:35] to redirect and expend the trap's occult energies harmlessly, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (7. level, counteract DC 32) to counteract the trap.</p>",
             "reset": "<p>The trap resets during the following round, after which it can be triggered again.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
@@ -3494,7 +3494,7 @@
         "Nightmare Portal": {
             "name": "Nightmare Portal",
             "description": "<p>Horrific visions of a lumbering monstrosity whose face is nothing but a fanged mouth lurch out of the violet mist to attempt to eat the viewer alive.</p>",
-            "disable": "<p>@Check[thievery|dc:42|name:Focus the Portal's Energy|traits:action:disable-a-device] (master) to focus the portal's energies back in on itself to close it off, or @Check[occultism|dc:36|name:Invoke the Proper Chant] (master) to invoke the proper chant and make the proper hand gestures to untether the portal from the Dreamlands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 34) to counteract the portal for 1 minute and prevent Orgesh's influence from reaching through during that time</p>",
+            "disable": "<p>@Check[thievery|dc:42|name:Focus the Portal's Energy|traits:action:disable-a-device] (master) to focus the portal's energies back in on itself to close it off, or @Check[occultism|dc:36|name:Invoke the Proper Chant] (master) to invoke the proper chant and make the proper hand gestures to untether the portal from the Dreamlands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (8. level; counteract DC 34) to counteract the portal for 1 minute and prevent Orgesh's influence from reaching through during that time</p>",
             "reset": "<p>The nightmare portal resets 1 minute after it no longer detects targets.</p>",
             "routine": "<p>(2 actions) A vision of an immense lumbering figure with nothing but a circular mouth for a face lurches out of the portal. For each action, the nightmare portal casts @UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{Phantasmal Killer} (heightened to 8. level, @Check[will|dc:38|traits:death,emotion,fear,mental]), targeting a different creature both times. It can select targets in area <strong>E11</strong>, the secret alcove to the northeast, or up to 10 feet east from the door (although a closed door blocks it), choosing the closest two targets each round. The nightmare portal loses 1 action if it's broken and can thus only cast <em>phantasmal killer</em> once per round.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
@@ -4265,7 +4265,7 @@
                 "consumable->Wand of Cone of Cold (Level 5)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\nWand of Cone of Cold (Level 5)",
                     "consumableSpellName": "Cone of Cold",
-                    "consumableSpellDescription": "<p>Icy cold rushes forth from your hands. You deal 12k6 cold damage to creatures in the area.</p><hr /><p><strong>Wywyższenie (+1)/strong> The damage increases by 2k6.</p>",
+                    "consumableSpellDescription": "<p>Icy cold rushes forth from your hands. You deal 12k6 cold damage to creatures in the area.</p><hr /><p><strong>Wywyższenie (+1)</strong> The damage increases by 2k6.</p>",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p><p><strong>Aktywacja</strong> Cast a Spell</p><p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p><hr /><p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p><p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "backpack->Bag of Holding (Type IV)": {
@@ -4754,7 +4754,7 @@
                 },
                 "action->Dispelling Roar": {
                     "name": "Dispelling Roar",
-                    "description": "<p>The leydroth unleashes a bestial roar that reverberates within a @Template[emanation|distance:30]. It rolls an Intimidation check and compares the result to the Will DC of each creature in the area, with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}.</p><p>It also uses this result to attempt to counteract each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}.</p><p>The leydroth can't use Dispelling Roar again for [[/br 1d4 #Recharge Dispelling Roar]]{1k4 rounds}.</p>"
+                    "description": "<p>The leydroth unleashes a bestial roar that reverberates within a @Template[emanation|distance:30]. It rolls an Intimidation check and compares the result to the Will DC of each creature in the area, with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}.</p><p>It also uses this result to attempt to counteract each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii}.</p><p>The leydroth can't use Dispelling Roar again for [[/br 1d4 #Recharge Dispelling Roar]]{1k4 rounds}.</p>"
                 },
                 "action->Dispelling Strike": {
                     "name": "Dispelling Strike",
@@ -4820,9 +4820,9 @@
         },
         "Shadowbound Monk Statue": {
             "name": "Shadowbound Monk Statue",
-            "acDetails": "(24 when broken); construct armor",
+            "acDetails": "(24 gdy uszkodzony); pancerz konstruktu",
             "blurb": "Variant elite giant animated statue",
-            "publicNotes": "<p>As with any humanoid animated statues of Medium size, giant animated statues are used to guard locations of importance, but their increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Animated objects of this strength and size are ideal for tasks and responsibilities usually performed by golems, and more powerful animated objects are thus all but unheard of.</p><hr /><p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "publicNotes": "<p>As with any humanoid animated statues of Medium size, giant animated statues are used to guard locations of importance, but their increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Animated objects of this strength and size are ideal for tasks and responsibilities usually performed by golems, and more powerful animated objects are thus all but unheard of.</p><hr /><p>Ożywione przedmioty, obdarzone namiastką życia w wyniku zastosowania rytuałów lub innej osobliwej magii, wystąpują w wielu postaciach i mają różnorakie zastosowania. Wiele z tych istot pełni rolę strażników, zaskakujących nieświadomych poszukiwaczy przygód nagłym atakiem. Inne stanowią dla wyjątkowo bogatych źródło rozrywki, prostą służbę stworzoną do wykonywania prymitywnych zadań i tym podobne.</p>",
             "items": {
                 "strike-melee->Stone Fist": {
                     "name": "Stone Fist"
@@ -4831,8 +4831,8 @@
                     "name": "Darkness Mote"
                 },
                 "action->Construct Armor (Hardness 10)": {
-                    "name": "Construct Armor (Hardness 10)",
-                    "description": "<p>Like normal objects, the statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once the statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 24.</p>"
+                    "name": "Pancerz Konstruktu (Twardość 10)",
+                    "description": "<p>statue posiada Twartość, tak jak zwykłe obiekty. Twardość ta zmniejsza wszelkie otrzymane przez niego obrażenia o wartość równą tej Twardości. Kiedy Punkty Żywotności statue zostaną zmniejszone do wartości poniżej połowy ich maksimum, lub natychmiastowo przy odniesieniu obrażeń od trafienia krytycznego, jego pancerz konstruktu uszkadza się, a jego klasa pancerza jest zmniejszana do 24.</p>"
                 },
                 "action->Clinging Gloom": {
                     "name": "Clinging Gloom",
@@ -4916,7 +4916,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]\nCalm Emotions"
                 },
                 "spell->Invisibility (At Will, Self Only)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will, Self Only)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Do Woli, Tylko na Siebie)"
                 },
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
@@ -5301,7 +5301,7 @@
         "Soul-Drinking Spirit Collectors": {
             "name": "Soul-Drinking Spirit Collectors",
             "description": "<p>Four spirit collectors drain the souls from nearby creatures.</p>",
-            "disable": "<p>@Check[religion|dc:47] (legendary) to sever the connection between Urgathoa and each spirit collector, @Check[thievery|dc:50] (legendary) to deactivate each spirit collector, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9. level; counteract DC 50) to counteract each spirit collector</p>",
+            "disable": "<p>@Check[religion|dc:47] (legendary) to sever the connection between Urgathoa and each spirit collector, @Check[thievery|dc:50] (legendary) to deactivate each spirit collector, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (9. level; counteract DC 50) to counteract each spirit collector</p>",
             "routine": "<p>(4 actions) This trap loses 1 action each turn for each disabled spirit collector. Each spirit collector uses 1 action to drain the souls of all creatures within 30 feet, dealing @Damage[(4d10+20)[force]] damage (@Check[fortitude|dc:46|basic]). On a failed save, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} or increases their drained and stupefied conditions by 1 (by 2 on a critical failure).</p>",
             "stealth": "<p>(legendarność)</p>",
             "items": {
@@ -5314,7 +5314,7 @@
         "Spiraling Comets": {
             "name": "Spiraling Comets",
             "description": "<p>Three blue comets orbiting the room turn red and attack when intruders enter.</p>",
-            "disable": "<p>@Check[religion|dc:42] (master) to command each comet to disperse with Pharasmin prayers, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8. level; counteract DC 42) to counteract each comet</p>",
+            "disable": "<p>@Check[religion|dc:42] (master) to command each comet to disperse with Pharasmin prayers, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (8. level; counteract DC 42) to counteract each comet</p>",
             "hpDetails": "Per comet",
             "reset": "<p>The trap resets after 1 hour.</p>",
             "routine": "<p>(3 action) The trap loses 1 action each turn for each comet disabled, counteracted, or destroyed. Each comet uses 1 action to attack the nearest intruder with a comet Strike.</p>",
@@ -5394,7 +5394,7 @@
         "Summoning Rune (Cockatrice)": {
             "name": "Summoning Rune (Cockatrice)",
             "description": "<p>A cloud of invisible magical sensors floats in the square above an invisible floor rune.</p>",
-            "disable": "<p>@Check[acrobatics|dc:18] to approach without triggering the trap followed by @Check[thievery|dc:20] (trained) to disrupt the rune's summoning effect; alternatively, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2. level; counteract DC 17) to counteract the rune</p>",
+            "disable": "<p>@Check[acrobatics|dc:18] to approach without triggering the trap followed by @Check[thievery|dc:20] (trained) to disrupt the rune's summoning effect; alternatively, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (2. level; counteract DC 17) to counteract the rune</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "tokenName": "Summoning Rune",
@@ -5559,7 +5559,7 @@
         "The Putrid Rise": {
             "name": "The Putrid Rise",
             "description": "<p>The stink of bile suddenly grows as the myriad mouths carved into the walls begin to vomit forth a deluge of acidic slurry.</p>",
-            "disable": "<p>@Check[thievery|dc:33] (master) to disrupt the trap's magical network of sensors and effectively \"blind\" it to targets to react to, @Check[religion|dc:38] (master) to recognize the carvings and recall one of the mantras needed to pass safely, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 32) to counteract the trap.</p>",
+            "disable": "<p>@Check[thievery|dc:33] (master) to disrupt the trap's magical network of sensors and effectively \"blind\" it to targets to react to, @Check[religion|dc:38] (master) to recognize the carvings and recall one of the mantras needed to pass safely, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (7. level; counteract DC 32) to counteract the trap.</p>",
             "reset": "<p>The trap deactivates 1 round after no targets can be sensed, but resets immediately.</p>",
             "routine": "<p>On its turn, the trap Vomits as its action. As long as the Putrid Rise is active, the stairs in area <strong>D3</strong> are difficult terrain.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
@@ -5729,7 +5729,7 @@
         "Unfinished Portalrender": {
             "name": "Unfinished Portalrender",
             "description": "<p>A sphere of concentrated agony harvested from a qlippoth begins pulsing with violet light as it blasts the room with otherworldly agony.</p>",
-            "disable": "<p>@Check[thievery|dc:37] (master) to dismantle the housing and refocus the agony inward so it consumes itself harmlessly, @Check[arcana|dc:33] or @Check[occultism|dc:33] (master) to vent the agony in a controlled way that causes the portalrender to become inert after 1 minute (during which it can still be triggered normally), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7. level; counteract DC 31)</p>",
+            "disable": "<p>@Check[thievery|dc:37] (master) to dismantle the housing and refocus the agony inward so it consumes itself harmlessly, @Check[arcana|dc:33] or @Check[occultism|dc:33] (master) to vent the agony in a controlled way that causes the portalrender to become inert after 1 minute (during which it can still be triggered normally), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (7. level; counteract DC 31)</p>",
             "routine": "<p>The unfinished portalrender continues to flood area <strong>B4</strong> with agony, and everyone in the room must attempt a @Check[will|dc:33] save against its Agonizing Pulse. At the end of its turn, the unfinished portalrender attempts a @Check[flat|dc:6]. On a failure, its stores of agony deplete and it deactivates, causing the central orb of agony to fade away permanently.</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {

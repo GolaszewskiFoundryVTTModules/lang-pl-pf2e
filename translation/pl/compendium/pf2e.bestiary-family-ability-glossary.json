@@ -313,7 +313,7 @@
         },
         "(Ghoul) Consume Flesh": {
             "name": "(Ghoul) Pożarcie Ciała",
-            "description": "<p><strong>Wymagania</strong> Ghoul jest w sąsiedztwie zwłok istoty, która umarła w przeciągu ostatniej godziny.</p><hr /><p><strong>Efekt</strong> Ghoul pożera fragment zwłok i odzyskuje @Damage[1d6[healing]] Punktów Żywotności plus 1k6 za każde dwa posiadane poziomy.</p><p>Poszczególnych zwłok może użyć do odzyskania Punktów Żywotności tylko raz.</p>"
+            "description": "<p><strong>Wymagania</strong> Ghoul jest w sąsiedztwie zwłok istoty, która umarła w przeciągu ostatniej godziny.</p><hr /><p><strong>Efekt</strong> Ghoul pożera fragment zwłok i odzyskuje @Damage[(1+(max(0,floor(@actor.level/2))))d6[healing]] Punktów Żywotności.</p><p>Poszczególnych zwłok może użyć do odzyskania Punktów Żywotności tylko raz.</p>"
         },
         "(Ghoul) Ghoul Fever": {
             "name": "(Ghoul) Ghoul Fever",

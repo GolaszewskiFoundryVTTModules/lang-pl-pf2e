@@ -60,7 +60,7 @@ en_to_pl_file_pairs = [
     ("compendium/macros", "compendium/pf2e.pf2e-macros"),
     ("compendium/malevolence-bestiary", "compendium/pf2e.malevolence-bestiary"),
     ("compendium/menace-under-otari-bestiary", "compendium/pf2e.menace-under-otari-bestiary"),
-    ("compendium/mwangi-expanse-bestiary", "compendium/pf2e.mwangi-expanse-bestiary"),
+    ("compendium/mwangi-expanse-bestiary", "compendium/pf2e.lost-omens-mwangi-expanse-bestiary"),
     ("compendium/night-of-the-gray-death-bestiary", "compendium/pf2e.night-of-the-gray-death-bestiary"),
     ("compendium/one-shot-bestiary", "compendium/pf2e.one-shot-bestiary"),
     ("compendium/other-effects", "compendium/pf2e.other-effects"),

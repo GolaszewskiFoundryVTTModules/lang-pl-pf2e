@@ -15,7 +15,7 @@ en_to_pl_file_pairs = [
     ("re-en", "re-pl"),
     ("dictionary", "dictionary"),
     ("kingmaker-en", "kingmaker-pl"),
-    ("compendium/_pack-folders", "compendium/pf2e._pack-folders"),
+    ("compendium/_packs-folders", "compendium/pf2e._packs-folders"),
     ("compendium/abomination-vaults-bestiary", "compendium/pf2e.abomination-vaults-bestiary"),
     ("compendium/action-macros", "compendium/pf2e.action-macros"),
     ("compendium/actions", "compendium/pf2e.actionspf2e"),

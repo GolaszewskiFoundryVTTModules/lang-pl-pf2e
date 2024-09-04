@@ -74,6 +74,15 @@ def main():
         run_js_script("src/pack-extractor/pack-extractor.js")
 
     for en_old, en, pl in file_sets:
+        # Check if the Polish file exists
+        if not os.path.exists(pl):
+            if verbose:
+                print(f"File at {pl} does not exist. Creating a copy from {en}.")
+            # Copy the English file to the Polish path
+            shutil.copy(en, pl)
+            if verbose:
+                print(f"File copied from {en} to {pl}.")
+
         updater = LocalizationUpdater(en_old, en, pl, verbose)
         updater.process(preform_regex_translate)
     

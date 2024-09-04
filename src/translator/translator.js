@@ -124,6 +124,9 @@ class Translator {
 
     // Merge an array of objects using a provided field mapping
     dynamicArrayMerge(sourceArray, translations, mapping) {
+        if (!translations) {
+            return sourceArray;
+        }
         // Loop through array, merge available objects
         const mappedObjectArray = [];
         for (let i = 0; i < sourceArray.length; i++) {
@@ -477,7 +480,7 @@ class Translator {
             return value;
         }
         // Check, if image source uses default image
-        if (!(imageSource.includes("systems/pf2e/icons") || imageSource.includes("icons/svg/mystery-man"))) {
+        if (!(imageSource.includes("systems/pf2e/") || imageSource.includes("icons/svg/mystery-man"))) {
             return value;
         }
         const artworkList = this.artworkLists[translatedCompendium.metadata.name];

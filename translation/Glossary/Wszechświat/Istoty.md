@@ -8,3 +8,4 @@ pixie - skrzat
 
 warpwave - pulsprzemiana?
 
+Witchmakret - wiedźmi targ

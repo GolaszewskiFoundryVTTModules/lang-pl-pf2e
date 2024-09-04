@@ -53,7 +53,6 @@ replacement_patterns = [
     (r'\{Quickened(| \d+)\}', r'{Przyspieszony\1}'),
     (r'\{Slowed(| \d+)\}', r'{Spowolniony\1}'),
     # Initial Variants
-
     (r'\(Minor\)', r'(Drobny)'),
     (r'\(Lesser\)', r'(Mniejszy)'),
     (r'\(Moderate\)', r'(Umiarkowany)'),
@@ -143,6 +142,8 @@ replacement_patterns = [
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2komenda\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)envision([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2wyobrażenie\3</p>'),
+    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)manipulate([^<]*)</p>',
+        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2manipulacja\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)concentrate([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2koncentracja\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
@@ -178,4 +179,6 @@ replacement_patterns = [
         r'Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.'),
     # Lore and setting
     (r'(\d+) AR([\W])', r'\1 RA\2'),
+    # Utility text
+    (r'(>|\()Note(<|\))', r'\1Przypis\2'),
 ]

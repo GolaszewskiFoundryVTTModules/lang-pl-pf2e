@@ -11,3 +11,6 @@ Melixie - Medochlik
 Draxie - Smoklik
 Grik - Śwircz
 Nyktera - Nocnera
+
+Gnomy:
+Bleaching - Płowienie

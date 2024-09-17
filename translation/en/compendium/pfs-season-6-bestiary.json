@@ -113,6 +113,18 @@
         }
       }
     },
+    "Apple Turnover": {
+      "name": "Apple Turnover",
+      "description": "<p>A fruit merchant's cart has been poorly secured. The slightest careless bump on the way past is enough to knock it over and topple the fruit it carries all over the street.</p>",
+      "disable": "<p>If all the PCs succeed on a Perception check against the Stealth DC to spot the hazard, they're able to pass by that cart without triggering it. There's not enough time for PCs who succeed on this check to warn PCs who fail.</p>",
+      "stealth": "<ol>\n<li>\n<p>(trained)</p>\n</li>\n</ol>",
+      "items": {
+        "action->Topple": {
+          "name": "Topple",
+          "description": "<p><strong>Trigger</strong> A PC passes by the cart without succeeding on the Perception check against its Stealth DC</p><hr /><p><strong>Effect</strong> The cart tips, causing an avalanche of apples that pour over the PCs and onto the street. PCs who failed the Perception check against the hazard's Stealth DC are caught in the hazard must make their choice of a Reflex or Fortitude save, DC 19. On a successful save, they dodge the worst of the applefall and come away unscathed; on a failed save, they're battered by the falling apples and walk away @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for the rest of the adventure.</p>\n<p>Triggering this hazard also accrues 1 AP for the party.</p>"
+        }
+      }
+    },
     "Averill Quint (1-2)": {
       "name": "Averill Quint (1-2)",
       "hpDetails": "void healing",
@@ -277,6 +289,31 @@
         }
       }
     },
+    "Big Carnival Bear": {
+      "name": "Big Carnival Bear",
+      "blurb": "Variant grizzly bear",
+      "publicNotes": "<p>This large and powerful omnivore inhabits forested hills. While it typically sustains itself on nuts, berries, fish, and small mammals, it's fiercely territorial and will chase off or kill any creature it views as competition. Grizzly bears are especially temperamental when their young are nearby. In combat, a grizzly bear often attempts to grab and maul its foe with surprising ferocity. It continues its assault until its foe seems like it is no longer a threat, though if the bear is hungry, it will not hesitate to feed.</p>\n<hr />\n<p>Bears are ferocious predators typically found in cold or temperate woodlands and hills. Many species of bear exist in addition to the two presented below, such as the smaller black bear or the arctic-dwelling polar bear.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Somewhat Less Trained": {
+          "name": "Somewhat Less Trained",
+          "description": "<p>The big carnival bear isn't well trained yet, though it might occasionally respond to commands. Whatever its current attitude, use the following degrees of success instead of the usual check results for attempts to @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} against the big carnival bear.</p><hr /><p><strong>Critical Success</strong> The bear does as commanded on its next turn.</p>\n<p><strong>Success</strong> The bear acts normally (as determined by the GM) on its next turn.</p>\n<p><strong>Failure</strong> The bear attacks the creature attempting to command it on its next turn.</p>\n<p><strong>Critical Failure</strong> The bear attacks the creature attempting to command it on its next turn, and becomes immune to Command an Animal for 1 minute.</p>"
+        },
+        "action->Not So Gentle Mauler": {
+          "name": "Not So Gentle Mauler",
+          "description": "<p>The big carnival bear gains a +2 circumstance bonus to damage rolls against creatures it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. After damaging a creature it has grabbed, it automatically releases it from its grip, but also knocks the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} unless the target succeeds at a @Check[fortitude|dc:20] save.</p>"
+        },
+        "action->Rush": {
+          "name": "Rush",
+          "description": "<p>The big carnival bear Strides and makes a Strike at the end of that movement. During the Stride, the bear gains a +10-foot circumstance bonus to its Speed.</p>"
+        }
+      }
+    },
     "Blood Elegecide (Doom Demon)": {
       "name": "Blood Elegecide (Doom Demon)",
       "languages": "Telepathy 100 feet",
@@ -305,6 +342,208 @@
         "action->Dorsal Lash": {
           "name": "Dorsal Lash",
           "description": "<p>The elegecide lashes out with its trailing dorsal fins, looping them around a target within 15 feet. It sends a burst of telepathic information about all the possible ways the target can be injured in the next minute. The target takes @Damage[(5d4)[mental]] damage and must attempt a @Check[reflex|dc:22|traits:damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the elegecide.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the elegecide.</p>"
+        }
+      }
+    },
+    "Blood-Awakened Tree": {
+      "name": "Blood-Awakened Tree",
+      "languages": "(can't speak any language)",
+      "publicNotes": "<p>Arboreal regents and other wielders of powerful primal magic grant temporary sentience to trees in order to protect the forest. Invested with a workable set of instincts and the ability to mobilize and attack, these awakened trees follow the commands of their master and fight to protect their home. The statistics below work just as well for foliage that has become animate via other methods, such as a mystical influence from another dimension, a capricious fey spirit, or the like.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk—even elves are fugacious in the eyes of arboreals—and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build—a trait that serves vengeful members of their kind well.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in forests"
+        }
+      },
+      "items": {
+        "strike-melee->Branch": {
+          "name": "Branch"
+        },
+        "strike-melee->Root": {
+          "name": "Root"
+        },
+        "action->Drink Blood": {
+          "name": "Drink Blood",
+          "description": "<p><strong>Requirements</strong> The blood-awakened tree's last action was a successful root Strike against a target currently taking persistent bleed damage.</p><hr /><p><strong>Effect</strong> The tree drives its roots into the target's open wounds and drinks their blood. The roots Strike deals piercing damage with an additional 2d6 piercing, and the tree recovers hit points equal to half the additional damage dealt.</p>"
+        }
+      }
+    },
+    "Blood-Soaked Flytrap": {
+      "name": "Blood-Soaked Flytrap",
+      "blurb": "Variant snapping flytrap",
+      "publicNotes": "<p>Snapping flytraps typically have two sets of tooth-edged leaves, each measuring 3 feet wide, at the end of 10-foot-long stalks.</p>\n<hr />\n<p>Flytraps eagerly feed on humanoids, monstrous insects, and larger prey.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "in undergrowth"
+        }
+      },
+      "items": {
+        "strike-melee->Leaf": {
+          "name": "Leaf"
+        },
+        "action->Tremorsense (Imprecise) 30 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 30 feet"
+        },
+        "action->Quick Capture": {
+          "name": "Quick Capture",
+          "description": "<p><strong>Trigger</strong> A creature hits or touches the flytrap.</p>\n<hr />\n<p><strong>Effect</strong> The flytrap makes a leaf Strike against the triggering creature. If it hits, the creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in that leaf.</p>"
+        },
+        "action->Bloody Focused Assault": {
+          "name": "Bloody Focused Assault",
+          "description": "<p>The flytrap attacks a single target with both its two leaves, the fury of the red godsrain driving it to rip its prey to shreds. The flytrap makes one leaf Strike. On a success, it deals the damage from two leaf strikes plus 1d8 persistent bleed damage. On a failure, the flytrap deals the damage from one leaf Strike and no persistent damage. It deals no damage on a critical failure. No matter the result, it cannot use Improved Grab on any of these Strikes. This counts as 2 attacks for purposes of the flytrap's multiple attack penalty.</p>"
+        },
+        "action->Hungry Flurry": {
+          "name": "Hungry Flurry",
+          "description": "<p>The flytrap makes two leaf Strikes at a -2 penalty, each against a different target. These attacks count toward the flytrap's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all its attacks.</p>"
+        },
+        "action->Swallow Whole": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium, @Damage[(1d8+1)[bludgeoning],1d6[acid]], Rupture 5</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+        }
+      }
+    },
+    "Blooddrunk Wild Dog": {
+      "name": "Blooddrunk Wild Dog",
+      "senses": "bloodscent",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Bloodscent": {
+          "name": "Bloodscent",
+          "description": "<p>When Searching or Seeking for creatures who have taken piercing or slashing damage in the last 24 hours, the wild dog's sense of smell is precise.</p>"
+        },
+        "action->Gnash": {
+          "name": "Gnash",
+          "description": "<p><strong>Requirements</strong> The wild dog's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The wild dog gnashes its teeth to deal a particularly vicious wound; the Strike's target takes @Damage[2d6[persistent,bleed]] damage.</p>"
+        },
+        "action->Pack Attack": {
+          "name": "Pack Attack",
+          "description": "<p>The wild dog's Strikes deal 1d8 extra damage to creatures within reach of at least two of the wild dog's allies.</p>"
+        }
+      }
+    },
+    "Bloodsick Wild Dog": {
+      "name": "Bloodsick Wild Dog",
+      "senses": "bloodscent",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Bloodscent": {
+          "name": "Bloodscent",
+          "description": "<p>When Searching or Seeking for creatures who have taken piercing or slashing damage in the last 24 hours, the wild dog's sense of smell is precise.</p>"
+        },
+        "action->Gnash": {
+          "name": "Gnash",
+          "description": "<p><strong>Requirements</strong> The wild dog's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The wild dog gnashes its teeth to deal a particularly vicious wound; the Strike's target takes @Damage[1d6[persistent,bleed]] damage.</p>"
+        },
+        "action->Pack Attack": {
+          "name": "Pack Attack",
+          "description": "<p>The wild dog's Strikes deal 1d6 extra damage to creatures within reach of at least two of the wild dog's allies.</p>"
+        }
+      }
+    },
+    "Bloodthirsty Apparitions": {
+      "name": "Bloodthirsty Apparitions",
+      "description": "<p>Deceased Puddles residents lash out at living creatures.</p>",
+      "disable": "<p>@Check[religion|dc:15] (trained) three times to banish the apparitions with prayers, or @Check[occultism|dc:18] (trained) once to commune with the spirits and convince them to pass on</p>",
+      "reset": "<p>The haunt re-forms after 1 hour. The haunt becomes disabled and doesn't reform 1 minute after the Puddles phantom is slain.</p>",
+      "routine": "<p>(1 action) The haunt's screams send biting supernatural rain around the area, dealing @Damage[(2d6+2)[piercing]] damage to all living creatures within 90 feet (@Check[reflex|dc:18|basic] save). Creatures who fail the save are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a red haze for 1 round.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Bloodthirsty Wails": {
+          "name": "Bloodthirsty Wails",
+          "description": "<p><strong>Trigger</strong> A living creature comes within 30 feet of the haunt</p><hr /><p><strong>Effect</strong> The haunt wails, cursing the living for allowing the Puddles residents to wallow in misery while Absalom's elites prosper. Each living creature within 90 feet must attempt a @Check[will|dc:21] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is temporarily immune to this bloodthirsty apparition's routine for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature shares the apparition's uncontrolled rage against the living. It makes a Strike against itself and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+        }
+      }
+    },
+    "Bloodthirsty Apparitions (5-6)": {
+      "name": "Bloodthirsty Apparitions (5-6)",
+      "description": "<p>Deceased Puddles residents lash out at living creatures.</p>",
+      "disable": "<p>@Check[religion|dc:18] (trained) three times to banish the apparitions with prayers, or @Check[occultism|dc:22] (trained) once to commune with the spirits and convince them to pass on</p>",
+      "reset": "<p>The haunt re-forms after 1 hour. The haunt becomes disabled and doesn't reform 1 minute after the Puddles phantom is slain.</p>",
+      "routine": "<p>(1 action) The haunt's screams send biting supernatural rain around the area, dealing @Damage[4d6[piercing]] damage to all living creatures within 90 feet (@Check[reflex|dc:21|basic] save). Creatures who fail the save are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a red haze for 1 round (or 1 minute on a critical failure).</p>",
+      "stealth": "<p>(trained)</p>",
+      "tokenName": "Bloodthirsty Apparitions",
+      "items": {
+        "action->Bloodthirsty Wails": {
+          "name": "Bloodthirsty Wails",
+          "description": "<p><strong>Trigger</strong> A living creature comes within 30 feet of the haunt</p><hr /><p><strong>Effect</strong> The haunt wails, cursing the living for allowing the Puddles residents to wallow in misery while Absalom's elites prosper. Each living creature within 90 feet must attempt a @Check[will|dc:21] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is temporarily immune to this bloodthirsty apparition's routine for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature shares the apparition's uncontrolled rage against the living. It makes a Strike against itself and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+        }
+      }
+    },
+    "Captain Pitros Nanaeil": {
+      "name": "Captain Pitros Nanaeil",
+      "saveDetails": "+2 on all saves against divine magic",
+      "items": {
+        "weapon->Bloodletting Kukri": {
+          "name": "Bloodletting Kukri",
+          "description": "<p>This <em>+1 striking kukri</em> has a crimson blade that shimmers eerily in bright light. On a critical hit, the kukri deals 1d8 persistent bleed damage. If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points for 1 minute.</p>"
+        },
+        "weapon->Scimitar": {
+          "name": "Scimitar",
+          "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+        },
+        "armor->Leather Armor": {
+          "name": "Leather Armor",
+          "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+        },
+        "strike-melee->Bloodletting Kukri": {
+          "name": "Bloodletting Kukri",
+          "description": "<p>Plus 1d8 persistent bleed on crit. If the target of the critical hit didn't already have persistent bleed damage, Nanaeil also gains 1d8 temporary Hit Points for 1 minute.</p>"
+        },
+        "strike-melee->Scimitar": {
+          "name": "Scimitar"
+        },
+        "action->+2 on All Saves Against Divine Magic": {
+          "name": "+2 on All Saves Against Divine Magic"
+        },
+        "action->Aura of Command": {
+          "name": "Aura of Command",
+          "description": "<p>30 feet. As captain of the Pure Legion, Nanaeil bolsters the lower-level legionnaires under his command, granting them a +1 status bonus to their attack rolls and +2 status bonus to their will saves.</p>"
+        },
+        "action->Dual-Weapon Warrior": {
+          "name": "Dual-Weapon Warrior",
+          "description": "<p>Pitros Nanaeil is highly trained in the art of wielding two weapons at once, preferring to wield the <em>+1 striking scimitar</em> in his main hand and the <em>bloodletting kukri</em> in his off-hand.</p>"
+        },
+        "action->May No Mortal Be Beholden": {
+          "name": "May No Mortal Be Beholden",
+          "description": "<p>When Captain Nanaeil rolls a success on a save against an effect or spell from the divine tradition, they get a critical success instead.</p>"
+        },
+        "action->Retributive Strike": {
+          "name": "Retributive Strike"
+        },
+        "action->Twin Riposte": {
+          "name": "Twin Riposte",
+          "description": "<p><strong>Trigger</strong> A creature within your reach critically fails to Strike you.</p><hr /><p>A clever parry with one weapon leaves your opponent open to an attack with the other weapon. Make a melee Strike or @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} action against the triggering opponent.</p>"
+        },
+        "action->Double Slice": {
+          "name": "Double Slice",
+          "description": "<p>Nanaeil lashes out at his foe with both weapons. He makes two Strikes, one with each melee weapon, each using his current multiple attack penalty. Both Strikes must have the same target. If both attacks hit, combine their damage, then add any other applicable effects from both weapons. Precision damage is added only once. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating his multiple attack penalty.</p>"
+        },
+        "action->Smite Divine": {
+          "name": "Smite Divine",
+          "description": "<p>The Pure Legion's scimitars have been enchanted specifically to take down divine spellcasters. Melee Strikes against clerics, champions, and other creatures capable of casting divine spells do an additional 2d6 mental damage.</p>"
+        }
+      }
+    },
+    "Carnival Bear": {
+      "name": "Carnival Bear",
+      "blurb": "Variant grizzly bear",
+      "publicNotes": "<p>This large and powerful omnivore inhabits forested hills. While it typically sustains itself on nuts, berries, fish, and small mammals, it's fiercely territorial and will chase off or kill any creature it views as competition. Grizzly bears are especially temperamental when their young are nearby. In combat, a grizzly bear often attempts to grab and maul its foe with surprising ferocity. It continues its assault until its foe seems like it is no longer a threat, though if the bear is hungry, it will not hesitate to feed.</p>\n<hr />\n<p>Bears are ferocious predators typically found in cold or temperate woodlands and hills. Many species of bear exist in addition to the two presented below, such as the smaller black bear or the arctic-dwelling polar bear.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Somewhat Trained": {
+          "name": "Somewhat Trained",
+          "description": "<p>The carnival bear might respond to commands even while hostile or unfriendly. If it's hostile or unfriendly, use the following degrees of success instead of the usual check results for attempts to @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} against the bear.</p><hr /><p><strong>Critical Success</strong> The bear does as commanded on its next turn.</p>\n<p><strong>Success</strong> The bear hesitates and does nothing on its next turn.</p>\n<p><strong>Failure</strong> The bear attacks the creature attempting to command it on its next turn.</p>\n<p><strong>Critical Failure</strong> The bear attacks the creature attempting to command it on its next turn, and becomes immune to Command an Animal for 1 minute.</p>"
+        },
+        "action->Gentle Mauler": {
+          "name": "Gentle Mauler",
+          "description": "<p>The carnival bear gains +1 circumstance bonus to damage rolls against creatures it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. After damaging a creature it has grabbed, it automatically releases the creature from its grip.</p>"
         }
       }
     },
@@ -1359,6 +1598,191 @@
         }
       }
     },
+    "Puddles Ghoul": {
+      "name": "Puddles Ghoul",
+      "blurb": "Variant ghoul",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+      "senses": "darkvision",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Stench": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.PqGX4Dgy9siZJitH]\n<p>10 feet, @Check[fortitude|dc:14]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+        },
+        "action->Slurp Blood": {
+          "name": "Slurp Blood",
+          "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the Puddles ghoul's reach</p><hr /><p><strong>Effect</strong> The ghoul bites the creature, slurping its blood. This requires an Athletics check against the target's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim takes @Damage[(1d6+1)[piercing]] damage and the Puddles ghoul regains @Damage[3[healing]] Hit Points, gaining any excess HP as temporary HP.</p>"
+        },
+        "action->Swift Movement": {
+          "name": "Swift Movement",
+          "description": "<p>The Puddles ghoul jumps up to half its Speed or swims up to half its swim Speed. This movement doesn't trigger reactions.</p>"
+        }
+      }
+    },
+    "Puddles Phantom": {
+      "name": "Puddles Phantom",
+      "blurb": "Variant phantom knight",
+      "publicNotes": "<p>Cavaliers and knights who died for their cause make for particularly strongwilled phantoms. Though their motives vary, these phantoms often seek to continue their lifelong missions even in their purgatorial states, and their strong forces of will make them formidable fighters in spite of their incorporeality. A phantom knight might strive to find living followers of their church or order, or seek out other mortals they knew in life as a way of staying grounded and avoiding the corruption of undeath.</p>\n<hr />\n<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest—Heaven, Hell, Abaddon, and so forth—where it becomes a shade.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like daemons or hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath—at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves—one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must find a way back into the River of Souls. Such a quest is no easy feat, however—the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
+      "saveDetails": "-1 status to all saves vs. death effects",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "name": "Blood Vendetta",
+          "description": "<p><strong>Requirements</strong> You can bleed.</p>\n<p><strong>Trigger</strong> A creature deals piercing, slashing, or persistent bleed damage to you.</p>\n<hr />\n<p>You curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half the persistent bleed damage.</p>\n<p><strong>Failure</strong> The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. @UUID[Compendium.pf2e.spell-effects.Item.buXx8Azr4BYWPtFg]{Spell Effect: Blood Vendetta (Failure)}</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 2d6.</p>",
+          "requirements": "You can bleed",
+          "target": "The triggering creature"
+        },
+        "spell->Telekinetic Maneuver": {
+          "name": "Telekinetic Maneuver",
+          "description": "<p>With a rush of telekinetic power, you move a foe or something they carry. You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the target using a spell attack roll instead of an Athletics check.</p>",
+          "target": "1 creature"
+        },
+        "spell->Prestidigitation": {
+          "name": "Prestidigitation",
+          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>",
+          "target": "1 object (cook, lift, or tidy only)"
+        },
+        "spell->Telekinetic Projectile": {
+          "name": "Telekinetic Projectile",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "target": "1 creature"
+        },
+        "spell->Void Warp": {
+          "name": "Void Warp",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "target": "1 living creature"
+        },
+        "strike-melee->Phantom Dagger": {
+          "name": "Phantom Dagger"
+        },
+        "strike-ranged->Phantom Dagger": {
+          "name": "Phantom Dagger"
+        },
+        "action->Walk the Ethereal Line": {
+          "name": "Walk the Ethereal Line",
+          "description": "<p>The phantom walks the thin line between the Ethereal Plane and the Universe in order to exist on both planes simultaneously.</p>\n<p>They can shift back to solely the Ethereal Plane by using this ability again.</p>"
+        },
+        "action->-1 Status to All Saves vs. Death Effects": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-1 Status to All Saves vs. Death Effects"
+        },
+        "action->Susceptible to Death": {
+          "name": "Susceptible to Death",
+          "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute}) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>"
+        },
+        "action->Phantom Daggers": {
+          "name": "Phantom Daggers",
+          "description": "<p>Each time they make a phantom dagger Strike, a Puddles phantom can choose to deal spirit damage instead of the normal physical damage type. Whichever damage type they choose, the phantom dagger vanishes and a new phantom dagger immediately appears in the phantom's hand.</p>"
+        }
+      }
+    },
+    "Puddles Phantom (5-6)": {
+      "name": "Puddles Phantom (5-6)",
+      "blurb": "Variant phantom knight",
+      "publicNotes": "<p>Cavaliers and knights who died for their cause make for particularly strongwilled phantoms. Though their motives vary, these phantoms often seek to continue their lifelong missions even in their purgatorial states, and their strong forces of will make them formidable fighters in spite of their incorporeality. A phantom knight might strive to find living followers of their church or order, or seek out other mortals they knew in life as a way of staying grounded and avoiding the corruption of undeath.</p>\n<hr />\n<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest—Heaven, Hell, Abaddon, and so forth—where it becomes a shade.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like daemons or hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath—at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves—one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must find a way back into the River of Souls. Such a quest is no easy feat, however—the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
+      "saveDetails": "-1 status to all saves vs. death effects",
+      "senses": "darkvision",
+      "tokenName": "Puddles Phantom",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "spell->Blood Vendetta": {
+          "name": "Blood Vendetta",
+          "description": "<p><strong>Requirements</strong> You can bleed.</p>\n<p><strong>Trigger</strong> A creature deals piercing, slashing, or persistent bleed damage to you.</p>\n<hr />\n<p>You curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half the persistent bleed damage.</p>\n<p><strong>Failure</strong> The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. @UUID[Compendium.pf2e.spell-effects.Item.buXx8Azr4BYWPtFg]{Spell Effect: Blood Vendetta (Failure)}</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 2d6.</p>",
+          "requirements": "You can bleed",
+          "target": "The triggering creature"
+        },
+        "spell->Telekinetic Maneuver": {
+          "name": "Telekinetic Maneuver",
+          "description": "<p>With a rush of telekinetic power, you move a foe or something they carry. You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the target using a spell attack roll instead of an Athletics check.</p>",
+          "target": "1 creature"
+        },
+        "spell->Prestidigitation": {
+          "name": "Prestidigitation",
+          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>",
+          "target": "1 object (cook, lift, or tidy only)"
+        },
+        "spell->Telekinetic Projectile": {
+          "name": "Telekinetic Projectile",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "target": "1 creature"
+        },
+        "spell->Void Warp": {
+          "name": "Void Warp",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "target": "1 living creature"
+        },
+        "strike-melee->Phantom Dagger": {
+          "name": "Phantom Dagger"
+        },
+        "strike-ranged->Phantom Dagger": {
+          "name": "Phantom Dagger"
+        },
+        "action->Walk the Ethereal Line": {
+          "name": "Walk the Ethereal Line",
+          "description": "<p>The phantom walks the thin line between the Ethereal Plane and the Universe in order to exist on both planes simultaneously.</p>\n<p>They can shift back to solely the Ethereal Plane by using this ability again.</p>"
+        },
+        "action->-1 Status to All Saves vs. Death Effects": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n-1 Status to All Saves vs. Death Effects"
+        },
+        "action->Susceptible to Death": {
+          "name": "Susceptible to Death",
+          "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute}) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>"
+        },
+        "action->Phantom Daggers": {
+          "name": "Phantom Daggers",
+          "description": "<p>Each time they make a phantom dagger Strike, a Puddles phantom can choose to deal spirit damage instead of the normal physical damage type. Whichever damage type they choose, the phantom dagger vanishes and a new phantom dagger immediately appears in the phantom's hand.</p>"
+        }
+      }
+    },
+    "Pure Legionnaire": {
+      "name": "Pure Legionnaire",
+      "saveDetails": "+2 on all saves against divine magic",
+      "items": {
+        "weapon->Scimitar": {
+          "name": "Scimitar",
+          "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+        },
+        "armor->Leather Armor": {
+          "name": "Leather Armor",
+          "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+        },
+        "strike-melee->Scimitar": {
+          "name": "Scimitar"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
+        },
+        "action->+2 Status to All Saves Against Divine Magic": {
+          "name": "+2 Status to All Saves Against Divine Magic"
+        },
+        "action->May No Mortal Be Beholden": {
+          "name": "May No Mortal Be Beholden",
+          "description": "<p>When the Pure Legionnaire rolls a success on a save against an effect or spell from the divine tradition, they get a critical success instead.</p>"
+        },
+        "action->Retributive Strike": {
+          "name": "Retributive Strike"
+        },
+        "action->Smite Divine": {
+          "name": "Smite Divine",
+          "description": "<p>The scimitars of the Pure Legion have been enchanted specifically to take down divine spellcasters. Melee Strikes against clerics, champions, and other creatures capable of casting divine spells do an additional 2d6 mental damage.</p>"
+        },
+        "action->Sudden Charge": {
+          "name": "Sudden Charge",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The Pure Legionnaire Strides twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
+        },
+        "lore->Legal Lore": {
+          "name": "Legal Lore"
+        }
+      }
+    },
     "Pusk (PFS 6-00)": {
       "name": "Pusk (PFS 6-00)",
       "languages": "Telepathy 100 feet",
@@ -1395,6 +1819,31 @@
         }
       }
     },
+    "Rain-Soaked Crowd": {
+      "name": "Rain-Soaked Crowd",
+      "description": "<p>A crowd of carnival goers are spurred to panic by supernatural rain.</p>",
+      "disable": "<p>@Check[diplomacy|dc:17] (trained) to calm them down, @Check[intimidation|dc:18] (trained) to cow them, @Check[athletics|dc:20] (trained) to force them back</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Surge Forward": {
+          "name": "Surge Forward",
+          "description": "<p><strong>Trigger</strong> The PCs fail to overcome a task during the Dreaded Downpour event</p><hr /><p><strong>Effect</strong> The crowd surges forward, dealing @Damage[(2d10+7)[bludgeoning]] damage to each PC. Each affected creature must attempt a @Check[reflex|dc:18] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –1 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a –2 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.aMmQY3YvufchsXGT]{Effect: Surge Forward}</p>"
+        }
+      }
+    },
+    "Rain-Soaked Crowd (5-6)": {
+      "name": "Rain-Soaked Crowd (5-6)",
+      "description": "<p>A crowd of carnival goers are spurred to panic by supernatural rain.</p>",
+      "disable": "<p>@Check[diplomacy|dc:21] (trained) to calm them down, @Check[intimidation|dc:22] (trained) to cow them, @Check[athletics|dc:24] (trained) to force them back</p>",
+      "stealth": "<p>(trained)</p>",
+      "tokenName": "Rain-Soaked Crowd",
+      "items": {
+        "action->Surge Forward": {
+          "name": "Surge Forward",
+          "description": "<p><strong>Trigger</strong> The PCs fail to overcome a task during the Dreaded Downpour event</p><hr /><p><strong>Effect</strong> The crowd surges forward, dealing @Damage[(4d8+10)[bludgeoning]] damage to each PC. Each affected creature must attempt a @Check[reflex|dc:21] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –1 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a –2 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>"
+        }
+      }
+    },
     "Rasping Cicada": {
       "name": "Rasping Cicada",
       "blurb": "Variant crying cicada",
@@ -1414,6 +1863,61 @@
         "action->Rasping Cicada Poison": {
           "name": "Rasping Cicada Poison",
           "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d4[poison]] damage plus slowed 2 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>"
+        }
+      }
+    },
+    "Resolved Captain Pitros Nanaeil": {
+      "name": "Resolved Captain Pitros Nanaeil",
+      "saveDetails": "+2 on all saves against divine magic",
+      "items": {
+        "weapon->Bloodletting Kukri": {
+          "name": "Bloodletting Kukri",
+          "description": "<p>This <em>+1 striking kukri</em> has a crimson blade that shimmers eerily in bright light. On a critical hit, the kukri deals 1d8 persistent bleed damage. If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points for 1 minute.</p>"
+        },
+        "weapon->Scimitar": {
+          "name": "Scimitar",
+          "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+        },
+        "armor->Leather Armor": {
+          "name": "Leather Armor",
+          "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+        },
+        "strike-melee->Bloodletting Kukri": {
+          "name": "Bloodletting Kukri",
+          "description": "<p>Plus 1d8 persistent bleed on crit. If the target of the critical hit didn't already have persistent bleed damage, Nanaeil also gains 1d8 temporary Hit Points for 1 minute.</p>"
+        },
+        "strike-melee->Scimitar": {
+          "name": "Scimitar"
+        },
+        "action->+2 on All Saves Against Divine Magic": {
+          "name": "+2 on All Saves Against Divine Magic"
+        },
+        "action->Aura of Command": {
+          "name": "Aura of Command",
+          "description": "<p>30 feet. As captain of the Pure Legion, Nanaeil bolsters the lower-level legionnaires under his command, granting them a +1 status bonus to their attack rolls and +2 status bonus to their will saves.</p>"
+        },
+        "action->Dual-Weapon Warrior": {
+          "name": "Dual-Weapon Warrior",
+          "description": "<p>Pitros Nanaeil is highly trained in the art of wielding two weapons at once, preferring to wield the <em>+1 striking scimitar</em> in his main hand and the <em>bloodletting kukri</em> in his off-hand.</p>"
+        },
+        "action->May No Mortal Be Beholden": {
+          "name": "May No Mortal Be Beholden",
+          "description": "<p>When Captain Nanaeil rolls a success on a save against an effect or spell from the divine tradition, they get a critical success instead.</p>"
+        },
+        "action->Retributive Strike": {
+          "name": "Retributive Strike"
+        },
+        "action->Twin Riposte": {
+          "name": "Twin Riposte",
+          "description": "<p><strong>Trigger</strong> A creature within your reach critically fails to Strike you.</p><hr /><p>A clever parry with one weapon leaves your opponent open to an attack with the other weapon. Make a melee Strike or @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} action against the triggering opponent.</p>"
+        },
+        "action->Double Slice": {
+          "name": "Double Slice",
+          "description": "<p>Nanaeil lashes out at his foe with both weapons. He makes two Strikes, one with each melee weapon, each using his current multiple attack penalty. Both Strikes must have the same target. If both attacks hit, combine their damage, then add any other applicable effects from both weapons. Precision damage is added only once. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating his multiple attack penalty.</p>"
+        },
+        "action->Smite Divine": {
+          "name": "Smite Divine",
+          "description": "<p>The Pure Legion's scimitars have been enchanted specifically to take down divine spellcasters. Melee Strikes against clerics, champions, and other creatures capable of casting divine spells do an additional 2d6 mental damage.</p>"
         }
       }
     },
@@ -1624,6 +2128,116 @@
         "action->Lookout's Warning": {
           "name": "Lookout's Warning",
           "description": "<p>Singe lets out one of the following cries, in order (repeating from the top, if necessary). Everyone in the haunt's area must attempt a @Check[will|dc:27] save. On a success, the creature is unaffected; on a critical success, it also gains a +2 circumstance bonus on its next save vs. Lookout's Warning. Other effects depend on the specific cry below.</p><ul><li><strong>Thar She Blows:</strong> \"Captain, look! A huge whale! It's coming toward us—fast!\" On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round, looking for the whale; on a critical failure it's fascinated for 1 minute, and the condition doesn't end if Singe makes a Strike on an ally or uses Lookout's Warning.</li><li><strong>No Quarter:</strong> \"It's coming around again! It's relentless! Brace for impact!\" On a failure, the creature is tossed off balance; it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round. On a critical failure, it's also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</li><li><strong>Shark Bait:</strong> \"Captain, it's hopeless! It's going to destroy the ship!\" On a failure, a sense of doom fills the creature, which becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the fear is overwhelming, and it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</li><li><strong>Going Down with the Ship:</strong> \"Get below, captain, and secure the Forked Key! I'll try to give you time!\" On a failure, the creature must spend one action putting an item it is holding away; if it is not holding anything, it is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for one action. On a critical failure, it must spend three actions in a combination of putting away any items it is holding and fleeing.</li></ul>"
+        }
+      }
+    },
+    "Soggy Zombie Hulk": {
+      "name": "Soggy Zombie Hulk",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>These towering horrors rise from monstrous, gigantic corpses.</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed.</p>",
+      "items": {
+        "condition->Slowed": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]\n<p>You have fewer actions. Slowed always includes a value. When you regain your actions at the start of your turn, reduce the number of actions you regain by your slowed value. Because slowed has its effect at the start of your turn, you don't immediately lose actions if you become slowed during your turn.</p>"
+        },
+        "strike-melee->Hunk of Wet Meat": {
+          "name": "Hunk of Wet Meat"
+        },
+        "strike-ranged->Squelchy Corpse": {
+          "name": "Squelchy Corpse"
+        },
+        "action->Slow": {
+          "name": "Slow",
+          "description": "<p>A zombie is permanently slowed 1 and can't use reactions.</p>"
+        },
+        "action->Corpse Throwing": {
+          "name": "Corpse Throwing",
+          "description": "<p>A soggy zombie hulk can throw Medium or smaller corpses at foes. They can also throw Medium or smaller zombies for this purpose, who take just as much damage as the target they hit. A zombie that survives being thrown falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+        },
+        "action->Moldy Meat": {
+          "name": "Moldy Meat",
+          "description": "<p>A creature hit by the soggy zombie hulk's hunk of wet meat or squelchy corpse Strike must attempt a @Check[fortitude|dc:22] save, becoming @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} on a failure (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that critically succeeds becomes temporarily immune for 1 hour.</p>"
+        },
+        "action->Wide Swing": {
+          "name": "Wide Swing",
+          "description": "<p>The zombie hulk makes two hunk of wet meat Strikes against different targets within its reach.</p>"
+        }
+      }
+    },
+    "Sudden Drop": {
+      "name": "Sudden Drop",
+      "description": "<p>A portion of Manaket's sewer system is under construction and has been left covered by only a few planks of wood since the Godsrain. After two weeks of wear, they're ready to collapse.</p>",
+      "disable": "<p>If all the PCs succeed on a Perception check against the Stealth DC to spot the hazard, they're able to detour around the weakened boards without triggering it. There's not enough time for PCs who succeed on this check to warn PCs who fail.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Break Through": {
+          "name": "Break Through",
+          "description": "<p><strong>Trigger</strong> One or more PCs fail to spot the hazard and step onto the weakened boards</p><hr /><p><strong>Effect</strong> The boards give way, dropping the PCs 5 feet into the open septic tank. The PCs can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}; those who fail and fall into the tank become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and cannot reduce this condition until after the Ambush! in Kassi's lab.</p>\n<p>Triggering this hazard also accrues 1 AP for the party.</p>"
+        }
+      }
+    },
+    "Tough Puddles Ghoul": {
+      "name": "Tough Puddles Ghoul",
+      "blurb": "Variant ghoul",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Stench": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.PqGX4Dgy9siZJitH]\n<p>10 feet, @Check[fortitude|dc:14]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+        },
+        "action->Slurp Blood": {
+          "name": "Slurp Blood",
+          "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the tough Puddles ghoul's reach</p><hr /><p><strong>Effect</strong> The ghoul bites the creature, slurping its blood. This requires an Athletics check against the target's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim takes @Damage[(1d8+3)[piercing]] damage and the tough Puddles ghoul regains @Damage[4[healing]] Hit Points, gaining any excess HP as temporary HP.</p>"
+        },
+        "action->Swift Movement": {
+          "name": "Swift Movement",
+          "description": "<p>The Puddles ghoul jumps up to half its Speed or swims up to half its swim Speed. This movement doesn't trigger reactions.</p>"
+        }
+      }
+    },
+    "Veteran Pure Legionnaire": {
+      "name": "Veteran Pure Legionnaire",
+      "saveDetails": "+2 on all saves against divine magic",
+      "items": {
+        "weapon->Scimitar": {
+          "name": "Scimitar",
+          "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+        },
+        "armor->Leather Armor": {
+          "name": "Leather Armor",
+          "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+        },
+        "strike-melee->Scimitar": {
+          "name": "Scimitar"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
+        },
+        "action->+2 Status to All Saves Against Divine Magic": {
+          "name": "+2 Status to All Saves Against Divine Magic"
+        },
+        "action->May No Mortal Be Beholden": {
+          "name": "May No Mortal Be Beholden",
+          "description": "<p>When the Pure Legionnaire rolls a success on a save against an effect or spell from the divine tradition, they get a critical success instead.</p>"
+        },
+        "action->Retributive Strike": {
+          "name": "Retributive Strike"
+        },
+        "action->Smite Divine": {
+          "name": "Smite Divine",
+          "description": "<p>The scimitars of the Pure Legion have been enchanted specifically to take down divine spellcasters. Melee Strikes against clerics, champions, and other creatures capable of casting divine spells do an additional 2d6 mental damage.</p>"
+        },
+        "action->Sudden Charge": {
+          "name": "Sudden Charge",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The Pure Legionnaire Strides twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
+        },
+        "lore->Legal Lore": {
+          "name": "Legal Lore"
         }
       }
     },
@@ -1875,6 +2489,10 @@
     "skillSpecialAthletics": {
       "converter": "translateSkillSpecial",
       "path": "system.skills.athletics.special"
+    },
+    "skillSpecialStealth": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.stealth.special"
     },
     "source": {
       "converter": "translateSource",

@@ -662,7 +662,7 @@
       "name": "Button Mash",
       "description": "<p>The room floods with harmful effects by pressing a magic sigil on a console. Each sigil causes different results. There are six sigils on the console.</p>",
       "disable": "<p>@Check[arcana|dc:40] (master) to disenchant each sigil (can be done from either side of the reception desk), @Check[thievery|dc:43] (master) twice to disable the console (can only be done while behind the reception desk), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 40) to counteract each sigil; prevent Noph from pressing the buttons by gaining access to the reception desk or other methods</p>",
-      "routine": "<p>(2 actions) Noph frantically pecks and stomps on the console, using each action to press a random sigil. Roll [[/gmr 1d6 #Pressed Sigil]] to determine which sigil Noph presses. Psychopomps are immune to the effects of these sigils.</p>\n<p><strong>1</strong> The area is flooded with holy light, dealing @Damage[(3d12+19)[vitality]] damage to each creature in the area (@Check[reflex|dc:43|basic]).</p>\n<p><strong>2</strong> The area is flooded with unholy darkness, dealing @Damage[(3d12+19)[void]] damage to each creature in the area (@Check[reflex|dc:43|basic]).</p>\n<p><strong>3</strong> The area is flooded with blue flames, dealing @Damage[(3d10+19)[fire]] damage to each creature in the area (@Check[reflex|dc:43|basic]). On a critical failure, a creature additionally takes @Damage[1d10[persistent,fire]] damage.</p>\n<p><strong>4</strong> A comet streaks through the area, attacking the nearest creature to Noph with a comet Strike.</p>\n<p><strong>5</strong> Force tethers sprout from the floor, grasping at intruders. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round unless they succeed at a @Check[fortitude|dc:43] save.</p>\n<p><strong>6</strong> Ghostly blue mist surrounds each psychopomp in the area, healing them @Damage[(3d8+19)[healing]]{3d8+19} HP and granting them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round.</p>",
+      "routine": "<p>(2 actions) Noph frantically pecks and stomps on the console, using each action to press a random sigil. Roll [[/gmr 1d6 #Pressed Sigil]] to determine which sigil Noph presses. Psychopomps are immune to the effects of these sigils.</p>\n<p><strong>1</strong> The area is flooded with holy light, dealing @Damage[(3d12+19)[vitality]] damage to each creature in the area (@Check[reflex|dc:43|basic]).</p>\n<p><strong>2</strong> The area is flooded with unholy darkness, dealing @Damage[(3d12+19)[void]] damage to each creature in the area (@Check[reflex|dc:43|basic]).</p>\n<p><strong>3</strong> The area is flooded with blue flames, dealing @Damage[(3d10+19)[fire]] damage to each creature in the area (@Check[reflex|dc:43|basic]). On a critical failure, a creature additionally takes @Damage[1d10[persistent,fire]] damage.</p>\n<p><strong>4</strong> A comet streaks through the area, attacking the nearest creature to Noph with a comet Strike.</p>\n<p><strong>5</strong> Force tethers sprout from the floor, grasping at intruders. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round unless they succeed at a @Check[fortitude|dc:43] save.</p>\n<p><strong>6</strong> Ghostly blue mist surrounds each psychopomp in the area, healing them @Damage[(3d8+19)[healing]]{3d8+19} HP and granting them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} for 1 round.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
         "action->Lockdown": {
@@ -1787,7 +1787,7 @@
         },
         "action->Consume Flesh": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul crocodile is adjacent to the corpse of a creature that died within the last hour</p>\n<hr />\n<p><strong>Effect</strong> The ghoul crocodile devours a chunk of the corpse and regains [[/r 2d6[healing]]] Hit Points. It can regain HP from any given corpse only once.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul crocodile is adjacent to the corpse of a creature that died within the last hour</p><hr /><p><strong>Effect</strong> The ghoul crocodile devours a chunk of the corpse and regains @Damage[2d6[healing]] Hit Points. It can regain HP from any given corpse only once.</p>"
         },
         "action->Death Roll": {
           "name": "Death Roll",
@@ -3629,13 +3629,13 @@
       "name": "Ostovite Nest",
       "description": "<p>A nest of bones resembling an ant hill contains countless miniscule scavenger vermin with vicious, acid-dripping mandibles.</p>",
       "disable": "<p>@Check[athletics|dc:18|name:Topple the Mound] (trained) to topple the mound and destroy it</p>",
-      "reset": "<p>The hazard deactivates if there are no targets for its acid spew at the start of its turn. The hatchlings return to the nest, and the hazard resets. If damaged but not destroyed, the nest recovers [[/r 1d6[healing]]] Hit Points per hour as the hatchlings repair it.</p>",
+      "reset": "<p>The hazard deactivates if there are no targets for its acid spew at the start of its turn. The hatchlings return to the nest, and the hazard resets. If damaged but not destroyed, the nest recovers @Damage[1d6[healing]] Hit Points per hour as the hatchlings repair it.</p>",
       "routine": "<p>(1 action) The hazard makes an acid spew Strike against the nearest creature.</p>",
       "stealth": "<p>(trained)</p>",
       "items": {
         "action->Skittering Surge": {
           "name": "Skittering Surge",
-          "description": "<p><strong>Trigger</strong> A creature comes within 15 feet of the nest</p>\n<hr />\n<p><strong>Effect</strong> A mass of skittering ostovite hatchlings crawls all over the nest, spewing acid in all directions. Each creature within @Template[emanation|distance:30]{30 feet} of the nest takes @Damage[(1d10+4)[acid]] damage (@Check[reflex|dc:18|basic]). A creature who fails the save also takes @Damage[1[persistent,acid]] damage. The hazard then rolls initiative.</p>"
+          "description": "<p><strong>Trigger</strong> A creature comes within 15 feet of the nest</p><hr /><p><strong>Effect</strong> A mass of skittering ostovite hatchlings crawls all over the nest, spewing acid in all directions. Each creature within @Template[emanation|distance:30]{30 feet} of the nest takes @Damage[(1d10+4)[acid]] damage (@Check[reflex|dc:18|basic]). A creature who fails the save also takes @Damage[1[persistent,acid]] damage. The hazard then rolls initiative.</p>"
         },
         "strike-ranged->Acid Spew": {
           "name": "Acid Spew"
@@ -5342,7 +5342,7 @@
         },
         "action->Consume Flesh": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains [[/r 7d6[healing]]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[7d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
         },
         "action->Fetid Screech": {
           "name": "Fetid Screech",
@@ -5350,7 +5350,7 @@
         },
         "action->Ghoul Fever": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\nGhoul Fever",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[4d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[4d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p><hr /><p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[4d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[4d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
@@ -5877,7 +5877,7 @@
         },
         "action->Consecration Vulnerability": {
           "name": "Consecration Vulnerability",
-          "description": "<p>Dedicated to the desecration of graves, an urglid takes [[/r (3d6 + 6)[mental]]] damage each round it's within the area of an effect with the consecration trait. In addition, the demon takes triple the damage from <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em>.</p>"
+          "description": "<p>Dedicated to the desecration of graves, an urglid takes @Damage[(3d6 + 6)[mental]] damage each round it's within the area of an effect with the consecration trait. In addition, the demon takes triple the damage from <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em>.</p>"
         },
         "action->Earth Glide": {
           "name": "Earth Glide",

@@ -105,7 +105,8 @@ replacement_patterns = [
     (r'>BT<', r'>PU<'),
     (r'>Thin Items<', r'>Cienkie Przedmioty<'),
     (r'>Items<', r'>Przedmioty<'),
-    (r'>Structures<', r'>Struktury<'),
+    (r'>Structure<', r'>Struktury<'),
+    (r'>Low\-grade<', r'>Niskiej Jakości<'),
     (r'>Standard\-grade<', r'>Standardowej Jakości<'),
     (r'>High\-grade<', r'>Wysokiej Jakości<'),
     # Spells
@@ -136,8 +137,6 @@ replacement_patterns = [
     # Activation details. Must be after the activate
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Interact([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Interakcja\3</p>'),
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Cast a Spell([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Rzucenie Zaklęcia\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)command([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2komenda\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)envision([^<]*)</p>',
@@ -148,6 +147,8 @@ replacement_patterns = [
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2koncentracja\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
+    (r'<p><strong>Aktywacja</strong> ([^<]*)Cast a Spell([^<]*)</p>',
+        r'<p><strong>Aktywacja</strong> \1Rzucenie Zaklęcia\2</p>'),
     # Item type
     (r'>Ammunition<', r'>Amunicja<'),
     (r'<p><strong>Amunicja</strong> ([^<]*)arrow, bolt([^<]*)</p>',

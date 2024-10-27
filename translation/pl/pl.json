@@ -85,6 +85,7 @@
                     "HitPointsSingle": "Zregenerowano {hitPoints} punkt żywotności.",
                     "InfusedReagents": "Zregenerowano nasycone odczynniki.",
                     "Resolve": "Przywrócono determinację.",
+                    "Resource": "{name} restored.",
                     "SpellSlots": "Zregenerowano wszystkie komórki zaklęć.",
                     "StaminaPoints": "Zregenerowano punkty wytrwałości.",
                     "TemporaryItems": "Usunięto tymczasowe przedmioty.",
@@ -101,7 +102,6 @@
         "ActionActionTypeLabel": "Typ Akcji",
         "ActionActionsLabel": "Akcje",
         "ActionBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:k6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
-        "ActionDeathNoteLabel": "Notatka przy Śmierci",
         "ActionNumber1": "Jedna",
         "ActionNumber2": "Dwie",
         "ActionNumber3": "Trzy",
@@ -140,6 +140,14 @@
             },
             "Attacks": "Ataki",
             "Character": {
+                "ABCPicker": {
+                    "SearchPlaceholder": "Search {items}",
+                    "Title": "{type} Selection",
+                    "Tooltip": {
+                        "ConfirmSelection": "Confirm Selection",
+                        "ViewSheet": "View Sheet"
+                    }
+                },
                 "Attribute": {
                     "Apex": "Cecha Zenitu",
                     "Boosts": "Rozwinięcia Cech",
@@ -1702,27 +1710,34 @@
                 "Features": "Atrybuty",
                 "InvalidDrop": "W tym miejscu nie może zostać upuszczony obiekt typu {badType} (musi być to obiekt typu {goodType})"
             },
-            "Action": {
+            "Ability": {
                 "Category": {
-                    "None": "Brak",
+                    "None": "None",
                     "Defensive": "Defensywna",
                     "Interaction": "Interakcja",
                     "Offensive": "Ofensywna",
                     "Familiar": "Zdolność Chowańca"
                 },
-                "Plural": "Zdolności",
+                "FIELDS": {
+                    "deathNote": {
+                        "label": "Notatka przy Śmierci"
+                    },
+                    "selfEffect": {
+                        "hint": "Pojedynczy przedmiot typu efekt, nakładany na aktora po użyciu tej akcji.",
+                        "label": "Efekty Nakładane na Siebie"
+                    }
+                },
+                "Plural": "Abilities",
                 "SelfAppliedEffect": {
                     "Applied": "Zaaplikowano {effect}.",
                     "Delete": "Usuń Referencję",
-                    "Drop": "Zakończ Efekt",
-                    "Label": "Efekty Nakładane na Siebie",
-                    "Hint": "Pojedynczy przedmiot typu efekt, nakładany na aktora po użyciu tej akcji."
+                    "Drop": "Zakończ Efekt"
                 },
                 "Type": {
                     "Activity": "Aktywność",
-                    "Free": "Darmowa Akcja",
-                    "Single": "Pojedyncza Akcja",
-                    "Reaction": "Reakcja"
+                    "Free": "Free Action",
+                    "Single": "Single Action",
+                    "Reaction": "Reaction"
                 }
             },
             "Activation": {
@@ -1751,6 +1766,7 @@
             },
             "Ancestry": {
                 "DropFeatures": "Przeciągnij tu atrybuty przodkowstwa.",
+                "Plural": "Ancestries",
                 "Vision": {
                     "Label": "Wizja",
                     "Normal": "Normalna Wizja"
@@ -1810,11 +1826,17 @@
                 },
                 "UnequippedHint": "Ten pancerz jest bardziej nieporęczny przez to, że nie jest wyposażony."
             },
+            "Background": {
+                "Plural": "Backgrounds"
+            },
             "CampaignFeature": {
                 "CampaignLabel": "Kampania",
                 "Plural": "Campaign Features"
             },
             "CannotAddType": "Przedmioty typu {type} nie mogą zostać dodane do tego aktora.",
+            "Class": {
+                "Plural": "Classes"
+            },
             "Condition": {
                 "Chat": {
                     "Current": "Obecne Statusy"
@@ -2221,6 +2243,7 @@
                     "Hint": "Niemal wszystkie bóstwa posiadają pojedynczą broń, którą obdarzają łaskami, ale w wypadku niektórych bóstw obłaskawioną bronią jest zarówno pewien rodzaj oręża co ataki wręcz.",
                     "Label": "Obłaskawiona Broń"
                 },
+                "Plural": "Deities",
                 "Sanctification": {
                     "Can": {
                         "Holy": "Możliwy wybór święteości",
@@ -2274,6 +2297,11 @@
                 "ShowTokenIcon": "Pokazać ikonę na żetonie?",
                 "Unidentified": "Niezidentyfikowany?"
             },
+            "FIELDS": {
+                "category": {
+                    "label": "Category"
+                }
+            },
             "Feat": {
                 "Info": {
                     "Added": "Dodano {item} do kategorii {category}."
@@ -2326,6 +2354,7 @@
                 "AncestryNotFound": "Nie odnaleziono wskazywanego obiektu przodkowstwa.",
                 "DragAncestryHere": "Przeciągnij tutaj przodkowstwo aby ustawić je jako wymóg dziedzictwa.",
                 "NoneVersatile": "Brak (Uniwersalne)",
+                "Plural": "Heritages",
                 "RemoveAncestry": "Usuń wymaganie przodkowstwa"
             },
             "IconLabel": "Ikona",
@@ -2419,6 +2448,7 @@
                 },
                 "LevelLabel": "Przedmiot {level}",
                 "OtherTag": {
+                    "HandwrapsOfMightyBlows": "Handwraps of Mighty Blows",
                     "Herbal": "Ziołowość",
                     "Improvised": "Improwizacja",
                     "Shoddy": "Tandeta"
@@ -3900,6 +3930,7 @@
         "TraitAttachedToFirearm": "Mocowanie do Broni Palnej",
         "TraitAttachedToFirearmFiringMechanism": "Mocowanie do Broni Palnej (Mechanizm Spustowy)",
         "TraitAttachedToFirearmScope": "Mocowanie do Broni Palnej (Celownik)",
+        "TraitAttachedToMeleeWeapon": "Attached to a Melee Weapon",
         "TraitAttachedToShield": "Mocowanie do Tarczy",
         "TraitAttachedToShipsBow": "Mocowanie do Dziobu Łodzi",
         "TraitAttack": "Atak",
@@ -4188,7 +4219,7 @@
         "TraitDescriptionHaunt": "Zagrożenie z tą cechą to duchowe echo, często osoby która zginęła tragiczną śmiercią. Zapewnianie straszydłu wiecznego spokoju często wiąże się z rozwiązaniem jego niedokończonych spraw. Straszydło, które mu nie zapewniono wiecznego odpoczynku, zawsze powraca po jakimś czasie.",
         "TraitDescriptionHealing": "Efekt leczący rewitalizuje ciało istoty, zwykle poprzez przywrócenie Punktów Żywotności, ale czasami poprzez usunięcie chorób lub innych osłabiających je efektów.",
         "TraitDescriptionHefty": "Masywna tarcza jest tak ciężka, że podniesienie jej wymaga więcej wysiłku. Wznoszenie tarczy z cechą masywność jest aktywnością 2-akcyjną, chyba że twoja siła jest równa lub wyższa od liczby podanej w tej cesze.",
-        "TraitDescriptionHex": "Urok to rodzaj zaklęcie skupienia, który może rzucać wiedźma.",
+        "TraitDescriptionHex": "Urok to zaklęcie wywoływane przez bezpośrednią interwencję twojego patrona i przywołujące jego uwagę. Twój patron nie toleruje zbyt częstego zakłócania jego spokoju, w związku z czym w każdej turze możesz rzucić tylko jedno zaklęcie z cechą uroku. Próby użycia kolejnego kośczą się atuomatyczną porażką i na ogół powodują oburzony syk twojego chowańca, obrazujący odmowę twojego patrona.",
         "TraitDescriptionHindering": "Ten pancerz jest tak ciężki i nieporęczny, że spowalnia cię bez względu na wszystko. Otrzymujesz karę –5 do wszystkich swoich Prędkości (do minimum 5 stóp). Jest to efekt osobny od kary do Prędkości od pancerza, wpływa na ciebie, nawet jeśli twoja Siła lub jakaś zdolność pozwalają ci zmniejszyć lub zignorować karę do Prędkości od pancerza.",
         "TraitDescriptionHobgoblin": "Istota z tą cechą jest wysokim, zbrojnym goblinoidem. Hobgobliny często mają zdolność do widzenia w ciemności.",
         "TraitDescriptionHoly": "Efekty z cecha świętości są związane z potężnymi magicznymi siłami miłosierdzia i cnoty. Często mają silniejsze działanie wobec istot wyklętych. Istoty z tą cechą są silnie oddane świętym pobudkom i często posiadają podatność na efekty wyklęte. Jeśli istota ze podatnością na efekty święte użyje przedmiotu lub efektu z cechą świętości, odnosi obrażenia w związku z jej podatnością.",
@@ -4224,6 +4255,7 @@
         "TraitDescriptionLaunching": "Mechanizm zawarty w tej tarczy może strzelać pociskami, co sprawia, że tarcza funkcjonuje również jako broń dystansowa. Cecha określa typ broni, na przykład \"wyrzutnia: strzałki\". Cios z użyciem wyrzutni wymaga takiej samej liczby rąk jak normalnie, z tą różnicą, że ręka trzymająca tarczę liczy się do tej sumy, więc jednoręczna broń dystansowa wymagałaby tylko jednej ręki. Przeładowanie wymaga normalnej liczby akcji Interakcji, minimum 1 akcji, nie możesz jednak użyć ręki trzymającej tarczę do przeładowania.",
         "TraitDescriptionLeshy": "Istota z tą cechą jest przedstawicielem przodkowstwa leszych. Te małe roślinne lub grzybne istoty mają humanoidalną postać.",
         "TraitDescriptionLight": "Efekty światła przezwyciężają niemagiczną ciemność w obszarze działania i mogą przeciwdziałać magicznej ciemności. Aby przeciwdziałać efektowi ciemności, zwykle musisz obrać go bezpośrednio za cel, chociaż niektóre zaklęcia światła automatycznie próbują przeciwdziałać ciemności.",
+        "TraitDescriptionLineage": "A feat with this trait indicates a character's descendance from a particular type of creature. You can have only one lineage feat. You can select a lineage feat only at 1. level, and you can't retrain into or out of these feats.",
         "TraitDescriptionLinguistic": "Skutek efektu z tą cechą wymaga zdolności do pojmowania języka. Efekt lingwistyczny, którego celem jest istota, działa tylko wtedy, gdy cel rozumie język, którego używasz.",
         "TraitDescriptionLitany": "Litanie to specjalne zaklęcia oddania, zwykle używane przez czempionów i wymagające pojedynczej akcji, które zwykle dają tymczasową niewrażliwość na kolejne litanie.",
         "TraitDescriptionLizardfolk": "Jaszczuroludzie to rodzina gadzich humanoidów. Wyróżnia ich niezwykła zdolnośc do adaptacji i cierpliwość.",
@@ -4941,6 +4973,7 @@
         "TraitVolley20": "Salwa 20 ft.",
         "TraitVolley30": "Salwa 30 ft.",
         "TraitVolley50": "Salwa 50 ft.",
+        "TraitVolley60": "Volley 60 ft.",
         "TraitVorpalFear": "Worpalny Strach",
         "TraitWand": "Różdżka",
         "TraitWater": "Woda",
@@ -5257,6 +5290,7 @@
                 "ogre-hook": "Ogrowy Hak",
                 "orc-knuckle-dagger": "Orkowy Sztyletokastet",
                 "orc-necksplitter": "Orkowy Karkozrywacz",
+                "orc-skewermaul": "Orc Skewermaul",
                 "panabas": "Panabas",
                 "pepperbox": "Pieprzniczka",
                 "phalanx-piercer": "Przebijacz Falangi",
@@ -6186,6 +6220,7 @@
             "Quantity": "Liczba",
             "SellMessage": "{seller} sprzedaje u {buyer} {quantity} × {item}.",
             "SellSubtitle": "Sprzedaj przedmiot",
+            "SendToPartyStash": "Send to Party Stash",
             "SheetType": "Rodzaj Karty",
             "SplitCoinsLabel": "Rozdaj Monety",
             "SplitCoinsPopupHeader": "Wybierz aktorów otrzymujących swoją działkę",

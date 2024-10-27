@@ -726,10 +726,14 @@
         },
         "Elemental Thicket": {
             "name": "Elemental Thicket",
+            "hpDetails": "regeneration 15 (deactivated by fire)",
             "publicNotes": "<p>In the Universe, plant growth proceeds on a scale of days, weeks, years, and decades. Conversely, an elemental thicket grows constantly and in seconds. These writhing masses of living wood are the elemental embodiment of growth itself, swelling up when least expected to consume all in their path.</p>",
             "items": {
                 "strike-melee->Gnarled Branch": {
                     "name": "Gnarled Branch"
+                },
+                "action->Regeneration 15 (Deactivated by Fire)": {
+                    "name": "Regeneration 15 (Deactivated by Fire)"
                 },
                 "action->Constrict": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d12+7)[bludgeoning]], @Check[fortitude|dc:30|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -1535,7 +1539,7 @@
                 },
                 "action->Trap Weapon": {
                     "name": "Trap Weapon",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Aktywator</strong> A creature hits the living magma with a melee weapon</p><hr /><p><strong>Efekt</strong> The living magma attempts an @Check[athletics|defense:athletics] check against the triggering creature's Athletics DC. On a success, the living magma traps the weapon in its body and pulls it from the attacker's grasp. A creature can Interact to retrieve the weapon, but the attempt fails unless the creature succeeds at an @Check[athletics|dc:resolve(@actor.system.saves.fortitude.dc)] check against the living magma's Fortitude DC (typically 36). If the living magma uses Engulf, it also absorbs all trapped weapons, rendering them unreachable until it dies.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Aktywator</strong> A creature hits the living magma with a melee weapon</p><hr /><p><strong>Efekt</strong> The living magma attempts an @Check[athletics|defense:athletics] check against the triggering creature's Athletics DC. On a success, the living magma traps the weapon in its body and pulls it from the attacker's grasp. A creature can Interact to retrieve the weapon, but the attempt fails unless the creature succeeds at an @Check[athletics|against:fortitude|rollerRole:target] check against the living magma's Fortitude DC (typically 36). If the living magma uses Engulf, it also absorbs all trapped weapons, rendering them unreachable until it dies.</p>"
                 },
                 "action->Engulf": {
                     "description": "<p>@Check[reflex|dc:33], @Damage[2d10[bludgeoning],4k6[fire]], ST Ucieczki 33, Rozdarcie 25</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
@@ -2439,6 +2443,9 @@
                 },
                 "equipment->Formula Book (Blank)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\n<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
+                },
+                "consumable->Explosive Mine (Lesser)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.7e57yUVtRgYLOFwT]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> Interakcja</p><hr /><p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p><hr /><p>The mine deals @Damage[2d6[fire]] damage, in a @Template[emanation|distance:5]{5-foot emanation}, and a @Check[reflex|dc:15|basic|name:Reflex|traits:fire].</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Pięść"

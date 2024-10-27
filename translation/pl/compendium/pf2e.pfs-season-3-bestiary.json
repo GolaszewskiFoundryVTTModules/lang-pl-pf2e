@@ -29,7 +29,7 @@
                     "consumableSpellName": "Leczenie",
                     "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1k8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p><p><span class=\"action-glyph\">1</span> (somatic) The spell has a range of touch.</p><p><span class=\"action-glyph\">2</span> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. @Damage[(@item.level)d8[vitality]+@item.level*8[healing]]{2-Action Healing}</p><p><span class=\"action-glyph\">3</span> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p><hr /><p><strong>Wywyższenie (+1)</strong> The amount of healing or damage increases by 1k8, and the extra healing for the 2-action version increases by 8.</p>",
                     "consumableSpellTarget": "1 willing living creature or 1 undead",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Leczenie}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p><p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p><p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p><p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p><p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -842,7 +842,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]\n<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p><p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
                 },
                 "consumable->Antidote (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.7z1iY4AaNEAIKuAU]{Efekt: Antidote (Mniejszy)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Efekt: Antidote}</p>"
                 },
                 "consumable->Elixir of Life (Minor)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Efekt: Elixir of Life (Drobny)}</p>"
@@ -1070,7 +1070,7 @@
             "items": {
                 "action->Weep for Raseri Kanton": {
                     "name": "Weep for Raseri Kanton",
-                    "description": "<p><strong>Aktywator</strong> A creature looks at the carved mourner</p><hr /><p><strong>Efekt</strong> The hallways fill with a thick mist. When the mist first appears, all living creatures in area A take @Damage[1d6[void]] damage (@Check[fortitude|dc:17|basic] save), and all undead creatures regain @Damage[1d6[healing]]{1k6 Hit Points}. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}. This mist lasts for 1 hour or until the haunt is disabled.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature looks at the carved mourner</p><hr /><p><strong>Efekt</strong> The hallways fill with a thick mist. When the mist first appears, all living creatures in area A take @Damage[1d6[void]] damage (@Check[fortitude|dc:17|basic] save), and all undead creatures regain @Damage[1d6[healing]] Hit Points. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}. This mist lasts for 1 hour or until the haunt is disabled.</p>"
                 }
             }
         },
@@ -1749,7 +1749,7 @@
             "name": "Elite Green Hag (PFS 3-99)",
             "blurb": "Variant green hag",
             "languages": "tongues",
-            "publicNotes": "<p>Green hags hate beauty and purity, so they use disguises and treachery to lure and murder innocents, corrupt the pure of heart, and shatter the minds and morals of their victims. Green hags create imaginative schemes to utterly ruin anyone who crosses them, as well as good or righteous folk whose very existence insults the hag's twisted sensibilities. The complicated scandals perpetuated by green hags involve impersonation, mistaken identity, the seduction and betrayal of loved ones, or all these things in combination.</p><hr /><p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.bAjHCeyNcPRqOmLv]{Changelings} who have the potential to become hags themselves.</p>",
+            "publicNotes": "<p>Green hags hate beauty and purity, so they use disguises and treachery to lure and murder innocents, corrupt the pure of heart, and shatter the minds and morals of their victims. Green hags create imaginative schemes to utterly ruin anyone who crosses them, as well as good or righteous folk whose very existence insults the hag's twisted sensibilities. The complicated scandals perpetuated by green hags involve impersonation, mistaken identity, the seduction and betrayal of loved ones, or all these things in combination.</p><hr /><p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RqX0vfUjlycKjGyp]{Changelings} who have the potential to become hags themselves.</p>",
             "saveDetails": "statusowe +1 do wszystkich rzutów obronnych przeciw magii",
             "tokenName": "Elite Green Hag",
             "items": {
@@ -2044,7 +2044,7 @@
                     "consumableSpellName": "Leczenie",
                     "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1k8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p><p><span class=\"action-glyph\">1</span> (somatic) The spell has a range of touch.</p><p><span class=\"action-glyph\">2</span> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. @Damage[(@item.level)d8[vitality]+@item.level*8[healing]]{2-Action Healing}</p><p><span class=\"action-glyph\">3</span> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p><hr /><p><strong>Wywyższenie (+1)</strong> The amount of healing or damage increases by 1k8, and the extra healing for the 2-action version increases by 8.</p>",
                     "consumableSpellTarget": "1 willing living creature or 1 undead",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Leczenie}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p><p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p><p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p><p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p><p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -2087,7 +2087,7 @@
                     "consumableSpellName": "Leczenie",
                     "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1k8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p><p><span class=\"action-glyph\">1</span> (somatic) The spell has a range of touch.</p><p><span class=\"action-glyph\">2</span> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. @Damage[(@item.level)d8[vitality]+@item.level*8[healing]]{2-Action Healing}</p><p><span class=\"action-glyph\">3</span> (material, somatic, verbal) You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p><hr /><p><strong>Wywyższenie (+1)</strong> The amount of healing or damage increases by 1k8, and the extra healing for the 2-action version increases by 8.</p>",
                     "consumableSpellTarget": "1 willing living creature or 1 undead",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Leczenie}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p><p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p><p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p><p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p><p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -2137,7 +2137,7 @@
                 },
                 "action->Corpse Throwing": {
                     "name": "Corpse Throwing",
-                    "description": "<p>A zombie hulk can throw corpses at foes. While any Medium dead body will do, they sometimes throw @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.0plBflWwrCWQO2RO]{Zombie Shamblers}, who take just as much damage from being thrown as the target they hit. A thrown shambler lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, but if it's not destroyed, it can rise and use other actions normally.</p>"
+                    "description": "<p>A zombie hulk can throw corpses at foes. While any Medium dead body will do, they sometimes throw @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Xo4IGzw28hivgMmM]{Zombie Shamblers}, who take just as much damage from being thrown as the target they hit. A thrown shambler lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}, but if it's not destroyed, it can rise and use other actions normally.</p>"
                 },
                 "action->Feast": {
                     "name": "Feast",
@@ -2187,7 +2187,7 @@
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The bloodseeker is attached to a creature.</p><hr /><p><strong>Efekt</strong> The bloodseeker uses its proboscis to drain blood from the creature it's attached to. This deals [[/r 1d8]]{1k8 damage}, and the bloodseeker gains temporary Hit Points equal to the damage dealt.</p><p>A creature that has its blood drained by a bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives healing (of any kind or amount).</p>"
+                    "description": "<p><strong>Wymagania</strong> The bloodseeker is attached to a creature.</p><hr /><p><strong>Efekt</strong> The bloodseeker uses its proboscis to drain blood from the creature it's attached to. This deals @Damage[1d8[untyped]]{1k8 damage}, and the bloodseeker gains temporary Hit Points equal to the damage dealt.</p><p>A creature that has its blood drained by a bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives healing (of any kind or amount).</p>"
                 }
             }
         },
@@ -2889,7 +2889,7 @@
             "items": {
                 "action->Weep for Raseri Kanton": {
                     "name": "Weep for Raseri Kanton",
-                    "description": "<p><strong>Aktywator</strong> A creature looks at the carved mourner</p><hr /><p><strong>Efekt</strong> The hallways fill with a thick mist. When the mist first appears, all living creatures in area A take @Damage[3d6[void]] damage (@Check[fortitude|dc:20|basic] save), and all undead creatures regain @Damage[3d6[healing]]{3k6 Hit Points}. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}. This mist lasts for 1 hour or until the haunt is disabled.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature looks at the carved mourner</p><hr /><p><strong>Efekt</strong> The hallways fill with a thick mist. When the mist first appears, all living creatures in area A take @Damage[3d6[void]] damage (@Check[fortitude|dc:20|basic] save), and all undead creatures regain @Damage[3d6[healing]] Hit Points. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}. This mist lasts for 1 hour or until the haunt is disabled.</p>"
                 }
             }
         },
@@ -3165,7 +3165,7 @@
                 },
                 "action->Bosun's Command": {
                     "name": "Bosun's Command",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The bosun orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the bosun's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p><hr /><ul><li>@UUID[Compendium.pf2e.bestiary-effects.Item.WfiaKdXNSxC3POcs]{Efekt: Bosun's Command - Attack Bonus}</li><li>@UUID[Compendium.pf2e.bestiary-effects.Item.yG27Ixwdpxqbrhzf]{Efekt: Bosun's Command - Speed Bonus}</li></ul>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The bosun orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the bosun's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.WfiaKdXNSxC3POcs]{Efekt: Bosun's Command}</p>"
                 },
                 "action->Pike and Strike": {
                     "name": "Pike and Strike",
@@ -4104,7 +4104,7 @@
             "items": {
                 "action->Summon Monster": {
                     "name": "Przywołanie Monster",
-                    "description": "<p><strong>Aktywator</strong> A creature enters the cloud of magical sensors.</p><hr /><p><strong>Efekt</strong> This trap summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.NVWaLagWOu5tCCZu]{Sod Hound} with the elite adjustment. The sod hound rolls initiative and remains for 7 rounds, after which the spell ends and the sod hound disappears. The sod hound also disappears if someone disables the trap before the duration expires. The summoned sod hound can use 3 actions each round and can use reactions, unlike most summoned creatures.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature enters the cloud of magical sensors.</p><hr /><p><strong>Efekt</strong> This trap summons a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.VQPzDz3xnCQGFOGL]{Sod Hound} with the elite adjustment. The sod hound rolls initiative and remains for 7 rounds, after which the spell ends and the sod hound disappears. The sod hound also disappears if someone disables the trap before the duration expires. The summoned sod hound can use 3 actions each round and can use reactions, unlike most summoned creatures.</p>"
                 }
             }
         },
@@ -4130,7 +4130,7 @@
             "items": {
                 "action->Summon Monster": {
                     "name": "Przywołanie Monster",
-                    "description": "<p><strong>Aktywator</strong> A creature enters the cloud of magical sensors.</p><hr /><p><strong>Efekt</strong> This trap summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.NVWaLagWOu5tCCZu]{Sod Hound}. The sod hound rolls initiative and remains for 7 rounds, after which the spell ends and the sod hound disappears. The sod hound also disappears if someone disables the trap before the duration expires. The summoned sod hound can use 3 actions each round and can use reactions, unlike most summoned creatures.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature enters the cloud of magical sensors.</p><hr /><p><strong>Efekt</strong> This trap summons a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.VQPzDz3xnCQGFOGL]{Sod Hound}. The sod hound rolls initiative and remains for 7 rounds, after which the spell ends and the sod hound disappears. The sod hound also disappears if someone disables the trap before the duration expires. The summoned sod hound can use 3 actions each round and can use reactions, unlike most summoned creatures.</p>"
                 }
             }
         },
@@ -4612,7 +4612,7 @@
                 },
                 "action->Shadow Stride": {
                     "name": "Shadow Stride",
-                    "description": "<p><strong>Wymagania</strong> The commander is in dim light</p><hr /><p><strong>Efekt</strong> The commander Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to 11 during this Stride, and the commander remains concealed by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
+                    "description": "<p><strong>Wymagania</strong> The commander is in dim light</p><hr /><p><strong>Efekt</strong> The commander Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to @Check[flat|dc:11] during this Stride, and the commander remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The commander deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -4672,7 +4672,7 @@
                 },
                 "action->Shadow Stride": {
                     "name": "Shadow Stride",
-                    "description": "<p><strong>Wymagania</strong> The officer is in dim light</p><hr />/n<p><strong>Efekt</strong> The officer Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to 11 during this Stride, and the officer remains concealed by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
+                    "description": "<p><strong>Wymagania</strong> The officer is in dim light</p><hr />/n\n<p><strong>Efekt</strong> The officer Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to @Check[flat|dc:11] during this Stride, and the officer remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The officer deals an extra 2k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -4701,7 +4701,7 @@
                 },
                 "action->Shadow Stride": {
                     "name": "Shadow Stride",
-                    "description": "<p><strong>Wymagania</strong> The fetchling is in dim light</p><hr /><p><strong>Efekt</strong> The fetchling Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to 11 during this Stride, and the fetchling remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
+                    "description": "<p><strong>Wymagania</strong> The fetchling is in dim light</p><hr /><p><strong>Efekt</strong> The fetchling Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to @Check[flat|dc:11] during this Stride, and the fetchling remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The fetchling scout's Strikes deal an additional 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -4867,7 +4867,7 @@
                 },
                 "action->Heart Ripper": {
                     "name": "Heart Ripper",
-                    "description": "<p>The peryton rips out the heart of an adjacent corpse with their jaws. The creature must have died in the last minute. As the peryton rips the heart free and swallows it whole, they regain @Damage[2d6[healing]]{2k6 HP}, and any non-peryton that witnesses this event must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>"
+                    "description": "<p>The peryton rips out the heart of an adjacent corpse with their jaws. The creature must have died in the last minute. As the peryton rips the heart free and swallows it whole, they regain @Damage[2d6[healing]] HP, and any non-peryton that witnesses this event must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>"
                 },
                 "action->Mimic Shadow": {
                     "name": "Mimic Shadow",
@@ -4898,7 +4898,7 @@
                 },
                 "action->Heart Ripper": {
                     "name": "Heart Ripper",
-                    "description": "<p>The peryton rips out the heart of an adjacent corpse with their jaws. The creature must have died in the last minute. As the peryton rips the heart free and swallows it whole, they regain @Damage[2d6[healing]]{2k6 HP}, and any non-peryton that witnesses this event must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>"
+                    "description": "<p>The peryton rips out the heart of an adjacent corpse with their jaws. The creature must have died in the last minute. As the peryton rips the heart free and swallows it whole, they regain @Damage[2d6[healing]] HP, and any non-peryton that witnesses this event must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>"
                 },
                 "action->Mimic Shadow": {
                     "name": "Mimic Shadow",
@@ -4926,7 +4926,7 @@
                 },
                 "action->Heart Ripper": {
                     "name": "Heart Ripper",
-                    "description": "<p>The peryton rips out the heart of an adjacent corpse with their jaws. The creature must have died in the last minute. As the peryton rips the heart free and swallows it whole, they regain @Damage[2d6[healing]]{2k6 HP}, and any non-peryton that witnesses this event must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>"
+                    "description": "<p>The peryton rips out the heart of an adjacent corpse with their jaws. The creature must have died in the last minute. As the peryton rips the heart free and swallows it whole, they regain @Damage[2d6[healing]] HP, and any non-peryton that witnesses this event must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} on a critical failure).</p>"
                 },
                 "action->Mimic Shadow": {
                     "name": "Mimic Shadow",
@@ -5210,10 +5210,10 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]]{3k6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Efekt: Elixir of Life (Mniejszy)}</p>"
                 },
                 "consumable->Antidote (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AJ1dC7EtTIfBey0M]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +3 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.mi4Md1fB2XThCand]{Efekt: Antidote (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AJ1dC7EtTIfBey0M]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +3 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Efekt: Antidote}</p>"
                 },
                 "consumable->Antiplague (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.biRbqKo2C97XLfQ0]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Antiplague can fortify the body's defenses against diseases. Upon drinking an antiplague, you gain a +3 item bonus to Fortitude saving throws against diseases for 24 hours; this applies to your daily save against a disease's progression.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.HeRHBo2NaKy5IxhU]{Efekt: Antiplague (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.biRbqKo2C97XLfQ0]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>Antiplague can fortify the body's defenses against diseases. Upon drinking an antiplague, you gain a +3 item bonus to Fortitude saving throws against diseases for 24 hours; this applies to your daily save against a disease's progression.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.mVgLCbZgafIylRzh]{Efekt: Antiplague}</p>"
                 },
                 "backpack->Bandolier": {
                     "name": "Bandolier"
@@ -5707,7 +5707,7 @@
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The bloodseeker is attached to a creature.</p><hr /><p><strong>Efekt</strong> The bloodseeker uses its proboscis to drain blood from the creature it's attached to. This deals [[/r 1d8]]{1k8 damage}, and the bloodseeker gains temporary Hit Points equal to the damage dealt.</p><p>A creature that has its blood drained by a bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives healing (of any kind or amount).</p>"
+                    "description": "<p><strong>Wymagania</strong> The bloodseeker is attached to a creature.</p><hr /><p><strong>Efekt</strong> The bloodseeker uses its proboscis to drain blood from the creature it's attached to. This deals @Damage[1d8[untyped]]{1k8 damage}, and the bloodseeker gains temporary Hit Points equal to the damage dealt.</p><p>A creature that has its blood drained by a bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives healing (of any kind or amount).</p>"
                 }
             }
         },
@@ -6290,13 +6290,7 @@
                     "target": "1 willing living creature"
                 },
                 "equipment->Lute": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg]\nLute",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg]\n<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played. A virtuoso instrument gives a +1 item bonus to Performance checks using that instrument.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "Virtuoso Instrument (playing it)"
-                        }
-                    }
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg]\nLute"
                 },
                 "equipment->Key to prison hideout": {
                     "name": "Key to prison hideout"
@@ -6361,13 +6355,7 @@
                     "target": "1 willing living creature"
                 },
                 "equipment->Lute": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg]\nLute",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg]\n<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played. A virtuoso instrument gives a +1 item bonus to Performance checks using that instrument.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "Virtuoso Instrument (playing it)"
-                        }
-                    }
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg]\nLute"
                 },
                 "equipment->Key to prison hideout": {
                     "name": "Key to prison hideout"
@@ -6897,7 +6885,7 @@
                 },
                 "action->Bosun's Command": {
                     "name": "Bosun's Command",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The bosun orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the bosun's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p><hr /><ul><li>@UUID[Compendium.pf2e.bestiary-effects.Item.WfiaKdXNSxC3POcs]{Efekt: Bosun's Command - Attack Bonus}</li><li>@UUID[Compendium.pf2e.bestiary-effects.Item.yG27Ixwdpxqbrhzf]{Efekt: Bosun's Command - Speed Bonus}</li></ul>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The bosun orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the bosun's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.WfiaKdXNSxC3POcs]{Efekt: Bosun's Command}</p>"
                 },
                 "action->Pike and Strike": {
                     "name": "Pike and Strike",
@@ -6986,7 +6974,7 @@
                 },
                 "action->Shadow Stride": {
                     "name": "Shadow Stride",
-                    "description": "<p><strong>Wymagania</strong> The fetchling is in dim light</p><hr /><p><strong>Efekt</strong> The fetchling Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to 11 during this Stride, and the fetchling remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
+                    "description": "<p><strong>Wymagania</strong> The fetchling is in dim light</p><hr /><p><strong>Efekt</strong> The fetchling Strides. They have a +10-foot status bonus to their Speed during this Stride. The DC from shadow blending increases to @Check[flat|dc:11] during this Stride, and the fetchling remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} by dim light until the end of the movement, even if they leave dim light during the Stride.</p>"
                 },
                 "action->Sneak Attack": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The fetchling scout's Strikes deal an additional 1k6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
@@ -7170,7 +7158,7 @@
             "items": {
                 "action->Weep for Raseri Kanton": {
                     "name": "Weep for Raseri Kanton",
-                    "description": "<p><strong>Aktywator</strong> A creature looks at the carved mourner</p><hr /><p><strong>Efekt</strong> The hallways fill with a thick mist. When the mist first appears, all living creatures in area A take @Damage[2d6[void]] damage (@Check[fortitude|dc:20|basic] save), and all undead creatures regain @Damage[2d6[healing]]{2k6 Hit Points}. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}. This mist lasts for 1 hour or until the haunt is disabled.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature looks at the carved mourner</p><hr /><p><strong>Efekt</strong> The hallways fill with a thick mist. When the mist first appears, all living creatures in area A take @Damage[2d6[void]] damage (@Check[fortitude|dc:20|basic] save), and all undead creatures regain @Damage[2d6[healing]] Hit Points. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}. This mist lasts for 1 hour or until the haunt is disabled.</p>"
                 }
             }
         },

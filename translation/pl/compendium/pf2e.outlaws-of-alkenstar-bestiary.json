@@ -329,7 +329,7 @@
                 },
                 "action->Misaligned Gears": {
                     "name": "Misaligned Gears",
-                    "description": "<p>The spiral centurion loses access to its Rev Up ability, and if it Strides more than once per round, it takes [[/r 1d10]] damage per Stride after the first.</p>"
+                    "description": "<p>The spiral centurion loses access to its Rev Up ability, and if it Strides more than once per round, it takes @Damage[1d10[untyped]]{1k10 obrażeń} per Stride after the first.</p>"
                 },
                 "action->Top-Heavy": {
                     "name": "Top-Heavy",
@@ -486,7 +486,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a vine leshy dies, a burst of primal energy explodes from its body, restoring @Damage[1d4[healing]]{1k4 Hit Points} to each plant creature in a @Template[emanation|distance:30]. This area fills with tangling vines, becoming difficult terrain. If the terrain is not a viable environment for the vines, they wither after 24 hours.</p>"
+                    "description": "<p>When a vine leshy dies, a burst of primal energy explodes from its body, restoring @Damage[1d4[healing]] Hit Points to each plant creature in a @Template[emanation|distance:30]. This area fills with tangling vines, becoming difficult terrain. If the terrain is not a viable environment for the vines, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The vine leshy transforms into a Small plant with vines. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -1047,12 +1047,6 @@
             "name": "Daelum",
             "publicNotes": "<p>During the height of the legendary war between Nex and Geb, Nex's agents grew increasingly creative in their \"recruiting\" methods for their armies. One such effort involved the construction of mechanical soldiers powered by arcane engines but directed by transplanted minds. While the process generally involved willing donors who were eager to give up dying bodies to \"live on\" in constructed frames, rumors persist that Nex harvested the minds of prisoners of war and criminals for these creations.</p><p>Today, thousands of years after those wars ended, hundreds of daelums still live. Their intellects have, in large part, fully embraced their new \"lives,\" and very few remember their previous existences today. Daelums can be found throughout the Mana Wastes serving as guides, porters, mine workers, and mercenaries.</p>",
             "items": {
-                "strike-melee->Pick": {
-                    "name": "Pick"
-                },
-                "strike-melee->Claw": {
-                    "name": "Pazur"
-                },
                 "strike-melee->Hoof": {
                     "name": "Hoof"
                 },
@@ -1100,7 +1094,7 @@
                     "consumableSpellName": "Leczenie",
                     "consumableSpellDescription": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1k8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p><p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p><p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p><p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p><hr /><p><strong>Wywyższenie (+1)</strong> The amount of healing or damage increases by 1k8, and the extra healing for the 2-action version increases by 8.</p>",
                     "consumableSpellTarget": "1 willing living creature or 1 undead",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Leczenie}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p><hr /><p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p><p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p><hr /><p><strong>Efekt</strong> You Cast the Spell at the indicated level.</p><p><strong>Wymagania Wytwarzania</strong> Supply a listed-level casting of the spell.</p><hr /><p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "strike-melee->Spine": {
                     "name": "Spine"
@@ -1114,7 +1108,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When Dewey Daystar dies, a burst of primal energy explodes from his body, restoring @Damage[2d8[healing]]{2k8 Hit Points} to each plant creature in a @Template[emanation|distance:30]. This area fills with cacti, becoming difficult terrain. If the terrain is not a viable environment for the cacti, they wither after 24 hours.</p>"
+                    "description": "<p>When Dewey Daystar dies, a burst of primal energy explodes from his body, restoring @Damage[2d8[healing]] to each plant creature in a @Template[emanation|distance:30]. This area fills with cacti, becoming difficult terrain. If the terrain is not a viable environment for the cacti, they wither after 24 hours.</p>"
                 },
                 "lore->Alkenstar Lore": {
                     "name": "Alkenstar Lore"
@@ -1255,7 +1249,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a follower of Shumfallow dies, a burst of primal energy explodes from its body, restoring @Damage[1d8[healing]]{1k8 Hit Points} to each fungus creature in a @Template[emanation|distance:30]. This area is filled with fungi, becoming difficult terrain. If the terrain is not a viable environment for this fungi, they wither after 24 hours.</p>"
+                    "description": "<p>When a follower of Shumfallow dies, a burst of primal energy explodes from its body, restoring @Damage[1d8[healing]] Hit Points to each fungus creature in a @Template[emanation|distance:30]. This area is filled with fungi, becoming difficult terrain. If the terrain is not a viable environment for this fungi, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The follower of Shumfallow transforms into a Small giant mushroom or patch of fungi. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -1705,7 +1699,7 @@
                 },
                 "action->Summon Steed": {
                     "name": "Przywołanie Steed",
-                    "description": "<p>The dullahan summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Jy2va0NTTbaUH1zP]{War Horse} with elite adjustments and the fiend trait. This steed remains until it is slain, the dullahan Dismisses it, or the dullahan summons another steed.</p>"
+                    "description": "<p>The dullahan summons a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.ExVmw8bSvUd2wYkI]{War Horse} with elite adjustments and the fiend trait. This steed remains until it is slain, the dullahan Dismisses it, or the dullahan summons another steed.</p>"
                 },
                 "action->Throw Skull": {
                     "name": "Throw Skull",
@@ -2534,7 +2528,7 @@
                 },
                 "action->Disgorge Mummy": {
                     "name": "Disgorge Mummy",
-                    "description": "<p>If a scarecophagus is reduced to 0 Hit Points by any damage other than vitality energy, it cracks open as it's destroyed, allowing the undead mummy trapped for eons within its core to rise. This is a weak @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.E5RDV3n7GnjAspQ5]{Mummy Guardian}; if the mummy guardian survives on its own for a month, it loses the weak adjustment. If the scarecophagus is reduced to 0 Hit Points by vitality energy, it cracks open as it's destroyed and the mummy within turns to dust, destroyed as well.</p>"
+                    "description": "<p>If a scarecophagus is reduced to 0 Hit Points by any damage other than vitality energy, it cracks open as it's destroyed, allowing the undead mummy trapped for eons within its core to rise. This is a weak @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.XZWUQklzWF6YFPmG]{Mummy Guardian}; if the mummy guardian survives on its own for a month, it loses the weak adjustment. If the scarecophagus is reduced to 0 Hit Points by vitality energy, it cracks open as it's destroyed and the mummy within turns to dust, destroyed as well.</p>"
                 },
                 "action->Vulnerable to Vitality Energy": {
                     "name": "Vulnerable to Vitality Energy",
@@ -3030,7 +3024,7 @@
             "items": {
                 "action->Cling": {
                     "name": "Cling",
-                    "description": "<p><strong>Aktywator</strong> A creature leaves the trapjaw tangle's space</p><hr /><p><strong>Efekt</strong> The swarm takes [[/r 1d6]]{1k6 damage} as individual traps cling to the creature and continue chewing, dealing @Damage[2d10[persistent,slashing]] damage. High winds or electricity damage reduces the DC of the flat check to end this persistent damage by 5. Any area damage dealt to the creature destroys these clinging trapjaws.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature leaves the trapjaw tangle's space</p><hr /><p><strong>Efekt</strong> The swarm takes @Damage[1d6[untyped]]{1k6 damage} as individual traps cling to the creature and continue chewing, dealing @Damage[2d10[persistent,slashing]] damage. High winds or electricity damage reduces the DC of the flat check to end this persistent damage by 5. Any area damage dealt to the creature destroys these clinging trapjaws.</p>"
                 },
                 "action->Snapping Jaws": {
                     "name": "Snapping Jaws",
@@ -3126,7 +3120,7 @@
             "description": "<p>Potion bottles, alembics, and potent ingredients violently explode when jostled and accidentally combined.</p>",
             "disable": "<p>Three @Check[acrobatics|dc:20|name:Sort and separate the ingredients|traits:alchemical,hazard,complex,environmental] or @Check[crafting|dc:20|name:Sort and separate the ingredients|traits:alchemical,hazard,complex,environmental] checks to sort and separate the bottles of volatile ingredients into groups</p>",
             "reset": "<p>The lab contains enough ingredients for this hazard to last 1 minute before all materials are expended. Alternatively, the hazard resets once Slick shrinks to regular size.</p>",
-            "routine": "<p>(1 action) A random 10-foot square in Gattlebee's laboratory explodes, dealing [[/r 2d6]] damage to creatures and objects in the area (@Check[reflex|dc:18|basic|traits:alchemical,hazard,complex,environmental]). The damage type is randomly determined each round: acid, cold, electricity, fire, slashing, or sonic.</p>",
+            "routine": "<p>(1 action) A random 10-foot square in Gattlebee's laboratory explodes, dealing @Damage[2d6[untyped]]{2k6 obrażeń} to creatures and objects in the area (@Check[reflex|dc:18|basic|traits:alchemical,hazard,complex,environmental]). The damage type is randomly determined each round: acid, cold, electricity, fire, slashing, or sonic.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Explosive Catalyst": {

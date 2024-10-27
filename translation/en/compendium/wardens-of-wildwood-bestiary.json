@@ -9,7 +9,7 @@
           "name": "Maps"
         },
         "consumable->Healing Potion (Lesser)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
         },
         "strike-melee->Rapier": {
           "name": "Rapier"
@@ -384,7 +384,7 @@
         },
         "action->Toxic Spores": {
           "name": "Toxic Spores",
-          "description": "<p><strong>Trigger</strong> A creature critically hits the speaker or the speaker dies</p><hr /><p><strong>Effect</strong> The blighted speaker in spores releases a burst of toxic spores. Any creature within 10 feet of the speaker in spores takes @Damage[3d6[poison]] damage (@Check[fortitude|dc:31|basic] save). Creatures that fail their saving throw are exposed to Ayrzul's Blight.</p>"
+          "description": "<p><strong>Trigger</strong> A creature critically hits the speaker or the speaker dies</p>\n<hr />\n<p><strong>Effect</strong> The blighted speaker in spores releases a burst of toxic spores. Any creature within 10 feet of the speaker in spores takes @Damage[3d6[poison]] damage (@Check[fortitude|dc:31|basic] save). Creatures that fail their saving throw are exposed to Ayrzul's Blight.</p>"
         },
         "action->Accelerate Decay": {
           "name": "Accelerate Decay",
@@ -430,7 +430,7 @@
         },
         "action->Blighted Cloak": {
           "name": "Blighted Cloak",
-          "description": "<p><strong>Trigger</strong> A creature adjacent to the Bonebleacher bugbear hits them with a melee Strike;</p><hr /><p><strong>Effect</strong> The triggering creature is exposed to Ayrzul's Blight. The bugbear can't use Blighted Cloak again until they spend 10 minutes applying blighted plant matter to their cloak.</p>"
+          "description": "<p><strong>Trigger</strong> A creature adjacent to the Bonebleacher bugbear hits them with a melee Strike;</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is exposed to Ayrzul's Blight. The bugbear can't use Blighted Cloak again until they spend 10 minutes applying blighted plant matter to their cloak.</p>"
         },
         "action->Pinpoint Poisoner": {
           "name": "Pinpoint Poisoner",
@@ -438,7 +438,7 @@
         },
         "action->Poison Spray": {
           "name": "Poison Spray",
-          "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is holding a contact or injury poison</p><hr /><p><strong>Effect</strong> The Bonebleacher bugbear attaches the poison container to a nozzle on their mask, which then sprays the poison from the mask in a @Template[cone|distance:15]. The bugbear isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison, and each creature must attempt a Fortitude save against the poison.</p>"
+          "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is holding a contact or injury poison</p>\n<hr />\n<p><strong>Effect</strong> The Bonebleacher bugbear attaches the poison container to a nozzle on their mask, which then sprays the poison from the mask in a @Template[cone|distance:15]. The bugbear isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison, and each creature must attempt a Fortitude save against the poison.</p>"
         },
         "action->Sneak Attack": {
           "name": "Sneak Attack",
@@ -446,7 +446,7 @@
         },
         "action->Twin Feint": {
           "name": "Twin Feint",
-          "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is wielding two melee weapons, each in a different hand</p><hr /><p><strong>Effect</strong> The Bonebleacher bugbear makes a dazzling series of attacks with two weapons, using the first attack to throw their foe @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically off-guard against the second attack. Apply the bugbear's multiple attack penalty to the Strikes normally.</p>"
+          "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is wielding two melee weapons, each in a different hand</p>\n<hr />\n<p><strong>Effect</strong> The Bonebleacher bugbear makes a dazzling series of attacks with two weapons, using the first attack to throw their foe @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically off-guard against the second attack. Apply the bugbear's multiple attack penalty to the Strikes normally.</p>"
         }
       }
     },
@@ -479,7 +479,7 @@
         },
         "action->Aggravating Aura": {
           "name": "Aggravating Aura",
-          "description": "<p>10 feet. Acidic vapor surrounds the caustic wraith, making other creatures' bodies feel raw and especially sensitive to pain. A creature that begins in the area must succeed at a @Check[will|dc:28] save or gain weakness 3 to all damage for 1 round (weakness 5 on a critical failure).</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.WQsMv2KlURI9OKQQ]{Effect: Aggravating Aura}</p>"
+          "description": "<p>10 feet. Acidic vapor surrounds the caustic wraith, making other creatures' bodies feel raw and especially sensitive to pain. A creature that begins in the area must succeed at a @Check[will|dc:28] save or gain weakness 3 to all damage for 1 round (weakness 5 on a critical failure).</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.WQsMv2KlURI9OKQQ]{Effect: Aggravating Aura}</p>"
         },
         "action->Dissolve From the Inside": {
           "name": "Dissolve From the Inside",
@@ -538,10 +538,10 @@
         },
         "action->Regurgitate Sap": {
           "name": "Regurgitate Sap",
-          "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the coiled conifer attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}</p><hr /><p><strong>Effect</strong> Sticky, caustic sap wells up in the conifer's maw. The DC of the Escape check increases by 2, and the creature takes @Damage[3d12[acid]] damage (@Check[reflex|dc:33|basic] save).</p>"
+          "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the coiled conifer attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}</p>\n<hr />\n<p><strong>Effect</strong> Sticky, caustic sap wells up in the conifer's maw. The DC of the Escape check increases by 2, and the creature takes @Damage[3d12[acid]] damage (@Check[reflex|dc:33|basic] save).</p>"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d10+9)[bludgeoning]], @Check[fortitude|dc:33|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d10+9)[bludgeoning]], @Check[fortitude|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Sap Spray": {
           "name": "Sap Spray",
@@ -549,10 +549,10 @@
         },
         "action->Slithering Roots": {
           "name": "Slithering Roots",
-          "description": "<p><strong>Requirements</strong> The coiled conifer has at least one creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The coiled conifer Strides up to its full Speed, taking any creatures it has grabbed with it.</p>"
+          "description": "<p><strong>Requirements</strong> The coiled conifer has at least one creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The coiled conifer Strides up to its full Speed, taking any creatures it has grabbed with it.</p>"
         },
         "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(3d6+9)[bludgeoning]], Rupture 24</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(3d6+9)[bludgeoning]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "action->Push 10 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
@@ -565,7 +565,7 @@
       "disable": "<p>@Check[thievery|dc:30] (expert) twice on cabinet; @Check[crafting|dc:28] or @Check[thievery|dc:28] (expert) to remove each or two doors</p>",
       "hpDetails": "Door Hardness 10; Door HP 40 (BT 20)",
       "reset": "<p>The trap resets after 1 hour.</p>",
-      "routine": "<p>(3 actions) The trap uses its first action to move directly toward the nearest living creature, its second action to make a door Strike against each adjacent creature, and its third action to Batter. This trap doesn't take a multiple attack penalty.</p>\n<hr>\n<p><strong>Speed</strong> 15 feet</p>",
+      "routine": "<p>(3 actions) The trap uses its first action to move directly toward the nearest living creature, its second action to make a door Strike against each adjacent creature, and its third action to Batter. This trap doesn't take a multiple attack penalty.</p>\n<hr />\n<p><strong>Speed</strong> 15 feet</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
         "action->It's Alive!": {
@@ -606,7 +606,7 @@
         },
         "action->Blight Burst": {
           "name": "Blight Burst",
-          "description": "<p><strong>Trigger</strong> The creeping cone swarm is reduced to fewer than half its Hit Points or is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> A @Template[emanation|distance:15] of acid explodes from the creeping cone swarm. Creatures in the area take @Damage[3d12[acid]] damage (@Check[reflex|dc:25|basic] save). Non-blight bonded creatures damaged by this effect are exposed to Ayrzul's Blight.</p>"
+          "description": "<p><strong>Trigger</strong> The creeping cone swarm is reduced to fewer than half its Hit Points or is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> A @Template[emanation|distance:15] of acid explodes from the creeping cone swarm. Creatures in the area take @Damage[3d12[acid]] damage (@Check[reflex|dc:25|basic] save). Non-blight bonded creatures damaged by this effect are exposed to Ayrzul's Blight.</p>"
         },
         "action->Jagged Scales": {
           "name": "Jagged Scales",
@@ -715,15 +715,15 @@
         },
         "action->Drowning Hook": {
           "name": "Drowning Hook",
-          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} within Druulbach's reach</p><hr /><p><strong>Effect</strong> Druulbach uses his sickle to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if it can't breathe water. The target takes @Damage[6d6[bludgeoning]] damage (@Check[fortitude|dc:29|basic]) and loses 3 rounds worth of air if it fails the save.</p>"
+          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} within Druulbach's reach</p>\n<hr />\n<p><strong>Effect</strong> Druulbach uses his sickle to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if it can't breathe water. The target takes @Damage[6d6[bludgeoning]] damage (@Check[fortitude|dc:29|basic]) and loses 3 rounds worth of air if it fails the save.</p>"
         },
         "action->Flurry of Hooks": {
           "name": "Flurry of Hooks",
-          "description": "<p><strong>Requirements</strong> Druulbach is wielding two sickles</p><hr /><p><strong>Effect</strong> Druulbach makes three sickle Strikes against one target. If multiple attacks hit, combine their damage and apply weaknesses and resistances only once.</p>"
+          "description": "<p><strong>Requirements</strong> Druulbach is wielding two sickles</p>\n<hr />\n<p><strong>Effect</strong> Druulbach makes three sickle Strikes against one target. If multiple attacks hit, combine their damage and apply weaknesses and resistances only once.</p>"
         },
         "action->Serrated Takedown": {
           "name": "Serrated Takedown",
-          "description": "<p><strong>Requirements</strong> Druulbach hit with a sickle Strike on his most recent action this turn</p><hr /><p><strong>Effect</strong> Druulbach drags down the target, knocking it @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and dealing @Damage[3d6[persistent,bleed]] damage to the creature.</p>"
+          "description": "<p><strong>Requirements</strong> Druulbach hit with a sickle Strike on his most recent action this turn</p>\n<hr />\n<p><strong>Effect</strong> Druulbach drags down the target, knocking it @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and dealing @Damage[3d6[persistent,bleed]] damage to the creature.</p>"
         }
       }
     },
@@ -929,10 +929,10 @@
         },
         "action->Labyrinthine Vision": {
           "name": "Labyrinthine Vision",
-          "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]] damage with a @Check[will|dc:33] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
+          "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]] damage with a @Check[will|dc:33] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
         },
         "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, claw, @Check[reflex|dc:33|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, claw, @Check[reflex|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         }
       }
     },
@@ -1198,14 +1198,14 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
         },
         "action->Troop Defenses": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Verdant Burst": {
           "name": "Verdant Burst",
           "description": "<p>When a leshy mob's Hit Points reach a threshold that would reduce its size, a burst of primal energy explodes from the fallen leshies and empowers the surviving fighters. The leshy mob gains [[/r 4d8]] temporary Hit Points that last for 10 minutes. In addition, all squares within 5 feet of the troop become filled with various plants, becoming difficult terrain. If the environment is not a viable environment for these plants, they wither after 24 hours.</p>"
         },
         "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The leshies can transform into an assortment of Small plants that fills a @Template[burst|distance:15] centered on any one square the leshy mob occupies, creating difficult terrain. When the leshies return to their natural form, they Form Up anywhere within the burst. This otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The leshies can transform into an assortment of Small plants that fills a @Template[burst|distance:15] centered on any one square the leshy mob occupies, creating difficult terrain. When the leshies return to their natural form, they Form Up anywhere within the burst. This otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->One with the Foliage": {
           "name": "One with the Foliage",
@@ -1221,7 +1221,7 @@
         },
         "action->Veggielante Justice": {
           "name": "Veggielante Justice",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leshies assault each enemy creature within 5 feet, with a @Check[reflex|dc:30|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[3d8[bludgeoning]] or @Damage[3d8[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+11)[bludgeoning]] or @Damage[(3d8+11)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+16)[bludgeoning]] or @Damage[(3d8+16)[slashing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The leshies assault each enemy creature within 5 feet, with a @Check[reflex|dc:30|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[3d8[bludgeoning]] or @Damage[3d8[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+11)[bludgeoning]] or @Damage[(3d8+11)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+16)[bludgeoning]] or @Damage[(3d8+16)[slashing]] damage</p>"
         }
       }
     },
@@ -1230,12 +1230,12 @@
       "description": "<p>A mass of petrified lichen takes the shape of a beast and lurches forward.</p>",
       "disable": "<p>@Check[survival|dc:33] or @Check[thievery|dc:33] (master) to scrape away lichen without being exposed, or @Check[medicine|dc:36] or @Check[nature|dc:36] (expert) to concoct a natural remedy and weaken the hazard; four total successes are required to disable it.</p>",
       "reset": "<p>The trap resets over the course of an hour.</p>",
-      "routine": "<p>(3 actions) The lichen monstrosity uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+10)[bludgeoning]] damage. Each creature in its path must attempt a @Check[reflex|dc:31] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is exposed to leechlichen.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is exposed to leechlichen. The results of its saving throw against the leechlichen are treated as one step worse. Each successful check to disable this hazard reduces its movement by 30 feet, and the fourth success disables it completely.</p>",
+      "routine": "<p>(3 actions) The lichen monstrosity uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+10)[bludgeoning]] damage. Each creature in its path must attempt a @Check[reflex|dc:31] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is exposed to leechlichen.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is exposed to leechlichen. The results of its saving throw against the leechlichen are treated as one step worse. Each successful check to disable this hazard reduces its movement by 30 feet, and the fourth success disables it completely.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
         "action->Lurching Lichen": {
           "name": "Lurching Lichen",
-          "description": "<p><strong>Trigger</strong> Three or more creatures not infected with leechlichen enter the area of the hazard;</p><hr /><p><strong>Effect</strong> The mass of lichen lurches forward, taking up one 5-foot square and forming a beast-like shape. The hazard rolls initiative.</p>"
+          "description": "<p><strong>Trigger</strong> Three or more creatures not infected with leechlichen enter the area of the hazard;</p>\n<hr />\n<p><strong>Effect</strong> The mass of lichen lurches forward, taking up one 5-foot square and forming a beast-like shape. The hazard rolls initiative.</p>"
         }
       }
     },
@@ -1312,7 +1312,7 @@
       "description": "<p>The illusion shatters, revealing the grove to be a lifeless scar and the seemingly peaceful loggers to be crawling aimlessly about the clearing, consumed by rage and lashing out at anything that comes near.</p>",
       "disable": "<p>@Check[nature|dc:22] (trained) to tame the primal energy, @Check[diplomacy|dc:23] (trained) to console the dryad, @Check[occultism|dc:24] (trained) to identify and heal the emotional wounds; three successes are required to disable the haunt.</p>",
       "reset": "<p>Unless Silene is destroyed, this haunt can recharge itself after 1 hour.</p>",
-      "routine": "<p>(1 action; emotion, mental, primal) Myristica bemoans her grove's fate, overwhelming foes with sorrow. Each creature in the grove must attempt a @Check[will|dc:23|traits:emotion,mental,primal] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round and takes @Damage[2d6[mental]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[2d6[mental]] damage, plus @Damage[2d6[persistent,mental]] damage. While taking this persistent damage, they are dazzled.</p>",
+      "routine": "<p>(1 action; emotion, mental, primal) Myristica bemoans her grove's fate, overwhelming foes with sorrow. Each creature in the grove must attempt a @Check[will|dc:23|traits:emotion,mental,primal] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round and takes @Damage[2d6[mental]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[2d6[mental]] damage, plus @Damage[2d6[persistent,mental]] damage. While taking this persistent damage, they are dazzled.</p>",
       "stealth": "<p>(expert) to recognize that the scene before them is an illusion.</p>",
       "items": {
         "action->Awaken": {
@@ -1418,7 +1418,7 @@
         },
         "action->Memory Maelstrom": {
           "name": "Memory Maelstrom",
-          "description": "<p>Old Thornbreaker tries to overwhelm foes with a surge of information it has absorbed over its long life. This surge deals @Damage[5d6[mental]] damage to each enemy within @Template[emanation|distance:40]{40 feet}, who must attempt a @Check[will|dc:32|traits:damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature maintains its composure, takes no damage, and is temporarily immune to Memory Maelstrom for 1 minute.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/br 2d4 #Duration Confusion]]{2d4 rounds}, and is stunned 3.</p>"
+          "description": "<p>Old Thornbreaker tries to overwhelm foes with a surge of information it has absorbed over its long life. This surge deals @Damage[5d6[mental]] damage to each enemy within @Template[emanation|distance:40]{40 feet}, who must attempt a @Check[will|dc:32|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature maintains its composure, takes no damage, and is temporarily immune to Memory Maelstrom for 1 minute.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/br 2d4 #Duration Confusion]]{2d4 rounds}, and is stunned 3.</p>"
         },
         "lore->Cradle of Knot Lore": {
           "name": "Cradle of Knot Lore"
@@ -1481,7 +1481,7 @@
         },
         "action->Coppice Regrowth": {
           "name": "Coppice Regrowth",
-          "description": "<p>A phytohydra ordinarily has five heads. A creature can attempt to sever one of the heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that isn't completely severed returns to full Hit Points at the end of any creature's turn.</p>\n<p>A phytohydra can regrow a severed head using phytohydra regeneration. A creature can prevent this regrowth by dealing fire damage to the stump, sealing it. Single-target fire effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space seal all stumps if they deal fire damage. If the attack that severs a head deals any fire damage or was dealt by an axe, the stump is sealed instantly. If all five heads are sealed, the phytohydra dies.</p><hr /><p><strong>Phytohydra Head</strong></p><ul><li><p><strong>Hit Points</strong> 30</p></li><li><p><strong>Immunities</strong> Area Damage, Bleed, Paralyzed, Poison, Sleep</p></li><li><p><strong>Weaknesses</strong> Fire 10, Slashing 5<br /></p></li></ul><p>@UUID[Compendium.pf2e.bestiary-effects.Item.PSRUF9Elf05KtgvF]{Effect: Phytohydra Heads}</p>"
+          "description": "<p>A phytohydra ordinarily has five heads. A creature can attempt to sever one of the heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that isn't completely severed returns to full Hit Points at the end of any creature's turn.</p>\n<p>A phytohydra can regrow a severed head using phytohydra regeneration. A creature can prevent this regrowth by dealing fire damage to the stump, sealing it. Single-target fire effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space seal all stumps if they deal fire damage. If the attack that severs a head deals any fire damage or was dealt by an axe, the stump is sealed instantly. If all five heads are sealed, the phytohydra dies.</p>\n<hr />\n<p><strong>Phytohydra Head</strong></p>\n<ul>\n<li>\n<p><strong>Hit Points</strong> 30</p>\n</li>\n<li>\n<p><strong>Immunities</strong> Area Damage, Bleed, Paralyzed, Poison, Sleep</p>\n</li>\n<li>\n<p><strong>Weaknesses</strong> Fire 10, Slashing 5<br /></p>\n</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.PSRUF9Elf05KtgvF]{Effect: Phytohydra Heads}</p>"
         },
         "action->Reactive Strike (See Reactive Heads)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\nReactive Strike (See Reactive Heads)"
@@ -1613,11 +1613,11 @@
         },
         "action->Primal Destruction": {
           "name": "Primal Destruction",
-          "description": "<p>When the primal warden of Zibik is reduced to 0 Hit Points, it erupts with primal energy in a @Template[emanation|distance:30], dealing @Damage[12d6[void]] damage. Each creature in the area must attempt a @Check[will|dc:32] save with the following outcomes.</p><hr /><p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by Zibik to be @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect with a counteract DC of 32.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+          "description": "<p>When the primal warden of Zibik is reduced to 0 Hit Points, it erupts with primal energy in a @Template[emanation|distance:30], dealing @Damage[12d6[void]] damage. Each creature in the area must attempt a @Check[will|dc:32] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by Zibik to be @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect with a counteract DC of 32.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
         },
         "action->Rotten Burst": {
           "name": "Rotten Burst",
-          "description": "<p><strong>Trigger</strong> The primal warden of Zibik takes physical damage</p><hr /><p><strong>Effect</strong> A chunk of rotten bark bursts from the warden's body at its attacker. The warden makes a rotten bark Strike against an adjacent creature without triggering reactions.</p>"
+          "description": "<p><strong>Trigger</strong> The primal warden of Zibik takes physical damage</p>\n<hr />\n<p><strong>Effect</strong> A chunk of rotten bark bursts from the warden's body at its attacker. The warden makes a rotten bark Strike against an adjacent creature without triggering reactions.</p>"
         },
         "action->Flourishing Growth": {
           "name": "Flourishing Growth",
@@ -1769,7 +1769,7 @@
         },
         "action->Quick Capture": {
           "name": "Quick Capture",
-          "description": "<p><strong>Trigger</strong> A creature hits or touches the reborn devotee</p><hr /><p><strong>Effect</strong> The reborn devotee makes a stalk Strike against the triggering creature. If it hits, the creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in that stalk.</p>"
+          "description": "<p><strong>Trigger</strong> A creature hits or touches the reborn devotee</p>\n<hr />\n<p><strong>Effect</strong> The reborn devotee makes a stalk Strike against the triggering creature. If it hits, the creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in that stalk.</p>"
         },
         "action->Focused Assault": {
           "name": "Focused Assault",
@@ -1780,7 +1780,7 @@
           "description": "<p>The reborn devotee makes four stalk Strikes at a –2 penalty, each against a different target. These attacks count toward the reborn devotee's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all its attacks.</p>"
         },
         "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(2d8+5)[bludgeoning],(2d6)[acid]], Rupture 17</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(2d8+5)[bludgeoning],(2d6)[acid]], Rupture 17</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         }
       }
     },
@@ -1813,7 +1813,7 @@
           "description": "<p>When a redwood leshy dies, a burst of primal energy explodes from their body, restoring @Damage[5d8[healing]]{5d8 Hit Points} to each plant creature in a @Template[emanation|distance:30]. This area is filled with saplings, becoming difficult terrain. If the environment isn't a viable environment for these trees, they wither after 24 hours.</p>"
         },
         "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The redwood leshy can take the form of a Large tree, using the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The redwood leshy can take the form of a Large tree, using the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->Looming Strike": {
           "name": "Looming Strike",
@@ -1895,7 +1895,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.7jWANvnDmNcQvFve]\n<p>Any weapon or unarmed attack Ruzadoya uses gains the effects of the +1 greater striking and wounding weapon runes.</p>"
         },
         "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, hoof, @Check[reflex|dc:31|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, hoof, @Check[reflex|dc:31|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         },
         "action->Weapon Master": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.6isn9nqnvfRrC1wW]\nWeapon Master"
@@ -1943,7 +1943,7 @@
       "description": "<p>The illusion shatters, revealing the grove to be a lifeless scar and the seemingly peaceful loggers to be crawling aimlessly about the clearing, consumed by rage and lashing out at anything that comes near.</p>",
       "disable": "<p>@Check[nature|dc:22] (trained) to tame the primal energy, @Check[religion|dc:24] (trained) to suppress the haunt, @Check[diplomacy|dc:25] (trained) to console the dryad; three successes are required to disable the haunt.</p>",
       "reset": "<p>Unless Silene is destroyed, this haunt can recharge itself after 1 hour.</p>",
-      "routine": "<p>(1 action; emotion, mental, primal) Sarracenia's rage overwhelms up to two living creatures in the grove, each of which must attempt a @Check[will|dc:23|traits:emotion,mental,primal] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> For 1 round, the creature is confused, is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and gains a +4 status bonus to damage rolls.</p>",
+      "routine": "<p>(1 action; emotion, mental, primal) Sarracenia's rage overwhelms up to two living creatures in the grove, each of which must attempt a @Check[will|dc:23|traits:emotion,mental,primal] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> For 1 round, the creature is confused, is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and gains a +4 status bonus to damage rolls.</p>",
       "stealth": "<p>(expert) to recognize that the scene before them is an illusion.</p>",
       "items": {
         "action->Awaken": {
@@ -2115,7 +2115,7 @@
         },
         "action->Consume Essence": {
           "name": "Consume Essence",
-          "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Requirements</strong> The spitting sawfly is adjacent to a creature with the wood trait or to a coiled conifer</p><hr /><p><strong>Effect</strong> The sawfly feasts upon the targeted creature or the coiled conifer's sap, regaining @Damage[5d6[healing]]{5d6 Hit Points}. A targeted creature must attempt a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
+          "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Requirements</strong> The spitting sawfly is adjacent to a creature with the wood trait or to a coiled conifer</p>\n<hr />\n<p><strong>Effect</strong> The sawfly feasts upon the targeted creature or the coiled conifer's sap, regaining @Damage[5d6[healing]]{5d6 Hit Points}. A targeted creature must attempt a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
         },
         "action->Creeping Sprout": {
           "name": "Creeping Sprout",
@@ -2393,7 +2393,7 @@
       "items": {
         "action->Welcome to the Feywrithe": {
           "name": "Welcome to the Feywrithe",
-          "description": "<p><strong>Trigger</strong> 1 round passes since both isqulugs in area <strong>B6</strong> are slain, or 10 rounds pass since they rolled initiative</p><hr /><p><strong>Effect</strong> The isqulugs die horribly (if they're still alive), rent by clawed fey hands. Spectral fey pull at the other creatures in the caves, all of which must attempt a @Check[fortitude|dc:36] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pulled 10 feet toward the standing stones.</p>\n<p><strong>Failure</strong> The creature is pulled 15 feet toward the standing stones.</p>\n<p><strong>Critical Failure</strong> The creature is pulled 15 feet toward the standing stones, knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and takes 1d6 bludgeoning damage (in addition to any damage from the toxic water).</p>"
+          "description": "<p><strong>Trigger</strong> 1 round passes since both isqulugs in area <strong>B6</strong> are slain, or 10 rounds pass since they rolled initiative</p>\n<hr />\n<p><strong>Effect</strong> The isqulugs die horribly (if they're still alive), rent by clawed fey hands. Spectral fey pull at the other creatures in the caves, all of which must attempt a @Check[fortitude|dc:36] save. The haunt then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pulled 10 feet toward the standing stones.</p>\n<p><strong>Failure</strong> The creature is pulled 15 feet toward the standing stones.</p>\n<p><strong>Critical Failure</strong> The creature is pulled 15 feet toward the standing stones, knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and takes 1d6 bludgeoning damage (in addition to any damage from the toxic water).</p>"
         }
       }
     },
@@ -2415,14 +2415,14 @@
           "consumableSpellName": "Sound Body",
           "consumableSpellDescription": "<p>You send a surge of healing energy to restore the target's body. Attempt to counteract an effect of your choice imposing one of these conditions on the target: @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened}. If you didn't counteract the effect, but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed.</p>\n<p>This spell can't counteract or suppress curses, diseases, or conditions that are part of the target's normal state.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} to the list of conditions.</p>",
           "consumableSpellTarget": "1 willing creature",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Et8RSCLx8w7uOLvo]{Sound Body}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Et8RSCLx8w7uOLvo]{Sound Body}</p>\n<hr />\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Scroll of Soothe (Rank 6)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\nScroll of Soothe (Rank 6)",
           "consumableSpellName": "Soothe",
           "consumableSpellDescription": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.nkk4O5fyzrC0057i]{Spell Effect: Soothe}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
           "consumableSpellTarget": "1 willing creature",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}</p>\n<hr />\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Fighting Fan": {
           "name": "Fighting Fan"
@@ -2581,7 +2581,7 @@
         },
         "action->Sentry's Warning": {
           "name": "Sentry's Warning",
-          "description": "<p><strong>Trigger</strong> The sentry is about to roll Perception or Survival to determine their initiative;</p><hr /><p><strong>Effect</strong> The sentry visually or audibly warns allies, granting them a +1 circumstance bonus to their initiative rolls. Depending on how the sentry warns allies, this action has the auditory or visual trait.</p>"
+          "description": "<p><strong>Trigger</strong> The sentry is about to roll Perception or Survival to determine their initiative;</p>\n<hr />\n<p><strong>Effect</strong> The sentry visually or audibly warns allies, granting them a +1 circumstance bonus to their initiative rolls. Depending on how the sentry warns allies, this action has the auditory or visual trait.</p>"
         },
         "action->Hunt Prey": {
           "name": "Hunt Prey",
@@ -2615,14 +2615,14 @@
         },
         "action->Reactive Strike (Special)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\nReactive Strike (Special)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\n<p>Bristles only. The woodweave caterpillar gains an extra reaction at the start of each of its turns that it can use only to make a Reactive Strike. It can't use more than one Reactive Strike triggered by the same action. In addition to the normal trigger, the caterpillar can make a Reactive Strike against a creature that touches it or an adjacent creature that attempts a melee Strike against it.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\n<p>Bristles only. The woodweave caterpillar gains an extra reaction at the start of each of its turns that it can use only to make a Reactive Strike. It can't use more than one Reactive Strike triggered by the same action. In addition to the normal trigger, the caterpillar can make a Reactive Strike against a creature that touches it or an adjacent creature that attempts a melee Strike against it.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
         },
         "action->Penetrating Bristles": {
           "name": "Penetrating Bristles",
           "description": "<p>On a critical hit with a bristles Strike, a woodweave caterpillar's bristles lodge in the target's body, causing severe pain and blood loss. They deal @Damage[3d6[bleed]] damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as the persistent damage continues.</p>"
         },
         "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or Smaller, foot, @Check[reflex|dc:32|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or Smaller, foot, @Check[reflex|dc:32|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         }
       }
     },

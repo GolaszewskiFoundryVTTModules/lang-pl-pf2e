@@ -135,7 +135,7 @@
                 },
                 "action->Surface-Bound": {
                     "name": "Surface-Bound",
-                    "description": "<p>A living graffiti can move only along flat surfaces. If the surface it's on is destroyed, the graffiti takes [[/r 1d6]] damage and is shunted to the nearest flat surface. If there's no flat surface within 5 feet, the graffiti is destroyed.</p>"
+                    "description": "<p>A living graffiti can move only along flat surfaces. If the surface it's on is destroyed, the graffiti takes @Damage[1d6[untyped]]{1k6 obrażeń} and is shunted to the nearest flat surface. If there's no flat surface within 5 feet, the graffiti is destroyed.</p>"
                 },
                 "action->Splatter": {
                     "name": "Splatter",
@@ -388,8 +388,8 @@
                 "weapon->Spiked Gauntlet": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YFfG2fMyaIAXkmtr]\n<p>Providing the same defensive function as a standard gauntlet, this version has a group of spikes protruding from the knuckles to deliver piercing damage with a punch.</p>"
                 },
-                "strike-melee->Spiked Guantlet": {
-                    "name": "Spiked Guantlet"
+                "strike-melee->Spiked Gauntlet": {
+                    "name": "Spiked Gauntlet"
                 },
                 "strike-ranged->Throwing Knife": {
                     "name": "Throwing Knife"
@@ -646,7 +646,7 @@
             "items": {
                 "action->Feral Roar": {
                     "name": "Feral Roar",
-                    "description": "<p><strong>Aktywator</strong> A creature approaches within 10 feet of the polar bear spirit</p><hr /><p><strong>Efekt</strong> The polar bear spirit roars. Each creature in the room must attempt a @Check[will|dc:28] save. The enraged polar bear spirit rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected. Success The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p><p><strong>Porażka</strong> The creature takes @Damage[6d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[12d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature approaches within 10 feet of the polar bear spirit</p><hr /><p><strong>Efekt</strong> The polar bear spirit roars. Each creature in the room must attempt a @Check[will|dc:28] save. The enraged polar bear spirit rolls initiative.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p><p><strong>Porażka</strong> The creature takes @Damage[6d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p><p><strong>Krytyczna Porażka</strong> The creature takes @Damage[12d6[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3}.</p>"
                 },
                 "strike-melee->Spiritual Claws": {
                     "name": "Spiritual Claws"
@@ -881,7 +881,7 @@
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The giant leech has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p><hr /><p><strong>Efekt</strong> The giant leech drains blood from the creature it has grabbed. This deals [[/r 2d4]] damage. A creature that has its blood drained by a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives any kind or amount of healing.</p>"
+                    "description": "<p><strong>Wymagania</strong> The giant leech has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}</p><hr /><p><strong>Efekt</strong> The giant leech drains blood from the creature it has grabbed. This deals @Damage[2d4[untyped]]{2k4 obrażeń}. A creature that has its blood drained by a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives any kind or amount of healing.</p>"
                 },
                 "action->Gnash": {
                     "name": "Gnash",
@@ -917,7 +917,7 @@
                 },
                 "action->Shake It Off": {
                     "name": "Shake It Off",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Aktywator</strong> The glacial worm would be affected by a condition or adverse effect (such as <em>baleful polymorph</em>)</p><hr /><p><strong>Efekt</strong> The glacial worm negates the triggering condition or effect.</p><hr /><p><strong>Efekt</strong> s from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Aktywator</strong> The glacial worm would be affected by a condition or adverse effect (such as <em>baleful polymorph</em>)</p><hr /><p><strong>Efekt</strong> The glacial worm negates the triggering condition or effect.</p><hr /><p>Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
                 },
                 "action->Fast Swallow": {
                     "name": "Fast Swallow",
@@ -1848,7 +1848,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "consumable->Antidote (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.7z1iY4AaNEAIKuAU]{Efekt: Antidote (Mniejszy)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Efekt: Antidote}</p>"
                 },
                 "strike-melee->Phantom Pick": {
                     "name": "Phantom Pick"
@@ -1903,7 +1903,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]]{2k8+5 Hit Points}.</p>"
                 },
                 "consumable->Antidote (Lesser)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.7z1iY4AaNEAIKuAU]{Efekt: Antidote (Mniejszy)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Interakcja</p><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Efekt: Antidote}</p>"
                 },
                 "strike-melee->Pick": {
                     "name": "Pick"

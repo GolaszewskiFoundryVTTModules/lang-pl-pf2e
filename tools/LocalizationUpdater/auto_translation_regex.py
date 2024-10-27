@@ -57,6 +57,7 @@ replacement_patterns = [
     (r'\(Minor\)', r'(Drobny)'),
     (r'\(Lesser\)', r'(Mniejszy)'),
     (r'\(Moderate\)', r'(Umiarkowany)'),
+    (r'\(Standard\)', r'(Standardowy)'),
     (r'\(Greater\)', r'(Większy)'),
     (r'\(Major\)', r'(Potężny)'),
     (r'\(Supreme\)', r'(Wyjątkowy)'),

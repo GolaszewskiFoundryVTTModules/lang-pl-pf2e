@@ -41,6 +41,7 @@ replacement_patterns = [
     (r'\{Unconscious\}', r'{Nieprzytomny}'),
     (r'\{Undetected\}', r'{Niewykryty}'),
     (r'\{Unfriendly\}', r'{Nieprzyjazny}'),
+    (r'\{Off-Guard\}', r'{Opuszczona Garda}'),
     (r'\{Sickened(| \d+)\}', r'{Zemdlony\1}'),
     (r'\{Clumsy(| \d+)\}', r'{Niezdarny\1}'),
     (r'\{Enfeebled(| \d+)\}', r'{Osłabiony\1}'),

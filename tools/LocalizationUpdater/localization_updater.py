@@ -6,12 +6,22 @@ from collections import Counter
 from tqdm import tqdm
 import datetime
 from difflib import SequenceMatcher
+from typing import Dict, List, Set, Tuple, Optional
 
 from auto_translation_regex import replacement_patterns
 
 class LocalizationUpdater:
-    
-    def __init__(self, en_old_path, en_path, pl_path, verbose):
+    # Reference symbols detection regex patterns
+    RUDIMENTARY_TRANSLATION_REGEX_PATTERNS = [
+        r'@[^\]]+\[([^\[]|\[\S+\])+\]',
+        r'(?<!\])\{[^\{]+\}',
+        r'(?<!\[)\[[^\[\]]+\]', # single square, to remove damage
+        r'\[\[[^(\]\])]+\]\]',  # afterwards, double square, to remove formulas
+        r'<[^<]+>',
+        r'\\n'
+    ]
+
+    def __init__(self, en_old_path: str, en_path: str, pl_path: str, verbose: bool):
         self.en_old_path = en_old_path
         self.en_path = en_path
         self.pl_path = pl_path
@@ -28,7 +38,13 @@ class LocalizationUpdater:
         self.updated_eng_keys = []
         self.rudimentary_translations_updated = []
 
-        self.replacement_patterns = replacement_patterns
+        # Pre-compile all auto-translation regex patterns
+        self.compiled_replacement_patterns = [
+            (regex.compile(pattern), replacement)
+            for pattern, replacement in replacement_patterns
+        ]
+
+        self.compiled_patterns = [regex.compile(pattern) for pattern in self.RUDIMENTARY_TRANSLATION_REGEX_PATTERNS]
 
     def get_file_from_directory(self, filepath):
         try:
@@ -136,30 +152,19 @@ class LocalizationUpdater:
 
         return ''.join(diff)
 
-    def is_translation_rudimentary(self, en_str, pl_str, verbose = False):
+    def is_translation_rudimentary(self, en_str: str, pl_str: str, verbose: bool = False) -> bool:
         if not en_str or not pl_str:
             print("Attempted to compare null string(s)")
             return False
         
-        # Regex to match and exclude
-        regex_patterns = [
-             r'@[^\]]+\[([^\[]|\[\S+\])+\]',
-             r'(?<!\])\{[^\{]+\}',
-             r'(?<!\[)\[[^\[\]]+\]', # single square, to remove damage
-             r'\[\[[^(\]\])]+\]\]', # afterwards, double square, to remove formulas
-             r'<[^<]+>',
-             r'\\n'
-        ]
-
-        # Function to clean the string by removing all patterns
-        def clean_string(s, patterns):
+        def clean_string(s: str, patterns: List[regex.Pattern]) -> str:
             for pattern in patterns:
-                s = regex.sub(pattern, '', s)
+                s = pattern.sub('', s)
             return s
 
-        # Remove matched patterns from the strings
-        en_str_cleaned = clean_string(en_str, regex_patterns)
-        pl_str_cleaned = clean_string(pl_str, regex_patterns)
+        # Use the compiled patterns
+        en_str_cleaned = clean_string(en_str, self.compiled_patterns)
+        pl_str_cleaned = clean_string(pl_str, self.compiled_patterns)
 
         if(verbose):
             print(en_str_cleaned)
@@ -177,7 +182,7 @@ class LocalizationUpdater:
         similarity = matcher.ratio()
         return similarity >= similarity_threshold
 
-    def auto_pretranslate(self, en_str):
+    def auto_pretranslate(self, en_str: Optional[str]) -> Optional[str]:
         def save_and_replace_brackets(text):
             """
             Detects text encapsulated in square brackets, including nested ones,
@@ -228,29 +233,28 @@ class LocalizationUpdater:
                 modified_text = modified_text.replace(f"__PLACEHOLDER_{i}__", original_text)
             return modified_text
         
-        def replace_with_patterns(text, replacements):
+        def replace_with_patterns(text: str, compiled_replacements) -> str:
             """
-            Replaces occurrences in 'text' based on a list of ('pattern', 'replacement') tuples.
+            Replaces occurrences in 'text' using pre-compiled patterns
             
             :param text: The original text to process.
-            :param replacements: A list of tuples where the first element is the regex pattern
-                                to match and the second element is the replacement pattern.
+            :param compiled_replacements: A list of tuples where the first element is the compiled regex pattern
+                                        and the second element is the replacement pattern.
             :return: The modified text after all replacements.
             """
-            
-            for pattern, replacement in replacements:
-                text = regex.sub(pattern, replacement, text)
+            for pattern, replacement in compiled_replacements:
+                text = pattern.sub(replacement, text)
             return text
 
-        if en_str == None:
+        if en_str is None:
             print("Cannot pretranslate empty string")
             return en_str
 
         # Step 1: Save and replace bracketed sections with placeholders
         text_with_placeholders, bracketed_texts = save_and_replace_brackets(en_str)
 
-        # Step 2: Apply regex replacements
-        modified_text = replace_with_patterns(text_with_placeholders, self.replacement_patterns)
+        # Step 2: Apply regex replacements using compiled patterns
+        modified_text = replace_with_patterns(text_with_placeholders, self.compiled_replacement_patterns)
 
         # Step 3: Restore the original bracketed sections
         final_text = restore_bracketed_text(modified_text, bracketed_texts)

@@ -3,13 +3,11 @@ replacement_patterns = [
     (r' -(\d+)', r' –\1'),
     (r'(\S)—(\S)', r'\1 — \2'),
     (r'([„”“])', r'"'),
+    (r'([’])', r'\''),
     (r'>\n<', r'><'),
-    # Ordinals
-    (r'(\d+)(st|nd|rd|th)', r'\1.'),
-    (r'(\d+\.)-Level', r'\1 Poziomu.'),
-    (r'(\d+\.)-level', r'\1 poziomu.'),
-    (r'(\d+\.)-Rank', r'\1 Kręgu'),
-    (r'(\d+\.)-rank', r'\1 kręgu'),
+    # Ordinals - combined case-sensitive patterns
+    (r'(\d+\.)-([Ll]evel)', lambda m: f"{m.group(1)} {'Poziomu' if m.group(2)[0].isupper() else 'poziomu'}"),
+    (r'(\d+\.)-([Rr]ank)', lambda m: f"{m.group(1)} {'Kręgu' if m.group(2)[0].isupper() else 'kręgu'}"),
     # Dies
     (r'(\d*)d(\d+)', r'\1k\2'),
     # Statuses

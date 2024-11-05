@@ -147,14 +147,6 @@ class LocalizationUpdater:
             """Format text for display by escaping newlines and reducing whitespace"""
             return text.replace("\n", "\\n").strip()
 
-        def get_context(text: str, pos: int, length: int = 20) -> str:
-            """Get surrounding context for a change"""
-            start = max(0, pos - length)
-            end = min(len(text), pos + length)
-            prefix = "..." if start > 0 else ""
-            suffix = "..." if end < len(text) else ""
-            return f"{prefix}{text[start:end]}{suffix}"
-
         s = SequenceMatcher(None, old_value, new_value)
         diff_parts = []
         
@@ -162,41 +154,19 @@ class LocalizationUpdater:
             if tag == 'equal':
                 continue
                 
-            # Add context around the change
-            context_before = get_context(old_value, i1)
-            
             if tag == 'replace':
-                diff_parts.append(f"\n      Context: {clean_for_display(context_before)}")
                 diff_parts.append(f"      - {clean_for_display(old_value[i1:i2])}")
                 diff_parts.append(f"      + {clean_for_display(new_value[j1:j2])}")
                 
-                # Calculate similarity for this segment
-                similarity = SequenceMatcher(None, old_value[i1:i2], new_value[j1:j2]).ratio()
-                if similarity > 0.5:  # Only show for somewhat similar changes
-                    diff_parts.append(f"      (Similarity: {similarity:.2%})")
-                
             elif tag == 'delete':
-                diff_parts.append(f"\n      Context: {clean_for_display(context_before)}")
                 diff_parts.append(f"      - {clean_for_display(old_value[i1:i2])}")
                 
             elif tag == 'insert':
-                diff_parts.append(f"\n      Context: {clean_for_display(context_before)}")
                 diff_parts.append(f"      + {clean_for_display(new_value[j1:j2])}")
-
-        # If the changes are minimal, suggest a potential regex pattern
-        if s.ratio() > 0.8:  # High similarity
-            old_parts = [old_value[i1:i2] for tag, i1, i2, _, _ in s.get_opcodes() if tag != 'equal']
-            new_parts = [new_value[j1:j2] for tag, _, _, j1, j2 in s.get_opcodes() if tag != 'equal']
-            
-            if len(old_parts) == 1 and len(new_parts) == 1:
-                # Escape special regex characters
-                old_pattern = regex.escape(old_parts[0])
-                diff_parts.append("\n      Potential regex:")
-                diff_parts.append(f"      {old_pattern} -> {new_parts[0]}")
 
         return '\n'.join(diff_parts)
 
-    def _is_translation_rudimentary(self, en_str: str, pl_str: str, verbose: bool = False) -> bool:
+    def _is_translation_rudimentary(self, en_str: str, pl_str: str) -> bool:
         if not en_str or not pl_str:
             print("Attempted to compare null string(s)")
             return False
@@ -209,13 +179,6 @@ class LocalizationUpdater:
         # Use the compiled patterns
         en_str_cleaned = clean_string(en_str, self.compiled_patterns)
         pl_str_cleaned = clean_string(pl_str, self.compiled_patterns)
-
-        if(verbose):
-            print(en_str_cleaned)
-            print(pl_str_cleaned)
-            
-            matcher = SequenceMatcher(None, en_str_cleaned, pl_str_cleaned)
-            print(matcher.ratio())
 
         # do not check for extremely short strings
         # if min(len(en_str_cleaned), len(pl_str_cleaned)) < 150:
@@ -544,7 +507,7 @@ class LocalizationUpdater:
         if self.outdated_keys:
             logging.info(f"  Outdated records: {len(self.outdated_keys)}")
             for key, diff in self.outdated_keys:
-                logging.info(f"    Key: {key}\n    Diff:{diff}\n")
+                logging.info(f"    Key: {key}\n    Diff:\n{diff}\n")
 
         # Validate and log results
         self._validate_and_log_results()

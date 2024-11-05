@@ -5,3 +5,5 @@ Treerazer - Drzewomór
 Norgorber - (Ojciec Skóroszwacz)
 
 Dawnflower - świtokwiecie
+
+Verex-That-Was - Verex-Który-Przeminął

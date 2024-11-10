@@ -1,57 +1,87 @@
-replacement_patterns = [
-    # Styling and punctuation
+# Basic formatting and typography
+formatting_patterns = [
     (r' -(\d+)', r' –\1'),
     (r'(\S)—(\S)', r'\1 — \2'),
     (r'([„”“])', r'"'),
-    (r'([’])', r'\''),
+    (r'([’])', r"'"),
     (r'>\n<', r'><'),
-    # Ordinals - combined case-sensitive patterns
+]
+
+# Game mechanics and basic rules
+game_mechanics_patterns = [
+    # Ordinals
     (r'(\d+\.)-([Ll]evel)', lambda m: f"{m.group(1)} {'Poziomu' if m.group(2)[0].isupper() else 'poziomu'}"),
     (r'(\d+\.)-([Rr]ank)', lambda m: f"{m.group(1)} {'Kręgu' if m.group(2)[0].isupper() else 'kręgu'}"),
-    # Dies
+    # Dice notation
     (r'(\d*)d(\d+)', r'\1k\2'),
-    # Statuses
-    (r'\{Invisible\}', r'{Niewidzialny}'),
-    (r'\{Blinded\}', r'{Oślepiony}'),
-    (r'\{Broken\}', r'{Uszkodzony}'),
-    (r'\{Concealed\}', r'{Przysłonięty}'),
-    (r'\{Confused\}', r'{Zdezorientowany}'),
-    (r'\{Controlled\}', r'{Kontrolowany}'),
-    (r'\{Dazzled\}', r'{Zamroczony}'),
-    (r'\{Deafened\}', r'{Ogłuchły}'),
-    (r'\{Doomed\}', r'{Zgubiony}'),
-    (r'\{Encumbered\}', r'{Przeciążony}'),
-    (r'\{Fascinated\}', r'{Zafascynowany}'),
-    (r'\{Fatigued\}', r'{Wyczerpany}'),
-    (r'\{Fleeing\}', r'{Uciekający}'),
-    (r'\{Friendly\}', r'{Przyjazny}'),
-    (r'\{Grabbed\}', r'{Pochwycony}'),
-    (r'\{Helpful\}', r'{Pomocny}'),
-    (r'\{Hidden\}', r'{Schowany}'),
-    (r'\{Hostile\}', r'{Wrogi}'),
-    (r'\{Immobilized\}', r'{Unieruchomiony}'),
-    (r'\{Indifferent\}', r'{Obojętny}'),
-    (r'\{Observed\}', r'{Postrzegany}'),
-    (r'\{Paralyzed\}', r'{Sparaliżowany}'),
-    (r'\{Petrified\}', r'{Spetryfikowany}'),
-    (r'\{Prone\}', r'{Powalony}'),
-    (r'\{Restrained\}', r'{Spętany}'),
-    (r'\{Unconscious\}', r'{Nieprzytomny}'),
-    (r'\{Undetected\}', r'{Niewykryty}'),
-    (r'\{Unfriendly\}', r'{Nieprzyjazny}'),
-    (r'\{Off-Guard\}', r'{Opuszczona Garda}'),
-    (r'\{Sickened(| \d+)\}', r'{Zemdlony\1}'),
-    (r'\{Clumsy(| \d+)\}', r'{Niezdarny\1}'),
-    (r'\{Enfeebled(| \d+)\}', r'{Osłabiony\1}'),
-    (r'\{Drained(| \d+)\}', r'{Wyniszczony\1}'),
-    (r'\{Stupefied(| \d+)\}', r'{Ogłupiony\1}'),
-    (r'\{Stunned(| \d+)\}', r'{Ogłuszony\1}'),
-    (r'\{Wounded(| \d+)\}', r'{Ranny\1}'),
-    (r'\{Dying(| \d+)\}', r'{Umierający\1}'),
-    (r'\{Frightened(| \d+)\}', r'{Przerażony\1}'),
-    (r'\{Quickened(| \d+)\}', r'{Przyspieszony\1}'),
-    (r'\{Slowed(| \d+)\}', r'{Spowolniony\1}'),
-    # Initial Variants
+    # Success degrees
+    (r'(>|\()Critical Success(<|\))', r'\1Krytyczny Sukces\2'),
+    (r'(>|\()Success(<|\))', r'\1Sukces\2'),
+    (r'(>|\()Critical Failure(<|\))', r'\1Krytyczna Porażka\2'),
+    (r'(>|\()Failure(<|\))', r'\1Porażka\2'),
+]
+
+
+# Define condition translations
+condition_translations = {
+    'Invisible': 'Niewidzialny',
+    'Blinded': 'Oślepiony',
+    'Broken': 'Uszkodzony',
+    'Concealed': 'Przysłonięty',
+    'Confused': 'Zdezorientowany',
+    'Controlled': 'Kontrolowany',
+    'Dazzled': 'Zamroczony',
+    'Deafened': 'Ogłuchły',
+    'Doomed': 'Zgubiony',
+    'Encumbered': 'Przeciążony',
+    'Fascinated': 'Zafascynowany',
+    'Fatigued': 'Wyczerpany',
+    'Fleeing': 'Uciekający',
+    'Friendly': 'Przyjazny',
+    'Grabbed': 'Pochwycony',
+    'Helpful': 'Pomocny',
+    'Hidden': 'Schowany',
+    'Hostile': 'Wrogi',
+    'Immobilized': 'Unieruchomiony',
+    'Indifferent': 'Obojętny',
+    'Observed': 'Postrzegany',
+    'Paralyzed': 'Sparaliżowany',
+    'Petrified': 'Spetryfikowany',
+    'Prone': 'Powalony',
+    'Restrained': 'Spętany',
+    'Unconscious': 'Nieprzytomny',
+    'Undetected': 'Niewykryty',
+    'Unfriendly': 'Nieprzyjazny',
+    'Off-Guard': 'Opuszczona Garda'
+}
+
+# Generate patterns from translations
+status_conditions = [
+    (rf'\{{{en}\}}', rf'{{{pl}}}')
+    for en, pl in condition_translations.items()
+]
+
+leveled_condition_translations = {
+    'Sickened': 'Zemdlony',
+    'Clumsy': 'Niezdarny',
+    'Enfeebled': 'Osłabiony',
+    'Drained': 'Wyniszczony',
+    'Stupefied': 'Ogłupiony',
+    'Stunned': 'Ogłuszony',
+    'Wounded': 'Ranny',
+    'Dying': 'Umierający',
+    'Frightened': 'Przerażony',
+    'Quickened': 'Przyspieszony',
+    'Slowed': 'Spowolniony'
+}
+
+leveled_conditions = [
+    (rf'\{{{en}(| \d+)\}}', rf'{{{pl}\1}}')
+    for en, pl in leveled_condition_translations.items()
+]
+
+# Item variants and types
+item_patterns = [
     (r'\(Minor\)', r'(Drobny)'),
     (r'\(Lesser\)', r'(Mniejszy)'),
     (r'\(Moderate\)', r'(Umiarkowany)'),
@@ -60,26 +90,34 @@ replacement_patterns = [
     (r'\(Major\)', r'(Potężny)'),
     (r'\(Supreme\)', r'(Wyjątkowy)'),
     (r'\(Type (\S+)\)', r'(Typ \1)'),
-    # Success degrees
-    (r'(>|\()Critical Success(<|\))', r'\1Krytyczny Sukces\2'),
-    (r'(>|\()Success(<|\))', r'\1Sukces\2'),
-    (r'(>|\()Critical Failure(<|\))', r'\1Krytyczna Porażka\2'),
-    (r'(>|\()Failure(<|\))', r'\1Porażka\2'),
-    # Edicts and anathema
+]
+
+# Religious and character elements
+character_elements = [
     (r'>Edicts<', r'>Edykty<'),
     (r'>Anathema<', r'>Anatemy<'),
-    # Activation keywords
+]
+
+# Activation and trigger patterns
+activation_patterns = [
     (r'>Activate<', r'>Aktywacja<'),
     (r'>Activate — ([\p{L}\d ]*)<', r'>Aktywacja — \1<'),
     (r'>Trigger<', r'>Aktywator<'),
     (r'>Frequency<', r'>Częstotliwość<'),
-    # Effect keywords
+]
+
+# Effect-related patterns
+effect_patterns = [
     (r'>Effect<', r'>Efekt<'),
     (r'>Secondary Effect<', r'>Efekt Dodatkowy<'),
     (r'Spell Effect:', r'Efekt Zaklęcia:'),
     (r'Crit Effect:', r'Efekt Krytyczny:'),
     (r'Effect:', r'Efekt:'),
     (r'>Maximum Duration<', r'>Maksymalny Czas Trwania<'),
+]
+
+# Requirement patterns
+requirement_patterns = [
     (r'>(Prerequisites|Requirements|Requirement)<', r'>Wymagania<'),
     (r'>Special<', r'>Specjalne<'),
     (r'>Craft Requirements<', r'>Wymagania Wytwarzania<'),
@@ -88,16 +126,25 @@ replacement_patterns = [
     (r'>Prerequisite<', r'>Wymaganie<'),
     (r'>Access<', r'>Dostęp<'),
     (r'>Destruction<', r'>Zniszczenie<'),
-    # Usage
+]
+
+# Usage and equipment patterns
+usage_patterns = [
     (r'>Usage<', r'>Zastosowanie<'),
     (r'<p><strong>Zastosowanie</strong> affixed to armor</p>',
         r'<p><strong>Zastosowanie</strong> mocowanie do pancerza</p>'),
-    # Creature Keywords
+]
+
+# Creature stats and attributes
+creature_patterns = [
     (r'>Level<', r'>Poziom<'),
     (r'>Hit Points<', r'>Punkty Żywotności<'),
     (r'>Senses<', r'>Zmysły<'),
     (r'>Speed<', r'>Prędkość<'),
-    # Material details
+]
+
+# Material and item properties
+material_patterns = [
     (r'<h2>([^<]*) Items</h2>\n<table', r'<h2>Przedmioty z \1</h2>\n<table'),
     (r'<th>([^<]*) Items</th>', r'<th>Przedmioty z \1</th>'),
     (r'>Hardness<', r'>Twardość<'),
@@ -109,7 +156,10 @@ replacement_patterns = [
     (r'>Low\-grade<', r'>Niskiej Jakości<'),
     (r'>Standard\-grade<', r'>Standardowej Jakości<'),
     (r'>High\-grade<', r'>Wysokiej Jakości<'),
-    # Spells
+]
+
+# Spell-related patterns
+spell_patterns = [
     (r'>Cantrip<', r'>Sztuczka<'),
     (r'>Cantrips<', r'>Sztuczki<'),
     (r'>Spell<', r'>Zaklęcie<'),
@@ -122,7 +172,10 @@ replacement_patterns = [
     (r'(Wrodzone|Przygotowane) (Zaklęcia) Divine', r'\1 \2 Boskie'),
     (r'(Wrodzone|Przygotowane) (Zaklęcia) Primal', r'\1 \2 Pierwotne'),
     (r'(Wrodzone|Przygotowane) (Zaklęcia) Arcane', r'\1 \2 Tajemne'),
-    # Poisons diseases
+]
+
+# Affliction patterns (poisons, diseases)
+affliction_patterns = [
     (r'>Saving Throw<', r'>Rzut Obronny<'),
     (r'>Onset<', r'>Nadejście Objawów<'),
     (r'>Stage (\d+)<', r'>Stadium \1<'),
@@ -134,7 +187,10 @@ replacement_patterns = [
     (r'\(Contact\)', r'(Dotyk)'),
     (r'\(Inhaled\)', r'(Wdychanie)'),
     (r'\(Ingested\)', r'(Spożycie)'),
-    # Activation details. Must be after the activate
+]
+
+# Detailed activation patterns
+detailed_activation_patterns = [
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Interact([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Interakcja\3</p>'),
     (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)command([^<]*)</p>',
@@ -149,7 +205,10 @@ replacement_patterns = [
         r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
     (r'<p><strong>Aktywacja</strong> ([^<]*)Cast a Spell([^<]*)</p>',
         r'<p><strong>Aktywacja</strong> \1Rzucenie Zaklęcia\2</p>'),
-    # Item type
+]
+
+# Ammunition patterns
+ammunition_patterns = [
     (r'>Ammunition<', r'>Amunicja<'),
     (r'<p><strong>Amunicja</strong> ([^<]*)arrow, bolt([^<]*)</p>',
         r'<p><strong>Amunicja</strong> \1bełt, strzała\2</p>'),
@@ -159,7 +218,10 @@ replacement_patterns = [
         r'<p><strong>Amunicja</strong> \1bełt\2</p>'),
     (r'<p><strong>Amunicja</strong> ([^<]*)any([^<]*)</p>',
         r'<p><strong>Amunicja</strong> \1dowolna\2</p>'),
-    # Frequency details. Must be after frequency
+]
+
+# Frequency details
+frequency_patterns = [
     (r'<p><strong>Częstotliwość</strong> once per round(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na rundę</p>'),
     (r'<p><strong>Częstotliwość</strong> once per day(\.|)</p>',
@@ -168,7 +230,11 @@ replacement_patterns = [
         r'<p><strong>Częstotliwość</strong> raz na godzinę</p>'),
     (r'<p><strong>Częstotliwość</strong> once per day, plus overcharge(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>'),
-    # Effect details. Must be after effect.
+]
+
+# Miscellaneous patterns
+misc_patterns = [
+    # Effect details
     (r'<p><strong>Efekt</strong> You cast (@UUID\[Compendium\.pf2e\.spells-srd\.Item\.([\w\d]*)\]\{([\p{L}\d ]*)\}).</p>',
         r'<p><strong>Efekt</strong> Rzucasz \1.</p>'),
     # Crafting
@@ -183,3 +249,25 @@ replacement_patterns = [
     # Utility text
     (r'(>|\()Note(<|\))', r'\1Przypis\2'),
 ]
+
+# Combine all patterns in order of priority
+replacement_patterns = (
+    formatting_patterns +
+    game_mechanics_patterns +
+    status_conditions +
+    leveled_conditions +
+    item_patterns +
+    character_elements +
+    activation_patterns +
+    effect_patterns +
+    requirement_patterns +
+    usage_patterns +
+    creature_patterns +
+    material_patterns +
+    spell_patterns +
+    affliction_patterns +
+    detailed_activation_patterns +
+    ammunition_patterns +
+    frequency_patterns +
+    misc_patterns
+)

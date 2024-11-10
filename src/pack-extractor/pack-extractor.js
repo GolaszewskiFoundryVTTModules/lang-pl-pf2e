@@ -43,3 +43,28 @@ writeFilesFromBlob(
     CONFIG.filePaths.i18n,
     "i8n files"
 );
+
+// Check for unconfigured files
+const configuredPacks = new Set(
+    Object.values(CONFIG.packs)
+        .flatMap(group => group.packNames)
+        .map(name => `${name}.json`)
+);
+
+// Remove .json extension from configured i18n files
+const configuredI18n = new Set(CONFIG.i18nFiles.map(file => file.replace('.json', '')));
+
+const unconfiguredFiles = packs
+    .filter(pack => pack.fileType === 'json')
+    .filter(pack => {
+        // Skip i18n files that are properly configured
+        if (configuredI18n.has(pack.fileName)) return false;
+        // Check if pack files are configured
+        return !configuredPacks.has(`${pack.fileName}.${pack.fileType}`);
+    })
+    .map(pack => pack.fileName + '.' + pack.fileType);
+
+if (unconfiguredFiles.length > 0) {
+    console.warn('\x1b[33m%s\x1b[0m', 'Warning: The following files from the zip are not configured in pack-extractor-config.json:');
+    unconfiguredFiles.forEach(file => console.warn('\x1b[33m%s\x1b[0m', `- ${file}`));
+}

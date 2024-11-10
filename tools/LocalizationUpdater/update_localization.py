@@ -4,10 +4,11 @@ import logging
 import shutil
 import subprocess
 import argparse
+import json
 from localization_updater import LocalizationUpdater
 from translator_config import log_directory, log_filename, temp_en_old_directory, core_en_directory, core_pl_directory, en_to_pl_file_pairs
 
-def copy_files_and_directories(src_directory, dst_directory):
+def _copy_files_and_directories(src_directory, dst_directory):
     """
     Recursively copy all files and directories from the source directory 
     to the destination directory. Existing files in the destination directory 
@@ -22,7 +23,7 @@ def copy_files_and_directories(src_directory, dst_directory):
             # Recursively copy the entire subdirectory
             if os.path.exists(dst_path):
                 # If the subdirectory exists at the destination, recursively copy its contents
-                copy_files_and_directories(src_path, dst_path)
+                _copy_files_and_directories(src_path, dst_path)
             else:
                 # If the subdirectory does not exist at the destination, copy it
                 shutil.copytree(src_path, dst_path)
@@ -30,7 +31,7 @@ def copy_files_and_directories(src_directory, dst_directory):
             # Copy files and overwrite if necessary
             shutil.copy2(src_path, dst_path)
 
-def run_js_script(script_path):
+def _run_js_script(script_path):
     try:
         # Run the .js script with Node.js
         result = subprocess.run(['node', script_path], check=True, text=True, capture_output=True)
@@ -40,6 +41,46 @@ def run_js_script(script_path):
     except subprocess.CalledProcessError as e:
         # Handle errors in the called .js script
         print(f"An error occurred while running {script_path}: {e}")
+
+def _check_config_consistency():
+    """Compare pack-extractor-config.json with translator_config.py for any discrepancies"""
+    
+    # Read pack-extractor config
+    with open("src/pack-extractor/pack-extractor-config.json", 'r') as f:
+        extractor_config = json.load(f)
+    
+    # Get all configured packs from extractor config
+    extractor_packs = set()
+    for group in extractor_config["packs"].values():
+        extractor_packs.update(group["packNames"])
+    
+    # Get i18n files from extractor config
+    extractor_i18n = set(extractor_config["i18nFiles"])
+    
+    # Get configured packs from translator config, preserving full paths
+    translator_packs = {
+        pair[0].split('/')[-1]: pair[0] 
+        for pair in en_to_pl_file_pairs 
+        if pair[0].startswith('compendium/')
+    }
+    
+    # Find discrepancies
+    missing_in_translator = extractor_packs - set(translator_packs.keys())
+    missing_in_extractor = set(translator_packs.keys()) - extractor_packs
+    
+    if missing_in_translator or missing_in_extractor:
+        print("\n\033[33mWarning: Configuration discrepancies found:\033[0m")
+        
+        if missing_in_translator:
+            print("\n\033[33mFiles configured in pack-extractor but missing in translator_config.py:\033[0m")
+            for pack in sorted(missing_in_translator):
+                print(f"\033[33m- Add: (\"{pack}\", \"compendium/pf2e.{pack}\")\033[0m")
+        
+        if missing_in_extractor:
+            print("\n\033[33mFiles configured in translator_config.py but missing in pack-extractor-config.json:\033[0m")
+            for pack in sorted(missing_in_extractor):
+                full_path = translator_packs[pack]
+                print(f"\033[33m- Add \"{pack}\" to appropriate pack group (from {full_path})\033[0m")
 
 def main():
     os.makedirs(log_directory, exist_ok=True)
@@ -66,12 +107,16 @@ def main():
         )
 
     # back up the old localization source
-    copy_files_and_directories(core_en_directory, temp_en_old_directory)
+    _copy_files_and_directories(core_en_directory, temp_en_old_directory)
 
     if update_source_data:
         # update the source files
         print("Running the pack extractor...")
-        run_js_script("src/pack-extractor/pack-extractor.js")
+        _run_js_script("src/pack-extractor/pack-extractor.js")
+        
+    # Check config consistency
+    print("\nChecking configuration consistency...")
+    _check_config_consistency()
 
     for en_old, en, pl in file_sets:
         # Check if the Polish file exists

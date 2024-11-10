@@ -217,7 +217,8 @@
                             "ZeroConsumed": "Codzienne wytwarzanie zakończone."
                         },
                         "Perform": "Przeprowadź Codzienne Wytwarzanie"
-                    }
+                    },
+                    "RemainingSlots": "Puste Miejsce (pozostało {remaining})"
                 },
                 "CreateFeat": "Stwórz Atut",
                 "FeatSlot": {
@@ -677,6 +678,15 @@
                 "Wealth": "Majątek"
             },
             "Plural": "Aktorzy",
+            "Resource": {
+                "Focus": "Punkty Skupienia",
+                "HeroPoints": "Punkty Bohaterstwa",
+                "Investiture": "Zaangażowanie",
+                "Resolve": "Determinacja",
+                "MythicPoints": "Punkty Mityczne"
+            },
+            "Resources": "Zasoby",
+            "ResourceRatio": "{value}/{max} {resource}",
             "Vehicle": {
                 "EmitsSound": {
                     "Encounter": "Podczas Starcia",
@@ -1054,6 +1064,7 @@
         "ConditionTypeConcealed": "Przysłonięty",
         "ConditionTypeConfused": "Zdezorientowany",
         "ConditionTypeControlled": "Kontrolowany",
+        "ConditionTypeCursebound": "Klątwięź",
         "ConditionTypeDazzled": "Zamroczony",
         "ConditionTypeDeafened": "Ogłuchły",
         "ConditionTypeDoomed": "Zgubiony",
@@ -1651,11 +1662,6 @@
         "HealingTypeTemporaryHealing": "Leczenie (Tymczasowe)",
         "Height": "Wzrost",
         "Heritage": "Dziedzictwo",
-        "HeroPointRatio": {
-            "Many": "Punkty Bohaterstwa: {value}/{max}",
-            "One": "Punkty Bohaterstwa: 1/{max}"
-        },
-        "HeroPointsLabel": "Punkty Bohaterstwa",
         "HitPointsDetailsLabel": "Szczegóły PŻ",
         "HitPointsDetailsTitle": "Dodatkowe informacje powiązane z Punktami Żywotności takie jak Szybkie Leczenie lub Regeneracja",
         "HitPointsHeader": "Punkty Żywotności",
@@ -2335,6 +2341,10 @@
                     "Proficiencies": {
                         "Label": "Biegłości",
                         "NoOptionSelected": "wybierz statystykę, do której ma zostać zastosowane zwiększenie."
+                    },
+                    "SuppressedFeatures": {
+                        "Label": "Wyłączone Atrybuty Klasowe",
+                        "Hint": "Aby usunąć atrybut z zakładki przygotowania danych i atutów, przeciągnij go na tę kartę."
                     },
                     "Senses": {
                         "Darkvision": {
@@ -3222,7 +3232,7 @@
             "KeepHigher": "Przerzuć i zachowaj wyższy wynik",
             "KeepNew": "Przerzuć i zachowaj nowy wynik",
             "KeepLower": "Przerzuć i zachowaj niższy wynik",
-            "MessageHeroPoint": "Przerzucono za pomocą Punkty Bohaterstwa",
+            "MessageHeroPoint": "Przerzucono za pomocą Punktu Bohaterstwa",
             "MessageKeep": {
                 "higher": "Przerzucono i zachowano wyższy wynik",
                 "new": "Przerzucono i zachowano nowy wynik",
@@ -3231,7 +3241,6 @@
             "WarnNoHeroPoint": "{name} nie ma więcej Punktów Bohaterstwa"
         },
         "ResistancesLabel": "Odporności",
-        "ResolvePointsShortLabel": "Determinacja",
         "RestoreSpellTitle": "Przywróć Zaklęcie",
         "RevertDamage": {
             "ButtonTooltip": "Cofnij",

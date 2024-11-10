@@ -57,6 +57,8 @@ const configuredI18n = new Set(CONFIG.i18nFiles.map(file => file.replace('.json'
 const unconfiguredFiles = packs
     .filter(pack => pack.fileType === 'json')
     .filter(pack => {
+        // Skip _folders files
+        if (pack.fileName.endsWith('_folders')) return false;
         // Skip i18n files that are properly configured
         if (configuredI18n.has(pack.fileName)) return false;
         // Check if pack files are configured

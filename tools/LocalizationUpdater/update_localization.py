@@ -49,19 +49,19 @@ def _check_config_consistency():
     with open("src/pack-extractor/pack-extractor-config.json", 'r') as f:
         extractor_config = json.load(f)
     
-    # Get all configured packs from extractor config
-    extractor_packs = set()
-    for group in extractor_config["packs"].values():
-        extractor_packs.update(group["packNames"])
-    
-    # Get i18n files from extractor config
-    extractor_i18n = set(extractor_config["i18nFiles"])
+    # Get all configured packs from extractor config, excluding _folders and _packs-folders
+    extractor_packs = {
+        pack for group in extractor_config["packs"].values()
+        for pack in group["packNames"]
+        if not (pack.endswith('_folders') or pack.endswith('_packs-folders'))
+    }
     
     # Get configured packs from translator config, preserving full paths
     translator_packs = {
         pair[0].split('/')[-1]: pair[0] 
         for pair in en_to_pl_file_pairs 
-        if pair[0].startswith('compendium/')
+        if pair[0].startswith('compendium/') 
+        and not (pair[0].endswith('_folders') or pair[0].endswith('_packs-folders'))
     }
     
     # Find discrepancies
@@ -74,7 +74,7 @@ def _check_config_consistency():
         if missing_in_translator:
             print("\n\033[33mFiles configured in pack-extractor but missing in translator_config.py:\033[0m")
             for pack in sorted(missing_in_translator):
-                print(f"\033[33m- Add: (\"{pack}\", \"compendium/pf2e.{pack}\")\033[0m")
+                print(f"\033[33m- Add: (\"compendium/{pack}\", \"compendium/pf2e.{pack}\")\033[0m")
         
         if missing_in_extractor:
             print("\n\033[33mFiles configured in translator_config.py but missing in pack-extractor-config.json:\033[0m")
@@ -89,12 +89,12 @@ def main():
     parser = argparse.ArgumentParser(description='Run the script with optional update source data flag.')
     parser.add_argument('--UpdateSourceData', action='store_true', help='Update source data if set to true.')
     parser.add_argument('--PreformRegexTranslate', action='store_true', help='Forces re-processing all strings by regex translations.')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose logging.')
+    parser.add_argument('-v', '--Verbose', action='store_true', help='Enable verbose logging.')
     args = parser.parse_args()
 
     update_source_data = args.UpdateSourceData
     preform_regex_translate = args.PreformRegexTranslate
-    verbose = args.verbose
+    verbose = args.Verbose
 
     file_sets = []
     for en_name, pl_name in en_to_pl_file_pairs:

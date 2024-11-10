@@ -102,4 +102,7 @@ en_to_pl_file_pairs = [
     ("compendium/quest-for-the-frozen-flame-bestiary", "compendium/pf2e.quest-for-the-frozen-flame-bestiary"),
     ("compendium/seven-dooms-for-sandpoint-bestiary", "compendium/pf2e.seven-dooms-for-sandpoint-bestiary"),
     ("compendium/wardens-of-wildwood-bestiary", "compendium/pf2e.wardens-of-wildwood-bestiary"),
+    ("compendium/pathfinder-society-boons", "compendium/pf2e.pathfinder-society-boons"),
+    ("compendium/triumph-of-the-tusk-bestiary", "compendium/pf2e.triumph-of-the-tusk-bestiary"),
+    ("compendium/war-of-immortals-bestiary", "compendium/pf2e.war-of-immortals-bestiary"),
 ]

@@ -2552,7 +2552,7 @@
                         "Description": "You've dedicated yourself to learning the intricacies of your weapons. Your proficiency ranks for unarmed attacks, simple weapons, and martial weapons increase to expert."
                     },
                     "kineticist": {
-                        "Description": "You've improved your combat skill. Your proficiency rank for simple weapons and unarmed attacks increase to expert."
+                        "Description": "Poprawiłeś swoje zdolności bojowe. Twoja ranga biegłości w broniach prostych i atakach wręcz zwiększa się do eksperctwa."
                     },
                     "magus": {
                         "Description": "You've dedicated yourself to learning the intricacies of your weapons. Your proficiency ranks for simple weapons, martial weapons, and unarmed attacks increase to expert."
@@ -3858,77 +3858,77 @@
                 "Trigger": "Your prey is within reach and attempts to move away from you."
             },
             "Kineticist": {
-                "GateAttenuator": "Gate Attenuator",
+                "GateAttenuator": "Wygłuszacz Bramy",
                 "Impulse": {
                     "CriticalBlast": {
-                        "Air": "Push the target up to 10 feet.",
-                        "Earth": "If the target is on the ground, it's knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}; if it isn't on the ground, it descends up to 20 feet (you choose the distance).",
-                        "Fire": "The target takes 1k6 persistent fire damage. You gain an item bonus to this persistent damage equal to your item bonus to impulse attack rolls, such as from a gate attenuator.",
-                        "Label": "Critical Blast",
-                        "Metal": "The target takes 1k6 persistent bleed damage; if the creature has the metal trait or is made of metal, it instead takes @Damage[1d6[persistent,untyped]] damage with no type from rust. You gain an item bonus to this persistent damage equal to your item bonus to impulse attack rolls, such as from a gate attenuator.",
-                        "Water": "The blast deals 2 splash damage per damage die of the blast, with the same damage type.",
-                        "Wood": "If the target of the critical hit is adjacent to a surface, roots entangle it. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} and must spend an Interact action to attempt a @Check[athletics|dc:10] check to pull itself free. The target doesn't become stuck if it is incorporeal, is liquid, or could otherwise escape without effort."
+                        "Air": "Odepchnij cel na odległość do 10 stóp.",
+                        "Earth": "Jeśli cel znajduje się na ziemi, jest @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalany}. Jeśli nie znajduje się na ziemi opada o nie więcej niż 20 stóp (ty określasz o ile).",
+                        "Fire": "Cel odnosi 1k6 przewlekłych obrażeń od ognia. Zyskujesz do tych obrażeń przewlekłych premię przedmiotu, równą premii przedmiotu dodawanej do rzutu ataku impulsem, jak na przykład z wygłuszacza bramy.",
+                        "Label": "Krytyczne Uderzenie",
+                        "Metal": "Cel odnosi 1k6 przewlekłych obrażeń od krwawienia. Jeśli istota ma cechę metal lub jest wykonana z metalu, odnosi zamiast tego @Damage[1d6[persistent,untyped]]{1k6 przewlekłych obrażeń bez typu} od rdzy. Zyskujesz do tych obrażeń przewlekłych premię przedmiotu, równą premii przedmiotu dodawanej do rzutu ataku impulsem, jak na przykład z wygłuszacza bramy.",
+                        "Water": "Uderzenie zadaje 2 obrażenia rozpryskowe, o typie obrażeń odpowiadającym uderzeniu, za każdą kość obrażeń uderzenia.",
+                        "Wood": "Jeśli cel krytycznego trafienia sąsiaduje z powierzchnią, oplatają go korzenie. Cel jest @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i musi użyć akcji Interakcji aby wykonać test @Check[athletics|dc:10]{Atletyki} celem oswobodzenia się. Cel nie utyka jeśli jest bezcielesny, jest cieczą lub jeśli może w inny sposób uciec bez wysiłku."
                     },
                     "ElementalBlast": {
                         "Label": {
-                            "Air": "Elemental Blast (Air)",
-                            "Earth": "Elemental Blast (Earth)",
-                            "Fire": "Elemental Blast (Fire)",
-                            "Metal": "Elemental Blast (Metal)",
-                            "Water": "Elemental Blast (Water)",
-                            "Wood": "Elemental Blast (Wood)"
+                            "Air": "Uderzenie Żywiołu (Powietrze)",
+                            "Earth": "Uderzenie Żywiołu (Ziemia)",
+                            "Fire": "Uderzenie Żywiołu (Ogień)",
+                            "Metal": "Uderzenie Żywiołu (Metal)",
+                            "Water": "Uderzenie Żywiołu (Woda)",
+                            "Wood": "Uderzenie Żywiołu (Drewno)"
                         },
-                        "OneAction": "One Action",
-                        "ShortLabel": "Blast",
-                        "TwoActionBonus": "Two-Action Blast",
-                        "TwoActions": "Two Actions"
+                        "OneAction": "Jedna Akcja",
+                        "ShortLabel": "Uderzenie",
+                        "TwoActionBonus": "Dwuakcyjne Uderzenie",
+                        "TwoActions": "Dwie Akcje"
                     },
                     "ImpulseJunction": {
-                        "Air": "Before or after the other effects of the impulse, you can either Stride up to half your Speed or Step. If you have a fly Speed, you can Fly up to half your fly Speed instead.",
-                        "Earth": "Fragments of stone float around you, granting you a +1 circumstance bonus to AC until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.09oP0FBBAhXOS4JW]{Efekt: Earth Impulse Junction}",
-                        "Metal": "Choose acid, electricity, or piercing. Until the start of your next turn, each time a creature touches you or damages you with an unarmed melee attack or nonreach melee weapon, it takes damage of the chosen type equal to half your level (minimum 1 damage).",
-                        "Title": "Impulse Junction",
-                        "Water": "After the impulse's other effects, you can move one creature targeted by the impulse or in its area 5 feet in any direction, or 10 feet if it's in a body of water. This can't move the creature into the air. You can choose only a creature that's willing to be moved, that failed its save against the impulse, or that you succeeded at an impulse attack roll against.",
-                        "Wood": "You gain temporary Hit Points equal to your level that last until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.rCsmv66TzQhte4Gp]{Efekt: Wood Impulse Junction}"
+                        "Air": "Przed lub po innych efektach impulsu, możesz albo Biec na odległość nie większą od połowy swojej Prędkości albo wykonać Krok. Jeśli posiadasz Prędkość latania, możesz zamiast tego Lecieć na odległość nie większą od połowy swojej Prędkości latania.",
+                        "Earth": "Wokół ciebie unoszą się kawałki skał, zapewniając ci sytuacyjną premię +1 do KP do początku twojej następnej tury. @UUID[Compendium.pf2e.feat-effects.Item.09oP0FBBAhXOS4JW]{Efekt: Węzeł Impulsu Ziemi}",
+                        "Metal": "Wybierz obrażenia od elektryczności, kłute lub od kwasu. Do początku twojej następnej tury, za każdym razem kiedy istota zada ci obrażenia lub dotknie cię z użyciem ataku w zwarciu wręcz lub bronią białą bez cechy wysięg, odnosi ona obrażenia wybranego przez ciebie typu równe połowie twojego poziomu (minimum 1 punkt obrażeń).",
+                        "Title": "Węzeł Impulsu",
+                        "Water": "Po rozpatrzeniu innych efektów impulsu możesz przemieścić jedną istotę obraną za cel impulsu lub znajdującą się w jego obszarze o 5 stóp w dowolnym kierunku lub o 10 stóp jeśli znajduje się ona w zbiorniku wodnym. Nie może to przemieścić istoty w powietrze. Możesz wybrać tylko istotę, która godzi się na przemieszczenie, która oblała rzut obronny przeciw impulsowi lub przeciw której odniosłeś sukces w rzucie ataku impulsem.",
+                        "Wood": "Zyskujesz tymczasowe Punkty Żywotności w liczbie równej twojemu poziomowi, które utrzymują się do początku twojej następnej tury. @UUID[Compendium.pf2e.feat-effects.Item.rCsmv66TzQhte4Gp]{Efekt: Węzeł Impulsu Drewna}"
                     },
-                    "Prompt": "Select an Impulse."
+                    "Prompt": "Wybierz Impuls."
                 },
                 "KineticGate": {
-                    "AllowedDropsLabel": "Kineticist class feat",
+                    "AllowedDropsLabel": "Atut klasowy Kinetyka",
                     "DualGate": {
-                        "Label": "Dual Gate",
-                        "Rename": "Kinetic Gate ({elementOne}, {elementTwo})"
+                        "Label": "Podwójna Brama",
+                        "Rename": "Kinetyczna Brama ({elementOne}, {elementTwo})"
                     },
                     "ExpandThePortal": {
-                        "Label": "Expand the Portal",
-                        "Rename": "Gate's Threshold (Expand the Portal: {elementOne})"
+                        "Label": "Rozszerzenie Portalu",
+                        "Rename": "Próg Bramy (Rozszerzenie Portalu: {elementOne})"
                     },
                     "ForkThePath": {
-                        "Label": "Fork the Path",
-                        "Rename": "Gate's Threshold (Fork the Path: {elementFork})"
+                        "Label": "Rozwidlenie Ścieżki",
+                        "Rename": "Próg Bramy (Rozwidlenie Ścieżki: {elementFork})"
                     },
                     "Junction": {
                         "Aura": "Aura",
-                        "CriticalBlast": "Critical Blast",
-                        "ElementalResistance": "Elemental Resistance",
-                        "Impulse": "Impulse",
-                        "ImpulseJunction": "Impulse Junction",
-                        "Skill": "Skill"
+                        "CriticalBlast": "Krytyczne Uderzenie",
+                        "ElementalResistance": "Odporność na Żywioły",
+                        "Impulse": "Impuls",
+                        "ImpulseJunction": "Węzeł Impulsu",
+                        "Skill": "Umiejętność"
                     },
                     "Prompt": {
-                        "AuraSize": "Select a radius for your kinetic aura.",
-                        "Element": "Select an element.",
-                        "ExpandElement": "Select an element to expand.",
-                        "Gate": "Select a kinetic gate.",
-                        "Impulse": "Select an impulse feat.",
-                        "Junction": "Select a gate junction.",
-                        "Threshold": "Select a gate's threshold."
+                        "AuraSize": "Wybierz promień swojej kinetycznej aury.",
+                        "Element": "Wybierz żywioł.",
+                        "ExpandElement": "Wybierz żywioł do rozszerzenia.",
+                        "Gate": "Wybierz kinetyczną bramę.",
+                        "Impulse": "Wybierz atut impulsu.",
+                        "Junction": "Wybierz węzeł bramy.",
+                        "Threshold": "Wybierz próg bramy."
                     },
-                    "SingleGate": "Single Gate"
+                    "SingleGate": "Pojedyncza Brama"
                 },
                 "Overflow": {
-                    "Description": "When you use an impulse that has the overflow trait, your kinetic aura deactivates until you revitalize it (typically with @UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{Channel Elements}). You can use only one overflow impulse per round, even if you reactivate your kinetic gate.",
-                    "Title": "Overflow"
+                    "Description": "Kiedy użyjesz impulsu posiadającego cechę przesycenia, twoja kinetyczna aura dezaktywuje się dopóki jej nie zrewitalizujesz (na ogół z pomocą @UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{Kształtowania Żywiołów}). Wygaszanie twojego żywiołu jest niezwykle wyczerpujące, co sprawia, że możesz użyć tylko jednego przesycającego impulsu w rundzie, nawet jeśli reaktywujesz swoją kinetyczną bramę.",
+                    "Title": "Przesycenie"
                 }
             },
             "Kobold": {

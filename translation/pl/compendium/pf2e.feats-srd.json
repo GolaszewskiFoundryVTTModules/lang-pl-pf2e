@@ -9599,11 +9599,11 @@
             "description": "<p>Heavy drops of rain batter down, hitting like sling stones and impeding vision. Each creature in a @Template[burst|distance:15] within 120 feet takes @Damage[(floor((@actor.level -6)/2)+3)d8[bludgeoning]|options:area-damage] damage with a @Check[reflex|against:kineticist|basic|options:area-effect] save against your class DC. Until the start of your next turn, all creatures are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} while in the area, and all creatures outside the area are concealed to creatures within it.</p><hr /><p><strong>Level (+2)</strong> The damage increases by 1k8.</p>"
         },
         "Drow Shootist Dedication": {
-            "name": "Dedykacja Drow Shootist",
-            "description": "<p>Every chance you get, you practice with the hand crossbow to increase your draw speed and accuracy. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the hand crossbow. If you're at least an expert in a hand crossbow you're using, you gain access to its critical specialization effect. You also gain the @UUID[Compendium.pf2e.adventure-specific-actions.Item.Bh1Qnh8JP4CMysRK]{Shootist's Draw} action.</p>",
+            "name": "Dedykacja Drowiego Strzelca",
+            "description": "<p>Every chance you get, you practice with the hand crossbow to increase your draw speed and accuracy. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the hand crossbow. If you're at least an expert in a hand crossbow you're using, you gain access to its critical specialization effect. You also gain the @UUID[Compendium.pf2e.adventure-specific-actions.Item.Bh1Qnh8JP4CMysRK]{Strzeleckie Dobycie} action.</p>",
             "prerequisites": [
                 {
-                    "value": "Wytrenowanie w hand crossbow"
+                    "value": "Wytrenowanie w kuszach ręcznych"
                 }
             ]
         },
@@ -12197,7 +12197,7 @@
         },
         "Fake Out": {
             "name": "Zmyłka",
-            "description": "<p><strong>Aktywator</strong> Sojusznik ma właśnie użyć akcji wymagającej rzutu ataku, obejmującej za cel istotę znajdującą się w pierwszym inkremencie zasięgu twojej broni.</p><p><strong>Wymagania</strong> Dzierżysz naładowaną broń palna lub kuszę.</p><hr /><p>Za pomocą umiejętnego popisu we władaniu bronią, zmuszasz wroga aby pamiętał o zagrożeniu, które stanowisz. Wykonaj test ataku na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Wsparcia} wywołującego ataku. Jeśli od czasu początku twojej ostatniej tury zadałeś temu wrogowi obrażenia tą samą bronią, zyskujesz premię sytuacyjną +1 do tego rzutu.</p>"
+            "description": "<p><strong>Aktywator</strong> Sojusznik ma właśnie użyć akcji wymagającej rzutu ataku, obejmującej za cel istotę znajdującą się w pierwszym inkremencie zasięgu twojej broni.</p><p><strong>Wymagania</strong> Dzierżysz naładowaną broń palna lub kuszę.</p><hr /><p>Za pomocą umiejętnego popisu we władaniu bronią, zmuszasz wroga aby pamiętał o zagrożeniu, które stanowisz. Wykonaj rzut ataku na rzecz @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Wsparcia} wywołującego ataku. Jeśli od czasu początku twojej ostatniej tury zadałeś temu wrogowi obrażenia tą samą bronią, zyskujesz premię sytuacyjną +1 do tego rzutu.</p>"
         },
         "Falcon Swoop": {
             "name": "Falcon Swoop",
@@ -19627,7 +19627,7 @@
             "description": "<p>You've learned more than the use of @UUID[Compendium.pf2e.equipment-srd.Item.XyA6PKV46aNlLXOd]{Hand Crossbow} from drow lore. During your daily preparations, you can prepare a dose of @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]{Lethargy Poison} from ordinary materials in a wilderness or urban area. If you're an expert in Crafting, you can instead craft a dose of @UUID[Compendium.pf2e.equipment-srd.Item.nn2HAN1XKkKHfVnM]{Stupor Poison}. You can prepare two doses (of either poison) if you're a master in Crafting and three doses if you're legendary in Crafting. The save DC for this poison is equal to your class DC. Only you can use these poisons, and they expire the next time you make your daily preparations. The GM might decide that the area you're in is too barren to provide the materials you need for this feat.</p>",
             "prerequisites": [
                 {
-                    "value": "Dedykacja Drow Shootist"
+                    "value": "Dedykacja Drowiego Strzelca"
                 },
                 {
                     "value": "Rzemiosło (Wytrenowanie)"
@@ -27158,7 +27158,7 @@
             "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Wymagania</strong> You're holding an unloaded hand crossbow.</p><hr /><p>You can fire off a single shot even when unprepared. You Interact to reload your hand crossbow and Strike with it.</p><p><strong>Specjalne</strong> If you have the @UUID[Compendium.pf2e.feats-srd.Item.HvPvyeXM2iMK4OYf]{Repeating Hand Crossbow Training} feat, you can use this feat with a @UUID[Compendium.pf2e.equipment-srd.Item.zcrIuILnp6oh4dr9]{Repeating Hand Crossbow} to load either a @UUID[Compendium.pf2e.equipment-srd.Item.AITVZmakiu3RgfKo]{Bolt} or a @UUID[Compendium.pf2e.equipment-srd.Item.xk9bw9ccupAIx7xT]{Repeating Hand Crossbow Magazine}, but the speed means you can fire only one bolt, then the magazine jams. You must spend a 3-action Interact activity to remove the jammed magazine and clear it before it can be used again.</p>",
             "prerequisites": [
                 {
-                    "value": "Dedykacja Drow Shootist"
+                    "value": "Dedykacja Drowiego Strzelca"
                 }
             ]
         },
@@ -27266,10 +27266,10 @@
         },
         "Repeating Hand Crossbow Training": {
             "name": "Repeating Hand Crossbow Training",
-            "description": "<p>You become trained in the @UUID[Compendium.pf2e.equipment-srd.Item.zcrIuILnp6oh4dr9]{Repeating Hand Crossbow} and gain access to repeating hand crossbows and @UUID[Compendium.pf2e.equipment-srd.Item.oJZe5rRitvioUgRh]{Shootist Bandolier}. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the repeating hand crossbow. If you're at least an expert in a repeating hand crossbow you're using, you gain access to its critical specialization effect. You can perform the @UUID[Compendium.pf2e.adventure-specific-actions.Item.Bh1Qnh8JP4CMysRK]{Shootist's Draw} action with repeating hand crossbows.</p><p><strong>Specjalne</strong> If you have the @UUID[Compendium.pf2e.feats-srd.Item.meQJfsKVar9tm6c9]{Przeładowanie w Biegu} feat, you can reload a @UUID[Compendium.pf2e.equipment-srd.Item.xk9bw9ccupAIx7xT]{Repeating Hand Crossbow Magazine} on the move. You can use Running Reload as a 3-action activity to reload a magazine into a repeating hand crossbow after you Stride, Step, or Sneak, or as a 2-action activity if you use a magazine from a shootist bandolier.</p>",
+            "description": "<p>You become trained in the @UUID[Compendium.pf2e.equipment-srd.Item.zcrIuILnp6oh4dr9]{Repeating Hand Crossbow} and gain access to repeating hand crossbows and @UUID[Compendium.pf2e.equipment-srd.Item.oJZe5rRitvioUgRh]{Shootist Bandolier}. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the repeating hand crossbow. If you're at least an expert in a repeating hand crossbow you're using, you gain access to its critical specialization effect. You can perform the @UUID[Compendium.pf2e.adventure-specific-actions.Item.Bh1Qnh8JP4CMysRK]{Strzeleckie Dobycie} action with repeating hand crossbows.</p><p><strong>Specjalne</strong> If you have the @UUID[Compendium.pf2e.feats-srd.Item.meQJfsKVar9tm6c9]{Przeładowanie w Biegu} feat, you can reload a @UUID[Compendium.pf2e.equipment-srd.Item.xk9bw9ccupAIx7xT]{Repeating Hand Crossbow Magazine} on the move. You can use Running Reload as a 3-action activity to reload a magazine into a repeating hand crossbow after you Stride, Step, or Sneak, or as a 2-action activity if you use a magazine from a shootist bandolier.</p>",
             "prerequisites": [
                 {
-                    "value": "Dedykacja Drow Shootist"
+                    "value": "Dedykacja Drowiego Strzelca"
                 }
             ]
         },

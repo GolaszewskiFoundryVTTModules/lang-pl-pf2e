@@ -209,15 +209,13 @@
                     "Title": "Konfiguruj Postać"
                 },
                 "Crafting": {
+                    "BatchQuantity": "x{quantity}",
                     "Cost": "Koszt",
                     "Daily": {
-                        "Complete": {
-                            "OneConsumed": "Codzienne wytwarzanie zakończone: zużyto jeden odczynnik.",
-                            "NConsumed": "Codzienne wytwarzanie zakończone: zużyto {quantity} odczynników.",
-                            "ZeroConsumed": "Codzienne wytwarzanie zakończone."
-                        },
+                        "Complete": "Codzienne wytwarzanie zakończone.",
                         "Perform": "Przeprowadź Codzienne Wytwarzanie"
                     },
+                    "MissingResource": "Niewystarczająca ilość zasobów, aby ukończyć wytwarzanie.",
                     "RemainingSlots": "Puste Miejsce (pozostało {remaining})"
                 },
                 "CreateFeat": "Stwórz Atut",
@@ -1127,8 +1125,7 @@
                 "FormulaExpended": "Przygotowana receptura została już wytworzona.",
                 "ItemMissingTraits": "Przedmiot nie jest kompatybilny z wymaganiami wpisu o rzemiośle.",
                 "MaxItemLevel": "Poziom przedmiotu przekracza maksymalny możliwy poziom wytwarzania — {level}.",
-                "MaxSlots": "Wpis o rzemiośle ma już zapełnione wszystkie dostępne miejsca.",
-                "MissingReagents": "Niewystarczająca liczba nasyconych odczynników aby ukończyć wytwarzanie."
+                "MaxSlots": "Wpis o rzemiośle ma już zapełnione wszystkie dostępne miejsca."
             },
             "CraftQuantityTitle": "Liczba",
             "ExpendFormula": "Zużyj Recepturę",
@@ -1919,8 +1916,9 @@
             "Deity": {
                 "Alignment": "Charakter",
                 "Category": {
-                    "Hint": "Zamiast określonego bóstwa można podążać za panteonami bóstw oraz filozofiami i spirytualizmem niezwiązanymi z żadnym bóstwem. Klerycy i Czempioni muszą podążać za konkretnym bóstwem lub panteonem.",
+                    "Hint": "Zamiast określonego bóstwa można podążać za panteonami oraz filozofiami i przymierzami niezwiązanymi z żadnym bóstwem.",
                     "Pantheon": "Panteon",
+                    "Covenant": "Przymierze",
                     "Philosophy": "Filozofia"
                 },
                 "ClericSpells": {
@@ -2008,7 +2006,7 @@
                     },
                     "Delirium": {
                         "Description": "Możesz wywołać halucynacje i niepokój.",
-                        "Label": "Urojenia"
+                        "Label": "Dezorientacja"
                     },
                     "Destruction": {
                         "Description": "Jesteś narzędziem boskiej dewastacji.",
@@ -2211,7 +2209,7 @@
                         "Label": "Piecza"
                     },
                     "Void": {
-                        "Description": "Czerpiesz moc z pustki.",
+                        "Description": "Czerpiesz moc z nicości.",
                         "Label": "Nicość"
                     },
                     "Water": {
@@ -2232,7 +2230,7 @@
                     },
                     "Wyrmkin": {
                         "Description": "Czerpiesz z mocy smoków, linnormów i innych potężnych gadzich stworzeń.",
-                        "Label": "Smoczy Lud"
+                        "Label": "Smok"
                     },
                     "Zeal": {
                         "Description": "Twój wewnętrzny ogień zwiększa twoją sprawność bojową.",
@@ -2314,6 +2312,7 @@
                     "Ancestry": "Atut Przodkowstwa",
                     "AncestryFeature": "Atrybut Przodkowstwa",
                     "Bonus": "Atut Dodatkowy",
+                    "Calling": "Mityczne Powołanie",
                     "Class": "Atut Klasowy",
                     "ClassFeature": "Atrybut Klasowy",
                     "Curse": "Klątwa Bóstwa",
@@ -5252,7 +5251,8 @@
                 "exquisite-sword-cane": "Wyśmienita Mieczo-laska",
                 "exquisite-sword-cane-sheath": "Wyśmienita Pochwa na Mieczo-laskę",
                 "falcata": "Falcata",
-                "falchion": "Falchion",
+                "falchion": "Bułat",
+                "fangs": "Zębiska",
                 "fangwire": "Niciokieł",
                 "fauchard": "Fauchard",
                 "feng-huo-lun": "Feng Huo Lun",

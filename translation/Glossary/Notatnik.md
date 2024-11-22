@@ -5,5 +5,5 @@ Straceńcy
 grzęzawisko
 kasztelan
 napomykam
-
-Przywodzenie Widzy???
+kunszt
+strażnica

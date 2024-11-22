@@ -217,8 +217,6 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\n<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "equipment->Demon's Knot": {
-                    "name": "Demon's Knot",
-                    "description": "<p>The demon Kaivirris is housed in the magnificent ruby that serves as the centerpiece of this beautiful, goldplated, cold iron pendant necklace. Creatures within 30 feet of the <em>demon's knot</em> feel a subtle urge to acquire the necklace and take a –1 status penalty to Will saves.</p><p>Upon donning the <em>demon's knot</em>, it fuses to you. You are subject to a @UUID[Compendium.pf2e.spells-srd.Item.Q690d3mw3TUrKX7E]{Geas} that requires you to free Kaivirris from his prison. If you die without completing this task, you become a sulfur zombie that always remains within 100 feet of the demon's knot and is under the control of whoever is cursed by the <em>demon's knot</em>.</p><p>The <em>demon's knot</em> sustains your physical form and protects your mind from mental control. You don't need to eat or drink. You become immune to the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} and @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Kontrolowany} conditions.</p><p>The <em>demon's knot</em> corrupts anyone wearing it. You gain weakness to cold iron 10 and holy 10. Whenever you're within 60 feet of a celestial, you're @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} and can't reduce the value of the frightened condition below 2.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> komenda</p><p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Efekt</strong> You allow Kaivirris's corrupting influence over you to outwardly manifest. For 1 minute, your features adopt a cruel cast, and you radiate a palpable aura of evil. During this time, you gain a +2 status bonus to Intimidation checks, and your Strikes deal an additional @Damage[1d6[spirit]] damage.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.IxhKGd3nK2lcIpMw]{Efekt: Demon's Knot}</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> komenda, Interakcja</p><p><strong>Częstotliwość</strong> raz na dzień</p><p><strong>Efekt</strong> The demon's knot casts @UUID[Compendium.pf2e.spells-srd.Item.sRfSBHWHdbIa0aGc]{Mrożąca Ciemność}.</p>",
                     "gmNote": "<p><strong>Zniszczenie</strong> A celestial creature must hold the necklace in their hands for at least an hour while meditating on the damage it has caused, then weep on the ruby. It must then be completely sealed within a cold iron container and cast into the heart of an active volcano, allowing the magma to melt the container and the necklace within.</p>"
                 },
                 "consumable->Elixir of Life (Moderate) (Infused)": {
@@ -2320,7 +2318,7 @@
                 },
                 "action->Divine Revulsion": {
                     "name": "Divine Revulsion",
-                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p><hr /><p><strong>Krytyczny Sukces</strong> The redcap is unaffected</p><p><strong>Sukces</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}</p><p><strong>Porażka</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}</p>"
+                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[will|dc:21] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p><hr /><p><strong>Krytyczny Sukces</strong> The redcap is unaffected</p><p><strong>Sukces</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}</p><p><strong>Porażka</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 4}</p>"
                 },
                 "action->Blood Soak": {
                     "name": "Blood Soak",
@@ -2335,7 +2333,7 @@
         "Repelling Surge": {
             "name": "Repelling Surge",
             "description": "<p>A shockwave of energy surges out from the room's center.</p>",
-            "disable": "<p>@Check[arcana|dc:29] (expert) to fool the wards, DC 31 Thievery (master) to disable the wards, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Rozproszenie Magii} (5. level; counteract DC 28) to counteract the wards</p>",
+            "disable": "<p>@Check[arcana|dc:29] (expert) to fool the wards, @Check[thievery|dc:31] (master) to disable the wards, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank; counteract DC 28) to counteract the wards</p>",
             "reset": "<p>Automatic</p>",
             "stealth": "<p>(mistrzostwo)</p>",
             "items": {
@@ -2413,14 +2411,6 @@
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Wrodzone Zaklęcia Pierwotne"
                 },
-                "spell->Create Mycoguardian": {
-                    "name": "Create Mycoguardian",
-                    "cost": "parasitic fungal spores, see Table 7-1",
-                    "description": "<p>To create a mycoguardian, such as a sporeborn, a ritualist can perform a ritual similar to create undead (Pathfinder Core Rulebook 411) called create mycoguardian, but providing valuable parasitic fungal spores instead of black onyx. This ritual uses Fungus Lore (wytrenowanie) or Nature (eksperctwo) for both the Primary Check and Secondary Checks, and lacks the Evil trait.</p><hr /><p>You transform the target into an undead creature with a level up to that allowed in Table 7-1. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of <em>create undead</em>.</p><h2>Table 7-1: Creatures Creation Rituals</h2><table class=\"pf2e\"><thead><tr><th>Poziom Istoty</th><th>Wymagany Krąg Zaklęcia</th><th>Koszt</th></tr></thead><tbody><tr><td>–1 lub 0</td><td>2</td><td>15 sz</td></tr><tr><td>1</td><td>2</td><td>60 sz</td></tr><tr><td>2</td><td>3</td><td>105 sz</td></tr><tr><td>3</td><td>3</td><td>180 sz</td></tr><tr><td>4</td><td>4</td><td>300 sz</td></tr><tr><td>5</td><td>4</td><td>480 sz</td></tr><tr><td>6</td><td>5</td><td>750 sz</td></tr><tr><td>7</td><td>5</td><td>1 080 sz</td></tr><tr><td>8</td><td>6</td><td>1 500 sz</td></tr><tr><td>9</td><td>6</td><td>2 100 sz</td></tr><tr><td>10</td><td>7</td><td>3 000 sz</td></tr><tr><td>11</td><td>7</td><td>4 200 sz</td></tr><tr><td>12</td><td>8</td><td>6 000 sz</td></tr><tr><td>13</td><td>8</td><td>9 000 sz</td></tr><tr><td>14</td><td>9</td><td>13 500 sz</td></tr><tr><td>15</td><td>9</td><td>19 500 sz</td></tr><tr><td>16</td><td>10</td><td>30 000 sz</td></tr><tr><td>17</td><td>10</td><td>45 000 sz</td></tr></tbody></table><p><strong>Krytyczny Sukces</strong> The target becomes an undead creature of the appropriate type. Jeśli jest co najmniej 4 poziomy niższy od twojego, możesz uczynić z niego swojego sługusa. Nadaje mu to cechę sługusa, co oznacza, że może on użyć 2 akcji kiedy wydasz mu polecenie, a wydawanie mu polecenia jest pojedynczą akcją, która ma cechy słuchowości i koncentracji. Możesz mieć pod swoją kontrolą maksymalnie czterech sługusów. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.</p><p><strong>Sukces</strong> As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.</p><p><strong>Porażka</strong> You fail to create the undead.</p><p><strong>Krytyczna Porażka</strong> You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.</p>",
-                    "primarycheck": "Fungus Lore (wytrenowanie), Nature (eksperctwo)",
-                    "secondarycheck": "Fungus Lore (wytrenowanie), Nature (eksperctwo)",
-                    "target": "1 dead creature"
-                },
                 "spell->Dancing Lights": {
                     "name": "Dancing Lights",
                     "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
@@ -2430,10 +2420,6 @@
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
-                },
-                "weapon->Spore Shephard's Staff": {
-                    "name": "Spore Shephard's Staff",
-                    "description": "<p>This staff is constructed from a magically grown amanita mushroom, with a shaft that spreads into a bright red cap speckled in white. While wielding the staff you gain a +2 circumstance bonus to Nature checks to identify fungus.</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><hr /><p><strong>Efekt</strong> Wykorzystujesz ładunki kosturu aby rzucić zaklęcie z listy jego zaklęć.</p><ul><li><strong>Sztuczka</strong> @UUID[Compendium.pf2e.spells-srd.Item.D7ZEhTNIDWDLC2J4]{Puff of Poison}</li><li><strong>1.</strong> @UUID[Compendium.pf2e.spells-srd.Item.K9gI08enGtmih5X1]{Protector Tree} (resembles giant mushroom, not a tree), @UUID[Compendium.pf2e.spells-srd.Item.jSRAyd57kd4WZ4yE]{Przywołanie Grzyba lub Rośliny} (fungus only)</li></ul><hr /><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Pięść"
@@ -2541,7 +2527,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2569,7 +2555,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2597,7 +2583,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2625,7 +2611,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2653,7 +2639,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2681,7 +2667,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2709,7 +2695,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2737,7 +2723,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -2769,7 +2755,7 @@
                 },
                 "action->Eager Rend": {
                     "name": "Eager Rend",
-                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (basic @Check[fortitude|dc:18]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
+                    "description": "<p>The soulbound mauler has a living creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony}.</p><hr /><p><strong>Efekt</strong> The soulbound mauler holds the creature it has grabbed and attempts to tear it in two. That creature takes @Damage[5d6[bludgeoning]] damage (@Check[fortitude|dc:18|basic]). On a critical failure, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1}.</p>"
                 },
                 "action->Tethered Soul": {
                     "name": "Tethered Soul",
@@ -3206,9 +3192,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c58wczIzH2gzeXQL]\nShillelagh"
                 },
                 "equipment->Avernal Cape": {
-                    "name": "Avernal Cape",
-                    "description": "<p>Made from preserved crimson worm hide, this thick leather cape can deflect incoming blows without serious damage. It functions as a @UUID[Compendium.pf2e.equipment-srd.Item.DA3HgyEBGEbtRNOo]{Dueling Cape} and while moved into a protective position, it also grants you fire resistance equal to twice the relic's number of gifts.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.7dLsA9PAb5ij7Bc6]{Efekt: Dueling Cape}</p>",
-                    "gmNote": "<p><strong>Aspects</strong> beast, fire</p><p><strong>Forming the Bond</strong> While wearing the cape, you defeat a foe and spare their life.</p><p><strong>Advancing the Bond</strong> Befriend beasts and terrify foes with your physical presence and prowess.</p><p><strong>Minor Gifts</strong> feral claws, flare bolt, heat haze</p><p><strong>Major Gifts</strong> form of fury (snake form), searing wave</p>"
+                    "gmNote": "<p><strong>Aspects</strong> beast, fire</p><p><strong>Forming the Bond</strong> While wearing the cape, you defeat a foe and spare their life.</p><p><strong>Advancing the Bond</strong> Befriend beasts and terrify foes with your physical presence and prowess.</p><p><strong>Minor Gifts</strong> @UUID[Compendium.pf2e.adventure-specific-actions.Item.tN8ChaJweDy1lT0s]{Feral Claws}, @UUID[Compendium.pf2e.adventure-specific-actions.Item.M1DXVrZlCTfm8PQs]{Flare Bolt}, @UUID[Compendium.pf2e.adventure-specific-actions.Item.TspxQ2di6yfPrRnP]{Heat Haze}</p><p><strong>Major Gifts</strong> @UUID[Compendium.pf2e.adventure-specific-actions.Item.cNJ83EsE9OeCCpaE]{Form of Fury} (snake form), @UUID[Compendium.pf2e.adventure-specific-actions.Item.1pkGuWi0YdP0v6g2]{Searing Wave}</p>"
                 },
                 "strike-melee->Shillelagh": {
                     "name": "Shillelagh"

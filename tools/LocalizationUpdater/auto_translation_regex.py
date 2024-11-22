@@ -10,8 +10,8 @@ formatting_patterns = [
 # Game mechanics and basic rules
 game_mechanics_patterns = [
     # Ordinals
-    (r'(\d+\.)-([Ll]evel)', lambda m: f"{m.group(1)} {'Poziomu' if m.group(2)[0].isupper() else 'poziomu'}"),
-    (r'(\d+\.)-([Rr]ank)', lambda m: f"{m.group(1)} {'Kręgu' if m.group(2)[0].isupper() else 'kręgu'}"),
+    (r'(\d+)(st|nd|rd|th)-([Ll]evel)', lambda m: f"{m.group(1)}. {'Poziomu' if m.group(3)[0].isupper() else 'poziomu'}"),
+    (r'(\d+)(st|nd|rd|th)-([Rr]ank)', lambda m: f"{m.group(1)}. {'Kręgu' if m.group(3)[0].isupper() else 'kręgu'}"),
     # Dice notation
     (r'(\d*)d(\d+)', r'\1k\2'),
     # Success degrees
@@ -92,10 +92,11 @@ item_patterns = [
     (r'\(Type (\S+)\)', r'(Typ \1)'),
 ]
 
-# Religious and character elements
-character_elements = [
+# Religious elements
+religious_elements = [
     (r'>Edicts<', r'>Edykty<'),
     (r'>Anathema<', r'>Anatemy<'),
+    (r'>Areas of Concern<', r'>Obszary Wpływów<'),
 ]
 
 # Activation and trigger patterns
@@ -257,7 +258,7 @@ replacement_patterns = (
     status_conditions +
     leveled_conditions +
     item_patterns +
-    character_elements +
+    religious_elements +
     activation_patterns +
     effect_patterns +
     requirement_patterns +

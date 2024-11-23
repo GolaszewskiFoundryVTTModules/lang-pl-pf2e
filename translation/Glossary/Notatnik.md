@@ -7,3 +7,4 @@ kasztelan
 napomykam
 kunszt
 strażnica
+ośmielić się

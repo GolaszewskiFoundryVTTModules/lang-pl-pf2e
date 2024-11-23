@@ -166,6 +166,7 @@ spell_patterns = [
     (r'>Spell<', r'>Zaklęcie<'),
     (r'>Spells<', r'>Zaklęcia<'),
     (r'>Heightened (\(\S+\))<', r'>Wywyższenie \1<'),
+    (r'>Level (\(\S+\))<', r'>Poziom \1<'),
     (r'\(At Will\)', r'(Do Woli)'),
     (r'(\S*) Innate Spells', r'Wrodzone Zaklęcia \1'),
     (r'(\S*) Prepared Spells', r'Przygotowane Zaklęcia \1'),

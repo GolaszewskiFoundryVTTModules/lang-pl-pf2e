@@ -97,6 +97,11 @@ religious_elements = [
     (r'>Edicts<', r'>Edykty<'),
     (r'>Anathema<', r'>Anatemy<'),
     (r'>Areas of Concern<', r'>Obszary Wpływów<'),
+    (r'>Covenant Members<', r'>Członkowie Przymierza<'),
+    (r'>Religious Symbol<', r'>Symbol Religijny<'),
+    (r'>Sacred Animal<', r'>Święte Zwierzę<'),
+    (r'>Sacred Color<', r'>Święta Barwa<'),
+    (r'>Sacred Colors?<', lambda m: '>Święte Barwy<' if m.group(0).endswith('s<') else '>Święta Barwa<'),
 ]
 
 # Activation and trigger patterns
@@ -252,6 +257,17 @@ misc_patterns = [
     (r'(>|\()Note(<|\))', r'\1Przypis\2'),
 ]
 
+# List conversion patterns
+list_conversion_patterns = [
+    # Edicts and Anathema patterns - only match if not already in <ul> format
+    (r'<p><strong>(Edykty|Anatemy)</strong>\s*([^<].*?)</p>(?!\s*<ul>)', 
+     lambda m: f'<p><strong>{m.group(1)}</strong></p><ul>' + 
+               ''.join([f'<li>{item.strip().rstrip(".").capitalize()}</li>' 
+                       for item in m.group(2).split(',') 
+                       if item.strip()]) + 
+               '</ul>')
+]
+
 # Combine all patterns in order of priority
 replacement_patterns = (
     formatting_patterns +
@@ -271,5 +287,6 @@ replacement_patterns = (
     detailed_activation_patterns +
     ammunition_patterns +
     frequency_patterns +
+    list_conversion_patterns +
     misc_patterns
 )

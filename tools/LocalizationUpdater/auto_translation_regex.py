@@ -168,12 +168,12 @@ spell_patterns = [
     (r'>Heightened (\(\S+\))<', r'>Wywyższenie \1<'),
     (r'>Level (\(\S+\))<', r'>Poziom \1<'),
     (r'\(At Will\)', r'(Do Woli)'),
-    (r'(\S*) Innate Spells', r'Wrodzone Zaklęcia \1'),
-    (r'(\S*) Prepared Spells', r'Przygotowane Zaklęcia \1'),
-    (r'(Wrodzone|Przygotowane) (Zaklęcia) Occult', r'\1 \2 Okultystyczne'),
-    (r'(Wrodzone|Przygotowane) (Zaklęcia) Divine', r'\1 \2 Boskie'),
-    (r'(Wrodzone|Przygotowane) (Zaklęcia) Primal', r'\1 \2 Pierwotne'),
-    (r'(Wrodzone|Przygotowane) (Zaklęcia) Arcane', r'\1 \2 Tajemne'),
+    (r'(\S+) Innate Spells', r'Wrodzone Zaklęcia \1'),
+    (r'(\S+) Prepared Spells', r'Przygotowane Zaklęcia \1'),
+    (r'((Wrodzone|Przygotowane) Zaklęcia) Occult', r'\1 Okultystyczne'),
+    (r'((Wrodzone|Przygotowane) Zaklęcia) Divine', r'\1 Boskie'),
+    (r'((Wrodzone|Przygotowane) Zaklęcia) Primal', r'\1 Pierwotne'),
+    (r'((Wrodzone|Przygotowane) Zaklęcia) Arcane', r'\1 Tajemne'),
 ]
 
 # Affliction patterns (poisons, diseases)

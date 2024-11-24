@@ -372,13 +372,13 @@ class LocalizationUpdater:
 
     def _handle_key_rename(self, new_key, old_key, pl_path_basename):
         """Handle key rename operations"""
-        # double-check for translated entry existence
         if old_key not in self.pl_extracted:
             print(f"Did not find old key {old_key} in polish {pl_path_basename}. "
                   "It may have been updated already")
             return
 
-        self.pl_extracted[new_key] = self.pl_extracted.get(old_key)
+        self.pl_extracted[new_key] = self.pl_extracted[old_key]
+        del self.pl_extracted[old_key]  # Remove the old key after renaming
         self.renamed_keys.append((old_key, new_key))
 
     def _remove_obsolete_keys(self, en_old_keys_set, en_new_keys_set, pl_path_basename):
@@ -397,7 +397,17 @@ class LocalizationUpdater:
             self.pl_extracted.pop(old_key, None)
             self.removed_keys.append(old_key)
 
-    def _validate_keys_match(self, path=''):
+    def _validate_keys_match(self, path='', clean_obsolete=False):
+        """
+        Validate that all keys match between English and Polish files.
+        
+        Args:
+            path: Current path in the nested structure for error reporting
+            clean_obsolete: If True, removes obsolete keys from pl_extracted
+            
+        Returns:
+            List of validation error messages
+        """
         errors = []
 
         for key in self.en_extracted.keys():
@@ -412,10 +422,18 @@ class LocalizationUpdater:
                 elif not isinstance(self.en_extracted[key], dict) and isinstance(self.pl_extracted[key], dict):
                     errors.append(f"Mismatched types at {current_path}, expected a non-dict in target but found a dict.")
 
+        # Check for and optionally remove obsolete keys
+        obsolete_keys = []
         for key in self.pl_extracted.keys():
             current_path = f"{path}.{key}" if path else key
             if key not in self.en_extracted:
                 errors.append(f"Obsolete key in target: {current_path}")
+                obsolete_keys.append(key)
+                
+        if clean_obsolete and obsolete_keys:
+            for key in obsolete_keys:
+                del self.pl_extracted[key]
+                self.removed_keys.append(key)
 
         return errors
 
@@ -514,7 +532,7 @@ class LocalizationUpdater:
 
     def _validate_and_log_results(self):
         """Validate and log the results of key matching"""
-        validation_errors = self._validate_keys_match()
+        validation_errors = self._validate_keys_match(clean_obsolete=True)
         if validation_errors:
             for error in validation_errors:
                 logging.error(error)

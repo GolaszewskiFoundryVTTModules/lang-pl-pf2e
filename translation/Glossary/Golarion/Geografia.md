@@ -1,5 +1,6 @@
 The Shackles - Kajdany
-Immenwood - Las Immeński
+Immenwood - Knieja Immeńska
+Verduran Forest - Las Werdurański
 
 ## Alkenstar
 Gunworks - Rusznikarnia

@@ -7,3 +7,5 @@ Norgorber - (Ojciec Skóroszwacz)
 Dawnflower - świtokwiecie
 
 Verex-That-Was - Verex-Który-Przeminął
+
+Green Man - Zielony Człowiek

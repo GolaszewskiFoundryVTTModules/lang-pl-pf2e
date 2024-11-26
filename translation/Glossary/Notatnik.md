@@ -8,3 +8,4 @@ napomykam
 kunszt
 strażnica
 ośmielić się
+danina

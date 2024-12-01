@@ -196,23 +196,51 @@ affliction_patterns = [
     (r'\(Ingested\)', r'(Spożycie)'),
 ]
 
-# Detailed activation patterns
-detailed_activation_patterns = [
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Interact([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Interakcja\3</p>'),
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)command([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2komenda\3</p>'),
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)envision([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2wyobrażenie\3</p>'),
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)manipulate([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2manipulacja\3</p>'),
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)concentrate([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2koncentracja\3</p>'),
-    (r'<p><strong>Aktywacja</strong> <span class=\"action-glyph\">(\S+)</span> ([^<]*)Strike([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> <span class="action-glyph">\1</span> \2Cios\3</p>'),
-    (r'<p><strong>Aktywacja</strong> ([^<]*)Cast a Spell([^<]*)</p>',
-        r'<p><strong>Aktywacja</strong> \1Rzucenie Zaklęcia\2</p>'),
-]
+# Action translations dictionaries
+glyph_action_translations = {
+    'Interact': 'Interakcja',
+    'command': 'komenda',
+    'envision': 'wyobrażenie',
+    'manipulate': 'manipulacja',
+    'concentrate': 'koncentracja',
+    'fortune' : 'szczęście',
+    'misfortune' : 'nieszczęście',
+    'Strike': 'Cios'
+}
+
+no_glyph_action_translations = {
+    'Cast a Spell': 'Rzucenie Zaklęcia'
+}
+
+# Generate detailed activation patterns
+detailed_activation_patterns = []
+
+# Pattern for actions with glyphs
+glyph_pattern = (
+    r'<p><strong>Aktywacja([^<]*)</strong> '
+    r'<span class=\"action-glyph\">(\S+)</span> '
+    r'([^<]*){}([^<]*)</p>'
+)
+
+# Pattern for actions without glyphs
+no_glyph_pattern = (
+    r'<p><strong>Aktywacja([^<]*)</strong> '
+    r'([^<]*){}([^<]*)</p>'
+)
+
+# Generate patterns for actions with glyphs
+for en, pl in glyph_action_translations.items():
+    detailed_activation_patterns.append((
+        glyph_pattern.format(en),
+        r'<p><strong>Aktywacja\1</strong> <span class="action-glyph">\2</span> \3{}\4</p>'.format(pl)
+    ))
+
+# Generate patterns for actions without glyphs
+for en, pl in no_glyph_action_translations.items():
+    detailed_activation_patterns.append((
+        no_glyph_pattern.format(en),
+        r'<p><strong>Aktywacja\1</strong> \2{}\3</p>'.format(pl)
+    ))
 
 # Ammunition patterns
 ammunition_patterns = [

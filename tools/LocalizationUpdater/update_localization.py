@@ -88,12 +88,12 @@ def main():
 
     parser = argparse.ArgumentParser(description='Run the script with optional update source data flag.')
     parser.add_argument('--UpdateSourceData', action='store_true', help='Update source data if set to true.')
-    parser.add_argument('--PreformRegexTranslate', action='store_true', help='Forces re-processing all strings by regex translations.')
+    parser.add_argument('--PerformRegexTranslate', action='store_true', help='Forces re-processing all strings by regex translations.')
     parser.add_argument('-v', '--Verbose', action='store_true', help='Enable verbose logging.')
     args = parser.parse_args()
 
     update_source_data = args.UpdateSourceData
-    preform_regex_translate = args.PreformRegexTranslate
+    perform_regex_translate = args.PerformRegexTranslate
     verbose = args.Verbose
 
     file_sets = []
@@ -129,7 +129,7 @@ def main():
                 print(f"File copied from {en} to {pl}.")
 
         updater = LocalizationUpdater(en_old, en, pl, verbose)
-        updater.process(preform_regex_translate)
+        updater.process(perform_regex_translate)
     
     shutil.rmtree(temp_en_old_directory)
 

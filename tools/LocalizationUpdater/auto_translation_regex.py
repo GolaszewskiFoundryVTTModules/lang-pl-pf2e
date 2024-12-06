@@ -199,13 +199,30 @@ affliction_patterns = [
 # Action translations dictionaries
 glyph_action_translations = {
     'Interact': 'Interakcja',
+    'Strike': 'Cios',
+    'move': 'ruch',
     'command': 'komenda',
     'envision': 'wyobrażenie',
     'manipulate': 'manipulacja',
     'concentrate': 'koncentracja',
+    'emotion': 'emocje',
+    'mental': 'mentalność',
+    'visual': 'wzrokowość',
+    'auditory': 'słuchowość',
+    'transcendence': 'transcendencja',
+    'force': 'moc',
+    'spirit': 'duchowość',
     'fortune' : 'szczęście',
     'misfortune' : 'nieszczęście',
-    'Strike': 'Cios'
+    'primal': 'magia pierwotna',
+    'arcane': 'magia tajemna',
+    'divine': 'magia boska',
+    'occult': 'magia okultystyczna',
+    'healing': 'leczenie',
+    'vitality': 'witalność',
+    'void': 'pustka',
+    'prediction': 'przewidywanie',
+    'incapacitation': 'obezwładnienie',
 }
 
 no_glyph_action_translations = {
@@ -217,9 +234,8 @@ detailed_activation_patterns = []
 
 # Pattern for actions with glyphs
 glyph_pattern = (
-    r'<p><strong>Aktywacja([^<]*)</strong> '
-    r'<span class=\"action-glyph\">(\S+)</span> '
-    r'([^<]*){}([^<]*)</p>'
+    r'<span class=\"action-glyph\">(\S+)</span> \('
+    r'([^<]*?)\b{}\b([^<]*?)\)'
 )
 
 # Pattern for actions without glyphs
@@ -232,8 +248,8 @@ no_glyph_pattern = (
 for en, pl in glyph_action_translations.items():
     detailed_activation_patterns.append((
         glyph_pattern.format(en),
-        r'<p><strong>Aktywacja\1</strong> <span class="action-glyph">\2</span> \3{}\4</p>'.format(pl)
-    ))
+        r'<span class="action-glyph">\1</span> (\2{}\3)'.format(pl)
+    ))    
 
 # Generate patterns for actions without glyphs
 for en, pl in no_glyph_action_translations.items():

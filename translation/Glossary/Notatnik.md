@@ -9,3 +9,4 @@ kunszt
 strażnica
 ośmielić się
 danina
+nieugięty

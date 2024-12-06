@@ -8,6 +8,10 @@ Plane of Existance - Plan Egzystencji
 ###### The Great Beyond - Wielki Bezmiar
 
 
+#### Inner Sphere - Sfera Wewnętrzna
+#### Outer Sphere - Sfera Zewnętrzna
+
+
 #### Outer Planes - Plany Dalekie
 #### Outer Gods - Bogowie Dalecy
 

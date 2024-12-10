@@ -8,3 +8,5 @@ Gunworks - Rusznikarnia
 the Crown of The World - Korona Świata
 
 Mana Wastes - Pustkowia Many
+
+Realm of The Mammoth Lords - Kraina Władców Mamutów

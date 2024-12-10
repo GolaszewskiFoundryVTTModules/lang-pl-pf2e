@@ -98,6 +98,7 @@ religious_elements = [
     (r'>Anathema<', r'>Anatemy<'),
     (r'>Areas of Concern<', r'>Obszary Wpływów<'),
     (r'>Covenant Members<', r'>Członkowie Przymierza<'),
+    (r'>Title<', r'>Przydomek<'),
     (r'>Religious Symbol<', r'>Symbol Religijny<'),
     (r'>Sacred Animal<', r'>Święte Zwierzę<'),
     (r'>Sacred Color<', r'>Święta Barwa<'),

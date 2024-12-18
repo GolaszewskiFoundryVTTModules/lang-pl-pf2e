@@ -16,3 +16,4 @@ Plane of Existance - Plan Egzystencji
 #### Outer Gods - Bogowie Dalecy
 
 The Fabric of the Universe/Space/Time - Osnowa
+Ley Lines - Żyły Magii

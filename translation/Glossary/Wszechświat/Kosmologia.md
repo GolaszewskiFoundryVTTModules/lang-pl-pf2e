@@ -7,7 +7,7 @@ Plane of Existance - Plan Egzystencji
 
 ###### The Great Beyond - Wielki Bezmiar
 
-
+###### The Dimension of Dreams - Sfera Snów
 #### Inner Sphere - Sfera Wewnętrzna
 #### Outer Sphere - Sfera Zewnętrzna
 

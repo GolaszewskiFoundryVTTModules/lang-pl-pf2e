@@ -461,8 +461,8 @@
         "strike-melee->Soft Touch": {
           "name": "Soft Touch"
         },
-        "strike-ranged->Feigned": {
-          "name": "Feigned"
+        "strike-ranged->Feigned Strike": {
+          "name": "Feigned Strike"
         },
         "action->Artistic Specialist": {
           "name": "Artistic Specialist",
@@ -564,7 +564,7 @@
         },
         "action->Battlefield Eruption": {
           "name": "Battlefield Eruption",
-          "description": "<p><strong>Cost</strong> 1 Mythic Point</p>\n<hr />\n<p><strong>Effect</strong> Verex-That-Was burrows into the ground, reemerging anywhere on the same plane where either he or his worshippers have previously killed at least 10 sapient creatures in battle. A fountain of gore and shattered bone erupts from the ground when Verex arrives, dealing @Damage[16d10[piercing]] damage in a @Template[type:emanation|distance:30] (@Check[reflex|dc:48|basic] save).</p>"
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p>\n<hr />\n<p><strong>Effect</strong> Verex-That-Was burrows into the ground, reemerging anywhere on the same plane where either he or his worshippers have previously killed at least 10 sapient creatures in battle. A fountain of gore and shattered bone erupts from the ground when Verex arrives, dealing @Damage[16d10[piercing]|options:area-damage] damage in a @Template[type:emanation|distance:30] (@Check[reflex|dc:48|basic|options:area-effect] save).</p>"
         },
         "action->Bloodboils": {
           "name": "Bloodboils",
@@ -645,7 +645,7 @@
         },
         "action->Steal Face": {
           "name": "Steal Face",
-          "description": "<p><strong>Cost</strong> 1 Mythic Point</p>\n<hr />\n<p><strong>Effect</strong> Vulot makes a claw Strike. On a hit, Vulot attempts a Deception check against the target's Will DC to steal that creature's face; on a critical hit, Vulot treats the result of their Deception check as one degree of success higher. On a success, Vulot steals the target's face for [[/gmr 1d4 #rounds]]{1d4 rounds} (1 minute on a critical success); a creature whose face has been stolen isn't considered an ally by any creature.</p>"
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p>\n<hr />\n<p><strong>Effect</strong> Vulot makes a claw Strike. On a hit, Vulot attempts a @Check[deception|against:will] check against the target's Will DC to steal that creature's face; on a critical hit, Vulot treats the result of their Deception check as one degree of success higher. On a success, Vulot steals the target's face for [[/gmr 1d4 #rounds]]{1d4 rounds} (1 minute on a critical success); a creature whose face has been stolen isn't considered an ally by any creature.</p>"
         },
         "action->Steal Thoughts": {
           "name": "Steal Thoughts",

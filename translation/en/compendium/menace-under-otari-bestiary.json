@@ -222,6 +222,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\nShield",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
         },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "equipment->Religious Symbol (Wooden)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
         },
@@ -615,7 +618,7 @@
         },
         "action->Hellfire Breath": {
           "name": "Hellfire Breath",
-          "description": "<p>The hell hound breathes flames that deal @Damage[4d6[fire]] damage to all creatures in a @Template[cone|distance:15]. Each affected creature must attempt a @Check[reflex|dc:19|basic] save.</p>\n<p>The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Hellfire Breath]]{1d4 rounds}. If the hell hound would take fire damage or is the target of a fire effect, its Hellfire Breath recharges.</p>"
+          "description": "<p>The hell hound breathes flames that deal @Damage[4d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:15]. Each affected creature must attempt a @Check[reflex|dc:19|basic|options:area-effect] save.</p>\n<p>The hell hound can't use Breath Weapon again for [[/gmr 1d4 #Recharge Hellfire Breath]]{1d4 rounds}. If the hell hound would take fire damage or is the target of a fire effect, its Hellfire Breath recharges.</p>"
         },
         "action->Pack Attack": {
           "name": "Pack Attack",
@@ -632,7 +635,7 @@
       "items": {
         "action->Pitfall": {
           "name": "Pitfall",
-          "description": "<p>If a creature walks onto the trapdoor, that creature falls in unless it succeeds at a @Check[reflex|dc:16] save to grab hold of the edge. The pit is 20 feet deep, dealing @Damage[10[bludgeoning]] damage to anyone who falls to the bottom.</p>"
+          "description": "<p>If a creature walks onto the trapdoor, that creature falls in unless it succeeds at a @Check[reflex|dc:16] save to grab hold of the edge. The pit is 20 feet deep, dealing @Damage[10[bludgeoning]|options:fall-damage] damage to anyone who falls to the bottom.</p>"
         }
       }
     },
@@ -694,7 +697,7 @@
         },
         "action->Poison Breath": {
           "name": "Poison Breath",
-          "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/br 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
+          "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1278,7 +1281,7 @@
         },
         "action->Terrifying Charge": {
           "name": "Terrifying Charge",
-          "description": "<p>The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.</p>\n<p>If the strike hits, the giant attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the target.</p>"
+          "description": "<p>The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.</p>\n<p>If the strike hits, the giant attempts to [[/act demoralize]] the target.</p>"
         }
       }
     },

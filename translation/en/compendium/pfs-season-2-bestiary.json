@@ -112,7 +112,7 @@
       "items": {
         "action->Pitfall": {
           "name": "Pitfall",
-          "description": "<p><strong>Trigger</strong> A creature walks onto the trapdoor</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes @Damage[5[bludgeoning]] damage as the acidic mass breaks their fall, then @Damage[1d6[acid]] damage as the ooze bursts from the impact. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
+          "description": "<p><strong>Trigger</strong> A creature walks onto the trapdoor</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes @Damage[5[bludgeoning]|options:fall-damage] damage as the acidic mass breaks their fall, then @Damage[1d6[acid]] damage as the ooze bursts from the impact. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
         }
       }
     },
@@ -748,7 +748,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The ravener husk breathes a torrent of void energy that deals @Damage[12d6[void]] damage in a @Template[cone|distance:40]{40-foot cone} (@Check[reflex|dc:30|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The ravener husk breathes a torrent of void energy that deals @Damage[12d6[void]] damage in a @Template[cone|distance:40] (@Check[reflex|dc:30|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1012,7 +1012,7 @@
         },
         "action->Snow Step": {
           "name": "Snow Step",
-          "description": "<p>Icy flowers bloom around Chesjilawa as she instantly transports herself in a flurry of snow to a space within 120 feet that she can see. The destination must contain ice or snow.</p>\n<p>She then can't Snow Step for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Icy flowers bloom around Chesjilawa as she instantly transports herself in a flurry of snow to a space within 120 feet that she can see. The destination must contain ice or snow.</p>\n<p>She then can't Snow Step for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "lore->Winter Witch Lore": {
           "name": "Winter Witch Lore"
@@ -1075,7 +1075,7 @@
         },
         "action->Snow Step": {
           "name": "Snow Step",
-          "description": "<p>Icy flowers bloom around Chesjilawa as she instantly transports herself in a flurry of snow to a space within 120 feet that she can see. The destination must contain ice or snow.</p>\n<p>She then can't Snow Step for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Icy flowers bloom around Chesjilawa as she instantly transports herself in a flurry of snow to a space within 120 feet that she can see. The destination must contain ice or snow.</p>\n<p>She then can't Snow Step for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "lore->Winter Witch Lore": {
           "name": "Winter Witch Lore"
@@ -1162,7 +1162,7 @@
         },
         "action->Sunlight Petrification": {
           "name": "Sunlight Petrification",
-          "description": "<p>If exposed to direct sunlight, Clouded Quartz immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions or Trample. The slowed value increases by 1 each time she ends her turn in sunlight. If Clouded Quartz's actions are reduced to 0 in this way, she becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} until she spends at least 1 minute in darkness. Spells like @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst} that create magical sunlight cannot petrify Clouded Quartz, but she's slowed 1 for [[/br 1d4 #rounds]]{1d4 rounds} after being exposed to such an effect.</p>"
+          "description": "<p>If exposed to direct sunlight, Clouded Quartz immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions or Trample. The slowed value increases by 1 each time she ends her turn in sunlight. If Clouded Quartz's actions are reduced to 0 in this way, she becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} until she spends at least 1 minute in darkness. Spells like @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst} that create magical sunlight cannot petrify Clouded Quartz, but she's slowed 1 for [[/gmr 1d4 #rounds]]{1d4 rounds} after being exposed to such an effect.</p>"
         },
         "action->Rend": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -1212,7 +1212,7 @@
         },
         "action->Sunlight Petrification": {
           "name": "Sunlight Petrification",
-          "description": "<p>If exposed to direct sunlight, Clouded Quartz immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions or Trample. The slowed value increases by 1 each time she ends her turn in sunlight. If Clouded Quartz's actions are reduced to 0 in this way, she becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} until she spends at least 1 minute in darkness. Spells like @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst} that create magical sunlight cannot petrify Clouded Quartz, but she is slowed 1 for [[/br 1d4 #rounds]]{1d4 rounds} after being exposed to such an effect.</p>"
+          "description": "<p>If exposed to direct sunlight, Clouded Quartz immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions or Trample. The slowed value increases by 1 each time she ends her turn in sunlight. If Clouded Quartz's actions are reduced to 0 in this way, she becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} until she spends at least 1 minute in darkness. Spells like @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst} that create magical sunlight cannot petrify Clouded Quartz, but she is slowed 1 for [[/gmr 1d4 #rounds]]{1d4 rounds} after being exposed to such an effect.</p>"
         },
         "action->Rend": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -1293,7 +1293,7 @@
       "items": {
         "action->Collapse": {
           "name": "Collapse",
-          "description": "<p><strong>Trigger</strong> A creature walks onto the collapse site</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls off the Colossus and lands on the ground, taking @Damage[40[bludgeoning]] damage. They can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling (@Check[reflex|dc:22] save).</p>"
+          "description": "<p><strong>Trigger</strong> A creature walks onto the collapse site</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls off the Colossus and lands on the ground, taking @Damage[40[bludgeoning]|options:fall-damage] damage. They can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling (@Check[reflex|dc:22] save).</p>"
         }
       }
     },
@@ -1306,7 +1306,7 @@
       "items": {
         "action->Collapse": {
           "name": "Collapse",
-          "description": "<p><strong>Trigger</strong> A creature walks onto the collapse site</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls off the Colossus and lands on the ground, taking @Damage[50[bludgeoning]] damage. They can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling (@Check[reflex|dc:24] save).</p>"
+          "description": "<p><strong>Trigger</strong> A creature walks onto the collapse site</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls off the Colossus and lands on the ground, taking @Damage[50[bludgeoning]|options:fall-damage] damage. They can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling (@Check[reflex|dc:24] save).</p>"
         }
       }
     },
@@ -1456,7 +1456,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The ravener husk breathes a torrent of void energy that deals @Damage[11d6[void]] damage in a @Template[cone|distance:40]{40-foot cone} (@Check[reflex|dc:28|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The ravener husk breathes a torrent of void energy that deals @Damage[11d6[void]] damage in a @Template[cone|distance:40] (@Check[reflex|dc:28|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1873,7 +1873,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The dragon forest rot breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:15] (@Check[fortitude|dc:20|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The dragon forest rot breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:15] (@Check[fortitude|dc:20|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1891,7 +1891,7 @@
       "description": "<p>The pile of bones transforms into a Large silver dragon, while the PCs appear to transform into dark, shadowy figures of alien physique. The dragon's flesh appears to slowly dissolve into lines of black smoke, which trail away toward the PCs and appear to be absorbed into their bodies. Once the dragon is stripped of flesh, its skeleton explodes in a shower of bone fragments.</p>",
       "disable": "<p>@Check[religion|dc:23|name:Exorcise the Spirit|traits:haunt] (trained) to exorcise the spirit (two actions), or @Check[diplomacy|dc:26|name:Calm the Spirit|traits:haunt] (trained) to calm the spirit momentarily (two actions).</p>",
       "reset": "<p>1 minute, as the bone fragments slowly move back into a neat pile with the skull on top.</p>",
-      "routine": "<p><strong>Trigger</strong> A creature comes within 15 feet of the dragon skull</p>\n<hr />\n<p><strong>Effect</strong> All living creatures within 20 feet of the nest are peppered with bone shards and take @Damage[(4d8+10)[slashing]] damage (@Check[reflex|dc:22|basic|name:Dragon's Death|traits:haunt,divine,necromancy] save).</p>\n<p>On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d4 #hours]]{1d4 hours}.</p>",
+      "routine": "<p><strong>Trigger</strong> A creature comes within 15 feet of the dragon skull</p>\n<hr />\n<p><strong>Effect</strong> All living creatures within 20 feet of the nest are peppered with bone shards and take @Damage[(4d8+10)[slashing]] damage (@Check[reflex|dc:22|basic|name:Dragon's Death|traits:haunt,divine,necromancy] save).</p>\n<p>On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for [[/gmr 1d4 #hours]]{1d4 hours}.</p>",
       "stealth": "<p>(expert)</p>",
       "tokenName": "Dragon's Death"
     },
@@ -2430,7 +2430,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The brimorak spits their boiling blood in a @Template[line|distance:20]{20-foot line} that deals @Damage[8d6[fire]] damage (@Check[reflex|dc:24|basic] save).</p>\n<p>The brimorak can't use their Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<p>The ground within this area becomes slippery, with the effects of a @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} spell targeting an area until it's cleaned up or the brimorak is able to use their Breath Weapon again, whichever comes first.</p>"
+          "description": "<p>The brimorak spits their boiling blood in a @Template[line|distance:20]{20-foot line} that deals @Damage[8d6[fire]] damage (@Check[reflex|dc:24|basic] save).</p>\n<p>The brimorak can't use their Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<p>The ground within this area becomes slippery, with the effects of a @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} spell targeting an area until it's cleaned up or the brimorak is able to use their Breath Weapon again, whichever comes first.</p>"
         },
         "action->Flaming Weapon": {
           "name": "Flaming Weapon",
@@ -2438,7 +2438,7 @@
         },
         "action->Fume": {
           "name": "Fume",
-          "description": "<p>The brimorak emits a cloud of thick black smoke in a @Template[burst|distance:10]{10-foot burst} that remains in place for [[/br 1d4 #rounds]]{1d4 rounds}. All creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within it. A creature that enters or begins its turn within the smoke it must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
+          "description": "<p>The brimorak emits a cloud of thick black smoke in a @Template[burst|distance:10]{10-foot burst} that remains in place for [[/gmr 1d4 #rounds]]{1d4 rounds}. All creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within it. A creature that enters or begins its turn within the smoke it must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
         }
       }
     },
@@ -2818,6 +2818,9 @@
         "weapon->Longsword": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
         },
+        "shield->Steel Shield": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+        },
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
@@ -2891,7 +2894,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The dragon forest rot breathes a toxic cloud that deals @Damage[7d6[poison]] damage in a @Template[cone|distance:15] (@Check[fortitude|dc:23|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The dragon forest rot breathes a toxic cloud that deals @Damage[7d6[poison]] damage in a @Template[cone|distance:15] (@Check[fortitude|dc:23|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -3019,9 +3022,6 @@
         "action->Wild Empathy": {
           "name": "Wild Empathy",
           "description": "<p>The planar nixie can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of aquatic or amphibious animals and elementals.</p>"
-        },
-        "action->+1 Status to All Saves vs. Magic": {
-          "name": "+1 Status to All Saves vs. Magic"
         },
         "action->Grant Desire": {
           "name": "Grant Desire",
@@ -3237,7 +3237,7 @@
         },
         "action->Terrifying Charge": {
           "name": "Terrifying Charge",
-          "description": "<p>The skeleton Strides and makes a claw Strike with a +2 circumstance bonus to damage circumstance bonus to damage. If the strike hits, the skeleton attempts to @UUID[Compendium.pf2e.action-macros.Macro.nEwqNNWX6scLt4sc]{Demoralize: Intimidation} the target.</p>"
+          "description": "<p>The skeleton Strides and makes a claw Strike with a +2 circumstance bonus to damage circumstance bonus to damage. If the strike hits, the skeleton attempts to [[/act demoralize]] the target.</p>"
         }
       }
     },
@@ -3378,7 +3378,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The mephit swarm breathes energy in a @Template[cone|distance:15] that deals @Damage[1d6[acid],1d6[cold],1d6[electric],1d6[fire]]{1d6 acid, 1d6 cold, 1d6 electric, and 1d6 fire damage} to each creature within the area (@Check[reflex|dc:20|basic] save).</p>\n<p>The mephit swarm can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The mephit swarm breathes energy in a @Template[cone|distance:15] that deals @Damage[1d6[acid],1d6[cold],1d6[electric],1d6[fire]]{1d6 acid, 1d6 cold, 1d6 electric, and 1d6 fire damage} to each creature within the area (@Check[reflex|dc:20|basic] save).</p>\n<p>The mephit swarm can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Swarming Claws": {
           "name": "Swarming Claws",
@@ -3397,7 +3397,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The mephit swarm breathes energy in a @Template[cone|distance:15] that deals @Damage[1d10[acid],1d10[cold],1d10[electric],1d10[fire]]{1d10 acid, 1d10 cold, 1d10 electric, and 1d10 fire damage} to each creature within the area (@Check[reflex|dc:22|basic] save).</p>\n<p>The mephit swarm can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The mephit swarm breathes energy in a @Template[cone|distance:15] that deals @Damage[1d10[acid],1d10[cold],1d10[electric],1d10[fire]]{1d10 acid, 1d10 cold, 1d10 electric, and 1d10 fire damage} to each creature within the area (@Check[reflex|dc:22|basic] save).</p>\n<p>The mephit swarm can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Swarming Claws": {
           "name": "Swarming Claws",
@@ -3607,7 +3607,8 @@
           "name": "Witch Hex Spells"
         },
         "spell->Touch of Idiocy": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy",
+          "target": "1 living creature"
         },
         "spell->Alarm": {
           "requirements": "3 gp silver bell focus"
@@ -3941,7 +3942,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
         },
         "consumable->Lethargy Poison": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/br 1d4 #hours]]{1d4 hours}).</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
         },
         "consumable->Blowgun Needles": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sqhr1crb184s3Vnd]\nBlowgun Needles"
@@ -4193,9 +4194,6 @@
           "name": "Wild Empathy",
           "description": "<p>The planar nixie can use Diplomacy to @UUID[Compendium.pf2e.action-macros.Macro.1Sj2Pz3VI2SFWqZw]{Make an Impression} on and make very simple Requests of aquatic or amphibious animals and elementals.</p>"
         },
-        "action->+1 Status to All Saves vs. Magic": {
-          "name": "+1 Status to All Saves vs. Magic"
-        },
         "action->Grant Desire": {
           "name": "Grant Desire",
           "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The planar nixie can duplicate a spell of up to 2nd level, but only in response to the request or desire of a non-fey creature. The creature whose desire is granted can never again benefit from that particular planar nixie's Grant Desire ability.</p>"
@@ -4249,7 +4247,7 @@
           "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
         },
         "consumable->Lethargy Poison": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/br 1d4 #hours]]{1d4 hours}).</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
         },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -4264,7 +4262,7 @@
         },
         "action->Fade from View": {
           "name": "Fade from View",
-          "description": "<p><strong>Requirements</strong> The quickling used no attack, manipulate, or move actions in the previous round</p>\n<hr />\n<p><strong>Effect</strong> The quickling becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} until it uses an attack, manipulate, or move action.</p>\n<p>The quickling can't use Fade from View again for [[/br 1d4 #Recharge Fade from View]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Requirements</strong> The quickling used no attack, manipulate, or move actions in the previous round</p>\n<hr />\n<p><strong>Effect</strong> The quickling becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} until it uses an attack, manipulate, or move action.</p>\n<p>The quickling can't use Fade from View again for [[/gmr 1d4 #Recharge Fade from View]]{1d4 rounds}.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The quickling's Strikes deal an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -4374,7 +4372,7 @@
         },
         "action->Wight Spawn": {
           "name": "Wight Spawn",
-          "description": "<p>A living humanoid slain by a ragewight's claw Strike rises as a spawned wight after [[/br 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the ragewight that killed it. It doesn't have the drain life or wight spawn abilities and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight. If the creator of the wight spawn dies, the wight spawn becomes a full-fledged, autonomous wight; it regains its free will, gains the drain life and wight spawn abilities, and is no longer clumsy.</p>"
+          "description": "<p>A living humanoid slain by a ragewight's claw Strike rises as a spawned wight after [[/gmr 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the ragewight that killed it. It doesn't have the drain life or wight spawn abilities and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight. If the creator of the wight spawn dies, the wight spawn becomes a full-fledged, autonomous wight; it regains its free will, gains the drain life and wight spawn abilities, and is no longer clumsy.</p>"
         }
       }
     },
@@ -4400,7 +4398,7 @@
         },
         "action->Wight Spawn": {
           "name": "Wight Spawn",
-          "description": "<p>A living humanoid slain by a ragewight's claw Strike rises as a spawned wight after [[/br 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the ragewight that killed it. It doesn't have the drain life or wight spawn abilities and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight. If the creator of the wight spawn dies, the wight spawn becomes a full-fledged, autonomous wight; it regains its free will, gains the drain life and wight spawn abilities, and is no longer clumsy.</p>"
+          "description": "<p>A living humanoid slain by a ragewight's claw Strike rises as a spawned wight after [[/gmr 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the ragewight that killed it. It doesn't have the drain life or wight spawn abilities and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight. If the creator of the wight spawn dies, the wight spawn becomes a full-fledged, autonomous wight; it regains its free will, gains the drain life and wight spawn abilities, and is no longer clumsy.</p>"
         }
       }
     },
@@ -4641,7 +4639,7 @@
         },
         "action->Sunlight Petrification": {
           "name": "Sunlight Petrification",
-          "description": "<p>If exposed to direct sunlight, a cavern troll immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions or Trample. The slowed value increases by 1 each time the cavern troll ends its turn in sunlight. If the cavern troll's actions are reduced to 0 in this way, they become @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} until they spends at least 1 minute in darkness. Spells like @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst} that create magical sunlight cannot petrify a cavern troll, but the troll is slowed 1 for [[/br 1d4 #rounds]]{1d4 rounds} after being exposed to such an effect.</p>"
+          "description": "<p>If exposed to direct sunlight, a cavern troll immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions or Trample. The slowed value increases by 1 each time the cavern troll ends its turn in sunlight. If the cavern troll's actions are reduced to 0 in this way, they become @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} until they spends at least 1 minute in darkness. Spells like @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst} that create magical sunlight cannot petrify a cavern troll, but the troll is slowed 1 for [[/gmr 1d4 #rounds]]{1d4 rounds} after being exposed to such an effect.</p>"
         },
         "action->Rend": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -4675,7 +4673,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The scorched earth mephit breathes rocks in a @Template[cone|distance:15] that deals @Damage[2d4[fire]] damage and @Damage[1d4[persistent,fire]] damage to each creature within the area (@Check[reflex|dc:17|basic] save).</p>\n<p>The scorched earth mephit can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The scorched earth mephit breathes rocks in a @Template[cone|distance:15] that deals @Damage[2d4[fire]] damage and @Damage[1d4[persistent,fire]] damage to each creature within the area (@Check[reflex|dc:17|basic] save).</p>\n<p>The scorched earth mephit can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Magma Swim": {
           "name": "Magma Swim",
@@ -4959,7 +4957,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
         },
         "spell->Touch of Idiocy (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy (At Will)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy (At Will)",
+          "target": "1 living creature"
         },
         "spell->Illusory Object (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]\nIllusory Object (At Will)"
@@ -5001,7 +5000,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
         },
         "spell->Touch of Idiocy (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy (At Will)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy (At Will)",
+          "target": "1 living creature"
         },
         "spell->Illusory Object (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]\nIllusory Object (At Will)"
@@ -5063,7 +5063,7 @@
       "items": {
         "action->Fall": {
           "name": "Fall",
-          "description": "<p><strong>Trigger</strong> A creature walks onto the sinkhole</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
+          "description": "<p><strong>Trigger</strong> A creature walks onto the sinkhole</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]|options:fall-damage] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
         }
       }
     },
@@ -5099,7 +5099,7 @@
         },
         "action->Terrifying Charge": {
           "name": "Terrifying Charge",
-          "description": "<p>The skeleton Strides and makes a claw Strike with a +4 circumstance bonus to damage circumstance bonus to damage. If the strike hits, the skeleton attempts to @UUID[Compendium.pf2e.action-macros.Macro.nEwqNNWX6scLt4sc]{Demoralize: Intimidation} the target.</p>"
+          "description": "<p>The skeleton Strides and makes a claw Strike with a +4 circumstance bonus to damage circumstance bonus to damage. If the strike hits, the skeleton attempts to [[/act demoralize]] the target.</p>"
         }
       }
     },
@@ -5349,7 +5349,7 @@
         },
         "action->Ball Lightning Breath": {
           "name": "Ball Lightning Breath",
-          "description": "<p>The sea drake spews a ball of electricity that strikes a primary target within 100 feet, dealing @Damage[6d6[electricity]] damage (@Check[reflex|dc:22|basic] save). The lightning then arcs to up to three secondary targets within 30 feet of the primary target, striking the closest available targets first. The secondary bolts each strike one secondary target and deal the same rolled damage value as the primary bolt (@Check[reflex|dc:20|basic] save).</p>\n<p>The sea drake can't use Ball Lightning Breath again for [[/br 1d6 #Recharge Ball Lightning Breath]]{1d6 rounds}.</p>"
+          "description": "<p>The sea drake spews a ball of electricity that strikes a primary target within 100 feet, dealing @Damage[6d6[electricity]] damage (@Check[reflex|dc:22|basic] save). The lightning then arcs to up to three secondary targets within 30 feet of the primary target, striking the closest available targets first. The secondary bolts each strike one secondary target and deal the same rolled damage value as the primary bolt (@Check[reflex|dc:20|basic] save).</p>\n<p>The sea drake can't use Ball Lightning Breath again for [[/gmr 1d6 #Recharge Ball Lightning Breath]]{1d6 rounds}.</p>"
         },
         "action->Briny Wound": {
           "name": "Briny Wound",
@@ -5423,7 +5423,7 @@
         },
         "action->Thunderous Roar": {
           "name": "Thunderous Roar",
-          "description": "<p>The storm bear unleashes a deafening roar. Any non-storm bear creature within 10 feet takes @Damage[2d6[sonic]] damage (@Check[fortitude|dc:17|basic] save); creatures that critically fail this save are deafened for [[/br 1d6 #rounds]]{1d6 rounds}.</p>\n<p>The storm bear can't use Thunderous Roar again for [[/br 1d4 #Recharge Thunderous Roar]]{1d4 rounds}.</p>"
+          "description": "<p>The storm bear unleashes a deafening roar. Any non-storm bear creature within 10 feet takes @Damage[2d6[sonic]] damage (@Check[fortitude|dc:17|basic] save); creatures that critically fail this save are deafened for [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>\n<p>The storm bear can't use Thunderous Roar again for [[/gmr 1d4 #Recharge Thunderous Roar]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -5443,7 +5443,7 @@
         },
         "action->Thunderous Roar": {
           "name": "Thunderous Roar",
-          "description": "<p>The storm bear unleashes a deafening roar. Any non-storm bear creature within 10 feet takes @Damage[2d10[sonic]] damage (@Check[fortitude|dc:19|basic] save); creatures that critically fail this save are deafened for [[/br 1d6 #rounds]]{1d6 rounds}.</p>\n<p>The storm bear can't use Thunderous Roar again for [[/br 1d4 #Recharge Thunderous Roar]]{1d4 rounds}.</p>"
+          "description": "<p>The storm bear unleashes a deafening roar. Any non-storm bear creature within 10 feet takes @Damage[2d10[sonic]] damage (@Check[fortitude|dc:19|basic] save); creatures that critically fail this save are deafened for [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>\n<p>The storm bear can't use Thunderous Roar again for [[/gmr 1d4 #Recharge Thunderous Roar]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -5563,7 +5563,7 @@
         },
         "action->Mesmerizing Duet": {
           "name": "Mesmerizing Duet",
-          "description": "<p>When a creature fails a Performance check to Disable the melody, the elemental plays along before taking over the performance. Creatures in the area must attempt a @Check[will|dc:22] save to resist becoming fascinated by the melody.</p>\n<p>Regardless of the result of the saving throw, the creature is then temporarily immune to Mesmerising Duet for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round; this fascination does not end when the creature or its allies take damage from the hazard.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated for [[/br 1d4 #rounds]]{1d4 rounds}; this fascination does not end when the creature or its allies take damage from the hazard.</p>"
+          "description": "<p>When a creature fails a Performance check to Disable the melody, the elemental plays along before taking over the performance. Creatures in the area must attempt a @Check[will|dc:22] save to resist becoming fascinated by the melody.</p>\n<p>Regardless of the result of the saving throw, the creature is then temporarily immune to Mesmerising Duet for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round; this fascination does not end when the creature or its allies take damage from the hazard.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated for [[/gmr 1d4 #rounds]]{1d4 rounds}; this fascination does not end when the creature or its allies take damage from the hazard.</p>"
         }
       }
     },
@@ -5585,7 +5585,7 @@
         },
         "action->Mesmerizing Duet": {
           "name": "Mesmerizing Duet",
-          "description": "<p>When a creature fails a Performance check to Disable the melody, the elemental plays along before taking over the performance. Creatures in the area must attempt a @Check[will|dc:24] save to resist becoming fascinated by the melody.</p>\n<p>Regardless of the result of the saving throw, the creature is then temporarily immune to Mesmerising Duet for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round; this fascination does not end when the creature or its allies take damage from the hazard.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated for [[/br 1d4 #rounds]]{1d4 rounds}; this fascination does not end when the creature or its allies take damage from the hazard.</p>"
+          "description": "<p>When a creature fails a Performance check to Disable the melody, the elemental plays along before taking over the performance. Creatures in the area must attempt a @Check[will|dc:24] save to resist becoming fascinated by the melody.</p>\n<p>Regardless of the result of the saving throw, the creature is then temporarily immune to Mesmerising Duet for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round; this fascination does not end when the creature or its allies take damage from the hazard.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated for [[/gmr 1d4 #rounds]]{1d4 rounds}; this fascination does not end when the creature or its allies take damage from the hazard.</p>"
         }
       }
     },
@@ -5842,7 +5842,7 @@
         },
         "action->Garbled Thoughts": {
           "name": "Garbled Thoughts",
-          "description": "<p>A creature hit by the Scholar's bite Strike must attempt a @Check[will|dc:20] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
+          "description": "<p>A creature hit by the Scholar's bite Strike must attempt a @Check[will|dc:20] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
         },
         "action->Text Immersion": {
           "name": "Text Immersion",
@@ -5908,7 +5908,7 @@
         },
         "action->Garbled Thoughts": {
           "name": "Garbled Thoughts",
-          "description": "<p>A creature hit by the Scholar's bite Strike must attempt a @Check[will|dc:22] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
+          "description": "<p>A creature hit by the Scholar's bite Strike must attempt a @Check[will|dc:22] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
         },
         "action->Text Immersion": {
           "name": "Text Immersion",
@@ -6001,7 +6001,7 @@
         },
         "action->Splinter Spray": {
           "name": "Splinter Spray",
-          "description": "<p>The twigjack sprays a barrage of splinters and brambles from its body in a @Template[cone|distance:15], dealing @Damage[4d6[piercing]] damage(@Check[reflex|dc:20|basic] save).</p>\n<p>It can't use Splinter Spray again for [[/br 1d4 #Recharge Splinter Spray]]{1d4 rounds}.</p>"
+          "description": "<p>The twigjack sprays a barrage of splinters and brambles from its body in a @Template[cone|distance:15], dealing @Damage[4d6[piercing]] damage(@Check[reflex|dc:20|basic] save).</p>\n<p>It can't use Splinter Spray again for [[/gmr 1d4 #Recharge Splinter Spray]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -6235,7 +6235,7 @@
         },
         "action->Wight Spawn": {
           "name": "Wight Spawn",
-          "description": "<p>A living humanoid slain by Valgomorus's claw Strike rises as a spawned wight after [[/br 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the wight that killed it (in this case, Valgomorus). It doesn't have drain life or wight spawn and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight.</p>\n<p>If the creator of the spawned wight dies, the spawned wight becomes a full-fledged, autonomous wight; it regains its free will, gains drain life and wight spawn, and is no longer clumsy.</p>"
+          "description": "<p>A living humanoid slain by Valgomorus's claw Strike rises as a spawned wight after [[/gmr 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the wight that killed it (in this case, Valgomorus). It doesn't have drain life or wight spawn and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight.</p>\n<p>If the creator of the spawned wight dies, the spawned wight becomes a full-fledged, autonomous wight; it regains its free will, gains drain life and wight spawn, and is no longer clumsy.</p>"
         }
       }
     },
@@ -6442,7 +6442,7 @@
         },
         "action->Spew Mud": {
           "name": "Spew Mud",
-          "description": "<p>The mudwretch spews a @Template[line|distance:20] of pressurized mud that deals @Damage[2d8[bludgeoning]] damage (@Check[reflex|dc:16|basic] save). On a critical failure, a creature also takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>The mudwretch can't Spew Mud again for [[/br 1d4 #Recharge Spew Mud]]{1d4 rounds}.</p>"
+          "description": "<p>The mudwretch spews a @Template[line|distance:20] of pressurized mud that deals @Damage[2d8[bludgeoning]] damage (@Check[reflex|dc:16|basic] save). On a critical failure, a creature also takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>The mudwretch can't Spew Mud again for [[/gmr 1d4 #Recharge Spew Mud]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -6662,7 +6662,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The dragon turtle breathes a massive blast of steam that deals @Damage[6d6[fire]] damage to creatures within a @Template[cone|distance:40] (@Check[reflex|dc:21|basic] save). This steam blast affects creatures within the water, as well as outside.</p>\n<p>The dragon turtle can't use its Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The dragon turtle breathes a massive blast of steam that deals @Damage[6d6[fire]] damage to creatures within a @Template[cone|distance:40] (@Check[reflex|dc:21|basic] save). This steam blast affects creatures within the water, as well as outside.</p>\n<p>The dragon turtle can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Capsize": {
           "name": "Capsize",
@@ -6690,7 +6690,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The dragon turtle breathes a massive blast of steam that deals @Damage[8d6[fire]] damage to creatures within a @Template[cone|distance:40] (@Check[reflex|dc:24|basic] save). This steam blast affects creatures within the water, as well as outside.</p>\n<p>The dragon turtle can't use its Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The dragon turtle breathes a massive blast of steam that deals @Damage[8d6[fire]] damage to creatures within a @Template[cone|distance:40] (@Check[reflex|dc:24|basic] save). This steam blast affects creatures within the water, as well as outside.</p>\n<p>The dragon turtle can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Capsize": {
           "name": "Capsize",
@@ -6719,11 +6719,11 @@
         },
         "action->Bay": {
           "name": "Bay",
-          "description": "<p>The yeth warbeast emits an unearthly howl audible up to @Template[emanation|distance:300]{300 feet} feet away. Any non-fiend creature that hears the howl must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within @Template[emanation|distance:60]{60 feet} of the yeth warbeast is instead @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for [[/br 1d4 #rounds]]{1d4 rounds} (or until it recovers from its frightened condition).</p>\n<p>Whether it succeeds or fails the saving throw, the creature is then temporarily immune to Bay for 24 hours.</p>"
+          "description": "<p>The yeth warbeast emits an unearthly howl audible up to @Template[emanation|distance:300]{300 feet} feet away. Any non-fiend creature that hears the howl must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within @Template[emanation|distance:60]{60 feet} of the yeth warbeast is instead @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for [[/gmr 1d4 #rounds]]{1d4 rounds} (or until it recovers from its frightened condition).</p>\n<p>Whether it succeeds or fails the saving throw, the creature is then temporarily immune to Bay for 24 hours.</p>"
         },
         "action->Ear-splitting Howl": {
           "name": "Ear-splitting Howl",
-          "description": "<p>The yeth warbeast releases a piercing bark that deals @Damage[8d6[sonic]] damage in a @Template[cone|distance:20] (@Check[reflex|dc:25|basic] save). A creature that critically fails also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or increases the value of its frightened condition by 1 if already frightened.</p>\n<p>The warbeast can't use Ear-Splitting Howl again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>The yeth warbeast releases a piercing bark that deals @Damage[8d6[sonic]] damage in a @Template[cone|distance:20] (@Check[reflex|dc:25|basic] save). A creature that critically fails also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or increases the value of its frightened condition by 1 if already frightened.</p>\n<p>The warbeast can't use Ear-Splitting Howl again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Sinister Bite": {
           "name": "Sinister Bite",

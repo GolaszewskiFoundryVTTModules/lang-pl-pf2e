@@ -123,7 +123,7 @@
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
-                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor</p><hr /><p><strong>Efekt</strong> The triggering creature falls in and takes damage from the fall, reduced by 5 feet for falling into the water (typically @Damage[12[bludgeoning]] damage). A creature can @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Chwycenie Krawędzi} to avoid falling. The trapdoor then slams shut, and the hazard rolls initiative.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor</p><hr /><p><strong>Efekt</strong> The triggering creature falls in and takes damage from the fall, reduced by 5 feet for falling into the water (typically @Damage[12[bludgeoning]|options:fall-damage] damage). A creature can @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling. The trapdoor then slams shut, and the hazard rolls initiative.</p>"
                 }
             }
         },
@@ -199,7 +199,7 @@
             "items": {
                 "action->Profane Chant": {
                     "name": "Profane Chant",
-                    "description": "<p><strong>Aktywator</strong> A creature moves within 10 feet of the section of floor from which the choir can arise</p><hr /><p><strong>Efekt</strong> The choir rises, and its song deals @Damage[(4d8+18)[mental]] damage to non-evil creatures within 30 feet of the souls' spectral forms. Affected creatures must each attempt a @Check[will|dc:24|traits:damaging-effect] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature takes half damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p><p><strong>Porażka</strong> The creature takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p><p><strong>Krytyczna Porażka</strong> The creature takes double damage. It also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} for 1 round.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature moves within 10 feet of the section of floor from which the choir can arise</p><hr /><p><strong>Efekt</strong> The choir rises, and its song deals @Damage[(4d8+18)[mental]] damage to living creatures within 30 feet of the souls' spectral forms. Affected creatures must each attempt a @Check[will|dc:24|traits:damaging-effect] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> The creature takes half damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1}.</p><p><strong>Porażka</strong> The creature takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2}.</p><p><strong>Krytyczna Porażka</strong> The creature takes double damage. It also becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} for 1 round.</p>"
                 }
             }
         },
@@ -249,7 +249,7 @@
             "items": {
                 "action->Powder Burst": {
                     "name": "Powder Burst",
-                    "description": "<p><strong>Aktywator</strong> The latch is opened or the tube is broken.</p><hr /><p><strong>Efekt</strong> The tube explodes, spraying hallucinogenic powder in a @Template[cone|distance:30]. Any creature in the cone must succeed at a @Check[will|dc:24] save or be confused for 1 round and take a –2 status penalty to Perception checks and saves against mental effects for [[/br 1d4 #hours]]{1k4 hours}. On a critical failure, the penalty is instead –4.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.6OpwHz0f55wPawHI]{Efekt: Powder Burst}</p>"
+                    "description": "<p><strong>Aktywator</strong> The latch is opened or the tube is broken.</p><hr /><p><strong>Efekt</strong> The tube explodes, spraying hallucinogenic powder in a @Template[cone|distance:30]. Any creature in the cone must succeed at a @Check[will|dc:24] save or be confused for 1 round and take a –2 status penalty to Perception checks and saves against mental effects for [[/gmr 1d4 #hours]]{1k4 hours}. On a critical failure, the penalty is instead –4.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.6OpwHz0f55wPawHI]{Efekt: Powder Burst}</p>"
                 }
             }
         },
@@ -292,7 +292,7 @@
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
-                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor.</p><hr /><p><strong>Efekt</strong> The triggering creature falls in and takes falling damage (typically @Damage[10[bludgeoning]] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Chwycenie Krawędzi} reaction to avoid falling.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor.</p><hr /><p><strong>Efekt</strong> The triggering creature falls in and takes falling damage (typically @Damage[10[bludgeoning]|options:fall-damage] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
                 }
             }
         },
@@ -327,8 +327,8 @@
             "description": "<p>Four gated channels carved into stone allow lava to flow into a 15-foot-tall room; the floor can withdraw to allow the hardened lava to fall into a chamber beneath.</p>",
             "disable": "<p>@Check[thievery|dc:29|name:Block a Channel|traits:action:disable-a-device] (expert) to block a channel, or @Check[thievery|dc:31|name:Release Floor Latch|traits:action:disable-a-device] (master) to release the floor latch and escape to the chamber below</p>",
             "hpDetails": "to destroy a channel gate (this prevents that channel from being disabled and stops the trap from resetting); <strong>Floor Hardness</strong> 18; <strong>Floor HP</strong> 72 (BT 36)",
-            "reset": "<p>The trap deactivates and resets after 1 hour by withdrawing the floor, cracking and dumping the hardened lava (and any creatures trapped inside) into the chamber. Creatures fall 40 feet, taking falling damage (typically 17 bludgeoning damage).</p>",
-            "routine": "<p>(4 actions) The trap loses 1 action per disabled channel each turn. On each action, a different channel spews lava, dealing 4k6 fire damage to each creature within 10 feet of the channel (@Check[reflex|dc:27|basic]), and increasing the depth of the lava in the room by 1 foot (4 feet per round if all the channels are active).</p><p>A creature that starts its turn in lava takes 8k6 fire damage and is immobilized until it Escapes the hardening lava (DC 27). The creature might suffocate if covered in lava.</p><p>Lava from the previous round hardens fully at the start of the trap's turn, effectively raising the floor of the room. Once the room is full of lava, the trap stops taking actions, but creatures in the room remain stuck until the floor opens and the trap resets.</p>",
+            "reset": "<p>The trap deactivates and resets after 1 hour by withdrawing the floor, cracking and dumping the hardened lava (and any creatures trapped inside) into the chamber. Creatures fall 40 feet, taking falling damage (typically @Damage[17[bludgeoning]|options:fall-damage] damage).</p>",
+            "routine": "<p>(4 actions) The trap loses 1 action per disabled channel each turn. On each action, a different channel spews lava, dealing @Damage[4d6[fire]] damage to each creature within 10 feet of the channel (@Check[reflex|dc:27|basic] save), and increasing the depth of the lava in the room by 1 foot (4 feet per round if all the channels are active).</p><p>A creature that starts its turn in lava takes @Damage[8d6[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} the hardening lava (DC 27). The creature might suffocate if covered in lava.</p><p>Lava from the previous round hardens fully at the start of the trap's turn, effectively raising the floor of the room. Once the room is full of lava, the trap stops taking actions, but creatures in the room remain stuck until the floor opens and the trap resets.</p>",
             "stealth": "<p>(wytrenowanie)</p>",
             "items": {
                 "action->Flume Activation": {
@@ -366,7 +366,7 @@
                 },
                 "action->Filth Fever": {
                     "name": "Filth Fever",
-                    "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} conditions from filth fever don't improve on their own until the disease is cured.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:20]</p><p><strong>Stadium 1</strong> Bezobjawowy nosiciel ([[/br 1d4 #hours]]{1k4 hours})</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} as long as it remains sickened (1 dzień)</p><p><strong>Stadium 4</strong> unconscious (1 dzień)</p><p><strong>Stadium 5</strong> dead</p>"
+                    "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny} conditions from filth fever don't improve on their own until the disease is cured.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:20]</p><p><strong>Stadium 1</strong> Bezobjawowy nosiciel ([[/gmr 1d4 #hours]]{1k4 hours})</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} as long as it remains sickened (1 dzień)</p><p><strong>Stadium 4</strong> unconscious (1 dzień)</p><p><strong>Stadium 5</strong> dead</p>"
                 }
             }
         },
@@ -617,7 +617,7 @@
             "disable": "<p>@Check[thievery|dc:21|name:Disable Pillar|traits:action:disable-a-device] (trained) twice on the pillar, or @Check[thievery|dc:19|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (expert) once on the control panel deactivates the whole trap. Breaking the control panel prevents anyone from disabling the trap using the control panel and prevents the trap from deactivating automatically.</p>",
             "hpDetails": "Panel Hardness: 5, Panel HP: 20 (BT 10)",
             "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
-            "routine": "<p>(3 actions) The trap uses its first action to make a spinning blade Strike against each adjacent creature, its second action to move straight in a random direction (roll 1k4 to determine the direction), and its third to make a spinning blade Strike against each adjacent creature. This trap doesn't take a multiple attack penalty.</p>",
+            "routine": "<p>(3 actions) The trap uses its first action to make a spinning blade Strike against each adjacent creature, its second action to move straight in a random direction (roll [[/gmr 1d4 #Direction]] to determine the direction), and its third to make a spinning blade Strike against each adjacent creature. This trap doesn't take a multiple attack penalty.</p>",
             "stealth": "<p>(trained) or @Check[perception|dc:26|traits:action:seek] (expert) to notice the control panel</p>",
             "items": {
                 "action->Rising Pillar": {

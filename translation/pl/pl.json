@@ -102,7 +102,6 @@
         },
         "ActionActionTypeLabel": "Typ Akcji",
         "ActionActionsLabel": "Akcje",
-        "ActionBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:k6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "ActionNumber1": "Jedna",
         "ActionNumber2": "Dwie",
         "ActionNumber3": "Trzy",
@@ -210,14 +209,25 @@
                     "Title": "Konfiguruj Postać"
                 },
                 "Crafting": {
+                    "Action": {
+                        "Hint": "Wybierz przedmiot do wytworzenia z użyciem {resource} ({value}/{max})",
+                        "HintResourceless": "Wybierz przedmiot do wytworzenia"
+                    },
                     "BatchQuantity": "x{quantity}",
                     "Cost": "Koszt",
+                    "Create": "Wytwórz",
                     "Daily": {
                         "Complete": "Codzienne wytwarzanie zakończone.",
                         "Perform": "Przeprowadź Codzienne Wytwarzanie"
                     },
-                    "MissingResource": "Niewystarczająca ilość zasobów, aby ukończyć wytwarzanie.",
-                    "RemainingSlots": "Puste Miejsce (pozostało {remaining})"
+                    "DecreaseQuantity": "Zmniejsz Ilość",
+                    "FreeCrafting": "Darmowe Wytwarzanie",
+                    "FreeCraftingTooltip": "Gdy włączone, natychmiastowo wytwarza przedmiot, bez zużywania złota",
+                    "IncreaseQuantity": "Zwiększ Ilość",
+                    "MissingResource": "Masz niewystarczającą ilość zasobów, aby ukończyć wytwarzanie.",
+                    "PrepareHint": "Wybierz przedmioty, które chcesz przygotować (pozostało {remaining})",
+                    "RemainingSlots": "Puste Miejsce (pozostało {remaining})",
+                    "Search": "Wyszukaj Receptury"
                 },
                 "CreateFeat": "Stwórz Atut",
                 "FeatSlot": {
@@ -235,6 +245,7 @@
                     "MythicDestinyPlaceholder": "Mityczna Przeznaczenie",
                     "MythicHeader": "Mityczne",
                     "MythicFeatPlaceholder": "Mityczny Atut",
+                    "MythicTier": "Szczebel",
                     "SkillHeader": "Atuty Umiejętności"
                 },
                 "HandsOccupied": "Zajęte Ręce",
@@ -338,7 +349,7 @@
                     "goblin": "Gobliński",
                     "goloma": "Golomów",
                     "grioth": "Griothów",
-                    "grippli": "Gripplich",
+                    "grippli": "Tripki",
                     "halfling": "Niziołczy",
                     "hallit": "Hallit",
                     "hwan": "Hwan",
@@ -538,6 +549,7 @@
                 "Section": {
                     "WeaponsAndShields": "Broń i Tarcze"
                 },
+                "Search": "Przeszukaj Ekwipunek",
                 "TotalBulk": "Całkowite Naręcze: {bulk}",
                 "UnitTitle": {
                     "Bulk": "Naręcze Jednostkowe",
@@ -853,7 +865,6 @@
         "BackgroundSkillFeats": "Atuty Umiejętności",
         "BaseModifier": "Modyfikatory Bazowe",
         "BaseWeapons": "Bronie Bazowe",
-        "BestiaryBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:k6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "Biography": "Biografia",
         "BiographyAllies": "Sojusznicy",
         "BiographyAppearance": "Aparycja",
@@ -883,35 +894,6 @@
         "BonusSPLabel": "Dodatkowe PW",
         "BonusSPperLevel": "Dodatkowe PW co Poziom",
         "BrowseLabel": "Przeglądaj",
-        "BrowserClearFilter": "Wyczyść Filtr",
-        "BrowserClearFilters": "Wyczyść Wszystkie Filtry",
-        "BrowserFilterAlignments": "Charakter",
-        "BrowserFilterAncestries": "Przodkostwo",
-        "BrowserFilterArmorFilters": "Filtry Pancerza",
-        "BrowserFilterCastingTime": "Czas Rzucania",
-        "BrowserFilterCategory": "Kategorie",
-        "BrowserFilterClass": "Klasy",
-        "BrowserFilterComplexity": "Złożoność Zagrożeń",
-        "BrowserFilterConjunction": {
-            "AndLabel": "Wszystkie z powyższych",
-            "OrLabel": "Dowolne z powyższych"
-        },
-        "BrowserFilterInventoryTypes": "Rodzaje Wyposażenia",
-        "BrowserFilterLevels": "Poziomy",
-        "BrowserFilterProficiencyRequirements": "Wymagania Biegłości",
-        "BrowserFilterRarities": "Rzadkość",
-        "BrowserFilterSizes": "Rozmiar",
-        "BrowserFilterSkills": "Umiejętność",
-        "BrowserFilterSource": "Źródło",
-        "BrowserFilterSpellCategories": "Kategorie",
-        "BrowserFilterTraditions": "Tradycje",
-        "BrowserFilterTraits": "Cechy",
-        "BrowserFilterWeaponFilters": "Filtry Broni",
-        "BrowserSearchPlaceholder": "Zapytanie Wyszukiwania",
-        "BrowserSearchTitle": "PPM aby otworzyć przewodnik",
-        "BrowserSettingsSaved": "Zapisano ustawienia",
-        "BrowserSortyByLabel": "Sortuj po",
-        "BrowserWarnPackNotLoaded": "Nie udało się załadować kompendium \"{pack}\".",
         "BulkMaxLabel": "Maksymalne Naręcze",
         "CapacityBarLabel": "Pojemność",
         "CarryType": {
@@ -942,8 +924,12 @@
         "CharacterTraits": "Cechy Postaci",
         "CharacterTraitsHeader": "Cechy i Inne Szczegóły",
         "ChatRollDetails": {
+            "ContextualOptions": {
+                "postRoll": "Opcje Zachowań Po Rzucie"
+            },
             "DiceAndModifiers": "Kości i Modyfikatory",
-            "FlatCheckNoModifiers": "Testy płaskie nigdy nie obejmują żadnego modyfikatora, premii ani kar.",
+            "DiceRollOptionsHint": "Opcje kości i modyfikatorów rzutu są używane podczas przewidywania elementów zasad typu Modyfikacja Obrażeń.",
+            "FlatCheckNoModifiers": "Testy płaskie nigdy nie uwzględniają żadnego modyfikatora, premii ani kar.",
             "RollOptions": "Opcje Rzutu",
             "Select": "Zbadaj Rzut",
             "Title": "Szczegóły Rzutu"
@@ -1013,6 +999,33 @@
             "BuyLabel": "Kup Przedmiot",
             "FailedToBuyItemWithCharacter": "Nie udało się kupić przedmiotu {item} postacią {character}.",
             "FailedToBuyItemWithSomeCharacters": "Nie udało się kupić przedmiotu {item} częścią wybranych postaci.",
+            "Filter": {
+                "Alignments": "Charakter",
+                "Ancestries": "Przodkostwa",
+                "ArmorFilters": "Filtry Pancerza",
+                "ClearFilter": "Wyczyść",
+                "ClearAllFilters": "Wyczyść Wszystkie Filtry",
+                "CastingTime": "Czas Rzucania",
+                "Categories": "Kategorie",
+                "Class": "Klasy",
+                "Complexity": "Złożoność Zagrożeń",
+                "Conjunction": {
+                    "AndLabel": "Wszystkie z powyższych",
+                    "OrLabel": "Dowolne z powyższych"
+                },
+                "FilterSources": "Źródła Filtrów",
+                "InventoryTypes": "Rodzaje Wyposażenia",
+                "Levels": "Poziomy",
+                "OrderByLabel": "Sortuj według",
+                "ProficiencyRequirements": "Wymagania Biegłości",
+                "Rarities": "Rzadkość",
+                "Sizes": "Rozmiar",
+                "Source": "Źródła",
+                "Traditions": "Tradycje",
+                "WeaponFilters": "Filtry Broni",
+                "SearchPlaceholder": "Tekst Wyszukiwania",
+                "WarnPackNotLoaded": "Nie udało się załadować kompendium \"{pack}\"."
+            },
             "Hint": "Wybierz zakładek na górze aby wybrać kompendium",
             "RollTable": {
                 "AddDialogText": "Dodać {count} wynik(ów) do Tabeli Rzutów?",
@@ -1024,15 +1037,22 @@
                 "WeightLabel": "Waga"
             },
             "Settings": {
+                "OpenSettings": "Otwórz Ustawienia",
                 "PacksLabel": "Paczki",
-                "SourcesLabel": "Źródła"
+                "Saved": "Zapisano ustawienia",
+                "SourcesLabel": "Źródła",
+                "Title": "Ustawienia Przeglądarki Kompendium"
             },
             "TabAction": "Akcje",
             "TabBestiary": "Bestiariusz",
             "TabCampaign": "Kampania",
             "TabFeat": "Atuty/Atrybuty",
             "TakeLabel": "Weź Przedmiot",
-            "Title": "Przeglądarka Kompendium"
+            "Title": "Przeglądarka Kompendium",
+            "TraitsComponent": {
+                "Empty": "Brak opcji",
+                "NoMatch": "Brak pasujących opcji"
+            }
         },
         "CompendiumMigrationStatus": {
             "Document": "Dokument",
@@ -1131,10 +1151,8 @@
             "CraftQuantityTitle": "Liczba",
             "ExpendFormula": "Zużyj Recepturę",
             "NoEligibleEntry": "Nie znaleziono żadnego odpowiedniego wpisu o rzemiośle.",
-            "QuickAddTitle": "Dodaj tę recepturę do co najmniej jednego wpisu o rzemiośle.",
             "RemoveFormulaDialogQuestion": "Czy na pewno chcesz usunąć recepturę na {name}?",
             "RemoveFormulaDialogTitle": "Usuń Recepturę",
-            "ToggleFreeCrafting": "Przełącz Darmowe Wytwarzanie",
             "ToggleQuickAlchemy": "Szybka Alchemia",
             "UndeletableTooltip": "Ta receptura rzemieślnicza jest składową innego przedmiotu i nie może zostać usunięta w pojedynkę.",
             "UnprepareFormulaDialogQuestion": "Czy na pewno chcesz cofnąć przygowanie receptury na {name}?",
@@ -1609,7 +1627,6 @@
         "FeatActionTypeLabel": "Rodzaj Akcji",
         "FeatActionsLabel": "Liczba Akcji",
         "FeatBackgroundShort": "PO",
-        "FeatBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:k6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "FeatLevelLabel": "Poziom",
         "FeatPFSBoonHeader": "Premie Stowarzyszenia",
         "FeatPrereqLabel": "Wymagania",
@@ -1705,7 +1722,6 @@
             "TypeUnsupported": "Błąd w szablonie @Template: typ {type} nie jest dozwolony",
             "WidthNoNumber": "Błąd w szablonie @Template: szerokość {width} nie jest liczbą"
         },
-        "InventroyBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:k6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "InvestedLabel": "Zaangażowano",
         "Item": {
             "ABC": {
@@ -1720,6 +1736,10 @@
                     "Interaction": "Interakcja",
                     "Offensive": "Ofensywna",
                     "Familiar": "Zdolność Chowańca"
+                },
+                "CraftedItem": {
+                    "Crafted": "Wytworzono {item}.",
+                    "CraftedWithoutResources": "Wytworzono bez wymaganych zasobów"
                 },
                 "FIELDS": {
                     "deathNote": {
@@ -2471,6 +2491,8 @@
                 },
                 "LevelLabel": "Przedmiot {level}",
                 "OtherTag": {
+                    "AlchemicalFood": "Alchemiczne Jedzenie",
+                    "AlchemicalTool": "Alchemiczne Narzędzie",
                     "HandwrapsOfMightyBlows": "Handwraps of Mighty Blows",
                     "Herbal": "Ziołowość",
                     "Improvised": "Improwizacja",
@@ -2849,6 +2871,9 @@
             "Troubleshooting": "Rozwiązywanie Problemów",
             "WorldNotReady": "Świat gry nie jest gotowy: spróbuj ponownie za parę sekund."
         },
+        "ModeOfBeing": {
+            "Living": "Żyjące"
+        },
         "ModifierNamePlaceholder": "Nazwa",
         "ModifierTitle": "Modyfikator",
         "ModifierType": {
@@ -2878,7 +2903,7 @@
                     "ConstantSpells": "<p>Zaklęcie trwałe działa na potwora bez konieczności rzucania go, a jego czas trwania jest nieograniczony. Jeśli czemuś uda się skutecznie przeciwdziałać trwałemu zaklęciu, potwór może reaktywować je wykonując standardowe akcje wymagane do rzucania tego zaklęcia.</p>",
                     "Constrict": "<p>Potwór zadaje wszystkim @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwyconym} lub @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętanym} przez niego istotom wymienione obrażenia. Każda z tych istot ma okazję wykonać przeciw nim podstawowy rzut obronny Krzepy o wymienionym ST.</p>",
                     "Coven": "<p>Ten potwór może stworzyć sabat wraz z dwoma lub więcej istotami, które również posiadają cechę sabatu. Wiąże się to z przeprowadzeniem 8-godzinnej ceremonii ze wszystkimi potencjalnymi członkami sabatu. Kiedy sabat zostanie utworzony, wszyscy jego członkowie stają się elitarnymi istotami, co wiąż się z odpowiednimi zmianami w ich poziomie i statystykach jak wskazują zasady istot elitarnych. Członkowie sabatu mogą wyczuć lokalizację oraz statusy innych członków sabatu wykonując pojedynczą akcję, posiadającą cechę koncentracji, oraz mogą wyczuwać zmysłami to co odczuwa inny członek sabatu wykonując dwuakcyjną aktywność, która również posiada cechę koncentracji.</p><p>Sabat zapewnia również jego członkom dostęp do zaklęć i rytuałów, ale te mogą zostać rzucone tylko poprzez współpracę trzech członków sabatu. Członek sabatu może przyczynić się do rzucania zaklęcia sabatu poprzez jedną akcję o cesze koncentracji. Jeśli dwóch członków sabatu użyło tych akcji w ostatniej rundzie, trzeci członek sabatu może rzucić w swojej turze zaklęcie wykonując aktywność rzucania zaklęcia w normalny sposób. Sabat może rzucać dostępne dla niego zaklęcia nieograniczoną ilość razy, ale może użyć tylko jednego zaklęcia w danej rundzie. Każdy sabat dostarcza @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Przeklętą Metamorfozę} jako zaklęcie 8. kręgu oraz następujące zaklęcia, które sabat może rzucać na dowolnym kręgu do 5. włącznie: @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Wróżba}, @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Zauroczenie}, @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Jasnosłyszenie}, @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Jasnowidzenie}, @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Wiadomość we Śnie}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Iluzoryczne Przebranie}, @UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Iluzoryczna Scena}, @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Zwiadowcze Oko} oraz @UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Mówiące Zwłoki}. Poszczególne istoty wchodzące z cechą sabatu również dodają zaklęcia do dyspozycji sabatu, do którego dołączą. Sabat może również przeprowadzać rytuał @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Kontroli nad Pogodą} ze ST 23 zamiast standardowego ST.</p><p>Jeśli opuszczenie sabatu przez istotę lub jej śmierć zmniejszyłyby liczebność sabatu poniżej trzech członków, pozostałe istoty utrzymują swój status elitarności przez następne 24 godziny, ale pozbawione niezbędnej ilości członków do przeprowadzenia rytuałów nie mogą rzucać zaklęć sabatu.</p>",
-                    "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż jest to wizja jedynie czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu</em>, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
+                    "Darkvision": "<p>Potwór z widzeniem w ciemności widzi doskonale zarówno w obszarach pogrążonych w ciemności co w słabym świetle, chociaż jest to wizja jedynie czarno-biała. Niektóre rodzaje magicznej ciemności, jak zaklęcie @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Ciemności} 4. kręgu, blokują normalne widzenie w ciemności. Potwór z @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{Większym Widzeniem w Ciemności} widzi jednak nawet przez tego rodzaju magiczną ciemność.</p>",
                     "Disease": "<p>Kiedy istota zostanie wystawiona na kontakt z chorobą potwora, wykonuje rzut obronny Krzepy lub poddaje się chorobie. Poziom choroby jest równy poziomowi potwora wywołującego ją. Choroba podąża za zasadami dotyczącymi przypadłości.</p>",
                     "Engulf": "<p>Potwór Biegnie na odległość nie większą od podwojonej wartość jego Prędkości i może w ramach tego ruchu przemieszczać się przez istoty na jego drodze. Każda istota rozmiaru mniejszego lub równego rozmiarowi potwora, przez której pole się przemieścił, może wykonać rzut obronny Refleksu aby uniknąć Pochłonięcia. Istota niezdolna do działania automatycznie odnosi krytyczną porażkę na tym rzucie. Istota, która zda rzut obronny może wybrać pomiędzy byciem odepchniętą na bok (z drogi potwora) albo byciem przepchniętą przed potwora w miejsce gdzie zakończy on ruch. Potwór może próbować Pochłonąć daną istotę tylko raz w ramach pojedynczego użycia Pochłonięcia. Potwór może zawierać w sobie tyle istot, ile zmieści się w jego przestrzeni.</p><p>Istota, która nie zda rzutu obronnego, jest wciągana do wnętrza ciała potwora. Jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Pochłonięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po pochłonięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje pochłonięta. Pochłonięta istota może się uwolnić poprzez @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieczkę} o wymienionym ST. Pochłonięta istota może zaatakować potwora, który ją pochłonął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Pochłaniająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, pochłonięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń pochłaniającego ją potwora.</p><p>Jeśli potwór umrze, wszystkie pochłonięte przez niego istoty są natychmiast uwalniane podczas gdy jego ciało traci formę.</p>",
                     "FastHealing": "<p>Potwór z tą zdolnością odzyskuje w każdej rundzie, na początku swojej tury, wymienioną liczbę Punktów Żywtoności.</p>",
@@ -3357,10 +3382,10 @@
                 "DeleteAllQuestion": "Czy na pewno chcesz zresetować ustawienia dotyczące zawieranych źródeł?",
                 "DeleteAllTitle": "Resetuj Ustawienia",
                 "Hint": "Ustawienia pozwalające na wyświetlanie w Przeglądarce Kompendium tylko wpisów pochodzących z określonych źródeł.",
-                "IgnoreAsGM": "Pozwól aby MG ignorowali filtrowanie i widzieli wszystkie źródła.",
-                "Name": "Zawarte Źródła",
-                "ShowEmptySources": "Nie filtruj wpisów z pustym źródłem.",
-                "ShowUnknownSources": "Nie filtruj wpisów z nieznanym źródłem.",
+                "IgnoreAsGM": "Pozwól aby MG ignorowali poniższe ustawienia i widzieli wszystkie wpisy.",
+                "Name": "Wliczone Źródła",
+                "ShowEmptySources": "Zezwól na wpisy z pustym źródłem.",
+                "ShowUnknownSources": "Zezwól na wpisy z nieznanym źródłem.",
                 "SourcesListHeader": "Określone Źródła"
             },
             "Core": {
@@ -3741,7 +3766,6 @@
         "SpellArea": "Obszar: {area}",
         "SpellAttackLabel": "Atak Zaklęciem",
         "SpellAttackWithTradition": "Atak Zaklęciem {tradition}",
-        "SpellBrowserSearchHint": "Możesz wyszukiwać po nazwie lub wybranych atrybutach. Dostępne do wyszukiwania atrybuty to:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Przykładowo: 'fire, damage:k6' pokazuje wszystkie zaklęcia z fire w nazwie i kością k6 w obrażeniach",
         "SpellCastingFormat": "{preparationType} Zaklęcia {traditionSpells}",
         "SpellCollectionAdd": "Dodaj do Zbioru Zaklęć",
         "SpellCollectionRemove": "Usuń ze Zbioru Zaklęć",
@@ -4081,14 +4105,14 @@
         "TraitDescriptionAdditive": "Atuty z cechą addytyw pozwalają na dodawanie specjalnych substancji do alchemicznych przedmiotów zużywalnych wytworzonych za pomocą Szybkiej Alchemii (nie możesz używać addytywów dla szybkich fiolek). Możesz dodać tylko jeden addytyw do danego przedmiotu alchemicznego, możesz dodać addytyw tylko raz na rundę a większość addytywów precyzuje rodzaj alchemicznych przedmiotów zużywalnych, do których może zostać dodana.",
         "TraitDescriptionAdjusted": "Ekwipunek z tą cechą posiada regulację opisaną w jego wpisie. Ta regulacja jest wbudowana w sprzęt na stałe, co oznacza, że nie można wymienić jej na inną regulację ani dodać do przedmiotu kolejnej regulacji . Jeśli regulacja zmienia podstawowe statystyki przedmiotu, takie jak dodanie cechy hałas, jest to już odzwierciedlone we wpisie w tabeli statystyk przedmiotu.",
         "TraitDescriptionAdjustment": "Przedmioty z tą cechą mają na celu modyfikację istniejących elementów wyposażenia, zwykle pancerza, tarcz i broni. Każdy przedmiot określa, jaki rodzaj wyposażenia reguluje. Na dany element wyposażenia może mieć wpływ tylko jedna regulacja na raz. O ile nie zaznaczono inaczej, dodanie lub usunięcie regulacji wymaga 10-minutowej aktywności i zestawu naprawczego.",
-        "TraitDescriptionAeon": "Ci nadzorcy to samozwańczy obrońcy rzeczywistości. Tradycyjne eony mają dualistyczną naturę i formy oraz utrzymują dychotomię interesów, chociaż aksjomici i nieuniknieni nie. Eony inne niż aksjomici i nieuniknieni komunikują się poprzez dziwną telepatyczną mieszankę przesyłanych bodźców zmysłowych zwaną wyobrażeniami.",
+        "TraitDescriptionAeon": "Ci nadzorcy to samozwańczy obrońcy rzeczywistości. Tradycyjne eony mają dwojaką naturę i formę, utrzymują dychotomię interesów oraz komunikują się poprzez dziwną telepatyczną mieszankę przesyłanych bodźców zmysłowych zwaną wyobrażeniami. Aksjomici oraz ich wytwory są eonami, ale nie wykazują wszystkich cech charakterystycznych tradycyjnych eonów.",
         "TraitDescriptionAesir": "Asowie są lubującymi wojaczkę nadzorcami chaotycznych planów, doskonalącymi swoje umiejętności w walce i przygotowującymi się do ostatecznej konfrontacji na końcu wieloświata.",
         "TraitDescriptionAftermath": "Ta cecha opisuje atuty, które reprezentują specjalne zdolności zdobyte po zetknięciu się z dziwacznym i śmiercionośnym.",
         "TraitDescriptionAgathion": "Ta rodzina niebian o zwierzęcych rysach pochodzi z planu Nirwany. Większość agationów jest neutralnie dobra, ma widzenie w ciemności i podatność na obrażenia od zła.",
         "TraitDescriptionAgile": "Kara za wielokrotny atak, którą otrzymujesz używając tej broni przy drugim ataku w swojej turze, wynosi –4 zamiast –5 a przy trzecim i kolejnych atakach w turze –8 zamiast –10 .",
         "TraitDescriptionAir": "Efekty z cechą powietrze zadają manipulują powietrzem lub je wyczarowują. Te, które manipulują powietrzem, nie odnoszą efektu na obszarze próżni lub w inny sposób pozbawionym powietrza. Istoty z tą cechą składają się głównie z powietrza lub są powiązane z magicznym powietrzem.",
         "TraitDescriptionAiuvarin": "Istota z tą cechą posiada uniwersalne dziedzictwo aiuvarin. Aiuvarinowie mają mieszane przodkostwo, którego częścią są elfy lub inni aiuvarinowie. Zdolność z tą cechą może być wybierana lub używana jedynie przez aiuvarinów.",
-        "TraitDescriptionAlchemical": "Przedmioty alchemiczne są zasilane reakcjami odczynników alchemicznych. Przedmioty alchemiczne nie są magiczne i nie emanują magiczną aurą. Istoty z tą cechą są częściowo zasilane przez reakcje alchemiczne.",
+        "TraitDescriptionAlchemical": "Przedmioty alchemiczne są zasilane reakcjami odczynników alchemicznych. O ile nie wspomniano inaczej, przedmioty alchemiczne nie są magiczne i nie emanują magiczną aurą. Istoty z tą cechą są częściowo zasilane przez reakcje alchemiczne.",
         "TraitDescriptionAlchemist": "Oznacza zdolności z klasy Alchemika.",
         "TraitDescriptionAmp": "Amp to specjalny myślokształt, który modyfikuje właściwości twoich sztuczek psionicznych. Każda sztuczka psioniczna ma swój własny amp, a atuty z cechą amp zapewniają dodatkowe ampy, które można zastosować do sztuczek psionicznych zamiast ich normalnych ampów.",
         "TraitDescriptionAmphibious": "Ziemnowodna istota może oddychać w wodzie i powietrzu, nawet poza preferowanym środowiskiem, zwykle nieokreśloną ilość czasu, ale przynajmniej przez kilka godzin. Istoty tego typu często mają Prędkość pływania. Ich Ciosy wręcz zadające obrażenia obuchowe lub cięte nie są objęte standardową karą –2 za przebywanie pod wodą.",
@@ -4097,7 +4121,7 @@
         "TraitDescriptionAngel": "Ta rodzina niebian to posłańcy i wojownicy. Więszkość aniołów jest święta, ma zdolność widzenia w ciemności oraz posiada podatność na efekty wyklęte.",
         "TraitDescriptionAnimal": "Zwierzę to istota o względnie niskiej inteligencji. Modyfikator Inteligencji zwierząt na ogół nie przekracza –4, nie potrafią one mówić językami oraz nie może posiadać wytrenowania w umiejętnościach opartych na Inteligencji.",
         "TraitDescriptionAnimist": "Oznacza zdolności z klasy Animisty.",
-        "TraitDescriptionApex": "Kiedy zaangażujesz do użytku przedmiot z cechą zenitu, poprawia on wartość jednego z twoich modyfikatorów cech, albo zwiększając go i 1 albo do wartości +4, którakolwiek z opcji zapewni ci wyższy modyfikator. Zapewnia ci to wszelkie korzyści płynące z nowej wartości modyfikatora cechy aż do końca trwania twojego zaangażowania w przedmiot. Przedmiot zenitu zapewnia te korzyści tylko pierwszy raz kiedy zostanie zaangażowany w okresie 24 godzin, a ty możesz odnosić korzyści tylko z jednego przedmiotu zenitu na raz. Jeśli spróbujesz zaangażować się w przedmiot z cechą zenit kiedy posiadasz już inny zaangażowany przedmiot zenitu, wartość twoich modyfikatorów cech nie ulega kolejnej zmianie, chociaż odnosisz wszystkie inne korzyści wynikające z zaangażowania drugiego przedmiotu.",
+        "TraitDescriptionApex": "<p>Kiedy zaangażujesz do użytku przedmiot z cechą zenitu, poprawia on jedną z twoich cech, zwiększając jej modyfikator o 1 albo do wartości +4, którakolwiek z opcji zapewni wyższą jego wartość. Zapewnia ci to wszelkie korzyści płynące z nowej wartości modyfikatora cechy aż do końca trwania twojego zaangażowania w przedmiot. Przykładowo, w dodatku do wpływania na rzuty wykonywane z użyciem danego modyfikatora, zwiększenie twojej Inteligencji pozwoli ci na zyskanie wytrenowania w dodatkowej umiejętności oraz nauczenia się nowego języka, a zwiększenie twojej Kondycji zapewni ci więcej Punktów Żywotności.</p><p> Przedmiot zenitu zapewnia te korzyści tylko pierwszy raz kiedy zostanie zaangażowany w okresie 24 godzin, a ty możesz odnosić korzyści tylko z jednego przedmiotu zenitu na raz. Jeśli spróbujesz zaangażować się w przedmiot z cechą zenit kiedy posiadasz już inny zaangażowany przedmiot zenitu, wartość twoich modyfikatorów cech nie ulega kolejnej zmianie, chociaż odnosisz wszystkie inne korzyści wynikające z zaangażowania drugiego przedmiotu.</p>",
         "TraitDescriptionAphorite": "Rodzaj planarnej istoty pochodzącej od istot z Osi, Planu Praworządności.",
         "TraitDescriptionApparition": "<p>Zjawy to duchowe istoty, którym na ogół brakuje mocy, spójności myśli lub przywiązania potrzebnych do wkraczania w świat materialny oraz wpływania na niego. W przeciwieństwie do ducha czy fantoma, zjawa nie musiała być w żadnym momencie żywą istotą i może stanowić po prostu duchowe echo sdzczególnie istotnego miejsca czy wydarzenia. Zjawy polegają na animistach w kwestii interaktowania z innymi osobami czy rzeczami i na ogół nie mogą zostać obrane za cel czy objęte efektami zaklęć i zdolności innych niż te, pochodzące od animisty, z którym się zestroiły. Atuty i zdolności animisty, które wywierają wpływ na dusze dotyczą zjaw tylko i wyłącznie wtedy, kiedy wprost o tym wspominają.</p><p>Zdolności animisty z cechą zjawa obejmują działanie wraz z jedną lub wieloma twoimi zjawami. Musisz być zestrojony z przynajmniej jedną zjawą aby używać zdolności z cechą zjawy, a nie które z tych zdolności mogą precyzować w swoich wymaganiach z jakiego rodzaju zjawą musisz być zestrojony. Na ogół zakłada się, że zawsze zestrajasz się ze swoimi zjawami podczas swoich codziennych przygotowań, ale w rzadkich wypadkach lub w wyniku działania niektórych z twoich zdolności animisty, twoje zjawy mogą zostać rozproszone lub na jakiś czas odseparowane od ciebie — nie jesteś zestrojony z rozproszonymi zjawami.</p>",
         "TraitDescriptionAquadynamic": "Ten pancerz jest przeznaczony do użytku pod wodą, dzięki opływowej konstrukcji i wypornym materiałom zastosowanym w strategicznych miejscach. Będąc w wodzie lub podobnych płynach nie stosujesz kary od pancerza do testów Akrobatyki lub Atletyki.",
@@ -4171,7 +4195,7 @@
         "TraitDescriptionContract": "Cyrograf to rodzaj przedmiotu, który w magiczny sposób ustanawia porozumienie między kilkoma stronami i zazwyczaj zapewnia magiczne korzyści.",
         "TraitDescriptionCriticalFusion": "<p>Krytyczna fuzja to cecha broni kombinacyjnej, która zapewnia dwie dodatkowe opcje efektu krytycznej specjalizacji, gdy używasz broni w wersji do ataku posiadając jednocześnie załadowaną amunicję dla wersji dystansowej. Jeśli zdecydujesz się użyć jednej z nich, zastępuje ona normalny efekt krytycznej specjalizacji dla broni białej.</p><p>W pierwszym wypadku, jeśli bronią dystansową jest broń palna, możesz ją w sposób wywołujący głośny huk i wstrząs mózgu, co pozwala ci użyć efektu krytycznej specjalizacji dla broni palnej zamiast efektu krytycznej specjalizacji odpowiadającego broni białej. W drugim wypadku, możesz wystrzelić z broni dystansowej, aby zwiększyć impet trafienia krytycznego, lub dodatkowo razić wroga podczas ataku w zwarciu, zadając 2 dodatkowe obrażenia za każdą kość obrażeń broni. Obie te opcje zużywają amunicję broni dystansowej, co zwykle oznacza, że musisz ją przeładować przed ponownym użyciem.</p>",
         "TraitDescriptionCurse": "Klątwa to efekt, który powoduje u istoty długotrwałe przypadłości. Klątwy są zawsze magiczne i zazwyczaj są wynikiem zaklęcia lub pułapki. Efekty z tą cechą mogą zostać usunięte tylko przez efekty, których celem są konkretnie klątwy.",
-        "TraitDescriptionCursebound": "Zaklęcia z tą cechą zwiększają dotkliwość twojej klątwy wyroczni po rzuceniu. Zwykle tylko zaklęcia objawienia mają tę cechę. Nie możesz rzucić zaklęcia klątzwiązanego, jeśli nie masz klątwy wyroczni.",
+        "TraitDescriptionCursebound": "Zaklęcia z tą cechą zwiększają dotkliwość twojej klątwy wyroczni po rzuceniu. Zwykle tylko zaklęcia objawienia mają tę cechę. Nie możesz rzucić zaklęcia klątzwiązanego, jeśli nie masz klątwy wyroczni. Klątzwiązana zdolność, która pozwala na próbę obrony przed nią, używa twojego modyfikatora ataku zaklęciem lub twojego ST zaklęć, o ile nie zaznaczono inaczej.",
         "TraitDescriptionCursed": "Przedmiot z tą cechą jest przeklęty i sprawia problemy właścicielowi. Klątwa nie jest wykrywana po zidentyfikowaniu przedmiotu, chociaż krytyczny sukces ujawnia zarówno obecność, jak i dokładny charakter klątwy. Przeklętych przedmiotów nie można odrzucić po ich pierwszej aktywacji lub zaangażowaniu. Przedmiot można zostawić dopiero, gdy klątwa zostanie zdjęta.",
         "TraitDescriptionDaemon": "Rodzina diabłów zrodzonych na spustoszonym planie Abaddonu. Większość daimonów jest nieodwracalnie wyklęta. Na ogół posiadają one zdolność do widzenia w ciemności i podatność na efekty święte.",
         "TraitDescriptionDarkness": "Efekty ciemności wygaszają niemagiczne światło w obszarze działania i mogą przeciwdziałać magicznemu światłu. Aby przeciwdziałać efektowi światła, zwykle musisz obrać go bezpośrednio za cel, chociaż niektóre zaklęcia ciemności automatycznie próbują przeciwdziałać światłu.",
@@ -4231,7 +4255,7 @@
         "TraitDescriptionFire": "Efekty z cechą ogień zadają obrażenia od ognia albo manipulują ogniem lub go wyczarowują. Te, które manipulują ogniem, nie odnoszą efektu na obszarze pozbawionym ognia. Istoty z tą cechą składają się głównie z ognia lub są powiązane z magicznym ogniem.",
         "TraitDescriptionFleshwarp": "Humanoid tak dogłębnie przekształcony przez siły zewnętrzne, że stanowi teraz wyjątkowe przedkowstwo.",
         "TraitDescriptionFlexible": "Ten pancerz jest na tyle elastyczny, że nie przeszkadza w większości działań. Nie stosujesz jej kary do testów do testów Akrobatyki i Atletyki.",
-        "TraitDescriptionFlourish": "Akcje z cechą emfazy to specjalne techniki, które wymagają zbyt dużego wysiłku, aby wykonywać je często. Możesz użyć tylko jednej akcji z cechą emfaza na rundę.",
+        "TraitDescriptionFlourish": "Akcje z cechą rozmachu to specjalne techniki, które wymagają zbyt dużego wysiłku, aby wykonywać je często. Możesz użyć tylko jednej akcji z cechą rozmach na rundę.",
         "TraitDescriptionFocus": "Zaklęcia skupienia to specjalny rodzaj zaklęć, uzyskiwanych bezpośrednio w wyniku określonego rodzaju nauk, od bóstwa lub z innego specyficznego źródła. Zaklęć skupienia możesz się nauczyć jedynie przez specjalne atrybuty i atuty klasowe, w przeciwieństwie do wybierania ich z listy. Ponadto zaklęcia skupienia rzucasz za pomocą specjalnej puli Punktów Skupienia - nie możesz przygotować ich w komórce zaklęć ani używać komórek zaklęć do ich rzucania; podobnie, nie możesz wydawać swoich Punktów Skupienia aby rzucić zaklęcia, które zaklęciami skupienia nie są.",
         "TraitDescriptionFocused": "Przedmiot z tą cechą może dać ci dodatkowy Punkt Skupienia. Ten punkt skupienia jest oddzielony od twojej puli skupienia i nie wlicza się do limitu twojej puli skupienia. Możesz uzyskać tę korzyść tylko wtedy, gdy masz pulę skupienia a ponadto sposób w jaki można użyć tego punktu skupienia może być ograniczony. Nie możesz zdobyć więcej niż 1 Punkt Skupienia dziennie z przedmiotów skupiających.",
         "TraitDescriptionFoldaway": "<p>Ta tarcza może zostać złożona w mniejszą formę przymocowaną do rękawicy, aby zapewnić stabilność i ułatwić podróż. Możesz użyć akcji Interakcji, aby rozłożyć lub złożyć tarczę. Gdy jest rozłożona, możesz Wznieść Tarczę, o ile ręka na której ją nosisz jest pusta lub trzyma przedmiot lekkiego Naręcza inny niż broń. Tarcza utrudnia korzystanie z ręki, gdy jest rozłożona. Chociaż nadal możesz trzymać w tej ręce przedmioty, nie możesz w niej dzierżyć broni, obsługiwać niczego, co wymaga dwóch rąk, ani atakować rękawicą.</p><p>Składana tarcza musi być przymocowana do rękawicy, aby zapewnić jej stabilność. Można ją przymocować do przedmiotu w ramach 10 minut pracy oraz udanego testu @Check[crafting|dc:10]; obejmuje to czas potrzebny do zdjęcia tarczy z poprzedniej rękawicy, jeśli to konieczne. Jeśli rekawica zostanie zniszczona, składaną tarczę można zwykle odratować. Składany charakter tarczy uniemożliwia przymocowanie do niej broni mocowanej.</p>",
@@ -4251,7 +4275,7 @@
         "TraitDescriptionGhoul": "Ghoule to odrażające nieumarłe istoty, żerujące na mięsie żyjących.",
         "TraitDescriptionGhul": "Chciwi i żarłoczni nieumarli pierwotnie uformowani z dżinnów.",
         "TraitDescriptionGiant": "Giganci to potężnych rozmiarów humanoidy.",
-        "TraitDescriptionGnoll": "Gnolle to humanoidy przypominające hieny.",
+        "TraitDescriptionGnoll": "Kholo to humanoidy przypominające hieny.",
         "TraitDescriptionGnome": "Istota z tą cechą jest członkiem przodkostwa gnomów. Gnomy to małe osóbki, utalentowane w magii, które szukają nowych doświadczeń i zwykle posiadają widzenie w słabym świetle. Zdolność z tą cechą może być wybierana lub używana jedynie przez gnomy. Broń z tą cechą jest tworzona i używana przez gnomy.",
         "TraitDescriptionGoblin": "Istota z tą cechą to mały rozigrany goblinoid. Gobliny często posiadają widzenie w ciemności. Zdolność z tą cechą może być wybierana lub używana jedynie przez gobliny. Broń z tą cechą jest tworzona i używana przez gobliny.",
         "TraitDescriptionGoloma": "Wyspiarskie humanoidy, o niezliczonej liczbie oczu.",
@@ -4259,7 +4283,7 @@
         "TraitDescriptionGrapple": "Możesz używać tej broni do Pochwycenia wroga z użyciem Atletyki nawet jeśli brak ci wolnej ręki. Wykorzystujesz wtedy wysięg broni (jeśli jest inny od twojego) a premię przedmiotu dodawaną do ataków bronią, dodajesz jako premię przedmiotu do rzutu na Atletykę. Jeśli odniesiesz krytyczną porażkę w próbie Pochwycenia, możesz zdecydować się na upuszczenie broni aby zamiast tego ponieść efekty zwykłej porażki.",
         "TraitDescriptionGremlin": "Gremliny to okrutne i psotne feye, które przystosowały się do życia w Świecie Głównym.",
         "TraitDescriptionGrimoire": "Księgi zaklęć są przydatnymi dla każdego użytkownika magii narzędziami, służącymi do zapisywania zaklęć i run mocy, ale podczas gdy większość ksiąg zaklęć to nic innego jak pergamin pokryty atramentem, grymuary wchłonęły magię zaklęć w nich zawartych — magię, której znający się na rzeczy użytkownicy magii mogą używać do wzmacniania swoich zaklęć.",
-        "TraitDescriptionGrippli": "Grippli to rodzina humanoidów przypominających żaby",
+        "TraitDescriptionGrippli": "Tripki to rodzina żabopodobnych humanoidów.",
         "TraitDescriptionGunslinger": "Oznacza zdolności z klasy Strzelca.",
         "TraitDescriptionHag": "Te złowrogie użytkowniczki magii łączą się w sabaty.",
         "TraitDescriptionHalfling": "Istota z tą cechą jest przedstawicielem przodkostwa niziołków. Te małe osóbki to przyjaźni wędrowcy uważani za szczęściarzy. Zdolność z tą cechą może być wybierana lub używana jedynie przez niziołki. Broń z tą cechą jest tworzona i używana przez niziołki.",
@@ -4292,7 +4316,7 @@
         "TraitDescriptionIntegrated": "W strukturze tej tarczy zawarta jest broń dodawana w procesie konstrukcji, która działa jak broń mocowana, ale nie można jej usunąć z tarczy.",
         "TraitDescriptionIntelligent": "Przedmiot z tą cechą jest inteligentny i ma własną wolę oraz osobowość, a także kilka statystyk, których nie ma większość przedmiotów. Inteligentnych przedmiotów nie można wytworzyć z użyciem konwencjonalnych środków i zawsze są one rzadkie lub unikalne.",
         "TraitDescriptionInventor": "Oznacza zdolności z klasy Wynalazcy.",
-        "TraitDescriptionInvested": "Postać może nosić tylko 10 magicznych przedmiotów z cechą zaangażowania. Żaden z magicznych efektów przedmiotu nie ma zastosowania, jeśli postać nie jest w niego zaangażowana, nie można go też aktywować, chociaż postać nadal zyskuje normalne fizyczne korzyści z noszenia przedmiotu (jak ochrona głowy przed deszczem za pomocą kapelusza).",
+        "TraitDescriptionInvested": "Postać może zaangażować się jedynie w 10 magicznych przedmiotów z cechą zaangażowania. Żaden z magicznych efektów przedmiotu nie ma zastosowania, jeśli postać nie jest w niego zaangażowana, nie można go też aktywować, chociaż postać nadal zyskuje normalne fizyczne korzyści z noszenia przedmiotu (jak ochrona głowy przed deszczem za pomocą kapelusza).",
         "TraitDescriptionInvestigator": "Oznacza zdolności z klasy Śledczego.",
         "TraitDescriptionJousting": "Ta broń jest przystosowana do walki konnej z użyciem uprzęży na broń lub podobnych środków. Gdy dosiadasz wierzchowca, jeśli w trakcie akcji poprzedzającej twój atak poruszyłeś się o co najmniej 10 stóp, dodaj do obrażeń ataku premię sytuacyjną równą liczbie kości obrażeń tej broni. Dodatkowo, kiedy dosiadasz wierzchowca, możesz dzierżyć broń w jednej ręce, zmieniając jej kość obrażeń na wymienioną w cesze wartość.",
         "TraitDescriptionKashrishi": "Tęgie przodkostwo posiadające charakterystyczne kryształowe rogi i wrodzone zdolności psychiczne.",
@@ -4319,7 +4343,7 @@
         "TraitDescriptionMetal": "Efekty z cechą metal albo manipulują metalem, albo go wyczarowują. Te, które nim manipulują, nie odnoszą efektu w obszarach pozbawionych metalu. Istoty z tą cechą składają się głównie z metalu lub są powiązane z magicznym metalem.",
         "TraitDescriptionMindless": "Istoty bezmyślne albo posiadają szczątkowe zdolności umysłowe albo są zaprogramowanymi automatami. Większość, jeśli nie wszystkie, ich modyfikatory cech umysłowych to –5. Są odporne na wszelkie efekty mentalne.",
         "TraitDescriptionMindshift": "Akcja z tą cechą zawsze może zostać zmodyfikowana, aby wykorzystywać czystą moc twojego umysłu. Kiedy wykonujesz tę akcję, możesz zdecydować się na zamianę dowolnych zadawanych przez nią obrażeń na obrażenia mentalne, nadać jej cechę mentalności i zastąpić dowolny powodowany przez nią rzut obronny rzutem obronnym Woli. Akcja traci wszystkie cechy związane z rodzajami obrażeń, których już nie zadaje.",
-        "TraitDescriptionMinion": "Sługusy to istoty, które bezpośrednio służą innej istocie. Istota z tą cechą może wykonać tylko 2 akcje na turę, nie ma reakcji i nie może działać poza twoją turą. W walce, twój sługus działa w twojej turze, raz na turę, kiedy wydajesz akcję, aby wydać mu polecenie. W wypadku zwierzęcego towarzysza, Panujesz Nad Zwierzęciem; w przypadku sługusa będącego efektem zaklęcia lub magicznego przedmiotu, takiego jak przywołany sługus, Podtrzymujesz Zaklęcie lub Podtrzymujesz Aktywację; jeśli nie określono inaczej, wydajesz polecenie słowne jako pojedynczą akcję z cechami słuchowości i koncentracji. Jeśli nie wydano żadnych poleceń, sługusy nie wykonują żadnych akcji poza samoobroną lub ucieczką przed oczywistą krzywdą. Pozostawione bez opieki na wystarczająco długo, zazwyczaj 1 minutę, bezmyślne sługusy na ogół nie robią nic, zwierzęta kierują się instynktem, a rozumne sługusy zachowują się tak, jak im się podoba. Sługus nie może kontrolować innych istot.",
+        "TraitDescriptionMinion": "<p>Sługusy to istoty, które bezpośrednio służą innej istocie. W walce, twój sługus działa w twojej turze, raz na turę, kiedy wykorzystasz akcję, aby wydać mu polecenie. W wypadku zwierzęcego towarzysza, Panujesz Nad Zwierzęciem; w przypadku sługusa będącego efektem zaklęcia lub magicznego przedmiotu, takiego jak przywołany sługus, Podtrzymujesz Efekt. Jeśli nie określono inaczej, wydajesz polecenie słowne jako pojedynczą akcję z cechami słuchowości i koncentracji. Jeśli nie wydano żadnych poleceń, sługusy nie wykonują żadnych akcji poza samoobroną lub ucieczką przed oczywistą krzywdą. Pozostawione bez opieki na wystarczająco długo, zazwyczaj 1 minutę, bezmyślne sługusy na ogół nie robią nic, zwierzęta kierują się instynktem, a rozumne sługusy zachowują się tak, jak im się podoba. Możesz mieć pod kontrolą maksymalnie czterech sługusów.</p><p>Sługus dysponuje jedynie 2 akcjami oraz 0 reakcji na turę, chociaż niektóre statusy (takie jak spowolnienie lub przyspieszenie) lub zdolności mogą zapewnić im reakcję, którą której będą w stanie użyć. Zmiany w liczbie akcji sługusa następują, kiedy zyskuje on w danej rundzie swoje akcje. Sługus nie może kontrolować innych istot.</p>",
         "TraitDescriptionMinotaur": "Minotaury to rogate, krowopodobne humanoidy ze smykałką do labiryntów i łamigłówek.",
         "TraitDescriptionMisfortune": "Efekt nieszczęścia zmienia sposób rzucania kośćmi na twoją niekorzyść. Nigdy nie możesz odnosić korzyści z więcej niż jednego efektu nieszczęścia na pojedynczym rzucie. Jeśli miałoby zastosowanie kilka efektów nieszczęścia, MG decyduje, który z nich jest najgorszy i stosuje go. Jeśli efekt szczęścia i efekt nieszczęścia dotyczyłyby samego rzutu, oba znoszą się nawzajem i rzucasz normalnie.",
         "TraitDescriptionMissive": "Pismo to kawałek magicznej papeterii, który musi zostać stworzony i skomponowany, zanim będzie można go aktywować. Wszystkie pisma mają cechy pismo i zużywanie. Pisma są często wykonane z papieru, pergaminu lub welinu, ale każdy inny cienki, przenośny materiał, na którym można coś napisać lub wytłoczyć, można przekształcić w pismo. Po stworzeniu pismo jest pustym arkuszem, dopóki nie zostanie na nim ułożona treść, która dopełnia jego magii.",
@@ -4429,15 +4453,14 @@
         "TraitDescriptionSpellheart": "Czarordzenie to permanentne przedmioty o działaniu podobnym do talizmanów. Mocujesz czarordzeń do ekwipunku za pomocą akcji Przymocuj Czarordzeń, która poza nazwą funkcjonuje identycznie co Przymocuj Talizman. Ograniczenie jednego przedmiotu mocowanego na przedmiot nadal obowiązuje - przedmiot może posiadać albo talizman albo czarordzeń, nigdy oba na raz. Rzucając sztuczkę za pomocą czarordzenia możesz użyć własnego modyfikatora ataku zaklęciem lub ST zaklęć, jeśli są one większe. Wytwarzanie czarordzenia wymaga zaklęć, które dany czarordzeń ma rzucać. Przykładowo, większy pięćpiórowy wieniec wymaga powietrznego spaceru, podmuchu wichru i ściany wiatru.",
         "TraitDescriptionSpellshape": "Akcje z cechą czarokształtowania modyfikują właściwości twoich zaklęć. Akcji czarokształtowania musisz użyć bezpośrednio przed Rzuceniem Zaklęcia, które chcesz zmodyfikować. Jeśli użyjesz po niej jakiejkolwiek innej akcji niż Rzucanie Zaklęcia (w tym darmowych akcji i reakcji), tracisz korzyści z akcji czarokształtowania. Wszelkie dodatkowe efekty dodane przez akcję czarokształtowania liczą się jako część efektu zaklęcia, a nie samej akcji czarokształtowania.",
         "TraitDescriptionSpirit": "Efekty z tą cechą mogą wpływać na istoty posiadające duchową esencję i mogą zadawać obrażenia duchowe. Istotę posiadającą tę cechę definiuje jej duchowa esencja. Istoty duchowe często nie posiadają postaci materialnej.",
-        "TraitDescriptionSplash": "Kiedy użyjesz broni miotanej z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Jeśli atak z cechą rozpryskowości spudłuje, trafi lub trafi krytycznie, wszystkie istoty w zasięgu 5 stóp od celu (włącznie z celem) odnoszą wymienione obrażenia rozpryskowe. Przy porażce (ale nie przy krytycznej porażce), główny cel ataku nadal odnosi obrażenia rozpryskowe. Obliczając obrażenia dla głównego celu zsumuj obrażenia rozpryskowe z głównymi obrażeniami ciosu zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie są zwielokrotniane przy trafieniu krytycznym.",
-        "TraitDescriptionSplash10": "Kiedy użyjesz broni miotanej z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Jeśli atak z cechą rozpryskowości spudłuje, trafi lub trafi krytycznie, wszystkie istoty w zasięgu 10 stóp od celu (włącznie z celem) odnoszą wymienione obrażenia rozpryskowe. Przy porażce (ale nie przy krytycznej porażce), główny cel ataku nadal odnosi obrażenia rozpryskowe. Obliczając obrażenia dla głównego celu zsumuj obrażenia rozpryskowe z głównymi obrażeniami ciosu zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie są zwielokrotniane przy trafieniu krytycznym.",
+        "TraitDescriptionSplash": "Niektóre bronie i efekty, takie jak alchemiczne bomby, mają cechę rozprysk. Kiedy użyjesz broni lub efektu z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Broń lub efekt rozpryskowy zadaje wymienione obrażenia rozpryskowe celowi przy porażce, sukcesie i krytycznym sukcesie, oraz wszystkim innym istotom w zasięgu 5 stóp od celu przy sukcesie oraz krytycznym sukcesie. Obliczając obrażenia dla celu zsumuj obrażenia rozpryskowe z obrażeniami wstępnymi zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie ulegają zwielokrotnieniu przy trafieniu krytycznym.",
+        "TraitDescriptionSplash10": "Niektóre bronie i efekty, takie jak alchemiczne bomby, mają cechę rozprysk. Kiedy użyjesz broni lub efektu z cechą rozpryskowości, nie dodajesz swojego modyfikatora Siły do rzutu obrażeń. Broń lub efekt rozpryskowy zadaje wymienione obrażenia rozpryskowe celowi przy porażce, sukcesie i krytycznym sukcesie, oraz wszystkim innym istotom w zasięgu 10 stóp od celu przy sukcesie oraz krytycznym sukcesie. Obliczając obrażenia dla celu zsumuj obrażenia rozpryskowe z obrażeniami wstępnymi zanim uwzględnisz odporności lub podatności celu. Obrażenia rozpryskowe nie ulegają zwielokrotnieniu przy trafieniu krytycznym.",
         "TraitDescriptionSprite": "Rodzina maleńkich skrzydlatych feyów o silnej więzi z magią pierwotną.",
         "TraitDescriptionStaff": "Tego typu magiczny przedmiot przechowuje zaklęcia określonego rodzaju i pozwala użytkownikom magii na rzucanie tych dodatkowych zaklęć poprzez przygotowanie kostura.",
         "TraitDescriptionStance": "Postawa to ogólna strategia walki, którą przybierasz używając akcji z cechą postawy i w której pozostajesz przez pewien czas. Pozostajesz w postawie dopóki nie zostaniesz pozbawiony przytomności, dopóki jej wymogi (jeśli takowe posiada) nie zostaną naruszone, dopóki nie zakończy się starcie lub dopóki nie wejdziesz w nową postawę, którekolwiek nastąpi pierwsze. Kiedy użyjesz akcji z cechą postawy, nie możesz używać kolejnej do końca bieżącej rundy. Możesz przybierać postawy tylko podczas starć.",
         "TraitDescriptionSteam": "Przedmioty z tą cechą są napędzane silnikami podgrzewającymi wodę aby wyprodukować parę i za jej pomocą wprawiać w ruch ich komponenty.",
         "TraitDescriptionStrix": "Skzydlate humanoidy, w większości żyjące w okolicach Cheliaxu.",
-        "TraitDescriptionStructure": "Przedmiot z cechą struktura tworzy magiczną budowlę albo innego rodzaju strukturę przy swojej aktywacji. Przedmiot musi zostać aktywowany na połaci ziemi wolnej od innych struktur. Struktura adaptuje się do otaczającego terenu, przybierając cechy konstrukcyjne niezbędne do jej powstania w tym miejscu. Struktura dostosowuje się do małych przestrzeni takich jak sadzawki czy występy skalne, nie może jednak zostać postawiona w całości na wodzie czy innej płynnej powierzchni. W wypadku aktywacji na śniegu, wydmach piaskowych, albo innej miękkiej powierzchni z twardą warstwą ukrytą głębiej, fundamenty struktury (jeśli je posiada) dosięgają stabilnej warstwy. Jeśli przedmiot z tą cechą zostanie aktywowany na solidnej ale niestabilnej powierzchni, takiej jak bagniska lub obszary nękane przez wstrząsy tektoniczne, rzucaj każdego dnia @Check[flat|dc:3]; przy porażce struktura zaczyna się zapadać lub burzyć. Struktura nie krzywdzi okolicznych istot w procesie swojego powstawania i nie może zostać stworzona w tłumie czy gęsto zaludnionym obszarze. Każda istota złapana przypadkowo w procesie powstawania struktury ląduje bezpiecznie w jej wnętrzu i zawsze posiada drogę do wyjścia. Istota przebywająca wewnątrz struktury w momencie kiedy jej aktywacja się kończy nie jest krzywdzona i upada bezpiecznie na ziemię jeśli była na wyższych piętrach.",
-        "TraitDescriptionSubjectiveGravity": "Na planach o tej cesze, wszystkie ciała mają możliwość bycia centrum grawitacji z tą samą siłą, jednak wymaga to określenia przez wolę nie-bezmyślnej istoty.",
+        "TraitDescriptionStructure": "<p>Zaklęcie, aktywacja przedmiotu lub zdolność z cechą struktura tworzy magiczną budowlę albo innego rodzaju strukturę. Struktura musi zostać stworzona na połaci ziemi wolnej od innych struktur. Struktura dostosowuje się do otaczającego terenu, przybierając cechy konstrukcyjne niezbędne do jej powstania w tym miejscu. Struktura dopasowuje się do małych przestrzeni takich jak sadzawki czy występy skalne, nie może jednak zostać postawiona w całości na wodzie czy innej płynnej powierzchni. W wypadku stworzenia jej na śniegu, wydmach piaskowych, albo innej miękkiej powierzchni z twardą warstwą ukrytą głębiej, fundamenty struktury (jeśli je posiada) dosięgają stabilnej warstwy. Jeśli struktura znajduje się na solidnej ale niestabilnej powierzchni, takiej jak bagniska lub obszary nękane przez wstrząsy tektoniczne, rzucaj każdego dnia @Check[flat|dc:3] — przy porażce struktura zaczyna się zapadać lub burzyć.</p><p>Struktura nie krzywdzi okolicznych istot w procesie swojego powstawania i nie może zostać stworzona w tłumie czy na gęsto zaludnionym obszarze. Każda istota złapana przypadkowo w proces powstawania struktury ląduje bezpiecznie w jej wnętrzu i zawsze posiada drogę do wyjścia. Istota przebywająca wewnątrz struktury w momencie kiedy efekt się kończy, nie jest krzywdzona i upada bezpiecznie na ziemię jeśli była na wyższych jej kondygnacjach.</p>",
         "TraitDescriptionSubtle": "Zaklęcie z cechą subtelności może być rzucane bez inkantacji i nie posiada oczywistych przejawów.",
         "TraitDescriptionSuli": "Suli to planarne przodkostwo wywodzące się od jannów.",
         "TraitDescriptionSurki": "Surkisowie to podziemne insektoidalne przodkostwo pochładniające magię ze swojego otoczenia i nabywające dzięki niej uniklane adaptacje.",
@@ -4582,7 +4605,7 @@
         "TraitFire": "Ogień",
         "TraitFleshwarp": "Mięsoskręt",
         "TraitFlexible": "Elastyczność",
-        "TraitFlourish": "Emfaza",
+        "TraitFlourish": "Rozmach",
         "TraitFocus": "Skupienie",
         "TraitFocused": "Skupianie",
         "TraitFoldaway": "Składanie",
@@ -4667,7 +4690,10 @@
         "TraitInvested": "Angażowanie",
         "TraitInvestigator": "Śledczy",
         "TraitJousting": "Turniejowość",
+        "TraitJoustingD4": "Turniejowość k4",
         "TraitJoustingD6": "Turniejowość: k6",
+        "TraitJoustingD8": "Turniejowość k8",
+        "TraitJoustingD10": "Turniejowość k10",
         "TraitKaiju": "Kaiju",
         "TraitKami": "Kami",
         "TraitKashrishi": "Kaszriszi",
@@ -5349,6 +5375,7 @@
                 "mithral-tree": "Drzewo Mithralowe",
                 "monkeys-fist": "Małpia Pięść",
                 "morningstar": "Morgensztern",
+                "nails": "Paznokcie",
                 "naginata": "Naginata",
                 "nightstick": "Nocny Stróż",
                 "nodachi": "Nodachi",
@@ -5517,7 +5544,7 @@
             "astral": {
                 "Name": "Astralności",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[will|dc:26] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
+                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[will|dc:26] lub zostaje wypędzona i nie może opętać istoty przez [[/gmr 1d4 #rund]]{1k4 rund}.",
                     "Note": "Runa ta ma te same efekty co runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Duchowego Dotyku}. Jeśli zostanie użyta do zaatakowania istoty opętującej inną istotę, nie zadaje ona obrażeń istocie opętywanej."
                 }
             },
@@ -5643,7 +5670,7 @@
             "greaterAstral": {
                 "Name": "Większej Astralności",
                 "Note": {
-                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[will|dc:36] lub zostaje wypędzona i nie może opętać istoty przez [[/br 1d4 #rounds]]{1k4 rund}.",
+                    "criticalSuccess": "Przy trafieniu krytycznym na istocie opętującej inną istotę, opętująca istota musi zdać rzut obronny @Check[will|dc:36] lub zostaje wypędzona i nie może opętać istoty przez [[/gmr 1d4 #rund]]{1k4 rund}.",
                     "Note": "Runa ta ma te same efekty co runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Duchowego Dotyku}. Jeśli zostanie użyta do zaatakowania istoty opętującej inną istotę, nie zadaje ona obrażeń istocie opętywanej."
                 }
             },
@@ -6176,6 +6203,7 @@
             },
             "stupefied": {
                 "name": "Ogłupiony",
+                "note": "Ilekroć podejmiesz próbę @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Rzucenia Zaklęcia} będąc ogłupionym, zaklęcie jest rozpraszane o ile nie odniesiesz sukcesu w @Check[flat|showDC:all|dc:resolve(5+@actor.conditions.stupefied.value)]{Teście Płaskim}.",
                 "rules": "<p>Twoje myśli i instynkty są zamglone. Ogłupienie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości, do wszystkich swoich testów i ST opartych o Inteligencję, Mądrość i Charyzmę, wliczając w to rzut obronny Woli, rzuty ataku zaklęciem, ST zaklęć oraz testy umiejętności oparte o te cechy. Za każdym razem kiedy usiłujesz Rzucić Zaklęcie będąc ogłupionym, musisz wykonać płaski test o ST równym 5 + wartość ogłupienia - przy porażce zaklęcie jest rozpraszane.</p>",
                 "summary": "Nie jesteś w stanie wykorzystać pełni swoich sił umysłowych i masz trudności z rzucaniem zaklęć."
             },

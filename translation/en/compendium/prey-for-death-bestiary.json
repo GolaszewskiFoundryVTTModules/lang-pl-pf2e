@@ -137,7 +137,7 @@
         },
         "action->Spatial Riptide": {
           "name": "Spatial Riptide",
-          "description": "<p>30 feet. A creature using a teleportation ability within the aura or arriving in it via teleportation must succeed at a @Check[fortitude|dc:41] save or wink out of existence for [[/br 1d4 #rounds]] rounds before completing the teleport. The creature can't act, sense anything, or be targeted. On a successful save, the creature completes the teleport normally but is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. Keketars are immune to this effect.</p>"
+          "description": "<p>30 feet. A creature using a teleportation ability within the aura or arriving in it via teleportation must succeed at a @Check[fortitude|dc:41] save or wink out of existence for [[/gmr 1d4 #rounds]] rounds before completing the teleport. The creature can't act, sense anything, or be targeted. On a successful save, the creature completes the teleport normally but is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. Keketars are immune to this effect.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The keketar can take the appearance of any Huge or smaller creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -150,7 +150,8 @@
           "description": "<p>When the keketar casts @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage}, it infuses the illusion with quasi-real substance. Creatures that do not disbelieve the illusion treat structures and terrain created through the spell as though they were real, ascending illusory stairs, becoming trapped by illusory quicksand, and so on.</p>"
         },
         "action->Warpwave": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.HKFoOZZV4WdjkeeJ]\nWarpwave"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.HKFoOZZV4WdjkeeJ]\nWarpwave",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.HKFoOZZV4WdjkeeJ]\n<p>Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves. When a creature fails its saving throw and is affected by a warpwave, roll [[/gmr 1d8 #Warpwave]]{1d8} and consult the table below for the specific effect on that creature. Unless indicated otherwise, a warpwave effect lasts for [[/gmr 1d4 #Duration Warpwave Effect]]{1d4 rounds}, and a new warpwave effect negates any previous warpwave effect already affecting a creature.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d8 #Warpwave]]{1d8}</th>\n<th>Warpwave Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} on a critical failure)</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and gains [[/r 4d6 #Temporary Hit Points]]{4d6 temporary Hit Points}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (permanent on a critical failure)</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical failure)</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by filaments of energy</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} (Stride, Strike, or Step only)</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
         },
         "action->Warpwave Strike": {
           "name": "Warpwave Strike",
@@ -171,7 +172,7 @@
         },
         "action->Battle Cry": {
           "name": "Battle Cry",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Ordulf rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Ordulf attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} an observed foe.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Ordulf rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Ordulf attempts to [[/act demoralize]] an observed foe.</p>"
         },
         "action->Cleaving Blow": {
           "name": "Cleaving Blow",
@@ -183,7 +184,7 @@
         },
         "action->Deadly Display": {
           "name": "Deadly Display",
-          "description": "<p><strong>Requirements</strong> Ordulf is wielding a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> Ordulf brandishes his weapon in a threatening display. He @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} all enemies within 30 feet, rolling once and comparing the result to each target's Will DC.</p>"
+          "description": "<p><strong>Requirements</strong> Ordulf is wielding a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> Ordulf brandishes his weapon in a threatening display. He [[/act demoralize]]{Demoralizes} all enemies within 30 feet, rolling once and comparing the result to each target's Will DC.</p>"
         },
         "action->Whirlwind Strike": {
           "name": "Whirlwind Strike",
@@ -304,7 +305,7 @@
         },
         "action->Jorogumo Venom": {
           "name": "Jorogumo Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/br 1d4 #Duration Paralyzed]]{1d4 hours}</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/gmr 1d4 #Duration Paralyzed]]{1d4 hours}</p>"
         },
         "action->Spider Legs": {
           "name": "Spider Legs",
@@ -312,7 +313,7 @@
         },
         "action->Web Trap": {
           "name": "Web Trap",
-          "description": "<p>A creature hit by the jorogumo's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface, preventing the creature from moving.</p>\n<p>The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} or @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} the web trap is 32.</p>"
+          "description": "<p>A creature hit by the jorogumo's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface, preventing the creature from moving.</p>\n<p>The DC to [[/act escape dc=32]]{Escape} or [[/act force-open dc=32]]{Force Open} the web trap is 32.</p>"
         }
       }
     },
@@ -377,7 +378,7 @@
         },
         "action->You're Next": {
           "name": "You're Next",
-          "description": "<p><strong>Trigger</strong> Dronuk reduces an enemy to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> Dronuk attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a single creature he can see. He gains a +2 circumstance bonus to this check.</p>"
+          "description": "<p><strong>Trigger</strong> Dronuk reduces an enemy to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> Dronuk attempts to [[/act demoralize options=youre-next]] a single creature he can see. He gains a +2 circumstance bonus to this check.</p>"
         }
       }
     },
@@ -464,7 +465,7 @@
         },
         "action->Frozen Feathers": {
           "name": "Frozen Feathers",
-          "description": "<p>The frost roc spreads its wings and then flaps them furiously, unleashing a blast of ice-rimed feathers in a @Template[cone|distance:60]. All creatures in the area must attempt a @Check[reflex|dc:34|options:damaging-effect] save. The frost roc can't use Frozen Feathers again for [[/br 1d4 #Recharge Frozen Feathers]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[piercing]] damage and @Damage[5d6[cold]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[5d6[piercing]] damage and @Damage[10d6[cold]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d6[piercing]] damage, @Damage[15d6[cold]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>"
+          "description": "<p>The frost roc spreads its wings and then flaps them furiously, unleashing a blast of ice-rimed feathers in a @Template[cone|distance:60]. All creatures in the area must attempt a @Check[reflex|dc:34|options:damaging-effect] save. The frost roc can't use Frozen Feathers again for [[/gmr 1d4 #Recharge Frozen Feathers]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[piercing]] damage and @Damage[5d6[cold]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[5d6[piercing]] damage and @Damage[10d6[cold]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d6[piercing]] damage, @Damage[15d6[cold]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>"
         },
         "action->Snack": {
           "name": "Snack",
@@ -740,7 +741,7 @@
         },
         "action->Battle Cry": {
           "name": "Battle Cry",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Ordulf rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Ordulf attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} an observed foe.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Ordulf rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Ordulf attempts to [[/act demoralize]] an observed foe.</p>"
         },
         "action->Cleaving Blow": {
           "name": "Cleaving Blow",
@@ -752,7 +753,7 @@
         },
         "action->Deadly Display": {
           "name": "Deadly Display",
-          "description": "<p><strong>Requirements</strong> Ordulf is wielding a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> Ordulf brandishes his weapon in a threatening display. He @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} all enemies within 30 feet, rolling once and comparing the result to each target's Will DC.</p>"
+          "description": "<p><strong>Requirements</strong> Ordulf is wielding a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> Ordulf brandishes his weapon in a threatening display. He [[/act demoralize]]{Demoralizes} all enemies within 30 feet, rolling once and comparing the result to each target's Will DC.</p>"
         },
         "action->Whirlwind Strike": {
           "name": "Whirlwind Strike",
@@ -916,7 +917,7 @@
         },
         "action->Greater Flameheart Weapon": {
           "name": "Greater Flameheart Weapon",
-          "description": "<p>hysaphine can call forth a powerful weapon from his heart of flame. In his hands, this is a <em>+3 greater striking greater flaming scimitar</em> that deals 4d6 fire damage instead of 1d6.</p>"
+          "description": "<p>Rhysaphine can call forth a powerful weapon from his heart of flame. In his hands, this is a <em>+3 greater striking greater flaming scimitar</em> that deals 4d6 fire damage instead of 1d6.</p>"
         },
         "action->Trick Rider": {
           "name": "Trick Rider",
@@ -924,7 +925,7 @@
         },
         "action->Wildfire Storm": {
           "name": "Wildfire Storm",
-          "description": "<p>Rhysaphine spreads his wings and spins, forming a whirlwind of flame that deals @Damage[19d6[fire]] damage in a @Template[emanation|distance:20] (@Check[reflex|dc:40|basic] save). He can't use Wildfire Storm again for [[/br 1d4 #Recharge Wildfire Storm]]{1d4 rounds}.</p>"
+          "description": "<p>Rhysaphine spreads his wings and spins, forming a whirlwind of flame that deals @Damage[19d6[fire]] damage in a @Template[emanation|distance:20] (@Check[reflex|dc:40|basic] save). He can't use Wildfire Storm again for [[/gmr 1d4 #Recharge Wildfire Storm]]{1d4 rounds}.</p>"
         },
         "lore->Elysium Lore": {
           "name": "Elysium Lore"
@@ -1013,7 +1014,7 @@
         },
         "action->Dragon Breath": {
           "name": "Dragon Breath",
-          "description": "<p>Saint Fang breathes in one of two ways. He can't use Dragon Breath again for [[/br 1d4 #Recharge Dragon Breath]]{1d4 rounds}.</p>\n<p><strong>Blade Breath</strong> (arcane) He breathes a @Template[line|distance:100] of sharp blades that deals @Damage[19d6[slashing]] damage (@Check[reflex|dc:40|basic] save). The blades created by this breath vanish at the end of the round.</p>\n<p><strong>Forge Breath</strong> (arcane) He breathes a blast of embers and smoke, as if from an immense forge. Each creature within a @Template[cone|distance:40] takes @Damage[6d6[fire]] damage and @Damage[12d6[poison]] damage (@Check[reflex|dc:40|basic] save). Smoke lingers in the area until the end of Saint Fang's next turn; all creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within.</p>"
+          "description": "<p>Saint Fang breathes in one of two ways. He can't use Dragon Breath again for [[/gmr 1d4 #Recharge Dragon Breath]]{1d4 rounds}.</p>\n<p><strong>Blade Breath</strong> (arcane) He breathes a @Template[line|distance:100] of sharp blades that deals @Damage[19d6[slashing]] damage (@Check[reflex|dc:40|basic] save). The blades created by this breath vanish at the end of the round.</p>\n<p><strong>Forge Breath</strong> (arcane) He breathes a blast of embers and smoke, as if from an immense forge. Each creature within a @Template[cone|distance:40] takes @Damage[6d6[fire]] damage and @Damage[12d6[poison]] damage (@Check[reflex|dc:40|basic] save). Smoke lingers in the area until the end of Saint Fang's next turn; all creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within.</p>"
         },
         "lore->Warfare Lore": {
           "name": "Warfare Lore"
@@ -1269,11 +1270,11 @@
         },
         "action->Vulnerable to Water": {
           "name": "Vulnerable to Water",
-          "description": "<p>Whenever Temperbrand is targeted with a water effect, she takes @Damage[6d6[cold]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 1d4 #rounds]]{1d4 rounds} as her body hardens into solid metal. As long as she remains slowed, her Armor Class increase to 43.</p>"
+          "description": "<p>Whenever Temperbrand is targeted with a water effect, she takes @Damage[6d6[cold]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/gmr 1d4 #rounds]]{1d4 rounds} as her body hardens into solid metal. As long as she remains slowed, her Armor Class increase to 43.</p>"
         },
         "action->Hurl Slagblade": {
           "name": "Hurl Slagblade",
-          "description": "<p>Temperbrand whips an arm at a target within 120 feet, causing her slagblade to detach and fly through the air. The target creature must attempt a @Check[reflex|dc:40|options:damaging-effect] save. Temperbrand regrows a new slagblade instantly but can't use Hurl Slag again for [[/br 1d4 #Recharge Hurl Slag]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[5d10[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d10[fire]] damage, and the slag hardens, causing the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 3 rounds. A creature can end the slowed condition early by Escaping (DC 40) the confining slag.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[20d10[fire]] damage, and the slag swiftly anchors them in place, causing the creature to become @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} (DC 40).</p>"
+          "description": "<p>Temperbrand whips an arm at a target within 120 feet, causing her slagblade to detach and fly through the air. The target creature must attempt a @Check[reflex|dc:40|options:damaging-effect] save. Temperbrand regrows a new slagblade instantly but can't use Hurl Slag again for [[/gmr 1d4 #Recharge Hurl Slag]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[5d10[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d10[fire]] damage, and the slag hardens, causing the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 3 rounds. A creature can end the slowed condition early by Escaping (DC 40) the confining slag.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[20d10[fire]] damage, and the slag swiftly anchors them in place, causing the creature to become @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until they [[/act escape dc=40]].</p>"
         },
         "action->Ooze Form": {
           "name": "Ooze Form",
@@ -1582,7 +1583,7 @@
         },
         "action->Smoke Breath": {
           "name": "Smoke Breath",
-          "description": "<p>Vatumledor unleashes a @Template[cone|distance:60] of smoke that deals @Damage[16d6[poison]] damage (@Check[fortitude|dc:39|basic] save). The smoke remains for 1 minute, obscuring sight with the effects of mist in the cone's area. He can't use Smoke Breath again for [[/br 1d4 #Recharge Smoke Breath]]{1d4 rounds}.</p>"
+          "description": "<p>Vatumledor unleashes a @Template[cone|distance:60] of smoke that deals @Damage[16d6[poison]] damage (@Check[fortitude|dc:39|basic] save). The smoke remains for 1 minute, obscuring sight with the effects of mist in the cone's area. He can't use Smoke Breath again for [[/gmr 1d4 #Recharge Smoke Breath]]{1d4 rounds}.</p>"
         },
         "action->Sneak Attack": {
           "name": "Sneak Attack",
@@ -1640,6 +1641,9 @@
         "weapon->Zaiho's Gun Sword": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.10J0WjnfgRvriLXc]\nZaiho's Gun Sword",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.10J0WjnfgRvriLXc]\n<p>Zaiho's innovation is an unusual-looking gun sword. He's enhanced this weapon with runes to become a +2 greater striking wounding weapon. He's further modified this weapon as follows:</p>\n<ul>\n<li>He's given the sword a hooked tip and razor-sharp prongs, granting the weapon the disarm and trip traits with melee Strikes.</li>\n<li>He's made the weapon lightweight. Zaiho's gun sword is 1 Bulk and only requires 1 hand to wield.</li>\n<li>Strikes with the weapon deal an additional @Damage[1d6[electricity]] damage.</li>\n<li>He's revolutionized the damage output and increased the gun sword's base damage die of d8 to d10.</li>\n</ul>\n<p>As an inventor innovation, Zaiho's gun sword only works due to his constant maintenance and tinkering, and anyone else is untrained in it and cannot use the special modifications listed in the bullet points above. Its weapon runes can be transferred to other weapons normally.</p>"
+        },
+        "equipment->Obsidian Goggles (Greater)": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Tej30MsQo8Ek9aA6]\n<p>The sleek, black lenses of these goggles somehow make everything seem more brightly lit. While wearing the goggles, you gain a +2 item bonus to Perception checks involving sight.</p>\n<hr />\n<p><strong>Activate—Darkvision</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<p><strong>Effect</strong> Adjusting your goggles, you gain darkvision until you deactivate it as an Interact action or the item is no longer invested by you, whichever comes first.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.d7BDxmsnM1BUoEeT]{Effect: Obsidian Goggles (Greater)}</p>"
         },
         "strike-melee->Zaiho's Gun Sword": {
           "name": "Zaiho's Gun Sword"

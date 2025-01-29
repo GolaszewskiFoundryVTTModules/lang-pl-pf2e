@@ -178,6 +178,9 @@
     "Blisterwell Gaoler": {
       "name": "Blisterwell Gaoler",
       "items": {
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
@@ -238,6 +241,9 @@
     "Blisterwell Warrior": {
       "name": "Blisterwell Warrior",
       "items": {
+        "shield->Steel Shield": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e remaster\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+        },
         "strike-melee->Pick": {
           "name": "Pick"
         },
@@ -420,7 +426,7 @@
       "items": {
         "action->Structural Collapse": {
           "name": "Structural Collapse",
-          "description": "<p><strong>Trigger</strong> The trip wires are pulled or severed</p>\n<hr />\n<p><strong>Effect</strong> The wires pull away the mechanisms supporting the stairs, causing them to collapse. Each creature standing on the affected area must attempt a @Check[reflex|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature jumps safely to the cliff and is unaffected.</p>\n<p><strong>Success</strong> The creature jumps to the cliff, but takes @Damage[10[bludgeoning]] damage from the leap.</p>\n<p><strong>Failure</strong> The creature falls to the next section of stairs, 100 feet down the cliff, and takes @Damage[50[bludgeoning]] damage. They can @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling.</p>\n<p><strong>Critical Failure</strong> As failure, but the fall distance is 200 feet, all the way down the cliff, dealing @Damage[100[bludgeoning]] damage.</p>"
+          "description": "<p><strong>Trigger</strong> The trip wires are pulled or severed</p>\n<hr />\n<p><strong>Effect</strong> The wires pull away the mechanisms supporting the stairs, causing them to collapse. Each creature standing on the affected area must attempt a @Check[reflex|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature jumps safely to the cliff and is unaffected.</p>\n<p><strong>Success</strong> The creature jumps to the cliff, but takes @Damage[10[bludgeoning]|options:fall-damage] damage from the leap.</p>\n<p><strong>Failure</strong> The creature falls to the next section of stairs, 100 feet down the cliff, and takes @Damage[50[bludgeoning]|options:fall-damage] damage. They can @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling.</p>\n<p><strong>Critical Failure</strong> As failure, but the fall distance is 200 feet, all the way down the cliff, dealing @Damage[100[bludgeoning]|options:fall-damage] damage.</p>"
         }
       }
     },
@@ -604,7 +610,7 @@
         },
         "action->Forbidden Cravings": {
           "name": "Forbidden Cravings",
-          "description": "<p><strong>Saving Throw</strong> @Check[will|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours; then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat</p>\n<p><strong>Stage 5</strong> If the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul; if not, it returns to stage 4 .</p>"
+          "description": "<p>A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours; then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat</p>\n<p><strong>Stage 5</strong> If the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul; if not, it returns to stage 4 .</p>"
         },
         "action->Ghoul Whispers": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
@@ -747,7 +753,7 @@
         },
         "action->Devastating Blast": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[11d6[cold]] with a @Check[reflex|dc:29|basic].</p>\n<p>The graveknight can use this ability once every [[/br 1d4 #Rounds]] rounds.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[11d6[cold]] with a @Check[reflex|dc:29|basic].</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Rounds]] rounds.</p>"
         },
         "action->Graveknight's Curse": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5dbzWZbiTyPKgwKS]\nGraveknight's Curse",
@@ -997,6 +1003,9 @@
       "name": "Marguk Cleftneck",
       "hpDetails": "regeneration 20 (deactivated by electricity or fire)",
       "items": {
+        "consumable->Grim Trophy": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.eEIWjTvZyKsKhYaz]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<hr />\n<p>This talisman comes in many forms, most often a severed piece of a humanoid creature displayed in some gruesome manner. When you activate the trophy, make an Intimidate check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} up to two targets, comparing your Intimidation check result to both of their DCs.</p>"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -1382,6 +1391,9 @@
         "spellcastingEntry->Ranger Warden Spells": {
           "name": "Ranger Warden Spells"
         },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "strike-melee->Whip": {
           "name": "Whip"
         },
@@ -1648,6 +1660,9 @@
     "Porphyry Shield Bearer": {
       "name": "Porphyry Shield Bearer",
       "items": {
+        "shield->Steel Shield": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e remaster\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+        },
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
@@ -1867,7 +1882,7 @@
         },
         "action->Corrupting Spite": {
           "name": "Corrupting Spite",
-          "description": "<p>The wight's unarmed attacks and bound weapons inflict a curse that makes a creature grow weak and spiteful. If a wight inflicts corrupting spite on a creature already afflicted by it, the victim attempts a new save, ignoring the result if it's better than a failure.</p>\n<p>A living humanoid that dies while under the curse rises as a wight after [[/br 1d4 #Wight Spawn Timer]]{1d4 rounds}, controlled by the wight that killed it. The wight spawn can't inflict corrupting spite and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. If its creator dies or after roughly a month of existence, the new wight becomes autonomous and turns into a normal wight</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22];</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and doesn't treat any creatures as allies (1 round)</p>\n<p><strong>Stage 3</strong> As stage 2, except @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} (1 round)</p>\n<p><strong>Stage 4</strong> As stage 2, except @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4} (1 round).</p>"
+          "description": "<p>The wight's unarmed attacks and bound weapons inflict a curse that makes a creature grow weak and spiteful. If a wight inflicts corrupting spite on a creature already afflicted by it, the victim attempts a new save, ignoring the result if it's better than a failure.</p>\n<p>A living humanoid that dies while under the curse rises as a wight after [[/gmr 1d4 #Wight Spawn Timer]]{1d4 rounds}, controlled by the wight that killed it. The wight spawn can't inflict corrupting spite and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. If its creator dies or after roughly a month of existence, the new wight becomes autonomous and turns into a normal wight</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22];</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and doesn't treat any creatures as allies (1 round)</p>\n<p><strong>Stage 3</strong> As stage 2, except @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} (1 round)</p>\n<p><strong>Stage 4</strong> As stage 2, except @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4} (1 round).</p>"
         }
       }
     },
@@ -2185,6 +2200,9 @@
       "items": {
         "spellcastingEntry->Champion Devotion Spells": {
           "name": "Champion Devotion Spells"
+        },
+        "shield->Steel Shield": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e remaster\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
         },
         "strike-melee->Orc Necksplitter": {
           "name": "Orc Necksplitter"

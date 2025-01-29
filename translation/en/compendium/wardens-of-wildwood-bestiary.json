@@ -83,7 +83,7 @@
         },
         "action->Primal Sink": {
           "name": "Primal Sink",
-          "description": "<p><strong>Trigger</strong> An arboreal sapstriker succeeds or critically succeeds at a saving throw against a primal effect</p>\n<hr />\n<p><strong>Effect</strong> The sapstriker gains a +1 status bonus to attack rolls, saving throws, skill checks, and sap saving throw DC for [[/br 1d4 #rounds]] rounds.</p>"
+          "description": "<p><strong>Trigger</strong> An arboreal sapstriker succeeds or critically succeeds at a saving throw against a primal effect</p>\n<hr />\n<p><strong>Effect</strong> The sapstriker gains a +1 status bonus to attack rolls, saving throws, skill checks, and sap saving throw DC for [[/gmr 1d4 #rounds]] rounds.</p>"
         },
         "action->Amber Tomb": {
           "name": "Amber Tomb",
@@ -120,7 +120,7 @@
         },
         "action->Defend the Friends": {
           "name": "Defend the Friends",
-          "description": "<p><strong>Trigger</strong> An animal within the arboreal shepherd's reach takes area damage or splash damage from an effect</p>\n<hr />\n<p><strong>Effect</strong> The arboreal shepherd partly shields the creature. Reduce the damage dealt to the animal by an amount equal to [[/br 1d10 #Reduced Damage]] + the animal's weakness to the effect, if any. The arboreal shepherd takes an equal amount of damage.</p>"
+          "description": "<p><strong>Trigger</strong> An animal within the arboreal shepherd's reach takes area damage or splash damage from an effect</p>\n<hr />\n<p><strong>Effect</strong> The arboreal shepherd partly shields the creature. Reduce the damage dealt to the animal by an amount equal to [[/gmr 1d10 #Reduced Damage]] + the animal's weakness to the effect, if any. The arboreal shepherd takes an equal amount of damage.</p>"
         },
         "action->Exalt the Little Ones": {
           "name": "Exalt the Little Ones",
@@ -210,15 +210,15 @@
         },
         "action->Poison Breath": {
           "name": "Poison Breath",
-          "description": "<p>Avathrael exhales a cloud of sweet-smelling poisonous gas that deals @Damage[13d6[poison]] damage in a @Template[cone|distance:50] (@Check[fortitude|dc:32|basic] save). A creature that critically fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. Avathrael can't use Poison Breath again for [[/br 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
+          "description": "<p>Avathrael exhales a cloud of sweet-smelling poisonous gas that deals @Damage[13d6[poison]] damage in a @Template[cone|distance:50] (@Check[fortitude|dc:32|basic] save). A creature that critically fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. Avathrael can't use Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
         },
         "action->Shadow Step": {
           "name": "Shadow Step",
-          "description": "<p><strong>Frequency</strong> twice per day</p>\n<hr />\n<p><strong>Effect</strong> Avathrael teleports with the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but Avathrael must begin and end the teleportation effect in an area of dim light or darkness. If they use 2 actions to activate this ability, Avathrael also regains @Damage[8d10[healing]] Hit Points. Avathrael can't use Shadow Step again for [[/br 1d4 #Recharge Shadow Step]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Frequency</strong> twice per day</p>\n<hr />\n<p><strong>Effect</strong> Avathrael teleports with the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but Avathrael must begin and end the teleportation effect in an area of dim light or darkness. If they use 2 actions to activate this ability, Avathrael also regains @Damage[8d10[healing]] Hit Points. Avathrael can't use Shadow Step again for [[/gmr 1d4 #Recharge Shadow Step]]{1d4 rounds}.</p>"
         },
         "action->Shape Shadow Realm": {
           "name": "Shape Shadow Realm",
-          "description": "<p>Avathrael mentally reshapes their realm, reshaping terrain and creating obstacles to hinder their foes. All squares within a @Template[burst|distance:50] become difficult terrain. Creatures in the area take @Damage[10d6[void]] damage (@Check[reflex|dc:32|basic] save) from the shadows. On a failure, that creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the malleable shadows (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). At the beginning of Avathrael's turn, each creature that's grabbed takes @Damage[4d6[void]] damage. Avathrael can't use Shape Shadow Realm again for [[/br 1d4 #Recharge Shape Shadow Realm]]{1d4 rounds}.</p>"
+          "description": "<p>Avathrael mentally reshapes their realm, reshaping terrain and creating obstacles to hinder their foes. All squares within a @Template[burst|distance:50] become difficult terrain. Creatures in the area take @Damage[10d6[void]] damage (@Check[reflex|dc:32|basic] save) from the shadows. On a failure, that creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the malleable shadows (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). At the beginning of Avathrael's turn, each creature that's grabbed takes @Damage[4d6[void]] damage. Avathrael can't use Shape Shadow Realm again for [[/gmr 1d4 #Recharge Shape Shadow Realm]]{1d4 rounds}.</p>"
         },
         "action->Snuff Light": {
           "name": "Snuff Light",
@@ -363,6 +363,9 @@
         "spell->Environmental Endurance (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5esP2GVzvxWsMgaX]\nEnvironmental Endurance (Constant)"
         },
+        "effect->Spell Effect: Fly": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spell-effects.Item.MuRBCiZn5IKeaoxi]\n<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</p>\n<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>"
+        },
         "strike-melee->Tendril": {
           "name": "Tendril"
         },
@@ -388,7 +391,7 @@
         },
         "action->Accelerate Decay": {
           "name": "Accelerate Decay",
-          "description": "<p>The speaker in spores unleashes void energy that forces desiccation in a @Template[emanation|distance:30]. Each living creature in the area takes @Damage[14d6[void]] damage (@Check[fortitude|dc:33|basic] save). Creatures afflicted by a disease take a –2 circumstance penalty to this save.</p>\n<p>All Small or smaller non-magical plant life (though not plant creatures) in the area wither and die, eliminating any cover or concealment and leaving difficult terrain in their wake.</p>\n<p>The speaker in spores is immune to this effect and can't use this ability again for [[/br 1d4 #Recharge this ability]]{1d4 rounds}.</p>"
+          "description": "<p>The speaker in spores unleashes void energy that forces desiccation in a @Template[emanation|distance:30]. Each living creature in the area takes @Damage[14d6[void]] damage (@Check[fortitude|dc:33|basic] save). Creatures afflicted by a disease take a –2 circumstance penalty to this save.</p>\n<p>All Small or smaller non-magical plant life (though not plant creatures) in the area wither and die, eliminating any cover or concealment and leaving difficult terrain in their wake.</p>\n<p>The speaker in spores is immune to this effect and can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>"
         },
         "action->Ayrzul's Blight": {
           "name": "Ayrzul's Blight",
@@ -491,7 +494,7 @@
         },
         "action->Wraith Spawn": {
           "name": "Wraith Spawn",
-          "description": "<p>A living humanoid slain by a caustic wraith rises as a wraith spawn after [[/br 1d4 #rounds]]{1d4 rounds}. This wraith spawn is under the command of the wraith that killed it. It doesn't have drain life or wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. After 24 hours, the wraith spawn dissipates and is destroyed.</p>"
+          "description": "<p>A living humanoid slain by a caustic wraith rises as a wraith spawn after [[/gmr 1d4 #rounds]]{1d4 rounds}. This wraith spawn is under the command of the wraith that killed it. It doesn't have drain life or wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. After 24 hours, the wraith spawn dissipates and is destroyed.</p>"
         }
       }
     },
@@ -545,7 +548,7 @@
         },
         "action->Sap Spray": {
           "name": "Sap Spray",
-          "description": "<p>The coiled conifer spews bile-like sap in a @Template[cone|distance:60]. Creatures in the area take @Damage[7d12[acid]] damage (@Check[reflex|dc:33|basic] save) and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>The coiled conifer can't use this ability again for [[/br 1d4 #Recharge this ability]]{1d4 rounds}.</p>"
+          "description": "<p>The coiled conifer spews bile-like sap in a @Template[cone|distance:60]. Creatures in the area take @Damage[7d12[acid]] damage (@Check[reflex|dc:33|basic] save) and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>The coiled conifer can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>"
         },
         "action->Slithering Roots": {
           "name": "Slithering Roots",
@@ -643,7 +646,7 @@
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
-          "description": "<p>The cythnophorian emits a cloud of toxic spores, exposing all creatures within a @Template[emanation|distance:15] to creeping death. The cythnophorian can't use Spore Cloud again for [[/br 1d4 #Recharge Spore Cloud]]{1d4 rounds}.</p>"
+          "description": "<p>The cythnophorian emits a cloud of toxic spores, exposing all creatures within a @Template[emanation|distance:15] to creeping death. The cythnophorian can't use Spore Cloud again for [[/gmr 1d4 #Recharge Spore Cloud]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -671,7 +674,7 @@
         },
         "action->Ghostly Swoop": {
           "name": "Ghostly Swoop",
-          "description": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or vitality); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
+          "description": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or vitality); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/gmr 1d4 #Recharge]]{1d4 rounds}.</p>"
         },
         "action->Luminant Aura": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.WIVta5JyoDl9b2UO]\nLuminant Aura"
@@ -695,7 +698,7 @@
     },
     "Druulbach": {
       "name": "Druulbach",
-      "blurb": "Male marsh giant ranger ",
+      "blurb": "Male marsh giant ranger",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
@@ -780,7 +783,7 @@
         },
         "action->Read Nature's Omens": {
           "name": "Read Nature's Omens",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Emorga can see a naturally occurring pattern such as ripples in a pond, a murmuration of birds wheeling across the sky, or a tangle of interwoven vines and flowers</p>\n<hr />\n<p><strong>Effect</strong> Emorga spends 1 hour contemplating the pattern to receive a brief glimpse of possible futures, optionally posing a question about a specific person, place, or event. She attempts a @Check[nature|dc:30] or @Check[Soothsaying Lore|dc:30] check.</p>\n<hr />\n<p><strong>Critical Success</strong> Emorga receives a helpful premonition of one significant event that is to occur within one week. If she specified a specific subject, the premonition relates specifically to events affecting or involving that subject. These visions might be partial or unclear, but they are never purposely misleading.</p>\n<p><strong>Success</strong> As critical success, but Emorga can only receive visions of events that will occur within the next [[/br 1d4 #days]]{1d4 days}.</p>\n<p><strong>Failure</strong> Emorga receives no vision, or receives a vision of something insignificant or unrelated to her subject.</p>\n<p><strong>Critical Failure</strong> Emorga incorrectly interprets the omens and receives a false vision. Treat as a critical success, but the vision is either wholly inaccurate or presented in a way that actively distorts its meaning.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Emorga can see a naturally occurring pattern such as ripples in a pond, a murmuration of birds wheeling across the sky, or a tangle of interwoven vines and flowers</p>\n<hr />\n<p><strong>Effect</strong> Emorga spends 1 hour contemplating the pattern to receive a brief glimpse of possible futures, optionally posing a question about a specific person, place, or event. She attempts a @Check[nature|dc:30] or @Check[Soothsaying Lore|dc:30] check.</p>\n<hr />\n<p><strong>Critical Success</strong> Emorga receives a helpful premonition of one significant event that is to occur within one week. If she specified a specific subject, the premonition relates specifically to events affecting or involving that subject. These visions might be partial or unclear, but they are never purposely misleading.</p>\n<p><strong>Success</strong> As critical success, but Emorga can only receive visions of events that will occur within the next [[/gmr 1d4 #days]]{1d4 days}.</p>\n<p><strong>Failure</strong> Emorga receives no vision, or receives a vision of something insignificant or unrelated to her subject.</p>\n<p><strong>Critical Failure</strong> Emorga incorrectly interprets the omens and receives a false vision. Treat as a critical success, but the vision is either wholly inaccurate or presented in a way that actively distorts its meaning.</p>"
         },
         "action->Take Cover": {
           "name": "Take Cover",
@@ -880,7 +883,7 @@
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
-          "description": "<p>A glitterspore unleashes a cloud of sparkling, hypnotic spores in a 60-foot-radius burst. Each creature in the area is exposed to spore rot and must succeed at a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>A glitterspore unleashes a cloud of sparkling, hypnotic spores in a 60-foot-radius burst. Each creature in the area is exposed to spore rot and must succeed at a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Spore Rot": {
           "name": "Spore Rot",
@@ -929,7 +932,7 @@
         },
         "action->Labyrinthine Vision": {
           "name": "Labyrinthine Vision",
-          "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]] damage with a @Check[will|dc:33] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
+          "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]] damage with a @Check[will|dc:33] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, claw, @Check[reflex|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -960,7 +963,7 @@
         },
         "action->Vitriol": {
           "name": "Vitriol",
-          "description": "<p>The hateful bear vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The bear and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the bear chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The bear cannot use Vitriol again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the bear's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the bear's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the bear chooses a different target for its Vitriol.</p>"
+          "description": "<p>The hateful bear vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The bear and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the bear chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The bear cannot use Vitriol again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the bear's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the bear's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the bear chooses a different target for its Vitriol.</p>"
         }
       }
     },
@@ -1001,7 +1004,7 @@
         },
         "action->Vitriol": {
           "name": "Vitriol",
-          "description": "<p>The hateful hodag vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The hodag and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the hodag chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The hodag cannot use Vitriol again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the hodag's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the hodag's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the hodag chooses a different target for its Vitriol.</p>"
+          "description": "<p>The hateful hodag vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The hodag and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the hodag chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The hodag cannot use Vitriol again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the hodag's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the hodag's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the hodag chooses a different target for its Vitriol.</p>"
         }
       }
     },
@@ -1023,7 +1026,7 @@
         },
         "action->Vitriol": {
           "name": "Vitriol",
-          "description": "<p>The hateful logger vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The logger and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the logger chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:19] save, with the following effects. The logger cannot use Vitriol again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the logger's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the logger's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the logger chooses a different target for its Vitriol.</p>"
+          "description": "<p>The hateful logger vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The logger and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the logger chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:19] save, with the following effects. The logger cannot use Vitriol again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the logger's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the logger's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the logger chooses a different target for its Vitriol.</p>"
         },
         "lore->Forest Lore": {
           "name": "Forest Lore"
@@ -1136,7 +1139,7 @@
         },
         "action->Quill Fighter": {
           "name": "Quill Fighter",
-          "description": "<p>Khasprickle wields his quills like a deadly weapon. He deals an additional 3d6 precision damage with quill Strikes against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets. On a critical hit with a quill, Khasprickle pierces a pressure point or nerve cluster with pinpoint accuracy; the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for [[/br 1d4 #rounds]]{1d4 rounds} (or increases the value of their clumsy condition by 1).</p>"
+          "description": "<p>Khasprickle wields his quills like a deadly weapon. He deals an additional 3d6 precision damage with quill Strikes against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets. On a critical hit with a quill, Khasprickle pierces a pressure point or nerve cluster with pinpoint accuracy; the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for [[/gmr 1d4 #rounds]]{1d4 rounds} (or increases the value of their clumsy condition by 1).</p>"
         }
       }
     },
@@ -1326,6 +1329,9 @@
       "blurb": "Variant ogre warrior",
       "publicNotes": "<p>The simplest of ogres are slabs of muscle with hateful eyes, misshapen visages, and malformed bodies. Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin.</p>\n<hr />\n<p>For many societies, ogres embody brutish, amoral violence and greedy cruelty. Standing 10 feet tall and densely muscled, ogres are usually as strong as they are vicious. The worst ogres are sadists, enjoying remorseless murder, torture, and violence in all of its forms. Although they prefer to vent their violent urges on other humanoids—the smaller the better—ogre captivity can end in a horrifying fate for anyone unlucky enough to fall within their meaty grasp: becoming dinner. But for all their creativity in inflicting pain, ogres often forget that their playthings lack their own robust fortitude and high pain tolerance, and many of their captives die sooner than the ogres might prefer. Meanwhile, those who manage to survive captivity in an ogre's larder often emerge with lasting mental scars. A captive able to keep their wits about them, however, can sometimes trick the brutes by promising treasure, more plentiful food sources, or other crude amusements, taking advantage of an ogre's often-limited intellect to engineer opportunities to escape or gain revenge.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. The most powerful ogre in any family is the \"boss\"—usually the family's patriarch or matriarch—whom the other ogres in the family learn to quickly obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. Their lairs are filthy and frequently contain all-too-recognizable evidence of their depravity, along with assorted treasures stolen from past captives.</p>",
       "items": {
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "strike-melee->Ogre Hook": {
           "name": "Ogre Hook"
         },
@@ -1383,7 +1389,7 @@
     },
     "Old Thornbarker": {
       "name": "Old Thornbarker",
-      "blurb": "Male variant arboreal archive ",
+      "blurb": "Male variant arboreal archive",
       "languages": "speak with plants",
       "publicNotes": "<p>Arboreal archives are solitary beings typically found in the remote wilderness. These ancient monoliths hold the memories of their vast territories, keeping mental records of the passing seasons of the world around them. Their knowledge of humanoid affairs varies, as they find quickly shifting political situations difficult to comprehend, but through fungal networks, reports from arboreal wardens, and other woodland chatter, arboreal archives learn of each storm, drought, or logging threat encountered throughout their long years. They primarily observe and record rather than interfere, but they willingly offer wisdom to those who respectfully seek them out. Arboreal regents call upon archives for advice in times of strife, conferring on the best course of action to protect their realms.</p>\n<p>It is rare for there to be more than one arboreal archive in a given region. When an archive senses they're nearing the end of their lengthy lifespan, a grove of regents gathers to nominate the wisest among them to become the next archive. After four seasons' deliberation, all arboreals in the area congregate to witness the succession ritual, during which the elder arboreal archive transfers their collected wisdom to the elected replacement before retiring.</p>\n<hr />\n<p>Arboreals are tree-like ancient guardians of forests, nurturing new growth and maintaining a balanced ecosystem as if the vast wilderness were their garden. Arboreals are thoughtful and deliberate - until something threatens their realms and invites their wrath.</p>",
       "senses": "all-around vision",
@@ -1414,7 +1420,7 @@
         },
         "action->Sycophantic Scamps": {
           "name": "Sycophantic Scamps",
-          "description": "<p>Dozens of @UUID[Compendium.pf2e.rage-of-elements-bestiary.Actor.EjgbrWiEp37eIifZ]{Wood Scamps} clamber on, nest in, and flit around Old Thornbarker, feeding him their observations and gossip. The arboreal can grab a nearby scamp as if drawing a weapon, using it as a thrown weapon. The unlucky scamp impacts with a clatter of spines and toxic pollen, after which the dazed elemental scampers away to regain its senses.</p>\n<p>If Old Thornbarker takes 40 or more damage from an area effect, the scamps scatter and seek cover for [[/br 1d6 #rounds]]{1d6 rounds}, during which time Old Thornbarker can't make scamp Strikes and loses all-around vision.</p>"
+          "description": "<p>Dozens of @UUID[Compendium.pf2e.rage-of-elements-bestiary.Actor.EjgbrWiEp37eIifZ]{Wood Scamps} clamber on, nest in, and flit around Old Thornbarker, feeding him their observations and gossip. The arboreal can grab a nearby scamp as if drawing a weapon, using it as a thrown weapon. The unlucky scamp impacts with a clatter of spines and toxic pollen, after which the dazed elemental scampers away to regain its senses.</p>\n<p>If Old Thornbarker takes 40 or more damage from an area effect, the scamps scatter and seek cover for [[/gmr 1d6 #rounds]]{1d6 rounds}, during which time Old Thornbarker can't make scamp Strikes and loses all-around vision.</p>"
         },
         "action->Memory Maelstrom": {
           "name": "Memory Maelstrom",
@@ -1496,7 +1502,7 @@
         },
         "action->Splinter Breath": {
           "name": "Splinter Breath",
-          "description": "<p>The phytohydra spews splinters in a @Template[cone|distance:60] that deals @Damage[4d6[piercing]] damage to all creatures in the area (@Check[reflex|dc:32|basic] save). The damage increases by 2d6 for each head the phytohydra has.</p>\n<p>The phytohydra can't use Splinter Breath again for [[/br 1d4 #Recharge Splinter Breath]]{1d4 rounds}.</p>"
+          "description": "<p>The phytohydra spews splinters in a @Template[cone|distance:60] that deals @Damage[4d6[piercing]] damage to all creatures in the area (@Check[reflex|dc:32|basic] save). The damage increases by 2d6 for each head the phytohydra has.</p>\n<p>The phytohydra can't use Splinter Breath again for [[/gmr 1d4 #Recharge Splinter Breath]]{1d4 rounds}.</p>"
         },
         "action->Storm of Branches": {
           "name": "Storm of Branches",
@@ -1526,7 +1532,7 @@
         },
         "action->Memory of Leaves": {
           "name": "Memory of Leaves",
-          "description": "<p>The ghost mourns its verdant birthplace, creating a swirling cloud of phantom leaves as a @Template[emanation|distance:20] until the end of its next turn. All creatures within the emanation become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the emanation become concealed to creatures within it. Creatures with the plant or wood traits ignore this concealment.</p>\n<p>The ghost can't use Memory of Leaves again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>The ghost mourns its verdant birthplace, creating a swirling cloud of phantom leaves as a @Template[emanation|distance:20] until the end of its next turn. All creatures within the emanation become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the emanation become concealed to creatures within it. Creatures with the plant or wood traits ignore this concealment.</p>\n<p>The ghost can't use Memory of Leaves again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "lore->Plane of Wood Lore": {
           "name": "Plane of Wood Lore"
@@ -1542,7 +1548,7 @@
       "items": {
         "action->Pollinate": {
           "name": "Pollinate",
-          "description": "<p><strong>Trigger</strong> The door is touched, or the lock is opened</p>\n<hr />\n<p><strong>Effect</strong> The flowers spray poisonous pollen in a @Template[cone|distance:30]. A creature in the area must attempt a @Check[fortitude|dc:24] save, with the following effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(2d10+11)[poison]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(3d10+16)[poison]] damage and @Damage[1d10[persistent,poison]] damage, becomes enfeebled 2, and takes a –2 status penalty to Perception checks for [[/br 1d4 #hours]]{1d4 hours}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(4d10+22)[poison]] damage and @Damage[1d10[persistent,poison]] damage, becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}, and takes a –2 status penalty to Perception checks and saves against poison for 24 hours.</p>"
+          "description": "<p><strong>Trigger</strong> The door is touched, or the lock is opened</p>\n<hr />\n<p><strong>Effect</strong> The flowers spray poisonous pollen in a @Template[cone|distance:30]. A creature in the area must attempt a @Check[fortitude|dc:24] save, with the following effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(2d10+11)[poison]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(3d10+16)[poison]] damage and @Damage[1d10[persistent,poison]] damage, becomes enfeebled 2, and takes a –2 status penalty to Perception checks for [[/gmr 1d4 #hours]]{1d4 hours}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(4d10+22)[poison]] damage and @Damage[1d10[persistent,poison]] damage, becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}, and takes a –2 status penalty to Perception checks and saves against poison for 24 hours.</p>"
         }
       }
     },
@@ -1848,7 +1854,7 @@
         },
         "action->Root Spawn": {
           "name": "Root Spawn",
-          "description": "<p>A living creature slain by a rootridden that had a lower level than the rootridden rises as a new rootridden after [[/br 1d10 #rounds]]{1d10 rounds}, on its turn. This new rootridden is under the command of the rootridden that created it. If the creator is destroyed, any rootridden it created in the past 24 hours are destroyed as well, immediately collapsing into inert plant matter.</p>"
+          "description": "<p>A living creature slain by a rootridden that had a lower level than the rootridden rises as a new rootridden after [[/gmr 1d10 #rounds]]{1d10 rounds}, on its turn. This new rootridden is under the command of the rootridden that created it. If the creator is destroyed, any rootridden it created in the past 24 hours are destroyed as well, immediately collapsing into inert plant matter.</p>"
         },
         "action->Root Rot Poison": {
           "name": "Root Rot Poison",
@@ -1876,7 +1882,7 @@
         },
         "action->Rejuvenation": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When Ruzadoya is destroyed, her armor rebuilds her body over the course of [[/br 1d10 #days]]{1d10 days}. If her body is destroyed before then, the process restarts.</p>\n<p>Ruzadoya can only be permanently destroyed by obliterating her armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Plane of Fire, or throwing it into the heart of a volcano.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When Ruzadoya is destroyed, her armor rebuilds her body over the course of [[/gmr 1d10 #days]]{1d10 days}. If her body is destroyed before then, the process restarts.</p>\n<p>Ruzadoya can only be permanently destroyed by obliterating her armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Plane of Fire, or throwing it into the heart of a volcano.</p>"
         },
         "action->Sapping Aura": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bTJnxBQjr7G8yr30]\nSapping Aura",
@@ -1902,7 +1908,7 @@
         },
         "action->Withering Blast": {
           "name": "Withering Blast",
-          "description": "<p>Ruzadoya unleashes a @Template[cone|distance:30] of corruption. Creatures in the area take @Damage[8d12[void]] damage (@Check[fortitude|dc:34|basic] save).</p>\n<p>Ruzadoya can use this ability once every [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Ruzadoya unleashes a @Template[cone|distance:30] of corruption. Creatures in the area take @Damage[8d12[void]] damage (@Check[fortitude|dc:34|basic] save).</p>\n<p>Ruzadoya can use this ability once every [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "lore->Warfare Lore": {
           "name": "Warfare Lore"
@@ -2016,6 +2022,9 @@
       "blurb": "Female werebear trader",
       "languages": "bear empathy",
       "items": {
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "strike-melee->Claw": {
           "name": "Claw"
         },
@@ -2119,7 +2128,7 @@
         },
         "action->Creeping Sprout": {
           "name": "Creeping Sprout",
-          "description": "<p>A creature afflicted with creeping sprout is treated by the spitting sawfly as if it has the wood trait</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/br 1d4 #days]]{1d4 days})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} ([[/br 1d4 #days]]{1d4 days});</p>\n<p><strong>Stage 3</strong> @Damage[12d6[acid]] damage, creeping cone swarm emerges (disease ends)</p>"
+          "description": "<p>A creature afflicted with creeping sprout is treated by the spitting sawfly as if it has the wood trait</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/gmr 1d4 #days]]{1d4 days})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} ([[/gmr 1d4 #days]]{1d4 days});</p>\n<p><strong>Stage 3</strong> @Damage[12d6[acid]] damage, creeping cone swarm emerges (disease ends)</p>"
         },
         "action->Plant Spores": {
           "name": "Plant Spores",
@@ -2150,7 +2159,7 @@
         },
         "action->Splinter Spray": {
           "name": "Splinter Spray",
-          "description": "<p>Splintershank sprays a barrage of splinters and brambles from his body in a @Template[cone|distance:15], dealing @Damage[7d6[piercing]|traits:area-damage] damage (@Check[reflex|dc:24|basic] save). He can't use Splinter Spray again for [[/br 1d4 #Recharge Splinter Spray]]{1d4 rounds}.</p>"
+          "description": "<p>Splintershank sprays a barrage of splinters and brambles from his body in a @Template[cone|distance:15], dealing @Damage[7d6[piercing]|traits:area-damage] damage (@Check[reflex|dc:24|basic] save). He can't use Splinter Spray again for [[/gmr 1d4 #Recharge Splinter Spray]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -2451,7 +2460,7 @@
         },
         "action->Scouring Surge": {
           "name": "Scouring Surge",
-          "description": "<p>Unaasi unleashes the planar energy coursing through their body for a split-second, dealing @Damage[11d6[fire]] damage (@Check[reflex|dc:30|basic] save) to all creatures in their luminant aura. They can't use Scouring Surge again for [[/br 1d4 #Recharge Scouring Surge]]{1d4 rounds}.</p>"
+          "description": "<p>Unaasi unleashes the planar energy coursing through their body for a split-second, dealing @Damage[11d6[fire]] damage (@Check[reflex|dc:30|basic] save) to all creatures in their luminant aura. They can't use Scouring Surge again for [[/gmr 1d4 #Recharge Scouring Surge]]{1d4 rounds}.</p>"
         },
         "action->Signature Spells": {
           "name": "Signature Spells",
@@ -2537,7 +2546,7 @@
         },
         "action->Colossal Echo": {
           "name": "Colossal Echo",
-          "description": "<p><strong>Requirements</strong> The swordkeeper has a central weapon</p>\n<hr />\n<p><strong>Effect</strong> The swordkeeper projects a massive echoblade held in all four hands, dealing @Damage[9d8[force]] damage to all creatures in a @Template[line|distance:30] (@Check[reflex|dc:30|basic] save).</p>\n<p>It can't use Colossal Echo again for [[/br 1d4 #Recharge Colossal Echo]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Requirements</strong> The swordkeeper has a central weapon</p>\n<hr />\n<p><strong>Effect</strong> The swordkeeper projects a massive echoblade held in all four hands, dealing @Damage[9d8[force]] damage to all creatures in a @Template[line|distance:30] (@Check[reflex|dc:30|basic] save).</p>\n<p>It can't use Colossal Echo again for [[/gmr 1d4 #Recharge Colossal Echo]]{1d4 rounds}.</p>"
         },
         "action->Echoblade Flurry": {
           "name": "Echoblade Flurry",
@@ -2697,7 +2706,7 @@
     },
     "Zasir": {
       "name": "Zasir",
-      "blurb": "Weak giant anaconda ",
+      "blurb": "Weak giant anaconda",
       "publicNotes": "<p>The monstrous giant anaconda is a constrictor snake capable of swallowing whole creatures as big as horses—to say nothing of their riders. Although novice bushwhackers watch out for snakes that might drop on them from the jungle canopy above, giant anacondas are most commonly encountered in ponds and rivers, where they feed on prey including manatees and capybaras. This hunting tactic allows anacondas to drown their prey while constricting it, reducing the chance of injuries while hunting. Despite lurid and sensational stories spread by adventurers, these snakes rarely attack humanoids.</p>\n<hr />\n<p>Snakes come in an array of forms, from jungle-dwelling constrictors that wrap around their prey to venomous vipers with deadly bites. Regardless, all snakes consume their prey whole by unhinging their jaws and using powerful muscles to move the food down their throats and into their stomachs.</p>",
       "items": {
         "strike-melee->Jaws": {
@@ -2816,7 +2825,7 @@
         },
         "action->Purge Plaguebearers": {
           "name": "Purge Plaguebearers",
-          "description": "<p>Zibik exudes a cloud of spores in a 30-foot-radius emanation. They cling to all creatures currently afflicted with any disease in the area. Afflicted creatures take @Damage[25d6[void]] damage with a @Check[fortitude|dc:48|basic] save.</p>\n<p>A creature that fails its save becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}. Zibik can choose to exclude any number of creatures in the area from this effect.</p>\n<p>Zibik can't use Purge Plaguebearers again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Zibik exudes a cloud of spores in a 30-foot-radius emanation. They cling to all creatures currently afflicted with any disease in the area. Afflicted creatures take @Damage[25d6[void]] damage with a @Check[fortitude|dc:48|basic] save.</p>\n<p>A creature that fails its save becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}. Zibik can choose to exclude any number of creatures in the area from this effect.</p>\n<p>Zibik can't use Purge Plaguebearers again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Vine Forest": {
           "name": "Vine Forest",

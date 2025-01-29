@@ -408,7 +408,7 @@
             "items": {
                 "action->Pitfall": {
                     "name": "Pitfall",
-                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor</p><hr /><p><strong>Efekt</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]] damage) as well as @Damage[2d6[piercing]] damage from falling on to the knives. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Chwycenie Krawędzi} reaction to avoid falling.</p>"
+                    "description": "<p><strong>Aktywator</strong> A creature walks onto the trapdoor</p><hr /><p><strong>Efekt</strong> The triggering creature falls in and takes falling damage (@Damage[10[bludgeoning]|options:fall-damage] damage) as well as @Damage[2d6[piercing]] damage from falling on to the knives. That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
                 }
             }
         },
@@ -663,9 +663,6 @@
                 "action->Telepathy 100 feet": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
                 },
-                "action->+1 Status to All Saves vs. Magic": {
-                    "name": "+1 Status to All Saves vs. Magic"
-                },
                 "action->Hatred of Red": {
                     "name": "Hatred of Red",
                     "description": "<p>Pairakas hate the color red. They won't wear the color or willingly enter any place painted red. Given a choice, they'll attack a creature wearing red first.</p><p>If barred from expressing their displeasure toward the color by force or some magical effect, they take @Damage[2d6[mental]] damage at the end of their turn.</p>"
@@ -723,7 +720,7 @@
                 },
                 "action->Construct Armor (Hardness 5)": {
                     "name": "Pancerz Konstruktu (Twardość 5)",
-                    "description": "<p>animated rocking horse posiada Twartość, tak jak zwykłe obiekty. Twardość ta zmniejsza wszelkie otrzymane przez niego obrażenia o wartość równą tej Twardości. Kiedy Punkty Żywotności animated rocking horse zostaną zmniejszone do wartości poniżej połowy ich maksimum, lub natychmiastowo przy odniesieniu obrażeń od trafienia krytycznego, jego pancerz konstruktu uszkadza się, a jego klasa pancerza jest zmniejszana do 13.</p>"
+                    "description": "<p>animated rocking horse posiada Twartość, tak jak zwykłe obiekty. Twardość ta zmniejsza wszelkie otrzymane przez niego obrażenia o wartość równą tej Twardości. Kiedy Punkty Żywotności animated rocking horse zostaną zmniejszone do wartości poniżej połowy ich maksimum, lub natychmiastowo przy odniesieniu obrażeń od trafienia krytycznego, jego pancerz konstruktu uszkadza się zmniejszając jego Klasę Pancerza do 13.</p>"
                 },
                 "action->Trample": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Princess Sunset Strides up to double its Speed and can move through the spaces of creatures of size Small or smaller, Trampling each creature whose space it enters. Princess Sunset can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the headbutt Strike, but trampled creatures can attempt a basic Reflex save at @Check[reflex|dc:14|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"

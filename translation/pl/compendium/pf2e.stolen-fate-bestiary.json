@@ -60,11 +60,11 @@
                 },
                 "action->Cold Vulnerability": {
                     "name": "Cold Vulnerability",
-                    "description": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/br 1d4 #rounds]]{1k4 rounds}.</p>"
+                    "description": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for [[/gmr 1d4 #rounds]]{1k4 rounds}.</p>"
                 },
                 "action->Captivating Pollen": {
                     "name": "Captivating Pollen",
-                    "description": "<p>The viper vine releases a @Template[emanation|distance:60] of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a @Check[will|dc:33] save or be captivated.</p><p>The viper vine can't use Captivating Pollen for [[/br 1d4 #Recharge Captivating Pollen]]{1k4 rounds}.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1}.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Zafascynowany}, and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p><p><strong>Krytyczna Porażka</strong> As failure, plus the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 24 hours.</p>"
+                    "description": "<p>The viper vine releases a @Template[emanation|distance:60] of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a @Check[will|dc:33] save or be captivated.</p><p>The viper vine can't use Captivating Pollen for [[/gmr 1d4 #Recharge Captivating Pollen]]{1k4 rounds}.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1}.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Zafascynowany}, and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p><p><strong>Krytyczna Porażka</strong> As failure, plus the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 24 hours.</p>"
                 },
                 "action->Constrict": {
                     "description": "<p>Obrażenia @Damage[(3d8+8)[bludgeoning]], @Check[fortitude|dc:33|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -96,6 +96,9 @@
                 },
                 "spell->Spinning Staff": {
                     "requirements": "You're wielding a staff"
+                },
+                "armor->Chain Shirt": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
                 },
                 "equipment->Material Component Pouch": {
                     "name": "Material Component Pouch",
@@ -312,6 +315,9 @@
                 "weapon->Longsword": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
+                "shield->Steel Shield": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p><table class=\"pf2e remaster\"><thead><tr><th>Twardość</th><th>PŻ</th><th>PU</th></tr></thead><tbody><tr><td>5</td><td>20</td><td>10</td></tr></tbody></table>"
+                },
                 "consumable->Steel-Colored Feather Token (Bird)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.fFq8nsGvSUgzVeND]\nSteel-Colored Feather Token (Bird)"
                 },
@@ -511,7 +517,7 @@
                 },
                 "action->Corrupted Radiant Blast": {
                     "name": "Corrupted Radiant Blast",
-                    "description": "<p>The Demongate Colossus releases a @Template[cone|distance:50] of crimson energy that deals @Damage[4d12[force],4k12[spirit]]{4k12 force damage and 4k12 spirit damage} (@Check[reflex|dc:34|basic] save). The Demongate Colossus can't use Corrupted Radiant Blast again for [[/br 1d4 #Recharge Corrupted Radiant Blast]]{1k4 rounds}.</p>"
+                    "description": "<p>The Demongate Colossus releases a @Template[cone|distance:50] of crimson energy that deals @Damage[4d12[force],4k12[spirit]]{4k12 force damage and 4k12 spirit damage} (@Check[reflex|dc:34|basic] save). The Demongate Colossus can't use Corrupted Radiant Blast again for [[/gmr 1d4 #Recharge Corrupted Radiant Blast]]{1k4 rounds}.</p>"
                 },
                 "action->Corrupted Radiant Blow": {
                     "name": "Corrupted Radiant Blow",
@@ -740,7 +746,7 @@
                 },
                 "action->Snip Thread": {
                     "name": "Snip Thread",
-                    "description": "<p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> The norn produces a golden thread linked to the fate of a creature within 100 feet of her, then snips it short with her shears. The target takes @Damage[100[void]] damage (@Check[fortitude|dc:42|basic] save). If the target is reduced to 0 Hit Points from this damage, the thread is completely severed and the creature dies immediately. A creature slain by Snip Thread can't be restored to life except by @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, or similarly powerful magic; or by divine intervention. Regardless of the outcome of their saving throw, a creature targeted by Snip Thread then becomes temporarily immune for 24 hours. The norn can't use Snip Thread again for [[/br 1d4 #Recharge Snip Thread]]{1k4 rounds}.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> The norn produces a golden thread linked to the fate of a creature within 100 feet of her, then snips it short with her shears. The target takes @Damage[100[void]] damage (@Check[fortitude|dc:42|basic] save). If the target is reduced to 0 Hit Points from this damage, the thread is completely severed and the creature dies immediately. A creature slain by Snip Thread can't be restored to life except by @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, or similarly powerful magic; or by divine intervention. Regardless of the outcome of their saving throw, a creature targeted by Snip Thread then becomes temporarily immune for 24 hours. The norn can't use Snip Thread again for [[/gmr 1d4 #Recharge Snip Thread]]{1k4 rounds}.</p>"
                 },
                 "action->Undo Fate": {
                     "name": "Undo Fate",
@@ -916,7 +922,7 @@
                 },
                 "action->Exhale Chains": {
                     "name": "Exhale Chains",
-                    "description": "<p>The ephialtes exhales a tangle of barbed chains. All creatures in a @Template[cone|distance:50] must attempt a @Check[reflex|dc:37] save. The ephialtes can't Exhale Chains for [[/br 1d4 #Recharge Exhale Chains]]{1k4 rounds}.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> It takes @Damage[8d6[piercing]] damage.</p><p><strong>Porażka</strong> It takes @Damage[15d6[piercing]] damage, @Damage[2d6[persistent,bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} for 1 round.</p><p><strong>Krytyczna Porażka</strong> As failure, but @Damage[30d6[piercing]] damage, @Damage[2d6[persistent,bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} (DC 37).</p>"
+                    "description": "<p>The ephialtes exhales a tangle of barbed chains. All creatures in a @Template[cone|distance:50] must attempt a @Check[reflex|dc:37] save. The ephialtes can't Exhale Chains for [[/gmr 1d4 #Recharge Exhale Chains]]{1k4 rounds}.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected.</p><p><strong>Sukces</strong> It takes @Damage[8d6[piercing]] damage.</p><p><strong>Porażka</strong> It takes @Damage[15d6[piercing]] damage, @Damage[2d6[persistent,bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} for 1 round.</p><p><strong>Krytyczna Porażka</strong> As failure, but @Damage[30d6[piercing]] damage, @Damage[2d6[persistent,bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} (DC 37).</p>"
                 },
                 "action->Focus Gaze": {
                     "name": "Focus Gaze",
@@ -1053,7 +1059,7 @@
                 },
                 "action->Snip Thread": {
                     "name": "Snip Thread",
-                    "description": "<p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> The norn produces a golden thread linked to the fate of a creature within 100 feet of her, then snips it short with her shears. The target takes @Damage[100[void]] damage (@Check[fortitude|dc:42|basic] save). If the target is reduced to 0 Hit Points from this damage, the thread is completely severed and the creature dies immediately. A creature slain by Snip Thread can't be restored to life except by @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, or similarly powerful magic; or by divine intervention. Regardless of the outcome of their saving throw, a creature targeted by Snip Thread then becomes temporarily immune for 24 hours. The norn can't use Snip Thread again for [[/br 1d4 #Recharge Snip Thread]]{1k4 rounds}.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> The norn produces a golden thread linked to the fate of a creature within 100 feet of her, then snips it short with her shears. The target takes @Damage[100[void]] damage (@Check[fortitude|dc:42|basic] save). If the target is reduced to 0 Hit Points from this damage, the thread is completely severed and the creature dies immediately. A creature slain by Snip Thread can't be restored to life except by @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, or similarly powerful magic; or by divine intervention. Regardless of the outcome of their saving throw, a creature targeted by Snip Thread then becomes temporarily immune for 24 hours. The norn can't use Snip Thread again for [[/gmr 1d4 #Recharge Snip Thread]]{1k4 rounds}.</p>"
                 },
                 "action->Undo Fate": {
                     "name": "Undo Fate",
@@ -1217,7 +1223,7 @@
                 },
                 "action->Ferrugon Tetanus": {
                     "name": "Ferrugon Tetanus",
-                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:32]</p><p><strong>Nadejście Objawów</strong> [[/br 1d4 #Days]]{1k4 days}</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} (1 week)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 2} and can't speak (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} (1 dzień)</p><p><strong>Stadium 4</strong> death</p>"
+                    "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:32]</p><p><strong>Nadejście Objawów</strong> [[/gmr 1d4 #Days]]{1k4 days}</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} (1 week)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 2} and can't speak (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} (1 dzień)</p><p><strong>Stadium 4</strong> death</p>"
                 },
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
@@ -1269,7 +1275,7 @@
                 },
                 "action->Cacophonous Roar": {
                     "name": "Cacophonous Roar",
-                    "description": "<p>Gegnir emits a cacophonous roar from all his heads with a mystical power that distorts the listener's mind. Each non-troll creature within 100 feet must attempt a @Check[will|dc:42] save. Gegnir can't use Cacophonous Roar for [[/br 1d4 #Recharge Cacophonous Roar]]{1k4 rounds}.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and is temporarily immune to Cacophonous Roar for 24 hours.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} for 1 round.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round.</p><p><strong>Krytyczna Porażka</strong> The creature is confused for [[/br 1d4 #Rounds]]{1k4 rounds}.</p>"
+                    "description": "<p>Gegnir emits a cacophonous roar from all his heads with a mystical power that distorts the listener's mind. Each non-troll creature within 100 feet must attempt a @Check[will|dc:42] save. Gegnir can't use Cacophonous Roar for [[/gmr 1d4 #Recharge Cacophonous Roar]]{1k4 rounds}.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is unaffected and is temporarily immune to Cacophonous Roar for 24 hours.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} for 1 round.</p><p><strong>Porażka</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round.</p><p><strong>Krytyczna Porażka</strong> The creature is confused for [[/gmr 1d4 #Rounds]]{1k4 rounds}.</p>"
                 },
                 "action->Fast Swallow": {
                     "name": "Fast Swallow",
@@ -1338,7 +1344,7 @@
                 },
                 "action->Abyssal Spew": {
                     "name": "Abyssal Spew",
-                    "description": "<p>The ghalzarokh spews corrosive flame that deals @Damage[8d6[acid],8k6[fire]]{8k6 acid damage and 8k6 fire damage} in a @Template[cone|distance:40] (@Check[reflex|dc:36|basic] save). The ghalzarokh can't use Abyssal Spew again for [[/br 1d4 #Recharge Abyssal Spew]]{1k4 rounds}.</p>"
+                    "description": "<p>The ghalzarokh spews corrosive flame that deals @Damage[8d6[acid],8k6[fire]]{8k6 acid damage and 8k6 fire damage} in a @Template[cone|distance:40] (@Check[reflex|dc:36|basic] save). The ghalzarokh can't use Abyssal Spew again for [[/gmr 1d4 #Recharge Abyssal Spew]]{1k4 rounds}.</p>"
                 },
                 "action->Rend": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p><p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -1359,11 +1365,11 @@
                 },
                 "action->Paralyzing Force": {
                     "name": "Paralyzing Force",
-                    "description": "<p>A creature damaged by the aluum's fist Strike must succeed at a @Check[fortitude|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round. On a critical failure, the creature is paralyzed for [[/br 1d4 #Minutes]]{1k4 minutes} and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
+                    "description": "<p>A creature damaged by the aluum's fist Strike must succeed at a @Check[fortitude|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Sparaliżowany} for 1 round. On a critical failure, the creature is paralyzed for [[/gmr 1d4 #Minutes]]{1k4 minutes} and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony}.</p>"
                 },
                 "action->Soul Shriek": {
                     "name": "Soul Shriek",
-                    "description": "<p>The aluum emits a keening wail in a @Template[cone|distance:15] that deals @Damage[12d6[sonic]] damage (@Check[fortitude|dc:33|basic] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3} on a critical failure. The aluum can't use Soul Shriek again for [[/br 1d4 #Recharge Soul Shriek]]{1k4 rounds}.</p>"
+                    "description": "<p>The aluum emits a keening wail in a @Template[cone|distance:15] that deals @Damage[12d6[sonic]] damage (@Check[fortitude|dc:33|basic] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3} on a critical failure. The aluum can't use Soul Shriek again for [[/gmr 1d4 #Recharge Soul Shriek]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -1503,7 +1509,7 @@
                 },
                 "action->Snip Thread": {
                     "name": "Snip Thread",
-                    "description": "<p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> The norn produces a golden thread linked to the fate of a creature within 100 feet of her, then snips it short with her shears. The target takes @Damage[100[void]] damage (@Check[fortitude|dc:42|basic] save). If the target is reduced to 0 Hit Points from this damage, the thread is completely severed and the creature dies immediately. A creature slain by Snip Thread can't be restored to life except by @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, or similarly powerful magic; or by divine intervention. Regardless of the outcome of their saving throw, a creature targeted by Snip Thread then becomes temporarily immune for 24 hours. The norn can't use Snip Thread again for [[/br 1d4 #Recharge Snip Thread]]{1k4 rounds}.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> three times per day</p><hr /><p><strong>Efekt</strong> The norn produces a golden thread linked to the fate of a creature within 100 feet of her, then snips it short with her shears. The target takes @Damage[100[void]] damage (@Check[fortitude|dc:42|basic] save). If the target is reduced to 0 Hit Points from this damage, the thread is completely severed and the creature dies immediately. A creature slain by Snip Thread can't be restored to life except by @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, or similarly powerful magic; or by divine intervention. Regardless of the outcome of their saving throw, a creature targeted by Snip Thread then becomes temporarily immune for 24 hours. The norn can't use Snip Thread again for [[/gmr 1d4 #Recharge Snip Thread]]{1k4 rounds}.</p>"
                 },
                 "action->Undo Fate": {
                     "name": "Undo Fate",
@@ -1887,7 +1893,7 @@
                 },
                 "action->Rush of Shadows": {
                     "name": "Rush of Shadows",
-                    "description": "<p>Markish releases a jet of shadowy water in a @Template[line|distance:60], dealing @Damage[9d6[bludgeoning]] damage and @Damage[6d6[void]] damage (@Check[reflex|dc:36|basic] save). A creature who critically fails its save is also pushed 10 feet (20 feet on a critical failure) and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} on a critical failure). Markish can't use Rush of Shadows for [[/br 1d4 #Recharge Rush of Shadows]]{1k4 rounds}.</p>"
+                    "description": "<p>Markish releases a jet of shadowy water in a @Template[line|distance:60], dealing @Damage[9d6[bludgeoning]] damage and @Damage[6d6[void]] damage (@Check[reflex|dc:36|basic] save). A creature who critically fails its save is also pushed 10 feet (20 feet on a critical failure) and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 2} on a critical failure). Markish can't use Rush of Shadows for [[/gmr 1d4 #Recharge Rush of Shadows]]{1k4 rounds}.</p>"
                 },
                 "action->Soul Spells": {
                     "name": "Soul Spells",
@@ -1932,7 +1938,7 @@
                 },
                 "action->Shadow Leap": {
                     "name": "Shadow Leap",
-                    "description": "<p>Requirement The bul-gae is in dim light or darkness</p><hr /><p><strong>Efekt</strong> The bul-gae dives into a shadow and reappears from a shadow within 40 feet.</p>"
+                    "description": "<p><strong>Wymagania</strong> The bul-gae is in dim light or darkness</p><hr /><p><strong>Efekt</strong> The bul-gae dives into a shadow and reappears from a shadow within 40 feet.</p>"
                 },
                 "action->Eclipse Aura": {
                     "name": "Eclipse Aura",
@@ -2036,7 +2042,7 @@
                 },
                 "action->Soulfire Breath": {
                     "name": "Soulfire Breath",
-                    "description": "<p>Mogaran exhales ghostly green fire in a @Template[cone|distance:60]. Living creatures in the area take @Damage[18d6[void]] damage (@Check[reflex|dc:38|basic] save). A good creature that fails this save becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 4} on a critical failure). A creature slain by Soulfire Breath can't be resurrected except by powerful magic such as a wish spell. Mogaran can't use Soulfire Breath again for [[/br 1d4 #Recharge Soulfire Breath]]{1k4 rounds}.</p>"
+                    "description": "<p>Mogaran exhales ghostly green fire in a @Template[cone|distance:60]. Living creatures in the area take @Damage[18d6[void]] damage (@Check[reflex|dc:38|basic] save). A good creature that fails this save becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 4} on a critical failure). A creature slain by Soulfire Breath can't be resurrected except by powerful magic such as a wish spell. Mogaran can't use Soulfire Breath again for [[/gmr 1d4 #Recharge Soulfire Breath]]{1k4 rounds}.</p>"
                 },
                 "action->Soulfire Inhalation": {
                     "name": "Soulfire Inhalation",
@@ -2044,7 +2050,7 @@
                 },
                 "action->Stunning Tail": {
                     "name": "Stunning Tail",
-                    "description": "<p>If Mogaran critically hits with his tail Strike, the target must succeed at a @Check[fortitude|dc:38] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony} for 1 round ([[/br 1d4 #Stunned Duration]] rounds on a critical failure).</p>"
+                    "description": "<p>If Mogaran critically hits with his tail Strike, the target must succeed at a @Check[fortitude|dc:38] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony} for 1 round ([[/gmr 1d4 #Stunned Duration]] rounds on a critical failure).</p>"
                 },
                 "action->Trample": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Large or smaller, claw, @Check[reflex|dc:38|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -2145,7 +2151,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>The nornhound unleashes a blast of temporal energy in a @Template[cone|distance:30] that deals @Damage[15d8[mental]] damage (@Check[will|dc:40|basic] save). Creatures that fail their save become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round. The nornhound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
+                    "description": "<p>The nornhound unleashes a blast of temporal energy in a @Template[cone|distance:30] that deals @Damage[15d8[mental]] damage (@Check[will|dc:40|basic] save). Creatures that fail their save become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round. The nornhound can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 },
                 "action->Follow the Thread": {
                     "name": "Follow the Thread",
@@ -2254,7 +2260,7 @@
                 },
                 "action->Trumpet Blast": {
                     "name": "Trumpet Blast",
-                    "description": "<p>The oppali emits a massive blast of discordant noise that deals @Damage[9d8[sonic]] damage to creatures within a @Template[cone|distance:60] (@Check[fortitude|dc:29|basic]). Creatures who fail the save are also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 round. The oppali can't use its Trumpet Blast again for [[/br 1d4 #Recharge Trumpet Blast]]{1k4 rounds} or until it takes at least 20 points of sonic damage from a single source (whichever comes first).</p>"
+                    "description": "<p>The oppali emits a massive blast of discordant noise that deals @Damage[9d8[sonic]] damage to creatures within a @Template[cone|distance:60] (@Check[fortitude|dc:29|basic]). Creatures who fail the save are also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchły} for 1 round. The oppali can't use its Trumpet Blast again for [[/gmr 1d4 #Recharge Trumpet Blast]]{1k4 rounds} or until it takes at least 20 points of sonic damage from a single source (whichever comes first).</p>"
                 }
             }
         },
@@ -2336,7 +2342,7 @@
                 },
                 "action->Dread Cry": {
                     "name": "Dread Cry",
-                    "description": "<p>Queen Kawlinawk utters a screech in a @Template[cone|distance:60] that harms her enemies but heartens her allies. The screech deals @Damage[14d6[sonic]] damage to non-harpy creatures in the area (@Check[fortitude|dc:33|basic]). Harpies in the area can instead use a reaction to Fly, Step, or Stride; one harpy in the area, of Queen Kawlinawk's choice, can instead use a reaction to Strike. Queen Kawlinawk can't use Dread Cry for [[/br 1d4 #Recharge Dread Cry]]{1k4 rounds}.</p>"
+                    "description": "<p>Queen Kawlinawk utters a screech in a @Template[cone|distance:60] that harms her enemies but heartens her allies. The screech deals @Damage[14d6[sonic]] damage to non-harpy creatures in the area (@Check[fortitude|dc:33|basic]). Harpies in the area can instead use a reaction to Fly, Step, or Stride; one harpy in the area, of Queen Kawlinawk's choice, can instead use a reaction to Strike. Queen Kawlinawk can't use Dread Cry for [[/gmr 1d4 #Recharge Dread Cry]]{1k4 rounds}.</p>"
                 },
                 "action->War Formation": {
                     "name": "War Formation",
@@ -2516,7 +2522,7 @@
                 },
                 "action->Harrow Burst": {
                     "name": "Harrow Burst",
-                    "description": "<p>Raven unleashes a mass of magical harrow cards, dealing @Damage[15d8[slashing]] damage in a @Template[emanation|distance:30] (@Check[reflex|dc:42|basic] save). A creature that fails its save rolls 1k6 to determine a suit of cards: 1 = hammers (Strength), 2 = keys (Dexterity), 3 = shields (Constitution), 4 = books (Intelligence), 5 = stars (Wisdom), 6 = crowns (Charisma). The creature takes a –1 status penalty to all checks related to that ability score for 1 round (–2 status penalty on a critical failure). Raven can't use Harrow Burst again for [[/br 1d4 #Recharge Harrow Burst]]{1k4 rounds}.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.eqzDPseLIfWJMxAR]{Efekt: Harrow Burst}</p>"
+                    "description": "<p>Raven unleashes a mass of magical harrow cards, dealing @Damage[15d8[slashing]] damage in a @Template[emanation|distance:30] (@Check[reflex|dc:42|basic] save). A creature that fails its save rolls 1k6 to determine a suit of cards: 1 = hammers (Strength), 2 = keys (Dexterity), 3 = shields (Constitution), 4 = books (Intelligence), 5 = stars (Wisdom), 6 = crowns (Charisma). The creature takes a –1 status penalty to all checks related to that ability score for 1 round (–2 status penalty on a critical failure). Raven can't use Harrow Burst again for [[/gmr 1d4 #Recharge Harrow Burst]]{1k4 rounds}.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.eqzDPseLIfWJMxAR]{Efekt: Harrow Burst}</p>"
                 },
                 "lore->Fortune-Telling Lore": {
                     "name": "Fortune-Telling Lore"
@@ -3325,7 +3331,7 @@
                 },
                 "action->Distressing Joke": {
                     "name": "Distressing Joke",
-                    "description": "<p>The Joke shares a wisecrack with a particularly torturous punchline. All non-harrowkin within 30 feet that hear the joke must attempt a @Check[will|dc:36] save. On a failure, the creature is so upset by the joke that they grow physically ill, becoming @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} on a critical failure) for 1 minute. The Joke can't use Distressing Joke again for [[/br 1d4 #Recharge Distressing Joke]]{1k4 rounds}.</p>"
+                    "description": "<p>The Joke shares a wisecrack with a particularly torturous punchline. All non-harrowkin within 30 feet that hear the joke must attempt a @Check[will|dc:36] save. On a failure, the creature is so upset by the joke that they grow physically ill, becoming @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} on a critical failure) for 1 minute. The Joke can't use Distressing Joke again for [[/gmr 1d4 #Recharge Distressing Joke]]{1k4 rounds}.</p>"
                 },
                 "action->Harrowkin Suit (Books)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Zt1p0dh8ZUXIMxEt]\nHarrowkin Suit (Books)"
@@ -3460,7 +3466,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.w5ZX1R3dPvuLcuRx]\n<p>As black as coal, this blade grows more potent in darkness. While in bright light, it functions as a +1 shortsword and doesn't appear to radiate a magic aura to @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Wykrywanie Magii} or similar spells unless the spells are 4. level or higher.</p><p>In dim light or darkness, the <em>gloom blade</em> becomes a <em>+2 striking shortsword</em>. Whenever you use the <em>gloom blade</em> to attack a creature you're undetected by, you deal 1k6 additional precision damage.</p><p>To upgrade the <em>gloom blade's</em> fundamental runes, start with the base <em>+1 shortsword</em>, but if you improve it beyond a <em>+2 striking shortsword</em>, the runes apply in dim light or darkness as well.</p>"
                 },
                 "equipment->The Cyclone": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.04GSFcLNlw1w2lAY]\n<p><strong>Suit</strong> Hammers (Str)</p><p><strong>Alignment</strong> chaotic evil</p><hr /><p><em>The Cyclone</em> represents tumultuous evil plots. As long as it is invested, <em>The Cyclone</em> bolsters you with helpful winds that grant you a +2 item bonus to Athletics checks made to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinaczka}, @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{Skok Wzwyż}, @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Skok w Dal}, and @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}. This increases to a +3 item bonus if you are at least 17. level.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> wyobrażenie, Interakcja</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.8hKW4mWQyLnkHVta]{Whirlwind}. You do not treat the squares in the whirlwind as difficult terrain, but all other creatures do. The rank of the spell is one-half your level, rounded down (minimum 8. level), and the save DC is your class DC.</p>",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.04GSFcLNlw1w2lAY]\n<p><strong>Suit</strong> Hammers (Str)</p><p><strong>Alignment</strong> chaotic evil</p><hr /><p><em>The Cyclone</em> represents tumultuous evil plots. As long as it is invested, <em>The Cyclone</em> bolsters you with helpful winds that grant you a +2 item bonus to Athletics checks made to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Wspinaczka}, @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{Skok Wzwyż}, @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Skok w Dal}, and @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Rozbrojenie}. This increases to a +3 item bonus if you are at least 17. level.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> wyobrażenie, Interakcja</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.8hKW4mWQyLnkHVta]{Whirlwind}. You do not treat the squares in the whirlwind as difficult terrain, but all other creatures do. The rank of the spell is one-half your level, rounded down (minimum 8. level), and the save DC is your class DC.</p>",
                     "gmNote": "<p><strong>Epitome</strong> When you epitomize <em>The Cyclone</em>, assign it to a point of interest in the mountains. This marks the location of a peak that is constantly assailed by blustery winds. Leering, sinister faces made of roiling vapor constantly form and melt away in these winds, and the feeling of the gusts tugging at clothing and flesh feels eerily like the clutching of long-fingered claws. A perpetual cyclone is visible at the mountain's peak. Nonetheless, any PC who visits this location feels a strong urge to attempt an ascent of the wind-wracked mountain. A PC who wishes to attempt the dangerous climb must spend 8 hours of downtime, then attempt a @Check[athletics|dc:35] check to Climb.</p><hr /><p><strong>Krytyczny Sukces</strong> The PC reaches the mountain's peak! The PC gains the ability to cast a spell as a primal innate spell, choosing from @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly} (once per day), @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind} (Do Woli), @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind} (three times per day), or @UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration} (once per day). In order to choose a spell, the spell's rank must be equal to or less than half the PC's level (rounded up). The spell is automatically heightened to half the PC's level, rounded up, and uses the PC's class DC if needed. A PC can change the innate spell they gain by successfully climbing the mountain again.</p><p><strong>Sukces</strong> The PC makes progress, but hasn't quite reached the peak. The PC becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}. The PC can either abandon the attempt and end their eight hours back at the mountain's base, or they can continue the ascent either by sheltering in place for eight hours or attempting another eight hour activity at a Climb check to reach the peak. Successfully sheltering in place requires a @Check[survival|dc:35] check— success removes the fatigued condition, but failure does not, and also makes the PC @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 1} (or increases the value of a current enfeebled condition by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiony 5}). A character who fails 3 Survival checks when attempting to shelter fails the attempt to ascend the mountain and is forced to retreat to the mountain's base (see Failure, below).</p><p><strong>Porażka</strong> The PC falls, taking @Damage[10d10[bludgeoning]] damage from falls and pummeling wind. The PC is fatigued.</p><p><strong>Krytyczna Porażka</strong> As failure, but the PC also suffers a fall near the end of their descent, taking an additional 50 points of falling damage along the way (@Damage[(10d10+50)[bludgeoning]]).</p>"
                 },
                 "equipment->The Keep": {
@@ -3888,7 +3894,7 @@
                 },
                 "action->Abyssal Spew": {
                     "name": "Abyssal Spew",
-                    "description": "<p>The ghalzarokh spews corrosive flame that deals @Damage[8d6[acid],8k6[fire]]{8k6 acid damage and 8k6 fire damage} in a @Template[cone|distance:40] (@Check[reflex|dc:36|basic] save). The ghalzarokh can't use Abyssal Spew again for [[/br 1d4 #Recharge Abyssal Spew]]{1k4 rounds}.</p>"
+                    "description": "<p>The ghalzarokh spews corrosive flame that deals @Damage[8d6[acid],8k6[fire]]{8k6 acid damage and 8k6 fire damage} in a @Template[cone|distance:40] (@Check[reflex|dc:36|basic] save). The ghalzarokh can't use Abyssal Spew again for [[/gmr 1d4 #Recharge Abyssal Spew]]{1k4 rounds}.</p>"
                 },
                 "action->Rend": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p><p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -4017,7 +4023,8 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]\nGlitterdust"
                 },
                 "spell->Touch of Idiocy": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy",
+                    "target": "1 living creature"
                 },
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
@@ -4087,7 +4094,8 @@
                     "target": "1 Large or smaller creature"
                 },
                 "spell->Touch of Idiocy": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]\nTouch of Idiocy",
+                    "target": "1 living creature"
                 },
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
@@ -4182,7 +4190,7 @@
                     "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><p><strong>Aktywator</strong> A @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Grad Magii} is fired at Usilket, and they are aware of it and have a free hand</p><hr /><p><strong>Efekt</strong> Usilket \"catches\" the missile, absorbing it and causing that hand to glow while it holds this energy. A hand that's holding energy can only be used for @UUID[Compendium.pf2e.spells-srd.Item.Hu38hoAUSYeFpkVa]{Force Bolt}. The energy lasts for 6 rounds or until it is released.</p>"
                 },
                 "action->Flurry of Blows": {
-                    "name": "Flurry of Blows",
+                    "name": "Grad Ciosów",
                     "description": "<p>Usilket makes two Strikes with their fist or with a monk weapon. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>"
                 },
                 "action->Force Bolt": {
@@ -4262,7 +4270,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>Vehanezhad breathes a flurry of piercing crystals that deals @Damage[19d6[piercing]] damage in a @Template[cone|distance:60] (@Check[reflex|dc:40|basic] save). A creature who takes damage from this breath weapon is exposed to crystal corruption. Vehanezhad can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
+                    "description": "<p>Vehanezhad breathes a flurry of piercing crystals that deals @Damage[19d6[piercing]] damage in a @Template[cone|distance:60] (@Check[reflex|dc:40|basic] save). A creature who takes damage from this breath weapon is exposed to crystal corruption. Vehanezhad can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 },
                 "action->Crystal Corruption": {
                     "name": "Crystal Corruption",
@@ -4459,7 +4467,7 @@
                 },
                 "action->Spores of Wrath": {
                     "name": "Spores of Wrath",
-                    "description": "<p>5 feet. Non-demons that start their turn in the aura take @Damage[4d8[poison]] damage. Each creature damaged this way must succeed at a @Check[fortitude|dc:34] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/br 1d4 #days]]{1k4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if holy water is applied to the vines (with an Interact action).</p>"
+                    "description": "<p>5 feet. Non-demons that start their turn in the aura take @Damage[4d8[poison]] damage. Each creature damaged this way must succeed at a @Check[fortitude|dc:34] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/gmr 1d4 #days]]{1k4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if holy water is applied to the vines (with an Interact action).</p>"
                 },
                 "action->Beaks, Claws, and Talons": {
                     "name": "Beaks, Claws, and Talons",

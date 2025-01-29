@@ -105,4 +105,5 @@ en_to_pl_file_pairs = [
     ("compendium/pathfinder-society-boons", "compendium/pf2e.pathfinder-society-boons"),
     ("compendium/triumph-of-the-tusk-bestiary", "compendium/pf2e.triumph-of-the-tusk-bestiary"),
     ("compendium/war-of-immortals-bestiary", "compendium/pf2e.war-of-immortals-bestiary"),
+    ("compendium/spore-war-bestiary", "compendium/pf2e.spore-war-bestiary"),
 ]

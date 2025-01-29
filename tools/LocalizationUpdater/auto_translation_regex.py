@@ -225,6 +225,7 @@ glyph_action_translations = {
     'void': 'pustka',
     'prediction': 'przewidywanie',
     'incapacitation': 'obezwładnienie',
+    'death': 'śmierć',
 }
 
 no_glyph_action_translations = {

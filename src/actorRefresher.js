@@ -36,19 +36,13 @@ async function refreshActor(actorId)
             return;
         }
 
-        if(!game.actors.get(actor.id))
-        {
-            ui.notifications.error(`Aktor nie może być zaktualizowany, ponieważ nie istnieje.`);
-            return;
-        }
-
         const sourceId = actor._source._stats?.compendiumSource;
         if (!sourceId)
         {
             ui.notifications.error(`Aktor nie pochodzi z kompendium.`);
             return;
         }
-
+        
         const [, systemName, compendiumName, , entryId] = sourceId.split(".");
         const pack = game.packs.get(`${systemName}.${compendiumName}`);
         

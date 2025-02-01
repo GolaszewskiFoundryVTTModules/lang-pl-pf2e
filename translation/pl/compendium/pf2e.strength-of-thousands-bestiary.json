@@ -488,7 +488,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>The Aspect of Hunger breathes a blast of hunger in a @Template[cone|distance:60] that deals @Damage[18d6[mental]] damage to all creatures in the area (@Check[reflex|dc:41|basic] save).</p><p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
+                    "description": "<p>The Aspect of Hunger breathes a blast of hunger in a @Template[cone|distance:60] that deals @Damage[18d6[mental]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:41|basic|options:area-effect] save).</p><p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 },
                 "action->Essence of Hunger": {
                     "name": "Essence of Hunger",
@@ -623,7 +623,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>The Aspect of Insects breathes a blast of energy from one of its three heads; each creature in the area must attempt a basic Reflex save.</p><p>The Aspect of Insects can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p><ul><li><strong>Acid Maw</strong> (acid) @Template[line|distance:60|width:10]{10-Foot-Wide, 60-Foot Line} of acid dealing @Damage[16d8[acid]] damage (@Check[reflex|dc:42|basic|traits:acid] save).</li><li><strong>Flame Maw</strong> (fire) @Template[cone|distance:60] of fire dealing @Damage[16d8[fire]] damage (@Check[reflex|dc:42|basic|traits:fire] save).</li><li><strong>Shock Maw</strong> (electricity) @Template[line|distance:120] of electricity dealing @Damage[16d8[electricity]] damage (@Check[reflex|dc:42|basic|traits:electricity] save).</li></ul>"
+                    "description": "<p>The Aspect of Insects breathes a blast of energy from one of its three heads; each creature in the area must attempt a basic Reflex save.</p><p>The Aspect of Insects can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p><ul><li><strong>Acid Maw</strong> (acid) @Template[line|distance:60|width:10]{10-Foot-Wide, 60-Foot Line} of acid dealing @Damage[16d8[acid]|options:area-damage] damage (@Check[reflex|dc:42|basic|traits:acid|options:area-effect] save).</li><li><strong>Flame Maw</strong> (fire) @Template[cone|distance:60] of fire dealing @Damage[16d8[fire]|options:area-damage] damage (@Check[reflex|dc:42|basic|traits:fire|options:area-effect] save).</li><li><strong>Shock Maw</strong> (electricity) @Template[line|distance:120] of electricity dealing @Damage[16d8[electricity]|options:area-damage] damage (@Check[reflex|dc:42|basic|traits:electricity|options:area-effect] save).</li></ul>"
                 },
                 "action->Pull Apart": {
                     "name": "Pull Apart",
@@ -1057,7 +1057,7 @@
                 },
                 "action->Wind-Up": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.xS8ybzuqPSi3Jb8k]\nWind-Up",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.xS8ybzuqPSi3Jb8k]\n<p>1 week @Check[thievery|dc:40|traits:action:disable-a-device]</p><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p><p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a –2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p><p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.xS8ybzuqPSi3Jb8k]\n<p>1 week [[/act disable-device dc=40]]{DC 40 Thievery}</p><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p><p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a –2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p><p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
                 },
                 "action->Doleful Tolling": {
                     "name": "Doleful Tolling",
@@ -2278,7 +2278,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>The grave karina breathes a cloud of burning ash in @Template[cone|distance:30] that deals @Damage[9d8[fire]] damage (@Check[reflex|dc:30|basic] save). The area becomes filled with ash for 1 round. All creatures within the cloud of ash become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}, and all creatures outside the cloud become concealed to creatures within it. The grave karina can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
+                    "description": "<p>The grave karina breathes a cloud of burning ash in @Template[cone|distance:30] that deals @Damage[9d8[fire]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect] save). The area becomes filled with ash for 1 round. All creatures within the cloud of ash become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}, and all creatures outside the cloud become concealed to creatures within it. The grave karina can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 },
                 "action->Grave Blight": {
                     "name": "Grave Blight",
@@ -2710,7 +2710,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>The i'iko dragon breathes a spray of jagged glass shards that deals @Damage[7d6[piercing]] damage in a @Template[cone|distance:15] (@Check[reflex|dc:24|basic] save). They can't use Breath Weapon again for [[/gmr 1d4 #round]]{1k4 rounds}.</p>"
+                    "description": "<p>The i'iko dragon breathes a spray of jagged glass shards that deals @Damage[7d6[piercing]|options:area-damage] damage in a @Template[cone|distance:15] (@Check[reflex|dc:24|basic|options:area-effect] save). They can't use Breath Weapon again for [[/gmr 1d4 #round]]{1k4 rounds}.</p>"
                 },
                 "action->Cunning Capsize": {
                     "name": "Cunning Capsize",
@@ -2876,7 +2876,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>Ixamè breathes a cloud of poison like that emitted from Terwa Lake that deals @Damage[11d6[poison]] damage in a @Template[cone|distance:40] (@Check[reflex|dc:29|basic] save).</p><p>She can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
+                    "description": "<p>Ixamè breathes a cloud of poison like that emitted from Terwa Lake that deals @Damage[11d6[poison]|options:area-damage] damage in a @Template[cone|distance:40] (@Check[reflex|dc:29|basic|options:area-effect] save).</p><p>She can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 },
                 "action->Cloud Walk": {
                     "name": "Cloud Walk",
@@ -4711,7 +4711,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p>Sparkeater breathes a torrent of void energy that deals @Damage[16d6[void]] damage in a @Template[cone|distance:40] (@Check[reflex|dc:34|basic] save).</p><p>He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
+                    "description": "<p>Sparkeater breathes a torrent of void energy that deals @Damage[16d6[void]|options:area-damage] damage in a @Template[cone|distance:40] (@Check[reflex|dc:34|basic|options:area-effect] save).</p><p>He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1k4 rounds}.</p>"
                 }
             }
         },
@@ -5661,7 +5661,8 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
                 },
                 "weapon->+3 Major Striking Staff of Nature's Vengeance (Major)": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.hnx3dOQrYLBtsu3V]\n+3 Major Striking Staff of Nature's Vengeance (Potężny)"
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.hnx3dOQrYLBtsu3V]\n+3 Major Striking Staff of Nature's Vengeance (Potężny)",
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.hnx3dOQrYLBtsu3V]\n<p>This stout staff is made from gnarled hawthorn. When used as a weapon, a staff of nature's vengeance permanently has the effects of @UUID[Compendium.pf2e.spells-srd.Item.s3abwDbTV43pGFFW]{Shillelagh}</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><hr /><p><strong>Efekt</strong> You expend a number of charges from the staff to cast a spell from its list.</p><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p><ul><li><strong>Sztuczka</strong> @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]{Tangle Vine}</li><li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}, @UUID[Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw]{Spider Sting}</li><li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}, @UUID[Compendium.pf2e.spells-srd.Item.cB17yFc9456Pyfec]{Vomit Swarm}</li><li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}, @UUID[Compendium.pf2e.spells-srd.Item.KsWhliKfUs3IpW3c]{Wall of Thorns}</li><li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.VuPDHoVEPLbMfCJC]{Bestial Curse}, @UUID[Compendium.pf2e.spells-srd.Item.3xD8DYrr8YDVYGg7]{Spike Stones}</li><li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.MlpbeZ61Euhl0d60]{Toxic Cloud}, @UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]{Control Water}</li><li><strong>6th</strong> @UUID[Compendium.pf2e.spells-srd.Item.ayRXv0wQH00TTNZe]{Purple Worm Sting}, @UUID[Compendium.pf2e.spells-srd.Item.JbAcSLu62TU1OgNF]{Tangling Creepers}</li><li><strong>7th</strong> @UUID[Compendium.pf2e.spells-srd.Item.a3aQxCpoj1q1NQxC]{Sunburst}, @UUID[Compendium.pf2e.spells-srd.Item.O7ZEqWjwdKyo2CUv]{Volcanic Eruption}</li><li><strong>8th</strong> @UUID[Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu]{Earthquake}, @UUID[Compendium.pf2e.spells-srd.Item.wi405lBjPcbF1DeR]{Punishing Winds}</li></ul>"
                 },
                 "strike-melee->Staff": {
                     "name": "Kostur"

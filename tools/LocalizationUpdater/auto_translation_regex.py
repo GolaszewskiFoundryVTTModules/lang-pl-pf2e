@@ -120,6 +120,7 @@ effect_patterns = [
     (r'Spell Effect:', r'Efekt Zaklęcia:'),
     (r'Crit Effect:', r'Efekt Krytyczny:'),
     (r'Effect:', r'Efekt:'),
+    (r'Stance:', r'Postawa:'),
     (r'>Maximum Duration<', r'>Maksymalny Czas Trwania<'),
 ]
 

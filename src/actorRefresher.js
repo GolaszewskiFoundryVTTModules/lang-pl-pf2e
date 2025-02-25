@@ -11,7 +11,6 @@ async function injectHeaderTranslationButtonActor(sheet, buttons)
     const refreshButton = {
         class: 'refresh-actor',
         icon: 'fas fa-sync',
-        label: "Odśwież aktora",
         onclick: () => refreshActor(sheet.actor.id),
     };
 

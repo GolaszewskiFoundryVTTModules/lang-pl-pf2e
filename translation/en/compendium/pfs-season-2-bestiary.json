@@ -275,12 +275,7 @@
         },
         "action->Hunt Prey": {
           "name": "Hunt Prey",
-          "description": "<p>The ash archer designates a single creature they can see and hear, or one they're Tracking, as their prey. The archer gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the archer hits the designated prey in a round, they deal an additional 1d8 precision damage. The archer also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the archer uses Hunt Prey again.</p>",
-          "rules": {
-            "4": {
-              "label": "First attack on hunted prey this round"
-            }
-          }
+          "description": "<p>The ash archer designates a single creature they can see and hear, or one they're Tracking, as their prey. The archer gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the archer hits the designated prey in a round, they deal an additional 1d8 precision damage. The archer also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the archer uses Hunt Prey again.</p>"
         }
       }
     },
@@ -373,12 +368,7 @@
         },
         "action->Precision Edge": {
           "name": "Precision Edge",
-          "description": "<p>The first time the Aspis veteran guard hits their hunted prey in a round, they deal an additional 1d8 precision damage.</p>",
-          "rules": {
-            "0": {
-              "label": "First attack on hunted prey this round"
-            }
-          }
+          "description": "<p>The first time the Aspis veteran guard hits their hunted prey in a round, they deal an additional 1d8 precision damage.</p>"
         }
       }
     },
@@ -508,7 +498,8 @@
         },
         "action->Blood Frenzy": {
           "name": "Blood Frenzy",
-          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "selfEffect": "Effect: Blood Frenzy"
         },
         "action->Bloodletting": {
           "name": "Bloodletting",
@@ -555,7 +546,8 @@
         },
         "action->Blood Frenzy": {
           "name": "Blood Frenzy",
-          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "selfEffect": "Effect: Blood Frenzy"
         },
         "action->Bloodletting": {
           "name": "Bloodletting",
@@ -4603,7 +4595,8 @@
         },
         "action->Blood Frenzy": {
           "name": "Blood Frenzy",
-          "description": "<p><strong>Requirements</strong> The bunyip is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy.</p>\n<p><strong>Trigger</strong> The bunyip deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a -2 penalty to AC.</p>"
+          "description": "<p><strong>Requirements</strong> The bunyip is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy.</p>\n<p><strong>Trigger</strong> The bunyip deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a -2 penalty to AC.</p>",
+          "selfEffect": "Effect: Blood Frenzy"
         },
         "action->Roar": {
           "name": "Roar",
@@ -4736,12 +4729,7 @@
           "name": "Composite Shortbow"
         },
         "action->Hunt Prey": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]\n<p>The Scorched Earth scout designates a single creature they can see and hear, or one they're Tracking, as their prey. The Scorched Earth scout gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the Scorched Earth scout hits the designated prey in a round, they deal an additional 1d8 precision damage. The Scorched Earth scout also ignores the penalty for making ranged attacks within their second range increment. These effects last until the Scorched Earth scout uses Hunt Prey again.</p>",
-          "rules": {
-            "3": {
-              "label": "First attack on hunted prey this round"
-            }
-          }
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]\n<p>The Scorched Earth scout designates a single creature they can see and hear, or one they're Tracking, as their prey. The Scorched Earth scout gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the Scorched Earth scout hits the designated prey in a round, they deal an additional 1d8 precision damage. The Scorched Earth scout also ignores the penalty for making ranged attacks within their second range increment. These effects last until the Scorched Earth scout uses Hunt Prey again.</p>"
         }
       }
     },
@@ -4756,12 +4744,7 @@
           "name": "Composite Shortbow"
         },
         "action->Hunt Prey": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]\n<p>The Scorched Earth scout designates a single creature they can see and hear, or one they're Tracking, as their prey. The Scorched Earth scout gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the Scorched Earth scout hits the designated prey in a round, they deal an additional 1d8 precision damage. The Scorched Earth scout also ignores the penalty for making ranged attacks within their second range increment. These effects last until the Scorched Earth scout uses Hunt Prey again.</p>",
-          "rules": {
-            "3": {
-              "label": "First attack on hunted prey this round"
-            }
-          }
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]\n<p>The Scorched Earth scout designates a single creature they can see and hear, or one they're Tracking, as their prey. The Scorched Earth scout gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the Scorched Earth scout hits the designated prey in a round, they deal an additional 1d8 precision damage. The Scorched Earth scout also ignores the penalty for making ranged attacks within their second range increment. These effects last until the Scorched Earth scout uses Hunt Prey again.</p>"
         }
       }
     },
@@ -4846,7 +4829,8 @@
         },
         "action->Blood Frenzy": {
           "name": "Blood Frenzy",
-          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "selfEffect": "Effect: Blood Frenzy"
         },
         "action->Bloodletting": {
           "name": "Bloodletting",
@@ -5713,7 +5697,8 @@
         },
         "action->Blood Frenzy": {
           "name": "Blood Frenzy",
-          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "selfEffect": "Effect: Blood Frenzy"
         },
         "action->Bloodletting": {
           "name": "Bloodletting",
@@ -5769,7 +5754,8 @@
         },
         "action->Blood Frenzy": {
           "name": "Blood Frenzy",
-          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p><strong>Requirements</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "selfEffect": "Effect: Blood Frenzy"
         },
         "action->Bloodletting": {
           "name": "Bloodletting",

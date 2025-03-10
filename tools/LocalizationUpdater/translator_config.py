@@ -106,4 +106,5 @@ en_to_pl_file_pairs = [
     ("compendium/triumph-of-the-tusk-bestiary", "compendium/pf2e.triumph-of-the-tusk-bestiary"),
     ("compendium/war-of-immortals-bestiary", "compendium/pf2e.war-of-immortals-bestiary"),
     ("compendium/spore-war-bestiary", "compendium/pf2e.spore-war-bestiary"),
+    ("compendium/pathfinder-npc-core", "compendium/pf2e.pathfinder-npc-core"),
 ]

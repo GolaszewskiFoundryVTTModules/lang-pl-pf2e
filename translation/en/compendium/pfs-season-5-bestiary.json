@@ -205,6 +205,9 @@
       "speed": "troop movement",
       "tokenName": "Mercenary Squad",
       "items": {
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
+        },
         "action->Fire Crossbows!": {
           "name": "Fire Crossbows!",
           "description": "<p>The mercenary squad members draw or reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a @Template[burst|distance:10] within 80 feet that deals @Damage[2d8[piercing]] damage (@Check[reflex|dc:18|basic] save). When the mercenary squad is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
@@ -442,7 +445,8 @@
         },
         "action->Elemental Aura": {
           "name": "Elemental Aura",
-          "description": "<p>Asper surrounds herself with the power of one of the elements under her control (air, fire, or water). If air, she gains resistance 10 to electricity damage and doubles her speed. If fire, she gains resistance 10 to fire damage. Any creature within 30 feet of her who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage. If water, she gains resistance 10 to cold damage and fast healing 20. This aura persists until she is knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, she dismisses the aura, or she releases it via Elemental Burst.</p>"
+          "description": "<p>Asper surrounds herself with the power of one of the elements under her control (air, fire, or water). If air, she gains resistance 10 to electricity damage and doubles her speed. If fire, she gains resistance 10 to fire damage. Any creature within 30 feet of her who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage. If water, she gains resistance 10 to cold damage and fast healing 20. This aura persists until she is knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, she dismisses the aura, or she releases it via Elemental Burst.</p>",
+          "selfEffect": "Effect: Asper's Elemental Aura"
         },
         "action->Elemental Burst": {
           "name": "Elemental Burst",
@@ -477,7 +481,8 @@
         },
         "action->Elemental Aura": {
           "name": "Elemental Aura",
-          "description": "<p>Asper surrounds herself with the power of one of the elements under her control (air, fire, or water). If air, she gains resistance 10 to electricity damage and doubles her speed. If fire, she gains resistance 10 to fire damage. Any creature within 30 feet of her who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage. If water, she gains resistance 10 to cold damage and fast healing 20. This aura persists until she is knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, she dismisses the aura, or she releases it via Elemental Burst.</p>"
+          "description": "<p>Asper surrounds herself with the power of one of the elements under her control (air, fire, or water). If air, she gains resistance 10 to electricity damage and doubles her speed. If fire, she gains resistance 10 to fire damage. Any creature within 30 feet of her who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage. If water, she gains resistance 10 to cold damage and fast healing 20. This aura persists until she is knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, she dismisses the aura, or she releases it via Elemental Burst.</p>",
+          "selfEffect": "Effect: Asper's Elemental Aura"
         },
         "action->Elemental Burst": {
           "name": "Elemental Burst",
@@ -489,7 +494,7 @@
       "name": "Assassins' Guild Grenadier",
       "items": {
         "weapon->Frost Vial (Moderate)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Effect: Frost Vial (Moderate)}</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
         },
         "strike-melee->Dagger": {
           "name": "Dagger"
@@ -1300,7 +1305,8 @@
         },
         "action->Grasping Tendrils": {
           "name": "Grasping Tendrils",
-          "description": "<p>The busoborn akata presses one of its tentacle vines to the ground and causes it to spread beneath creatures in a @Template[cone|distance:15] in front of it. Until the end of its next turn, the area is difficult terrain to enemy creatures, and the akata gains a +2 circumstance bonus to attack rolls against targets within that area</p>\n<hr />\n<p><strong>Special</strong> The akata can only use this ability if it has no more than one creature grappled.</p>"
+          "description": "<p>The busoborn akata presses one of its tentacle vines to the ground and causes it to spread beneath creatures in a @Template[cone|distance:15] in front of it. Until the end of its next turn, the area is difficult terrain to enemy creatures, and the akata gains a +2 circumstance bonus to attack rolls against targets within that area</p>\n<hr />\n<p><strong>Special</strong> The akata can only use this ability if it has no more than one creature grappled.</p>",
+          "selfEffect": "Effect: Grasping Tendrils"
         },
         "action->Pack Attack": {
           "name": "Pack Attack",
@@ -1433,7 +1439,8 @@
         },
         "action->Demon-Touched Weapon": {
           "name": "Demon-Touched Weapon",
-          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> Shenga's most recent action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> Until the end of her next turn, Shenga deals 1d6+2 bleed damage with her melee Strikes.</p>"
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> Shenga's most recent action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> Until the end of her next turn, Shenga deals 1d6+2 bleed damage with her melee Strikes.</p>",
+          "selfEffect": "Effect: Demon-Touched Weapon"
         },
         "action->Reach Spell": {
           "name": "Reach Spell",
@@ -3438,6 +3445,9 @@
       "hpDetails": "Thresholds 20 (12 squares), 10 (8 squares)",
       "speed": "troop movement",
       "items": {
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
+        },
         "action->Fire Crossbows!": {
           "name": "Fire Crossbows!",
           "description": "<p>The mercenary squad members draw or reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a @Template[burst|distance:10] within 80 feet that deals @Damage[2d6[piercing]] damage (@Check[reflex|dc:15|basic] save). When the mercenary squad is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
@@ -3603,7 +3613,8 @@
         },
         "action->Breach the Abyss": {
           "name": "Breach the Abyss",
-          "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> The demonologist siphons energy drawn from the Abyss into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 void</li>\n</ul>"
+          "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> The demonologist siphons energy drawn from the Abyss into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 void</li>\n</ul>",
+          "selfEffect": "Effect: Breach the Abyss"
         },
         "action->Demon Summoning": {
           "name": "Demon Summoning",
@@ -4164,7 +4175,8 @@
         },
         "action->Demon-Touched Weapon": {
           "name": "Demon-Touched Weapon",
-          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> Shenga's most recent action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> Until the end of her next turn, Shenga deals 1d6 bleed damage with her melee Strikes.</p>"
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> Shenga's most recent action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> Until the end of her next turn, Shenga deals 1d6 bleed damage with her melee Strikes.</p>",
+          "selfEffect": "Effect: Demon-Touched Weapon"
         },
         "action->Reach Spell": {
           "name": "Reach Spell",
@@ -4233,7 +4245,8 @@
         },
         "action->Grasping Tendrils": {
           "name": "Grasping Tendrils",
-          "description": "<p>The busoborn akata presses one of its tentacle vines to the ground and causes it to spread beneath creatures in a @Template[cone|distance:15] in front of it. Until the end of its next turn, the area is difficult terrain to enemy creatures, and the akata gains a +2 circumstance bonus to attack rolls against targets within that area</p>\n<hr />\n<p><strong>Special</strong> The akata can only use this ability if it has no more than one creature grappled.</p>"
+          "description": "<p>The busoborn akata presses one of its tentacle vines to the ground and causes it to spread beneath creatures in a @Template[cone|distance:15] in front of it. Until the end of its next turn, the area is difficult terrain to enemy creatures, and the akata gains a +2 circumstance bonus to attack rolls against targets within that area</p>\n<hr />\n<p><strong>Special</strong> The akata can only use this ability if it has no more than one creature grappled.</p>",
+          "selfEffect": "Effect: Grasping Tendrils"
         },
         "action->Pack Attack": {
           "name": "Pack Attack",
@@ -4432,7 +4445,8 @@
         },
         "action->Nature's Infusion": {
           "name": "Nature's Infusion",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> While surrounded by any field or fertile plain, a blodeuwedd can infuse themself with borrowed life energy from nearby plants and nutrients in the ground. The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> While surrounded by any field or fertile plain, a blodeuwedd can infuse themself with borrowed life energy from nearby plants and nutrients in the ground. The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.</p>",
+          "selfEffect": "Effect: Nature's Infusion"
         }
       }
     },
@@ -4610,7 +4624,8 @@
         },
         "action->Breach the Abyss": {
           "name": "Breach the Abyss",
-          "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> The demonologist siphons energy drawn from the Abyss into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 void</li>\n</ul>"
+          "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> The demonologist siphons energy drawn from the Abyss into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 void</li>\n</ul>",
+          "selfEffect": "Effect: Breach the Abyss"
         },
         "action->Demon Summoning": {
           "name": "Demon Summoning",
@@ -4961,7 +4976,8 @@
         },
         "action->Unleash Psyche": {
           "name": "Unleash Psyche",
-          "description": "<p><strong>Trigger</strong> Tisbah's starts her turn with half or less Hit Points remaining</p>\n<hr />\n<p><strong>Effect</strong> Tisbah is surrounded by a swirl of psychic energy that effortlessly moves small objects around her, gaining a +2 status bonus to damage when casting telekinetic projectile or telekinetic rend. This effect remains for 2 rounds or until Tisbah is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first.</p>"
+          "description": "<p><strong>Trigger</strong> Tisbah's starts her turn with half or less Hit Points remaining</p>\n<hr />\n<p><strong>Effect</strong> Tisbah is surrounded by a swirl of psychic energy that effortlessly moves small objects around her, gaining a +2 status bonus to damage when casting telekinetic projectile or telekinetic rend. This effect remains for 2 rounds or until Tisbah is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first.</p>",
+          "selfEffect": "Effect: Unleash Psyche"
         },
         "action->Vishkanyan Venom": {
           "name": "Vishkanyan Venom",
@@ -5006,7 +5022,8 @@
         },
         "action->Unleash Psyche": {
           "name": "Unleash Psyche",
-          "description": "<p><strong>Trigger</strong> Tisbah's starts her turn with half or less Hit Points remaining</p>\n<hr />\n<p><strong>Effect</strong> Tisbah is surrounded by a swirl of psychic energy that effortlessly moves small objects around her. She deals @Damage[2d6[force]] damage to all creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:21] save) and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. She gains a +4 status bonus to damage when casting telekinetic projectile or telekinetic rend. This effect remains for 2 rounds or until Tisbah is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first.</p>"
+          "description": "<p><strong>Trigger</strong> Tisbah's starts her turn with half or less Hit Points remaining</p>\n<hr />\n<p><strong>Effect</strong> Tisbah is surrounded by a swirl of psychic energy that effortlessly moves small objects around her. She deals @Damage[2d6[force]] damage to all creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:21] save) and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. She gains a +4 status bonus to damage when casting telekinetic projectile or telekinetic rend. This effect remains for 2 rounds or until Tisbah is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first.</p>",
+          "selfEffect": "Effect: Unleash Psyche"
         },
         "action->Vishkanyan Venom": {
           "name": "Vishkanyan Venom",

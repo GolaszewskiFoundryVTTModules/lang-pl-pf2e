@@ -70,9 +70,13 @@
                     "name": "Stampede",
                     "description": "<p><strong>Aktywator</strong> The aurochs herd's Hit Points drops below a threshold</p><hr /><p><strong>Efekt</strong> The aurochs herd uses Trample but moves in a direction directly opposite of the threat; the DC increases to @Check[reflex|dc:27|basic] and the bludgeoning damage increases to @Damage[(4d6+6)[bludgeoning]] (@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Powalony} creatures take @Damage[(5d6+6)[bludgeoning]] damage instead).</p>"
                 },
+                "action->Troop Defenses": {
+                    "name": "Troop Defenses"
+                },
                 "action->Circle of Horns": {
                     "name": "Circle of Horns",
-                    "description": "<p>The largest males in the herd form a ring of protection around the more vulnerable members. The herd gains a +2 circumstance bonus to AC until the start of its next turn.</p>"
+                    "description": "<p>The largest males in the herd form a ring of protection around the more vulnerable members. The herd gains a +2 circumstance bonus to AC until the start of its next turn.</p>",
+                    "selfEffect": "Efekt: Circle of Horns"
                 },
                 "action->Horn": {
                     "name": "Horn",
@@ -406,7 +410,8 @@
                 },
                 "action->Destructive Vengeance": {
                     "name": "Destructive Vengeance",
-                    "description": "<p><strong>Aktywator</strong> The champion of Zagresh is injured by an enemy within 15 feet</p><hr /><p><strong>Efekt</strong> The champion of Zagresh increases the amount of damage he takes by @Damage[2d6[untyped]] and deals @Damage[2d6[void]] damage to the triggering enemy. In addition, the champion deals 2 extra void damage with their Strikes against the triggering creature until the end of his next turn.</p>"
+                    "description": "<p><strong>Aktywator</strong> The champion of Zagresh is injured by an enemy within 15 feet</p><hr /><p><strong>Efekt</strong> The champion of Zagresh increases the amount of damage he takes by @Damage[2d6[untyped]] and deals @Damage[2d6[void]] damage to the triggering enemy. In addition, the champion deals 2 extra void damage with their Strikes against the triggering creature until the end of his next turn.</p>",
+                    "selfEffect": "Efekt: Destructive Vengeance"
                 },
                 "action->Fit of Rage": {
                     "name": "Fit of Rage",
@@ -545,7 +550,8 @@
                 },
                 "action->Lunar Blaze": {
                     "name": "Lunar Blaze",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Diskah calls out to the moon and is wreathed in fiery white moonlight for 1 minute. While this ability is active, Diskah is immune to fire damage and her melee Strikes deal an additional 1k6 persistent fire damage. Any creature that hits her with a melee attack or otherwise touches her takes @Damage[1d8[fire]] damage.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> Diskah calls out to the moon and is wreathed in fiery white moonlight for 1 minute. While this ability is active, Diskah is immune to fire damage and her melee Strikes deal an additional 1k6 persistent fire damage. Any creature that hits her with a melee attack or otherwise touches her takes @Damage[1d8[fire]] damage.</p>",
+                    "selfEffect": "Efekt: Lunar Blaze"
                 },
                 "action->Spirit's Blessing": {
                     "name": "Spirit's Blessing",
@@ -577,7 +583,8 @@
                 },
                 "action->Wallow": {
                     "name": "Wallow",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The war pig rapidly rolls over. If it has a rider, the war pig @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]{Bucks} as a free action. The war pig gains 1k8 temporary Hit Points for 1 minute and can then attempt an immediate flat check to recover from a single source of persistent acid, fire, or mental damage. If the war pig Wallows in an area with ample mud, water, loose soil, or similar material, the war pig instead gains 2k8 temporary Hit Points, for 1 minute and reduces the flat check DC to recover from persistent damage by 1.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The war pig rapidly rolls over. If it has a rider, the war pig @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]{Bucks} as a free action. The war pig gains 1k8 temporary Hit Points for 1 minute and can then attempt an immediate flat check to recover from a single source of persistent acid, fire, or mental damage. If the war pig Wallows in an area with ample mud, water, loose soil, or similar material, the war pig instead gains 2k8 temporary Hit Points, for 1 minute and reduces the flat check DC to recover from persistent damage by 1.</p>",
+                    "selfEffect": "Efekt: Wallow"
                 }
             }
         },
@@ -899,7 +906,8 @@
                 },
                 "action->My Turn!": {
                     "name": "My Turn!",
-                    "description": "<p><strong>Wymagania</strong> Kar used Biggest Fan within the last minute</p><hr /><p><strong>Efekt</strong> Eager to show she's just as strong as her ally, Kar gains a +1 status bonus to attack rolls, saving throws, and skill checks until the beginning of her next turn, but only if she performs some activity similar to the action that triggered her Biggest Fan! ability.</p>"
+                    "description": "<p><strong>Wymagania</strong> Kar used Biggest Fan within the last minute</p><hr /><p><strong>Efekt</strong> Eager to show she's just as strong as her ally, Kar gains a +1 status bonus to attack rolls, saving throws, and skill checks until the beginning of her next turn, but only if she performs some activity similar to the action that triggered her Biggest Fan! ability.</p>",
+                    "selfEffect": "Efekt: My Turn!"
                 }
             }
         },
@@ -1172,7 +1180,8 @@
                 },
                 "action->Ironblood Stance": {
                     "name": "Ironblood Stance",
-                    "description": "<p>Nakasha enters a stance of impenetrable iron. As long as she's in this stance, Nakasha can make iron sweep Strikes with her fists and gains resistance 2 to all damage.</p>"
+                    "description": "<p>Nakasha enters a stance of impenetrable iron. As long as she's in this stance, Nakasha can make iron sweep Strikes with her fists and gains resistance 2 to all damage.</p>",
+                    "selfEffect": "Efekt: Ironblood Stance"
                 },
                 "action->Powerful Fist": {
                     "name": "Powerful Fist",
@@ -1443,7 +1452,8 @@
                 },
                 "action->Rage": {
                     "name": "Rage",
-                    "description": "<p><strong>Wymagania</strong> You aren't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or raging.</p><hr /><p>You tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. While you are raging:</p><ul><li>You deal 2 additional damage on melee Strikes. This additional damage is halved if your weapon or unarmed attack is agile.</li><li><p>You can't use actions with the concentrate trait unless they also have the rage trait. You can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} while raging.</p></li></ul><p>Rage lasts for 1 minute, until you fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, or until the encounter ends, whichever comes first. You can't voluntarily stop raging. When you stop raging, you lose any remaining temporary Hit Points from Rage, and can't gain temporary Hit Points from using the Rage action again for 1 minute.</p><p>@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Efekt: Rage Temporary Hit Points Immunity}</p>"
+                    "description": "<p><strong>Wymagania</strong> You aren't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or raging.</p><hr /><p>You tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. While you are raging:</p><ul><li>You deal 2 additional damage on melee Strikes. This additional damage is halved if your weapon or unarmed attack is agile.</li><li><p>You can't use actions with the concentrate trait unless they also have the rage trait. You can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} while raging.</p></li></ul><p>Rage lasts for 1 minute, until you fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, or until the encounter ends, whichever comes first. You can't voluntarily stop raging. When you stop raging, you lose any remaining temporary Hit Points from Rage, and can't gain temporary Hit Points from using the Rage action again for 1 minute.</p><p>@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Efekt: Rage Temporary Hit Points Immunity}</p>",
+                    "selfEffect": "Efekt: Rage"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
@@ -2216,7 +2226,8 @@
                 },
                 "action->Destructive Vengeance": {
                     "name": "Destructive Vengeance",
-                    "description": "<p><strong>Aktywator</strong> An enemy within 15 feet damages Verthok</p><hr /><p><strong>Efekt</strong> Verthok increases the amount of damage she takes by @Damage[1d6[untyped]], and she deals @Damage[3d6[spirit]] or @Damage[3d6[void]] damage to the triggering enemy. An enemy damaged by Destructive Vengeance takes @Damage[4[persistent,spirit]] damage. Until the end of Verthok's next turn, her Strikes against the triggering creature deal 2 extra damage of the type she chose.</p>"
+                    "description": "<p><strong>Aktywator</strong> An enemy within 15 feet damages Verthok</p><hr /><p><strong>Efekt</strong> Verthok increases the amount of damage she takes by @Damage[1d6[untyped]], and she deals @Damage[3d6[spirit]] or @Damage[3d6[void]] damage to the triggering enemy. An enemy damaged by Destructive Vengeance takes @Damage[4[persistent,spirit]] damage. Until the end of Verthok's next turn, her Strikes against the triggering creature deal 2 extra damage of the type she chose.</p>",
+                    "selfEffect": "Efekt: Destructive Vengeance"
                 },
                 "action->Bloody Assault": {
                     "name": "Bloody Assault",
@@ -2278,7 +2289,8 @@
                 },
                 "action->Wallow": {
                     "name": "Wallow",
-                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The war pig rapidly rolls over. If it has a rider, the war pig @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]{Bucks} as a free action. The war pig gains 1k8 temporary Hit Points for 1 minute and can then attempt an immediate flat check to recover from a single source of persistent acid, fire, or mental damage. If the war pig Wallows in an area with ample mud, water, loose soil, or similar material, the war pig instead gains 2k8 temporary Hit Points, for 1 minute and reduces the flat check DC to recover from persistent damage by 1.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The war pig rapidly rolls over. If it has a rider, the war pig @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]{Bucks} as a free action. The war pig gains 1k8 temporary Hit Points for 1 minute and can then attempt an immediate flat check to recover from a single source of persistent acid, fire, or mental damage. If the war pig Wallows in an area with ample mud, water, loose soil, or similar material, the war pig instead gains 2k8 temporary Hit Points, for 1 minute and reduces the flat check DC to recover from persistent damage by 1.</p>",
+                    "selfEffect": "Efekt: Wallow"
                 }
             }
         },
@@ -2411,7 +2423,8 @@
                 },
                 "action->Challenge Foe": {
                     "name": "Challenge Foe",
-                    "description": "<p>Yagrekash challenges one creature she can see to single combat, attempting to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} that target. This target remains her foe until itʼs defeated, it flees, or the encounter ends. Yagrekash gains a circumstance bonus to damage equal to her number of weapon damage dice against her designated foe but takes an equivalent circumstance penalty to damage against any other creature.</p>"
+                    "description": "<p>Yagrekash challenges one creature she can see to single combat, attempting to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} that target. This target remains her foe until itʼs defeated, it flees, or the encounter ends. Yagrekash gains a circumstance bonus to damage equal to her number of weapon damage dice against her designated foe but takes an equivalent circumstance penalty to damage against any other creature.</p>",
+                    "selfEffect": "Efekt: Challenge Foe"
                 },
                 "action->Mask of Pain": {
                     "name": "Mask of Pain",
@@ -2532,5 +2545,10 @@
             "converter": "translateTokenName",
             "path": "prototypeToken.name"
         }
+    },
+    "folders": {
+        "Book 1 - The Resurrection Flood": "Book 1 - The Resurrection Flood",
+        "Book 2 - Hoof, Cinder, and Storm": "Book 2 - Hoof, Cinder, and Storm",
+        "Book 3 - Destroyer's Doom": "Book 3 - Destroyer's Doom"
     }
 }

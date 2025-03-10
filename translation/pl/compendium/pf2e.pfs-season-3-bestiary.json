@@ -2272,7 +2272,7 @@
                 },
                 "action->Explosive Harness": {
                     "name": "Explosive Harness",
-                    "description": "<p>The rat is connected to an explosive harness, which displays an ominous 1-minute pocket watch. The harness will explode after 1 minute (10 rounds) if it is not disabled, or immediately if the rat takes fire damage. This explosion deals @Damage[2d6[fire]] damage to the rat and all creatures within a @Template[burst|distance:5]{5-foot burst} (@Check[reflex|dc:15|basic] save) and ignites flammable objects in the area.<br />If the rat is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grappled}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, an adjacent creature can attempt to safely remove and disable the harness with a successful @Check[nature|dc:17] or @Check[thievery|dc:17] check or a successful @Check[tanning-lore|dc:15] check. An attempt to disable the harness uses two actions.</p>"
+                    "description": "<p>The rat is connected to an explosive harness, which displays an ominous 1-minute pocket watch. The harness will explode after 1 minute (10 rounds) if it is not disabled, or immediately if the rat takes fire damage. This explosion deals @Damage[2d6[fire]] damage to the rat and all creatures within a @Template[burst|distance:5]{5-foot burst} (@Check[reflex|dc:15|basic] save) and ignites flammable objects in the area.</p><p>If the rat is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grappled}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}, an adjacent creature can attempt to safely remove and disable the harness with a successful @Check[nature|dc:17] or @Check[thievery|dc:17] check or a successful @Check[tanning-lore|dc:15] check. An attempt to disable the harness uses two actions.</p>"
                 }
             }
         },
@@ -2379,7 +2379,8 @@
                     "description": "<p>A shambler troop is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions.</p>"
                 },
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 90 (12 squares), 45 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 90 (12 squares), 45 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Grave Tide": {
                     "name": "Grave Tide",
@@ -3218,7 +3219,8 @@
                 },
                 "action->Swig": {
                     "name": "Swig",
-                    "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of alcohol and drink the whole thing.</p><p>For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1}.</p>"
+                    "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of alcohol and drink the whole thing.</p><p>For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1}.</p>",
+                    "selfEffect": "Efekt: Swig"
                 },
                 "lore->Labor Lore": {
                     "name": "Obeznanie w Robociźnie"
@@ -4493,12 +4495,7 @@
                 },
                 "action->Precision Edge": {
                     "name": "Precision Edge",
-                    "description": "<p>The first time the Ninth Army soldier hits their hunted prey in a round, they deal an additional 1k8 precision damage.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>The first time the Ninth Army soldier hits their hunted prey in a round, they deal an additional 1k8 precision damage.</p>"
                 },
                 "action->Running Reload": {
                     "name": "Przeładowanie w Biegu",
@@ -5221,7 +5218,7 @@
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> Cios</p><p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2k8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "weapon->Frost Vial (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p><hr /><p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p><p>You gain a +1 item bonus to attack rolls, the bomb deals 2k6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Efekt: Frost Vial (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Strike</p><hr /><p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p><p>You gain a +1 item bonus to attack rolls, the bomb deals 2k6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Efekt: Frost Vial}</p>"
                 },
                 "armor->Work Coat": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]\nWork Coat",
@@ -5667,12 +5664,7 @@
                 },
                 "action->Precision Edge": {
                     "name": "Precision Edge",
-                    "description": "<p>The first time the shobhad hunter hits their hunted prey in a round, they deal an additional 1k8 precision damage.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>The first time the shobhad hunter hits their hunted prey in a round, they deal an additional 1k8 precision damage.</p>"
                 }
             }
         },
@@ -5715,12 +5707,7 @@
                 },
                 "action->Precision Edge": {
                     "name": "Precision Edge",
-                    "description": "<p>The first time the shobhad hunter hits their hunted prey in a round, they deal an additional 1k8 precision damage.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>The first time the shobhad hunter hits their hunted prey in a round, they deal an additional 1k8 precision damage.</p>"
                 }
             }
         },
@@ -6063,12 +6050,7 @@
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
-                    "description": "<p>Tadrun designates a single creature he can see and hear, or one he's Tracking, as his prey. Tadrun gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tropienie} the prey. The first time Tadrun hits his designated prey in a round, he deals an additional 1k8 precision damage. These effects last until Tadrun uses Hunt Prey again.</p>",
-                    "rules": {
-                        "3": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>Tadrun designates a single creature he can see and hear, or one he's Tracking, as his prey. Tadrun gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tropienie} the prey. The first time Tadrun hits his designated prey in a round, he deals an additional 1k8 precision damage. These effects last until Tadrun uses Hunt Prey again.</p>"
                 }
             }
         },
@@ -6094,12 +6076,7 @@
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
-                    "description": "<p>Tadrun designates a single creature he can see and hear, or one he's Tracking, as his prey. Tadrun gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tropienie} the prey. The first time Tadrun hits his designated prey in a round, he deals an additional 1k8 precision damage. These effects last until Tadrun uses Hunt Prey again.</p>",
-                    "rules": {
-                        "3": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>Tadrun designates a single creature he can see and hear, or one he's Tracking, as his prey. Tadrun gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tropienie} the prey. The first time Tadrun hits his designated prey in a round, he deals an additional 1k8 precision damage. These effects last until Tadrun uses Hunt Prey again.</p>"
                 }
             }
         },

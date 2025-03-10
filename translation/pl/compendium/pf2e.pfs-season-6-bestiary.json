@@ -202,6 +202,82 @@
                 }
             }
         },
+        "Arrogant Foroxicks": {
+            "name": "Arrogant Foroxicks",
+            "blurb": "Variant witchwarg",
+            "publicNotes": "<p>Wargs hunt in packs like wolves, but their penchant for taunting victims makes them easy to distinguish from their cousins. Orcs and hobgoblins frequently recruit wargs. Most wargs are amenable to this arrangement, but if food should run out, wargs are more than willing to integrate goblinoid flesh into their diet.</p><hr /><p>The warg is an intelligent and malevolent wolf that dwells among goblins, hobgoblins, orcs, and violent humanoids.</p>",
+            "skillSpecialStealth": {
+                "0": {
+                    "label": "in snow"
+                }
+            },
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Do Your Job!": {
+                    "name": "Do Your Job!",
+                    "description": "<p>Foroxicks commands an ally to aid him. One ally uses a reaction to move up to their Speed into an open space to flank with Foroxicks.</p>"
+                },
+                "action->Avenging Bite": {
+                    "name": "Avenging Bite",
+                    "description": "<p><strong>Aktywator</strong> A creature within reach of the Foroxicks's jaws attacks one of the warg's allies.</p><hr /><p><strong>Efekt</strong> Foroxicks makes a jaws Strike against the triggering creature.</p>"
+                },
+                "action->Buck": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]\n<p>@Check[reflex|dc:21]</p><p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+                },
+                "action->Pack Attack": {
+                    "name": "Pack Attack",
+                    "description": "<p>Foroxicks's Strikes deals an extra 1k6 damage to any creature within reach of at least two of his allies.</p>"
+                },
+                "action->Pompous Rage": {
+                    "name": "Pompous Rage",
+                    "description": "<p>Foroxicks becomes enraged if his silks, golden mirrors, or throne are damaged. He takes a –2 circumstance penalty to his jaws attack, but each hit deals 3 additional points of piercing damage for three rounds as he attacks with uncontrolled fury.</p><p>@UUID[Compendium.pf2e.campaign-effects.Item.ALYd08DB00ZeoHAp]{Efekt: Pompous Rage}</p>"
+                },
+                "action->Winter Breath": {
+                    "name": "Winter Breath",
+                    "description": "<p>Foroxicks breathes a cloud of frost in a @Template[type:cone|distance:15] dealing @Damage[(5d8 - 4)[cold]] damage (@Check[type:reflex|dc:21|basic:true] save). He can't use Winter Breath again for [[/br 1d4 #Recharge Winter Breath]]{1k4 rounds}.</p>"
+                }
+            }
+        },
+        "Ascending Xalreonshin": {
+            "name": "Ascending Xalreonshin",
+            "publicNotes": "<p>Imugi (ee-moo-ghee) are dragon-like serpents with great mystic potential, including that of ascension into another form. While some imperial dragons are born to their birthright, many that currently roam Tian Xia are ascended imugi — though they would strike down anyone who claimed such.</p><p>To become an imperial dragon, imugi must care for a koi egg for a thousand years. The power from the nurtured egg hatching is enough to power a draconic ascension ritual, and whatever power lingers transforms the koi into an imugi to continue the cycle. The kind of imperial dragon that the imugi becomes depends on where it chooses to nurture the koi egg. Imugi strongly prefer long-finned koi, and Tian koi farmers have learned to keep a separate pool of these butterfly koi away from the others they tend, as imugi tend to displace quite a bit of water — and koi — when swooping down to snatch an egg they want.</p><p>Though imugi have some power over rain and storms, most aren't powerful enough to exact a true sense of weather control. Many are known for their benevolence, and some villages even rely on imugi's forays out of streams or lakes, bringing rains during the growing season. Imugi have as wide a range of temperaments as the dragons they become, and some are notorious for how their impatience twists into a foul temper or an arrogance that flicks people aside as if they were bugs. While some might consider mean-spirited imugi corrupted and claim they can be purified somehow, imugi simply hold themselves higher than the average creature and see no reason to conceal their true nature from someone they see as beneath them.</p>",
+            "privateNotes": "<h3>Imperial Ascension</h3><p>The ritual an imugi undergoes to become a true dragon releases a burst of overwhelming magic. Characters exposed to this burst might find their minds filled with lost techniques or abilities that the imugi has encountered over its long life, allowing them to gain access to uncommon or rare character options, suddenly understand formulas to craft items, or immediately retrain along a new path</p>",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Wrodzone Zaklęcia Pierwotne"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claws": {
+                    "name": "Claws"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Nesting": {
+                    "name": "Nesting",
+                    "description": "<p>By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant status spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.</p>"
+                },
+                "action->Parental Wrath": {
+                    "name": "Parental Wrath",
+                    "description": "<p><strong>Aktywator</strong> A creature damages the imugi's chosen koi egg or ends its turn within 40 feet of the egg</p><hr /><p><strong>Efekt</strong> The imugi Strides or Swims toward the triggering creature. If they end their movement within reach of the creature, they can attempt a melee Strike against it.</p>"
+                },
+                "action->Constrict": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d10+4)[bludgeoning]], @Check[fortitude|dc:28|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "action->Floodwaters": {
+                    "name": "Floodwaters",
+                    "description": "<p>Waters rush forth in a @Template[type:line|distance:60], dealing @Damage[5d6[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). Creatures that fail the save and aren't @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} by the imugi are pushed 10 feet away.</p>"
+                },
+                "action->Storm Veil": {
+                    "name": "Storm Veil",
+                    "description": "<p>The imugi twists any nearby precipitation into a swirling veil of sleet and wind. They gain concealment when in any form of mist or rain.</p>"
+                }
+            }
+        },
         "Averill Quint (1-2)": {
             "name": "Averill Quint (1-2)",
             "hpDetails": "leczenie pustką",
@@ -882,7 +958,8 @@
                 },
                 "action->Divine Weapon": {
                     "name": "Divine Weapon",
-                    "description": "<p><strong>Częstotliwość</strong> once per turn</p><p><strong>Aktywator</strong> The Chelaxian cleric finishes Casting a Spell using one of their divine spell slots</p><hr /><p><strong>Efekt</strong> Until the end of their turn, the Chelaxian cleric's Strikes gain the unholy trait and deal an additional 1k4 spirit damage; this damage increases to 2k4 against creatures with the holy trait.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> once per turn</p><p><strong>Aktywator</strong> The Chelaxian cleric finishes Casting a Spell using one of their divine spell slots</p><hr /><p><strong>Efekt</strong> Until the end of their turn, the Chelaxian cleric's Strikes gain the unholy trait and deal an additional 1k4 spirit damage; this damage increases to 2k4 against creatures with the holy trait.</p>",
+                    "selfEffect": "Efekt: Divine Weapon (Chelaxian Cleric)"
                 }
             }
         },
@@ -913,7 +990,8 @@
                 },
                 "action->Brimstone Blessing": {
                     "name": "Brimstone Blessing",
-                    "description": "<p><strong>Wymagania</strong> The Chelaxian mage's last action was to cast a non-cantrip spell</p><hr /><p><strong>Efekt</strong> The Chelaxian mage siphons devilish energy drawn from pacts with a vordine devil into their trident. Until the end of the turn, the weapon deals an extra 2k6 fire damage, gains the unholy trait, and gains the effects of a returning rune.</p>"
+                    "description": "<p><strong>Wymagania</strong> The Chelaxian mage's last action was to cast a non-cantrip spell</p><hr /><p><strong>Efekt</strong> The Chelaxian mage siphons devilish energy drawn from pacts with a vordine devil into their trident. Until the end of the turn, the weapon deals an extra 2k6 fire damage, gains the unholy trait, and gains the effects of a returning rune.</p>",
+                    "selfEffect": "Efekt: Brimstone Blessing"
                 },
                 "action->Devil Summoning": {
                     "name": "Devil Summoning",
@@ -983,7 +1061,8 @@
                 },
                 "action->Divine Weapon": {
                     "name": "Divine Weapon",
-                    "description": "<p><strong>Częstotliwość</strong> once per turn</p><p><strong>Aktywator</strong> The Chelaxian hierophant finishes Casting a Spell using one of their divine spell slots</p><hr /><p><strong>Efekt</strong> Until the end of their turn, the Chelaxian hierophant's Strikes gain the unholy trait and deal an additional 1k4 spirit damage; this damage increases to 2k4 against creatures with the holy trait.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> once per turn</p><p><strong>Aktywator</strong> The Chelaxian hierophant finishes Casting a Spell using one of their divine spell slots</p><hr /><p><strong>Efekt</strong> Until the end of their turn, the Chelaxian hierophant's Strikes gain the unholy trait and deal an additional 1k4 spirit damage; this damage increases to 2k4 against creatures with the holy trait.</p>",
+                    "selfEffect": "Efekt: Divine Weapon (Chelaxian Cleric)"
                 }
             }
         },
@@ -1014,7 +1093,8 @@
                 },
                 "action->Brimstone Blessing": {
                     "name": "Brimstone Blessing",
-                    "description": "<p><strong>Wymagania</strong> The Chelaxian mage's last action was to cast a non-cantrip spell</p><hr /><p><strong>Efekt</strong> The Chelaxian mage siphons devilish energy drawn from pacts with a vordine devil into their trident. Until the end of the turn, the weapon deals an extra 2k6 fire damage, gains the unholy trait, and gains the effects of a returning rune.</p>"
+                    "description": "<p><strong>Wymagania</strong> The Chelaxian mage's last action was to cast a non-cantrip spell</p><hr /><p><strong>Efekt</strong> The Chelaxian mage siphons devilish energy drawn from pacts with a vordine devil into their trident. Until the end of the turn, the weapon deals an extra 2k6 fire damage, gains the unholy trait, and gains the effects of a returning rune.</p>",
+                    "selfEffect": "Efekt: Brimstone Blessing"
                 },
                 "action->Devil Summoning": {
                     "name": "Devil Summoning",
@@ -1265,6 +1345,65 @@
                 }
             }
         },
+        "Decked-Out Appraiser": {
+            "name": "Decked-Out Appraiser",
+            "blurb": "Variant yeongno",
+            "languages": "Telepathy 100 feet",
+            "publicNotes": "<p>Neither human nor beast yet resembling both, yeongno (yeong-no) are creatures that once were denizens of heaven but were cast out, down to the mortal Universe, due to their own greed. Yeongno claim to have once been celestial dragons and wear elongated dragon masks with full-body wraps decorated with scale patterns in honor of this claim — though no one has been able to confirm the veracity of this belief. As they wander, they hold a willow pipe in their mouths, producing a distinct \"bibi\" sound that often heralds their appearance.</p><p>Despite their reputation as monsters who eat people, yeongno are welcomed by the poor and oppressed, who see the creatures as wise and just. Yeongno believe that by eating 100 wealthy individuals who abuse their wealth or who accumulated their wealth by underhanded or exploitative means, they can atone for their own greed, allowing them to ascend back into heaven. A corrupt and greedy individual can escape their fate of being eaten by a yeongno by giving away all of their wealth and agreeing to be transformed into a pig for one year. If the person can endure one year living as a pig in the care of a household they once harmed, the yeongno will spare them.</p>",
+            "privateNotes": "<h3>Glutton's Redemption</h3><p>Yeongno eat the corrupt and wealthy as a symbolic means of consuming their own greed. While yeongno aspire to ascend from their current existence, they also actively sabotage other creatures hoping to do the same. They feel particularly threatened by imugi, whom the yeongno believe would take their spots in heaven.</p>",
+            "senses": "goldsense (precise) 120 feet",
+            "items": {
+                "equipment->Wooden Pipe": {
+                    "name": "Wooden Pipe"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-ranged->Pipe": {
+                    "name": "Pipe"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
+                },
+                "action->Goldsense (Precise) 120 feet": {
+                    "name": "Goldsense (Precise) 120 feet",
+                    "description": "<p>The yeongno can detect the presence, location, and approximate value of gold within 120 feet.</p>"
+                },
+                "action->Fortune's Favor": {
+                    "name": "Fortune's Favor",
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> A target creature within 30 feet must succeed at a @Check[will|dc:28] save or gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis}, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a Dismiss action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.</p>"
+                },
+                "action->Money is Pain": {
+                    "name": "Money is Pain",
+                    "description": "<p><strong>Wymagania</strong> The target is carrying at least 100 gp worth of precious metals</p><hr /><p><strong>Efekt</strong> The yeongno crushes a creature it can see with the weight of their wealth. Apparitions of gold coins approximating the wealth of the target materialize and pummel the target from all sides. The target attempts a @Check[will|dc:28] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round.</p><p><strong>Porażka</strong> The target takes @Damage[3d8[persistent,mental]] damage and is slowed 1 as long as the damage continues. The effect immediately ends if they're carrying less than 100 gp worth of precious metals.</p><p><strong>Krytyczna Porażka</strong> As failure, except any flat checks to remove the persistent damage automatically fail.</p>"
+                },
+                "action->Swallow Whole": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium, @Damage[(3d8+7)[bludgeoning]], Rupture 23</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                }
+            }
+        },
+        "Decked-Out Minister Jo": {
+            "name": "Decked-Out Minister Jo",
+            "items": {
+                "consumable->Expensive Bolt": {
+                    "name": "Expensive Bolt"
+                },
+                "strike-melee->Sword Cane": {
+                    "name": "Sword Cane"
+                },
+                "strike-ranged->Sukgung": {
+                    "name": "Sukgung"
+                },
+                "action->Cowardly Flight": {
+                    "name": "Cowardly Flight",
+                    "description": "<p><strong>Aktywator</strong> An enemy enters into melee range of Minister Jo</p><p><strong>Częstotliwość</strong> raz na godzinę</p><hr /><p><strong>Efekt</strong> Minister Jo is not a fighter and would prefer to be safely behind his bodyguards. He flees, Striding up to his Speed, and he must end his movement closer to the Appraiser than when he started. While @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający}, he can Reload his sukgung and then fire it backward over his shoulder in a panic, attempting a sukgung Strike against the triggering creature.</p>"
+                },
+                "action->Expensive Reload": {
+                    "name": "Expensive Reload",
+                    "description": "<p><strong>Wymagania</strong> Minister Jo has expensive bolts</p><hr /><p><strong>Efekt</strong> Minister Jo supplements his mediocre fighting ability with a variety of cheaply sourced magical items. He Reloads his sukgung with an expensive bolt and activates its magic, imbuing his next sukgung Strike with one of the following effects.</p><ul><li><strong>Shuffling Bolt</strong> (teleportation) If the bolt hits a target, the target and Minister Jo swap places. If the triggering hit was a critical success, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round after the teleportation.</li><li><strong>Snare Bolt</strong> If the bolt hits a target, silk webbing wraps around them, imposing a –10-foot circumstance penalty to their Speeds for [[/gmr 2d4 #rounds]]{2k4 rounds}, or until they [[/act escape dc=23]] against a DC of 23. On a critical hit, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} until it Escapes.</li><li><strong>Spark Bolt</strong> (electricity) The bolt deals an additional @Damage[(2d12[splash])[electricity]] damage.</li></ul>"
+                }
+            }
+        },
         "Deep Manifestation of Nightmare": {
             "name": "Deep Manifestation of Nightmare",
             "languages": "telepatia 30 stóp",
@@ -1458,6 +1597,36 @@
                 }
             }
         },
+        "Disillusioned Oloranvis Elvanna": {
+            "name": "Disillusioned Oloranvis Elvanna",
+            "privateNotes": "<p>In the adventure text, the cantrips aren't heightened but they have been in Foundry</p>",
+            "items": {
+                "spellcastingEntry->Primal Prepared Spells": {
+                    "name": "Przygotowane Zaklęcia Pierwotne"
+                },
+                "spellcastingEntry->Primal Focus Spells": {
+                    "name": "Primal Focus Spells"
+                },
+                "armor->Robe": {
+                    "name": "Robe"
+                },
+                "strike-melee->Nails": {
+                    "name": "Nails"
+                },
+                "action->Familiar": {
+                    "name": "Familiar",
+                    "description": "<p>Oloranvis's familiar is a poppet elkhound named Ruditgar. His Speed is 40 feet. He has poppet immunities and weakness 4 to fire. When Oloranvis Casts or Sustains a hex, she can cause ice to form in a @Template[type:burst|distance:5] centered on Ruditgar's square. Those squares are difficult terrain until the start of her next turn. Ruditgar and Oloranvis communicate telepathically through touch.</p>"
+                },
+                "action->Eldritch Nails": {
+                    "name": "Eldritch Nails",
+                    "description": "<p>Oloranvis's razor-sharp nails sparkle with the residue of her winter magic. Her unarmed nail strikes cause both cold and slashing damage.</p>"
+                },
+                "action->Winter's Gift": {
+                    "name": "Winter's Gift",
+                    "description": "<p>Oloranvis has an unusually strong connection to winter magic even for a winter witch. When she casts a spell with the cold trait, she gains a +1 status bonus to the spell DC or spell attack.</p>"
+                }
+            }
+        },
         "Divine Oozeshard": {
             "name": "Divine Oozeshard",
             "acDetails": " (26 while in armored apotheosis form)",
@@ -1623,7 +1792,8 @@
                     "description": "<p>A zombie leshy horde is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions</p>"
                 },
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 60 (12 squares), 30 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 60 (12 squares), 30 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Grave Tide": {
                     "name": "Grave Tide",
@@ -1837,6 +2007,23 @@
                 }
             }
         },
+        "Empowered Turbulent Koi Egg": {
+            "name": "Empowered Turbulent Koi Egg",
+            "description": "<p>A raging storm covers the mountain lake as spring water levitates from the lake to fall back down in a driving spiral of steaming rain. In the depths of the storm, barely visible, is a tiny koi egg surrounded by three bands of water.</p>",
+            "disable": "<p>@Check[arcana|dc:28], @Check[religion|dc:28], @Check[nature|dc:28], or @Check[occultism|dc:28] to purify the magic corrupting the ascension ritual, or @Check[diplomacy|dc:31] or @Check[performance|dc:31] to soothe the spirit within the koi egg and give it the strength to fight off the corruption itself; four total successes are required to purify the ritual, each of the first three successes purifying one ring of water and the final one halting the ritual itself. If the cursed comb has not been removed from the ritual site, then succeeding on this final check merely halts the ritual; if the cursed comb has been removed from the ritual site, then succeeding on this final check completes the ascension ritual.</p>",
+            "reset": "<p>The turbulent koi egg can attempt to hatch again, restarting the ascension ritual, after 1000 years of Xalreonshin's care.</p>",
+            "routine": "<p>(1 action) Torrential water descends from the sky, taking the shape of a dragon that smashes into one creature within 60 feet of the egg. The dragon always targets the creature that is closest to the egg, dealing @Damage[(2d10+2)[bludgeoning],2k10[fire]]{2k10+2 bludgeoning damage and 2k10 fire} damage in a spray of boiling water (@Check[fortitude|dc:28] save). Creatures that fail the save are pushed 10 feet away. Creatures that have the earth trait, are carrying an item with the earth trait, or are otherwise strongly tied to elemental earth (such as an earth elemental sorcerer or kineticist) get the result one degree of success better than the outcome of their save, as the power of elemental earth overcomes water.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Immune to All Damage (Until Final Ring is Purified)": {
+                    "name": "Immune to All Damage (Until Final Ring is Purified)"
+                },
+                "action->Raise the Storm": {
+                    "name": "Raise the Storm",
+                    "description": "<p><strong>Aktywator</strong> Xalreonshin rolls initiative, three rounds pass after the PCs begin speaking with Xalreonshin, or a creature other than Xalreonshin comes within 40 feet of the egg</p><hr /><p><strong>Efekt</strong> The turbulent koi egg churns the lake surface, ejecting water into the sky. A 1-mile-radius area centered on the egg becomes filled with heavy rain and strong wind imposing a –2 circumstance penalty to Perception checks and requiring flying creatures to [[/act maneuver-in-flight dc=24]].</p>"
+                }
+            }
+        },
         "Enava": {
             "name": "Enava",
             "blurb": "Succubus",
@@ -2043,6 +2230,18 @@
                 }
             }
         },
+        "Experienced Irrisen Bandit": {
+            "name": "Experienced Irrisen Bandit",
+            "items": {
+                "strike-melee->Spiked Chain": {
+                    "name": "Spiked Chain"
+                },
+                "action->Lunge": {
+                    "name": "Lunge",
+                    "description": "<p>The bandit makes a Strike with the spiked chain, increasing their reach by 5 feet for that Strike. The bandit can @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} instead of a Strike.</p>"
+                }
+            }
+        },
         "Festering Plague Zombie": {
             "name": "Festering Plague Zombie",
             "blurb": "Variant plague zombie",
@@ -2096,6 +2295,35 @@
                 "action->Short Circuit": {
                     "name": "Short Circuit",
                     "description": "<p>The sparking zombie has been implanted with tech components that have malfunctioned and are crackling with electricity. A creature that hits the zombie with an unarmed Strike takes @Damage[5[electricity]] damage.</p>"
+                }
+            }
+        },
+        "Foroxicks": {
+            "name": "Foroxicks",
+            "blurb": "Variant warg",
+            "publicNotes": "<p>Wargs hunt in packs like wolves, but their penchant for taunting victims makes them easy to distinguish from their cousins. Orcs and hobgoblins frequently recruit wargs. Most wargs are amenable to this arrangement, but if food should run out, wargs are more than willing to integrate goblinoid flesh into their diet.</p><hr /><p>The warg is an intelligent and malevolent wolf that dwells among goblins, hobgoblins, orcs, and violent humanoids.</p>",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Do Your Job!": {
+                    "name": "Do Your Job!",
+                    "description": "<p>Foroxicks commands an ally to aid him. One ally uses a reaction to move up to their Speed into an open space to flank with Foroxicks.</p>"
+                },
+                "action->Avenging Bite": {
+                    "name": "Avenging Bite",
+                    "description": "<p><strong>Aktywator</strong> A creature within reach of the Foroxicks's jaws attacks one of the warg's allies.</p><hr /><p><strong>Efekt</strong> Foroxicks makes a jaws Strike against the triggering creature.</p>"
+                },
+                "action->Pack Attack": {
+                    "name": "Pack Attack",
+                    "description": "<p>Foroxicks's Strikes deals an extra 1k4 damage to any creature within reach of at least two of his allies.</p>"
+                },
+                "action->Pompous Rage": {
+                    "name": "Pompous Rage",
+                    "description": "<p>Foroxicks becomes enraged if his silks, golden mirrors, or throne are damaged. He takes a –2 circumstance penalty to his jaws attack, but each hit deals 1 additional point of piercing damage for three rounds as he attacks with uncontrolled fury.</p><p>@UUID[Compendium.pf2e.campaign-effects.Item.ALYd08DB00ZeoHAp]{Efekt: Pompous Rage}</p>"
+                },
+                "action->Swallow Whole": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Small, @Damage[(1d6+2)[bludgeoning]], Rupture 9</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -2493,6 +2721,35 @@
                 }
             }
         },
+        "Hobgoblin Mercenary": {
+            "name": "Hobgoblin Mercenary",
+            "blurb": "Variant Weak Hobgoblin Archer",
+            "publicNotes": "<p>Bands of hobgoblin soldiers typically have at least one archer among their ranks. In smaller groups, the hobgoblin archer also serves as that band's captain.</p><hr /><p>Hobgoblins may appear to outsiders to be the most civilized of goblinkind, but their civilization is hardly one of kindness and equality-instead, they revel in all that is militaristic, tyrannical, cruel, and destructive. Hobgoblins are singularly devoted to war, and their entire culture is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Hobgoblins are highly organized, and they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Hobgoblin rulers require little provocation before declaring war, and more often than not, such wars are waged to gain slaves or territory. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p><p>Hobgoblin society is organized along military lines, and every hobgoblin is effectively a member of the army. Each hobgoblin in a community has a rank in the military hierarchy, and individuals are naturally ambitious and obsessed with advancement. Hobgoblins are constantly expected to prove that they're fearless, ruthless, cunning, and strong. Demonstrating such aptitudes is an individual hobgoblin's best hope for promotion through the ranks, but failure leads only to cruel exploitation at the hands of their superiors. Though brutal, hobgoblin society is a true meritocracy, and all hobgoblins, regardless of age, gender, or birth, wield authority and earn respect from their peers based on their skill in battle. Even those individuals who serve in non-combat roles in hobgoblin society-blacksmiths, builders, cooks, messengers, quartermasters, and the like-know that they perform vital jobs that support the larger hobgoblin army, though they rarely rise above the rank of common soldier. Everyone contributes to the larger whole, ensuring that hobgoblin society is the strongest and most efficient it can be, and anyone who fails to do so is culled from the army and this hobgoblin society as dead weight. Hobgoblins don't usually engage in trade with other races, or even with other hobgoblin tribes, preferring to take what they want by force.</p>",
+            "items": {
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
+                "strike-ranged->Crossbow": {
+                    "name": "Crossbow"
+                },
+                "action->Formation": {
+                    "name": "Formation",
+                    "description": "<p>When it's adjacent to at least two other allies, the hobgoblin archer gains a +1 circumstance bonus to AC and saving throws. This bonus increases to +2 to Reflex saves against area effects.</p>"
+                },
+                "action->Crossbow Precision": {
+                    "name": "Crossbow Precision",
+                    "description": "<p>The first time the archer hits with a crossbow attack in a round, it deals 1k8 extra precision damage.</p>"
+                },
+                "action->Perfect Aim": {
+                    "name": "Perfect Aim",
+                    "description": "<p>The hobgoblin archer ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} condition.</p><p>Their targets don't benefit from lesser cover, and they reduce the AC bonus from standard cover by 2 against the hobgoblin archer's attack.</p>"
+                },
+                "action->Running Reload": {
+                    "name": "Running Reload",
+                    "description": "<p>The archer Strides, Steps, or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaks}, then Interacts to reload.</p>"
+                }
+            }
+        },
         "Hostile Architecture (1-2)": {
             "name": "Hostile Architecture (1-2)",
             "description": "<p>The sigils on the door's frame glow with an amber light, which collects in a facet over the center of the door.</p>",
@@ -2563,6 +2820,32 @@
                 }
             }
         },
+        "Hot Spring Statue": {
+            "name": "Hot Spring Statue",
+            "acDetails": "(22 when broken); construct armor",
+            "blurb": "Variant Giant Animated Statue",
+            "publicNotes": "<p>Giant animated statues' increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Tasks beyond their capabilities typically require a more advanced construct, not an animated object.</p><hr /><p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "items": {
+                "strike-melee->Stone Fist": {
+                    "name": "Stone Fist"
+                },
+                "strike-ranged->Boiling Water": {
+                    "name": "Boiling Water"
+                },
+                "action->Construct Armor (Hardness 10)": {
+                    "name": "Construct Armor (Hardness 10)",
+                    "description": "<p>Like normal objects, a giant animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a giant animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>"
+                },
+                "action->Boil Alive": {
+                    "name": "Boil Alive",
+                    "description": "<p>The statue hinges open, revealing boiling water within it, and then plunges a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} in. The target takes @Damage[3d8[fire],1k8[persistent,fire]] damage.</p>"
+                },
+                "action->Geothermally Heated": {
+                    "name": "Geothermally Heated",
+                    "description": "<p>The statue is magically powered by the same geothermal power that heats the waters in Maecho's hot springs. Dealing 15 cold damage to the statue cools it off, preventing it from using Boil Alive, removing the fire damage from its ranged attacks, and making it @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for one round, after which the cold water cycles out of the statue and it returns to its usual temperature.</p>"
+                }
+            }
+        },
         "Immoral Gargarthezul": {
             "name": "Immoral Gargarthezul",
             "languages": "telepatia 100 stóp",
@@ -2624,6 +2907,14 @@
                 "action->Vicious Bluster": {
                     "name": "Vicious Bluster",
                     "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1k6 temporary Hit Points (2k6 on a critical success) that last for 1 minute.</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.P8LdA05tK20u98MF]{Efekt: Vicious Bluster}</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Ty2YFxv2EDBOSjxl]{Efekt: Vicious Bluster (Krytyczny Sukces)}</p>"
+                }
+            }
+        },
+        "Irrisen Bandit": {
+            "name": "Irrisen Bandit",
+            "items": {
+                "strike-melee->Spiked Chain": {
+                    "name": "Spiked Chain"
                 }
             }
         },
@@ -3115,6 +3406,28 @@
                 }
             }
         },
+        "Minister Jo": {
+            "name": "Minister Jo",
+            "items": {
+                "consumable->Expensive Bolt": {
+                    "name": "Expensive Bolt"
+                },
+                "strike-melee->Sword Cane": {
+                    "name": "Sword Cane"
+                },
+                "strike-ranged->Sukgung": {
+                    "name": "Sukgung"
+                },
+                "action->Cowardly Flight": {
+                    "name": "Cowardly Flight",
+                    "description": "<p><strong>Aktywator</strong> An enemy enters into melee range of Minister Jo</p><p><strong>Częstotliwość</strong> raz na godzinę</p><hr /><p><strong>Efekt</strong> Minister Jo is not a fighter and would prefer to be safely behind his bodyguards. He flees, Striding up to his Speed, and he must end his movement closer to the Appraiser than when he started. While @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający}, he can Reload his sukgung and then fire it backward over his shoulder in a panic, attempting a sukgung Strike against the triggering creature.</p>"
+                },
+                "action->Expensive Reload": {
+                    "name": "Expensive Reload",
+                    "description": "<p><strong>Wymagania</strong> Minister Jo has expensive bolts</p><hr /><p><strong>Efekt</strong> Minister Jo supplements his mediocre fighting ability with a variety of cheaply sourced magical items. He Reloads his sukgung with an expensive bolt and activates its magic, imbuing his next sukgung Strike with one of the following effects.</p><ul><li><strong>Shuffling Bolt</strong> (teleportation) If the bolt hits a target, the target and Minister Jo swap places. If the triggering hit was a critical success, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round after the teleportation.</li><li><strong>Snare Bolt</strong> If the bolt hits a target, silk webbing wraps around them, imposing a –10-foot circumstance penalty to their Speeds for [[/gmr 2d4 #rounds]]{2k4 rounds}, or until they [[/act escape dc=21]] against a DC of 21. On a critical hit, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} until it Escapes.</li><li><strong>Spark Bolt</strong> (electricity) The bolt deals an additional @Damage[(1d12[splash])[electricity]] damage.</li></ul>"
+                }
+            }
+        },
         "Mischievous Plaguetooth": {
             "name": "Mischievous Plaguetooth",
             "blurb": "Variant elite tooth fairy",
@@ -3232,6 +3545,35 @@
                 "action->Unleashed Familiar": {
                     "name": "Unleashed Familiar",
                     "description": "<p>Norvix's familiar is a giant rat named Squelch. She can take her actions independently of Norvix's commands and has her statistics presented separately. She has the familiar of restored spirit ability, so when Norvix Casts or Sustains a hex, one willing creature within 15 feet of Squelch gains 2 temporary Hit Points until the start of his next turn.</p>"
+                }
+            }
+        },
+        "Oloranvis Elvanna": {
+            "name": "Oloranvis Elvanna",
+            "items": {
+                "spellcastingEntry->Primal Prepared Spells": {
+                    "name": "Przygotowane Zaklęcia Pierwotne"
+                },
+                "spellcastingEntry->Primal Focus Spells": {
+                    "name": "Primal Focus Spells"
+                },
+                "armor->Robe": {
+                    "name": "Robe"
+                },
+                "strike-melee->Nails": {
+                    "name": "Nails"
+                },
+                "action->Familiar": {
+                    "name": "Familiar",
+                    "description": "<p>Oloranvis's familiar is a poppet elkhound named Ruditgar. His Speed is 40 feet. He has poppet immunities and weakness 2 to fire. When Oloranvis Casts or Sustains a hex, she can cause ice to form in a @Template[type:burst|distance:5] centered on Ruditgar's square. Those squares are difficult terrain until the start of her next turn. Ruditgar and Oloranvis communicate telepathically through touch.</p>"
+                },
+                "action->Eldritch Nails": {
+                    "name": "Eldritch Nails",
+                    "description": "<p>Oloranvis's razor-sharp nails sparkle with the residue of her winter magic. Her unarmed nail strikes cause both cold and slashing damage.</p>"
+                },
+                "action->Winter's Gift": {
+                    "name": "Winter's Gift",
+                    "description": "<p>Oloranvis has an unusually strong connection to winter magic even for a winter witch. When she casts a spell with the cold trait, she gains a +1 status bonus to the spell DC or spell attack.</p>"
                 }
             }
         },
@@ -3809,6 +4151,54 @@
                 "action->Rasping Cicada Poison": {
                     "name": "Rasping Cicada Poison",
                     "description": "<p><strong>Rzut Obronny</strong> @Check[fortitude|dc:15]</p><p><strong>Maksymalny Czas Trwania</strong> 6 rund</p><p><strong>Stadium 1</strong> @Damage[1d4[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (1 runda)</p><p><strong>Stadium 2</strong> @Damage[1d4[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} (1 runda)</p><p><strong>Stadium 3</strong> @Damage[2d4[poison]] damage plus slowed 2 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} (1 runda)</p>"
+                }
+            }
+        },
+        "Really Decked-Out Minister Jo": {
+            "name": "Really Decked-Out Minister Jo",
+            "items": {
+                "consumable->Expensive Bolt": {
+                    "name": "Expensive Bolt"
+                },
+                "strike-melee->Sword Cane": {
+                    "name": "Sword Cane"
+                },
+                "strike-ranged->Sukgung": {
+                    "name": "Sukgung"
+                },
+                "action->Cowardly Flight": {
+                    "name": "Cowardly Flight",
+                    "description": "<p><strong>Aktywator</strong> An enemy enters into melee range of Minister Jo</p><p><strong>Częstotliwość</strong> raz na godzinę</p><hr /><p><strong>Efekt</strong> Minister Jo is not a fighter and would prefer to be safely behind his bodyguards. He flees, Striding up to his Speed, and he must end his movement closer to the Appraiser than when he started. While @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający}, he can Reload his sukgung and then fire it backward over his shoulder in a panic, attempting a sukgung Strike against the triggering creature.</p>"
+                },
+                "action->Expensive Reload": {
+                    "name": "Expensive Reload",
+                    "description": "<p><strong>Wymagania</strong> Minister Jo has expensive bolts</p><hr /><p><strong>Efekt</strong> Minister Jo supplements his mediocre fighting ability with a variety of cheaply sourced magical items. He Reloads his sukgung with an expensive bolt and activates its magic, imbuing his next sukgung Strike with one of the following effects.</p><ul><li><strong>Shuffling Bolt</strong> (teleportation) If the bolt hits a target, the target and Minister Jo swap places. If the triggering hit was a critical success, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round after the teleportation.</li><li><strong>Snare Bolt</strong> If the bolt hits a target, silk webbing wraps around them, imposing a –10-foot circumstance penalty to their Speeds for [[/gmr 2d4 #rounds]]{2k4 rounds}, or until they [[/act escape dc=25]] against a DC of 25. On a critical hit, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} until it Escapes.</li><li><strong>Spark Bolt</strong> (electricity) The bolt deals an additional @Damage[(2d12[splash])[electricity]] damage.</li></ul>"
+                }
+            }
+        },
+        "Reinforced Hot Spring Statue": {
+            "name": "Reinforced Hot Spring Statue",
+            "acDetails": "(22 when broken); construct armor",
+            "blurb": "Variant Giant Animated Statue",
+            "publicNotes": "<p>Giant animated statues' increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Tasks beyond their capabilities typically require a more advanced construct, not an animated object.</p><hr /><p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "items": {
+                "strike-melee->Stone Fist": {
+                    "name": "Stone Fist"
+                },
+                "strike-ranged->Boiling Water": {
+                    "name": "Boiling Water"
+                },
+                "action->Construct Armor (Hardness 10)": {
+                    "name": "Construct Armor (Hardness 10)",
+                    "description": "<p>Like normal objects, a giant animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a giant animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>"
+                },
+                "action->Boil Alive": {
+                    "name": "Boil Alive",
+                    "description": "<p>The statue hinges open, revealing boiling water within it, and then plunges a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany} in. The target takes @Damage[3d10[fire],1k8[persistent,fire]] damage.</p>"
+                },
+                "action->Geothermally Heated": {
+                    "name": "Geothermally Heated",
+                    "description": "<p>The statue is magically powered by the same geothermal power that heats the waters in Maecho's hot springs. Dealing 18 cold damage to the statue cools it off, preventing it from using Boil Alive, removing the fire damage from its ranged attacks, and making it @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for one round, after which the cold water cycles out of the statue and it returns to its usual temperature.</p>"
                 }
             }
         },
@@ -4599,6 +4989,60 @@
                 }
             }
         },
+        "Tempestuous Koi Egg": {
+            "name": "Tempestuous Koi Egg",
+            "description": "<p>A raging storm covers the mountain lake as spring water levitates from the lake to fall back down in a driving spiral of steaming rain. In the depths of the storm, barely visible, is a tiny koi egg surrounded by three bands of water.</p>",
+            "disable": "<p>@Check[arcana|dc:29], @Check[religion|dc:29], @Check[nature|dc:29], or @Check[occultism|dc:29] to purify the magic corrupting the ascension ritual, or @Check[diplomacy|dc:32] or @Check[performance|dc:32] to soothe the spirit within the koi egg and give it the strength to fight off the corruption itself; four total successes are required to purify the ritual, each of the first three successes purifying one ring of water and the final one halting the ritual itself. If the cursed comb has not been removed from the ritual site, then succeeding on this final check merely halts the ritual; if the cursed comb has been removed from the ritual site, then succeeding on this final check completes the ascension ritual.</p>",
+            "reset": "<p>The turbulent koi egg can attempt to hatch again, restarting the ascension ritual, after 1000 years of Xalreonshin's care.</p>",
+            "routine": "<p>(1 action) Torrential water descends from the sky, taking the shape of a dragon that smashes into one creature within 60 feet of the egg. The dragon always targets the creature that is closest to the egg, dealing @Damage[2d12[bludgeoning],2k12[fire]]{2k12 bludgeoning damage and 2k12 fire} damage in a spray of boiling water (@Check[fortitude|dc:28] save). Creatures that fail the save are pushed 10 feet away. Creatures that have the earth trait, are carrying an item with the earth trait, or are otherwise strongly tied to elemental earth (such as an earth elemental sorcerer or kineticist) get the result one degree of success better than the outcome of their save, as the power of elemental earth overcomes water.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Immune to All Damage (Until Final Ring is Purified)": {
+                    "name": "Immune to All Damage (Until Final Ring is Purified)"
+                },
+                "action->Raise the Storm": {
+                    "name": "Raise the Storm",
+                    "description": "<p><strong>Aktywator</strong> Xalreonshin rolls initiative, three rounds pass after the PCs begin speaking with Xalreonshin, or a creature other than Xalreonshin comes within 40 feet of the egg</p><hr /><p><strong>Efekt</strong> The turbulent koi egg churns the lake surface, ejecting water into the sky. A 1-mile-radius area centered on the egg becomes filled with heavy rain and strong wind imposing a –2 circumstance penalty to Perception checks and requiring flying creatures to [[/act maneuver-in-flight dc=24]].</p>"
+                }
+            }
+        },
+        "The Elite Appraiser": {
+            "name": "The Elite Appraiser",
+            "blurb": "Variant elite yeongno",
+            "languages": "telepathy 100 feet",
+            "publicNotes": "<p>Neither human nor beast yet resembling both, yeongno (yeong-no) are creatures that once were denizens of heaven but were cast out, down to the mortal Universe, due to their own greed. Yeongno claim to have once been celestial dragons and wear elongated dragon masks with full-body wraps decorated with scale patterns in honor of this claim — though no one has been able to confirm the veracity of this belief. As they wander, they hold a willow pipe in their mouths, producing a distinct \"bibi\" sound that often heralds their appearance.</p><p>Despite their reputation as monsters who eat people, yeongno are welcomed by the poor and oppressed, who see the creatures as wise and just. Yeongno believe that by eating 100 wealthy individuals who abuse their wealth or who accumulated their wealth by underhanded or exploitative means, they can atone for their own greed, allowing them to ascend back into heaven. A corrupt and greedy individual can escape their fate of being eaten by a yeongno by giving away all of their wealth and agreeing to be transformed into a pig for one year. If the person can endure one year living as a pig in the care of a household they once harmed, the yeongno will spare them.</p>",
+            "privateNotes": "<h3>Glutton's Redemption</h3><p>Yeongno eat the corrupt and wealthy as a symbolic means of consuming their own greed. While yeongno aspire to ascend from their current existence, they also actively sabotage other creatures hoping to do the same. They feel particularly threatened by imugi, whom the yeongno believe would take their spots in heaven.</p>",
+            "senses": "goldvision (precise) 120 feet",
+            "items": {
+                "equipment->Wooden Pipe": {
+                    "name": "Wooden Pipe"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-ranged->Pipe": {
+                    "name": "Pipe"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
+                },
+                "action->Goldsense (Precise) 120 feet": {
+                    "name": "Goldsense (Precise) 120 feet",
+                    "description": "<p>The yeongno can detect the presence, location, and approximate value of gold within 120 feet.</p>"
+                },
+                "action->Fortune's Favor": {
+                    "name": "Fortune's Favor",
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> A target creature within 30 feet must succeed at a @Check[will|dc:25] save or gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis}, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a Dismiss action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.</p>"
+                },
+                "action->Money is Pain": {
+                    "name": "Money is Pain",
+                    "description": "<p><strong>Wymagania</strong> The target is carrying at least 100 gp worth of precious metals</p><hr /><p><strong>Efekt</strong> The yeongno crushes a creature it can see with the weight of their wealth. Apparitions of gold coins approximating the wealth of the target materialize and pummel the target from all sides. The target attempts a @Check[will|dc:25] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The target is unaffected.</p><p><strong>Sukces</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round.</p><p><strong>Porażka</strong> The target takes @Damage[3d6[persistent,mental]] damage and is slowed 1 as long as the damage continues. The effect immediately ends if they're carrying less than 100 gp worth of precious metals.</p><p><strong>Krytyczna Porażka</strong> As failure, except any flat checks to remove the persistent damage automatically fail.</p>"
+                },
+                "action->Swallow Whole": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium, @Damage[(3d6+6)[bludgeoning]], Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                }
+            }
+        },
         "The Heartwood Rots": {
             "name": "The Heartwood Rots",
             "blurb": "Variant vampire servitor",
@@ -4660,6 +5104,40 @@
                 "action->Swift Movement": {
                     "name": "Swift Movement",
                     "description": "<p>The Puddles ghoul jumps up to half its Speed or swims up to half its swim Speed. This movement doesn't trigger reactions.</p>"
+                }
+            }
+        },
+        "Turbulent Koi Egg": {
+            "name": "Turbulent Koi Egg",
+            "description": "<p>A raging storm covers the mountain lake as spring water levitates from the lake to fall back down in a driving spiral of steaming rain. In the depths of the storm, barely visible, is a tiny koi egg surrounded by three bands of water.</p>",
+            "disable": "<p>@Check[arcana|dc:27], @Check[religion|dc:27], @Check[nature|dc:27], or @Check[occultism|dc:27] to purify the magic corrupting the ascension ritual, or @Check[diplomacy|dc:30] or @Check[performance|dc:30] to soothe the spirit within the koi egg and give it the strength to fight off the corruption itself; four total successes are required to purify the ritual, each of the first three successes purifying one ring of water and the final one halting the ritual itself. If the cursed comb has not been removed from the ritual site, then succeeding on this final check merely halts the ritual; if the cursed comb has been removed from the ritual site, then succeeding on this final check completes the ascension ritual.</p>",
+            "reset": "<p>The turbulent koi egg can attempt to hatch again, restarting the ascension ritual, after 1000 years of Xalreonshin's care.</p>",
+            "routine": "<p>(1 action) Torrential water descends from the sky, taking the shape of a dragon that smashes into one creature within 60 feet of the egg. The dragon always targets the creature that is closest to the egg, dealing @Damage[2d10[bludgeoning],2k10[fire]]{2k10 bludgeoning damage and 2k10 fire} damage in a spray of boiling water (@Check[fortitude|dc:26] save). Creatures that fail the save are pushed 10 feet away. Creatures that have the earth trait, are carrying an item with the earth trait, or are otherwise strongly tied to elemental earth (such as an earth elemental sorcerer or kineticist) get the result one degree of success better than the outcome of their save, as the power of elemental earth overcomes water.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Immune to All Damage (Until Final Ring is Purified)": {
+                    "name": "Immune to All Damage (Until Final Ring is Purified)"
+                },
+                "action->Raise the Storm": {
+                    "name": "Raise the Storm",
+                    "description": "<p><strong>Aktywator</strong> Xalreonshin rolls initiative, three rounds pass after the PCs begin speaking with Xalreonshin, or a creature other than Xalreonshin comes within 40 feet of the egg</p><hr /><p><strong>Efekt</strong> The turbulent koi egg churns the lake surface, ejecting water into the sky. A 1-mile-radius area centered on the egg becomes filled with heavy rain and strong wind imposing a –2 circumstance penalty to Perception checks and requiring flying creatures to [[/act maneuver-in-flight dc=22]].</p>"
+                }
+            }
+        },
+        "Typhoon Koi Egg": {
+            "name": "Typhoon Koi Egg",
+            "description": "<p>A raging storm covers the mountain lake as spring water levitates from the lake to fall back down in a driving spiral of steaming rain. In the depths of the storm, barely visible, is a tiny koi egg surrounded by three bands of water.</p>",
+            "disable": "<p>@Check[arcana|dc:30], @Check[religion|dc:30], @Check[nature|dc:30], or @Check[occultism|dc:30] to purify the magic corrupting the ascension ritual, or @Check[diplomacy|dc:33] or @Check[performance|dc:33] to soothe the spirit within the koi egg and give it the strength to fight off the corruption itself; four total successes are required to purify the ritual, each of the first three successes purifying one ring of water and the final one halting the ritual itself. If the cursed comb has not been removed from the ritual site, then succeeding on this final check merely halts the ritual; if the cursed comb has been removed from the ritual site, then succeeding on this final check completes the ascension ritual.</p>",
+            "reset": "<p>The turbulent koi egg can attempt to hatch again, restarting the ascension ritual, after 1000 years of Xalreonshin's care.</p>",
+            "routine": "<p>(1 action) Torrential water descends from the sky, taking the shape of a dragon that smashes into one creature within 60 feet of the egg. The dragon always targets the creature that is closest to the egg, dealing @Damage[(2d12+2)[bludgeoning],2k12[fire]]{2k12+2 bludgeoning damage and 2k12 fire} damage in a spray of boiling water (@Check[fortitude|dc:28] save). Creatures that fail the save are pushed 10 feet away. Creatures that have the earth trait, are carrying an item with the earth trait, or are otherwise strongly tied to elemental earth (such as an earth elemental sorcerer or kineticist) get the result one degree of success better than the outcome of their save, as the power of elemental earth overcomes water.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Immune to All Damage (Until Final Ring is Purified)": {
+                    "name": "Immune to All Damage (Until Final Ring is Purified)"
+                },
+                "action->Raise the Storm": {
+                    "name": "Raise the Storm",
+                    "description": "<p><strong>Aktywator</strong> Xalreonshin rolls initiative, three rounds pass after the PCs begin speaking with Xalreonshin, or a creature other than Xalreonshin comes within 40 feet of the egg</p><hr /><p><strong>Efekt</strong> The turbulent koi egg churns the lake surface, ejecting water into the sky. A 1-mile-radius area centered on the egg becomes filled with heavy rain and strong wind imposing a –2 circumstance penalty to Perception checks and requiring flying creatures to [[/act maneuver-in-flight dc=24]].</p>"
                 }
             }
         },
@@ -5174,6 +5652,20 @@
                 }
             }
         },
+        "Young Warg": {
+            "name": "Young Warg",
+            "blurb": "Variant warg",
+            "publicNotes": "<p>Wargs hunt in packs like wolves, but their penchant for taunting victims makes them easy to distinguish from their cousins. Orcs and hobgoblins frequently recruit wargs. Most wargs are amenable to this arrangement, but if food should run out, wargs are more than willing to integrate goblinoid flesh into their diet.</p><hr /><p>The warg is an intelligent and malevolent wolf that dwells among goblins, hobgoblins, orcs, and violent humanoids.</p>",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Pack Attack": {
+                    "name": "Pack Attack",
+                    "description": "<p>The warg's Strikes deals an extra 1k4 damage to any creature within reach of at least two of the warg's allies.</p>"
+                }
+            }
+        },
         "Zombie Burster": {
             "name": "Zombie Burster",
             "hpDetails": "void healing",
@@ -5269,7 +5761,8 @@
                     "description": "<p>A zombie leshy horde is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} and can't use reactions</p>"
                 },
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 40 (12 squares), 20 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 40 (12 squares), 20 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Grave Tide": {
                     "name": "Grave Tide",
@@ -5308,6 +5801,7 @@
             "converter": "updateActorImage",
             "path": "img"
         },
+        "privateNotes": "system.details.privateNotes",
         "publicNotes": {
             "converter": "translateActorDescription",
             "path": "system.details.publicNotes"
@@ -5363,6 +5857,7 @@
         "6-07": "6-07",
         "6-08": "6-08",
         "6-09": "6-09",
-        "6-10": "6-10"
+        "6-10": "6-10",
+        "6-11": "6-11"
     }
 }

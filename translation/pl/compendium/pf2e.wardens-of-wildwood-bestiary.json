@@ -83,7 +83,8 @@
                 },
                 "action->Primal Sink": {
                     "name": "Primal Sink",
-                    "description": "<p><strong>Aktywator</strong> An arboreal sapstriker succeeds or critically succeeds at a saving throw against a primal effect</p><hr /><p><strong>Efekt</strong> The sapstriker gains a +1 status bonus to attack rolls, saving throws, skill checks, and sap saving throw DC for [[/gmr 1d4 #rounds]] rounds.</p>"
+                    "description": "<p><strong>Aktywator</strong> An arboreal sapstriker succeeds or critically succeeds at a saving throw against a primal effect</p><hr /><p><strong>Efekt</strong> The sapstriker gains a +1 status bonus to attack rolls, saving throws, skill checks, and sap saving throw DC for [[/gmr 1d4 #rounds]] rounds.</p>",
+                    "selfEffect": "Efekt: Primal Sink"
                 },
                 "action->Amber Tomb": {
                     "name": "Amber Tomb",
@@ -328,7 +329,8 @@
             "speed": "troop movement",
             "items": {
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 40 (12 squares), 20 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 40 (12 squares), 20 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Hurl Axes": {
                     "name": "Hurl Axes",
@@ -1059,12 +1061,7 @@
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
-                    "description": "<p>The tracker designates a single creature they can see and hear, or one they're Tracking, as their prey. The tracker gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p><p>The first time the tracker hits the designated prey in a round, they deal an additional 1k8 precision damage. The tracker also ignores the penalty for making ranged attacks within their second range increment.</p><p>These effects last until the tracker uses Hunt Prey again.</p>",
-                    "rules": {
-                        "4": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>The tracker designates a single creature they can see and hear, or one they're Tracking, as their prey. The tracker gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p><p>The first time the tracker hits the designated prey in a round, they deal an additional 1k8 precision damage. The tracker also ignores the penalty for making ranged attacks within their second range increment.</p><p>These effects last until the tracker uses Hunt Prey again.</p>"
                 },
                 "lore->Forest Lore": {
                     "name": "Obeznanie w Lasach"
@@ -1175,12 +1172,7 @@
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
-                    "description": "<p>The hunter designates a single creature they can see and hear, or one they're Tracking, as their prey. The hunter gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p><p>The first time the hunter hits the designated prey in a round, they deal an additional 1k8 precision damage. The hunter also ignores the penalty for making ranged attacks within their second range increment.</p><p>These effects last until the hunter uses Hunt Prey again.</p>",
-                    "rules": {
-                        "4": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>The hunter designates a single creature they can see and hear, or one they're Tracking, as their prey. The hunter gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p><p>The first time the hunter hits the designated prey in a round, they deal an additional 1k8 precision damage. The hunter also ignores the penalty for making ranged attacks within their second range increment.</p><p>These effects last until the hunter uses Hunt Prey again.</p>"
                 },
                 "lore->Forest Lore": {
                     "name": "Obeznanie w Lasach"
@@ -1201,7 +1193,8 @@
                     "name": "<Compendium> (Constant)"
                 },
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
@@ -1487,7 +1480,7 @@
                 },
                 "action->Coppice Regrowth": {
                     "name": "Coppice Regrowth",
-                    "description": "<p>A phytohydra ordinarily has five heads. A creature can attempt to sever one of the heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that isn't completely severed returns to full Hit Points at the end of any creature's turn.</p><p>A phytohydra can regrow a severed head using phytohydra regeneration. A creature can prevent this regrowth by dealing fire damage to the stump, sealing it. Single-target fire effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space seal all stumps if they deal fire damage. If the attack that severs a head deals any fire damage or was dealt by an axe, the stump is sealed instantly. If all five heads are sealed, the phytohydra dies.</p><hr /><p><strong>Phytohydra Head</strong></p><ul><li><p><strong>Punkty Żywotności</strong> 30</p></li><li><p><strong>Immunities</strong> Area Damage, Bleed, Paralyzed, Poison, Sleep</p></li><li><p><strong>Weaknesses</strong> Fire 10, Slashing 5<br /></p></li></ul><p>@UUID[Compendium.pf2e.bestiary-effects.Item.PSRUF9Elf05KtgvF]{Efekt: Phytohydra Heads}</p>"
+                    "description": "<p>A phytohydra ordinarily has five heads. A creature can attempt to sever one of the heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that isn't completely severed returns to full Hit Points at the end of any creature's turn.</p><p>A phytohydra can regrow a severed head using phytohydra regeneration. A creature can prevent this regrowth by dealing fire damage to the stump, sealing it. Single-target fire effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space seal all stumps if they deal fire damage. If the attack that severs a head deals any fire damage or was dealt by an axe, the stump is sealed instantly. If all five heads are sealed, the phytohydra dies.</p><hr /><p><strong>Phytohydra Head</strong></p><ul><li><p><strong>Punkty Żywotności</strong> 30</p></li><li><p><strong>Immunities</strong> Area Damage, Bleed, Paralyzed, Poison, Sleep</p></li><li><p><strong>Weaknesses</strong> Fire 10, Slashing 5</p></li></ul><p>@UUID[Compendium.pf2e.bestiary-effects.Item.PSRUF9Elf05KtgvF]{Efekt: Phytohydra Heads}</p>"
                 },
                 "action->Reactive Strike (See Reactive Heads)": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\nReactive Strike (See Reactive Heads)"
@@ -1728,7 +1721,8 @@
                     "description": "<p>The rancorous druids collectively transform into a swarm of Tiny insects. They cast @UUID[Compendium.pf2e.spells-srd.Item.Pd2M1XY8EXrSfWgJ]{Swarm Form} heightened to 6. rank, but the duration is 1 hour instead of 5 minutes.</p>"
                 },
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -2372,7 +2366,8 @@
             "speed": "troop movement",
             "items": {
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 68 (12 squares), 34 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 68 (12 squares), 34 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Clear Cut": {
                     "name": "Clear Cut",
@@ -2594,12 +2589,7 @@
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
-                    "description": "<p>The sentry designates a single creature they can see and hear, or one they're Tracking, as their prey. The sentry gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p><p>The first time the sentry hits the designated prey in a round, they deal an additional 1k8 precision damage. The sentry also ignores the penalty for making ranged attacks within their second range increment against the prey they're hunting.</p><p>These effects last until the sentry uses Hunt Prey again.</p>",
-                    "rules": {
-                        "2": {
-                            "label": "First attack on hunted prey this round"
-                        }
-                    }
+                    "description": "<p>The sentry designates a single creature they can see and hear, or one they're Tracking, as their prey. The sentry gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p><p>The first time the sentry hits the designated prey in a round, they deal an additional 1k8 precision damage. The sentry also ignores the penalty for making ranged attacks within their second range increment against the prey they're hunting.</p><p>These effects last until the sentry uses Hunt Prey again.</p>"
                 },
                 "action->Protector of Arenway": {
                     "name": "Protector of Arenway",
@@ -2897,5 +2887,10 @@
             "converter": "translateTokenName",
             "path": "prototypeToken.name"
         }
+    },
+    "folders": {
+        "Book 1 - Packbreaker": "Book 1 - Packbreaker",
+        "Book 2 - Severed at the Root": "Book 2 - Severed at the Root",
+        "Book 3 - Shepherd of Decay": "Book 3 - Shepherd of Decay"
     }
 }

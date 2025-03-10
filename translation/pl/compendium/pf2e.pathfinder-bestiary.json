@@ -135,7 +135,7 @@
                 },
                 "action->Generate Bomb": {
                     "name": "Generate Bomb",
-                    "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p><p>Determine the type of bomb created by rolling 1k6 on the alchemical chambers list.</p><p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p><p>On a roll of 5, it creates a poisonous bomb that deals 3k10 poison damage and 3 poison splash damage with no other effects.</p><p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p><table class=\"pf2e remaster\"><thead><tr><th>[[/gmr 1d6 #Generate Bomb]]</th><th>Alchemical Effect</th></tr></thead><tbody><tr><td>1</td><td><p>Acid Flask: @Damage[1[acid],3k6[persistent,acid],(3[splash])[acid]] damage</p></td></tr><tr><td>2</td><td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and –10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{Efekt: Frost Vial (Większy)}</td></tr><tr><td>3</td><td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until start of targets next turn</td></tr><tr><td>4</td><td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td></tr><tr><td>5</td><td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td></tr><tr><td>6</td><td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 2} on a critical failure)</td></tr></tbody></table>"
+                    "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p><p>Determine the type of bomb created by rolling 1k6 on the alchemical chambers list.</p><p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p><p>On a roll of 5, it creates a poisonous bomb that deals 3k10 poison damage and 3 poison splash damage with no other effects.</p><p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p><table class=\"pf2e\"><thead><tr><th>[[/gmr 1d6 #Generate Bomb]]</th><th>Alchemical Effect</th></tr></thead><tbody><tr><td>1</td><td><p>Acid Flask: @Damage[1[acid],3k6[persistent,acid],(3[splash])[acid]] damage</p></td></tr><tr><td>2</td><td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and –10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Efekt: Frost Vial}</td></tr><tr><td>3</td><td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} until start of targets next turn</td></tr><tr><td>4</td><td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td></tr><tr><td>5</td><td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td></tr><tr><td>6</td><td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 2} on a critical failure)</td></tr></tbody></table>"
                 }
             }
         },
@@ -1946,7 +1946,8 @@
                 },
                 "action->Blood Frenzy": {
                     "name": "Blood Frenzy",
-                    "description": "<p><strong>Wymagania</strong> The bunyip is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy.</p><p><strong>Aktywator</strong> The bunyip deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a –2 penalty to AC.</p>"
+                    "description": "<p><strong>Wymagania</strong> The bunyip is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy.</p><p><strong>Aktywator</strong> The bunyip deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a –2 penalty to AC.</p>",
+                    "selfEffect": "Efekt: Blood Frenzy"
                 },
                 "action->Roar": {
                     "name": "Roar",
@@ -5675,26 +5676,6 @@
                 }
             }
         },
-        "Quetzalcoatlus": {
-            "name": "Quetzalcoatlus",
-            "publicNotes": "<p>Quetzalcoatlus are the largest flying members of the pterosaur family and are often mistaken for dragons due to their immense size and 40-foot wingspans.</p><p>Quetzalcoatlus are carnivorous, feeding on a variety of reptiles, mammals, large fish, amphibians, and other invertebrates. They are not inherently aggressive creatures and are happy to scavenge for food, but when presented with live prey they readily attack almost any creature smaller than themselves.</p><hr /><p>Pterosaurs are primitive flying creatures. While many are smaller than a human, the two presented below are quite a bit larger. Each of these creatures could pose a serious threat to a person. These flying reptiles can be found in a wide selection of regions, but they tend to soar above warm or temperate climates.</p>",
-            "items": {
-                "strike-melee->Beak": {
-                    "name": "Beak"
-                },
-                "strike-melee->Talon": {
-                    "name": "Talon"
-                },
-                "action->Snatch": {
-                    "name": "Snatch",
-                    "description": "<p>A quetzalcoatlus can move at half Speed while it has a single creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycony} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Spętany}. Both its talons are occupied while it does this.</p>"
-                },
-                "action->Swoop": {
-                    "name": "Swoop",
-                    "description": "<p>The quetzacoaltus Flies up to its Speed and makes one beak or talon Strike at any point during that movement.</p>"
-                }
-            }
-        },
         "Raja Rakshasa": {
             "name": "Raja Rakshasa",
             "publicNotes": "<p>When not disguised as a humanoid, the raja rakshasa has the head of an animal. The hands of a raja rakshasa are more subtly unsettling, for the fingers of these fiends bend outward, away from the palms.</p><p>More than any other types of rakshasa, rajas scoff at religion. They understand the power of the divine, yet they view themselves as the only things worthy of worship from mortal creatures; not even their own immortals are deemed deserving of such glorification. Raja rakshasas often form close-knit families that work together to bring down mortal cities or to rule them from the shadows within. Such families of rakshasas often incorporate other breeds of the fiend, often using dandasukas as favored servants or stealthy spies. Even though a raja family works together to achieve a shared goal, infighting and treachery among their own is a constant threat.</p><hr /><p>Rakshasas are evil spirits that cloak themselves in the guises of humanoid creatures, that they might walk unseen among their prey. They embody what is taboo among most societies, and in the shape of those they seek to defile, rakshasas gorge themselves on these hideous acts. A wide range of rakshasas exist; presented below are the diminutive, sinister dandasuka rakshasa and the infamous raja rakshasa, who are the most widespread and commonly encountered of these fiends.</p>",
@@ -6314,7 +6295,8 @@
                 },
                 "action->Blood Frenzy": {
                     "name": "Blood Frenzy",
-                    "description": "<p><strong>Wymagania</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy</p><p><strong>Aktywator</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a –2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy</p><p><strong>Aktywator</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a –2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>",
+                    "selfEffect": "Efekt: Blood Frenzy"
                 },
                 "action->Bloodletting": {
                     "name": "Bloodletting",
@@ -6357,7 +6339,8 @@
                 },
                 "action->Blood Frenzy": {
                     "name": "Blood Frenzy",
-                    "description": "<p><strong>Wymagania</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy</p><p><strong>Aktywator</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and takes a –2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy</p><p><strong>Aktywator</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and takes a –2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>",
+                    "selfEffect": "Efekt: Blood Frenzy"
                 },
                 "action->Bloodletting": {
                     "name": "Bloodletting",
@@ -6400,7 +6383,8 @@
                 },
                 "action->Blood Frenzy": {
                     "name": "Blood Frenzy",
-                    "description": "<p><strong>Wymagania</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy</p><p><strong>Aktywator</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 7 temporary HP until the end of the frenzy, and takes a –2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>"
+                    "description": "<p><strong>Wymagania</strong> The sea devil is not @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany} or already in a frenzy</p><p><strong>Aktywator</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Efekt</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 7 temporary HP until the end of the frenzy, and takes a –2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Wyczerpany}.</p>",
+                    "selfEffect": "Efekt: Blood Frenzy"
                 },
                 "action->Bloodletting": {
                     "name": "Bloodletting",

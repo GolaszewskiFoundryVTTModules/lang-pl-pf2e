@@ -393,7 +393,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+4 to Will Vs. Fear"
         },
         "action->Troop Defenses": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 180 (12 squares), 90 (8 squares)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "name": "Troop Defenses",
+          "description": "<p><strong>Thresholds</strong> 180 (12 squares), 90 (8 squares)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Dagger Volley": {
           "name": "Dagger Volley",
@@ -409,11 +410,13 @@
         },
         "action->Raise Shields": {
           "name": "Raise Shields",
-          "description": "<p>The troop raises their shields, increasing their Armor Class by 2 until the start of the troop's next turn.</p>"
+          "description": "<p>The troop raises their shields, increasing their Armor Class by 2 until the start of the troop's next turn.</p>",
+          "selfEffect": "Effect: Raise a Shield"
         },
         "action->Song of Freedom": {
           "name": "Song of Freedom",
-          "description": "<p>The troop sings of freedom, bolstering their conviction and morale. Until the start of the troop's next turn, their Will saves increase to +29 against all mental effects, not just against fear effects.</p>"
+          "description": "<p>The troop sings of freedom, bolstering their conviction and morale. Until the start of the troop's next turn, their Will saves increase to +29 against all mental effects, not just against fear effects.</p>",
+          "selfEffect": "Effect: Song of Freedom"
         },
         "action->Strike as One": {
           "name": "Strike as One",
@@ -530,7 +533,8 @@
       "speed": "troop movement",
       "items": {
         "action->Troop Defenses": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 170 (12 squares), 85 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "name": "Troop Defenses",
+          "description": "<p><strong>Thresholds</strong> 170 (12 squares), 85 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Fire Crossbows!": {
           "name": "Fire Crossbows!",
@@ -790,7 +794,8 @@
         },
         "action->Ruinous Rage": {
           "name": "Ruinous Rage",
-          "description": "<p>The rage rider enters a state of pure rage that lasts either for 1 minute, until there are no enemies they can perceive, or until they fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first. While raging, the rage rider has AC 27 and their spear Strikes deal 2d6+15 damage plus 2d6 persistent bleed damage. While raging, the rage rider can't use actions that have the concentrate trait, except for @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}. After they've stopped raging, a rage rider can't use Rage again for 1 minute.</p>"
+          "description": "<p>The rage rider enters a state of pure rage that lasts either for 1 minute, until there are no enemies they can perceive, or until they fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first. While raging, the rage rider has AC 27 and their spear Strikes deal 2d6+15 damage plus 2d6 persistent bleed damage. While raging, the rage rider can't use actions that have the concentrate trait, except for @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}. After they've stopped raging, a rage rider can't use Rage again for 1 minute.</p>",
+          "selfEffect": "Effect: Rage"
         }
       }
     },
@@ -1045,7 +1050,8 @@
         },
         "action->Crimson Shroud": {
           "name": "Crimson Shroud",
-          "description": "<p><strong>Frequency</strong> seven times a day</p>\n<hr />\n<p><strong>Effect</strong> Saviya swathes herself in red mist for 1 minute, during which time she gains fast healing 9. She can Interact with the mist to gain a +1 circumstance bonus to AC until the beginning of her next turn. If she dies while Crimson Shroud is active, her body vanishes, leaving behind only her gear.</p>"
+          "description": "<p><strong>Frequency</strong> seven times a day</p>\n<hr />\n<p><strong>Effect</strong> Saviya swathes herself in red mist for 1 minute, during which time she gains fast healing 9. She can Interact with the mist to gain a +1 circumstance bonus to AC until the beginning of her next turn. If she dies while Crimson Shroud is active, her body vanishes, leaving behind only her gear.</p>",
+          "selfEffect": "Effect: Crimson Shroud"
         },
         "action->Prayer Attack": {
           "name": "Prayer Attack",
@@ -1064,6 +1070,9 @@
       "name": "Shirota",
       "blurb": "Male human alchemist",
       "items": {
+        "weapon->Glue Bomb (Greater)": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A glue bomb is a harmless explosive mechanism bursting with sticky substances. When you hit a creature with a glue bomb, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is 28.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Glue bombs are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 Interact actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{Effect: Glue Bomb}</p>"
+        },
         "consumable->Elixir of Life (Major)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]] Hit Points and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
         },
@@ -1076,7 +1085,7 @@
         },
         "strike-ranged->Glue Bomb": {
           "name": "Glue Bomb",
-          "description": "<p>@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{Effect: Glue Bomb (Greater)}</p>"
+          "description": "<p>@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{Effect: Glue Bomb}</p>"
         },
         "strike-melee->Fist": {
           "name": "Fist"
@@ -1193,7 +1202,8 @@
         },
         "action->Divine Weapon": {
           "name": "Divine Weapon",
-          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Trigger</strong> Sister Maeri finishes Casting a Spell</p>\n<hr />\n<p><strong>Effect</strong> Until the end of her turn, Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</p>"
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Trigger</strong> Sister Maeri finishes Casting a Spell</p>\n<hr />\n<p><strong>Effect</strong> Until the end of her turn, Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</p>",
+          "selfEffect": "Effect: Divine Weapon"
         }
       }
     },
@@ -1236,7 +1246,8 @@
         },
         "action->Crimson Shroud": {
           "name": "Crimson Shroud",
-          "description": "<p><strong>Frequency</strong> five times per day</p>\n<hr />\n<p><strong>Effect</strong> Talaro shrouds himself in a veil of red mist for 1 minute. While the shroud is active, he gains fast healing 7. He can Interact with his shroud, swirling it around himself to gain a +1 circumstance bonus to AC until the beginning of his next turn. If he dies while the shroud is active, his entire body vanishes into red mist, leaving behind only his gear.</p>"
+          "description": "<p><strong>Frequency</strong> five times per day</p>\n<hr />\n<p><strong>Effect</strong> Talaro shrouds himself in a veil of red mist for 1 minute. While the shroud is active, he gains fast healing 7. He can Interact with his shroud, swirling it around himself to gain a +1 circumstance bonus to AC until the beginning of his next turn. If he dies while the shroud is active, his entire body vanishes into red mist, leaving behind only his gear.</p>",
+          "selfEffect": "Effect: Crimson Shroud"
         },
         "action->Prayer Attack": {
           "name": "Prayer Attack",
@@ -1453,7 +1464,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
         },
         "action->Troop Defenses": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 208 (12 squares), 104 (8 squares)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "name": "Troop Defenses",
+          "description": "<p><strong>Thresholds</strong> 208 (12 squares), 104 (8 squares)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Bolster the Wounded": {
           "name": "Bolster the Wounded",

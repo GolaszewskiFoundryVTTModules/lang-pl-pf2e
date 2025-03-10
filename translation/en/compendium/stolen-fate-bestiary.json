@@ -548,6 +548,9 @@
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>30 feet. @Check[will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
+        },
         "action->Claws, Fangs, and Horns": {
           "name": "Claws, Fangs, and Horns",
           "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng rips and tears at each enemy within its squares and within 5 feet (@Check[reflex|dc:33] save). Damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> Damage @Damage[(1d10+12)[slashing],1d6[spirit]]{1d10+12 slashing plus 1d6 spirit}</p>\n<p><span class=\"action-glyph\">2</span> Damage @Damage[(2d10+12)[slashing],1d6[spirit]]{2d10+12 slashing plus 1d6 spirit}</p>\n<p><span class=\"action-glyph\">3</span> Damage @Damage[(3d10+12)[slashing],1d6[spirit]]{3d10+12 slashing plus 1d6 spirit}</p>"
@@ -803,7 +806,7 @@
         },
         "action->Iron Command": {
           "name": "Iron Command",
-          "description": "<p><strong>Trigger</strong> An enemy within 15 feet damages Drustan</p>\n<hr />\n<p><strong>Effect</strong> Drustan commands the triggering enemy to kneel before him in obedience. If they dare to refuse, they must pay the price in pain and anguish. The triggering enemy and each other enemy within 15 feet of Drustan must choose one of the following options.</p>\n<ul>\n<li>The enemy kneels, dropping @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} as a free action.</li>\n<li>The enemy refuses, and Drustan deals @Damage[4[mental]] to the enemy (the triggering enemy instead takes @Damage[4d6[mental],5[persistent,spirit]]{4d6 mental damage and 5 persistent evil} damage).</li>\n</ul>\n<p>Drustan also deals an additional @Damage[2[spirit]] with his Strikes against the triggering enemy until the end of Drustan's next turn.</p>"
+          "description": "<p><strong>Trigger</strong> An enemy within 15 feet damages Drustan</p>\n<hr />\n<p><strong>Effect</strong> Drustan commands the triggering enemy to kneel before him in obedience. If they dare to refuse, they must pay the price in pain and anguish. The triggering enemy and each other enemy within 15 feet of Drustan must choose one of the following options.</p>\n<ul>\n<li>The enemy kneels, dropping @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} as a free action.</li>\n<li>The enemy refuses, and Drustan deals @Damage[4[mental]] damage to the enemy (the triggering enemy instead takes @Damage[4d6[mental],5[persistent,spirit]] damage).</li>\n</ul>\n<p>Drustan also deals an additional 2 spirit damage with his Strikes against the triggering enemy until the end of Drustan's next turn.</p>"
         },
         "action->Divine Ally": {
           "name": "Divine Ally",
@@ -1399,6 +1402,9 @@
         "action->Ratspeak": {
           "name": "Ratspeak",
           "description": "<p>A hadi mob can communicate with rodents.</p>"
+        },
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
         },
         "action->Gnaw and Chew": {
           "name": "Gnaw and Chew",
@@ -2998,7 +3004,8 @@
         },
         "action->Challenge Foe": {
           "name": "Challenge Foe",
-          "description": "<p>The soldier challenges one creature they can see to single combat, attempting to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} that target. This target remains the soldier's foe until it's defeated, it flees, or the encounter ends. The soldier gains a circumstance bonus to damage equal to their number of weapon damage dice against their designated foe but takes an equivalent circumstance penalty to damage against any other creature. If the soldier is defeated by their challenged foe, the shame causes them to lose use of their champion devotion spells for 1 week or until they challenge the same foe again and emerge victorious, whichever comes first.</p>"
+          "description": "<p>The soldier challenges one creature they can see to single combat, attempting to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} that target. This target remains the soldier's foe until it's defeated, it flees, or the encounter ends. The soldier gains a circumstance bonus to damage equal to their number of weapon damage dice against their designated foe but takes an equivalent circumstance penalty to damage against any other creature. If the soldier is defeated by their challenged foe, the shame causes them to lose use of their champion devotion spells for 1 week or until they challenge the same foe again and emerge victorious, whichever comes first.</p>",
+          "selfEffect": "Effect: Challenge Foe"
         },
         "action->Defender of Svaryr": {
           "name": "Defender of Svaryr",
@@ -4469,6 +4476,9 @@
           "name": "Spores of Wrath",
           "description": "<p>5 feet. Non-demons that start their turn in the aura take @Damage[4d8[poison]] damage. Each creature damaged this way must succeed at a @Check[fortitude|dc:34] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/gmr 1d4 #days]]{1d4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if holy water is applied to the vines (with an Interact action).</p>"
         },
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
+        },
         "action->Beaks, Claws, and Talons": {
           "name": "Beaks, Claws, and Talons",
           "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng furiously tears at each enemy within its squares and within 5 feet (@Check[reflex|dc:37] save). Damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> Damage @Damage[(1d12+14)[slashing],1d6[spirit]]{1d12+14 slashing plus 1d6 spirit}</p>\n<p><span class=\"action-glyph\">2</span> Damage @Damage[(2d12+14)[slashing],1d6[spirit]]{2d12+14 slashing plus 1d6 spirit}</p>\n<p><span class=\"action-glyph\">3</span> Damage @Damage[(3d12+14)[slashing],1d6[spirit]]{3d12+14 slashing plus 1d6 spirit}</p>"
@@ -4737,5 +4747,10 @@
       "converter": "translateTokenName",
       "path": "prototypeToken.name"
     }
+  },
+  "folders": {
+    "Book 1 - The Choosing": "Book 1 - The Choosing",
+    "Book 2 - The Destiny War": "Book 2 - The Destiny War",
+    "Book 3 - Worst of All Possible Worlds": "Book 3 - Worst of All Possible Worlds"
   }
 }

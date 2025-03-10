@@ -85,7 +85,7 @@
             "blurb": "Male human alchemist",
             "items": {
                 "weapon->Frost Vial (Moderate)": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Cios</p><hr /><p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p><p>You gain a +1 item bonus to attack rolls, the bomb deals 2k6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Efekt: Frost Vial (Umiarkowany)}</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Strike</p><hr /><p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p><p>You gain a +1 item bonus to attack rolls, the bomb deals 2k6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Efekt: Frost Vial}</p>"
                 },
                 "armor->Chain Shirt": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
@@ -137,7 +137,8 @@
                     "description": "<p>Angry townsfolk can spend 1 minute to designate a single creature for whom they have a physical description as their quarry. They gain a +2 circumstance bonus to Perception against their quarry.</p>"
                 },
                 "action->Troop Defenses": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n<p><strong>Thresholds</strong> 50 (12 squares), 25 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 50 (12 squares), 25 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Pitchforks and Torches": {
                     "name": "Pitchforks and Torches",
@@ -354,7 +355,8 @@
                 },
                 "action->Activate Serpent Mode": {
                     "name": "Activate Serpent Mode",
-                    "description": "<p><strong>Aktywator</strong> The clockwork serpent begins its turn</p><hr /><p><strong>Efekt</strong> The clockwork serpent transforms into a different mode. Roll 1k3 and consult the options below. If it rolls a mode it can't currently activate, the clockwork serpent becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} until the start of its next turn. At the end of its turn, it automatically deactivates its serpent mode.</p><p><strong>1 Cobra Mode</strong> The clockwork serpent can use Intimidating Hood.</p><p><strong>2 Constrictor Mode</strong> The clockwork serpent can use its coils Strike and can Constrict.</p><p><strong>3 Rattlesnake Mode</strong> The clockwork serpent can use Shattering Rattle.</p>"
+                    "description": "<p><strong>Aktywator</strong> The clockwork serpent begins its turn</p><hr /><p><strong>Efekt</strong> The clockwork serpent transforms into a different mode. Roll 1k3 and consult the options below. If it rolls a mode it can't currently activate, the clockwork serpent becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Niezdarny 1} until the start of its next turn. At the end of its turn, it automatically deactivates its serpent mode.</p><p><strong>1 Cobra Mode</strong> The clockwork serpent can use Intimidating Hood.</p><p><strong>2 Constrictor Mode</strong> The clockwork serpent can use its coils Strike and can Constrict.</p><p><strong>3 Rattlesnake Mode</strong> The clockwork serpent can use Shattering Rattle.</p>",
+                    "selfEffect": "Efekt: Serpent Mode"
                 },
                 "action->Critical Deactivation": {
                     "name": "Critical Deactivation",
@@ -408,7 +410,8 @@
                 },
                 "action->Droning Wings": {
                     "name": "Droning Wings",
-                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The coloxus flutters its shimmering, gauzy wings and creates a mesmerizing display of color along with a sound-dampening buzzing drone. If the coloxus is @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}, that effect ends and it becomes visible. All creatures within a @Template[emanation|distance:30] must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} on a critical failure) until the start of the coloxus's next turn. As long as Droning Wings continues, the coloxus gains immunity to sonic damage. The coloxus can Sustain Droning Wings for up to 1 minute.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> The coloxus flutters its shimmering, gauzy wings and creates a mesmerizing display of color along with a sound-dampening buzzing drone. If the coloxus is @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}, that effect ends and it becomes visible. All creatures within a @Template[emanation|distance:30] must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} on a critical failure) until the start of the coloxus's next turn. As long as Droning Wings continues, the coloxus gains immunity to sonic damage. The coloxus can Sustain Droning Wings for up to 1 minute.</p>",
+                    "selfEffect": "Efekt: Droning Wings"
                 },
                 "action->Siphon": {
                     "name": "Siphon",
@@ -753,7 +756,8 @@
                 },
                 "action->Bob": {
                     "name": "Bob",
-                    "description": "<p>The giant longlegs begins to bob up and down, using its legs almost like springs to cause its body to bounce and sway in an unsettling manner. Until the start of the giant longlegs's next turn, it gains a +2 status bonus to its Armor Class.</p>"
+                    "description": "<p>The giant longlegs begins to bob up and down, using its legs almost like springs to cause its body to bounce and sway in an unsettling manner. Until the start of the giant longlegs's next turn, it gains a +2 status bonus to its Armor Class.</p>",
+                    "selfEffect": "Efekt: Bob"
                 },
                 "action->Noxious Spray": {
                     "name": "Noxious Spray",
@@ -1200,7 +1204,8 @@
                 },
                 "action->Toxic Effluvium": {
                     "name": "Toxic Effluvium",
-                    "description": "<p>Kanker has exposed himself to so many toxins and poisons over the years that it's all seeped into his undead flesh. When he activates Toxic Effluvium, these foul-smelling fluids seep from his flesh, causing his jaws and claws to secrete drooling rivulets of foul green venom that coat his teeth and talons, as well as any weapon he wields. Until the start of his next turn, Kanker's melee Strikes deal an additional 2k6 poison damage.</p>"
+                    "description": "<p>Kanker has exposed himself to so many toxins and poisons over the years that it's all seeped into his undead flesh. When he activates Toxic Effluvium, these foul-smelling fluids seep from his flesh, causing his jaws and claws to secrete drooling rivulets of foul green venom that coat his teeth and talons, as well as any weapon he wields. Until the start of his next turn, Kanker's melee Strikes deal an additional 2k6 poison damage.</p>",
+                    "selfEffect": "Efekt: Toxic Effluvium"
                 }
             }
         },
@@ -1642,7 +1647,8 @@
                 },
                 "action->Bob": {
                     "name": "Bob",
-                    "description": "<p>The sicklefang longlegs begins to bob up and down, using its legs almost like springs to cause its body to bounce and sway in an unsettling manner. Until the start of the sicklefang longlegs's next turn, it gains a +2 status bonus to its Armor Class.</p>"
+                    "description": "<p>The sicklefang longlegs begins to bob up and down, using its legs almost like springs to cause its body to bounce and sway in an unsettling manner. Until the start of the sicklefang longlegs's next turn, it gains a +2 status bonus to its Armor Class.</p>",
+                    "selfEffect": "Efekt: Bob"
                 },
                 "action->Noxious Spray": {
                     "name": "Noxious Spray",
@@ -1816,6 +1822,9 @@
             "blurb": "Male goblin alchemist",
             "saveDetails": "+1 status vs. poison",
             "items": {
+                "weapon->Glue Bomb (Moderate)": {
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">1</span> Strike</p><hr /><p>A glue bomb is a harmless explosive mechanism bursting with sticky substances. When you hit a creature with a glue bomb, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is 19.</p><p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Glue bombs are not effective when used on a creature that is in water.</p><p>The target can end any effects by Escaping or spending a total of 3 Interact actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{Efekt: Glue Bomb}</p>"
+                },
                 "consumable->Antidote (Lesser)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]\n<p><strong>Aktywacja</strong> <span class=\"action-glyph\">A</span> (manipulacja)</p><hr /><p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p><p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Efekt: Antidote}</p>"
                 },

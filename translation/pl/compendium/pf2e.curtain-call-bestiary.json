@@ -278,7 +278,8 @@
                 },
                 "action->Consumed by Bloodlust": {
                     "name": "Consumed by Bloodlust",
-                    "description": "<p><strong>Częstotliwość</strong> once per day;</p><p><strong>Duration</strong> 1 minute</p><p><strong>Aktywator</strong> Blackfingers damages a creature</p><hr /><p><strong>Efekt</strong> Murderous instinct consumes Blackfingers' mind. He gains a +2 status bonus to attacks and damage with his dagger, but is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} and cannot use concentrate abilities. If he brings a creature to 0 Hit Points while consumed by bloodlust, he gains 20 temporary Hit Points, and this effect ends.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> once per day;</p><p><strong>Duration</strong> 1 minute</p><p><strong>Aktywator</strong> Blackfingers damages a creature</p><hr /><p><strong>Efekt</strong> Murderous instinct consumes Blackfingers' mind. He gains a +2 status bonus to attacks and damage with his dagger, but is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 2} and cannot use concentrate abilities. If he brings a creature to 0 Hit Points while consumed by bloodlust, he gains 20 temporary Hit Points, and this effect ends.</p>",
+                    "selfEffect": "Efekt: Consumed by Bloodlust"
                 },
                 "action->Poison Sense (Precise) 30 feet": {
                     "name": "Poison Sense (Precise) 30 feet",
@@ -809,7 +810,8 @@
                 },
                 "action->Feast on Illness": {
                     "name": "Feast on Illness",
-                    "description": "<p><strong>Wymagania</strong> The furnerico's last action was a successful pseudopod Strike against a creature with the @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony} condition</p><hr /><p><strong>Efekt</strong> The furnerico feeds off the sweet sickness of the creature, gaining 30 temporary hit points for 1 minute.</p>"
+                    "description": "<p><strong>Wymagania</strong> The furnerico's last action was a successful pseudopod Strike against a creature with the @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony} condition</p><hr /><p><strong>Efekt</strong> The furnerico feeds off the sweet sickness of the creature, gaining 30 temporary hit points for 1 minute.</p>",
+                    "selfEffect": "Efekt: Feast on Illness"
                 },
                 "action->Sticky Slime": {
                     "name": "Sticky Slime",
@@ -2743,7 +2745,8 @@
                 },
                 "action->Dueling Dance": {
                     "name": "Dueling Dance",
-                    "description": "<p><strong>Wymagania</strong> Vorens wields a one-handed melee weapon and his other hand is free</p><hr /><p><strong>Efekt</strong> Vorens gains a +2 circumstance bonus to his AC until the start of his next turn.</p>"
+                    "description": "<p><strong>Wymagania</strong> Vorens wields a one-handed melee weapon and his other hand is free</p><hr /><p><strong>Efekt</strong> Vorens gains a +2 circumstance bonus to his AC until the start of his next turn.</p>",
+                    "selfEffect": "Efekt: Dueling Dance"
                 },
                 "action->Dueling Riposte": {
                     "name": "Dueling Riposte",
@@ -2882,5 +2885,10 @@
             "converter": "translateTokenName",
             "path": "prototypeToken.name"
         }
+    },
+    "folders": {
+        "Book 1 - Stage Fright": "Book 1 - Stage Fright",
+        "Book 2 - Singer, Stalker, Skinsaw Man": "Book 2 - Singer, Stalker, Skinsaw Man",
+        "Book 3 - Bring the House Down": "Book 3 - Bring the House Down"
     }
 }

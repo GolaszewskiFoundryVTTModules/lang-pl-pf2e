@@ -156,12 +156,7 @@
         },
         "action->Hunt Prey": {
           "name": "Hunt Prey",
-          "description": "<p>Ajbal designates a single creature he can see and hear, or one he's Tracking, as his prey. Ajbal gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} his prey and Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} his prey.</p>\n<p>The first time Ajbal hits his designated prey in a round, he deals an additional 2d8 precision damage. Ajbal also ignores the penalty for making ranged attacks within the second range increment when attacking his prey.</p>\n<p>These effects last until Ajbal uses Hunt Prey again.</p>",
-          "rules": {
-            "4": {
-              "label": "First attack on hunted prey this round"
-            }
-          }
+          "description": "<p>Ajbal designates a single creature he can see and hear, or one he's Tracking, as his prey. Ajbal gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} his prey and Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} his prey.</p>\n<p>The first time Ajbal hits his designated prey in a round, he deals an additional 2d8 precision damage. Ajbal also ignores the penalty for making ranged attacks within the second range increment when attacking his prey.</p>\n<p>These effects last until Ajbal uses Hunt Prey again.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Ajbal deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -956,8 +951,8 @@
         }
       }
     },
-    "Bramblehand Champion Construct": {
-      "name": "Bramblehand Champion Construct",
+    "Bramble Champion Construct": {
+      "name": "Bramble Champion Construct",
       "skillSpecialAthletics": {
         "0": {
           "label": "to shove"
@@ -2204,6 +2199,9 @@
         "action->Golem Antimagic": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa]\nGolem Antimagic",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa]\n<p>Harmed by cold (@Damage[2d8[untyped]] from areas or persistent damage); healed by fire (area @Damage[2d8[healing]] HP); slowed by acid</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GolemAntimagic]</p>"
+        },
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
         },
         "action->Gold Defender Poison": {
           "name": "Gold Defender Poison",
@@ -4667,6 +4665,9 @@
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>60 feet. @Check[will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
+        },
         "action->Cosmic Explosion": {
           "name": "Cosmic Explosion",
           "description": "<p>The soul swarm unleashes a blast of burning sunlight or moonlight, dealing @Damage[(4d8+6)[fire]] damage to creatures in a @Template[burst|distance:10] within 20 feet (@Check[reflex|dc:30|basic|traits:fire] save). When the soul swarm is reduced to 8 or fewer squares, this decreases to a @Template[burst|distance:5].</p>"
@@ -4991,6 +4992,9 @@
         },
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
+        },
+        "action->Troop Defenses": {
+          "name": "Troop Defenses"
         },
         "action->Frenetic Assault": {
           "name": "Frenetic Assault",
@@ -6265,5 +6269,13 @@
       "converter": "translateTokenName",
       "path": "prototypeToken.name"
     }
+  },
+  "folders": {
+    "Book 1 - Kindled Magic": "Book 1 - Kindled Magic",
+    "Book 2 - Spoken on the Song Wind": "Book 2 - Spoken on the Song Wind",
+    "Book 3 - Hurricane's Howl": "Book 3 - Hurricane's Howl",
+    "Book 4 - Secrets of the Temple-City": "Book 4 - Secrets of the Temple-City",
+    "Book 5 - Doorway to the Red Star": "Book 5 - Doorway to the Red Star",
+    "Book 6 - Shadows of the Ancients": "Book 6 - Shadows of the Ancients"
   }
 }

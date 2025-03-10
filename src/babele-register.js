@@ -91,6 +91,9 @@ Hooks.once("init", () => {
             translateActorItems: (data, translation) => {
                 return game.langPlPf2e.translateItems(data, translation, true);
             },
+            translateAdventureActors: (data, translation) => {
+                return game.langPlPf2e.translateArrayOfObjects(data, translation, "adventureActor");
+            },
             translateAdventureItems: (data, translation) => {
                 return game.langPlPf2e.translateItems(data, translation, false, false);
             },

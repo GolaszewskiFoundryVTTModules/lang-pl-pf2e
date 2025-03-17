@@ -470,7 +470,7 @@
                     "description": "<p>When the bogeyman uses a Stride action to move half their Speed or less, that movement does not trigger reactions.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bogeyman deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bogeyman zadaje dodatkowe 1k6 obrażeń precyzyjnych istotom o @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczonej Gardzie}.</p>"
                 },
                 "action->Striking Fear": {
                     "name": "Striking Fear",
@@ -558,7 +558,7 @@
                     "description": "<p>When the bugaboo uses a Stride action to move half their Speed or less, that movement does not trigger reactions.</p>"
                 },
                 "action->Sneak Attack": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bugaboo deals 1k6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczona Garda} creatures.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bugaboo zadaje dodatkowe 1k6 obrażeń precyzyjnych istotom o @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczonej Gardzie}.</p>"
                 },
                 "action->Striking Fear": {
                     "name": "Striking Fear",
@@ -815,7 +815,7 @@
                 },
                 "action->Rabies": {
                     "name": "Rabies",
-                    "description": "<p>Visitants can be carriers of diseases, even if they are immune to their effects.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:16].</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 2} (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion} (1 dzień)</p><p><strong>Stadium 4</strong> dead</p>"
+                    "description": "<p>Visitants can be carriers of diseases, even if they are immune to their effects.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:16].</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 2} (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion} (1 dzień)</p><p><strong>Stadium 4</strong> Śmierć</p>"
                 }
             }
         },
@@ -1428,7 +1428,7 @@
                 },
                 "action->Hallucinogenic Pollen": {
                     "name": "Hallucinogenic Pollen",
-                    "description": "<p>A creature hit by the trap's pollen spray must succeed at a @Check[will|dc:20] save or it is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round and takes a –2 status penalty to Perception checks and saves against mental effects for [[/gmr 1d4 #hours]] hours. On a critical failure, the penalty is instead –4.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.GstmxSP75eKmHtCQ]{Efekt: Hallucinogenic Pollen (Porażka)}</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.RAKgTTFKc2YEbvrc]{Efekt: Hallucinogenic Pollen (Krytyczna Porażka)}</p>"
+                    "description": "<p>A creature hit by the trap's pollen spray must succeed at a @Check[will|dc:20] save or it is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for 1 round and takes a –2 status penalty to Perception checks and saves against mental effects for [[/gmr 1d4 #godzin]] hours. On a critical failure, the penalty is instead –4.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.GstmxSP75eKmHtCQ]{Efekt: Hallucinogenic Pollen (Porażka)}</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.RAKgTTFKc2YEbvrc]{Efekt: Hallucinogenic Pollen (Krytyczna Porażka)}</p>"
                 }
             }
         },
@@ -1658,7 +1658,7 @@
             "name": "Echoes of Faith",
             "description": "<p>The restless spirits of clergy who once inhabited this now-defiled temple of Aroden remain within the sanctuary and pulpit.</p>",
             "disable": "<p>@Check[occultism|dc:26|name:Exorcise the spirits|traits:haunt,hazard] (expert) to exorcise the spirits, or @Check[deception|dc:28|name:Imitate the Arodenite faith|traits:haunt,hazard] or @Check[religion|dc:28] (trained) to imitate the Arodenite faith and render the haunt harmless until it resets</p>",
-            "reset": "<p>The spirits return in [[/gmr 1d8 #Hours]]{1k8 hours} as long as any xulgaths remain in Moonstone Hall.</p>",
+            "reset": "<p>The spirits return in [[/gmr 1d8 #godzin]]{1k8 godzin} as long as any xulgaths remain in Moonstone Hall.</p>",
             "stealth": "<p>(eksperctwo)</p>",
             "items": {
                 "action->Phantom Sermon": {
@@ -1810,7 +1810,7 @@
             "items": {
                 "action->Flea Fever": {
                     "name": "Flea Fever",
-                    "description": "<p>Drain from flea fever can't be reduced or recovered from naturally until the disease is cured.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:19]</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} ([[/r 1d4]]{1k4 hours})</p><p><strong>Stadium 2</strong> drained 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} and sickened 1 (1 dzień)</p><p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 3} and sickened 1 (1 dzień)</p><p><strong>Stadium 5</strong> dead</p>"
+                    "description": "<p>Drain from flea fever can't be reduced or recovered from naturally until the disease is cured.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:19]</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} ([[/r 1d4]]{1k4 godzin})</p><p><strong>Stadium 2</strong> drained 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} and sickened 1 (1 dzień)</p><p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 3} and sickened 1 (1 dzień)</p><p><strong>Stadium 5</strong> Śmierć</p>"
                 },
                 "action->Suck Blood": {
                     "name": "Suck Blood",
@@ -1894,7 +1894,7 @@
                 },
                 "action->Flea Fever": {
                     "name": "Flea Fever",
-                    "description": "<p>Drain from flea fever can't be reduced or recovered from naturally until the disease is cured.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:18]</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} ([[/r 1d4]]{1k4 hours})</p><p><strong>Stadium 2</strong> drained 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} and sickened 1 (1 dzień)</p><p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 3} and sickened 1 (1 dzień)</p><p><strong>Stadium 5</strong> dead</p>"
+                    "description": "<p>Drain from flea fever can't be reduced or recovered from naturally until the disease is cured.</p><p><strong>Rzut Obronny</strong> @Check[fortitude|dc:18]</p><p><strong>Stadium 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} ([[/r 1d4]]{1k4 godzin})</p><p><strong>Stadium 2</strong> drained 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlony 1} (1 dzień)</p><p><strong>Stadium 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 2} and sickened 1 (1 dzień)</p><p><strong>Stadium 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 3} and sickened 1 (1 dzień)</p><p><strong>Stadium 5</strong> Śmierć</p>"
                 },
                 "action->Suck Blood": {
                     "name": "Suck Blood",
@@ -3349,7 +3349,7 @@
                 },
                 "action->Muse Possession": {
                     "name": "Muse Possession",
-                    "description": "<p>The phantom muse attempts to possess an adjacent corporeal creature. This has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell (@Check[will|dc:20|traits:mental,incapacitation,possession]), except the duration is [[/r 1d4 #hours]]{1k4 hours}, and since the phantom muse doesn't have a physical body, it is unaffected by that restriction of the spell. If the target is at least trained in Performance, the DC of this ability is @Check[will|dc:24|traits:mental,incapacitation,possession].</p>"
+                    "description": "<p>The phantom muse attempts to possess an adjacent corporeal creature. This has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell (@Check[will|dc:20|traits:mental,incapacitation,possession]), except the duration is [[/r 1d4 #godzin]]{1k4 godzin}, and since the phantom muse doesn't have a physical body, it is unaffected by that restriction of the spell. If the target is at least trained in Performance, the DC of this ability is @Check[will|dc:24|traits:mental,incapacitation,possession].</p>"
                 },
                 "lore->Theatre Lore": {
                     "name": "Theatre Lore"
@@ -5094,7 +5094,7 @@
                     "description": "<p>30 feet. Creatures entering the aura or starting their turn in the aura must succeed at a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Ogłupiony 1} for 1 minute. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3}. As a reflection of Ulthadar's emotional state, this aura is active when Ulthadar is agitated or angry and is suppressed when he is calm.</p>"
                 },
                 "action->Rejuvenation": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\nRejuvenation",
+                    "name": "Odrodzenie",
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>Ulthadar can't move on to the afterlife until Moonstone Hall is restored to a position of prominence within Escadar and staffed with new priests.</p><hr /><p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2k4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
                 },
                 "action->Draining Touch": {

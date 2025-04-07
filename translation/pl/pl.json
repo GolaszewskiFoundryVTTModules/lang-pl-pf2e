@@ -444,6 +444,7 @@
                     "Plural": "Zmysły",
                     "RangeLabel": "Zasięg",
                     "Type": {
+                        "Bloodsense": "Wyczucie Krwi",
                         "Darkvision": "Widzenie w Ciemności",
                         "Echolocation": "Echolokacja",
                         "GreaterDarkvision": "Większe Widzenie w Ciemności",
@@ -2914,7 +2915,7 @@
                     "ShieldBlock": "<p><strong>Aktywator</strong> Potwór ma wzniesioną tarczę i otrzymuje obrażenia od ataku fizycznego.</p><hr /><p><strong>Efekt</strong> Potwór nastawia swoją tarczę tak, aby odbić atak. Tarcza zapobiega obrażeniom w liczbie wynoszącej maks. wartość Twardości tarczy. Zarówno potwór, jak i tarcza otrzymują następni wszelkie pozostałe obrażenia, co może doprowadzić do uszkodzenia lub zniszczenia tarczy.</p>",
                     "SneakAttack": "<p>Kiedy potwór zada Cios istocie, która ma @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}, używają do tego chyżej lub finezyjnej broni, chyżego lub finezyjnego ataku wręcz albo ataku dystansowego, zadaje również wymienione obrażenia precyzyjne. W przypadku ataku dystansowego bronią miotaną również musi to być broń chyża lub finezyjna.</p>",
                     "Stench": "<p>Istota wkraczająca w obszar aury albo zaczynająca w nim turę musi wykonać rzut obronny Krzepy lub staje się @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Zemdlona 1} (lub przy porażce krytycznej dodatkowo @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniona 1}, tak długo jak pozostaje zemdlona). Istota, która odniesie sukces na rzucie obronnym lub przestanie być zemdlona jest tymczasowo odporna na wszystkie aury smrodu przez 1 minutę.</p>",
-                    "SwallowWhole": "<p>Potwór próbuje połknąć istotę o podanym rozmiarze lub mniejszym, którą pochwycił lub spętał w swoich szczękach lub pysku. Jeśli połknięta istota jest maksymalnego podanego rozmiaru, potwór nie może ponownie użyć Połknięcia w Całości. Jeśli istota jest mniejszego rozmiaru niż maksymalny, potwór może zwykle połknąć więcej istot; MG określa jak wiele. Potwór wykonuje @Check[athletics|defense:reflex], któremu przeciwstawia się ST Refleksu Pochwyconej istoty. Jeśli mu się powiedzie, połyka istotę. Pysk lub szczęki potwora nie chwytają już połkniętej istoty, więc potwór może ponownie użyć ich do Ciosu lub Pochwycenia. Potwór nie może atakować istot, które połknął.</p><p>Połknięta istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Połknięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po połknięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje połknięta. Jeśli ofiara @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieknie} ze statusu Pochwycenia wynikającego z tej umiejętności, wychodzi przez paszczę potwora. Uwalnia to również każdą inną istotę Pochwyconą obecnie przez paszczę lub szczęki potwora. Połknięta istota może zaatakować potwora, który ją połknął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Połykająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, połknięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń połykającego potwora.</p><p>Jeśli potwór umrze, połknięta istota może zostać uwolniona przez istoty sąsiadujące ze zwłokami, jeśli spędzą łącznie 3 akcje, rozcinając potwora bronią lub atakiem wręcz, który zadaje obrażenia kłute lub cięte.</p>",
+                    "SwallowWhole": "<p>Potwór próbuje połknąć istotę o podanym rozmiarze lub mniejszym, którą pochwycił lub spętał w swoich szczękach lub pysku. Jeśli połknięta istota jest maksymalnego podanego rozmiaru, potwór nie może ponownie użyć Połknięcia w Całości. Jeśli istota jest mniejszego rozmiaru niż maksymalny, potwór może zwykle połknąć więcej istot; MG określa jak wiele. Potwór wykonuje @Check[athletics|defense:reflex], któremu przeciwstawia się ST Refleksu Pochwyconej istoty. Jeśli mu się powiedzie, połyka istotę. Pysk lub szczęki potwora nie chwytają już połkniętej istoty, więc potwór może ponownie użyć ich do Ciosu lub Pochwycenia. Potwór nie może atakować istot, które połknął.</p><p>Połknięta istota jest @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Pochwycona}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Spowolniona 1} oraz musi wstrzymać oddech lub zacząć się dusić. Połknięta istota otrzymuje wymienioną liczbę obrażeń natychmiast po połknięciu oraz na koniec każdej swojej tury, tak długo jak pozostaje połknięta. Jeśli ofiara @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Ucieknie} ze statusu Pochwycenia wynikającego z tej umiejętności, wychodzi przez paszczę potwora. Uwalnia to również każdą inną istotę Pochwyconą obecnie przez paszczę lub szczęki potwora. Połknięta istota może zaatakować potwora, który ją połknął, ale tylko atakami wręcz lub bronią o lekkim lub mniejszym Naręczu. Połykająca istota ma przeciw temu atakowi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli potwór otrzyma od pojedynczego ataku lub zaklęcia obrażenia kłute lub cięte równe lub większe od wymienionej wartości Rozdarcia, połknięta istota wycina sobie drogą na zewnątrz i uwalnia się. Istota, która uwolni się poprzez Ucieczkę lub rozcięcie potwora, może natychmiast oddychać i opuszcza przestrzeń połykającego potwora.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.1cbIe569UD6paXad]{Efekt: Połknięcie w Całości}</p><p>Jeśli potwór umrze, połknięta istota może zostać uwolniona przez istoty sąsiadujące ze zwłokami, jeśli spędzą łącznie 3 akcje, rozcinając potwora bronią lub atakiem wręcz, który zadaje obrażenia kłute lub cięte.</p>",
                     "SwarmMind": "<p>Ten potwór nie ma pojedynczego umysłu (zwykle dlatego, że jest to rój mniejszych stworzeń) i jest odporny na efekty mentalne, które dotyczą tylko określonej liczby istot. Nadal podlega efektom mentalnym, które wpływają na wszystkie istoty na danym obszarze.</p>",
                     "Telepathy": "<p>Potwór posiadający zdolność telepatii może porozumiewać się mentalnie z dowolnymi istotami znajdującymi się w podanym promieniu, o ile znają wspólny język. Nie daje to żadnego specjalnego wglądu w ich myśli i nie przekazuje więcej informacji niż normalna mowa.</p>",
                     "Thoughtsense": "<p>Wyczucie myśli pozwala potworowi wyczuć wszystkie nie-bezmyślne istoty w podanym zasięgu.</p>",
@@ -4424,6 +4425,7 @@
         "TraitDescriptionSecret": "MG rzuca ten test umiejętności w sekrecie.",
         "TraitDescriptionSedacthy": "Zamieszkujące oceany humanoidy, obdarzone zdolnością do komunikacji z morskimi stworzeniami, widzeniem w ciemności i wyczuciem fal.",
         "TraitDescriptionSerpentfolk": "Wężoludzie to rodzina wężowych humanoidów.",
+        "TraitDescriptionShade": "Strzępy to śmiertelne dusze, które zostały osądzone a następnie przemienione w istoty rodzime dla innych planów. Strzępy potrafią przetrwać podstawowe efekty środowiskowe swojego rodzimego planu.",
         "TraitDescriptionShadow": "Magia tego typu obejmuje cienie lub energię Zaświatów.",
         "TraitDescriptionShieldThrow": "Tarcza z tą cechą może być miotana w ramach ataku dystansowego.",
         "TraitDescriptionShisk": "Skryte humanoidy o kościstym upierzeniu, zamieszkujące pod ziemią.",
@@ -4750,6 +4752,7 @@
         "TraitOracle": "Wyrocznia",
         "TraitOrc": "Ork",
         "TraitOread": "Oread",
+        "TraitOther": "Inne",
         "TraitOverflow": "Przesycenie",
         "TraitPaaridar": "Paaridar",
         "TraitPalinthanos": "Palintanos",
@@ -6029,7 +6032,8 @@
             },
             "confused": {
                 "name": "Zdezorientowany",
-                "rules": "<p>Nie jesteś w pełni sobą i atakujesz wszystko wokół. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} i nie traktujesz nikogo jako swojego sojusznika (chociaż inni nadal mogą traktować cię jako swojego), oraz nie możesz Opóźniać tury, Przygotowywać akcji ani używać reakcji.</p><p>Zużywasz wszystkie swoje akcje aby wymierzać Ciosy lub rzucać ofensywne sztuczki, chociaż MG może zadecydować, że podejmujesz też inne akcje niezbędne do skutecznej ofensywy takie jak wyciągnięcie broni, czy przemieszczenie się do swojego celu. Twoje cele są określane losowo przez MG. Jeśli nie posiadasz żadnych innych możliwych celów, atakujesz siebie automatycznie trafiając chociaż nigdy krytycznie. Jeśli nie posiadasz możliwości ataku ani rzucania zaklęć, bełkoczesz niezrozumiale i marnujesz wszystkie swoje akcje.</p><p>Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia wykonujesz @Check[flat|dc:11], jeśli go zdasz twoje zdezorientowanie mija i tracisz ten status.</p>",
+                "note": "Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia wykonujesz możesz wykonać @Check[flat|showDC:all|dc:11]{Test Płaski} celem przezwyciężenia dezorientacji i usunięcia tego statusu.",
+                "rules": "<p>Nie jesteś w pełni sobą i atakujesz wszystko wokół. Masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę} i nie traktujesz nikogo jako swojego sojusznika (chociaż inni nadal mogą traktować cię jako swojego), oraz nie możesz Opóźniać tury, Przygotowywać akcji ani używać reakcji.</p><p>Zużywasz wszystkie swoje akcje aby wymierzać Ciosy lub rzucać ofensywne sztuczki, chociaż MG może zadecydować, że podejmujesz też inne akcje niezbędne do skutecznej ofensywy takie jak wyciągnięcie broni, czy przemieszczenie się do swojego celu. Twoje cele są określane losowo przez MG. Jeśli nie posiadasz żadnych innych możliwych celów, atakujesz siebie automatycznie trafiając chociaż nigdy krytycznie. Jeśli nie posiadasz możliwości ataku ani rzucania zaklęć, bełkoczesz niezrozumiale i marnujesz wszystkie swoje akcje.</p><p>Za każdym razem kiedy odnosisz obrażenia od ataku lub zaklęcia możesz wykonać @Check[flat|dc:11]{Test Płaski} celem przezwyciężenia dezorientacji i usunięcia tego statusu.</p>",
                 "summary": "Atakujesz wszystko bez wyjątku."
             },
             "controlled": {
@@ -6044,7 +6048,8 @@
             },
             "deafened": {
                 "name": "Ogłuchły",
-                "rules": "<p>Nic nie słyszysz. Automatycznie odnosisz krytyczną porażkę na testach Percepcji wymagających użycia słuchu. Otrzymujesz karę statusową –2 do testów Percepcji na inicjatywę oraz testów, które zawierają słuch jako jeden ze swoich elementów ale polegają też na innych zmysłach. Jeśli dokonujesz akcji z cechą słuchowości musisz zdać @Check[flat|dc:5] lub tracisz tę akcję; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty. Jesteś niewrażliwy na efekty dźwiękowe.</p>",
+                "note": "Jeśli dokonujesz akcji z cechą słuchowości, musisz zdać @Check[flat|dc:5|showDC:all]{Test Płaski} lub tracisz tę akcję.",
+                "rules": "<p>Nic nie słyszysz. Automatycznie odnosisz krytyczną porażkę na testach Percepcji wymagających użycia słuchu. Otrzymujesz karę statusową –2 do testów Percepcji na inicjatywę oraz testów, które zawierają słuch jako jeden ze swoich elementów ale polegają też na innych zmysłach. Jeśli dokonujesz akcji z cechą słuchowości, musisz zdać @Check[flat|dc:5]{Test Płaski} lub tracisz tę akcję. Testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty. Jesteś niewrażliwy na efekty dźwiękowe.</p>",
                 "summary": "Straciłeś słuch."
             },
             "doomed": {
@@ -6084,7 +6089,7 @@
             },
             "off-guard": {
                 "name": "Opuszczona Garda",
-                "rules": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz karę sytuacyjną –2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności efekty statusowe - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \\\"Cel ma opuszczoną gardę.\\\"</p>",
+                "rules": "<p>Jesteś rozproszony lub z innego powodu niezdolny do poświęcenia uwagi obronie. Otrzymujesz karę sytuacyjną –2 do KP. Niektóre efekty wywołują opuszczenie twojej gardy jedynie wobec określonych istot lub określonych ataków. Inne - w szczególności efekty statusowe - mogą określić że opuszczasz gardę przed wszelką napaścią. Jeśli zasada nie precyzuje, że efekt dotyczy konkretnej sytuacji, to dotyczy ich wszystkich; przykładowo, wiele efektów stwierdza po prostu \"Cel ma opuszczoną gardę.\"</p>",
                 "summary": "Nie jesteś w stanie bronić się na miarę swoich możliwości."
             },
             "fleeing": {
@@ -6104,7 +6109,8 @@
             },
             "grabbed": {
                 "name": "Pochwycony",
-                "rules": "<p>Jesteś utrzymywany w miejscu przez inną istotę - @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[flat|dc:5] lub ją utracić; testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty.</p>",
+                "note": "Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[flat|dc:5|showDC:all] lub tracisz tę akcję.",
+                "rules": "<p>Jesteś utrzymywany w miejscu przez inną istotę - @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} i masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}. Jeśli próbujesz dokonać akcji z cechą manipulacja podczas bycia pochwyconym, musisz zdać @Check[flat|dc:5]{Test Płaski} lub tracisz tę akcję. Testu dokonujesz po wydaniu akcji, ale zanim nastąpią jakiekolwiek jej efekty.</p>",
                 "summary": "Istota, obiekt lub magia trzyma cię w miejscu."
             },
             "group": {
@@ -6175,11 +6181,13 @@
             },
             "restrained": {
                 "name": "Spętany",
+                "note": "Nie możesz wykonywać żadnych akcji o cechach atak ani manipulacja za wyjątkiem prób Ucieczki czy Siłowego Otwarcia swoich więzów.",
                 "rules": "<p>Jesteś spętany lub przygwożdżony przez istotę. Jesteś @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Unieruchomiony} oraz masz @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Opuszczoną Gardę}, a ponadto nie możesz wykonywać żadnych akcji o cechach atak ani manipulacja za wyjątkiem prób Ucieczki czy Siłowego Otwarcia swoich więzów. Spętanie nadpisuje pochwycenie.</p>",
                 "summary": "Jesteś spętany lub przygwożdżony przez istotę i nie możesz się ruszać."
             },
             "sickened": {
                 "name": "Zemdlony",
+                "note": "Kiedy jesteś zemdlony nie możesz dobrowolnie pobierać pokarmu, wliczając w to mikstury i eliksiry.",
                 "rules": "<p>Czujesz się schorowany. Zemdlenie zawsze posiada wartość. Otrzymujesz karę statusową równą tej wartości, na wszystkich swoich testach i ST. Kiedy jesteś zemdlony nie możesz dobrowolnie pobierać pokarmu, wliczając w to mikstury i eliksiry.</p><p>Możesz poświęcić jedną akcję na poddanie się odruchowi wymiotnemu i próbę pozbycia się mdłości, co pozwala ci na natychmiastowe podjęcie testu Krzepy przeciw ST efektu który wywołał w tobie zemdlenie. W wypadku sukcesu redukujesz wartość zemdlenia o 1 (przy sukcesie krytycznym o 2).</p>",
                 "summary": "Jest ci niedobrze i cierpisz na mdłości."
             },

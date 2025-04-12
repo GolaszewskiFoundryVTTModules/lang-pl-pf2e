@@ -101,6 +101,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Pathfinder Association | Stowarzyszenie Poszukiwaczy | |
 | Arclords of Nex | Maglordowie z Nex | |
 | Zephyr Guards | Strażnicy Zefiru | |
+| Skinsaw | Skóroszwacze | |
 
 ### Polityka Absalomu
 | Angielski | Polski | Uwagi |
@@ -143,11 +144,19 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | item | przedmiotu | |
 | status | statusowa | |
 
-### Ogólne Terminy
+### Odporności/Wrażliwości
+| immune/immunity | niewrażliwy/niewrażliwość | |
+| resistant/resistance | odporny/odporność | |
+| weak/weakness | podatny/podatność | |
+| vulnerable/vulnerability | wrażliwy/wrażliwość | |
+
+### Terminy
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Melee | W zwarciu | broń biała |
 | Unarmed | Wręcz | |
+| Reach | Wysięg | |
+| Range | Zasięg | |
 | living creature | żyjąca istota | nie "żywa" |
 | willing | godząca się | |
 | companion | towarzysz | |
@@ -155,6 +164,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Price | Cena | |
 | Host | żywiciel | |
 | magical tradition | tradycja magiczna | nie "magiczna tradycja" |
+| spell | zaklęcie | |
+| cast a spell | rzucać zaklęcie | |
+| spell slot | komórka zaklęcia | |
 
 ### Stopniowanie
 | Angielski | Polski | Uwagi |
@@ -166,6 +178,19 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Major | Potężna | |
 | Supreme | Wyjątkowa | |
 | True | Prawdziwa | |
+
+### Rzadkość
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| common | powszechny | |
+| uncommon | nietypowy | |
+| rare | rzadki | |
+| unique | unikalny | |
+
+### Cechy
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Aquatic | Stworzenie Wodne | |
 
 ## Opcje Postaci
 

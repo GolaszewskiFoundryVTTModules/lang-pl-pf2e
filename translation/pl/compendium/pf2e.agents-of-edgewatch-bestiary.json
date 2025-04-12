@@ -221,7 +221,7 @@
                     "description": "<p>Japu's bombs that have the splash trait deal 5 splash damage and splash to 10 feet.</p>"
                 },
                 "action->Quick Alchemy": {
-                    "name": "Quick Alchemy",
+                    "name": "Szybka Alchemia",
                     "description": "<p><strong>Koszt</strong> 1 batch of infused reagents</p><hr /><p><strong>Efekt</strong> Japu creates a single alchemical item from his formula book (see Alchemical Formulas). This item has the infused trait, but it remains potent only until the end of his next turn.</p>"
                 },
                 "action->Quick Bomber": {
@@ -304,7 +304,7 @@
                     "description": "<p>The chemist's bombs that have the splash trait deal 4 splash damage.</p>"
                 },
                 "action->Quick Alchemy": {
-                    "name": "Quick Alchemy",
+                    "name": "Szybka Alchemia",
                     "description": "<p><strong>Koszt</strong> 1 batch of infused reagents</p><hr /><p><strong>Efekt</strong> The chemist creates a single alchemical item from their formula book (see Alchemical Formulas). This item has the infused trait, but it remains potent only until the start of their next turn.</p>"
                 },
                 "action->Quick Bomber": {
@@ -1202,7 +1202,7 @@
                 },
                 "action->Exile": {
                     "name": "Exile",
-                    "description": "<p>The camarach shunts one creature within its body through an inner portal to send it away.</p><p>The target must attempt a @Check[will|dc:38] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is teleported to an open space it chooses within 30 feet of the camarach.</p><p><strong>Sukces</strong> The creature isn't teleported.</p><p><strong>Porażka</strong> The creature is teleported to a random open space 1 mile from the camarach.</p><p><strong>Krytyczna Porażka</strong> The creature is teleported to a random other plane, as @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}.</p>"
+                    "description": "<p>The camarach shunts one creature within its body through an inner portal to send it away.</p><p>The target must attempt a @Check[will|dc:38] save.</p><hr /><p><strong>Krytyczny Sukces</strong> The creature is teleported to an open space it chooses within 30 feet of the camarach.</p><p><strong>Sukces</strong> The creature isn't teleported.</p><p><strong>Porażka</strong> The creature is teleported to a random open space 1 mile from the camarach.</p><p><strong>Krytyczna Porażka</strong> The creature is teleported to a random other plane, as @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Teleportacja Międzyplanarna}.</p>"
                 },
                 "action->Fast Swallow": {
                     "name": "Fast Swallow",
@@ -1579,7 +1579,7 @@
         "Clockwork Poison Bomb": {
             "name": "Clockwork Poison Bomb",
             "description": "<p>A clockwork bomb releases gouts of poisonous smoke. The smoke issues forth from a single nozzle attached to two tanks of pressurized poison</p>",
-            "disable": "<p>Three [[/act disable-device dc=31]]{DC 31 Thievery} (expert) checks to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device} to disable the latches that lock the nozzle in place, then one [[/act disable-device dc=35]]{DC 35 Thievery} (master) check to Disable a Device to turn off the nozzle; DCs decrease by 2 if Oggvurm is immobilized, paralyzed, unconscious, or dead</p>",
+            "disable": "<p>Three [[/act disable-device dc=31]]{DC 31 Thievery} (expert) checks to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Rozbrojenie Urządzenia} to disable the latches that lock the nozzle in place, then one [[/act disable-device dc=35]]{DC 35 Thievery} (master) check to Disable a Device to turn off the nozzle; DCs decrease by 2 if Oggvurm is immobilized, paralyzed, unconscious, or dead</p>",
             "hpDetails": "to ruin the nozzle (making it impossible to disable, in which case the only way to disarm the bomb is to destroy both its tanks); <strong>Tank Hardness</strong> 15; <strong>Tank HP</strong> 80 (BT 40) to destroy one of the tanks (both tanks must be destroyed to disarm the bomb",
             "reset": "<p>The trap issues smoke for 3 minutes before its tanks run dry. The tanks must be replaced before the bomb can be reactivated.</p>",
             "routine": "<p>(1 akcja) On its turn, the bomb spews forth a smoky gout of airborne @UUID[Compendium.pf2e.equipment-srd.Item.WvDbdESFJY6Be2u1]{Blackfinger Blight} poison. The cloud fills a 20-foot radius, or a 10-foot radius if only one tank remains intact. If the bomb is already in the center of a blackfinger blight cloud, the radius of that cloud increases by 20 feet (or 10 feet, if only one tank remains intact) instead.</p>",
@@ -1837,7 +1837,7 @@
                     "description": "<p><strong>Aktywator</strong> More than two Small or larger creatures step on the brass seal.</p><hr /><p><strong>Efekt</strong> The trap makes up to four dart Strikes against creatures standing on the seal, then rolls initiative.</p>"
                 },
                 "strike-melee->Dart": {
-                    "name": "Dart"
+                    "name": "Rzutka"
                 },
                 "action->No MAP": {
                     "name": "No MAP",
@@ -2723,7 +2723,7 @@
                     "name": "Sztylet"
                 },
                 "action->Drain Bonded Item": {
-                    "name": "Drain Bonded Item",
+                    "name": "Opróżnienie Przedmiotu Więzi",
                     "description": "<p><strong>Częstotliwość</strong> 7 times per day</p><p><strong>Wymagania</strong> Grabble hasn't acted yet on this turn</p><hr /><p><strong>Efekt</strong> Grabble can cast one prepared spell he has already cast today without spending a spell slot. He must still Cast the Spell and meet the spell's other requirements. He can do this once per day for each of the spell ranks he can cast.</p>"
                 },
                 "action->Poison Conversion": {
@@ -3096,7 +3096,7 @@
                 },
                 "action->Entropy Sense (Imprecise) 60 feet": {
                     "name": "Entropy Sense (Imprecise) 60 feet",
-                    "description": "<p>A hegessik can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the hegessik the ability to sense creatures within the listed range.</p><p>The hegessik's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that are otherwise shielded from divinations and predictions.</p>"
+                    "description": "<p>A hegessik can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the hegessik the ability to sense creatures within the listed range.</p><p>The hegessik's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Zasłona Prywatności} or that are otherwise shielded from divinations and predictions.</p>"
                 },
                 "action->+1 Status Bonus on Saves vs. Divine Magic": {
                     "name": "+1 Status Bonus on Saves vs. Divine Magic"
@@ -3249,7 +3249,7 @@
                 },
                 "action->Entropy Sense (Imprecise) 60 feet": {
                     "name": "Entropy Sense (Imprecise) 60 feet",
-                    "description": "<p>Hestriviniaas can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range.</p><p>A creature under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
+                    "description": "<p>Hestriviniaas can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range.</p><p>A creature under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Zasłona Prywatności} or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
                 },
                 "action->Fast Healing 15": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 15"
@@ -3417,7 +3417,7 @@
                 },
                 "action->Entropy Sense (Imprecise) 60 feet": {
                     "name": "Entropy Sense (Imprecise) 60 feet",
-                    "description": "<p>Il'setya can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants Il'setya the ability to sense creatures within the listed range.</p><p>The Il'setya's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that are otherwise shielded from divinations and predictions.</p>"
+                    "description": "<p>Il'setya can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants Il'setya the ability to sense creatures within the listed range.</p><p>The Il'setya's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Zasłona Prywatności} or that are otherwise shielded from divinations and predictions.</p>"
                 },
                 "action->Fast Healing 5": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 5"
@@ -3647,7 +3647,7 @@
                 },
                 "action->Entropy Sense (Imprecise) 120 feet": {
                     "name": "Entropy Sense (Imprecise) 120 feet",
-                    "description": "<p>A Izfiitar can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the izflitar the ability to sense creatures within the listed range.</p><p>The izflitar's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that are otherwise shielded from divinations and predictions.</p>"
+                    "description": "<p>A Izfiitar can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the izflitar the ability to sense creatures within the listed range.</p><p>The izflitar's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Zasłona Prywatności} or that are otherwise shielded from divinations and predictions.</p>"
                 },
                 "action->Fast Healing 20": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 20"
@@ -4252,7 +4252,7 @@
                     "name": "Katana"
                 },
                 "strike-ranged->Dart": {
-                    "name": "Dart"
+                    "name": "Rzutka"
                 },
                 "action->Little Favors": {
                     "name": "Little Favors",
@@ -4964,7 +4964,7 @@
                 },
                 "action->Entropy Sense (Imprecise) 60 feet": {
                     "name": "Entropy Sense (Imprecise) 60 feet",
-                    "description": "<p>An overdrive imentesh can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the overdrive imentesh the ability to sense creatures within the listed range.</p><p>The overdrive imentesh's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that are otherwise shielded from divinations and predictions.</p>"
+                    "description": "<p>An overdrive imentesh can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the overdrive imentesh the ability to sense creatures within the listed range.</p><p>The overdrive imentesh's entropy sense doesn't detect creatures under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Zasłona Prywatności} or that are otherwise shielded from divinations and predictions.</p>"
                 },
                 "action->Fast Healing 10": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 10"
@@ -6766,7 +6766,7 @@
                 },
                 "action->Form Tool": {
                     "name": "Form Tool",
-                    "description": "<p>The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod as thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Otwieranie Zamka} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}.</p>"
+                    "description": "<p>The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod as thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Otwieranie Zamka} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Rozbrojenie Urządzenia}.</p>"
                 }
             }
         },
@@ -6856,7 +6856,7 @@
                 },
                 "equipment->Poisoner's Staff": {
                     "name": "Poisoner's Staff",
-                    "description": "<p>This gnarled staff is covered with thorns and coated with a glistening lacquer that acts as a minor irritant. While holding the staff, you aren't affected by its coating or thorns, and you reduce the DC of your flat checks to overcome persistent poison damage from 15 to 13.</p><hr /><p><strong>Aktywacja</strong> @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Rzucanie Zaklęcia}</p><hr /><p><strong>Efekt</strong> Wykorzystujesz ładunki kosturu aby rzucić zaklęcie z listy jego zaklęć.</p><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p><hr /><ul><li><strong>Sztuczki</strong> @UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Wskazówki}</li><li><strong>1.</strong> @UUID[Compendium.pf2e.spells-srd.Item.QqxwHeYEVylkYjsO]{Detect Poison}, @UUID[Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw]{Spider Sting}</li></ul>"
+                    "description": "<p>This gnarled staff is covered with thorns and coated with a glistening lacquer that acts as a minor irritant. While holding the staff, you aren't affected by its coating or thorns, and you reduce the DC of your flat checks to overcome persistent poison damage from 15 to 13.</p><hr /><p><strong>Aktywacja</strong> @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Rzucanie Zaklęcia}</p><hr /><p><strong>Efekt</strong> Wykorzystujesz ładunki kostura aby rzucić zaklęcie z listy jego zaklęć.</p><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p><hr /><ul><li><strong>Sztuczki</strong> @UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Wskazówki}</li><li><strong>1.</strong> @UUID[Compendium.pf2e.spells-srd.Item.QqxwHeYEVylkYjsO]{Detect Poison}, @UUID[Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw]{Spider Sting}</li></ul>"
                 },
                 "strike-melee->Dagger": {
                     "name": "Sztylet"

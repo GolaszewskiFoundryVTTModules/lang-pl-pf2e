@@ -2,34 +2,6 @@
 
 Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z języka angielskiego na polski. Służy jako punkt odniesienia dla spójności tłumaczeń.
 
-## Spis Treści
-- [Słownik Terminów do Tłumaczenia PF2e (EN → PL)](#słownik-terminów-do-tłumaczenia-pf2e-en--pl)
-  - [Spis Treści](#spis-treści)
-  - [Wszechświat](#wszechświat)
-    - [Kosmologia](#kosmologia)
-    - [Bóstwa i Tytani](#bóstwa-i-tytani)
-    - [Chronologia](#chronologia)
-    - [Istoty](#istoty)
-  - [Golarion](#golarion)
-    - [Geografia](#geografia)
-    - [Fakcje](#fakcje)
-    - [Polityka Absalomu](#polityka-absalomu)
-    - [Marnot](#marnot)
-  - [Nomenklatura Mechaniczna](#nomenklatura-mechaniczna)
-    - [Głowna](#głowna)
-    - [Testy](#testy)
-    - [Premie / Kary](#premie--kary)
-    - [Ogólne Terminy](#ogólne-terminy)
-    - [Stopniowanie](#stopniowanie)
-  - [Opcje Postaci](#opcje-postaci)
-    - [Archetypy i Klasy](#archetypy-i-klasy)
-    - [Przodkowstwa i Dziedzictwa](#przodkowstwa-i-dziedzictwa)
-    - [Ekwipunek](#ekwipunek)
-    - [Zaklęcia](#zaklęcia)
-    - [Akcje](#akcje)
-  - [Adventure-Specific](#adventure-specific)
-    - [Abomination Vaults](#abomination-vaults)
-
 ## Wszechświat
 
 ### Kosmologia
@@ -77,6 +49,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | sprite | chochlik | |
 | pixie | skrzat | |
 | warpwave | pulsprzemiana | |
+
+### Postacie / Organizacje
+| Cobyslarni | Kobyslarni | |
 | Witchmarket | wiedźmi targ | |
 
 ## Golarion
@@ -126,7 +101,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | PC | BG | Bohaterowie Graczy |
 | NPC | BN | Bohaterowie Niezależni |
-| EXP | PD | |
+| EXP | PD | Punkty Doświadczenia |
+| HP / Hit Points | PŻ / Punkty Żywotności | |
+| feat | atut | |
+| skill feat | atut umiejętności | |
+| ancestry feat | atut przodkostwa | |
+| class feat | atut klasowy | |
+| dedication feat | atut dedykacji | |
 
 ### Testy
 | Angielski | Polski | Uwagi |
@@ -145,6 +126,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | status | statusowa | |
 
 ### Odporności/Wrażliwości
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
 | immune/immunity | niewrażliwy/niewrażliwość | |
 | resistant/resistance | odporny/odporność | |
 | weak/weakness | podatny/podatność | |
@@ -166,7 +149,52 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | magical tradition | tradycja magiczna | nie "magiczna tradycja" |
 | spell | zaklęcie | |
 | cast a spell | rzucać zaklęcie | |
-| spell slot | komórka zaklęcia | |
+| spell slot | komórka zaklęć | Zawsze z "zaklęć" (pl.) |
+| spell rank / level | krąg zaklęcia | |
+| spellbook | księga zaklęć | |
+| formula book | księga receptur | |
+| cantrip | sztuczka | |
+| focus spell | zaklęcie skupienia | |
+| Focus Point | Punkt Skupienia | |
+| heighten/heightened | wywyższać/wywyższony | |
+| familiar ability | zdolność chowańca | |
+| master ability (familiar) | zdolność pana | np. pan chowańca |
+| difficult terrain | trudny teren | |
+| bright light | jasne światło | |
+| dim light | słabe światło | |
+| darkness | ciemność | |
+| adjacent | sąsiadować/sąsiadujący | |
+
+### Obrażenia
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| persistent damage | obrażenia przewlekłe | |
+| spirit / good / evil / chaotic / lawful | duchowe | |
+| void | od pustki | |
+| vitality | od witalności | |
+
+### Rzuty
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| attack roll | rzut ataku | |
+| spell attack roll | rzut ataku zaklęciem | |
+| reflex save | rzut obronny refleksu | |
+| will save | rzut obronny woli | |
+| fortitude save | rzut obronny krzepy | |
+| spell DC | ST zaklęć | |
+| class DC | ST klasowy | |
+
+### Umiejętności
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Deception | Oszukiwanie | |
+
+### Terminy Klasowe
+| versatile vial | wszechstronna fiolka | |
+| bonded item | przedmiot więzi | |
+| hex | urok | |
+| spellstrike | czarocios | |
+| implement | przyrząd | |
 
 ### Stopniowanie
 | Angielski | Polski | Uwagi |
@@ -191,6 +219,40 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Aquatic | Stworzenie Wodne | |
+| Agile | Chyżość | |
+| Finesse | Finezyjność | |
+| Nonlethal | Niezabójczość | |
+| Trip | Podcięcie | |
+| Concentrate | Koncentracja | |
+| Death | Śmierć | |
+| Void | Pustka | |
+| Vitality | Witalność | |
+| Light | Światło | |
+
+### Stany
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Flat-Footed | Opuszczona Garda | |
+| Concealed | Przysłonięcie | |
+| Hidden | Ukrycie | |
+| Invisible | Niewidzialność | |
+| Dazzled | Zamroczenie | |
+| Fascinated | Zafascynowanie | |
+| Stupefied | Ogłupienie | |
+| Frightened | Przerażenie | |
+| Doomed | Zguba | |
+| Drained | Wyniszczenie | |
+| Fatigued | Wyczerpanie | |
+| Paralyzed | Paraliż | |
+| Sickened | Zemdlenie | |
+| Unconscious | Nieprzytomność | |
+
+### Szablony Obszarów
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| burst | wybuch | |
+| cone | stożek | |
+| emanation | emanacja | |
 
 ## Opcje Postaci
 
@@ -201,6 +263,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Kineticist | Kształtowanie Żywiołów | |
 | Eldritch Researcher | Badacz Nieznanego | |
 | Bloodrager | Krwiogniewca | |
+| Shadowcaster | Cieniotkacz | |
 
 ### Przodkowstwa i Dziedzictwa
 | Angielski | Polski | Uwagi |
@@ -212,6 +275,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Nyktera | Nocnera | Rodzaj sprite'a |
 | Bleaching | Płowienie | Dotyczy gnomów |
 | shapers | kształciciele | Dotyczy konrasu |
+| Awakened Animal | Przebudzone Zwierzę | |
 
 ### Ekwipunek
 | Angielski | Polski | Uwagi |
@@ -231,6 +295,29 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | Recall Knowledge | Pozyskanie Wiedzy | |
 | Aid | Wsparcie | |
+| Cast a Spell | Rzucanie Zaklęcia | |
+| Devise a Stratagem | Obmyślenie Strategii | |
+| Pursue a Lead | Podążenie za Poszlaką | |
+| Make an Impression | Wywieranie Wrażenia | |
+| Lie | Kłamstwo | |
+| Disable a Device | Rozbrojenie Urządzenia | |
+| Decipher Writing | Odszyfrowywanie Pisma | |
+| Identify Magic | Identyfikacja Magii | |
+| Learn a Spell | Nauka Zaklęcia | |
+| Command (a familiar/ an animal) | Panowanie (nad chowańcem/ nad zwierzęciem) | |
+| Seek | Szukanie | |
+| Demoralize | Demoralizacja | |
+| Gather Information | Zbieranie Informacji | |
+| Leap | Skok | |
+| Long Jump | Skok w Dal | |
+| Refocus | Odzyskanie Skupienia | |
+| Impersonate | Podszywanie Się | |
+| Strike | (zadać/wymierzyć) Cios | |
+
+### Towarzysze
+| pet | zwierzak | |
+| familiar | chowaniec | |
+| animal companion | zwierzęcy towarzysz | |
 
 ## Adventure-Specific
 

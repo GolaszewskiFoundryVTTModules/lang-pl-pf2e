@@ -109,3 +109,12 @@ en_to_pl_file_pairs = [
     ("compendium/shades-of-blood-bestiary", "compendium/pf2e.shades-of-blood-bestiary"),
     ("compendium/pathfinder-npc-core", "compendium/pf2e.pathfinder-npc-core"),
 ]
+
+completed_files = [
+    "translation/pl/pl.json",
+    "translation/pl/action-pl.json",
+    "translation/pl/compendium/pf2e._packs-folders.json",
+    "translation/pl/compendium/pf2e.classes.json",
+    "translation/pl/compendium/pf2e.conditionitems.json",
+    "translation/pl/compendium/pf2e.familiar-abilities.json"
+]

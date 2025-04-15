@@ -6,7 +6,7 @@ import subprocess
 import argparse
 import json
 from localization_updater import LocalizationUpdater
-from translator_config import log_directory, log_filename, temp_en_old_directory, core_en_directory, core_pl_directory, en_to_pl_file_pairs
+from translator_config import log_directory, log_filename, temp_en_old_directory, core_en_directory, core_pl_directory, en_to_pl_file_pairs, completed_files
 
 def _copy_files_and_directories(src_directory, dst_directory):
     """
@@ -128,7 +128,11 @@ def main():
             if verbose:
                 print(f"File copied from {en} to {pl}.")
 
-        updater = LocalizationUpdater(en_old, en, pl, verbose)
+        # Check if the file is marked as completed
+        is_completed = pl in completed_files
+        effective_verbose = verbose or is_completed
+
+        updater = LocalizationUpdater(en_old, en, pl, effective_verbose)
         updater.process(perform_regex_translate)
     
     shutil.rmtree(temp_en_old_directory)

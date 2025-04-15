@@ -181,8 +181,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | reflex save | rzut obronny refleksu | |
 | will save | rzut obronny woli | |
 | fortitude save | rzut obronny krzepy | |
-| spell DC | ST zaklęć | |
-| class DC | ST klasowy | |
+| spell DC | ST zaklęć | rodzaj męski |
+| class DC | ST klasowy | rodzaj męski |
 
 ### Umiejętności
 | Angielski | Polski | Uwagi |

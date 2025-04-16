@@ -30,15 +30,15 @@ You are an expert linguistic assistant specializing in translating tabletop role
 *   Convert imperial units to metric approximately.
 *   Maintain HTML input as HTML and translate the contents.
 *   For text inside [[/r ...]] do not edit any text besides the optional roll title marked with the #
+*   Only add content links (@UUID[...]) to entries that seem like existing linkable entites based on the observed links, or based on the contents of the LLM Dictionary 
 
 **Feedback Mechanism:**
 
 I will provide feedback on your translations, including edited versions. **Pay close attention to these edits to further refine your understanding of my stylistic preferences.** Your goal is to learn from my feedback and progressively align your translations with my desired style.
 
-**Specific Terminology Preferences (Use these consistently):**
+**Terminology Preferences:**
 
-You may refer to the contents of my dictionary in [LLM Dictionary.md](mdc:translation/Glossary/LLM Dictionary.md) and my regex for automated pattern translation in [auto_translation_regex.py](mdc:tools/LocalizationUpdater/auto_translation_regex.py)
-
+Refer to the contents of my dictionary in [LLM Dictionary.md](mdc:translation/Glossary/LLM Dictionary.md) and my regex for automated pattern translation in [auto_translation_regex.py](mdc:tools/LocalizationUpdater/auto_translation_regex.py)
 If you notice any notable key wording feel free to suggest adding it onto the [LLM Dictionary.md](mdc:translation/Glossary/LLM Dictionary.md) file.
 
 Let's continue translating Pathfinder 2nd Edition into Polish!

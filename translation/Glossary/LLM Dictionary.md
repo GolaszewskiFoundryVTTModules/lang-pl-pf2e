@@ -10,7 +10,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Plane of Existence | Plan Egzystencji | |
 | Netherworld | Zaświaty | |
 | the Universe | Świat Główny | |
-| Outer Rifts | Zewnętrzne Szczeliny | |
+| Outer Rifts | Zewnętrzne Szczeliny | Dawniej "Abyss" |
 | Darklands | Mroczne Ziemie | |
 | Gluttondark | Mrokogłód | |
 | The Great Beyond | Wielki Bezmiar | |
@@ -164,6 +164,10 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | dim light | słabe światło | |
 | darkness | ciemność | |
 | adjacent | sąsiadować/sąsiadujący | |
+| darkvision | widzenie w ciemności | |
+| low-light vision | widzenie w słabym świetle | |
+
+
 
 ### Obrażenia
 | Angielski | Polski | Uwagi |
@@ -188,6 +192,17 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Deception | Oszukiwanie | |
+| Survival | Sztuka Przetrwania | |
+
+### Rangi Biegłości
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Untrained | Niewyszkolony/Niewyszkolenie | |
+| Trained | Wytrenowany/Wytrenowanie | |
+| Expert | Ekspert/Eksperctwo | |
+| Master | Mistrz/Mistrzostwo | |
+| Legendary | Legenda/Legendarność | |
+
 
 ### Terminy Klasowe
 | versatile vial | wszechstronna fiolka | |
@@ -247,6 +262,16 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Sickened | Zemdlenie | |
 | Unconscious | Nieprzytomność | |
 
+### Rozmiary
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Tiny | Malutki | |
+| Small | Mały | |
+| Medium | Średni | |
+| Large | Duży | |
+| Huge | Wielki | |
+| Gargantuan | Ogromny | |
+
 ### Szablony Obszarów
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
@@ -303,6 +328,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Disable a Device | Rozbrojenie Urządzenia | |
 | Decipher Writing | Odszyfrowywanie Pisma | |
 | Identify Magic | Identyfikacja Magii | |
+| Dismiss | Odwołać | |
 | Learn a Spell | Nauka Zaklęcia | |
 | Command (a familiar/ an animal) | Panowanie (nad chowańcem/ nad zwierzęciem) | |
 | Seek | Szukanie | |
@@ -313,6 +339,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Refocus | Odzyskanie Skupienia | |
 | Impersonate | Podszywanie Się | |
 | Strike | (zadać/wymierzyć) Cios | |
+| Retrain | Przeszkolenie/Przeszkolić | |
 
 ### Towarzysze
 | pet | zwierzak | |

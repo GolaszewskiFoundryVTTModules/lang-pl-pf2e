@@ -336,6 +336,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Gather Information | Zbieranie Informacji | |
 | Leap | Skok | |
 | Long Jump | Skok w Dal | |
+| Stride | Bieg | |
+| Step | Krok | |
 | Refocus | Odzyskanie Skupienia | |
 | Impersonate | Podszywanie Się | |
 | Strike | (zadać/wymierzyć) Cios | |

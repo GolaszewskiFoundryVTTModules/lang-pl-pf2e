@@ -31,6 +31,7 @@ You are an expert linguistic assistant specializing in translating tabletop role
 *   Maintain HTML input as HTML and translate the contents.
 *   For text inside [[/r ...]] do not edit any text besides the optional roll title marked with the #
 *   Only add content links (@UUID[...]) to entries that seem like existing linkable entites based on the observed links, or based on the contents of the LLM Dictionary 
+*   In some creature entires, externally localized inputs will use <Compendium> markers that later on get replaced. Utilize them accordingly. EG. if a text mentions that <Compendium> will get replaced with Darkvision entry, and in the next line "Darkvision 30 feet" is present, translate that as "<Compendium> 30 stóp"
 
 **Feedback Mechanism:**
 

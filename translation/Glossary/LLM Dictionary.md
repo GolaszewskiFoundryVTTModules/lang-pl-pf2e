@@ -49,6 +49,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | sprite | chochlik | |
 | pixie | skrzat | |
 | warpwave | pulsprzemiana | |
+| fleshwarp | mięsoskręt | |
+| fleshwarping | mięsoskręcanie | |
+| fleshcrafter | mięsorzeźbiarz | |
 
 ### Postacie / Organizacje
 | Cobyslarni | Kobyslarni | |
@@ -103,6 +106,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | NPC | BN | Bohaterowie Niezależni |
 | EXP | PD | Punkty Doświadczenia |
 | HP / Hit Points | PŻ / Punkty Żywotności | |
+| creature | istota | |
+| object | obiekt | |
 | feat | atut | |
 | skill feat | atut umiejętności | |
 | ancestry feat | atut przodkostwa | |
@@ -133,6 +138,15 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | weak/weakness | podatny/podatność | |
 | vulnerable/vulnerability | wrażliwy/wrażliwość | |
 
+### Skradanie się
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Observed | Postrzegany | |
+| Concealed | Przysłonięty | |
+| Hidden | Schowany | |
+| Unnoticed | Niezauważony | |
+| Undetected | Niewykryty | |
+
 ### Terminy
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
@@ -140,6 +154,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Unarmed | Wręcz | |
 | Reach | Wysięg | |
 | Range | Zasięg | |
+| multiple attack penalty | kara za atak wielokrotny | |
 | living creature | żyjąca istota | nie "żywa" |
 | willing | godząca się | |
 | companion | towarzysz | |
@@ -166,8 +181,6 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | adjacent | sąsiadować/sąsiadujący | |
 | darkvision | widzenie w ciemności | |
 | low-light vision | widzenie w słabym świetle | |
-
-
 
 ### Obrażenia
 | Angielski | Polski | Uwagi |
@@ -202,7 +215,6 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Expert | Ekspert/Eksperctwo | |
 | Master | Mistrz/Mistrzostwo | |
 | Legendary | Legenda/Legendarność | |
-
 
 ### Terminy Klasowe
 | versatile vial | wszechstronna fiolka | |
@@ -261,6 +273,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Paralyzed | Paraliż | |
 | Sickened | Zemdlenie | |
 | Unconscious | Nieprzytomność | |
+| Broken | Uszkodzony | |
+| Destroyed | Zniszczony | |
 
 ### Rozmiary
 | Angielski | Polski | Uwagi |

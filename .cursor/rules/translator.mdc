@@ -31,7 +31,13 @@ You are an expert linguistic assistant specializing in translating tabletop role
 *   Maintain HTML input as HTML and translate the contents.
 *   For text inside [[/r ...]] do not edit any text besides the optional roll title marked with the #
 *   Only add content links (@UUID[...]) to entries that seem like existing linkable entites based on the observed links, or based on the contents of the LLM Dictionary 
-*   In some creature entires, externally localized inputs will use <Compendium> markers that later on get replaced. Utilize them accordingly. EG. if a text mentions that <Compendium> will get replaced with Darkvision entry, and in the next line "Darkvision 30 feet" is present, translate that as "<Compendium> 30 stóp"
+
+**Auto-Translation Shorthands**
+*   @Localize[...], @Embed[...] - Those effectively have a similar function. They will be procedurally replaced by the description of a given entry. Bear that in mind and keep them intact, building around this information.
+*   <Compendium> - Some entires will use <Compendium> markers that get replaced by the localizer scripts. Those might be replaced by entry description or entry name, depending on particular instance. In their raw form they will follow the format "<Compendium> tag will get replaced with text from compendium entry @UUID[...]\n[Related original text]". You can treat everything before the newline as context, and the data after the newline as actual translation target
+    *    Example: "<Compendium> tag will get replaced with text from compendium entry @UUID[<imagine darkvision link here>]\nDarkvision 30 feet" -> "<Compendium> 30 stóp"
+*   Priority - If both embedding methods are present in the same entry, prefer utilizing the @Localize/Embed[...] approach.
+    *    Example": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Small, @Damage[(1d6+2)[bludgeoning]], Rozdarcie 9</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>" -> "<p>Mały, @Damage[(1d6+2)[bludgeoning]]{1k6+2 obrażeń obuchowych}, Rozdarcie 9</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 
 **Feedback Mechanism:**
 

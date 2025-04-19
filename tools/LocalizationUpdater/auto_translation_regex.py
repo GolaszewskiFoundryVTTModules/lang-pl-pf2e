@@ -89,6 +89,7 @@ item_patterns = [
     (r'\(Greater\)', r'(Większy)'),
     (r'\(Major\)', r'(Potężny)'),
     (r'\(Supreme\)', r'(Wyjątkowy)'),
+    (r'\(True\)', r'(Prawdziwy)'),
     (r'\(Type (\S+)\)', r'(Typ \1)'),
 ]
 

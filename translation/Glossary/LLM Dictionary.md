@@ -70,6 +70,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Mana Wastes | Pustkowia Many | |
 | Realm of The Mammoth Lords | Kraina Władców Mamutów | |
 | The Impossible Lands | Niemożliwe Ziemie | |
+| Palatinates | Palatynaty | |
 
 ### Fakcje
 | Angielski | Polski | Uwagi |

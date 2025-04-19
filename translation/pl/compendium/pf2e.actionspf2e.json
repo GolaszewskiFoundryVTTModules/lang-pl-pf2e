@@ -39,7 +39,7 @@
             "description": "<p><strong>Częstotliwość</strong> raz na godzinę</p><hr /><p><strong>Efekt</strong> Your ostilli pulses a calm lavender color as it converts stored magic into a curative balm. You regain @Damage[(2*(floor(@actor.level/4))d4)[healing]] Hit Points, and you can immediately attempt a flat check to recover from persistent bleed damage with the DC reduced to 10. This healing increases by 2k4 at 8. level and every 4 levels thereafter.</p>"
         },
         "Administer First Aid": {
-            "name": "Udzielenie Pierwszej Pomocy",
+            "name": "Udzielanie Pierwszej Pomocy",
             "description": "<p><strong>Wymagania</strong> Nosisz lub trzymasz @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Zestaw Uzdrowiciela}</p><hr /><p>Udzielasz pierwszej pomocy sąsiadującej istocie, która jest @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Umierająca} lub @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Krwawi}. Jeśli istota jest zarówno umierająca co krwawi, wybierz przed rzutem, którą z tych przypadłości leczysz. Możesz ponownie Udzielić Pierwszej Pomocy aby zająć się drugim efektem.</p><ul><li><strong>Stabilizacja</strong> Wykonaj test [[/act administer-first-aid variant=stabilize]]{Medycyny} na istocie, która ma 0 PŻ i jest umierająca. ST wynosi 5 + ST rzutu na ozdrowienie tej istoty (na ogół 15 + wartość umierania danej istoty).</li><li><strong>Tamowanie Krwawienia</strong> Wykonaj test [[/act administer-first-aid variant=stop-bleeding]]{Medycyny} na istocie, która odnosi przewlekłe obrażenia od krwawienia, dając jej szansę na podjęcie się kolejnego testu płaskiego celem usunięcia ich. ST to na ogół ST efektu, który spowodował krwawienie.</li></ul><hr /><p><strong>Sukces</strong> Jeśli próbujesz ustabilizować stan celu, traci on status umierającego (ale pozostaje @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Nieprzytomny}). Jeśli próbujesz zatamować krwawienie, cel zyskuje korzyści ze wspomaganego ozdrowienia z obniżonym ST za szczególnie adekwatną pomoc.</p><p><strong>Krytyczna Porażka</strong> Jeśli próbowałeś ustabilizować cel, jego wartość umierania wzrasta o 1. Jeśli próbowałeś zatamować krwawienie, cel natychmiast ponosi kolejną porcję przewlekłych obrażeń od krwawienia.</p>"
         },
         "Affix a Fulu": {
@@ -567,7 +567,7 @@
         },
         "Dutiful Retaliation": {
             "name": "Sumienny Odwet",
-            "description": "<p><strong>Aktywator</strong> Wróg w promieniu 15 stóp trafia cię Ciosem i zadaje obrażenia.</p><p><strong>Wymagania</strong> Twój eidolon jest w promieniu 15 stóp od ciebie.</p><p>Twój eidolon instynktownie rozbłyskuje ektoplazmatyczną energią, co pozawala mu odpłacić się wobec wroga, który śmiał cię skrzywdzić. Twój eidolon wymierza Cios w zwarciu wręcz wywołującemu reakcję wrogowi, nawet jeśli ten wróg nie znajduje się w wysięgu eidolona.</p>"
+            "description": "<p><strong>Aktywator</strong> Wróg w promieniu 15 stóp trafia cię Ciosem i zadaje obrażenia.</p><p><strong>Wymagania</strong> Twój eidolon jest w promieniu 15 stóp od ciebie.</p><p>Twój eidolon instynktownie rozbłyskuje ektoplazmatyczną energią, co pozawala mu odpłacić się wobec wroga, który śmiał cię skrzywdzić. Twój eidolon wymierza wywołującemu reakcję wrogowi Cios wręcz w zwarciu, nawet jeśli ten wróg nie znajduje się w wysięgu eidolona.</p>"
         },
         "Earn Income": {
             "name": "Zarabianie Pieniędzy",

@@ -107,6 +107,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | NPC | BN | Bohaterowie Niezależni |
 | EXP | PD | Punkty Doświadczenia |
 | HP / Hit Points | PŻ / Punkty Żywotności | |
+| BT / Broken Threshold | PU / Próg Uszkodzenia | |
 | creature | istota | |
 | object | obiekt | |
 | feat | atut | |
@@ -182,6 +183,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | adjacent | sąsiadować/sąsiadujący | |
 | darkvision | widzenie w ciemności | |
 | low-light vision | widzenie w słabym świetle | |
+| Bulk | Naręcze | |
 
 ### Obrażenia
 | Angielski | Polski | Uwagi |
@@ -190,6 +192,12 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | spirit / good / evil / chaotic / lawful | duchowe | |
 | void | od pustki | |
 | vitality | od witalności | |
+| acid | od kwasu | |
+| cold | od zimna | |
+| electricity | od elektryczności | |
+| fire | od ognia | |
+| force | od mocy | |
+| sonic | od dźwięku | |
 
 ### Rzuty
 | Angielski | Polski | Uwagi |
@@ -223,6 +231,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | hex | urok | |
 | spellstrike | czarocios | |
 | implement | przyrząd | |
+| apparition | zjawa | |
 
 ### Stopniowanie
 | Angielski | Polski | Uwagi |
@@ -347,6 +356,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Learn a Spell | Nauka Zaklęcia | |
 | Command (a familiar/ an animal) | Panowanie (nad chowańcem/ nad zwierzęciem) | |
 | Seek | Szukanie | |
+| Take Cover | Krycie Się za Osłoną | |
 | Demoralize | Demoralizacja | |
 | Gather Information | Zbieranie Informacji | |
 | Leap | Skok | |

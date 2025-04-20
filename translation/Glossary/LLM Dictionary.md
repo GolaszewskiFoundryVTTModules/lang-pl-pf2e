@@ -265,10 +265,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Void | Pustka | |
 | Vitality | Witalność | |
 | Light | Światło | |
+| mindless | bezmyślny | |
+| minion | sługus | |
 
-### Stany
+### Statusy
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
+| Condition | Status | |
 | Flat-Footed | Opuszczona Garda | |
 | Concealed | Przysłonięcie | |
 | Hidden | Ukrycie | |
@@ -350,6 +353,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Make an Impression | Wywieranie Wrażenia | |
 | Lie | Kłamstwo | |
 | Disable a Device | Rozbrojenie Urządzenia | |
+| disbelieve | podważyć wiarę | np. w iluzję |
 | Decipher Writing | Odszyfrowywanie Pisma | |
 | Identify Magic | Identyfikacja Magii | |
 | Dismiss | Odwołać | |

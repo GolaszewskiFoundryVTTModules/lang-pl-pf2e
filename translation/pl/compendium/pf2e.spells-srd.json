@@ -523,14 +523,14 @@
             "target": "1 creature"
         },
         "Banishment": {
-            "name": "Banishment",
-            "description": "<p>You send the target back to its home plane. Cel musi wykonać rzut obronny Woli. You can spend an extra action while Casting this Spell and add a cost to the spell to give the creature a –2 circumstance penalty to its save. The cost must be a specially gathered object that is anathema to the creature. This spell fails if you aren't on your home plane when you cast it.</p><hr /><p><strong>Krytyczny Sukces</strong> The target resists being banished and you are @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.</p><p><strong>Sukces</strong> The target resists being banished.</p><p><strong>Porażka</strong> The target is banished.</p><p><strong>Krytyczna Porażka</strong> The target is banished and can't return by any means to the plane it's banished from for 1 week.</p><hr /><p><strong>Wywyższenie (9.)</strong> You can target up to 10 creatures. The extra cost affects targets to which it is anathema.</p>",
+            "name": "Wygnanie",
+            "description": "<p>Odsyłasz cel z powrotem na jego plan macierzysty. Cel musi wykonać rzut obronny Woli. Możesz wydać dodatkową akcję podczas Rzucania tego Zaklęcia i dodać niego koszt, aby nałożyć na istotę karę sytuacyjną –2 do jej rzutu obronnego. Koszt musi być specjalnie zebranym przedmiotem, który jest anathemą dla istoty. To zaklęcie kończy się porażką, jeśli nie znajdujesz się na swoim planie macierzystym, gdy je rzucasz.</p><hr /><p><strong>Krytyczny Sukces</strong> Cel opiera się wygnaniu, a ty jesteś @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}.</p><p><strong>Sukces</strong> Cel opiera się wygnaniu.</p><p><strong>Porażka</strong> Cel zostaje wygnany.</p><p><strong>Krytyczna Porażka</strong> Cel zostaje wygnany i nie może powrócić w żaden sposób na plan, z którego został wygnany, przez 1 tydzień.</p><hr /><p><strong>Wywyższenie (9.)</strong> Możesz wybrać do 10 istot. Dodatkowy koszt wpływa na cele, dla których jest anathemą.</p>",
             "heightening": {
                 "9": {
-                    "target": "10 creatures that aren't on their home plane"
+                    "target": "10 istot, które nie znajdują się na swoim planie macierzystym"
                 }
             },
-            "target": "1 creature that isn't on its home plane"
+            "target": "1 istota, która nie znajduje się na swoim planie macierzystym"
         },
         "Bathe in Blood": {
             "name": "Bathe in Blood",
@@ -607,9 +607,9 @@
             "description": "<p>You exist in two places at once. When you Cast the Spell, another copy of yourself appears in an adjacent square. During bilocation's duration, whenever you act, you can choose which of your selves does so, and whenever one of you uses a move action, you can both move. Your two selves share Hit Points, and any condition or effect on one affects both. If both of your selves are in the area of the same effect, or targeted by the same multitarget effect, you are only affected once. Even if you are reduced to 0 Hit Points or killed, both selves remain until the duration expires. Your link continues at any distance, even across planar boundaries. You can Dismiss the Spell, and if you do so, you choose which of the selves vanishes and which becomes you, allowing you to extricate one of your selves from a dangerous situation.</p>"
         },
         "Bind Undead": {
-            "name": "Bind Undead",
-            "description": "<p>With a word of power, you seize control of the target. It gains the minion trait. If you or an ally uses any hostile actions against the target, the spell ends.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.rVkUzqS4rpZp9LS3]{Efekt Zaklęcia: Bind Undead}</p>",
-            "target": "1 mindless undead creature with a level no greater than bind undead's spell rank"
+            "name": "Związanie Nieumarłego",
+            "description": "<p>Słowem mocy przejmujesz kontrolę nad celem. Zyskuje on cechę sługusa. Jeśli ty lub sojusznik użyjecie jakichkolwiek wrogich akcji przeciwko celowi, zaklęcie kończy się.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.rVkUzqS4rpZp9LS3]{Efekt Zaklęcia: Związanie Nieumarłego}</p>",
+            "target": "1 bezmyślna nieumarła istota o poziomie nie większym niż krąg zaklęcia Związania Nieumarłego"
         },
         "Binding Circle": {
             "name": "Binding Circle",
@@ -1860,7 +1860,7 @@
         },
         "Dehydrate": {
             "name": "Odwodnienie",
-            "description": "<p>Rozpalasz wewnętrzny ogień we wszelkim stworzeniu wokół, usuwając z niego wilgoć. Wszystkie istoty w obszarze odnoszą przewlekłe 1k6 obrażeń od ognia z podstawowym rzutem obronnym Krzepy; istoty z cechami woda lub roślina odnoszą na tym rzucie stopień sukcesu o jeden niższy od wyrzuconego. Zaklęcie kończy się dla istoty w momencie kiedy przestanie odnosić przewlekłe obrażenia.</p><p>Istota pod wpływem <em>odwodnienia</em> wykonuje dodatkowy rzut obronny Krzepy przed końcem swojej tury, zanim rzuci rzut na zakończenie obrażeń przewlekłych. Może pominąć ten rzut, jeśli spożyła w przeciągu ostatniej rundy wodę lub podobny nawadniający płyn (wypicie takiej cieczy to na ogół jedna akcja).</p><hr /><p><strong>Sukces</strong> Istota nie ponosi żadnego dodatkowego efektu.</p><p><strong>Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} do końca swojej następnej tury.</p><p><strong>Krytyczna Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 2} do końca swojej następnej tury.</p><hr /><p><strong>Wywyższenie (+2)</strong> Zasięg zwiększa się o 10 stóp, wybuch zwiększa się o 5 stóp a przewlekłe obrażenia od ognia zwiększają się o 3k6.</p>"
+            "description": "<p>Rozpalasz wewnętrzny ogień we wszelkim stworzeniu wokół, usuwając z niego wilgoć. Wszystkie istoty w obszarze odnoszą przewlekłe 1k6 obrażeń od ognia z podstawowym rzutem obronnym Krzepy. Istoty z cechami woda lub roślina odnoszą na tym rzucie stopień sukcesu o jeden niższy od wyrzuconego. Zaklęcie kończy się dla istoty w momencie kiedy przestanie odnosić przewlekłe obrażenia.</p><p>Istota pod wpływem <em>odwodnienia</em> wykonuje dodatkowy rzut obronny Krzepy przed końcem swojej tury, zanim rzuci rzut na zakończenie obrażeń przewlekłych. Może pominąć ten rzut, jeśli spożyła w przeciągu ostatniej rundy wodę lub podobny nawadniający płyn (wypicie takiej cieczy to na ogół jedna akcja).</p><hr /><p><strong>Sukces</strong> Istota nie ponosi żadnego dodatkowego efektu.</p><p><strong>Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 1} do końca swojej następnej tury.</p><p><strong>Krytyczna Porażka</strong> Istota jest @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Osłabiona 2} do końca swojej następnej tury.</p><hr /><p><strong>Wywyższenie (+2)</strong> Zasięg zwiększa się o 10 stóp, wybuch zwiększa się o 5 stóp a przewlekłe obrażenia od ognia zwiększają się o 3k6.</p>"
         },
         "Deity's Strike": {
             "name": "Deity's Strike",
@@ -2319,8 +2319,8 @@
             "target": "1 weapon"
         },
         "Eclipse Burst": {
-            "name": "Eclipse Burst",
-            "description": "<p>A globe of freezing darkness explodes in the area, dealing 8k10 cold damage to creatures in the area, plus an additional 8k4 void damage to living creatures. Każda istota w obszarze musi wykonać rzut obronny Refleksu.</p><p>If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> Istota odnosi połowę obrażeń.</p><p><strong>Porażka</strong> Istota odnosi pełne obrażenia.</p><p><strong>Krytyczna Porażka</strong> Istota odnosi podwójne obrażenia and becomes @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} by the darkness for an unlimited duration.</p><hr /><p><strong>Wywyższenie (+1)</strong> The cold damage increases by 1k10 and the void damage against the living increases by 1k4.</p>"
+            "name": "Wybuch Zaćmienia",
+            "description": "<p>Kula mrożącej ciemności eksploduje, zadając istotom w obszarze 8k10 obrażeń od zimna, plus dodatkowe 8k4 obrażeń od pustki istotom żyjącym. Każda istota w obszarze musi wykonać rzut obronny Refleksu.</p><p>Jeśli kula pokrywa się z obszarem magicznego światła lub wpływa na istotę dotkniętą magicznym światłem, Wybuch Zaćmienia próbuje przeciwdziałać efektowi światła.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> Istota odnosi połowę obrażeń.</p><p><strong>Porażka</strong> Istota odnosi pełne obrażenia.</p><p><strong>Krytyczna Porażka</strong> Istota odnosi podwójne obrażenia i zostaje @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiona} przez ciemność na nieograniczony czas.</p><hr /><p><strong>Wywyższenie (+1)</strong> Obrażenia od zimna zwiększają się o 1k10, a obrażenia od pustki przeciwko żyjącym istotom zwiększają się o 1k4.</p>"
         },
         "Ectoplasmic Expulsion": {
             "name": "Ectoplasmic Expulsion",
@@ -2833,7 +2833,7 @@
         },
         "Familiar's Face": {
             "name": "Familiar's Face",
-            "description": "<p>The target becomes a scrying sensor, allowing you to see through its eyes, smell what it smells, and similarly use its other senses. If you Cast a Spell with the revelation trait that affects your senses, such as @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}, while this spell is active, you gain the benefit of the spell through the target's senses instead of your own. You can also speak through the target with a voice much like yours, though it takes on some of the timbre and character of the target's growls or squawks. You can use Command an Animal on the target as part of Sustaining this spell. You don't need line of sight or line of effect to your target when you Cast this Spell.</p>",
+            "description": "<p>The target becomes a scrying sensor, allowing you to see through its eyes, smell what it smells, and similarly use its other senses. If you Cast a Spell with the revelation trait that affects your senses, such as @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{Dojrzenie Niedostrzegalnego}, while this spell is active, you gain the benefit of the spell through the target's senses instead of your own. You can also speak through the target with a voice much like yours, though it takes on some of the timbre and character of the target's growls or squawks. You can use Command an Animal on the target as part of Sustaining this spell. You don't need line of sight or line of effect to your target when you Cast this Spell.</p>",
             "target": "1 willing creature that's your animal companion or familiar"
         },
         "Fantastic Facade": {
@@ -3070,8 +3070,8 @@
             "target": "1 istota lub zwłoki"
         },
         "Flicker": {
-            "name": "Flicker",
-            "description": "<p>You flicker quickly between your current plane and another. You gain resistance 5 to all damage, except force. At the end of each of your turns, you automatically teleport 10 feet in a random direction, as determined by the GM. You can Sustain the spell to teleport in this way.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.ZlsuhS9J0S3PuvCO]{Efekt Zaklęcia: Flicker}</p><hr /><p><strong>Wywyższenie (+2)</strong> The resistance increases by 3.</p>"
+            "name": "Migotanie",
+            "description": "<p>Szybko migoczesz pomiędzy swoim obecnym planem a innym. Zyskujesz odporność 5 na wszystkie obrażenia, z wyjątkiem obrażeń od mocy. Na koniec każdej swojej tury automatycznie teleportujesz się 10 stóp w losowym kierunku, określonym przez MG. Możesz Podtrzymać zaklęcie, aby teleportować się w taki sposób.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.ZlsuhS9J0S3PuvCO]{Efekt Zaklęcia: Migotanie}</p><hr /><p><strong>Wywyższenie (+2)</strong> Odporność wzrasta o 3.</p>"
         },
         "Floating Flame": {
             "name": "Floating Flame",
@@ -3198,9 +3198,9 @@
             "secondarycheck": "Arcana, Occultism, Religion"
         },
         "Fortify Summoning": {
-            "name": "Fortify Summoning",
-            "description": "<p>As you call a creature to your side, your magic transforms its body, heightening its ferocity and fortifying its resilience. The target gains a +1 status bonus to all checks and DCs (including its AC) for the duration of its summoning, up to 1 minute.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.UtIOWubq7akdHMOh]{Efekt Zaklęcia: Fortify Summoning}</p>",
-            "target": "1 creature you summoned"
+            "name": "Wzmocnienie Przywołania",
+            "description": "<p>Gdy przywołujesz istotę do swojego boku, twoja magia przemienia jej ciało, uwydatniając jej dzikość i odporność. Cel zyskuje premię statusową +1 do wszystkich testów i ST (w tym KP) na czas trwania jego przywołania, do 1 minuty.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.UtIOWubq7akdHMOh]{Efekt Zaklęcia: Wzmocnienie Przywołania}</p>",
+            "target": "1 istota, którą przywołałeś"
         },
         "Fortifying Brew": {
             "name": "Fortifying Brew",
@@ -3282,7 +3282,7 @@
         },
         "Gale Blast": {
             "name": "Uderzenie Wichury",
-            "description": "<p>Z twych rozpostartych dłoni wydobywa się wiatr, wirując wokółw emanacji 5 stóp. Każda istota w obszarze otrzymuje 1k6 obrażeń obuchowych, z podstawowym rzutem obronnym Krzepy.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> Istota odnosi połowę obrażeń.</p><p><strong>Porażka</strong> Istota odnosi pełne obrażenia i jest odpychana 5 stóp od ciebie.</p><p><strong>Krytyczna Porażka</strong> Istota odnosi podwójne obrażenia i jest odpychana 10 stóp od ciebie.</p><hr /><p><strong>Wywyższenie (+1)</strong> Obrażenia zwiększają się o 1k6.</p>"
+            "description": "<p>Z twych rozpostartych dłoni wydobywa się wiatr, wirując wokółw emanacji 5 stóp. Każda istota w obszarze otrzymuje 1k6 obrażeń obuchowych z podstawowym rzutem obronnym Krzepy.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> Istota odnosi połowę obrażeń.</p><p><strong>Porażka</strong> Istota odnosi pełne obrażenia i jest odpychana 5 stóp od ciebie.</p><p><strong>Krytyczna Porażka</strong> Istota odnosi podwójne obrażenia i jest odpychana 10 stóp od ciebie.</p><hr /><p><strong>Wywyższenie (+1)</strong> Obrażenia zwiększają się o 1k6.</p>"
         },
         "Garden of Death": {
             "name": "Garden of Death",
@@ -3633,7 +3633,7 @@
         },
         "Haunting Hymn": {
             "name": "Przeraźliwy Psalm",
-            "description": "<p>Wyczarowujesz dźwięk rażącego psalmu, który słyszą tylko istoty w obszarze. Psalm zadaje 1k8 obrażeń od dźwięku, z podstawowym rzutem obronnym Krzepy. Jeśli cel odniesie na rzyucie obronnym krytyczną porażkę, staje się również @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchła} na 1 minutę.</p><hr /><p><strong>Wywyższenie (+2)</strong> Obrażenia zwiększają się o 1k8.</p>"
+            "description": "<p>Wyczarowujesz dźwięk rażącego psalmu, który słyszą tylko istoty w obszarze. Psalm zadaje 1k8 obrażeń od dźwięku z podstawowym rzutem obronnym Krzepy. Jeśli cel odniesie na rzyucie obronnym krytyczną porażkę, staje się również @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ogłuchła} na 1 minutę.</p><hr /><p><strong>Wywyższenie (+2)</strong> Obrażenia zwiększają się o 1k8.</p>"
         },
         "Heal": {
             "name": "Leczenie",
@@ -4173,8 +4173,8 @@
             "target": "1 obiekt"
         },
         "Invoke Spirits": {
-            "name": "Invoke Spirits",
-            "description": "<p>Ragged apparitions of the dead rise to stalk the living. They deal 2k4 mental damage and 2k4 void damage to each living creature in the area, with a basic Will save. Additionally, creatures that critically fail the save are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 2} and are @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekający} for 1 round.</p><p>On subsequent rounds, the first time you Sustain the Spell each round, you can move the area up to 30 feet within the range of the spell. Living creatures in the new area must attempt saves with the same effects as above, except that critically failing doesn't make them flee.</p><hr /><p><strong>Wywyższenie (+2)</strong> The mental damage and void damage each increase by 1k4.</p>"
+            "name": "Wezwanie Duchów",
+            "description": "<p>Poszarpane zjawy zmarłych powstają, by prześladować żywych. Zadają każdej żyjącej istocie w obszarze 2k4 obrażeń mentalnych i 2k4 obrażeń od pustki z podstawowym rzutem obronnym Woli. Dodatkowo, istoty, które odniosą krytyczną porażkę w rzucie obronnym, stają się @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażone 2} i @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Uciekają} przez 1 rundę.</p><p>W kolejnych rundach, za pierwszym razem, gdy Podtrzymujesz Zaklęcie w każdej rundzie, możesz przesunąć obszar o maksymalnie 30 stóp w zasięgu zaklęcia. Żyjące istoty w nowym obszarze muszą wykonać rzuty obronne z tymi samymi efektami co powyżej, z wyjątkiem tego, że krytyczna porażka nie powoduje już ucieczki.</p><hr /><p><strong>Wywyższenie (+2)</strong> Obrażenia mentalne i obrażenia od pustki zwiększają się o 1k4 każde.</p>"
         },
         "Invoke True Name": {
             "name": "Przytoczenie Prawdziwego Imienia",
@@ -4196,7 +4196,7 @@
         },
         "Isolation": {
             "name": "Isolation",
-            "description": "<p>You summon a tangible manifestation of loneliness to cloak the target from view as surely as if it were wreathed in darkness. The target attempts a Will saving throw.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na cel.</p><p><strong>Sukces</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}, but only to its allies. Any creature not allied with the target can see it normally. Effects such as @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} enable an ally to see the target. The target's allies still know the target is present and can still see all the effects of the target's actions.</p><p><strong>Porażka</strong> As success, except the target also becomes inaudible to its allies and imperceptible to them through any other senses.</p>",
+            "description": "<p>You summon a tangible manifestation of loneliness to cloak the target from view as surely as if it were wreathed in darkness. The target attempts a Will saving throw.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na cel.</p><p><strong>Sukces</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny}, but only to its allies. Any creature not allied with the target can see it normally. Effects such as @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{Dojrzenie Niedostrzegalnego} enable an ally to see the target. The target's allies still know the target is present and can still see all the effects of the target's actions.</p><p><strong>Porażka</strong> As success, except the target also becomes inaudible to its allies and imperceptible to them through any other senses.</p>",
             "target": "1 istota"
         },
         "It is Written": {
@@ -4683,8 +4683,8 @@
             "target": "1 istota"
         },
         "Massacre": {
-            "name": "Massacre",
-            "description": "<p>You unleash a wave of death to snuff out the life force of those in its path. Each living creature of 17. level or lower in the line must attempt a Fortitude save. If the damage from massacre reduces a creature to 0 Hit Points, that creature dies instantly. If massacre doesn't kill even a single creature, the void energy hungrily turns backward toward you, dealing an additional 30 void damage to every living creature in the line (even those above 17. level) and 30 void damage to you.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> The creature takes 9k6 void damage.</p><p><strong>Porażka</strong> The creature takes 100 void damage.</p><p><strong>Krytyczna Porażka</strong> The creature dies.</p><hr /><p><strong>Wywyższenie (10.)</strong> The spell can affect living creatures up to 19. level. Increase the damage to 10k6 on a success, and to 115 on a failure.</p>"
+            "name": "Rzeź",
+            "description": "<p>Uwalniasz falę śmierci, by zdusić siłę życiową tych na jej drodze. Każda żyjąca istota poziomu 17. lub niższego w linii musi wykonać rzut obronny Krzepy. Jeśli obrażenia od rzezi zredukują Punkty Żywotności istoty do 0, istota ta natychmiast umiera. Jeśli rzeź nie zabije ani jednej istoty, energia pustki łapczywie zwraca się ku tobie, zadając dodatkowe 30 obrażeń od pustki każdej żyjącej istocie na linii (nawet tym powyżej 17. poziomu) oraz 30 obrażeń od pustki tobie.</p><hr /><p><strong>Krytyczny Sukces</strong> Zaklęcie nie wywiera wpływu na istotę.</p><p><strong>Sukces</strong> Istota otrzymuje 9k6 obrażeń od pustki.</p><p><strong>Porażka</strong> Istota otrzymuje 100 obrażeń od pustki.</p><p><strong>Krytyczna Porażka</strong> Istota umiera.</p><hr /><p><strong>Wywyższenie (10.)</strong> Zaklęcie może wpłynąć na żyjące istoty do 19. poziomu. Zwiększ obrażenia do 10k6 przy sukcesie i do 115 przy porażce.</p>"
         },
         "Maze of Locked Doors": {
             "name": "Maze of Locked Doors",
@@ -5239,7 +5239,7 @@
         },
         "Painted Scout": {
             "name": "Painted Scout",
-            "description": "<p>You press your hand to the stone, causing hand-drawn scouts to spread out from your fingers. As long as you keep your hand on the wall and Sustain the Spell, you can see, hear, and smell through the painted scout using whatever senses you have (including natural senses like scent or darkvision, or magical effects like @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}). You can move the scout up to your Speed along the wall each time you Sustain the Spell. The scout can move anywhere along the wall to a range of 120 feet as long as its path is unbroken; it treats sharp corners and particularly craggy spots on the wall as difficult terrain. The painted scout is bonded to the wall on which you created it and can't move onto another surface or material.</p><p>You can spend an action to make the scout @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schować Się} or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradanie Się}, and you can roll a Nature or Occultism check in place of the usual Stealth check. The painted scout must be near a suitably obscured nook or cranny to Hide; it can't Hide or Sneak along a flat, featureless wall. If the painted scout is smeared or doused in water, the scout is destroyed and the spell ends.</p><hr /><p><strong>Wywyższenie (6.)</strong> You create up to five separate painted scouts, and the range to which the scouts can move along the wall increases to 500 feet. Each time you Sustain the Spell, you can move one scout up to your Speed, and you can see, hear, and smell through all five scouts simultaneously. A destroyed scout can't be replaced, and the spell ends if all the scouts are destroyed.</p>",
+            "description": "<p>You press your hand to the stone, causing hand-drawn scouts to spread out from your fingers. As long as you keep your hand on the wall and Sustain the Spell, you can see, hear, and smell through the painted scout using whatever senses you have (including natural senses like scent or darkvision, or magical effects like @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{Dojrzenie Niedostrzegalnego}). You can move the scout up to your Speed along the wall each time you Sustain the Spell. The scout can move anywhere along the wall to a range of 120 feet as long as its path is unbroken; it treats sharp corners and particularly craggy spots on the wall as difficult terrain. The painted scout is bonded to the wall on which you created it and can't move onto another surface or material.</p><p>You can spend an action to make the scout @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Schować Się} or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Przekradanie Się}, and you can roll a Nature or Occultism check in place of the usual Stealth check. The painted scout must be near a suitably obscured nook or cranny to Hide; it can't Hide or Sneak along a flat, featureless wall. If the painted scout is smeared or doused in water, the scout is destroyed and the spell ends.</p><hr /><p><strong>Wywyższenie (6.)</strong> You create up to five separate painted scouts, and the range to which the scouts can move along the wall increases to 500 feet. Each time you Sustain the Spell, you can move one scout up to your Speed, and you can see, hear, and smell through all five scouts simultaneously. A destroyed scout can't be replaced, and the spell ends if all the scouts are destroyed.</p>",
             "target": "a cave wall or other stone surface"
         },
         "Paralyze": {
@@ -6514,8 +6514,8 @@
             "target": "1 page up to 3 square feet in size"
         },
         "See the Unseen": {
-            "name": "See the Unseen",
-            "description": "<p>Your gaze pierces through illusions and finds @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny} creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p><hr /><p><strong>Wywyższenie (5.)</strong> This spell has a duration of 8 hours.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Efekt Zaklęcia: See the Unseen}</p>"
+            "name": "Dojrzenie Niedostrzegalnego",
+            "description": "<p>Twoje spojrzenie przenika przez iluzje i odnajduje @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialne} stworzenia i duchy. Możesz widzieć niewidzialne stworzenia tak, jakby nie były niewidzialne, chociaż ich rysy są zamazane, co czyni je @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłoniętymi} i trudnymi do zidentyfikowania. Możesz także widzieć istoty bezcielesne, takie jak duchy, przenikające przez obiekt w promieniu 10 stóp od jego powierzchni jako rozmyte kształty widoczne przez te obiekty. Subtelniejsze wskazówki zapewniają ci również premię statusową +2 do testów podważenia wiary w iluzje.</p><hr /><p><strong>Wywyższenie (5.)</strong> Czas trwania tego zaklęcia wynosi 8 godzin.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Efekt Zaklęcia: Dojrzenie Niedostrzegalnego}</p>"
         },
         "Seed of Mercy": {
             "name": "Seed of Mercy",
@@ -7039,8 +7039,8 @@
             "requirements": "You're wielding a staff"
         },
         "Spiral of Horrors": {
-            "name": "Spiral of Horrors",
-            "description": "<p>Shades and spirits howl and whirl around you in a display that strikes fear into the hearts of all who witness it. Enemies in the area are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażony 1} and can't reduce their frightened value below 1 for the spell's duration.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.HF1r1psnITHD52B9]{Aura: Spiral of Horrors}</p>"
+            "name": "Spirala Grozy",
+            "description": "<p>Cienie i duchy wyją i wirują wokół ciebie w pokazie, który zasiewa strach w sercach wszystkich, którzy go widzą. Wrogowie w obszarze stają się @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Przerażeni 1} i nie mogą zmniejszyć swojej wartości przerażenia poniżej 1 przez czas trwania zaklęcia.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.HF1r1psnITHD52B9]{Aura: Spirala Grozy}</p>"
         },
         "Spirit Blast": {
             "name": "Spirit Blast",
@@ -8349,8 +8349,8 @@
             "description": "<p>You inhale all air in the surrounding area, stealing the breath of nearby creatures. During <em>vacuum</em>'s duration, you take a –1 circumstance penalty against inhaled threats, such as inhaled poisons. If you cast <em>vacuum</em> in an environment where you can't breathe, the spell fails and you immediately begin to suffocate.</p><p>Creatures in the area must attempt a Fortitude save. A creature that's holding its breath gets a result one degree of success better than it rolled, and creatures that don't need to breathe air are immune to the spell. A creature that later enters the area or ceases holding its breath must attempt a save against the effect. On subsequent rounds, the first time each round you Sustain the spell, you can force each creature in the area to save against the effect.</p><hr /><p><strong>Sukces</strong> The creature begins holding its breath.</p><p><strong>Porażka</strong> The creature wheezes and gasps as its breath is stolen, becoming @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1}. The creature then begins holding its breath but has only half its normal number of rounds of remaining air.</p><p><strong>Krytyczna Porażka</strong> The creature has all the air sucked out from its lungs and immediately starts to suffocate.</p>"
         },
         "Vampiric Exsanguination": {
-            "name": "Vampiric Exsanguination",
-            "description": "<p>You draw in the blood and life force of other creatures through your outstretched arms. You deal 12k6 void damage to living creatures in the area with a basic Fortitude save.</p><p>You gain temporary Hit Points equal to half the damage a single creature takes from this spell; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p><hr /><p><strong>Wywyższenie (+1)</strong> Obrażenia zwiększają się o 2k6.</p>"
+            "name": "Wampiryczne Wykrwawienie",
+            "description": "<p>Wysysasz krew i siłę życiową innych istot przez swoje wyciągnięte ramiona. Zadajesz żyjącym istotom w obszarze 12k6 obrażeń od pustki z podstawowym rzutem obronnym Krzepy.</p><p>Zyskujesz tymczasowe Punkty Żywotności równe połowie obrażeń, które pojedyncza istota otrzymuje od tego zaklęcia. Oblicz te tymczasowe Punkty Żywotności w oparciu o istotę, która otrzymała najwięcej obrażeń. Tracisz wszelkie pozostałe tymczasowe Punkty Żywotności po 1 minucie.</p><hr /><p><strong>Wywyższenie (+1)</strong> Obrażenia zwiększają się o 2k6.</p>"
         },
         "Vampiric Feast": {
             "name": "Wampiryczna Uczta",
@@ -8969,18 +8969,18 @@
         }
     },
     "folders": {
-        "10th Rank": "10th Rank",
-        "1st Rank": "1st Rank",
-        "2nd Rank": "2nd Rank",
-        "3rd Rank": "3rd Rank",
-        "4th Rank": "4th Rank",
-        "5th Rank": "5th Rank",
-        "6th Rank": "6th Rank",
-        "7th Rank": "7th Rank",
-        "8th Rank": "8th Rank",
-        "9th Rank": "9th Rank",
-        "Cantrip": "Cantrip",
-        "Focus": "Focus",
-        "Ritual": "Ritual"
+        "10th Rank": "Krąg 10.",
+        "1st Rank": "Krąg 1.",
+        "2nd Rank": "Krąg 2.",
+        "3rd Rank": "Krąg 3.",
+        "4th Rank": "Krąg 4.",
+        "5th Rank": "Krąg 5.",
+        "6th Rank": "Krąg 6.",
+        "7th Rank": "Krąg 7.",
+        "8th Rank": "Krąg 8.",
+        "9th Rank": "Krąg 9.",
+        "Cantrip": "Sztuczka",
+        "Focus": "Skupienia",
+        "Ritual": "Rytuał"
     }
 }

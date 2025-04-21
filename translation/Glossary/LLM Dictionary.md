@@ -175,6 +175,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | focus spell | zaklęcie skupienia | |
 | Focus Point | Punkt Skupienia | |
 | heighten/heightened | wywyższać/wywyższony | |
+| battle form | postać bojowa | |
 | familiar ability | zdolność chowańca | |
 | master ability (familiar) | zdolność pana | np. pan chowańca |
 | difficult terrain | trudny teren | |
@@ -191,16 +192,19 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Obrażenia
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| persistent damage | obrażenia przewlekłe | |
-| spirit / good / evil / chaotic / lawful | duchowe | |
-| void | od pustki | |
-| vitality | od witalności | |
+| bludgeoning | obuchowe | |
+| piercing | kłute | |
+| slashing | cięte | |
 | acid | od kwasu | |
 | cold | od zimna | |
 | electricity | od elektryczności | |
 | fire | od ognia | |
 | force | od mocy | |
 | sonic | od dźwięku | |
+| void | od pustki | |
+| vitality | od witalności | |
+| spirit / good / evil / chaotic / lawful | duchowe | |
+| persistent damage | obrażenia przewlekłe | |
 
 ### Rzuty
 | Angielski | Polski | Uwagi |

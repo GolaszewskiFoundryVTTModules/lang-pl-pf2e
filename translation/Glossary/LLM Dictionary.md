@@ -21,6 +21,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Outer Gods | Bogowie Dalecy | |
 | The Fabric of the Universe/Space/Time | Osnowa | |
 | Ley Lines | Żyły Magii | |
+| River of Souls | Rzeka Dusz | |
 
 ### Bóstwa i Tytani
 | Angielski | Polski | Uwagi |
@@ -32,12 +33,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Verex-That-Was | Verex-Który-Przeminął | |
 | Green Man | Zielony Człek | |
 
-### Chronologia
+### Historia i Wydarzenia
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Earthfall | Upadek Ziemi | |
 | Age of Darkness | Wiek Ciemności | |
 | Age of Lost Omens | Wiek Utraconych Omenów | |
+| Godsrain | Boski Deszcz | |
 
 ### Istoty
 | Angielski | Polski | Uwagi |
@@ -120,6 +122,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | check | test | |
+| flat check | test płaski | |
 | save | rzut obronny | |
 | (critical) success | (krytyczny) sukces | |
 
@@ -139,6 +142,25 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | resistant/resistance | odporny/odporność | |
 | weak/weakness | podatny/podatność | |
 | vulnerable/vulnerability | wrażliwy/wrażliwość | |
+
+### Grupy Broni
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Brawling | Ręczna | |
+| Club | Pałka | |
+| Knife | Nóż | |
+| Sling | Proca | |
+| Spear | Włócznia | |
+| Sword | Miecz | |
+| Axe | Topór | |
+| Bow | Łuk | |
+| Crossbow | Kusza | |
+| Dart | Rzutka | |
+| Flail | Kiścień | |
+| Hammer | Młot | |
+| Shield | Tarcza | |
+| Bomb | Bomba | |
+| Firearm | Broń Palna | |
 
 ### Skradanie się
 | Angielski | Polski | Uwagi |
@@ -211,6 +233,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | attack roll | rzut ataku | |
 | spell attack roll | rzut ataku zaklęciem | |
+| ranged spell attack | dystansowy atak zaklęciem | |
+| melee spell attack | atak zaklęciem w zwarciu | |
 | reflex save | rzut obronny refleksu | |
 | will save | rzut obronny woli | |
 | fortitude save | rzut obronny krzepy | |
@@ -246,6 +270,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | apparition | zjawa | |
 | Channel Elements | Kształtowanie Żywiołów | |
 | Diety and cause | Bóstwo i pobudka | |
+| Bloodline | Pokrewieństwo | |
 
 ### Stopniowanie
 | Angielski | Polski | Uwagi |
@@ -281,6 +306,11 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Light | Światło | |
 | mindless | bezmyślny | |
 | minion | sługus | |
+| magic | magiczność | |
+| arcane | magia tajemna | |
+| occult | magia okultystyczna | |
+| divine | magia boska | |
+| primal | magia pierwotna | |
 
 ### Statusy
 | Angielski | Polski | Uwagi |
@@ -322,11 +352,39 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 
 ## Opcje Postaci
 
-### Archetypy i Klasy
+### Klasy
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Alchemist | Alchemik | |
+| Animist | Animista | |
+| Barbarian | Barbarzyńca | |
+| Bard | Bard | |
+| Champion | Czempion | |
+| Cleric | Kleryk | |
+| Druid | Druid | |
+| Exemplar | Heros | |
+| Fighter | Wojownik | |
+| Gunslinger | Strzelec | |
+| Inventor | Wynalazca | |
+| Investigator | Śledczy | |
+| Kineticist | Kinetyk | |
+| Magus | Magus | |
+| Monk | Mnich | |
+| Oracle | Wyrocznia | |
+| Psychic | Psionik | |
+| Ranger | Łowca | |
+| Rogue | Łotr | |
+| Sorcerer | Zaklinacz | |
+| Summoner | Przywoływacz | |
+| Swashbuckler | Szermierz | |
+| Thaumaturge | Taumaturg | |
+| Witch | Wiedźma | |
+| Wizard | Czarodziej | |
+
+### Archetypy
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Pactbinder | Poskramiacz Paktów | |
-| Kineticist | Kształtowanie Żywiołów | |
 | Eldritch Researcher | Badacz Nieznanego | |
 | Bloodrager | Krwiogniewca | |
 | Shadowcaster | Cieniotkacz | |
@@ -389,6 +447,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Reposition | Przemieszczenie | |
 | Grapple | Pochwycenie | |
 | Trip | Podcięcie | |
+| Wield | Dzierżyć | |
 
 ### Towarzysze
 | Angielski | Polski | Uwagi |
@@ -396,6 +455,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | pet | zwierzak | |
 | familiar | chowaniec | |
 | animal companion | zwierzęcy towarzysz | |
+| specific familiar | określony chowaniec | |
 
 ## Adventure-Specific
 

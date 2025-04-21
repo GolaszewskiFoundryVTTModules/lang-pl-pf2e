@@ -7,7 +7,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Kosmologia
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Plane of Existence | Plan Egzystencji | |
+| Plane of Existence | Plan Istnienia | |
 | Netherworld | Zaświaty | |
 | the Universe | Świat Główny | |
 | Outer Rifts | Zewnętrzne Szczeliny | Dawniej "Abyss" |
@@ -159,6 +159,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | multiple attack penalty | kara za atak wielokrotny | |
 | living creature | żyjąca istota | nie "żywa" |
 | willing | godząca się | |
+| spellcaster | użytkownik magii | |
 | companion | towarzysz | |
 | ally | sojusznik | |
 | Price | Cena | |
@@ -177,6 +178,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | familiar ability | zdolność chowańca | |
 | master ability (familiar) | zdolność pana | np. pan chowańca |
 | difficult terrain | trudny teren | |
+| greater difficult terrain | bardzo trudny teren | |
+| critical specialization | krytyczna specjalizacja | |
 | bright light | jasne światło | |
 | dim light | słabe światło | |
 | darkness | ciemność | |
@@ -215,6 +218,11 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | Deception | Oszukiwanie | |
 | Survival | Sztuka Przetrwania | |
+| Arcana | Wiedza Tajemna | |
+| Nature | Przyroda | |
+| Occultism | Okultyzm | |
+| Religion | Religia | |
+| Society | Społeczeństwo | |
 
 ### Rangi Biegłości
 | Angielski | Polski | Uwagi |
@@ -370,7 +378,10 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Refocus | Odzyskanie Skupienia | |
 | Impersonate | Podszywanie Się | |
 | Strike | (zadać/wymierzyć) Cios | |
-| Retrain | Przeszkolenie/Przeszkolić | |
+| Retrain | Przekwalifikowanie/Przekwalifikować | |
+| Reposition | Przemieszczenie | |
+| Grapple | Pochwycenie | |
+| Trip | Podcięcie | |
 
 ### Towarzysze
 | pet | zwierzak | |

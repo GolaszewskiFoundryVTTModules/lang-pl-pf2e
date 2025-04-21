@@ -27,10 +27,10 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | The Beast of Gluttondark | Bestia z Mrokogłodu | |
 | Treerazer | Drzewomór | |
-| Norgorber | Ojciec Skóroszwacz | |
+| Father Skinsaw | Ojciec Skóroszwacz | |
 | Dawnflower | Świtokwiat | |
 | Verex-That-Was | Verex-Który-Przeminął | |
-| Green Man | Zielony Człowiek | |
+| Green Man | Zielony Człek | |
 
 ### Chronologia
 | Angielski | Polski | Uwagi |
@@ -240,6 +240,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | spellstrike | czarocios | |
 | implement | przyrząd | |
 | apparition | zjawa | |
+| Channel Elements | Kształtowanie Żywiołów | |
+| Diety and cause | Bóstwo i pobudka | |
 
 ### Stopniowanie
 | Angielski | Polski | Uwagi |
@@ -336,6 +338,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Bleaching | Płowienie | Dotyczy gnomów |
 | shapers | kształciciele | Dotyczy konrasu |
 | Awakened Animal | Przebudzone Zwierzę | |
+| Changeling | Odmieniec | |
 
 ### Ekwipunek
 | Angielski | Polski | Uwagi |
@@ -384,6 +387,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Trip | Podcięcie | |
 
 ### Towarzysze
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
 | pet | zwierzak | |
 | familiar | chowaniec | |
 | animal companion | zwierzęcy towarzysz | |
@@ -397,6 +402,23 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Gauntlight | Bladobrzask | |
 | Fogfen | Mgłagniska | |
 
----
 
-*Uwaga: Ten słownik będzie regularnie aktualizowany w miarę postępu tłumaczenia. Jeśli znajdziesz brakujące terminy lub niekonsekwencje, proszę o ich zgłoszenie.*
+## Styl i wyrażenia
+
+### Ustanowione formy
+odnosić obrażenia
+zyskiwać premię
+ponosić karę
+
+### Ciekawe słownictwo stylistyczne, w ramach inspiracji
+Szeptucha
+Guślarz
+Straceńcy
+grzęzawisko
+kasztelan
+napomykam
+kunszt
+strażnica
+ośmielić się
+danina
+nieugięty

@@ -116,17 +116,36 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | creature | istota | |
 | object | obiekt | |
 | living creature | żyjąca istota | nie "żywa" |
-| Bulk | Naręcze | |
-| Tiny | Malutki | Rozmiar |
-| Small | Mały | Rozmiar |
-| Medium | Średni | Rozmiar |
-| Large | Duży | Rozmiar |
-| Huge | Wielki | Rozmiar |
-| Gargantuan | Ogromny | Rozmiar |
-| common | powszechny | Rzadkość |
-| uncommon | nietypowy | Rzadkość |
-| rare | rzadki | Rzadkość |
-| unique | unikalny | Rzadkość |
+| ally | sojusznik | |
+
+### Rozmiar (Size)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Tiny | Malutki | |
+| Small | Mały | |
+| Medium | Średni | |
+| Large | Duży | |
+| Huge | Wielki | |
+| Gargantuan | Ogromny | |
+
+### Rzadkość (Rarity)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| common | powszechny | |
+| uncommon | nietypowy | |
+| rare | rzadki | |
+| unique | unikalny | |
+
+### Stopniowanie (Gradation)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Minor | Drobna | |
+| Lesser | Mniejsza | |
+| Moderate | Umiarkowana | |
+| Greater | Większa | |
+| Major | Potężna | |
+| Supreme | Wyjątkowa | |
+| True | Prawdziwa | |
 
 ### Testy i Stopnie Trudności (Checks & DCs)
 | Angielski | Polski | Uwagi |
@@ -205,12 +224,19 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | weak/weakness | podatny/podatność | |
 | vulnerable/vulnerability | wrażliwy/wrażliwość | |
 
-### Szablony Obszarów (Area Templates)
+### Szablony i Pozycjonowanie (Area Templates & Positioning)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | burst | wybuch | |
 | cone | stożek | |
+| cube | sześcian | |
+| cylinder | cylinder | |
 | emanation | emanacja | |
+| line | linia | |
+| square | kwadrat | |
+| adjacent | sąsiadować/sąsiadujący | |
+| difficult terrain | trudny teren | |
+| greater difficult terrain | bardzo trudny teren | |
 
 
 ## Magia (Magic)
@@ -446,6 +472,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Price | Cena | |
+| Bulk | Naręcze | |
 
 ### Grupy Broni (Weapon Groups)
 | Angielski | Polski | Uwagi |
@@ -486,25 +513,10 @@ odnosić obrażenia
 zyskiwać premię
 ponosić karę
 
-### Stopniowanie (Gradation)
-| Angielski | Polski | Uwagi |
-|-----------|--------|-------|
-| Minor | Drobna | |
-| Lesser | Mniejsza | |
-| Moderate | Umiarkowana | |
-| Greater | Większa | |
-| Major | Potężna | |
-| Supreme | Wyjątkowa | |
-| True | Prawdziwa | |
-
 ### Inne (Other)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Host | żywiciel | Dla pasożyta |
-| adjacent | sąsiadować/sąsiadujący | |
-| ally | sojusznik | |
-| difficult terrain | trudny teren | |
-| greater difficult terrain | bardzo trudny teren | |
+| host | żywiciel | |
 | Harrow | Talia Marnota | Od Tarot |
 | Suit | Dwór Karty | Talia Marnota |
 

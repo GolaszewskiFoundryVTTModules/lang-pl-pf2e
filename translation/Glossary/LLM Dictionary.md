@@ -40,19 +40,36 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Age of Lost Omens | Wiek Utraconych Omenów | |
 | Godsrain | Boski Deszcz | |
 
-### Istoty (Creatures)
+### Terminy (Terms)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| fiend | diabeł | |
-| devil | czart | |
-| demon | demon | |
-| daemon | daimon | |
-| sprite | chochlik | |
-| pixie | skrzat | |
 | warpwave | pulsprzemiana | |
-| fleshwarp | mięsoskręt | |
 | fleshwarping | mięsoskręcanie | |
 | fleshcrafter | mięsorzeźbiarz | |
+
+#### Typy Istot (Creature Types)
+| Angielski   | Polski        | Uwagi |
+|-------------|---------------|-------|
+| Aberration  | Wynaturzenie  | |
+| Animal      | Zwierzę       | |
+| Beast       | Bestia        | |
+| Celestial   | Niebianin     | |
+| Construct   | Konstrukt     | |
+| Daemon      | Daimon        | |
+| Demon       | Demon         | |
+| Devil       | Czart         | |
+| Dragon      | Smok          | |
+| Elemental   | Żywiołak      | |
+| Fey         | Fey           | |
+| Fiend       | Diabeł        | |
+| Fleshwarp   | Mięsoskręt    | |
+| Fungus      | Grzyb         | |
+| Monitor     | Nadzorca      | |
+| Ooze        | Szlam         | |
+| Pixie       | Skrzat        | |
+| Plant       | Roślina       | |
+| Sprite      | Chochlik      | |
+| Undead      | Nieumarły     | |
 
 ### Geografia Golarionu (Golarion Geography)
 | Angielski | Polski | Uwagi |
@@ -187,6 +204,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Range | Zasięg | |
 | multiple attack penalty | kara za atak wielokrotny | |
 | Strike | (zadać/wymierzyć) Cios | Akcja |
+| critical specialization | krytyczna specjalizacja | |
+| incapacitation | obezwładnienie | |
 
 ### Ataki i Rzuty Obronne (Attacks & Saves)
 | Angielski | Polski | Uwagi |
@@ -198,6 +217,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | reflex save | rzut obronny refleksu | |
 | will save | rzut obronny woli | |
 | fortitude save | rzut obronny krzepy | |
+| range increment | inkrement zasięgu | |
 
 ### Typy Obrażeń (Damage Types)
 | Angielski | Polski | Uwagi |
@@ -210,11 +230,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | electricity | od elektryczności | |
 | fire | od ognia | |
 | force | od mocy | |
+| mental | mentalne | |
 | sonic | od dźwięku | |
 | void | od pustki | |
 | vitality | od witalności | |
 | spirit / good / evil / chaotic / lawful | duchowe | |
 | persistent damage | obrażenia przewlekłe | |
+| precision damage | obrażenia precyzyjne | |
 
 ### Odporności i Podatności (Resistances & Weaknesses)
 | Angielski | Polski | Uwagi |
@@ -224,7 +246,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | weak/weakness | podatny/podatność | |
 | vulnerable/vulnerability | wrażliwy/wrażliwość | |
 
-### Szablony i Pozycjonowanie (Area Templates & Positioning)
+### Szablony, Pozycjonowanie i Cele (Area Templates, Positioning and Targets)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | burst | wybuch | |
@@ -237,6 +259,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | adjacent | sąsiadować/sąsiadujący | |
 | difficult terrain | trudny teren | |
 | greater difficult terrain | bardzo trudny teren | |
+| willing | godząca się | Cel zaklęcia/zdolności |
+| solid surface | twarda powierzchnia | |
 
 
 ## Magia (Magic)
@@ -274,7 +298,6 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | divine | magia boska | |
 | primal | magia pierwotna | |
 
-
 ## Akcje i Aktywności (Actions & Activities)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
@@ -286,6 +309,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Make an Impression | Wywieranie Wrażenia | |
 | Lie | Kłamstwo | |
 | Disable a Device | Rozbrojenie Urządzenia | |
+| Disarm | Rozbrojenie | |
 | disbelieve | podważyć wiarę | np. w iluzję |
 | Decipher Writing | Odszyfrowywanie Pisma | |
 | Identify Magic | Identyfikacja Magii | |
@@ -309,36 +333,64 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Wield | Dzierżyć | |
 
 
-## Statusy i Zmysły (Conditions & Senses)
+## Statusy i Statystyki (Conditions & Stats)
 
 ### Statusy (Conditions)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Condition | Status | |
-| Flat-Footed | Opuszczona Garda | |
-| Concealed | Przysłonięcie | |
-| Invisible | Niewidzialność | |
-| Dazzled | Zamroczenie | |
-| Fascinated | Zafascynowanie | |
-| Stupefied | Ogłupienie | |
-| Frightened | Przerażenie | |
-| Doomed | Zguba | |
-| Drained | Wyniszczenie | |
-| Fatigued | Wyczerpanie | |
-| Paralyzed | Paraliż | |
-| Sickened | Zemdlenie | |
-| Unconscious | Nieprzytomność | |
 | Broken | Uszkodzony | |
 | Destroyed | Zniszczony | |
+| Concealed | Przysłonięty | |
+| Condition | Status | |
+| Dazzled | Zamroczony | |
+| Deafened | Ogłuchły | |
+| Doomed | Zgubiony | |
+| Drained | Wyniszczony | |
+| Fascinated | Zafascynowany | |
+| Fatigued | Wyczerpany | |
+| Flat-Footed / Off-Guard | Opuszczona Garda | |
+| Frightened | Przerażony | |
+| Invisible | Niewidzialny | |
+| Paralyzed | Sparaliżowany | |
+| Sickened | Zemdlony | |
+| Stupefied | Ogłupiony | |
+| Stunned | Ogłuszony | |
+| Unconscious | Nieprzytomny | |
 
 ### Zmysły i Widzenie (Senses & Vision)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| darkvision | widzenie w ciemności | |
-| low-light vision | widzenie w słabym świetle | |
 | bright light | jasne światło | |
 | dim light | słabe światło | |
 | darkness | ciemność | |
+| vision | wizja | |
+| hearing | słuch | |
+| scent | węch | |
+| low-light vision | widzenie w słabym świetle | |
+| darkvision | widzenie w ciemności | |
+| greater darkvision | lepsze widzenie w ciemności | |
+| infrared vision | wizja podczerwona | |
+| echolocation | echolokacja | |
+| tremorsense | wyczucie drgań | |
+| motion sense | wyczucie ruchu | |
+| wavesense | wyczucie fal | |
+| bloodsense | wyczucie krwi | |
+| see invisibility | widzenie niewidocznego | |
+| thoughtsense | wyczucie myśli | |
+| spiritsense | wyczucie dusz | |
+| lifesense | wyczucie życia | |
+| magicsense | wyczucie magii | |
+| truesight | prawdowidzenie | |
+
+### Poruszanie się (Movement)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Speed | Prędkość | |
+| Land Speed | Prędkość Lądowa | |
+| Climb Speed | Prędkość Wspinania | |
+| Swim Speed | Prędkość Pływania | |
+| Flying Speed | Prędkość Latania | |
+| Burrowing Speed | Prędkość Rycia | |
 
 ### Ukrywanie się (Stealth)
 | Angielski | Polski | Uwagi |
@@ -412,6 +464,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Occultism | Okultyzm | |
 | Religion | Religia | |
 | Society | Społeczeństwo | |
+| Thievery | Złodziejstwo | |
 
 ### Atuty (Feats)
 | Angielski | Polski | Uwagi |
@@ -446,7 +499,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | battle form | postać bojowa | |
 | familiar ability | zdolność chowańca | |
 | master ability (familiar) | zdolność pana | np. pan chowańca |
-| critical specialization | krytyczna specjalizacja | Wojownik |
+| pact broker | negocjator paktów | |
 
 ### Cechy (Traits - Character/Action Related)
 | Angielski | Polski | Uwagi |
@@ -463,7 +516,6 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Light | Światło | |
 | mindless | bezmyślny | |
 | minion | sługus | |
-| willing | godząca się | Cel zaklęcia/zdolności |
 
 
 ## Ekwipunek (Equipment)
@@ -473,6 +525,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | Price | Cena | |
 | Bulk | Naręcze | |
+| specific magic weapon | określona broń magiczna | |
 
 ### Grupy Broni (Weapon Groups)
 | Angielski | Polski | Uwagi |
@@ -492,6 +545,83 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Shield | Tarcza | |
 | Bomb | Bomba | |
 | Firearm | Broń Palna | |
+
+### Bronie Istot / Postaci
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Antler | Poroże | |
+| Aqueous Fist | Wodna Pięść | |
+| Beak | Dziób | |
+| Beard | Broda | |
+| Belly | Brzuch | |
+| Big Claw | Wielki Pazur | |
+| Bite | Ugryzienie | |
+| Blade | Ostrze | |
+| Body | Ciało | |
+| Bone Dart | Kościana Strzałka | |
+| Bone Shard | Odłamek Kostny | |
+| Bone Spike | Kościany Szpikulec | |
+| Boot | Bucior | |
+| Boulder | Głaz | |
+| Branch | Gałąź | |
+| Claw | Pazur | |
+| Cube Face | Bok Sześcianu | |
+| Elemental Current | Strumień Żywiołów | |
+| Fangs | Zębiska | |
+| Fire Mote | Iskierka | |
+| Fist | Pięść | |
+| Flame Hair | Płomienne Włosy | |
+| Flaming Sword | Płomienny Miecz | |
+| Foot | Stopa | |
+| Foreleg | Łydka | |
+| Gust | Podmuch | |
+| Holy Mace | Święta Maczuga | |
+| Hoof | Kopyto | |
+| Horn | Róg | |
+| Horns | Rogi | |
+| Hurled Debris | Ciśnięty Gruz | |
+| Jaws | Szczęki | |
+| Lava Fist | Magmowa Pięść | |
+| Leaf | Liść | |
+| Leaves | Liście | |
+| Leg | Noga | |
+| Lightning Lash | Bicz Błyskawicy | |
+| Little Claw | Mały Pazur | |
+| Mandibles | Żuwaczki | |
+| Metal Shard | Odłamek Metalu | |
+| Moonbeam | Księżycowy Promień | |
+| Nectar | Nektar | |
+| Piercing Hymn | Przeszywający Hymn | |
+| Pincer | Szczypce | |
+| Pseudopod | Nibynóżka | |
+| Quill | Pióro | |
+| Rock | Skała | |
+| Root | Korzeń | |
+| Sacred Armament | Uświęcony Oręż | |
+| Seed | Nasiono | |
+| Spikes | Kolce | |
+| Spine | Kręgosłup | |
+| Spoke | Szprycha | |
+| Stinger | Żądło | |
+| Spirit Touch | Widmowy Dotyk | |
+| Stone Ball | Kamienna Kula | |
+| Striking Surface | Powierzchnia Uderzeniowa | |
+| Sunbeam | Słoneczny Promień | |
+| Tail | Ogon | |
+| Talon | Szpon | |
+| Tendril | Wić | |
+| Tentacle | Macka | |
+| Tentacle Arm | Mackowate Ramię | |
+| Thorns | Ciernie | |
+| Tongue | Język | |
+| Trunk | Trąba | |
+| Tusk | Kieł | |
+| Vine | Pnącze | |
+| Water Spout | Strumień Wody | |
+| Wave | Fala | |
+| Web | Pajęczyna | |
+| Wing | Skrzydło | |
+| Wrap | Splot | |
 
 ### Bronie i Pancerze (Weapons & Armor)
 | Angielski | Polski | Uwagi |

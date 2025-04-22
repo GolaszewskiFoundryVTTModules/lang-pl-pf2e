@@ -2,9 +2,9 @@
 
 Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z języka angielskiego na polski. Służy jako punkt odniesienia dla spójności tłumaczeń.
 
-## Wszechświat
+## Świat Gry (Game World)
 
-### Kosmologia
+### Kosmologia (Cosmology)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Plane of Existence | Plan Istnienia | |
@@ -23,17 +23,16 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Ley Lines | Żyły Magii | |
 | River of Souls | Rzeka Dusz | |
 
-### Bóstwa i Tytani
+### Bóstwa i Tytani (Deities & Titans)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | The Beast of Gluttondark | Bestia z Mrokogłodu | |
 | Treerazer | Drzewomór | |
 | Father Skinsaw | Ojciec Skóroszwacz | |
 | Dawnflower | Świtokwiat | |
-| Verex-That-Was | Verex-Który-Przeminął | |
 | Green Man | Zielony Człek | |
 
-### Historia i Wydarzenia
+### Historia i Wydarzenia (History & Events)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Earthfall | Upadek Ziemi | |
@@ -41,7 +40,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Age of Lost Omens | Wiek Utraconych Omenów | |
 | Godsrain | Boski Deszcz | |
 
-### Istoty
+### Istoty (Creatures)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | fiend | diabeł | |
@@ -55,13 +54,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | fleshwarping | mięsoskręcanie | |
 | fleshcrafter | mięsorzeźbiarz | |
 
-### Postacie / Organizacje
-| Cobyslarni | Kobyslarni | |
-| Witchmarket | wiedźmi targ | |
-
-## Golarion
-
-### Geografia
+### Geografia Golarionu (Golarion Geography)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | The Shackles | Kajdany | |
@@ -74,7 +67,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | The Impossible Lands | Niemożliwe Ziemie | |
 | Palatinates | Palatynaty | |
 
-### Fakcje
+### Frakcje i Organizacje (Factions & Organizations)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Knights of Lastwall | Rycerze Kresomuru | |
@@ -83,26 +76,36 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Arclords of Nex | Maglordowie z Nex | |
 | Zephyr Guards | Strażnicy Zefiru | |
 | Skinsaw | Skóroszwacze | |
+| Witchmarket | wiedźmi targ | |
 
-### Polityka Absalomu
+#### Polityka Absalomu
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| High Council | Wysoka Rada | |
-| Low Council | Niska Rada | |
-| Primarch of Absalom | Prymarcha Absalomu | |
-| District Councils | Rady Dzielnicowe | |
-| Lords of Laws | Lordowie Praw | |
-| Lords of Magic | Lordowie Zaklęć | |
+| High Council | Wysoka Rada | Absalom |
+| Low Council | Niska Rada | Absalom |
+| Primarch of Absalom | Prymarcha Absalomu | Absalom |
+| District Councils | Rady Dzielnicowe | Absalom |
+| Lords of Laws | Lordowie Praw | Absalom |
+| Lords of Magic | Lordowie Zaklęć | Absalom |
 
-### Marnot
+### Postacie (Characters)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Harrow | Talia Marnota | Od Tarot |
-| Suit | Dwór Karty | |
+| Verex-That-Was | Verex-Który-Przeminął | |
+| Cobyslarni | Kobyslarni | |
 
-## Nomenklatura Mechaniczna
+### Specyficzne dla Przygód (Adventure-Specific)
+#### Abomination Vaults
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Belcorra | Belkorra | |
+| Gauntlight | Bladobrzask | |
+| Fogfen | Mgłagniska | |
 
-### Głowna
+
+## Podstawowe Zasady (Core Rules)
+
+### Ogólne Terminy (General Terms)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | PC | BG | Bohaterowie Graczy |
@@ -112,21 +115,30 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | BT / Broken Threshold | PU / Próg Uszkodzenia | |
 | creature | istota | |
 | object | obiekt | |
-| feat | atut | |
-| skill feat | atut umiejętności | |
-| ancestry feat | atut przodkostwa | |
-| class feat | atut klasowy | |
-| dedication feat | atut dedykacji | |
+| living creature | żyjąca istota | nie "żywa" |
+| Bulk | Naręcze | |
+| Tiny | Malutki | Rozmiar |
+| Small | Mały | Rozmiar |
+| Medium | Średni | Rozmiar |
+| Large | Duży | Rozmiar |
+| Huge | Wielki | Rozmiar |
+| Gargantuan | Ogromny | Rozmiar |
+| common | powszechny | Rzadkość |
+| uncommon | nietypowy | Rzadkość |
+| rare | rzadki | Rzadkość |
+| unique | unikalny | Rzadkość |
 
-### Testy
+### Testy i Stopnie Trudności (Checks & DCs)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | check | test | |
 | flat check | test płaski | |
 | save | rzut obronny | |
 | (critical) success | (krytyczny) sukces | |
+| spell DC | ST zaklęć | rodzaj męski |
+| class DC | ST klasowy | rodzaj męski |
 
-### Premie / Kary
+### Modyfikatory (Modifiers)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | bonus | premia | |
@@ -135,43 +147,19 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | item | przedmiotu | |
 | status | statusowa | |
 
-### Odporności/Wrażliwości
+### Biegłość (Proficiency)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| immune/immunity | niewrażliwy/niewrażliwość | |
-| resistant/resistance | odporny/odporność | |
-| weak/weakness | podatny/podatność | |
-| vulnerable/vulnerability | wrażliwy/wrażliwość | |
+| Untrained | Niewyszkolony/Niewyszkolenie | |
+| Trained | Wytrenowany/Wytrenowanie | |
+| Expert | Ekspert/Eksperctwo | |
+| Master | Mistrz/Mistrzostwo | |
+| Legendary | Legenda/Legendarność | |
 
-### Grupy Broni
-| Angielski | Polski | Uwagi |
-|-----------|--------|-------|
-| Brawling | Ręczna | |
-| Club | Pałka | |
-| Knife | Nóż | |
-| Sling | Proca | |
-| Spear | Włócznia | |
-| Sword | Miecz | |
-| Axe | Topór | |
-| Bow | Łuk | |
-| Crossbow | Kusza | |
-| Dart | Rzutka | |
-| Flail | Kiścień | |
-| Hammer | Młot | |
-| Shield | Tarcza | |
-| Bomb | Bomba | |
-| Firearm | Broń Palna | |
 
-### Skradanie się
-| Angielski | Polski | Uwagi |
-|-----------|--------|-------|
-| Observed | Postrzegany | |
-| Concealed | Przysłonięty | |
-| Hidden | Schowany | |
-| Unnoticed | Niezauważony | |
-| Undetected | Niewykryty | |
+## Walka (Combat)
 
-### Terminy
+### Ogólne Terminy Walki (General Combat Terms)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Melee | W zwarciu | broń biała |
@@ -179,39 +167,20 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Reach | Wysięg | |
 | Range | Zasięg | |
 | multiple attack penalty | kara za atak wielokrotny | |
-| living creature | żyjąca istota | nie "żywa" |
-| willing | godząca się | |
-| spellcaster | użytkownik magii | |
-| companion | towarzysz | |
-| ally | sojusznik | |
-| Price | Cena | |
-| Host | żywiciel | |
-| magical tradition | tradycja magiczna | nie "magiczna tradycja" |
-| spell | zaklęcie | |
-| cast a spell | rzucać zaklęcie | |
-| spell slot | komórka zaklęć | Zawsze z "zaklęć" (pl.) |
-| spell rank / level | krąg zaklęcia | |
-| spellbook | księga zaklęć | |
-| formula book | księga receptur | |
-| cantrip | sztuczka | |
-| focus spell | zaklęcie skupienia | |
-| Focus Point | Punkt Skupienia | |
-| heighten/heightened | wywyższać/wywyższony | |
-| battle form | postać bojowa | |
-| familiar ability | zdolność chowańca | |
-| master ability (familiar) | zdolność pana | np. pan chowańca |
-| difficult terrain | trudny teren | |
-| greater difficult terrain | bardzo trudny teren | |
-| critical specialization | krytyczna specjalizacja | |
-| bright light | jasne światło | |
-| dim light | słabe światło | |
-| darkness | ciemność | |
-| adjacent | sąsiadować/sąsiadujący | |
-| darkvision | widzenie w ciemności | |
-| low-light vision | widzenie w słabym świetle | |
-| Bulk | Naręcze | |
+| Strike | (zadać/wymierzyć) Cios | Akcja |
 
-### Obrażenia
+### Ataki i Rzuty Obronne (Attacks & Saves)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| attack roll | rzut ataku | |
+| spell attack roll | rzut ataku zaklęciem | |
+| ranged spell attack | dystansowy atak zaklęciem | |
+| melee spell attack | atak zaklęciem w zwarciu | |
+| reflex save | rzut obronny refleksu | |
+| will save | rzut obronny woli | |
+| fortitude save | rzut obronny krzepy | |
+
+### Typy Obrażeń (Damage Types)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | bludgeoning | obuchowe | |
@@ -228,97 +197,100 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | spirit / good / evil / chaotic / lawful | duchowe | |
 | persistent damage | obrażenia przewlekłe | |
 
-### Rzuty
+### Odporności i Podatności (Resistances & Weaknesses)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| attack roll | rzut ataku | |
-| spell attack roll | rzut ataku zaklęciem | |
-| ranged spell attack | dystansowy atak zaklęciem | |
-| melee spell attack | atak zaklęciem w zwarciu | |
-| reflex save | rzut obronny refleksu | |
-| will save | rzut obronny woli | |
-| fortitude save | rzut obronny krzepy | |
-| spell DC | ST zaklęć | rodzaj męski |
-| class DC | ST klasowy | rodzaj męski |
+| immune/immunity | niewrażliwy/niewrażliwość | |
+| resistant/resistance | odporny/odporność | |
+| weak/weakness | podatny/podatność | |
+| vulnerable/vulnerability | wrażliwy/wrażliwość | |
 
-### Umiejętności
+### Szablony Obszarów (Area Templates)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Deception | Oszukiwanie | |
-| Survival | Sztuka Przetrwania | |
-| Arcana | Wiedza Tajemna | |
-| Nature | Przyroda | |
-| Occultism | Okultyzm | |
-| Religion | Religia | |
-| Society | Społeczeństwo | |
+| burst | wybuch | |
+| cone | stożek | |
+| emanation | emanacja | |
 
-### Rangi Biegłości
+
+## Magia (Magic)
+
+### Ogólne Terminy Magiczne (General Magic Terms)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Untrained | Niewyszkolony/Niewyszkolenie | |
-| Trained | Wytrenowany/Wytrenowanie | |
-| Expert | Ekspert/Eksperctwo | |
-| Master | Mistrz/Mistrzostwo | |
-| Legendary | Legenda/Legendarność | |
+| spellcaster | użytkownik magii | |
+| magical tradition | tradycja magiczna | nie "magiczna tradycja" |
+| spell | zaklęcie | |
+| cast a spell | rzucać zaklęcie | |
+| spellbook | księga zaklęć | |
+| heighten/heightened | wywyższać/wywyższony | |
 
-### Terminy Klasowe
-| versatile vial | wszechstronna fiolka | |
-| bonded item | przedmiot więzi | |
-| hex | urok | |
-| spellstrike | czarocios | |
-| implement | przyrząd | |
-| apparition | zjawa | |
-| Channel Elements | Kształtowanie Żywiołów | |
-| Diety and cause | Bóstwo i pobudka | |
-| Bloodline | Pokrewieństwo | |
-
-### Stopniowanie
+### Rodzaje Zaklęć (Spell Types)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Minor | Drobna | |
-| Lesser | Mniejsza | |
-| Moderate | Umiarkowana | |
-| Greater | Większa | |
-| Major | Potężna | |
-| Supreme | Wyjątkowa | |
-| True | Prawdziwa | |
+| cantrip | sztuczka | |
+| focus spell | zaklęcie skupienia | |
+| ritual | rytuał | |
 
-### Rzadkość
+### Zasoby Magiczne (Magic Resources)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| common | powszechny | |
-| uncommon | nietypowy | |
-| rare | rzadki | |
-| unique | unikalny | |
+| spell slot | komórka zaklęć | Zawsze z "zaklęć" (pl.) |
+| spell rank / level | krąg zaklęcia | |
+| Focus Point | Punkt Skupienia | |
 
-### Cechy
+### Cechy Magiczne (Magic Traits)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Aquatic | Stworzenie Wodne | |
-| Agile | Chyżość | |
-| Finesse | Finezyjność | |
-| Nonlethal | Niezabójczość | |
-| Trip | Podcięcie | |
-| Concentrate | Koncentracja | |
-| Death | Śmierć | |
-| Void | Pustka | |
-| Vitality | Witalność | |
-| Light | Światło | |
-| mindless | bezmyślny | |
-| minion | sługus | |
 | magic | magiczność | |
 | arcane | magia tajemna | |
 | occult | magia okultystyczna | |
 | divine | magia boska | |
 | primal | magia pierwotna | |
 
-### Statusy
+
+## Akcje i Aktywności (Actions & Activities)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Recall Knowledge | Pozyskanie Wiedzy | |
+| Aid | Wsparcie | |
+| Cast a Spell | Rzucanie Zaklęcia | |
+| Devise a Stratagem | Obmyślenie Strategii | |
+| Pursue a Lead | Podążenie za Poszlaką | |
+| Make an Impression | Wywieranie Wrażenia | |
+| Lie | Kłamstwo | |
+| Disable a Device | Rozbrojenie Urządzenia | |
+| disbelieve | podważyć wiarę | np. w iluzję |
+| Decipher Writing | Odszyfrowywanie Pisma | |
+| Identify Magic | Identyfikacja Magii | |
+| Dismiss | Odwołać | |
+| Learn a Spell | Nauka Zaklęcia | |
+| Command (a familiar/ an animal) | Panowanie (nad chowańcem/ nad zwierzęciem) | |
+| Seek | Szukanie | |
+| Take Cover | Krycie Się za Osłoną | |
+| Demoralize | Demoralizacja | |
+| Gather Information | Zbieranie Informacji | |
+| Leap | Skok | |
+| Long Jump | Skok w Dal | |
+| Stride | Bieg | |
+| Step | Krok | |
+| Refocus | Odzyskanie Skupienia | |
+| Impersonate | Podszywanie Się | |
+| Retrain | Przekwalifikowanie/Przekwalifikować | |
+| Reposition | Przemieszczenie | |
+| Grapple | Pochwycenie | |
+| Trip | Podcięcie | |
+| Wield | Dzierżyć | |
+
+
+## Statusy i Zmysły (Conditions & Senses)
+
+### Statusy (Conditions)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Condition | Status | |
 | Flat-Footed | Opuszczona Garda | |
 | Concealed | Przysłonięcie | |
-| Hidden | Ukrycie | |
 | Invisible | Niewidzialność | |
 | Dazzled | Zamroczenie | |
 | Fascinated | Zafascynowanie | |
@@ -333,26 +305,41 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Broken | Uszkodzony | |
 | Destroyed | Zniszczony | |
 
-### Rozmiary
+### Zmysły i Widzenie (Senses & Vision)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Tiny | Malutki | |
-| Small | Mały | |
-| Medium | Średni | |
-| Large | Duży | |
-| Huge | Wielki | |
-| Gargantuan | Ogromny | |
+| darkvision | widzenie w ciemności | |
+| low-light vision | widzenie w słabym świetle | |
+| bright light | jasne światło | |
+| dim light | słabe światło | |
+| darkness | ciemność | |
 
-### Szablony Obszarów
+### Ukrywanie się (Stealth)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| burst | wybuch | |
-| cone | stożek | |
-| emanation | emanacja | |
+| Observed | Postrzegany | Stan |
+| Concealed | Przysłonięty | Stan (różny od statusu) |
+| Hidden | Schowany | Stan |
+| Unnoticed | Niezauważony | Stan |
+| Undetected | Niewykryty | Stan |
 
-## Opcje Postaci
 
-### Klasy
+## Elementy Postaci (Character Elements)
+
+### Przodkowstwa i Dziedzictwa (Ancestries & Heritages)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Faultspawn | Błędodziecię | |
+| Melixie | Medochlik | Rodzaj sprite'a |
+| Draxie | Smoklik | Rodzaj sprite'a |
+| Grik | Śwircz | Rodzaj sprite'a |
+| Nyktera | Nocnera | Rodzaj sprite'a |
+| Bleaching | Płowienie | Dotyczy gnomów |
+| shapers | kształciciele | Dotyczy konrasu |
+| Awakened Animal | Przebudzone Zwierzę | |
+| Changeling | Odmieniec | |
+
+### Klasy (Classes)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Alchemist | Alchemik | |
@@ -381,7 +368,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Witch | Wiedźma | |
 | Wizard | Czarodziej | |
 
-### Archetypy
+### Archetypy (Archetypes)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Pactbinder | Poskramiacz Paktów | |
@@ -389,92 +376,139 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Bloodrager | Krwiogniewca | |
 | Shadowcaster | Cieniotkacz | |
 
-### Przodkowstwa i Dziedzictwa
+### Umiejętności (Skills)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Faultspawn | Błędodziecię | |
-| Melixie | Medochlik | Rodzaj sprite'a |
-| Draxie | Smoklik | Rodzaj sprite'a |
-| Grik | Śwircz | Rodzaj sprite'a |
-| Nyktera | Nocnera | Rodzaj sprite'a |
-| Bleaching | Płowienie | Dotyczy gnomów |
-| shapers | kształciciele | Dotyczy konrasu |
-| Awakened Animal | Przebudzone Zwierzę | |
-| Changeling | Odmieniec | |
+| Deception | Oszukiwanie | |
+| Survival | Sztuka Przetrwania | |
+| Arcana | Wiedza Tajemna | |
+| Nature | Przyroda | |
+| Occultism | Okultyzm | |
+| Religion | Religia | |
+| Society | Społeczeństwo | |
 
-### Ekwipunek
+### Atuty (Feats)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Targe | Tarża | |
-| Rondache | Rondasz | |
-| Rod | Rózga | |
+| feat | atut | |
+| skill feat | atut umiejętności | |
+| ancestry feat | atut przodkostwa | |
+| class feat | atut klasowy | |
+| dedication feat | atut dedykacji | |
 
-### Zaklęcia
+### Towarzysze (Companions)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Turn Undead | Odpędzenie Nieumarłych | |
-| Foresight | Przeczucie | |
-
-### Akcje
-| Angielski | Polski | Uwagi |
-|-----------|--------|-------|
-| Recall Knowledge | Pozyskanie Wiedzy | |
-| Aid | Wsparcie | |
-| Cast a Spell | Rzucanie Zaklęcia | |
-| Devise a Stratagem | Obmyślenie Strategii | |
-| Pursue a Lead | Podążenie za Poszlaką | |
-| Make an Impression | Wywieranie Wrażenia | |
-| Lie | Kłamstwo | |
-| Disable a Device | Rozbrojenie Urządzenia | |
-| disbelieve | podważyć wiarę | np. w iluzję |
-| Decipher Writing | Odszyfrowywanie Pisma | |
-| Identify Magic | Identyfikacja Magii | |
-| Dismiss | Odwołać | |
-| Learn a Spell | Nauka Zaklęcia | |
-| Command (a familiar/ an animal) | Panowanie (nad chowańcem/ nad zwierzęciem) | |
-| Seek | Szukanie | |
-| Take Cover | Krycie Się za Osłoną | |
-| Demoralize | Demoralizacja | |
-| Gather Information | Zbieranie Informacji | |
-| Leap | Skok | |
-| Long Jump | Skok w Dal | |
-| Stride | Bieg | |
-| Step | Krok | |
-| Refocus | Odzyskanie Skupienia | |
-| Impersonate | Podszywanie Się | |
-| Strike | (zadać/wymierzyć) Cios | |
-| Retrain | Przekwalifikowanie/Przekwalifikować | |
-| Reposition | Przemieszczenie | |
-| Grapple | Pochwycenie | |
-| Trip | Podcięcie | |
-| Wield | Dzierżyć | |
-
-### Towarzysze
-| Angielski | Polski | Uwagi |
-|-----------|--------|-------|
+| companion | towarzysz | Ogólnie |
 | pet | zwierzak | |
 | familiar | chowaniec | |
 | animal companion | zwierzęcy towarzysz | |
 | specific familiar | określony chowaniec | |
 
-## Adventure-Specific
-
-### Abomination Vaults
+### Specyficzne Terminy Klasowe (Specific Class Terms)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Belcorra | Belkorra | |
-| Gauntlight | Bladobrzask | |
-| Fogfen | Mgłagniska | |
+| versatile vial | wszechstronna fiolka | Alchemik |
+| bonded item | przedmiot więzi | Czarodziej |
+| hex | urok | Wiedźma |
+| spellstrike | czarocios | Magus |
+| implement | przyrząd | Taumaturg |
+| apparition | zjawa | Animista |
+| Channel Elements | Kształtowanie Żywiołów | Kinetyk |
+| Diety and cause | Bóstwo i pobudka | Czempion/Kleryk |
+| Bloodline | Pokrewieństwo | Zaklinacz |
+| battle form | postać bojowa | |
+| familiar ability | zdolność chowańca | |
+| master ability (familiar) | zdolność pana | np. pan chowańca |
+| critical specialization | krytyczna specjalizacja | Wojownik |
+
+### Cechy (Traits - Character/Action Related)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Aquatic | Stworzenie Wodne | |
+| Agile | Chyżość | |
+| Finesse | Finezyjność | |
+| Nonlethal | Niezabójczość | |
+| Trip | Podcięcie | |
+| Concentrate | Koncentracja | |
+| Death | Śmierć | |
+| Void | Pustka | |
+| Vitality | Witalność | |
+| Light | Światło | |
+| mindless | bezmyślny | |
+| minion | sługus | |
+| willing | godząca się | Cel zaklęcia/zdolności |
 
 
-## Styl i wyrażenia
+## Ekwipunek (Equipment)
 
-### Ustanowione formy
+### Ogólne (General)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Price | Cena | |
+
+### Grupy Broni (Weapon Groups)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Brawling | Ręczna | |
+| Club | Pałka | |
+| Knife | Nóż | |
+| Sling | Proca | |
+| Spear | Włócznia | |
+| Sword | Miecz | |
+| Axe | Topór | |
+| Bow | Łuk | |
+| Crossbow | Kusza | |
+| Dart | Rzutka | |
+| Flail | Kiścień | |
+| Hammer | Młot | |
+| Shield | Tarcza | |
+| Bomb | Bomba | |
+| Firearm | Broń Palna | |
+
+### Bronie i Pancerze (Weapons & Armor)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Targe | Tarża | |
+| Rondache | Rondasz | |
+
+### Inne Przedmioty (Other Items)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Rod | Rózga | |
+| formula book | księga receptur | Alchemik |
+
+
+## Styl i Wyrażenia (Style and Phrasing)
+
+### Ustanowione formy (Established forms)
 odnosić obrażenia
 zyskiwać premię
 ponosić karę
 
-### Ciekawe słownictwo stylistyczne, w ramach inspiracji
+### Stopniowanie (Gradation)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Minor | Drobna | |
+| Lesser | Mniejsza | |
+| Moderate | Umiarkowana | |
+| Greater | Większa | |
+| Major | Potężna | |
+| Supreme | Wyjątkowa | |
+| True | Prawdziwa | |
+
+### Inne (Other)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Host | żywiciel | Dla pasożyta |
+| adjacent | sąsiadować/sąsiadujący | |
+| ally | sojusznik | |
+| difficult terrain | trudny teren | |
+| greater difficult terrain | bardzo trudny teren | |
+| Harrow | Talia Marnota | Od Tarot |
+| Suit | Dwór Karty | Talia Marnota |
+
+### Ciekawe słownictwo stylistyczne, w ramach inspiracji (Interesting stylistic vocabulary, for inspiration)
 Szeptucha
 Guślarz
 Straceńcy

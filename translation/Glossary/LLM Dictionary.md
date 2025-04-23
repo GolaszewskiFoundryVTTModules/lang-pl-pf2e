@@ -94,6 +94,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Zephyr Guards | Strażnicy Zefiru | |
 | Skinsaw | Skóroszwacze | |
 | Witchmarket | wiedźmi targ | |
+| Greenwatch | Zielona Straż | |
 
 #### Polityka Absalomu
 | Angielski | Polski | Uwagi |
@@ -262,6 +263,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | willing | godząca się | Cel zaklęcia/zdolności |
 | solid surface | twarda powierzchnia | |
 
+### Zagrożenia (Hazards)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| hazard | Zagrożenie | |
+| complex hazard | Złożone Zagrożenie | |
+| haunt | Straszydło | |
+| trap | Pułapka | |
 
 ## Magia (Magic)
 
@@ -274,6 +282,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | cast a spell | rzucać zaklęcie | |
 | spellbook | księga zaklęć | |
 | heighten/heightened | wywyższać/wywyższony | |
+| prepared | przygotowane | |
+| spontaneous | spontaniczne | |
+| innate | wrodzone | |
 
 ### Rodzaje Zaklęć (Spell Types)
 | Angielski | Polski | Uwagi |
@@ -331,6 +342,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Grapple | Pochwycenie | |
 | Trip | Podcięcie | |
 | Wield | Dzierżyć | |
+| daily preparations | codzienne przygotowania | |
 
 
 ## Statusy i Statystyki (Conditions & Stats)

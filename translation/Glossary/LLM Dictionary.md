@@ -174,6 +174,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | (critical) success | (krytyczny) sukces | |
 | spell DC | ST zaklęć | rodzaj męski |
 | class DC | ST klasowy | rodzaj męski |
+| counteract | przeciwdziałanie | |
 
 ### Modyfikatory (Modifiers)
 | Angielski | Polski | Uwagi |
@@ -199,12 +200,14 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Ogólne Terminy Walki (General Combat Terms)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Melee | W zwarciu | broń biała |
-| Unarmed | Wręcz | |
-| Reach | Wysięg | |
-| Range | Zasięg | |
+| melee | w zwarciu | broń biała |
+| unarmed | wręcz | |
+| reach | wysięg | |
+| range | zasięg | |
 | multiple attack penalty | kara za atak wielokrotny | |
 | Strike | (zadać/wymierzyć) Cios | Akcja |
+| ranged weapon Strike | dystansowy Cios bronią | |
+| ranged unarmed Strike | dystansowy Cios wręcz | |
 | critical specialization | krytyczna specjalizacja | |
 | incapacitation | obezwładnienie | |
 
@@ -219,6 +222,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | will save | rzut obronny woli | |
 | fortitude save | rzut obronny krzepy | |
 | range increment | inkrement zasięgu | |
+| weapon specialization | specjalizacja w broni | |
+| greater weapon specialization | większa specjalizacja w broni | |
 
 ### Typy Obrażeń (Damage Types)
 | Angielski | Polski | Uwagi |
@@ -262,6 +267,14 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | greater difficult terrain | bardzo trudny teren | |
 | willing | godząca się | Cel zaklęcia/zdolności |
 | solid surface | twarda powierzchnia | |
+
+### Osłona (Cover)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| cover | osłona | |
+| greater | większa | |
+| lesser | mniejsza | |
+| standard | standardowa | |
 
 ### Zagrożenia (Hazards)
 | Angielski | Polski | Uwagi |
@@ -343,6 +356,12 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Trip | Podcięcie | |
 | Wield | Dzierżyć | |
 | daily preparations | codzienne przygotowania | |
+| Fly | Latanie | |
+| High Jump | Skok Wzwyż | |
+| Draw | Dobycie | |
+| Escape | Ucieczka | |
+| Raise a Shield | Wzniesienie Tarczy | |
+| Conceal an Object | Ukrywanie Przedmiotu | |
 
 
 ## Statusy i Statystyki (Conditions & Stats)
@@ -352,6 +371,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | Broken | Uszkodzony | |
 | Destroyed | Zniszczony | |
+| AC | KP | Klasa Pancerza |
 | Concealed | Przysłonięty | |
 | Condition | Status | |
 | Dazzled | Zamroczony | |
@@ -477,6 +497,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Religion | Religia | |
 | Society | Społeczeństwo | |
 | Thievery | Złodziejstwo | |
+| Athletics | Atletyka | |
+| Perception | Percepcja | |
 
 ### Atuty (Feats)
 | Angielski | Polski | Uwagi |
@@ -486,6 +508,11 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | ancestry feat | atut przodkostwa | |
 | class feat | atut klasowy | |
 | dedication feat | atut dedykacji | |
+| general feat | atut generalny | |
+| weapon specialization | specjalizacja w broni | |
+| greater weapon specialization | większa specjalizacja w broni | |
+| alertness | czujność | |
+| proficiency rank | ranga biegłości | |
 
 ### Towarzysze (Companions)
 | Angielski | Polski | Uwagi |
@@ -501,9 +528,12 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | versatile vial | wszechstronna fiolka | Alchemik |
 | bonded item | przedmiot więzi | Czarodziej |
-| hex | urok | Wiedźma |
-| spellstrike | czarocios | Magus |
+| Spellstrike | Czarocios | Magus |
+| conflux spell | zaklęcie splotu | Magus |
+| Arcane Cascade | Tajemna Kaskada | Magus |
+| Link Spell | Zaklęcie Więzi | Przywoływacz |
 | implement | przyrząd | Taumaturg |
+| hex | urok | Wiedźma |
 | apparition | zjawa | Animista |
 | Channel Elements | Kształtowanie Żywiołów | Kinetyk |
 | Diety and cause | Bóstwo i pobudka | Czempion/Kleryk |
@@ -516,16 +546,24 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Cechy (Traits - Character/Action Related)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Aquatic | Stworzenie Wodne | |
-| Agile | Chyżość | |
-| Finesse | Finezyjność | |
-| Nonlethal | Niezabójczość | |
-| Trip | Podcięcie | |
-| Concentrate | Koncentracja | |
-| Death | Śmierć | |
-| Void | Pustka | |
-| Vitality | Witalność | |
-| Light | Światło | |
+| aquatic | stworzenie wodne | |
+| agile | chyżość | cecha broni |
+| finesse | finezyjność | cecha broni |
+| free-hand | wolna ręka | cecha broni |
+| nonlethal | niezabójczość | cecha broni |
+| trip | podcięcie | cecha broni |
+| parry | parowanie | cecha broni |
+| backstabber | cios w plecy | cecha broni |
+| forceful | impet | cecha broni |
+| versatile | wszechstronność | cecha broni |
+| deadly | śmiercionośność | cecha broni |
+| fatal | zgubność | cecha broni |
+| water | woda | cecha |
+| concentrate | koncentracja | |
+| death | śmierć | |
+| void | pustka | |
+| vitality | witalność | |
+| light | światło | |
 | mindless | bezmyślny | |
 | minion | sługus | |
 
@@ -537,26 +575,35 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | Price | Cena | |
 | Bulk | Naręcze | |
+| rune | runa | |
 | specific magic weapon | określona broń magiczna | |
+| improvised weapon | broń improwizowana | |
 
 ### Grupy Broni (Weapon Groups)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Brawling | Ręczna | |
-| Club | Pałka | |
-| Knife | Nóż | |
-| Sling | Proca | |
-| Spear | Włócznia | |
-| Sword | Miecz | |
-| Axe | Topór | |
-| Bow | Łuk | |
-| Crossbow | Kusza | |
-| Dart | Rzutka | |
-| Flail | Kiścień | |
-| Hammer | Młot | |
-| Shield | Tarcza | |
-| Bomb | Bomba | |
-| Firearm | Broń Palna | |
+| brawling | ręczna | |
+| club | pałka | |
+| knife | nóż | |
+| sling | proca | |
+| spear | włócznia | |
+| sword | miecz | |
+| axe | topór | |
+| bow | łuk | |
+| crossbow | kusza | |
+| dart | rzutka | |
+| flail | kiścień | |
+| hammer | młot | |
+| shield | tarcza | |
+| bomb | bomba | |
+| firearm | broń palna | |
+| thrown weapon | broń miotana | |
+| fluidity | płynność | |
+| infuse | nasycić | |
+| assault | napaść | |
+| armaments | uzbrojenie | |
+| extradimensional | ponadwymiarowy | |
+| counteract rank | ranga przeciwdziałania | |
 
 ### Bronie Istot / Postaci
 | Angielski | Polski | Uwagi |
@@ -674,3 +721,4 @@ strażnica
 ośmielić się
 danina
 nieugięty
+łasy na

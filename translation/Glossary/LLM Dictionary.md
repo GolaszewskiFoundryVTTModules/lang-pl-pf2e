@@ -212,11 +212,11 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Biegłość (Proficiency)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
-| Untrained | Niewyszkolony/Niewyszkolenie | |
-| Trained | Wytrenowany/Wytrenowanie | |
-| Expert | Ekspert/Eksperctwo | |
-| Master | Mistrz/Mistrzostwo | |
-| Legendary | Legenda/Legendarność | |
+| untrained | niewyszkolony/niewyszkolenie | |
+| trained | wytrenowany/wytrenowanie | |
+| expert | ekspert/eksperctwo | |
+| master | mistrz/mistrzostwo | |
+| legendary | legenda/legendarność | |
 
 
 ## Walka (Combat)

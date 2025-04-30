@@ -48,28 +48,30 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | fleshcrafter | mięsorzeźbiarz | |
 
 #### Typy Istot (Creature Types)
-| Angielski   | Polski        | Uwagi |
-|-------------|---------------|-------|
-| Aberration  | Wynaturzenie  | |
-| Animal      | Zwierzę       | |
-| Beast       | Bestia        | |
-| Celestial   | Niebianin     | |
-| Construct   | Konstrukt     | |
-| Daemon      | Daimon        | |
-| Demon       | Demon         | |
-| Devil       | Czart         | |
-| Dragon      | Smok          | |
-| Elemental   | Żywiołak      | |
-| Fey         | Fey           | |
-| Fiend       | Diabeł        | |
-| Fleshwarp   | Mięsoskręt    | |
-| Fungus      | Grzyb         | |
-| Monitor     | Nadzorca      | |
-| Ooze        | Szlam         | |
-| Pixie       | Skrzat        | |
-| Plant       | Roślina       | |
-| Sprite      | Chochlik      | |
-| Undead      | Nieumarły     | |
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Aberration | Wynaturzenie | |
+| Animal | Zwierzę | |
+| Beast | Bestia | |
+| Celestial | Niebianin | |
+| Construct | Konstrukt | |
+| Daemon | Daimon | |
+| Demon | Demon | |
+| Devil | Czart | |
+| Dragon | Smok | |
+| Drake | Smoczyk | |
+| Elemental | Żywiołak | |
+| Fey | Fey | |
+| Fiend | Diabeł | |
+| Fleshwarp | Mięsoskręt | |
+| Fungus | Grzyb | |
+| Monitor | Nadzorca | |
+| Ooze | Szlam | |
+| Pixie | Skrzat | |
+| Plant | Roślina | |
+| Sprite | Chochlik | |
+| Undead | Nieumarły | |
+| Hag | Baba | |
 
 ### Geografia Golarionu (Golarion Geography)
 | Angielski | Polski | Uwagi |
@@ -83,6 +85,22 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Realm of The Mammoth Lords | Kraina Władców Mamutów | |
 | The Impossible Lands | Niemożliwe Ziemie | |
 | Palatinates | Palatynaty | |
+| Mwangi Expanse | Przestwór Mwangi | |
+
+### Kraje (Nations)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Osirion | Ozyrion, Ozyrioński | |
+| (Old) Cheliax | (Stary) Czeliaks, Czeliaksiański | |
+| (New) Thassilon | (Nowy) Tassilon, Tassiloński | |
+| Kelesh | Kelesz | |
+| Padishah Empire of Kelesh | Imperium Padiszah Keleszu | |
+| Padishah Emperor (of Kelesh) | Cesarz Padiszah (Keleszu) | |
+| Qadira | Qadira | |
+| Ustalav | Ustalav | |
+| Taldor | Taldor | |
+| Andoran | Andoran | |
+| Nidal | Nidal | |
 
 ### Frakcje i Organizacje (Factions & Organizations)
 | Angielski | Polski | Uwagi |
@@ -119,6 +137,12 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Belcorra | Belkorra | |
 | Gauntlight | Bladobrzask | |
 | Fogfen | Mgłagniska | |
+
+#### Agents of Edgewatch
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Washboard Dogs | Psiaki z Tary | |
+| Diobel Sweepers | Zamiatacze z Diobelu | |
 
 
 ## Podstawowe Zasady (Core Rules)
@@ -298,6 +322,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | prepared | przygotowane | |
 | spontaneous | spontaniczne | |
 | innate | wrodzone | |
+| signature spell | zaklęcie popisowe | |
 
 ### Rodzaje Zaklęć (Spell Types)
 | Angielski | Polski | Uwagi |
@@ -436,7 +461,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 
 ## Elementy Postaci (Character Elements)
 
-### Przodkowstwa i Dziedzictwa (Ancestries & Heritages)
+### Przodkostwa i Dziedzictwa (Ancestries & Heritages)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Faultspawn | Błędodziecię | |
@@ -500,19 +525,31 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Athletics | Atletyka | |
 | Perception | Percepcja | |
 
-### Atuty (Feats)
+### Atuty i Atrybuty (Feats & Features)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | feat | atut | |
-| skill feat | atut umiejętności | |
 | ancestry feat | atut przodkostwa | |
+| ancestry feature | atrybut przodkostwa | |
 | class feat | atut klasowy | |
+| class feature | atrybut klasowy | |
 | dedication feat | atut dedykacji | |
 | general feat | atut generalny | |
+| skill feat | atut umiejętności | |
 | weapon specialization | specjalizacja w broni | |
 | greater weapon specialization | większa specjalizacja w broni | |
-| alertness | czujność | |
 | proficiency rank | ranga biegłości | |
+
+### Mechaniki Bóstwa
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| divine attribute | boska cecha | |
+| divine font | boskie źródło | |
+| divine sanctification | boskie namaszczenie | |
+| divine skill | boska umiejętność | |
+| favored weapon | obłaskawiona broń | |
+| domains | domeny | |
+| cleric spells | zaklęcia kleryka | |
 
 ### Towarzysze (Companions)
 | Angielski | Polski | Uwagi |
@@ -522,6 +559,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | familiar | chowaniec | |
 | animal companion | zwierzęcy towarzysz | |
 | specific familiar | określony chowaniec | |
+| familiar ability | zdolność chowańca | |
+| master ability (familiar) | zdolność pana | np. pan chowańca |
+| battle form | postać bojowa | |
 
 ### Specyficzne Terminy Klasowe (Specific Class Terms)
 | Angielski | Polski | Uwagi |
@@ -538,10 +578,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Channel Elements | Kształtowanie Żywiołów | Kinetyk |
 | Diety and cause | Bóstwo i pobudka | Czempion/Kleryk |
 | Bloodline | Pokrewieństwo | Zaklinacz |
-| battle form | postać bojowa | |
-| familiar ability | zdolność chowańca | |
-| master ability (familiar) | zdolność pana | np. pan chowańca |
-| pact broker | negocjator paktów | |
+| sneak attack | atak ukradkowy | Łotr |
 
 ### Cechy (Traits - Character/Action Related)
 | Angielski | Polski | Uwagi |
@@ -570,12 +607,20 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 
 ## Ekwipunek (Equipment)
 
+### Rodzaje Broni (Weapon Types)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| simple weapon | broń prosta | |
+| martial weapon | broń wojskowa | |
+| advanced weapon | broń zaawansowana | |
+
 ### Ogólne (General)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Price | Cena | |
 | Bulk | Naręcze | |
 | rune | runa | |
+| melee weapon | broń biała | |
 | specific magic weapon | określona broń magiczna | |
 | improvised weapon | broń improwizowana | |
 

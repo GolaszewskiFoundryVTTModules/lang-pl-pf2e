@@ -413,6 +413,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Stupefied | Ogłupiony | |
 | Stunned | Ogłuszony | |
 | Unconscious | Nieprzytomny | |
+| Grabbed | Pochwycony | |
 
 ### Zmysły i Widzenie (Senses & Vision)
 | Angielski | Polski | Uwagi |

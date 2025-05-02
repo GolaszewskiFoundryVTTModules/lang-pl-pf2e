@@ -86,6 +86,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | The Impossible Lands | Niemożliwe Ziemie | |
 | Palatinates | Palatynaty | |
 | Mwangi Expanse | Przestwór Mwangi | |
+| Gravelands | Grobowiska | Dawniej Kresomur (Lastwall) |
 
 ### Kraje (Nations)
 | Angielski | Polski | Uwagi |
@@ -106,6 +107,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Knights of Lastwall | Rycerze Kresomuru | |
+| Crimson Reclaimers | Karmazynowi Wyzwoliciele | |
+| Shining Sentinels | Lśniący Stróże | |
 | Triggerbrands | Spustoszable | |
 | Pathfinder Association | Stowarzyszenie Poszukiwaczy | |
 | Arclords of Nex | Maglordowie z Nex | |

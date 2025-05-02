@@ -226,7 +226,7 @@
         "Angoyang": {
             "name": "Angoyang",
             "publicNotes": "<p>Angoyangs resemble white cats with black stripes like those of a tiger. They have beautifully silken fur, piercing blue eyes, and long fluffy tails. Yet, far from the picturesque feline companions they appear to be, angoyangs are actually terrifying beasts capable of peeling back the fleshy layers of their face to reveal a mass of long, toothed tentacles.</p><p>Although most cats instinctively avoid areas where angoyangs roam, the unlucky felines who do encounter this creature are invariably entangled in the monster's toothy tentacles and devoured. In cities and towns where angoyangs reside, cat owners may find that their beloved pets have gone missing only to soon have a fluffy black-and-white cat coincidentally appear at their doorstep, looking up at them with wide eyes and mewing adorably. Angoyangs almost never attack their caretakers, who they see as loyal servants that feed, clean up after, and pamper them, and the creatures protect the people in their household from any would-be intruders. However, a caretaker who mistreats or neglects their angoyang ward is often met with a grisly fate. More than one coroner or gravedigger has inadvertently inherited an angoyang after being assigned to clean up the mutilated remains of a previous \"owner.\"</p>",
-            "senses": "imprecise)",
+            "senses": "dander scent (1 mile, imprecise)",
             "items": {
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -1108,7 +1108,7 @@
         },
         "Dancing Night Parade": {
             "name": "Dancing Night Parade",
-            "hpDetails": "Thresholds 300 (12 squares), 150 (8 squares)",
+            "hpDetails": "Thresholds 300 (3 segments), 150 (2 segments)",
             "items": {
                 "action->Riotous Parade": {
                     "name": "Riotous Parade",
@@ -1120,7 +1120,7 @@
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
-                    "description": "<p><strong>Thresholds</strong> 300 (12 squares), 150 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "description": "<p><strong>Thresholds</strong> 300 (3 segments), 150 (2 segments)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Seiya! Soiya!": {
                     "name": "Seiya! Soiya!",
@@ -2109,7 +2109,7 @@
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
-                    "description": "<p><strong>Thresholds</strong> 180 (12 squares), 90 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "description": "<p><strong>Thresholds</strong> 180 (3 segments), 90 (2 segments)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Rain of Knives": {
                     "name": "Rain of Knives",
@@ -2246,6 +2246,11 @@
                 },
                 "spell->Longstrider": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KcLVELhCUcKXxiKE]\nLongstrider"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -3277,38 +3282,6 @@
                 }
             }
         },
-        "Manananggal": {
-            "name": "Manananggal",
-            "hpDetails": "widzenie w ciemności",
-            "publicNotes": "<p>Manananggals are wicked monsters that live as humanoids during the day but feed upon them at night. To hide their depravities, these beings disguise themselves as everyday people-typically recluses or eccentrics- and use their proximity to a community to pick out their next targets before striking under cover of night. Manananggals use their long, hollow tongues to drain victims' blood from vital organs such as the liver, and the resulting odd drainage marks make it difficult to determine the exact nature of a victim's death. This typically leads to confusion, terror, and mistrust among communities, which most manananggals savor. While they fly, manananggals make a distinctive ticking sound, leading some to refer to the creatures as \"tik-tiks,\" and badly affected communities descend into fearful chaos at the first reports of this telltale noise.</p><p>Manananggals share their cannibalistic, body-separating traits with other types of tanngals, such as penanggalans, though a number of characteristics set them apart. For instance, whereas penanggalans relish vinegar and even bathe in the substance, manananggals abhor the merest scent of it.</p>",
-            "speed": "fly only when body is separated",
-            "items": {
-                "spellcastingEntry->Innate Occult Spells": {
-                    "name": "Innate Occult Spells"
-                },
-                "spell->Dancing Lights": {
-                    "name": "Dancing Lights",
-                    "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
-                },
-                "spell->Ray of Enfeeblement": {
-                    "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
-                },
-                "strike-melee->Claws": {
-                    "name": "Claws"
-                },
-                "strike-melee->Jaws": {
-                    "name": "Szczęki"
-                },
-                "action->Separated Body": {
-                    "name": "Separated Body",
-                    "description": "<p>A manananggal typically resembles a living humanoid. It doesn't appear as an aberration at first glance and receives a +4 status bonus to its Deception DC when Impersonating a humanoid. At any time but especially at night, a manananggal can, as a three-action activity with the manipulate trait, rip its upper torso from its bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate its body at any time, but it risks further damage if it does so during the day.</p><p>The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes [[/r 2d6]] points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.</p>"
-                },
-                "action->Blood Drain": {
-                    "name": "Blood Drain",
-                    "description": "<p><strong>Wymagania</strong> The manananggal has a creature grabbed.</p><hr /><p><strong>Efekt</strong> The manananggal drives its tongue into the grabbed creature to drink its blood. This deals @Damage[4d6[untyped]]{4k6 obrażeń}, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Wyniszczony 1} until it receives healing (of any kind or amount).</p>"
-                }
-            }
-        },
         "Master Xun": {
             "name": "Master Xun",
             "blurb": "Tian-Shu Golden League ruffians",
@@ -3384,7 +3357,6 @@
         },
         "Muckish Creep": {
             "name": "Muckish Creep",
-            "hpDetails": "widzenie w ciemności",
             "publicNotes": "<p>Legends say that the first muckish creeps were born at the site of a mass grave where the souls of murdered prisoners coalesced into the surrounding soil. Another myth tells that muckish creeps were elementals so vile that their kin banished them from the Plane of Earth. Regardless of their true origins, muckish creeps are wicked creatures that resemble mud given a humanoid shape. The mud is no ordinary mixture of earth and water, however, for muckish creeps feed on the blood of the living, and they use this blood to keep their own forms moist and malleable.</p><p>Muckish creeps are particularly tenacious and single-minded when it comes to choosing prey. Once a muckish creep selects its next victim, there is little one can do to stop it, since it can seep through even the smallest cracks between doors, walls, and windows. A muckish creep typically waits until its target falls asleep before pressing itself into the creature's home, intent to kill. For all its tenacity during the hunt, the muckish creep is pragmatic when it comes to the actual kill, using its body to fill the victim's airways with mud and suffocate them.</p>",
             "items": {
                 "strike-melee->Fist": {
@@ -3618,7 +3590,7 @@
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
-                    "description": "<p><strong>Thresholds</strong> 200 (12 squares), 100 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "description": "<p><strong>Thresholds</strong> 200 (3 segments), 100 (2 segments)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Aim as One": {
                     "name": "Aim as One",
@@ -3630,7 +3602,7 @@
                 },
                 "action->Strike as One": {
                     "name": "Strike as One",
-                    "description": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">3</span></p><p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p><p><span class=\"action-glyph\">A</span> @Damage[2d8[slashing]] damage.</p><p><span class=\"action-glyph\">2</span> @Damage[(3d8+13)[slashing]] damage.</p><p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[slashing]] damage.</p>"
+                    "description": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">3</span></p><p><strong>Częstotliwość</strong> raz na rundę</p><hr /><p><strong>Efekt</strong> The garrison makes a melee attack against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p><p><span class=\"action-glyph\">A</span> @Damage[2d8[slashing]] damage.</p><p><span class=\"action-glyph\">2</span> @Damage[(3d8+13)[slashing]] damage.</p><p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[slashing]] damage.</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -4419,6 +4391,11 @@
                 "spell->Light": {
                     "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "weapon->+2 Greater Striking Handwraps of Mighty Blows": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+2 Greater Striking Handwraps of Mighty Blows"
                 },
@@ -4458,6 +4435,11 @@
                 },
                 "spell->Longstrider": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KcLVELhCUcKXxiKE]\nLongstrider"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -4672,7 +4654,8 @@
             "name": "Syndara the Sculptor",
             "hpDetails": "fast healing 20",
             "saveDetails": "+2 status to all saves vs. chaotic",
-            "senses": "spatial sense, air walk",
+            "senses": "spatial sense",
+            "speed": "air walk",
             "items": {
                 "spellcastingEntry->Innate Primal Spells": {
                     "name": "Innate Primal Spells"

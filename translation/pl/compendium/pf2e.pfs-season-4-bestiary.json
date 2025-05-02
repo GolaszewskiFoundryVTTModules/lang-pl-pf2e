@@ -473,15 +473,7 @@
                 },
                 "action->Noble's Ally": {
                     "name": "Noble's Ally",
-                    "description": "<p>The ambush spy has positioned themself to seem a trusted ally, gaining a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Zbieranie Informacji} or to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Wywarcie Wrażenia} among the nobles of that court.</p>",
-                    "rules": {
-                        "1": {
-                            "label": "To Make an Impression"
-                        },
-                        "2": {
-                            "label": "To Gather Information"
-                        }
-                    }
+                    "description": "<p>The ambush spy has positioned themself to seem a trusted ally, gaining a +2 circumstance bonus to [[/act gather-information options=nobles-ally]] or to [[/act make-an-impression options=nobles-ally]] among the nobles of that court.</p>"
                 },
                 "action->Hidden Blade": {
                     "name": "Hidden Blade",
@@ -1819,6 +1811,11 @@
                 "spell->Flaming Sphere (At Will) (See Unstable Magic)": {
                     "name": "<Compendium> (See Unstable Magic)"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "strike-melee->Arcane Tendril": {
                     "name": "Arcane Tendril"
                 },
@@ -1949,7 +1946,9 @@
                     "name": "<Compendium> (Bludgeoning, Water)"
                 },
                 "spell->Produce Flame (Bludgeoning, Water)": {
-                    "name": "<Compendium> (Bludgeoning, Water)"
+                    "name": "<Compendium> (Bludgeoning, Water)",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -1986,7 +1985,9 @@
                     "name": "<Compendium> (Bludgeoning, Water)"
                 },
                 "spell->Produce Flame (Bludgeoning, Water)": {
-                    "name": "<Compendium> (Bludgeoning, Water)"
+                    "name": "<Compendium> (Bludgeoning, Water)",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -2939,6 +2940,11 @@
                 "spell->Detect Magic (Constant)": {
                     "name": "<Compendium> (Constant)"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "armor->Breastplate": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
@@ -2985,6 +2991,11 @@
                 },
                 "spell->Detect Magic (Constant)": {
                     "name": "<Compendium> (Constant)"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "armor->Breastplate": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
@@ -3194,6 +3205,11 @@
                 },
                 "spell->Magic Missile": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "equipment->Thieves' Tools": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]\nThieves' Tools",
@@ -3726,6 +3742,11 @@
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
                     "target": "1 living or undead creature"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "weapon->Spiked Gauntlet": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YFfG2fMyaIAXkmtr]\n<p>Providing the same defensive function as a standard gauntlet, this version has a group of spikes protruding from the knuckles to deliver piercing damage with a punch.</p>"
@@ -4641,7 +4662,9 @@
                     "name": "Sorcerer Bloodline Spells"
                 },
                 "spell->Produce Flame (Bludgeoning, Water)": {
-                    "name": "<Compendium> (Bludgeoning, Water)"
+                    "name": "<Compendium> (Bludgeoning, Water)",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -4675,7 +4698,9 @@
                     "name": "<Compendium> (Bludgeoning, Water)"
                 },
                 "spell->Produce Flame (Bludgeoning, Water)": {
-                    "name": "<Compendium> (Bludgeoning, Water)"
+                    "name": "<Compendium> (Bludgeoning, Water)",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"

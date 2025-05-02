@@ -201,7 +201,7 @@
     },
     "Angry Mercenary Squad": {
       "name": "Angry Mercenary Squad",
-      "hpDetails": "Thresholds 40 (12 squares), 20 (8 squares)",
+      "hpDetails": "Thresholds 40 (3 segments), 20 (2 segments)",
       "speed": "troop movement",
       "tokenName": "Mercenary Squad",
       "items": {
@@ -383,6 +383,11 @@
         "spell->Abyssal Pact": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tsKnoBuBbKMXkiz5]\nAbyssal Pact"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "strike-melee->Flaming Sword": {
           "name": "Flaming Sword"
         },
@@ -431,6 +436,11 @@
         "spell->Dive and Breach (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.1xM9muPRa8hiyJtI]\nDive and Breach (At Will)"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Slashing Gust": {
           "requirements": "You have at least one free hand."
         },
@@ -466,6 +476,11 @@
         },
         "spell->Dive and Breach (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.1xM9muPRa8hiyJtI]\nDive and Breach (At Will)"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "spell->Slashing Gust": {
           "requirements": "You have at least one free hand."
@@ -3442,7 +3457,7 @@
     },
     "Mercenary Squad": {
       "name": "Mercenary Squad",
-      "hpDetails": "Thresholds 20 (12 squares), 10 (8 squares)",
+      "hpDetails": "Thresholds 20 (3 segments), 10 (2 segments)",
       "speed": "troop movement",
       "items": {
         "action->Troop Defenses": {

@@ -133,16 +133,11 @@ class LocalizationUpdater:
         return nested_json
 
     def _generate_concise_diff(self, old_value: str, new_value: str) -> str:
-        """
-        Generate a human-readable diff between old and new values with context.
-        
-        Args:
-            old_value: Original string
-            new_value: Modified string
-            
-        Returns:
-            A formatted string showing the differences with context
-        """
+        """Generates a concise diff string between two strings."""
+        # Ensure inputs are strings to avoid TypeError with difflib
+        old_value = str(old_value)
+        new_value = str(new_value)
+
         def clean_for_display(text: str) -> str:
             """Format text for display by escaping newlines and reducing whitespace"""
             return text.replace("\n", "\\n").strip()
@@ -166,9 +161,9 @@ class LocalizationUpdater:
 
         return '\n'.join(diff_parts)
 
-    def _is_translation_rudimentary(self, en_str: str, pl_str: str) -> bool:
+    def _is_translation_rudimentary(self, en_str: str, pl_str: str, key: Optional[str] = None) -> bool:
         if not en_str or not pl_str:
-            print("Attempted to compare null string(s)")
+            print(f"Attempted to compare null string(s) for key: {key}")
             return False
         
         def clean_string(s: str, patterns: List[regex.Pattern]) -> str:
@@ -189,7 +184,7 @@ class LocalizationUpdater:
         similarity = matcher.ratio()
         return similarity >= similarity_threshold
 
-    def _auto_pretranslate(self, en_str: Optional[str]) -> Optional[str]:
+    def _auto_pretranslate(self, en_str: Optional[str], key: Optional[str] = None) -> Optional[str]:
         def save_and_replace_brackets(text):
             """
             Detects text encapsulated in square brackets, including nested ones,
@@ -254,7 +249,7 @@ class LocalizationUpdater:
             return text
 
         if en_str is None:
-            print("Cannot pretranslate empty string")
+            print(f"Cannot pretranslate empty string for key: {key}")
             return en_str
 
         # Step 1: Save and replace bracketed sections with placeholders
@@ -345,7 +340,7 @@ class LocalizationUpdater:
 
             # if value does not exist in translation, add it
             if new_key not in self.pl_extracted:
-                self.pl_extracted[new_key] = auto_pretranslate(new_value)
+                self.pl_extracted[new_key] = auto_pretranslate(new_value, new_key)
                 self.new_keys.append(new_key)
 
     def _handle_value_update(self, new_key, new_value, auto_pretranslate, is_translation_rudimentary):
@@ -355,14 +350,14 @@ class LocalizationUpdater:
 
         # if value was kept in english, update it outright
         if current_pl == old_en_value:
-            self.pl_extracted[new_key] = auto_pretranslate(new_value)
+            self.pl_extracted[new_key] = auto_pretranslate(new_value, new_key)
             self.updated_eng_keys.append(new_key)
             return
 
         # if translation is rudimentary (usually due to the effect of global regex operations) auto-update it to save time
-        old_en_pretranslated = auto_pretranslate(old_en_value)
-        if is_translation_rudimentary(old_en_pretranslated, current_pl):
-            self.pl_extracted[new_key] = auto_pretranslate(new_value)
+        old_en_pretranslated = auto_pretranslate(old_en_value, key=new_key)
+        if is_translation_rudimentary(old_en_pretranslated, current_pl, key=new_key):
+            self.pl_extracted[new_key] = auto_pretranslate(new_value, key=new_key)
             self.rudimentary_translations_updated.append(new_key)
             return
 
@@ -480,7 +475,7 @@ class LocalizationUpdater:
         """Apply regex translations to all records"""
         for key, value in tqdm(self.pl_extracted.items(), 
                              desc=f"Regex-translating {pl_path_basename}"):
-            self.pl_extracted[key] = self._auto_pretranslate(self.pl_extracted[key])
+            self.pl_extracted[key] = self._auto_pretranslate(self.pl_extracted[key], key)
 
     def _has_changes(self):
         """Check if any changes were made during processing"""
@@ -539,6 +534,7 @@ class LocalizationUpdater:
             logging.error("Validation failed, the keys in English and Polish files do not match.")
         else:
             logging.info("Validation successful, all keys match.")
+        logging.info("\n")
 
     def _sort_and_save_translations(self):
         """Sort translations according to template and save to file"""
@@ -549,7 +545,6 @@ class LocalizationUpdater:
         }
         
         self.pl_extracted = ordered_pl
-        logging.info("\n")
 
         # Save the final result
         self._save_file_to_directory(

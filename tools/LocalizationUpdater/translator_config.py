@@ -29,7 +29,6 @@ en_to_pl_file_pairs = [
     ("compendium/bestiary-effects", "compendium/pf2e.bestiary-effects"),
     ("compendium/bestiary-family-ability-glossary", "compendium/pf2e.bestiary-family-ability-glossary"),
     ("compendium/blog-bestiary", "compendium/pf2e.blog-bestiary"),
-    ("compendium/blog-bestiary", "compendium/pf2e.blog-bestiary"),
     ("compendium/blood-lords-bestiary", "compendium/pf2e.blood-lords-bestiary"),
     ("compendium/boons-and-curses", "compendium/pf2e.boons-and-curses"),
     ("compendium/book-of-the-dead-bestiary", "compendium/pf2e.book-of-the-dead-bestiary"),
@@ -107,6 +106,8 @@ en_to_pl_file_pairs = [
     ("compendium/war-of-immortals-bestiary", "compendium/pf2e.war-of-immortals-bestiary"),
     ("compendium/spore-war-bestiary", "compendium/pf2e.spore-war-bestiary"),
     ("compendium/shades-of-blood-bestiary", "compendium/pf2e.shades-of-blood-bestiary"),
+    ("compendium/claws-of-the-tyrant-bestiary", "compendium/pf2e.claws-of-the-tyrant-bestiary"),
+    ("compendium/lost-omens-bestiary", "compendium/pf2e.lost-omens-bestiary"),
     ("compendium/pathfinder-npc-core", "compendium/pf2e.pathfinder-npc-core"),
 ]
 

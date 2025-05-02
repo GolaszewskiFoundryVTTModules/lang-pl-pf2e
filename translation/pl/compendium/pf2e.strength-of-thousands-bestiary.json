@@ -275,6 +275,11 @@
                 "spell->Magic Missile": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
                 },
@@ -664,6 +669,11 @@
                 },
                 "spell->Flaming Sphere": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]\nFlaming Sphere"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "strike-melee->Holy Spear": {
                     "name": "Holy Spear"
@@ -1056,7 +1066,7 @@
                 },
                 "action->Doleful Tolling": {
                     "name": "Doleful Tolling",
-                    "description": "<p><strong>Aktywator</strong> The clockwork clock tower rolls initiative</p><hr /><p><strong>Efekt</strong> The clock tower chimes, and all non-clockwork creatures within 300 feet who can hear it must succeed at a @Check[will|dc:42] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} on a critical failure).</p>"
+                    "description": "<p><strong>Aktywator</strong> The clockwork clock tower rolls initiative</p><hr /><p><strong>Efekt</strong> The clock tower chimes, and all non-clockwork creatures within 300 feet who can hear it must succeed at a @Check[will|dc:42|options:inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Spowolniony 2} on a critical failure).</p>"
                 },
                 "action->Durable Exterior": {
                     "name": "Durable Exterior",
@@ -1515,7 +1525,7 @@
                 },
                 "action->Memory Maelstrom": {
                     "name": "Memory Maelstrom",
-                    "description": "<p>Dimari - Diji tries to overwhelm foes with a surge of information he has absorbed over his long life. This surge deals @Damage[12d6[mental]] damage to each enemy within 60 feet, who must attempt a @Check[will|dc:32] save.</p><p><strong>Krytyczny Sukces</strong> The creature maintains its composure, takes no damage, and is temporarily immune to Memory Maelstrom for 1 minute.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1} and takes half damage.</p><p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3}.</p><p><strong>Krytyczna Porażka</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for [[/r 2d4 #rounds]]{2k4 rounds}, and is stunned 3.</p>"
+                    "description": "<p>Dimari - Diji tries to overwhelm foes with a surge of information he has absorbed over his long life. This surge deals @Damage[12d6[mental]|options:area-damage] damage to each enemy within @Template[emanation|distance:60]{60 feet}, who must attempt a @Check[will|dc:32|options:area-effect,damaging-effect] save.</p><p><strong>Krytyczny Sukces</strong> The creature maintains its composure, takes no damage, and is temporarily immune to Memory Maelstrom for 1 minute.</p><p><strong>Sukces</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 1} and takes half damage.</p><p><strong>Porażka</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ogłuszony 3}.</p><p><strong>Krytyczna Porażka</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Zdezorientowany} for [[/gmr 2d4 #Confusion Duration]]{2k4 rounds}, and is stunned 3.</p>"
                 },
                 "action->Nature's Concentration": {
                     "name": "Nature's Concentration",
@@ -1684,6 +1694,11 @@
                 },
                 "spell->Burning Hands": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "weapon->Fulminating Spear": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.KQRrAVdcRqtd0Lq2]\n<p>This <em>+1 striking returning spear</em> is warm to the touch. The head of the spear is crafted from gold with ivory inlay and has a ruby set into the shaft. You can make the spear glow like a torch or suppress its light by using an action, which has the concentrate trait.</p><hr /><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> wyobrażenie, Interakcja</p><p><strong>Częstotliwość</strong> raz na dzień</p><hr /><p><strong>Efekt</strong> You touch the ruby and hurl the spear at a square within 40 feet. When the spear lands, it detonates, dealing @Damage[6d6[fire]] damage (@Check[reflex|dc:23|basic|name:Fulminating Spear Explosion|traits:uncommon]) to all creatures in a @Template[emanation|distance:10]. It then flies back to your hand.</p>"
@@ -2209,7 +2224,7 @@
                 },
                 "action->Golden Strike": {
                     "name": "Golden Strike",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span> actions</p><strong>Częstotliwość</strong> once per round\n<hr /><p><strong>Efekt</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p><p><span class=\"action-glyph\">1</span> @Damage[(2d8+2)[bludgeoning]] damage</p><p><span class=\"action-glyph\">2</span> @Damage[(3d8+12)[bludgeoning]] damage</p><p><span class=\"action-glyph\">3</span> @Damage[(4d8+15)[bludgeoning]] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span> actions</p><strong>Częstotliwość</strong> once per round\n<hr /><p><strong>Efekt</strong> The garrison makes a melee attack against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p><p><span class=\"action-glyph\">1</span> @Damage[(2d8+2)[bludgeoning]] damage</p><p><span class=\"action-glyph\">2</span> @Damage[(3d8+12)[bludgeoning]] damage</p><p><span class=\"action-glyph\">3</span> @Damage[(4d8+15)[bludgeoning]] damage</p>"
                 },
                 "action->Light Reflection": {
                     "name": "Light Reflection",
@@ -2765,6 +2780,11 @@
                 "spell->Chill Touch": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
                     "target": "1 living or undead creature"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -3444,6 +3464,11 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]\nChill Touch",
                     "target": "1 living or undead creature"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
                 },
@@ -3724,6 +3749,11 @@
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Przygotowane Zaklęcia Tajemne"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "spell->True Strike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
                 },
@@ -3736,7 +3766,7 @@
                 },
                 "action->Spellstrike": {
                     "name": "Czarocios",
-                    "description": "<p><strong>Częstotliwość</strong> twice per day</p><hr /><p><strong>Efekt</strong> Onyiji casts a spell and couples it with a staff Strike. She casts @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Wytworzenie Płomienia}, @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Promień Mrozu}, or @UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}, but the effects don't occur immediately. She makes a melee Strike with her staff and uses the attack roll result as the effect of both the Strike and the spell.</p><p>This counts as two attacks towards her multiple attack penalty, but the penalties don't apply until after the Spellstrike.</p>"
+                    "description": "<p><strong>Częstotliwość</strong> twice per day</p><hr /><p><strong>Efekt</strong> Onyiji casts a spell and couples it with a staff Strike. She casts @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}, @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost}, or @UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}, but the effects don't occur immediately. She makes a melee Strike with her staff and uses the attack roll result as the effect of both the Strike and the spell.</p><p>This counts as two attacks towards her multiple attack penalty, but the penalties don't apply until after the Spellstrike.</p>"
                 },
                 "action->Twisting Tree": {
                     "name": "Kręty Konar",
@@ -3902,6 +3932,11 @@
                 "spell->Light": {
                     "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "weapon->Staff of Fire (Major)": {
                     "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qx4Cq99vng6GhzEh]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><hr /><p><strong>Efekt</strong> Wykorzystujesz ładunki kostura aby rzucić zaklęcie z listy jego zaklęć.</p><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p><ul><li><strong>Sztuczka</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Wytworzenie Płomienia}</li><li><strong>1.</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Ognisty Oddech}</li><li><strong>2.</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Ognisty Oddech} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li><li><strong>3.</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Kula Ognia}</li><li><strong>4.</strong> @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Kula Ognia} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Ściana Ognia}</li><li><strong>5.</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Kula Ognia} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Ściana Ognia}</li></ul>"
                 },
@@ -3940,7 +3975,7 @@
                 },
                 "weapon->Flame Spike": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\nFlame Spike",
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\n<p>This <em>+2 greater striking @UUID[Compendium.pf2e.equipment-srd.Item.XszNvxnymWYRaoTp]{Flaming} spear</em> has a blade shaped like stylized flames. When wielded, the blade projects illumination resembling shimmering firelight, emitting dim light in a 10-foot radius.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> komenda, Interakcja</p><hr /><p><strong>Efekt</strong> You cast the @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Wytworzenie Płomienia} cantrip from the spear as a 7. kręgu arcane spell, using your melee attack modifier with <em>flame spike</em> as your spell attack modifier.</p>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]\n<p>This <em>+2 greater striking @UUID[Compendium.pf2e.equipment-srd.Item.XszNvxnymWYRaoTp]{Flaming} spear</em> has a blade shaped like stylized flames. When wielded, the blade projects illumination resembling shimmering firelight, emitting dim light in a 10-foot radius.</p><p><strong>Aktywacja</strong> <span class=\"action-glyph\">2</span> command, Interact</p><hr /><p><strong>Efekt</strong> You cast the @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition} cantrip from the spear as a 7. kręgu arcane spell, using your melee attack modifier with <em>flame spike</em> as your spell attack modifier.</p>"
                 },
                 "equipment->Religious Symbol of Walkena": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol of Walkena",
@@ -4420,6 +4455,11 @@
                 },
                 "spell->Dimension Door": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "strike-melee->Greatsword": {
                     "name": "Greatsword"
@@ -5010,7 +5050,7 @@
                 },
                 "action->Walkena's Radiance": {
                     "name": "Walkena's Radiance",
-                    "description": "<p>The brigade calls upon Walkena to burn and blind their foes. The sun warriors present their religious symbols and create a white-hot flash of light in a @Template[cone|distance:45]. Creatures in the cone take @Damage[10d8[fire]] damage (@Check[fortitude|dc:29|basic] save). Creatures that fail their save become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round. Creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} for 1 round instead. When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[cone|distance:20].</p>"
+                    "description": "<p>The brigade calls upon Walkena to burn and blind their foes. The sun warriors present their religious symbols and create a white-hot flash of light in a @Template[cone|distance:45]. Creatures in the cone take @Damage[10d8[fire]] damage (@Check[fortitude|dc:29|basic] save). Creatures that fail their save become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Zamroczony} for 1 round. Creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Oślepiony} for 1 round instead. When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[cone|distance:20].</p>"
                 }
             }
         },
@@ -5222,12 +5262,7 @@
                 },
                 "action->Deny Fate": {
                     "name": "Deny Fate",
-                    "description": "<p>When Tatterthread rolls initiative, enemies she can see within 120 feet that are also rolling initiative automatically roll a 1.</p>",
-                    "rules": {
-                        "0": {
-                            "text": "<p><strong>{item|name}</strong></p><p>{item|system.description.value}</p>"
-                        }
-                    }
+                    "description": "<p>When Tatterthread rolls initiative, enemies she can see within 120 feet that are also rolling initiative automatically roll a 1.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.1UHjPz8hgdnrN3zL]{Efekt: Deny Fate}</p>"
                 },
                 "action->Fated": {
                     "name": "Fated",
@@ -5326,7 +5361,7 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
                 },
                 "weapon->Staff of Fire": {
-                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.opfpl1JmKgrfds9P]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><hr /><p><strong>Efekt</strong> Wykorzystujesz ładunki kostura aby rzucić zaklęcie z listy jego zaklęć.</p><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p><ul><li><strong>Sztuczka</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Wytworzenie Płomienia}</li><li><strong>1.</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Ognisty Oddech}</li></ul>"
+                    "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.opfpl1JmKgrfds9P]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p><p><strong>Aktywacja</strong> Rzucenie Zaklęcia</p><hr /><p><strong>Efekt</strong> You expend a number of charges from the staff to cast a spell from its list.</p><p><strong>Wymagania Wytwarzania</strong> Dostarcz po jednym rzuceniu wszystkich wymienionych zaklęć.</p><ul><li><strong>Sztuczka</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li><li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li></ul>"
                 },
                 "strike-melee->Claw": {
                     "name": "Pazur"
@@ -5535,6 +5570,11 @@
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg]\nDisrupt Undead",
                     "target": "1 undead creature"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
                 },
@@ -5584,6 +5624,11 @@
                 },
                 "spell->Obscuring Mist": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]\nObscuring Mist"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -6074,7 +6119,7 @@
                 },
                 "action->Master's Cry": {
                     "name": "Master's Cry",
-                    "description": "<p><strong>Aktywator</strong> Worknesh rolls initiative</p><p><strong>Wymagania</strong> Worknesh can perceive at least one foe within 60 feet</p><hr /><p><strong>Efekt</strong> Worknesh yells a mighty rallying cry. Worknesh attempts an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizacja} a single foe within 60 feet. If successful, any of her allies within 30 feet can Stride up to double their speed as their first action on their first turn of the combat.</p>"
+                    "description": "<p><strong>Aktywator</strong> Worknesh rolls initiative</p><p><strong>Wymagania</strong> Worknesh can perceive at least one foe within 60 feet</p><hr /><p><strong>Efekt</strong> Worknesh yells a mighty rallying cry. Worknesh attempts an Intimidation check to [[/act demoralize]] a single foe within 60 feet. If successful, any of her allies within 30 feet can Stride up to double their speed as their first action on their first turn of the combat.</p>"
                 },
                 "action->Warmaster's Instinct": {
                     "name": "Warmaster's Instinct",

@@ -62,6 +62,7 @@
         },
         "Aiudara Wraith": {
             "name": "Aiudara Wraith",
+            "hpDetails": "void healing",
             "publicNotes": "<p>Dahak's influence in Alseta's Landing created a soul-draining effect that slays unprotected creatures within, transforming them into ghostly creatures known as aiudara wraiths, but these rare undead can rise within modern aiudara portals as well. Each time an individual travels through an aiudara, there's a chance their passage could leave a faint imprint of their subconscious in the network. Normally this imprint simply fades away, but when an aiudara is damaged or the individual is suffering from necromantic contagions, these imprints can accumulate and, in time, coalesce on the Astral Plane or within Alseta's Landing as a full-fledged aiudara wraith. The wraith is forced to live with an incomplete sense of self, always seeking its own memories and swiftly growing violent and vengeful as its quest to reclaim these ephemeral notions constantly meets with failure.</p>",
             "speed": "instantaneous movement",
             "items": {
@@ -285,6 +286,11 @@
                 "spell->Burning Hands": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
                 },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
+                },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
                 },
@@ -485,7 +491,7 @@
                 },
                 "action->Keen Eyes": {
                     "name": "Keen Eyes",
-                    "description": "<p>Calmont's eyes are sharp, allowing him to make out small details about @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} or even @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny} creatures that others might miss. He gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Szukanie} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty} creatures within 30 feet of him. When Calmont target an opponent that is concealed from him or hidden from him, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+                    "description": "<p>Calmont's eyes are sharp, allowing him to make out small details about @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty} or even @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Niewidzialny} creatures that others might miss. He gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Schowany} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Niewykryty} creatures within 30 feet of him. When Calmont target an opponent that is concealed from him or hidden from him, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
                     "rules": {
                         "2": {
                             "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Przysłonięty}, make a @Check[flat|dc:3|traits:target:condition:concealed] check"
@@ -659,6 +665,11 @@
                 },
                 "spell->Burning Hands": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Ray of Enfeeblement": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -1749,6 +1760,11 @@
                 },
                 "spell->Pass Without Trace": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.zlnXpME1T2uvn8Lr]\nPass Without Trace"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "spell->Tanglefoot": {
                     "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -4657,6 +4673,11 @@
                 },
                 "spell->Burning Hands (At Will)": {
                     "name": "<Compendium> (Do Woli)"
+                },
+                "spell->Produce Flame": {
+                    "name": "Produce Flame",
+                    "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p><p>On a success, you deal 2k4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p><hr /><p><strong>Wywyższenie (+1)</strong> Increase the damage by 1k4 and the persistent damage on a critical hit by 1k4.</p>",
+                    "target": "1 creature"
                 },
                 "strike-melee->Jaws": {
                     "name": "Szczęki"

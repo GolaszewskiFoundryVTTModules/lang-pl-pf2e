@@ -63,7 +63,7 @@
     },
     "Aurochs Herd": {
       "name": "Aurochs Herd",
-      "hpDetails": "(16 squares); Thresholds 100 (12 squares), 50 (8 squares)",
+      "hpDetails": "(16 squares); Thresholds 100 (3 segments), 50 (2 segments)",
       "publicNotes": "<p>Massive aurochs herds roam the badlands of Belkzen, grazing upon the limited grass and plant life dispersed throughout the wasteland's valleys. Having adapted to the arid mountain terrain, aurochs herds eat a much more diverse diet of scrub and brush than their domesticated counterparts as they steadily migrate down the Flood Road. The herds show little patience for predators and demonstrate a preference for charging threats with their razor-sharp horns. Bull aurochs display natural instincts to strategically protect other, weaker members of the herd, often surprising intruders with their coordinated tactics and defensive maneuvers.</p>\n<h2>Unlikely War Beasts</h2>\n<p>Followers of Zagresh have a history of capturing wild aurochs for use in magical experiments, taking the strongest of a herd to make the beasts even larger and more aggressive. Once the aurochs have been transformed into monstrous goliaths, their captors bard them with armored plates and magical weapons that complement their horns. In battle, these aurochs are utilized to pull siege weapons, break through enemy defenses, and trample frontline forces.</p>",
       "items": {
         "action->Stampede": {
@@ -80,7 +80,7 @@
         },
         "action->Horn": {
           "name": "Horn",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The aurochs herd makes a melee attack against each enemy within 5 feet (@Check[reflex|dc:22|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d8+8)[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+10)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+9)[piercing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The aurochs herd makes a melee attack against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:22|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d8+8)[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+10)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+9)[piercing]] damage</p>"
         },
         "action->Puncturing Charge": {
           "name": "Puncturing Charge",
@@ -1066,7 +1066,7 @@
         },
         "action->Battle Cry": {
           "name": "Battle Cry",
-          "description": "<p><strong>Trigger</strong> Molog rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Molog attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} an observed foe.</p>"
+          "description": "<p><strong>Trigger</strong> Molog rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Molog attempts to [[/act demoralize]] an observed foe.</p>"
         },
         "action->Trampling Charge": {
           "name": "Trampling Charge",
@@ -2033,7 +2033,7 @@
         },
         "action->Tooth Tug": {
           "name": "Tooth Tug",
-          "description": "<p><strong>Requirements</strong> The tooth fairy's last action was a successful pliers Strike against a creature with teeth</p>\n<hr />\n<p><strong>Effect</strong> The tooth fairy attempts a @Check[thievery|defense:fortitude] check against the creature's Fortitude DC, dealing @Damage[2[bleed]] damage on any result but a critical failure. On a critical success, it also pulls out one of the target's teeth.</p>\n<p>If the creature loses a tooth, it takes a –1 status penalty to Charisma-based skill checks and must succeed at a @Check[flat|dc:5] to Cast a Spell unless that spell has the subtle trait. These effects last for 1 day, or until the stolen tooth is returned and the target regains at least 1 Hit Point.</p>"
+          "description": "<p><strong>Requirements</strong> The tooth fairy's last action was a successful pliers Strike against a creature with teeth</p>\n<hr />\n<p><strong>Effect</strong> The tooth fairy attempts a @Check[thievery|defense:fortitude] check against the creature's Fortitude DC, dealing @Damage[2[bleed]] damage on any result but a critical failure. On a critical success, it also pulls out one of the target's teeth.</p>\n<p>If the creature loses a tooth, it takes a –1 status penalty to Charisma-based skill checks and must succeed at a @Check[flat|dc:5] to Cast a Spell unless that spell has the subtle trait. These effects last for 1 day, or until the stolen tooth is returned and the target regains at least 1 Hit Point.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.4q8Of8NM9DC8kWyK]{Effect: Tooth Tug}</p>"
         }
       }
     },
@@ -2348,7 +2348,6 @@
     },
     "Wingripper Wyvern Rider": {
       "name": "Wingripper Wyvern Rider",
-      "senses": "darkvision",
       "skillSpecialNature": {
         "0": {
           "label": "to Command their wyvern"

@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Update Localization", // Or a more descriptive name like "Python: Update Localization"
+            "type": "debugpy",
+            "request": "launch",
+            // Make sure 'program' points to your main script
+            "program": "${workspaceFolder}/tools/LocalizationUpdater/update_localization.py",
+            "console": "integratedTerminal",
+            "justMyCode": true, // Set to false if you need to step into library code (like difflib)
+            "cwd": "${workspaceFolder}", // Ensure it runs from the project root
+            "args": ["--UpdateSourceData"] // Add any command-line arguments needed, e.g., ["--verbose"]
+        }
+    ]
+}

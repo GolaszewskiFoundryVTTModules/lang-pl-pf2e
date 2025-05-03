@@ -157,7 +157,6 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | NPC | BN | Bohaterowie Niezależni |
 | EXP | PD | Punkty Doświadczenia |
 | HP / Hit Points | PŻ / Punkty Żywotności | |
-| BT / Broken Threshold | PU / Próg Uszkodzenia | |
 | creature | istota | |
 | object | obiekt | |
 | living creature | żyjąca istota | nie "żywa" |
@@ -618,6 +617,12 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | martial weapon | broń wojskowa | |
 | advanced weapon | broń zaawansowana | |
 
+### Tarcze i Pancerze (Shield & Armor)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| Hardness | Twardość | |
+| BT / Broken Threshold | PU / Próg Uszkodzenia | |
+
 ### Ogólne (General)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
@@ -741,7 +746,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Rod | Rózga | |
-| formula book | księga receptur | Alchemik |
+| formula book | księga receptur | |
 
 
 ## Styl i Wyrażenia (Style and Phrasing)

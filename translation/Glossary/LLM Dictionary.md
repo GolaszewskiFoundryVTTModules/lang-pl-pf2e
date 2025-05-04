@@ -476,6 +476,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | shapers | kształciciele | Dotyczy konrasu |
 | Awakened Animal | Przebudzone Zwierzę | |
 | Changeling | Odmieniec | |
+| Conrasu | Konrasu | |
 
 ### Klasy (Classes)
 | Angielski | Polski | Uwagi |
@@ -776,3 +777,6 @@ ośmielić się
 danina
 nieugięty
 łasy na
+czatownik
+kopijnik
+kruszejący

@@ -22,6 +22,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | The Fabric of the Universe/Space/Time | Osnowa | |
 | Ley Lines | Żyły Magii | |
 | River of Souls | Rzeka Dusz | |
+| Creation Forge | Kuźnia Stworzenia | |
 
 ### Bóstwa i Tytani (Deities & Titans)
 | Angielski | Polski | Uwagi |
@@ -31,6 +32,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Father Skinsaw | Ojciec Skóroszwacz | |
 | Dawnflower | Świtokwiat | |
 | Green Man | Zielony Człek | |
+| Zon-Kuthon / Lord of Midnight | Zon-Kuthon / Pan Północy | |
 
 ### Historia i Wydarzenia (History & Events)
 | Angielski | Polski | Uwagi |
@@ -39,6 +41,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Age of Darkness | Wiek Ciemności | |
 | Age of Lost Omens | Wiek Utraconych Omenów | |
 | Godsrain | Boski Deszcz | |
+| Great Abandonment | Wielkie Porzucenie | |
 
 ### Terminy (Terms)
 | Angielski | Polski | Uwagi |
@@ -87,6 +90,11 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Palatinates | Palatynaty | |
 | Mwangi Expanse | Przestwór Mwangi | |
 | Gravelands | Grobowiska | Dawniej Kresomur (Lastwall) |
+| The Inner Sea | Morze Wewnętrzne | |
+| Fever Sea | Morze Gorączki | |
+| Shining Sea | Morze Lśniące | |
+| Worldwound | Rana Świata | |
+| Sarkoris Scar | Blizna Sarkoriańska | |
 
 ### Kraje (Nations)
 | Angielski | Polski | Uwagi |
@@ -102,6 +110,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Taldor | Taldor | |
 | Andoran | Andoran | |
 | Nidal | Nidal | |
+| Sarkoris | Sarkoris | |
 
 ### Frakcje i Organizacje (Factions & Organizations)
 | Angielski | Polski | Uwagi |

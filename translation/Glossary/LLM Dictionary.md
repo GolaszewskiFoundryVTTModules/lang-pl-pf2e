@@ -95,6 +95,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Shining Sea | Morze Lśniące | |
 | Worldwound | Rana Świata | |
 | Sarkoris Scar | Blizna Sarkoriańska | |
+| Arcadia | Arkadia | |
 
 ### Kraje (Nations)
 | Angielski | Polski | Uwagi |
@@ -125,6 +126,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Skinsaw | Skóroszwacze | |
 | Witchmarket | wiedźmi targ | |
 | Greenwatch | Zielona Straż | |
+| Aldori Swordlords | Mieczmistrzowie Aldori | |
 
 #### Polityka Absalomu
 | Angielski | Polski | Uwagi |

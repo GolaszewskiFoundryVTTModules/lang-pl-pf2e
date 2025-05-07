@@ -33,6 +33,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Dawnflower | Świtokwiat | |
 | Green Man | Zielony Człek | |
 | Zon-Kuthon / Lord of Midnight | Zon-Kuthon / Pan Północy | |
+| Iomedae / The Light of The Sword / The Inheritor | Aiomedae / Światło Miecza / Dziedziczka | |
+| Starstone | Gwiazdkamień | |
 
 ### Historia i Wydarzenia (History & Events)
 | Angielski | Polski | Uwagi |
@@ -108,10 +110,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Padishah Emperor (of Kelesh) | Cesarz Padiszah (Keleszu) | |
 | Qadira | Qadira | |
 | Ustalav | Ustalav | |
-| Taldor | Taldor | |
-| Andoran | Andoran | |
+| Taldor | Taldor, Taldorski | |
+| Andoran | Andoran, Andorański | |
 | Nidal | Nidal | |
-| Sarkoris | Sarkoris | |
+| Sarkoris | Sarkoris, Sarkoriański | |
+| Goka, Gokan | Goka, Gokański | |
+| Nirmathas | Nirmatas, Nirmatański | |
+| Molthune | Moltune, Moltuński | |
 
 ### Frakcje i Organizacje (Factions & Organizations)
 | Angielski | Polski | Uwagi |
@@ -127,6 +132,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Witchmarket | wiedźmi targ | |
 | Greenwatch | Zielona Straż | |
 | Aldori Swordlords | Mieczmistrzowie Aldori | |
+| Steel Eaters | Stalożercy | |
 
 #### Polityka Absalomu
 | Angielski | Polski | Uwagi |
@@ -143,6 +149,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 |-----------|--------|-------|
 | Verex-That-Was | Verex-Który-Przeminął | |
 | Cobyslarni | Kobyslarni | |
+| The Whispering Tyrant | Szepczący Tyran | |
 
 ### Specyficzne dla Przygód (Adventure-Specific)
 #### Abomination Vaults
@@ -539,6 +546,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Thievery | Złodziejstwo | |
 | Athletics | Atletyka | |
 | Perception | Percepcja | |
+| Lore ... | Obeznanie ... | |
 
 ### Atuty i Atrybuty (Feats & Features)
 | Angielski | Polski | Uwagi |

@@ -44,6 +44,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Age of Lost Omens | Wiek Utraconych Omenów | |
 | Godsrain | Boski Deszcz | |
 | Great Abandonment | Wielkie Porzucenie | |
+| Quest for The Sky | Wyprawia po Niebo | |
 
 ### Terminy (Terms)
 | Angielski | Polski | Uwagi |
@@ -117,6 +118,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Goka, Gokan | Goka, Gokański | |
 | Nirmathas | Nirmatas, Nirmatański | |
 | Molthune | Moltune, Moltuński | |
+| Hongal | Hongl, Hongalski | |
+| Hold of Belkzen / Belkzen | Warownia Belkzena / Belkzen, Belkzenu, Belkzeński | |
+| Casmaron | Kasmaron | |
 
 ### Frakcje i Organizacje (Factions & Organizations)
 | Angielski | Polski | Uwagi |
@@ -520,7 +524,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Rogue | Łotr | |
 | Sorcerer | Zaklinacz | |
 | Summoner | Przywoływacz | |
-| Swashbuckler | Szermierz | |
+| Swashbuckler | Zawadiaka | |
 | Thaumaturge | Taumaturg | |
 | Witch | Wiedźma | |
 | Wizard | Czarodziej | |

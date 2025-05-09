@@ -111,6 +111,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Padishah Emperor (of Kelesh) | Cesarz Padiszah (Keleszu) | |
 | Qadira | Qadira | |
 | Ustalav | Ustalav | |
+| Virdian, Virdic | Virdian, Virdiański | |
 | Taldor | Taldor, Taldorski | |
 | Andoran | Andoran, Andorański | |
 | Nidal | Nidal | |
@@ -128,7 +129,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Knights of Lastwall | Rycerze Kresomuru | |
 | Crimson Reclaimers | Karmazynowi Wyzwoliciele | |
 | Shining Sentinels | Lśniący Stróże | |
-| Triggerbrands | Spustoszable | |
+| Firebrands | Żagwie | |
 | Pathfinder Association | Stowarzyszenie Poszukiwaczy | |
 | Arclords of Nex | Maglordowie z Nex | |
 | Zephyr Guards | Strażnicy Zefiru | |
@@ -763,6 +764,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Bronie i Pancerze (Weapons & Armor)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
+| Triggerbrand | Spustoszabla | |
 | Targe | Tarża | |
 | Rondache | Rondasz | |
 

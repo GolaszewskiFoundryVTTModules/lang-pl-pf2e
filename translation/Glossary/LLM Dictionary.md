@@ -27,6 +27,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 ### Bóstwa i Tytani (Deities & Titans)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
+| Starstone | Gwiazdkamień | |
 | The Beast of Gluttondark | Bestia z Mrokogłodu | |
 | Treerazer | Drzewomór | |
 | Father Skinsaw | Ojciec Skóroszwacz | |
@@ -34,7 +35,7 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Green Man | Zielony Człek | |
 | Zon-Kuthon / Lord of Midnight | Zon-Kuthon / Pan Północy | |
 | Iomedae / The Light of The Sword / The Inheritor | Aiomedae / Światło Miecza / Dziedziczka | |
-| Starstone | Gwiazdkamień | |
+| Casandalee | Kasandali | |
 
 ### Historia i Wydarzenia (History & Events)
 | Angielski | Polski | Uwagi |
@@ -138,6 +139,9 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Greenwatch | Zielona Straż | |
 | Aldori Swordlords | Mieczmistrzowie Aldori | |
 | Steel Eaters | Stalożercy | |
+| Red Mantis | Czerwone Modliszki | |
+| Hellknights | Rycerze Piekieł | |
+| Order of the Scourge | Zakon Chłosty | |
 
 #### Polityka Absalomu
 | Angielski | Polski | Uwagi |
@@ -157,12 +161,14 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | The Whispering Tyrant | Szepczący Tyran | |
 
 ### Specyficzne dla Przygód (Adventure-Specific)
-#### Abomination Vaults
+#### Abomination Vaults / Krypty Abominacji
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | Belcorra | Belkorra | |
 | Gauntlight | Bladobrzask | |
 | Fogfen | Mgłagniska | |
+
+#### Extinction Curse / Klątwa Zagłady
 
 #### Agents of Edgewatch
 | Angielski | Polski | Uwagi |
@@ -612,18 +618,19 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
 | aquatic | stworzenie wodne | |
-| agile | chyżość | cecha broni |
-| finesse | finezyjność | cecha broni |
-| free-hand | wolna ręka | cecha broni |
-| nonlethal | niezabójczość | cecha broni |
-| trip | podcięcie | cecha broni |
-| parry | parowanie | cecha broni |
-| backstabber | cios w plecy | cecha broni |
-| forceful | impet | cecha broni |
-| versatile | wszechstronność | cecha broni |
-| deadly | śmiercionośność | cecha broni |
-| fatal | zgubność | cecha broni |
-| water | woda | cecha |
+| agile | chyżość | |
+| finesse | finezyjność | |
+| free-hand | wolna ręka | |
+| nonlethal | niezabójczość | |
+| trip | podcięcie | |
+| parry | parowanie | |
+| attached | mocowanie | |
+| backstabber | cios w plecy | |
+| forceful | impet | |
+| versatile | wszechstronność | |
+| deadly | śmiercionośność | |
+| fatal | zgubność | |
+| water | woda | |
 | concentrate | koncentracja | |
 | death | śmierć | |
 | void | pustka | |
@@ -805,3 +812,4 @@ nieugięty
 czatownik
 kopijnik
 kruszejący
+pawężnicy

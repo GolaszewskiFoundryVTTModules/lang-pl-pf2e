@@ -123,6 +123,8 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Hongal | Hongl, Hongalski | |
 | Hold of Belkzen / Belkzen | Warownia Belkzena / Belkzen, Belkzenu, Belkzeński | |
 | Casmaron | Kasmaron | |
+| Senghor | Sengor | |
+| Lands of the Linnorm Kings | Ziemie Linnormskich Królów | |
 
 ### Frakcje i Organizacje (Factions & Organizations)
 | Angielski | Polski | Uwagi |
@@ -140,7 +142,13 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 | Aldori Swordlords | Mieczmistrzowie Aldori | |
 | Steel Eaters | Stalożercy | |
 | Red Mantis | Czerwone Modliszki | |
+
+#### Rycerze Piekieł (Hellknights)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
 | Hellknights | Rycerze Piekieł | |
+| Armiger | Zbrojny | |
+| Signifer | Chorąży | |
 | Order of the Scourge | Zakon Chłosty | |
 
 #### Polityka Absalomu
@@ -642,6 +650,11 @@ Ten słownik zawiera ustandaryzowane tłumaczenia terminów z Pathfinder 2e z j�
 
 ## Ekwipunek (Equipment)
 
+### Ekwipunek Magiczny (Magic Items)
+| Angielski | Polski | Uwagi |
+|-----------|--------|-------|
+| invested / investure | zaangażowany / zaangażowanie | |
+
 ### Rodzaje Broni (Weapon Types)
 | Angielski | Polski | Uwagi |
 |-----------|--------|-------|
@@ -813,3 +826,5 @@ czatownik
 kopijnik
 kruszejący
 pawężnicy
+kirys
+na poczet

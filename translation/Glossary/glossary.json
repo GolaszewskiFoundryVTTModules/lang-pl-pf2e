@@ -45,14 +45,14 @@
                 "Beast": {"polish": "Bestia", "notes": ""},
                 "Celestial": {"polish": "Niebianin", "notes": ""},
                 "Construct": {"polish": "Konstrukt", "notes": ""},
-                "Daemon": {"polish": "Daimon", "notes": ""},
+                "Fiend": {"polish": "Diabeł", "notes": ""},
                 "Demon": {"polish": "Demon", "notes": ""},
+                "Daemon": {"polish": "Daimon", "notes": ""},
                 "Devil": {"polish": "Czart", "notes": ""},
                 "Dragon": {"polish": "Smok", "notes": ""},
                 "Drake": {"polish": "Smoczyk", "notes": ""},
                 "Elemental": {"polish": "Żywiołak", "notes": ""},
                 "Fey": {"polish": "Fey", "notes": ""},
-                "Fiend": {"polish": "Diabeł", "notes": ""},
                 "Fleshwarp": {"polish": "Mięsoskręt", "notes": ""},
                 "Fungus": {"polish": "Grzyb", "notes": ""},
                 "Monitor": {"polish": "Nadzorca", "notes": ""},
@@ -76,6 +76,7 @@
                 "Palatinates": {"polish": "Palatynaty", "notes": ""},
                 "Mwangi Expanse": {"polish": "Przestwór Mwangi", "notes": ""},
                 "Gravelands": {"polish": "Grobowiska", "notes": "Dawniej Kresomur"},
+                "Eye of Dread": {"polish": "Oko Grozy", "notes": ""},
                 "Lastwall": {"polish": "Kresomur", "notes": ""},
                 "The Inner Sea": {"polish": "Morze Wewnętrzne", "notes": ""},
                 "Fever Sea": {"polish": "Morze Gorączki", "notes": ""},
@@ -415,19 +416,24 @@
                 "truesight": {"polish": "prawdowidzenie", "notes": ""}
             },
             "Movement": {
-                "Speed": {"polish": "Prędkość", "notes": ""},
-                "Land Speed": {"polish": "Prędkość Lądowa", "notes": ""},
-                "Climb Speed": {"polish": "Prędkość Wspinania", "notes": ""},
-                "Swim Speed": {"polish": "Prędkość Pływania", "notes": ""},
-                "Flying Speed": {"polish": "Prędkość Latania", "notes": ""},
-                "Burrowing Speed": {"polish": "Prędkość Rycia", "notes": ""}
+                "Speed": {
+                    "polish": "Prędkość",
+                    "notes": "",
+                    "types": {
+                        "Land Speed": {"polish": "Prędkość Lądowa", "notes": ""},
+                        "Climb Speed": {"polish": "Prędkość Wspinania", "notes": ""},
+                        "Swim Speed": {"polish": "Prędkość Pływania", "notes": ""},
+                        "Flying Speed": {"polish": "Prędkość Latania", "notes": ""},
+                        "Burrowing Speed": {"polish": "Prędkość Rycia", "notes": ""}
+                    }
+                }
             },
             "Stealth": {
-                "Observed": {"polish": "Postrzegany", "notes": "Stan"},
-                "Concealed": {"polish": "Przysłonięty", "notes": "Stan (różny od statusu)"},
-                "Hidden": {"polish": "Schowany", "notes": "Stan"},
-                "Unnoticed": {"polish": "Niezauważony", "notes": "Stan"},
-                "Undetected": {"polish": "Niewykryty", "notes": "Stan"}
+                "Observed": {"polish": "Postrzegany", "notes": ""},
+                "Concealed": {"polish": "Przysłonięty", "notes": ""},
+                "Hidden": {"polish": "Schowany", "notes": ""},
+                "Unnoticed": {"polish": "Niezauważony", "notes": ""},
+                "Undetected": {"polish": "Niewykryty", "notes": ""}
             }
         },
         "Character Elements": {
@@ -708,6 +714,7 @@
         },
         "Other": {
             "host": {"polish": "żywiciel", "notes": ""},
+            "conduit": {"polish": "medium", "notes": ""},
             "harrow": {"polish": "Talia Marnota", "notes": "Od Tarot"},
             "suit": {"polish": "Dwór Karty", "notes": "Talia Marnota"}
         },

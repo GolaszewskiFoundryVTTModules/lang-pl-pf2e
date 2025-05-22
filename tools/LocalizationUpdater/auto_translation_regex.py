@@ -112,6 +112,7 @@ activation_patterns = [
     (r'>Activate — ([\p{L}\d ]*)<', r'>Aktywacja — \1<'),
     (r'>Trigger<', r'>Aktywator<'),
     (r'>Frequency<', r'>Częstotliwość<'),
+    (r'>Area<', r'>Obszar<'),
 ]
 
 # Effect-related patterns
@@ -282,6 +283,8 @@ frequency_patterns = [
         r'<p><strong>Częstotliwość</strong> raz na rundę</p>'),
     (r'<p><strong>Częstotliwość</strong> once per day(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na dzień</p>'),
+    (r'<p><strong>Częstotliwość</strong> twice per day(\.|)</p>',
+        r'<p><strong>Częstotliwość</strong> dwa razy na dzień</p>'),
     (r'<p><strong>Częstotliwość</strong> once per hour(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na godzinę</p>'),
     (r'<p><strong>Częstotliwość</strong> once per day, plus overcharge(\.|)</p>',

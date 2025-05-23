@@ -279,16 +279,20 @@ ammunition_patterns = [
 
 # Frequency details
 frequency_patterns = [
-    (r'<p><strong>Częstotliwość</strong> once per round(\.|)</p>',
+    (r'<p><strong>Częstotliwość</strong> [oO]nce per round(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na rundę</p>'),
-    (r'<p><strong>Częstotliwość</strong> once per day(\.|)</p>',
+    (r'<p><strong>Częstotliwość</strong> [oO]nce per hour(\.|)</p>',
+        r'<p><strong>Częstotliwość</strong> raz na godzinę</p>'),
+    (r'<p><strong>Częstotliwość</strong> [oO]nce per day(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> raz na dzień</p>'),
+    (r'<p><strong>Częstotliwość</strong> [oO]nce per day, plus overcharge(\.|)</p>',
+        r'<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>'),
     (r'<p><strong>Częstotliwość</strong> twice per day(\.|)</p>',
         r'<p><strong>Częstotliwość</strong> dwa razy na dzień</p>'),
-    (r'<p><strong>Częstotliwość</strong> once per hour(\.|)</p>',
-        r'<p><strong>Częstotliwość</strong> raz na godzinę</p>'),
-    (r'<p><strong>Częstotliwość</strong> once per day, plus overcharge(\.|)</p>',
-        r'<p><strong>Częstotliwość</strong> raz na dzień, plus przeciążenie</p>'),
+    (r'<p><strong>Częstotliwość</strong> three times per day(\.|)</p>',
+        r'<p><strong>Częstotliwość</strong> trzy razy na dzień</p>'),
+    (r'<p><strong>Częstotliwość</strong> any number of times per day(\.|)</p>',
+        r'<p><strong>Częstotliwość</strong> dowolna ilość razy na dzień</p>'),
 ]
 
 # Miscellaneous patterns
